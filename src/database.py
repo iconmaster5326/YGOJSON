@@ -1,7 +1,7 @@
-import typing
+import json
 import os
 import os.path
-import json
+import typing
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 TEMP_DIR = os.path.join(ROOT_DIR, "temp")

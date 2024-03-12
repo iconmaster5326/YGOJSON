@@ -1,13 +1,13 @@
 # Import data from Yaml Yugi (https://github.com/DawnbrandBots/yaml-yugi).
 
-import os.path
 import json
+import os.path
 import typing
 import uuid
 
 import requests
 
-from ..database import TEMP_DIR, Database, Card, load_database
+from ..database import TEMP_DIR, Card, Database, load_database
 
 DOWNLOAD_URL = "https://github.com/DawnbrandBots/yaml-yugi/raw/aggregate/"
 INPUT_CARDS_FILE = os.path.join(TEMP_DIR, "yamlyugi_cards.json")
@@ -118,7 +118,9 @@ def _write_card(
     Overwrites any fields that have changed.
     Use an empty dict to represent a new card.
     """
-    out_json["$schema"] = "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/card.json"
+    out_json[
+        "$schema"
+    ] = "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/card.json"
     if "id" not in out_json:
         out_json["id"] = str(uuid.uuid4())
 
@@ -247,9 +249,7 @@ def _import_card(
 def import_from_yaml_yugi(
     db: Database,
     *,
-    progress_monitor: typing.Optional[
-        typing.Callable[[Card, bool], None]
-    ] = None,
+    progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
 ) -> typing.Tuple[int, int]:
     """
     Import card data from Yaml Yugi into the given database.
