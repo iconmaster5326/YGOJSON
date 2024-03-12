@@ -1,4 +1,5 @@
 import argparse
+import os.path
 import sys
 import typing
 
@@ -21,6 +22,20 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         action="store_true",
         help="Don't generate aggregate card/set/etc JSONs",
     )
+    parser.add_argument(
+        "--individuals",
+        type=str,
+        default="data",
+        metavar="DIR",
+        help="Directory for individual card/set/etc JSONs",
+    )
+    parser.add_argument(
+        "--aggregates",
+        type=str,
+        default=os.path.join("data", "aggregate"),
+        metavar="DIR",
+        help="Directory for aggregate card/set/etc JSONs",
+    )
     args = parser.parse_args(argv[1:])
 
     n = 0
@@ -32,7 +47,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             print("|", end="", flush=True)
 
     print("Loading database...")
-    db = load_database(progress_monitor=dbpm)
+    db = load_database(
+        progress_monitor=dbpm,
+        individuals_dir=args.individuals,
+        aggregates_dir=args.aggregates,
+    )
     print()
     print("Importing Yaml Yugi data...")
     n_old, n_new = import_from_yaml_yugi(db, progress_monitor=dbpm)
