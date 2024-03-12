@@ -150,7 +150,7 @@
             "properties": {
               "ygoprodeckID": {
                 "description": "The internal ID in YGOProDeck for this set.",
-                "type": "string"
+                "type": "integer"
               },
               "ygoprodeckName": {
                 "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/pack/' to get the set's page.",
@@ -193,7 +193,7 @@
         },
         "yugipediaID": {
           "description": "The internal wiki ID for the Yugipedia page for this set.",
-          "type": "string"
+          "type": "integer"
         },
         "yugiohpricesName": {
           "description": "The name of this set on YugiohPrices. TCG only.",

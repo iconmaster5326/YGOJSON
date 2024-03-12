@@ -155,7 +155,7 @@
         "normal",
         "continuous",
         "equip",
-        "quick-play",
+        "quickplay",
         "field",
         "ritual",
         "counter"
@@ -289,15 +289,15 @@
         },
         "yugipediaID": {
           "description": "The internal wiki ID for the Yugipedia page for this card.",
-          "type": "string"
+          "type": "integer"
         },
         "dbID": {
           "description": "The CID this card has on db.yugioh-card.com.",
-          "type": "string"
+          "type": "integer"
         },
         "ygoprodeckID": {
           "description": "The internal ID in YGOProDeck for this card. Usually the password of the card, but may be an invented password, in the case of passwordless cards.",
-          "type": "string"
+          "type": "integer"
         },
         "ygoprodeckName": {
           "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/card/' to get the card's page.",
