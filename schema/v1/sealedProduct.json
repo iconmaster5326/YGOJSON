@@ -8,7 +8,7 @@
   "required": ["$schema", "id", "name", "locales", "contents"],
   "properties": {
     "$schema": {
-      "const": "v1/sealedProduct.json"
+      "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json"
     },
     "id": {
       "description": "The UUID of this sealed product. The name of the product's file should be this UUID.",

@@ -1,13 +1,19 @@
 from src.database import Database, Card, load_database
 from src.importers.yamlyugi import import_from_yaml_yugi
 
+import argparse
 import sys
 import typing
 
 def main(argv: typing.Optional[typing.List[str]] = None) -> int:
-    if argv is None:
-        argv = sys.argv
-        
+    argv = argv or sys.argv
+    parser = argparse.ArgumentParser(
+        argv[0], description="Generates and queries the YGOJSON database"
+    )
+    parser.add_argument("--no-individuals", action="store_true", help="Don't generate individual card/set/etc JSONs")
+    parser.add_argument("--no-aggregates", action="store_true", help="Don't generate aggregate card/set/etc JSONs")
+    args = parser.parse_args(argv[1:])
+
     n = 0
 
     def dbpm(c: Card, f: bool = True):
@@ -24,7 +30,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     print()
     print(f"Added {n_new} cards and updated {n_old} cards.")
     print("Saving cards...")
-    db.save(progress_monitor=dbpm)
+    db.save(
+        progress_monitor=dbpm,
+        generate_individuals=not args.no_individuals,
+        generate_aggregates=not args.no_aggregates
+    )
     print()
     print("Done!")
     return 0

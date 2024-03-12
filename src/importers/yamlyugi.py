@@ -118,7 +118,7 @@ def _write_card(
     Overwrites any fields that have changed.
     Use an empty dict to represent a new card.
     """
-    out_json["$schema"] = "v1/card.json"
+    out_json["$schema"] = "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/card.json"
     if "id" not in out_json:
         out_json["id"] = str(uuid.uuid4())
 
@@ -230,6 +230,7 @@ def _import_card(
         return True, db.cards_by_yamlyugi[in_json["password"]]
     if (
         "password" in in_json
+        and in_json["password"]
         and "%08u" % (in_json["password"],) in db.cards_by_password
     ):
         return True, db.cards_by_password["%08u" % (in_json["password"],)]

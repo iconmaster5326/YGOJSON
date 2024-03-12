@@ -8,7 +8,7 @@
   "required": ["$schema", "id", "name", "contents", "externalIDs"],
   "properties": {
     "$schema": {
-      "const": "v1/set.json"
+      "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json"
     },
     "id": {
       "description": "The UUID of this set. The name of the set's file should be this UUID.",

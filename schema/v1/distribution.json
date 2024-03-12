@@ -8,7 +8,7 @@
   "required": ["$schema", "id", "slots"],
   "properties": {
     "$schema": {
-      "const": "v1/distribution.json"
+      "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json"
     },
     "id": {
       "description": "The UUID of this distribution. The name of the distribution's file should be this UUID.",

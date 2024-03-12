@@ -45,19 +45,25 @@ class Database:
             self.cards_by_konami_cid[card["externalIDs"]["dbID"]] = card
 
     def save(
-        self, *, progress_monitor: typing.Optional[typing.Callable[[Card], None]] = None
+        self,
+        *,
+        progress_monitor: typing.Optional[typing.Callable[[Card], None]] = None,
+        generate_individuals: bool = True,
+        generate_aggregates: bool = True,
     ):
-        os.makedirs(DATA_DIR, exist_ok=True)
-        with open(CARDLIST_FILE, "w", encoding="utf-8") as outfile:
-            json.dump([card["id"] for card in self.cards], outfile, indent=2)
-        os.makedirs(CARDS_DIR, exist_ok=True)
-        for card in self.cards:
-            _save_card(card)
-            if progress_monitor:
-                progress_monitor(card)
-        os.makedirs(AGGREGATE_DIR, exist_ok=True)
-        with open(AGG_CARDS_FILE, "w", encoding="utf-8") as outfile:
-            json.dump(self.cards, outfile, indent=2)
+        if generate_individuals:
+            os.makedirs(DATA_DIR, exist_ok=True)
+            with open(CARDLIST_FILE, "w", encoding="utf-8") as outfile:
+                json.dump([card["id"] for card in self.cards], outfile, indent=2)
+            os.makedirs(CARDS_DIR, exist_ok=True)
+            for card in self.cards:
+                _save_card(card)
+                if progress_monitor:
+                    progress_monitor(card)
+        if generate_aggregates:
+            os.makedirs(AGGREGATE_DIR, exist_ok=True)
+            with open(AGG_CARDS_FILE, "w", encoding="utf-8") as outfile:
+                json.dump(self.cards, outfile, indent=2)
 
 
 def load_database(

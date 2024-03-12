@@ -8,7 +8,7 @@
   "required": ["$schema", "id", "name", "archetype", "members"],
   "properties": {
     "$schema": {
-      "const": "v1/series.json"
+      "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/series.json"
     },
     "id": {
       "description": "The UUID of this series. The name of the series's file should be this UUID.",
