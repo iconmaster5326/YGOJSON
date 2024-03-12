@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "distribution.json",
+  "title": "Distribution",
+
+  "description": "A distribution is a particlar method of randomly (or not so randomly) laying out cards in a set. This determines how to pull packs, and so on.",
+  "type": "object",
+  "required": ["$schema", "id", "slots"],
+  "properties": {
+    "$schema": {
+      "const": "v1/distribution.json"
+    },
+    "id": {
+      "description": "The UUID of this distribution. The name of the distribution's file should be this UUID.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "slots": {
+      "description": "An array of slots in the pack.",
+      "type": "array",
+      "items": {
+        "description": "One or more slots, aka a card that is randomized according to certain rarity rules.",
+        "type": "object",
+        "required": [],
+        "properties": {
+          "type": { "const": "cards" },
+          "set": {
+            "description": "The UUID of the set to draw cards from, other than the current set. This is not normally needed, but is useful in places like Master Duel secret packs, which consist partly of Master Packs.",
+            "type": "string",
+            "format": "uuid"
+          },
+          "rarity": {
+            "description": "The rarity to pull from. Either a rarity string constant, or an array. If it's an array, represents a probability table for each card drawn. If null, will pull from all cards with equal weight.",
+            "oneOf": [
+              { "$ref": "rarity.json" },
+              {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "description": "An entry in a probability table. Represents a 1:X chance of this rarity being selected.",
+                      "type": "object",
+                      "required": ["chance", "rarity"],
+                      "properties": {
+                        "chance": {
+                          "description": "A 1:X probability. For example, the chance of an ultra rare is '6' here, for a 1:6 chance.",
+                          "type": "number"
+                        },
+                        "rarity": {
+                          "description": "A rarity constant.",
+                          "$ref": "rarity.json"
+                        }
+                      }
+                    },
+                    {
+                      "description": "A catchall default rarity. If none of the above chances trigger, the card in this slot is of this rarity. Only use as the last element in the array!",
+                      "$ref": "rarity.json"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "qty": {
+            "description": "How many cards are drawn. Default 1.",
+            "type": "integer"
+          },
+          "cardTypes": {
+            "description": "Some sets (old reprint sets, for one) only had monsters, spells, or traps in certain slots. If provided, will only generate cards of the given types in this slot.",
+            "type": "array",
+            "items": {
+              "enum": ["monster", "spell", "trap"]
+            }
+          },
+          "duplicates": {
+            "description": "Most of the time, you can't get the same card twice at the same rarity in a pack, even if it's common. (In physical sets, this is due to how printing sheets work, so it's not a 100% chance, but it might as well be for our purposes.) If you want to override this, set this to true.",
+            "type": "boolean"
+          },
+          "proportionate": {
+            "description": "Normally, the probability table doesn't take into account the relative sizes of each pool. When this field is true, the chances will be changed so that the probabilities will take into account said relative sizes. This is used for dual common/short-print slots, for example.",
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

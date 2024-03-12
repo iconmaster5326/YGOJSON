@@ -1,0 +1,361 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card.json",
+  "title": "Card",
+
+  "description": "A logical Yu-Gi-Oh card (as opposed to a physical card, of which belongs to a set).",
+  "type": "object",
+  "required": [
+    "$schema",
+    "id",
+    "text",
+    "cardType",
+    "passwords",
+    "images",
+    "sets",
+    "legality",
+    "externalIDs",
+    "series"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "v1/card.json"
+    },
+    "id": {
+      "description": "The UUID of this card. The name of the card's file should be this UUID.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "text": {
+      "description": "A map of locales to textual card information.",
+      "type": "object",
+      "additionalProperties": {
+        "description": "Textual information on the card.",
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "description": "The name of the card.",
+            "type": "string"
+          },
+          "effect": {
+            "description": "All text in the main text box of the card. (Normal monster flavor also goes here, despite the name.) Null if the card's text is unknown or untranslated.",
+            "type": "string"
+          },
+          "pendulumEffect": {
+            "description": "All text in the pendulum text box of the card. Only appears on pendulum cards.",
+            "type": "string"
+          },
+          "official": {
+            "description": "Is this translation official or not? Default is true.",
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "cardType": {
+      "description": "The broadest category of card (monster, spell, trap, etc.)",
+      "enum": ["monster", "spell", "trap"]
+    },
+    "attribute": {
+      "description": "The monster attribute. Only appears on monster cards.",
+      "enum": ["light", "dark", "fire", "water", "wind", "earth", "divine"]
+    },
+    "monsterCardTypes": {
+      "description": "What summoning types this card is, if any. Only appears on monster cards.",
+      "type": "array",
+      "items": {
+        "enum": ["ritual", "fusion", "synchro", "xyz", "pendulum", "link"]
+      }
+    },
+    "type": {
+      "description": "The race of monster. Only appears on monster cards.",
+      "enum": [
+        "beastwarrior",
+        "zombie",
+        "fiend",
+        "dinosaur",
+        "dragon",
+        "beast",
+        "illusion",
+        "insect",
+        "wingedbeast",
+        "warrior",
+        "seaserpent",
+        "aqua",
+        "pyro",
+        "thunder",
+        "spellcaster",
+        "plant",
+        "rock",
+        "reptile",
+        "fairy",
+        "fish",
+        "machine",
+        "divinebeast",
+        "psychic",
+        "creatorgod",
+        "wyrm",
+        "cyberse"
+      ]
+    },
+    "classifications": {
+      "description": "Any non-type, non-ability categories appearing on the type line (effect, normal, etc). Only appears on monster cards.",
+      "type": "array",
+      "items": {
+        "enum": ["normal", "effect", "pendulum", "tuner", "specialsummon"]
+      }
+    },
+    "abilities": {
+      "description": "Any non-type, ability categories appearing on the type line (toon, spirit, etc). Only appears on monster cards.",
+      "type": "array",
+      "items": {
+        "enum": ["toon", "spirit", "union", "gemini", "flip"]
+      }
+    },
+    "level": {
+      "description": "The level of this card. Only appears on non-link, non-xyz monster cards.",
+      "type": "integer"
+    },
+    "rank": {
+      "description": "The rank of this card. Only appears on xyz monster cards.",
+      "type": "integer"
+    },
+    "atk": {
+      "description": "The ATK of the card. Either a number, or '?'. Only appears on monster cards.",
+      "oneOf": [{ "type": "integer" }, { "const": "?" }]
+    },
+    "def": {
+      "description": "The DEF of the card. Either a number, or '?'. Only appears on non-link monster cards.",
+      "oneOf": [{ "type": "integer" }, { "const": "?" }]
+    },
+    "scale": {
+      "description": "The pendulum scale. Only appears on pendulum monster cards.",
+      "type": "integer"
+    },
+    "linkArrows": {
+      "description": "The link arrows on this card. Only appears on link monster cards.",
+      "type": "array",
+      "items": {
+        "enum": [
+          "topleft",
+          "topcenter",
+          "topright",
+          "middleleft",
+          "middleright",
+          "bottomleft",
+          "bottomcenter",
+          "bottomright"
+        ]
+      }
+    },
+    "subcategory": {
+      "description": "The type of spell/trap card this is. Only appears on spell/trap cards.",
+      "enum": [
+        "normal",
+        "continuous",
+        "equip",
+        "quick-play",
+        "field",
+        "ritual",
+        "counter"
+      ]
+    },
+    "passwords": {
+      "description": "All official passwords given for the card.",
+      "type": "array",
+      "items": {
+        "description": "A password, as printed on the card.",
+        "type": "string",
+        "regex": "\\d\\d\\d\\d\\d\\d\\d\\d"
+      }
+    },
+    "images": {
+      "description": "Card images, one per art variant. These images are generic to the card, generated automatically and in English, rather than being the image of a specific printing.",
+      "type": "array",
+      "items": {
+        "description": "An image for a specific art treatment of a card.",
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "description": "The UUID of this art treatment. Used to refer to specific art treatments from specific printings.",
+            "type": "string",
+            "format": "uuid"
+          },
+          "password": {
+            "description": "The password this art is given to. Some cards have multiple passwords, one per art. Some cards have multiple arts with the same password. And some have both going on. Not present if the card's password is currently unknown.",
+            "type": "string",
+            "regex": "\\d\\d\\d\\d\\d\\d\\d\\d"
+          },
+          "art": {
+            "description": "An art crop of this card.",
+            "type": "string",
+            "format": "uri"
+          },
+          "card": {
+            "description": "An image of this card.",
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "sets": {
+      "description": "A list of sets each card was (or will be) found in. Look up these UUIDs in the set JSON for printing information.",
+      "type": "array",
+      "items": {
+        "description": "A UUID of the set this card appears in.",
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "legality": {
+      "description": "A mapping of formats to legalities.",
+      "type": "object",
+      "additionalProperties": {
+        "description": "Legality information for this format.",
+        "type": "object",
+        "required": ["current"],
+        "properties": {
+          "current": {
+            "description": "The current legality of this card. Use this to avoid reading the legality history, or use this when the legality history is unknown/empty.",
+            "enum": [
+              "unlimited",
+              "semilimited",
+              "limited",
+              "forbidden",
+              "unreleased",
+              "unknown"
+            ]
+          },
+          "history": {
+            "description": "The legality history for this card. Only present if this history is known, but may be empty even if known, in the case of cards whose legality has never changed.",
+            "type": "array",
+            "items": {
+              "description": "A record of a change in legality.",
+              "type": "object",
+              "required": ["legality", "date"],
+              "properties": {
+                "legality": {
+                  "description": "What the legality was changed to.",
+                  "enum": ["unlimited", "semilimited", "limited", "forbidden"]
+                },
+                "date": {
+                  "description": "The date of the change.",
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "masterDuel": {
+      "description": "Any Master Duel specific information. Only present if this card is in Master Duel.",
+      "type": "object",
+      "required": ["rarity", "craftable"],
+      "properties": {
+        "rarity": {
+          "description": "The rairty of this card.",
+          "enum": ["n", "r", "sr", "ur"]
+        },
+        "craftable": {
+          "description": "Is this card craftable using dust?",
+          "type": "boolean"
+        }
+      }
+    },
+    "duelLinks": {
+      "description": "Any Duel Links specific information. Only present if this card is in Duel Links.",
+      "type": "object",
+      "required": ["rarity"],
+      "properties": {
+        "rarity": {
+          "description": "The rairty of this card.",
+          "enum": ["n", "r", "sr", "ur"]
+        }
+      }
+    },
+    "externalIDs": {
+      "description": "IDs and other information, to access this card from various other sites.",
+      "type": "object",
+      "required": [],
+      "properties": {
+        "yugipediaName": {
+          "description": "The Yugipedia page name for this card.",
+          "type": "string"
+        },
+        "yugipediaID": {
+          "description": "The internal wiki ID for the Yugipedia page for this card.",
+          "type": "string"
+        },
+        "dbID": {
+          "description": "The CID this card has on db.yugioh-card.com.",
+          "type": "string"
+        },
+        "ygoprodeckID": {
+          "description": "The internal ID in YGOProDeck for this card. Usually the password of the card, but may be an invented password, in the case of passwordless cards.",
+          "type": "string"
+        },
+        "ygoprodeckName": {
+          "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/card/' to get the card's page.",
+          "type": "string"
+        },
+        "yugiohpricesName": {
+          "description": "The slug for YugiohPrices and YugiohTopDecks you can use to get the card's page.",
+          "type": "string"
+        },
+        "yamlyugiID": {
+          "description": "The internal ID in YamlYugi for this card. Usually the password of the card, but may be an invented password, in the case of passwordless cards.",
+          "type": "string"
+        }
+      }
+    },
+    "errata": {
+      "description": "Present only if this card has recieved errata. Details how the card has changed over time. Does not cover format legality information.",
+      "type": "object",
+      "required": ["original", "history"],
+      "properties": {
+        "original": {
+          "description": "What is the original state of the card, as first printed? A subset of the card json, with only changed properties present.",
+          "type": "object"
+        },
+        "history": {
+          "description": "The change history.",
+          "type": "array",
+          "items": {
+            "description": "A change.",
+            "type": "object",
+            "required": ["date", "changes", "official"],
+            "properties": {
+              "date": {
+                "description": "The date of the change.",
+                "type": "string",
+                "format": "date"
+              },
+              "changes": {
+                "description": "What changed with this errata. A subset of the card json, with only changed properties present.",
+                "type": "object"
+              },
+              "official": {
+                "description": "Was this change official? Unofficial changes may occur in the case of a temporary name/text beging updated when a card officially comes out in that locale.",
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "series": {
+      "description": "Any series or archetypes this card is a part of.",
+      "type": "array",
+      "items": {
+        "description": "The UUID of the series. Look it up in the series JSON.",
+        "type": "string",
+        "format": "uuid"
+      }
+    }
+  }
+}

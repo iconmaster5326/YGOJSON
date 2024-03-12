@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sealedProduct.json",
+  "title": "Sealed Product",
+
+  "description": "A sealed product is a set of multiple other yugioh products, such as a tin or a booster box. NOTE: This database is not populated with most booster boxes; the existence of such is indicated by the 'packsPerBox' property in set JSONs.",
+  "type": "object",
+  "required": ["$schema", "id", "name", "locales", "contents"],
+  "properties": {
+    "$schema": {
+      "const": "v1/sealedProduct.json"
+    },
+    "id": {
+      "description": "The UUID of this sealed product. The name of the product's file should be this UUID.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "name": {
+      "description": "A mapping of language to product names. In physical products, if the locales object has a mapping for this language, then this name is official, else it is unofficial.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "locales": {
+      "description": "A mapping of locale to locale-specific information.",
+      "type": "object",
+      "remainingProperties": {
+        "description": "Locale-specific information for this product.",
+        "type": "object",
+        "required": ["externalIDs"],
+        "properties": {
+          "image": {
+            "description": "A URL to a image of this product in this locale, if available. Use this in preference to the 'image' field in 'contents'.",
+            "type": "string",
+            "format": "uri"
+          },
+          "externalIDs": {
+            "description": "IDs and other information, to access this set from various other sites.",
+            "type": "object",
+            "required": [],
+            "properties": {
+              "dbID": {
+                "description": "The official Yugioh database ID for this product."
+              }
+            }
+          }
+        }
+      }
+    },
+    "contents": {
+      "description": "The contents of this product. These contents might differ by locale. Virtual products have just one entry here.",
+      "type": "array",
+      "items": {
+        "description": "Information about a product's contents.",
+        "type": "object",
+        "required": ["packs", "history"],
+        "properties": {
+          "locales": {
+            "description": "The locales these contents apply to. Not present in virtual products.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "image": {
+            "description": "A URL to a image of this product, if available. Use the 'image' field in 'locales' first if also available.",
+            "type": "string",
+            "format": "uri"
+          },
+          "packs": {
+            "description": "The set of packs (and other promo cards) this product contains.",
+            "type": "array",
+            "items": {
+              "description": "A number of packs/cards from a set.",
+              "type": "object",
+              "required": ["set"],
+              "properties": {
+                "set": {
+                  "description": "The UUID of the set you are pulling from.",
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "qty": {
+                  "description": "The number of packs of this type we're including in this product. Default 1.",
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "history": {
+            "description": "Physical products have a release date. Virtual products, furthermore, may also be revoked, and even re-added, at Konami's whim. This array of periods of availability tracks both.",
+            "type": "array",
+            "items": {
+              "description": "A span of time this product was (or is, or will be) available.",
+              "type": "object",
+              "required": [],
+              "properties": {
+                "startDate": {
+                  "description": "The date this product was made available. Optional, if you don't know when it debuted.",
+                  "type": "string",
+                  "format": "date"
+                },
+                "endDate": {
+                  "description": "The date this product was revoked. Optional, if it is still available.",
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "printing.json",
+  "title": "Card Printing",
+
+  "description": "Information for a single card in a set. A part of the set JSON.",
+  "type": "object",
+  "required": ["id", "card"],
+  "properties": {
+    "id": {
+      "description": "The UUID of this printing.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "card": {
+      "description": "The UUID of the card this printing represents. Look it up in the card JSON.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "suffix": {
+      "description": "The card code suffix of this card (just the 3 numbers at the end of the code). Not present in sets without set codes.",
+      "type": "string"
+    },
+    "rarity": {
+      "description": "The rarity of this card as it appeared in the set. Only used for physical sets.",
+      "$ref": "rarity.json"
+    },
+    "onlyInBox": {
+      "description": "Some secret/ultimate rares from old booster packs can only be found in either hobby or retail boxes, and not both, as it turns out. Not used in sets without a hobby/retail distinction.",
+      "enum": ["hobby", "retail"]
+    },
+    "price": {
+      "description": "Price information for this printing, if available. All prices are the most recent available as of the creation of this database, and are normalized to USD. No guarantees are made that this price is accurate, or that all sites were considered, or that all languages of this printing were considered.",
+      "type": "number"
+    },
+    "language": {
+      "description": "Some cards are written in different languages than thier locale. (for example, Valuable Book 5 has 3 cards written in 3 different languages). If provided, this indicates that this printing is not in the language of its set.",
+      "type": "string"
+    },
+    "imageID": {
+      "description": "If present, indicates the UUID of what art treatment this card uses, as defined in the card's art JSON.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "history": {
+      "description": "Cards in virtual sets may be added or removed on Konami's whim. This is a record of when cards were added or removed from this virtual set.",
+      "type": "array",
+      "items": {
+        "description": "A span of time this card was (or is, or will be) available.",
+        "type": "object",
+        "required": [],
+        "properties": {
+          "startDate": {
+            "description": "The date this card was made available. Optional, if you don't know when it debuted.",
+            "type": "string",
+            "format": "date"
+          },
+          "endDate": {
+            "description": "The date this card was revoked. Optional, if it is still available.",
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    }
+  }
+}

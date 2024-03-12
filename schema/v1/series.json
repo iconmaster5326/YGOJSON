@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "series.json",
+  "title": "Series/Archetype",
+
+  "description": "A series or archetype of cards.",
+  "type": "object",
+  "required": ["$schema", "id", "name", "archetype", "members"],
+  "properties": {
+    "$schema": {
+      "const": "v1/series.json"
+    },
+    "id": {
+      "description": "The UUID of this series. The name of the series's file should be this UUID.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "name": {
+      "description": "A map of languages to series names.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "archetype": {
+      "description": "An archetype is a series that is referenced exactly by name in the game. A series is just a set of related cards.",
+      "type": "boolean"
+    },
+    "members": {
+      "description": "What cards are part of this series?",
+      "type": "array",
+      "items": {
+        "description": "The UUID of a card.",
+        "type": "string",
+        "format": "uuid"
+      }
+    }
+  }
+}
