@@ -3,7 +3,7 @@ import os.path
 import sys
 import typing
 
-from src.database import Card, Database, load_database
+from src.database import *
 from src.importers.yamlyugi import import_from_yaml_yugi
 
 
