@@ -283,13 +283,24 @@
       "type": "object",
       "required": [],
       "properties": {
-        "yugipediaName": {
-          "description": "The Yugipedia page name for this card.",
-          "type": "string"
-        },
-        "yugipediaID": {
-          "description": "The internal wiki ID for the Yugipedia page for this card.",
-          "type": "integer"
+        "yugipedia": {
+          "description": "Information for Yugipedia. This array is usually 1 element long, but some cards, like Polymerizarion or the God Cards, have multiple Yugipedia pages that represent the same card.",
+          "type": "array",
+          "items": {
+            "description": "A Yugipedia page.",
+            "type": "object",
+            "required": ["id", "name"],
+            "properties": {
+              "name": {
+                "description": "The page name for this card.",
+                "type": "string"
+              },
+              "id": {
+                "description": "The internal wiki ID for the page for this card.",
+                "type": "integer"
+              }
+            }
+          }
         },
         "dbID": {
           "description": "The CID this card has on db.yugioh-card.com.",

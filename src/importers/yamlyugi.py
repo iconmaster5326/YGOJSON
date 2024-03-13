@@ -205,7 +205,11 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
 
     # TODO: duel links
 
-    card.yugipedia_id = in_json["yugipedia_page_id"]
+    yugipedia_id = in_json["yugipedia_page_id"]
+    if not card.yugipedia_pages:
+        card.yugipedia_pages = []
+    if not any(x.id == yugipedia_id for x in card.yugipedia_pages):
+        card.yugipedia_pages.append(YugipediaPage(None, yugipedia_id))
     card.db_id = in_json["konami_id"]
     card.yamlyugi_id = in_json["password"]
     # TODO: the other IDs

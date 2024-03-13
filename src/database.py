@@ -202,6 +202,15 @@ class CardLegality:
         self.history = history
 
 
+class YugipediaPage:
+    name: str
+    id: int
+
+    def __init__(self, name: str, id: int) -> None:
+        self.name = name
+        self.id = id
+
+
 class Card:
     id: uuid.UUID
     text: typing.Dict[str, CardText]
@@ -225,8 +234,7 @@ class Card:
     master_duel_rarity: typing.Optional[VideoGameRaity]
     master_duel_craftable: typing.Optional[bool]
     duel_links_rarity: typing.Optional[VideoGameRaity]
-    yugipedia_name: typing.Optional[str]
-    yugipedia_id: typing.Optional[int]
+    yugipedia_pages: typing.Optional[typing.List[YugipediaPage]]
     db_id: typing.Optional[int]
     ygoprodeck_id: typing.Optional[int]
     ygoprodeck_name: typing.Optional[str]
@@ -259,8 +267,7 @@ class Card:
         master_duel_rarity: typing.Optional[VideoGameRaity] = None,
         master_duel_craftable: typing.Optional[bool] = None,
         duel_links_rarity: typing.Optional[VideoGameRaity] = None,
-        yugipedia_name: typing.Optional[str] = None,
-        yugipedia_id: typing.Optional[int] = None,
+        yugipedia_pages: typing.Optional[typing.List[YugipediaPage]] = None,
         db_id: typing.Optional[int] = None,
         ygoprodeck_id: typing.Optional[int] = None,
         ygoprodeck_name: typing.Optional[str] = None,
@@ -290,8 +297,7 @@ class Card:
         self.master_duel_rarity = master_duel_rarity
         self.master_duel_craftable = master_duel_craftable
         self.duel_links_rarity = duel_links_rarity
-        self.yugipedia_name = yugipedia_name
-        self.yugipedia_id = yugipedia_id
+        self.yugipedia_pages = yugipedia_pages
         self.db_id = db_id
         self.ygoprodeck_id = ygoprodeck_id
         self.ygoprodeck_name = ygoprodeck_name
@@ -396,11 +402,14 @@ class Card:
             ),
             "externalIDs": {
                 **(
-                    {"yugipediaName": self.yugipedia_name}
-                    if self.yugipedia_name
+                    {
+                        "yugipedia": [
+                            {"name": x.name, "id": x.id} for x in self.yugipedia_pages
+                        ]
+                    }
+                    if self.yugipedia_pages
                     else {}
                 ),
-                **({"yugipediaID": self.yugipedia_id} if self.yugipedia_id else {}),
                 **({"dbID": self.db_id} if self.db_id else {}),
                 **({"ygoprodeckID": self.ygoprodeck_id} if self.ygoprodeck_id else {}),
                 **(
@@ -474,8 +483,8 @@ class Database:
             self.cards_by_en_name[card.text["en"].name] = card
         if card.db_id:
             self.cards_by_konami_cid[card.db_id] = card
-        if card.yugipedia_id:
-            self.cards_by_yugipedia_id[card.yugipedia_id] = card
+        for page in card.yugipedia_pages or []:
+            self.cards_by_yugipedia_id[page.id] = card
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -629,8 +638,12 @@ class Database:
             duel_links_rarity=VideoGameRaity(rawcard["duelLinks"]["rarity"])
             if "duelLinks" in rawcard
             else None,
-            yugipedia_name=rawcard["externalIDs"].get("yugipediaName"),
-            yugipedia_id=rawcard["externalIDs"].get("yugipediaID"),
+            yugipedia_pages=[
+                YugipediaPage(x["name"], x["id"])
+                for x in rawcard["externalIDs"]["yugipedia"]
+            ]
+            if "yugipedia" in rawcard["externalIDs"]
+            else None,
             db_id=rawcard["externalIDs"].get("dbID"),
             ygoprodeck_id=rawcard["externalIDs"].get("ygoprodeckID"),
             ygoprodeck_name=rawcard["externalIDs"].get("ygoprodeckName"),

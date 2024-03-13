@@ -566,8 +566,15 @@ def parse_card(
 
     # TODO: images, sets, legality, video games
 
-    card.yugipedia_name = page.name
-    card.yugipedia_id = page.id
+    if not card.yugipedia_pages:
+        card.yugipedia_pages = []
+    for existing_page in card.yugipedia_pages or []:
+        if not existing_page.name and existing_page.id == page.id:
+            existing_page.name = page.name
+        elif not existing_page.id and existing_page.name == page.name:
+            existing_page.id = page.id
+    if not any(x.id == page.id for x in card.yugipedia_pages):
+        card.yugipedia_pages.append(YugipediaPage(page.name, page.id))
 
     value = get_cardtable2_entry(cardtable, "database_id", "")
     vmatch = re.match(r"^\d+", value.strip())
