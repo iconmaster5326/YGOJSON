@@ -51,11 +51,11 @@ class WikiPage:
 
 
 class ChangeType(enum.Enum):
-    CATEGORIZE = ("categorize",)
-    EDIT = ("edit",)
-    EXTERNAL = ("external",)
-    LOG = ("log",)
-    NEW = ("new",)
+    CATEGORIZE = "categorize"
+    EDIT = "edit"
+    EXTERNAL = "external"
+    LOG = "log"
+    NEW = "new"
 
 
 class ChangelogEntry(WikiPage):
