@@ -461,7 +461,7 @@ class Database:
         self.cards_by_konami_cid = {}
         self.cards_by_yugipedia_id = {}
 
-    def addCard(self, card: Card):
+    def add_card(self, card: Card):
         if card.id not in self.cards_by_id:
             self.cards.append(card)
 
@@ -673,7 +673,7 @@ def load_database(
         ) as outfile:
             for card_json in json.load(outfile):
                 card = result._load_card(card_json)
-                result.addCard(card)
+                result.add_card(card)
                 if progress_monitor:
                     progress_monitor(card)
     else:
@@ -683,7 +683,7 @@ def load_database(
                 encoding="utf-8",
             ) as outfile:
                 card = result._load_card(json.load(outfile))
-            result.addCard(card)
+            result.add_card(card)
             if progress_monitor:
                 progress_monitor(card)
 

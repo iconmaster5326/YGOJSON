@@ -5,6 +5,7 @@ import typing
 
 from src.database import *
 from src.importers.yamlyugi import import_from_yaml_yugi
+from src.importers.yugipedia import import_from_yugipedia
 
 
 def main(argv: typing.Optional[typing.List[str]] = None) -> int:
@@ -55,6 +56,10 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     print()
     print("Importing Yaml Yugi data...")
     n_old, n_new = import_from_yaml_yugi(db, progress_monitor=dbpm)
+    print()
+    print(f"Added {n_new} cards and updated {n_old} cards.")
+    print("Importing Yugipedia data...")
+    n_old, n_new = import_from_yugipedia(db, progress_monitor=dbpm)
     print()
     print(f"Added {n_new} cards and updated {n_old} cards.")
     print("Saving cards...")

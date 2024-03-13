@@ -29,7 +29,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     py_modules=[],
     python_requires=">=3.8, <4",
-    install_requires=["requests"],
+    install_requires=["requests", "wikitextparser"],
     extras_require={
         "dev": ["pre-commit"],
         "test": [],

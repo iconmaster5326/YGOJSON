@@ -262,12 +262,11 @@ def import_from_yaml_yugi(
     for in_card in yamlyugi:
         found, card = _import_card(in_card, db)
         if found:
-            # print(f"warning: found duplicate: {card.text['en'].name} with ID {card.id}")
             n_existing += 1
         else:
             n_new += 1
         card = _write_card(in_card, card)
-        db.addCard(card)
+        db.add_card(card)
         if progress_monitor:
             progress_monitor(card, found)
 
