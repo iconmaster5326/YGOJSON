@@ -225,6 +225,11 @@ def _import_card(
 
     if "konami_id" in in_json and in_json["konami_id"] in db.cards_by_konami_cid:
         return True, db.cards_by_konami_cid[in_json["konami_id"]]
+    if (
+        "yugipedia_page_id" in in_json
+        and in_json["yugipedia_page_id"] in db.cards_by_yugipedia_id
+    ):
+        return True, db.cards_by_yugipedia_id[in_json["yugipedia_page_id"]]
     if "password" in in_json and in_json["password"] in db.cards_by_yamlyugi:
         return True, db.cards_by_yamlyugi[in_json["password"]]
     if (

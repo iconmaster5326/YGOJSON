@@ -2,6 +2,7 @@
 import datetime
 import json
 import os.path
+import re
 import time
 import typing
 import uuid
@@ -17,7 +18,7 @@ RATE_LIMIT = 1.1
 
 CACHED_DATA_FILENAME = "yugipedia_data.json"
 CARDS_FILENAME = "yugipedia_cards.json"
-
+TOKENS_FILENAME = "yugipedia_tokens.json"
 
 _last_access = time.time()
 
@@ -228,6 +229,23 @@ CAT_TCG_CARDS = "Category:TCG cards"
 CAT_OCG_CARDS = "Category:OCG cards"
 
 
+def get_token_ids() -> typing.Set[int]:
+    path = os.path.join(TEMP_DIR, TOKENS_FILENAME)
+
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as file:
+            return {x for x in json.load(file)}
+
+    seen = set()
+    for page in get_cateogry_members("Category:Tokens"):
+        seen.add(page.id)
+
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump([x for x in seen], file, indent=2)
+
+    return seen
+
+
 def get_card_pages() -> typing.Iterable[WikiPage]:
     path = os.path.join(TEMP_DIR, CARDS_FILENAME)
 
@@ -292,6 +310,7 @@ def get_cards_changed(
         elif change.type == ChangeType.CATEGORIZE or change.type == ChangeType.NEW:
             new_cards.append(change)
     for card_w_data in get_page_data(new_cards, True):
+        # TODO: this won't work
         if CAT_TCG_CARDS in card_w_data.data or CAT_OCG_CARDS in card_w_data.data:
             yield card_w_data
 
@@ -309,15 +328,256 @@ def get_cardtable2_entry(
         return default
 
 
-def parse_card(card: Card, data: wikitextparser.WikiText) -> bool:
+LOCALES = {
+    "": "en",
+    "en": "en",
+    "fr": "fr",
+    "de": "de",
+    "it": "it",
+    "pt": "pt",
+    "es": "es",
+    "ja": "ja",
+    "ko": "ko",
+    "tc": "zh-TW",
+    "sc": "zh-CN",
+}
+
+LOCALES_FULL = {
+    "English": "en",
+    # TODO
+}
+
+MONSTER_CARD_TYPES = {
+    "Ritual": MonsterCardType.RITUAL,
+    "Fusion": MonsterCardType.FUSION,
+    "Synchro": MonsterCardType.SYNCHRO,
+    "Xyz": MonsterCardType.XYZ,
+    "Pendulum": MonsterCardType.PENDULUM,
+    "Link": MonsterCardType.LINK,
+}
+TYPES = {
+    "Beast-Warrior": Race.BEASTWARRIOR,
+    "Zombie": Race.ZOMBIE,
+    "Fiend": Race.FIEND,
+    "Dinosaur": Race.DINOSAUR,
+    "Dragon": Race.DRAGON,
+    "Beast": Race.BEAST,
+    "Illusion": Race.ILLUSION,
+    "Insect": Race.INSECT,
+    "Winged Beast": Race.WINGEDBEAST,
+    "Warrior": Race.WARRIOR,
+    "Sea Serpent": Race.SEASERPENT,
+    "Aqua": Race.AQUA,
+    "Pyro": Race.PYRO,
+    "Thunder": Race.THUNDER,
+    "Spellcaster": Race.SPELLCASTER,
+    "Plant": Race.PLANT,
+    "Rock": Race.ROCK,
+    "Reptile": Race.REPTILE,
+    "Fairy": Race.FAIRY,
+    "Fish": Race.FISH,
+    "Machine": Race.MACHINE,
+    "Divine-Beast": Race.DIVINEBEAST,
+    "Psychic": Race.PSYCHIC,
+    "Creator God": Race.CREATORGOD,
+    "Wyrm": Race.WYRM,
+    "Cyberse": Race.CYBERSE,
+}
+CLASSIFICATIONS = {
+    "Normal": Classification.NORMAL,
+    "Effect": Classification.EFFECT,
+    "Pendulum": Classification.PENDULUM,
+    "Tuner": Classification.TUNER,
+    # specialsummon omitted
+}
+ABILITIES = {
+    "Toon": Ability.TOON,
+    "Spirit": Ability.SPIRIT,
+    "Union": Ability.UNION,
+    "Gemini": Ability.GEMINI,
+    "Flip": Ability.FLIP,
+}
+
+
+def parse_card(
+    page: WikiPage,
+    card: Card,
+    data: wikitextparser.WikiText,
+    token_ids: typing.Set[int],
+) -> bool:
     """
     Parse a card from a wiki page. Returns False if this is not actually a valid card
     for the database, and True otherwise.
     """
+
+    if page.id in token_ids:
+        # print(f"warning: skipping card in tokens cateogry: {page.name}")
+        return False
+
     cardtable = next(
         iter([x for x in data.templates if x.name.strip() == "CardTable2"])
     )
-    return False
+
+    for locale, key in LOCALES.items():
+        value = get_cardtable2_entry(cardtable, locale + "_name" if locale else "name")
+        if not locale and not value:
+            value = page.name
+        if value and value.strip():
+            value = value.strip()
+            card.text.setdefault(key, CardText(name=value))
+            card.text[key].name = value
+        value = get_cardtable2_entry(cardtable, locale + "_lore" if locale else "lore")
+        if value and value.strip():
+            if key not in card.text:
+                # print(f"warning: card has no name in {key} but has effect: {page.name}")
+                pass
+            else:
+                card.text[key].effect = value.strip()
+        value = get_cardtable2_entry(
+            cardtable, locale + "_pendulum_effect" if locale else "pendulum_effect"
+        )
+        if value and value.strip():
+            if key not in card.text:
+                # print(f"warning: card has no name in {key} but has pend. effect: {page.name}")
+                pass
+            else:
+                card.text[key].pendulum_effect = value.strip()
+        if any(
+            (t.name.strip() == "Unofficial name" or t.name.strip() == "Unofficial lore")
+            and LOCALES_FULL.get(t.arguments[0].value.strip()) == key
+            for t in data.templates
+        ):
+            if key not in card.text:
+                # print(f"warning: card has no name in {key} but is unofficial: {page.name}")
+                pass
+            else:
+                card.text[key].official = False
+
+    if card.card_type == CardType.MONSTER:
+        typeline = get_cardtable2_entry(cardtable, "types")
+        if not typeline:
+            print(f"warning: monster has no typeline: {page.name}")
+            return False
+        if "Skill" in typeline:
+            # print(f"warning: skipping skill card: {page.name}")
+            return False
+        if "Token" in typeline:
+            # print(f"warning: skipping token card: {page.name}")
+            return False
+
+        value = get_cardtable2_entry(cardtable, "attribute")
+        if not value:
+            print(f"warning: monster has no attribute: {page.name}")
+            return False
+        if value.strip().lower() not in Attribute._value2member_map_:
+            print(f"warning: unknown attribute '{value.strip()}' in {page.name}")
+            return False
+        card.attribute = Attribute(value.strip().lower())
+
+        typeline = [x.strip() for x in typeline.split("/")]
+        for x in typeline:
+            if (
+                x not in MONSTER_CARD_TYPES
+                and x not in TYPES
+                and x not in CLASSIFICATIONS
+                and x not in ABILITIES
+            ):
+                print(f"warning: monster typeline bit unknown in {page.name}: {x}")
+        if not card.monster_card_types:
+            card.monster_card_types = []
+        for k, v in MONSTER_CARD_TYPES.items():
+            if k in typeline and v not in card.monster_card_types:
+                card.monster_card_types.append(v)
+        for k, v in TYPES.items():
+            if k in typeline:
+                card.type = v
+        if not card.classifications:
+            card.classifications = []
+        for k, v in CLASSIFICATIONS.items():
+            if k in typeline and v not in card.classifications:
+                card.classifications.append(v)
+        if not card.abilities:
+            card.abilities = []
+        for k, v in ABILITIES.items():
+            if k in typeline and v not in card.abilities:
+                card.abilities.append(v)
+        if not card.type:
+            print(f"warning: monster has no type: {page.name}")
+            return False
+
+        value = get_cardtable2_entry(cardtable, "level")
+        if value:
+            try:
+                card.level = int(value)
+            except ValueError:
+                print(f"warning: unknown level '{value.strip()}' in {page.name}")
+                return False
+
+        value = get_cardtable2_entry(cardtable, "rank")
+        if value:
+            try:
+                card.rank = int(value)
+            except ValueError:
+                print(f"warning: unknown rank '{value.strip()}' in {page.name}")
+                return False
+
+        value = get_cardtable2_entry(cardtable, "atk")
+        if value:
+            try:
+                card.atk = "?" if value.strip() == "?" else int(value)
+            except ValueError:
+                print(f"warning: unknown ATK '{value.strip()}' in {page.name}")
+                return False
+        value = get_cardtable2_entry(cardtable, "def")
+        if value:
+            try:
+                card.def_ = "?" if value.strip() == "?" else int(value)
+            except ValueError:
+                print(f"warning: unknown DEF '{value.strip()}' in {page.name}")
+                return False
+
+        value = get_cardtable2_entry(cardtable, "pendulum_scale")
+        if value:
+            try:
+                card.scale = int(value)
+            except ValueError:
+                print(f"warning: unknown scale '{value.strip()}' in {page.name}")
+                return False
+
+        value = get_cardtable2_entry(cardtable, "link_arrows")
+        if value:
+            card.link_arrows = [
+                LinkArrow(x.lower().replace("-", "").strip()) for x in value.split(",")
+            ]
+    elif card.card_type == CardType.SPELL or card.card_type == CardType.TRAP:
+        value = get_cardtable2_entry(cardtable, "property")
+        if not value:
+            print(f"warning: spelltrap has no subcategory: {page.name}")
+            return False
+        card.subcategory = SubCategory(value.lower().replace("-", "").strip())
+
+    value = get_cardtable2_entry(cardtable, "password")
+    if value:
+        vmatch = re.match(r"^\d+", value.strip())
+        if vmatch and value.strip() not in card.passwords:
+            card.passwords.append(value.strip())
+        if not vmatch and value.strip() and value.strip() != "none":
+            print(f"warning: bad password '{value.strip()}' in card {page.name}")
+
+    # TODO: images, sets, legality, video games
+
+    card.yugipedia_name = page.name
+    card.yugipedia_id = page.id
+
+    value = get_cardtable2_entry(cardtable, "database_id", "")
+    vmatch = re.match(r"^\d+", value.strip())
+    if vmatch:
+        card.db_id = int(vmatch.group(0))
+    # TODO: other ids
+
+    # TODO: errata, series
+
+    return True
 
 
 def import_from_yugipedia(
@@ -325,7 +585,7 @@ def import_from_yugipedia(
     *,
     progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
 ) -> typing.Tuple[int, int]:
-    # db.last_yugipedia_read = None # DEBUG
+    db.last_yugipedia_read = None  # DEBUG
     if db.last_yugipedia_read:
         cards = [
             x
@@ -337,6 +597,8 @@ def import_from_yugipedia(
         cards = [x for x in get_card_pages()]
 
     n_found = n_new = 0
+    token_ids = get_token_ids()
+
     for page in get_page_data(cards):
         data = wikitextparser.parse(page.data or "")
         try:
@@ -357,15 +619,15 @@ def import_from_yugipedia(
             id=uuid.uuid4(), card_type=CardType(ct)
         )
 
-        if parse_card(card, data):
+        if parse_card(page, card, data, token_ids):
             db.add_card(card)
             if found:
                 n_found += 1
             else:
                 n_new += 1
 
-        if progress_monitor:
-            progress_monitor(card, found)
+            if progress_monitor:
+                progress_monitor(card, found)
 
     db.last_yugipedia_read = datetime.datetime.now()
     return n_found, n_new
