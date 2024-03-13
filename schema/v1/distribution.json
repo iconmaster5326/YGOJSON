@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "distribution.json",
+  "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
   "title": "Distribution",
 
   "description": "A distribution is a particlar method of randomly (or not so randomly) laying out cards in a set. This determines how to pull packs, and so on.",
@@ -32,7 +32,7 @@
           "rarity": {
             "description": "The rarity to pull from. Either a rarity string constant, or an array. If it's an array, represents a probability table for each card drawn. If null, will pull from all cards with equal weight.",
             "oneOf": [
-              { "$ref": "rarity.json" },
+              { "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/rarity.json" },
               {
                 "type": "array",
                 "items": {
@@ -48,13 +48,13 @@
                         },
                         "rarity": {
                           "description": "A rarity constant.",
-                          "$ref": "rarity.json"
+                          "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/rarity.json"
                         }
                       }
                     },
                     {
                       "description": "A catchall default rarity. If none of the above chances trigger, the card in this slot is of this rarity. Only use as the last element in the array!",
-                      "$ref": "rarity.json"
+                      "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/rarity.json"
                     }
                   ]
                 }

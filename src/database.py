@@ -12,10 +12,10 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 TEMP_DIR = os.path.join(ROOT_DIR, "temp")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 AGGREGATE_DIR = os.path.join(DATA_DIR, "aggregate")
+META_FILENAME = "meta.json"
 
 CARDLIST_FILENAME = "cards.json"
 CARDS_DIRNAME = "cards"
-
 AGG_CARDS_FILENAME = "cards.json"
 
 
@@ -428,6 +428,13 @@ class Set:
 
 
 class Database:
+    individuals_dir: str
+    aggregates_dir: str
+
+    increment: int
+    last_yamlyugi_read: typing.Optional[datetime.datetime]
+    last_yugipedia_read: typing.Optional[datetime.datetime]
+
     cards: typing.List[Card]
     cards_by_id: typing.Dict[uuid.UUID, Card]
     cards_by_password: typing.Dict[str, Card]
@@ -440,6 +447,10 @@ class Database:
     ):
         self.individuals_dir = individuals_dir
         self.aggregates_dir = aggregates_dir
+
+        self.increment = 0
+        self.last_yamlyugi_read = None
+        self.last_yugipedia_read = None
 
         self.cards = []
         self.cards_by_id = {}
@@ -462,6 +473,36 @@ class Database:
         if card.db_id:
             self.cards_by_konami_cid[card.db_id] = card
 
+    def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/meta.json",
+            "version": SCHEMA_VERSION,
+            "increment": self.increment,
+            **(
+                {"lastYamlyugiRead": self.last_yamlyugi_read.isoformat()}
+                if self.last_yamlyugi_read
+                else {}
+            ),
+            **(
+                {"lastYugipediaRead": self.last_yugipedia_read.isoformat()}
+                if self.last_yugipedia_read
+                else {}
+            ),
+        }
+
+    def _load_meta_json(self, meta_json: typing.Dict[str, typing.Any]):
+        self.increment = meta_json["increment"]
+        self.last_yamlyugi_read = (
+            datetime.datetime.fromisoformat(meta_json["lastYamlyugiRead"])
+            if "lastYamlyugiRead" in meta_json
+            else None
+        )
+        self.last_yugipedia_read = (
+            datetime.datetime.fromisoformat(meta_json["lastYugipediaRead"])
+            if "lastYugipediaRead" in meta_json
+            else None
+        )
+
     def save(
         self,
         *,
@@ -469,8 +510,15 @@ class Database:
         generate_individuals: bool = True,
         generate_aggregates: bool = True,
     ):
+        self.increment += 1
         if generate_individuals:
-            os.makedirs(DATA_DIR, exist_ok=True)
+            os.makedirs(self.individuals_dir, exist_ok=True)
+            with open(
+                os.path.join(self.individuals_dir, META_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump(self._save_meta_json(), outfile, indent=2)
             with open(
                 os.path.join(self.individuals_dir, CARDLIST_FILENAME),
                 "w",
@@ -485,7 +533,13 @@ class Database:
                 if progress_monitor:
                     progress_monitor(card)
         if generate_aggregates:
-            os.makedirs(AGGREGATE_DIR, exist_ok=True)
+            os.makedirs(self.aggregates_dir, exist_ok=True)
+            with open(
+                os.path.join(self.aggregates_dir, META_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump(self._save_meta_json(), outfile, indent=2)
             with open(
                 os.path.join(self.aggregates_dir, AGG_CARDS_FILENAME),
                 "w",
@@ -501,12 +555,7 @@ class Database:
         ) as outfile:
             json.dump(card.to_json(), outfile, indent=2)
 
-    def _load_card(self, id: uuid.UUID) -> Card:
-        with open(
-            os.path.join(self.individuals_dir, CARDS_DIRNAME, str(id) + ".json"),
-            encoding="utf-8",
-        ) as outfile:
-            rawcard: typing.Dict[str, typing.Any] = json.load(outfile)
+    def _load_card(self, rawcard: typing.Dict[str, typing.Any]) -> Card:
         return Card(
             id=uuid.UUID(rawcard["id"]),
             text={
@@ -555,7 +604,7 @@ class Database:
             ],
             sets=[],
             legality={
-                k: CardLegality(
+                Format(k): CardLegality(
                     current=Legality(v.get("current") or "unknown"),
                     history=[
                         LegalityPeriod(
@@ -602,17 +651,36 @@ def load_database(
     aggregates_dir: str = AGGREGATE_DIR,
 ) -> Database:
     result = Database(aggregates_dir=aggregates_dir, individuals_dir=individuals_dir)
+
+    if os.path.exists(os.path.join(aggregates_dir, META_FILENAME)):
+        with open(
+            os.path.join(aggregates_dir, META_FILENAME), encoding="utf-8"
+        ) as outfile:
+            result._load_meta_json(json.load(outfile))
+    elif os.path.exists(os.path.join(individuals_dir, META_FILENAME)):
+        with open(
+            os.path.join(individuals_dir, META_FILENAME), encoding="utf-8"
+        ) as outfile:
+            result._load_meta_json(json.load(outfile))
+
     if os.path.exists(os.path.join(aggregates_dir, AGG_CARDS_FILENAME)):
         with open(
             os.path.join(aggregates_dir, AGG_CARDS_FILENAME), encoding="utf-8"
         ) as outfile:
-            for card in json.load(outfile):
+            for card_json in json.load(outfile):
+                card = result._load_card(card_json)
                 result.addCard(card)
                 if progress_monitor:
                     progress_monitor(card)
     else:
-        for card in (result._load_card(id) for id in result._load_cardlist()):
+        for card_id in result._load_cardlist():
+            with open(
+                os.path.join(individuals_dir, CARDS_DIRNAME, str(card_id) + ".json"),
+                encoding="utf-8",
+            ) as outfile:
+                card = result._load_card(json.load(outfile))
             result.addCard(card)
             if progress_monitor:
                 progress_monitor(card)
+
     return result

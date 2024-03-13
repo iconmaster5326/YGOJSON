@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/meta.json",
+  "title": "YGOJSON Metadata",
+
+  "description": "Metadata for the entire YGOJSON database.",
+  "type": "object",
+  "required": ["$schema", "version", "increment"],
+  "properties": {
+    "$schema": {
+      "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/meta.json"
+    },
+    "version": {
+      "description": "The version number of this schema.",
+      "const": 1
+    },
+    "increment": {
+      "description": "An integer. Starts at 1. Increments by 1 each time YGOJSON is updated.",
+      "type": "integer"
+    },
+    "lastYamlyugiRead": {
+      "description": "The last time of access of Yaml Yugi.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastYugipediaRead": {
+      "description": "The last time of access of Yugipedia.",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

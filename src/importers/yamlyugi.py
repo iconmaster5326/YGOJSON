@@ -173,7 +173,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             card.def_ = in_json["def"]
         if "pendulum_scale" in in_json:
             card.scale = in_json["pendulum_scale"]
-
         if "link_arrows" in in_json:
             card.link_arrows = [LINK_ARROWS[x] for x in in_json["link_arrows"]]
     else:
@@ -255,9 +254,11 @@ def import_from_yaml_yugi(
     Import card data from Yaml Yugi into the given database.
     Returns the number of existing and new cards found in Yaml Yugi.
     """
+
     n_existing = 0
     n_new = 0
     yamlyugi = _get_yaml_yugi()
+
     for in_card in yamlyugi:
         found, card = _import_card(in_card, db)
         if found:
@@ -268,4 +269,7 @@ def import_from_yaml_yugi(
         db.addCard(card)
         if progress_monitor:
             progress_monitor(card, found)
+
+    db.last_yamlyugi_read = datetime.datetime.now()
+
     return n_existing, n_new

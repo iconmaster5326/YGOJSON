@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "set.json",
+  "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
   "title": "Set",
 
   "description": "A set of Yu-Gi-Oh cards. Sets may be physical (booster pack, structure deck, promo card list, etc) or virtual (Master Duel pack, etc).",
@@ -133,14 +133,14 @@
             "description": "Cards in this set.",
             "type": "array",
             "items": {
-              "$ref": "printing.json"
+              "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/printing.json"
             }
           },
           "removedCards": {
             "description": "Cards that were in this set, but have been removed. Used only in virtual sets.",
             "type": "array",
             "items": {
-              "$ref": "printing.json"
+              "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/printing.json"
             }
           },
           "externalIDs": {
