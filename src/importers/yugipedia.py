@@ -227,6 +227,7 @@ def get_cateogry_members_recursive(
 
 CAT_TCG_CARDS = "Category:TCG cards"
 CAT_OCG_CARDS = "Category:OCG cards"
+CAT_TOKENS = "Category:Tokens"
 
 
 def get_token_ids() -> typing.Set[int]:
@@ -237,7 +238,7 @@ def get_token_ids() -> typing.Set[int]:
             return {x for x in json.load(file)}
 
     seen = set()
-    for page in get_cateogry_members("Category:Tokens"):
+    for page in get_cateogry_members(CAT_TOKENS):
         seen.add(page.id)
 
     with open(path, "w", encoding="utf-8") as file:
@@ -299,20 +300,76 @@ def get_changelog(since: datetime.datetime) -> typing.Iterable[ChangelogEntry]:
             )
 
 
-def get_cards_changed(
+def get_changes(
     cards: typing.Iterable[WikiPage], changelog: typing.Iterable[ChangelogEntry]
-) -> typing.Iterable[WikiPage]:
+) -> typing.Tuple[typing.Iterable[WikiPage], typing.Iterable[int]]:
+    """
+    Finds recent changes.
+    Returns a tuple: 1st element is new or changed cards, 2nd is new tokens.
+    """
+    changed_cards: typing.List[WikiPage] = []
+
     card_ids = {x.id for x in cards}
-    new_cards = []
+    pages_to_catcheck: typing.List[ChangelogEntry] = []
     for change in changelog:
         if change.id in card_ids:
-            yield change
+            changed_cards.append(change)
         elif change.type == ChangeType.CATEGORIZE or change.type == ChangeType.NEW:
-            new_cards.append(change)
-    for card_w_data in get_page_data(new_cards, True):
-        # TODO: this won't work
-        if CAT_TCG_CARDS in card_w_data.data or CAT_OCG_CARDS in card_w_data.data:
-            yield card_w_data
+            pages_to_catcheck.append(change)
+
+    new_cards: typing.List[WikiPage] = changed_cards
+    new_tokens: typing.List[int] = []
+    batch: typing.List[ChangelogEntry] = []
+
+    def get_cats():
+        for pages in paginate_query(
+            {
+                "action": "query",
+                "prop": "categories",
+                "pageids": "|".join(str(x.id) for x in batch),
+                "redirects": "1",
+            }
+        ):
+            for page in pages["pages"]:
+                if "categories" in page and any(
+                    x["title"] == CAT_OCG_CARDS or x["title"] == CAT_TCG_CARDS
+                    for x in page["categories"]
+                ):
+                    new_cards.append(WikiPage(page["pageid"], page["title"]))
+                if "categories" in page and any(
+                    x["title"] == CAT_TOKENS for x in page["categories"]
+                ):
+                    new_tokens.append(page["pageid"])
+        batch.clear()
+
+    for page in pages_to_catcheck:
+        batch.append(page)
+        if len(batch) >= EXPORT_MAX:
+            get_cats()
+    if len(batch) > 0:
+        get_cats()
+
+    path = os.path.join(TEMP_DIR, CARDS_FILENAME)
+    with open(path, encoding="utf-8") as file:
+        cards_json = json.load(file)
+    for c in new_cards:
+        if c.id not in card_ids:
+            # print(f"changelog: new card: {c.name}")
+            cards_json.append({"id": c.id, "name": c.name})
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump(cards_json, file)
+
+    path = os.path.join(TEMP_DIR, TOKENS_FILENAME)
+    with open(path, encoding="utf-8") as file:
+        tokens_json = json.load(file)
+    for t in new_tokens:
+        if t not in tokens_json:
+            # print(f"changelog: new token: {t}")
+            tokens_json.append(t)
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump(tokens_json, file)
+
+    return new_cards, new_tokens
 
 
 T = typing.TypeVar("T")
@@ -592,13 +649,13 @@ def import_from_yugipedia(
     *,
     progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
 ) -> typing.Tuple[int, int]:
-    db.last_yugipedia_read = None  # DEBUG
+    # db.last_yugipedia_read = None  # DEBUG
     if db.last_yugipedia_read:
         cards = [
             x
-            for x in get_cards_changed(
+            for x in get_changes(
                 get_card_pages(), get_changelog(db.last_yugipedia_read)
-            )
+            )[0]
         ]
     else:
         cards = [x for x in get_card_pages()]
@@ -606,7 +663,7 @@ def import_from_yugipedia(
     n_found = n_new = 0
     token_ids = get_token_ids()
 
-    for page in get_page_data(cards):
+    for page in get_page_data(cards, db.last_yugipedia_read is not None):
         data = wikitextparser.parse(page.data or "")
         try:
             cardtable = next(
