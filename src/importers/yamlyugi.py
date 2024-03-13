@@ -2,6 +2,7 @@
 
 import json
 import os.path
+import time
 import typing
 import uuid
 
@@ -11,6 +12,7 @@ from ..database import *
 
 DOWNLOAD_URL = "https://github.com/DawnbrandBots/yaml-yugi/raw/aggregate/"
 INPUT_CARDS_FILE = os.path.join(TEMP_DIR, "yamlyugi_cards.json")
+REFRESH_TIMER = 4 * 60 * 60
 
 MONSTER_CARD_TYPES = {
     "Ritual": MonsterCardType.RITUAL,
@@ -97,9 +99,10 @@ def _get_yaml_yugi() -> typing.List[typing.Dict[str, typing.Any]]:
     if _cached_yamlyugi is not None:
         return _cached_yamlyugi
     if os.path.exists(INPUT_CARDS_FILE):
-        with open(INPUT_CARDS_FILE, encoding="utf-8") as in_cards_file:
-            _cached_yamlyugi = json.load(in_cards_file)
-        return _cached_yamlyugi
+        if os.stat(INPUT_CARDS_FILE).st_mtime >= time.time() - REFRESH_TIMER:
+            with open(INPUT_CARDS_FILE, encoding="utf-8") as in_cards_file:
+                _cached_yamlyugi = json.load(in_cards_file)
+            return _cached_yamlyugi
     os.makedirs(TEMP_DIR, exist_ok=True)
     response = requests.get(DOWNLOAD_URL + "cards.json")
     if response.ok:
