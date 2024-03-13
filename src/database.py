@@ -441,6 +441,7 @@ class Database:
     cards_by_yamlyugi: typing.Dict[int, Card]
     cards_by_en_name: typing.Dict[str, Card]
     cards_by_konami_cid: typing.Dict[int, Card]
+    cards_by_yugipedia_id: typing.Dict[int, Card]
 
     def __init__(
         self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
@@ -458,6 +459,7 @@ class Database:
         self.cards_by_yamlyugi = {}
         self.cards_by_en_name = {}
         self.cards_by_konami_cid = {}
+        self.cards_by_yugipedia_id = {}
 
     def addCard(self, card: Card):
         if card.id not in self.cards_by_id:
@@ -472,6 +474,8 @@ class Database:
             self.cards_by_en_name[card.text["en"].name] = card
         if card.db_id:
             self.cards_by_konami_cid[card.db_id] = card
+        if card.yugipedia_id:
+            self.cards_by_yugipedia_id[card.yugipedia_id] = card
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
