@@ -460,7 +460,7 @@ class Database:
         self.cards_by_konami_cid = {}
 
     def addCard(self, card: Card):
-        if str(card.id) not in self.cards_by_id:
+        if card.id not in self.cards_by_id:
             self.cards.append(card)
 
         self.cards_by_id[card.id] = card

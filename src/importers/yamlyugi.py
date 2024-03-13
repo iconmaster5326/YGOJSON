@@ -262,6 +262,7 @@ def import_from_yaml_yugi(
     for in_card in yamlyugi:
         found, card = _import_card(in_card, db)
         if found:
+            # print(f"warning: found duplicate: {card.text['en'].name} with ID {card.id}")
             n_existing += 1
         else:
             n_new += 1
