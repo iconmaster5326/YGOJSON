@@ -59,79 +59,10 @@ def make_request(rawparams: typing.Dict[str, str]) -> requests.Response:
 class WikiPage:
     id: int
     name: str
-    data: typing.Optional[str]
 
-    def __init__(self, id: int, name: str, data: typing.Optional[str] = None) -> None:
+    def __init__(self, id: int, name: str) -> None:
         self.id = id
         self.name = name
-        self.data = data
-
-
-EXPORT_MAX = 50
-
-NAMESPACES = {"mw": "http://www.mediawiki.org/xml/export-0.10/"}
-
-
-def export_pages(pages: typing.Iterable[WikiPage]) -> typing.Iterable[WikiPage]:
-    page_lookup = {str(p.id): p for p in pages}
-    query = {
-        "action": "query",
-        "redirects": "1",
-        "export": 1,
-        "exportnowrap": 1,
-        "pageids": "|".join(str(p.id) for p in pages),
-    }
-    response_text = make_request(query).text
-    pages_xml = xml.etree.ElementTree.fromstring(response_text)
-    n_pages = 0
-    for page_xml in pages_xml.findall("mw:page", NAMESPACES):
-        n_pages += 1
-        page = page_lookup[str(int(page_xml.find("mw:id", NAMESPACES).text))]
-        page.data = (
-            page_xml.find("mw:revision", NAMESPACES).find("mw:text", NAMESPACES).text
-        )
-        yield page
-    if len(page_lookup) != n_pages:
-        print(
-            f"warning: exported {len(page_lookup)} pages, but only got {n_pages} results!"
-        )
-
-
-def get_page_data(
-    pages: typing.Iterable[WikiPage], redownload_old_data: bool = False
-) -> typing.Iterable[WikiPage]:
-    path = os.path.join(TEMP_DIR, CACHED_DATA_FILENAME)
-    cached_data = {}
-
-    if os.path.exists(path):
-        with open(path, encoding="utf-8") as file:
-            cached_data = json.load(file)
-
-    try:
-        queued_for_export = []
-
-        def export() -> typing.Iterable[WikiPage]:
-            for pageToYield in export_pages(queued_for_export):
-                if pageToYield.data:
-                    cached_data[str(pageToYield.id)] = pageToYield.data
-                yield pageToYield
-            queued_for_export.clear()
-
-        for page in pages:
-            if not redownload_old_data and str(page.id) in cached_data:
-                page.data = cached_data[str(page.id)]
-                yield page
-            else:
-                queued_for_export.append(page)
-                if len(queued_for_export) >= EXPORT_MAX:
-                    for x in export():
-                        yield x
-        if len(queued_for_export) > 0:
-            for x in export():
-                yield x
-    finally:
-        with open(path, "w", encoding="utf-8") as file:
-            json.dump(cached_data, file, indent=2)
 
 
 class ChangeType(enum.Enum):
@@ -350,7 +281,7 @@ def get_changes(
 
     for page in pages_to_catcheck:
         batch.append(page)
-        if len(batch) >= EXPORT_MAX:
+        if len(batch) >= BATCH_MAX:
             get_cats()
     if len(batch) > 0:
         get_cats()
@@ -723,6 +654,8 @@ def import_from_yugipedia(
     progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
 ) -> typing.Tuple[int, int]:
     # db.last_yugipedia_read = None  # DEBUG
+    token_ids = get_token_ids()
+
     if db.last_yugipedia_read:
         if (
             datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
@@ -750,37 +683,171 @@ def import_from_yugipedia(
         cards = [x for x in get_card_pages()]
 
     n_found = n_new = 0
-    token_ids = get_token_ids()
 
-    for page in get_page_data(cards, db.last_yugipedia_read is not None):
-        data = wikitextparser.parse(page.data or "")
-        try:
-            cardtable = next(
-                iter([x for x in data.templates if x.name.strip() == "CardTable2"])
-            )
-        except StopIteration:
-            print(f"warning: found card without card table: {page.name}")
-            continue
+    with YugipediaBatcher() as b:
+        for page in cards:
 
-        ct = get_cardtable2_entry(cardtable, "card_type", "monster").strip().lower()
-        if ct not in [x.value for x in CardType]:
-            # print(f"warning: found card with illegal card type: {ct}")
-            continue
+            @b.getPageContents(page.id, useCache=db.last_yugipedia_read is None)
+            def onGetData(raw_data: str):
+                nonlocal n_found, n_new
 
-        found = page.id in db.cards_by_yugipedia_id
-        card = db.cards_by_yugipedia_id.get(page.id) or Card(
-            id=uuid.uuid4(), card_type=CardType(ct)
-        )
+                data = wikitextparser.parse(raw_data)
+                try:
+                    cardtable = next(
+                        iter(
+                            [
+                                x
+                                for x in data.templates
+                                if x.name.strip() == "CardTable2"
+                            ]
+                        )
+                    )
+                except StopIteration:
+                    print(f"warning: found card without card table: {page.name}")
+                    return
 
-        if parse_card(page, card, data, token_ids):
-            db.add_card(card)
-            if found:
-                n_found += 1
-            else:
-                n_new += 1
+                ct = (
+                    get_cardtable2_entry(cardtable, "card_type", "monster")
+                    .strip()
+                    .lower()
+                )
+                if ct not in [x.value for x in CardType]:
+                    # print(f"warning: found card with illegal card type: {ct}")
+                    return
 
-            if progress_monitor:
-                progress_monitor(card, found)
+                found = page.id in db.cards_by_yugipedia_id
+                card = db.cards_by_yugipedia_id.get(page.id) or Card(
+                    id=uuid.uuid4(), card_type=CardType(ct)
+                )
+
+                if parse_card(page, card, data, token_ids):
+                    db.add_card(card)
+                    if found:
+                        n_found += 1
+                    else:
+                        n_new += 1
+
+                    if progress_monitor:
+                        progress_monitor(card, found)
 
     db.last_yugipedia_read = datetime.datetime.now()
     return n_found, n_new
+
+
+BATCH_MAX = 50
+
+PAGES_FILENAME = "yugipedia_pages.json"
+CONTENTS_FILENAME = "yugipedia_contents.json"
+NAMESPACES = {"mw": "http://www.mediawiki.org/xml/export-0.10/"}
+IMAGE_URLS_FILENAME = "yugipedia_images.json"
+
+
+class YugipediaBatcher:
+    def __init__(self) -> None:
+        self.namesToIDs = {}
+        self.idsToNames = {}
+
+        self.pendingGetPageContents = {}
+        self.pageContentsCache = {}
+
+        path = os.path.join(TEMP_DIR, PAGES_FILENAME)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as file:
+                pages = json.load(file)
+                self.namesToIDs = {page["name"]: page["id"] for page in pages}
+                self.idsToNames = {page["id"]: page["name"] for page in pages}
+
+        path = os.path.join(TEMP_DIR, CONTENTS_FILENAME)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as file:
+                self.pageContentsCache = {int(k): v for k, v in json.load(file).items()}
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, exc_tb):
+        while self.pendingGetPageContents:
+            self._executeGetContentsBatch()
+
+        path = os.path.join(TEMP_DIR, PAGES_FILENAME)
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump(
+                [{"id": k, "name": v} for k, v in self.idsToNames.items()],
+                file,
+                indent=2,
+            )
+
+        path = os.path.join(TEMP_DIR, CONTENTS_FILENAME)
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump(
+                {str(k): v for k, v in self.pageContentsCache.items()}, file, indent=2
+            )
+
+    namesToIDs: typing.Dict[str, int]
+    idsToNames: typing.Dict[int, str]
+
+    pageContentsCache: typing.Dict[int, str]
+    pendingGetPageContents: typing.Dict[
+        typing.Union[str, int], typing.List[typing.Callable[[str], None]]
+    ]
+
+    def getPageContents(self, page: typing.Union[str, int], *, useCache: bool = True):
+        batcher = self
+
+        class GetPageXMLDecorator:
+            def __init__(self, callback: typing.Callable[[str], None]) -> None:
+                pageid = (
+                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                )
+                if useCache and pageid in batcher.pageContentsCache:
+                    callback(batcher.pageContentsCache[pageid])
+                else:
+                    batcher.pendingGetPageContents.setdefault(pageid or page, [])
+                    batcher.pendingGetPageContents[pageid or page].append(callback)
+                    if (
+                        sum(1 for x in batcher.pendingGetPageContents.keys())
+                        >= BATCH_MAX
+                    ):
+                        batcher._executeGetContentsBatch()
+
+            def __call__(self) -> None:
+                raise Exception(
+                    "Not supposed to call YugipediaBatcher-decorated function!"
+                )
+
+        return GetPageXMLDecorator
+
+    def _executeGetContentsBatch(self):
+        pages = self.pendingGetPageContents.keys()
+        pageids = [str(p) for p in pages if type(p) is int]
+        pagetitles = [str(p) for p in pages if type(p) is str]
+        query = {
+            "action": "query",
+            "redirects": "1",
+            "export": 1,
+            "exportnowrap": 1,
+            **({"pageids": "|".join(pageids)} if pageids else {}),
+            **({"titles": "|".join(pagetitles)} if pagetitles else {}),
+        }
+        response_text = make_request(query).text
+        pages_xml = xml.etree.ElementTree.fromstring(response_text)
+
+        for page_xml in pages_xml.findall("mw:page", NAMESPACES):
+            id = int(page_xml.find("mw:id", NAMESPACES).text)
+            title = page_xml.find("mw:title", NAMESPACES).text
+
+            self.namesToIDs[title] = id
+            self.idsToNames[id] = title
+
+            contents = (
+                page_xml.find("mw:revision", NAMESPACES)
+                .find("mw:text", NAMESPACES)
+                .text
+            )
+            self.pageContentsCache[id] = contents
+            for callback in self.pendingGetPageContents.get(id, []):
+                callback(contents)
+            for callback in self.pendingGetPageContents.get(title, []):
+                callback(contents)
+
+        self.pendingGetPageContents.clear()
