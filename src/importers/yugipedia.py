@@ -163,56 +163,37 @@ def get_changes(
     batcher: "YugipediaBatcher",
     cards: typing.Iterable[int],
     changelog: typing.Iterable[ChangelogEntry],
-) -> typing.Tuple[typing.Iterable[WikiPage], typing.Iterable[int]]:
+) -> typing.Tuple[typing.Iterable[int], typing.Iterable[int]]:
     """
     Finds recent changes.
     Returns a tuple: 1st element is new or changed cards, 2nd is new tokens.
     """
-    changed_cards: typing.List[WikiPage] = []
+    changed_cards: typing.List[int] = []
 
     card_ids = set(cards)
     pages_to_catcheck: typing.List[ChangelogEntry] = []
     for change in changelog:
         if change.id in card_ids:
-            changed_cards.append(change)
+            changed_cards.append(change.id)
         elif change.type == ChangeType.CATEGORIZE or change.type == ChangeType.NEW:
             pages_to_catcheck.append(change)
 
-    new_cards: typing.List[WikiPage] = changed_cards
+    new_cards: typing.List[int] = changed_cards
     new_tokens: typing.List[int] = []
-    batch: typing.List[ChangelogEntry] = []
+    changelog_entries: typing.List[ChangelogEntry] = []
 
-    def get_cats():
-        for pages in paginate_query(
-            {
-                "action": "query",
-                "prop": "categories",
-                "pageids": "|".join(str(x.id) for x in batch),
-                "redirects": "1",
-            }
-        ):
-            for page in pages["pages"]:
-                # TODO: move this into the batcher
-                batcher.namesToIDs[page["title"]] = page["pageid"]
-                batcher.idsToNames[page["pageid"]] = page["title"]
+    ocg_cat = batcher.namesToIDs[CAT_OCG_CARDS]
+    tcg_cat = batcher.namesToIDs[CAT_TCG_CARDS]
+    token_cat = batcher.namesToIDs[CAT_TOKENS]
 
-                if "categories" in page and any(
-                    x["title"] == CAT_OCG_CARDS or x["title"] == CAT_TCG_CARDS
-                    for x in page["categories"]
-                ):
-                    new_cards.append(WikiPage(page["pageid"], page["title"]))
-                if "categories" in page and any(
-                    x["title"] == CAT_TOKENS for x in page["categories"]
-                ):
-                    new_tokens.append(page["pageid"])
-        batch.clear()
+    for entry in pages_to_catcheck:
 
-    for page in pages_to_catcheck:
-        batch.append(page)
-        if len(batch) >= BATCH_MAX:
-            get_cats()
-    if len(batch) > 0:
-        get_cats()
+        @batcher.getPageCategories(entry.id)
+        def onGetCats(cats: typing.List[int]):
+            if ocg_cat in cats or tcg_cat in cats:
+                new_cards.append(entry.id)
+            if token_cat in cats:
+                new_tokens.append(entry.id)
 
     return new_cards, new_tokens
 
@@ -592,7 +573,7 @@ def import_from_yugipedia(
                 cards = [x for x in get_card_pages(batcher)]
             else:
                 cards = [
-                    x.id
+                    x
                     for x in get_changes(
                         batcher,
                         get_card_pages(batcher),
@@ -663,6 +644,7 @@ CONTENTS_FILENAME = "yugipedia_contents.json"
 NAMESPACES = {"mw": "http://www.mediawiki.org/xml/export-0.10/"}
 IMAGE_URLS_FILENAME = "yugipedia_images.json"
 CAT_MEMBERS_FILENAME = "yugipedia_members.json"
+PAGE_CATS_FILENAME = "yugipedia_categories.json"
 
 
 class CategoryMemberType(enum.Enum):
@@ -685,6 +667,9 @@ class YugipediaBatcher:
         self.pendingGetPageContents = {}
         self.pageContentsCache = {}
 
+        self.pendingGetPageCategories = {}
+        self.pageCategoriesCache = {}
+
         self.categoryMembersCache = {}
 
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)
@@ -698,6 +683,13 @@ class YugipediaBatcher:
         if os.path.exists(path):
             with open(path, encoding="utf-8") as file:
                 self.pageContentsCache = {int(k): v for k, v in json.load(file).items()}
+
+        path = os.path.join(TEMP_DIR, PAGE_CATS_FILENAME)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as file:
+                self.pageCategoriesCache = {
+                    int(k): v for k, v in json.load(file).items()
+                }
 
         path = os.path.join(TEMP_DIR, CAT_MEMBERS_FILENAME)
         if os.path.exists(path):
@@ -716,8 +708,7 @@ class YugipediaBatcher:
         return self
 
     def __exit__(self, exc_type, exc, exc_tb):
-        while self.pendingGetPageContents:
-            self._executeGetContentsBatch()
+        self.flushPendingOperations()
 
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)
         with open(path, "w", encoding="utf-8") as file:
@@ -733,6 +724,12 @@ class YugipediaBatcher:
                 {str(k): v for k, v in self.pageContentsCache.items()}, file, indent=2
             )
 
+        path = os.path.join(TEMP_DIR, PAGE_CATS_FILENAME)
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump(
+                {str(k): v for k, v in self.pageCategoriesCache.items()}, file, indent=2
+            )
+
         path = os.path.join(TEMP_DIR, CAT_MEMBERS_FILENAME)
         with open(path, "w", encoding="utf-8") as file:
             json.dump(
@@ -743,6 +740,11 @@ class YugipediaBatcher:
                 file,
                 indent=2,
             )
+
+    def flushPendingOperations(self):
+        while self.pendingGetPageContents or self.pendingGetPageCategories:
+            self._executeGetContentsBatch()
+            self._executeGetCategoriesBatch()
 
     namesToIDs: typing.Dict[str, int]
     idsToNames: typing.Dict[int, str]
@@ -765,10 +767,7 @@ class YugipediaBatcher:
                 else:
                     batcher.pendingGetPageContents.setdefault(pageid or page, [])
                     batcher.pendingGetPageContents[pageid or page].append(callback)
-                    if (
-                        sum(1 for x in batcher.pendingGetPageContents.keys())
-                        >= BATCH_MAX
-                    ):
+                    if len(batcher.pendingGetPageContents.keys()) >= BATCH_MAX:
                         batcher._executeGetContentsBatch()
 
             def __call__(self) -> None:
@@ -779,7 +778,12 @@ class YugipediaBatcher:
         return GetPageXMLDecorator
 
     def _executeGetContentsBatch(self):
-        pages = self.pendingGetPageContents.keys()
+        if not self.pendingGetPageContents:
+            return
+        pending = {k: v for k, v in self.pendingGetPageContents.items()}
+        self.pendingGetPageContents.clear()
+
+        pages = pending.keys()
         pageids = [str(p) for p in pages if type(p) is int]
         pagetitles = [str(p) for p in pages if type(p) is str]
         query = {
@@ -806,12 +810,98 @@ class YugipediaBatcher:
                 .text
             )
             self.pageContentsCache[id] = contents
-            for callback in self.pendingGetPageContents.get(id, []):
+            for callback in pending.get(id, []):
                 callback(contents)
-            for callback in self.pendingGetPageContents.get(title, []):
+            for callback in pending.get(title, []):
                 callback(contents)
 
-        self.pendingGetPageContents.clear()
+    pageCategoriesCache: typing.Dict[int, typing.List[int]]
+    pendingGetPageCategories: typing.Dict[
+        typing.Union[str, int], typing.List[typing.Callable[[typing.List[int]], None]]
+    ]
+
+    def getPageCategories(self, page: typing.Union[str, int], *, useCache: bool = True):
+        batcher = self
+
+        class GetPageCategoriesDecorator:
+            def __init__(
+                self, callback: typing.Callable[[typing.List[int]], None]
+            ) -> None:
+                pageid = (
+                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                )
+                if useCache and pageid in batcher.pageCategoriesCache:
+                    callback(batcher.pageCategoriesCache[pageid])
+                else:
+                    batcher.pendingGetPageCategories.setdefault(pageid or page, [])
+                    batcher.pendingGetPageCategories[pageid or page].append(callback)
+                    if len(batcher.pendingGetPageCategories.keys()) >= BATCH_MAX:
+                        batcher._executeGetCategoriesBatch()
+
+            def __call__(self) -> None:
+                raise Exception(
+                    "Not supposed to call YugipediaBatcher-decorated function!"
+                )
+
+        return GetPageCategoriesDecorator
+
+    def _executeGetCategoriesBatch(self):
+        if not self.pendingGetPageCategories:
+            return
+        pending = {k: v for k, v in self.pendingGetPageCategories.items()}
+        self.pendingGetPageCategories.clear()
+
+        pages = pending.keys()
+        pageids = [str(p) for p in pages if type(p) is int]
+        pagetitles = [str(p) for p in pages if type(p) is str]
+        query = {
+            "action": "query",
+            "redirects": "1",
+            "prop": "categories",
+            **({"pageids": "|".join(pageids)} if pageids else {}),
+            **({"titles": "|".join(pagetitles)} if pagetitles else {}),
+        }
+        for result_page in paginate_query(query):
+            for result in result_page["pages"]:
+                self.namesToIDs[result["title"]] = result["pageid"]
+                self.idsToNames[result["pageid"]] = result["title"]
+
+                if "categories" not in result:
+                    self.pageCategoriesCache[result["pageid"]] = []
+                    for callback in pending.get(result["pageid"], []):
+                        callback([])
+                    for callback in pending.get(result["title"], []):
+                        callback([])
+                    continue
+
+                unknown_cats = [
+                    x["title"]
+                    for x in result["categories"]
+                    if x["title"] not in self.namesToIDs
+                ]
+                if unknown_cats:
+                    query2 = {
+                        "action": "query",
+                        "redirects": "1",
+                        "titles": "|".join(unknown_cats),
+                    }
+                    for result2_page in paginate_query(query2):
+                        for result2 in result2_page["pages"]:
+                            if "pageid" not in result2:
+                                continue
+                            self.namesToIDs[result2["title"]] = result2["pageid"]
+                            self.idsToNames[result2["pageid"]] = result2["title"]
+
+                cats = [
+                    self.namesToIDs[x["title"]]
+                    for x in result["categories"]
+                    if x["title"] in self.namesToIDs
+                ]
+                self.pageCategoriesCache[result["pageid"]] = cats
+                for callback in pending.get(result["pageid"], []):
+                    callback(cats)
+                for callback in pending.get(result["title"], []):
+                    callback(cats)
 
     categoryMembersCache: typing.Dict[int, typing.List[CategoryMember]]
 
