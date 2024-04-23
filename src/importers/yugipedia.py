@@ -466,6 +466,19 @@ def _strip_markup(s: str) -> str:
     return "\n".join(wikitextparser.remove_markup(x) for x in s.split("\n"))
 
 
+def _get_image_urls(filenames: typing.Iterable[str]) -> typing.Iterable[str]:
+    for response in paginate_query(
+        {
+            "action": "query",
+            "prop": "imageinfo",
+            "titles": "|".join(f"File:{filename}" for filename in filenames),
+            "iiprop": "url",
+        }
+    ):
+        for info in response["pages"]:
+            yield info["imageinfo"][0]["url"]
+
+
 def parse_card(
     page: WikiPage,
     card: Card,
@@ -631,7 +644,57 @@ def parse_card(
         if not vmatch and value.strip() and value.strip() != "none":
             print(f"warning: bad password '{value.strip()}' in card {page.name}")
 
-    # TODO: images, sets, legality, video games
+    # generally, we want YGOProDeck to handle generic images
+    # But if all else fails, we can add one!
+    # TODO: batch image fetches
+    # (this doesn't exactly hammer Yugpedia how we do it now,
+    # since only a handful of cards are Like This,
+    # but we should batch them eventually all the same)
+    if all("yugipedia.com" in (image.card_art or "") for image in card.images):
+        in_images_raw = get_cardtable2_entry(cardtable, "image")
+        if in_images_raw:
+            in_images = [
+                [x.strip() for x in x.split(";")]
+                for x in in_images_raw.split("\n")
+                if x.strip()
+            ]
+            for image in card.images:
+                in_image = in_images.pop(0)
+                if len(in_image) != 1 and len(in_image) != 3:
+                    print(
+                        f"warning: weird image string for {page.name}: {' ; '.join(in_image)}"
+                    )
+                    continue
+                image.card_art = next(
+                    iter(
+                        _get_image_urls(
+                            [in_image[0] if len(in_image) == 1 else in_image[1]]
+                        )
+                    )
+                )
+            for in_image in in_images:
+                if len(in_image) != 1 and len(in_image) != 3:
+                    print(
+                        f"warning: weird image string for {page.name}: {' ; '.join(in_image)}"
+                    )
+                    continue
+                image = CardImage(
+                    id=uuid.uuid4(),
+                    card_art=next(
+                        iter(
+                            _get_image_urls(
+                                [in_image[0] if len(in_image) == 1 else in_image[1]]
+                            )
+                        )
+                    ),
+                )
+                if len(card.passwords) == 1:
+                    # we don't have the full ability to correspond passwords here
+                    # but this will do for 99% of cards
+                    image.password = card.passwords[0]
+                card.images.append(image)
+
+    # TODO: sets, legality, video games
 
     if not card.yugipedia_pages:
         card.yugipedia_pages = []

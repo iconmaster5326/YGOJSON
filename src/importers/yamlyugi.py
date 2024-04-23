@@ -192,7 +192,11 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
         if password not in card.passwords:
             card.passwords.append(password)
 
-    # TODO: images, sets
+    # we skip images here:
+    # they're just links to unresolved Yugipedia images,
+    # which is (a) unhelpful and (b) handled by the Yugipedia importer anyways.
+
+    # TODO: sets
 
     for k, v in (in_json["limit_regulation"] or {}).items():
         if not v:
