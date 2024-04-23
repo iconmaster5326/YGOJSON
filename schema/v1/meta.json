@@ -27,6 +27,11 @@
       "description": "The last time of access of Yugipedia.",
       "type": "string",
       "format": "date-time"
+    },
+    "lastYGOProDeckRead": {
+      "description": "The last time of access of YGOProDeck.",
+      "type": "string",
+      "format": "date-time"
     }
   }
 }

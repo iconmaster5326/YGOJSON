@@ -19,6 +19,7 @@ RATE_LIMIT = 1.1
 CACHED_DATA_FILENAME = "yugipedia_data.json"
 CARDS_FILENAME = "yugipedia_cards.json"
 TOKENS_FILENAME = "yugipedia_tokens.json"
+TIME_TO_JUST_REDOWNLOAD_ALL_PAGES = 30 * 24 * 60 * 60  # 1 month-ish
 
 _last_access = time.time()
 
@@ -45,6 +46,11 @@ def make_request(rawparams: typing.Dict[str, str]) -> requests.Response:
         },
     )
     if not response.ok:
+        if response.status_code == 524:
+            # timeout; servers must be hammered
+            # wait an extended period of time and try again
+            time.sleep(RATE_LIMIT * 10)
+            return make_request(rawparams)
         response.raise_for_status()
     # print(f"Got response: {response.text}")
     return response
@@ -456,6 +462,10 @@ ABILITIES = {
 }
 
 
+def _strip_markup(s: str) -> str:
+    return "\n".join(wikitextparser.remove_markup(x) for x in s.split("\n"))
+
+
 def parse_card(
     page: WikiPage,
     card: Card,
@@ -480,7 +490,7 @@ def parse_card(
         if not locale and not value:
             value = page.name
         if value and value.strip():
-            value = value.strip()
+            value = _strip_markup(value.strip())
             card.text.setdefault(key, CardText(name=value))
             card.text[key].name = value
         value = get_cardtable2_entry(cardtable, locale + "_lore" if locale else "lore")
@@ -489,7 +499,7 @@ def parse_card(
                 # print(f"warning: card has no name in {key} but has effect: {page.name}")
                 pass
             else:
-                card.text[key].effect = value.strip()
+                card.text[key].effect = _strip_markup(value.strip())
         value = get_cardtable2_entry(
             cardtable, locale + "_pendulum_effect" if locale else "pendulum_effect"
         )
@@ -498,7 +508,7 @@ def parse_card(
                 # print(f"warning: card has no name in {key} but has pend. effect: {page.name}")
                 pass
             else:
-                card.text[key].pendulum_effect = value.strip()
+                card.text[key].pendulum_effect = _strip_markup(value.strip())
         if any(
             (t.name.strip() == "Unofficial name" or t.name.strip() == "Unofficial lore")
             and LOCALES_FULL.get(t.arguments[0].value.strip()) == key
@@ -651,12 +661,28 @@ def import_from_yugipedia(
 ) -> typing.Tuple[int, int]:
     # db.last_yugipedia_read = None  # DEBUG
     if db.last_yugipedia_read:
-        cards = [
-            x
-            for x in get_changes(
-                get_card_pages(), get_changelog(db.last_yugipedia_read)
-            )[0]
-        ]
+        if (
+            datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
+            > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
+        ):
+            path = os.path.join(TEMP_DIR, CACHED_DATA_FILENAME)
+            if os.path.exists(path):
+                os.remove(path)
+            path = os.path.join(TEMP_DIR, CARDS_FILENAME)
+            if os.path.exists(path):
+                os.remove(path)
+            path = os.path.join(TEMP_DIR, CARDS_FILENAME)
+            if os.path.exists(path):
+                os.remove(path)
+
+            cards = [x for x in get_card_pages()]
+        else:
+            cards = [
+                x
+                for x in get_changes(
+                    get_card_pages(), get_changelog(db.last_yugipedia_read)
+                )[0]
+            ]
     else:
         cards = [x for x in get_card_pages()]
 

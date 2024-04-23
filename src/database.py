@@ -446,6 +446,7 @@ class Database:
     increment: int
     last_yamlyugi_read: typing.Optional[datetime.datetime]
     last_yugipedia_read: typing.Optional[datetime.datetime]
+    last_ygoprodeck_read: typing.Optional[datetime.datetime]
 
     cards: typing.List[Card]
     cards_by_id: typing.Dict[uuid.UUID, Card]
@@ -454,6 +455,7 @@ class Database:
     cards_by_en_name: typing.Dict[str, Card]
     cards_by_konami_cid: typing.Dict[int, Card]
     cards_by_yugipedia_id: typing.Dict[int, Card]
+    cards_by_ygoprodeck_id: typing.Dict[int, Card]
 
     def __init__(
         self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
@@ -464,6 +466,7 @@ class Database:
         self.increment = 0
         self.last_yamlyugi_read = None
         self.last_yugipedia_read = None
+        self.last_ygoprodeck_read = None
 
         self.cards = []
         self.cards_by_id = {}
@@ -472,6 +475,7 @@ class Database:
         self.cards_by_en_name = {}
         self.cards_by_konami_cid = {}
         self.cards_by_yugipedia_id = {}
+        self.cards_by_ygoprodeck_id = {}
 
     def add_card(self, card: Card):
         if card.id not in self.cards_by_id:
@@ -488,6 +492,8 @@ class Database:
             self.cards_by_konami_cid[card.db_id] = card
         for page in card.yugipedia_pages or []:
             self.cards_by_yugipedia_id[page.id] = card
+        if card.ygoprodeck:
+            self.cards_by_ygoprodeck_id[card.ygoprodeck.id] = card
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -504,6 +510,11 @@ class Database:
                 if self.last_yugipedia_read
                 else {}
             ),
+            **(
+                {"lastYGOProDeckRead": self.last_ygoprodeck_read.isoformat()}
+                if self.last_ygoprodeck_read
+                else {}
+            ),
         }
 
     def _load_meta_json(self, meta_json: typing.Dict[str, typing.Any]):
@@ -516,6 +527,11 @@ class Database:
         self.last_yugipedia_read = (
             datetime.datetime.fromisoformat(meta_json["lastYugipediaRead"])
             if "lastYugipediaRead" in meta_json
+            else None
+        )
+        self.last_ygoprodeck_read = (
+            datetime.datetime.fromisoformat(meta_json["lastYGOProDeckRead"])
+            if "lastYGOProDeckRead" in meta_json
             else None
         )
 
