@@ -306,13 +306,20 @@
           "description": "The CID this card has on db.yugioh-card.com.",
           "type": "integer"
         },
-        "ygoprodeckID": {
-          "description": "The internal ID in YGOProDeck for this card. Usually the password of the card, but may be an invented password, in the case of passwordless cards.",
-          "type": "integer"
-        },
-        "ygoprodeckName": {
-          "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/card/' to get the card's page.",
-          "type": "string"
+        "ygoprodeck": {
+          "description": "Information for YGOProDeck, if available",
+          "type": "object",
+          "required": ["id", "name"],
+          "properties": {
+            "name": {
+              "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/card/' to get the card's page.",
+              "type": "string"
+            },
+            "id": {
+              "description": "The internal ID in YGOProDeck for this card. Usually the password of the card, but may be an invented password, in the case of passwordless cards.",
+              "type": "integer"
+            }
+          }
         },
         "yugiohpricesName": {
           "description": "The slug for YugiohPrices and YugiohTopDecks you can use to get the card's page.",

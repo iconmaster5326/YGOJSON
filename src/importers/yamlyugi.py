@@ -212,7 +212,7 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
     if not card.yugipedia_pages:
         card.yugipedia_pages = []
     if not any(x.id == yugipedia_id for x in card.yugipedia_pages):
-        card.yugipedia_pages.append(YugipediaPage(None, yugipedia_id))
+        card.yugipedia_pages.append(ExternalIdPair(None, yugipedia_id))
     card.db_id = in_json["konami_id"]
     card.yamlyugi_id = in_json["password"]
     # TODO: the other IDs

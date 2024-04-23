@@ -202,7 +202,7 @@ class CardLegality:
         self.history = history
 
 
-class YugipediaPage:
+class ExternalIdPair:
     name: str
     id: int
 
@@ -234,7 +234,8 @@ class Card:
     master_duel_rarity: typing.Optional[VideoGameRaity]
     master_duel_craftable: typing.Optional[bool]
     duel_links_rarity: typing.Optional[VideoGameRaity]
-    yugipedia_pages: typing.Optional[typing.List[YugipediaPage]]
+    yugipedia_pages: typing.Optional[typing.List[ExternalIdPair]]
+    ygoprodeck: typing.Optional[ExternalIdPair]
     db_id: typing.Optional[int]
     ygoprodeck_id: typing.Optional[int]
     ygoprodeck_name: typing.Optional[str]
@@ -267,10 +268,9 @@ class Card:
         master_duel_rarity: typing.Optional[VideoGameRaity] = None,
         master_duel_craftable: typing.Optional[bool] = None,
         duel_links_rarity: typing.Optional[VideoGameRaity] = None,
-        yugipedia_pages: typing.Optional[typing.List[YugipediaPage]] = None,
+        yugipedia_pages: typing.Optional[typing.List[ExternalIdPair]] = None,
         db_id: typing.Optional[int] = None,
-        ygoprodeck_id: typing.Optional[int] = None,
-        ygoprodeck_name: typing.Optional[str] = None,
+        ygoprodeck: typing.Optional[ExternalIdPair] = None,
         yugiohprices_name: typing.Optional[str] = None,
         yamlyugi_id: typing.Optional[int] = None,
         series: typing.Optional[typing.List["Series"]] = None,
@@ -299,8 +299,7 @@ class Card:
         self.duel_links_rarity = duel_links_rarity
         self.yugipedia_pages = yugipedia_pages
         self.db_id = db_id
-        self.ygoprodeck_id = ygoprodeck_id
-        self.ygoprodeck_name = ygoprodeck_name
+        self.ygoprodeck = ygoprodeck
         self.yugiohprices_name = yugiohprices_name
         self.yamlyugi_id = yamlyugi_id
         self.series = series or []
@@ -411,10 +410,14 @@ class Card:
                     else {}
                 ),
                 **({"dbID": self.db_id} if self.db_id else {}),
-                **({"ygoprodeckID": self.ygoprodeck_id} if self.ygoprodeck_id else {}),
                 **(
-                    {"ygoprodeckName": self.ygoprodeck_name}
-                    if self.ygoprodeck_name
+                    {
+                        "ygoprodeck": {
+                            "id": self.ygoprodeck.id,
+                            "name": self.ygoprodeck.name,
+                        }
+                    }
+                    if self.ygoprodeck
                     else {}
                 ),
                 **(
@@ -639,14 +642,18 @@ class Database:
             if "duelLinks" in rawcard
             else None,
             yugipedia_pages=[
-                YugipediaPage(x["name"], x["id"])
+                ExternalIdPair(x["name"], x["id"])
                 for x in rawcard["externalIDs"]["yugipedia"]
             ]
             if "yugipedia" in rawcard["externalIDs"]
             else None,
             db_id=rawcard["externalIDs"].get("dbID"),
-            ygoprodeck_id=rawcard["externalIDs"].get("ygoprodeckID"),
-            ygoprodeck_name=rawcard["externalIDs"].get("ygoprodeckName"),
+            ygoprodeck=ExternalIdPair(
+                name=rawcard["externalIDs"]["ygoprodeck"]["name"],
+                id=rawcard["externalIDs"]["ygoprodeck"]["id"],
+            )
+            if "ygoprodeck" in rawcard["externalIDs"]
+            else None,
             yugiohprices_name=rawcard["externalIDs"].get("yugiohpricesName"),
             yamlyugi_id=rawcard["externalIDs"].get("yamlyugiID"),
             series=[],
