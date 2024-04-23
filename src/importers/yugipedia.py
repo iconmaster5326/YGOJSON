@@ -15,10 +15,6 @@ from ..database import *
 
 API_URL = "https://yugipedia.com/api.php"
 RATE_LIMIT = 1.1
-
-CACHED_DATA_FILENAME = "yugipedia_data.json"
-CARDS_FILENAME = "yugipedia_cards.json"
-TOKENS_FILENAME = "yugipedia_tokens.json"
 TIME_TO_JUST_REDOWNLOAD_ALL_PAGES = 30 * 24 * 60 * 60  # 1 month-ish
 
 _last_access = time.time()
@@ -96,129 +92,55 @@ def paginate_query(query) -> typing.Iterable:
             break
 
 
-def get_cateogry_members(page: typing.Union[str, int]) -> typing.Iterable[WikiPage]:
-    query = {
-        "action": "query",
-        "list": "categorymembers",
-        "redirects": "1",
-        **(
-            {
-                "cmtitle": page,
-            }
-            if type(page) is str
-            else {}
-        ),
-        **(
-            {
-                "cmpageid": page,
-            }
-            if type(page) is int
-            else {}
-        ),
-        "cmlimit": "max",
-        "cmtype": "page",
-    }
-
-    for results in paginate_query(query):
-        for result in results["categorymembers"]:
-            yield WikiPage(result["pageid"], result["title"])
-
-
-def get_subcategories(page: typing.Union[str, int]) -> typing.Iterable[WikiPage]:
-    query = {
-        "action": "query",
-        "list": "categorymembers",
-        "redirects": "1",
-        **(
-            {
-                "cmtitle": page,
-            }
-            if type(page) is str
-            else {}
-        ),
-        **(
-            {
-                "cmpageid": page,
-            }
-            if type(page) is int
-            else {}
-        ),
-        "cmlimit": "max",
-        "cmtype": "subcat",
-    }
-
-    for results in paginate_query(query):
-        for result in results["categorymembers"]:
-            yield WikiPage(result["pageid"], result["title"])
-
-
-def get_cateogry_members_recursive(
-    page: typing.Union[str, int]
-) -> typing.Iterable[WikiPage]:
-    for x in get_cateogry_members(page):
-        yield x
-    for x in get_subcategories(page):
-        for y in get_cateogry_members_recursive(x.id):
-            yield y
-
-
 CAT_TCG_CARDS = "Category:TCG cards"
 CAT_OCG_CARDS = "Category:OCG cards"
+CAT_TCG_SETS = "Category:TCG sets"
+CAT_OCG_SETS = "Category:OCG sets"
 CAT_TOKENS = "Category:Tokens"
 
 
-def get_token_ids() -> typing.Set[int]:
-    path = os.path.join(TEMP_DIR, TOKENS_FILENAME)
-
-    if os.path.exists(path):
-        with open(path, encoding="utf-8") as file:
-            return {x for x in json.load(file)}
-
+def get_token_ids(batcher: "YugipediaBatcher") -> typing.Set[int]:
     seen = set()
-    for page in get_cateogry_members(CAT_TOKENS):
-        seen.add(page.id)
 
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump([x for x in seen], file, indent=2)
+    @batcher.getCategoryMembers(CAT_TOKENS)
+    def catMem(members: typing.List[int]):
+        seen.update(members)
 
     return seen
 
 
-def get_card_pages() -> typing.Iterable[WikiPage]:
-    path = os.path.join(TEMP_DIR, CARDS_FILENAME)
-
-    if os.path.exists(path):
-        with open(path, encoding="utf-8") as file:
-            for page in json.load(file):
-                yield WikiPage(page["id"], page["name"])
-        return
-
+def get_card_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
     result = []
     seen = set()
-    for page in get_cateogry_members(CAT_TCG_CARDS):
-        if page.id not in seen:
-            result.append(page)
-            seen.add(page.id)
-            yield page
-    for page in get_cateogry_members(CAT_OCG_CARDS):
-        if page.id not in seen:
-            result.append(page)
-            seen.add(page.id)
-            yield page
 
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump([{"id": x.id, "name": x.name} for x in result], file, indent=2)
+    @batcher.getCategoryMembers(CAT_TCG_CARDS)
+    def catMem1(members: typing.List[int]):
+        result.extend([x for x in members if x not in seen])
+        seen.update(members)
+
+    @batcher.getCategoryMembers(CAT_OCG_CARDS)
+    def catMem2(members: typing.List[int]):
+        result.extend([x for x in members if x not in seen])
+        seen.update(members)
+
+    return result
 
 
-# def get_set_pages() -> typing.Iterable[WikiPage]:
-#     seen = set()
-#     for x in get_cateogry_members_recursive("Category:OCG sets"):
-#         yield x
-#         seen.add(x.id)
-#     for x in get_cateogry_members_recursive("Category:TCG sets"):
-#         if x.id not in seen:
-#             yield x
-#             seen.add(x.id)
+def get_set_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
+    result = []
+    seen = set()
+
+    @batcher.getCategoryMembersRecursive(CAT_TCG_SETS)
+    def catMem1(members: typing.List[int]):
+        result.extend([x for x in members if x not in seen])
+        seen.update(members)
+
+    @batcher.getCategoryMembersRecursive(CAT_OCG_SETS)
+    def catMem2(members: typing.List[int]):
+        result.extend([x for x in members if x not in seen])
+        seen.update(members)
+
+    return result
 
 
 def get_changelog(since: datetime.datetime) -> typing.Iterable[ChangelogEntry]:
@@ -238,7 +160,9 @@ def get_changelog(since: datetime.datetime) -> typing.Iterable[ChangelogEntry]:
 
 
 def get_changes(
-    cards: typing.Iterable[WikiPage], changelog: typing.Iterable[ChangelogEntry]
+    batcher: "YugipediaBatcher",
+    cards: typing.Iterable[int],
+    changelog: typing.Iterable[ChangelogEntry],
 ) -> typing.Tuple[typing.Iterable[WikiPage], typing.Iterable[int]]:
     """
     Finds recent changes.
@@ -246,7 +170,7 @@ def get_changes(
     """
     changed_cards: typing.List[WikiPage] = []
 
-    card_ids = {x.id for x in cards}
+    card_ids = set(cards)
     pages_to_catcheck: typing.List[ChangelogEntry] = []
     for change in changelog:
         if change.id in card_ids:
@@ -268,6 +192,10 @@ def get_changes(
             }
         ):
             for page in pages["pages"]:
+                # TODO: move this into the batcher
+                batcher.namesToIDs[page["title"]] = page["pageid"]
+                batcher.idsToNames[page["pageid"]] = page["title"]
+
                 if "categories" in page and any(
                     x["title"] == CAT_OCG_CARDS or x["title"] == CAT_TCG_CARDS
                     for x in page["categories"]
@@ -285,26 +213,6 @@ def get_changes(
             get_cats()
     if len(batch) > 0:
         get_cats()
-
-    path = os.path.join(TEMP_DIR, CARDS_FILENAME)
-    with open(path, encoding="utf-8") as file:
-        cards_json = json.load(file)
-    for c in new_cards:
-        if c.id not in card_ids:
-            # print(f"changelog: new card: {c.name}")
-            cards_json.append({"id": c.id, "name": c.name})
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump(cards_json, file)
-
-    path = os.path.join(TEMP_DIR, TOKENS_FILENAME)
-    with open(path, encoding="utf-8") as file:
-        tokens_json = json.load(file)
-    for t in new_tokens:
-        if t not in tokens_json:
-            # print(f"changelog: new token: {t}")
-            tokens_json.append(t)
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump(tokens_json, file)
 
     return new_cards, new_tokens
 
@@ -411,7 +319,8 @@ def _get_image_urls(filenames: typing.Iterable[str]) -> typing.Iterable[str]:
 
 
 def parse_card(
-    page: WikiPage,
+    batcher: "YugipediaBatcher",
+    page: int,
     card: Card,
     data: wikitextparser.WikiText,
     token_ids: typing.Set[int],
@@ -421,7 +330,7 @@ def parse_card(
     for the database, and True otherwise.
     """
 
-    if page.id in token_ids:
+    if page in token_ids:
         # print(f"warning: skipping card in tokens cateogry: {page.name}")
         return False
 
@@ -432,7 +341,7 @@ def parse_card(
     for locale, key in LOCALES.items():
         value = get_cardtable2_entry(cardtable, locale + "_name" if locale else "name")
         if not locale and not value:
-            value = page.name
+            value = batcher.idsToNames[page]
         if value and value.strip():
             value = _strip_markup(value.strip())
             card.text.setdefault(key, CardText(name=value))
@@ -467,21 +376,23 @@ def parse_card(
     if card.card_type == CardType.MONSTER:
         typeline = get_cardtable2_entry(cardtable, "types")
         if not typeline:
-            print(f"warning: monster has no typeline: {page.name}")
+            print(f"warning: monster has no typeline: {batcher.idsToNames[page]}")
             return False
         if "Skill" in typeline:
-            # print(f"warning: skipping skill card: {page.name}")
+            # print(f"warning: skipping skill card: {batcher.idsToNames[page]}")
             return False
         if "Token" in typeline:
-            # print(f"warning: skipping token card: {page.name}")
+            # print(f"warning: skipping token card: {batcher.idsToNames[page]}")
             return False
 
         value = get_cardtable2_entry(cardtable, "attribute")
         if not value:
-            print(f"warning: monster has no attribute: {page.name}")
+            print(f"warning: monster has no attribute: {batcher.idsToNames[page]}")
             return False
         if value.strip().lower() not in Attribute._value2member_map_:
-            print(f"warning: unknown attribute '{value.strip()}' in {page.name}")
+            print(
+                f"warning: unknown attribute '{value.strip()}' in {batcher.idsToNames[page]}"
+            )
             return False
         card.attribute = Attribute(value.strip().lower())
 
@@ -493,7 +404,9 @@ def parse_card(
                 and x not in CLASSIFICATIONS
                 and x not in ABILITIES
             ):
-                print(f"warning: monster typeline bit unknown in {page.name}: {x}")
+                print(
+                    f"warning: monster typeline bit unknown in {batcher.idsToNames[page]}: {x}"
+                )
         if not card.monster_card_types:
             card.monster_card_types = []
         for k, v in MONSTER_CARD_TYPES.items():
@@ -513,7 +426,7 @@ def parse_card(
             if k in typeline and v not in card.abilities:
                 card.abilities.append(v)
         if not card.type:
-            print(f"warning: monster has no type: {page.name}")
+            print(f"warning: monster has no type: {batcher.idsToNames[page]}")
             return False
 
         value = get_cardtable2_entry(cardtable, "level")
@@ -521,7 +434,9 @@ def parse_card(
             try:
                 card.level = int(value)
             except ValueError:
-                print(f"warning: unknown level '{value.strip()}' in {page.name}")
+                print(
+                    f"warning: unknown level '{value.strip()}' in {batcher.idsToNames[page]}"
+                )
                 return False
 
         value = get_cardtable2_entry(cardtable, "rank")
@@ -529,7 +444,9 @@ def parse_card(
             try:
                 card.rank = int(value)
             except ValueError:
-                print(f"warning: unknown rank '{value.strip()}' in {page.name}")
+                print(
+                    f"warning: unknown rank '{value.strip()}' in {batcher.idsToNames[page]}"
+                )
                 return False
 
         value = get_cardtable2_entry(cardtable, "atk")
@@ -537,14 +454,18 @@ def parse_card(
             try:
                 card.atk = "?" if value.strip() == "?" else int(value)
             except ValueError:
-                print(f"warning: unknown ATK '{value.strip()}' in {page.name}")
+                print(
+                    f"warning: unknown ATK '{value.strip()}' in {batcher.idsToNames[page]}"
+                )
                 return False
         value = get_cardtable2_entry(cardtable, "def")
         if value:
             try:
                 card.def_ = "?" if value.strip() == "?" else int(value)
             except ValueError:
-                print(f"warning: unknown DEF '{value.strip()}' in {page.name}")
+                print(
+                    f"warning: unknown DEF '{value.strip()}' in {batcher.idsToNames[page]}"
+                )
                 return False
 
         value = get_cardtable2_entry(cardtable, "pendulum_scale")
@@ -552,7 +473,9 @@ def parse_card(
             try:
                 card.scale = int(value)
             except ValueError:
-                print(f"warning: unknown scale '{value.strip()}' in {page.name}")
+                print(
+                    f"warning: unknown scale '{value.strip()}' in {batcher.idsToNames[page]}"
+                )
                 return False
 
         value = get_cardtable2_entry(cardtable, "link_arrows")
@@ -563,7 +486,7 @@ def parse_card(
     elif card.card_type == CardType.SPELL or card.card_type == CardType.TRAP:
         value = get_cardtable2_entry(cardtable, "property")
         if not value:
-            print(f"warning: spelltrap has no subcategory: {page.name}")
+            print(f"warning: spelltrap has no subcategory: {batcher.idsToNames[page]}")
             return False
         card.subcategory = SubCategory(value.lower().replace("-", "").strip())
 
@@ -573,7 +496,9 @@ def parse_card(
         if vmatch and value.strip() not in card.passwords:
             card.passwords.append(value.strip())
         if not vmatch and value.strip() and value.strip() != "none":
-            print(f"warning: bad password '{value.strip()}' in card {page.name}")
+            print(
+                f"warning: bad password '{value.strip()}' in card {batcher.idsToNames[page]}"
+            )
 
     # generally, we want YGOProDeck to handle generic images
     # But if all else fails, we can add one!
@@ -593,7 +518,7 @@ def parse_card(
                 in_image = in_images.pop(0)
                 if len(in_image) != 1 and len(in_image) != 3:
                     print(
-                        f"warning: weird image string for {page.name}: {' ; '.join(in_image)}"
+                        f"warning: weird image string for {batcher.idsToNames[page]}: {' ; '.join(in_image)}"
                     )
                     continue
                 image.card_art = next(
@@ -606,7 +531,7 @@ def parse_card(
             for in_image in in_images:
                 if len(in_image) != 1 and len(in_image) != 3:
                     print(
-                        f"warning: weird image string for {page.name}: {' ; '.join(in_image)}"
+                        f"warning: weird image string for {batcher.idsToNames[page]}: {' ; '.join(in_image)}"
                     )
                     continue
                 image = CardImage(
@@ -630,12 +555,12 @@ def parse_card(
     if not card.yugipedia_pages:
         card.yugipedia_pages = []
     for existing_page in card.yugipedia_pages or []:
-        if not existing_page.name and existing_page.id == page.id:
-            existing_page.name = page.name
-        elif not existing_page.id and existing_page.name == page.name:
-            existing_page.id = page.id
-    if not any(x.id == page.id for x in card.yugipedia_pages):
-        card.yugipedia_pages.append(ExternalIdPair(page.name, page.id))
+        if not existing_page.name and existing_page.id == page:
+            existing_page.name = batcher.idsToNames[page]
+        elif not existing_page.id and existing_page.name == batcher.idsToNames[page]:
+            existing_page.id = page
+    if not any(x.id == page for x in card.yugipedia_pages):
+        card.yugipedia_pages.append(ExternalIdPair(batcher.idsToNames[page], page))
 
     value = get_cardtable2_entry(cardtable, "database_id", "")
     vmatch = re.match(r"^\d+", value.strip())
@@ -654,40 +579,35 @@ def import_from_yugipedia(
     progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
 ) -> typing.Tuple[int, int]:
     # db.last_yugipedia_read = None  # DEBUG
-    token_ids = get_token_ids()
+    with YugipediaBatcher() as batcher:
+        token_ids = get_token_ids(batcher)
 
-    if db.last_yugipedia_read:
-        if (
-            datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
-            > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
-        ):
-            path = os.path.join(TEMP_DIR, CACHED_DATA_FILENAME)
-            if os.path.exists(path):
-                os.remove(path)
-            path = os.path.join(TEMP_DIR, CARDS_FILENAME)
-            if os.path.exists(path):
-                os.remove(path)
-            path = os.path.join(TEMP_DIR, CARDS_FILENAME)
-            if os.path.exists(path):
-                os.remove(path)
-
-            cards = [x for x in get_card_pages()]
+        cards: typing.List[int]
+        if db.last_yugipedia_read:
+            if (
+                datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
+                > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
+            ):
+                # TODO: clear cache
+                cards = [x for x in get_card_pages(batcher)]
+            else:
+                cards = [
+                    x.id
+                    for x in get_changes(
+                        batcher,
+                        get_card_pages(batcher),
+                        get_changelog(db.last_yugipedia_read),
+                    )[0]
+                ]
         else:
-            cards = [
-                x
-                for x in get_changes(
-                    get_card_pages(), get_changelog(db.last_yugipedia_read)
-                )[0]
-            ]
-    else:
-        cards = [x for x in get_card_pages()]
+            cards = [x for x in get_card_pages(batcher)]
 
     n_found = n_new = 0
 
-    with YugipediaBatcher() as b:
-        for page in cards:
+    with YugipediaBatcher() as batcher:
+        for pageid in cards:
 
-            @b.getPageContents(page.id, useCache=db.last_yugipedia_read is None)
+            @batcher.getPageContents(pageid, useCache=db.last_yugipedia_read is None)
             def onGetData(raw_data: str):
                 nonlocal n_found, n_new
 
@@ -703,7 +623,9 @@ def import_from_yugipedia(
                         )
                     )
                 except StopIteration:
-                    print(f"warning: found card without card table: {page.name}")
+                    print(
+                        f"warning: found card without card table: {batcher.idsToNames[pageid]}"
+                    )
                     return
 
                 ct = (
@@ -715,12 +637,12 @@ def import_from_yugipedia(
                     # print(f"warning: found card with illegal card type: {ct}")
                     return
 
-                found = page.id in db.cards_by_yugipedia_id
-                card = db.cards_by_yugipedia_id.get(page.id) or Card(
+                found = pageid in db.cards_by_yugipedia_id
+                card = db.cards_by_yugipedia_id.get(pageid) or Card(
                     id=uuid.uuid4(), card_type=CardType(ct)
                 )
 
-                if parse_card(page, card, data, token_ids):
+                if parse_card(batcher, pageid, card, data, token_ids):
                     db.add_card(card)
                     if found:
                         n_found += 1
@@ -740,6 +662,19 @@ PAGES_FILENAME = "yugipedia_pages.json"
 CONTENTS_FILENAME = "yugipedia_contents.json"
 NAMESPACES = {"mw": "http://www.mediawiki.org/xml/export-0.10/"}
 IMAGE_URLS_FILENAME = "yugipedia_images.json"
+CAT_MEMBERS_FILENAME = "yugipedia_members.json"
+
+
+class CategoryMemberType(enum.Enum):
+    PAGE = "page"
+    SUBCAT = "subcat"
+    FILE = "file"
+
+
+class CategoryMember(WikiPage):
+    def __init__(self, id: int, name: str, type: CategoryMemberType) -> None:
+        super().__init__(id, name)
+        self.type = type
 
 
 class YugipediaBatcher:
@@ -749,6 +684,8 @@ class YugipediaBatcher:
 
         self.pendingGetPageContents = {}
         self.pageContentsCache = {}
+
+        self.categoryMembersCache = {}
 
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)
         if os.path.exists(path):
@@ -761,6 +698,19 @@ class YugipediaBatcher:
         if os.path.exists(path):
             with open(path, encoding="utf-8") as file:
                 self.pageContentsCache = {int(k): v for k, v in json.load(file).items()}
+
+        path = os.path.join(TEMP_DIR, CAT_MEMBERS_FILENAME)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as file:
+                self.categoryMembersCache = {
+                    int(k): [
+                        CategoryMember(
+                            x["id"], x["name"], CategoryMemberType(x["type"])
+                        )
+                        for x in v
+                    ]
+                    for k, v in json.load(file).items()
+                }
 
     def __enter__(self):
         return self
@@ -781,6 +731,17 @@ class YugipediaBatcher:
         with open(path, "w", encoding="utf-8") as file:
             json.dump(
                 {str(k): v for k, v in self.pageContentsCache.items()}, file, indent=2
+            )
+
+        path = os.path.join(TEMP_DIR, CAT_MEMBERS_FILENAME)
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump(
+                {
+                    k: [{"id": x.id, "name": x.name, "type": x.type.value} for x in v]
+                    for k, v in self.categoryMembersCache.items()
+                },
+                file,
+                indent=2,
             )
 
     namesToIDs: typing.Dict[str, int]
@@ -851,3 +812,158 @@ class YugipediaBatcher:
                 callback(contents)
 
         self.pendingGetPageContents.clear()
+
+    categoryMembersCache: typing.Dict[int, typing.List[CategoryMember]]
+
+    def _populateCatMembers(self, page: typing.Union[str, int]) -> int:
+        query = {
+            "action": "query",
+            "list": "categorymembers",
+            "redirects": "1",
+            **(
+                {
+                    "cmtitle": page,
+                }
+                if type(page) is str
+                else {}
+            ),
+            **(
+                {
+                    "cmpageid": page,
+                }
+                if type(page) is int
+                else {}
+            ),
+            **(
+                {
+                    "titles": page,
+                }
+                if type(page) is str
+                else {}
+            ),
+            **(
+                {
+                    "pageids": page,
+                }
+                if type(page) is int
+                else {}
+            ),
+            "cmlimit": "max",
+            "cmprop": "ids|title|type",
+        }
+
+        members: typing.List[CategoryMember] = []
+        for results in paginate_query(query):
+            for result in results.get("pages") or []:
+                pageid = result["pageid"]
+                self.categoryMembersCache[result["pageid"]] = members
+                self.namesToIDs[result["title"]] = result["pageid"]
+                self.idsToNames[result["pageid"]] = result["title"]
+            for result in results["categorymembers"]:
+                members.append(
+                    CategoryMember(
+                        result["pageid"],
+                        result["title"],
+                        CategoryMemberType(result["type"]),
+                    )
+                )
+
+        return pageid
+
+    def getCategoryMembers(
+        self, page: typing.Union[str, int], *, useCache: bool = True
+    ):
+        batcher = self
+
+        class GetCatMemDecorator:
+            def __init__(
+                self, callback: typing.Callable[[typing.List[int]], None]
+            ) -> None:
+                pageid = (
+                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                )
+
+                if not useCache or pageid not in batcher.categoryMembersCache:
+                    pageid = batcher._populateCatMembers(page)
+
+                if pageid is None:
+                    raise Exception(f"ID not found: {page}")
+
+                callback(
+                    [
+                        x.id
+                        for x in batcher.categoryMembersCache[pageid]
+                        if x.type == CategoryMemberType.FILE
+                    ]
+                )
+
+            def __call__(self) -> None:
+                raise Exception(
+                    "Not supposed to call YugipediaBatcher-decorated function!"
+                )
+
+        return GetCatMemDecorator
+
+    def getSubcategories(self, page: typing.Union[str, int], *, useCache: bool = True):
+        batcher = self
+
+        class GetCatMemDecorator:
+            def __init__(
+                self, callback: typing.Callable[[typing.List[int]], None]
+            ) -> None:
+                pageid = (
+                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                )
+
+                if not useCache or pageid not in batcher.categoryMembersCache:
+                    pageid = batcher._populateCatMembers(page)
+
+                if pageid is None:
+                    raise Exception(f"ID not found: {page}")
+
+                callback(
+                    [
+                        x.id
+                        for x in batcher.categoryMembersCache[pageid]
+                        if x.type == CategoryMemberType.SUBCAT
+                    ]
+                )
+
+            def __call__(self) -> None:
+                raise Exception(
+                    "Not supposed to call YugipediaBatcher-decorated function!"
+                )
+
+        return GetCatMemDecorator
+
+    def getCategoryMembersRecursive(
+        self, page: typing.Union[str, int], *, useCache: bool = True
+    ):
+        batcher = self
+
+        class GetCatMemDecorator:
+            def __init__(
+                self, callback: typing.Callable[[typing.List[int]], None]
+            ) -> None:
+                result = []
+
+                @batcher.getCategoryMembers(page, useCache=useCache)
+                def getMembers(members: typing.List[int]):
+                    result.extend(members)
+
+                @batcher.getSubcategories(page, useCache=useCache)
+                def getSubcats(members: typing.List[int]):
+                    for member in members:
+
+                        @batcher.getCategoryMembersRecursive(member, useCache=useCache)
+                        def recur(members: typing.List[int]):
+                            result.extend(members)
+
+                callback(result)
+
+            def __call__(self) -> None:
+                raise Exception(
+                    "Not supposed to call YugipediaBatcher-decorated function!"
+                )
+
+        return GetCatMemDecorator
