@@ -115,12 +115,12 @@ def get_card_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
 
     @batcher.getCategoryMembers(CAT_TCG_CARDS)
     def catMem1(members: typing.List[int]):
-        result.extend([x for x in members if x not in seen])
+        result.extend(x for x in members if x not in seen)
         seen.update(members)
 
     @batcher.getCategoryMembers(CAT_OCG_CARDS)
     def catMem2(members: typing.List[int]):
-        result.extend([x for x in members if x not in seen])
+        result.extend(x for x in members if x not in seen)
         seen.update(members)
 
     return result
@@ -132,12 +132,12 @@ def get_set_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
 
     @batcher.getCategoryMembersRecursive(CAT_TCG_SETS)
     def catMem1(members: typing.List[int]):
-        result.extend([x for x in members if x not in seen])
+        result.extend(x for x in members if x not in seen)
         seen.update(members)
 
     @batcher.getCategoryMembersRecursive(CAT_OCG_SETS)
     def catMem2(members: typing.List[int]):
-        result.extend([x for x in members if x not in seen])
+        result.extend(x for x in members if x not in seen)
         seen.update(members)
 
     return result
@@ -516,10 +516,6 @@ def parse_card(
 
     # generally, we want YGOProDeck to handle generic images
     # But if all else fails, we can add one!
-    # TODO: batch image fetches
-    # (this doesn't exactly hammer Yugpedia how we do it now,
-    # since only a handful of cards are Like This,
-    # but we should batch them eventually all the same)
     if all("yugipedia.com" in (image.card_art or "") for image in card.images):
         in_images_raw = get_cardtable2_entry(cardtable, "image")
         if in_images_raw:
@@ -590,7 +586,7 @@ def import_from_yugipedia(
         token_ids = get_token_ids(batcher)
 
         cards: typing.List[int]
-        if db.last_yugipedia_read:
+        if db.last_yugipedia_read is not None:
             if (
                 datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
                 > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
@@ -648,9 +644,21 @@ def import_from_yugipedia(
                         return
 
                     found = pageid in db.cards_by_yugipedia_id
-                    card = db.cards_by_yugipedia_id.get(pageid) or Card(
-                        id=uuid.uuid4(), card_type=CardType(ct)
-                    )
+                    card = db.cards_by_yugipedia_id.get(pageid)
+                    if not card:
+                        value = get_cardtable2_entry(cardtable, "database_id", "")
+                        vmatch = re.match(r"^\d+", value.strip())
+                        if vmatch:
+                            card = db.cards_by_konami_cid.get(int(vmatch.group(0)))
+                    if not card:
+                        value = get_cardtable2_entry(cardtable, "password", "")
+                        vmatch = re.match(r"^\d+", value.strip())
+                        if vmatch:
+                            card = db.cards_by_password.get(vmatch.group(0))
+                    if not card:
+                        card = db.cards_by_en_name.get(batcher.idsToNames[pageid])
+                    if not card:
+                        card = Card(id=uuid.uuid4(), card_type=CardType(ct))
 
                     if parse_card(batcher, pageid, card, data, token_ids):
                         db.add_card(card)
@@ -1040,7 +1048,7 @@ class YugipediaBatcher:
                     [
                         x.id
                         for x in batcher.categoryMembersCache[pageid]
-                        if x.type == CategoryMemberType.FILE
+                        if x.type == CategoryMemberType.PAGE
                     ]
                 )
 
