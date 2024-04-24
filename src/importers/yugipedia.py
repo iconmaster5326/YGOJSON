@@ -332,19 +332,6 @@ def _strip_markup(s: str) -> str:
     return "\n".join(wikitextparser.remove_markup(x) for x in s.split("\n"))
 
 
-def _get_image_urls(filenames: typing.Iterable[str]) -> typing.Iterable[str]:
-    for response in paginate_query(
-        {
-            "action": "query",
-            "prop": "imageinfo",
-            "titles": "|".join(f"File:{filename}" for filename in filenames),
-            "iiprop": "url",
-        }
-    ):
-        for info in response["pages"]:
-            yield info["imageinfo"][0]["url"]
-
-
 def parse_card(
     batcher: "YugipediaBatcher",
     page: int,
@@ -541,6 +528,14 @@ def parse_card(
                 for x in in_images_raw.split("\n")
                 if x.strip()
             ]
+
+            def add_image(in_image: list, out_image: CardImage):
+                image_name = in_image[0] if len(in_image) == 1 else in_image[1]
+
+                @batcher.getImageURL("File:" + image_name)
+                def onGetImage(url: str):
+                    out_image.card_art = url
+
             for image in card.images:
                 in_image = in_images.pop(0)
                 if len(in_image) != 1 and len(in_image) != 3:
@@ -548,34 +543,20 @@ def parse_card(
                         f"warning: weird image string for {batcher.idsToNames[page]}: {' ; '.join(in_image)}"
                     )
                     continue
-                image.card_art = next(
-                    iter(
-                        _get_image_urls(
-                            [in_image[0] if len(in_image) == 1 else in_image[1]]
-                        )
-                    )
-                )
+                add_image(in_image, image)
             for in_image in in_images:
                 if len(in_image) != 1 and len(in_image) != 3:
                     print(
                         f"warning: weird image string for {batcher.idsToNames[page]}: {' ; '.join(in_image)}"
                     )
                     continue
-                image = CardImage(
-                    id=uuid.uuid4(),
-                    card_art=next(
-                        iter(
-                            _get_image_urls(
-                                [in_image[0] if len(in_image) == 1 else in_image[1]]
-                            )
-                        )
-                    ),
-                )
+                new_image = CardImage(id=uuid.uuid4())
                 if len(card.passwords) == 1:
                     # we don't have the full ability to correspond passwords here
                     # but this will do for 99% of cards
                     image.password = card.passwords[0]
-                card.images.append(image)
+                add_image(in_image, new_image)
+                card.images.append(new_image)
 
     # TODO: sets, legality, video games
 
@@ -720,6 +701,9 @@ class YugipediaBatcher:
         self.pendingGetPageCategories = {}
         self.pageCategoriesCache = {}
 
+        self.imagesCache = {}
+        self.pendingImages = {}
+
         self.categoryMembersCache = {}
 
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)
@@ -753,6 +737,11 @@ class YugipediaBatcher:
                     ]
                     for k, v in json.load(file).items()
                 }
+
+        path = os.path.join(TEMP_DIR, IMAGE_URLS_FILENAME)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as file:
+                self.imagesCache = {int(k): v for k, v in json.load(file).items()}
 
     def __enter__(self):
         return self
@@ -791,10 +780,25 @@ class YugipediaBatcher:
                 indent=2,
             )
 
+        path = os.path.join(TEMP_DIR, IMAGE_URLS_FILENAME)
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump({str(k): v for k, v in self.imagesCache.items()}, file, indent=2)
+
     def flushPendingOperations(self):
-        while self.pendingGetPageContents or self.pendingGetPageCategories:
+        while (
+            self.pendingGetPageContents
+            or self.pendingGetPageCategories
+            or self.pendingImages
+        ):
             self._executeGetContentsBatch()
             self._executeGetCategoriesBatch()
+            self._executeGetImageURLBatch()
+
+    def clearCache(self):
+        self.categoryMembersCache.clear()
+        self.pageCategoriesCache.clear()
+        self.pageContentsCache.clear()
+        self.imagesCache.clear()
 
     namesToIDs: typing.Dict[str, int]
     idsToNames: typing.Dict[int, str]
@@ -1111,7 +1115,65 @@ class YugipediaBatcher:
 
         return GetCatMemDecorator
 
-    def clearCache(self):
-        self.categoryMembersCache.clear()
-        self.pageCategoriesCache.clear()
-        self.pageContentsCache.clear()
+    imagesCache: typing.Dict[int, str]
+    pendingImages: typing.Dict[
+        typing.Union[int, str], typing.List[typing.Callable[[str], None]]
+    ]
+
+    def getImageURL(self, page: typing.Union[str, int], *, useCache: bool = True):
+        batcher = self
+
+        class GetImageDecorator:
+            def __init__(self, callback: typing.Callable[[str], None]) -> None:
+                pageid = (
+                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                )
+                if useCache and pageid in batcher.imagesCache:
+                    callback(batcher.imagesCache[pageid])
+                else:
+                    batcher.pendingImages.setdefault(pageid or page, [])
+                    batcher.pendingImages[pageid or page].append(callback)
+                    if len(batcher.pendingImages.keys()) >= BATCH_MAX:
+                        batcher._executeGetImageURLBatch()
+
+            def __call__(self) -> None:
+                raise Exception(
+                    "Not supposed to call YugipediaBatcher-decorated function!"
+                )
+
+        return GetImageDecorator
+
+    def _executeGetImageURLBatch(self):
+        if not self.pendingImages:
+            return
+        pending = {k: v for k, v in self.pendingImages.items()}
+        self.pendingImages.clear()
+
+        pages = pending.keys()
+        pageids = [str(p) for p in pages if type(p) is int]
+        pagetitles = [str(p) for p in pages if type(p) is str]
+        query = {
+            "action": "query",
+            "prop": "imageinfo",
+            **({"pageids": "|".join(pageids)} if pageids else {}),
+            **({"titles": "|".join(pagetitles)} if pagetitles else {}),
+            "iiprop": "url",
+        }
+        for result_page in paginate_query(query):
+            for result in result_page["pages"]:
+                pageid = result["pageid"]
+                title = result["title"]
+
+                self.namesToIDs[title] = pageid
+                self.idsToNames[pageid] = title
+
+                if "imageinfo" not in result:
+                    continue
+
+                for image in result["imageinfo"]:
+                    url = image["url"]
+                    self.imagesCache[pageid] = url
+                    for callback in pending.get(pageid, []):
+                        callback(url)
+                    for callback in pending.get(title, []):
+                        callback(url)
