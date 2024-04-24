@@ -216,10 +216,10 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             existing_image = CardImage(id=uuid.uuid4())
             card.images.append(existing_image)
 
-        if in_image["id"] in card.passwords:
+        if in_image["id"] in card.passwords or len(card.passwords) == 1:
             # because of Dark Magician,
             # we can't associate alt arts w/o a unique password here with the primary password.
-            existing_image.password = in_image["id"]
+            existing_image.password = "%08u" % (in_image["id"],)
         existing_image.card_art = in_image["image_url"]
         existing_image.crop_art = in_image["image_url_cropped"]
 
