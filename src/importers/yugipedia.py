@@ -163,10 +163,10 @@ def get_changes(
     batcher: "YugipediaBatcher",
     cards: typing.Iterable[int],
     changelog: typing.Iterable[ChangelogEntry],
-) -> typing.Tuple[typing.Iterable[int], typing.Iterable[int]]:
+) -> typing.Iterable[int]:
     """
     Finds recent changes.
-    Returns a tuple: 1st element is new or changed cards, 2nd is new tokens.
+    Returns any cards changed or newly created.
     """
     changed_cards: typing.List[int] = []
 
@@ -175,27 +175,73 @@ def get_changes(
     for change in changelog:
         if change.id in card_ids:
             changed_cards.append(change.id)
-        elif change.type == ChangeType.CATEGORIZE or change.type == ChangeType.NEW:
+        elif (
+            change.type == ChangeType.CATEGORIZE or change.type == ChangeType.NEW
+        ) and not change.name.startswith("Category:"):
             pages_to_catcheck.append(change)
 
-    new_cards: typing.List[int] = changed_cards
-    new_tokens: typing.List[int] = []
-    changelog_entries: typing.List[ChangelogEntry] = []
-
-    ocg_cat = batcher.namesToIDs[CAT_OCG_CARDS]
-    tcg_cat = batcher.namesToIDs[CAT_TCG_CARDS]
-    token_cat = batcher.namesToIDs[CAT_TOKENS]
+    new_cards: typing.Set[int] = {x for x in changed_cards}
 
     for entry in pages_to_catcheck:
 
-        @batcher.getPageCategories(entry.id)
-        def onGetCats(cats: typing.List[int]):
-            if ocg_cat in cats or tcg_cat in cats:
-                new_cards.append(entry.id)
-            if token_cat in cats:
-                new_tokens.append(entry.id)
+        def do(entry: ChangelogEntry):
+            @batcher.getPageCategories(entry.id, useCache=False)
+            def onGetCats(cats: typing.List[int]):
+                if batcher.namesToIDs[CAT_OCG_CARDS] in cats:
+                    if all(
+                        x.id != entry.id
+                        for x in batcher.categoryMembersCache[
+                            batcher.namesToIDs[CAT_OCG_CARDS]
+                        ]
+                    ):
+                        batcher.categoryMembersCache[
+                            batcher.namesToIDs[CAT_OCG_CARDS]
+                        ].append(
+                            CategoryMember(
+                                id=entry.id,
+                                name=entry.name,
+                                type=CategoryMemberType.PAGE,
+                            )
+                        )
+                    new_cards.add(entry.id)
+                if batcher.namesToIDs[CAT_TCG_CARDS] in cats:
+                    if all(
+                        x.id != entry.id
+                        for x in batcher.categoryMembersCache[
+                            batcher.namesToIDs[CAT_TCG_CARDS]
+                        ]
+                    ):
+                        batcher.categoryMembersCache[
+                            batcher.namesToIDs[CAT_TCG_CARDS]
+                        ].append(
+                            CategoryMember(
+                                id=entry.id,
+                                name=entry.name,
+                                type=CategoryMemberType.PAGE,
+                            )
+                        )
+                    new_cards.add(entry.id)
+                if batcher.namesToIDs[CAT_TOKENS] in cats:
+                    if all(
+                        x.id != entry.id
+                        for x in batcher.categoryMembersCache[
+                            batcher.namesToIDs[CAT_TOKENS]
+                        ]
+                    ):
+                        batcher.categoryMembersCache[
+                            batcher.namesToIDs[CAT_TOKENS]
+                        ].append(
+                            CategoryMember(
+                                id=entry.id,
+                                name=entry.name,
+                                type=CategoryMemberType.PAGE,
+                            )
+                        )
 
-    return new_cards, new_tokens
+        do(entry)
+
+    batcher.flushPendingOperations()
+    return new_cards
 
 
 T = typing.TypeVar("T")
@@ -559,7 +605,6 @@ def import_from_yugipedia(
     *,
     progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
 ) -> typing.Tuple[int, int]:
-    # db.last_yugipedia_read = None  # DEBUG
     with YugipediaBatcher() as batcher:
         token_ids = get_token_ids(batcher)
 
@@ -569,7 +614,7 @@ def import_from_yugipedia(
                 datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
                 > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
             ):
-                # TODO: clear cache
+                batcher.clearCache()
                 cards = [x for x in get_card_pages(batcher)]
             else:
                 cards = [
@@ -578,60 +623,65 @@ def import_from_yugipedia(
                         batcher,
                         get_card_pages(batcher),
                         get_changelog(db.last_yugipedia_read),
-                    )[0]
+                    )
                 ]
+                token_ids = get_token_ids(batcher)
         else:
             cards = [x for x in get_card_pages(batcher)]
 
-    n_found = n_new = 0
+        n_found = n_new = 0
 
-    with YugipediaBatcher() as batcher:
         for pageid in cards:
 
-            @batcher.getPageContents(pageid, useCache=db.last_yugipedia_read is None)
-            def onGetData(raw_data: str):
-                nonlocal n_found, n_new
+            def do(pageid: int):
+                @batcher.getPageContents(
+                    pageid, useCache=db.last_yugipedia_read is None
+                )
+                def onGetData(raw_data: str):
+                    nonlocal n_found, n_new
 
-                data = wikitextparser.parse(raw_data)
-                try:
-                    cardtable = next(
-                        iter(
-                            [
-                                x
-                                for x in data.templates
-                                if x.name.strip() == "CardTable2"
-                            ]
+                    data = wikitextparser.parse(raw_data)
+                    try:
+                        cardtable = next(
+                            iter(
+                                [
+                                    x
+                                    for x in data.templates
+                                    if x.name.strip() == "CardTable2"
+                                ]
+                            )
                         )
+                    except StopIteration:
+                        print(
+                            f"warning: found card without card table: {batcher.idsToNames[pageid]}"
+                        )
+                        return
+
+                    ct = (
+                        get_cardtable2_entry(cardtable, "card_type", "monster")
+                        .strip()
+                        .lower()
                     )
-                except StopIteration:
-                    print(
-                        f"warning: found card without card table: {batcher.idsToNames[pageid]}"
+                    if ct not in [x.value for x in CardType]:
+                        # print(f"warning: found card with illegal card type: {ct}")
+                        return
+
+                    found = pageid in db.cards_by_yugipedia_id
+                    card = db.cards_by_yugipedia_id.get(pageid) or Card(
+                        id=uuid.uuid4(), card_type=CardType(ct)
                     )
-                    return
 
-                ct = (
-                    get_cardtable2_entry(cardtable, "card_type", "monster")
-                    .strip()
-                    .lower()
-                )
-                if ct not in [x.value for x in CardType]:
-                    # print(f"warning: found card with illegal card type: {ct}")
-                    return
+                    if parse_card(batcher, pageid, card, data, token_ids):
+                        db.add_card(card)
+                        if found:
+                            n_found += 1
+                        else:
+                            n_new += 1
 
-                found = pageid in db.cards_by_yugipedia_id
-                card = db.cards_by_yugipedia_id.get(pageid) or Card(
-                    id=uuid.uuid4(), card_type=CardType(ct)
-                )
+                        if progress_monitor:
+                            progress_monitor(card, found)
 
-                if parse_card(batcher, pageid, card, data, token_ids):
-                    db.add_card(card)
-                    if found:
-                        n_found += 1
-                    else:
-                        n_new += 1
-
-                    if progress_monitor:
-                        progress_monitor(card, found)
+            do(pageid)
 
     db.last_yugipedia_read = datetime.datetime.now()
     return n_found, n_new
@@ -861,17 +911,16 @@ class YugipediaBatcher:
             **({"pageids": "|".join(pageids)} if pageids else {}),
             **({"titles": "|".join(pagetitles)} if pagetitles else {}),
         }
+
+        cats_got: typing.Dict[int, typing.List[int]] = {}
+
         for result_page in paginate_query(query):
             for result in result_page["pages"]:
                 self.namesToIDs[result["title"]] = result["pageid"]
                 self.idsToNames[result["pageid"]] = result["title"]
+                cats_got.setdefault(result["pageid"], [])
 
                 if "categories" not in result:
-                    self.pageCategoriesCache[result["pageid"]] = []
-                    for callback in pending.get(result["pageid"], []):
-                        callback([])
-                    for callback in pending.get(result["title"], []):
-                        callback([])
                     continue
 
                 unknown_cats = [
@@ -892,16 +941,20 @@ class YugipediaBatcher:
                             self.namesToIDs[result2["title"]] = result2["pageid"]
                             self.idsToNames[result2["pageid"]] = result2["title"]
 
-                cats = [
-                    self.namesToIDs[x["title"]]
-                    for x in result["categories"]
-                    if x["title"] in self.namesToIDs
-                ]
-                self.pageCategoriesCache[result["pageid"]] = cats
-                for callback in pending.get(result["pageid"], []):
-                    callback(cats)
-                for callback in pending.get(result["title"], []):
-                    callback(cats)
+                cats_got[result["pageid"]].extend(
+                    [
+                        self.namesToIDs[x["title"]]
+                        for x in result["categories"]
+                        if x["title"] in self.namesToIDs
+                    ]
+                )
+
+        for pageid, cats in cats_got.items():
+            self.pageCategoriesCache[pageid] = cats
+            for callback in pending.get(pageid, []):
+                callback(cats)
+            for callback in pending.get(self.idsToNames[pageid], []):
+                callback(cats)
 
     categoryMembersCache: typing.Dict[int, typing.List[CategoryMember]]
 
@@ -1057,3 +1110,8 @@ class YugipediaBatcher:
                 )
 
         return GetCatMemDecorator
+
+    def clearCache(self):
+        self.categoryMembersCache.clear()
+        self.pageCategoriesCache.clear()
+        self.pageContentsCache.clear()
