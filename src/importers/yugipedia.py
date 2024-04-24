@@ -344,8 +344,9 @@ def parse_card(
     for the database, and True otherwise.
     """
 
+    title = batcher.idsToNames[page]
     if page in token_ids:
-        # print(f"warning: skipping card in tokens cateogry: {page.name}")
+        print(f"warning: skipping card in tokens cateogry: {title}")
         return False
 
     cardtable = next(
@@ -355,7 +356,7 @@ def parse_card(
     for locale, key in LOCALES.items():
         value = get_cardtable2_entry(cardtable, locale + "_name" if locale else "name")
         if not locale and not value:
-            value = batcher.idsToNames[page]
+            value = title
         if value and value.strip():
             value = _strip_markup(value.strip())
             card.text.setdefault(key, CardText(name=value))
@@ -363,7 +364,7 @@ def parse_card(
         value = get_cardtable2_entry(cardtable, locale + "_lore" if locale else "lore")
         if value and value.strip():
             if key not in card.text:
-                # print(f"warning: card has no name in {key} but has effect: {page.name}")
+                print(f"warning: card has no name in {key} but has effect: {title}")
                 pass
             else:
                 card.text[key].effect = _strip_markup(value.strip())
@@ -372,7 +373,9 @@ def parse_card(
         )
         if value and value.strip():
             if key not in card.text:
-                # print(f"warning: card has no name in {key} but has pend. effect: {page.name}")
+                print(
+                    f"warning: card has no name in {key} but has pend. effect: {title}"
+                )
                 pass
             else:
                 card.text[key].pendulum_effect = _strip_markup(value.strip())
@@ -382,7 +385,7 @@ def parse_card(
             for t in data.templates
         ):
             if key not in card.text:
-                # print(f"warning: card has no name in {key} but is unofficial: {page.name}")
+                print(f"warning: card has no name in {key} but is unofficial: {title}")
                 pass
             else:
                 card.text[key].official = False
@@ -390,23 +393,21 @@ def parse_card(
     if card.card_type == CardType.MONSTER:
         typeline = get_cardtable2_entry(cardtable, "types")
         if not typeline:
-            print(f"warning: monster has no typeline: {batcher.idsToNames[page]}")
+            print(f"warning: monster has no typeline: {title}")
             return False
         if "Skill" in typeline:
-            # print(f"warning: skipping skill card: {batcher.idsToNames[page]}")
+            print(f"warning: skipping skill card: {title}")
             return False
         if "Token" in typeline:
-            # print(f"warning: skipping token card: {batcher.idsToNames[page]}")
+            print(f"warning: skipping token card: {title}")
             return False
 
         value = get_cardtable2_entry(cardtable, "attribute")
         if not value:
-            print(f"warning: monster has no attribute: {batcher.idsToNames[page]}")
+            print(f"warning: monster has no attribute: {title}")
             return False
         if value.strip().lower() not in Attribute._value2member_map_:
-            print(
-                f"warning: unknown attribute '{value.strip()}' in {batcher.idsToNames[page]}"
-            )
+            print(f"warning: unknown attribute '{value.strip()}' in {title}")
             return False
         card.attribute = Attribute(value.strip().lower())
 
@@ -418,9 +419,7 @@ def parse_card(
                 and x not in CLASSIFICATIONS
                 and x not in ABILITIES
             ):
-                print(
-                    f"warning: monster typeline bit unknown in {batcher.idsToNames[page]}: {x}"
-                )
+                print(f"warning: monster typeline bit unknown in {title}: {x}")
         if not card.monster_card_types:
             card.monster_card_types = []
         for k, v in MONSTER_CARD_TYPES.items():
@@ -440,7 +439,7 @@ def parse_card(
             if k in typeline and v not in card.abilities:
                 card.abilities.append(v)
         if not card.type:
-            print(f"warning: monster has no type: {batcher.idsToNames[page]}")
+            print(f"warning: monster has no type: {title}")
             return False
 
         value = get_cardtable2_entry(cardtable, "level")
@@ -448,9 +447,7 @@ def parse_card(
             try:
                 card.level = int(value)
             except ValueError:
-                print(
-                    f"warning: unknown level '{value.strip()}' in {batcher.idsToNames[page]}"
-                )
+                print(f"warning: unknown level '{value.strip()}' in {title}")
                 return False
 
         value = get_cardtable2_entry(cardtable, "rank")
@@ -458,9 +455,7 @@ def parse_card(
             try:
                 card.rank = int(value)
             except ValueError:
-                print(
-                    f"warning: unknown rank '{value.strip()}' in {batcher.idsToNames[page]}"
-                )
+                print(f"warning: unknown rank '{value.strip()}' in {title}")
                 return False
 
         value = get_cardtable2_entry(cardtable, "atk")
@@ -468,18 +463,14 @@ def parse_card(
             try:
                 card.atk = "?" if value.strip() == "?" else int(value)
             except ValueError:
-                print(
-                    f"warning: unknown ATK '{value.strip()}' in {batcher.idsToNames[page]}"
-                )
+                print(f"warning: unknown ATK '{value.strip()}' in {title}")
                 return False
         value = get_cardtable2_entry(cardtable, "def")
         if value:
             try:
                 card.def_ = "?" if value.strip() == "?" else int(value)
             except ValueError:
-                print(
-                    f"warning: unknown DEF '{value.strip()}' in {batcher.idsToNames[page]}"
-                )
+                print(f"warning: unknown DEF '{value.strip()}' in {title}")
                 return False
 
         value = get_cardtable2_entry(cardtable, "pendulum_scale")
@@ -487,9 +478,7 @@ def parse_card(
             try:
                 card.scale = int(value)
             except ValueError:
-                print(
-                    f"warning: unknown scale '{value.strip()}' in {batcher.idsToNames[page]}"
-                )
+                print(f"warning: unknown scale '{value.strip()}' in {title}")
                 return False
 
         value = get_cardtable2_entry(cardtable, "link_arrows")
@@ -500,7 +489,7 @@ def parse_card(
     elif card.card_type == CardType.SPELL or card.card_type == CardType.TRAP:
         value = get_cardtable2_entry(cardtable, "property")
         if not value:
-            print(f"warning: spelltrap has no subcategory: {batcher.idsToNames[page]}")
+            print(f"warning: spelltrap has no subcategory: {title}")
             return False
         card.subcategory = SubCategory(value.lower().replace("-", "").strip())
 
@@ -510,9 +499,7 @@ def parse_card(
         if vmatch and value.strip() not in card.passwords:
             card.passwords.append(value.strip())
         if not vmatch and value.strip() and value.strip() != "none":
-            print(
-                f"warning: bad password '{value.strip()}' in card {batcher.idsToNames[page]}"
-            )
+            print(f"warning: bad password '{value.strip()}' in card {title}")
 
     # generally, we want YGOProDeck to handle generic images
     # But if all else fails, we can add one!
@@ -536,14 +523,14 @@ def parse_card(
                 in_image = in_images.pop(0)
                 if len(in_image) != 1 and len(in_image) != 3:
                     print(
-                        f"warning: weird image string for {batcher.idsToNames[page]}: {' ; '.join(in_image)}"
+                        f"warning: weird image string for {title}: {' ; '.join(in_image)}"
                     )
                     continue
                 add_image(in_image, image)
             for in_image in in_images:
                 if len(in_image) != 1 and len(in_image) != 3:
                     print(
-                        f"warning: weird image string for {batcher.idsToNames[page]}: {' ; '.join(in_image)}"
+                        f"warning: weird image string for {title}: {' ; '.join(in_image)}"
                     )
                     continue
                 new_image = CardImage(id=uuid.uuid4())
@@ -560,11 +547,11 @@ def parse_card(
         card.yugipedia_pages = []
     for existing_page in card.yugipedia_pages or []:
         if not existing_page.name and existing_page.id == page:
-            existing_page.name = batcher.idsToNames[page]
-        elif not existing_page.id and existing_page.name == batcher.idsToNames[page]:
+            existing_page.name = title
+        elif not existing_page.id and existing_page.name == title:
             existing_page.id = page
     if not any(x.id == page for x in card.yugipedia_pages):
-        card.yugipedia_pages.append(ExternalIdPair(batcher.idsToNames[page], page))
+        card.yugipedia_pages.append(ExternalIdPair(title, page))
 
     value = get_cardtable2_entry(cardtable, "database_id", "")
     vmatch = re.match(r"^\d+", value.strip())
@@ -640,7 +627,7 @@ def import_from_yugipedia(
                         .lower()
                     )
                     if ct not in [x.value for x in CardType]:
-                        # print(f"warning: found card with illegal card type: {ct}")
+                        print(f"warning: found card with illegal card type: {ct}")
                         return
 
                     found = pageid in db.cards_by_yugipedia_id
@@ -844,38 +831,44 @@ class YugipediaBatcher:
             return
         pending = {k: v for k, v in self.pendingGetPageContents.items()}
         self.pendingGetPageContents.clear()
-
         pages = pending.keys()
-        pageids = [str(p) for p in pages if type(p) is int]
-        pagetitles = [str(p) for p in pages if type(p) is str]
-        query = {
-            "action": "query",
-            "redirects": "1",
-            "export": 1,
-            "exportnowrap": 1,
-            **({"pageids": "|".join(pageids)} if pageids else {}),
-            **({"titles": "|".join(pagetitles)} if pagetitles else {}),
-        }
-        response_text = make_request(query).text
-        pages_xml = xml.etree.ElementTree.fromstring(response_text)
 
-        for page_xml in pages_xml.findall("mw:page", NAMESPACES):
-            id = int(page_xml.find("mw:id", NAMESPACES).text)
-            title = page_xml.find("mw:title", NAMESPACES).text
+        def do(pages: typing.Iterable[typing.Union[int, str]]):
+            if not pages:
+                return
+            pageids = [str(p) for p in pages if type(p) is int]
+            pagetitles = [str(p) for p in pages if type(p) is str]
+            query = {
+                "action": "query",
+                "redirects": "1",
+                "export": 1,
+                "exportnowrap": 1,
+                **({"pageids": "|".join(pageids)} if pageids else {}),
+                **({"titles": "|".join(pagetitles)} if pagetitles else {}),
+            }
+            response_text = make_request(query).text
+            pages_xml = xml.etree.ElementTree.fromstring(response_text)
 
-            self.namesToIDs[title] = id
-            self.idsToNames[id] = title
+            for page_xml in pages_xml.findall("mw:page", NAMESPACES):
+                id = int(page_xml.find("mw:id", NAMESPACES).text)
+                title = page_xml.find("mw:title", NAMESPACES).text
 
-            contents = (
-                page_xml.find("mw:revision", NAMESPACES)
-                .find("mw:text", NAMESPACES)
-                .text
-            )
-            self.pageContentsCache[id] = contents
-            for callback in pending.get(id, []):
-                callback(contents)
-            for callback in pending.get(title, []):
-                callback(contents)
+                self.namesToIDs[title] = id
+                self.idsToNames[id] = title
+
+                contents = (
+                    page_xml.find("mw:revision", NAMESPACES)
+                    .find("mw:text", NAMESPACES)
+                    .text
+                )
+                self.pageContentsCache[id] = contents
+                for callback in pending.get(id, []):
+                    callback(contents)
+                for callback in pending.get(title, []):
+                    callback(contents)
+
+        do([str(p) for p in pages if type(p) is int])
+        do([str(p) for p in pages if type(p) is str])
 
     pageCategoriesCache: typing.Dict[int, typing.List[int]]
     pendingGetPageCategories: typing.Dict[
@@ -912,61 +905,67 @@ class YugipediaBatcher:
             return
         pending = {k: v for k, v in self.pendingGetPageCategories.items()}
         self.pendingGetPageCategories.clear()
-
         pages = pending.keys()
-        pageids = [str(p) for p in pages if type(p) is int]
-        pagetitles = [str(p) for p in pages if type(p) is str]
-        query = {
-            "action": "query",
-            "redirects": "1",
-            "prop": "categories",
-            **({"pageids": "|".join(pageids)} if pageids else {}),
-            **({"titles": "|".join(pagetitles)} if pagetitles else {}),
-        }
 
-        cats_got: typing.Dict[int, typing.List[int]] = {}
+        def do(pages: typing.Iterable[typing.Union[int, str]]):
+            if not pages:
+                return
+            pageids = [str(p) for p in pages if type(p) is int]
+            pagetitles = [str(p) for p in pages if type(p) is str]
+            query = {
+                "action": "query",
+                "redirects": "1",
+                "prop": "categories",
+                **({"pageids": "|".join(pageids)} if pageids else {}),
+                **({"titles": "|".join(pagetitles)} if pagetitles else {}),
+            }
 
-        for result_page in paginate_query(query):
-            for result in result_page["pages"]:
-                self.namesToIDs[result["title"]] = result["pageid"]
-                self.idsToNames[result["pageid"]] = result["title"]
-                cats_got.setdefault(result["pageid"], [])
+            cats_got: typing.Dict[int, typing.List[int]] = {}
 
-                if "categories" not in result:
-                    continue
+            for result_page in paginate_query(query):
+                for result in result_page["pages"]:
+                    self.namesToIDs[result["title"]] = result["pageid"]
+                    self.idsToNames[result["pageid"]] = result["title"]
+                    cats_got.setdefault(result["pageid"], [])
 
-                unknown_cats = [
-                    x["title"]
-                    for x in result["categories"]
-                    if x["title"] not in self.namesToIDs
-                ]
-                if unknown_cats:
-                    query2 = {
-                        "action": "query",
-                        "redirects": "1",
-                        "titles": "|".join(unknown_cats),
-                    }
-                    for result2_page in paginate_query(query2):
-                        for result2 in result2_page["pages"]:
-                            if "pageid" not in result2:
-                                continue
-                            self.namesToIDs[result2["title"]] = result2["pageid"]
-                            self.idsToNames[result2["pageid"]] = result2["title"]
+                    if "categories" not in result:
+                        continue
 
-                cats_got[result["pageid"]].extend(
-                    [
-                        self.namesToIDs[x["title"]]
+                    unknown_cats = [
+                        x["title"]
                         for x in result["categories"]
-                        if x["title"] in self.namesToIDs
+                        if x["title"] not in self.namesToIDs
                     ]
-                )
+                    if unknown_cats:
+                        query2 = {
+                            "action": "query",
+                            "redirects": "1",
+                            "titles": "|".join(unknown_cats),
+                        }
+                        for result2_page in paginate_query(query2):
+                            for result2 in result2_page["pages"]:
+                                if "pageid" not in result2:
+                                    continue
+                                self.namesToIDs[result2["title"]] = result2["pageid"]
+                                self.idsToNames[result2["pageid"]] = result2["title"]
 
-        for pageid, cats in cats_got.items():
-            self.pageCategoriesCache[pageid] = cats
-            for callback in pending.get(pageid, []):
-                callback(cats)
-            for callback in pending.get(self.idsToNames[pageid], []):
-                callback(cats)
+                    cats_got[result["pageid"]].extend(
+                        [
+                            self.namesToIDs[x["title"]]
+                            for x in result["categories"]
+                            if x["title"] in self.namesToIDs
+                        ]
+                    )
+
+            for pageid, cats in cats_got.items():
+                self.pageCategoriesCache[pageid] = cats
+                for callback in pending.get(pageid, []):
+                    callback(cats)
+                for callback in pending.get(self.idsToNames[pageid], []):
+                    callback(cats)
+
+        do([str(p) for p in pages if type(p) is int])
+        do([str(p) for p in pages if type(p) is str])
 
     categoryMembersCache: typing.Dict[int, typing.List[CategoryMember]]
 
@@ -1156,32 +1155,41 @@ class YugipediaBatcher:
             return
         pending = {k: v for k, v in self.pendingImages.items()}
         self.pendingImages.clear()
-
         pages = pending.keys()
-        pageids = [str(p) for p in pages if type(p) is int]
-        pagetitles = [str(p) for p in pages if type(p) is str]
-        query = {
-            "action": "query",
-            "prop": "imageinfo",
-            **({"pageids": "|".join(pageids)} if pageids else {}),
-            **({"titles": "|".join(pagetitles)} if pagetitles else {}),
-            "iiprop": "url",
-        }
-        for result_page in paginate_query(query):
-            for result in result_page["pages"]:
-                pageid = result["pageid"]
-                title = result["title"]
 
-                self.namesToIDs[title] = pageid
-                self.idsToNames[pageid] = title
+        def do(pages: typing.Iterable[typing.Union[int, str]]):
+            if not pages:
+                return
+            pageids = [str(p) for p in pages if type(p) is int]
+            pagetitles = [str(p) for p in pages if type(p) is str]
+            query = {
+                "action": "query",
+                "prop": "imageinfo",
+                **({"pageids": "|".join(pageids)} if pageids else {}),
+                **({"titles": "|".join(pagetitles)} if pagetitles else {}),
+                "iiprop": "url",
+            }
+            for result_page in paginate_query(query):
+                for result in result_page["pages"]:
+                    if result.get("missing"):
+                        continue
 
-                if "imageinfo" not in result:
-                    continue
+                    pageid = result["pageid"]
+                    title = result["title"]
 
-                for image in result["imageinfo"]:
-                    url = image["url"]
-                    self.imagesCache[pageid] = url
-                    for callback in pending.get(pageid, []):
-                        callback(url)
-                    for callback in pending.get(title, []):
-                        callback(url)
+                    self.namesToIDs[title] = pageid
+                    self.idsToNames[pageid] = title
+
+                    if "imageinfo" not in result:
+                        continue
+
+                    for image in result["imageinfo"]:
+                        url = image["url"]
+                        self.imagesCache[pageid] = url
+                        for callback in pending.get(pageid, []):
+                            callback(url)
+                        for callback in pending.get(title, []):
+                            callback(url)
+
+        do([str(p) for p in pages if type(p) is int])
+        do([str(p) for p in pages if type(p) is str])
