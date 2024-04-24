@@ -133,7 +133,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
     for lang, text in in_json.get("pendulum_effect", {}).items():
         if "_" not in lang and text is not None:
             card.text[lang].pendulum_effect = text
-    # TODO: translation's status as official
 
     if card.card_type == CardType.MONSTER:
         # monster
@@ -180,7 +179,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             card.link_arrows = [LINK_ARROWS[x] for x in in_json["link_arrows"]]
     else:
         # spell/trap
-        # TODO: don't rely on string manip here
         card.subcategory = SubCategory(
             in_json.get("property", "normal").lower().replace("-", "")
         )
@@ -208,9 +206,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
 
     if "master_duel_rarity" in in_json:
         card.master_duel_rarity = VideoGameRaity(in_json["master_duel_rarity"].lower())
-        # TODO: craftable?
-
-    # TODO: duel links
 
     yugipedia_id = in_json["yugipedia_page_id"]
     if not card.yugipedia_pages:
@@ -219,9 +214,8 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
         card.yugipedia_pages.append(ExternalIdPair(None, yugipedia_id))
     card.db_id = in_json["konami_id"]
     card.yamlyugi_id = in_json["password"]
-    # TODO: the other IDs
 
-    # TODO: errata, series
+    # TODO: series
 
     return card
 

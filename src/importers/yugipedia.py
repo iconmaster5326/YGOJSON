@@ -561,7 +561,6 @@ def parse_card(
     vmatch = re.match(r"^\d+", value.strip())
     if vmatch:
         card.db_id = int(vmatch.group(0))
-    # TODO: other ids
 
     # TODO: errata, series
 

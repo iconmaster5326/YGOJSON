@@ -223,7 +223,7 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
         existing_image.card_art = in_image["image_url"]
         existing_image.crop_art = in_image["image_url_cropped"]
 
-    # TODO: sets, legalities, video games
+    # TODO: sets
 
     card.ygoprodeck = ExternalIdPair(
         in_json["ygoprodeck_url"].replace("https://ygoprodeck.com/card/", ""),
@@ -236,8 +236,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             print(
                 f"warning: card {en_text.name} (id {card.id}) has {len(in_json['misc_info'])} misc_infos!"
             )
-
-    # TODO: other external IDs, errata, series
 
     return card
 
