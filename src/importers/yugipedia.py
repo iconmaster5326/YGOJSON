@@ -346,7 +346,7 @@ def parse_card(
 
     title = batcher.idsToNames[page]
     if page in token_ids:
-        print(f"warning: skipping card in tokens cateogry: {title}")
+        # print(f"warning: skipping card in tokens cateogry: {title}")
         return False
 
     cardtable = next(
@@ -396,10 +396,10 @@ def parse_card(
             print(f"warning: monster has no typeline: {title}")
             return False
         if "Skill" in typeline:
-            print(f"warning: skipping skill card: {title}")
+            # print(f"warning: skipping skill card: {title}")
             return False
         if "Token" in typeline:
-            print(f"warning: skipping token card: {title}")
+            # print(f"warning: skipping token card: {title}")
             return False
 
         value = get_cardtable2_entry(cardtable, "attribute")
@@ -537,7 +537,7 @@ def parse_card(
                 if len(card.passwords) == 1:
                     # we don't have the full ability to correspond passwords here
                     # but this will do for 99% of cards
-                    image.password = card.passwords[0]
+                    new_image.password = card.passwords[0]
                 add_image(in_image, new_image)
                 card.images.append(new_image)
 
@@ -627,7 +627,7 @@ def import_from_yugipedia(
                         .lower()
                     )
                     if ct not in [x.value for x in CardType]:
-                        print(f"warning: found card with illegal card type: {ct}")
+                        # print(f"warning: found card with illegal card type: {ct}")
                         return
 
                     found = pageid in db.cards_by_yugipedia_id
@@ -867,8 +867,8 @@ class YugipediaBatcher:
                 for callback in pending.get(title, []):
                     callback(contents)
 
-        do([str(p) for p in pages if type(p) is int])
-        do([str(p) for p in pages if type(p) is str])
+        do([p for p in pages if type(p) is int])
+        do([p for p in pages if type(p) is str])
 
     pageCategoriesCache: typing.Dict[int, typing.List[int]]
     pendingGetPageCategories: typing.Dict[
@@ -964,8 +964,8 @@ class YugipediaBatcher:
                 for callback in pending.get(self.idsToNames[pageid], []):
                     callback(cats)
 
-        do([str(p) for p in pages if type(p) is int])
-        do([str(p) for p in pages if type(p) is str])
+        do([p for p in pages if type(p) is int])
+        do([p for p in pages if type(p) is str])
 
     categoryMembersCache: typing.Dict[int, typing.List[CategoryMember]]
 
@@ -1191,5 +1191,5 @@ class YugipediaBatcher:
                         for callback in pending.get(title, []):
                             callback(url)
 
-        do([str(p) for p in pages if type(p) is int])
-        do([str(p) for p in pages if type(p) is str])
+        do([p for p in pages if type(p) is int])
+        do([p for p in pages if type(p) is str])
