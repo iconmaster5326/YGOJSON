@@ -503,7 +503,11 @@ def parse_card(
 
     # generally, we want YGOProDeck to handle generic images
     # But if all else fails, we can add one!
-    if all("yugipedia.com" in (image.card_art or "") for image in card.images):
+    if all(
+        (not image.card_art and not image.crop_art)
+        or "yugipedia.com" in (image.card_art or "")
+        for image in card.images
+    ):
         in_images_raw = get_cardtable2_entry(cardtable, "image")
         if in_images_raw:
             in_images = [
