@@ -169,6 +169,7 @@ class CardRarity(enum.Enum):
     SUPERPARALLEL = "superparallel"
     ULTRAPARALLEL = "ultraparallel"
     DTPC = "dtpc"
+    DTPSP = "dtpsp"
     DTRPR = "dtrpr"
     DTSPR = "dtspr"
     DTUPR = "dtupr"
@@ -559,7 +560,7 @@ class SetContents:
     distrobution: typing.Union[None, PackDistrobution, SpecialDistroType]
     packs_per_box: typing.Optional[int]
     has_hobby_retail_differences: bool
-    editions: typing.Optional[typing.List[SetEdition]]
+    editions: typing.List[SetEdition]
     image: typing.Optional[str]
     box_image: typing.Optional[str]
     cards: typing.List[CardPrinting]
@@ -586,7 +587,7 @@ class SetContents:
         self.distrobution = distrobution
         self.packs_per_box = packs_per_box
         self.has_hobby_retail_differences = has_hobby_retail_differences
-        self.editions = editions
+        self.editions = editions or []
         self.image = image
         self.box_image = box_image
         self.cards = cards or []
@@ -747,6 +748,7 @@ class Database:
     cards_by_en_name: typing.Dict[str, Card]
     cards_by_konami_cid: typing.Dict[int, Card]
     cards_by_yugipedia_id: typing.Dict[int, Card]
+    cards_by_yugipedia_name_normalized: typing.Dict[str, Card]
     cards_by_ygoprodeck_id: typing.Dict[int, Card]
 
     card_images_by_id: typing.Dict[uuid.UUID, CardImage]
@@ -1098,7 +1100,7 @@ class Database:
                         has_hobby_retail_differences=content.get(
                             "hasHobbyRetailDifferences", False
                         ),
-                        editions=[SetEdition(v) for v in content["editions"]],
+                        editions=[SetEdition(v) for v in content.get("editions", [])],
                         image=content.get("image"),
                         box_image=content.get("boxImage"),
                         cards=[
@@ -1149,7 +1151,7 @@ class Database:
         return Set(
             id=uuid.UUID(rawset["id"]),
             name=rawset["name"],
-            locales=locales,
+            locales=locales.values(),
             contents=[v[0] for v in contents],
             yugipedia_page=ExternalIdPair(
                 rawset["externalIDs"].get("yugipediaName"),

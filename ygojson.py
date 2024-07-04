@@ -87,7 +87,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             db,
             progress_monitor=dbpm,
             import_cards=not args.no_cards,
-            import_sets=args.no_sets,
+            import_sets=not args.no_sets,
         )
         print()
         print(f"Added {n_new} cards and updated {n_old} cards.")
@@ -98,7 +98,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             db,
             progress_monitor=dbpm,
             import_cards=not args.no_cards,
-            import_sets=args.no_sets,
+            import_sets=not args.no_sets,
         )
         print()
         print(f"Added {n_new} cards and updated {n_old} cards.")
@@ -109,7 +109,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             db,
             progress_monitor=dbpm,
             import_cards=not args.no_cards,
-            import_sets=args.no_sets,
+            import_sets=not args.no_sets,
         )
         print()
         print(f"Added {n_new} cards and updated {n_old} cards.")

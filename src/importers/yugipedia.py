@@ -98,6 +98,9 @@ CAT_TCG_SETS = "Category:TCG sets"
 CAT_OCG_SETS = "Category:OCG sets"
 CAT_TOKENS = "Category:Tokens"
 
+DBID_SUFFIX = "_database_id"
+DBNAME_SUFFIX = "_name"
+
 
 def get_token_ids(batcher: "YugipediaBatcher") -> typing.Set[int]:
     seen = set()
@@ -161,7 +164,8 @@ def get_changelog(since: datetime.datetime) -> typing.Iterable[ChangelogEntry]:
 
 def get_changes(
     batcher: "YugipediaBatcher",
-    cards: typing.Iterable[int],
+    relevant_pages: typing.Iterable[int],
+    relevant_cats: typing.Iterable[str],
     changelog: typing.Iterable[ChangelogEntry],
 ) -> typing.Iterable[int]:
     """
@@ -170,7 +174,7 @@ def get_changes(
     """
     changed_cards: typing.List[int] = []
 
-    card_ids = set(cards)
+    card_ids = set(relevant_pages)
     pages_to_catcheck: typing.List[ChangelogEntry] = []
     for change in changelog:
         if change.id in card_ids:
@@ -187,56 +191,24 @@ def get_changes(
         def do(entry: ChangelogEntry):
             @batcher.getPageCategories(entry.id, useCache=False)
             def onGetCats(cats: typing.List[int]):
-                if batcher.namesToIDs[CAT_OCG_CARDS] in cats:
-                    if all(
-                        x.id != entry.id
-                        for x in batcher.categoryMembersCache[
-                            batcher.namesToIDs[CAT_OCG_CARDS]
-                        ]
-                    ):
-                        batcher.categoryMembersCache[
-                            batcher.namesToIDs[CAT_OCG_CARDS]
-                        ].append(
-                            CategoryMember(
-                                id=entry.id,
-                                name=entry.name,
-                                type=CategoryMemberType.PAGE,
+                for cat in relevant_cats:
+                    if batcher.namesToIDs[cat] in cats:
+                        if all(
+                            x.id != entry.id
+                            for x in batcher.categoryMembersCache[
+                                batcher.namesToIDs[cat]
+                            ]
+                        ):
+                            batcher.categoryMembersCache[
+                                batcher.namesToIDs[cat]
+                            ].append(
+                                CategoryMember(
+                                    id=entry.id,
+                                    name=entry.name,
+                                    type=CategoryMemberType.PAGE,
+                                )
                             )
-                        )
-                    new_cards.add(entry.id)
-                if batcher.namesToIDs[CAT_TCG_CARDS] in cats:
-                    if all(
-                        x.id != entry.id
-                        for x in batcher.categoryMembersCache[
-                            batcher.namesToIDs[CAT_TCG_CARDS]
-                        ]
-                    ):
-                        batcher.categoryMembersCache[
-                            batcher.namesToIDs[CAT_TCG_CARDS]
-                        ].append(
-                            CategoryMember(
-                                id=entry.id,
-                                name=entry.name,
-                                type=CategoryMemberType.PAGE,
-                            )
-                        )
-                    new_cards.add(entry.id)
-                if batcher.namesToIDs[CAT_TOKENS] in cats:
-                    if all(
-                        x.id != entry.id
-                        for x in batcher.categoryMembersCache[
-                            batcher.namesToIDs[CAT_TOKENS]
-                        ]
-                    ):
-                        batcher.categoryMembersCache[
-                            batcher.namesToIDs[CAT_TOKENS]
-                        ].append(
-                            CategoryMember(
-                                id=entry.id,
-                                name=entry.name,
-                                type=CategoryMemberType.PAGE,
-                            )
-                        )
+                        new_cards.add(entry.id)
 
         do(entry)
 
@@ -247,11 +219,11 @@ def get_changes(
 T = typing.TypeVar("T")
 
 
-def get_cardtable2_entry(
-    cardtable2: wikitextparser.Template, key: str, default: T = None
+def get_table_entry(
+    table: wikitextparser.Template, key: str, default: T = None
 ) -> typing.Union[str, T]:
     try:
-        arg = next(iter([x for x in cardtable2.arguments if x.name.strip() == key]))
+        arg = next(iter([x for x in table.arguments if x.name.strip() == key]))
         return arg.value
     except StopIteration:
         return default
@@ -350,25 +322,25 @@ def parse_card(
         return False
 
     cardtable = next(
-        iter([x for x in data.templates if x.name.strip() == "CardTable2"])
+        iter([x for x in data.templates if x.name.strip().lower() == "cardtable2"])
     )
 
     for locale, key in LOCALES.items():
-        value = get_cardtable2_entry(cardtable, locale + "_name" if locale else "name")
+        value = get_table_entry(cardtable, locale + "_name" if locale else "name")
         if not locale and not value:
             value = title
         if value and value.strip():
             value = _strip_markup(value.strip())
             card.text.setdefault(key, CardText(name=value))
             card.text[key].name = value
-        value = get_cardtable2_entry(cardtable, locale + "_lore" if locale else "lore")
+        value = get_table_entry(cardtable, locale + "_lore" if locale else "lore")
         if value and value.strip():
             if key not in card.text:
                 print(f"warning: card has no name in {key} but has effect: {title}")
                 pass
             else:
                 card.text[key].effect = _strip_markup(value.strip())
-        value = get_cardtable2_entry(
+        value = get_table_entry(
             cardtable, locale + "_pendulum_effect" if locale else "pendulum_effect"
         )
         if value and value.strip():
@@ -391,7 +363,7 @@ def parse_card(
                 card.text[key].official = False
 
     if card.card_type == CardType.MONSTER:
-        typeline = get_cardtable2_entry(cardtable, "types")
+        typeline = get_table_entry(cardtable, "types")
         if not typeline:
             print(f"warning: monster has no typeline: {title}")
             return False
@@ -402,7 +374,7 @@ def parse_card(
             # print(f"warning: skipping token card: {title}")
             return False
 
-        value = get_cardtable2_entry(cardtable, "attribute")
+        value = get_table_entry(cardtable, "attribute")
         if not value:
             print(f"warning: monster has no attribute: {title}")
             return False
@@ -442,7 +414,7 @@ def parse_card(
             print(f"warning: monster has no type: {title}")
             return False
 
-        value = get_cardtable2_entry(cardtable, "level")
+        value = get_table_entry(cardtable, "level")
         if value:
             try:
                 card.level = int(value)
@@ -450,7 +422,7 @@ def parse_card(
                 print(f"warning: unknown level '{value.strip()}' in {title}")
                 return False
 
-        value = get_cardtable2_entry(cardtable, "rank")
+        value = get_table_entry(cardtable, "rank")
         if value:
             try:
                 card.rank = int(value)
@@ -458,14 +430,14 @@ def parse_card(
                 print(f"warning: unknown rank '{value.strip()}' in {title}")
                 return False
 
-        value = get_cardtable2_entry(cardtable, "atk")
+        value = get_table_entry(cardtable, "atk")
         if value:
             try:
                 card.atk = "?" if value.strip() == "?" else int(value)
             except ValueError:
                 print(f"warning: unknown ATK '{value.strip()}' in {title}")
                 return False
-        value = get_cardtable2_entry(cardtable, "def")
+        value = get_table_entry(cardtable, "def")
         if value:
             try:
                 card.def_ = "?" if value.strip() == "?" else int(value)
@@ -473,7 +445,7 @@ def parse_card(
                 print(f"warning: unknown DEF '{value.strip()}' in {title}")
                 return False
 
-        value = get_cardtable2_entry(cardtable, "pendulum_scale")
+        value = get_table_entry(cardtable, "pendulum_scale")
         if value:
             try:
                 card.scale = int(value)
@@ -481,19 +453,19 @@ def parse_card(
                 print(f"warning: unknown scale '{value.strip()}' in {title}")
                 return False
 
-        value = get_cardtable2_entry(cardtable, "link_arrows")
+        value = get_table_entry(cardtable, "link_arrows")
         if value:
             card.link_arrows = [
                 LinkArrow(x.lower().replace("-", "").strip()) for x in value.split(",")
             ]
     elif card.card_type == CardType.SPELL or card.card_type == CardType.TRAP:
-        value = get_cardtable2_entry(cardtable, "property")
+        value = get_table_entry(cardtable, "property")
         if not value:
             print(f"warning: spelltrap has no subcategory: {title}")
             return False
         card.subcategory = SubCategory(value.lower().replace("-", "").strip())
 
-    value = get_cardtable2_entry(cardtable, "password")
+    value = get_table_entry(cardtable, "password")
     if value:
         vmatch = re.match(r"^\d+", value.strip())
         if vmatch and value.strip() not in card.passwords:
@@ -508,7 +480,7 @@ def parse_card(
         or "yugipedia.com" in (image.card_art or "")
         for image in card.images
     ):
-        in_images_raw = get_cardtable2_entry(cardtable, "image")
+        in_images_raw = get_table_entry(cardtable, "image")
         if in_images_raw:
             in_images = [
                 [x.strip() for x in x.split(";")]
@@ -557,12 +529,516 @@ def parse_card(
     if not any(x.id == page for x in card.yugipedia_pages):
         card.yugipedia_pages.append(ExternalIdPair(title, page))
 
-    value = get_cardtable2_entry(cardtable, "database_id", "")
+    value = get_table_entry(cardtable, "database_id", "")
     vmatch = re.match(r"^\d+", value.strip())
     if vmatch:
         card.db_id = int(vmatch.group(0))
 
     # TODO: errata, series
+
+    return True
+
+
+CARD_GALLERY_NAMESPACE = "Set Card Galleries:"
+
+RARITY_STR_TO_ENUM = {
+    "c": CardRarity.COMMON,
+    "sp": CardRarity.SHORTPRINT,
+    "ssp": CardRarity.SHORTPRINT,
+    "nr": CardRarity.SHORTPRINT,
+    "r": CardRarity.RARE,
+    "sr": CardRarity.SUPER,
+    "ur": CardRarity.ULTRA,
+    "utr": CardRarity.ULTIMATE,
+    "se": CardRarity.SECRET,
+    "scr": CardRarity.SECRET,
+    "uscr": CardRarity.ULTRASECRET,
+    "pscr": CardRarity.PRISMATICSECRET,
+    "hr": CardRarity.GHOST,
+    "hgr": CardRarity.GHOST,
+    "gr": CardRarity.GHOST,
+    "pr": CardRarity.PARALLEL,
+    "npr": CardRarity.COMMONPARALLEL,
+    "pc": CardRarity.COMMONPARALLEL,
+    "rpr": CardRarity.RAREPARALLEL,
+    "spr": CardRarity.SUPERPARALLEL,
+    "upr": CardRarity.ULTRAPARALLEL,
+    "dpc": CardRarity.DTPC,
+    "dnpr": CardRarity.DTPC,
+    "dnrpr": CardRarity.DTPSP,
+    "drpr": CardRarity.DTRPR,
+    "dspr": CardRarity.DTSPR,
+    "dupr": CardRarity.DTUPR,
+    "dscpr": CardRarity.DTSCPR,
+    "gur": CardRarity.GOLD,
+    "10000scr": CardRarity.TENTHOUSANDSECRET,
+    "20scr": CardRarity.TWENTITHSECRET,
+    "cr": CardRarity.COLLECTORS,
+    "escr": CardRarity.EXTRASECRET,
+    "escpr": CardRarity.EXTRASECRETPARALLEL,
+    "ggr": CardRarity.GOLDGHOST,
+    "gscr": CardRarity.GOLDSECRET,
+    "sfr": CardRarity.STARFOIL,
+    "msr": CardRarity.MOSAIC,
+    "shr": CardRarity.SHATTERFOIL,
+    "hgpr": CardRarity.GHOSTPARALLEL,
+    "plr": CardRarity.PLATINUM,
+    "plscr": CardRarity.PLATINUMSECRET,
+    "pgr": CardRarity.PREMIUMGOLD,
+    "qcscr": CardRarity.TWENTYFIFTHSECRET,
+    "scpr": CardRarity.SECRETPARALLEL,
+    "altr": CardRarity.STARLIGHT,
+    "str": CardRarity.STARLIGHT,
+    "urpr": CardRarity.PHARAOHS,
+    "kcc": CardRarity.KCCOMMON,
+    "kcn": CardRarity.KCCOMMON,
+    "kcr": CardRarity.KCRARE,
+    "kcsr": CardRarity.KCSUPER,
+    "kcur": CardRarity.KCULTRA,
+    "kcscr": CardRarity.KCSECRET,
+    "mr": CardRarity.MILLENIUM,
+    "mlr": CardRarity.MILLENIUM,
+    "mlsr": CardRarity.MILLENIUMSUPER,
+    "mlur": CardRarity.MILLENIUMULTRA,
+    "mlscr": CardRarity.MILLENIUMSECRET,
+    "mlgr": CardRarity.MILLENIUMGOLD,
+}
+
+#   | c     | common                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Common                                  | C     }}
+#   | nr    | normal                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Normal Rare                             | NR    }}
+#   | sp    | short print                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Short Print                             | SP    }}
+#   | ssp   | super short print              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Short Print                       | SSP   }}
+#   | hfr   | holofoil                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holofoil Rare                           | HFR   }}
+#   | r     | rare                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rare                                    | R     }}
+#   | sr    | super                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Rare                              | SR    }}
+#   | ur    | ultra                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Rare                              | UR    }}
+#   | utr   | ultimate                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultimate Rare                           | UtR   }}
+#   | gr    | ghost                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ghost Rare                              | GR    }}
+#   | hr | hgr | holographic                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holographic Rare                        | HGR   }}
+#   | se | scr | secret                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Rare                             | ScR   }}
+#   | pscr  | prismatic secret               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Prismatic Secret Rare                   | PScR  }}
+#   | uscr  | ultra secret                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Secret Rare                       | UScR  }}
+#   | scur  | secret ultra                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Ultra Rare                       | ScUR  }}
+#   | escr  | extra secret                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Extra Secret Rare                       | EScR  }}
+#   | 20scr | 20th secret                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | 20th Secret Rare                        | 20ScR }}
+#   | qcscr | quarter century secret         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Quarter Century Secret Rare             | QCScR }}
+#   | 10000scr | 10000 secret                = {{ safesubst:<noinclude/>#if: {{{full|}}} | 10000 Secret Rare                       | 10000ScR }}
+#   | altr  | str | alternate | starlight    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Starlight Rare                          | StR   }}
+#   | plr   | platinum                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Platinum Rare                           | PlR   }}
+#   | plscr | platinum secret                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Platinum Secret Rare                    | PlScR }}
+#   | pr    | parallel                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Parallel Rare                           | PR    }}
+#   | pc    | parallel common                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Parallel Common                         | PC    }}
+#   | npr   | normal parallel                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Normal Parallel Rare                    | NPR   }}
+#   | rpr   | rare parallel                  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rare Parallel Rare                      | RPR   }}
+#   | spr   | super parallel                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Parallel Rare                     | SPR   }}
+#   | upr   | ultra parallel                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Parallel Rare                     | UPR   }}
+#   | scpr  | secret parallel                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Parallel Rare                    | ScPR  }}
+#   | escpr | extra secret parallel          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Extra Secret Parallel Rare              | EScPR }}
+#   | h     | hobby                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Hobby Rare                              | H     }}
+#   | sfr   | starfoil                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Starfoil Rare                           | SFR   }}
+#   | msr   | mosaic                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Mosaic Rare                             | MSR   }}
+#   | shr   | shatterfoil                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Shatterfoil Rare                        | SHR   }}
+#   | cr    | collectors                     = {{ safesubst:<noinclude/>#if: {{{full|}}} | Collector's Rare                        | CR    }}
+#   | hgpr  | holographic parallel           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holographic Parallel Rare               | HGPR  }}
+#   | urpr  | ultra pharaohs | pharaohs      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Rare (Pharaoh's Rare)             | URPR  }}
+#   | kcc | kcn | kaiba corporation common | kaiba corporation normal = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Common | KCC }}
+#   | kcr   | kaiba corporation              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Rare                  | KCR   }}
+#   | kcsr  | kaiba corporation super        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Super Rare            | KCSR  }}
+#   | kcur  | kaiba corporation ultra        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Ultra Rare            | KCUR  }}
+#   | kcscr | kaiba corporation secret       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Secret Rare           | KCScR }}
+#   | mr | mlr | millennium                  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Rare                         | MLR   }}
+#   | mlsr  | millennium super               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Super Rare                   | MLSR  }}
+#   | mlur  | millennium ultra               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Ultra Rare                   | MLUR  }}
+#   | mlscr | millennium secret              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Secret Rare                  | MLScR }}
+#   | mlgr  | millennium gold                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Gold Rare                    | MLGR  }}
+#   | gur   | gold                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Rare                               | GUR   }}
+#   | gscr  | gold secret                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Secret Rare                        | GScR  }}
+#   | ggr   | ghost/gold                     = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ghost/Gold Rare                         | GGR   }}
+#   | pgr   | premium gold                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Premium Gold Rare                       | PGR   }}
+#   | dpc   | duel terminal parallel common  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Parallel Common           | DPC   }}
+#   | dnrpr | duel terminal normal  parallel = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Rare Parallel Rare | DNRPR }}
+#   |         duel terminal normal parallel  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Parallel Rare      | DNPR  }}
+#   | dnpr                                   = {{ safesubst:<noinclude/>#ifeq: {{ lc: {{{1}}} }} | duel terminal normal rare parallel rare
+#     | {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Rare Parallel Rare | DNRPR }}
+#     | {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Parallel Rare      | DNPR  }} }}
+#   | drpr  | duel terminal  parallel        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Rare Parallel Rare        | DRPR  }}
+#   | dspr  | duel terminal super parallel   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Super Parallel Rare       | DSPR  }}
+#   | dupr  | duel terminal ultra parallel   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Ultra Parallel Rare       | DUPR  }}
+#   | dscpr | duel terminal secret parallel  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Secret Parallel Rare      | DScPR }}
+#   | rr    | rush                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rush Rare                               | RR    }}
+#   | grr   | gold rush                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Rush Rare                          | GRR   }}
+#   | orr   | over rush                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Over Rush Rare                          | ORR   }}
+
+FULL_RARITY_STR_TO_ENUM = {
+    "common": CardRarity.COMMON,  # c
+    "short print": CardRarity.SHORTPRINT,  # sp
+    "super short print": CardRarity.SHORTPRINT,  # ssp
+    "normal rare": CardRarity.SHORTPRINT,  # nr
+    "rare": CardRarity.RARE,  # r
+    "super rare": CardRarity.SUPER,  # sr
+    "ultra rare": CardRarity.ULTRA,  # ur
+    "ultimate rare": CardRarity.ULTIMATE,  # utr
+    "secret rare": CardRarity.SECRET,  # se / scr
+    "ultra secret rare": CardRarity.ULTRASECRET,  # uscr
+    "prismatic secret rare": CardRarity.PRISMATICSECRET,  # pscr
+    "holographic rare": CardRarity.GHOST,  # hr / hgr
+    "ghost rare": CardRarity.GHOST,  # gr
+    "parallel rare": CardRarity.PARALLEL,  # pr
+    "normal parallel rare": CardRarity.COMMONPARALLEL,  # npr
+    "parallel common": CardRarity.COMMONPARALLEL,  # pc
+    "rare parallel rare": CardRarity.RAREPARALLEL,  # rpr
+    "super parallel rare": CardRarity.SUPERPARALLEL,  # spr
+    "ultra parallel rare": CardRarity.ULTRAPARALLEL,  # upr
+    "duel terminal parallel common": CardRarity.DTPC,  # dpc
+    "duel terminal normal parallel rare": CardRarity.DTPC,  # dnpr
+    "duel terminal rare parallel rare": CardRarity.DTPSP,  # drpr
+    "duel terminal normal rare parallel rare": CardRarity.DTRPR,  # dnrpr
+    "duel terminal super parallel rare": CardRarity.DTSPR,  # dspr
+    "duel terminal ultra parallel rare": CardRarity.DTUPR,  # dupr
+    "duel terminal secret parallel rare": CardRarity.DTSCPR,  # dscpr
+    "gold rare": CardRarity.GOLD,  # gur
+    "10000 secret rare": CardRarity.TENTHOUSANDSECRET,  # 10000scr
+    "20th secret rare": CardRarity.TWENTITHSECRET,  # 20scr
+    "collector's rare": CardRarity.COLLECTORS,  # cr
+    "extra secret rare": CardRarity.EXTRASECRET,  # escr
+    "extra secret parallel rare": CardRarity.EXTRASECRETPARALLEL,  # escpr
+    "ghost/gold rare": CardRarity.GOLDGHOST,  # ggr
+    "gold secret rare": CardRarity.GOLDSECRET,  # gscr
+    "starfoil rare": CardRarity.STARFOIL,  # sfr
+    "mosaic rare": CardRarity.MOSAIC,  # msr
+    "shatterfoil rare": CardRarity.SHATTERFOIL,  # shr
+    "holographic parallel rare": CardRarity.GHOSTPARALLEL,  # hgpr
+    "platinum rare": CardRarity.PLATINUM,  # plr
+    "platinum secret rare": CardRarity.PLATINUMSECRET,  # plscr
+    "premium gold rare": CardRarity.PREMIUMGOLD,  # pgr
+    "quarter century secret rare": CardRarity.TWENTYFIFTHSECRET,  # qcscr
+    "secret parallel rare": CardRarity.SECRETPARALLEL,  # scpr
+    "starlight rare": CardRarity.STARLIGHT,  # altr / str
+    "ultra rare (pharaoh's rare)": CardRarity.PHARAOHS,  # urpr
+    "kaiba corporation common": CardRarity.KCCOMMON,  # kcc / kcn
+    "kaiba corporation rare": CardRarity.KCRARE,  # kcr
+    "kaiba corporation super rare": CardRarity.KCSUPER,  # kcsr
+    "kaiba corporation ultra rare": CardRarity.KCULTRA,  # kcur
+    "kaiba corporation secret rare": CardRarity.KCSECRET,  # kcscr
+    "millennium rare": CardRarity.MILLENIUM,  # mr / mlr
+    "millennium super rare": CardRarity.MILLENIUMSUPER,  # mlsr
+    "millennium ultra rare": CardRarity.MILLENIUMULTRA,  # mlur
+    "millennium secret rare": CardRarity.MILLENIUMSECRET,  # mlscr
+    "millennium gold rare": CardRarity.MILLENIUMGOLD,  # mlgr
+}
+
+EDITION_STR_TO_ENUM = {
+    "1E": SetEdition.FIRST,
+    "UE": SetEdition.UNLIMTED,
+    "LE": SetEdition.LIMITED,
+    # TODO: is this right?
+    "DT": SetEdition.UNLIMTED,
+}
+
+
+def commonprefix(m: typing.Iterable[str]):
+    "Given a list of strings, returns the longest common leading component"
+
+    m = [*m]
+    if not m:
+        return ""
+    s1 = min(m)
+    s2 = max(m)
+    for i, c in enumerate(s1):
+        if c != s2[i]:
+            return s1[:i]
+    return s1
+
+
+def _printing_equal(p1: CardPrinting, p2: CardPrinting) -> bool:
+    return p1.card == p2.card and p1.rarity == p2.rarity and p1.suffix == p2.suffix
+
+
+def parse_set(
+    db: Database,
+    batcher: "YugipediaBatcher",
+    pageid: int,
+    set_: Set,
+    data: wikitextparser.WikiText,
+    raw_data: str,
+    settable: wikitextparser.Template,
+) -> bool:
+    for arg in settable.arguments:
+        if arg.name and arg.name.strip().endswith(DBNAME_SUFFIX) and arg.value.strip():
+            set_.name[arg.name.strip()[: -len(DBNAME_SUFFIX)]] = arg.value.strip()
+
+    gallery_html = re.search(
+        r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;", raw_data, re.DOTALL
+    ) or re.search(r"<gallery[^\n]*\n(.*?)\n</gallery>", raw_data, re.DOTALL)
+    if not gallery_html:
+        print(f"warning: did not find gallery HTML for {batcher.idsToNames[pageid]}")
+        return False
+
+    # TODO: do a merge of data, as to not clobber printings UUIDs
+    set_.locales.clear()
+    set_.contents.clear()
+
+    for line in gallery_html.group(1).split("\n"):
+        if not line.strip():
+            continue
+
+        gallery_info = re.match(
+            r"([^\|]+)\|(?:[^&]*&lt;[^&]*&gt;)?(.*)", line.strip()
+        ) or re.match(r"([^\|]+)\|(?:[^<]*<[^>]*>)?(.*)", line.strip())
+        if not gallery_info:
+            print(
+                f'warning: unparsable gallery line on {batcher.idsToNames[pageid]}: "{line.strip()}"'
+            )
+            continue
+        gallery_image_name = gallery_info.group(1).strip()
+        gallery_links = wikitextparser.parse(gallery_info.group(2))
+
+        for link in gallery_links.wikilinks:
+            if link.target.startswith(CARD_GALLERY_NAMESPACE):
+
+                def do(galleryname: str):
+                    locale_info = re.search(
+                        r"\(([TO]CG)-(..)-(..)\)", galleryname
+                    ) or re.search(r"\(([TO]CG)-(..)\)", galleryname)
+                    if not locale_info:
+                        print(f"warning: no locale found for: {galleryname}")
+                        return
+
+                    @batcher.getPageContents(
+                        galleryname, useCache=db.last_yugipedia_read is None
+                    )
+                    def onGetData(gallery_raw_data: str):
+                        gallery_data = wikitextparser.parse(gallery_raw_data)
+
+                        gallery_table = None
+                        subgallery = None
+
+                        try:
+                            gallery_table = next(
+                                iter(
+                                    [
+                                        x
+                                        for x in gallery_data.templates
+                                        if x.name.strip().lower() == "set gallery"
+                                    ]
+                                )
+                            )
+                        except StopIteration:
+                            pass
+
+                        if not gallery_table:
+                            subgallery_html = re.search(
+                                r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;",
+                                gallery_raw_data,
+                                re.DOTALL,
+                            ) or re.search(
+                                r"<gallery[^\n]*\n(.*?)\n</gallery>",
+                                gallery_raw_data,
+                                re.DOTALL,
+                            )
+                            if subgallery_html:
+                                subgallery = [
+                                    x.strip()
+                                    for x in subgallery_html.group(1).split("\n")
+                                    if x.strip()
+                                ]
+
+                        default_rarity = None
+                        lang = locale_info.group(2).strip().lower()
+                        locale = SetLocale(
+                            key=lang,
+                            language=lang,
+                        )
+                        contents = SetContents(
+                            locales=[locale],
+                            formats=[Format(locale_info.group(1).strip().lower())],
+                            editions=[]
+                            if len(locale_info.groups()) <= 2
+                            else [
+                                EDITION_STR_TO_ENUM[
+                                    locale_info.group(3).strip().upper()
+                                ]
+                            ],
+                        )
+
+                        @batcher.getImageURL("File:" + gallery_image_name)
+                        def onGetImage(url: str):
+                            locale.image = url
+
+                        if gallery_table:
+                            default_rarity = get_table_entry(gallery_table, "rarity")
+                            abbr = get_table_entry(gallery_table, "abbr")
+                            printings = []
+
+                            for rawprintings in gallery_table.arguments:
+                                if rawprintings.positional:
+                                    for rawprinting in rawprintings.value.split("\n"):
+                                        if rawprinting.strip():
+                                            parts = [
+                                                x.strip()
+                                                for x in rawprinting.strip()
+                                                .split("//")[0]
+                                                .strip()
+                                                .split(";")
+                                            ]
+                                            if abbr:
+                                                printings.append(("", *parts))
+                                            else:
+                                                printings.append((*parts,))
+                        elif subgallery:
+                            # BlizzedDefenderoftheIceBarrier-HA01-DE-ScR-LE.png | [[HA01-DE001]] ([[ScR]])<br />[[Blizzed, Defender of the Ice Barrier]]<br />{{Card name|Blizzed, Defender of the Ice Barrier|de}}
+                            printings = [
+                                (
+                                    lambda m: (
+                                        m.group(1).strip(),
+                                        m.group(3).strip(),
+                                        m.group(2).strip(),
+                                    )
+                                    if m
+                                    else None
+                                )(
+                                    re.match(
+                                        r"[^\|]*\|[^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\]",
+                                        x,
+                                    )
+                                )
+                                for x in subgallery
+                            ]
+                        else:
+                            print(
+                                f"warning: found gallery without gallery table or subgallery: {galleryname}"
+                            )
+                            return
+
+                        prefixmatch = re.match(
+                            r"^[^\-]+\-\D*",
+                            commonprefix(
+                                printing[0] for printing in printings if printing
+                            ),
+                        )
+                        locale.prefix = prefixmatch.group(0) if prefixmatch else ""
+
+                        for printing in printings:
+                            if not printing:
+                                continue
+                            if len(printing) < 2:
+                                print(
+                                    f"warning: expected 3 entries but got {len(printing)} in {galleryname}: {printing}"
+                                )
+                                continue
+                            (code, name, *_) = printing
+                            name = re.sub(r"\s+", r" ", name.split("|")[0]).strip()
+                            if len(printing) >= 3:
+                                rarity = printing[2]
+                            else:
+                                rarity = default_rarity
+
+                            found_rairty = None
+                            if rarity:
+                                found_rairty = RARITY_STR_TO_ENUM.get(
+                                    rarity.lower()
+                                ) or FULL_RARITY_STR_TO_ENUM.get(rarity.lower())
+                                if not found_rairty:
+                                    print(
+                                        f"warning: unknown rarity for {name} in {galleryname}: {rarity}"
+                                    )
+
+                            def getCardID(
+                                name: str,
+                                code: str,
+                                found_rairty: typing.Optional[CardRarity],
+                                locale: SetLocale,
+                            ):
+                                @batcher.getPageContents(name)
+                                def onCardIDGet(_: str):
+                                    printingid = batcher.namesToIDs[name]
+                                    if printingid not in db.cards_by_yugipedia_id:
+                                        print(
+                                            f'warning: card "{name}" not found in database in "{galleryname}"'
+                                        )
+                                        return
+                                    contents.cards.append(
+                                        CardPrinting(
+                                            id=uuid.uuid4(),
+                                            card=db.cards_by_yugipedia_id[printingid],
+                                            suffix=code[len(locale.prefix or "") :],
+                                            rarity=found_rairty,
+                                        )
+                                    )
+
+                            getCardID(name, code, found_rairty, locale)
+
+                        similar_contents = [
+                            other_contents
+                            for other_contents in set_.contents
+                            if (
+                                all(
+                                    _printing_equal(p1, p2)
+                                    for p1, p2 in zip(
+                                        contents.cards, other_contents.cards
+                                    )
+                                )
+                                and all(
+                                    _printing_equal(p1, p2)
+                                    for p1, p2 in zip(
+                                        contents.removed_cards,
+                                        other_contents.removed_cards,
+                                    )
+                                )
+                            )
+                        ]
+
+                        for similar_content in similar_contents:
+                            # same contents; merge
+                            similar_content.locales.extend(
+                                [
+                                    x
+                                    for x in contents.locales
+                                    if not any(
+                                        x.key == y.key for y in similar_content.locales
+                                    )
+                                ]
+                            )
+                            similar_content.formats.extend(
+                                [
+                                    x
+                                    for x in contents.formats
+                                    if x not in similar_content.formats
+                                ]
+                            )
+                            similar_content.editions.extend(
+                                [
+                                    x
+                                    for x in contents.editions
+                                    if x not in similar_content.editions
+                                ]
+                            )
+                            break
+                        if not similar_contents:
+                            set_.contents.append(contents)
+
+                        if locale.key in set_.locales:
+                            # print(f"warning: duplicate locale key for {batcher.idsToNames[pageid]}: {locale.key}")
+                            pass
+                        else:
+                            set_.locales[locale.key] = locale
+
+                        for arg in settable.arguments:
+                            if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
+                                lang = arg.name[: -len(DBID_SUFFIX)]
+                                if lang == locale.key:
+                                    try:
+                                        set_.locales[lang].db_id = int(
+                                            arg.value.strip()
+                                        )
+                                    except ValueError:
+                                        print(
+                                            f"warning: Unknown Konami ID for {batcher.idsToNames[pageid]}: {arg.value.strip()}"
+                                        )
+
+                do(link.target)
+
+    set_.yugipedia_page = ExternalIdPair(batcher.idsToNames[pageid], pageid)
 
     return True
 
@@ -576,6 +1052,8 @@ def import_from_yugipedia(
     import_cards: bool = True,
     import_sets: bool = True,
 ) -> typing.Tuple[int, int]:
+    n_found = n_new = 0
+
     with YugipediaBatcher() as batcher:
         if import_cards:
             token_ids = get_token_ids(batcher)
@@ -595,14 +1073,13 @@ def import_from_yugipedia(
                         for x in get_changes(
                             batcher,
                             get_card_pages(batcher),
+                            [CAT_OCG_CARDS, CAT_TCG_CARDS, CAT_TOKENS],
                             get_changelog(db.last_yugipedia_read),
                         )
                     ]
                     token_ids = get_token_ids(batcher)
             else:
                 cards = [x for x in get_card_pages(batcher)]
-
-            n_found = n_new = 0
 
             for pageid in cards:
 
@@ -620,7 +1097,7 @@ def import_from_yugipedia(
                                     [
                                         x
                                         for x in data.templates
-                                        if x.name.strip() == "CardTable2"
+                                        if x.name.strip().lower() == "cardtable2"
                                     ]
                                 )
                             )
@@ -631,7 +1108,7 @@ def import_from_yugipedia(
                             return
 
                         ct = (
-                            get_cardtable2_entry(cardtable, "card_type", "monster")
+                            get_table_entry(cardtable, "card_type", "monster")
                             .strip()
                             .lower()
                         )
@@ -642,12 +1119,12 @@ def import_from_yugipedia(
                         found = pageid in db.cards_by_yugipedia_id
                         card = db.cards_by_yugipedia_id.get(pageid)
                         if not card:
-                            value = get_cardtable2_entry(cardtable, "database_id", "")
+                            value = get_table_entry(cardtable, "database_id", "")
                             vmatch = re.match(r"^\d+", value.strip())
                             if vmatch:
                                 card = db.cards_by_konami_cid.get(int(vmatch.group(0)))
                         if not card:
-                            value = get_cardtable2_entry(cardtable, "password", "")
+                            value = get_table_entry(cardtable, "password", "")
                             vmatch = re.match(r"^\d+", value.strip())
                             if vmatch:
                                 card = db.cards_by_password.get(vmatch.group(0))
@@ -667,6 +1144,96 @@ def import_from_yugipedia(
                                 progress_monitor(card, found)
 
                 do(pageid)
+
+        if import_sets:
+            sets: typing.List[int]
+            if db.last_yugipedia_read is not None:
+                if (
+                    datetime.datetime.now().timestamp()
+                    - db.last_yugipedia_read.timestamp()
+                    > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
+                ):
+                    batcher.clearCache()
+                    sets = [x for x in get_set_pages(batcher)]
+                else:
+                    sets = [
+                        x
+                        for x in get_changes(
+                            batcher,
+                            get_set_pages(batcher),
+                            [CAT_OCG_SETS, CAT_TCG_SETS],
+                            get_changelog(db.last_yugipedia_read),
+                        )
+                    ]
+            else:
+                sets = [x for x in get_set_pages(batcher)]
+
+            for setid in sets:
+
+                def do(pageid: int):
+                    @batcher.getPageContents(
+                        pageid, useCache=db.last_yugipedia_read is None
+                    )
+                    def onGetData(raw_data: str):
+                        nonlocal n_found, n_new
+
+                        data = wikitextparser.parse(raw_data)
+                        try:
+                            settable = next(
+                                iter(
+                                    [
+                                        x
+                                        for x in data.templates
+                                        if x.name.strip().lower() == "infobox set"
+                                    ]
+                                )
+                            )
+                        except StopIteration:
+                            print(
+                                f"warning: found set without set table: {batcher.idsToNames[pageid]}"
+                            )
+                            return
+
+                        found = pageid in db.sets_by_yugipedia_id
+                        set_ = db.sets_by_yugipedia_id.get(pageid)
+                        if not set_:
+                            for arg in settable.arguments:
+                                if (
+                                    arg.name
+                                    and arg.name.strip().endswith(DBID_SUFFIX)
+                                    and arg.value.strip()
+                                ):
+                                    try:
+                                        set_ = db.sets_by_konami_sid.get(
+                                            int(arg.value.strip())
+                                        )
+                                        if set_:
+                                            break
+                                    except ValueError:
+                                        if arg.value.strip() != "none":
+                                            print(
+                                                f'warning: unparsable konami set ID for {arg.name} in {batcher.idsToNames[pageid]}: "{arg.value}"'
+                                            )
+                        if not set_:
+                            set_ = db.sets_by_en_name.get(
+                                get_table_entry(settable, "en_name", "")
+                            )
+                        if not set_:
+                            set_ = Set(id=uuid.uuid4())
+
+                        if parse_set(
+                            db, batcher, pageid, set_, data, raw_data, settable
+                        ):
+                            db.add_set(set_)
+                            if found:
+                                n_found += 1
+                            else:
+                                n_new += 1
+
+                            if progress_monitor:
+                                progress_monitor(set_, found)
+
+                do(setid)
 
     db.last_yugipedia_read = datetime.datetime.now()
     return n_found, n_new
