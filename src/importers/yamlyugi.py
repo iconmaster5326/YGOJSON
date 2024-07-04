@@ -258,7 +258,11 @@ def _import_card(
 def import_from_yaml_yugi(
     db: Database,
     *,
-    progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
+    progress_monitor: typing.Optional[
+        typing.Callable[[typing.Union[Card, Set], bool], None]
+    ] = None,
+    import_cards: bool = True,
+    import_sets: bool = True,
 ) -> typing.Tuple[int, int]:
     """
     Import card data from Yaml Yugi into the given database.
@@ -269,16 +273,17 @@ def import_from_yaml_yugi(
     n_new = 0
     yamlyugi = _get_yaml_yugi()
 
-    for in_card in yamlyugi:
-        found, card = _import_card(in_card, db)
-        if found:
-            n_existing += 1
-        else:
-            n_new += 1
-        card = _write_card(in_card, card)
-        db.add_card(card)
-        if progress_monitor:
-            progress_monitor(card, found)
+    if import_cards:
+        for in_card in yamlyugi:
+            found, card = _import_card(in_card, db)
+            if found:
+                n_existing += 1
+            else:
+                n_new += 1
+            card = _write_card(in_card, card)
+            db.add_card(card)
+            if progress_monitor:
+                progress_monitor(card, found)
 
     db.last_yamlyugi_read = datetime.datetime.now()
 

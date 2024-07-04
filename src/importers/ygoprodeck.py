@@ -243,7 +243,11 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
 def import_from_ygoprodeck(
     db: Database,
     *,
-    progress_monitor: typing.Optional[typing.Callable[[Card, bool], None]] = None,
+    progress_monitor: typing.Optional[
+        typing.Callable[[typing.Union[Card, Set], bool], None]
+    ] = None,
+    import_cards: bool = True,
+    import_sets: bool = True,
 ) -> typing.Tuple[int, int]:
     """
     Import card data from YGOProDeck into the given database.
@@ -252,22 +256,22 @@ def import_from_ygoprodeck(
 
     n_existing = 0
     n_new = 0
-    cardinfo = _get_ygoprodeck_cards()
 
-    for in_card in cardinfo:
-        try:
-            found, card = _import_card(in_card, db)
-            if found:
-                n_existing += 1
-            else:
-                n_new += 1
-            card = _write_card(in_card, card)
-            db.add_card(card)
-            if progress_monitor:
-                progress_monitor(card, found)
-        except InvalidCardImport:
-            pass
+    if import_cards:
+        cardinfo = _get_ygoprodeck_cards()
+        for in_card in cardinfo:
+            try:
+                found, card = _import_card(in_card, db)
+                if found:
+                    n_existing += 1
+                else:
+                    n_new += 1
+                card = _write_card(in_card, card)
+                db.add_card(card)
+                if progress_monitor:
+                    progress_monitor(card, found)
+            except InvalidCardImport:
+                pass
 
     db.last_ygoprodeck_read = datetime.datetime.now()
-
     return n_existing, n_new

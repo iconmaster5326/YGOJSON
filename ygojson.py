@@ -38,11 +38,36 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         metavar="DIR",
         help="Directory for aggregate card/set/etc JSONs",
     )
+    parser.add_argument(
+        "--no-ygoprodeck",
+        action="store_true",
+        help="Don't import from the YGOPRODECK API",
+    )
+    parser.add_argument(
+        "--no-yamlyugi",
+        action="store_true",
+        help="Don't import from the Yaml Yugi API",
+    )
+    parser.add_argument(
+        "--no-yugipedia",
+        action="store_true",
+        help="Don't import from the Yugipedia API",
+    )
+    parser.add_argument(
+        "--no-cards",
+        action="store_true",
+        help="Don't import cards from external APIs",
+    )
+    parser.add_argument(
+        "--no-sets",
+        action="store_true",
+        help="Don't import sets from external APIs",
+    )
     args = parser.parse_args(argv[1:])
 
     n = 0
 
-    def dbpm(c: Card, f: bool = True):
+    def dbpm(c: typing.Union[Card, Set], f: bool = True):
         nonlocal n
         n += 1
         if n % 250 == 0:
@@ -55,19 +80,41 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         aggregates_dir=args.aggregates,
     )
     print()
-    print("Importing YGOProDeck data...")
-    n_old, n_new = import_from_ygoprodeck(db, progress_monitor=dbpm)
-    print()
-    print(f"Added {n_new} cards and updated {n_old} cards.")
-    print("Importing Yaml Yugi data...")
-    n_old, n_new = import_from_yaml_yugi(db, progress_monitor=dbpm)
-    print()
-    print(f"Added {n_new} cards and updated {n_old} cards.")
-    print("Importing Yugipedia data...")
-    n_old, n_new = import_from_yugipedia(db, progress_monitor=dbpm)
-    print()
-    print(f"Added {n_new} cards and updated {n_old} cards.")
-    print("Saving cards...")
+
+    if not args.no_ygoprodeck:
+        print("Importing YGOProDeck data...")
+        n_old, n_new = import_from_ygoprodeck(
+            db,
+            progress_monitor=dbpm,
+            import_cards=not args.no_cards,
+            import_sets=args.no_sets,
+        )
+        print()
+        print(f"Added {n_new} cards and updated {n_old} cards.")
+
+    if not args.no_yamlyugi:
+        print("Importing Yaml Yugi data...")
+        n_old, n_new = import_from_yaml_yugi(
+            db,
+            progress_monitor=dbpm,
+            import_cards=not args.no_cards,
+            import_sets=args.no_sets,
+        )
+        print()
+        print(f"Added {n_new} cards and updated {n_old} cards.")
+
+    if not args.no_yugipedia:
+        print("Importing Yugipedia data...")
+        n_old, n_new = import_from_yugipedia(
+            db,
+            progress_monitor=dbpm,
+            import_cards=not args.no_cards,
+            import_sets=args.no_sets,
+        )
+        print()
+        print(f"Added {n_new} cards and updated {n_old} cards.")
+
+    print("Saving database...")
     db.save(
         progress_monitor=dbpm,
         generate_individuals=not args.no_individuals,

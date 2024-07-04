@@ -17,6 +17,9 @@ META_FILENAME = "meta.json"
 CARDLIST_FILENAME = "cards.json"
 CARDS_DIRNAME = "cards"
 AGG_CARDS_FILENAME = "cards.json"
+SETLIST_FILENAME = "sets.json"
+SETS_DIRNAME = "sets"
+AGG_SETS_FILENAME = "sets.json"
 
 
 class CardType(enum.Enum):
@@ -132,6 +135,73 @@ class VideoGameRaity(enum.Enum):
     RARE = "r"
     SUPER = "sr"
     ULTRA = "ur"
+
+
+class SetEdition(enum.Enum):
+    FIRST = "1st"
+    UNLIMTED = "unlimited"
+    LIMITED = "limited"
+
+
+class SpecialDistroType(enum.Enum):
+    PRECON = "preconstructed"
+
+
+class SetBoxType(enum.Enum):
+    HOBBY = "hobby"
+    RETAIL = "retail"
+
+
+class CardRarity(enum.Enum):
+    COMMON = "common"
+    SHORTPRINT = "shortprint"
+    RARE = "rare"
+    SUPER = "super"
+    ULTRA = "ultra"
+    ULTIMATE = "ultimate"
+    SECRET = "secret"
+    ULTRASECRET = "ultrasecret"
+    PRISMATICSECRET = "prismaticsecret"
+    GHOST = "ghost"
+    PARALLEL = "parallel"
+    COMMONPARALLEL = "commonparallel"
+    RAREPARALLEL = "rareparallel"
+    SUPERPARALLEL = "superparallel"
+    ULTRAPARALLEL = "ultraparallel"
+    DTPC = "dtpc"
+    DTRPR = "dtrpr"
+    DTSPR = "dtspr"
+    DTUPR = "dtupr"
+    DTSCPR = "dtscpr"
+    GOLD = "gold"
+    TENTHOUSANDSECRET = "10000secret"
+    TWENTITHSECRET = "20thsecret"
+    COLLECTORS = "collectors"
+    EXTRASECRET = "extrasecret"
+    EXTRASECRETPARALLEL = "extrasecretparallel"
+    GOLDGHOST = "goldghost"
+    GOLDSECRET = "goldsecret"
+    STARFOIL = "starfoil"
+    MOSAIC = "mosaic"
+    SHATTERFOIL = "shatterfoil"
+    GHOSTPARALLEL = "ghostparallel"
+    PLATINUM = "platinum"
+    PLATINUMSECRET = "platinumsecret"
+    PREMIUMGOLD = "premiumgold"
+    TWENTYFIFTHSECRET = "25thsecret"
+    SECRETPARALLEL = "secretparallel"
+    STARLIGHT = "starlight"
+    PHARAOHS = "pharaohs"
+    KCCOMMON = "kccommon"
+    KCRARE = "kcrare"
+    KCSUPER = "kcsuper"
+    KCULTRA = "kcultra"
+    KCSECRET = "kcsecret"
+    MILLENIUM = "millenium"
+    MILLENIUMSUPER = "milleniumsuper"
+    MILLENIUMULTRA = "milleniumultra"
+    MILLENIUMSECRET = "milleniumsecret"
+    MILLENIUMGOLD = "milleniumgold"
 
 
 class CardText:
@@ -431,12 +501,234 @@ class Card:
         }
 
 
+class PackDistrobution:
+    id: uuid.UUID
+
+
 class Series:
     id: uuid.UUID
 
 
+class CardPrinting:
+    id: uuid.UUID
+    card: Card
+    suffix: typing.Optional[str]
+    rarity: typing.Optional[CardRarity]
+    only_in_box: typing.Optional[SetBoxType]
+    price: typing.Optional[float]
+    language: typing.Optional[str]
+    image: typing.Optional[CardImage]
+
+    def __init__(
+        self,
+        *,
+        id: uuid.UUID,
+        card: Card,
+        suffix: typing.Optional[str] = None,
+        rarity: typing.Optional[CardRarity] = None,
+        only_in_box: typing.Optional[SetBoxType] = None,
+        price: typing.Optional[float] = None,
+        language: typing.Optional[str] = None,
+        image: typing.Optional[CardImage] = None,
+    ) -> None:
+        self.id = id
+        self.card = card
+        self.suffix = suffix
+        self.rarity = rarity
+        self.only_in_box = only_in_box
+        self.price = price
+        self.language = language
+        self.image = image
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "id": str(self.id),
+            "card": str(self.card.id),
+            **({"suffix": self.suffix} if self.suffix else {}),
+            **({"rarity": self.rarity.value} if self.rarity else {}),
+            **({"onlyInBox": self.only_in_box.value} if self.only_in_box else {}),
+            **({"price": self.price} if self.price else {}),
+            **({"language": self.language} if self.language else {}),
+            **({"imageID": str(self.image.id)} if self.image else {}),
+        }
+
+
+class SetContents:
+    locales: typing.List["SetLocale"]
+    formats: typing.List[Format]
+    distrobution: typing.Union[None, PackDistrobution, SpecialDistroType]
+    packs_per_box: typing.Optional[int]
+    has_hobby_retail_differences: bool
+    editions: typing.Optional[typing.List[SetEdition]]
+    image: typing.Optional[str]
+    box_image: typing.Optional[str]
+    cards: typing.List[CardPrinting]
+    removed_cards: typing.List[CardPrinting]
+    ygoprodeck: typing.Optional[ExternalIdPair]
+
+    def __init__(
+        self,
+        *,
+        locales: typing.Optional[typing.List["SetLocale"]] = None,
+        formats: typing.Optional[typing.List[Format]] = None,
+        distrobution: typing.Union[None, PackDistrobution, SpecialDistroType] = None,
+        packs_per_box: typing.Optional[int] = None,
+        has_hobby_retail_differences: bool = False,
+        editions: typing.Optional[typing.List[SetEdition]] = None,
+        image: typing.Optional[str] = None,
+        box_image: typing.Optional[str] = None,
+        cards: typing.Optional[typing.List[CardPrinting]] = None,
+        removed_cards: typing.Optional[typing.List[CardPrinting]] = None,
+        ygoprodeck: typing.Optional[ExternalIdPair] = None,
+    ) -> None:
+        self.locales = locales or []
+        self.formats = formats or []
+        self.distrobution = distrobution
+        self.packs_per_box = packs_per_box
+        self.has_hobby_retail_differences = has_hobby_retail_differences
+        self.editions = editions
+        self.image = image
+        self.box_image = box_image
+        self.cards = cards or []
+        self.removed_cards = removed_cards or []
+        self.ygoprodeck = ygoprodeck
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        distro = None
+        if type(self.distrobution) is SpecialDistroType:
+            distro = self.distrobution.value
+        elif type(self.distrobution) is PackDistrobution:
+            distro = str(self.distrobution.id)
+
+        return {
+            **({"locales": [l.key for l in self.locales]} if self.locales else {}),
+            "formats": [f.value for f in self.formats],
+            **({"distrobution": distro} if self.distrobution else {}),
+            **({"packsPerBox": self.packs_per_box} if self.packs_per_box else {}),
+            **(
+                {"hasHobbyRetailDifferences": True}
+                if self.has_hobby_retail_differences
+                else {}
+            ),
+            **({"editions": [e.value for e in self.editions]} if self.editions else {}),
+            **({"image": self.image} if self.image else {}),
+            **({"boxImage": self.box_image} if self.box_image else {}),
+            "cards": [c._to_json() for c in self.cards],
+            **(
+                {"removedCards": [c._to_json() for c in self.removed_cards]}
+                if self.removed_cards
+                else {}
+            ),
+            "externalIDs": {
+                **(
+                    {
+                        "ygoprodeckID": self.ygoprodeck.name,
+                        "ygoprodeckName": self.ygoprodeck.id,
+                    }
+                    if self.ygoprodeck
+                    else {}
+                ),
+            },
+        }
+
+
+class SetLocale:
+    key: str
+    language: str
+    prefix: typing.Optional[str]
+    date: typing.Optional[datetime.date]
+    image: typing.Optional[str]
+    box_image: typing.Optional[str]
+    card_images: typing.Dict[CardPrinting, str]
+    db_id: typing.Optional[int]
+
+    def __init__(
+        self,
+        *,
+        key: str,
+        language: str,
+        prefix: typing.Optional[str] = None,
+        date: typing.Optional[datetime.date] = None,
+        image: typing.Optional[str] = None,
+        box_image: typing.Optional[str] = None,
+        card_images: typing.Optional[typing.Dict[CardPrinting, str]] = None,
+        db_id: typing.Optional[int] = None,
+    ) -> None:
+        self.key = key
+        self.language = language
+        self.prefix = prefix
+        self.date = date
+        self.image = image
+        self.box_image = box_image
+        self.card_images = card_images or {}
+        self.db_id = db_id
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "language": self.language,
+            **({"prefix": self.prefix} if self.prefix else {}),
+            **({"date": self.date.isoformat()} if self.date else {}),
+            **({"image": self.image} if self.image else {}),
+            **({"boxImage": self.box_image} if self.box_image else {}),
+            "cardImages": {k.id: v for k, v in self.card_images.items()},
+            "externalIDs": {
+                **({"dbID": self.db_id} if self.db_id else {}),
+            },
+        }
+
+
 class Set:
     id: uuid.UUID
+    name: typing.Dict[str, str]
+    locales: typing.Dict[str, SetLocale]
+    contents: typing.List[SetContents]
+    yugipedia_page: typing.Optional[ExternalIdPair]
+    yugiohprices_name: typing.Optional[str]
+
+    def __init__(
+        self,
+        *,
+        id: uuid.UUID,
+        name: typing.Optional[typing.Dict[str, str]] = None,
+        locales: typing.Optional[typing.Iterable[SetLocale]] = None,
+        contents: typing.Optional[typing.List[SetContents]] = None,
+        yugipedia_page: typing.Optional[ExternalIdPair] = None,
+        yugiohprices_name: typing.Optional[str] = None,
+    ) -> None:
+        self.id = id
+        self.name = name or {}
+        self.locales = {locale.key: locale for locale in locales} if locales else {}
+        self.contents = contents or []
+        self.yugipedia_page = yugipedia_page
+        self.yugiohprices_name = yugiohprices_name
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "$schema": f"https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v{SCHEMA_VERSION}/set.json",
+            "id": str(self.id),
+            "name": self.name,
+            **(
+                {"locales": {k: v._to_json() for k, v in self.locales.items()}}
+                if self.locales
+                else {}
+            ),
+            "contents": [v._to_json() for v in self.contents],
+            "externalIDs": {
+                **(
+                    {
+                        "yugipediaName": self.yugipedia_page.name,
+                        "yugipediaID": self.yugipedia_page.id,
+                    }
+                    if self.yugipedia_page
+                    else {}
+                ),
+                **(
+                    {"yugiohpricesName": self.yugiohprices_name}
+                    if self.yugiohprices_name
+                    else {}
+                ),
+            },
+        }
 
 
 class Database:
@@ -456,6 +748,18 @@ class Database:
     cards_by_konami_cid: typing.Dict[int, Card]
     cards_by_yugipedia_id: typing.Dict[int, Card]
     cards_by_ygoprodeck_id: typing.Dict[int, Card]
+
+    card_images_by_id: typing.Dict[uuid.UUID, CardImage]
+
+    sets: typing.List[Set]
+    sets_by_id: typing.Dict[uuid.UUID, Set]
+    sets_by_en_name: typing.Dict[str, Set]
+    sets_by_konami_sid: typing.Dict[int, Set]
+    sets_by_yugipedia_id: typing.Dict[int, Set]
+    sets_by_ygoprodeck_id: typing.Dict[int, Set]
+
+    printings_by_id: typing.Dict[uuid.UUID, CardPrinting]
+    printings_by_code: typing.Dict[str, typing.List[CardPrinting]]
 
     def __init__(
         self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
@@ -477,6 +781,18 @@ class Database:
         self.cards_by_yugipedia_id = {}
         self.cards_by_ygoprodeck_id = {}
 
+        self.card_images_by_id = {}
+
+        self.sets = []
+        self.sets_by_id = {}
+        self.sets_by_en_name = {}
+        self.sets_by_konami_sid = {}
+        self.sets_by_yugipedia_id = {}
+        self.sets_by_ygoprodeck_id = {}
+
+        self.printings_by_id = {}
+        self.printings_by_code = {}
+
     def add_card(self, card: Card):
         if card.id not in self.cards_by_id:
             self.cards.append(card)
@@ -494,6 +810,35 @@ class Database:
             self.cards_by_yugipedia_id[page.id] = card
         if card.ygoprodeck:
             self.cards_by_ygoprodeck_id[card.ygoprodeck.id] = card
+
+        for image in card.images:
+            self.card_images_by_id[image.id] = image
+
+    def add_set(self, set_: Set):
+        if set_.id not in self.sets_by_id:
+            self.sets.append(set_)
+
+        self.sets_by_id[set_.id] = set_
+        if "en" in set_.name:
+            self.sets_by_en_name[set_.name["en"]] = set_
+        if set_.yugipedia_page:
+            self.sets_by_yugipedia_id[set_.yugipedia_page.id] = set_
+        for locale in set_.locales.values():
+            if locale.db_id:
+                self.sets_by_konami_sid[locale.db_id] = set_
+        for content in set_.contents:
+            if content.ygoprodeck:
+                self.sets_by_ygoprodeck_id[content.ygoprodeck.id] = set_
+            for printing in [*content.cards, *content.removed_cards]:
+                self.printings_by_id[printing.id] = printing
+                if printing.suffix:
+                    for locale_id in content.locales:
+                        if locale_id in set_.locales:
+                            prefix = set_.locales[locale_id].prefix
+                            if prefix:
+                                code = prefix + printing.suffix
+                                self.printings_by_code.setdefault(code, [])
+                                self.printings_by_code[code].append(printing)
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -538,7 +883,9 @@ class Database:
     def save(
         self,
         *,
-        progress_monitor: typing.Optional[typing.Callable[[Card], None]] = None,
+        progress_monitor: typing.Optional[
+            typing.Callable[[typing.Union[Card, Set]], None]
+        ] = None,
         generate_individuals: bool = True,
         generate_aggregates: bool = True,
     ):
@@ -564,6 +911,17 @@ class Database:
                 self._save_card(card)
                 if progress_monitor:
                     progress_monitor(card)
+            with open(
+                os.path.join(self.individuals_dir, SETLIST_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump([str(set.id) for set in self.sets], outfile, indent=2)
+            os.makedirs(os.path.join(self.individuals_dir, SETS_DIRNAME), exist_ok=True)
+            for set in self.sets:
+                self._save_set(set)
+                if progress_monitor:
+                    progress_monitor(set)
         if generate_aggregates:
             os.makedirs(self.aggregates_dir, exist_ok=True)
             with open(
@@ -578,6 +936,12 @@ class Database:
                 encoding="utf-8",
             ) as outfile:
                 json.dump([x.to_json() for x in self.cards], outfile, indent=2)
+            with open(
+                os.path.join(self.aggregates_dir, AGG_SETS_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump([x._to_json() for x in self.sets], outfile, indent=2)
 
     def _save_card(self, card: Card):
         with open(
@@ -683,10 +1047,135 @@ class Database:
         ) as outfile:
             return [uuid.UUID(x) for x in json.load(outfile)]
 
+    def _save_set(self, set_: Set):
+        with open(
+            os.path.join(self.individuals_dir, SETS_DIRNAME, str(set_.id) + ".json"),
+            "w",
+            encoding="utf-8",
+        ) as outfile:
+            json.dump(set_._to_json(), outfile, indent=2)
+
+    def _load_printing(
+        self,
+        rawprinting: typing.Dict[str, typing.Any],
+        printings: typing.Dict[uuid.UUID, CardPrinting],
+    ) -> CardPrinting:
+        result = CardPrinting(
+            id=uuid.UUID(rawprinting["id"]),
+            card=self.cards_by_id[uuid.UUID(rawprinting["card"])],
+            suffix=rawprinting.get("suffix"),
+            rarity=CardRarity(rawprinting["rarity"])
+            if "rarity" in rawprinting
+            else None,
+            only_in_box=SetBoxType(rawprinting["onlyInBox"])
+            if "onlyInBox" in rawprinting
+            else None,
+            price=rawprinting.get("price"),
+            language=rawprinting.get("language"),
+            image=self.card_images_by_id[uuid.UUID(rawprinting["imageID"])]
+            if "imageID" in rawprinting
+            else None,
+        )
+        printings[result.id] = result
+        return result
+
+    def _load_set(self, rawset: typing.Dict[str, typing.Any]) -> Set:
+        printings: typing.Dict[uuid.UUID, CardPrinting] = {}
+
+        contents: typing.List[typing.Tuple[SetContents, typing.List[str]]] = []
+        for content in rawset["contents"]:
+            contents.append(
+                (
+                    SetContents(
+                        formats=[Format(v) for v in content["formats"]],
+                        # TODO: handle distrobution when it's a UUID
+                        distrobution=SpecialDistroType(content["distrobution"])
+                        if content.get("distrobution")
+                        and content["distrobution"]
+                        in SpecialDistroType._value2member_map_
+                        else None,
+                        packs_per_box=content.get("packsPerBox"),
+                        has_hobby_retail_differences=content.get(
+                            "hasHobbyRetailDifferences", False
+                        ),
+                        editions=[SetEdition(v) for v in content["editions"]],
+                        image=content.get("image"),
+                        box_image=content.get("boxImage"),
+                        cards=[
+                            self._load_printing(v, printings) for v in content["cards"]
+                        ],
+                        removed_cards=[
+                            self._load_printing(v, printings)
+                            for v in content.get("removedCards", [])
+                        ],
+                        ygoprodeck=ExternalIdPair(
+                            content["externalIDs"].get("ygoprodeckName"),
+                            content["externalIDs"].get("ygoprodeckID"),
+                        )
+                        if (
+                            "ygoprodeckName" in content["externalIDs"]
+                            and "ygoprodeckID" in content["externalIDs"]
+                        )
+                        else None,
+                    ),
+                    content.get("locales", []),
+                )
+            )
+
+        locales = {
+            k: SetLocale(
+                key=k,
+                language=v["language"],
+                prefix=v.get("prefix"),
+                date=datetime.date.fromisoformat(v["date"]) if "date" in v else None,
+                image=v.get("image"),
+                box_image=v.get("boxImage"),
+                card_images={
+                    printings[uuid.UUID(k)]: v
+                    for k, v in v.get("cardImages", {}).items()
+                },
+                db_id=v["externalIDs"].get("dbID"),
+            )
+            for k, v in rawset.get("locales", {}).items()
+        }
+
+        for content, locale_names in contents:
+            content.locales = [
+                locales[locale_name]
+                for locale_name in locale_names
+                if locale_name in locales
+            ]
+
+        return Set(
+            id=uuid.UUID(rawset["id"]),
+            name=rawset["name"],
+            locales=locales,
+            contents=[v[0] for v in contents],
+            yugipedia_page=ExternalIdPair(
+                rawset["externalIDs"].get("yugipediaName"),
+                rawset["externalIDs"].get("yugipediaID"),
+            )
+            if (
+                "yugipediaName" in rawset["externalIDs"]
+                and "yugipediaID" in rawset["externalIDs"]
+            )
+            else None,
+        )
+
+    def _load_setlist(self) -> typing.List[uuid.UUID]:
+        if not os.path.exists(os.path.join(self.individuals_dir, SETLIST_FILENAME)):
+            return []
+        with open(
+            os.path.join(self.individuals_dir, SETLIST_FILENAME), encoding="utf-8"
+        ) as outfile:
+            return [uuid.UUID(x) for x in json.load(outfile)]
+
 
 def load_database(
     *,
-    progress_monitor: typing.Optional[typing.Callable[[Card], None]] = None,
+    progress_monitor: typing.Optional[
+        typing.Callable[[typing.Union[Card, Set]], None]
+    ] = None,
     individuals_dir: str = DATA_DIR,
     aggregates_dir: str = AGGREGATE_DIR,
 ) -> Database:
@@ -722,5 +1211,25 @@ def load_database(
             result.add_card(card)
             if progress_monitor:
                 progress_monitor(card)
+
+    if os.path.exists(os.path.join(aggregates_dir, AGG_SETS_FILENAME)):
+        with open(
+            os.path.join(aggregates_dir, AGG_SETS_FILENAME), encoding="utf-8"
+        ) as outfile:
+            for set_json in json.load(outfile):
+                set_ = result._load_set(set_json)
+                result.add_set(set_)
+                if progress_monitor:
+                    progress_monitor(set_)
+    else:
+        for set_id in result._load_setlist():
+            with open(
+                os.path.join(individuals_dir, SETS_DIRNAME, str(set_id) + ".json"),
+                encoding="utf-8",
+            ) as outfile:
+                set_ = result._load_set(json.load(outfile))
+            result.add_set(set_)
+            if progress_monitor:
+                progress_monitor(set_)
 
     return result

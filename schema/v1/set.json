@@ -97,8 +97,8 @@
               "enum": ["ocg", "tcg", "speed", "masterduel", "duellinks"]
             }
           },
-          "distribution": {
-            "description": "Either a keyword, or the UUID of the distribution method of this set, if known: was it a pack, deck, promo card, etc. Look it up in the distributions JSON. As for keywords: The keyword 'preconstructed' means to give all cards in order, like a deck.",
+          "distrobution": {
+            "description": "Either a keyword, or the UUID of the distrobution method of this set, if known: was it a pack, deck, promo card, etc. Look it up in the distributions JSON. As for keywords: The keyword 'preconstructed' means to give all cards in order, like a deck.",
             "oneOf": [
               { "type": "string", "format": "uuid" },
               { "enum": ["preconstructed"] }
