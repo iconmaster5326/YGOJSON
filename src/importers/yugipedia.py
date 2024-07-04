@@ -774,7 +774,15 @@ def parse_set(
         print(f"warning: did not find gallery HTML for {batcher.idsToNames[pageid]}")
         return False
 
-    # TODO: do a merge of data, as to not clobber printings UUIDs
+    old_printings: typing.Dict[
+        typing.Tuple[str, uuid.UUID, str, typing.Optional[CardRarity]], CardPrinting
+    ] = {
+        (locale.key, printing.card.id, printing.suffix or "", printing.rarity): printing
+        for contents in set_.contents
+        for printing in [*contents.cards, *contents.removed_cards]
+        for locale in contents.locales
+    }
+
     set_.locales.clear()
     set_.contents.clear()
 
@@ -957,14 +965,22 @@ def parse_set(
                                             f'warning: card "{name}" not found in database in "{galleryname}"'
                                         )
                                         return
-                                    contents.cards.append(
-                                        CardPrinting(
-                                            id=uuid.uuid4(),
-                                            card=db.cards_by_yugipedia_id[printingid],
-                                            suffix=code[len(locale.prefix or "") :],
-                                            rarity=found_rairty,
-                                        )
+                                    card = db.cards_by_yugipedia_id[printingid]
+                                    suffix = code[len(locale.prefix or "") :]
+                                    existing = old_printings.get(
+                                        (locale.key, card.id, suffix, found_rairty)
                                     )
+                                    if existing:
+                                        contents.cards.append(existing)
+                                    else:
+                                        contents.cards.append(
+                                            CardPrinting(
+                                                id=uuid.uuid4(),
+                                                card=card,
+                                                suffix=suffix,
+                                                rarity=found_rairty,
+                                            )
+                                        )
 
                             getCardID(name, code, found_rairty, locale)
 
