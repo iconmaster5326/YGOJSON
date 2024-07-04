@@ -431,7 +431,7 @@ class Card:
                 }
                 for x in self.images
             ],
-            "sets": [x.id for x in self.sets],
+            "sets": [str(x.id) for x in self.sets],
             "legality": {
                 k.value: {
                     "current": v.current.value,
@@ -841,6 +841,14 @@ class Database:
                                 code = prefix + printing.suffix
                                 self.printings_by_code.setdefault(code, [])
                                 self.printings_by_code[code].append(printing)
+
+    def regenerate_backlinks(self):
+        for card in self.cards:
+            card.sets.clear()
+        for set_ in self.sets:
+            for contents in set_.contents:
+                for printing in contents.cards:
+                    printing.card.sets.append(set_)
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {

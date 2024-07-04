@@ -63,6 +63,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         action="store_true",
         help="Don't import sets from external APIs",
     )
+    parser.add_argument(
+        "--no-regen-backlinks",
+        action="store_true",
+        help="Don't regenerate backlinks (for example, links from cards to sets)",
+    )
     args = parser.parse_args(argv[1:])
 
     n = 0
@@ -113,6 +118,10 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         )
         print()
         print(f"Added {n_new} cards and updated {n_old} cards.")
+
+    if not args.no_regen_backlinks:
+        print("Generating backlinks...")
+        db.regenerate_backlinks()
 
     print("Saving database...")
     db.save(
