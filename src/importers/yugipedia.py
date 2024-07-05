@@ -1167,6 +1167,7 @@ def import_from_yugipedia(
                 ):
                     cards = [x for x in get_card_pages(batcher)]
                 else:
+                    batcher.use_cache = False
                     cards = [
                         x
                         for x in get_changes(
@@ -1176,6 +1177,7 @@ def import_from_yugipedia(
                             get_changelog(db.last_yugipedia_read),
                         )
                     ]
+                    batcher.use_cache = True
                     token_ids = get_token_ids(batcher)
             else:
                 cards = [x for x in get_card_pages(batcher)]
@@ -1252,6 +1254,7 @@ def import_from_yugipedia(
                 ):
                     sets = [x for x in get_set_pages(batcher)]
                 else:
+                    batcher.use_cache = False
                     sets = [
                         x
                         for x in get_changes(
@@ -1261,6 +1264,7 @@ def import_from_yugipedia(
                             get_changelog(db.last_yugipedia_read),
                         )
                     ]
+                    batcher.use_cache = True
             else:
                 sets = [x for x in get_set_pages(batcher)]
 
@@ -1356,9 +1360,12 @@ class CategoryMember(WikiPage):
 
 
 class YugipediaBatcher:
+    use_cache: bool
+
     def __init__(self) -> None:
         self.namesToIDs = {}
         self.idsToNames = {}
+        self.use_cache = True
 
         self.pendingGetPageContents = {}
         self.pageContentsCache = {}
@@ -1487,7 +1494,7 @@ class YugipediaBatcher:
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
-                if pageid in batcher.pageContentsCache:
+                if batcher.use_cache and pageid in batcher.pageContentsCache:
                     callback(batcher.pageContentsCache[pageid])
                 else:
                     batcher.pendingGetPageContents.setdefault(pageid or page, [])
@@ -1561,7 +1568,7 @@ class YugipediaBatcher:
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
-                if pageid in batcher.pageCategoriesCache:
+                if batcher.use_cache and pageid in batcher.pageCategoriesCache:
                     callback(batcher.pageCategoriesCache[pageid])
                 else:
                     batcher.pendingGetPageCategories.setdefault(pageid or page, [])
@@ -1711,7 +1718,7 @@ class YugipediaBatcher:
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
 
-                if pageid not in batcher.categoryMembersCache:
+                if not batcher.use_cache or pageid not in batcher.categoryMembersCache:
                     pageid = batcher._populateCatMembers(page)
 
                 if pageid is None:
@@ -1743,7 +1750,7 @@ class YugipediaBatcher:
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
 
-                if pageid not in batcher.categoryMembersCache:
+                if not batcher.use_cache or pageid not in batcher.categoryMembersCache:
                     pageid = batcher._populateCatMembers(page)
 
                 if pageid is None:
@@ -1807,7 +1814,7 @@ class YugipediaBatcher:
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
-                if pageid in batcher.imagesCache:
+                if batcher.use_cache and pageid in batcher.imagesCache:
                     callback(batcher.imagesCache[pageid])
                 else:
                     batcher.pendingImages.setdefault(pageid or page, [])
@@ -1878,6 +1885,8 @@ class YugipediaBatcher:
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
+                # we make the dangerous assumption here that page IDs and internal titles never change
+                # (that is, we ignore batcher.use_cache)
                 if page in batcher.namesToIDs:
                     callback(batcher.namesToIDs[page], page)
                 elif page in batcher.idsToNames:
