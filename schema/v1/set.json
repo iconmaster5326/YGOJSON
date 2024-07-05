@@ -67,8 +67,13 @@
             "type": "object",
             "required": [],
             "properties": {
-              "dbID": {
-                "description": "The official Yugioh database ID for this product."
+              "dbIDs": {
+                "description": "Any official Yugioh database IDs for this product.",
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "description": "An official Yugioh database ID for this product."
+                }
               }
             }
           }

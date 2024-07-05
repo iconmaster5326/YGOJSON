@@ -307,7 +307,12 @@ MYSTERY_ATK_DEFS = {"?", "????", "X000"}
 
 
 def _strip_markup(s: str) -> str:
-    return "\n".join(wikitextparser.remove_markup(x) for x in s.split("\n"))
+    return "\n".join(
+        wikitextparser.remove_markup(
+            re.sub(r"\{\{[Rr]uby\|([^\|]*)\|(?:[^\}]*)?\}\}", r"\1", x)
+        )
+        for x in s.split("\n")
+    )
 
 
 def parse_card(
@@ -779,7 +784,12 @@ def parse_set(
 ) -> bool:
     for arg in settable.arguments:
         if arg.name and arg.name.strip().endswith(DBNAME_SUFFIX) and arg.value.strip():
-            set_.name[arg.name.strip()[: -len(DBNAME_SUFFIX)]] = arg.value.strip()
+            lang = arg.name.strip()[: -len(DBNAME_SUFFIX)]
+            if lang == "ja":
+                lang = "jp"  # hooray for consistency!
+            value = _strip_markup(arg.value).strip()
+            if value:
+                set_.name[lang] = value
     if "en" not in set_.name:
         set_.name["en"] = batcher.idsToNames[pageid]
 
@@ -1127,24 +1137,37 @@ def parse_set(
                         if not similar_contents:
                             set_.contents.append(contents)
 
-                        if locale.key in set_.locales:
-                            # print(f"warning: duplicate locale key for {batcher.idsToNames[pageid]}: {locale.key}")
-                            pass
-                        else:
-                            set_.locales[locale.key] = locale
-
                         for arg in settable.arguments:
                             if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
-                                lang = arg.name[: -len(DBID_SUFFIX)]
+                                lang = arg.name.strip()[: -len(DBID_SUFFIX)]
+                                if lang == "ja":
+                                    lang = "jp"  # hooray for consistency!
+
                                 if lang == locale.key:
+                                    db_ids = [
+                                        x.strip()
+                                        for x in arg.value.replace("*", "").split("\n")
+                                        if x.strip()
+                                    ]
                                     try:
-                                        set_.locales[lang].db_id = int(
-                                            arg.value.strip()
-                                        )
+                                        locale.db_ids = [int(x) for x in db_ids]
                                     except ValueError:
                                         print(
-                                            f"warning: Unknown Konami ID for {batcher.idsToNames[pageid]}: {arg.value.strip()}"
+                                            f"warning: Unknown Konami ID for {batcher.idsToNames[pageid]}: {db_ids}"
                                         )
+
+                        if locale.key in set_.locales:
+                            # merge locales
+                            existing_locale = set_.locales[locale.key]
+                            existing_locale.db_ids.extend(
+                                [
+                                    x
+                                    for x in locale.db_ids
+                                    if x not in existing_locale.db_ids
+                                ]
+                            )
+                        else:
+                            set_.locales[locale.key] = locale
 
                 do(link.target)
 
@@ -1308,17 +1331,17 @@ def import_from_yugipedia(
                         set_ = db.sets_by_yugipedia_id.get(pageid)
                         if not set_:
                             for arg in settable.arguments:
-                                if (
-                                    arg.name
-                                    and arg.name.strip().endswith(DBID_SUFFIX)
-                                    and arg.value.strip()
-                                ):
+                                if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
+                                    db_ids = [
+                                        x.strip()
+                                        for x in arg.value.replace("*", "").split("\n")
+                                        if x.strip()
+                                    ]
                                     try:
-                                        set_ = db.sets_by_konami_sid.get(
-                                            int(arg.value.strip())
-                                        )
-                                        if set_:
-                                            break
+                                        for db_id in db_ids:
+                                            set_ = db.sets_by_konami_sid.get(int(db_id))
+                                            if set_:
+                                                break
                                     except ValueError:
                                         if arg.value.strip() != "none":
                                             print(

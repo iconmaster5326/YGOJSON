@@ -641,7 +641,7 @@ class SetLocale:
     image: typing.Optional[str]
     box_image: typing.Optional[str]
     card_images: typing.Dict[CardPrinting, str]
-    db_id: typing.Optional[int]
+    db_ids: typing.List[int]
 
     def __init__(
         self,
@@ -653,7 +653,7 @@ class SetLocale:
         image: typing.Optional[str] = None,
         box_image: typing.Optional[str] = None,
         card_images: typing.Optional[typing.Dict[CardPrinting, str]] = None,
-        db_id: typing.Optional[int] = None,
+        db_ids: typing.Optional[typing.List[int]] = None,
     ) -> None:
         self.key = key
         self.language = language
@@ -662,7 +662,7 @@ class SetLocale:
         self.image = image
         self.box_image = box_image
         self.card_images = card_images or {}
-        self.db_id = db_id
+        self.db_ids = db_ids or []
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -673,7 +673,7 @@ class SetLocale:
             **({"boxImage": self.box_image} if self.box_image else {}),
             "cardImages": {k.id: v for k, v in self.card_images.items()},
             "externalIDs": {
-                **({"dbID": self.db_id} if self.db_id else {}),
+                **({"dbIDs": self.db_ids} if self.db_ids else {}),
             },
         }
 
@@ -826,8 +826,8 @@ class Database:
         if set_.yugipedia_page:
             self.sets_by_yugipedia_id[set_.yugipedia_page.id] = set_
         for locale in set_.locales.values():
-            if locale.db_id:
-                self.sets_by_konami_sid[locale.db_id] = set_
+            for db_id in locale.db_ids:
+                self.sets_by_konami_sid[db_id] = set_
         for content in set_.contents:
             if content.ygoprodeck:
                 self.sets_by_ygoprodeck_id[content.ygoprodeck.id] = set_
@@ -1144,7 +1144,7 @@ class Database:
                     printings[uuid.UUID(k)]: v
                     for k, v in v.get("cardImages", {}).items()
                 },
-                db_id=v["externalIDs"].get("dbID"),
+                db_ids=v["externalIDs"].get("dbIDs"),
             )
             for k, v in rawset.get("locales", {}).items()
         }
