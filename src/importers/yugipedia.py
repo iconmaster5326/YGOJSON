@@ -560,6 +560,7 @@ RARITY_STR_TO_ENUM = {
     "r": CardRarity.RARE,
     "sr": CardRarity.SUPER,
     "ur": CardRarity.ULTRA,
+    "rar": CardRarity.ULTRA,  # not official, but typos were made in a few galleries (?)
     "utr": CardRarity.ULTIMATE,
     "se": CardRarity.SECRET,
     "scr": CardRarity.SECRET,
@@ -711,6 +712,7 @@ FULL_RARITY_STR_TO_ENUM = {
     "10000 secret rare": CardRarity.TENTHOUSANDSECRET,  # 10000scr
     "20th secret rare": CardRarity.TWENTITHSECRET,  # 20scr
     "collector's rare": CardRarity.COLLECTORS,  # cr
+    "extra secret": CardRarity.EXTRASECRET,  # escr
     "extra secret rare": CardRarity.EXTRASECRET,  # escr
     "extra secret parallel rare": CardRarity.EXTRASECRETPARALLEL,  # escpr
     "ghost/gold rare": CardRarity.GOLDGHOST,  # ggr
@@ -741,6 +743,7 @@ FULL_RARITY_STR_TO_ENUM = {
 EDITION_STR_TO_ENUM = {
     "1E": SetEdition.FIRST,
     "UE": SetEdition.UNLIMTED,
+    "REPRINT": SetEdition.UNLIMTED,
     "LE": SetEdition.LIMITED,
     # TODO: is this right?
     "DT": SetEdition.UNLIMTED,
@@ -817,8 +820,8 @@ def parse_set(
 
                 def do(galleryname: str):
                     locale_info = re.search(
-                        r"\(([TO]CG)-(\w+)-(\w+)\)", galleryname
-                    ) or re.search(r"\(([TO]CG)-(\w+)\)", galleryname)
+                        r"\((\w+)-(\w+)-(\w+)\)", galleryname
+                    ) or re.search(r"\((\w+)-(\w+)\)", galleryname)
                     if not locale_info:
                         print(f"warning: no locale found for: {galleryname}")
                         return
@@ -876,9 +879,16 @@ def parse_set(
                                     f"warning: unknown edition of set {galleryname}: {locale_info.group(3)}"
                                 )
 
+                        format_found = locale_info.group(1).strip().lower()
+                        if format_found not in Format._value2member_map_:
+                            print(
+                                f"warning: invalid format found for {galleryname}: {format_found}"
+                            )
+                            return
+
                         contents = SetContents(
                             locales=[locale],
-                            formats=[Format(locale_info.group(1).strip().lower())],
+                            formats=[Format(format_found)],
                             editions=[edition] if edition else [],
                         )
 
