@@ -1,4 +1,5 @@
 # Import data from Yugipedia (https://yugipedia.com).
+import atexit
 import datetime
 import json
 import os.path
@@ -97,6 +98,8 @@ CAT_OCG_CARDS = "Category:OCG cards"
 CAT_TCG_SETS = "Category:TCG sets"
 CAT_OCG_SETS = "Category:OCG sets"
 CAT_TOKENS = "Category:Tokens"
+CAT_SKILLS = "Category:Skill Cards"
+CAT_UNUSABLE = "Category:Unusable cards"
 
 DBID_SUFFIX = "_database_id"
 DBNAME_SUFFIX = "_name"
@@ -814,8 +817,8 @@ def parse_set(
 
                 def do(galleryname: str):
                     locale_info = re.search(
-                        r"\(([TO]CG)-(..)-(..)\)", galleryname
-                    ) or re.search(r"\(([TO]CG)-(..)\)", galleryname)
+                        r"\(([TO]CG)-(\w+)-(\w+)\)", galleryname
+                    ) or re.search(r"\(([TO]CG)-(\w+)\)", galleryname)
                     if not locale_info:
                         print(f"warning: no locale found for: {galleryname}")
                         return
@@ -865,16 +868,20 @@ def parse_set(
                             key=lang,
                             language=lang,
                         )
+                        edition = None
+                        if len(locale_info.groups()) >= 3:
+                            edition = EDITION_STR_TO_ENUM.get(
+                                locale_info.group(3).strip().upper()
+                            )
+                            if not edition:
+                                print(
+                                    f"warning: unknown edition of set {galleryname}: {locale_info.group(3)}"
+                                )
+
                         contents = SetContents(
                             locales=[locale],
                             formats=[Format(locale_info.group(1).strip().lower())],
-                            editions=[]
-                            if len(locale_info.groups()) <= 2
-                            else [
-                                EDITION_STR_TO_ENUM[
-                                    locale_info.group(3).strip().upper()
-                                ]
-                            ],
+                            editions=[edition] if edition else [],
                         )
 
                         @batcher.getImageURL("File:" + gallery_image_name)
@@ -902,7 +909,6 @@ def parse_set(
                                             else:
                                                 printings.append((*parts,))
                         elif subgallery:
-                            # BlizzedDefenderoftheIceBarrier-HA01-DE-ScR-LE.png | [[HA01-DE001]] ([[ScR]])<br />[[Blizzed, Defender of the Ice Barrier]]<br />{{Card name|Blizzed, Defender of the Ice Barrier|de}}
                             printings = [
                                 (
                                     lambda m: (
@@ -965,30 +971,96 @@ def parse_set(
                                 found_rairty: typing.Optional[CardRarity],
                                 locale: SetLocale,
                             ):
-                                @batcher.getPageContents(name)
-                                def onCardIDGet(_: str):
-                                    printingid = batcher.namesToIDs[name]
-                                    if printingid not in db.cards_by_yugipedia_id:
-                                        print(
-                                            f'warning: card "{name}" not found in database in "{galleryname}"'
-                                        )
-                                        return
-                                    card = db.cards_by_yugipedia_id[printingid]
-                                    suffix = code[len(locale.prefix or "") :]
-                                    existing = old_printings.get(
-                                        (locale.key, card.id, suffix, found_rairty)
-                                    )
-                                    if existing:
-                                        contents.cards.append(existing)
-                                    else:
-                                        contents.cards.append(
-                                            CardPrinting(
-                                                id=uuid.uuid4(),
-                                                card=card,
-                                                suffix=suffix,
-                                                rarity=found_rairty,
-                                            )
-                                        )
+                                @batcher.getPageID(CAT_TOKENS)
+                                def catID(tokensid: int, _: str):
+                                    @batcher.getPageID(CAT_SKILLS)
+                                    def catID(skillsid: int, _: str):
+                                        @batcher.getPageID(CAT_UNUSABLE)
+                                        def catID(unusableid: int, _: str):
+                                            @batcher.getPageID(name)
+                                            def onGetCardID(printingid: int, _: str):
+                                                @batcher.getPageCategories(name)
+                                                def onGetCardCats(
+                                                    categories: typing.List[int],
+                                                ):
+                                                    if (
+                                                        tokensid in categories
+                                                        or skillsid in categories
+                                                        or unusableid in categories
+                                                    ):
+                                                        return  # skip tokens, skill cards, and unplayables (for now)
+
+                                                    def addToContents(id: int):
+                                                        card = db.cards_by_yugipedia_id[
+                                                            id
+                                                        ]
+                                                        suffix = code[
+                                                            len(locale.prefix or "") :
+                                                        ]
+                                                        existing = old_printings.get(
+                                                            (
+                                                                locale.key,
+                                                                card.id,
+                                                                suffix,
+                                                                found_rairty,
+                                                            )
+                                                        )
+                                                        if existing:
+                                                            contents.cards.append(
+                                                                existing
+                                                            )
+                                                        else:
+                                                            contents.cards.append(
+                                                                CardPrinting(
+                                                                    id=uuid.uuid4(),
+                                                                    card=card,
+                                                                    suffix=suffix,
+                                                                    rarity=found_rairty,
+                                                                )
+                                                            )
+
+                                                    if (
+                                                        printingid
+                                                        not in db.cards_by_yugipedia_id
+                                                    ):
+                                                        # try looking for (card) version
+                                                        @batcher.getPageID(
+                                                            name + " (Card)"
+                                                        )
+                                                        def onGetCardID(
+                                                            printingid: int, _: str
+                                                        ):
+                                                            @batcher.getPageCategories(
+                                                                name
+                                                            )
+                                                            def onGetCardCats(
+                                                                categories: typing.List[
+                                                                    int
+                                                                ],
+                                                            ):
+                                                                if (
+                                                                    tokensid
+                                                                    in categories
+                                                                    or skillsid
+                                                                    in categories
+                                                                    or unusableid
+                                                                    in categories
+                                                                ):
+                                                                    pass  # skip tokens, skill cards, and unplayables (for now)
+                                                                elif (
+                                                                    printingid
+                                                                    not in db.cards_by_yugipedia_id
+                                                                ):
+                                                                    print(
+                                                                        f'warning: card "{name}" not found in database in "{galleryname}"'
+                                                                    )
+                                                                else:
+                                                                    addToContents(
+                                                                        printingid
+                                                                    )
+
+                                                    else:
+                                                        addToContents(printingid)
 
                             getCardID(name, code, found_rairty, locale)
 
@@ -1079,6 +1151,8 @@ def import_from_yugipedia(
     n_found = n_new = 0
 
     with YugipediaBatcher() as batcher:
+        atexit.register(lambda: batcher.saveCachesToDisk())
+
         if import_cards:
             token_ids = get_token_ids(batcher)
 
@@ -1301,6 +1375,8 @@ class YugipediaBatcher:
 
         self.categoryMembersCache = {}
 
+        self.pendingGetPageID = {}
+
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)
         if os.path.exists(path):
             with open(path, encoding="utf-8") as file:
@@ -1343,7 +1419,9 @@ class YugipediaBatcher:
 
     def __exit__(self, exc_type, exc, exc_tb):
         self.flushPendingOperations()
+        self.saveCachesToDisk()
 
+    def saveCachesToDisk(self):
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)
         with open(path, "w", encoding="utf-8") as file:
             json.dump(
@@ -1384,10 +1462,12 @@ class YugipediaBatcher:
             self.pendingGetPageContents
             or self.pendingGetPageCategories
             or self.pendingImages
+            or self.pendingGetPageID
         ):
             self._executeGetContentsBatch()
             self._executeGetCategoriesBatch()
             self._executeGetImageURLBatch()
+            self._executeGetPageIDBatch()
 
     def clearCache(self):
         self.categoryMembersCache.clear()
@@ -1790,6 +1870,71 @@ class YugipediaBatcher:
                             callback(url)
                         for callback in pending.get(title, []):
                             callback(url)
+
+        do([p for p in pages if type(p) is int])
+        do([p for p in pages if type(p) is str])
+
+    pendingGetPageID: typing.Dict[
+        typing.Union[int, str], typing.List[typing.Callable[[int, str], None]]
+    ]
+
+    def getPageID(self, page: typing.Union[str, int], *, useCache: bool = True):
+        batcher = self
+
+        class GetIDDecorator:
+            def __init__(self, callback: typing.Callable[[int, str], None]) -> None:
+                pageid = (
+                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                )
+                if page in batcher.namesToIDs:
+                    callback(batcher.namesToIDs[page], page)
+                elif page in batcher.idsToNames:
+                    callback(page, batcher.idsToNames[page])
+                else:
+                    batcher.pendingGetPageID.setdefault(pageid or page, [])
+                    batcher.pendingGetPageID[pageid or page].append(callback)
+                    if len(batcher.pendingGetPageID.keys()) >= BATCH_MAX:
+                        batcher._executeGetPageIDBatch()
+
+            def __call__(self) -> None:
+                raise Exception(
+                    "Not supposed to call YugipediaBatcher-decorated function!"
+                )
+
+        return GetIDDecorator
+
+    def _executeGetPageIDBatch(self):
+        if not self.pendingGetPageID:
+            return
+        pending = {k: v for k, v in self.pendingGetPageID.items()}
+        self.pendingGetPageID.clear()
+        pages = pending.keys()
+
+        def do(pages: typing.Iterable[typing.Union[int, str]]):
+            if not pages:
+                return
+            pageids = [str(p) for p in pages if type(p) is int]
+            pagetitles = [str(p) for p in pages if type(p) is str]
+            query = {
+                "action": "query",
+                **({"pageids": "|".join(pageids)} if pageids else {}),
+                **({"titles": "|".join(pagetitles)} if pagetitles else {}),
+            }
+            for result_page in paginate_query(query):
+                for result in result_page["pages"]:
+                    if result.get("missing"):
+                        continue
+
+                    pageid = result["pageid"]
+                    title = result["title"]
+
+                    self.namesToIDs[title] = pageid
+                    self.idsToNames[pageid] = title
+
+                    for callback in pending.get(pageid, []):
+                        callback(pageid, title)
+                    for callback in pending.get(title, []):
+                        callback(pageid, title)
 
         do([p for p in pages if type(p) is int])
         do([p for p in pages if type(p) is str])
