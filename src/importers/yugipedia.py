@@ -717,6 +717,7 @@ FULL_RARITY_STR_TO_ENUM = {
     "10000 secret rare": CardRarity.TENTHOUSANDSECRET,  # 10000scr
     "20th secret rare": CardRarity.TWENTITHSECRET,  # 20scr
     "collector's rare": CardRarity.COLLECTORS,  # cr
+    "collectors rare": CardRarity.COLLECTORS,  # cr
     "extra secret": CardRarity.EXTRASECRET,  # escr
     "extra secret rare": CardRarity.EXTRASECRET,  # escr
     "extra secret parallel rare": CardRarity.EXTRASECRETPARALLEL,  # escpr
@@ -732,6 +733,7 @@ FULL_RARITY_STR_TO_ENUM = {
     "quarter century secret rare": CardRarity.TWENTYFIFTHSECRET,  # qcscr
     "secret parallel rare": CardRarity.SECRETPARALLEL,  # scpr
     "starlight rare": CardRarity.STARLIGHT,  # altr / str
+    "alternate rare": CardRarity.STARLIGHT,  # altr / str
     "ultra rare (pharaoh's rare)": CardRarity.PHARAOHS,  # urpr
     "kaiba corporation common": CardRarity.KCCOMMON,  # kcc / kcn
     "kaiba corporation rare": CardRarity.KCRARE,  # kcr
@@ -840,41 +842,6 @@ def parse_set(
 
                     @batcher.getPageContents(galleryname)
                     def onGetData(gallery_raw_data: str):
-                        gallery_data = wikitextparser.parse(gallery_raw_data)
-
-                        gallery_table = None
-                        subgallery = None
-
-                        try:
-                            gallery_table = next(
-                                iter(
-                                    [
-                                        x
-                                        for x in gallery_data.templates
-                                        if x.name.strip().lower() == "set gallery"
-                                    ]
-                                )
-                            )
-                        except StopIteration:
-                            pass
-
-                        if not gallery_table:
-                            subgallery_html = re.search(
-                                r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;",
-                                gallery_raw_data,
-                                re.DOTALL,
-                            ) or re.search(
-                                r"<gallery[^\n]*\n(.*?)\n</gallery>",
-                                gallery_raw_data,
-                                re.DOTALL,
-                            )
-                            if subgallery_html:
-                                subgallery = [
-                                    x.strip()
-                                    for x in subgallery_html.group(1).split("\n")
-                                    if x.strip()
-                                ]
-
                         default_rarity = None
                         lang = locale_info.group(2).strip().lower()
                         locale = SetLocale(
@@ -908,10 +875,45 @@ def parse_set(
                         def onGetImage(url: str):
                             locale.image = url
 
-                        if gallery_table:
+                        gallery_data = wikitextparser.parse(gallery_raw_data)
+
+                        gallery_tables = [
+                            x
+                            for x in gallery_data.templates
+                            if x.name.strip().lower() == "set gallery"
+                        ]
+
+                        subgalleries = [
+                            [
+                                x.strip()
+                                for x in subgallery_html.group(1).split("\n")
+                                if x.strip()
+                            ]
+                            for subgallery_html in [
+                                *re.finditer(
+                                    r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;",
+                                    gallery_raw_data,
+                                    re.DOTALL,
+                                ),
+                                *re.finditer(
+                                    r"<gallery[^\n]*\n(.*?)\n</gallery>",
+                                    gallery_raw_data,
+                                    re.DOTALL,
+                                ),
+                            ]
+                        ]
+
+                        if not gallery_tables and not subgalleries:
+                            print(
+                                f"warning: found gallery without gallery table or subgallery: {galleryname}"
+                            )
+                            return
+
+                        printings = []
+
+                        for gallery_table in gallery_tables:
                             default_rarity = get_table_entry(gallery_table, "rarity")
                             abbr = get_table_entry(gallery_table, "abbr")
-                            printings = []
 
                             for rawprintings in gallery_table.arguments:
                                 if rawprintings.positional:
@@ -928,8 +930,9 @@ def parse_set(
                                                 printings.append(("", *parts))
                                             else:
                                                 printings.append((*parts,))
-                        elif subgallery:
-                            printings = [
+
+                        for subgallery in subgalleries:
+                            printings.extend(
                                 (
                                     lambda m: (
                                         m.group(1).strip(),
@@ -945,12 +948,7 @@ def parse_set(
                                     )
                                 )
                                 for x in subgallery
-                            ]
-                        else:
-                            print(
-                                f"warning: found gallery without gallery table or subgallery: {galleryname}"
                             )
-                            return
 
                         prefixmatch = re.match(
                             r"^[^\-]+\-\D*",
@@ -981,9 +979,10 @@ def parse_set(
 
                             found_rairty = None
                             if rarity:
+                                rarity = rarity.strip().lower()
                                 found_rairty = RARITY_STR_TO_ENUM.get(
-                                    rarity.lower()
-                                ) or FULL_RARITY_STR_TO_ENUM.get(rarity.lower())
+                                    rarity
+                                ) or FULL_RARITY_STR_TO_ENUM.get(rarity)
                                 if not found_rairty:
                                     print(
                                         f"warning: unknown rarity for {name} in {galleryname}: {rarity}"
@@ -1088,7 +1087,44 @@ def parse_set(
 
                             getCardID(name, code, found_rairty, locale)
 
-                        similar_contents = [
+                        for arg in settable.arguments:
+                            if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
+                                lang = arg.name.strip()[: -len(DBID_SUFFIX)]
+                                if lang == "ja":
+                                    lang = "jp"  # hooray for consistency!
+
+                                if lang == locale.key:
+                                    db_ids = [
+                                        x.strip()
+                                        for x in arg.value.replace("*", "").split("\n")
+                                        if x.strip()
+                                    ]
+                                    try:
+                                        locale.db_ids = [
+                                            int(x) for x in db_ids if x != "none"
+                                        ]
+                                    except ValueError:
+                                        print(
+                                            f"warning: Unknown Konami ID for {batcher.idsToNames[pageid]}: {db_ids}"
+                                        )
+
+                        if locale.key in set_.locales:
+                            # merge locales
+                            existing_locale = set_.locales[locale.key]
+                            existing_locale.db_ids.extend(
+                                [
+                                    x
+                                    for x in locale.db_ids
+                                    if x not in existing_locale.db_ids
+                                ]
+                            )
+
+                            locale = existing_locale
+                            contents.locales = [locale]
+                        else:
+                            set_.locales[locale.key] = locale
+
+                        for similar_content in [
                             other_contents
                             for other_contents in set_.contents
                             if (
@@ -1106,17 +1142,13 @@ def parse_set(
                                     )
                                 )
                             )
-                        ]
-
-                        for similar_content in similar_contents:
+                        ]:
                             # same contents; merge
                             similar_content.locales.extend(
                                 [
                                     x
                                     for x in contents.locales
-                                    if not any(
-                                        x.key == y.key for y in similar_content.locales
-                                    )
+                                    if x not in similar_content.locales
                                 ]
                             )
                             similar_content.formats.extend(
@@ -1134,40 +1166,8 @@ def parse_set(
                                 ]
                             )
                             break
-                        if not similar_contents:
-                            set_.contents.append(contents)
-
-                        for arg in settable.arguments:
-                            if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
-                                lang = arg.name.strip()[: -len(DBID_SUFFIX)]
-                                if lang == "ja":
-                                    lang = "jp"  # hooray for consistency!
-
-                                if lang == locale.key:
-                                    db_ids = [
-                                        x.strip()
-                                        for x in arg.value.replace("*", "").split("\n")
-                                        if x.strip()
-                                    ]
-                                    try:
-                                        locale.db_ids = [int(x) for x in db_ids]
-                                    except ValueError:
-                                        print(
-                                            f"warning: Unknown Konami ID for {batcher.idsToNames[pageid]}: {db_ids}"
-                                        )
-
-                        if locale.key in set_.locales:
-                            # merge locales
-                            existing_locale = set_.locales[locale.key]
-                            existing_locale.db_ids.extend(
-                                [
-                                    x
-                                    for x in locale.db_ids
-                                    if x not in existing_locale.db_ids
-                                ]
-                            )
                         else:
-                            set_.locales[locale.key] = locale
+                            set_.contents.append(contents)
 
                 do(link.target)
 
