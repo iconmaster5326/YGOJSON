@@ -192,7 +192,7 @@ def get_changes(
     for entry in pages_to_catcheck:
 
         def do(entry: ChangelogEntry):
-            @batcher.getPageCategories(entry.id, useCache=False)
+            @batcher.getPageCategories(entry.id)
             def onGetCats(cats: typing.List[int]):
                 for cat in relevant_cats:
                     if batcher.namesToIDs[cat] in cats:
@@ -823,9 +823,7 @@ def parse_set(
                         print(f"warning: no locale found for: {galleryname}")
                         return
 
-                    @batcher.getPageContents(
-                        galleryname, useCache=db.last_yugipedia_read is None
-                    )
+                    @batcher.getPageContents(galleryname)
                     def onGetData(gallery_raw_data: str):
                         gallery_data = wikitextparser.parse(gallery_raw_data)
 
@@ -949,7 +947,11 @@ def parse_set(
                                 )
                                 continue
                             (code, name, *_) = printing
-                            name = re.sub(r"\s+", r" ", name.split("|")[0]).strip()
+                            name = re.sub(
+                                r"\s+",
+                                r" ",
+                                name.split("|")[0].replace("{", "").replace("{", ""),
+                            ).strip()
                             if len(printing) >= 3:
                                 rarity = printing[2]
                             else:
@@ -1025,7 +1027,7 @@ def parse_set(
                                                     ):
                                                         # try looking for (card) version
                                                         @batcher.getPageID(
-                                                            name + " (Card)"
+                                                            name + " (card)"
                                                         )
                                                         def onGetCardID(
                                                             printingid: int, _: str
@@ -1163,7 +1165,6 @@ def import_from_yugipedia(
                     - db.last_yugipedia_read.timestamp()
                     > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
                 ):
-                    batcher.clearCache()
                     cards = [x for x in get_card_pages(batcher)]
                 else:
                     cards = [
@@ -1182,9 +1183,7 @@ def import_from_yugipedia(
             for pageid in cards:
 
                 def do(pageid: int):
-                    @batcher.getPageContents(
-                        pageid, useCache=db.last_yugipedia_read is None
-                    )
+                    @batcher.getPageContents(pageid)
                     def onGetData(raw_data: str):
                         nonlocal n_found, n_new
 
@@ -1251,7 +1250,6 @@ def import_from_yugipedia(
                     - db.last_yugipedia_read.timestamp()
                     > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
                 ):
-                    batcher.clearCache()
                     sets = [x for x in get_set_pages(batcher)]
                 else:
                     sets = [
@@ -1269,9 +1267,7 @@ def import_from_yugipedia(
             for setid in sets:
 
                 def do(pageid: int):
-                    @batcher.getPageContents(
-                        pageid, useCache=db.last_yugipedia_read is None
-                    )
+                    @batcher.getPageContents(pageid)
                     def onGetData(raw_data: str):
                         nonlocal n_found, n_new
 
@@ -1483,7 +1479,7 @@ class YugipediaBatcher:
         typing.Union[str, int], typing.List[typing.Callable[[str], None]]
     ]
 
-    def getPageContents(self, page: typing.Union[str, int], *, useCache: bool = True):
+    def getPageContents(self, page: typing.Union[str, int]):
         batcher = self
 
         class GetPageXMLDecorator:
@@ -1491,7 +1487,7 @@ class YugipediaBatcher:
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
-                if useCache and pageid in batcher.pageContentsCache:
+                if pageid in batcher.pageContentsCache:
                     callback(batcher.pageContentsCache[pageid])
                 else:
                     batcher.pendingGetPageContents.setdefault(pageid or page, [])
@@ -1555,7 +1551,7 @@ class YugipediaBatcher:
         typing.Union[str, int], typing.List[typing.Callable[[typing.List[int]], None]]
     ]
 
-    def getPageCategories(self, page: typing.Union[str, int], *, useCache: bool = True):
+    def getPageCategories(self, page: typing.Union[str, int]):
         batcher = self
 
         class GetPageCategoriesDecorator:
@@ -1565,7 +1561,7 @@ class YugipediaBatcher:
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
-                if useCache and pageid in batcher.pageCategoriesCache:
+                if pageid in batcher.pageCategoriesCache:
                     callback(batcher.pageCategoriesCache[pageid])
                 else:
                     batcher.pendingGetPageCategories.setdefault(pageid or page, [])
@@ -1704,9 +1700,7 @@ class YugipediaBatcher:
 
         return pageid
 
-    def getCategoryMembers(
-        self, page: typing.Union[str, int], *, useCache: bool = True
-    ):
+    def getCategoryMembers(self, page: typing.Union[str, int]):
         batcher = self
 
         class GetCatMemDecorator:
@@ -1717,7 +1711,7 @@ class YugipediaBatcher:
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
 
-                if not useCache or pageid not in batcher.categoryMembersCache:
+                if pageid not in batcher.categoryMembersCache:
                     pageid = batcher._populateCatMembers(page)
 
                 if pageid is None:
@@ -1738,7 +1732,7 @@ class YugipediaBatcher:
 
         return GetCatMemDecorator
 
-    def getSubcategories(self, page: typing.Union[str, int], *, useCache: bool = True):
+    def getSubcategories(self, page: typing.Union[str, int]):
         batcher = self
 
         class GetCatMemDecorator:
@@ -1749,7 +1743,7 @@ class YugipediaBatcher:
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
 
-                if not useCache or pageid not in batcher.categoryMembersCache:
+                if pageid not in batcher.categoryMembersCache:
                     pageid = batcher._populateCatMembers(page)
 
                 if pageid is None:
@@ -1770,9 +1764,7 @@ class YugipediaBatcher:
 
         return GetCatMemDecorator
 
-    def getCategoryMembersRecursive(
-        self, page: typing.Union[str, int], *, useCache: bool = True
-    ):
+    def getCategoryMembersRecursive(self, page: typing.Union[str, int]):
         batcher = self
 
         class GetCatMemDecorator:
@@ -1781,15 +1773,15 @@ class YugipediaBatcher:
             ) -> None:
                 result = []
 
-                @batcher.getCategoryMembers(page, useCache=useCache)
+                @batcher.getCategoryMembers(page)
                 def getMembers(members: typing.List[int]):
                     result.extend(members)
 
-                @batcher.getSubcategories(page, useCache=useCache)
+                @batcher.getSubcategories(page)
                 def getSubcats(members: typing.List[int]):
                     for member in members:
 
-                        @batcher.getCategoryMembersRecursive(member, useCache=useCache)
+                        @batcher.getCategoryMembersRecursive(member)
                         def recur(members: typing.List[int]):
                             result.extend(members)
 
@@ -1807,7 +1799,7 @@ class YugipediaBatcher:
         typing.Union[int, str], typing.List[typing.Callable[[str], None]]
     ]
 
-    def getImageURL(self, page: typing.Union[str, int], *, useCache: bool = True):
+    def getImageURL(self, page: typing.Union[str, int]):
         batcher = self
 
         class GetImageDecorator:
@@ -1815,7 +1807,7 @@ class YugipediaBatcher:
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
-                if useCache and pageid in batcher.imagesCache:
+                if pageid in batcher.imagesCache:
                     callback(batcher.imagesCache[pageid])
                 else:
                     batcher.pendingImages.setdefault(pageid or page, [])
@@ -1851,7 +1843,7 @@ class YugipediaBatcher:
             }
             for result_page in paginate_query(query):
                 for result in result_page["pages"]:
-                    if result.get("missing"):
+                    if result.get("missing") or result.get("invalid"):
                         continue
 
                     pageid = result["pageid"]
@@ -1878,7 +1870,7 @@ class YugipediaBatcher:
         typing.Union[int, str], typing.List[typing.Callable[[int, str], None]]
     ]
 
-    def getPageID(self, page: typing.Union[str, int], *, useCache: bool = True):
+    def getPageID(self, page: typing.Union[str, int]):
         batcher = self
 
         class GetIDDecorator:
@@ -1922,7 +1914,12 @@ class YugipediaBatcher:
             }
             for result_page in paginate_query(query):
                 for result in result_page["pages"]:
-                    if result.get("missing"):
+                    if result.get("missing") or result.get("invalid"):
+                        continue
+                    if "pageid" not in result or "title" not in result:
+                        print(
+                            f"warning: in _executeGetPageIDBatch: bad page ID result: {result}"
+                        )
                         continue
 
                     pageid = result["pageid"]
