@@ -780,6 +780,8 @@ def parse_set(
     for arg in settable.arguments:
         if arg.name and arg.name.strip().endswith(DBNAME_SUFFIX) and arg.value.strip():
             set_.name[arg.name.strip()[: -len(DBNAME_SUFFIX)]] = arg.value.strip()
+    if "en" not in set_.name:
+        set_.name["en"] = batcher.idsToNames[pageid]
 
     gallery_html = re.search(
         r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;", raw_data, re.DOTALL

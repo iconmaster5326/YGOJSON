@@ -68,6 +68,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         action="store_true",
         help="Don't regenerate backlinks (for example, links from cards to sets)",
     )
+    parser.add_argument(
+        "--fresh",
+        action="store_true",
+        help="Pretend we've never looked at our sources before (this does NOT delete database contents)",
+    )
     args = parser.parse_args(argv[1:])
 
     n = 0
@@ -85,6 +90,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         aggregates_dir=args.aggregates,
     )
     print()
+
+    if args.fresh:
+        db.last_yamlyugi_read = None
+        db.last_ygoprodeck_read = None
+        db.last_yugipedia_read = None
 
     if not args.no_ygoprodeck:
         print("Importing YGOProDeck data...")
