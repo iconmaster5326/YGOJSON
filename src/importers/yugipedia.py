@@ -300,6 +300,9 @@ ABILITIES = {
 }
 
 
+MYSTERY_ATK_DEFS = {"?", "????", "X000"}
+
+
 def _strip_markup(s: str) -> str:
     return "\n".join(wikitextparser.remove_markup(x) for x in s.split("\n"))
 
@@ -376,17 +379,22 @@ def parse_card(
 
         value = get_table_entry(cardtable, "attribute")
         if not value:
-            print(f"warning: monster has no attribute: {title}")
-            return False
-        if value.strip().lower() not in Attribute._value2member_map_:
-            print(f"warning: unknown attribute '{value.strip()}' in {title}")
-            return False
-        card.attribute = Attribute(value.strip().lower())
+            # print(f"warning: monster has no attribute: {title}")
+            pass  # some illegal-for-play monsters have no attribute
+        else:
+            value = value.strip().lower()
+            if value == "???":
+                pass  # attribute to be announced; omit it
+            elif value not in Attribute._value2member_map_:
+                print(f"warning: unknown attribute '{value.strip()}' in {title}")
+            else:
+                card.attribute = Attribute(value)
 
-        typeline = [x.strip() for x in typeline.split("/")]
+        typeline = [x.strip() for x in typeline.split("/") if x.strip()]
         for x in typeline:
             if (
-                x not in MONSTER_CARD_TYPES
+                x != "???"  # type to be announced; omit it
+                and x not in MONSTER_CARD_TYPES
                 and x not in TYPES
                 and x not in CLASSIFICATIONS
                 and x not in ABILITIES
@@ -410,12 +418,12 @@ def parse_card(
         for k, v in ABILITIES.items():
             if k in typeline and v not in card.abilities:
                 card.abilities.append(v)
-        if not card.type:
-            print(f"warning: monster has no type: {title}")
-            return False
+        # if not card.type and "???" not in typeline:
+        #     # some illegal-for-play monsters have no type
+        #     print(f"warning: monster has no type: {title}")
 
         value = get_table_entry(cardtable, "level")
-        if value:
+        if value and value.strip() != "???":
             try:
                 card.level = int(value)
             except ValueError:
@@ -423,7 +431,7 @@ def parse_card(
                 return False
 
         value = get_table_entry(cardtable, "rank")
-        if value:
+        if value and value.strip() != "???":
             try:
                 card.rank = int(value)
             except ValueError:
@@ -431,22 +439,22 @@ def parse_card(
                 return False
 
         value = get_table_entry(cardtable, "atk")
-        if value:
+        if value and value.strip() != "???":
             try:
-                card.atk = "?" if value.strip() == "?" else int(value)
+                card.atk = "?" if value.strip() in MYSTERY_ATK_DEFS else int(value)
             except ValueError:
                 print(f"warning: unknown ATK '{value.strip()}' in {title}")
                 return False
         value = get_table_entry(cardtable, "def")
-        if value:
+        if value and value.strip() != "???":
             try:
-                card.def_ = "?" if value.strip() == "?" else int(value)
+                card.def_ = "?" if value.strip() in MYSTERY_ATK_DEFS else int(value)
             except ValueError:
                 print(f"warning: unknown DEF '{value.strip()}' in {title}")
                 return False
 
         value = get_table_entry(cardtable, "pendulum_scale")
-        if value:
+        if value and value.strip() != "???":
             try:
                 card.scale = int(value)
             except ValueError:
@@ -517,7 +525,7 @@ def parse_card(
                 add_image(in_image, new_image)
                 card.images.append(new_image)
 
-    # TODO: sets, legality, video games
+    # TODO: legality, video games
 
     if not card.yugipedia_pages:
         card.yugipedia_pages = []

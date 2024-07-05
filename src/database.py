@@ -393,34 +393,34 @@ class Card:
                 for k, v in self.text.items()
             },
             "cardType": self.card_type.value,
+            **({"attribute": self.attribute.value} if self.attribute else {}),
             **(
-                {
-                    "attribute": self.attribute.value,
-                    "monsterCardTypes": [x.value for x in self.monster_card_types],
-                    "type": self.type.value,
-                    "classifications": [x.value for x in self.classifications],
-                    "abilities": [x.value for x in self.abilities],
-                    **({"level": self.level} if self.level is not None else {}),
-                    **({"rank": self.rank} if self.rank is not None else {}),
-                    "atk": self.atk,
-                    **({"def": self.def_} if self.def_ is not None else {}),
-                    **({"scale": self.scale} if self.scale is not None else {}),
-                    **(
-                        {"linkArrows": [x.value for x in self.link_arrows]}
-                        if self.link_arrows
-                        else {}
-                    ),
-                }
-                if self.card_type == CardType.MONSTER
+                {"monsterCardTypes": [x.value for x in self.monster_card_types]}
+                if self.monster_card_types
+                else {}
+            ),
+            **({"type": self.type.value} if self.type else {}),
+            **(
+                {"classifications": [x.value for x in self.classifications]}
+                if self.classifications
                 else {}
             ),
             **(
-                {
-                    "subcategory": self.subcategory.value,
-                }
-                if self.card_type == CardType.SPELL or self.card_type == CardType.TRAP
+                {"abilities": [x.value for x in self.abilities]}
+                if self.abilities
                 else {}
             ),
+            **({"level": self.level} if self.level is not None else {}),
+            **({"rank": self.rank} if self.rank is not None else {}),
+            **({"atk": self.atk} if self.atk is not None else {}),
+            **({"def": self.def_} if self.def_ is not None else {}),
+            **({"scale": self.scale} if self.scale is not None else {}),
+            **(
+                {"linkArrows": [x.value for x in self.link_arrows]}
+                if self.link_arrows
+                else {}
+            ),
+            **({"subcategory": self.subcategory.value} if self.subcategory else {}),
             "passwords": self.passwords,
             "images": [
                 {
