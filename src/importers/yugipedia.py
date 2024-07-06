@@ -1340,7 +1340,6 @@ def parse_set(
 
                     @batcher.getPageContents(galleryname)
                     def onGetData(gallery_raw_data: str):
-                        default_rarity = None
                         lang = locale_info.group(2).strip().lower()
                         locale = SetLocale(
                             key=lang,
@@ -1477,11 +1476,16 @@ def parse_set(
                                                 .replace("//", ";")
                                                 .split(";")
                                             ]
+
                                             if abbr:
-                                                printings.append(("", *parts))
+                                                printings.append(
+                                                    ("", *parts, default_rarity)
+                                                )
                                             else:
                                                 example_codes.append(parts[0])
-                                                printings.append((*parts,))
+                                                printings.append(
+                                                    (*parts, default_rarity)
+                                                )
 
                         for subgallery in subgalleries:
                             for subgallery_entry in subgallery:
@@ -1529,7 +1533,7 @@ def parse_set(
                             if possible_rarity_bits:
                                 rarity = possible_rarity_bits[0]
                             else:
-                                rarity = default_rarity
+                                rarity = None
 
                             replica = False
                             if any(part.lower() == "rp" for part in printing):
@@ -1637,6 +1641,12 @@ def parse_set(
                                                                 image_filename += (
                                                                     f"-{locale.prefix}"
                                                                 )
+                                                                if locale.prefix.endswith(
+                                                                    "-"
+                                                                ):
+                                                                    image_filename += (
+                                                                        locale.language.upper()
+                                                                    )
                                                             if rarity:
                                                                 image_filename += f"-{RAIRTY_FULL_TO_SHORT.get(rarity.lower(), rarity)}"
                                                             if raw_edition:
