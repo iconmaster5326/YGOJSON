@@ -121,10 +121,17 @@ class SubCategory(enum.Enum):
 
 
 class Legality(enum.Enum):
+    # OCG/TCG
     UNLIMITED = "unlimited"
     SEMILIMITED = "semilimited"
     LIMITED = "limited"
     FORBIDDEN = "forbidden"
+    # speed duel
+    LIMIT1 = "limit1"
+    LIMIT2 = "limit2"
+    LIMIT3 = "limit3"
+    # other
+    ILLEGAL = "illegal"
     UNRELEASED = "unreleased"
     UNKNOWN = "unknown"
 

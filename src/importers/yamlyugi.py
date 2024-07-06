@@ -80,11 +80,11 @@ LINK_ARROWS = {
     "↘": LinkArrow.BOTTOMRIGHT,
 }
 LEGALITIES = {
-    "Limited 3": Legality.UNLIMITED,
+    "Limited 3": Legality.LIMIT3,
     "Unlimited": Legality.UNLIMITED,
-    "Limited 2": Legality.SEMILIMITED,
+    "Limited 2": Legality.LIMIT2,
     "Semi-Limited": Legality.SEMILIMITED,
-    "Limited 1": Legality.LIMITED,
+    "Limited 1": Legality.LIMIT1,
     "Limited": Legality.LIMITED,
     "Limited 0": Legality.FORBIDDEN,
     "Forbidden": Legality.FORBIDDEN,
@@ -235,6 +235,11 @@ def _write_card(
 
     for k, v in (in_json["limit_regulation"] or {}).items():
         if not v:
+            continue
+        if v not in LEGALITIES:
+            logging.warn(
+                f"Card {card.text['en'].name} has unknown legality in format {k}: {v}"
+            )
             continue
         if k in card.legality:
             card.legality[k].current = LEGALITIES[v]

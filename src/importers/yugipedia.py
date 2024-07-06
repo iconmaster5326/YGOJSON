@@ -1911,9 +1911,9 @@ BANLIST_STR_TO_LEGALITY = {
     "forbidden": Legality.FORBIDDEN,
     # speed duel legalities
     "limited_0": Legality.FORBIDDEN,
-    "limited_1": Legality.LIMITED,
-    "limited_2": Legality.SEMILIMITED,
-    "limited_3": Legality.UNLIMITED,
+    "limited_1": Legality.LIMIT1,
+    "limited_2": Legality.LIMIT2,
+    "limited_3": Legality.LIMIT3,
 }
 
 DL_NAME_SUFFIX = " (duel links)"
@@ -2063,7 +2063,7 @@ def import_from_yugipedia(
                 > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
             ):
                 db.last_yugipedia_read = None
-                batcher.clearCache()
+                # batcher.clearCache() # TODO: enable when done
 
         if import_cards:
             banlists = get_banlist_pages(batcher)

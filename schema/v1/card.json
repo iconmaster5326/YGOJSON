@@ -225,6 +225,10 @@
               "semilimited",
               "limited",
               "forbidden",
+              "limit1",
+              "limit2",
+              "limit3",
+              "illegal",
               "unreleased",
               "unknown"
             ]
@@ -239,7 +243,7 @@
               "properties": {
                 "legality": {
                   "description": "What the legality was changed to.",
-                  "enum": ["unlimited", "semilimited", "limited", "forbidden"]
+                  "enum": ["unlimited", "semilimited", "limited", "forbidden", "limit1", "limit2", "limit3"]
                 },
                 "date": {
                   "description": "The date of the change.",
