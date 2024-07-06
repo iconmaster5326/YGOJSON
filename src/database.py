@@ -133,7 +133,6 @@ class Legality(enum.Enum):
     # other
     ILLEGAL = "illegal"
     UNRELEASED = "unreleased"
-    UNKNOWN = "unknown"
 
 
 class Format(enum.Enum):
