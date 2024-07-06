@@ -1,6 +1,7 @@
 # Import data from Yaml Yugi (https://github.com/DawnbrandBots/yaml-yugi).
 
 import json
+import logging
 import os.path
 import time
 import typing
@@ -154,8 +155,8 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
                 card.type = v
                 break
         if not card.type:
-            print(
-                f"warning: card {card.text['en'].name} has no race! Typeline: {in_json['monster_type_line']}"
+            logging.warn(
+                f"Card {card.text['en'].name} has no race! Typeline: {in_json['monster_type_line']}"
             )
             card.type = Race.CREATORGOD
 

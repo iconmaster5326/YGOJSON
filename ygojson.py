@@ -1,4 +1,5 @@
 import argparse
+import logging
 import os.path
 import sys
 import typing
@@ -73,10 +74,23 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         action="store_true",
         help="Pretend we've never looked at our sources before (this does NOT delete database contents)",
     )
+    parser.add_argument(
+        "--logging",
+        type=str,
+        default="INFO",
+        metavar="LEVEL",
+        help="The logging level. One of: DEBUG, INFO, WARNING, ERROR, CRITICAL.",
+    )
     args = parser.parse_args(argv[1:])
+
+    logging.basicConfig(
+        format="[%(levelname)s] %(message)s",
+        level=logging.getLevelName(args.logging.strip().upper()),
+    )
 
     n = 0
 
+    logging.info("Loading database...")
     db = load_database(
         individuals_dir=args.individuals,
         aggregates_dir=args.aggregates,
@@ -88,39 +102,43 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         db.last_yugipedia_read = None
 
     if not args.no_ygoprodeck:
+        logging.info("Importing from YGOPRODECK...")
         n_old, n_new = import_from_ygoprodeck(
             db,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
         )
-        print(f"Added {n_new} cards and updated {n_old} cards.")
+        logging.info(f"Added {n_new} cards and updated {n_old} cards.")
 
     if not args.no_yamlyugi:
+        logging.info("Importing from Yaml Yugi...")
         n_old, n_new = import_from_yaml_yugi(
             db,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
         )
-        print(f"Added {n_new} cards and updated {n_old} cards.")
+        logging.info(f"Added {n_new} cards and updated {n_old} cards.")
 
     if not args.no_yugipedia:
+        logging.info("Importing from Yugipedia...")
         n_old, n_new = import_from_yugipedia(
             db,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
         )
-        print(f"Added {n_new} cards and updated {n_old} cards.")
+        logging.info(f"Added {n_new} cards and updated {n_old} cards.")
 
     if not args.no_regen_backlinks:
+        logging.info("Regenerating backlinks...")
         db.regenerate_backlinks()
 
+    logging.info("Saving database...")
     db.save(
         generate_individuals=not args.no_individuals,
         generate_aggregates=not args.no_aggregates,
     )
 
-    print()
-    print("Done!")
+    logging.info("Done!")
     return 0
 
 

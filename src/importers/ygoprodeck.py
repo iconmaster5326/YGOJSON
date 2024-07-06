@@ -1,6 +1,7 @@
 # Import data from YGOProDeck (https://ygoprodeck.com/card-database/).
 
 import json
+import logging
 import os.path
 import time
 import typing
@@ -89,7 +90,7 @@ def _parse_cardtype(typeline: str) -> CardType:
     elif "Skill" in typeline or "Token" in typeline:
         raise InvalidCardImport
 
-    print(f"warning: Unknown card type: {typeline}")
+    logging.warn(f"Unknown card type: {typeline}")
     raise InvalidCardImport
 
 
@@ -136,7 +137,7 @@ def _import_card(
 
     # if cardtype == CardType.MONSTER:
     #     if not in_json.get("attribute"):
-    #         print(f"warning: card {in_json['name']} is missing an attribute!")
+    #         logging.warn(f"Card {in_json['name']} is missing an attribute!")
     #         raise InvalidCardImport
 
     return False, Card(id=uuid.uuid4(), card_type=cardtype)
@@ -178,15 +179,15 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             if type(in_json["atk"]) is int or in_json["atk"] == "?":
                 card.atk = in_json["atk"]
             else:
-                print(
-                    f"warning: card {en_text.name} (id {card.id}) has bad ATK: {in_json.get('atk')}"
+                logging.warn(
+                    f"Card {en_text.name} (id {card.id}) has bad ATK: {in_json.get('atk')}"
                 )
         if "def" in in_json:
             if type(in_json["def"]) is int or in_json["def"] == "?":
                 card.def_ = in_json["def"]
             else:
-                print(
-                    f"warning: card {en_text.name} (id {card.id}) has bad DEF: {in_json.get('def')}"
+                logging.warn(
+                    f"Card {en_text.name} (id {card.id}) has bad DEF: {in_json.get('def')}"
                 )
         card.scale = in_json.get("scale")
         if MonsterCardType.LINK in (card.monster_card_types or []):
@@ -236,8 +237,8 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
         if len(in_json["misc_info"]) == 1:
             card.db_id = in_json["misc_info"][0].get("konami_id", card.db_id)
         else:
-            print(
-                f"warning: card {en_text.name} (id {card.id}) has {len(in_json['misc_info'])} misc_infos!"
+            logging.warn(
+                f"Card {en_text.name} (id {card.id}) has {len(in_json['misc_info'])} misc_infos!"
             )
 
     return card

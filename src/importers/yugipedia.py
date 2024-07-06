@@ -2,6 +2,7 @@
 import atexit
 import datetime
 import json
+import logging
 import os.path
 import re
 import time
@@ -35,7 +36,7 @@ def make_request(rawparams: typing.Dict[str, str]) -> requests.Response:
     }
     params.update(rawparams)
 
-    # print(f"Making request: {json.dumps(params)}")
+    # logging.debug(f"Making request: {json.dumps(params)}")
     response = requests.get(
         API_URL,
         params=params,
@@ -50,7 +51,7 @@ def make_request(rawparams: typing.Dict[str, str]) -> requests.Response:
             time.sleep(RATE_LIMIT * 10)
             return make_request(rawparams)
         response.raise_for_status()
-    # print(f"Got response: {response.text}")
+    # logging.debug(f"Got response: {response.text}")
     return response
 
 
@@ -336,7 +337,7 @@ def parse_card(
 
     title = batcher.idsToNames[page]
     if page in token_ids:
-        # print(f"warning: skipping card in tokens cateogry: {title}")
+        logging.debug(f"Skipping card in tokens cateogry: {title}")
         return False
 
     cardtable = next(
@@ -354,7 +355,7 @@ def parse_card(
         value = get_table_entry(cardtable, locale + "_lore" if locale else "lore")
         if value and value.strip():
             if key not in card.text:
-                print(f"warning: card has no name in {key} but has effect: {title}")
+                logging.warn(f"Card has no name in {key} but has effect: {title}")
                 pass
             else:
                 card.text[key].effect = _strip_markup(value.strip())
@@ -363,9 +364,7 @@ def parse_card(
         )
         if value and value.strip():
             if key not in card.text:
-                print(
-                    f"warning: card has no name in {key} but has pend. effect: {title}"
-                )
+                logging.warn(f"Card has no name in {key} but has pend. effect: {title}")
                 pass
             else:
                 card.text[key].pendulum_effect = _strip_markup(value.strip())
@@ -375,7 +374,7 @@ def parse_card(
             for t in data.templates
         ):
             if key not in card.text:
-                print(f"warning: card has no name in {key} but is unofficial: {title}")
+                logging.warn(f"Card has no name in {key} but is unofficial: {title}")
                 pass
             else:
                 card.text[key].official = False
@@ -383,25 +382,25 @@ def parse_card(
     if card.card_type == CardType.MONSTER:
         typeline = get_table_entry(cardtable, "types")
         if not typeline:
-            print(f"warning: monster has no typeline: {title}")
+            logging.warn(f"Monster has no typeline: {title}")
             return False
         if "Skill" in typeline:
-            # print(f"warning: skipping skill card: {title}")
+            logging.debug(f"Skipping skill card: {title}")
             return False
         if "Token" in typeline:
-            # print(f"warning: skipping token card: {title}")
+            logging.debug(f"Skipping token card: {title}")
             return False
 
         value = get_table_entry(cardtable, "attribute")
         if not value:
-            # print(f"warning: monster has no attribute: {title}")
+            # logging.warn(f"Monster has no attribute: {title}")
             pass  # some illegal-for-play monsters have no attribute
         else:
             value = value.strip().lower()
             if value == "???":
                 pass  # attribute to be announced; omit it
             elif value not in Attribute._value2member_map_:
-                print(f"warning: unknown attribute '{value.strip()}' in {title}")
+                logging.warn(f"Unknown attribute '{value.strip()}' in {title}")
             else:
                 card.attribute = Attribute(value)
 
@@ -414,7 +413,7 @@ def parse_card(
                 and x not in CLASSIFICATIONS
                 and x not in ABILITIES
             ):
-                print(f"warning: monster typeline bit unknown in {title}: {x}")
+                logging.warn(f"Monster typeline bit unknown in {title}: {x}")
         if not card.monster_card_types:
             card.monster_card_types = []
         for k, v in MONSTER_CARD_TYPES.items():
@@ -435,14 +434,14 @@ def parse_card(
                 card.abilities.append(v)
         # if not card.type and "???" not in typeline:
         #     # some illegal-for-play monsters have no type
-        #     print(f"warning: monster has no type: {title}")
+        #     logging.warn(f"Monster has no type: {title}")
 
         value = get_table_entry(cardtable, "level")
         if value and value.strip() != "???":
             try:
                 card.level = int(value)
             except ValueError:
-                print(f"warning: unknown level '{value.strip()}' in {title}")
+                logging.warn(f"Unknown level '{value.strip()}' in {title}")
                 return False
 
         value = get_table_entry(cardtable, "rank")
@@ -450,7 +449,7 @@ def parse_card(
             try:
                 card.rank = int(value)
             except ValueError:
-                print(f"warning: unknown rank '{value.strip()}' in {title}")
+                logging.warn(f"Unknown rank '{value.strip()}' in {title}")
                 return False
 
         value = get_table_entry(cardtable, "atk")
@@ -458,14 +457,14 @@ def parse_card(
             try:
                 card.atk = "?" if value.strip() in MYSTERY_ATK_DEFS else int(value)
             except ValueError:
-                print(f"warning: unknown ATK '{value.strip()}' in {title}")
+                logging.warn(f"Unknown ATK '{value.strip()}' in {title}")
                 return False
         value = get_table_entry(cardtable, "def")
         if value and value.strip() != "???":
             try:
                 card.def_ = "?" if value.strip() in MYSTERY_ATK_DEFS else int(value)
             except ValueError:
-                print(f"warning: unknown DEF '{value.strip()}' in {title}")
+                logging.warn(f"Unknown DEF '{value.strip()}' in {title}")
                 return False
 
         value = get_table_entry(cardtable, "pendulum_scale")
@@ -473,7 +472,7 @@ def parse_card(
             try:
                 card.scale = int(value)
             except ValueError:
-                print(f"warning: unknown scale '{value.strip()}' in {title}")
+                logging.warn(f"Unknown scale '{value.strip()}' in {title}")
                 return False
 
         value = get_table_entry(cardtable, "link_arrows")
@@ -484,7 +483,7 @@ def parse_card(
     elif card.card_type == CardType.SPELL or card.card_type == CardType.TRAP:
         value = get_table_entry(cardtable, "property")
         if not value:
-            print(f"warning: spelltrap has no subcategory: {title}")
+            logging.warn(f"Spell/trap has no subcategory: {title}")
             return False
         card.subcategory = SubCategory(value.lower().replace("-", "").strip())
 
@@ -494,7 +493,7 @@ def parse_card(
         if vmatch and value.strip() not in card.passwords:
             card.passwords.append(value.strip())
         if not vmatch and value.strip() and value.strip() != "none":
-            print(f"warning: bad password '{value.strip()}' in card {title}")
+            logging.warn(f"Bad password '{value.strip()}' in card {title}")
 
     # generally, we want YGOProDeck to handle generic images
     # But if all else fails, we can add one!
@@ -521,15 +520,15 @@ def parse_card(
             for image in card.images:
                 in_image = in_images.pop(0)
                 if len(in_image) != 1 and len(in_image) != 3:
-                    print(
-                        f"warning: weird image string for {title}: {' ; '.join(in_image)}"
+                    logging.warn(
+                        f"Weird image string for {title}: {' ; '.join(in_image)}"
                     )
                     continue
                 add_image(in_image, image)
             for in_image in in_images:
                 if len(in_image) != 1 and len(in_image) != 3:
-                    print(
-                        f"warning: weird image string for {title}: {' ; '.join(in_image)}"
+                    logging.warn(
+                        f"Weird image string for {title}: {' ; '.join(in_image)}"
                     )
                     continue
                 new_image = CardImage(id=uuid.uuid4())
@@ -806,7 +805,7 @@ def parse_set(
         r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;", raw_data, re.DOTALL
     ) or re.search(r"<gallery[^\n]*\n(.*?)\n</gallery>", raw_data, re.DOTALL)
     if not gallery_html:
-        print(f"warning: did not find gallery HTML for {batcher.idsToNames[pageid]}")
+        logging.warn(f"Did not find gallery HTML for {batcher.idsToNames[pageid]}")
         return False
 
     old_printings: typing.Dict[
@@ -829,8 +828,8 @@ def parse_set(
             r"([^\|]+)\|(?:[^&]*&lt;[^&]*&gt;)?(.*)", line.strip()
         ) or re.match(r"([^\|]+)\|(?:[^<]*<[^>]*>)?(.*)", line.strip())
         if not gallery_info:
-            print(
-                f'warning: unparsable gallery line on {batcher.idsToNames[pageid]}: "{line.strip()}"'
+            logging.warn(
+                f'Unparsable gallery line on {batcher.idsToNames[pageid]}: "{line.strip()}"'
             )
             continue
         gallery_image_name = gallery_info.group(1).strip()
@@ -844,7 +843,7 @@ def parse_set(
                         r"\((\w+)-(\w+)-(\w+)\)", galleryname
                     ) or re.search(r"\((\w+)-(\w+)\)", galleryname)
                     if not locale_info:
-                        print(f"warning: no locale found for: {galleryname}")
+                        logging.warn(f"No locale found for: {galleryname}")
                         return
 
                     @batcher.getPageContents(galleryname)
@@ -861,14 +860,14 @@ def parse_set(
                                 locale_info.group(3).strip().upper()
                             )
                             if not edition:
-                                print(
-                                    f"warning: unknown edition of set {galleryname}: {locale_info.group(3)}"
+                                logging.warn(
+                                    f"Unknown edition of set {galleryname}: {locale_info.group(3)}"
                                 )
 
                         format_found = locale_info.group(1).strip().lower()
                         if format_found not in Format._value2member_map_:
-                            print(
-                                f"warning: invalid format found for {galleryname}: {format_found}"
+                            logging.warn(
+                                f"Invalid format found for {galleryname}: {format_found}"
                             )
                             return
 
@@ -911,8 +910,8 @@ def parse_set(
                         ]
 
                         if not gallery_tables and not subgalleries:
-                            print(
-                                f"warning: found gallery without gallery table or subgallery: {galleryname}"
+                            logging.warn(
+                                f"Found gallery without gallery table or subgallery: {galleryname}"
                             )
                             return
 
@@ -969,8 +968,8 @@ def parse_set(
                             if not printing:
                                 continue
                             if len(printing) < 2:
-                                print(
-                                    f"warning: expected 3 entries but got {len(printing)} in {galleryname}: {printing}"
+                                logging.warn(
+                                    f"Expected 3 entries but got {len(printing)} in {galleryname}: {printing}"
                                 )
                                 continue
                             (code, name, *_) = printing
@@ -991,8 +990,8 @@ def parse_set(
                                     rarity
                                 ) or FULL_RARITY_STR_TO_ENUM.get(rarity)
                                 if not found_rairty:
-                                    print(
-                                        f"warning: unknown rarity for {name} in {galleryname}: {rarity}"
+                                    logging.warn(
+                                        f"Unknown rarity for {name} in {galleryname}: {rarity}"
                                     )
 
                             def getCardID(
@@ -1081,8 +1080,8 @@ def parse_set(
                                                                     printingid
                                                                     not in db.cards_by_yugipedia_id
                                                                 ):
-                                                                    print(
-                                                                        f'warning: card "{name}" not found in database in "{galleryname}"'
+                                                                    logging.warn(
+                                                                        f'Card "{name}" not found in database in "{galleryname}"'
                                                                     )
                                                                 else:
                                                                     addToContents(
@@ -1111,8 +1110,8 @@ def parse_set(
                                             int(x) for x in db_ids if x != "none"
                                         ]
                                     except ValueError:
-                                        print(
-                                            f"warning: Unknown Konami ID for {batcher.idsToNames[pageid]}: {db_ids}"
+                                        logging.warn(
+                                            f"Unknown Konami ID for {batcher.idsToNames[pageid]}: {db_ids}"
                                         )
 
                         if locale.key in set_.locales:
@@ -1240,8 +1239,8 @@ def import_from_yugipedia(
                                 )
                             )
                         except StopIteration:
-                            print(
-                                f"warning: found card without card table: {batcher.idsToNames[pageid]}"
+                            logging.warn(
+                                f"Found card without card table: {batcher.idsToNames[pageid]}"
                             )
                             return
 
@@ -1251,7 +1250,7 @@ def import_from_yugipedia(
                             .lower()
                         )
                         if ct not in [x.value for x in CardType]:
-                            # print(f"warning: found card with illegal card type: {ct}")
+                            # logging.warn(f"Found card with illegal card type: {ct}")
                             return
 
                         found = pageid in db.cards_by_yugipedia_id
@@ -1323,8 +1322,8 @@ def import_from_yugipedia(
                                 )
                             )
                         except StopIteration:
-                            print(
-                                f"warning: found set without set table: {batcher.idsToNames[pageid]}"
+                            logging.warn(
+                                f"Found set without set table: {batcher.idsToNames[pageid]}"
                             )
                             return
 
@@ -1345,8 +1344,8 @@ def import_from_yugipedia(
                                                 break
                                     except ValueError:
                                         if arg.value.strip() != "none":
-                                            print(
-                                                f'warning: unparsable konami set ID for {arg.name} in {batcher.idsToNames[pageid]}: "{arg.value}"'
+                                            logging.warn(
+                                                f'Unparsable konami set ID for {arg.name} in {batcher.idsToNames[pageid]}: "{arg.value}"'
                                             )
                         if not set_:
                             set_ = db.sets_by_en_name.get(
@@ -1959,8 +1958,8 @@ class YugipediaBatcher:
                     if result.get("missing") or result.get("invalid"):
                         continue
                     if "pageid" not in result or "title" not in result:
-                        print(
-                            f"warning: in _executeGetPageIDBatch: bad page ID result: {result}"
+                        logging.warn(
+                            f"In _executeGetPageIDBatch: bad page ID result: {result}"
                         )
                         continue
 
