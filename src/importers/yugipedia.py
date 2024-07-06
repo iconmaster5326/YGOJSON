@@ -105,6 +105,7 @@ CAT_UNUSABLE = "Category:Unusable cards"
 
 DBID_SUFFIX = "_database_id"
 DBNAME_SUFFIX = "_name"
+RELDATE_SUFFIX = "_release_date"
 
 
 def get_card_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
@@ -771,6 +772,16 @@ def _printing_equal(p1: CardPrinting, p2: CardPrinting) -> bool:
     return p1.card == p2.card and p1.rarity == p2.rarity and p1.suffix == p2.suffix
 
 
+def _parse_month(m: str) -> int:
+    try:
+        return datetime.datetime.strptime(m, "%B").month
+    except ValueError:
+        try:
+            return datetime.datetime.strptime(m, "%b").month
+        except ValueError:
+            return int(m)
+
+
 def parse_set(
     db: Database,
     batcher: "YugipediaBatcher",
@@ -860,6 +871,53 @@ def parse_set(
                                 f"Invalid format found for {galleryname}: {format_found}"
                             )
                             return
+
+                        for arg in settable.arguments:
+                            if arg.name and arg.name.strip().endswith(RELDATE_SUFFIX):
+                                langs = arg.name.strip()[: -len(RELDATE_SUFFIX)]
+                                for lang in langs.split("/"):
+                                    if lang == "ja":
+                                        lang = "jp"  # hooray for consistency!
+                                    if lang == locale.key:
+                                        value = _strip_markup(arg.value).strip()
+                                        if value:
+                                            found_date = re.search(
+                                                r"(\w+)\s+(\d+),\s*(\d+)", value
+                                            )
+                                            if found_date:
+                                                (month, day, year) = found_date.groups()
+                                            else:
+                                                found_date = re.search(
+                                                    r"(\w+)\s+(\d+)", value
+                                                )
+                                                if found_date:
+                                                    (month, year) = found_date.groups()
+                                                    day = "1"
+                                                else:
+                                                    found_date = re.search(
+                                                        r"(\d\d\d\d)", value
+                                                    )
+                                                    if found_date:
+                                                        (year,) = found_date.groups()
+                                                        month = "1"
+                                                        day = "1"
+                                                    else:
+                                                        logging.warn(
+                                                            f"Found invalid release date for locale {lang} in {batcher.idsToNames[pageid]}: {value}"
+                                                        )
+                                                        continue
+
+                                            try:
+                                                locale.date = datetime.date(
+                                                    month=_parse_month(month),
+                                                    day=int(day),
+                                                    year=int(year),
+                                                )
+                                            except ValueError:
+                                                logging.warn(
+                                                    f"Found invalid release month for locale {lang} in {batcher.idsToNames[pageid]}: {month}"
+                                                )
+                                                continue
 
                         contents = SetContents(
                             locales=[locale],
