@@ -1026,10 +1026,18 @@ def parse_set(
                                 r" ",
                                 name.split("|")[0].replace("{", "").replace("{", ""),
                             ).strip()
-                            if len(printing) >= 3:
-                                rarity = printing[2]
+
+                            possible_rarity_bits = [
+                                x for x in printing[2:] if x.lower() != "rp"
+                            ]
+                            if possible_rarity_bits:
+                                rarity = possible_rarity_bits[0]
                             else:
                                 rarity = default_rarity
+
+                            replica = False
+                            if any(part.lower() == "rp" for part in printing):
+                                replica = True
 
                             found_rairty = None
                             if rarity:
@@ -1093,6 +1101,7 @@ def parse_set(
                                                                     card=card,
                                                                     suffix=suffix,
                                                                     rarity=found_rairty,
+                                                                    replica=replica,
                                                                 )
                                                             )
 

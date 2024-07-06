@@ -42,6 +42,10 @@
       "type": "string",
       "format": "uuid"
     },
+    "replica": {
+      "description": "True if this card is an official replica of another card. Used in some early OCG products.",
+      "type": "boolean"
+    },
     "history": {
       "description": "Cards in virtual sets may be added or removed on Konami's whim. This is a record of when cards were added or removed from this virtual set.",
       "type": "array",
