@@ -143,6 +143,7 @@ class SetEdition(enum.Enum):
     FIRST = "1st"
     UNLIMTED = "unlimited"
     LIMITED = "limited"
+    NONE = ""  # not part of the actual enum, but used when a set has no editions
 
 
 class SpecialDistroType(enum.Enum):
@@ -646,7 +647,7 @@ class SetLocale:
     date: typing.Optional[datetime.date]
     image: typing.Optional[str]
     box_image: typing.Optional[str]
-    card_images: typing.Dict[CardPrinting, str]
+    card_images: typing.Dict[SetEdition, typing.Dict[CardPrinting, str]]
     db_ids: typing.List[int]
 
     def __init__(
@@ -658,7 +659,9 @@ class SetLocale:
         date: typing.Optional[datetime.date] = None,
         image: typing.Optional[str] = None,
         box_image: typing.Optional[str] = None,
-        card_images: typing.Optional[typing.Dict[CardPrinting, str]] = None,
+        card_images: typing.Optional[
+            typing.Dict[SetEdition, typing.Dict[CardPrinting, str]]
+        ] = None,
         db_ids: typing.Optional[typing.List[int]] = None,
     ) -> None:
         self.key = key
@@ -677,7 +680,10 @@ class SetLocale:
             **({"date": self.date.isoformat()} if self.date else {}),
             **({"image": self.image} if self.image else {}),
             **({"boxImage": self.box_image} if self.box_image else {}),
-            "cardImages": {str(k.id): v for k, v in self.card_images.items()},
+            "cardImages": {
+                k.value: {str(kk.id): vv for kk, vv in v.items()}
+                for k, v in self.card_images.items()
+            },
             "externalIDs": {
                 **({"dbIDs": self.db_ids} if self.db_ids else {}),
             },
@@ -1164,7 +1170,9 @@ class Database:
                 image=v.get("image"),
                 box_image=v.get("boxImage"),
                 card_images={
-                    printings[uuid.UUID(k)]: v
+                    SetEdition(k): {
+                        printings[uuid.UUID(kk)]: vv for kk, vv in v.items()
+                    }
                     for k, v in v.get("cardImages", {}).items()
                 },
                 db_ids=v["externalIDs"].get("dbIDs"),

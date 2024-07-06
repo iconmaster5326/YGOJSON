@@ -54,12 +54,16 @@
             "format": "uri"
           },
           "cardImages": {
-            "description": "A mapping of printing UUIDs to images of that card's specific printing in this language.",
+            "description": "A mapping of editions (as per the edition enumeration, or the empty string if no edition) to sets of card images in this locale.",
             "type": "object",
             "additionalProperties": {
-              "description": "A URL to a full image of this card.",
-              "type": "string",
-              "format": "uri"
+              "description": "A mapping of printing UUIDs to images of that card's specific printing in this locale.",
+              "type": "object",
+              "additionalProperties": {
+                "description": "A URL to a full image of this card.",
+                "type": "string",
+                "format": "uri"
+              }
             }
           },
           "externalIDs": {

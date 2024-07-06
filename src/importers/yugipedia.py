@@ -1523,7 +1523,8 @@ def parse_set(
                             possible_rarity_bits = [
                                 x
                                 for x in printing[2:]
-                                if x.lower() != "rp" and "::" not in x
+                                if x.lower() not in {"rp", "force-smw"}
+                                and "::" not in x
                             ]
                             if possible_rarity_bits:
                                 rarity = possible_rarity_bits[0]
@@ -1650,7 +1651,14 @@ def parse_set(
                                                             image_filename
                                                         )
                                                         def onImageGet(url: str):
-                                                            locale.card_images[
+                                                            ed = (
+                                                                edition
+                                                                or SetEdition.NONE
+                                                            )
+                                                            locale.card_images.setdefault(
+                                                                ed, {}
+                                                            )
+                                                            locale.card_images[ed][
                                                                 found_printing
                                                             ] = url
 
@@ -1745,7 +1753,11 @@ def parse_set(
                                     if x not in existing_locale.db_ids
                                 ]
                             )
-                            existing_locale.card_images.update(locale.card_images)
+                            for ed, images in locale.card_images.items():
+                                if ed in existing_locale.card_images:
+                                    existing_locale.card_images[ed].update(images)
+                                else:
+                                    existing_locale.card_images[ed] = images
 
                             locale = existing_locale
                             contents.locales = [locale]
@@ -1756,7 +1768,10 @@ def parse_set(
                             other_contents
                             for other_contents in set_.contents
                             if (
-                                all(
+                                len(contents.cards) == len(other_contents.cards)
+                                and len(contents.removed_cards)
+                                == len(other_contents.removed_cards)
+                                and all(
                                     _printing_equal(p1, p2)
                                     for p1, p2 in zip(
                                         contents.cards, other_contents.cards
@@ -1793,12 +1808,35 @@ def parse_set(
                                     if x not in similar_content.editions
                                 ]
                             )
-                            for oldprinting in {**locale.card_images}:
-                                if (
-                                    oldprinting in contents.cards
-                                    or oldprinting in contents.removed_cards
-                                ):
-                                    del locale.card_images[oldprinting]
+                            for ed, oldprintings in locale.card_images.items():
+                                for oldprinting in {**oldprintings}:
+                                    if (
+                                        oldprinting in contents.cards
+                                        or oldprinting in contents.removed_cards
+                                    ):
+                                        try:
+                                            oldindex = contents.cards.index(oldprinting)
+                                            oldwasremoved = False
+                                        except ValueError:
+                                            oldindex = contents.removed_cards.index(
+                                                oldprinting
+                                            )
+                                            oldwasremoved = True
+
+                                        if oldwasremoved:
+                                            newprinting = similar_content.removed_cards[
+                                                oldindex
+                                            ]
+                                        else:
+                                            newprinting = similar_content.cards[
+                                                oldindex
+                                            ]
+
+                                        locale.card_images[ed][
+                                            newprinting
+                                        ] = locale.card_images[ed][oldprinting]
+                                        del locale.card_images[ed][oldprinting]
+
                             break
                         else:
                             set_.contents.append(contents)
