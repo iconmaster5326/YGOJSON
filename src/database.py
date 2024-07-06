@@ -269,7 +269,7 @@ class LegalityPeriod:
 
 class CardLegality:
     current: Legality
-    history: typing.Optional[typing.List[LegalityPeriod]]
+    history: typing.List[LegalityPeriod]
 
     def __init__(
         self,
@@ -278,7 +278,7 @@ class CardLegality:
         history: typing.Optional[typing.List[LegalityPeriod]] = None,
     ):
         self.current = current
-        self.history = history
+        self.history = history or []
 
 
 class ExternalIdPair:
@@ -309,7 +309,7 @@ class Card:
     passwords: typing.List[str]
     images: typing.List[CardImage]
     sets: typing.List["Set"]
-    legality: typing.Dict[Format, CardLegality]
+    legality: typing.Dict[str, CardLegality]
     master_duel_rarity: typing.Optional[VideoGameRaity]
     master_duel_craftable: typing.Optional[bool]
     duel_links_rarity: typing.Optional[VideoGameRaity]
@@ -341,7 +341,7 @@ class Card:
         passwords: typing.Optional[typing.List[str]] = None,
         images: typing.Optional[typing.List[CardImage]] = None,
         sets: typing.Optional[typing.List["Set"]] = None,
-        legality: typing.Optional[typing.Dict[Format, CardLegality]] = None,
+        legality: typing.Optional[typing.Dict[str, CardLegality]] = None,
         master_duel_rarity: typing.Optional[VideoGameRaity] = None,
         master_duel_craftable: typing.Optional[bool] = None,
         duel_links_rarity: typing.Optional[VideoGameRaity] = None,
@@ -439,7 +439,7 @@ class Card:
             ],
             "sets": [str(x.id) for x in self.sets],
             "legality": {
-                k.value: {
+                k: {
                     "current": v.current.value,
                     **(
                         {
@@ -1123,7 +1123,7 @@ class Database:
                 for x in rawcard["images"]
             ],
             legality={
-                Format(k): CardLegality(
+                k: CardLegality(
                     current=Legality(v.get("current") or "unknown"),
                     history=[
                         LegalityPeriod(

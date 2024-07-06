@@ -103,6 +103,18 @@ CAT_TOKENS = "Category:Tokens"
 CAT_SKILLS = "Category:Skill Cards"
 CAT_UNUSABLE = "Category:Unusable cards"
 
+BANLIST_CATS = {
+    "tcg": "Category:TCG Advanced Format Forbidden & Limited Lists",
+    "ocg": "Category:OCG Forbidden & Limited Lists",
+    "ocg-kr": "Category:Korean OCG Forbidden & Limited Lists",
+    # "ocg-ae": "Category:Asian-English OCG Forbidden & Limited Lists",
+    # "ocg-tc": "Category:Traditional Chinese OCG Forbidden & Limited Lists",
+    "ocg-sc": "Category:Simplified Chinese OCG Forbidden & Limited Lists",
+    "speed": "Category:TCG Speed Duel Forbidden & Limited Lists",
+    "masterduel": "Category:Yu-Gi-Oh! Master Duel Forbidden & Limited Lists",
+    "duellinks": "Category:Yu-Gi-Oh! Duel Links Forbidden & Limited Lists",
+}
+
 DBID_SUFFIX = "_database_id"
 DBNAME_SUFFIX = "_name"
 RELDATE_SUFFIX = "_release_date"
@@ -323,6 +335,7 @@ def parse_card(
     card: Card,
     data: wikitextparser.WikiText,
     categories: typing.List[int],
+    banlists: typing.Dict[str, typing.List["Banlist"]],
 ) -> bool:
     """
     Parse a card from a wiki page. Returns False if this is not actually a valid card
@@ -533,7 +546,23 @@ def parse_card(
                 add_image(in_image, new_image)
                 card.images.append(new_image)
 
-    # TODO: legality, video games
+    # TODO: video games
+
+    for format, ban_history in banlists.items():
+        card_history = card.legality.get(format)
+        if card_history:
+            card_history.history.clear()
+
+        for history_item in ban_history:
+            if title in history_item.cards:
+                legality = history_item.cards[title]
+                if not card_history:
+                    card.legality.setdefault(format, CardLegality(current=legality))
+                    card_history = card.legality[format]
+                card_history.current = legality
+                card_history.history.append(
+                    LegalityPeriod(legality=legality, date=history_item.date)
+                )
 
     if not card.yugipedia_pages:
         card.yugipedia_pages = []
@@ -1273,6 +1302,34 @@ def _parse_month(m: str) -> int:
             return int(m)
 
 
+def _parse_date(value: str) -> typing.Optional[datetime.date]:
+    found_date = re.search(r"(\w+)\s+(\d+),\s*(\d+)", value)
+    if found_date:
+        (month, day, year) = found_date.groups()
+    else:
+        found_date = re.search(r"(\w+)\s+(\d+)", value)
+        if found_date:
+            (month, year) = found_date.groups()
+            day = "1"
+        else:
+            found_date = re.search(r"(\d\d\d\d)", value)
+            if found_date:
+                (year,) = found_date.groups()
+                month = "1"
+                day = "1"
+            else:
+                return None
+
+    try:
+        return datetime.date(
+            month=_parse_month(month),
+            day=int(day),
+            year=int(year),
+        )
+    except ValueError:
+        return None
+
+
 def parse_set(
     db: Database,
     batcher: "YugipediaBatcher",
@@ -1372,43 +1429,13 @@ def parse_set(
                                     if lang == locale.key:
                                         value = _strip_markup(arg.value).strip()
                                         if value:
-                                            found_date = re.search(
-                                                r"(\w+)\s+(\d+),\s*(\d+)", value
-                                            )
-                                            if found_date:
-                                                (month, day, year) = found_date.groups()
-                                            else:
-                                                found_date = re.search(
-                                                    r"(\w+)\s+(\d+)", value
-                                                )
-                                                if found_date:
-                                                    (month, year) = found_date.groups()
-                                                    day = "1"
-                                                else:
-                                                    found_date = re.search(
-                                                        r"(\d\d\d\d)", value
-                                                    )
-                                                    if found_date:
-                                                        (year,) = found_date.groups()
-                                                        month = "1"
-                                                        day = "1"
-                                                    else:
-                                                        logging.warn(
-                                                            f"Found invalid release date for locale {lang} in {batcher.idsToNames[pageid]}: {value}"
-                                                        )
-                                                        continue
-
-                                            try:
-                                                locale.date = datetime.date(
-                                                    month=_parse_month(month),
-                                                    day=int(day),
-                                                    year=int(year),
-                                                )
-                                            except ValueError:
+                                            date = _parse_date(value)
+                                            if not date:
                                                 logging.warn(
-                                                    f"Found invalid release month for locale {lang} in {batcher.idsToNames[pageid]}: {month}"
+                                                    f"Found invalid release date for locale {lang} in {batcher.idsToNames[pageid]}: {value}"
                                                 )
                                                 continue
+                                            locale.date = date
 
                         contents = SetContents(
                             locales=[locale],
@@ -1857,6 +1884,167 @@ def parse_set(
     return True
 
 
+class Banlist:
+    format: str
+    date: datetime.date
+    cards: typing.Dict[str, Legality]
+
+    def __init__(
+        self,
+        *,
+        format: str,
+        date: datetime.date,
+        cards: typing.Optional[typing.Dict[str, Legality]] = None,
+    ) -> None:
+        self.format = format
+        self.date = date
+        self.cards = cards or {}
+
+
+BANLIST_STR_TO_LEGALITY = {
+    "unlimited": Legality.UNLIMITED,
+    "no_longer_on_list": Legality.UNLIMITED,
+    "no-longer-on-list": Legality.UNLIMITED,
+    "semi-limited": Legality.SEMILIMITED,
+    "semi_limited": Legality.SEMILIMITED,
+    "limited": Legality.LIMITED,
+    "forbidden": Legality.FORBIDDEN,
+    # speed duel legalities
+    "limited_0": Legality.FORBIDDEN,
+    "limited_1": Legality.LIMITED,
+    "limited_2": Legality.SEMILIMITED,
+    "limited_3": Legality.UNLIMITED,
+}
+
+DL_NAME_SUFFIX = " (duel links)"
+
+
+def _parse_banlist(
+    batcher: "YugipediaBatcher", pageid: int, format: str, raw_data: str
+) -> typing.Optional[Banlist]:
+    data = wikitextparser.parse(raw_data)
+
+    limitlists = [
+        x for x in data.templates if x.name.strip().lower() == "limitation list"
+    ]
+    md_limitlists = [
+        x
+        for x in data.templates
+        if x.name.strip().lower() == "master duel limitation status list"
+    ]
+    if not limitlists and not md_limitlists:
+        if (
+            format != "masterduel"
+        ):  # master duel has a lot of event banlists we want to ignore
+            logging.warn(
+                f"Found banlist without limitlist template: {batcher.idsToNames[pageid]}"
+            )
+        return None
+
+    cards: typing.Dict[str, Legality] = {}
+    raw_start_date = None
+
+    for limitlist in limitlists:
+        raw_start_date = _strip_markup(
+            get_table_entry(limitlist, "start_date", "")
+        ).strip()
+
+        for arg in limitlist.arguments:
+            if arg.name and arg.name.strip().lower() in BANLIST_STR_TO_LEGALITY:
+                legality = BANLIST_STR_TO_LEGALITY[arg.name.strip().lower()]
+                cardlist = [
+                    x.split("//")[0].strip() for x in arg.value.split("\n") if x.strip()
+                ]
+                for card in cardlist:
+                    if card.lower().endswith(DL_NAME_SUFFIX):
+                        card = card[: -len(DL_NAME_SUFFIX)]
+                    cards[card] = legality
+
+    for limitlist in md_limitlists:
+        raw_date = get_table_entry(limitlist, "date")
+        if raw_date and raw_date.strip():
+            raw_start_date = _strip_markup(raw_date).strip()
+
+        for row in [
+            x.split("//")[0].strip()
+            for x in get_table_entry(limitlist, "cards", "").split("\n")
+            if x.strip()
+        ]:
+            parts = [x.strip() for x in row.split(";")]
+            if len(parts) == 2:
+                (name, raw_legality) = parts
+            elif len(parts) == 3:
+                (name, _, raw_legality) = parts
+            else:
+                logging.warn(
+                    f"Unparsable master duel banlist row in {batcher.idsToNames[pageid]}: {row}"
+                )
+                continue
+
+            if raw_legality.lower() not in BANLIST_STR_TO_LEGALITY:
+                logging.warn(
+                    f"Unknown legality in master duel banlist row in {batcher.idsToNames[pageid]}: {raw_legality}"
+                )
+                continue
+
+            cards[name] = BANLIST_STR_TO_LEGALITY[raw_legality.lower()]
+
+    start_date = _parse_date(raw_start_date or "")
+    if not start_date:
+        logging.warn(
+            f"Found invalid start date of {batcher.idsToNames[pageid]}: {raw_start_date}"
+        )
+        return None
+
+    return Banlist(format=format, date=start_date, cards=cards)
+
+
+def get_banlist_pages(
+    batcher: "YugipediaBatcher",
+) -> typing.Dict[str, typing.List[Banlist]]:
+    with tqdm.tqdm(
+        total=len(BANLIST_CATS), desc="Fetching Yugipedia banlists"
+    ) as progress_bar:
+        result: typing.Dict[str, typing.List["Banlist"]] = {}
+
+        for format, catname in BANLIST_CATS.items():
+
+            def do(format: str, catname: str):
+                @batcher.getCategoryMembers(catname)
+                def onGetBanlistCat(members: typing.List[int]):
+                    for member in members:
+
+                        def do(member: int):
+                            @batcher.getPageID(member)
+                            def onGetID(_pageid: int, _title: str):
+                                @batcher.getPageContents(member)
+                                def onGetContents(raw_data: str):
+                                    banlist = _parse_banlist(
+                                        batcher, member, format, raw_data
+                                    )
+                                    if banlist:
+                                        result.setdefault(format, [])
+                                        result[format].append(banlist)
+
+                        do(member)
+                    progress_bar.update(1)
+
+            do(format, catname)
+
+        batcher.flushPendingOperations()
+        for format, banlists in result.items():
+            banlists.sort(key=lambda b: b.date)
+            running_totals: typing.Dict[str, Legality] = {}
+            for banlist in banlists:
+                for card, legality in {**banlist.cards}.items():
+                    if card in running_totals and running_totals[card] == legality:
+                        del banlist.cards[card]
+                    else:
+                        running_totals[card] = legality
+
+        return result
+
+
 def import_from_yugipedia(
     db: Database,
     *,
@@ -1869,27 +2057,30 @@ def import_from_yugipedia(
     with YugipediaBatcher() as batcher:
         atexit.register(lambda: batcher.saveCachesToDisk())
 
+        if db.last_yugipedia_read is not None:
+            if (
+                datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
+                > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
+            ):
+                db.last_yugipedia_read = None
+                batcher.clearCache()
+
         if import_cards:
+            banlists = get_banlist_pages(batcher)
             cards: typing.List[int]
+
             if db.last_yugipedia_read is not None:
-                if (
-                    datetime.datetime.now().timestamp()
-                    - db.last_yugipedia_read.timestamp()
-                    > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
-                ):
-                    cards = [x for x in get_card_pages(batcher)]
-                else:
-                    batcher.use_cache = False
-                    cards = [
-                        x
-                        for x in get_changes(
-                            batcher,
-                            get_card_pages(batcher),
-                            [CAT_OCG_CARDS, CAT_TCG_CARDS],
-                            get_changelog(db.last_yugipedia_read),
-                        )
-                    ]
-                    batcher.use_cache = True
+                batcher.use_cache = False
+                cards = [
+                    x
+                    for x in get_changes(
+                        batcher,
+                        get_card_pages(batcher),
+                        [CAT_OCG_CARDS, CAT_TCG_CARDS],
+                        get_changelog(db.last_yugipedia_read),
+                    )
+                ]
+                batcher.use_cache = True
             else:
                 cards = [x for x in get_card_pages(batcher)]
 
@@ -1949,7 +2140,9 @@ def import_from_yugipedia(
                             if not card:
                                 card = Card(id=uuid.uuid4(), card_type=CardType(ct))
 
-                            if parse_card(batcher, pageid, card, data, categories):
+                            if parse_card(
+                                batcher, pageid, card, data, categories, banlists
+                            ):
                                 db.add_card(card)
                                 if found:
                                     n_found += 1
@@ -1961,24 +2154,17 @@ def import_from_yugipedia(
         if import_sets:
             sets: typing.List[int]
             if db.last_yugipedia_read is not None:
-                if (
-                    datetime.datetime.now().timestamp()
-                    - db.last_yugipedia_read.timestamp()
-                    > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
-                ):
-                    sets = [x for x in get_set_pages(batcher)]
-                else:
-                    batcher.use_cache = False
-                    sets = [
-                        x
-                        for x in get_changes(
-                            batcher,
-                            get_set_pages(batcher),
-                            [CAT_OCG_SETS, CAT_TCG_SETS],
-                            get_changelog(db.last_yugipedia_read),
-                        )
-                    ]
-                    batcher.use_cache = True
+                batcher.use_cache = False
+                sets = [
+                    x
+                    for x in get_changes(
+                        batcher,
+                        get_set_pages(batcher),
+                        [CAT_OCG_SETS, CAT_TCG_SETS],
+                        get_changelog(db.last_yugipedia_read),
+                    )
+                ]
+                batcher.use_cache = True
             else:
                 sets = [x for x in get_set_pages(batcher)]
 

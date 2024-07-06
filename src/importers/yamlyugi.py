@@ -236,10 +236,10 @@ def _write_card(
     for k, v in (in_json["limit_regulation"] or {}).items():
         if not v:
             continue
-        if Format(k) in card.legality:
-            card.legality[Format(k)].current = LEGALITIES[v]
+        if k in card.legality:
+            card.legality[k].current = LEGALITIES[v]
         else:
-            card.legality[Format(k)] = CardLegality(current=LEGALITIES[v])
+            card.legality[k] = CardLegality(current=LEGALITIES[v])
 
     if "master_duel_rarity" in in_json:
         card.master_duel_rarity = VideoGameRaity(in_json["master_duel_rarity"].lower())
