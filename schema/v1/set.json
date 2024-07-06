@@ -153,13 +153,20 @@
             "type": "object",
             "required": [],
             "properties": {
-              "ygoprodeckID": {
-                "description": "The internal ID in YGOProDeck for this set.",
-                "type": "integer"
-              },
-              "ygoprodeckName": {
-                "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/pack/' to get the set's page.",
-                "type": "string"
+              "ygoprodeck": {
+                "description": "YGOPRODECK information about this set.",
+                "type": "object",
+                "required": ["id", "name"],
+                "properties": {
+                  "id": {
+                    "description": "The internal ID in YGOProDeck for this set.",
+                    "type": "integer"
+                  },
+                  "name": {
+                    "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/pack/' to get the set's page.",
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -192,13 +199,20 @@
       "type": "object",
       "required": [],
       "properties": {
-        "yugipediaName": {
-          "description": "The Yugipedia page name for this set.",
-          "type": "string"
-        },
-        "yugipediaID": {
-          "description": "The internal wiki ID for the Yugipedia page for this set.",
-          "type": "integer"
+        "yugipedia": {
+          "description": "Yugipedia information about this set.",
+          "type": "object",
+          "required": ["id", "name"],
+          "properties": {
+            "id": {
+              "description": "The internal wiki ID for the Yugipedia page for this set.",
+              "type": "integer"
+            },
+            "name": {
+              "description": "The Yugipedia page name for this set.",
+              "type": "string"
+            }
+          }
         },
         "yugiohpricesName": {
           "description": "The name of this set on YugiohPrices. TCG only.",

@@ -1167,8 +1167,7 @@ def parse_set(
 
                 do(link.target)
 
-    set_.yugipedia_page = ExternalIdPair(batcher.idsToNames[pageid], pageid)
-
+    set_.yugipedia = ExternalIdPair(batcher.idsToNames[pageid], pageid)
     return True
 
 

@@ -310,8 +310,6 @@ class Card:
     yugipedia_pages: typing.Optional[typing.List[ExternalIdPair]]
     ygoprodeck: typing.Optional[ExternalIdPair]
     db_id: typing.Optional[int]
-    ygoprodeck_id: typing.Optional[int]
-    ygoprodeck_name: typing.Optional[str]
     yugiohprices_name: typing.Optional[str]
     yamlyugi_id: typing.Optional[int]
     series: typing.List["Series"]
@@ -625,8 +623,10 @@ class SetContents:
             "externalIDs": {
                 **(
                     {
-                        "ygoprodeckID": self.ygoprodeck.name,
-                        "ygoprodeckName": self.ygoprodeck.id,
+                        "ygoprodeck": {
+                            "name": self.ygoprodeck.name,
+                            "id": self.ygoprodeck.id,
+                        }
                     }
                     if self.ygoprodeck
                     else {}
@@ -685,8 +685,8 @@ class Set:
     name: typing.Dict[str, str]
     locales: typing.Dict[str, SetLocale]
     contents: typing.List[SetContents]
-    yugipedia_page: typing.Optional[ExternalIdPair]
-    yugiohprices_name: typing.Optional[str]
+    yugipedia: typing.Optional[ExternalIdPair]
+    yugiohprices: typing.Optional[str]
 
     def __init__(
         self,
@@ -695,15 +695,15 @@ class Set:
         name: typing.Optional[typing.Dict[str, str]] = None,
         locales: typing.Optional[typing.Iterable[SetLocale]] = None,
         contents: typing.Optional[typing.List[SetContents]] = None,
-        yugipedia_page: typing.Optional[ExternalIdPair] = None,
-        yugiohprices_name: typing.Optional[str] = None,
+        yugipedia: typing.Optional[ExternalIdPair] = None,
+        yugiohprices: typing.Optional[str] = None,
     ) -> None:
         self.id = id
         self.name = name or {}
         self.locales = {locale.key: locale for locale in locales} if locales else {}
         self.contents = contents or []
-        self.yugipedia_page = yugipedia_page
-        self.yugiohprices_name = yugiohprices_name
+        self.yugipedia = yugipedia
+        self.yugiohprices = yugiohprices
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -719,16 +719,16 @@ class Set:
             "externalIDs": {
                 **(
                     {
-                        "yugipediaName": self.yugipedia_page.name,
-                        "yugipediaID": self.yugipedia_page.id,
+                        "yugipedia": {
+                            "name": self.yugipedia.name,
+                            "id": self.yugipedia.id,
+                        }
                     }
-                    if self.yugipedia_page
+                    if self.yugipedia is not None
                     else {}
                 ),
                 **(
-                    {"yugiohpricesName": self.yugiohprices_name}
-                    if self.yugiohprices_name
-                    else {}
+                    {"yugiohpricesName": self.yugiohprices} if self.yugiohprices else {}
                 ),
             },
         }
@@ -825,8 +825,8 @@ class Database:
         self.sets_by_id[set_.id] = set_
         if "en" in set_.name:
             self.sets_by_en_name[set_.name["en"]] = set_
-        if set_.yugipedia_page:
-            self.sets_by_yugipedia_id[set_.yugipedia_page.id] = set_
+        if set_.yugipedia:
+            self.sets_by_yugipedia_id[set_.yugipedia.id] = set_
         for locale in set_.locales.values():
             for db_id in locale.db_ids:
                 self.sets_by_konami_sid[db_id] = set_
@@ -1140,13 +1140,10 @@ class Database:
                             for v in content.get("removedCards", [])
                         ],
                         ygoprodeck=ExternalIdPair(
-                            content["externalIDs"].get("ygoprodeckName"),
-                            content["externalIDs"].get("ygoprodeckID"),
+                            content["externalIDs"]["ygoprodeck"]["name"],
+                            content["externalIDs"]["ygoprodeck"]["id"],
                         )
-                        if (
-                            "ygoprodeckName" in content["externalIDs"]
-                            and "ygoprodeckID" in content["externalIDs"]
-                        )
+                        if "ygoprodeck" in content["externalIDs"]
                         else None,
                     ),
                     content.get("locales", []),
@@ -1182,14 +1179,11 @@ class Database:
             name=rawset["name"],
             locales=locales.values(),
             contents=[v[0] for v in contents],
-            yugipedia_page=ExternalIdPair(
-                rawset["externalIDs"].get("yugipediaName"),
-                rawset["externalIDs"].get("yugipediaID"),
+            yugipedia=ExternalIdPair(
+                rawset["externalIDs"]["yugipedia"]["name"],
+                rawset["externalIDs"]["yugipedia"]["id"],
             )
-            if (
-                "yugipediaName" in rawset["externalIDs"]
-                and "yugipediaID" in rawset["externalIDs"]
-            )
+            if "yugipedia" in rawset["externalIDs"]
             else None,
         )
 
