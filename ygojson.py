@@ -65,6 +65,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         help="Don't import sets from external APIs",
     )
     parser.add_argument(
+        "--no-series",
+        action="store_true",
+        help="Don't import series from external APIs",
+    )
+    parser.add_argument(
         "--no-regen-backlinks",
         action="store_true",
         help="Don't regenerate backlinks (for example, links from cards to sets)",
@@ -107,6 +112,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             db,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
+            import_series=not args.no_series,
         )
         logging.info(f"Added {n_new} cards and updated {n_old} cards.")
 
@@ -116,6 +122,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             db,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
+            import_series=not args.no_series,
         )
         logging.info(f"Added {n_new} cards and updated {n_old} cards.")
 
@@ -125,6 +132,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             db,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
+            import_series=not args.no_series,
         )
         logging.info(f"Added {n_new} cards and updated {n_old} cards.")
 

@@ -227,8 +227,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
         existing_image.card_art = in_image["image_url"]
         existing_image.crop_art = in_image["image_url_cropped"]
 
-    # TODO: sets
-
     card.ygoprodeck = ExternalIdPair(
         in_json["ygoprodeck_url"].replace("https://ygoprodeck.com/card/", ""),
         in_json["id"],
@@ -249,6 +247,7 @@ def import_from_ygoprodeck(
     *,
     import_cards: bool = True,
     import_sets: bool = True,
+    import_series: bool = True,
 ) -> typing.Tuple[int, int]:
     """
     Import card data from YGOProDeck into the given database.

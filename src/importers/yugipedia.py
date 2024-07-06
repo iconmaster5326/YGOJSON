@@ -550,7 +550,7 @@ def parse_card(
     if vmatch:
         card.db_id = int(vmatch.group(0))
 
-    # TODO: errata, series
+    # TODO: errata
 
     return True
 
@@ -1862,6 +1862,7 @@ def import_from_yugipedia(
     *,
     import_cards: bool = True,
     import_sets: bool = True,
+    import_series: bool = True,
 ) -> typing.Tuple[int, int]:
     n_found = n_new = 0
 
@@ -2214,7 +2215,7 @@ class YugipediaBatcher:
 
         class GetPageXMLDecorator:
             def __init__(self, callback: typing.Callable[[str], None]) -> None:
-                if str(page) in batcher.missingPagesCache:
+                if batcher.use_cache and str(page) in batcher.missingPagesCache:
                     return
 
                 pageid = (
@@ -2291,7 +2292,7 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
-                if str(page) in batcher.missingPagesCache:
+                if batcher.use_cache and str(page) in batcher.missingPagesCache:
                     return
 
                 pageid = (
@@ -2459,7 +2460,7 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
-                if str(page) in batcher.missingPagesCache:
+                if batcher.use_cache and str(page) in batcher.missingPagesCache:
                     return
 
                 pageid = (
@@ -2494,7 +2495,7 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
-                if str(page) in batcher.missingPagesCache:
+                if batcher.use_cache and str(page) in batcher.missingPagesCache:
                     return
 
                 pageid = (
@@ -2562,7 +2563,7 @@ class YugipediaBatcher:
 
         class GetImageDecorator:
             def __init__(self, callback: typing.Callable[[str], None]) -> None:
-                if str(page) in batcher.missingPagesCache:
+                if batcher.use_cache and str(page) in batcher.missingPagesCache:
                     return
 
                 pageid = (
@@ -2643,7 +2644,7 @@ class YugipediaBatcher:
 
         class GetIDDecorator:
             def __init__(self, callback: typing.Callable[[int, str], None]) -> None:
-                if str(page) in batcher.missingPagesCache:
+                if batcher.use_cache and str(page) in batcher.missingPagesCache:
                     return
 
                 pageid = (

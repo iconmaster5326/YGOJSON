@@ -19,9 +19,14 @@ META_FILENAME = "meta.json"
 CARDLIST_FILENAME = "cards.json"
 CARDS_DIRNAME = "cards"
 AGG_CARDS_FILENAME = "cards.json"
+
 SETLIST_FILENAME = "sets.json"
 SETS_DIRNAME = "sets"
 AGG_SETS_FILENAME = "sets.json"
+
+SERIESLIST_FILENAME = "series.json"
+SERIES_DIRNAME = "series"
+AGG_SERIES_FILENAME = "series.json"
 
 
 class CardType(enum.Enum):
@@ -499,7 +504,7 @@ class Card:
                 ),
                 **({"yamlyugiID": self.yamlyugi_id} if self.yamlyugi_id else {}),
             },
-            "series": [x.id for x in self.series],
+            "series": [str(x.id) for x in self.series],
         }
 
 
@@ -509,6 +514,30 @@ class PackDistrobution:
 
 class Series:
     id: uuid.UUID
+    name: typing.Dict[str, str]
+    archetype: bool
+    members: typing.Set[Card]
+
+    def __init__(
+        self,
+        *,
+        id: uuid.UUID,
+        name: typing.Optional[typing.Dict[str, str]] = None,
+        archetype: bool = False,
+        members: typing.Optional[typing.Set[Card]] = None,
+    ) -> None:
+        self.id = id
+        self.name = name or {}
+        self.archetype = archetype
+        self.members = members or set()
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "id": str(self.id),
+            "name": self.name,
+            "archetype": self.archetype,
+            "members": sorted(str(c.id) for c in self.members),
+        }
 
 
 class CardPrinting:
@@ -775,6 +804,10 @@ class Database:
     printings_by_id: typing.Dict[uuid.UUID, CardPrinting]
     printings_by_code: typing.Dict[str, typing.List[CardPrinting]]
 
+    series: typing.List[Series]
+    series_by_id: typing.Dict[uuid.UUID, Series]
+    series_by_en_name: typing.Dict[str, Series]
+
     def __init__(
         self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
     ):
@@ -806,6 +839,10 @@ class Database:
 
         self.printings_by_id = {}
         self.printings_by_code = {}
+
+        self.series = []
+        self.series_by_id = {}
+        self.series_by_en_name = {}
 
     def add_card(self, card: Card):
         if card.id not in self.cards_by_id:
@@ -854,13 +891,30 @@ class Database:
                                 self.printings_by_code.setdefault(code, [])
                                 self.printings_by_code[code].append(printing)
 
+    def add_series(self, series: Series):
+        if series.id not in self.series_by_id:
+            self.series.append(series)
+            self.series_by_id[series.id] = series
+        if "en" in series.name:
+            self.series_by_en_name[series.name["en"]] = series
+
     def regenerate_backlinks(self):
         for card in self.cards:
             card.sets.clear()
-        for set_ in tqdm.tqdm(self.sets, desc="Regenerating card backlinks to sets"):
+            card.series.clear()
+        for set_ in tqdm.tqdm(
+            self.sets, total=len(self.sets), desc="Regenerating card backlinks to sets"
+        ):
             for contents in set_.contents:
                 for printing in contents.cards:
                     printing.card.sets.append(set_)
+        for series in tqdm.tqdm(
+            self.series,
+            total=len(self.series),
+            desc="Regenerating card backlinks to series",
+        ):
+            for member in series.members:
+                member.series.append(series)
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -941,6 +995,18 @@ class Database:
             for set in tqdm.tqdm(self.sets, desc="Saving individual sets"):
                 self._save_set(set)
 
+            with open(
+                os.path.join(self.individuals_dir, SERIESLIST_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump([str(series.id) for series in self.series], outfile, indent=2)
+            os.makedirs(
+                os.path.join(self.individuals_dir, SERIES_DIRNAME), exist_ok=True
+            )
+            for series in tqdm.tqdm(self.series, desc="Saving individual series"):
+                self._save_series(series)
+
         if generate_aggregates:
             os.makedirs(self.aggregates_dir, exist_ok=True)
             with open(
@@ -978,6 +1044,23 @@ class Database:
                             (x._to_json() for x in self.sets),
                             total=len(self.sets),
                             desc="Saving aggregate sets",
+                        )
+                    ],
+                    outfile,
+                    indent=2,
+                )
+
+            with open(
+                os.path.join(self.aggregates_dir, AGG_SERIES_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump(
+                    [
+                        *tqdm.tqdm(
+                            (x._to_json() for x in self.series),
+                            total=len(self.series),
+                            desc="Saving aggregate series",
                         )
                     ],
                     outfile,
@@ -1039,7 +1122,6 @@ class Database:
                 )
                 for x in rawcard["images"]
             ],
-            sets=[],
             legality={
                 Format(k): CardLegality(
                     current=Legality(v.get("current") or "unknown"),
@@ -1077,7 +1159,6 @@ class Database:
             else None,
             yugiohprices_name=rawcard["externalIDs"].get("yugiohpricesName"),
             yamlyugi_id=rawcard["externalIDs"].get("yamlyugiID"),
-            series=[],
         )
 
     def _load_cardlist(self) -> typing.List[uuid.UUID]:
@@ -1095,6 +1176,16 @@ class Database:
             encoding="utf-8",
         ) as outfile:
             json.dump(set_._to_json(), outfile, indent=2)
+
+    def _save_series(self, series: Series):
+        with open(
+            os.path.join(
+                self.individuals_dir, SERIES_DIRNAME, str(series.id) + ".json"
+            ),
+            "w",
+            encoding="utf-8",
+        ) as outfile:
+            json.dump(series._to_json(), outfile, indent=2)
 
     def _load_printing(
         self,
@@ -1171,7 +1262,9 @@ class Database:
                 box_image=v.get("boxImage"),
                 card_images={
                     SetEdition(k): {
-                        printings[uuid.UUID(kk)]: vv for kk, vv in v.items()
+                        printings[uuid.UUID(kk)]: vv
+                        for kk, vv in v.items()
+                        if uuid.UUID(kk) in printings
                     }
                     for k, v in v.get("cardImages", {}).items()
                 },
@@ -1208,12 +1301,25 @@ class Database:
         ) as outfile:
             return [uuid.UUID(x) for x in json.load(outfile)]
 
+    def _load_series(self, rawseries: typing.Dict[str, typing.Any]) -> Series:
+        return Series(
+            id=uuid.UUID(rawseries["id"]),
+            name=rawseries["name"],
+            archetype=rawseries["archetype"],
+            members={self.cards_by_id[uuid.UUID(x)] for x in rawseries["members"]},
+        )
+
+    def _load_serieslist(self) -> typing.List[uuid.UUID]:
+        if not os.path.exists(os.path.join(self.individuals_dir, SERIESLIST_FILENAME)):
+            return []
+        with open(
+            os.path.join(self.individuals_dir, SERIESLIST_FILENAME), encoding="utf-8"
+        ) as outfile:
+            return [uuid.UUID(x) for x in json.load(outfile)]
+
 
 def load_database(
     *,
-    progress_monitor: typing.Optional[
-        typing.Callable[[typing.Union[Card, Set]], None]
-    ] = None,
     individuals_dir: str = DATA_DIR,
     aggregates_dir: str = AGGREGATE_DIR,
 ) -> Database:
@@ -1237,8 +1343,6 @@ def load_database(
             for card_json in tqdm.tqdm(json.load(outfile), desc="Loading cards"):
                 card = result._load_card(card_json)
                 result.add_card(card)
-                if progress_monitor:
-                    progress_monitor(card)
     else:
         for card_id in tqdm.tqdm(result._load_cardlist(), desc="Loading cards"):
             with open(
@@ -1247,8 +1351,6 @@ def load_database(
             ) as outfile:
                 card = result._load_card(json.load(outfile))
             result.add_card(card)
-            if progress_monitor:
-                progress_monitor(card)
 
     if os.path.exists(os.path.join(aggregates_dir, AGG_SETS_FILENAME)):
         with open(
@@ -1257,8 +1359,6 @@ def load_database(
             for set_json in tqdm.tqdm(json.load(outfile), desc="Loading sets"):
                 set_ = result._load_set(set_json)
                 result.add_set(set_)
-                if progress_monitor:
-                    progress_monitor(set_)
     else:
         for set_id in tqdm.tqdm(result._load_setlist(), desc="Loading sets"):
             with open(
@@ -1267,7 +1367,21 @@ def load_database(
             ) as outfile:
                 set_ = result._load_set(json.load(outfile))
             result.add_set(set_)
-            if progress_monitor:
-                progress_monitor(set_)
+
+    if os.path.exists(os.path.join(aggregates_dir, AGG_SERIES_FILENAME)):
+        with open(
+            os.path.join(aggregates_dir, AGG_SERIES_FILENAME), encoding="utf-8"
+        ) as outfile:
+            for series_json in tqdm.tqdm(json.load(outfile), desc="Loading series"):
+                series = result._load_series(series_json)
+                result.add_series(series)
+    else:
+        for series_id in tqdm.tqdm(result._load_serieslist(), desc="Loading series"):
+            with open(
+                os.path.join(individuals_dir, SERIES_DIRNAME, str(series_id) + ".json"),
+                encoding="utf-8",
+            ) as outfile:
+                series = result._load_series(json.load(outfile))
+            result.add_series(series)
 
     return result

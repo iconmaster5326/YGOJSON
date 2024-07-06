@@ -12,8 +12,11 @@ import tqdm
 
 from ..database import *
 
-DOWNLOAD_URL = "https://github.com/DawnbrandBots/yaml-yugi/raw/aggregate/"
+DOWNLOAD_URL = "https://github.com/DawnbrandBots/yaml-yugi/raw/"
+AGGREGATES_DOWNLOAD_URL = DOWNLOAD_URL + "aggregate/"
+RAW_DOWNLOAD_URL = DOWNLOAD_URL + "/master/data/"
 INPUT_CARDS_FILE = os.path.join(TEMP_DIR, "yamlyugi_cards.json")
+INPUT_SERIES_FILE = os.path.join(TEMP_DIR, "yamlyugi_series.json")
 REFRESH_TIMER = 4 * 60 * 60
 
 MONSTER_CARD_TYPES = {
@@ -89,36 +92,68 @@ LEGALITIES = {
 }
 MAX_REAL_PASSWORD = 99999999
 
-_cached_yamlyugi = None
+_cached_yamlyugi_cards = None
+_cached_yamlyugi_series = None
 
 
-def _get_yaml_yugi() -> typing.List[typing.Dict[str, typing.Any]]:
+def _get_yaml_yugi_cards() -> typing.List[typing.Dict[str, typing.Any]]:
     """
     Gets the input Yaml Yugi raw JSON data for all cards.
     Caches the value if possible.
     """
-    global _cached_yamlyugi
-    if _cached_yamlyugi is not None:
-        return _cached_yamlyugi
+    global _cached_yamlyugi_cards
+    if _cached_yamlyugi_cards is not None:
+        return _cached_yamlyugi_cards
     if os.path.exists(INPUT_CARDS_FILE):
         if os.stat(INPUT_CARDS_FILE).st_mtime >= time.time() - REFRESH_TIMER:
             with open(INPUT_CARDS_FILE, encoding="utf-8") as in_cards_file:
-                _cached_yamlyugi = json.load(in_cards_file)
-            return _cached_yamlyugi
+                _cached_yamlyugi_cards = json.load(in_cards_file)
+            return _cached_yamlyugi_cards
     os.makedirs(TEMP_DIR, exist_ok=True)
     with tqdm.tqdm(total=1, desc="Downloading Yaml Yugi card list") as progress_bar:
-        response = requests.get(DOWNLOAD_URL + "cards.json")
+        response = requests.get(AGGREGATES_DOWNLOAD_URL + "cards.json")
         if response.ok:
             with open(INPUT_CARDS_FILE, "w", encoding="utf-8") as in_cards_file:
-                _cached_yamlyugi = response.json()
-                json.dump(_cached_yamlyugi, in_cards_file, indent=2)
+                _cached_yamlyugi_cards = response.json()
+                json.dump(_cached_yamlyugi_cards, in_cards_file, indent=2)
             progress_bar.update(1)
-            return _cached_yamlyugi
+            return _cached_yamlyugi_cards
         response.raise_for_status()
         assert False
 
 
-def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
+def _get_yaml_yugi_series() -> typing.List[typing.Dict[str, typing.Any]]:
+    """
+    Gets the input Yaml Yugi raw JSON data for all series.
+    Caches the value if possible.
+    """
+    global _cached_yamlyugi_series
+    if _cached_yamlyugi_series is not None:
+        return _cached_yamlyugi_series
+    if os.path.exists(INPUT_SERIES_FILE):
+        if os.stat(INPUT_SERIES_FILE).st_mtime >= time.time() - REFRESH_TIMER:
+            with open(INPUT_SERIES_FILE, encoding="utf-8") as in_series_file:
+                _cached_yamlyugi_series = json.load(in_series_file)
+            return _cached_yamlyugi_series
+    os.makedirs(TEMP_DIR, exist_ok=True)
+    with tqdm.tqdm(total=1, desc="Downloading Yaml Yugi series list") as progress_bar:
+        response = requests.get(RAW_DOWNLOAD_URL + "series/list.json")
+        if response.ok:
+            with open(INPUT_SERIES_FILE, "w", encoding="utf-8") as in_series_file:
+                _cached_yamlyugi_series = response.json()
+                json.dump(_cached_yamlyugi_series, in_series_file, indent=2)
+            progress_bar.update(1)
+            return _cached_yamlyugi_series
+        response.raise_for_status()
+        assert False
+
+
+def _write_card(
+    db: Database,
+    in_json: typing.Dict[str, typing.Any],
+    card: Card,
+    series_map: typing.Dict[str, typing.List[Card]],
+) -> Card:
     """
     Converts a Yaml Yugi card into a YGOJSON card.
     Overwrites any fields that have changed.
@@ -198,8 +233,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
     # they're just links to unresolved Yugipedia images,
     # which is (a) unhelpful and (b) handled by the Yugipedia importer anyways.
 
-    # TODO: sets
-
     for k, v in (in_json["limit_regulation"] or {}).items():
         if not v:
             continue
@@ -219,7 +252,9 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
     card.db_id = in_json["konami_id"]
     card.yamlyugi_id = in_json["password"]
 
-    # TODO: series
+    for series in in_json.get("series", []):
+        series_map.setdefault(series, [])
+        series_map[series].append(card)
 
     return card
 
@@ -259,11 +294,43 @@ def _import_card(
     )
 
 
+def _import_series(
+    in_series: typing.Dict[str, typing.Any], db: Database
+) -> typing.Tuple[bool, typing.Optional[Series]]:
+    if "en" not in in_series:
+        # series never lack english names, but we play it safe here
+        return False, None
+
+    name = in_series["en"]
+    if name in db.series_by_en_name:
+        return True, db.series_by_en_name[name]
+    return False, Series(id=uuid.uuid4())
+
+
+def _write_series(
+    db: Database,
+    in_series: typing.Dict[str, typing.Any],
+    series: Series,
+    series_map: typing.Dict[str, typing.List[Card]],
+) -> Series:
+    name = in_series["en"]
+
+    for k, v in in_series.items():
+        if v:
+            series.name[k] = v
+
+    for card in series_map.get(name, []):
+        series.members.add(card)
+
+    return series
+
+
 def import_from_yaml_yugi(
     db: Database,
     *,
     import_cards: bool = True,
     import_sets: bool = True,
+    import_series: bool = True,
 ) -> typing.Tuple[int, int]:
     """
     Import card data from Yaml Yugi into the given database.
@@ -272,17 +339,32 @@ def import_from_yaml_yugi(
 
     n_existing = 0
     n_new = 0
-    yamlyugi = _get_yaml_yugi()
+    yamlyugi_cards = _get_yaml_yugi_cards()
+    yamlyugi_series = _get_yaml_yugi_series()
+    series_map: typing.Dict[str, typing.List[Card]] = {}
 
     if import_cards:
-        for in_card in tqdm.tqdm(yamlyugi, desc="Importing cards from Yaml Yugi"):
+        for in_card in tqdm.tqdm(yamlyugi_cards, desc="Importing cards from Yaml Yugi"):
             found, card = _import_card(in_card, db)
             if found:
                 n_existing += 1
             else:
                 n_new += 1
-            card = _write_card(in_card, card)
+            card = _write_card(db, in_card, card, series_map)
             db.add_card(card)
+
+    if import_series:
+        for in_series in tqdm.tqdm(
+            yamlyugi_series, desc="Importing series from Yaml Yugi"
+        ):
+            found, series = _import_series(in_series, db)
+            if series:
+                if found:
+                    n_existing += 1
+                else:
+                    n_new += 1
+                card = _write_series(db, in_series, series, series_map)
+                db.add_series(series)
 
     db.last_yamlyugi_read = datetime.datetime.now()
 
