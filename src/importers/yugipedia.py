@@ -107,6 +107,9 @@ DBID_SUFFIX = "_database_id"
 DBNAME_SUFFIX = "_name"
 RELDATE_SUFFIX = "_release_date"
 
+EXT_PREFIX = "extension::"
+FILE_PREFIX = "file::"
+
 
 def get_card_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
     with tqdm.tqdm(total=2, desc="Fetching Yugipedia card list") as progress_bar:
@@ -554,6 +557,68 @@ def parse_card(
 
 CARD_GALLERY_NAMESPACE = "Set Card Galleries:"
 
+#   | c     | common                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Common                                  | C     }}
+#   | nr    | normal                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Normal Rare                             | NR    }}
+#   | sp    | short print                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Short Print                             | SP    }}
+#   | ssp   | super short print              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Short Print                       | SSP   }}
+#   | hfr   | holofoil                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holofoil Rare                           | HFR   }}
+#   | r     | rare                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rare                                    | R     }}
+#   | sr    | super                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Rare                              | SR    }}
+#   | ur    | ultra                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Rare                              | UR    }}
+#   | utr   | ultimate                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultimate Rare                           | UtR   }}
+#   | gr    | ghost                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ghost Rare                              | GR    }}
+#   | hr | hgr | holographic                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holographic Rare                        | HGR   }}
+#   | se | scr | secret                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Rare                             | ScR   }}
+#   | pscr  | prismatic secret               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Prismatic Secret Rare                   | PScR  }}
+#   | uscr  | ultra secret                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Secret Rare                       | UScR  }}
+#   | scur  | secret ultra                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Ultra Rare                       | ScUR  }}
+#   | escr  | extra secret                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Extra Secret Rare                       | EScR  }}
+#   | 20scr | 20th secret                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | 20th Secret Rare                        | 20ScR }}
+#   | qcscr | quarter century secret         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Quarter Century Secret Rare             | QCScR }}
+#   | 10000scr | 10000 secret                = {{ safesubst:<noinclude/>#if: {{{full|}}} | 10000 Secret Rare                       | 10000ScR }}
+#   | altr  | str | alternate | starlight    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Starlight Rare                          | StR   }}
+#   | plr   | platinum                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Platinum Rare                           | PlR   }}
+#   | plscr | platinum secret                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Platinum Secret Rare                    | PlScR }}
+#   | pr    | parallel                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Parallel Rare                           | PR    }}
+#   | pc    | parallel common                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Parallel Common                         | PC    }}
+#   | npr   | normal parallel                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Normal Parallel Rare                    | NPR   }}
+#   | rpr   | rare parallel                  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rare Parallel Rare                      | RPR   }}
+#   | spr   | super parallel                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Parallel Rare                     | SPR   }}
+#   | upr   | ultra parallel                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Parallel Rare                     | UPR   }}
+#   | scpr  | secret parallel                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Parallel Rare                    | ScPR  }}
+#   | escpr | extra secret parallel          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Extra Secret Parallel Rare              | EScPR }}
+#   | h     | hobby                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Hobby Rare                              | H     }}
+#   | sfr   | starfoil                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Starfoil Rare                           | SFR   }}
+#   | msr   | mosaic                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Mosaic Rare                             | MSR   }}
+#   | shr   | shatterfoil                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Shatterfoil Rare                        | SHR   }}
+#   | cr    | collectors                     = {{ safesubst:<noinclude/>#if: {{{full|}}} | Collector's Rare                        | CR    }}
+#   | hgpr  | holographic parallel           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holographic Parallel Rare               | HGPR  }}
+#   | urpr  | ultra pharaohs | pharaohs      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Rare (Pharaoh's Rare)             | URPR  }}
+#   | kcc | kcn | kaiba corporation common | kaiba corporation normal = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Common | KCC }}
+#   | kcr   | kaiba corporation              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Rare                  | KCR   }}
+#   | kcsr  | kaiba corporation super        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Super Rare            | KCSR  }}
+#   | kcur  | kaiba corporation ultra        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Ultra Rare            | KCUR  }}
+#   | kcscr | kaiba corporation secret       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Secret Rare           | KCScR }}
+#   | mr | mlr | millennium                  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Rare                         | MLR   }}
+#   | mlsr  | millennium super               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Super Rare                   | MLSR  }}
+#   | mlur  | millennium ultra               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Ultra Rare                   | MLUR  }}
+#   | mlscr | millennium secret              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Secret Rare                  | MLScR }}
+#   | mlgr  | millennium gold                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Gold Rare                    | MLGR  }}
+#   | gur   | gold                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Rare                               | GUR   }}
+#   | gscr  | gold secret                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Secret Rare                        | GScR  }}
+#   | ggr   | ghost/gold                     = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ghost/Gold Rare                         | GGR   }}
+#   | pgr   | premium gold                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Premium Gold Rare                       | PGR   }}
+#   | dpc   | duel terminal parallel common  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Parallel Common           | DPC   }}
+#   | dnrpr                                  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Rare Parallel Rare | DNRPR }}
+#   | dnpr                                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Parallel Rare      | DNPR  }}
+#   | drpr  | duel terminal  parallel        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Rare Parallel Rare        | DRPR  }}
+#   | dspr  | duel terminal super parallel   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Super Parallel Rare       | DSPR  }}
+#   | dupr  | duel terminal ultra parallel   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Ultra Parallel Rare       | DUPR  }}
+#   | dscpr | duel terminal secret parallel  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Secret Parallel Rare      | DScPR }}
+#   | rr    | rush                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rush Rare                               | RR    }}
+#   | grr   | gold rush                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Rush Rare                          | GRR   }}
+#   | orr   | over rush                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Over Rush Rare                          | ORR   }}
+
 RARITY_STR_TO_ENUM = {
     "c": CardRarity.COMMON,
     "sp": CardRarity.SHORTPRINT,
@@ -618,70 +683,496 @@ RARITY_STR_TO_ENUM = {
     "mlgr": CardRarity.MILLENIUMGOLD,
 }
 
-#   | c     | common                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Common                                  | C     }}
-#   | nr    | normal                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Normal Rare                             | NR    }}
-#   | sp    | short print                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Short Print                             | SP    }}
-#   | ssp   | super short print              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Short Print                       | SSP   }}
-#   | hfr   | holofoil                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holofoil Rare                           | HFR   }}
-#   | r     | rare                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rare                                    | R     }}
-#   | sr    | super                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Rare                              | SR    }}
-#   | ur    | ultra                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Rare                              | UR    }}
-#   | utr   | ultimate                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultimate Rare                           | UtR   }}
-#   | gr    | ghost                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ghost Rare                              | GR    }}
-#   | hr | hgr | holographic                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holographic Rare                        | HGR   }}
-#   | se | scr | secret                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Rare                             | ScR   }}
-#   | pscr  | prismatic secret               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Prismatic Secret Rare                   | PScR  }}
-#   | uscr  | ultra secret                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Secret Rare                       | UScR  }}
-#   | scur  | secret ultra                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Ultra Rare                       | ScUR  }}
-#   | escr  | extra secret                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Extra Secret Rare                       | EScR  }}
-#   | 20scr | 20th secret                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | 20th Secret Rare                        | 20ScR }}
-#   | qcscr | quarter century secret         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Quarter Century Secret Rare             | QCScR }}
-#   | 10000scr | 10000 secret                = {{ safesubst:<noinclude/>#if: {{{full|}}} | 10000 Secret Rare                       | 10000ScR }}
-#   | altr  | str | alternate | starlight    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Starlight Rare                          | StR   }}
-#   | plr   | platinum                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Platinum Rare                           | PlR   }}
-#   | plscr | platinum secret                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Platinum Secret Rare                    | PlScR }}
-#   | pr    | parallel                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Parallel Rare                           | PR    }}
-#   | pc    | parallel common                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Parallel Common                         | PC    }}
-#   | npr   | normal parallel                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Normal Parallel Rare                    | NPR   }}
-#   | rpr   | rare parallel                  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rare Parallel Rare                      | RPR   }}
-#   | spr   | super parallel                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Super Parallel Rare                     | SPR   }}
-#   | upr   | ultra parallel                 = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Parallel Rare                     | UPR   }}
-#   | scpr  | secret parallel                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Secret Parallel Rare                    | ScPR  }}
-#   | escpr | extra secret parallel          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Extra Secret Parallel Rare              | EScPR }}
-#   | h     | hobby                          = {{ safesubst:<noinclude/>#if: {{{full|}}} | Hobby Rare                              | H     }}
-#   | sfr   | starfoil                       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Starfoil Rare                           | SFR   }}
-#   | msr   | mosaic                         = {{ safesubst:<noinclude/>#if: {{{full|}}} | Mosaic Rare                             | MSR   }}
-#   | shr   | shatterfoil                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Shatterfoil Rare                        | SHR   }}
-#   | cr    | collectors                     = {{ safesubst:<noinclude/>#if: {{{full|}}} | Collector's Rare                        | CR    }}
-#   | hgpr  | holographic parallel           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Holographic Parallel Rare               | HGPR  }}
-#   | urpr  | ultra pharaohs | pharaohs      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ultra Rare (Pharaoh's Rare)             | URPR  }}
-#   | kcc | kcn | kaiba corporation common | kaiba corporation normal = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Common | KCC }}
-#   | kcr   | kaiba corporation              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Rare                  | KCR   }}
-#   | kcsr  | kaiba corporation super        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Super Rare            | KCSR  }}
-#   | kcur  | kaiba corporation ultra        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Ultra Rare            | KCUR  }}
-#   | kcscr | kaiba corporation secret       = {{ safesubst:<noinclude/>#if: {{{full|}}} | Kaiba Corporation Secret Rare           | KCScR }}
-#   | mr | mlr | millennium                  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Rare                         | MLR   }}
-#   | mlsr  | millennium super               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Super Rare                   | MLSR  }}
-#   | mlur  | millennium ultra               = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Ultra Rare                   | MLUR  }}
-#   | mlscr | millennium secret              = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Secret Rare                  | MLScR }}
-#   | mlgr  | millennium gold                = {{ safesubst:<noinclude/>#if: {{{full|}}} | Millennium Gold Rare                    | MLGR  }}
-#   | gur   | gold                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Rare                               | GUR   }}
-#   | gscr  | gold secret                    = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Secret Rare                        | GScR  }}
-#   | ggr   | ghost/gold                     = {{ safesubst:<noinclude/>#if: {{{full|}}} | Ghost/Gold Rare                         | GGR   }}
-#   | pgr   | premium gold                   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Premium Gold Rare                       | PGR   }}
-#   | dpc   | duel terminal parallel common  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Parallel Common           | DPC   }}
-#   | dnrpr | duel terminal normal  parallel = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Rare Parallel Rare | DNRPR }}
-#   |         duel terminal normal parallel  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Parallel Rare      | DNPR  }}
-#   | dnpr                                   = {{ safesubst:<noinclude/>#ifeq: {{ lc: {{{1}}} }} | duel terminal normal rare parallel rare
-#     | {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Rare Parallel Rare | DNRPR }}
-#     | {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Normal Parallel Rare      | DNPR  }} }}
-#   | drpr  | duel terminal  parallel        = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Rare Parallel Rare        | DRPR  }}
-#   | dspr  | duel terminal super parallel   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Super Parallel Rare       | DSPR  }}
-#   | dupr  | duel terminal ultra parallel   = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Ultra Parallel Rare       | DUPR  }}
-#   | dscpr | duel terminal secret parallel  = {{ safesubst:<noinclude/>#if: {{{full|}}} | Duel Terminal Secret Parallel Rare      | DScPR }}
-#   | rr    | rush                           = {{ safesubst:<noinclude/>#if: {{{full|}}} | Rush Rare                               | RR    }}
-#   | grr   | gold rush                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Gold Rush Rare                          | GRR   }}
-#   | orr   | over rush                      = {{ safesubst:<noinclude/>#if: {{{full|}}} | Over Rush Rare                          | ORR   }}
+_RARITY_FTS_RAW: typing.List[typing.Tuple[typing.List[str], str]] = [
+    (
+        [
+            "c",
+            "common",
+            "Common",
+        ],
+        "C",
+    ),
+    (
+        [
+            "nr",
+            "normal",
+            "Normal Rare",
+        ],
+        "NR",
+    ),
+    (
+        [
+            "sp",
+            "short print",
+            "Short Print",
+        ],
+        "SP",
+    ),
+    (
+        [
+            "ssp",
+            "super short print",
+            "Super Short Print",
+        ],
+        "SSP",
+    ),
+    (
+        [
+            "hfr",
+            "holofoil",
+            "Holofoil Rare",
+        ],
+        "HFR",
+    ),
+    (
+        [
+            "r",
+            "rare",
+            "Rare",
+        ],
+        "R",
+    ),
+    (
+        [
+            "sr",
+            "super",
+            "Super Rare",
+        ],
+        "SR",
+    ),
+    (
+        [
+            "ur",
+            "ultra",
+            "Ultra Rare",
+        ],
+        "UR",
+    ),
+    (
+        [
+            "utr",
+            "ultimate",
+            "Ultimate Rare",
+        ],
+        "UtR",
+    ),
+    (
+        [
+            "gr",
+            "ghost",
+            "Ghost Rare",
+        ],
+        "GR",
+    ),
+    (
+        [
+            "hr",
+            "hgr",
+            "holographic",
+            "Holographic Rare",
+        ],
+        "HGR",
+    ),
+    (
+        [
+            "se",
+            "scr",
+            "secret",
+            "Secret Rare",
+        ],
+        "ScR",
+    ),
+    (
+        [
+            "pscr",
+            "prismatic secret",
+            "Prismatic Secret Rare",
+        ],
+        "PScR",
+    ),
+    (
+        [
+            "uscr",
+            "ultra secret",
+            "Ultra Secret Rare",
+        ],
+        "UScR",
+    ),
+    (
+        [
+            "scur",
+            "secret ultra",
+            "Secret Ultra Rare",
+        ],
+        "ScUR",
+    ),
+    (
+        [
+            "escr",
+            "extra secret",
+            "Extra Secret Rare",
+        ],
+        "EScR",
+    ),
+    (
+        [
+            "20scr",
+            "20th secret",
+            "20th Secret Rare",
+        ],
+        "20ScR",
+    ),
+    (
+        [
+            "qcscr",
+            "quarter century secret",
+            "Quarter Century Secret Rare",
+        ],
+        "QCScR",
+    ),
+    (
+        [
+            "10000scr",
+            "10000 secret",
+            "10000 Secret Rare",
+        ],
+        "10000ScR",
+    ),
+    (
+        [
+            "altr",
+            "str",
+            "alternate",
+            "starlight",
+            "Starlight Rare",
+        ],
+        "StR",
+    ),
+    (
+        [
+            "plr",
+            "platinum",
+            "Platinum Rare",
+        ],
+        "PlR",
+    ),
+    (
+        [
+            "plscr",
+            "platinum secret",
+            "Platinum Secret Rare",
+        ],
+        "PlScR",
+    ),
+    (
+        [
+            "pr",
+            "parallel",
+            "Parallel Rare",
+        ],
+        "PR",
+    ),
+    (
+        [
+            "pc",
+            "parallel common",
+            "Parallel Common",
+        ],
+        "PC",
+    ),
+    (
+        [
+            "npr",
+            "normal parallel",
+            "Normal Parallel Rare",
+        ],
+        "NPR",
+    ),
+    (
+        [
+            "rpr",
+            "rare parallel",
+            "Rare Parallel Rare",
+        ],
+        "RPR",
+    ),
+    (
+        [
+            "spr",
+            "super parallel",
+            "Super Parallel Rare",
+        ],
+        "SPR",
+    ),
+    (
+        [
+            "upr",
+            "ultra parallel",
+            "Ultra Parallel Rare",
+        ],
+        "UPR",
+    ),
+    (
+        [
+            "scpr",
+            "secret parallel",
+            "Secret Parallel Rare",
+        ],
+        "ScPR",
+    ),
+    (
+        [
+            "escpr",
+            "extra secret parallel",
+            "Extra Secret Parallel Rare",
+        ],
+        "EScPR",
+    ),
+    (
+        [
+            "h",
+            "hobby",
+            "Hobby Rare",
+        ],
+        "H",
+    ),
+    (
+        [
+            "sfr",
+            "starfoil",
+            "Starfoil Rare",
+        ],
+        "SFR",
+    ),
+    (
+        [
+            "msr",
+            "mosaic",
+            "Mosaic Rare",
+        ],
+        "MSR",
+    ),
+    (
+        [
+            "shr",
+            "shatterfoil",
+            "Shatterfoil Rare",
+        ],
+        "SHR",
+    ),
+    (
+        [
+            "cr",
+            "collectors",
+            "Collector's Rare",
+        ],
+        "CR",
+    ),
+    (
+        [
+            "hgpr",
+            "holographic parallel",
+            "Holographic Parallel Rare",
+        ],
+        "HGPR",
+    ),
+    (
+        [
+            "urpr",
+            "ultra pharaohs",
+            "pharaohs",
+            "Ultra Rare (Pharaoh's Rare)",
+        ],
+        "URPR",
+    ),
+    (
+        [
+            "kcc",
+            "kcn",
+            "kaiba corporation common",
+            "kaiba corporation normal",
+            "Kaiba Corporation Common",
+        ],
+        "KCC",
+    ),
+    (
+        [
+            "kcr",
+            "kaiba corporation",
+            "Kaiba Corporation Rare",
+        ],
+        "KCR",
+    ),
+    (
+        [
+            "kcsr",
+            "kaiba corporation super",
+            "Kaiba Corporation Super Rare",
+        ],
+        "KCSR",
+    ),
+    (
+        [
+            "kcur",
+            "kaiba corporation ultra",
+            "Kaiba Corporation Ultra Rare",
+        ],
+        "KCUR",
+    ),
+    (
+        [
+            "kcscr",
+            "kaiba corporation secret",
+            "Kaiba Corporation Secret Rare",
+        ],
+        "KCScR",
+    ),
+    (
+        [
+            "mr",
+            "mlr",
+            "millennium",
+            "Millennium Rare",
+        ],
+        "MLR",
+    ),
+    (
+        [
+            "mlsr",
+            "millennium super",
+            "Millennium Super Rare",
+        ],
+        "MLSR",
+    ),
+    (
+        [
+            "mlur",
+            "millennium ultra",
+            "Millennium Ultra Rare",
+        ],
+        "MLUR",
+    ),
+    (
+        [
+            "mlscr",
+            "millennium secret",
+            "Millennium Secret Rare",
+        ],
+        "MLScR",
+    ),
+    (
+        [
+            "mlgr",
+            "millennium gold",
+            "Millennium Gold Rare",
+        ],
+        "MLGR",
+    ),
+    (
+        [
+            "gur",
+            "gold",
+            "Gold Rare",
+        ],
+        "GUR",
+    ),
+    (
+        [
+            "gscr",
+            "gold secret",
+            "Gold Secret Rare",
+        ],
+        "GScR",
+    ),
+    (
+        [
+            "ggr",
+            "ghost/gold",
+            "Ghost/Gold Rare",
+        ],
+        "GGR",
+    ),
+    (
+        [
+            "pgr",
+            "premium gold",
+            "Premium Gold Rare",
+        ],
+        "PGR",
+    ),
+    (
+        [
+            "dpc",
+            "duel terminal parallel common",
+            "Duel Terminal Parallel Common",
+        ],
+        "DPC",
+    ),
+    (
+        [
+            "dnrpr",
+            "Duel Terminal Normal Rare Parallel Rare",
+        ],
+        "DNRPR",
+    ),
+    (
+        [
+            "dnpr",
+            "Duel Terminal Normal Parallel Rare",
+        ],
+        "DNPR",
+    ),
+    (
+        [
+            "drpr",
+            "duel terminal parallel",
+            "Duel Terminal Rare Parallel Rare",
+        ],
+        "DRPR",
+    ),
+    (
+        [
+            "dspr",
+            "duel terminal super parallel",
+            "Duel Terminal Super Parallel Rare",
+        ],
+        "DSPR",
+    ),
+    (
+        [
+            "dupr",
+            "duel terminal ultra parallel",
+            "Duel Terminal Ultra Parallel Rare",
+        ],
+        "DUPR",
+    ),
+    (
+        [
+            "dscpr",
+            "duel terminal secret parallel",
+            "Duel Terminal Secret Parallel Rare",
+        ],
+        "DScPR",
+    ),
+    (
+        [
+            "rr",
+            "rush",
+            "Rush Rare",
+        ],
+        "RR",
+    ),
+    (
+        [
+            "grr",
+            "gold rush",
+            "Gold Rush Rare",
+        ],
+        "GRR",
+    ),
+    (["orr", "over rush", "Over Rush Rare"], "ORR"),
+]
+RAIRTY_FULL_TO_SHORT = {kk.lower(): v for k, v in _RARITY_FTS_RAW for kk in k}
 
 FULL_RARITY_STR_TO_ENUM = {
     "common": CardRarity.COMMON,  # c
@@ -855,11 +1346,12 @@ def parse_set(
                             key=lang,
                             language=lang,
                         )
+
+                        raw_edition = None
                         edition = None
                         if len(locale_info.groups()) >= 3:
-                            edition = EDITION_STR_TO_ENUM.get(
-                                locale_info.group(3).strip().upper()
-                            )
+                            raw_edition = locale_info.group(3).strip().upper()
+                            edition = EDITION_STR_TO_ENUM.get(raw_edition)
                             if not edition:
                                 logging.warn(
                                     f"Unknown edition of set {galleryname}: {locale_info.group(3)}"
@@ -964,10 +1456,16 @@ def parse_set(
                             return
 
                         printings = []
+                        example_codes: typing.List[str] = []
+                        virtual_prefixes: typing.List[str] = []
 
                         for gallery_table in gallery_tables:
-                            default_rarity = get_table_entry(gallery_table, "rarity")
+                            default_rarity = (
+                                get_table_entry(gallery_table, "rarity") or "C"
+                            )
                             abbr = get_table_entry(gallery_table, "abbr")
+                            if abbr:
+                                virtual_prefixes.append(abbr)
 
                             for rawprintings in gallery_table.arguments:
                                 if rawprintings.positional:
@@ -976,39 +1474,34 @@ def parse_set(
                                             parts = [
                                                 x.strip()
                                                 for x in rawprinting.strip()
-                                                .split("//")[0]
-                                                .strip()
+                                                .replace("//", ";")
                                                 .split(";")
                                             ]
                                             if abbr:
                                                 printings.append(("", *parts))
                                             else:
+                                                example_codes.append(parts[0])
                                                 printings.append((*parts,))
 
                         for subgallery in subgalleries:
-                            printings.extend(
-                                (
-                                    lambda m: (
-                                        m.group(1).strip(),
-                                        m.group(3).strip(),
-                                        m.group(2).strip(),
-                                    )
-                                    if m
-                                    else None
-                                )(
-                                    re.match(
-                                        r"[^\|]*\|[^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\]",
-                                        x,
-                                    )
+                            for subgallery_entry in subgallery:
+                                match = re.match(
+                                    r"[^\|]*\|[^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\]",
+                                    subgallery_entry,
                                 )
-                                for x in subgallery
-                            )
+                                if match:
+                                    printings.append(
+                                        (
+                                            match.group(1).strip(),
+                                            match.group(3).strip(),
+                                            match.group(2).strip(),
+                                        )
+                                    )
+                                    example_codes.append(match.group(1).strip())
 
                         prefixmatch = re.match(
                             r"^[^\-]+\-\D*",
-                            commonprefix(
-                                printing[0] for printing in printings if printing
-                            ),
+                            commonprefix(example_codes),
                         )
                         locale.prefix = prefixmatch.group(0) if prefixmatch else ""
 
@@ -1028,7 +1521,9 @@ def parse_set(
                             ).strip()
 
                             possible_rarity_bits = [
-                                x for x in printing[2:] if x.lower() != "rp"
+                                x
+                                for x in printing[2:]
+                                if x.lower() != "rp" and "::" not in x
                             ]
                             if possible_rarity_bits:
                                 rarity = possible_rarity_bits[0]
@@ -1041,10 +1536,11 @@ def parse_set(
 
                             found_rairty = None
                             if rarity:
-                                rarity = rarity.strip().lower()
+                                rarity = rarity.strip()
+                                rarity_normalized = rarity.lower()
                                 found_rairty = RARITY_STR_TO_ENUM.get(
-                                    rarity
-                                ) or FULL_RARITY_STR_TO_ENUM.get(rarity)
+                                    rarity_normalized
+                                ) or FULL_RARITY_STR_TO_ENUM.get(rarity_normalized)
                                 if not found_rairty:
                                     logging.warn(
                                         f"Unknown rarity for {name} in {galleryname}: {rarity}"
@@ -1053,8 +1549,11 @@ def parse_set(
                             def getCardID(
                                 name: str,
                                 code: str,
+                                rarity: typing.Optional[str],
                                 found_rairty: typing.Optional[CardRarity],
+                                raw_edition: typing.Optional[str],
                                 locale: SetLocale,
+                                virtual_prefixes: typing.List[str],
                             ):
                                 @batcher.getPageID(CAT_TOKENS)
                                 def catID(tokensid: int, _: str):
@@ -1082,20 +1581,18 @@ def parse_set(
                                                         suffix = code[
                                                             len(locale.prefix or "") :
                                                         ]
-                                                        existing = old_printings.get(
-                                                            (
-                                                                locale.key,
-                                                                card.id,
-                                                                suffix,
-                                                                found_rairty,
+                                                        found_printing = (
+                                                            old_printings.get(
+                                                                (
+                                                                    locale.key,
+                                                                    card.id,
+                                                                    suffix,
+                                                                    found_rairty,
+                                                                )
                                                             )
                                                         )
-                                                        if existing:
-                                                            contents.cards.append(
-                                                                existing
-                                                            )
-                                                        else:
-                                                            contents.cards.append(
+                                                        if not found_printing:
+                                                            found_printing = (
                                                                 CardPrinting(
                                                                     id=uuid.uuid4(),
                                                                     card=card,
@@ -1104,6 +1601,62 @@ def parse_set(
                                                                     replica=replica,
                                                                 )
                                                             )
+
+                                                        image_file_args = [
+                                                            x[len(FILE_PREFIX) :]
+                                                            for x in printing
+                                                            if x.lower().startswith(
+                                                                FILE_PREFIX
+                                                            )
+                                                        ]
+                                                        if image_file_args:
+                                                            image_filename = (
+                                                                image_file_args[0]
+                                                            )
+                                                        else:
+                                                            image_exts = [
+                                                                x[len(EXT_PREFIX) :]
+                                                                for x in printing
+                                                                if x.lower().startswith(
+                                                                    EXT_PREFIX
+                                                                )
+                                                            ]
+                                                            image_ext = (
+                                                                image_exts[0]
+                                                                if image_exts
+                                                                else "png"
+                                                            )
+                                                            image_normalized_name = (
+                                                                re.sub(r"\W", r"", name)
+                                                            )
+                                                            image_filename = f"File:{image_normalized_name}"
+                                                            if virtual_prefixes:
+                                                                image_filename += f"-{virtual_prefixes[0]}-{locale.language.upper()}"
+                                                            elif locale.prefix:
+                                                                image_filename += (
+                                                                    f"-{locale.prefix}"
+                                                                )
+                                                            if rarity:
+                                                                image_filename += f"-{RAIRTY_FULL_TO_SHORT.get(rarity.lower(), rarity)}"
+                                                            if raw_edition:
+                                                                image_filename += (
+                                                                    f"-{raw_edition}"
+                                                                )
+                                                            image_filename += (
+                                                                f".{image_ext}"
+                                                            )
+
+                                                        @batcher.getImageURL(
+                                                            image_filename
+                                                        )
+                                                        def onImageGet(url: str):
+                                                            locale.card_images[
+                                                                found_printing
+                                                            ] = url
+
+                                                        contents.cards.append(
+                                                            found_printing
+                                                        )
 
                                                     if (
                                                         printingid
@@ -1148,7 +1701,15 @@ def parse_set(
                                                     else:
                                                         addToContents(printingid)
 
-                            getCardID(name, code, found_rairty, locale)
+                            getCardID(
+                                name,
+                                code,
+                                rarity,
+                                found_rairty,
+                                raw_edition,
+                                locale,
+                                virtual_prefixes,
+                            )
 
                         for arg in settable.arguments:
                             if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
@@ -1174,6 +1735,9 @@ def parse_set(
                         if locale.key in set_.locales:
                             # merge locales
                             existing_locale = set_.locales[locale.key]
+
+                            if not existing_locale.prefix:
+                                existing_locale.prefix = locale.prefix
                             existing_locale.db_ids.extend(
                                 [
                                     x
@@ -1181,6 +1745,7 @@ def parse_set(
                                     if x not in existing_locale.db_ids
                                 ]
                             )
+                            existing_locale.card_images.update(locale.card_images)
 
                             locale = existing_locale
                             contents.locales = [locale]
@@ -1228,6 +1793,12 @@ def parse_set(
                                     if x not in similar_content.editions
                                 ]
                             )
+                            for oldprinting in {**locale.card_images}:
+                                if (
+                                    oldprinting in contents.cards
+                                    or oldprinting in contents.removed_cards
+                                ):
+                                    del locale.card_images[oldprinting]
                             break
                         else:
                             set_.contents.append(contents)
@@ -1436,6 +2007,7 @@ NAMESPACES = {"mw": "http://www.mediawiki.org/xml/export-0.10/"}
 IMAGE_URLS_FILENAME = "yugipedia_images.json"
 CAT_MEMBERS_FILENAME = "yugipedia_members.json"
 PAGE_CATS_FILENAME = "yugipedia_categories.json"
+MISSING_PAGES_FILENAME = "yugipedia_missing.json"
 
 
 class CategoryMemberType(enum.Enum):
@@ -1452,11 +2024,13 @@ class CategoryMember(WikiPage):
 
 class YugipediaBatcher:
     use_cache: bool
+    missingPagesCache: typing.Set[str]
 
     def __init__(self) -> None:
         self.namesToIDs = {}
         self.idsToNames = {}
         self.use_cache = True
+        self.missingPagesCache = set()
 
         self.pendingGetPageContents = {}
         self.pageContentsCache = {}
@@ -1477,6 +2051,11 @@ class YugipediaBatcher:
                 pages = json.load(file)
                 self.namesToIDs = {page["name"]: page["id"] for page in pages}
                 self.idsToNames = {page["id"]: page["name"] for page in pages}
+
+        path = os.path.join(TEMP_DIR, MISSING_PAGES_FILENAME)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as file:
+                self.missingPagesCache = {v for v in json.load(file)}
 
         path = os.path.join(TEMP_DIR, CONTENTS_FILENAME)
         if os.path.exists(path):
@@ -1524,6 +2103,10 @@ class YugipediaBatcher:
                 indent=2,
             )
 
+        path = os.path.join(TEMP_DIR, MISSING_PAGES_FILENAME)
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump([v for v in self.missingPagesCache], file, indent=2)
+
         path = os.path.join(TEMP_DIR, CONTENTS_FILENAME)
         with open(path, "w", encoding="utf-8") as file:
             json.dump(
@@ -1568,6 +2151,7 @@ class YugipediaBatcher:
         self.pageCategoriesCache.clear()
         self.pageContentsCache.clear()
         self.imagesCache.clear()
+        self.missingPagesCache.clear()
 
     namesToIDs: typing.Dict[str, int]
     idsToNames: typing.Dict[int, str]
@@ -1582,6 +2166,9 @@ class YugipediaBatcher:
 
         class GetPageXMLDecorator:
             def __init__(self, callback: typing.Callable[[str], None]) -> None:
+                if str(page) in batcher.missingPagesCache:
+                    return
+
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
@@ -1656,6 +2243,9 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
+                if str(page) in batcher.missingPagesCache:
+                    return
+
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
@@ -1698,6 +2288,12 @@ class YugipediaBatcher:
 
             for result_page in paginate_query(query):
                 for result in result_page["pages"]:
+                    if result.get("missing") or result.get("invalid"):
+                        self.missingPagesCache.add(
+                            str(result.get("title") or result.get("pageid") or "")
+                        )
+                        continue
+
                     self.namesToIDs[result["title"]] = result["pageid"]
                     self.idsToNames[result["pageid"]] = result["title"]
                     cats_got.setdefault(result["pageid"], [])
@@ -1783,11 +2379,21 @@ class YugipediaBatcher:
         members: typing.List[CategoryMember] = []
         for results in paginate_query(query):
             for result in results.get("pages") or []:
+                if result.get("missing") or result.get("invalid"):
+                    self.missingPagesCache.add(
+                        str(result.get("title") or result.get("pageid") or "")
+                    )
+                    continue
                 pageid = result["pageid"]
                 self.categoryMembersCache[result["pageid"]] = members
                 self.namesToIDs[result["title"]] = result["pageid"]
                 self.idsToNames[result["pageid"]] = result["title"]
             for result in results["categorymembers"]:
+                if result.get("missing") or result.get("invalid"):
+                    self.missingPagesCache.add(
+                        str(result.get("title") or result.get("pageid") or "")
+                    )
+                    continue
                 members.append(
                     CategoryMember(
                         result["pageid"],
@@ -1805,6 +2411,9 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
+                if str(page) in batcher.missingPagesCache:
+                    return
+
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
@@ -1837,6 +2446,9 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
+                if str(page) in batcher.missingPagesCache:
+                    return
+
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
@@ -1902,6 +2514,9 @@ class YugipediaBatcher:
 
         class GetImageDecorator:
             def __init__(self, callback: typing.Callable[[str], None]) -> None:
+                if str(page) in batcher.missingPagesCache:
+                    return
+
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
@@ -1942,15 +2557,22 @@ class YugipediaBatcher:
             for result_page in paginate_query(query):
                 for result in result_page["pages"]:
                     if result.get("missing") or result.get("invalid"):
+                        self.missingPagesCache.add(
+                            str(result.get("title") or result.get("pageid") or "")
+                        )
                         continue
 
-                    pageid = result["pageid"]
                     title = result["title"]
+                    pageid = result["pageid"]
 
                     self.namesToIDs[title] = pageid
                     self.idsToNames[pageid] = title
 
                     if "imageinfo" not in result:
+                        # this happens if an image metadata exists but no actual file with a URL; ignore it
+                        # logging.warn(f"Page is not an image file: {title}")
+                        self.missingPagesCache.add(title)
+                        self.missingPagesCache.add(str(pageid))
                         continue
 
                     for image in result["imageinfo"]:
@@ -1973,6 +2595,9 @@ class YugipediaBatcher:
 
         class GetIDDecorator:
             def __init__(self, callback: typing.Callable[[int, str], None]) -> None:
+                if str(page) in batcher.missingPagesCache:
+                    return
+
                 pageid = (
                     page if type(page) is int else batcher.namesToIDs.get(str(page))
                 )
@@ -2015,10 +2640,8 @@ class YugipediaBatcher:
             for result_page in paginate_query(query):
                 for result in result_page["pages"]:
                     if result.get("missing") or result.get("invalid"):
-                        continue
-                    if "pageid" not in result or "title" not in result:
-                        logging.warn(
-                            f"In _executeGetPageIDBatch: bad page ID result: {result}"
+                        self.missingPagesCache.add(
+                            str(result.get("title") or result.get("pageid") or "")
                         )
                         continue
 

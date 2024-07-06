@@ -677,7 +677,7 @@ class SetLocale:
             **({"date": self.date.isoformat()} if self.date else {}),
             **({"image": self.image} if self.image else {}),
             **({"boxImage": self.box_image} if self.box_image else {}),
-            "cardImages": {k.id: v for k, v in self.card_images.items()},
+            "cardImages": {str(k.id): v for k, v in self.card_images.items()},
             "externalIDs": {
                 **({"dbIDs": self.db_ids} if self.db_ids else {}),
             },
