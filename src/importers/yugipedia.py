@@ -107,16 +107,6 @@ DBID_SUFFIX = "_database_id"
 DBNAME_SUFFIX = "_name"
 
 
-def get_token_ids(batcher: "YugipediaBatcher") -> typing.Set[int]:
-    seen = set()
-
-    @batcher.getCategoryMembers(CAT_TOKENS)
-    def catMem(members: typing.List[int]):
-        seen.update(members)
-
-    return seen
-
-
 def get_card_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
     with tqdm.tqdm(total=2, desc="Fetching Yugipedia card list") as progress_bar:
         result = []
@@ -328,7 +318,7 @@ def parse_card(
     page: int,
     card: Card,
     data: wikitextparser.WikiText,
-    token_ids: typing.Set[int],
+    categories: typing.List[int],
 ) -> bool:
     """
     Parse a card from a wiki page. Returns False if this is not actually a valid card
@@ -336,8 +326,8 @@ def parse_card(
     """
 
     title = batcher.idsToNames[page]
-    if page in token_ids:
-        logging.debug(f"Skipping card in tokens cateogry: {title}")
+    if batcher.namesToIDs.get(CAT_TOKENS) in categories:
+        logging.debug(f"Skipping token: {title}")
         return False
 
     cardtable = next(
@@ -1194,8 +1184,6 @@ def import_from_yugipedia(
         atexit.register(lambda: batcher.saveCachesToDisk())
 
         if import_cards:
-            token_ids = get_token_ids(batcher)
-
             cards: typing.List[int]
             if db.last_yugipedia_read is not None:
                 if (
@@ -1211,71 +1199,76 @@ def import_from_yugipedia(
                         for x in get_changes(
                             batcher,
                             get_card_pages(batcher),
-                            [CAT_OCG_CARDS, CAT_TCG_CARDS, CAT_TOKENS],
+                            [CAT_OCG_CARDS, CAT_TCG_CARDS],
                             get_changelog(db.last_yugipedia_read),
                         )
                     ]
                     batcher.use_cache = True
-                    token_ids = get_token_ids(batcher)
             else:
                 cards = [x for x in get_card_pages(batcher)]
 
             for pageid in tqdm.tqdm(cards, desc="Importing cards from Yugipedia"):
 
                 def do(pageid: int):
-                    @batcher.getPageContents(pageid)
-                    def onGetData(raw_data: str):
-                        nonlocal n_found, n_new
+                    @batcher.getPageCategories(pageid)
+                    def onGetCats(categories: typing.List[int]):
+                        @batcher.getPageContents(pageid)
+                        def onGetData(raw_data: str):
+                            nonlocal n_found, n_new
 
-                        data = wikitextparser.parse(raw_data)
-                        try:
-                            cardtable = next(
-                                iter(
-                                    [
-                                        x
-                                        for x in data.templates
-                                        if x.name.strip().lower() == "cardtable2"
-                                    ]
+                            data = wikitextparser.parse(raw_data)
+                            try:
+                                cardtable = next(
+                                    iter(
+                                        [
+                                            x
+                                            for x in data.templates
+                                            if x.name.strip().lower() == "cardtable2"
+                                        ]
+                                    )
                                 )
+                            except StopIteration:
+                                logging.warn(
+                                    f"Found card without card table: {batcher.idsToNames[pageid]}"
+                                )
+                                return
+
+                            ct = (
+                                get_table_entry(cardtable, "card_type", "monster")
+                                .strip()
+                                .lower()
                             )
-                        except StopIteration:
-                            logging.warn(
-                                f"Found card without card table: {batcher.idsToNames[pageid]}"
-                            )
-                            return
+                            if ct not in [x.value for x in CardType]:
+                                # logging.warn(f"Found card with illegal card type: {ct}")
+                                return
 
-                        ct = (
-                            get_table_entry(cardtable, "card_type", "monster")
-                            .strip()
-                            .lower()
-                        )
-                        if ct not in [x.value for x in CardType]:
-                            # logging.warn(f"Found card with illegal card type: {ct}")
-                            return
+                            found = pageid in db.cards_by_yugipedia_id
+                            card = db.cards_by_yugipedia_id.get(pageid)
+                            if not card:
+                                value = get_table_entry(cardtable, "database_id", "")
+                                vmatch = re.match(r"^\d+", value.strip())
+                                if vmatch:
+                                    card = db.cards_by_konami_cid.get(
+                                        int(vmatch.group(0))
+                                    )
+                            if not card:
+                                value = get_table_entry(cardtable, "password", "")
+                                vmatch = re.match(r"^\d+", value.strip())
+                                if vmatch:
+                                    card = db.cards_by_password.get(vmatch.group(0))
+                            if not card:
+                                card = db.cards_by_en_name.get(
+                                    batcher.idsToNames[pageid]
+                                )
+                            if not card:
+                                card = Card(id=uuid.uuid4(), card_type=CardType(ct))
 
-                        found = pageid in db.cards_by_yugipedia_id
-                        card = db.cards_by_yugipedia_id.get(pageid)
-                        if not card:
-                            value = get_table_entry(cardtable, "database_id", "")
-                            vmatch = re.match(r"^\d+", value.strip())
-                            if vmatch:
-                                card = db.cards_by_konami_cid.get(int(vmatch.group(0)))
-                        if not card:
-                            value = get_table_entry(cardtable, "password", "")
-                            vmatch = re.match(r"^\d+", value.strip())
-                            if vmatch:
-                                card = db.cards_by_password.get(vmatch.group(0))
-                        if not card:
-                            card = db.cards_by_en_name.get(batcher.idsToNames[pageid])
-                        if not card:
-                            card = Card(id=uuid.uuid4(), card_type=CardType(ct))
-
-                        if parse_card(batcher, pageid, card, data, token_ids):
-                            db.add_card(card)
-                            if found:
-                                n_found += 1
-                            else:
-                                n_new += 1
+                            if parse_card(batcher, pageid, card, data, categories):
+                                db.add_card(card)
+                                if found:
+                                    n_found += 1
+                                else:
+                                    n_new += 1
 
                 do(pageid)
 
