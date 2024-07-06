@@ -6,6 +6,8 @@ import os.path
 import typing
 import uuid
 
+import tqdm
+
 SCHEMA_VERSION = 1
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
@@ -845,7 +847,7 @@ class Database:
     def regenerate_backlinks(self):
         for card in self.cards:
             card.sets.clear()
-        for set_ in self.sets:
+        for set_ in tqdm.tqdm(self.sets, desc="Regenerating card backlinks to sets"):
             for contents in set_.contents:
                 for printing in contents.cards:
                     printing.card.sets.append(set_)
@@ -893,13 +895,11 @@ class Database:
     def save(
         self,
         *,
-        progress_monitor: typing.Optional[
-            typing.Callable[[typing.Union[Card, Set]], None]
-        ] = None,
         generate_individuals: bool = True,
         generate_aggregates: bool = True,
     ):
         self.increment += 1
+
         if generate_individuals:
             os.makedirs(self.individuals_dir, exist_ok=True)
             with open(
@@ -908,6 +908,7 @@ class Database:
                 encoding="utf-8",
             ) as outfile:
                 json.dump(self._save_meta_json(), outfile, indent=2)
+
             with open(
                 os.path.join(self.individuals_dir, CARDLIST_FILENAME),
                 "w",
@@ -917,10 +918,9 @@ class Database:
             os.makedirs(
                 os.path.join(self.individuals_dir, CARDS_DIRNAME), exist_ok=True
             )
-            for card in self.cards:
+            for card in tqdm.tqdm(self.cards, desc="Saving individual cards"):
                 self._save_card(card)
-                if progress_monitor:
-                    progress_monitor(card)
+
             with open(
                 os.path.join(self.individuals_dir, SETLIST_FILENAME),
                 "w",
@@ -928,10 +928,9 @@ class Database:
             ) as outfile:
                 json.dump([str(set.id) for set in self.sets], outfile, indent=2)
             os.makedirs(os.path.join(self.individuals_dir, SETS_DIRNAME), exist_ok=True)
-            for set in self.sets:
+            for set in tqdm.tqdm(self.sets, desc="Saving individual sets"):
                 self._save_set(set)
-                if progress_monitor:
-                    progress_monitor(set)
+
         if generate_aggregates:
             os.makedirs(self.aggregates_dir, exist_ok=True)
             with open(
@@ -940,18 +939,40 @@ class Database:
                 encoding="utf-8",
             ) as outfile:
                 json.dump(self._save_meta_json(), outfile, indent=2)
+
             with open(
                 os.path.join(self.aggregates_dir, AGG_CARDS_FILENAME),
                 "w",
                 encoding="utf-8",
             ) as outfile:
-                json.dump([x.to_json() for x in self.cards], outfile, indent=2)
+                json.dump(
+                    [
+                        *tqdm.tqdm(
+                            (x.to_json() for x in self.cards),
+                            total=len(self.cards),
+                            desc="Saving aggregate cards",
+                        )
+                    ],
+                    outfile,
+                    indent=2,
+                )
+
             with open(
                 os.path.join(self.aggregates_dir, AGG_SETS_FILENAME),
                 "w",
                 encoding="utf-8",
             ) as outfile:
-                json.dump([x._to_json() for x in self.sets], outfile, indent=2)
+                json.dump(
+                    [
+                        *tqdm.tqdm(
+                            (x._to_json() for x in self.sets),
+                            total=len(self.sets),
+                            desc="Saving aggregate sets",
+                        )
+                    ],
+                    outfile,
+                    indent=2,
+                )
 
     def _save_card(self, card: Card):
         with open(
@@ -1206,13 +1227,13 @@ def load_database(
         with open(
             os.path.join(aggregates_dir, AGG_CARDS_FILENAME), encoding="utf-8"
         ) as outfile:
-            for card_json in json.load(outfile):
+            for card_json in tqdm.tqdm(json.load(outfile), desc="Loading cards"):
                 card = result._load_card(card_json)
                 result.add_card(card)
                 if progress_monitor:
                     progress_monitor(card)
     else:
-        for card_id in result._load_cardlist():
+        for card_id in tqdm.tqdm(result._load_cardlist(), desc="Loading cards"):
             with open(
                 os.path.join(individuals_dir, CARDS_DIRNAME, str(card_id) + ".json"),
                 encoding="utf-8",
@@ -1226,13 +1247,13 @@ def load_database(
         with open(
             os.path.join(aggregates_dir, AGG_SETS_FILENAME), encoding="utf-8"
         ) as outfile:
-            for set_json in json.load(outfile):
+            for set_json in tqdm.tqdm(json.load(outfile), desc="Loading sets"):
                 set_ = result._load_set(set_json)
                 result.add_set(set_)
                 if progress_monitor:
                     progress_monitor(set_)
     else:
-        for set_id in result._load_setlist():
+        for set_id in tqdm.tqdm(result._load_setlist(), desc="Loading sets"):
             with open(
                 os.path.join(individuals_dir, SETS_DIRNAME, str(set_id) + ".json"),
                 encoding="utf-8",

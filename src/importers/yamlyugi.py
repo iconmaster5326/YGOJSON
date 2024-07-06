@@ -7,6 +7,7 @@ import typing
 import uuid
 
 import requests
+import tqdm
 
 from ..database import *
 
@@ -104,14 +105,16 @@ def _get_yaml_yugi() -> typing.List[typing.Dict[str, typing.Any]]:
                 _cached_yamlyugi = json.load(in_cards_file)
             return _cached_yamlyugi
     os.makedirs(TEMP_DIR, exist_ok=True)
-    response = requests.get(DOWNLOAD_URL + "cards.json")
-    if response.ok:
-        with open(INPUT_CARDS_FILE, "w", encoding="utf-8") as in_cards_file:
-            _cached_yamlyugi = response.json()
-            json.dump(_cached_yamlyugi, in_cards_file, indent=2)
-        return _cached_yamlyugi
-    response.raise_for_status()
-    assert False
+    with tqdm.tqdm(total=1, desc="Downloading Yaml Yugi card list") as progress_bar:
+        response = requests.get(DOWNLOAD_URL + "cards.json")
+        if response.ok:
+            with open(INPUT_CARDS_FILE, "w", encoding="utf-8") as in_cards_file:
+                _cached_yamlyugi = response.json()
+                json.dump(_cached_yamlyugi, in_cards_file, indent=2)
+            progress_bar.update(1)
+            return _cached_yamlyugi
+        response.raise_for_status()
+        assert False
 
 
 def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
@@ -258,9 +261,6 @@ def _import_card(
 def import_from_yaml_yugi(
     db: Database,
     *,
-    progress_monitor: typing.Optional[
-        typing.Callable[[typing.Union[Card, Set], bool], None]
-    ] = None,
     import_cards: bool = True,
     import_sets: bool = True,
 ) -> typing.Tuple[int, int]:
@@ -274,7 +274,7 @@ def import_from_yaml_yugi(
     yamlyugi = _get_yaml_yugi()
 
     if import_cards:
-        for in_card in yamlyugi:
+        for in_card in tqdm.tqdm(yamlyugi, desc="Importing cards from Yaml Yugi"):
             found, card = _import_card(in_card, db)
             if found:
                 n_existing += 1
@@ -282,8 +282,6 @@ def import_from_yaml_yugi(
                 n_new += 1
             card = _write_card(in_card, card)
             db.add_card(card)
-            if progress_monitor:
-                progress_monitor(card, found)
 
     db.last_yamlyugi_read = datetime.datetime.now()
 

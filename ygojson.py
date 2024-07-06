@@ -77,19 +77,10 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
 
     n = 0
 
-    def dbpm(c: typing.Union[Card, Set], f: bool = True):
-        nonlocal n
-        n += 1
-        if n % 250 == 0:
-            print("|", end="", flush=True)
-
-    print("Loading database...")
     db = load_database(
-        progress_monitor=dbpm,
         individuals_dir=args.individuals,
         aggregates_dir=args.aggregates,
     )
-    print()
 
     if args.fresh:
         db.last_yamlyugi_read = None
@@ -97,48 +88,37 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         db.last_yugipedia_read = None
 
     if not args.no_ygoprodeck:
-        print("Importing YGOProDeck data...")
         n_old, n_new = import_from_ygoprodeck(
             db,
-            progress_monitor=dbpm,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
         )
-        print()
         print(f"Added {n_new} cards and updated {n_old} cards.")
 
     if not args.no_yamlyugi:
-        print("Importing Yaml Yugi data...")
         n_old, n_new = import_from_yaml_yugi(
             db,
-            progress_monitor=dbpm,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
         )
-        print()
         print(f"Added {n_new} cards and updated {n_old} cards.")
 
     if not args.no_yugipedia:
-        print("Importing Yugipedia data...")
         n_old, n_new = import_from_yugipedia(
             db,
-            progress_monitor=dbpm,
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
         )
-        print()
         print(f"Added {n_new} cards and updated {n_old} cards.")
 
     if not args.no_regen_backlinks:
-        print("Generating backlinks...")
         db.regenerate_backlinks()
 
-    print("Saving database...")
     db.save(
-        progress_monitor=dbpm,
         generate_individuals=not args.no_individuals,
         generate_aggregates=not args.no_aggregates,
     )
+
     print()
     print("Done!")
     return 0

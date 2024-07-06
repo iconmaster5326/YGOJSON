@@ -7,6 +7,7 @@ import typing
 import uuid
 
 import requests
+import tqdm
 
 from ..database import *
 
@@ -66,14 +67,16 @@ def _get_ygoprodeck_cards() -> typing.List[typing.Dict[str, typing.Any]]:
                 _cached_cards = json.load(in_cards_file)
             return _cached_cards
     os.makedirs(TEMP_DIR, exist_ok=True)
-    response = requests.get(API_URL + "cardinfo.php", params={"misc": "yes"})
-    if response.ok:
-        with open(INPUT_CARDS_FILE, "w", encoding="utf-8") as in_cards_file:
-            _cached_cards = response.json()["data"]
-            json.dump(_cached_cards, in_cards_file, indent=2)
-        return _cached_cards
-    response.raise_for_status()
-    assert False
+    with tqdm.tqdm(total=1, desc="Downloading YGOPRODECK card list") as progress_bar:
+        response = requests.get(API_URL + "cardinfo.php", params={"misc": "yes"})
+        if response.ok:
+            with open(INPUT_CARDS_FILE, "w", encoding="utf-8") as in_cards_file:
+                _cached_cards = response.json()["data"]
+                json.dump(_cached_cards, in_cards_file, indent=2)
+            progress_bar.update(1)
+            return _cached_cards
+        response.raise_for_status()
+        assert False
 
 
 def _parse_cardtype(typeline: str) -> CardType:
@@ -243,9 +246,6 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
 def import_from_ygoprodeck(
     db: Database,
     *,
-    progress_monitor: typing.Optional[
-        typing.Callable[[typing.Union[Card, Set], bool], None]
-    ] = None,
     import_cards: bool = True,
     import_sets: bool = True,
 ) -> typing.Tuple[int, int]:
@@ -259,7 +259,7 @@ def import_from_ygoprodeck(
 
     if import_cards:
         cardinfo = _get_ygoprodeck_cards()
-        for in_card in cardinfo:
+        for in_card in tqdm.tqdm(cardinfo, desc="Importing cards from YGOPRODECK"):
             try:
                 found, card = _import_card(in_card, db)
                 if found:
@@ -268,8 +268,6 @@ def import_from_ygoprodeck(
                     n_new += 1
                 card = _write_card(in_card, card)
                 db.add_card(card)
-                if progress_monitor:
-                    progress_monitor(card, found)
             except InvalidCardImport:
                 pass
 

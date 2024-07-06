@@ -10,6 +10,7 @@ import uuid
 import xml.etree.ElementTree
 
 import requests
+import tqdm
 import wikitextparser
 
 from ..database import *
@@ -116,37 +117,43 @@ def get_token_ids(batcher: "YugipediaBatcher") -> typing.Set[int]:
 
 
 def get_card_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
-    result = []
-    seen = set()
+    with tqdm.tqdm(total=2, desc="Fetching Yugipedia card list") as progress_bar:
+        result = []
+        seen = set()
 
-    @batcher.getCategoryMembers(CAT_TCG_CARDS)
-    def catMem1(members: typing.List[int]):
-        result.extend(x for x in members if x not in seen)
-        seen.update(members)
+        @batcher.getCategoryMembers(CAT_TCG_CARDS)
+        def catMem1(members: typing.List[int]):
+            result.extend(x for x in members if x not in seen)
+            seen.update(members)
+            progress_bar.update(1)
 
-    @batcher.getCategoryMembers(CAT_OCG_CARDS)
-    def catMem2(members: typing.List[int]):
-        result.extend(x for x in members if x not in seen)
-        seen.update(members)
+        @batcher.getCategoryMembers(CAT_OCG_CARDS)
+        def catMem2(members: typing.List[int]):
+            result.extend(x for x in members if x not in seen)
+            seen.update(members)
+            progress_bar.update(1)
 
-    return result
+        return result
 
 
 def get_set_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
-    result = []
-    seen = set()
+    with tqdm.tqdm(total=2, desc="Fetching Yugipedia set list") as progress_bar:
+        result = []
+        seen = set()
 
-    @batcher.getCategoryMembersRecursive(CAT_TCG_SETS)
-    def catMem1(members: typing.List[int]):
-        result.extend(x for x in members if x not in seen)
-        seen.update(members)
+        @batcher.getCategoryMembersRecursive(CAT_TCG_SETS)
+        def catMem1(members: typing.List[int]):
+            result.extend(x for x in members if x not in seen)
+            seen.update(members)
+            progress_bar.update(1)
 
-    @batcher.getCategoryMembersRecursive(CAT_OCG_SETS)
-    def catMem2(members: typing.List[int]):
-        result.extend(x for x in members if x not in seen)
-        seen.update(members)
+        @batcher.getCategoryMembersRecursive(CAT_OCG_SETS)
+        def catMem2(members: typing.List[int]):
+            result.extend(x for x in members if x not in seen)
+            seen.update(members)
+            progress_bar.update(1)
 
-    return result
+        return result
 
 
 def get_changelog(since: datetime.datetime) -> typing.Iterable[ChangelogEntry]:
@@ -1179,9 +1186,6 @@ def parse_set(
 def import_from_yugipedia(
     db: Database,
     *,
-    progress_monitor: typing.Optional[
-        typing.Callable[[typing.Union[Card, Set], bool], None]
-    ] = None,
     import_cards: bool = True,
     import_sets: bool = True,
 ) -> typing.Tuple[int, int]:
@@ -1217,7 +1221,7 @@ def import_from_yugipedia(
             else:
                 cards = [x for x in get_card_pages(batcher)]
 
-            for pageid in cards:
+            for pageid in tqdm.tqdm(cards, desc="Importing cards from Yugipedia"):
 
                 def do(pageid: int):
                     @batcher.getPageContents(pageid)
@@ -1274,9 +1278,6 @@ def import_from_yugipedia(
                             else:
                                 n_new += 1
 
-                            if progress_monitor:
-                                progress_monitor(card, found)
-
                 do(pageid)
 
         if import_sets:
@@ -1303,7 +1304,7 @@ def import_from_yugipedia(
             else:
                 sets = [x for x in get_set_pages(batcher)]
 
-            for setid in sets:
+            for setid in tqdm.tqdm(sets, desc="Importing sets from Yugipedia"):
 
                 def do(pageid: int):
                     @batcher.getPageContents(pageid)
@@ -1362,9 +1363,6 @@ def import_from_yugipedia(
                                 n_found += 1
                             else:
                                 n_new += 1
-
-                            if progress_monitor:
-                                progress_monitor(set_, found)
 
                 do(setid)
 
