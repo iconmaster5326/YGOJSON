@@ -131,7 +131,6 @@ class Legality(enum.Enum):
     LIMIT2 = "limit2"
     LIMIT3 = "limit3"
     # other
-    ILLEGAL = "illegal"
     UNRELEASED = "unreleased"
 
 
@@ -315,6 +314,7 @@ class Card:
     passwords: typing.List[str]
     images: typing.List[CardImage]
     sets: typing.List["Set"]
+    illegal: bool
     legality: typing.Dict[str, CardLegality]
     master_duel_rarity: typing.Optional[VideoGameRaity]
     master_duel_craftable: typing.Optional[bool]
@@ -347,6 +347,7 @@ class Card:
         passwords: typing.Optional[typing.List[str]] = None,
         images: typing.Optional[typing.List[CardImage]] = None,
         sets: typing.Optional[typing.List["Set"]] = None,
+        illegal: bool = False,
         legality: typing.Optional[typing.Dict[str, CardLegality]] = None,
         master_duel_rarity: typing.Optional[VideoGameRaity] = None,
         master_duel_craftable: typing.Optional[bool] = None,
@@ -376,6 +377,7 @@ class Card:
         self.passwords = passwords or []
         self.images = images or []
         self.sets = sets or []
+        self.illegal = illegal
         self.legality = legality or {}
         self.master_duel_rarity = master_duel_rarity
         self.master_duel_craftable = master_duel_craftable
@@ -444,6 +446,7 @@ class Card:
                 for x in self.images
             ],
             "sets": [str(x.id) for x in self.sets],
+            **({"illegal": self.illegal} if self.illegal else {}),
             "legality": {
                 k: {
                     "current": v.current.value,
@@ -1128,6 +1131,7 @@ class Database:
                 )
                 for x in rawcard["images"]
             ],
+            illegal=rawcard.get("illegal", False),
             legality={
                 k: CardLegality(
                     current=Legality(v.get("current") or "unknown"),

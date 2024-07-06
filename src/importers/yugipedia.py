@@ -548,21 +548,26 @@ def parse_card(
 
     # TODO: video games
 
-    for format, ban_history in banlists.items():
-        card_history = card.legality.get(format)
-        if card_history:
-            card_history.history.clear()
+    limit_text = get_table_entry(cardtable, "limitation_text")
+    if limit_text and limit_text.strip():
+        card.illegal = True
+        card.legality.clear()
+    else:
+        for format, ban_history in banlists.items():
+            card_history = card.legality.get(format)
+            if card_history:
+                card_history.history.clear()
 
-        for history_item in ban_history:
-            if title in history_item.cards:
-                legality = history_item.cards[title]
-                if not card_history:
-                    card.legality.setdefault(format, CardLegality(current=legality))
-                    card_history = card.legality[format]
-                card_history.current = legality
-                card_history.history.append(
-                    LegalityPeriod(legality=legality, date=history_item.date)
-                )
+            for history_item in ban_history:
+                if title in history_item.cards:
+                    legality = history_item.cards[title]
+                    if not card_history:
+                        card.legality.setdefault(format, CardLegality(current=legality))
+                        card_history = card.legality[format]
+                    card_history.current = legality
+                    card_history.history.append(
+                        LegalityPeriod(legality=legality, date=history_item.date)
+                    )
 
     if not card.yugipedia_pages:
         card.yugipedia_pages = []

@@ -210,6 +210,10 @@
         "format": "uuid"
       }
     },
+    "illegal": {
+      "description": "If true, then this card is illegal, and will not have any legality history.",
+      "type": "boolean"
+    },
     "legality": {
       "description": "A mapping of formats to legalities.",
       "type": "object",
@@ -228,7 +232,6 @@
               "limit1",
               "limit2",
               "limit3",
-              "illegal",
               "unreleased"
             ]
           },
