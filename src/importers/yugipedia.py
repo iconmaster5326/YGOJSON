@@ -343,10 +343,6 @@ def parse_card(
     """
 
     title = batcher.idsToNames[page]
-    if batcher.namesToIDs.get(CAT_TOKENS) in categories:
-        logging.debug(f"Skipping token: {title}")
-        return False
-
     cardtable = next(
         iter([x for x in data.templates if x.name.strip().lower() == "cardtable2"])
     )
@@ -362,7 +358,7 @@ def parse_card(
         value = get_table_entry(cardtable, locale + "_lore" if locale else "lore")
         if value and value.strip():
             if key not in card.text:
-                logging.warn(f"Card has no name in {key} but has effect: {title}")
+                # logging.warn(f"Card has no name in {key} but has effect: {title}")
                 pass
             else:
                 card.text[key].effect = _strip_markup(value.strip())
@@ -371,7 +367,7 @@ def parse_card(
         )
         if value and value.strip():
             if key not in card.text:
-                logging.warn(f"Card has no name in {key} but has pend. effect: {title}")
+                # logging.warn(f"Card has no name in {key} but has pend. effect: {title}")
                 pass
             else:
                 card.text[key].pendulum_effect = _strip_markup(value.strip())
@@ -381,22 +377,21 @@ def parse_card(
             for t in data.templates
         ):
             if key not in card.text:
-                logging.warn(f"Card has no name in {key} but is unofficial: {title}")
+                # logging.warn(f"Card has no name in {key} but is unofficial: {title}")
                 pass
             else:
                 card.text[key].official = False
 
-    if card.card_type == CardType.MONSTER:
+    if card.card_type in {
+        CardType.MONSTER,
+        CardType.TOKEN,
+    }:  # parse monsterlike cards' common attributes
         typeline = get_table_entry(cardtable, "types")
         if not typeline:
-            logging.warn(f"Monster has no typeline: {title}")
-            return False
-        if "Skill" in typeline:
-            logging.debug(f"Skipping skill card: {title}")
-            return False
-        if "Token" in typeline:
-            logging.debug(f"Skipping token card: {title}")
-            return False
+            typeline = ""
+            if card.card_type != CardType.TOKEN:
+                logging.warn(f"Monster has no typeline: {title}")
+                return False
 
         value = get_table_entry(cardtable, "attribute")
         if not value:
@@ -407,20 +402,29 @@ def parse_card(
             if value == "???":
                 pass  # attribute to be announced; omit it
             elif value not in Attribute._value2member_map_:
-                logging.warn(f"Unknown attribute '{value.strip()}' in {title}")
+                if card.card_type != CardType.TOKEN:
+                    logging.warn(f"Unknown attribute '{value.strip()}' in {title}")
             else:
                 card.attribute = Attribute(value)
 
         typeline = [x.strip() for x in typeline.split("/") if x.strip()]
+
         for x in typeline:
             if (
-                x != "???"  # type to be announced; omit it
+                x
+                not in {
+                    "?",
+                    "???",
+                    "Token",
+                    "Counter",
+                }  # type to be announced or is token; omit it
                 and x not in MONSTER_CARD_TYPES
                 and x not in TYPES
                 and x not in CLASSIFICATIONS
                 and x not in ABILITIES
             ):
                 logging.warn(f"Monster typeline bit unknown in {title}: {x}")
+
         if not card.monster_card_types:
             card.monster_card_types = []
         for k, v in MONSTER_CARD_TYPES.items():
@@ -448,16 +452,9 @@ def parse_card(
             try:
                 card.level = int(value)
             except ValueError:
-                logging.warn(f"Unknown level '{value.strip()}' in {title}")
-                return False
-
-        value = get_table_entry(cardtable, "rank")
-        if value and value.strip() != "???":
-            try:
-                card.rank = int(value)
-            except ValueError:
-                logging.warn(f"Unknown rank '{value.strip()}' in {title}")
-                return False
+                if card.card_type != CardType.TOKEN:
+                    logging.warn(f"Unknown level '{value.strip()}' in {title}")
+                    return False
 
         value = get_table_entry(cardtable, "atk")
         if value and value.strip() != "???":
@@ -465,13 +462,24 @@ def parse_card(
                 card.atk = "?" if value.strip() in MYSTERY_ATK_DEFS else int(value)
             except ValueError:
                 logging.warn(f"Unknown ATK '{value.strip()}' in {title}")
-                return False
+                if card.card_type != CardType.TOKEN:
+                    return False
         value = get_table_entry(cardtable, "def")
         if value and value.strip() != "???":
             try:
                 card.def_ = "?" if value.strip() in MYSTERY_ATK_DEFS else int(value)
             except ValueError:
                 logging.warn(f"Unknown DEF '{value.strip()}' in {title}")
+                if card.card_type != CardType.TOKEN:
+                    return False
+
+    if card.card_type == CardType.MONSTER:
+        value = get_table_entry(cardtable, "rank")
+        if value and value.strip() != "???":
+            try:
+                card.rank = int(value)
+            except ValueError:
+                logging.warn(f"Unknown rank '{value.strip()}' in {title}")
                 return False
 
         value = get_table_entry(cardtable, "pendulum_scale")
@@ -493,6 +501,11 @@ def parse_card(
             logging.warn(f"Spell/trap has no subcategory: {title}")
             return False
         card.subcategory = SubCategory(value.lower().replace("-", "").strip())
+    elif card.card_type == CardType.TOKEN:
+        pass
+    else:
+        logging.debug(f"Skipping {card.card_type} card: {title}")
+        return False
 
     value = get_table_entry(cardtable, "password")
     if value:
@@ -518,7 +531,17 @@ def parse_card(
             ]
 
             def add_image(in_image: list, out_image: CardImage):
-                image_name = in_image[0] if len(in_image) == 1 else in_image[1]
+                if len(in_image) == 1:
+                    image_name = in_image[0]
+                elif len(in_image) == 2:
+                    image_name = in_image[1]
+                elif len(in_image) == 3:
+                    image_name = in_image[1]
+                else:
+                    logging.warn(
+                        f"Weird image string for {title}: {' ; '.join(in_image)}"
+                    )
+                    return
 
                 @batcher.getImageURL("File:" + image_name)
                 def onGetImage(url: str):
@@ -526,18 +549,8 @@ def parse_card(
 
             for image in card.images:
                 in_image = in_images.pop(0)
-                if len(in_image) != 1 and len(in_image) != 3:
-                    logging.warn(
-                        f"Weird image string for {title}: {' ; '.join(in_image)}"
-                    )
-                    continue
                 add_image(in_image, image)
             for in_image in in_images:
-                if len(in_image) != 1 and len(in_image) != 3:
-                    logging.warn(
-                        f"Weird image string for {title}: {' ; '.join(in_image)}"
-                    )
-                    continue
                 new_image = CardImage(id=uuid.uuid4())
                 if len(card.passwords) == 1:
                     # we don't have the full ability to correspond passwords here
@@ -1592,164 +1605,143 @@ def parse_set(
                                 locale: SetLocale,
                                 virtual_prefixes: typing.List[str],
                             ):
-                                @batcher.getPageID(CAT_TOKENS)
-                                def catID(tokensid: int, _: str):
-                                    @batcher.getPageID(CAT_SKILLS)
-                                    def catID(skillsid: int, _: str):
-                                        @batcher.getPageID(CAT_UNUSABLE)
-                                        def catID(unusableid: int, _: str):
-                                            @batcher.getPageID(name)
-                                            def onGetCardID(printingid: int, _: str):
-                                                @batcher.getPageCategories(name)
-                                                def onGetCardCats(
-                                                    categories: typing.List[int],
+                                @batcher.getPageID(CAT_SKILLS)
+                                def catID(skillsid: int, _: str):
+                                    @batcher.getPageID(CAT_UNUSABLE)
+                                    def catID(unusableid: int, _: str):
+                                        @batcher.getPageID(name)
+                                        def onGetCardID(printingid: int, _: str):
+                                            @batcher.getPageCategories(name)
+                                            def onGetCardCats(
+                                                categories: typing.List[int],
+                                            ):
+                                                if (
+                                                    skillsid in categories
+                                                    or unusableid in categories
                                                 ):
-                                                    if (
-                                                        tokensid in categories
-                                                        or skillsid in categories
-                                                        or unusableid in categories
-                                                    ):
-                                                        return  # skip tokens, skill cards, and unplayables (for now)
+                                                    return  # skip skill cards, and unplayables (for now)
 
-                                                    def addToContents(id: int):
-                                                        card = db.cards_by_yugipedia_id[
-                                                            id
-                                                        ]
-                                                        suffix = code[
-                                                            len(locale.prefix or "") :
-                                                        ]
-                                                        found_printing = (
-                                                            old_printings.get(
-                                                                (
-                                                                    locale.key,
-                                                                    card.id,
-                                                                    suffix,
-                                                                    found_rairty,
-                                                                )
-                                                            )
+                                                def addToContents(id: int):
+                                                    card = db.cards_by_yugipedia_id[id]
+                                                    suffix = code[
+                                                        len(locale.prefix or "") :
+                                                    ]
+                                                    found_printing = old_printings.get(
+                                                        (
+                                                            locale.key,
+                                                            card.id,
+                                                            suffix,
+                                                            found_rairty,
                                                         )
-                                                        if not found_printing:
-                                                            found_printing = (
-                                                                CardPrinting(
-                                                                    id=uuid.uuid4(),
-                                                                    card=card,
-                                                                    suffix=suffix,
-                                                                    rarity=found_rairty,
-                                                                    replica=replica,
-                                                                )
-                                                            )
+                                                    )
+                                                    if not found_printing:
+                                                        found_printing = CardPrinting(
+                                                            id=uuid.uuid4(),
+                                                            card=card,
+                                                            suffix=suffix,
+                                                            rarity=found_rairty,
+                                                            replica=replica,
+                                                        )
 
-                                                        image_file_args = [
-                                                            x[len(FILE_PREFIX) :]
+                                                    image_file_args = [
+                                                        x[len(FILE_PREFIX) :]
+                                                        for x in printing
+                                                        if x.lower().startswith(
+                                                            FILE_PREFIX
+                                                        )
+                                                    ]
+                                                    if image_file_args:
+                                                        image_filename = (
+                                                            image_file_args[0]
+                                                        )
+                                                    else:
+                                                        image_exts = [
+                                                            x[len(EXT_PREFIX) :]
                                                             for x in printing
                                                             if x.lower().startswith(
-                                                                FILE_PREFIX
+                                                                EXT_PREFIX
                                                             )
                                                         ]
-                                                        if image_file_args:
-                                                            image_filename = (
-                                                                image_file_args[0]
-                                                            )
-                                                        else:
-                                                            image_exts = [
-                                                                x[len(EXT_PREFIX) :]
-                                                                for x in printing
-                                                                if x.lower().startswith(
-                                                                    EXT_PREFIX
-                                                                )
-                                                            ]
-                                                            image_ext = (
-                                                                image_exts[0]
-                                                                if image_exts
-                                                                else "png"
-                                                            )
-                                                            image_normalized_name = (
-                                                                re.sub(r"\W", r"", name)
-                                                            )
-                                                            image_filename = f"File:{image_normalized_name}"
-                                                            if virtual_prefixes:
-                                                                image_filename += f"-{virtual_prefixes[0]}-{locale.language.upper()}"
-                                                            elif locale.prefix:
-                                                                image_filename += (
-                                                                    f"-{locale.prefix}"
-                                                                )
-                                                                if locale.prefix.endswith(
-                                                                    "-"
-                                                                ):
-                                                                    image_filename += (
-                                                                        locale.language.upper()
-                                                                    )
-                                                            if rarity:
-                                                                image_filename += f"-{RAIRTY_FULL_TO_SHORT.get(rarity.lower(), rarity)}"
-                                                            if raw_edition:
-                                                                image_filename += (
-                                                                    f"-{raw_edition}"
-                                                                )
+                                                        image_ext = (
+                                                            image_exts[0]
+                                                            if image_exts
+                                                            else "png"
+                                                        )
+                                                        image_normalized_name = re.sub(
+                                                            r"\W", r"", name
+                                                        )
+                                                        image_filename = f"File:{image_normalized_name}"
+                                                        if virtual_prefixes:
+                                                            image_filename += f"-{virtual_prefixes[0]}-{locale.language.upper()}"
+                                                        elif locale.prefix:
                                                             image_filename += (
-                                                                f".{image_ext}"
+                                                                f"-{locale.prefix}"
                                                             )
-
-                                                        @batcher.getImageURL(
-                                                            image_filename
-                                                        )
-                                                        def onImageGet(url: str):
-                                                            ed = (
-                                                                edition
-                                                                or SetEdition.NONE
-                                                            )
-                                                            locale.card_images.setdefault(
-                                                                ed, {}
-                                                            )
-                                                            locale.card_images[ed][
-                                                                found_printing
-                                                            ] = url
-
-                                                        contents.cards.append(
-                                                            found_printing
-                                                        )
-
-                                                    if (
-                                                        printingid
-                                                        not in db.cards_by_yugipedia_id
-                                                    ):
-                                                        # try looking for (card) version
-                                                        @batcher.getPageID(
-                                                            name + " (card)"
-                                                        )
-                                                        def onGetCardID(
-                                                            printingid: int, _: str
-                                                        ):
-                                                            @batcher.getPageCategories(
-                                                                name
-                                                            )
-                                                            def onGetCardCats(
-                                                                categories: typing.List[
-                                                                    int
-                                                                ],
+                                                            if locale.prefix.endswith(
+                                                                "-"
                                                             ):
-                                                                if (
-                                                                    tokensid
-                                                                    in categories
-                                                                    or skillsid
-                                                                    in categories
-                                                                    or unusableid
-                                                                    in categories
-                                                                ):
-                                                                    pass  # skip tokens, skill cards, and unplayables (for now)
-                                                                elif (
-                                                                    printingid
-                                                                    not in db.cards_by_yugipedia_id
-                                                                ):
-                                                                    logging.warn(
-                                                                        f'Card "{name}" not found in database in "{galleryname}"'
-                                                                    )
-                                                                else:
-                                                                    addToContents(
-                                                                        printingid
-                                                                    )
+                                                                image_filename += (
+                                                                    locale.language.upper()
+                                                                )
+                                                        if rarity:
+                                                            image_filename += f"-{RAIRTY_FULL_TO_SHORT.get(rarity.lower(), rarity)}"
+                                                        if raw_edition:
+                                                            image_filename += (
+                                                                f"-{raw_edition}"
+                                                            )
+                                                        image_filename += (
+                                                            f".{image_ext}"
+                                                        )
 
-                                                    else:
-                                                        addToContents(printingid)
+                                                    @batcher.getImageURL(image_filename)
+                                                    def onImageGet(url: str):
+                                                        ed = edition or SetEdition.NONE
+                                                        locale.card_images.setdefault(
+                                                            ed, {}
+                                                        )
+                                                        locale.card_images[ed][
+                                                            found_printing
+                                                        ] = url
+
+                                                    contents.cards.append(
+                                                        found_printing
+                                                    )
+
+                                                if (
+                                                    printingid
+                                                    not in db.cards_by_yugipedia_id
+                                                ):
+                                                    # try looking for (card) version
+                                                    @batcher.getPageID(name + " (card)")
+                                                    def onGetCardID(
+                                                        printingid: int, _: str
+                                                    ):
+                                                        @batcher.getPageCategories(name)
+                                                        def onGetCardCats(
+                                                            categories: typing.List[
+                                                                int
+                                                            ],
+                                                        ):
+                                                            if (
+                                                                skillsid in categories
+                                                                or unusableid
+                                                                in categories
+                                                            ):
+                                                                pass  # skip skill cards, and unplayables (for now)
+                                                            elif (
+                                                                printingid
+                                                                not in db.cards_by_yugipedia_id
+                                                            ):
+                                                                logging.warn(
+                                                                    f'Card "{name}" not found in database in "{galleryname}"'
+                                                                )
+                                                            else:
+                                                                addToContents(
+                                                                    printingid
+                                                                )
+
+                                                else:
+                                                    addToContents(printingid)
 
                             getCardID(
                                 name,
@@ -2120,8 +2112,15 @@ def import_from_yugipedia(
                                 .strip()
                                 .lower()
                             )
-                            if ct not in [x.value for x in CardType]:
-                                # logging.warn(f"Found card with illegal card type: {ct}")
+                            if (
+                                ct == "counter"
+                                or batcher.namesToIDs.get(CAT_TOKENS) in categories
+                            ):
+                                ct = "token"
+                            if batcher.namesToIDs.get(CAT_SKILLS) in categories:
+                                ct = "skill"
+                            if ct not in CardType._value2member_map_:
+                                logging.warn(f"Found card with illegal card type: {ct}")
                                 return
 
                             found = pageid in db.cards_by_yugipedia_id
@@ -2138,7 +2137,8 @@ def import_from_yugipedia(
                                 vmatch = re.match(r"^\d+", value.strip())
                                 if vmatch:
                                     card = db.cards_by_password.get(vmatch.group(0))
-                            if not card:
+                            if not card and batcher.idsToNames[pageid] != "Token":
+                                # find by english name except for Token, which has a lot of cards called exactly that
                                 card = db.cards_by_en_name.get(
                                     batcher.idsToNames[pageid]
                                 )

@@ -55,10 +55,10 @@
     },
     "cardType": {
       "description": "The broadest category of card (monster, spell, trap, etc.)",
-      "enum": ["monster", "spell", "trap"]
+      "enum": ["monster", "spell", "trap", "token", "skill"]
     },
     "attribute": {
-      "description": "The monster attribute. Only appears on monster cards.",
+      "description": "The monster attribute. Only appears on monster or token cards.",
       "enum": ["light", "dark", "fire", "water", "wind", "earth", "divine"]
     },
     "monsterCardTypes": {
@@ -69,7 +69,7 @@
       }
     },
     "type": {
-      "description": "The race of monster. Only appears on monster cards.",
+      "description": "The race of monster. Only appears on monster or token cards.",
       "enum": [
         "beastwarrior",
         "zombie",
@@ -100,21 +100,21 @@
       ]
     },
     "classifications": {
-      "description": "Any non-type, non-ability categories appearing on the type line (effect, normal, etc). Only appears on monster cards.",
+      "description": "Any non-type, non-ability categories appearing on the type line (effect, normal, etc). Only appears on monster or token cards.",
       "type": "array",
       "items": {
         "enum": ["normal", "effect", "pendulum", "tuner", "specialsummon"]
       }
     },
     "abilities": {
-      "description": "Any non-type, ability categories appearing on the type line (toon, spirit, etc). Only appears on monster cards.",
+      "description": "Any non-type, ability categories appearing on the type line (toon, spirit, etc). Only appears on monster or token cards.",
       "type": "array",
       "items": {
         "enum": ["toon", "spirit", "union", "gemini", "flip"]
       }
     },
     "level": {
-      "description": "The level of this card. Only appears on non-link, non-xyz monster cards.",
+      "description": "The level of this card. Only appears on non-link, non-xyz monster or token cards.",
       "type": "integer"
     },
     "rank": {
@@ -122,7 +122,7 @@
       "type": "integer"
     },
     "atk": {
-      "description": "The ATK of the card. Either a number, or '?'. Only appears on monster cards.",
+      "description": "The ATK of the card. Either a number, or '?'. Only appears on monster or token cards.",
       "oneOf": [{ "type": "integer" }, { "const": "?" }]
     },
     "def": {
@@ -184,7 +184,7 @@
             "format": "uuid"
           },
           "password": {
-            "description": "The password this art is given to. Some cards have multiple passwords, one per art. Some cards have multiple arts with the same password. And some have both going on. Not present if the card's password is currently unknown.",
+            "description": "The password this art is given to. Some cards have multiple passwords, one per art. Some cards have multiple arts with the same password. And some have both going on. Not present if the card's password is currently unknown, or the card has no passwords, such as is the case for tokens.",
             "type": "string",
             "regex": "\\d\\d\\d\\d\\d\\d\\d\\d"
           },
@@ -211,14 +211,14 @@
       }
     },
     "illegal": {
-      "description": "If true, then this card is illegal, and will not have any legality history.",
+      "description": "If true, then this card is illegal, and will not have any legality history. Never set for cards that are not game pieces, such as tokens.",
       "type": "boolean"
     },
     "legality": {
       "description": "A mapping of formats to legalities.",
       "type": "object",
       "additionalProperties": {
-        "description": "Legality information for this format.",
+        "description": "Legality information for this format. Never set for cards that are illegal or are not game pieces (such as tokens).",
         "type": "object",
         "required": ["current"],
         "properties": {

@@ -87,7 +87,9 @@ def _parse_cardtype(typeline: str) -> CardType:
         return CardType.SPELL
     elif "Trap" in typeline:
         return CardType.TRAP
-    elif "Skill" in typeline or "Token" in typeline:
+    elif "Token" in typeline:
+        return CardType.TOKEN
+    elif "Skill" in typeline:
         raise InvalidCardImport
 
     logging.warn(f"Unknown card type: {typeline}")
@@ -154,7 +156,7 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
     en_text.effect = in_json.get("desc") or en_text.effect
     en_text.pendulum_effect = in_json.get("pend_desc") or en_text.pendulum_effect
 
-    if card.card_type == CardType.MONSTER:
+    if card.card_type in {CardType.MONSTER, CardType.TOKEN}:
         typeline = in_json["type"].split(" ")
 
         card.attribute = Attribute(in_json["attribute"].lower())
@@ -179,22 +181,24 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             if type(in_json["atk"]) is int or in_json["atk"] == "?":
                 card.atk = in_json["atk"]
             else:
-                logging.warn(
-                    f"Card {en_text.name} (id {card.id}) has bad ATK: {in_json.get('atk')}"
-                )
+                logging.warn(f"Card {en_text.name} has bad ATK: {in_json.get('atk')}")
         if "def" in in_json:
             if type(in_json["def"]) is int or in_json["def"] == "?":
                 card.def_ = in_json["def"]
             else:
-                logging.warn(
-                    f"Card {en_text.name} (id {card.id}) has bad DEF: {in_json.get('def')}"
-                )
+                logging.warn(f"Card {en_text.name} has bad DEF: {in_json.get('def')}")
+
+    if card.card_type == CardType.MONSTER:
         card.scale = in_json.get("scale")
         if MonsterCardType.LINK in (card.monster_card_types or []):
             card.link_arrows = [LINK_ARROWS[x] for x in in_json["linkmarkers"]]
-    else:
+    elif card.card_type in {CardType.SPELL, CardType.TRAP}:
         if in_json.get("race"):
             card.subcategory = SubCategory(in_json["race"].lower().replace("-", ""))
+    elif card.card_type == CardType.TOKEN:
+        pass
+    else:
+        logging.warn(f"Unknown card type for {en_text.name}: {card.card_type}")
 
     if in_json["id"] <= MAX_REAL_PASSWORD:  # exclude fake passwords
         password = "%08u" % (in_json["id"],)
@@ -236,7 +240,7 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             card.db_id = in_json["misc_info"][0].get("konami_id", card.db_id)
         else:
             logging.warn(
-                f"Card {en_text.name} (id {card.id}) has {len(in_json['misc_info'])} misc_infos!"
+                f"Card {en_text.name} has {len(in_json['misc_info'])} misc_infos!"
             )
 
     return card

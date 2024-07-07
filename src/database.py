@@ -33,6 +33,8 @@ class CardType(enum.Enum):
     MONSTER = "monster"
     SPELL = "spell"
     TRAP = "trap"
+    TOKEN = "token"
+    SKILL = "skill"
 
 
 class Attribute(enum.Enum):
