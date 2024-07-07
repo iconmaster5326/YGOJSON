@@ -742,6 +742,7 @@ class SetLocale:
 
 class Set:
     id: uuid.UUID
+    date: typing.Optional[datetime.date]
     name: typing.Dict[str, str]
     locales: typing.Dict[str, SetLocale]
     contents: typing.List[SetContents]
@@ -752,6 +753,7 @@ class Set:
         self,
         *,
         id: uuid.UUID,
+        date: typing.Optional[datetime.date] = None,
         name: typing.Optional[typing.Dict[str, str]] = None,
         locales: typing.Optional[typing.Iterable[SetLocale]] = None,
         contents: typing.Optional[typing.List[SetContents]] = None,
@@ -759,6 +761,7 @@ class Set:
         yugiohprices: typing.Optional[str] = None,
     ) -> None:
         self.id = id
+        self.date = date
         self.name = name or {}
         self.locales = {locale.key: locale for locale in locales} if locales else {}
         self.contents = contents or []
@@ -769,6 +772,7 @@ class Set:
         return {
             "$schema": f"https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v{SCHEMA_VERSION}/set.json",
             "id": str(self.id),
+            **({"date": self.date.isoformat()} if self.date else {}),
             "name": self.name,
             **(
                 {"locales": {k: v._to_json() for k, v in self.locales.items()}}
@@ -810,7 +814,6 @@ class Database:
     cards_by_en_name: typing.Dict[str, Card]
     cards_by_konami_cid: typing.Dict[int, Card]
     cards_by_yugipedia_id: typing.Dict[int, Card]
-    cards_by_yugipedia_name_normalized: typing.Dict[str, Card]
     cards_by_ygoprodeck_id: typing.Dict[int, Card]
 
     card_images_by_id: typing.Dict[uuid.UUID, CardImage]
@@ -1306,6 +1309,9 @@ class Database:
 
         return Set(
             id=uuid.UUID(rawset["id"]),
+            date=datetime.date.fromisoformat(rawset["date"])
+            if "date" in rawset
+            else None,
             name=rawset["name"],
             locales=locales.values(),
             contents=[v[0] for v in contents],

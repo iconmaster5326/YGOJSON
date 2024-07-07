@@ -15,6 +15,11 @@
       "type": "string",
       "format": "uuid"
     },
+    "date": {
+      "description": "The release date for this product, if known. Only used in virtual sets.",
+      "type": "string",
+      "format": "date"
+    },
     "name": {
       "description": "A mapping of language to set names. In physical sets, if the locales object has a mapping for this language, then this name is official, else it is unofficial.",
       "type": "object",

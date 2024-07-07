@@ -97,12 +97,16 @@ def paginate_query(query) -> typing.Iterable:
 
 CAT_TCG_CARDS = "Category:TCG cards"
 CAT_OCG_CARDS = "Category:OCG cards"
-CAT_TCG_SETS = "Category:TCG sets"
-CAT_OCG_SETS = "Category:OCG sets"
 CAT_TOKENS = "Category:Tokens"
 CAT_SKILLS = "Category:Skill Cards"
 CAT_UNUSABLE = "Category:Unusable cards"
 CAT_MD_UNCRAFTABLE = "Category:Yu-Gi-Oh! Master Duel cards that cannot be crafted"
+
+SET_CATS = [
+    "Category:TCG sets",
+    "Category:OCG sets",
+    "Category:Yu-Gi-Oh! Master Duel sets",
+]
 
 BANLIST_CATS = {
     "tcg": "Category:TCG Advanced Format Forbidden & Limited Lists",
@@ -145,21 +149,19 @@ def get_card_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
 
 
 def get_set_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
-    with tqdm.tqdm(total=2, desc="Fetching Yugipedia set list") as progress_bar:
+    with tqdm.tqdm(
+        total=len(SET_CATS), desc="Fetching Yugipedia set list"
+    ) as progress_bar:
         result = []
         seen = set()
 
-        @batcher.getCategoryMembersRecursive(CAT_TCG_SETS)
-        def catMem1(members: typing.List[int]):
-            result.extend(x for x in members if x not in seen)
-            seen.update(members)
-            progress_bar.update(1)
+        for cat in SET_CATS:
 
-        @batcher.getCategoryMembersRecursive(CAT_OCG_SETS)
-        def catMem2(members: typing.List[int]):
-            result.extend(x for x in members if x not in seen)
-            seen.update(members)
-            progress_bar.update(1)
+            @batcher.getCategoryMembersRecursive(cat)
+            def catMem(members: typing.List[int]):
+                result.extend(x for x in members if x not in seen)
+                seen.update(members)
+                progress_bar.update(1)
 
         return result
 
@@ -1409,7 +1411,7 @@ def _parse_date(value: str) -> typing.Optional[datetime.date]:
         return None
 
 
-def parse_set(
+def parse_tcg_ocg_set(
     db: Database,
     batcher: "YugipediaBatcher",
     pageid: int,
@@ -1921,6 +1923,96 @@ def parse_set(
     return True
 
 
+MD_DISAMBIG_SUFFIX = " (Master Duel)"
+
+
+def parse_md_set(
+    db: Database,
+    batcher: "YugipediaBatcher",
+    pageid: int,
+    set_: Set,
+    data: wikitextparser.WikiText,
+    raw_data: str,
+    settable: wikitextparser.Template,
+) -> bool:
+    title = batcher.idsToNames[pageid]
+    set_.name["en"] = (
+        title[: -len(MD_DISAMBIG_SUFFIX)]
+        if title.endswith(MD_DISAMBIG_SUFFIX)
+        else title
+    )
+    set_.yugipedia = ExternalIdPair(title, pageid)
+
+    set_.date = _parse_date(
+        _strip_markup(get_table_entry(settable, "release_date", "")).strip()
+    )
+    if set_.contents:
+        contents = set_.contents[0]
+    else:
+        contents = SetContents(formats=[Format.MASTERDUEL])
+
+    found_cards: typing.Set[Card] = set()
+    setlists = [
+        x for x in data.templates if x.name.strip().lower() == "master duel set list"
+    ]
+    if not setlists:
+        logging.warn(f"Found Master Duel set without setlists: {title}")
+        return False
+
+    for setlist in setlists:
+        for arg in setlist.arguments:
+            if not arg.positional:
+                continue
+            for row in [x.strip() for x in arg.value.split("\n") if x.strip()]:
+                # first is card; second is rarity; third is (optional) quantity (in decks) or reprint status (in packs)
+                parts = [x.strip() for x in row.split(";") if x.strip()]
+                if not parts:
+                    continue
+                if len(parts) > 3:
+                    logging.warn(f"Weird row in MD setlist {title}: {row}")
+
+                cardname = parts[0]
+                if cardname.endswith(MD_DISAMBIG_SUFFIX):
+                    cardname = cardname[: -len(MD_DISAMBIG_SUFFIX)]
+
+                def add_card(card: Card):
+                    found_cards.add(card)
+                    if card not in {p.card for p in contents.cards}:
+                        contents.cards.append(CardPrinting(id=uuid.uuid4(), card=card))
+
+                def do(cardname: str):
+                    @batcher.getPageID(cardname)
+                    def onGetID(cardid: int, _: str):
+                        card = db.cards_by_yugipedia_id.get(cardid)
+                        if not card:
+
+                            @batcher.getPageID(cardname + " (card)")
+                            def onGetID(cardid: int, _: str):
+                                card = db.cards_by_yugipedia_id.get(cardid)
+                                if not card:
+                                    logging.warn(
+                                        f"Unknown card in MD set {title}: {cardname}"
+                                    )
+                                else:
+                                    add_card(card)
+
+                        else:
+                            add_card(card)
+
+                do(cardname)
+
+    for i, printing in enumerate([*contents.cards]):
+        if printing.card not in found_cards:
+            del contents.cards[i]
+            # if printing.card not in {p.card for p in contents.removed_cards}:
+            #     contents.removed_cards.append(printing)
+
+    if contents not in set_.contents:
+        set_.contents.append(contents)
+
+    return True
+
+
 class Banlist:
     format: str
     date: datetime.date
@@ -2205,7 +2297,7 @@ def import_from_yugipedia(
                     for x in get_changes(
                         batcher,
                         get_set_pages(batcher),
-                        [CAT_OCG_SETS, CAT_TCG_SETS],
+                        SET_CATS,
                         get_changelog(db.last_yugipedia_read),
                     )
                 ]
@@ -2221,57 +2313,82 @@ def import_from_yugipedia(
                         nonlocal n_found, n_new
 
                         data = wikitextparser.parse(raw_data)
-                        try:
-                            settable = next(
-                                iter(
-                                    [
-                                        x
-                                        for x in data.templates
-                                        if x.name.strip().lower() == "infobox set"
-                                    ]
+
+                        settables = [
+                            x
+                            for x in data.templates
+                            if x.name.strip().lower() == "infobox set"
+                        ]
+                        for settable in settables:
+                            found = True
+                            set_ = db.sets_by_yugipedia_id.get(pageid)
+                            if not set_:
+                                for arg in settable.arguments:
+                                    if arg.name and arg.name.strip().endswith(
+                                        DBID_SUFFIX
+                                    ):
+                                        db_ids = [
+                                            x.strip()
+                                            for x in arg.value.replace("*", "").split(
+                                                "\n"
+                                            )
+                                            if x.strip()
+                                        ]
+                                        try:
+                                            for db_id in db_ids:
+                                                set_ = db.sets_by_konami_sid.get(
+                                                    int(db_id)
+                                                )
+                                                if set_:
+                                                    break
+                                        except ValueError:
+                                            if arg.value.strip() != "none":
+                                                logging.warn(
+                                                    f'Unparsable konami set ID for {arg.name} in {batcher.idsToNames[pageid]}: "{arg.value}"'
+                                                )
+                            if not set_:
+                                set_ = db.sets_by_en_name.get(
+                                    get_table_entry(settable, "en_name", "")
                                 )
-                            )
-                        except StopIteration:
+                            if not set_:
+                                set_ = Set(id=uuid.uuid4())
+                                found = False
+
+                            if parse_tcg_ocg_set(
+                                db, batcher, pageid, set_, data, raw_data, settable
+                            ):
+                                db.add_set(set_)
+                                if found:
+                                    n_found += 1
+                                else:
+                                    n_new += 1
+
+                        md_settables = [
+                            x
+                            for x in data.templates
+                            if x.name.strip().lower() == "infobox master duel set"
+                        ]
+                        for md_settable in md_settables:
+                            found = True
+                            set_ = db.sets_by_yugipedia_id.get(pageid)
+                            if not set_:
+                                set_ = Set(id=uuid.uuid4())
+                                found = False
+
+                            if parse_md_set(
+                                db, batcher, pageid, set_, data, raw_data, md_settable
+                            ):
+                                db.add_set(set_)
+                                if found:
+                                    n_found += 1
+                                else:
+                                    n_new += 1
+
+                        if not settables and not md_settables:
                             logging.warn(
                                 f"Found set without set table: {batcher.idsToNames[pageid]}"
                             )
                             return
-
-                        found = pageid in db.sets_by_yugipedia_id
-                        set_ = db.sets_by_yugipedia_id.get(pageid)
-                        if not set_:
-                            for arg in settable.arguments:
-                                if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
-                                    db_ids = [
-                                        x.strip()
-                                        for x in arg.value.replace("*", "").split("\n")
-                                        if x.strip()
-                                    ]
-                                    try:
-                                        for db_id in db_ids:
-                                            set_ = db.sets_by_konami_sid.get(int(db_id))
-                                            if set_:
-                                                break
-                                    except ValueError:
-                                        if arg.value.strip() != "none":
-                                            logging.warn(
-                                                f'Unparsable konami set ID for {arg.name} in {batcher.idsToNames[pageid]}: "{arg.value}"'
-                                            )
-                        if not set_:
-                            set_ = db.sets_by_en_name.get(
-                                get_table_entry(settable, "en_name", "")
-                            )
-                        if not set_:
-                            set_ = Set(id=uuid.uuid4())
-
-                        if parse_set(
-                            db, batcher, pageid, set_, data, raw_data, settable
-                        ):
-                            db.add_set(set_)
-                            if found:
-                                n_found += 1
-                            else:
-                                n_new += 1
 
                 do(setid)
 
