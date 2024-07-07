@@ -1961,7 +1961,15 @@ def parse_md_set(
         logging.warn(f"Found Master Duel set without setlists: {title}")
         return False
 
-    # TODO: set image
+    raw_imagename = get_table_entry(settable, "image")
+    if raw_imagename and raw_imagename.strip():
+        raw_imagename = f"File:{raw_imagename.strip()}"
+    else:
+        raw_imagename = f"File:{title}-Pack-Master Duel.png"
+
+    @batcher.getImageURL(raw_imagename)
+    def onGetImage(url: str):
+        contents.image = url
 
     for setlist in setlists:
         for arg in setlist.arguments:
@@ -2046,7 +2054,12 @@ def parse_dl_set(
         logging.warn(f"Found Duel Links set without setlists: {title}")
         return False
 
-    # TODO: set image
+    raw_imagename = get_table_entry(settable, "image")
+    if raw_imagename and raw_imagename.strip():
+
+        @batcher.getImageURL(f"File:{raw_imagename.strip()}")
+        def onGetImage(url: str):
+            contents.image = url
 
     for setlist in setlists:
         for arg in setlist.arguments:
