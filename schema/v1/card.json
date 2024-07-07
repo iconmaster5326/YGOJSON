@@ -161,6 +161,14 @@
         "counter"
       ]
     },
+    "character": {
+      "description": "The character a skill card corresponds to. Only present in skill cards.",
+      "type": "string"
+    },
+    "skillType": {
+      "description": "The card type a skill card is. Only present in skill cards.",
+      "type": "string"
+    },
     "passwords": {
       "description": "All official passwords given for the card.",
       "type": "array",

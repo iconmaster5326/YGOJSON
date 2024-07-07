@@ -313,6 +313,8 @@ class Card:
     scale: typing.Optional[int]
     link_arrows: typing.Optional[typing.List[LinkArrow]]
     subcategory: typing.Optional[SubCategory]
+    character: typing.Optional[str]
+    skill_type: typing.Optional[str]
     passwords: typing.List[str]
     images: typing.List[CardImage]
     sets: typing.List["Set"]
@@ -346,6 +348,8 @@ class Card:
         scale: typing.Optional[int] = None,
         link_arrows: typing.Optional[typing.List[LinkArrow]] = None,
         subcategory: typing.Optional[SubCategory] = None,
+        character: typing.Optional[str] = None,
+        skill_type: typing.Optional[str] = None,
         passwords: typing.Optional[typing.List[str]] = None,
         images: typing.Optional[typing.List[CardImage]] = None,
         sets: typing.Optional[typing.List["Set"]] = None,
@@ -376,6 +380,8 @@ class Card:
         self.scale = scale
         self.link_arrows = link_arrows
         self.subcategory = subcategory
+        self.character = character
+        self.skill_type = skill_type
         self.passwords = passwords or []
         self.images = images or []
         self.sets = sets or []
@@ -436,6 +442,8 @@ class Card:
                 if self.link_arrows
                 else {}
             ),
+            **({"character": self.character} if self.character is not None else {}),
+            **({"skillType": self.skill_type} if self.skill_type is not None else {}),
             **({"subcategory": self.subcategory.value} if self.subcategory else {}),
             "passwords": self.passwords,
             "images": [
@@ -1123,6 +1131,8 @@ class Database:
             subcategory=SubCategory(rawcard["subcategory"])
             if "subcategory" in rawcard
             else None,
+            character=rawcard["character"] if "character" in rawcard else None,
+            skill_type=rawcard["skillType"] if "skillType" in rawcard else None,
             passwords=rawcard["passwords"],
             images=[
                 CardImage(

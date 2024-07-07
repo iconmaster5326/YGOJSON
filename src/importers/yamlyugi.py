@@ -223,7 +223,9 @@ def _write_card(
         )
 
     if (
-        in_json["password"] and in_json["password"] <= MAX_REAL_PASSWORD
+        in_json["password"]
+        and in_json["password"] > 0
+        and in_json["password"] <= MAX_REAL_PASSWORD
     ):  # exclude fake passwords
         password = "%08u" % (in_json["password"],)
         if password not in card.passwords:

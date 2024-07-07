@@ -90,10 +90,10 @@ def _parse_cardtype(typeline: str) -> CardType:
     elif "Token" in typeline:
         return CardType.TOKEN
     elif "Skill" in typeline:
+        return CardType.SKILL
+    else:
+        logging.warn(f"Unknown card type: {typeline}")
         raise InvalidCardImport
-
-    logging.warn(f"Unknown card type: {typeline}")
-    raise InvalidCardImport
 
 
 class InvalidCardImport(Exception):
@@ -197,10 +197,15 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             card.subcategory = SubCategory(in_json["race"].lower().replace("-", ""))
     elif card.card_type == CardType.TOKEN:
         pass
+    elif card.card_type == CardType.SKILL:
+        if in_json.get("race"):
+            card.character = in_json["race"]
     else:
         logging.warn(f"Unknown card type for {en_text.name}: {card.card_type}")
 
-    if in_json["id"] <= MAX_REAL_PASSWORD:  # exclude fake passwords
+    if (
+        in_json["id"] > 0 and in_json["id"] <= MAX_REAL_PASSWORD
+    ):  # exclude fake passwords
         password = "%08u" % (in_json["id"],)
         if password not in card.passwords:
             card.passwords.append(password)
