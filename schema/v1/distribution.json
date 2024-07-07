@@ -2,10 +2,13 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
   "title": "Distribution",
-
   "description": "A distribution is a particlar method of randomly (or not so randomly) laying out cards in a set. This determines how to pull packs, and so on.",
   "type": "object",
-  "required": ["$schema", "id", "slots"],
+  "required": [
+    "$schema",
+    "id",
+    "slots"
+  ],
   "properties": {
     "$schema": {
       "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json"
@@ -28,9 +31,13 @@
           {
             "description": "This indicates that some cards are to be drawn from based on a rarity pool.",
             "type": "object",
-            "required": ["type"],
+            "required": [
+              "type"
+            ],
             "properties": {
-              "type": { "const": "pool" },
+              "type": {
+                "const": "pool"
+              },
               "set": {
                 "description": "The UUID of the set to draw cards from, other than the current set. This is not normally needed, but is useful in places like Master Duel secret packs, which consist partly of Master Packs.",
                 "type": "string",
@@ -67,7 +74,13 @@
                 "description": "Some sets (old reprint sets, for one) only had monsters, spells, or traps in certain slots. If provided, will only generate cards of the given types in this slot.",
                 "type": "array",
                 "items": {
-                  "enum": ["monster", "spell", "trap", "token", "skill"]
+                  "enum": [
+                    "monster",
+                    "spell",
+                    "trap",
+                    "token",
+                    "skill"
+                  ]
                 }
               },
               "duplicates": {
@@ -83,9 +96,14 @@
           {
             "description": "This indicates that some cards are guaranteed to appear here.",
             "type": "object",
-            "required": ["type", "printings"],
+            "required": [
+              "type",
+              "printings"
+            ],
             "properties": {
-              "type": { "const": "guaranteedPrintings" },
+              "type": {
+                "const": "guaranteedPrintings"
+              },
               "printings": {
                 "description": "Puts cards one after the other into the pack.",
                 "type": "array",
@@ -100,9 +118,14 @@
           {
             "description": "This indicates that a set is guaranteed to appear here.",
             "type": "object",
-            "required": ["type", "set"],
+            "required": [
+              "type",
+              "set"
+            ],
             "properties": {
-              "type": { "const": "guaranteedSet" },
+              "type": {
+                "const": "guaranteedSet"
+              },
               "set": {
                 "description": "Put the full contents of sets one after the other into the pack. A set UUID.",
                 "type": "string",

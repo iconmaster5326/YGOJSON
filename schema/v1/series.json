@@ -2,10 +2,16 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/series.json",
   "title": "Series/Archetype",
-
   "description": "A series or archetype of cards.",
   "type": "object",
-  "required": ["$schema", "id", "name", "archetype", "members", "externalIDs"],
+  "required": [
+    "$schema",
+    "id",
+    "name",
+    "archetype",
+    "members",
+    "externalIDs"
+  ],
   "properties": {
     "$schema": {
       "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/series.json"
@@ -42,7 +48,10 @@
         "yugipedia": {
           "description": "A Yugipedia page for this series, if one exists.",
           "type": "object",
-          "required": ["id", "name"],
+          "required": [
+            "id",
+            "name"
+          ],
           "properties": {
             "name": {
               "description": "The page name for this card.",

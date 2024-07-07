@@ -2,10 +2,13 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/meta.json",
   "title": "YGOJSON Metadata",
-
   "description": "Metadata for the entire YGOJSON database.",
   "type": "object",
-  "required": ["$schema", "version", "increment"],
+  "required": [
+    "$schema",
+    "version",
+    "increment"
+  ],
   "properties": {
     "$schema": {
       "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/meta.json"

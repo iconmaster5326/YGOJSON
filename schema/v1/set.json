@@ -2,10 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
   "title": "Set",
-
   "description": "A set of Yu-Gi-Oh cards. Sets may be physical (booster pack, structure deck, promo card list, etc) or virtual (Master Duel pack, etc).",
   "type": "object",
-  "required": ["$schema", "id", "name", "contents", "externalIDs"],
+  "required": [
+    "$schema",
+    "id",
+    "name",
+    "contents",
+    "externalIDs"
+  ],
   "properties": {
     "$schema": {
       "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json"
@@ -33,7 +38,11 @@
       "remainingProperties": {
         "description": "Locale-specific information for this set.",
         "type": "object",
-        "required": ["language", "cardImages", "externalIDs"],
+        "required": [
+          "language",
+          "cardImages",
+          "externalIDs"
+        ],
         "properties": {
           "language": {
             "description": "The default language for this product. Individual cards may have different languages.",
@@ -95,7 +104,10 @@
       "items": {
         "description": "Information about a set's contents.",
         "type": "object",
-        "required": ["formats", "cards"],
+        "required": [
+          "formats",
+          "cards"
+        ],
         "properties": {
           "locales": {
             "description": "The locales these contents apply to. Not present in virtual packs.",
@@ -108,14 +120,27 @@
             "description": "The formats in which this set was printed into.",
             "type": "array",
             "items": {
-              "enum": ["ocg", "tcg", "speed", "masterduel", "duellinks"]
+              "enum": [
+                "ocg",
+                "tcg",
+                "speed",
+                "masterduel",
+                "duellinks"
+              ]
             }
           },
           "distrobution": {
             "description": "Either a keyword, or the UUID of the distrobution method of this set, if known: was it a pack, deck, promo card, etc. Look it up in the distributions JSON. As for keywords: The keyword 'preconstructed' means to give all cards in order, like a deck.",
             "oneOf": [
-              { "type": "string", "format": "uuid" },
-              { "enum": ["preconstructed"] }
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "enum": [
+                  "preconstructed"
+                ]
+              }
             ]
           },
           "packsPerBox": {
@@ -130,7 +155,11 @@
             "description": "What editions of this set were released? At least one is required in physical TCG (and some OCG) sets. This is not present in virtual sets.",
             "type": "array",
             "items": {
-              "enum": ["1st", "unlimited", "limited"]
+              "enum": [
+                "1st",
+                "unlimited",
+                "limited"
+              ]
             }
           },
           "image": {
@@ -200,7 +229,10 @@
         "yugipedia": {
           "description": "Yugipedia information about this set.",
           "type": "object",
-          "required": ["id", "name"],
+          "required": [
+            "id",
+            "name"
+          ],
           "properties": {
             "id": {
               "description": "The internal wiki ID for the Yugipedia page for this set.",

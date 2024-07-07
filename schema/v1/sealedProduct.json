@@ -2,10 +2,16 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json",
   "title": "Sealed Product",
-
   "description": "A sealed product is a set of multiple other yugioh products, such as a tin or a booster box. NOTE: This database is not populated with most booster boxes; the existence of such is indicated by the 'packsPerBox' property in set JSONs.",
   "type": "object",
-  "required": ["$schema", "id", "name", "locales", "contents", "externalIDs"],
+  "required": [
+    "$schema",
+    "id",
+    "name",
+    "locales",
+    "contents",
+    "externalIDs"
+  ],
   "properties": {
     "$schema": {
       "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json"
@@ -33,7 +39,9 @@
       "remainingProperties": {
         "description": "Locale-specific information for this product.",
         "type": "object",
-        "required": ["externalIDs"],
+        "required": [
+          "externalIDs"
+        ],
         "properties": {
           "date": {
             "description": "The release date for this product, if known.",
@@ -69,7 +77,9 @@
       "items": {
         "description": "Information about a product's contents.",
         "type": "object",
-        "required": ["packs"],
+        "required": [
+          "packs"
+        ],
         "properties": {
           "locales": {
             "description": "The locales these contents apply to. Not present in virtual products.",
@@ -89,7 +99,9 @@
             "items": {
               "description": "A number of packs/cards from a set.",
               "type": "object",
-              "required": ["set"],
+              "required": [
+                "set"
+              ],
               "properties": {
                 "set": {
                   "description": "The UUID of the set you are pulling from.",
@@ -135,7 +147,10 @@
         "yugipedia": {
           "description": "Yugipedia information about this product.",
           "type": "object",
-          "required": ["id", "name"],
+          "required": [
+            "id",
+            "name"
+          ],
           "properties": {
             "id": {
               "description": "The internal wiki ID for the Yugipedia page for this product.",

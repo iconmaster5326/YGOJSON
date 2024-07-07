@@ -2,7 +2,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/card.json",
   "title": "Card",
-
   "description": "A logical Yu-Gi-Oh card (as opposed to a physical card, of which belongs to a set).",
   "type": "object",
   "required": [
@@ -32,7 +31,9 @@
       "additionalProperties": {
         "description": "Textual information on the card.",
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "properties": {
           "name": {
             "description": "The name of the card.",
@@ -55,17 +56,38 @@
     },
     "cardType": {
       "description": "The broadest category of card (monster, spell, trap, etc.)",
-      "enum": ["monster", "spell", "trap", "token", "skill"]
+      "enum": [
+        "monster",
+        "spell",
+        "trap",
+        "token",
+        "skill"
+      ]
     },
     "attribute": {
       "description": "The monster attribute. Only appears on monster or token cards.",
-      "enum": ["light", "dark", "fire", "water", "wind", "earth", "divine"]
+      "enum": [
+        "light",
+        "dark",
+        "fire",
+        "water",
+        "wind",
+        "earth",
+        "divine"
+      ]
     },
     "monsterCardTypes": {
       "description": "What summoning types this card is, if any. Only appears on monster cards.",
       "type": "array",
       "items": {
-        "enum": ["ritual", "fusion", "synchro", "xyz", "pendulum", "link"]
+        "enum": [
+          "ritual",
+          "fusion",
+          "synchro",
+          "xyz",
+          "pendulum",
+          "link"
+        ]
       }
     },
     "type": {
@@ -103,14 +125,26 @@
       "description": "Any non-type, non-ability categories appearing on the type line (effect, normal, etc). Only appears on monster or token cards.",
       "type": "array",
       "items": {
-        "enum": ["normal", "effect", "pendulum", "tuner", "specialsummon"]
+        "enum": [
+          "normal",
+          "effect",
+          "pendulum",
+          "tuner",
+          "specialsummon"
+        ]
       }
     },
     "abilities": {
       "description": "Any non-type, ability categories appearing on the type line (toon, spirit, etc). Only appears on monster or token cards.",
       "type": "array",
       "items": {
-        "enum": ["toon", "spirit", "union", "gemini", "flip"]
+        "enum": [
+          "toon",
+          "spirit",
+          "union",
+          "gemini",
+          "flip"
+        ]
       }
     },
     "level": {
@@ -123,11 +157,25 @@
     },
     "atk": {
       "description": "The ATK of the card. Either a number, or '?'. Only appears on monster or token cards.",
-      "oneOf": [{ "type": "integer" }, { "const": "?" }]
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "const": "?"
+        }
+      ]
     },
     "def": {
       "description": "The DEF of the card. Either a number, or '?'. Only appears on non-link monster cards.",
-      "oneOf": [{ "type": "integer" }, { "const": "?" }]
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "const": "?"
+        }
+      ]
     },
     "scale": {
       "description": "The pendulum scale. Only appears on pendulum monster cards.",
@@ -184,7 +232,9 @@
       "items": {
         "description": "An image for a specific art treatment of a card.",
         "type": "object",
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "description": "The UUID of this art treatment. Used to refer to specific art treatments from specific printings.",
@@ -228,7 +278,9 @@
       "additionalProperties": {
         "description": "Legality information for this format. Never set for cards that are illegal or are not game pieces (such as tokens).",
         "type": "object",
-        "required": ["current"],
+        "required": [
+          "current"
+        ],
         "properties": {
           "current": {
             "description": "The current legality of this card. Use this to avoid reading the legality history, or use this when the legality history is unknown/empty.",
@@ -249,11 +301,22 @@
             "items": {
               "description": "A record of a change in legality.",
               "type": "object",
-              "required": ["legality", "date"],
+              "required": [
+                "legality",
+                "date"
+              ],
               "properties": {
                 "legality": {
                   "description": "What the legality was changed to.",
-                  "enum": ["unlimited", "semilimited", "limited", "forbidden", "limit1", "limit2", "limit3"]
+                  "enum": [
+                    "unlimited",
+                    "semilimited",
+                    "limited",
+                    "forbidden",
+                    "limit1",
+                    "limit2",
+                    "limit3"
+                  ]
                 },
                 "date": {
                   "description": "The date of the change.",
@@ -269,11 +332,19 @@
     "masterDuel": {
       "description": "Any Master Duel specific information. Only present if this card is in Master Duel.",
       "type": "object",
-      "required": ["rarity", "craftable"],
+      "required": [
+        "rarity",
+        "craftable"
+      ],
       "properties": {
         "rarity": {
           "description": "The rairty of this card.",
-          "enum": ["n", "r", "sr", "ur"]
+          "enum": [
+            "n",
+            "r",
+            "sr",
+            "ur"
+          ]
         },
         "craftable": {
           "description": "Is this card craftable using dust?",
@@ -284,11 +355,18 @@
     "duelLinks": {
       "description": "Any Duel Links specific information. Only present if this card is in Duel Links.",
       "type": "object",
-      "required": ["rarity"],
+      "required": [
+        "rarity"
+      ],
       "properties": {
         "rarity": {
           "description": "The rairty of this card.",
-          "enum": ["n", "r", "sr", "ur"]
+          "enum": [
+            "n",
+            "r",
+            "sr",
+            "ur"
+          ]
         }
       }
     },
@@ -303,7 +381,10 @@
           "items": {
             "description": "A Yugipedia page.",
             "type": "object",
-            "required": ["id", "name"],
+            "required": [
+              "id",
+              "name"
+            ],
             "properties": {
               "name": {
                 "description": "The page name for this card.",
@@ -323,7 +404,10 @@
         "ygoprodeck": {
           "description": "Information for YGOProDeck, if available",
           "type": "object",
-          "required": ["id", "name"],
+          "required": [
+            "id",
+            "name"
+          ],
           "properties": {
             "name": {
               "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/card/' to get the card's page.",
@@ -348,7 +432,10 @@
     "errata": {
       "description": "Present only if this card has recieved errata. Details how the card has changed over time. Does not cover format legality information.",
       "type": "object",
-      "required": ["original", "history"],
+      "required": [
+        "original",
+        "history"
+      ],
       "properties": {
         "original": {
           "description": "What is the original state of the card, as first printed? A subset of the card json, with only changed properties present.",
@@ -360,7 +447,11 @@
           "items": {
             "description": "A change.",
             "type": "object",
-            "required": ["date", "changes", "official"],
+            "required": [
+              "date",
+              "changes",
+              "official"
+            ],
             "properties": {
               "date": {
                 "description": "The date of the change.",

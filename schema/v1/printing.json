@@ -2,10 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/printing.json",
   "title": "Card Printing",
-
   "description": "Information for a single card in a set. A part of the set JSON.",
   "type": "object",
-  "required": ["id", "card"],
+  "required": [
+    "id",
+    "card"
+  ],
   "properties": {
     "id": {
       "description": "The UUID of this printing.",
@@ -27,7 +29,10 @@
     },
     "onlyInBox": {
       "description": "Some secret/ultimate rares from old booster packs can only be found in either hobby or retail boxes, and not both, as it turns out. Not used in sets without a hobby/retail distinction.",
-      "enum": ["hobby", "retail"]
+      "enum": [
+        "hobby",
+        "retail"
+      ]
     },
     "price": {
       "description": "Price information for this printing, if available. All prices are the most recent available as of the creation of this database, and are normalized to USD. No guarantees are made that this price is accurate, or that all sites were considered, or that all languages of this printing were considered.",
