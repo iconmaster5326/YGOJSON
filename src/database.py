@@ -480,7 +480,9 @@ class Card:
                 {
                     "masterDuel": {
                         "rarity": self.master_duel_rarity.value,
-                        "craftable": self.master_duel_craftable or False,
+                        "craftable": self.master_duel_craftable
+                        if self.master_duel_craftable is not None
+                        else True,
                     }
                 }
                 if self.master_duel_rarity

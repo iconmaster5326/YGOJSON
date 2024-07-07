@@ -102,6 +102,7 @@ CAT_OCG_SETS = "Category:OCG sets"
 CAT_TOKENS = "Category:Tokens"
 CAT_SKILLS = "Category:Skill Cards"
 CAT_UNUSABLE = "Category:Unusable cards"
+CAT_MD_UNCRAFTABLE = "Category:Yu-Gi-Oh! Master Duel cards that cannot be crafted"
 
 BANLIST_CATS = {
     "tcg": "Category:TCG Advanced Format Forbidden & Limited Lists",
@@ -572,7 +573,54 @@ def parse_card(
                 add_image(in_image, new_image)
                 card.images.append(new_image)
 
-    # TODO: video games
+    md_title = title + " (Master Duel)"
+
+    @batcher.getPageContents(md_title)
+    def onGetMD(raw_vg_data: str):
+        vg_data = wikitextparser.parse(raw_vg_data)
+        for vg_table in [
+            x for x in vg_data.templates if x.name.strip().lower() == "master duel card"
+        ]:
+            rarity = get_table_entry(vg_table, "rarity")
+            if rarity and rarity.strip():
+                rarity = rarity.strip().lower()
+                if rarity in {"?", "???"}:
+                    pass  # unknown rarity; this is fine
+                elif rarity not in VideoGameRaity._value2member_map_:
+                    logging.warn(
+                        f"Found MD page for '{md_title}' with invalid rarity: {rarity}"
+                    )
+                else:
+                    card.master_duel_rarity = VideoGameRaity(rarity)
+
+        card.master_duel_craftable = True
+
+        @batcher.getPageID(CAT_MD_UNCRAFTABLE)
+        def onGetCatID(uncraftable_id: int, _: str):
+            @batcher.getPageCategories(md_title)
+            def onGetCats(cats: typing.List[int]):
+                if uncraftable_id in cats:
+                    card.master_duel_craftable = False
+
+    dl_title = title + " (Duel Links)"
+
+    @batcher.getPageContents(dl_title)
+    def onGetDL(raw_vg_data: str):
+        vg_data = wikitextparser.parse(raw_vg_data)
+        for vg_table in [
+            x for x in vg_data.templates if x.name.strip().lower() == "duel links card"
+        ]:
+            rarity = get_table_entry(vg_table, "rarity")
+            if rarity and rarity.strip():
+                rarity = rarity.strip().lower()
+                if rarity in {"?", "???"}:
+                    pass  # unknown rarity; this is fine
+                elif rarity not in VideoGameRaity._value2member_map_:
+                    logging.warn(
+                        f"Found DL page for '{dl_title}' with invalid rarity: {rarity}"
+                    )
+                else:
+                    card.duel_links_rarity = VideoGameRaity(rarity)
 
     limit_text = get_table_entry(cardtable, "limitation_text")
     if limit_text and limit_text.strip():
