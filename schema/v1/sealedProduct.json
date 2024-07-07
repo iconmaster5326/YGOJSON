@@ -69,7 +69,7 @@
       "items": {
         "description": "Information about a product's contents.",
         "type": "object",
-        "required": ["packs", "history"],
+        "required": ["packs"],
         "properties": {
           "locales": {
             "description": "The locales these contents apply to. Not present in virtual products.",

@@ -95,7 +95,7 @@
       "items": {
         "description": "Information about a set's contents.",
         "type": "object",
-        "required": ["formats", "cards", "history"],
+        "required": ["formats", "cards"],
         "properties": {
           "locales": {
             "description": "The locales these contents apply to. Not present in virtual packs.",
