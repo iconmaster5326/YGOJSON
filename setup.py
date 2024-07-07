@@ -6,13 +6,15 @@ import setuptools.command.build_py
 import setuptools.command.install
 import setuptools.command.sdist
 
+from src.version import __version__
+
 here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8")
 
 
 setuptools.setup(
     name="ygojson",
-    version="0.1.0",
+    version=__version__,
     description="Generate and manipulate Yugioh card and set data.",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -8,12 +8,19 @@ from src.database import *
 from src.importers.yamlyugi import import_from_yaml_yugi
 from src.importers.ygoprodeck import import_from_ygoprodeck
 from src.importers.yugipedia import import_from_yugipedia
+from src.version import __version__
 
 
 def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     argv = argv or sys.argv
     parser = argparse.ArgumentParser(
         argv[0], description="Generates and queries the YGOJSON database"
+    )
+    parser.add_argument(
+        "-v",
+        "--version",
+        action="store_true",
+        help="show version number and exit",
     )
     parser.add_argument(
         "--no-individuals",
@@ -103,12 +110,14 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     )
     args = parser.parse_args(argv[1:])
 
+    if args.version:
+        print(__version__)
+        return 0
+
     logging.basicConfig(
         format="[%(levelname)s] %(message)s",
         level=logging.getLevelName(args.logging.strip().upper()),
     )
-
-    n = 0
 
     logging.info("Loading database...")
     db = load_database(
