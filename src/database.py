@@ -30,7 +30,12 @@ SERIESLIST_FILENAME = "series.json"
 SERIES_DIRNAME = "series"
 AGG_SERIES_FILENAME = "series.json"
 
+DISTROLIST_FILENAME = "distributions.json"
+DISTROS_DIRNAME = "distributions"
+AGG_DISTROS_FILENAME = "distributions.json"
+
 MANUAL_SETS_DIR = os.path.join(MANUAL_DATA_DIR, "sets")
+MANUAL_DISTROS_DIR = os.path.join(MANUAL_DATA_DIR, "distributions")
 
 
 class CardType(enum.Enum):
@@ -533,8 +538,197 @@ class Card:
         }
 
 
+class PackDistroWeight:
+    rarities: typing.List[CardRarity]
+    chance: int
+
+    def __init__(
+        self,
+        *,
+        rarities: typing.Optional[typing.List[CardRarity]] = None,
+        chance: int = 1,
+    ) -> None:
+        self.rarities = rarities or []
+        self.chance = chance
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            **({"rarities": [x.value for x in self.rarities]} if self.rarities else {}),
+            **({"chance": self.chance} if self.chance != 1 else {}),
+        }
+
+
+class PackDistroSlot:
+    _slot_type_name: typing.ClassVar[str]
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        raise NotImplementedError
+
+    @classmethod
+    def _from_json(
+        cls, db: "Database", in_json: typing.Dict[str, typing.Any]
+    ) -> "PackDistroSlot":
+        raise NotImplementedError
+
+
+class PackDistroSlotPool(PackDistroSlot):
+    _slot_type_name = "pool"
+
+    set: typing.Optional["Set"]
+    rarity: typing.List[PackDistroWeight]
+    qty: int
+    card_types: typing.List[CardType]
+    duplicates: bool
+    proportionate: bool
+
+    def __init__(
+        self,
+        *,
+        set: typing.Optional["Set"] = None,
+        rarity: typing.Optional[typing.List[PackDistroWeight]] = None,
+        qty: int = 1,
+        card_types: typing.Optional[typing.List[CardType]] = None,
+        duplicates: bool = False,
+        proportionate: bool = False,
+    ) -> None:
+        super().__init__()
+        self.set = set
+        self.rarity = rarity or []
+        self.qty = qty
+        self.card_types = card_types or []
+        self.duplicates = duplicates
+        self.proportionate = proportionate
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "type": type(self)._slot_type_name,
+            **({"set": str(self.set.id)} if self.set else {}),
+            **({"rarity": [x._to_json() for x in self.rarity]} if self.rarity else {}),
+            **({"qty": self.qty} if self.qty != 1 else {}),
+            **(
+                {"card_types": [x.value for x in self.card_types]}
+                if self.card_types
+                else {}
+            ),
+            **({"duplicates": self.duplicates} if self.duplicates else {}),
+            **({"proportionate": self.proportionate} if self.proportionate else {}),
+        }
+
+    @classmethod
+    def _from_json(
+        cls, db: "Database", in_json: typing.Dict[str, typing.Any]
+    ) -> "PackDistroSlot":
+        return PackDistroSlotPool(
+            set=db.sets_by_id[uuid.UUID(in_json["set"])]
+            if in_json.get("set")
+            else None,
+            rarity=[
+                PackDistroWeight(
+                    rarities=[CardRarity(y) for y in x["rarities"]]
+                    if x.get("rarities")
+                    else None,
+                    chance=x["chance"] if x.get("chance") is not None else 1,
+                )
+                for x in in_json["rarity"]
+            ]
+            if in_json.get("rarity")
+            else None,
+            qty=in_json["qty"] if in_json.get("qty") is not None else 1,
+            card_types=[CardType(x) for x in in_json["cardTypes"]]
+            if in_json.get("cardTypes")
+            else None,
+            duplicates=in_json["duplicates"]
+            if in_json.get("duplicates") is not None
+            else False,
+            proportionate=in_json["proportionate"]
+            if in_json.get("proportionate") is not None
+            else False,
+        )
+
+
+class PackDistroSlotCards(PackDistroSlot):
+    _slot_type_name = "guaranteedPrintings"
+
+    cards: typing.List["CardPrinting"]
+
+    def __init__(
+        self, cards: typing.Optional[typing.List["CardPrinting"]] = None
+    ) -> None:
+        super().__init__()
+        self.cards = cards or []
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "type": type(self)._slot_type_name,
+            "printings": [str(x.id) for x in self.cards],
+        }
+
+    @classmethod
+    def _from_json(
+        cls, db: "Database", in_json: typing.Dict[str, typing.Any]
+    ) -> "PackDistroSlot":
+        return PackDistroSlotCards(
+            cards=[db.printings_by_id[uuid.UUID(x)] for x in in_json["printings"]]
+        )
+
+
+class PackDistroSlotSet(PackDistroSlot):
+    _slot_type_name = "guaranteedSet"
+
+    set: "Set"
+
+    def __init__(self, set: "Set") -> None:
+        super().__init__()
+        self.set = set
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "type": type(self)._slot_type_name,
+            "set": str(self.set.id),
+        }
+
+    @classmethod
+    def _from_json(
+        cls, db: "Database", in_json: typing.Dict[str, typing.Any]
+    ) -> "PackDistroSlot":
+        return PackDistroSlotSet(
+            set=db.sets_by_id[uuid.UUID(in_json["set"])],
+        )
+
+
+DISTRO_SLOT_TYPES: typing.Dict[str, typing.Type[PackDistroSlot]] = {
+    clazz._slot_type_name: clazz
+    for clazz in [
+        PackDistroSlotPool,
+        PackDistroSlotCards,
+        PackDistroSlotSet,
+    ]
+}
+
+
 class PackDistrobution:
     id: uuid.UUID
+    name: typing.Optional[str]
+    slots: typing.List[PackDistroSlot]
+
+    def __init__(
+        self,
+        *,
+        id: uuid.UUID,
+        name: typing.Optional[str] = None,
+        slots: typing.Optional[typing.List[PackDistroSlot]] = None,
+    ) -> None:
+        self.id = id
+        self.name = name
+        self.slots = slots or []
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "$schema": f"https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v{SCHEMA_VERSION}/distribution.json",
+            "id": str(self.id),
+            **({"name": self.name} if self.name else {}),
+            "slots": [x._to_json() for x in self.slots],
+        }
 
 
 class Series:
@@ -635,7 +829,7 @@ class CardPrinting:
 class SetContents:
     locales: typing.List["SetLocale"]
     formats: typing.List[Format]
-    distrobution: typing.Union[None, PackDistrobution, SpecialDistroType]
+    distrobution: typing.Union[None, SpecialDistroType, uuid.UUID]
     packs_per_box: typing.Optional[int]
     has_hobby_retail_differences: bool
     editions: typing.List[SetEdition]
@@ -650,7 +844,7 @@ class SetContents:
         *,
         locales: typing.Optional[typing.List["SetLocale"]] = None,
         formats: typing.Optional[typing.List[Format]] = None,
-        distrobution: typing.Union[None, PackDistrobution, SpecialDistroType] = None,
+        distrobution: typing.Union[None, SpecialDistroType, uuid.UUID] = None,
         packs_per_box: typing.Optional[int] = None,
         has_hobby_retail_differences: bool = False,
         editions: typing.Optional[typing.List[SetEdition]] = None,
@@ -671,6 +865,16 @@ class SetContents:
         self.cards = cards or []
         self.removed_cards = removed_cards or []
         self.ygoprodeck = ygoprodeck
+
+    def get_distro(
+        self, db: "Database"
+    ) -> typing.Union[None, SpecialDistroType, PackDistrobution]:
+        if not self.distrobution:
+            return None
+        elif type(self.distrobution) is uuid.UUID:
+            return db.distros_by_id[self.distrobution]
+        elif type(self.distrobution) is SpecialDistroType:
+            return self.distrobution
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         distro = None
@@ -910,6 +1114,10 @@ class Database:
     series_by_en_name: typing.Dict[str, Series]
     series_by_yugipedia_id: typing.Dict[int, Series]
 
+    distros: typing.List[PackDistrobution]
+    distros_by_id: typing.Dict[uuid.UUID, PackDistrobution]
+    distros_by_name: typing.Dict[str, PackDistrobution]
+
     def __init__(
         self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
     ):
@@ -946,6 +1154,10 @@ class Database:
         self.series_by_id = {}
         self.series_by_en_name = {}
         self.series_by_yugipedia_id = {}
+
+        self.distros = []
+        self.distros_by_id = {}
+        self.distros_by_name = {}
 
     def add_card(self, card: Card):
         if card.id not in self.cards_by_id:
@@ -1003,6 +1215,13 @@ class Database:
         if series.yugipedia:
             self.series_by_yugipedia_id[series.yugipedia.id] = series
 
+    def add_distro(self, distro: PackDistrobution):
+        if distro.id not in self.distros_by_id:
+            self.distros.append(distro)
+            self.distros_by_id[distro.id] = distro
+        if distro.name:
+            self.distros_by_name[distro.name] = distro
+
     def regenerate_backlinks(self):
         for card in self.cards:
             card.sets.clear()
@@ -1033,6 +1252,16 @@ class Database:
             result = self.sets_by_yugipedia_id.get(mfi.yugipedia_id, result)
         if not result and mfi.name:
             result = self.sets_by_en_name.get(mfi.name, result)
+        return result
+
+    def lookup_distro(
+        self, mfi: ManualFixupIdentifier
+    ) -> typing.Optional[PackDistrobution]:
+        result = None
+        if not result and mfi.id:
+            result = self.distros_by_id.get(mfi.id, result)
+        if not result and mfi.name:
+            result = self.distros_by_name.get(mfi.name, result)
         return result
 
     def manually_fixup_sets(self):
@@ -1074,7 +1303,13 @@ class Database:
                                             )
                                         else:
                                             distro_mfi = ManualFixupIdentifier(distro)
-                                            # TODO: link up distro
+                                            distro = self.lookup_distro(distro_mfi)
+                                            if distro:
+                                                contents.distrobution = distro.id
+                                            else:
+                                                logging.warn(
+                                                    f"Unknown distro: {distro_mfi}"
+                                                )
 
                                     # apply packsPerBox
                                     if "packsPerBox" in in_contents:
@@ -1102,6 +1337,22 @@ class Database:
                                             contents.ygoprodeck = in_per_set[
                                                 "ygoprodeck"
                                             ]
+
+    def manually_fixup_distros(self):
+        for filename in tqdm.tqdm(
+            os.listdir(MANUAL_DISTROS_DIR), desc="Importing pack distributions"
+        ):
+            if filename.endswith(".json"):
+                name = filename[: -len(".json")]
+                with open(
+                    os.path.join(MANUAL_DISTROS_DIR, filename), encoding="utf-8"
+                ) as infile:
+                    in_json = json.load(infile)
+                    in_id = uuid.UUID(in_json["id"])
+                    if in_id in self.distros_by_id:
+                        self.distros = [x for x in self.distros if x.id != in_id]
+                        del self.distros_by_id[in_id]
+                    self.add_distro(self._load_distro(in_json))
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -1194,6 +1445,22 @@ class Database:
             for series in tqdm.tqdm(self.series, desc="Saving individual series"):
                 self._save_series(series)
 
+            with open(
+                os.path.join(self.individuals_dir, DISTROLIST_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump(
+                    [str(distro.id) for distro in self.distros], outfile, indent=2
+                )
+            os.makedirs(
+                os.path.join(self.individuals_dir, DISTROS_DIRNAME), exist_ok=True
+            )
+            for distro in tqdm.tqdm(
+                self.distros, desc="Saving individual pack distributions"
+            ):
+                self._save_distro(distro)
+
         if generate_aggregates:
             os.makedirs(self.aggregates_dir, exist_ok=True)
             with open(
@@ -1248,6 +1515,23 @@ class Database:
                             (x._to_json() for x in self.series),
                             total=len(self.series),
                             desc="Saving aggregate series",
+                        )
+                    ],
+                    outfile,
+                    indent=2,
+                )
+
+            with open(
+                os.path.join(self.aggregates_dir, AGG_DISTROS_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump(
+                    [
+                        *tqdm.tqdm(
+                            (x._to_json() for x in self.distros),
+                            total=len(self.distros),
+                            desc="Saving aggregate pack distributions",
                         )
                     ],
                     outfile,
@@ -1412,8 +1696,12 @@ class Database:
                 (
                     SetContents(
                         formats=[Format(v) for v in content["formats"]],
-                        # TODO: handle distrobution when it's a UUID
-                        distrobution=SpecialDistroType(content["distrobution"])
+                        distrobution=(
+                            SpecialDistroType(content["distrobution"])
+                            if content["distrobution"]
+                            in SpecialDistroType._value2member_map_
+                            else uuid.UUID(content["distrobution"])
+                        )
                         if content.get("distrobution")
                         and content["distrobution"]
                         in SpecialDistroType._value2member_map_
@@ -1514,6 +1802,34 @@ class Database:
         ) as outfile:
             return [uuid.UUID(x) for x in json.load(outfile)]
 
+    def _save_distro(self, distro: PackDistrobution):
+        with open(
+            os.path.join(
+                self.individuals_dir, DISTROS_DIRNAME, str(distro.id) + ".json"
+            ),
+            "w",
+            encoding="utf-8",
+        ) as outfile:
+            json.dump(distro._to_json(), outfile, indent=2)
+
+    def _load_distro(self, rawdistro: typing.Dict[str, typing.Any]) -> PackDistrobution:
+        return PackDistrobution(
+            id=uuid.UUID(rawdistro["id"]),
+            name=rawdistro["name"] if rawdistro.get("name") else None,
+            slots=[
+                DISTRO_SLOT_TYPES[x["type"]]._from_json(self, x)
+                for x in rawdistro["slots"]
+            ],
+        )
+
+    def _load_distrolist(self) -> typing.List[uuid.UUID]:
+        if not os.path.exists(os.path.join(self.individuals_dir, DISTROLIST_FILENAME)):
+            return []
+        with open(
+            os.path.join(self.individuals_dir, DISTROLIST_FILENAME), encoding="utf-8"
+        ) as outfile:
+            return [uuid.UUID(x) for x in json.load(outfile)]
+
 
 def load_database(
     *,
@@ -1580,5 +1896,27 @@ def load_database(
             ) as outfile:
                 series = result._load_series(json.load(outfile))
             result.add_series(series)
+
+    if os.path.exists(os.path.join(aggregates_dir, AGG_DISTROS_FILENAME)):
+        with open(
+            os.path.join(aggregates_dir, AGG_DISTROS_FILENAME), encoding="utf-8"
+        ) as outfile:
+            for distro_json in tqdm.tqdm(
+                json.load(outfile), desc="Loading pack distributions"
+            ):
+                distro = result._load_distro(distro_json)
+                result.add_distro(distro)
+    else:
+        for series_id in tqdm.tqdm(
+            result._load_serieslist(), desc="Loading pack distributions"
+        ):
+            with open(
+                os.path.join(
+                    individuals_dir, DISTROS_DIRNAME, str(series_id) + ".json"
+                ),
+                encoding="utf-8",
+            ) as outfile:
+                distro = result._load_distro(json.load(outfile))
+            result.add_distro(distro)
 
     return result
