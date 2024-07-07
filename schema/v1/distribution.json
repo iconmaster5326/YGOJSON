@@ -15,6 +15,10 @@
       "type": "string",
       "format": "uuid"
     },
+    "name": {
+      "description": "A human-readable name for this distribution. This need have no bearing on reality, and is only useful for identifying what this distrobution represents.",
+      "type": "string"
+    },
     "slots": {
       "description": "An array of slots in the pack.",
       "type": "array",
@@ -69,7 +73,7 @@
             "description": "Some sets (old reprint sets, for one) only had monsters, spells, or traps in certain slots. If provided, will only generate cards of the given types in this slot.",
             "type": "array",
             "items": {
-              "enum": ["monster", "spell", "trap"]
+              "enum": ["monster", "spell", "trap", "token", "skill"]
             }
           },
           "duplicates": {

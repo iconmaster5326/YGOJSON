@@ -571,6 +571,7 @@ class CardPrinting:
     language: typing.Optional[str]
     image: typing.Optional[CardImage]
     replica: bool
+    qty: int
 
     def __init__(
         self,
@@ -584,6 +585,7 @@ class CardPrinting:
         language: typing.Optional[str] = None,
         image: typing.Optional[CardImage] = None,
         replica: bool = False,
+        qty: int = 1,
     ) -> None:
         self.id = id
         self.card = card
@@ -594,6 +596,7 @@ class CardPrinting:
         self.language = language
         self.image = image
         self.replica = replica
+        self.qty = qty
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -606,6 +609,7 @@ class CardPrinting:
             **({"language": self.language} if self.language else {}),
             **({"imageID": str(self.image.id)} if self.image else {}),
             **({"replica": True} if self.replica else {}),
+            **({"qty": self.qty} if self.qty != 1 else {}),
         }
 
 
@@ -1235,6 +1239,7 @@ class Database:
             if "imageID" in rawprinting
             else None,
             replica=rawprinting["replica"] if "replica" in rawprinting else False,
+            qty=rawprinting["qty"] if "qty" in rawprinting else 1,
         )
         printings[result.id] = result
         return result
