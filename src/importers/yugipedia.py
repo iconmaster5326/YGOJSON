@@ -275,20 +275,34 @@ def get_table_entry(
 LOCALES = {
     "": "en",
     "en": "en",
+    "na": "en",
+    "eu": "en",
     "fr": "fr",
     "de": "de",
     "it": "it",
     "pt": "pt",
     "es": "es",
+    "jp": "ja",
     "ja": "ja",
     "ko": "ko",
     "tc": "zh-TW",
     "sc": "zh-CN",
+    "ae": "ae",
 }
 
 LOCALES_FULL = {
     "English": "en",
-    # TODO
+    "French": "fr",
+    "German": "de",
+    "Italian": "it",
+    "Portugese": "pt",
+    "Spanish": "es",
+    "Japanese": "ja",
+    "Korean": "ko",
+    "Traditional Chinese": "zh-TW",
+    "Simplified Chinese": "zh-CN",
+    "Asian English": "ae",
+    "Asian-English": "ae",
 }
 
 MONSTER_CARD_TYPES = {
@@ -1454,16 +1468,13 @@ def parse_tcg_ocg_set(
     raw_data: str,
     settable: wikitextparser.Template,
 ) -> bool:
-    for arg in settable.arguments:
-        if arg.name and arg.name.strip().endswith(DBNAME_SUFFIX) and arg.value.strip():
-            lang = arg.name.strip()[: -len(DBNAME_SUFFIX)]
-            if lang == "ja":
-                lang = "jp"  # hooray for consistency!
-            value = _strip_markup(arg.value).strip()
-            if value:
-                set_.name[lang] = value
-    if "en" not in set_.name:
-        set_.name["en"] = batcher.idsToNames[pageid]
+    for locale, key in LOCALES.items():
+        value = get_table_entry(settable, locale + "_name" if locale else "name")
+        if not locale and not value:
+            value = batcher.idsToNames[pageid]
+        if value and value.strip():
+            value = _strip_markup(value.strip())
+            set_.name[key] = value
 
     gallery_html = re.search(
         r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;", raw_data, re.DOTALL
@@ -1515,7 +1526,7 @@ def parse_tcg_ocg_set(
                         lang = locale_info.group(2).strip().lower()
                         locale = SetLocale(
                             key=lang,
-                            language=lang,
+                            language=LOCALES.get(lang, lang),
                         )
 
                         raw_edition = None
