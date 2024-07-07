@@ -34,8 +34,13 @@ DISTROLIST_FILENAME = "distributions.json"
 DISTROS_DIRNAME = "distributions"
 AGG_DISTROS_FILENAME = "distributions.json"
 
+PRODUCTLIST_FILENAME = "sealedProducts.json"
+PRODUCTS_DIRNAME = "sealedProducts"
+AGG_PRODUCTS_FILENAME = "sealedProducts.json"
+
 MANUAL_SETS_DIR = os.path.join(MANUAL_DATA_DIR, "sets")
 MANUAL_DISTROS_DIR = os.path.join(MANUAL_DATA_DIR, "distributions")
+MANUAL_PRODUCTS_DIR = os.path.join(MANUAL_DATA_DIR, "sealed-products")
 
 
 class CardType(enum.Enum):
@@ -731,6 +736,113 @@ class PackDistrobution:
         }
 
 
+class SealedProductLocale:
+    key: str
+    date: typing.Optional[datetime.date]
+    image: typing.Optional[str]
+    db_ids: typing.List[int]
+
+    def __init__(
+        self,
+        *,
+        key: str,
+        date: typing.Optional[datetime.date] = None,
+        image: typing.Optional[str] = None,
+        db_ids: typing.Optional[typing.List[int]] = None,
+    ) -> None:
+        self.key = key
+        self.date = date
+        self.image = image
+        self.db_ids = db_ids or []
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            **({"date": self.date.isoformat()} if self.date else {}),
+            **({"image": self.image} if self.image else {}),
+            "externalIDs": {
+                **({"dbIDs": self.db_ids} if self.db_ids else {}),
+            },
+        }
+
+
+class SealedProductContents:
+    locales: typing.List[SealedProductLocale]
+    image: typing.Optional[str]
+    packs: typing.Dict["Set", int]
+
+    def __init__(
+        self,
+        *,
+        image: typing.Optional[str] = None,
+        locales: typing.Optional[typing.List[SealedProductLocale]] = None,
+        packs: typing.Optional[typing.Dict["Set", int]] = None,
+    ) -> None:
+        self.image = image
+        self.locales = locales or []
+        self.packs = packs or {}
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            **({"locales": [x.key for x in self.locales]} if self.locales else {}),
+            **({"image": self.image} if self.image else {}),
+            "packs": [
+                {"set": str(k.id), **({"qty": v} if v != 1 else {})}
+                for k, v in self.packs.items()
+            ],
+        }
+
+
+class SealedProduct:
+    id: uuid.UUID
+    date: typing.Optional[datetime.date]
+    name: typing.Dict[str, str]
+    locales: typing.Dict[str, SealedProductLocale]
+    contents: typing.List[SealedProductContents]
+    yugipedia: typing.Optional[ExternalIdPair]
+
+    def __init__(
+        self,
+        *,
+        id: uuid.UUID,
+        date: typing.Optional[datetime.date] = None,
+        name: typing.Optional[typing.Dict[str, str]] = None,
+        locales: typing.Optional[typing.Dict[str, SealedProductLocale]] = None,
+        contents: typing.Optional[typing.List[SealedProductContents]] = None,
+        yugipedia: typing.Optional[ExternalIdPair] = None,
+    ) -> None:
+        self.id = id
+        self.date = date
+        self.name = name or {}
+        self.locales = locales or {}
+        self.contents = contents or []
+        self.yugipedia = yugipedia
+
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "id": str(self.id),
+            **({"date": self.date.isoformat()} if self.date else {}),
+            "name": self.name,
+            **(
+                {"locales": {k: v._to_json() for k, v in self.locales.items()}}
+                if self.locales
+                else {}
+            ),
+            "contents": [x._to_json() for x in self.contents],
+            "externalIDs": {
+                **(
+                    {
+                        "yugipedia": {
+                            "id": self.yugipedia.id,
+                            "name": self.yugipedia.name,
+                        }
+                    }
+                    if self.yugipedia
+                    else {}
+                ),
+            },
+        }
+
+
 class Series:
     id: uuid.UUID
     name: typing.Dict[str, str]
@@ -1118,6 +1230,12 @@ class Database:
     distros_by_id: typing.Dict[uuid.UUID, PackDistrobution]
     distros_by_name: typing.Dict[str, PackDistrobution]
 
+    products: typing.List[SealedProduct]
+    products_by_id: typing.Dict[uuid.UUID, SealedProduct]
+    products_by_en_name: typing.Dict[str, SealedProduct]
+    products_by_yugipedia_id: typing.Dict[int, SealedProduct]
+    products_by_konami_pid: typing.Dict[int, SealedProduct]
+
     def __init__(
         self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
     ):
@@ -1158,6 +1276,12 @@ class Database:
         self.distros = []
         self.distros_by_id = {}
         self.distros_by_name = {}
+
+        self.products = []
+        self.products_by_id = {}
+        self.products_by_en_name = {}
+        self.products_by_yugipedia_id = {}
+        self.products_by_konami_pid = {}
 
     def add_card(self, card: Card):
         if card.id not in self.cards_by_id:
@@ -1222,6 +1346,19 @@ class Database:
         if distro.name:
             self.distros_by_name[distro.name] = distro
 
+    def add_product(self, product: SealedProduct):
+        if product.id not in self.sets_by_id:
+            self.products.append(product)
+
+        self.products_by_id[product.id] = product
+        if "en" in product.name:
+            self.products_by_en_name[product.name["en"]] = product
+        if product.yugipedia:
+            self.products_by_yugipedia_id[product.yugipedia.id] = product
+        for locale in product.locales.values():
+            for db_id in locale.db_ids:
+                self.products_by_konami_pid[db_id] = product
+
     def regenerate_backlinks(self):
         for card in self.cards:
             card.sets.clear()
@@ -1269,7 +1406,6 @@ class Database:
             os.listdir(MANUAL_SETS_DIR), desc="Applying manual fixups to sets"
         ):
             if filename.endswith(".json"):
-                name = filename[: -len(".json")]
                 with open(
                     os.path.join(MANUAL_SETS_DIR, filename), encoding="utf-8"
                 ) as file:
@@ -1343,7 +1479,6 @@ class Database:
             os.listdir(MANUAL_DISTROS_DIR), desc="Importing pack distributions"
         ):
             if filename.endswith(".json"):
-                name = filename[: -len(".json")]
                 with open(
                     os.path.join(MANUAL_DISTROS_DIR, filename), encoding="utf-8"
                 ) as infile:
@@ -1353,6 +1488,21 @@ class Database:
                         self.distros = [x for x in self.distros if x.id != in_id]
                         del self.distros_by_id[in_id]
                     self.add_distro(self._load_distro(in_json))
+
+    def manually_fixup_products(self):
+        for filename in tqdm.tqdm(
+            os.listdir(MANUAL_PRODUCTS_DIR), desc="Importing sealed products"
+        ):
+            if filename.endswith(".json"):
+                with open(
+                    os.path.join(MANUAL_PRODUCTS_DIR, filename), encoding="utf-8"
+                ) as infile:
+                    in_json = json.load(infile)
+                    in_id = uuid.UUID(in_json["id"])
+                    if in_id in self.products_by_id:
+                        self.products = [x for x in self.products if x.id != in_id]
+                        del self.products_by_id[in_id]
+                    self.add_product(self._load_product(in_json))
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -1461,6 +1611,22 @@ class Database:
             ):
                 self._save_distro(distro)
 
+            with open(
+                os.path.join(self.individuals_dir, PRODUCTLIST_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump(
+                    [str(product.id) for product in self.products], outfile, indent=2
+                )
+            os.makedirs(
+                os.path.join(self.individuals_dir, PRODUCTS_DIRNAME), exist_ok=True
+            )
+            for product in tqdm.tqdm(
+                self.products, desc="Saving individual sealed products"
+            ):
+                self._save_product(product)
+
         if generate_aggregates:
             os.makedirs(self.aggregates_dir, exist_ok=True)
             with open(
@@ -1532,6 +1698,23 @@ class Database:
                             (x._to_json() for x in self.distros),
                             total=len(self.distros),
                             desc="Saving aggregate pack distributions",
+                        )
+                    ],
+                    outfile,
+                    indent=2,
+                )
+
+            with open(
+                os.path.join(self.aggregates_dir, AGG_PRODUCTS_FILENAME),
+                "w",
+                encoding="utf-8",
+            ) as outfile:
+                json.dump(
+                    [
+                        *tqdm.tqdm(
+                            (x._to_json() for x in self.products),
+                            total=len(self.products),
+                            desc="Saving aggregate sealed products",
                         )
                     ],
                     outfile,
@@ -1830,6 +2013,65 @@ class Database:
         ) as outfile:
             return [uuid.UUID(x) for x in json.load(outfile)]
 
+    def _load_product(self, rawproduct: typing.Dict[str, typing.Any]) -> SealedProduct:
+        locales = {
+            k: SealedProductLocale(
+                key=k,
+                date=datetime.date.fromisoformat(rawlocale["date"])
+                if rawlocale.get("date")
+                else None,
+                image=rawlocale.get("image"),
+                db_ids=rawlocale["externalIDs"].get("dbIDs", []),
+            )
+            for k, rawlocale in rawproduct.get("locales", {}).items()
+        }
+
+        return SealedProduct(
+            id=uuid.UUID(rawproduct["id"]),
+            name=rawproduct["name"],
+            date=datetime.date.fromisoformat(rawproduct["date"])
+            if rawproduct.get("date")
+            else None,
+            locales=locales,
+            contents=[
+                SealedProductContents(
+                    image=rawcontents.get("image"),
+                    locales=[locales[x] for x in rawcontents.get("locales", [])],
+                    packs={
+                        self.sets_by_id[uuid.UUID(rawpack["set"])]: rawpack.get(
+                            "qty", 1
+                        )
+                        for rawpack in rawcontents["packs"]
+                    },
+                )
+                for rawcontents in rawproduct["contents"]
+            ],
+            yugipedia=ExternalIdPair(
+                rawproduct["externalIDs"]["yugipedia"]["name"],
+                rawproduct["externalIDs"]["yugipedia"]["id"],
+            )
+            if "yugipedia" in rawproduct.get("externalIDs", {})
+            else None,
+        )
+
+    def _load_productlist(self) -> typing.List[uuid.UUID]:
+        if not os.path.exists(os.path.join(self.individuals_dir, PRODUCTLIST_FILENAME)):
+            return []
+        with open(
+            os.path.join(self.individuals_dir, PRODUCTLIST_FILENAME), encoding="utf-8"
+        ) as outfile:
+            return [uuid.UUID(x) for x in json.load(outfile)]
+
+    def _save_product(self, product: SealedProduct):
+        with open(
+            os.path.join(
+                self.individuals_dir, PRODUCTS_DIRNAME, str(product.id) + ".json"
+            ),
+            "w",
+            encoding="utf-8",
+        ) as outfile:
+            json.dump(product._to_json(), outfile, indent=2)
+
 
 def load_database(
     *,
@@ -1908,7 +2150,7 @@ def load_database(
                 result.add_distro(distro)
     else:
         for series_id in tqdm.tqdm(
-            result._load_serieslist(), desc="Loading pack distributions"
+            result._load_distrolist(), desc="Loading pack distributions"
         ):
             with open(
                 os.path.join(
@@ -1918,5 +2160,27 @@ def load_database(
             ) as outfile:
                 distro = result._load_distro(json.load(outfile))
             result.add_distro(distro)
+
+    if os.path.exists(os.path.join(aggregates_dir, AGG_PRODUCTS_FILENAME)):
+        with open(
+            os.path.join(aggregates_dir, AGG_PRODUCTS_FILENAME), encoding="utf-8"
+        ) as outfile:
+            for product_json in tqdm.tqdm(
+                json.load(outfile), desc="Loading sealed products"
+            ):
+                product = result._load_product(product_json)
+                result.add_product(product)
+    else:
+        for series_id in tqdm.tqdm(
+            result._load_productlist(), desc="Loading sealed products"
+        ):
+            with open(
+                os.path.join(
+                    individuals_dir, PRODUCTS_DIRNAME, str(series_id) + ".json"
+                ),
+                encoding="utf-8",
+            ) as outfile:
+                product = result._load_product(json.load(outfile))
+            result.add_product(product)
 
     return result

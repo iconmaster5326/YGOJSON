@@ -75,6 +75,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         help="Don't import pack distributions from external APIs",
     )
     parser.add_argument(
+        "--no-products",
+        action="store_true",
+        help="Don't import sealed products from external APIs",
+    )
+    parser.add_argument(
         "--no-regen-backlinks",
         action="store_true",
         help="Don't regenerate backlinks (for example, links from cards to sets)",
@@ -160,6 +165,10 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         if not args.no_sets:
             logging.info("\tFixing up sets...")
             db.manually_fixup_sets()
+
+        if not args.no_products:
+            logging.info("\tImporting sealed products...")
+            db.manually_fixup_products()
 
     logging.info("Saving database...")
     db.save(
