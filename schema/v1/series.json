@@ -5,7 +5,7 @@
 
   "description": "A series or archetype of cards.",
   "type": "object",
-  "required": ["$schema", "id", "name", "archetype", "members"],
+  "required": ["$schema", "id", "name", "archetype", "members", "externalIDs"],
   "properties": {
     "$schema": {
       "const": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/series.json"
@@ -32,6 +32,28 @@
         "description": "The UUID of a card.",
         "type": "string",
         "format": "uuid"
+      }
+    },
+    "externalIDs": {
+      "description": "IDs and other information, to access this series from various other sites.",
+      "type": "object",
+      "required": [],
+      "properties": {
+        "yugipedia": {
+          "description": "A Yugipedia page for this series, if one exists.",
+          "type": "object",
+          "required": ["id", "name"],
+          "properties": {
+            "name": {
+              "description": "The page name for this card.",
+              "type": "string"
+            },
+            "id": {
+              "description": "The internal wiki ID for the page for this card.",
+              "type": "integer"
+            }
+          }
+        }
       }
     }
   }

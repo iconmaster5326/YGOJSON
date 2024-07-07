@@ -101,6 +101,8 @@ CAT_TOKENS = "Category:Tokens"
 CAT_SKILLS = "Category:Skill Cards"
 CAT_UNUSABLE = "Category:Unusable cards"
 CAT_MD_UNCRAFTABLE = "Category:Yu-Gi-Oh! Master Duel cards that cannot be crafted"
+CAT_ARCHETYPES = "Category:Archetypes"
+CAT_SERIES = "Category:Series"
 
 SET_CATS = [
     "Category:TCG sets",
@@ -163,6 +165,26 @@ def get_set_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
                 result.extend(x for x in members if x not in seen)
                 seen.update(members)
                 progress_bar.update(1)
+
+        return result
+
+
+def get_series_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
+    with tqdm.tqdm(total=2, desc="Fetching Yugipedia series list") as progress_bar:
+        result = []
+        seen = set()
+
+        @batcher.getCategoryMembers(CAT_ARCHETYPES)
+        def catMem1(members: typing.List[int]):
+            result.extend(x for x in members if x not in seen)
+            seen.update(members)
+            progress_bar.update(1)
+
+        @batcher.getCategoryMembers(CAT_SERIES)
+        def catMem2(members: typing.List[int]):
+            result.extend(x for x in members if x not in seen)
+            seen.update(members)
+            progress_bar.update(1)
 
         return result
 
@@ -340,6 +362,7 @@ def parse_card(
     data: wikitextparser.WikiText,
     categories: typing.List[int],
     banlists: typing.Dict[str, typing.List["Banlist"]],
+    series_members: typing.Dict[str, typing.Set[Card]],
 ) -> bool:
     """
     Parse a card from a wiki page. Returns False if this is not actually a valid card
@@ -645,6 +668,16 @@ def parse_card(
                     card_history.history.append(
                         LegalityPeriod(legality=legality, date=history_item.date)
                     )
+
+    for archseries in [
+        x.strip()
+        for x in get_table_entry(cardtable, "archseries", "")
+        .replace("*", "")
+        .split("\n")
+        if x.strip()
+    ]:
+        series_members.setdefault(archseries.lower(), set())
+        series_members[archseries.lower()].add(card)
 
     if not card.yugipedia_pages:
         card.yugipedia_pages = []
@@ -1926,6 +1959,8 @@ def parse_tcg_ocg_set(
 
 MD_DISAMBIG_SUFFIX = " (Master Duel)"
 DL_DISAMBIG_SUFFIX = " (Duel Links)"
+ARCHETYPE_DISAMBIG_SUFFIX = " (archetype)"
+SERIES_DISAMBIG_SUFFIX = " (series)"
 
 
 def parse_md_set(
@@ -2113,6 +2148,46 @@ def parse_dl_set(
     return True
 
 
+def parse_series(
+    db: Database,
+    batcher: "YugipediaBatcher",
+    pageid: int,
+    title: str,
+    series: Series,
+    data: wikitextparser.WikiText,
+    seriestable: wikitextparser.Template,
+    series_members: typing.Dict[str, typing.Set[Card]],
+) -> bool:
+    name = title
+    if name.endswith(ARCHETYPE_DISAMBIG_SUFFIX):
+        name = title[: -len(ARCHETYPE_DISAMBIG_SUFFIX)]
+    if name.endswith(SERIES_DISAMBIG_SUFFIX):
+        name = title[: -len(SERIES_DISAMBIG_SUFFIX)]
+
+    for locale, key in LOCALES.items():
+        value = get_table_entry(seriestable, locale + "_name" if locale else "name")
+        if not locale and not value:
+            value = name
+        if value and value.strip():
+            value = _strip_markup(value.strip())
+            series.name[key] = value
+
+    @batcher.getPageCategories(pageid)
+    def onCatsGet(cats: typing.List[int]):
+        if batcher.namesToIDs.get(CAT_ARCHETYPES) in cats:
+            series.archetype = True
+        elif batcher.namesToIDs.get(CAT_SERIES) in cats:
+            series.archetype = False
+
+    if name.lower() in series_members:
+        series.members.update(series_members[name.lower()])
+    if title.lower() in series_members:
+        series.members.update(series_members[title.lower()])
+
+    series.yugipedia = ExternalIdPair(title, pageid)
+    return True
+
+
 class Banlist:
     format: str
     date: datetime.date
@@ -2292,6 +2367,8 @@ def import_from_yugipedia(
                 db.last_yugipedia_read = None
                 # batcher.clearCache() # TODO: enable when done
 
+        series_members: typing.Dict[str, typing.Set[Card]] = {}
+
         if import_cards:
             banlists = get_banlist_pages(batcher)
             cards: typing.List[int]
@@ -2376,7 +2453,13 @@ def import_from_yugipedia(
                                 card = Card(id=uuid.uuid4(), card_type=CardType(ct))
 
                             if parse_card(
-                                batcher, pageid, card, data, categories, banlists
+                                batcher,
+                                pageid,
+                                card,
+                                data,
+                                categories,
+                                banlists,
+                                series_members,
                             ):
                                 db.add_card(card)
                                 if found:
@@ -2510,6 +2593,84 @@ def import_from_yugipedia(
                             return
 
                 do(setid)
+
+        if import_series:
+            series: typing.List[int]
+            if db.last_yugipedia_read is not None:
+                batcher.use_cache = False
+                series = [
+                    x
+                    for x in get_changes(
+                        batcher,
+                        get_series_pages(batcher),
+                        SET_CATS,
+                        get_changelog(db.last_yugipedia_read),
+                    )
+                ]
+                batcher.use_cache = True
+            else:
+                series = [x for x in get_series_pages(batcher)]
+
+            for seriesid in tqdm.tqdm(series, desc="Importing series from Yugipedia"):
+
+                def do(pageid: int):
+                    @batcher.getPageContents(pageid)
+                    def onGetData(raw_data: str):
+                        nonlocal n_found, n_new
+
+                        title = batcher.idsToNames[pageid]
+                        data = wikitextparser.parse(raw_data)
+
+                        seriestables = [
+                            x
+                            for x in data.templates
+                            if x.name.strip().lower()
+                            in {
+                                "infobox archseries",
+                                "infobox archetype",
+                                "infobox series",
+                            }
+                        ]
+                        for seriestable in seriestables:
+                            series = db.series_by_yugipedia_id.get(pageid)
+                            found = True
+                            if not series and title.endswith(ARCHETYPE_DISAMBIG_SUFFIX):
+                                series = db.series_by_en_name.get(
+                                    title[: -len(ARCHETYPE_DISAMBIG_SUFFIX)]
+                                )
+                            if not series and title.endswith(SERIES_DISAMBIG_SUFFIX):
+                                series = db.series_by_en_name.get(
+                                    title[: -len(SERIES_DISAMBIG_SUFFIX)]
+                                )
+                            if not series:
+                                series = db.series_by_en_name.get(title)
+                            if not series:
+                                series = Series(id=uuid.uuid4())
+                                found = False
+
+                            if parse_series(
+                                db,
+                                batcher,
+                                pageid,
+                                title,
+                                series,
+                                data,
+                                seriestable,
+                                series_members,
+                            ):
+                                db.add_series(series)
+                                if found:
+                                    n_found += 1
+                                else:
+                                    n_new += 1
+
+                        if not seriestables:
+                            logging.warn(
+                                f"Found series without series table: {batcher.idsToNames[pageid]}"
+                            )
+                            return
+
+                do(seriesid)
 
     db.last_yugipedia_read = datetime.datetime.now()
     return n_found, n_new

@@ -538,6 +538,7 @@ class Series:
     name: typing.Dict[str, str]
     archetype: bool
     members: typing.Set[Card]
+    yugipedia: typing.Optional[ExternalIdPair]
 
     def __init__(
         self,
@@ -546,11 +547,13 @@ class Series:
         name: typing.Optional[typing.Dict[str, str]] = None,
         archetype: bool = False,
         members: typing.Optional[typing.Set[Card]] = None,
+        yugipedia: typing.Optional[ExternalIdPair] = None,
     ) -> None:
         self.id = id
         self.name = name or {}
         self.archetype = archetype
         self.members = members or set()
+        self.yugipedia = yugipedia
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -558,6 +561,18 @@ class Series:
             "name": self.name,
             "archetype": self.archetype,
             "members": sorted(str(c.id) for c in self.members),
+            "externalIDs": {
+                **(
+                    {
+                        "yugipedia": {
+                            "name": self.yugipedia.name,
+                            "id": self.yugipedia.id,
+                        }
+                    }
+                    if self.yugipedia is not None
+                    else {}
+                ),
+            },
         }
 
 
@@ -835,6 +850,7 @@ class Database:
     series: typing.List[Series]
     series_by_id: typing.Dict[uuid.UUID, Series]
     series_by_en_name: typing.Dict[str, Series]
+    series_by_yugipedia_id: typing.Dict[int, Series]
 
     def __init__(
         self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
@@ -871,6 +887,7 @@ class Database:
         self.series = []
         self.series_by_id = {}
         self.series_by_en_name = {}
+        self.series_by_yugipedia_id = {}
 
     def add_card(self, card: Card):
         if card.id not in self.cards_by_id:
@@ -925,6 +942,8 @@ class Database:
             self.series_by_id[series.id] = series
         if "en" in series.name:
             self.series_by_en_name[series.name["en"]] = series
+        if series.yugipedia:
+            self.series_by_yugipedia_id[series.yugipedia.id] = series
 
     def regenerate_backlinks(self):
         for card in self.cards:
@@ -1342,6 +1361,12 @@ class Database:
             name=rawseries["name"],
             archetype=rawseries["archetype"],
             members={self.cards_by_id[uuid.UUID(x)] for x in rawseries["members"]},
+            yugipedia=ExternalIdPair(
+                rawseries["externalIDs"]["yugipedia"]["name"],
+                rawseries["externalIDs"]["yugipedia"]["id"],
+            )
+            if "yugipedia" in rawseries["externalIDs"]
+            else None,
         )
 
     def _load_serieslist(self) -> typing.List[uuid.UUID]:
