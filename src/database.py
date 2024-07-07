@@ -1,6 +1,7 @@
 import datetime
 import enum
 import json
+import logging
 import os
 import os.path
 import typing
@@ -13,6 +14,7 @@ SCHEMA_VERSION = 1
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 TEMP_DIR = os.path.join(ROOT_DIR, "temp")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
+MANUAL_DATA_DIR = os.path.join(ROOT_DIR, "manual-data")
 AGGREGATE_DIR = os.path.join(DATA_DIR, "aggregate")
 META_FILENAME = "meta.json"
 
@@ -27,6 +29,8 @@ AGG_SETS_FILENAME = "sets.json"
 SERIESLIST_FILENAME = "series.json"
 SERIES_DIRNAME = "series"
 AGG_SERIES_FILENAME = "series.json"
+
+MANUAL_SETS_DIR = os.path.join(MANUAL_DATA_DIR, "sets")
 
 
 class CardType(enum.Enum):
@@ -808,6 +812,69 @@ class Set:
         }
 
 
+class ManualFixupIdentifier:
+    id: typing.Optional[uuid.UUID]
+    name: typing.Optional[str]
+    konami_id: typing.Optional[int]
+    ygoprodeck_id: typing.Optional[int]
+    ygoprodeck_name: typing.Optional[str]
+    yugipedia_id: typing.Optional[int]
+    yugipedia_name: typing.Optional[str]
+    yamlyugi: typing.Optional[int]
+
+    def __init__(self, in_json) -> None:
+        self.id = None
+        self.name = None
+        self.konami_id = None
+        self.ygoprodeck_id = None
+        self.ygoprodeck_name = None
+        self.yugipedia_id = None
+        self.yugipedia_name = None
+        self.yamlyugi = None
+
+        if type(in_json) is str:
+            # either ID or name, let's find out
+            try:
+                self.id = uuid.UUID(in_json)
+            except ValueError:
+                self.name = in_json
+        elif type(in_json) is dict:
+            self.id = in_json.get("id")
+            self.name = in_json.get("name")
+            self.konami_id = in_json.get("konamiID")
+            self.ygoprodeck_id = in_json.get("ygoprodeckID")
+            self.ygoprodeck_name = in_json.get("ygoprodeckName")
+            self.yugipedia_id = in_json.get("yugipediaID")
+            self.yugipedia_name = in_json.get("yugipediaName")
+            self.yamlyugi = in_json.get("yamlyugi")
+        else:
+            raise ValueError(f"Bad manual-fixup identifier: {json.dumps(in_json)}")
+
+    def to_json(self) -> typing.Union[str, typing.Dict[str, typing.Any]]:
+        as_dict = {
+            **({"id": str(self.id)} if self.id else {}),
+            **({"name": self.name} if self.name else {}),
+            **({"konamiID": self.konami_id} if self.konami_id else {}),
+            **({"ygoprodeckID": self.ygoprodeck_id} if self.ygoprodeck_id else {}),
+            **(
+                {"ygoprodeckName": self.ygoprodeck_name} if self.ygoprodeck_name else {}
+            ),
+            **({"yugipediaID": self.yugipedia_id} if self.yugipedia_id else {}),
+            **({"yugipediaName": self.yugipedia_name} if self.yugipedia_name else {}),
+            **({"yamlyugi": self.yamlyugi} if self.yamlyugi else {}),
+        }
+        if len(as_dict) == 2 and "id" in as_dict and "name" in as_dict:
+            return str(self.id or self.name)
+        if len(as_dict) == 1 and "id" in as_dict:
+            return str(self.id)
+        if len(as_dict) == 1 and "name" in as_dict:
+            return str(self.name)
+        return as_dict
+
+    def __str__(self) -> str:
+        return json.dumps(self.to_json())
+
+
 class Database:
     individuals_dir: str
     aggregates_dir: str
@@ -953,6 +1020,88 @@ class Database:
         ):
             for member in series.members:
                 member.series.append(series)
+
+    def lookup_set(self, mfi: ManualFixupIdentifier) -> typing.Optional[Set]:
+        result = None
+        if not result and mfi.id:
+            result = self.sets_by_id.get(mfi.id, result)
+        if not result and mfi.konami_id:
+            result = self.sets_by_konami_sid.get(mfi.konami_id, result)
+        if not result and mfi.ygoprodeck_name:
+            result = self.sets_by_ygoprodeck_id.get(mfi.ygoprodeck_name, result)
+        if not result and mfi.yugipedia_id:
+            result = self.sets_by_yugipedia_id.get(mfi.yugipedia_id, result)
+        if not result and mfi.name:
+            result = self.sets_by_en_name.get(mfi.name, result)
+        return result
+
+    def manually_fixup_sets(self):
+        for filename in tqdm.tqdm(
+            os.listdir(MANUAL_SETS_DIR), desc="Applying manual fixups to sets"
+        ):
+            if filename.endswith(".json"):
+                name = filename[: -len(".json")]
+                with open(
+                    os.path.join(MANUAL_SETS_DIR, filename), encoding="utf-8"
+                ) as file:
+                    in_json = json.load(file)
+                    for i, mfi in enumerate(
+                        ManualFixupIdentifier(x) for x in in_json["sets"]
+                    ):
+                        set = self.lookup_set(mfi)
+                        if not set:
+                            logging.warn(f"Unknown set to fixup: {mfi}")
+                            continue
+                        for in_contents in in_json["contents"]:
+                            in_locales: typing.List[str] = in_contents.get(
+                                "locales", []
+                            )
+                            for contents in set.contents:
+                                if (
+                                    not in_locales
+                                    or not contents.locales
+                                    or any(x in in_locales for x in contents.locales)
+                                ):
+                                    # apply distro
+                                    distro = in_contents.get("distribution")
+                                    if distro:
+                                        if (
+                                            distro
+                                            in SpecialDistroType._value2member_map_
+                                        ):
+                                            contents.distrobution = SpecialDistroType(
+                                                distro
+                                            )
+                                        else:
+                                            distro_mfi = ManualFixupIdentifier(distro)
+                                            # TODO: link up distro
+
+                                    # apply packsPerBox
+                                    if "packsPerBox" in in_contents:
+                                        contents.packs_per_box = in_contents[
+                                            "packsPerBox"
+                                        ]
+
+                                    # apply hasHobbyRetailDifferences
+                                    if "hasHobbyRetailDifferences" in in_contents:
+                                        contents.has_hobby_retail_differences = (
+                                            in_contents["hasHobbyRetailDifferences"]
+                                        )
+
+                                    if "perSet" in in_contents and i < len(
+                                        in_contents["perSet"]
+                                    ):
+                                        in_per_set = in_contents["perSet"][i]
+
+                                        # apply boxImage
+                                        if "boxImage" in in_per_set:
+                                            contents.box_image = in_per_set["boxImage"]
+
+                                        # apply ygoprodeck
+                                        if "ygoprodeck" in in_per_set:
+                                            contents.ygoprodeck = in_per_set[
+                                                "ygoprodeck"
+                                            ]
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {

@@ -75,6 +75,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         help="Don't regenerate backlinks (for example, links from cards to sets)",
     )
     parser.add_argument(
+        "--no-manual",
+        action="store_true",
+        help="Don't process manual fixups",
+    )
+    parser.add_argument(
         "--fresh",
         action="store_true",
         help="Pretend we've never looked at our sources before (this does NOT delete database contents)",
@@ -139,6 +144,13 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     if not args.no_regen_backlinks:
         logging.info("Regenerating backlinks...")
         db.regenerate_backlinks()
+
+    if not args.no_manual:
+        logging.info("Running manual fixups...")
+
+        if not args.no_sets:
+            logging.info("\tFixing up sets...")
+            db.manually_fixup_sets()
 
     logging.info("Saving database...")
     db.save(
