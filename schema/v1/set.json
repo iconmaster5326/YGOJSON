@@ -163,19 +163,8 @@
             "required": [],
             "properties": {
               "ygoprodeck": {
-                "description": "YGOPRODECK information about this set.",
-                "type": "object",
-                "required": ["id", "name"],
-                "properties": {
-                  "id": {
-                    "description": "The internal ID in YGOProDeck for this set.",
-                    "type": "integer"
-                  },
-                  "name": {
-                    "description": "The slug for YGOProDeck you can use after 'ygoprodeck.com/pack/' to get the set's page.",
-                    "type": "string"
-                  }
-                }
+                "description": "The slug for YGOPRODECK you can use after 'ygoprodeck.com/pack/' to get the set's page.",
+                "type": "string"
               }
             }
           },

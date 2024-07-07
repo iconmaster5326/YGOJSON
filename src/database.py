@@ -639,7 +639,7 @@ class SetContents:
     box_image: typing.Optional[str]
     cards: typing.List[CardPrinting]
     removed_cards: typing.List[CardPrinting]
-    ygoprodeck: typing.Optional[ExternalIdPair]
+    ygoprodeck: typing.Optional[str]
 
     def __init__(
         self,
@@ -654,7 +654,7 @@ class SetContents:
         box_image: typing.Optional[str] = None,
         cards: typing.Optional[typing.List[CardPrinting]] = None,
         removed_cards: typing.Optional[typing.List[CardPrinting]] = None,
-        ygoprodeck: typing.Optional[ExternalIdPair] = None,
+        ygoprodeck: typing.Optional[str] = None,
     ) -> None:
         self.locales = locales or []
         self.formats = formats or []
@@ -695,16 +695,7 @@ class SetContents:
                 else {}
             ),
             "externalIDs": {
-                **(
-                    {
-                        "ygoprodeck": {
-                            "name": self.ygoprodeck.name,
-                            "id": self.ygoprodeck.id,
-                        }
-                    }
-                    if self.ygoprodeck
-                    else {}
-                ),
+                **({"ygoprodeck": self.ygoprodeck} if self.ygoprodeck else {}),
             },
         }
 
@@ -842,7 +833,7 @@ class Database:
     sets_by_en_name: typing.Dict[str, Set]
     sets_by_konami_sid: typing.Dict[int, Set]
     sets_by_yugipedia_id: typing.Dict[int, Set]
-    sets_by_ygoprodeck_id: typing.Dict[int, Set]
+    sets_by_ygoprodeck_id: typing.Dict[str, Set]
 
     printings_by_id: typing.Dict[uuid.UUID, CardPrinting]
     printings_by_code: typing.Dict[str, typing.List[CardPrinting]]
@@ -924,7 +915,7 @@ class Database:
                 self.sets_by_konami_sid[db_id] = set_
         for content in set_.contents:
             if content.ygoprodeck:
-                self.sets_by_ygoprodeck_id[content.ygoprodeck.id] = set_
+                self.sets_by_ygoprodeck_id[content.ygoprodeck] = set_
             for printing in [*content.cards, *content.removed_cards]:
                 self.printings_by_id[printing.id] = printing
                 if printing.suffix:
@@ -1292,10 +1283,7 @@ class Database:
                             self._load_printing(v, printings)
                             for v in content.get("removedCards", [])
                         ],
-                        ygoprodeck=ExternalIdPair(
-                            content["externalIDs"]["ygoprodeck"]["name"],
-                            content["externalIDs"]["ygoprodeck"]["id"],
-                        )
+                        ygoprodeck=content["externalIDs"]["ygoprodeck"]
                         if "ygoprodeck" in content["externalIDs"]
                         else None,
                     ),
