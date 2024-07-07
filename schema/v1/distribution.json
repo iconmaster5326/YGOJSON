@@ -24,67 +24,93 @@
       "type": "array",
       "items": {
         "description": "One or more slots, aka a card that is randomized according to certain rarity rules.",
-        "type": "object",
-        "required": [],
-        "properties": {
-          "type": { "const": "cards" },
-          "set": {
-            "description": "The UUID of the set to draw cards from, other than the current set. This is not normally needed, but is useful in places like Master Duel secret packs, which consist partly of Master Packs.",
-            "type": "string",
-            "format": "uuid"
-          },
-          "rarity": {
-            "description": "The rarity to pull from. Either a rarity string constant, or an array. If it's an array, represents a probability table for each card drawn. If null, will pull from all cards with equal weight.",
-            "oneOf": [
-              { "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/rarity.json" },
-              {
+        "oneOf": [
+          {
+            "description": "This indicates that some cards are to be drawn from based on a rarity pool.",
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { "const": "pool" },
+              "set": {
+                "description": "The UUID of the set to draw cards from, other than the current set. This is not normally needed, but is useful in places like Master Duel secret packs, which consist partly of Master Packs.",
+                "type": "string",
+                "format": "uuid"
+              },
+              "rarity": {
+                "description": "The rarities to pull from.",
                 "type": "array",
                 "items": {
-                  "oneOf": [
-                    {
-                      "description": "An entry in a probability table. Represents a 1:X chance of this rarity being selected.",
-                      "type": "object",
-                      "required": ["chance", "rarity"],
-                      "properties": {
-                        "chance": {
-                          "description": "A 1:X probability. For example, the chance of an ultra rare is '6' here, for a 1:6 chance.",
-                          "type": "number"
-                        },
-                        "rarity": {
-                          "description": "A rarity constant.",
-                          "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/rarity.json"
-                        }
-                      }
+                  "description": "An entry in a probability table. Represents a 1:X chance of this rarity being selected.",
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "chance": {
+                      "description": "A 1:X probability. For example, the chance of an ultra rare is '6' here, for a 1:6 chance. Defult 1.",
+                      "type": "number"
                     },
-                    {
-                      "description": "A catchall default rarity. If none of the above chances trigger, the card in this slot is of this rarity. Only use as the last element in the array!",
-                      "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/rarity.json"
+                    "rarities": {
+                      "description": "A list of rarities to pull from with equal chance. If omitted, we pull from the full card pool.",
+                      "type": "array",
+                      "items": {
+                        "description": "A rarity constant.",
+                        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/rarity.json"
+                      }
                     }
-                  ]
+                  }
                 }
+              },
+              "qty": {
+                "description": "How many cards are drawn. Default 1.",
+                "type": "integer"
+              },
+              "cardTypes": {
+                "description": "Some sets (old reprint sets, for one) only had monsters, spells, or traps in certain slots. If provided, will only generate cards of the given types in this slot.",
+                "type": "array",
+                "items": {
+                  "enum": ["monster", "spell", "trap", "token", "skill"]
+                }
+              },
+              "duplicates": {
+                "description": "Most of the time, you can't get the same card twice at the same rarity in a pack, even if it's common. (In physical sets, this is due to how printing sheets work, so it's not a 100% chance, but it might as well be for our purposes.) If you want to override this, set this to true.",
+                "type": "boolean"
+              },
+              "proportionate": {
+                "description": "Normally, the probability table doesn't take into account the relative sizes of each pool. When this field is true, the chances will be changed so that the probabilities will take into account said relative sizes. This is used for dual common/short-print slots, for example.",
+                "type": "boolean"
               }
-            ]
-          },
-          "qty": {
-            "description": "How many cards are drawn. Default 1.",
-            "type": "integer"
-          },
-          "cardTypes": {
-            "description": "Some sets (old reprint sets, for one) only had monsters, spells, or traps in certain slots. If provided, will only generate cards of the given types in this slot.",
-            "type": "array",
-            "items": {
-              "enum": ["monster", "spell", "trap", "token", "skill"]
             }
           },
-          "duplicates": {
-            "description": "Most of the time, you can't get the same card twice at the same rarity in a pack, even if it's common. (In physical sets, this is due to how printing sheets work, so it's not a 100% chance, but it might as well be for our purposes.) If you want to override this, set this to true.",
-            "type": "boolean"
+          {
+            "description": "This indicates that some cards are guaranteed to appear here.",
+            "type": "object",
+            "required": ["type", "printings"],
+            "properties": {
+              "type": { "const": "guaranteedPrintings" },
+              "printings": {
+                "description": "Puts cards one after the other into the pack.",
+                "type": "array",
+                "items": {
+                  "description": "A UUID to a card printing.",
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
           },
-          "proportionate": {
-            "description": "Normally, the probability table doesn't take into account the relative sizes of each pool. When this field is true, the chances will be changed so that the probabilities will take into account said relative sizes. This is used for dual common/short-print slots, for example.",
-            "type": "boolean"
+          {
+            "description": "This indicates that a set is guaranteed to appear here.",
+            "type": "object",
+            "required": ["type", "set"],
+            "properties": {
+              "type": { "const": "guaranteedSet" },
+              "set": {
+                "description": "Put the full contents of sets one after the other into the pack. A set UUID.",
+                "type": "string",
+                "format": "uuid"
+              }
+            }
           }
-        }
+        ]
       }
     }
   }
