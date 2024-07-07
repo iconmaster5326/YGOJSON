@@ -106,6 +106,7 @@ SET_CATS = [
     "Category:TCG sets",
     "Category:OCG sets",
     "Category:Yu-Gi-Oh! Master Duel sets",
+    "Category:Yu-Gi-Oh! Duel Links sets",
 ]
 
 BANLIST_CATS = {
@@ -575,7 +576,7 @@ def parse_card(
                 add_image(in_image, new_image)
                 card.images.append(new_image)
 
-    md_title = title + " (Master Duel)"
+    md_title = title + MD_DISAMBIG_SUFFIX
 
     @batcher.getPageContents(md_title)
     def onGetMD(raw_vg_data: str):
@@ -604,7 +605,7 @@ def parse_card(
                 if uncraftable_id in cats:
                     card.master_duel_craftable = False
 
-    dl_title = title + " (Duel Links)"
+    dl_title = title + DL_DISAMBIG_SUFFIX
 
     @batcher.getPageContents(dl_title)
     def onGetDL(raw_vg_data: str):
@@ -1924,6 +1925,7 @@ def parse_tcg_ocg_set(
 
 
 MD_DISAMBIG_SUFFIX = " (Master Duel)"
+DL_DISAMBIG_SUFFIX = " (Duel Links)"
 
 
 def parse_md_set(
@@ -1959,6 +1961,8 @@ def parse_md_set(
         logging.warn(f"Found Master Duel set without setlists: {title}")
         return False
 
+    # TODO: set image
+
     for setlist in setlists:
         for arg in setlist.arguments:
             if not arg.positional:
@@ -1968,8 +1972,6 @@ def parse_md_set(
                 parts = [x.strip() for x in row.split(";") if x.strip()]
                 if not parts:
                     continue
-                if len(parts) > 3:
-                    logging.warn(f"Weird row in MD setlist {title}: {row}")
 
                 cardname = parts[0]
                 if cardname.endswith(MD_DISAMBIG_SUFFIX):
@@ -1992,6 +1994,91 @@ def parse_md_set(
                                 if not card:
                                     logging.warn(
                                         f"Unknown card in MD set {title}: {cardname}"
+                                    )
+                                else:
+                                    add_card(card)
+
+                        else:
+                            add_card(card)
+
+                do(cardname)
+
+    for i, printing in enumerate([*contents.cards]):
+        if printing.card not in found_cards:
+            del contents.cards[i]
+            # if printing.card not in {p.card for p in contents.removed_cards}:
+            #     contents.removed_cards.append(printing)
+
+    if contents not in set_.contents:
+        set_.contents.append(contents)
+
+    return True
+
+
+def parse_dl_set(
+    db: Database,
+    batcher: "YugipediaBatcher",
+    pageid: int,
+    set_: Set,
+    data: wikitextparser.WikiText,
+    raw_data: str,
+    settable: wikitextparser.Template,
+) -> bool:
+    title = batcher.idsToNames[pageid]
+    set_.name["en"] = (
+        title[: -len(DL_DISAMBIG_SUFFIX)]
+        if title.endswith(DL_DISAMBIG_SUFFIX)
+        else title
+    )
+    set_.yugipedia = ExternalIdPair(title, pageid)
+
+    set_.date = _parse_date(
+        _strip_markup(get_table_entry(settable, "release_date", "")).strip()
+    )
+    if set_.contents:
+        contents = set_.contents[0]
+    else:
+        contents = SetContents(formats=[Format.DUELLINKS])
+
+    found_cards: typing.Set[Card] = set()
+    setlists = [x for x in data.templates if x.name.strip().lower() == "set list"]
+    if not setlists:
+        logging.warn(f"Found Duel Links set without setlists: {title}")
+        return False
+
+    # TODO: set image
+
+    for setlist in setlists:
+        for arg in setlist.arguments:
+            if not arg.positional:
+                continue
+            for row in [x.strip() for x in arg.value.split("\n") if x.strip()]:
+                # 1st is card; 2nd is rarity; 3rd is (optional) reprint status; 4th is (optional) quantity
+                parts = [x.strip() for x in row.split(";") if x.strip()]
+                if not parts:
+                    continue
+
+                cardname = parts[0]
+                if cardname.endswith(DL_DISAMBIG_SUFFIX):
+                    cardname = cardname[: -len(DL_DISAMBIG_SUFFIX)]
+
+                def add_card(card: Card):
+                    found_cards.add(card)
+                    if card not in {p.card for p in contents.cards}:
+                        contents.cards.append(CardPrinting(id=uuid.uuid4(), card=card))
+
+                def do(cardname: str):
+                    @batcher.getPageID(cardname)
+                    def onGetID(cardid: int, _: str):
+                        card = db.cards_by_yugipedia_id.get(cardid)
+                        if not card:
+
+                            @batcher.getPageID(cardname + " (card)")
+                            def onGetID(cardid: int, _: str):
+                                card = db.cards_by_yugipedia_id.get(cardid)
+                                if not card:
+                                    logging.warn(
+                                        f"Unknown card in DL set {title}: {cardname}"
                                     )
                                 else:
                                     add_card(card)
@@ -2045,8 +2132,6 @@ BANLIST_STR_TO_LEGALITY = {
     "limited_3": Legality.LIMIT3,
 }
 
-DL_NAME_SUFFIX = " (duel links)"
-
 
 def _parse_banlist(
     batcher: "YugipediaBatcher", pageid: int, format: str, raw_data: str
@@ -2085,8 +2170,8 @@ def _parse_banlist(
                     x.split("//")[0].strip() for x in arg.value.split("\n") if x.strip()
                 ]
                 for card in cardlist:
-                    if card.lower().endswith(DL_NAME_SUFFIX):
-                        card = card[: -len(DL_NAME_SUFFIX)]
+                    if card.lower().endswith(DL_DISAMBIG_SUFFIX):
+                        card = card[: -len(DL_DISAMBIG_SUFFIX)]
                     cards[card] = legality
 
     for limitlist in md_limitlists:
@@ -2384,7 +2469,28 @@ def import_from_yugipedia(
                                 else:
                                     n_new += 1
 
-                        if not settables and not md_settables:
+                        dl_settables = [
+                            x
+                            for x in data.templates
+                            if x.name.strip().lower() == "infobox duel links set"
+                        ]
+                        for dl_settable in dl_settables:
+                            found = True
+                            set_ = db.sets_by_yugipedia_id.get(pageid)
+                            if not set_:
+                                set_ = Set(id=uuid.uuid4())
+                                found = False
+
+                            if parse_dl_set(
+                                db, batcher, pageid, set_, data, raw_data, dl_settable
+                            ):
+                                db.add_set(set_)
+                                if found:
+                                    n_found += 1
+                                else:
+                                    n_new += 1
+
+                        if not settables and not md_settables and not dl_settables:
                             logging.warn(
                                 f"Found set without set table: {batcher.idsToNames[pageid]}"
                             )
