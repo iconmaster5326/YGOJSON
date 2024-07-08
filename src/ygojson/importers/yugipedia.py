@@ -23,7 +23,7 @@ TIME_TO_JUST_REDOWNLOAD_ALL_PAGES = 30 * 24 * 60 * 60  # 1 month-ish
 _last_access = time.time()
 
 
-def make_request(rawparams: typing.Dict[str, str]) -> requests.Response:
+def make_request(rawparams: typing.Dict[str, str], n_tries=0) -> requests.Response:
     now = time.time()
     while (now - _last_access) <= RATE_LIMIT:
         time.sleep(now - _last_access)
@@ -37,22 +37,28 @@ def make_request(rawparams: typing.Dict[str, str]) -> requests.Response:
     params.update(rawparams)
 
     # logging.debug(f"Making request: {json.dumps(params)}")
-    response = requests.get(
-        API_URL,
-        params=params,
-        headers={
-            "User-Agent": f"YGOJSON/{SCHEMA_VERSION} (https://github.com/iconmaster5326/YGOJSON)"
-        },
-    )
-    if not response.ok:
-        # timeout; servers must be hammered
-        # wait an extended period of time and try again
-
-        # logging.debug(f"Got bad response code: {response.status_code}")
-        time.sleep(RATE_LIMIT * 10)
-        return make_request(rawparams)
-    # logging.debug(f"Got response: {response.text}")
-    return response
+    try:
+        response = requests.get(
+            API_URL,
+            params=params,
+            headers={
+                "User-Agent": f"YGOJSON/{SCHEMA_VERSION} (https://github.com/iconmaster5326/YGOJSON)"
+            },
+            timeout=13,
+        )
+        if not response.ok:
+            # timeout; servers must be hammered
+            logging.error(
+                f"Yugipedia server returned {response.status_code}: {response.reason}; waiting and retrying..."
+            )
+            time.sleep(RATE_LIMIT * 30)
+            return make_request(rawparams, n_tries + 1)
+        # logging.debug(f"Got response: {response.text}")
+        return response
+    except requests.exceptions.Timeout:
+        logging.error("timeout; waiting and retrying...")
+        time.sleep(RATE_LIMIT * 30)
+        return make_request(rawparams, n_tries + 1)
 
 
 class WikiPage:
