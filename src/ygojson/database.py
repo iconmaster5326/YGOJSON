@@ -1521,6 +1521,7 @@ class Database:
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_DISTROS_DIR), desc="Importing pack distributions"
         ):
+            # TODO: replace MFIs with UUIDs in JSON before import
             if filename.endswith(".json"):
                 with open(
                     os.path.join(MANUAL_DISTROS_DIR, filename), encoding="utf-8"
@@ -1536,6 +1537,7 @@ class Database:
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_PRODUCTS_DIR), desc="Importing sealed products"
         ):
+            # TODO: replace MFIs with UUIDs in JSON before import
             if filename.endswith(".json"):
                 with open(
                     os.path.join(MANUAL_PRODUCTS_DIR, filename), encoding="utf-8"
