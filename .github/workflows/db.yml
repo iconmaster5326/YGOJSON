@@ -49,7 +49,6 @@ jobs:
     - name: Save Cached Data
       uses: actions/cache/save@v4.0.2
       continue-on-error: true
-      if: always()
       with:
         path: data
         key: data
