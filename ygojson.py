@@ -35,7 +35,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     parser.add_argument(
         "--individuals",
         type=str,
-        default="data",
+        default=os.path.join("data", "individual"),
         metavar="DIR",
         help="Directory for individual card/set/etc JSONs",
     )

@@ -15,6 +15,7 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 TEMP_DIR = os.path.join(ROOT_DIR, "temp")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 MANUAL_DATA_DIR = os.path.join(ROOT_DIR, "manual-data")
+INDIVIDUAL_DIR = os.path.join(DATA_DIR, "individual")
 AGGREGATE_DIR = os.path.join(DATA_DIR, "aggregate")
 META_FILENAME = "meta.json"
 
@@ -1237,7 +1238,10 @@ class Database:
     products_by_konami_pid: typing.Dict[int, SealedProduct]
 
     def __init__(
-        self, *, individuals_dir: str = DATA_DIR, aggregates_dir: str = AGGREGATE_DIR
+        self,
+        *,
+        individuals_dir: str = INDIVIDUAL_DIR,
+        aggregates_dir: str = AGGREGATE_DIR,
     ):
         self.individuals_dir = individuals_dir
         self.aggregates_dir = aggregates_dir
@@ -2075,7 +2079,7 @@ class Database:
 
 def load_database(
     *,
-    individuals_dir: str = DATA_DIR,
+    individuals_dir: str = INDIVIDUAL_DIR,
     aggregates_dir: str = AGGREGATE_DIR,
 ) -> Database:
     result = Database(aggregates_dir=aggregates_dir, individuals_dir=individuals_dir)
