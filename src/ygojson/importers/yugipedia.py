@@ -45,12 +45,12 @@ def make_request(rawparams: typing.Dict[str, str]) -> requests.Response:
         },
     )
     if not response.ok:
-        if response.status_code == 524:
-            # timeout; servers must be hammered
-            # wait an extended period of time and try again
-            time.sleep(RATE_LIMIT * 10)
-            return make_request(rawparams)
-        response.raise_for_status()
+        # timeout; servers must be hammered
+        # wait an extended period of time and try again
+
+        # logging.debug(f"Got bad response code: {response.status_code}")
+        time.sleep(RATE_LIMIT * 10)
+        return make_request(rawparams)
     # logging.debug(f"Got response: {response.text}")
     return response
 
