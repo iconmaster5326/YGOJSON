@@ -255,7 +255,8 @@ def _write_card(
     if not card.yugipedia_pages:
         card.yugipedia_pages = []
     if not any(x.id == yugipedia_id for x in card.yugipedia_pages):
-        card.yugipedia_pages.append(ExternalIdPair(None, yugipedia_id))
+        # TODO: validate that none of these ""s are left after Yugipedia runs
+        card.yugipedia_pages.append(ExternalIdPair("", yugipedia_id))
     card.db_id = in_json["konami_id"]
     card.yamlyugi_id = in_json["password"]
 

@@ -34,7 +34,7 @@ setuptools.setup(
     install_requires=["requests", "wikitextparser", "tqdm"],
     extras_require={
         "dev": ["pre-commit"],
-        "test": [],
+        "test": ["jsonschema"],
     },
     package_data={
         "ygojson": [],

@@ -425,7 +425,7 @@
         },
         "yamlyugiID": {
           "description": "The internal ID in YamlYugi for this card. Usually the password of the card, but may be an invented password, in the case of passwordless cards.",
-          "type": "string"
+          "type": "integer"
         }
       }
     },
