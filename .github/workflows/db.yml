@@ -90,7 +90,9 @@ jobs:
         dest: aggregate.zip
     - name: Get Latest Release
       id: latest_release
-      uses: jossef/action-latest-release-info@v1.2.2
+      uses: gregziegan/fetch-latest-release@v2.0.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload Individuals
       uses: csexton/release-asset-action@v3
       with:
