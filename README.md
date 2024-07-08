@@ -20,15 +20,38 @@ Special thanks goes out to [YGO Prog](https://www.ygoprog.com/) for their tirele
 
 # Using the Database
 
-*(TODO: download instructions?)*
 *(TODO: how often is the database generated?)*
 
-Depending on how you downloaded it, you may have access to two different folders:
+There are several methods of consuming the database. To get the files, you can either:
+
+* Download a ZIP file [here](https://github.com/iconmaster5326/YGOJSON/releases/latest)
+* Download the raw JSON files on the [indiviual](https://github.com/iconmaster5326/YGOJSON/tree/v1/individual) and [aggregate](https://github.com/iconmaster5326/YGOJSON/tree/v1/aggregate) branches
+
+To get the ZIP files in an automated fashion, fetch the following URLs:
+
+* For a individualized ZIP file: https://github.com/iconmaster5326/YGOJSON/releases/download/v1/individual.zip
+* For a aggregated ZIP file: https://github.com/iconmaster5326/YGOJSON/releases/download/v1/aggregate.zip
+
+If you don't want everything, or don't want to unzip things, just fetch the following URLs for indiviudal things, with `cards` replaced by the type of things you want, and the UUID replaced with your UUID:
+
+* For individual card JSON files: https://raw.githubusercontent.com/iconmaster5326/YGOJSON/v1/individual/cards/00045021-f0d3-4473-8bbc-8aa6504d3562.json
+* For a list of all card UUIDs: https://raw.githubusercontent.com/iconmaster5326/YGOJSON/v1/individual/cards.json
+* For all information for all cards: https://raw.githubusercontent.com/iconmaster5326/YGOJSON/v1/aggregate/cards.json
+
+You may have noticed the two different ways of getting the data: individual and aggregate. The differences between the two are as follows:
 
 * `individual`: Each card, set, etc. is in its own JSON file, whose filename is its UUID.
 * `aggregate`: Every card, set, etc. is in one JSON file.
 
 Within each folder should be the data you need. Check out the [JSON schema](https://json-schema.org/) for all this data [here](schema/v1/).
+
+We have the following things available for you:
+
+* `cards`: Yugioh cards. This includes tokens and Speed Duel skill cards. This does NOT include Rush Duel cards, and does NOT include video-game exclusive cards.
+* `sets`: Yugioh products such as booster packs, decks, and sets of promotional cards.
+* `series`: Information about archetypes and series.
+* `sealedProducts`: Sealed products are things like booster boxes, tins, and other things that consist of a mix of packs.
+* `distributions`: Pack odds information for sets. You can use this to figure out how to make random packs of sets accurately.
 
 # Generating the Database
 
