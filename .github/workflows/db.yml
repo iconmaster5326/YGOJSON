@@ -97,11 +97,11 @@ jobs:
       uses: csexton/release-asset-action@v3
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        upload-url: ${{ steps.latest_release.outputs.upload_url }}
-        release-url: individual.zip
+        release-url: ${{ steps.latest_release.outputs.upload_url }}
+        file: individual.zip
     - name: Upload Aggregates
       uses: csexton/release-asset-action@v3
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        upload-url: ${{ steps.latest_release.outputs.upload_url }}
-        release-url: aggregate.zip
+        release-url: ${{ steps.latest_release.outputs.upload_url }}
+        file: aggregate.zip
