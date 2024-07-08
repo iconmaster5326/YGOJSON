@@ -20,14 +20,16 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.8"
-    - name: Cache data
-      uses: actions/cache@v4.0.2
+    - name: Restore Cached Data
+      uses: actions/cache/restore@v4.0.2
+      continue-on-error: true
       with:
         path: data
         key: data
         enableCrossOsArchive: true
-    - name: Cache temp
-      uses: actions/cache@v4.0.2
+    - name: Restore Cached Temp
+      uses: actions/cache/restore@v4.0.2
+      continue-on-error: true
       with:
         path: temp
         key: temp
@@ -44,6 +46,22 @@ jobs:
     - name: Test
       run: |
         python test/validate_data.py
+    - name: Save Cached Data
+      uses: actions/cache/save@v4.0.2
+      continue-on-error: true
+      if: always()
+      with:
+        path: data
+        key: data
+        enableCrossOsArchive: true
+    - name: Save Cached Temp
+      uses: actions/cache/save@v4.0.2
+      continue-on-error: true
+      if: always()
+      with:
+        path: temp
+        key: temp
+        enableCrossOsArchive: true
     - name: Push Individuals
       uses: s0/git-publish-subdir-action@v2.6.0
       env:
