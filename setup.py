@@ -6,11 +6,10 @@ import setuptools.command.build_py
 import setuptools.command.install
 import setuptools.command.sdist
 
-from src.ygojson.version import __version__
-
 here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8")
 
+exec((here / "src" / "ygojson" / "version.py").read_text(encoding="utf-8"))
 
 setuptools.setup(
     name="ygojson",
