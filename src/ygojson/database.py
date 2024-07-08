@@ -768,17 +768,26 @@ class SealedProductLocale:
         }
 
 
+class SealedProductPack:
+    set: "Set"
+    card: typing.Optional["Card"]
+
+    def __init__(self, *, set: "Set", card: typing.Optional["Card"] = None) -> None:
+        self.set = set
+        self.card = card
+
+
 class SealedProductContents:
     locales: typing.List[SealedProductLocale]
     image: typing.Optional[str]
-    packs: typing.Dict["Set", int]
+    packs: typing.Dict[SealedProductPack, int]
 
     def __init__(
         self,
         *,
         image: typing.Optional[str] = None,
         locales: typing.Optional[typing.List[SealedProductLocale]] = None,
-        packs: typing.Optional[typing.Dict["Set", int]] = None,
+        packs: typing.Optional[typing.Dict[SealedProductPack, int]] = None,
     ) -> None:
         self.image = image
         self.locales = locales or []
@@ -789,7 +798,11 @@ class SealedProductContents:
             **({"locales": [x.key for x in self.locales]} if self.locales else {}),
             **({"image": self.image} if self.image else {}),
             "packs": [
-                {"set": str(k.id), **({"qty": v} if v != 1 else {})}
+                {
+                    "set": str(k.set.id),
+                    **({"card": str(k.card.id)} if k.card else {}),
+                    **({"qty": v} if v != 1 else {}),
+                }
                 for k, v in self.packs.items()
             ],
         }
@@ -2044,9 +2057,12 @@ class Database:
                     image=rawcontents.get("image"),
                     locales=[locales[x] for x in rawcontents.get("locales", [])],
                     packs={
-                        self.sets_by_id[uuid.UUID(rawpack["set"])]: rawpack.get(
-                            "qty", 1
-                        )
+                        SealedProductPack(
+                            set=self.sets_by_id[uuid.UUID(rawpack["set"])],
+                            card=self.cards_by_id[uuid.UUID(rawpack["card"])]
+                            if "card" in rawpack
+                            else None,
+                        ): rawpack.get("qty", 1)
                         for rawpack in rawcontents["packs"]
                     },
                 )

@@ -108,6 +108,11 @@
                   "type": "string",
                   "format": "uuid"
                 },
+                "card": {
+                  "description": "A UUID of a card (NOT a printing). If specified, indicates that this is a single card from a set, rather than a pack itself.",
+                  "type": "string",
+                  "format": "uuid"
+                },
                 "qty": {
                   "description": "The number of packs of this type we're including in this product. Default 1.",
                   "type": "integer"
