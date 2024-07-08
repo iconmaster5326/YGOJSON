@@ -11,7 +11,9 @@ import tqdm
 
 SCHEMA_VERSION = 1
 
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+ROOT_DIR = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), os.pardir, os.pardir)
+)
 TEMP_DIR = os.path.join(ROOT_DIR, "temp")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 MANUAL_DATA_DIR = os.path.join(ROOT_DIR, "manual-data")

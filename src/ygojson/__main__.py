@@ -4,11 +4,7 @@ import os.path
 import sys
 import typing
 
-from src.database import *
-from src.importers.yamlyugi import import_from_yaml_yugi
-from src.importers.ygoprodeck import import_from_ygoprodeck
-from src.importers.yugipedia import import_from_yugipedia
-from src.version import __version__
+from ygojson import *
 
 
 def main(argv: typing.Optional[typing.List[str]] = None) -> int:

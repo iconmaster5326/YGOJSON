@@ -6,7 +6,7 @@ import setuptools.command.build_py
 import setuptools.command.install
 import setuptools.command.sdist
 
-from src.version import __version__
+from src.ygojson.version import __version__
 
 here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8")
@@ -28,20 +28,19 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
     ],
     keywords="yugioh,ygo,ygojson",
-    packages=setuptools.find_packages(),
-    py_modules=[],
+    packages=setuptools.find_packages("src"),
     python_requires=">=3.8, <4",
     install_requires=["requests", "wikitextparser", "tqdm"],
     extras_require={
         "dev": ["pre-commit"],
         "test": ["jsonschema"],
     },
-    package_data={
-        "ygojson": [],
+    package_dir={
+        "": "src",
     },
     entry_points={
         "console_scripts": [
-            "ygojson=ygojson:main",
+            "ygojson=ygojson.__main__:main",
         ],
     },
 )
