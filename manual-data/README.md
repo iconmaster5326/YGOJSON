@@ -18,5 +18,13 @@ The fields allowable in a MFI include:
     "yugipediaID": 12345678,                      // Yugipedia page ID
     "yugipediaName": "Pot of Greed",              // Yugipedia page title
     "yamlyugi": 12345678,                         // Yaml Yugi password
+
+    // The following are for locating printings ONLY.
+
+    "set": {"name": "The Pot Collection"},        // MFI pointing to a set that contains a printing
+    "locale": "en",                               // Locale a printing can be found in
+    "edition": "first",                           // Edition a printing can be found in
+    "rarity": "rare",                             // Rarity of a printing
+    "code": "SDK-EN001",                          // Full set code of a printing
 }
 ```

@@ -1153,6 +1153,11 @@ class ManualFixupIdentifier:
     yugipedia_id: typing.Optional[int]
     yugipedia_name: typing.Optional[str]
     yamlyugi: typing.Optional[int]
+    set: typing.Optional["ManualFixupIdentifier"]
+    locale: typing.Optional[str]
+    edition: typing.Optional[SetEdition]
+    rarity: typing.Optional[CardRarity]
+    code: typing.Optional[str]
 
     def __init__(self, in_json) -> None:
         self.id = None
@@ -1163,6 +1168,11 @@ class ManualFixupIdentifier:
         self.yugipedia_id = None
         self.yugipedia_name = None
         self.yamlyugi = None
+        self.set = None
+        self.locale = None
+        self.edition = None
+        self.rarity = None
+        self.code = None
 
         if type(in_json) is str:
             # either ID or name, let's find out
@@ -1179,6 +1189,15 @@ class ManualFixupIdentifier:
             self.yugipedia_id = in_json.get("yugipediaID")
             self.yugipedia_name = in_json.get("yugipediaName")
             self.yamlyugi = in_json.get("yamlyugi")
+            self.set = (
+                ManualFixupIdentifier(in_json["set"]) if "set" in in_json else None
+            )
+            self.locale = in_json.get("locale")
+            self.edition = (
+                SetEdition(in_json["edition"]) if "edition" in in_json else None
+            )
+            self.rarity = CardRarity(in_json["rarity"]) if "rarity" in in_json else None
+            self.code = in_json.get("code")
         else:
             raise ValueError(f"Bad manual-fixup identifier: {json.dumps(in_json)}")
 
@@ -1194,6 +1213,11 @@ class ManualFixupIdentifier:
             **({"yugipediaID": self.yugipedia_id} if self.yugipedia_id else {}),
             **({"yugipediaName": self.yugipedia_name} if self.yugipedia_name else {}),
             **({"yamlyugi": self.yamlyugi} if self.yamlyugi else {}),
+            **({"set": self.set.to_json()} if self.set else {}),
+            **({"locale": self.locale} if self.locale else {}),
+            **({"edition": self.edition.value} if self.edition else {}),
+            **({"rarity": self.rarity.value} if self.rarity else {}),
+            **({"code": self.code} if self.code else {}),
         }
         if len(as_dict) == 2 and "id" in as_dict and "name" in as_dict:
             return str(self.id or self.name)
