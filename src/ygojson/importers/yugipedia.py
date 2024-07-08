@@ -2480,6 +2480,8 @@ def import_from_yugipedia(
 
                 do(pageid)
 
+            batcher.saveCachesToDisk()
+
         if import_sets:
             sets: typing.List[int]
             if db.last_yugipedia_read is not None:
@@ -2604,6 +2606,8 @@ def import_from_yugipedia(
                             return
 
                 do(setid)
+
+            batcher.saveCachesToDisk()
 
         if import_series:
             series: typing.List[int]
