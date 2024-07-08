@@ -1,0 +1,86 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Generate/Upload Database
+
+on: [] # manual-only for now, for testing purposes
+  # schedule:
+  #  - cron: 0 0 * * 0
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.8"
+    - name: Cache data
+      uses: actions/cache@v4.0.2
+      with:
+        path: data
+        key: data
+        enableCrossOsArchive: true
+    - name: Cache temp
+      uses: actions/cache@v4.0.2
+      with:
+        path: temp
+        key: temp
+        enableCrossOsArchive: true
+    - name: Install YGOJSON
+      run: |
+        python -m pip -e .[dev,test]
+    - name: Lint
+      run: |
+        pre-commit run --all-files
+    - name: Run YGOJSON
+      run: |
+        ygojson
+    - name: Test
+      run: |
+        python test/validate_data.py
+    - name: Push Individuals
+      uses: s0/git-publish-subdir-action@v2.6.0
+      env:
+        REPO: self
+        BRANCH: v1/individual # update this when we have new schema versions
+        FOLDER: data/individual
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SQUASH_HISTORY: true
+    - name: Push Aggregates
+      uses: s0/git-publish-subdir-action@v2.6.0
+      env:
+        REPO: self
+        BRANCH: v1/aggregate  # update this when we have new schema versions
+        FOLDER: data/aggregate
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SQUASH_HISTORY: true
+    - name: Archive Individuals
+      uses: vimtor/action-zip@v1.2
+      with:
+        files: data/individual
+        dest: individual.zip
+    - name: Archive Aggregates
+      uses: vimtor/action-zip@v1.2
+      with:
+        files: data/aggregate
+        dest: aggregate.zip
+    - name: Get Latest Release
+      id: latest_release
+      uses: jossef/action-latest-release-info@v1.2.2
+    - name: Upload Individuals
+      uses: csexton/release-asset-action@v3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        upload-url: ${{ steps.latest_release.outputs.upload_url }}
+        release-url: individual.zip
+    - name: Upload Aggregates
+      uses: csexton/release-asset-action@v3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        upload-url: ${{ steps.latest_release.outputs.upload_url }}
+        release-url: aggregate.zip
