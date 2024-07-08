@@ -34,7 +34,7 @@ jobs:
         enableCrossOsArchive: true
     - name: Install YGOJSON
       run: |
-        python -m pip -e .[dev,test]
+        python -m pip install -e .[dev,test]
     - name: Lint
       run: |
         pre-commit run --all-files
