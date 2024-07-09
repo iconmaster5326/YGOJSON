@@ -51,7 +51,7 @@ We have the following things available for you:
 * `sealedProducts`: Sealed products are things like booster boxes, tins, and other things that consist of a mix of packs.
 * `distributions`: Pack odds information for sets. You can use this to figure out how to make random packs of sets accurately.
 
-The data is regenerated every *TODO* from our primary sources. So if you don't see the latest new cards in the database yet, wait a bit!
+The data is regenerated from our sources every day at midnight. So if you don't see the latest new cards in the database yet, wait a bit!
 
 # Generating the Database
 
