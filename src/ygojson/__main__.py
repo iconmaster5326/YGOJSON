@@ -38,14 +38,14 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     parser.add_argument(
         "--individuals",
         type=str,
-        default=os.path.join("data", "individual"),
+        default=INDIVIDUAL_DIR,
         metavar="DIR",
         help="Directory for individual JSONs, or the empty string to disable",
     )
     parser.add_argument(
         "--aggregates",
         type=str,
-        default=os.path.join("data", "aggregate"),
+        default=AGGREGATE_DIR,
         metavar="DIR",
         help="Directory for aggregate JSONs, or the empty string to disable",
     )

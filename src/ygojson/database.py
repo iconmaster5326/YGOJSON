@@ -19,10 +19,10 @@ ROOT_DIR = os.path.abspath(
 )
 """The directory at which YGOJSON is installed."""
 
-TEMP_DIR = os.path.join(ROOT_DIR, "temp")
+TEMP_DIR = os.path.join(ROOT_DIR if os.access(ROOT_DIR, os.W_OK) else os.curdir, "temp")
 """A temporary directory in which to place cache files. Very important for caching Yugipedia!"""
 
-DATA_DIR = os.path.join(ROOT_DIR, "data")
+DATA_DIR = os.path.join(ROOT_DIR if os.access(ROOT_DIR, os.W_OK) else os.curdir, "data")
 """The default directory JSON data is placed into."""
 
 MANUAL_DATA_DIR = os.path.join(ROOT_DIR, "manual-data")
