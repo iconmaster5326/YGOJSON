@@ -1181,7 +1181,7 @@ class ManualFixupIdentifier:
             except ValueError:
                 self.name = in_json
         elif type(in_json) is dict:
-            self.id = in_json.get("id")
+            self.id = uuid.UUID(in_json["id"]) if "id" in in_json else None
             self.name = in_json.get("name")
             self.konami_id = in_json.get("konamiID")
             self.ygoprodeck_id = in_json.get("ygoprodeckID")
@@ -1444,6 +1444,86 @@ class Database:
             result = self.distros_by_name.get(mfi.name, result)
         return result
 
+    def lookup_printing(
+        self, mfi: ManualFixupIdentifier
+    ) -> typing.Optional[CardPrinting]:
+        results: typing.Set[CardPrinting] = set()
+
+        if mfi.id:
+            result = self.printings_by_id.get(mfi.id)
+            if result:
+                results.add(result)
+
+        if mfi.set:
+            set_ = self.lookup_set(mfi.set)
+            if set_:
+                printing_to_contents = {
+                    p: c for c in set_.contents for p in [*c.cards, *c.removed_cards]
+                }
+
+                for content in set_.contents:
+                    for printing in [*content.cards, *content.removed_cards]:
+                        results.add(printing)
+
+                card: typing.Optional[Card] = None
+                if mfi.name:
+                    card = self.cards_by_en_name.get(mfi.name)
+                if card:
+                    for result in [*results]:
+                        if result.card != card:
+                            results.remove(printing)
+
+                if mfi.code:
+                    for locale in set_.locales.values():
+                        for result in [*results]:
+                            if (locale.prefix or "") + (
+                                printing.suffix or ""
+                            ) != mfi.code:
+                                results.remove(printing)
+
+                if mfi.locale:
+                    for result in [*results]:
+                        if (
+                            set_.locales[mfi.locale]
+                            not in printing_to_contents[result].locales
+                        ):
+                            results.remove(printing)
+
+                if mfi.edition:
+                    for result in [*results]:
+                        if (
+                            SetEdition(mfi.edition)
+                            not in printing_to_contents[result].editions
+                        ):
+                            results.remove(printing)
+
+                if mfi.rarity:
+                    for result in [*results]:
+                        if result.rarity != CardRarity(mfi.rarity):
+                            results.remove(printing)
+
+        if len(results) == 0:
+            return None
+        if len(results) > 1:
+            raise Exception(f"Ambiguous printing MFI: {json.dumps(mfi.to_json())}")
+        return next(iter(results))
+
+    def lookup_card(self, mfi: ManualFixupIdentifier) -> typing.Optional[Card]:
+        result = None
+        if not result and mfi.id:
+            result = self.cards_by_id.get(mfi.id, result)
+        if not result and mfi.konami_id:
+            result = self.cards_by_konami_cid.get(mfi.konami_id, result)
+        if not result and mfi.ygoprodeck_id:
+            result = self.cards_by_ygoprodeck_id.get(mfi.ygoprodeck_id, result)
+        if not result and mfi.yugipedia_id:
+            result = self.cards_by_yugipedia_id.get(mfi.yugipedia_id, result)
+        if not result and mfi.yamlyugi:
+            result = self.cards_by_yamlyugi.get(mfi.yamlyugi, result)
+        if not result and mfi.name:
+            result = self.cards_by_en_name.get(mfi.name, result)
+        return result
+
     def manually_fixup_sets(self):
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_SETS_DIR), desc="Applying manual fixups to sets"
@@ -1521,12 +1601,43 @@ class Database:
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_DISTROS_DIR), desc="Importing pack distributions"
         ):
-            # TODO: replace MFIs with UUIDs in JSON before import
             if filename.endswith(".json"):
                 with open(
                     os.path.join(MANUAL_DISTROS_DIR, filename), encoding="utf-8"
                 ) as infile:
                     in_json = json.load(infile)
+
+                    for in_slot in in_json["slots"]:
+                        if in_slot["type"] == "pool":
+                            if "set" in in_slot:
+                                set_ = self.lookup_set(
+                                    ManualFixupIdentifier(in_slot["set"])
+                                )
+                                if not set_:
+                                    raise Exception(
+                                        f"In pack distrobution {filename}: Set not found: {json.dumps(in_slot['set'])}"
+                                    )
+                                in_slot["set"] = str(set_.id)
+                        elif in_slot["type"] == "guaranteedPrintings":
+                            for i, in_printing in enumerate([*in_slot["printings"]]):
+                                printing = self.lookup_printing(
+                                    ManualFixupIdentifier(in_printing)
+                                )
+                                if not printing:
+                                    raise Exception(
+                                        f"In pack distrobution {filename}: Printing not found: {in_printing}"
+                                    )
+                                in_slot["printings"][i] = str(printing.id)
+                        elif in_slot["type"] == "guaranteedSet":
+                            set_ = self.lookup_set(
+                                ManualFixupIdentifier(in_slot["set"])
+                            )
+                            if not set_:
+                                raise Exception(
+                                    f"In pack distrobution {filename}: Set not found: {json.dumps(in_slot['set'])}"
+                                )
+                            in_slot["set"] = str(set_.id)
+
                     in_id = uuid.UUID(in_json["id"])
                     if in_id in self.distros_by_id:
                         self.distros = [x for x in self.distros if x.id != in_id]
@@ -1537,12 +1648,32 @@ class Database:
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_PRODUCTS_DIR), desc="Importing sealed products"
         ):
-            # TODO: replace MFIs with UUIDs in JSON before import
             if filename.endswith(".json"):
                 with open(
                     os.path.join(MANUAL_PRODUCTS_DIR, filename), encoding="utf-8"
                 ) as infile:
                     in_json = json.load(infile)
+
+                    for in_content in in_json["contents"]:
+                        for in_pack in in_content["packs"]:
+                            set_ = self.lookup_set(
+                                ManualFixupIdentifier(in_pack["set"])
+                            )
+                            if not set_:
+                                raise Exception(
+                                    f"In sealed product {filename}: Set not found: {json.dumps(in_pack['set'])}"
+                                )
+                            in_pack["set"] = str(set_.id)
+
+                            card = self.lookup_card(
+                                ManualFixupIdentifier(in_pack["card"])
+                            )
+                            if not card:
+                                raise Exception(
+                                    f"In sealed product {filename}: Card not found: {json.dumps(in_pack['card'])}"
+                                )
+                            in_pack["card"] = str(card.id)
+
                     in_id = uuid.UUID(in_json["id"])
                     if in_id in self.products_by_id:
                         self.products = [x for x in self.products if x.id != in_id]
