@@ -9,6 +9,12 @@ from ygojson.version import __version__
 
 
 def main(argv: typing.Optional[typing.List[str]] = None) -> int:
+    """The main function to the YGOJSON CLI.
+
+    :param argv: The arguments list, as given by `sys.argv`.
+    :return: The return code, as given to `sys.exit`.
+    """
+
     argv = argv or sys.argv
     parser = argparse.ArgumentParser(
         argv[0], description="Generates and queries the YGOJSON database"

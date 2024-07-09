@@ -12,43 +12,89 @@ import requests
 import tqdm
 
 SCHEMA_VERSION = 1
+"""The version of the JSON schema we are currently at."""
 
 ROOT_DIR = os.path.abspath(
     os.path.join(os.path.dirname(__file__), os.pardir, os.pardir)
 )
+"""The directory at which YGOJSON is installed."""
+
 TEMP_DIR = os.path.join(ROOT_DIR, "temp")
+"""A temporary directory in which to place cache files. Very important for caching Yugipedia!"""
+
 DATA_DIR = os.path.join(ROOT_DIR, "data")
+"""The default directory JSON data is placed into."""
+
 MANUAL_DATA_DIR = os.path.join(ROOT_DIR, "manual-data")
+"""The root directory of manual fixups."""
+
 INDIVIDUAL_DIR = os.path.join(DATA_DIR, "individual")
+"""The default directory individualized JSON data is placed into."""
+
 AGGREGATE_DIR = os.path.join(DATA_DIR, "aggregate")
+"""The default directory aggregated JSON data is placed into."""
+
 META_FILENAME = "meta.json"
+"""The filename of the meta JSON, containing meta-information for the database."""
 
 CARDLIST_FILENAME = "cards.json"
+"""The filename of the card list, for individualized JSON output."""
+
 CARDS_DIRNAME = "cards"
+"""The sub-directory of `INDIVIDUAL_DIR` in which individualized card JSON is placed."""
+
 AGG_CARDS_FILENAME = "cards.json"
+"""The filename of the card list, for aggregated JSON output."""
 
 SETLIST_FILENAME = "sets.json"
+"""The filename of the set list, for individualized JSON output."""
+
 SETS_DIRNAME = "sets"
+"""The sub-directory of `INDIVIDUAL_DIR` in which individualized set JSON is placed."""
+
 AGG_SETS_FILENAME = "sets.json"
+"""The filename of the set list, for aggregated JSON output."""
 
 SERIESLIST_FILENAME = "series.json"
+"""The filename of the series list, for individualized JSON output."""
+
 SERIES_DIRNAME = "series"
+"""The sub-directory of `INDIVIDUAL_DIR` in which individualized series JSON is placed."""
+
 AGG_SERIES_FILENAME = "series.json"
+"""The filename of the series list, for aggregated JSON output."""
 
 DISTROLIST_FILENAME = "distributions.json"
+"""The filename of the distribution list, for individualized JSON output."""
+
 DISTROS_DIRNAME = "distributions"
+"""The sub-directory of `INDIVIDUAL_DIR` in which individualized distribution JSON is placed."""
+
 AGG_DISTROS_FILENAME = "distributions.json"
+"""The filename of the distribution list, for aggregated JSON output."""
 
 PRODUCTLIST_FILENAME = "sealedProducts.json"
+"""The filename of the sealed product list, for individualized JSON output."""
+
 PRODUCTS_DIRNAME = "sealedProducts"
+"""The sub-directory of `INDIVIDUAL_DIR` in which individualized sealed product JSON is placed."""
+
 AGG_PRODUCTS_FILENAME = "sealedProducts.json"
+"""The filename of the sealed product list, for aggregated JSON output."""
 
 MANUAL_SETS_DIR = os.path.join(MANUAL_DATA_DIR, "sets")
+"""The directory containing manual set fixup data."""
+
 MANUAL_DISTROS_DIR = os.path.join(MANUAL_DATA_DIR, "distributions")
+"""The directory containing manual distribution fixup data."""
+
 MANUAL_PRODUCTS_DIR = os.path.join(MANUAL_DATA_DIR, "sealed-products")
+"""The directory containing manual sealed product fixup data."""
 
 
 class CardType(enum.Enum):
+    """The overarching type of :class:`Card`: Monster, spell, trap, etc."""
+
     MONSTER = "monster"
     SPELL = "spell"
     TRAP = "trap"
@@ -57,6 +103,8 @@ class CardType(enum.Enum):
 
 
 class Attribute(enum.Enum):
+    """The attribute of monster/token :class:`Card`s."""
+
     LIGHT = "light"
     DARK = "dark"
     FIRE = "fire"
@@ -67,6 +115,8 @@ class Attribute(enum.Enum):
 
 
 class MonsterCardType(enum.Enum):
+    """The summoning type of a monster :class:`Card`: Ritual, fusion, xyz, etc."""
+
     RITUAL = "ritual"
     FUSION = "fusion"
     SYNCHRO = "synchro"
@@ -76,6 +126,8 @@ class MonsterCardType(enum.Enum):
 
 
 class Race(enum.Enum):
+    """The type of a monster :class:`Card`: Beast, zombie, cyberse, etc."""
+
     BEASTWARRIOR = "beastwarrior"
     ZOMBIE = "zombie"
     FIEND = "fiend"
@@ -105,6 +157,8 @@ class Race(enum.Enum):
 
 
 class Classification(enum.Enum):
+    """A classification of a monster :class:`Card`: Normal, effect, tuner, etc."""
+
     NORMAL = "normal"
     EFFECT = "effect"
     PENDULUM = "pendulum"
@@ -113,6 +167,8 @@ class Classification(enum.Enum):
 
 
 class Ability(enum.Enum):
+    """An ability word of a monster :class:`Card`: Toon, spirit, etc."""
+
     TOON = "toon"
     SPIRIT = "spirit"
     UNION = "union"
@@ -121,6 +177,8 @@ class Ability(enum.Enum):
 
 
 class LinkArrow(enum.Enum):
+    """A link arrow in `MonsterCardType.LINK` monster :class:`Card`s."""
+
     TOPLEFT = "topleft"
     TOPCENTER = "topcenter"
     TOPRIGHT = "topright"
@@ -132,6 +190,8 @@ class LinkArrow(enum.Enum):
 
 
 class SubCategory(enum.Enum):
+    """A category of spell/trap :class:`Card`s."""
+
     NORMAL = "normal"
     CONTINUOUS = "continuous"
     EQUIP = "equip"
@@ -142,20 +202,38 @@ class SubCategory(enum.Enum):
 
 
 class Legality(enum.Enum):
-    # OCG/TCG
+    """The state of legality for a :class:`Card` in a particular format."""
+
     UNLIMITED = "unlimited"
+    """Allowed at 3 copies."""
+
     SEMILIMITED = "semilimited"
+    """Allowed at 2 copies."""
+
     LIMITED = "limited"
+    """Allowed at 1 copy."""
+
     FORBIDDEN = "forbidden"
-    # speed duel
+    """Banned, illegal, or otherwise unable to be played."""
+
     LIMIT1 = "limit1"
+    """A maximum of one Limit 1 card can be in a deck. Speed Duel / Duel Links only."""
+
     LIMIT2 = "limit2"
+    """A maximum of two Limit 1 cards can be in a deck. Speed Duel / Duel Links only."""
+
     LIMIT3 = "limit3"
-    # other
+    """A maximum of three Limit 1 cards can be in a deck. Speed Duel / Duel Links only."""
+
     UNRELEASED = "unreleased"
+    """It will be in this format when it releases, but it is not yet released."""
 
 
 class Format(enum.Enum):
+    """A format in which Yugioh :class:`CardPrinting`s are printed into.
+    This is NOT for banlist information, as those can be divided per-locale,
+    but is used for :class:`Set` printing information."""
+
     OCG = "ocg"
     TCG = "tcg"
     SPEED = "speed"
@@ -164,6 +242,8 @@ class Format(enum.Enum):
 
 
 class VideoGameRaity(enum.Enum):
+    """The rarity of a :class:`Card` in Master Duel and/or Duel Links."""
+
     NORMAL = "n"
     RARE = "r"
     SUPER = "sr"
@@ -171,79 +251,151 @@ class VideoGameRaity(enum.Enum):
 
 
 class SetEdition(enum.Enum):
+    """The edition a :class:`Set` can be found in."""
+
     FIRST = "1st"
     UNLIMTED = "unlimited"
     LIMITED = "limited"
-    NONE = ""  # not part of the actual enum, but used when a set has no editions
+    NONE = ""
+    """not part of the enum proper, but used when a set has no editions."""
 
 
 class SpecialDistroType(enum.Enum):
+    """Some types of :class:`PackDistrobution` are hard-coded. These are those distributions."""
+
     PRECON = "preconstructed"
+    """Indicates that this is a starter deck or other non-randomized set of cards."""
 
 
 class SetBoxType(enum.Enum):
+    """Some booster boxes have different contents depending if they were sold for hobby stores or for retail."""
+
     HOBBY = "hobby"
     RETAIL = "retail"
 
 
 class CardRarity(enum.Enum):
+    """The rarity of a :class:`Card`.
+    We use the TCG name of a rarity here if there is an equivalent OCG rarity with a different name.
+    Some rarities, such as Super Short Print, aren't real, and a few others were never printed on real cards; those have been omitted here.
+    """
+
     COMMON = "common"
+    """Common."""
     SHORTPRINT = "shortprint"
+    """Short Print or Super Short Print."""
     RARE = "rare"
+    """Rare."""
     SUPER = "super"
+    """Super Rare."""
     ULTRA = "ultra"
+    """Ultra Rare."""
     ULTIMATE = "ultimate"
+    """Ultimate Rare."""
     SECRET = "secret"
+    """Secret Rare."""
     ULTRASECRET = "ultrasecret"
+    """Ultra Secret Rare."""
     PRISMATICSECRET = "prismaticsecret"
+    """Prismatic Secret Rare."""
     GHOST = "ghost"
+    """Ghost Rare or Holographic Rare."""
     PARALLEL = "parallel"
+    """Parellel Rare."""
     COMMONPARALLEL = "commonparallel"
+    """Parallel Common or Normal Parallel Rare."""
     RAREPARALLEL = "rareparallel"
+    """Rare Parallel Rare."""
     SUPERPARALLEL = "superparallel"
+    """Super Parallel Rare."""
     ULTRAPARALLEL = "ultraparallel"
+    """Ultra Parallel Rare."""
     DTPC = "dtpc"
+    """Duel Terminal Parallel Common or Duel Terminal Normal Parallel Rare."""
     DTPSP = "dtpsp"
+    """Duel Terminal Parallel Short Print or Duel Terminal Normal Rare Parallel Rare."""
     DTRPR = "dtrpr"
+    """Duel Terminal Rare Parallel Rare."""
     DTSPR = "dtspr"
+    """Duel Terminal Super Parallel Rare."""
     DTUPR = "dtupr"
+    """Duel Terminal Ultra Parallel Rare."""
     DTSCPR = "dtscpr"
+    """Duel Terminal Secret Parallel Rare."""
     GOLD = "gold"
+    """Gold Rare."""
     TENTHOUSANDSECRET = "10000secret"
+    """10,000 Secret Rare."""
     TWENTITHSECRET = "20thsecret"
+    """20th Anniversary Secret Rare."""
     COLLECTORS = "collectors"
+    """Collector's Rare."""
     EXTRASECRET = "extrasecret"
+    """Extra Secret Rare."""
     EXTRASECRETPARALLEL = "extrasecretparallel"
+    """Extra Secret Parallel Rare."""
     GOLDGHOST = "goldghost"
+    """Gold/Ghost Rare."""
     GOLDSECRET = "goldsecret"
+    """Gold Secret Rare."""
     STARFOIL = "starfoil"
+    """Starfoil Rare."""
     MOSAIC = "mosaic"
+    """Mosaic Rare."""
     SHATTERFOIL = "shatterfoil"
+    """Shatterfoil Rare."""
     GHOSTPARALLEL = "ghostparallel"
+    """Ghost Parallel Rare."""
     PLATINUM = "platinum"
+    """Platinum Rare."""
     PLATINUMSECRET = "platinumsecret"
+    """Platinum Secret Rare."""
     PREMIUMGOLD = "premiumgold"
+    """Premium Gold Rare."""
     TWENTYFIFTHSECRET = "25thsecret"
+    """25th Anniversary Secret Rare."""
     SECRETPARALLEL = "secretparallel"
+    """Parallel Secret Rare."""
     STARLIGHT = "starlight"
+    """Starlight Rare or Alternate Rare."""
     PHARAOHS = "pharaohs"
+    """Pharaoh's Ultra Rare."""
     KCCOMMON = "kccommon"
+    """Kaiba Corporation Common."""
     KCRARE = "kcrare"
+    """Kaiba Corporation Rare."""
     KCSUPER = "kcsuper"
+    """Kaiba Corporation Super Rare."""
     KCULTRA = "kcultra"
+    """Kaiba Corporation Ultra Rare."""
     KCSECRET = "kcsecret"
+    """Kaiba Corporation Secret Rare."""
     MILLENIUM = "millenium"
+    """Millenium Rare."""
     MILLENIUMSUPER = "milleniumsuper"
+    """Millenium Super Rare."""
     MILLENIUMULTRA = "milleniumultra"
+    """Millenium Ultra Rare."""
     MILLENIUMSECRET = "milleniumsecret"
+    """Millenium Secret Rare."""
     MILLENIUMGOLD = "milleniumgold"
+    """Millenium Gold Rare."""
 
 
 class CardText:
+    """Localized text that appears on a :class:`Card`."""
+
     name: str
+    """The name of this card in this locale."""
+
     effect: typing.Optional[str]
+    """The effect text or lore of this card in this locale."""
+
     pendulum_effect: typing.Optional[str]
+    """The upper box's effect text of this card in this locale. Only applicable to pendulum cards."""
+
     official: bool
+    """Whether or not this localization is official."""
 
     def __init__(
         self,
@@ -260,10 +412,25 @@ class CardText:
 
 
 class CardImage:
+    """A single possible art treatment of a :class:`Card`.
+    This is NOT for the image of each printing of a card;
+    this is for tracking when cards have multiple art treatments across multiple printings!
+    """
+
     id: uuid.UUID
+    """The UUID of this card's art treatment."""
+
     password: typing.Optional[str]
+    """The password this art treatment can be found on. May be None if it's on multiple passwords or the card has no password."""
+
     crop_art: typing.Optional[str]
+    """A URL to an image depicting an art crop of the particular art treatment."""
+
     card_art: typing.Optional[str]
+    """A URL to a generic image of the card with this art treatment.
+    This should be a generic image, like generated by YGOPRODECK,
+    and the individual card printing's image should be used instead of this one where possible.
+    """
 
     def __init__(
         self,
@@ -280,8 +447,13 @@ class CardImage:
 
 
 class LegalityPeriod:
+    """A period of time in which a :class:`Card` was of a certain :class:`Legality`."""
+
     legality: Legality
+    """The legality of the card."""
+
     date: datetime.date
+    """The date on which this legalty came into effect."""
 
     def __init__(
         self,
@@ -294,8 +466,16 @@ class LegalityPeriod:
 
 
 class CardLegality:
+    """Current and historical legality information for a :class:`Card`."""
+
     current: Legality
+    """What legality is this card currently?
+    This may be present even if the card has no history;
+    prefer this when you need to see the current legality, rather than looking up history.
+    """
+
     history: typing.List[LegalityPeriod]
+    """The history of limitations and unlimiations for this card."""
 
     def __init__(
         self,
@@ -308,6 +488,8 @@ class CardLegality:
 
 
 class ExternalIdPair:
+    """A name and ID pair, used on sites like Yugipedia and (occasionally) YGOPRODECK."""
+
     name: str
     id: int
 
@@ -317,37 +499,104 @@ class ExternalIdPair:
 
 
 class Card:
+    """A single Yugioh card or token. For information on printings of a card, see :class:`CardPrinting`."""
+
     id: uuid.UUID
+    """The UUID of the card."""
+
     text: typing.Dict[str, CardText]
+    """Localized text for the card, including the name, the effect/lore, and so on.
+    Keys are locale abbreviations: en, fr, ja, zh-CN, etc.
+    """
+
     card_type: CardType
+    """The type of this card: Monster, spell, trap, etc."""
+
     attribute: typing.Optional[Attribute]
+    """The attribute of this monster/token card, if known."""
+
     monster_card_types: typing.Optional[typing.List[MonsterCardType]]
+    """The summoning types of this monster card, if known: Ritual, fusion, xyz, etc."""
+
     type: typing.Optional[Race]
+    """The type of this monster/token card, if known: Beast, spellcaster, cyberse, etc."""
+
     classifications: typing.Optional[typing.List[Classification]]
+    """Any classifiers for this monster/token card, if known: Normal, effect, tuner, etc."""
+
     abilities: typing.Optional[typing.List[Ability]]
+    """Any abilities for this monster/token card, if known: Normal, toon, spirit, etc."""
+
     level: typing.Optional[int]
+    """The level of this monster/token card, if known. For XYZ monsters, see `Card.rank`."""
+
     rank: typing.Optional[int]
+    """The rank of this monster/token card, if known. For non-XYZ monsters, see `Card.level`."""
+
     atk: typing.Union[int, str, None]
+    """The ATK of this monster/token card, if known."""
+
     def_: typing.Union[int, str, None]
+    """The DEF of this monster/token card, if known. Not present on Link monsters."""
+
     scale: typing.Optional[int]
+    """The pendulum of this pendulum monster card, if known."""
+
     link_arrows: typing.Optional[typing.List[LinkArrow]]
+    """The link arrows on this link monster, if known."""
+
     subcategory: typing.Optional[SubCategory]
+    """The category of this spell/trap card, if known."""
+
     character: typing.Optional[str]
+    """The character this skill card corresponds to, if known."""
+
     skill_type: typing.Optional[str]
+    """The type of this skill card, if known."""
+
     passwords: typing.List[str]
+    """A list of all 8-digit passwords this card has been printed with."""
+
     images: typing.List[CardImage]
+    """All art treatments this card has been known to have been printed with."""
+
     sets: typing.List["Set"]
+    """Sets in which this card has appeared."""
+
     illegal: bool
+    """True if this card has been declared illegal in all formats.
+    Match winners, original god cards, etc. are illegal.
+    """
+
     legality: typing.Dict[str, CardLegality]
+    """Current legality status and legality history for the various formats: tcg, ocg, ocg-kr, masterduel, etc."""
+
     master_duel_rarity: typing.Optional[VideoGameRaity]
+    """The rarity of this card in Master Duel, if it is in Master Duel."""
+
     master_duel_craftable: typing.Optional[bool]
+    """If this card is craftable using dust or not, if it is in Master Duel."""
+
     duel_links_rarity: typing.Optional[VideoGameRaity]
+    """The rarity of this card in Duel Links, if it is in Duel Links."""
+
     yugipedia_pages: typing.Optional[typing.List[ExternalIdPair]]
+    """The Yugipedia page you can find this card on."""
+
     ygoprodeck: typing.Optional[ExternalIdPair]
+    """The YGOPRODECK page you can find this card on."""
+
     db_id: typing.Optional[int]
+    """The offiicial Konami ID for this card."""
+
     yugiohprices_name: typing.Optional[str]
+    """The YugiohPrices page you can find this card on. Not yet implemented."""
+
     yamlyugi_id: typing.Optional[int]
+    """The Yaml Yugi page you can find this card on."""
+
     series: typing.List["Series"]
+    """Any series or archetypes this card belongs to."""
 
     def __init__(
         self,
@@ -416,7 +665,7 @@ class Card:
         self.yamlyugi_id = yamlyugi_id
         self.series = series or []
 
-    def to_json(self) -> typing.Dict[str, typing.Any]:
+    def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
             "$schema": f"https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v{SCHEMA_VERSION}/card.json",
             "id": str(self.id),
@@ -549,8 +798,16 @@ class Card:
 
 
 class PackDistroWeight:
+    """A probability of finding a certain rarity of card."""
+
     rarities: typing.List[CardRarity]
+    """The rarities to draw from. If empty, draws from all rarities."""
+
     chance: int
+    """The chance of pulling this rarity, as a 1:X odds.
+    For example, a chance of 6 means you have a 1:6 chance of this card slot being this rarity.
+    Default 1, for a 1:1 (that is, guaranteed) chance.
+    """
 
     def __init__(
         self,
@@ -569,6 +826,8 @@ class PackDistroWeight:
 
 
 class PackDistroSlot:
+    """The base class for the different kinds of slots that can appear in a :class:`PackDistrobution`."""
+
     _slot_type_name: typing.ClassVar[str]
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
@@ -582,14 +841,37 @@ class PackDistroSlot:
 
 
 class PackDistroSlotPool(PackDistroSlot):
+    """This slot represents a pool of cards of certain rarities to randomly pick from in a :class:`PackDistrobution`."""
+
     _slot_type_name = "pool"
 
     set: typing.Optional["Set"]
+    """Overrides the set you are pulling cards from.
+    Used in palces like Master Duel Secret Packs, which have slots from Master packs.
+    """
+
     rarity: typing.List[PackDistroWeight]
+    """The rarities and the chances of pulling a card from each rarity."""
+
     qty: int
+    """The number of cards pulled to form this slot. Default 1."""
+
     card_types: typing.List[CardType]
+    """Some sets (old reprint sets, for one) only had monsters, spells, or traps in certain slots.
+    If one or more types are provided, we will only generate cards of the given types in this slot.
+    """
+
     duplicates: bool
+    """Most of the time, you can't get the same card twice at the same rarity in a pack, even if it's common.
+    (In physical sets, this is due to how printing sheets work, so it's not a 100% chance, but it might as well be for our purposes.)
+    If you want to override this deduplication behaviour, set this to `True`.
+    """
+
     proportionate: bool
+    """Normally, the probability table doesn't take into account the relative sizes of each pool.
+    When this field is `True`, the chances will be changed so that the probabilities will take into account said relative sizes.
+    This is used for dual common/short-print slots, for example.
+    """
 
     def __init__(
         self,
@@ -657,9 +939,14 @@ class PackDistroSlotPool(PackDistroSlot):
 
 
 class PackDistroSlotCards(PackDistroSlot):
+    """This slot represents a guaranteed set of cards that appear in the pack.
+    If you want a whole set to appear here, use :class:`PackDistroSlotSet` instead.
+    """
+
     _slot_type_name = "guaranteedPrintings"
 
     cards: typing.List["CardPrinting"]
+    """The card printing(s) that appear in this slot."""
 
     def __init__(
         self, cards: typing.Optional[typing.List["CardPrinting"]] = None
@@ -683,9 +970,14 @@ class PackDistroSlotCards(PackDistroSlot):
 
 
 class PackDistroSlotSet(PackDistroSlot):
+    """This slot represents a guaranteed set of cards that appear in the pack.
+    If you want less than the whole set to appear here, use :class:`PackDistroSlotCards` instead.
+    """
+
     _slot_type_name = "guaranteedSet"
 
     set: "Set"
+    """The set that appears in this slot."""
 
     def __init__(self, set: "Set") -> None:
         super().__init__()
@@ -714,12 +1006,21 @@ DISTRO_SLOT_TYPES: typing.Dict[str, typing.Type[PackDistroSlot]] = {
         PackDistroSlotSet,
     ]
 }
+"""A mapping of JSON distribtution slot names to classes."""
 
 
 class PackDistrobution:
+    """A pack distribution represents information on how packs of :class:`Set`s are pulled.
+    You can use this to simulate opening packs, boxes, and so on."""
+
     id: uuid.UUID
+    """The UUID of this pack distribution."""
+
     name: typing.Optional[str]
+    """The optional name of this pack distribution. Used only for human reference purposes, and means nothing."""
+
     slots: typing.List[PackDistroSlot]
+    """Slots of cards in this pack."""
 
     def __init__(
         self,
@@ -742,10 +1043,19 @@ class PackDistrobution:
 
 
 class SealedProductLocale:
+    """A locale in which a :class:`SealedProduct` was released."""
+
     key: str
+    """The short language code for this locale: en, fr, ae, etc."""
+
     date: typing.Optional[datetime.date]
+    """The date on which this product was released in this locale."""
+
     image: typing.Optional[str]
+    """A URL to an image of this product in this locale."""
+
     db_ids: typing.List[int]
+    """Any Konami official database IDs for this product in this locale."""
 
     def __init__(
         self,
@@ -771,8 +1081,13 @@ class SealedProductLocale:
 
 
 class SealedProductPack:
+    """A single component of a :class:`SealedProduct`, either a pack or a predetermined card."""
+
     set: "Set"
+    """The :class:`Set` the pack is from, or if `SealedProductPack.card` is specified, the set the card is from."""
+
     card: typing.Optional["Card"]
+    """If specified, then this is a single pretermined card rather than a whole pack."""
 
     def __init__(self, *, set: "Set", card: typing.Optional["Card"] = None) -> None:
         self.set = set
@@ -780,9 +1095,20 @@ class SealedProductPack:
 
 
 class SealedProductContents:
+    """The contents of a :class:`SealedProduct` across a given list of :class:`SealedProductLocale`s."""
+
     locales: typing.List[SealedProductLocale]
+    """The locales in which this product has these contents.
+    May be empty in the case of video-game-only products.
+    """
+
     image: typing.Optional[str]
+    """A URL to a generic image of this product.
+    Prefer per-locale images over this image!
+    """
+
     packs: typing.Dict[SealedProductPack, int]
+    """The contents of this product. Keys are packs. Values are how many of this pack appeared in this product."""
 
     def __init__(
         self,
@@ -811,12 +1137,30 @@ class SealedProductContents:
 
 
 class SealedProduct:
+    """A sealed product, such as a special booster box, collectible tin, or other hetereogenous mix of different packs and cards.
+    We do NOT store information about homogenous sealed products, such as normal booster boxes, here.
+    See `SetContents.packs_per_box` for that information.
+    """
+
     id: uuid.UUID
+    """The UUID of this sealed product."""
+
     date: typing.Optional[datetime.date]
+    """The date this product was released. Only used in video-game-only products."""
+
     name: typing.Dict[str, str]
+    """The localized name of this product. Keys are short locale codes: en, de, kr, etc."""
+
     locales: typing.Dict[str, SealedProductLocale]
+    """The locales in which this product was released.
+    Keys are short locale codes: en, de, kr, etc.
+    """
+
     contents: typing.List[SealedProductContents]
+    """The contents of this product in various locales. Video game products only have one entry here."""
+
     yugipedia: typing.Optional[ExternalIdPair]
+    """The Yugipedia page of this product, if known."""
 
     def __init__(
         self,
@@ -862,11 +1206,24 @@ class SealedProduct:
 
 
 class Series:
+    """This represents a series or archetype :class:`Card`s can belong to."""
+
     id: uuid.UUID
+    """The UUID of this series/archetype."""
+
     name: typing.Dict[str, str]
+    """The (sometimes unofficial) name of this series/archetype. Keys are short locale codes: en, es, it, etc."""
+
     archetype: bool
+    """`True` if this represents an archetype (that is, cards that share a common name),
+    and `False` if it represents a series (cards that share a common theme, but do not refer to each other by archetype).
+    """
+
     members: typing.Set[Card]
+    """The members of this series/archetype."""
+
     yugipedia: typing.Optional[ExternalIdPair]
+    """The Yugipedia page of this series/archetype, if known."""
 
     def __init__(
         self,
@@ -905,16 +1262,56 @@ class Series:
 
 
 class CardPrinting:
+    """A single printing of a :class:`Card` in a :class:`Set`."""
+
     id: uuid.UUID
+    """The UUID of this printing."""
+
     card: Card
+    """The card this printing represents."""
+
     suffix: typing.Optional[str]
+    """The suffix of the set code for this printing.
+    See `SetLocale.prefix` for the prefix of this set code,
+    which can be combined to form the full set code for this card.
+    Not present in video game sets.
+    """
+
     rarity: typing.Optional[CardRarity]
+    """The rarity of this card, if known. Not present in video game sets."""
+
     only_in_box: typing.Optional[SetBoxType]
+    """What kinds of booster boxes this printing appeared in.
+    (Some old sets only had some secret/ultimate rares in some types of booster box.)
+    Empty if not applicable.
+    """
+
     price: typing.Optional[float]
+    """Price information for this printing, if available.
+    All prices are the most recent available as of the creation of this database, and are normalized to USD.
+    No guarantees are made that this price is accurate, or that all sites were considered, or that all languages of this printing were considered.
+    NYI.
+    """
+
     language: typing.Optional[str]
+    """An override for the language this card was printed in.
+    This may be different than the locale's language in some very rare cases.
+    NYI.
+    """
+
     image: typing.Optional[CardImage]
+    """A URL to an image of this printing of this card."""
+
     replica: bool
+    """Some old sets included replicas of past cards.
+    If `True`, this card is a replica. Replicas are illegal for play.
+    """
+
     qty: int
+    """How many of this card was in this set.
+    Only useful for sets with the `SpecialDistroType.PRECON` distribution method.
+    Default 1.
+    """
 
     def __init__(
         self,
@@ -957,17 +1354,53 @@ class CardPrinting:
 
 
 class SetContents:
+    """The contents of a :class:`Set` across a given list of :class:`SetLocale`s."""
+
     locales: typing.List["SetLocale"]
+    """The locales in which this product has these contents.
+    May be empty in the case of video-game-only products.
+    """
+
     formats: typing.List[Format]
+    """What formats this product was released in: TCG, OCG, Master Duel, etc."""
+
     distrobution: typing.Union[None, SpecialDistroType, uuid.UUID]
+    """The pack distribution used to make packs of this set, if known.
+    A UUID of a :class:`PackDistrobution`, or a :class:`SpecialDistroType`.
+    """
+
     packs_per_box: typing.Optional[int]
+    """If this is a booster pack, this represents the number of packs of this that came in each booster box."""
+
     has_hobby_retail_differences: bool
+    """If this is a booster pack, this represents whether or not booster boxes made for retail sale were different than boxes made for hobby-shop sale."""
+
     editions: typing.List[SetEdition]
+    """What editions this product was released in: 1st Edition, Unlimited, etc. Empty for most OCG sets."""
+
     image: typing.Optional[str]
+    """A URL to a generic image of this product.
+    Prefer per-locale images over this image!
+    """
+
     box_image: typing.Optional[str]
+    """If this is a booster pack, this is a URL to a generic image of this product's booster box.
+    Prefer per-locale images over this image!
+    """
+
     cards: typing.List[CardPrinting]
+    """The cards printed in this set."""
+
     removed_cards: typing.List[CardPrinting]
+    """In video-game-only sets, Konami may add or remove cards from sets on a whim.
+    This represents cards that are no longer part of this set.
+    NYI.
+    """
+
     ygoprodeck: typing.Optional[str]
+    """The YGOPRODECK URL slug for this set, if known.
+    Beware: YGOPRODECK gets set contents wrong a lot! Don't trust them!
+    """
 
     def __init__(
         self,
@@ -1039,14 +1472,35 @@ class SetContents:
 
 
 class SetLocale:
+    """A locale in which a :class:`Set` was released."""
+
     key: str
+    """The short language code for this locale: en, fr, ae, etc."""
+
     language: str
+    """The language this set was printed in, as a short language code: en, fr, ae, etc.
+    This may be different from `SetLocale.key` in some rare cases.
+    """
+
     prefix: typing.Optional[str]
+    """The prefix of the set code for :class:`CardPrinting`s in this set.
+    Combine with `CardPrinting.suffix` to produce a whole set code.
+    """
+
     date: typing.Optional[datetime.date]
+    """The date on which this product was released in this locale."""
+
     image: typing.Optional[str]
+    """A URL to an image of this product in this locale."""
+
     box_image: typing.Optional[str]
+    """If this is a booster pack, this is a URL to an image of this product's booster box in this locale."""
+
     card_images: typing.Dict[SetEdition, typing.Dict[CardPrinting, str]]
+    """Images of printings of cards in this locale. Keys are edition and printings. Values are URLs to images."""
+
     db_ids: typing.List[int]
+    """Any Konami official database IDs for this product in this locale."""
 
     def __init__(
         self,
@@ -1089,13 +1543,32 @@ class SetLocale:
 
 
 class Set:
+    """A set of cards printed into one or more Yugioh formats.
+    This represents booster packs, starter decks, promotional card sets, etc.
+    """
+
     id: uuid.UUID
+    """The UUID of this set."""
+
     date: typing.Optional[datetime.date]
+    """The date this product was released. Only used in video-game-only products."""
+
     name: typing.Dict[str, str]
+    """The localized name of this product. Keys are short locale codes: en, de, kr, etc."""
+
     locales: typing.Dict[str, SetLocale]
+    """The locales in which this product was released.
+    Keys are short locale codes: en, de, kr, etc.
+    """
+
     contents: typing.List[SetContents]
+    """The contents of this product in various locales. Video game products only have one entry here."""
+
     yugipedia: typing.Optional[ExternalIdPair]
+    """The Yugipedia page of this product, if known."""
+
     yugiohprices: typing.Optional[str]
+    """The YugiohPrices page of this product, if known. NYI."""
 
     def __init__(
         self,
@@ -1147,19 +1620,48 @@ class Set:
 
 
 class ManualFixupIdentifier:
+    """A Manual Fixup Idenfier, or MFI, helps label and locate various things when manually fixing up data.
+    See manual-data/README.md in this module's repository for details.
+    """
+
     id: typing.Optional[uuid.UUID]
+    """A UUID to look up."""
+
     name: typing.Optional[str]
+    """A case-sensitive English name to look up."""
+
     konami_id: typing.Optional[int]
+    """A Konami official database ID to look up."""
+
     ygoprodeck_id: typing.Optional[int]
+    """A YGOPRODECK password to look up."""
+
     ygoprodeck_name: typing.Optional[str]
+    """A YGOPRODECK URL slug to look up."""
+
     yugipedia_id: typing.Optional[int]
+    """A Yugipedia page ID to look up."""
+
     yugipedia_name: typing.Optional[str]
+    """A Yugipedia page title to look up."""
+
     yamlyugi: typing.Optional[int]
+    """A Yaml Yugi password to look up."""
+
     set: typing.Optional["ManualFixupIdentifier"]
+    """A :class:`Set` to look up. Only used in looking up :class:`CardPrinting`s."""
+
     locale: typing.Optional[str]
+    """A locale short code to look up. Only used in looking up :class:`CardPrinting`s."""
+
     edition: typing.Optional[SetEdition]
+    """An edition to look up. Only used in looking up :class:`CardPrinting`s."""
+
     rarity: typing.Optional[CardRarity]
+    """A rarity to look up. Only used in looking up :class:`CardPrinting`s."""
+
     code: typing.Optional[str]
+    """A full set code to look up. Only used in looking up :class:`CardPrinting`s."""
 
     def __init__(self, in_json) -> None:
         self.id = None
@@ -1234,49 +1736,116 @@ class ManualFixupIdentifier:
 
 
 class Database:
+    """A YGOJSON database.
+    Constructing a new :class:`Database` does not initialize it with data.
+    If you want data, see `load_from_internet` or `load_from_file`."""
+
     individuals_dir: typing.Optional[str]
+    """The directory individualized JSON is stored in."""
+
     aggregates_dir: typing.Optional[str]
+    """The directory aggregated JSON is stored in."""
 
     increment: int
+    """How many times this database has been modified."""
+
     last_yamlyugi_read: typing.Optional[datetime.datetime]
+    """The last time Yaml Yugi was read from to produce this database."""
+
     last_yugipedia_read: typing.Optional[datetime.datetime]
+    """The last time Yugipedia was read from to produce this database."""
+
     last_ygoprodeck_read: typing.Optional[datetime.datetime]
+    """The last time YGOPRODECK was read from to produce this database."""
 
     cards: typing.List[Card]
+    """Cards in this database."""
+
     cards_by_id: typing.Dict[uuid.UUID, Card]
+    """You may use this to look up cards by their UUID."""
+
     cards_by_password: typing.Dict[str, Card]
+    """You may use this to look up cards by their 8-digit password.
+    The string MUST be 8 digits long, 0-padded!
+    """
+
     cards_by_yamlyugi: typing.Dict[int, Card]
+    """You may use this to look up cards by their Yaml Yugi password."""
+
     cards_by_en_name: typing.Dict[str, Card]
+    """You may use this to look up cards by their case-sensitive English name."""
+
     cards_by_konami_cid: typing.Dict[int, Card]
+    """You may use this to look up cards by their Konami official databse ID."""
+
     cards_by_yugipedia_id: typing.Dict[int, Card]
+    """You may use this to look up cards by their Yugipedia page ID."""
+
     cards_by_ygoprodeck_id: typing.Dict[int, Card]
+    """You may use this to look up cards by their YGOPRODECK password."""
 
     card_images_by_id: typing.Dict[uuid.UUID, CardImage]
+    """You may use this to look up cards' art treatments by their UUID."""
 
     sets: typing.List[Set]
+    """Sets in this database."""
+
     sets_by_id: typing.Dict[uuid.UUID, Set]
+    """You may use this to look up sets by their UUID."""
+
     sets_by_en_name: typing.Dict[str, Set]
+    """You may use this to look up sets by their case-sensitive English names."""
+
     sets_by_konami_sid: typing.Dict[int, Set]
+    """You may use this to look up sets by their Konami official database ID."""
+
     sets_by_yugipedia_id: typing.Dict[int, Set]
+    """You may use this to look up sets by their Yugipedia page ID."""
+
     sets_by_ygoprodeck_id: typing.Dict[str, Set]
+    """You may use this to look up sets by their YGOPRODECK password."""
 
     printings_by_id: typing.Dict[uuid.UUID, CardPrinting]
+    """You may use this to look up card printings by their UUID."""
+
     printings_by_code: typing.Dict[str, typing.List[CardPrinting]]
+    """You may use this to look up card printings by their full set code."""
 
     series: typing.List[Series]
+    """Series/archetypes in this database."""
+
     series_by_id: typing.Dict[uuid.UUID, Series]
+    """You may use this to look up series/archetypes by their UUID."""
+
     series_by_en_name: typing.Dict[str, Series]
+    """You may use this to look up series/archetypes by their case-sensitive English names."""
+
     series_by_yugipedia_id: typing.Dict[int, Series]
+    """You may use this to look up series/archetypes by their Yugipedia page ID."""
 
     distros: typing.List[PackDistrobution]
+    """Pack distributions in this database."""
+
     distros_by_id: typing.Dict[uuid.UUID, PackDistrobution]
+    """You may use this to look up pack distributions by their UUID."""
+
     distros_by_name: typing.Dict[str, PackDistrobution]
+    """You may use this to look up pack distributions by their name."""
 
     products: typing.List[SealedProduct]
+    """Sealed products in this database."""
+
     products_by_id: typing.Dict[uuid.UUID, SealedProduct]
+    """You may use this to look up sealed products by their UUID."""
+
     products_by_en_name: typing.Dict[str, SealedProduct]
+    """You may use this to look up pack distributions by their case-sensitive English names."""
+
     products_by_yugipedia_id: typing.Dict[int, SealedProduct]
+    """You may use this to look up sealed products by their Yugipedia page ID."""
+
     products_by_konami_pid: typing.Dict[int, SealedProduct]
+    """You may use this to look up sealed products by their Konami official database ID."""
 
     def __init__(
         self,
@@ -1329,6 +1898,8 @@ class Database:
         self.products_by_konami_pid = {}
 
     def add_card(self, card: Card):
+        """Adds a card to this database, or updated its lookup information if it's already in the database."""
+
         if card.id not in self.cards_by_id:
             self.cards.append(card)
 
@@ -1350,6 +1921,8 @@ class Database:
             self.card_images_by_id[image.id] = image
 
     def add_set(self, set_: Set):
+        """Adds a set to this database, or updated its lookup information if it's already in the database."""
+
         if set_.id not in self.sets_by_id:
             self.sets.append(set_)
 
@@ -1376,6 +1949,8 @@ class Database:
                                 self.printings_by_code[code].append(printing)
 
     def add_series(self, series: Series):
+        """Adds a series or archetype to this database, or updated its lookup information if it's already in the database."""
+
         if series.id not in self.series_by_id:
             self.series.append(series)
             self.series_by_id[series.id] = series
@@ -1385,6 +1960,8 @@ class Database:
             self.series_by_yugipedia_id[series.yugipedia.id] = series
 
     def add_distro(self, distro: PackDistrobution):
+        """Adds a pack distribution to this database, or updated its lookup information if it's already in the database."""
+
         if distro.id not in self.distros_by_id:
             self.distros.append(distro)
             self.distros_by_id[distro.id] = distro
@@ -1392,6 +1969,8 @@ class Database:
             self.distros_by_name[distro.name] = distro
 
     def add_product(self, product: SealedProduct):
+        """Adds a sealed product to this database, or updated its lookup information if it's already in the database."""
+
         if product.id not in self.sets_by_id:
             self.products.append(product)
 
@@ -1405,6 +1984,11 @@ class Database:
                 self.products_by_konami_pid[db_id] = product
 
     def regenerate_backlinks(self):
+        """This does the following fixups:
+        * sets `Card.sets` based on what printings are in what sets
+        * sets `Card.series` based on what series or archetypes list it as a member
+        """
+
         for card in self.cards:
             card.sets.clear()
             card.series.clear()
@@ -1423,6 +2007,8 @@ class Database:
                 member.series.append(series)
 
     def lookup_set(self, mfi: ManualFixupIdentifier) -> typing.Optional[Set]:
+        """Looks up a set from an MFI."""
+
         result = None
         if not result and mfi.id:
             result = self.sets_by_id.get(mfi.id, result)
@@ -1439,6 +2025,8 @@ class Database:
     def lookup_distro(
         self, mfi: ManualFixupIdentifier
     ) -> typing.Optional[PackDistrobution]:
+        """Looks up a pack distribution from an MFI."""
+
         result = None
         if not result and mfi.id:
             result = self.distros_by_id.get(mfi.id, result)
@@ -1449,6 +2037,8 @@ class Database:
     def lookup_printing(
         self, mfi: ManualFixupIdentifier
     ) -> typing.Optional[CardPrinting]:
+        """Looks up a printing of a card from an MFI."""
+
         results: typing.Set[CardPrinting] = set()
 
         if mfi.id:
@@ -1516,6 +2106,8 @@ class Database:
         return next(iter(results))
 
     def lookup_card(self, mfi: ManualFixupIdentifier) -> typing.Optional[Card]:
+        """Looks up a card from an MFI."""
+
         result = None
         if not result and mfi.id:
             result = self.cards_by_id.get(mfi.id, result)
@@ -1532,6 +2124,8 @@ class Database:
         return result
 
     def manually_fixup_sets(self):
+        """Applies all set manual fixups to this database."""
+
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_SETS_DIR), desc="Applying manual fixups to sets"
         ):
@@ -1605,6 +2199,8 @@ class Database:
                                             ]
 
     def manually_fixup_distros(self):
+        """Applies all pack distribution manual fixups to this database."""
+
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_DISTROS_DIR), desc="Importing pack distributions"
         ):
@@ -1652,6 +2248,8 @@ class Database:
                     self.add_distro(self._load_distro(in_json))
 
     def manually_fixup_products(self):
+        """Applies all sealed product manual fixups to this database."""
+
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_PRODUCTS_DIR), desc="Importing sealed products"
         ):
@@ -1733,6 +2331,12 @@ class Database:
         generate_individuals: bool,
         generate_aggregates: bool,
     ):
+        """Saves this database to disk.
+
+        :param generate_individuals: Whether or not to generate individualized JSON files.
+        :param generate_aggregates: Whether or not to generate aggregated JSON files.
+        """
+
         self.increment += 1
 
         if generate_individuals and self.individuals_dir is None:
@@ -1833,7 +2437,7 @@ class Database:
                 json.dump(
                     [
                         *tqdm.tqdm(
-                            (x.to_json() for x in self.cards),
+                            (x._to_json() for x in self.cards),
                             total=len(self.cards),
                             desc="Saving aggregate cards",
                         )
@@ -1918,7 +2522,7 @@ class Database:
             "w",
             encoding="utf-8",
         ) as outfile:
-            json.dump(card.to_json(), outfile, indent=2)
+            json.dump(card._to_json(), outfile, indent=2)
 
     def _load_card(self, rawcard: typing.Dict[str, typing.Any]) -> Card:
         return Card(
@@ -2425,7 +3029,10 @@ def load_from_file(
 REPOSITORY = (
     f"https://github.com/iconmaster5326/YGOJSON/releases/download/v{SCHEMA_VERSION}"
 )
+"""The default repository for the data ZIP files."""
+
 LAST_MODIFIED_HEADER = "Last-Modified"
+"""The HTTP header to get when the ZIP files on the server were last modified."""
 
 
 def load_from_internet(
@@ -2435,7 +3042,7 @@ def load_from_internet(
     repository: str = REPOSITORY,
 ) -> Database:
     """Load a :class:`ygojson.database.Database` from Internet sources.
-    This places files into the :arg:`individuals_dir` and :arg:`aggregates_dir` specified.
+    This places files into the ``individuals_dir`` and ``aggregates_dir`` specified.
     This also produces ZIP files in your temporary directory, and tries not to redownload up-to-date files.
 
     :param individuals_dir: A directory where the individualized data will go, defaults to None
