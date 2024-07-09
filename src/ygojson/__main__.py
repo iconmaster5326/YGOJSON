@@ -34,14 +34,14 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         type=str,
         default=os.path.join("data", "individual"),
         metavar="DIR",
-        help="Directory for individual card/set/etc JSONs",
+        help="Directory for individual JSONs, or the empty string to disable",
     )
     parser.add_argument(
         "--aggregates",
         type=str,
         default=os.path.join("data", "aggregate"),
         metavar="DIR",
-        help="Directory for aggregate card/set/etc JSONs",
+        help="Directory for aggregate JSONs, or the empty string to disable",
     )
     parser.add_argument(
         "--no-ygoprodeck",
@@ -110,6 +110,18 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         action="store_true",
         help="Specify this if we're in production. Mostly this prevents unnecesary Yugipedia cache clears when not specified.",
     )
+    parser.add_argument(
+        "--download",
+        action="store_true",
+        help="Download the data files from the server before modifying them",
+    )
+    parser.add_argument(
+        "--repository",
+        type=str,
+        default=REPOSITORY,
+        metavar="URL",
+        help="The download URL for data ZIP files",
+    )
     args = parser.parse_args(argv[1:])
 
     if args.version:
@@ -122,10 +134,17 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     )
 
     logging.info("Loading database...")
-    db = load_from_file(
-        individuals_dir=args.individuals,
-        aggregates_dir=args.aggregates,
-    )
+    if args.download:
+        db = load_from_internet(
+            individuals_dir=args.individuals if args.individuals else None,
+            aggregates_dir=args.aggregates if args.aggregates else None,
+            repository=args.repository,
+        )
+    else:
+        db = load_from_file(
+            individuals_dir=args.individuals if args.individuals else None,
+            aggregates_dir=args.aggregates if args.aggregates else None,
+        )
 
     if args.fresh:
         db.last_yamlyugi_read = None

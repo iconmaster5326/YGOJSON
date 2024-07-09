@@ -6,7 +6,9 @@ import os
 import os.path
 import typing
 import uuid
+import zipfile
 
+import requests
 import tqdm
 
 SCHEMA_VERSION = 1
@@ -2418,3 +2420,70 @@ def load_from_file(
             result.add_product(product)
 
     return result
+
+
+REPOSITORY = (
+    f"https://github.com/iconmaster5326/YGOJSON/releases/download/v{SCHEMA_VERSION}"
+)
+LAST_MODIFIED_HEADER = "Last-Modified"
+
+
+def load_from_internet(
+    *,
+    individuals_dir: typing.Optional[str] = None,
+    aggregates_dir: typing.Optional[str] = None,
+    repository: str = REPOSITORY,
+) -> Database:
+    """Load a :class:`ygojson.database.Database` from Internet sources.
+    This places files into the :arg:`individuals_dir` and :arg:`aggregates_dir` specified.
+    This also produces ZIP files in your temporary directory, and tries not to redownload up-to-date files.
+
+    :param individuals_dir: A directory where the individualized data will go, defaults to None
+    :param aggregates_dir: A directory where the aggregated data will go, defaults to None
+    :param url: The URL to get the data ZIP files from, defaults to the official YGOJSON URL
+    """
+
+    def getzip(name: str, dest: str):
+        with tqdm.tqdm(
+            total=3, desc=f"Downloading {name}s from server"
+        ) as progress_bar:
+            zipname = name + ".zip"
+            zippath = os.path.join(TEMP_DIR, zipname)
+            last_modified = datetime.datetime.now()
+            zip_already_exists = os.path.exists(zippath)
+
+            if zip_already_exists:
+                response = requests.head(repository + "/" + zipname, stream=True)
+                if not response.ok:
+                    response.raise_for_status()
+                if LAST_MODIFIED_HEADER in response.headers:
+                    last_modified = datetime.datetime.fromisoformat(
+                        response.headers[LAST_MODIFIED_HEADER]
+                    )
+            progress_bar.update(1)
+
+            if (
+                not zip_already_exists
+                or last_modified.timestamp() > os.stat(zippath).st_mtime
+            ):
+                response = requests.get(repository + "/" + zipname, stream=True)
+                if not response.ok:
+                    response.raise_for_status()
+                with open(zippath, "wb") as file:
+                    for chunk in response.iter_content(chunk_size=None):
+                        file.write(chunk)
+            progress_bar.update(1)
+
+            with open(zippath, "rb") as file, zipfile.ZipFile(file) as zip:
+                zip.extractall(dest)
+            progress_bar.update(1)
+
+    if individuals_dir is not None:
+        getzip("individual", individuals_dir)
+
+    if aggregates_dir is not None:
+        getzip("aggregate", aggregates_dir)
+
+    return load_from_file(
+        individuals_dir=individuals_dir, aggregates_dir=aggregates_dir
+    )

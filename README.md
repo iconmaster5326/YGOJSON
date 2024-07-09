@@ -55,7 +55,7 @@ The data is regenerated from our sources every day at midnight. So if you don't 
 
 ## Using the YGOJSON API
 
-The API we use to make the database has facilities for you to load any database you've downloaded and manipulate it using a convientient [Python](https://www.python.org/) API. To get our API from [PyPI](https://pypi.org), you can simply do the following:
+The API we use to make the database has facilities for you to load any YGOJSON database and manipulate it using a convientient [Python](https://www.python.org/) API. To get our API from [PyPI](https://pypi.org), you can simply do the following:
 
 ```bash
 python3 -m pip install ygojson
@@ -64,7 +64,7 @@ python3 -m pip install ygojson
 From there, you can write Python code to load the database and have fun with it:
 
 ```python
-# you'll have to download and unzip the database yourself; sorry!
+# you'll need to specify where the database goes on your filesystem
 INDIVIDUALS_DIR = "path/to/unzipped/individuals/dir"
 AGGREGATES_DIR = "path/to/unzipped/aggregates/dir"
 
@@ -72,7 +72,8 @@ AGGREGATES_DIR = "path/to/unzipped/aggregates/dir"
 import ygojson.database
 
 # construct the database; you can omit one if you don't have both downloaded
-db = ygojson.database.load_from_file(individuals_dir=INDIVIDUALS_DIR, aggregates_dir=AGGREGATES_DIR)
+# (there is also load_from_file if you already have the files)
+db = ygojson.database.load_from_internet(individuals_dir=INDIVIDUALS_DIR, aggregates_dir=AGGREGATES_DIR)
 
 # print the name of every card
 for card in db.cards:
@@ -87,13 +88,13 @@ You'll need a modern version of Python, at least 3.8, to run this code. To insta
 python3 -m pip install -e .
 ```
 
-Then you can run the database generator via:
+Then you can run the database generator via the `ygojson` command, or by `python3 -m ygojson`. Here are the command-line arguments I usually pass when testing:
 
 ```bash
-ygojson
+ygojson --download --individuals "" --no-individuals
 ```
 
-Try `-h` or `--help` for command-line options.
+Try `-h` or `--help` for more command-line options.
 
 By default, it will place the generated JSON files in the `data` folder. It will also create a `temp` folder, containing things like the Yugipedia cache. (Yugipedia takes several hours to download from a fresh cache, and hammers their servers a bit more than I'd like, so only delete that cache when absolutely necesary!)
 
