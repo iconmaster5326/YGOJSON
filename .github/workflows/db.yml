@@ -45,7 +45,7 @@ jobs:
       if: always()
       with:
         path: temp
-        key: temp-${{ hashFiles('temp') }}
+        key: temp-${{ github.run_id }}
         enableCrossOsArchive: true
     - name: Push Individuals
       uses: s0/git-publish-subdir-action@v2.6.0
