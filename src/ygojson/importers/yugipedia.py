@@ -2067,11 +2067,15 @@ def parse_md_set(
 
                 do(cardname)
 
-    for i, printing in enumerate([*contents.cards]):
-        if printing.card not in found_cards:
-            del contents.cards[i]
-            # if printing.card not in {p.card for p in contents.removed_cards}:
-            #     contents.removed_cards.append(printing)
+    def deloldprints():
+        for i, printing in enumerate([*contents.cards]):
+            if printing.card not in found_cards:
+                del contents.cards[i]
+                return deloldprints()
+                # if printing.card not in {p.card for p in contents.removed_cards}:
+                #     contents.removed_cards.append(printing)
+
+    deloldprints()
 
     if contents not in set_.contents:
         set_.contents.append(contents)
@@ -2157,11 +2161,15 @@ def parse_dl_set(
 
                 do(cardname)
 
-    for i, printing in enumerate([*contents.cards]):
-        if printing.card not in found_cards:
-            del contents.cards[i]
-            # if printing.card not in {p.card for p in contents.removed_cards}:
-            #     contents.removed_cards.append(printing)
+    def deloldprints():
+        for i, printing in enumerate([*contents.cards]):
+            if printing.card not in found_cards:
+                del contents.cards[i]
+                return deloldprints()
+                # if printing.card not in {p.card for p in contents.removed_cards}:
+                #     contents.removed_cards.append(printing)
+
+    deloldprints()
 
     if contents not in set_.contents:
         set_.contents.append(contents)

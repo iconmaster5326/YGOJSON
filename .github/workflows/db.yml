@@ -23,7 +23,8 @@ jobs:
       continue-on-error: true
       with:
         path: temp
-        key: temp
+        restore-keys: |
+          temp-
         enableCrossOsArchive: true
     - name: Install YGOJSON
       run: |
@@ -43,7 +44,7 @@ jobs:
       if: always()
       with:
         path: temp
-        key: temp
+        key: temp-${{ hashFiles('temp') }}
         enableCrossOsArchive: true
     - name: Push Individuals
       uses: s0/git-publish-subdir-action@v2.6.0
