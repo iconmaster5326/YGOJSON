@@ -23,6 +23,7 @@ jobs:
       continue-on-error: true
       with:
         path: temp
+        key: temp
         restore-keys: |
           temp-
         enableCrossOsArchive: true
