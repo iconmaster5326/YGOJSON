@@ -3085,6 +3085,8 @@ def load_from_internet(
                 zip.extractall(dest)
             progress_bar.update(1)
 
+    os.makedirs(TEMP_DIR, exist_ok=True)
+
     if individuals_dir is not None:
         getzip("individual", individuals_dir)
 
