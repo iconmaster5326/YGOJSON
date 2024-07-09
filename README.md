@@ -72,7 +72,7 @@ AGGREGATES_DIR = "path/to/unzipped/aggregates/dir"
 import ygojson.database
 
 # construct the database; you can omit one if you don't have both downloaded
-db = ygojson.database.Database(individuals_dir=INDIVIDUALS_DIR, aggregates_dir=AGGREGATES_DIR)
+db = ygojson.database.load_from_file(individuals_dir=INDIVIDUALS_DIR, aggregates_dir=AGGREGATES_DIR)
 
 # print the name of every card
 for card in db.cards:

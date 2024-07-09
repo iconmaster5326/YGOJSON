@@ -122,7 +122,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     )
 
     logging.info("Loading database...")
-    db = load_database(
+    db = load_from_file(
         individuals_dir=args.individuals,
         aggregates_dir=args.aggregates,
     )

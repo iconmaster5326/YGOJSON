@@ -1232,8 +1232,8 @@ class ManualFixupIdentifier:
 
 
 class Database:
-    individuals_dir: str
-    aggregates_dir: str
+    individuals_dir: typing.Optional[str]
+    aggregates_dir: typing.Optional[str]
 
     increment: int
     last_yamlyugi_read: typing.Optional[datetime.datetime]
@@ -1279,8 +1279,8 @@ class Database:
     def __init__(
         self,
         *,
-        individuals_dir: str = INDIVIDUAL_DIR,
-        aggregates_dir: str = AGGREGATE_DIR,
+        individuals_dir: typing.Optional[str] = None,
+        aggregates_dir: typing.Optional[str] = None,
     ):
         self.individuals_dir = individuals_dir
         self.aggregates_dir = aggregates_dir
@@ -1470,7 +1470,7 @@ class Database:
                     card = self.cards_by_en_name.get(mfi.name)
                 if card:
                     for result in [*results]:
-                        if result.card != card:
+                        if result.card != card and printing in results:
                             results.remove(printing)
 
                 if mfi.code:
@@ -1478,7 +1478,7 @@ class Database:
                         for result in [*results]:
                             if (locale.prefix or "") + (
                                 printing.suffix or ""
-                            ) != mfi.code:
+                            ) != mfi.code and printing in results:
                                 results.remove(printing)
 
                 if mfi.locale:
@@ -1486,6 +1486,7 @@ class Database:
                         if (
                             set_.locales[mfi.locale]
                             not in printing_to_contents[result].locales
+                            and printing in results
                         ):
                             results.remove(printing)
 
@@ -1494,12 +1495,16 @@ class Database:
                         if (
                             SetEdition(mfi.edition)
                             not in printing_to_contents[result].editions
+                            and printing in results
                         ):
                             results.remove(printing)
 
                 if mfi.rarity:
                     for result in [*results]:
-                        if result.rarity != CardRarity(mfi.rarity):
+                        if (
+                            result.rarity != CardRarity(mfi.rarity)
+                            and printing in results
+                        ):
                             results.remove(printing)
 
         if len(results) == 0:
@@ -1723,12 +1728,15 @@ class Database:
     def save(
         self,
         *,
-        generate_individuals: bool = True,
-        generate_aggregates: bool = True,
+        generate_individuals: bool,
+        generate_aggregates: bool,
     ):
         self.increment += 1
 
-        if generate_individuals:
+        if generate_individuals and self.individuals_dir is None:
+            raise Exception("No output directory for individuals configured!")
+
+        if generate_individuals and self.individuals_dir is not None:
             os.makedirs(self.individuals_dir, exist_ok=True)
             with open(
                 os.path.join(self.individuals_dir, META_FILENAME),
@@ -1803,7 +1811,10 @@ class Database:
             ):
                 self._save_product(product)
 
-        if generate_aggregates:
+        if generate_aggregates and self.aggregates_dir is None:
+            raise Exception("No output directory for aggregates configured!")
+
+        if generate_aggregates and self.aggregates_dir is not None:
             os.makedirs(self.aggregates_dir, exist_ok=True)
             with open(
                 os.path.join(self.aggregates_dir, META_FILENAME),
@@ -1898,6 +1909,8 @@ class Database:
                 )
 
     def _save_card(self, card: Card):
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         with open(
             os.path.join(self.individuals_dir, CARDS_DIRNAME, str(card.id) + ".json"),
             "w",
@@ -1995,6 +2008,8 @@ class Database:
         )
 
     def _load_cardlist(self) -> typing.List[uuid.UUID]:
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         if not os.path.exists(os.path.join(self.individuals_dir, CARDLIST_FILENAME)):
             return []
         with open(
@@ -2003,6 +2018,8 @@ class Database:
             return [uuid.UUID(x) for x in json.load(outfile)]
 
     def _save_set(self, set_: Set):
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         with open(
             os.path.join(self.individuals_dir, SETS_DIRNAME, str(set_.id) + ".json"),
             "w",
@@ -2011,6 +2028,8 @@ class Database:
             json.dump(set_._to_json(), outfile, indent=2)
 
     def _save_series(self, series: Series):
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         with open(
             os.path.join(
                 self.individuals_dir, SERIES_DIRNAME, str(series.id) + ".json"
@@ -2132,6 +2151,9 @@ class Database:
         )
 
     def _load_setlist(self) -> typing.List[uuid.UUID]:
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
+
         if not os.path.exists(os.path.join(self.individuals_dir, SETLIST_FILENAME)):
             return []
         with open(
@@ -2154,6 +2176,8 @@ class Database:
         )
 
     def _load_serieslist(self) -> typing.List[uuid.UUID]:
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         if not os.path.exists(os.path.join(self.individuals_dir, SERIESLIST_FILENAME)):
             return []
         with open(
@@ -2162,6 +2186,8 @@ class Database:
             return [uuid.UUID(x) for x in json.load(outfile)]
 
     def _save_distro(self, distro: PackDistrobution):
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         with open(
             os.path.join(
                 self.individuals_dir, DISTROS_DIRNAME, str(distro.id) + ".json"
@@ -2182,6 +2208,8 @@ class Database:
         )
 
     def _load_distrolist(self) -> typing.List[uuid.UUID]:
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         if not os.path.exists(os.path.join(self.individuals_dir, DISTROLIST_FILENAME)):
             return []
         with open(
@@ -2234,6 +2262,8 @@ class Database:
         )
 
     def _load_productlist(self) -> typing.List[uuid.UUID]:
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         if not os.path.exists(os.path.join(self.individuals_dir, PRODUCTLIST_FILENAME)):
             return []
         with open(
@@ -2242,6 +2272,8 @@ class Database:
             return [uuid.UUID(x) for x in json.load(outfile)]
 
     def _save_product(self, product: SealedProduct):
+        if typing.TYPE_CHECKING:
+            assert self.individuals_dir is not None
         with open(
             os.path.join(
                 self.individuals_dir, PRODUCTS_DIRNAME, str(product.id) + ".json"
@@ -2252,32 +2284,47 @@ class Database:
             json.dump(product._to_json(), outfile, indent=2)
 
 
-def load_database(
+def load_from_file(
     *,
-    individuals_dir: str = INDIVIDUAL_DIR,
-    aggregates_dir: str = AGGREGATE_DIR,
+    individuals_dir: typing.Optional[str] = None,
+    aggregates_dir: typing.Optional[str] = None,
 ) -> Database:
+    """Load a :class:`ygojson.database.Database` from file.
+
+    :param individuals_dir: A directory containing individuals, defaults to None
+    :param aggregates_dir: A directory containing aggregates, defaults to None
+    """
+
+    if aggregates_dir is None and individuals_dir is None:
+        raise Exception("load_from_file requires at least one data directory!")
+
     result = Database(aggregates_dir=aggregates_dir, individuals_dir=individuals_dir)
 
-    if os.path.exists(os.path.join(aggregates_dir, META_FILENAME)):
+    if aggregates_dir is not None and os.path.exists(
+        os.path.join(aggregates_dir, META_FILENAME)
+    ):
         with open(
             os.path.join(aggregates_dir, META_FILENAME), encoding="utf-8"
         ) as outfile:
             result._load_meta_json(json.load(outfile))
-    elif os.path.exists(os.path.join(individuals_dir, META_FILENAME)):
+    elif individuals_dir is not None and os.path.exists(
+        os.path.join(individuals_dir, META_FILENAME)
+    ):
         with open(
             os.path.join(individuals_dir, META_FILENAME), encoding="utf-8"
         ) as outfile:
             result._load_meta_json(json.load(outfile))
 
-    if os.path.exists(os.path.join(aggregates_dir, AGG_CARDS_FILENAME)):
+    if aggregates_dir is not None and os.path.exists(
+        os.path.join(aggregates_dir, AGG_CARDS_FILENAME)
+    ):
         with open(
             os.path.join(aggregates_dir, AGG_CARDS_FILENAME), encoding="utf-8"
         ) as outfile:
             for card_json in tqdm.tqdm(json.load(outfile), desc="Loading cards"):
                 card = result._load_card(card_json)
                 result.add_card(card)
-    else:
+    elif individuals_dir is not None:
         for card_id in tqdm.tqdm(result._load_cardlist(), desc="Loading cards"):
             with open(
                 os.path.join(individuals_dir, CARDS_DIRNAME, str(card_id) + ".json"),
@@ -2286,14 +2333,16 @@ def load_database(
                 card = result._load_card(json.load(outfile))
             result.add_card(card)
 
-    if os.path.exists(os.path.join(aggregates_dir, AGG_SETS_FILENAME)):
+    if aggregates_dir is not None and os.path.exists(
+        os.path.join(aggregates_dir, AGG_SETS_FILENAME)
+    ):
         with open(
             os.path.join(aggregates_dir, AGG_SETS_FILENAME), encoding="utf-8"
         ) as outfile:
             for set_json in tqdm.tqdm(json.load(outfile), desc="Loading sets"):
                 set_ = result._load_set(set_json)
                 result.add_set(set_)
-    else:
+    elif individuals_dir is not None:
         for set_id in tqdm.tqdm(result._load_setlist(), desc="Loading sets"):
             with open(
                 os.path.join(individuals_dir, SETS_DIRNAME, str(set_id) + ".json"),
@@ -2302,14 +2351,16 @@ def load_database(
                 set_ = result._load_set(json.load(outfile))
             result.add_set(set_)
 
-    if os.path.exists(os.path.join(aggregates_dir, AGG_SERIES_FILENAME)):
+    if aggregates_dir is not None and os.path.exists(
+        os.path.join(aggregates_dir, AGG_SERIES_FILENAME)
+    ):
         with open(
             os.path.join(aggregates_dir, AGG_SERIES_FILENAME), encoding="utf-8"
         ) as outfile:
             for series_json in tqdm.tqdm(json.load(outfile), desc="Loading series"):
                 series = result._load_series(series_json)
                 result.add_series(series)
-    else:
+    elif individuals_dir is not None:
         for series_id in tqdm.tqdm(result._load_serieslist(), desc="Loading series"):
             with open(
                 os.path.join(individuals_dir, SERIES_DIRNAME, str(series_id) + ".json"),
@@ -2318,7 +2369,9 @@ def load_database(
                 series = result._load_series(json.load(outfile))
             result.add_series(series)
 
-    if os.path.exists(os.path.join(aggregates_dir, AGG_DISTROS_FILENAME)):
+    if aggregates_dir is not None and os.path.exists(
+        os.path.join(aggregates_dir, AGG_DISTROS_FILENAME)
+    ):
         with open(
             os.path.join(aggregates_dir, AGG_DISTROS_FILENAME), encoding="utf-8"
         ) as outfile:
@@ -2327,7 +2380,7 @@ def load_database(
             ):
                 distro = result._load_distro(distro_json)
                 result.add_distro(distro)
-    else:
+    elif individuals_dir is not None:
         for series_id in tqdm.tqdm(
             result._load_distrolist(), desc="Loading pack distributions"
         ):
@@ -2340,7 +2393,9 @@ def load_database(
                 distro = result._load_distro(json.load(outfile))
             result.add_distro(distro)
 
-    if os.path.exists(os.path.join(aggregates_dir, AGG_PRODUCTS_FILENAME)):
+    if aggregates_dir is not None and os.path.exists(
+        os.path.join(aggregates_dir, AGG_PRODUCTS_FILENAME)
+    ):
         with open(
             os.path.join(aggregates_dir, AGG_PRODUCTS_FILENAME), encoding="utf-8"
         ) as outfile:
@@ -2349,7 +2404,7 @@ def load_database(
             ):
                 product = result._load_product(product_json)
                 result.add_product(product)
-    else:
+    elif individuals_dir is not None:
         for series_id in tqdm.tqdm(
             result._load_productlist(), desc="Loading sealed products"
         ):
