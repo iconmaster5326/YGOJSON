@@ -194,7 +194,13 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             card.link_arrows = [LINK_ARROWS[x] for x in in_json["linkmarkers"]]
     elif card.card_type in {CardType.SPELL, CardType.TRAP}:
         if in_json.get("race"):
-            card.subcategory = SubCategory(in_json["race"].lower().replace("-", ""))
+            raw_race = in_json["race"].lower().replace("-", "")
+            if raw_race not in SubCategory._value2member_map_:
+                logging.warn(
+                    f"Found seplltrap with bad subcategory {en_text.name or in_json['id']}: {raw_race}"
+                )
+            else:
+                card.subcategory = SubCategory(raw_race)
     elif card.card_type == CardType.TOKEN:
         pass
     elif card.card_type == CardType.SKILL:
