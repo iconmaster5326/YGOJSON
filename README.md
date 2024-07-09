@@ -53,9 +53,35 @@ We have the following things available for you:
 
 The data is regenerated from our sources every day at midnight. So if you don't see the latest new cards in the database yet, wait a bit!
 
+## Using the YGOJSON API
+
+The API we use to make the database has facilities for you to load any database you've downloaded and manipulate it using a convientient [Python](https://www.python.org/) API. To get our API from [PyPI](https://pypi.org), you can simply do the following:
+
+```bash
+python3 -m pip install ygojson
+```
+
+From there, you can write Python code to load the database and have fun with it:
+
+```python
+# you'll have to download and unzip the database yourself; sorry!
+INDIVIDUALS_DIR = "path/to/unzipped/individuals/dir"
+AGGREGATES_DIR = "path/to/unzipped/aggregates/dir"
+
+# import only the code that deals with the database schema
+import ygojson.database
+
+# construct the database; you can omit one if you don't have both downloaded
+db = ygojson.database.Database(individuals_dir=INDIVIDUALS_DIR, aggregates_dir=AGGREGATES_DIR)
+
+# print the name of every card
+for card in db.cards:
+    print(card.text["en"].name)
+```
+
 # Generating the Database
 
-You'll need a modern version of [Python](https://www.python.org/) to run this code. To install YGOJSON:
+You'll need a modern version of Python, at least 3.8, to run this code. To install YGOJSON:
 
 ```bash
 python3 -m pip install -e .
@@ -91,3 +117,15 @@ From there, you can run YGOJSON as you will, and there are some tests you can ru
 ```bash
 python3 test/validate_data.py # runs a JSON schema validator against everything in the data/ folder
 ```
+
+# Schema Changelog
+
+## v1
+
+Initial release.
+
+# Python API Changelog
+
+## 0.1.0
+
+Initial release.
