@@ -5,6 +5,7 @@ import sys
 import typing
 
 from ygojson import *
+from ygojson.version import __version__
 
 
 def main(argv: typing.Optional[typing.List[str]] = None) -> int:
@@ -104,6 +105,11 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         metavar="LEVEL",
         help="The logging level. One of: DEBUG, INFO, WARNING, ERROR, CRITICAL.",
     )
+    parser.add_argument(
+        "--production",
+        action="store_true",
+        help="Specify this if we're in production. Mostly this prevents unnecesary Yugipedia cache clears when not specified.",
+    )
     args = parser.parse_args(argv[1:])
 
     if args.version:
@@ -153,6 +159,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             import_cards=not args.no_cards,
             import_sets=not args.no_sets,
             import_series=not args.no_series,
+            production=args.production,
         )
         logging.info(f"Added {n_new} cards and updated {n_old} cards.")
 

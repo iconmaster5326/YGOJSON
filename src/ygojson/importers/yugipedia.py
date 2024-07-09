@@ -195,7 +195,9 @@ def get_series_pages(batcher: "YugipediaBatcher") -> typing.Iterable[int]:
         return result
 
 
-def get_changelog(since: datetime.datetime) -> typing.Iterable[ChangelogEntry]:
+def get_changelog(
+    batcher: "YugipediaBatcher", since: datetime.datetime
+) -> typing.Iterable[ChangelogEntry]:
     query = {
         "action": "query",
         "list": "recentchanges",
@@ -206,6 +208,8 @@ def get_changelog(since: datetime.datetime) -> typing.Iterable[ChangelogEntry]:
 
     for results in paginate_query(query):
         for result in results["recentchanges"]:
+            batcher.removeFromCache(result["title"])
+            batcher.removeFromCache(result["pageid"])
             yield ChangelogEntry(
                 result["pageid"], result["title"], ChangeType(result["type"])
             )
@@ -2370,40 +2374,37 @@ def import_from_yugipedia(
     import_cards: bool = True,
     import_sets: bool = True,
     import_series: bool = True,
+    production: bool = False,
 ) -> typing.Tuple[int, int]:
     n_found = n_new = 0
 
     with YugipediaBatcher() as batcher:
-        atexit.register(lambda: batcher.saveCachesToDisk())
+        atexit.register(
+            lambda: batcher.saveCachesToDisk()
+        )  # to ensure we never lose cache data
 
-        if db.last_yugipedia_read is not None:
+        last_access = db.last_yugipedia_read
+        db.last_yugipedia_read = (
+            datetime.datetime.now()
+        )  # a conservative estimate of when we accessed, so we don't miss new changelog entries
+
+        if last_access is not None:
             if (
-                datetime.datetime.now().timestamp() - db.last_yugipedia_read.timestamp()
+                production
+                and datetime.datetime.now().timestamp() - last_access.timestamp()
                 > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
             ):
-                db.last_yugipedia_read = None
-                # batcher.clearCache() # TODO: enable when done
+                # fetching the changelog would take too long; just blow up the cache
+                batcher.clearCache()
+            else:
+                # clear the cache of any changed pages
+                _ = [*get_changelog(batcher, last_access)]
 
         series_members: typing.Dict[str, typing.Set[Card]] = {}
 
         if import_cards:
             banlists = get_banlist_pages(batcher)
-            cards: typing.List[int]
-
-            if db.last_yugipedia_read is not None:
-                batcher.use_cache = False
-                cards = [
-                    x
-                    for x in get_changes(
-                        batcher,
-                        get_card_pages(batcher),
-                        [CAT_OCG_CARDS, CAT_TCG_CARDS],
-                        get_changelog(db.last_yugipedia_read),
-                    )
-                ]
-                batcher.use_cache = True
-            else:
-                cards = [x for x in get_card_pages(batcher)]
+            cards = [*get_card_pages(batcher)]
 
             for pageid in tqdm.tqdm(cards, desc="Importing cards from Yugipedia"):
 
@@ -2489,21 +2490,7 @@ def import_from_yugipedia(
             batcher.saveCachesToDisk()
 
         if import_sets:
-            sets: typing.List[int]
-            if db.last_yugipedia_read is not None:
-                batcher.use_cache = False
-                sets = [
-                    x
-                    for x in get_changes(
-                        batcher,
-                        get_set_pages(batcher),
-                        SET_CATS,
-                        get_changelog(db.last_yugipedia_read),
-                    )
-                ]
-                batcher.use_cache = True
-            else:
-                sets = [x for x in get_set_pages(batcher)]
+            sets = [*get_set_pages(batcher)]
 
             for setid in tqdm.tqdm(sets, desc="Importing sets from Yugipedia"):
 
@@ -2616,21 +2603,7 @@ def import_from_yugipedia(
             batcher.saveCachesToDisk()
 
         if import_series:
-            series: typing.List[int]
-            if db.last_yugipedia_read is not None:
-                batcher.use_cache = False
-                series = [
-                    x
-                    for x in get_changes(
-                        batcher,
-                        get_series_pages(batcher),
-                        SET_CATS,
-                        get_changelog(db.last_yugipedia_read),
-                    )
-                ]
-                batcher.use_cache = True
-            else:
-                series = [x for x in get_series_pages(batcher)]
+            series = [*get_series_pages(batcher)]
 
             for seriesid in tqdm.tqdm(series, desc="Importing series from Yugipedia"):
 
@@ -2693,7 +2666,6 @@ def import_from_yugipedia(
 
                 do(seriesid)
 
-    db.last_yugipedia_read = datetime.datetime.now()
     return n_found, n_new
 
 
@@ -2791,6 +2763,32 @@ class YugipediaBatcher:
     def __exit__(self, exc_type, exc, exc_tb):
         self.flushPendingOperations()
         self.saveCachesToDisk()
+
+    def removeFromCache(self, page: typing.Union[int, str]):
+        def del_(cache, page):
+            if page in cache:
+                del cache[page]
+
+        pageid = title = None
+        if type(page) is int:
+            pageid = page
+            title = self.idsToNames.get(page)
+        elif type(page) is str:
+            title = page
+            pageid = self.namesToIDs.get(page)
+
+        if title:
+            if title in self.missingPagesCache:
+                self.missingPagesCache.remove(title)
+            del_(self.namesToIDs, title)
+        if pageid:
+            if str(pageid) in self.missingPagesCache:
+                self.missingPagesCache.remove(str(pageid))
+            del_(self.idsToNames, pageid)
+            del_(self.pageContentsCache, pageid)
+            del_(self.pageCategoriesCache, pageid)
+            del_(self.imagesCache, pageid)
+            del_(self.categoryMembersCache, pageid)
 
     def saveCachesToDisk(self):
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)

@@ -43,7 +43,7 @@ jobs:
         pre-commit run --all-files
     - name: Run YGOJSON
       run: |
-        ygojson
+        ygojson --production
     - name: Test
       run: |
         python test/validate_data.py
