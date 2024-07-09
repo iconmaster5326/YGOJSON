@@ -20,8 +20,6 @@ Special thanks goes out to [YGO Prog](https://www.ygoprog.com/) for their tirele
 
 # Using the Database
 
-*(TODO: how often is the database generated?)*
-
 There are several methods of consuming the database. To get the files, you can either:
 
 * Download a ZIP file [here](https://github.com/iconmaster5326/YGOJSON/releases/latest)
@@ -53,12 +51,14 @@ We have the following things available for you:
 * `sealedProducts`: Sealed products are things like booster boxes, tins, and other things that consist of a mix of packs.
 * `distributions`: Pack odds information for sets. You can use this to figure out how to make random packs of sets accurately.
 
+The data is regenerated every *TODO* from our primary sources. So if you don't see the latest new cards in the database yet, wait a bit!
+
 # Generating the Database
 
 You'll need a modern version of [Python](https://www.python.org/) to run this code. To install YGOJSON:
 
 ```bash
-pip3 install -e .
+python3 -m pip install -e .
 ```
 
 Then you can run the database generator via:
@@ -71,17 +71,23 @@ Try `-h` or `--help` for command-line options.
 
 By default, it will place the generated JSON files in the `data` folder. It will also create a `temp` folder, containing things like the Yugipedia cache. (Yugipedia takes several hours to download from a fresh cache, and hammers their servers a bit more than I'd like, so only delete that cache when absolutely necesary!)
 
-The `manual-data` folder contains all the things that aren't covered nicely by any of our data sources. This includes things like pack odds and sealed products, as well as some set information.
+The [`manual-data`](manual-data) folder contains all the things that aren't covered nicely by any of our data sources. This includes things like pack odds and sealed products, as well as some set information.
 
 # Contributing
 
 The biggest thing you can do is report bad data. Something we have in our database incorrect? Tell us via our issue tracker! Before you do, though, please look at our data sources if you can, to see if the problem lies with their data or not. If it's with them, bring it up with them!
 
-Another thing you can do is submit additions to `manual-data` when new things come out. That's also extremly helpful.
+Another thing you can do is submit additions to [`manual-data`](manual-data) when new things come out. That's also extremly helpful. Check out the READMEs in the subdirectories for more details.
 
-Finally, if you want to contribute code changes, be sure to have [pre-commit](https://pre-commit.com/) installed:
+If you want to contribute code changes or test your manual fixup changes, you can install YGOJSON for editing and testing like so:
 
 ```bash
-pip3 install pre-commit
+python3 -m pip install -e .[dev,test]
 pre-commit install
+```
+
+From there, you can run YGOJSON as you will, and there are some tests you can run before making your pull requests like so:
+
+```bash
+python3 test/validate_data.py # runs a JSON schema validator against everything in the data/ folder
 ```
