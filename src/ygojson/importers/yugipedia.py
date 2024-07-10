@@ -24,10 +24,13 @@ _last_access = time.time()
 
 
 def make_request(rawparams: typing.Dict[str, str], n_tries=0) -> requests.Response:
+    global _last_access
+
     now = time.time()
     while (now - _last_access) <= RATE_LIMIT:
         time.sleep(now - _last_access)
         now = time.time()
+    _last_access = time.time()
 
     params = {
         "format": "json",
