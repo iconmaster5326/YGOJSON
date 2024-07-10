@@ -1542,7 +1542,8 @@ def parse_tcg_ocg_set(
 
                     @batcher.getPageContents(galleryname)
                     def onGetData(gallery_raw_data: str):
-                        lang = locale_info.group(2).strip().lower()
+                        raw_lang = locale_info.group(2).strip()
+                        lang = raw_lang.lower()
 
                         raw_edition = None
                         edition = None
@@ -1734,6 +1735,7 @@ def parse_tcg_ocg_set(
                                 raw_edition: typing.Optional[str],
                                 locale: SetLocale,
                                 virtual_prefixes: typing.List[str],
+                                raw_lang: str,
                             ):
                                 @batcher.getPageID(CAT_UNUSABLE)
                                 def catID(unusableid: int, _: str):
@@ -1794,16 +1796,21 @@ def parse_tcg_ocg_set(
                                                     image_filename = (
                                                         f"File:{image_normalized_name}"
                                                     )
+                                                    setcode_before_dash = None
                                                     if virtual_prefixes:
-                                                        image_filename += f"-{virtual_prefixes[0]}-{locale.language.upper()}"
-                                                    elif locale.prefix:
-                                                        image_filename += (
-                                                            f"-{locale.prefix}"
+                                                        setcode_before_dash = re.match(
+                                                            r"[^\-]+",
+                                                            virtual_prefixes[0],
                                                         )
-                                                        if locale.prefix.endswith("-"):
-                                                            image_filename += (
-                                                                locale.language.upper()
-                                                            )
+                                                    elif locale.prefix:
+                                                        setcode_before_dash = re.match(
+                                                            r"[^\-]+", locale.prefix
+                                                        )
+                                                    if setcode_before_dash:
+                                                        image_filename += (
+                                                            f"-{setcode_before_dash}"
+                                                        )
+                                                    image_filename += f"-{raw_lang}"
                                                     if rarity:
                                                         image_filename += f"-{RAIRTY_FULL_TO_SHORT.get(rarity.lower(), rarity)}"
                                                     if raw_edition:
@@ -1860,6 +1867,7 @@ def parse_tcg_ocg_set(
                                 raw_edition,
                                 locale,
                                 virtual_prefixes,
+                                raw_lang,
                             )
 
                         for arg in settable.arguments:
