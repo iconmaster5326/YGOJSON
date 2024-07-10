@@ -373,7 +373,11 @@ MYSTERY_ATK_DEFS = {"?", "????", "X000"}
 def _strip_markup(s: str) -> str:
     return "\n".join(
         wikitextparser.remove_markup(
-            re.sub(r"\{\{[Rr]uby\|([^\|]*)\|(?:[^\}]*)?\}\}", r"\1", x)
+            re.sub(
+                r"\{\{[Rr]uby\|([^\|]*)\|(?:[^\}]*)?\}\}",
+                r"\1",
+                x.replace("<br />", "\n"),
+            )
         )
         for x in s.split("\n")
     )
