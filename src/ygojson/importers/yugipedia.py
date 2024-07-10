@@ -433,6 +433,12 @@ def parse_card(
             else:
                 card.text[key].official = False
 
+    if "en" not in card.text:
+        card.text["en"] = CardText(name=title, official=False)
+    elif not card.text["en"].name:
+        card.text["en"].name = title
+        card.text["en"].official = False
+
     if card.card_type in {
         CardType.MONSTER,
         CardType.TOKEN,

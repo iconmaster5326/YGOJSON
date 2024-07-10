@@ -109,6 +109,11 @@ def _import_card(
     Otherwise creates a new card object, not added to the DB.
     """
 
+    if not in_json.get("name"):
+        # sometimes the YGOPRODECK API bugs out and returns null for all the names
+        # logging.warn(f"Found card without name: {in_json['id']}")
+        raise InvalidCardImport
+
     card = db.cards_by_ygoprodeck_id.get(in_json["id"])
     if card is not None:
         return True, card
