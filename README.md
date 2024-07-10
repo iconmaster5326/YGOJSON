@@ -127,7 +127,7 @@ Initial release.
 
 # Python API Changelog
 
-## 0.1.0
+## 0.2.0
 
 * Added options for downloading the data from the `database` module.
 * Fixed bugs with running on a PyPI installation.

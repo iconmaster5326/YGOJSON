@@ -13,7 +13,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
     - name: Set up Python 3.8
       uses: actions/setup-python@v3
       with:
@@ -78,13 +79,29 @@ jobs:
       uses: gregziegan/fetch-latest-release@v2.0.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Upload Individuals
+    - name: Remove Old Individuals ZIP
+      uses: flcdrg/remove-release-asset-action@v4.0.4
+      continue-on-error: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        release_id: ${{ steps.latest_release.outputs.id }}
+        asset_name: individual.zip
+    - name: Remove Old Aggregates ZIP
+      uses: flcdrg/remove-release-asset-action@v4.0.4
+      continue-on-error: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        release_id: ${{ steps.latest_release.outputs.id }}
+        asset_name: aggregate.zip
+    - name: Upload Individuals ZIP
       uses: csexton/release-asset-action@v3
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         release-url: ${{ steps.latest_release.outputs.upload_url }}
         file: individual.zip
-    - name: Upload Aggregates
+    - name: Upload Aggregates ZIP
       uses: csexton/release-asset-action@v3
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
