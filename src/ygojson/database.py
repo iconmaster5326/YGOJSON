@@ -1362,7 +1362,9 @@ class SetContents:
     """
 
     formats: typing.List[Format]
-    """What formats this product was released in: TCG, OCG, Master Duel, etc."""
+    """What formats this product was released in: TCG, OCG, Master Duel, etc.
+    Deprectated; use the locale's list of formats instead.
+    """
 
     distrobution: typing.Union[None, SpecialDistroType, uuid.UUID]
     """The pack distribution used to make packs of this set, if known.
@@ -1376,7 +1378,9 @@ class SetContents:
     """If this is a booster pack, this represents whether or not booster boxes made for retail sale were different than boxes made for hobby-shop sale."""
 
     editions: typing.List[SetEdition]
-    """What editions this product was released in: 1st Edition, Unlimited, etc. Empty for most OCG sets."""
+    """What editions this product was released in: 1st Edition, Unlimited, etc. Empty for most OCG sets.
+    Deprectated; use the locale's list of editions instead.
+    """
 
     image: typing.Optional[str]
     """A URL to a generic image of this product.
@@ -1502,6 +1506,12 @@ class SetLocale:
     db_ids: typing.List[int]
     """Any Konami official database IDs for this product in this locale."""
 
+    formats: typing.List[Format]
+    """What formats this product was released in: TCG, OCG, Master Duel, etc."""
+
+    editions: typing.List[SetEdition]
+    """What editions this product was released in: 1st Edition, Unlimited, etc. Empty for most OCG sets."""
+
     def __init__(
         self,
         *,
@@ -1515,6 +1525,8 @@ class SetLocale:
             typing.Dict[SetEdition, typing.Dict[CardPrinting, str]]
         ] = None,
         db_ids: typing.Optional[typing.List[int]] = None,
+        formats: typing.Optional[typing.List[Format]] = None,
+        editions: typing.Optional[typing.List[SetEdition]] = None,
     ) -> None:
         self.key = key
         self.language = language
@@ -1524,6 +1536,8 @@ class SetLocale:
         self.box_image = box_image
         self.card_images = card_images or {}
         self.db_ids = db_ids or []
+        self.formats = formats or []
+        self.editions = editions or []
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -1536,6 +1550,8 @@ class SetLocale:
                 k.value: {str(kk.id): vv for kk, vv in v.items()}
                 for k, v in self.card_images.items()
             },
+            **({"formats": [x.value for x in self.formats]} if self.formats else {}),
+            **({"editions": [x.value for x in self.editions]} if self.editions else {}),
             "externalIDs": {
                 **({"dbIDs": self.db_ids} if self.db_ids else {}),
             },
@@ -2728,6 +2744,8 @@ class Database:
                     }
                     for k, v in v.get("cardImages", {}).items()
                 },
+                formats=[Format(x) for x in v.get("formats", [])],
+                editions=[SetEdition(x) for x in v.get("editions", [])],
                 db_ids=v["externalIDs"].get("dbIDs"),
             )
             for k, v in rawset.get("locales", {}).items()

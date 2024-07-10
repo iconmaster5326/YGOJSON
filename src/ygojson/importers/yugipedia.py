@@ -1418,8 +1418,7 @@ EDITION_STR_TO_ENUM = {
     "UE": SetEdition.UNLIMTED,
     "REPRINT": SetEdition.UNLIMTED,
     "LE": SetEdition.LIMITED,
-    # TODO: is this right?
-    "DT": SetEdition.UNLIMTED,
+    "DT": SetEdition.LIMITED,
 }
 
 
@@ -1544,10 +1543,6 @@ def parse_tcg_ocg_set(
                     @batcher.getPageContents(galleryname)
                     def onGetData(gallery_raw_data: str):
                         lang = locale_info.group(2).strip().lower()
-                        locale = SetLocale(
-                            key=lang,
-                            language=LOCALES.get(lang, lang),
-                        )
 
                         raw_edition = None
                         edition = None
@@ -1566,6 +1561,13 @@ def parse_tcg_ocg_set(
                             )
                             return
 
+                        locale = SetLocale(
+                            key=lang,
+                            language=LOCALES.get(lang, lang),
+                            formats=[Format(format_found)],
+                            editions=[edition] if edition else [],
+                        )
+
                         for arg in settable.arguments:
                             if arg.name and arg.name.strip().endswith(RELDATE_SUFFIX):
                                 langs = arg.name.strip()[: -len(RELDATE_SUFFIX)]
@@ -1583,15 +1585,15 @@ def parse_tcg_ocg_set(
                                                 continue
                                             locale.date = date
 
+                        @batcher.getImageURL("File:" + gallery_image_name)
+                        def onGetImage(url: str):
+                            locale.image = url
+
                         contents = SetContents(
                             locales=[locale],
                             formats=[Format(format_found)],
                             editions=[edition] if edition else [],
                         )
-
-                        @batcher.getImageURL("File:" + gallery_image_name)
-                        def onGetImage(url: str):
-                            locale.image = url
 
                         gallery_data = wikitextparser.parse(gallery_raw_data)
 
@@ -1899,6 +1901,21 @@ def parse_tcg_ocg_set(
                                     existing_locale.card_images[ed].update(images)
                                 else:
                                     existing_locale.card_images[ed] = images
+
+                            existing_locale.editions.extend(
+                                [
+                                    x
+                                    for x in locale.editions
+                                    if x not in existing_locale.editions
+                                ]
+                            )
+                            existing_locale.formats.extend(
+                                [
+                                    x
+                                    for x in locale.formats
+                                    if x not in existing_locale.formats
+                                ]
+                            )
 
                             locale = existing_locale
                             contents.locales = [locale]
