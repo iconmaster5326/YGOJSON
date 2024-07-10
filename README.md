@@ -129,4 +129,11 @@ Initial release.
 
 ## 0.1.0
 
+* Added options for downloading the data from the `database` module.
+* Fixed bugs with running on a PyPI installation.
+* Added documentation to the `database` module.
+* More robust YGOPRODECK support. (Sometimes their API bugs out.)
+
+## 0.1.0
+
 Initial release.
