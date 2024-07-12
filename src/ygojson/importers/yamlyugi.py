@@ -111,7 +111,12 @@ def _get_yaml_yugi_cards() -> typing.List[typing.Dict[str, typing.Any]]:
             return _cached_yamlyugi_cards
     os.makedirs(TEMP_DIR, exist_ok=True)
     with tqdm.tqdm(total=1, desc="Downloading Yaml Yugi card list") as progress_bar:
-        response = requests.get(AGGREGATES_DOWNLOAD_URL + "cards.json")
+        response = requests.get(
+            AGGREGATES_DOWNLOAD_URL + "cards.json",
+            headers={
+                "User-Agent": USER_AGENT,
+            },
+        )
         if response.ok:
             with open(INPUT_CARDS_FILE, "w", encoding="utf-8") as in_cards_file:
                 _cached_yamlyugi_cards = response.json()
@@ -137,7 +142,12 @@ def _get_yaml_yugi_series() -> typing.List[typing.Dict[str, typing.Any]]:
             return _cached_yamlyugi_series
     os.makedirs(TEMP_DIR, exist_ok=True)
     with tqdm.tqdm(total=1, desc="Downloading Yaml Yugi series list") as progress_bar:
-        response = requests.get(RAW_DOWNLOAD_URL + "series/list.json")
+        response = requests.get(
+            RAW_DOWNLOAD_URL + "series/list.json",
+            headers={
+                "User-Agent": USER_AGENT,
+            },
+        )
         if response.ok:
             with open(INPUT_SERIES_FILE, "w", encoding="utf-8") as in_series_file:
                 _cached_yamlyugi_series = response.json()

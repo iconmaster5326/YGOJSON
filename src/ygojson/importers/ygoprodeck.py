@@ -69,7 +69,13 @@ def _get_ygoprodeck_cards() -> typing.List[typing.Dict[str, typing.Any]]:
             return _cached_cards
     os.makedirs(TEMP_DIR, exist_ok=True)
     with tqdm.tqdm(total=1, desc="Downloading YGOPRODECK card list") as progress_bar:
-        response = requests.get(API_URL + "cardinfo.php", params={"misc": "yes"})
+        response = requests.get(
+            API_URL + "cardinfo.php",
+            params={"misc": "yes"},
+            headers={
+                "User-Agent": USER_AGENT,
+            },
+        )
         if response.ok:
             with open(INPUT_CARDS_FILE, "w", encoding="utf-8") as in_cards_file:
                 _cached_cards = response.json()["data"]

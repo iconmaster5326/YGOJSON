@@ -11,8 +11,13 @@ import zipfile
 import requests
 import tqdm
 
+from .version import __version__
+
 SCHEMA_VERSION = 1
 """The version of the JSON schema we are currently at."""
+
+USER_AGENT = f"YGOJSON/{__version__} (https://github.com/iconmaster5326/YGOJSON)"
+"""The User-Agent string we use when making requests."""
 
 ROOT_DIR = os.path.abspath(
     os.path.join(os.path.dirname(__file__), os.pardir, os.pardir)
@@ -3091,7 +3096,13 @@ def load_from_internet(
                 not zip_already_exists
                 or last_modified.timestamp() > os.stat(zippath).st_mtime
             ):
-                response = requests.get(repository + "/" + zipname, stream=True)
+                response = requests.get(
+                    repository + "/" + zipname,
+                    stream=True,
+                    headers={
+                        "User-Agent": USER_AGENT,
+                    },
+                )
                 if not response.ok:
                     response.raise_for_status()
                 with open(zippath, "wb") as file:

@@ -39,16 +39,21 @@ def make_request(rawparams: typing.Dict[str, str], n_tries=0) -> requests.Respon
     }
     params.update(rawparams)
 
-    # logging.debug(f"Making request: {json.dumps(params)}")
+    if logging.getLogger().getEffectiveLevel() <= logging.DEBUG:
+        logging.debug(f"Making request: {json.dumps(params)}")
     try:
         response = requests.get(
             API_URL,
             params=params,
             headers={
-                "User-Agent": f"YGOJSON/{SCHEMA_VERSION} (https://github.com/iconmaster5326/YGOJSON)"
+                "User-Agent": USER_AGENT,
             },
             timeout=13,
         )
+        if logging.getLogger().getEffectiveLevel() <= logging.DEBUG:
+            logging.debug(
+                f"Got response: {response.status_code} {response.reason} {response.text}"
+            )
         if not response.ok:
             # timeout; servers must be hammered
             logging.error(
@@ -56,7 +61,6 @@ def make_request(rawparams: typing.Dict[str, str], n_tries=0) -> requests.Respon
             )
             time.sleep(RATE_LIMIT * 30)
             return make_request(rawparams, n_tries + 1)
-        # logging.debug(f"Got response: {response.text}")
         return response
     except requests.exceptions.Timeout:
         logging.error("timeout; waiting and retrying...")
@@ -1810,9 +1814,7 @@ def parse_tcg_ocg_set(
                                                             r"[^\-]+", locale.prefix
                                                         )
                                                     if setcode_before_dash:
-                                                        image_filename += (
-                                                            f"-{setcode_before_dash}"
-                                                        )
+                                                        image_filename += f"-{setcode_before_dash.group(0)}"
                                                     image_filename += f"-{raw_lang}"
                                                     if rarity:
                                                         image_filename += f"-{RAIRTY_FULL_TO_SHORT.get(rarity.lower(), rarity)}"
@@ -2972,6 +2974,12 @@ class YugipediaBatcher:
 
         do([p for p in pages if type(p) is int])
         do([p for p in pages if type(p) is str])
+
+        for p in pages:
+            page = p if type(p) is int else self.namesToIDs.get(str(p))
+            if page not in self.pageContentsCache:
+                self.missingPagesCache.add(str(p))
+                self.missingPagesCache.add(str(page))
 
     pageCategoriesCache: typing.Dict[int, typing.List[int]]
     pendingGetPageCategories: typing.Dict[
