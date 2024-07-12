@@ -57,7 +57,7 @@ The data is regenerated from our sources every day at midnight. So if you don't 
 
 If you want to explore the YGOJSON dataset interactively and visually, we have an application that runs in your web browser, [YJViewer](https://github.com/iconmaster5326/YJViewer).
 
-| ![YJViewer's front page.](yjv1.png) | ![YJViewer searching for cards.](yjv2.png) | ![YJViewer at a card page.](yjv3.png) |
+| ![YJViewer's front page.](yjv1.jpg) | ![YJViewer searching for cards.](yjv2.jpg) | ![YJViewer at a card page.](yjv3.jpg) |
 | - | - | - |
 
 Check it out if you want to look at what we have!
