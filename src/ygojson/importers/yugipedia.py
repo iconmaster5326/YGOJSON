@@ -17,7 +17,7 @@ import wikitextparser
 from ..database import *
 
 API_URL = "https://yugipedia.com/api.php"
-RATE_LIMIT = 1.1
+RATE_LIMIT = 0  # 1.1
 TIME_TO_JUST_REDOWNLOAD_ALL_PAGES = 30 * 24 * 60 * 60  # 1 month-ish
 
 _last_access = time.time()
@@ -36,6 +36,7 @@ def make_request(rawparams: typing.Dict[str, str], n_tries=0) -> requests.Respon
         "format": "json",
         "utf8": "1",
         "formatversion": "2",
+        "redirects": "1",
     }
     params.update(rawparams)
 
@@ -208,7 +209,6 @@ def get_changelog(
     query = {
         "action": "query",
         "list": "recentchanges",
-        "redirects": "1",
         "rcend": since.isoformat(),
         "rclimit": "max",
     }
@@ -294,14 +294,19 @@ LOCALES = {
     "en": "en",
     "na": "en",
     "eu": "en",
+    "oc": "en",
+    "au": "en",
     "fr": "fr",
+    "fc": "fr",
     "de": "de",
     "it": "it",
     "pt": "pt",
     "es": "es",
+    "sp": "es",
     "jp": "ja",
     "ja": "ja",
     "ko": "ko",
+    "kr": "ko",
     "tc": "zh-TW",
     "sc": "zh-CN",
     "ae": "ae",
@@ -1397,6 +1402,7 @@ FULL_RARITY_STR_TO_ENUM = {
     "ghost/gold rare": CardRarity.GOLDGHOST,  # ggr
     "gold secret rare": CardRarity.GOLDSECRET,  # gscr
     "starfoil rare": CardRarity.STARFOIL,  # sfr
+    "starfoil": CardRarity.STARFOIL,  # sfr
     "mosaic rare": CardRarity.MOSAIC,  # msr
     "shatterfoil rare": CardRarity.SHATTERFOIL,  # shr
     "holographic parallel rare": CardRarity.GHOSTPARALLEL,  # hgpr
@@ -1428,6 +1434,49 @@ EDITION_STR_TO_ENUM = {
     "DT": SetEdition.LIMITED,
 }
 
+EDITIONS_IN_NAV = {
+    "1e": SetEdition.FIRST,
+    "ue": SetEdition.UNLIMTED,
+    "le": SetEdition.LIMITED,
+}
+
+EDITIONS_IN_NAV_REVERSE = {v: k for k, v in EDITIONS_IN_NAV.items()}
+
+FORMATS_IN_NAV = {
+    "en": "TCG",
+    "na": "TCG",
+    "eu": "TCG",
+    "au": "TCG",
+    "oc": "TCG",
+    "fr": "TCG",
+    "fc": "TCG",
+    "de": "TCG",
+    "it": "TCG",
+    "pt": "TCG",
+    "es": "TCG",
+    "sp": "TCG",
+    "jp": "OCG",
+    "ja": "OCG",
+    "ko": "OCG",
+    "kr": "OCG",
+    "tc": "OCG",
+    "sc": "OCG",
+    "ae": "OCG",
+}
+
+FALLBACK_LOCALES = {
+    "en": "",
+    "na": "en",
+    "eu": "en",
+    "au": "en",
+    "oc": "en",
+    "fc": "fr",
+    "jp": "ja",
+    "ae": "jp",
+    "sp": "es",
+    "kr": "ko",
+}
+
 
 def commonprefix(m: typing.Iterable[str]):
     "Given a list of strings, returns the longest common leading component"
@@ -1441,10 +1490,6 @@ def commonprefix(m: typing.Iterable[str]):
         if c != s2[i]:
             return s1[:i]
     return s1
-
-
-def _printing_equal(p1: CardPrinting, p2: CardPrinting) -> bool:
-    return p1.card == p2.card and p1.rarity == p2.rarity and p1.suffix == p2.suffix
 
 
 def _parse_month(m: str) -> int:
@@ -1485,6 +1530,63 @@ def _parse_date(value: str) -> typing.Optional[datetime.date]:
         return None
 
 
+class ImageLocator(typing.NamedTuple):
+    edition: SetEdition
+    altinfo: str
+
+
+class PrintingLocator(typing.NamedTuple):
+    card: Card
+    rarity: CardRarity
+
+
+class RawPrinting:
+    card: Card
+    code: str
+    rarity: CardRarity
+    image: typing.Dict[ImageLocator, str]
+    qty: int
+    noabbr: bool
+
+    def __init__(
+        self, card: Card, code: str, rarity: CardRarity, qty: int, noabbr: bool
+    ) -> None:
+        self.card = card
+        self.code = code
+        self.rarity = rarity
+        self.image = {}
+        self.qty = qty
+        self.noabbr = noabbr
+
+    def locator(self) -> PrintingLocator:
+        return PrintingLocator(self.card, self.rarity)
+
+
+class RawLocale:
+    key: str
+    format: str
+    editions: typing.Set[SetEdition]
+    cards: typing.Dict[PrintingLocator, RawPrinting]
+    date: typing.Optional[datetime.date]
+    images: typing.Dict[SetEdition, str]
+    db_ids: typing.List[int]
+
+    def __init__(self, key: str, format: str) -> None:
+        self.key = key
+        self.format = format
+        self.editions = set()
+        self.cards = {}
+        self.date = None
+        self.images = {}
+        self.db_ids = []
+
+
+FALLBACK_RARITIES = {
+    CardRarity.COMMON: CardRarity.SHORTPRINT,
+    CardRarity.SHORTPRINT: CardRarity.COMMON,
+}
+
+
 def parse_tcg_ocg_set(
     db: Database,
     batcher: "YugipediaBatcher",
@@ -1493,528 +1595,610 @@ def parse_tcg_ocg_set(
     data: wikitextparser.WikiText,
     raw_data: str,
     settable: wikitextparser.Template,
+    card_ids: typing.List[int],
 ) -> bool:
-    for locale, key in LOCALES.items():
-        value = get_table_entry(settable, locale + "_name" if locale else "name")
-        if not locale and not value:
-            value = batcher.idsToNames[pageid]
-        if value and value.strip():
-            value = _strip_markup(value.strip())
-            set_.name[key] = value
+    title = batcher.idsToNames[pageid]
+    set_.yugipedia = ExternalIdPair(title, pageid)
 
-    gallery_html = re.search(
-        r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;", raw_data, re.DOTALL
-    ) or re.search(r"<gallery[^\n]*\n(.*?)\n</gallery>", raw_data, re.DOTALL)
-    if not gallery_html:
-        logging.warn(f"Did not find gallery HTML for {batcher.idsToNames[pageid]}")
+    for lc, key in LOCALES.items():
+        namearg = get_table_entry(settable, lc + "_name" if lc else "name")
+        if not lc and not namearg:
+            namearg = title
+        if namearg and namearg.strip():
+            namearg = _strip_markup(namearg.strip())
+            set_.name[key] = namearg
+
+    navs = [x for x in data.templates if x.name.strip().lower() == "set navigation"]
+    if len(navs) > 1:
+        logging.warn(f"Found set with multiple set navigation tables: {title}")
+
+    raw_locales: typing.Dict[str, RawLocale] = {}
+    packimages: typing.Dict[str, str] = {}
+
+    def get_card(name: str):
+        class GetCardDecorator:
+            def __init__(self, callback: typing.Callable[[Card], None]) -> None:
+                @batcher.getPageID(name)
+                def getID(cardid: int, cardname: str):
+                    if cardid not in card_ids:
+
+                        @batcher.getPageID(name + " (card)")
+                        def getID(cardid: int, cardname: str):
+                            card = db.cards_by_yugipedia_id.get(cardid)
+                            if not card:
+                                logging.warn(
+                                    f"Could not find card {cardname} (card) ({cardid})"
+                                )
+                                return
+                            callback(card)
+
+                        return
+                    card = db.cards_by_yugipedia_id.get(cardid)
+                    if not card:
+                        logging.warn(f"Could not find card {cardname} ({cardid})")
+                        return
+                    callback(card)
+
+        return GetCardDecorator
+
+    def addcardlist(
+        setname: str, raw_locale: RawLocale, editions: typing.Set[SetEdition]
+    ):
+        listpagename = f"Set Card Lists:{setname} ({raw_locale.format.upper()}-{raw_locale.key.upper()})"
+
+        @batcher.getPageContents(listpagename)
+        def onGetList(raw_cardlist_data: str):
+            cardlist_data = wikitextparser.parse(raw_cardlist_data)
+            setlists = [
+                x
+                for x in cardlist_data.templates
+                if x.name.lower().strip() == "set list"
+            ]
+
+            def add_card_to_cardlist(
+                name: str,
+                code: str,
+                rarity: CardRarity,
+                qty: typing.Optional[int],
+                noabbr: bool,
+            ):
+                @get_card(name)
+                def onGetCard(card: Card):
+                    rc = RawPrinting(card, code, rarity, qty or 1, noabbr)
+                    raw_locale.cards[rc.locator()] = rc
+
+            for setlist in setlists:
+                raw_default_rarity = get_table_entry(setlist, "rarities", "C").strip()
+                if not raw_default_rarity:
+                    raw_default_rarity = "C"
+                raw_long_default_rarities = [
+                    x.strip() for x in raw_default_rarity.split(",") if x.strip()
+                ]
+                raw_short_default_rarities = [
+                    RAIRTY_FULL_TO_SHORT.get(x.lower(), x.lower())
+                    for x in raw_long_default_rarities
+                ]
+                default_rarities = [
+                    RARITY_STR_TO_ENUM.get(x.lower())
+                    or FULL_RARITY_STR_TO_ENUM.get(x.lower())
+                    for x in raw_short_default_rarities
+                ]
+                if not default_rarities:
+                    default_rarities = [CardRarity.COMMON]
+                elif not all(default_rarities):
+                    logging.warn(
+                        f"Could not determine default rarity of {listpagename}: {raw_default_rarity}"
+                    )
+                    default_rarities = [CardRarity.COMMON]
+                if typing.TYPE_CHECKING:
+                    default_rarities = [x for x in default_rarities if x]
+
+                raw_default_reprint_status = get_table_entry(setlist, "print")
+
+                raw_default_qty = get_table_entry(setlist, "qty", "").strip()
+                default_qty = None
+                if raw_default_qty:
+                    try:
+                        default_qty = int(raw_default_qty)
+                    except ValueError:
+                        logging.warn(
+                            f"Could not determine default quantity of {listpagename}: {raw_default_qty}"
+                        )
+
+                raw_options = get_table_entry(setlist, "options", "").strip()
+                noabbr = "noabbr" in raw_options.lower()
+
+                for arg in setlist.arguments:
+                    if arg.positional:
+                        rows = [x.strip() for x in arg.value.split("\n") if x.strip()]
+                        for row in rows:
+                            comment_parts = [
+                                x.strip() for x in row.split("//") if x.strip()
+                            ]
+                            if not comment_parts:
+                                continue
+                            pre_comment = comment_parts[0]
+                            post_comment = " // ".join(comment_parts[1:])
+
+                            cols = [x.strip() for x in pre_comment.split(";")]
+
+                            if not cols:
+                                continue
+
+                            col_index = 0
+
+                            if not noabbr:
+                                code = cols[col_index]
+                                col_index += 1
+                            else:
+                                abbr_override = re.match(r"abbr::[^\s;]+", post_comment)
+                                if abbr_override:
+                                    code = str(abbr_override.group(1))
+                                else:
+                                    code = ""
+
+                            name = cols[col_index] if len(cols) > col_index else None
+                            if not name:
+                                continue
+                            name = name.replace("#", "")
+                            col_index += 1
+
+                            raw_rarities = (
+                                [
+                                    x.strip()
+                                    for x in cols[col_index].split(",")
+                                    if x.strip()
+                                ]
+                                if len(cols) > col_index
+                                else []
+                            )
+                            rarities: typing.List[CardRarity] = []
+                            for raw_rarity in raw_rarities:
+                                rarity = RARITY_STR_TO_ENUM.get(
+                                    raw_rarity.lower()
+                                ) or FULL_RARITY_STR_TO_ENUM.get(raw_rarity.lower())
+                                if not rarity:
+                                    logging.warn(
+                                        f"Got strange rarity in {listpagename}, in row {name}: {raw_rarity}"
+                                    )
+                                else:
+                                    rarities.append(rarity)
+                            col_index += 1
+
+                            if raw_default_reprint_status:
+                                col_index += 1
+
+                            qty = None
+                            if default_qty is not None and len(cols) > col_index:
+                                raw_qty = cols[col_index]
+                                if raw_qty:
+                                    try:
+                                        qty = int(raw_qty)
+                                    except ValueError:
+                                        logging.warn(
+                                            f"Got strange quantity in {listpagename}, in row {name}: {raw_qty}"
+                                        )
+                                col_index += 1
+
+                            for rarity in rarities or default_rarities:
+                                add_card_to_cardlist(
+                                    name,
+                                    code,
+                                    rarity,
+                                    qty if qty is not None else default_qty,
+                                    noabbr,
+                                )
+
+            if not setlists:
+                logging.warn(
+                    f"Found set list page without set list template: {listpagename}"
+                )
+
+            batcher.flushPendingOperations()
+            for edition in editions:
+                get_gallery_data(setname, raw_locale, edition, raw_locale.key)
+
+    def get_gallery_data(
+        setname: str, raw_locale: RawLocale, edition: SetEdition, locale_code: str
+    ):
+        def do(galleryname: str):
+            @batcher.getPageContents(galleryname)
+            def onGetList(raw_gallery_data: str):
+                gallery_data = wikitextparser.parse(raw_gallery_data)
+                gallery_templates = [
+                    x
+                    for x in gallery_data.templates
+                    if x.name.strip().lower() == "set gallery"
+                ]
+                subgallery_htmls = re.findall(
+                    r"<gallery[^\n]*\n(.*?)\n</gallery>", raw_gallery_data, re.DOTALL
+                )
+
+                def add_card_image(name: str, rarity: CardRarity, alt: str, image: str):
+                    @batcher.getImageURL(f"File:{image}")
+                    def onGetImage(url: str):
+                        def onGetCard(card: Card, card_rarity: CardRarity = rarity):
+                            pl = PrintingLocator(card, card_rarity)
+                            if pl not in raw_locale.cards:
+                                if (
+                                    rarity == card_rarity
+                                    and card_rarity in FALLBACK_RARITIES
+                                ):
+                                    onGetCard(card, FALLBACK_RARITIES[card_rarity])
+                                if (
+                                    not alt
+                                ):  # some special cards, like oversized cards, should be ignored
+                                    logging.warn(
+                                        f"Printing in gallery {galleryname} not found in locale: {name} / {rarity.value} -- Available in {[pl.rarity.value for pl in raw_locale.cards if pl.card == card]}"
+                                    )
+                            else:
+                                rc = raw_locale.cards[pl]
+                                rc.image[ImageLocator(edition, alt)] = url
+
+                        @get_card(name)
+                        def do(card: Card):
+                            onGetCard(card)
+
+                for gallery in gallery_templates:
+                    default_abbr = get_table_entry(gallery, "abbr", "").strip()
+
+                    raw_default_rarity = get_table_entry(
+                        gallery, "rarities", "C"
+                    ).strip()
+                    if not raw_default_rarity:
+                        raw_default_rarity = "C"
+                    raw_short_default_rarity = RAIRTY_FULL_TO_SHORT.get(
+                        raw_default_rarity.lower(), raw_default_rarity.lower()
+                    )
+                    default_rarity = RARITY_STR_TO_ENUM.get(
+                        raw_short_default_rarity.lower()
+                    ) or FULL_RARITY_STR_TO_ENUM.get(raw_short_default_rarity.lower())
+                    if not default_rarity:
+                        logging.warn(
+                            f"Could not determine default rarity of {galleryname}: {raw_default_rarity}"
+                        )
+                        default_rarity = CardRarity.COMMON
+
+                    default_alt = get_table_entry(gallery, "alt", "").strip()
+
+                    for arg in gallery.arguments:
+                        if arg.positional:
+                            rows = [
+                                x.strip() for x in arg.value.split("\n") if x.strip()
+                            ]
+                            for row in rows:
+                                comment_parts = [
+                                    x.strip() for x in row.split("//") if x.strip()
+                                ]
+                                if not comment_parts:
+                                    continue
+                                pre_comment = comment_parts[0]
+                                post_comment = " // ".join(comment_parts[1:])
+                                abbr_override = re.search(
+                                    r"abbr::\s*([^\s;]+)", post_comment
+                                )
+                                file_override = re.search(
+                                    r"file::\s*([^\s;]+)", post_comment
+                                )
+                                ext_override = re.search(
+                                    r"extension::\s*([^\s;]+)", post_comment
+                                )
+
+                                cols = [x.strip() for x in pre_comment.split(";")]
+
+                                if not cols:
+                                    continue
+
+                                col_index = 0
+
+                                code = default_abbr if default_abbr else None
+                                if not default_abbr and len(cols) > col_index:
+                                    code = cols[col_index]
+                                    col_index += 1
+                                if abbr_override:
+                                    code = str(abbr_override.group(1))
+
+                                if len(cols) > col_index:
+                                    name = cols[col_index]
+                                    col_index += 1
+                                else:
+                                    continue
+
+                                rarity = default_rarity
+                                raw_rarity = raw_default_rarity
+                                if len(cols) > col_index:
+                                    raw_rarity = cols[col_index]
+                                    rarity_override = RARITY_STR_TO_ENUM.get(
+                                        raw_rarity.lower()
+                                    ) or FULL_RARITY_STR_TO_ENUM.get(raw_rarity.lower())
+                                    if rarity_override:
+                                        rarity = rarity_override
+                                    col_index += 1
+
+                                alt = default_alt if default_alt else ""
+                                if len(cols) > col_index:
+                                    raw_alt = cols[col_index]
+                                    if raw_alt:
+                                        raw_alt = alt
+                                    col_index += 1
+
+                                if file_override:
+                                    image = file_override.group(1)
+                                else:
+                                    image = re.sub(r"\W", r"", name)
+                                    if code:
+                                        code_before_dash = re.match(r"[^\-]+", code)
+                                        if code_before_dash:
+                                            image += f"-{code_before_dash.group(0)}"
+                                    image += f"-{raw_locale.key.upper()}"
+                                    if raw_rarity:
+                                        image += f"-{raw_rarity}"
+                                    ed_str = EDITIONS_IN_NAV_REVERSE[edition].upper()
+                                    if "-" + ed_str in galleryname:
+                                        image += f"-{ed_str}"
+                                    if alt:
+                                        image += f"-{alt}"
+                                    if ext_override:
+                                        image += f".{ext_override.group(1)}"
+                                    else:
+                                        image += ".png"
+
+                                add_card_image(name, rarity, alt, image)
+
+                for subgallery in subgallery_htmls:
+                    lines = [x.strip() for x in subgallery.split("\n") if x.strip()]
+                    for line in lines:
+                        parsed_line = wikitextparser.parse(line)
+                        if len(parsed_line.wikilinks) < 3:
+                            logging.warn(
+                                f"Found strange subgallery line in {galleryname}: {line}"
+                            )
+                        else:
+                            raw_image = re.match(r"\s*([^\|\s]+)", line)
+                            if raw_image:
+                                image = str(raw_image.group(1))
+                            else:
+                                image = ""
+
+                            (codelink, raritylink, namelink, *_) = parsed_line.wikilinks
+                            rarity = RARITY_STR_TO_ENUM.get(
+                                raritylink.target.strip().lower()
+                            ) or FULL_RARITY_STR_TO_ENUM.get(
+                                raritylink.target.strip().lower()
+                            )
+                            if not rarity:
+                                logging.warn(
+                                    f"Found strange rarity in subgallery in {galleryname}: {raritylink.target}"
+                                )
+                                continue
+                            name = namelink.target.strip()
+                            add_card_image(name, rarity, "", image)
+
+                if not gallery_templates and not subgallery_htmls:
+                    logging.warn(f"No gallery tables found in {galleryname}!")
+
+        do(
+            f"Set Card Galleries:{setname} ({raw_locale.format.upper()}-{raw_locale.key.upper()}-{EDITIONS_IN_NAV_REVERSE[edition].upper()})"
+        )
+        do(
+            f"Set Card Galleries:{setname} ({raw_locale.format.upper()}-{raw_locale.key.upper()})"
+        )
+
+    def parse_packimage_line(line: str):
+        imagename = re.match(r"\S+", line)
+        if imagename:
+            gallery_links = [
+                link.target.strip()
+                for link in wikitextparser.parse(line).wikilinks
+                if link.target.strip().lower().startswith("set card galleries:")
+            ]
+
+            @batcher.getImageURL(imagename.group(0))
+            def onImage(url: str):
+                for gallery_link in gallery_links:
+                    lc = re.match(r"\([^\-]+\-([^\)]+)\)", gallery_link)
+                    if lc:
+                        packimages[lc.group(1).lower()] = url
+
+    for nav in navs:
+        lists = [
+            x.strip().lower()
+            for x in get_table_entry(nav, "lists", "").split(",")
+            if x.strip()
+        ]
+        galleries: typing.Dict[str, typing.List[str]] = {}
+        setname = title
+
+        for arg in nav.arguments:
+            if arg.positional and arg.name == "0":
+                # alternate set name
+                setname = arg.value.strip()
+            if arg.name.endswith("_galleries") and all(
+                not arg.name.startswith(x) for x in EDITIONS_IN_NAV
+            ):
+                logging.warn(
+                    f"Found gallery argument for unknown edition in {title}: {arg.name}"
+                )
+
+        for edition in EDITIONS_IN_NAV:
+            galleries[edition] = [
+                x.strip().lower()
+                for x in get_table_entry(nav, f"{edition}_galleries", "").split(",")
+                if x.strip()
+            ]
+
+        if not lists and not galleries:
+            logging.warn(f"Found set without card lists or galleries: {title}")
+
+        all_lcs = {lc for lc in [*lists, *[y for x in galleries.values() for y in x]]}
+        for lc in all_lcs:
+            if lc not in FORMATS_IN_NAV:
+                logging.warn(f"Unknown locale in {title}: {lc}")
+            else:
+                raw_locale = RawLocale(lc, FORMATS_IN_NAV[lc])
+                raw_locales[lc] = raw_locale
+
+                db_lc = lc
+                while db_lc is not None:
+                    dbarg = get_table_entry(
+                        settable, db_lc + DBID_SUFFIX if db_lc else DBID_SUFFIX[1:]
+                    )
+                    if dbarg:
+                        raw_ids = [
+                            x.strip()
+                            for x in dbarg.replace("*", "").split("\n")
+                            if x.strip()
+                        ]
+                        for raw_id in raw_ids:
+                            try:
+                                raw_locale.db_ids.append(int(raw_id))
+                            except ValueError:
+                                if raw_id != "none":
+                                    logging.warn(
+                                        f"Found bad konami ID in {title}: {raw_id}"
+                                    )
+                        break
+                    db_lc = FALLBACK_LOCALES.get(db_lc)
+
+                date_lc = lc
+                while date_lc is not None:
+                    reldatearg = get_table_entry(
+                        settable,
+                        date_lc + RELDATE_SUFFIX if date_lc else RELDATE_SUFFIX[1:],
+                    )
+                    if reldatearg:
+                        raw_locale.date = _parse_date(_strip_markup(reldatearg.strip()))
+                        break
+                    date_lc = FALLBACK_LOCALES.get(date_lc)
+
+                if not any(x.lower() == lc for x in lists):
+                    logging.warn(
+                        f"Found set navigation in {title} with gallery but no list for locale {lc}"
+                    )
+                    continue
+
+                addcardlist(
+                    setname,
+                    raw_locale,
+                    {EDITIONS_IN_NAV[ec] for ec, lcs in galleries.items() if lc in lcs},
+                )
+
+    if not navs:
+        logging.warn(f"Found set without set navigation table: {title}")
         return False
 
-    old_printings: typing.Dict[
-        typing.Tuple[str, uuid.UUID, str, typing.Optional[CardRarity]], CardPrinting
-    ] = {
-        (locale.key, printing.card.id, printing.suffix or "", printing.rarity): printing
-        for contents in set_.contents
-        for printing in [*contents.cards, *contents.removed_cards]
-        for locale in contents.locales
+    if not raw_locales:
+        logging.warn(f"Found set without locales: {title}")
+        return False
+
+    packimages_html = re.search(
+        r"<gallery[^\n]*\n(.*?)\n</gallery>", raw_data, re.DOTALL
+    )
+    if packimages_html:
+        lines = [x.strip() for x in packimages_html.group(1).split("\n") if x.strip()]
+        for line in lines:
+            parse_packimage_line(line)
+
+    batcher.flushPendingOperations()
+
+    old_printing_ids = {
+        PrintingLocator(p.card, p.rarity or CardRarity.COMMON): p.id
+        for c in set_.contents
+        for p in c.cards
     }
 
     set_.locales.clear()
     set_.contents.clear()
 
-    for line in gallery_html.group(1).split("\n"):
-        if not line.strip():
-            continue
+    raw_printings_to_content: typing.Dict[
+        typing.Tuple[PrintingLocator, ...], SetContents
+    ] = {}
+    raw_printings_to_printings: typing.Dict[
+        SetContents, typing.Dict[PrintingLocator, CardPrinting]
+    ] = {}
 
-        gallery_info = re.match(
-            r"([^\|]+)\|(?:[^&]*&lt;[^&]*&gt;)?(.*)", line.strip()
-        ) or re.match(r"([^\|]+)\|(?:[^<]*<[^>]*>)?(.*)", line.strip())
-        if not gallery_info:
-            logging.warn(
-                f'Unparsable gallery line on {batcher.idsToNames[pageid]}: "{line.strip()}"'
+    for raw_locale in raw_locales.values():
+        fmt = Format(raw_locale.format.lower())
+
+        for edition in raw_locale.editions:
+            image = packimages.get(
+                f"{raw_locale.key}-{EDITIONS_IN_NAV_REVERSE[edition]}"
+            ) or packimages.get(raw_locale.key)
+            if image:
+                raw_locale.images[edition] = image
+
+        prefix = commonprefix(c.code for c in raw_locale.cards.values())
+        prefixfixer = re.match(r"[^\-]+\-\D*", prefix)
+        if prefixfixer:
+            prefix = prefixfixer.group(0)
+
+        locale = SetLocale(
+            key=raw_locale.key,
+            language=LOCALES.get(raw_locale.key, raw_locale.key),
+            editions=[*raw_locale.editions],
+            formats=[fmt],
+            image=[*raw_locale.images.values(), None][0],
+            date=raw_locale.date,
+            prefix=None
+            if all(rc.noabbr for rc in raw_locale.cards.values())
+            else prefix,
+            db_ids=raw_locale.db_ids,
+        )
+        set_.locales[locale.key] = locale
+
+        ptc_key = tuple(raw_locale.cards)
+        if ptc_key in raw_printings_to_content:
+            content = raw_printings_to_content[ptc_key]
+            content.locales.append(locale)
+            for edition in raw_locale.editions:
+                if edition not in content.editions:
+                    content.editions.append(edition)
+            if fmt not in content.formats:
+                content.formats.append(fmt)
+        else:
+            content = SetContents(
+                locales=[locale],
+                editions=[*raw_locale.editions],
+                formats=[fmt],
+                image=[*raw_locale.images.values(), None][0],
             )
-            continue
-        gallery_image_name = gallery_info.group(1).strip()
-        gallery_links = wikitextparser.parse(gallery_info.group(2))
+            raw_printings_to_printings[content] = {}
+            for rc in raw_locale.cards.values():
+                rcl = rc.locator()
+                if rcl in raw_printings_to_printings[content]:
+                    logging.warn(
+                        f"Found mutliple printings with the same code and rarity in the same locale in {title}: {rcl.card.text['en'].name} / {rcl.rarity.value}"
+                    )
+                    continue
+                printing = CardPrinting(
+                    id=old_printing_ids[rcl]
+                    if rcl in old_printing_ids
+                    else uuid.uuid4(),
+                    card=rc.card,
+                    rarity=rc.rarity,
+                    suffix=None if rc.noabbr else rc.code[len(prefix) :],
+                    replica=any(il.altinfo.lower() == "rp" for il in rc.image),
+                    qty=rc.qty,
+                )
+                raw_printings_to_printings[content][rcl] = printing
+                content.cards.append(printing)
 
-        for link in gallery_links.wikilinks:
-            if link.target.startswith(CARD_GALLERY_NAMESPACE):
+            set_.contents.append(content)
 
-                def do(galleryname: str):
-                    locale_info = re.search(
-                        r"\((\w+)-(\w+)-(\w+)\)", galleryname
-                    ) or re.search(r"\((\w+)-(\w+)\)", galleryname)
-                    if not locale_info:
-                        logging.warn(f"No locale found for: {galleryname}")
-                        return
+        for edition in raw_locale.editions:
+            locale.card_images.setdefault(edition, {})
+            for rc in raw_locale.cards.values():
+                ils = [il for il in rc.image if il.edition == edition]
+                if len(ils) > 1:
+                    logging.warn(
+                        f"Found multiple images for the same card {rc.card.text['en'].name} / {rc.rarity}, in {title}: {[il.altinfo for il in ils]}"
+                    )
+                if ils:
+                    il = ils[0]
+                    locale.card_images[edition][
+                        raw_printings_to_printings[content][rc.locator()]
+                    ] = rc.image[il]
 
-                    @batcher.getPageContents(galleryname)
-                    def onGetData(gallery_raw_data: str):
-                        raw_lang = locale_info.group(2).strip()
-                        lang = raw_lang.lower()
-
-                        raw_edition = None
-                        edition = None
-                        if len(locale_info.groups()) >= 3:
-                            raw_edition = locale_info.group(3).strip().upper()
-                            edition = EDITION_STR_TO_ENUM.get(raw_edition)
-                            if not edition:
-                                logging.warn(
-                                    f"Unknown edition of set {galleryname}: {locale_info.group(3)}"
-                                )
-
-                        format_found = locale_info.group(1).strip().lower()
-                        if format_found not in Format._value2member_map_:
-                            logging.warn(
-                                f"Invalid format found for {galleryname}: {format_found}"
-                            )
-                            return
-
-                        locale = SetLocale(
-                            key=lang,
-                            language=LOCALES.get(lang, lang),
-                            formats=[Format(format_found)],
-                            editions=[edition] if edition else [],
-                        )
-
-                        for arg in settable.arguments:
-                            if arg.name and arg.name.strip().endswith(RELDATE_SUFFIX):
-                                langs = arg.name.strip()[: -len(RELDATE_SUFFIX)]
-                                for lang in langs.split("/"):
-                                    if lang == "ja":
-                                        lang = "jp"  # hooray for consistency!
-                                    if lang == locale.key:
-                                        value = _strip_markup(arg.value).strip()
-                                        if value:
-                                            date = _parse_date(value)
-                                            if not date:
-                                                logging.warn(
-                                                    f"Found invalid release date for locale {lang} in {batcher.idsToNames[pageid]}: {value}"
-                                                )
-                                                continue
-                                            locale.date = date
-
-                        @batcher.getImageURL("File:" + gallery_image_name)
-                        def onGetImage(url: str):
-                            locale.image = url
-
-                        contents = SetContents(
-                            locales=[locale],
-                            formats=[Format(format_found)],
-                            editions=[edition] if edition else [],
-                        )
-
-                        gallery_data = wikitextparser.parse(gallery_raw_data)
-
-                        gallery_tables = [
-                            x
-                            for x in gallery_data.templates
-                            if x.name.strip().lower() == "set gallery"
-                        ]
-
-                        subgalleries = [
-                            [
-                                x.strip()
-                                for x in subgallery_html.group(1).split("\n")
-                                if x.strip()
-                            ]
-                            for subgallery_html in [
-                                *re.finditer(
-                                    r"&lt;gallery[^\n]*\n(.*?)\n&lt;/gallery&gt;",
-                                    gallery_raw_data,
-                                    re.DOTALL,
-                                ),
-                                *re.finditer(
-                                    r"<gallery[^\n]*\n(.*?)\n</gallery>",
-                                    gallery_raw_data,
-                                    re.DOTALL,
-                                ),
-                            ]
-                        ]
-
-                        if not gallery_tables and not subgalleries:
-                            logging.warn(
-                                f"Found gallery without gallery table or subgallery: {galleryname}"
-                            )
-                            return
-
-                        printings = []
-                        example_codes: typing.List[str] = []
-                        virtual_prefixes: typing.List[str] = []
-
-                        for gallery_table in gallery_tables:
-                            default_rarity = (
-                                get_table_entry(gallery_table, "rarity") or "C"
-                            )
-                            abbr = get_table_entry(gallery_table, "abbr")
-                            if abbr:
-                                virtual_prefixes.append(abbr)
-
-                            for rawprintings in gallery_table.arguments:
-                                if rawprintings.positional:
-                                    for rawprinting in rawprintings.value.split("\n"):
-                                        if rawprinting.strip():
-                                            parts = [
-                                                x.strip()
-                                                for x in rawprinting.strip()
-                                                .replace("//", ";")
-                                                .split(";")
-                                            ]
-
-                                            if abbr:
-                                                printings.append(
-                                                    ("", *parts, default_rarity)
-                                                )
-                                            else:
-                                                example_codes.append(parts[0])
-                                                printings.append(
-                                                    (*parts, default_rarity)
-                                                )
-
-                        for subgallery in subgalleries:
-                            for subgallery_entry in subgallery:
-                                match = re.match(
-                                    r"[^\|]*\|[^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\][^\[]*\[\[([^\]]*)\]\]",
-                                    subgallery_entry,
-                                )
-                                if match:
-                                    printings.append(
-                                        (
-                                            match.group(1).strip(),
-                                            match.group(3).strip(),
-                                            match.group(2).strip(),
-                                        )
-                                    )
-                                    example_codes.append(match.group(1).strip())
-
-                        prefixmatch = re.match(
-                            r"^[^\-]+\-\D*",
-                            commonprefix(example_codes),
-                        )
-                        locale.prefix = prefixmatch.group(0) if prefixmatch else ""
-
-                        for printing in printings:
-                            if not printing:
-                                continue
-                            if len(printing) < 2:
-                                logging.warn(
-                                    f"Expected 3 entries but got {len(printing)} in {galleryname}: {printing}"
-                                )
-                                continue
-                            (code, name, *_) = printing
-                            name = re.sub(
-                                r"\s+",
-                                r" ",
-                                name.split("|")[0].replace("{", "").replace("{", ""),
-                            ).strip()
-
-                            possible_rarity_bits = [
-                                x
-                                for x in printing[2:]
-                                if x.lower() not in {"rp", "force-smw"}
-                                and "::" not in x
-                            ]
-                            if possible_rarity_bits:
-                                rarity = possible_rarity_bits[0]
-                            else:
-                                rarity = None
-
-                            replica = False
-                            if any(part.lower() == "rp" for part in printing):
-                                replica = True
-
-                            found_rairty = None
-                            if rarity:
-                                rarity = rarity.strip()
-                                rarity_normalized = rarity.lower()
-                                found_rairty = RARITY_STR_TO_ENUM.get(
-                                    rarity_normalized
-                                ) or FULL_RARITY_STR_TO_ENUM.get(rarity_normalized)
-                                if not found_rairty:
-                                    logging.warn(
-                                        f"Unknown rarity for {name} in {galleryname}: {rarity}"
-                                    )
-
-                            def getCardID(
-                                name: str,
-                                code: str,
-                                rarity: typing.Optional[str],
-                                found_rairty: typing.Optional[CardRarity],
-                                raw_edition: typing.Optional[str],
-                                locale: SetLocale,
-                                virtual_prefixes: typing.List[str],
-                                raw_lang: str,
-                            ):
-                                @batcher.getPageID(CAT_UNUSABLE)
-                                def catID(unusableid: int, _: str):
-                                    @batcher.getPageID(name)
-                                    def onGetCardID(printingid: int, _: str):
-                                        @batcher.getPageCategories(name)
-                                        def onGetCardCats(
-                                            categories: typing.List[int],
-                                        ):
-                                            if unusableid in categories:
-                                                return  # skip unplayables
-
-                                            def addToContents(id: int):
-                                                card = db.cards_by_yugipedia_id[id]
-                                                suffix = code[
-                                                    len(locale.prefix or "") :
-                                                ]
-                                                found_printing = old_printings.get(
-                                                    (
-                                                        locale.key,
-                                                        card.id,
-                                                        suffix,
-                                                        found_rairty,
-                                                    )
-                                                )
-                                                if not found_printing:
-                                                    found_printing = CardPrinting(
-                                                        id=uuid.uuid4(),
-                                                        card=card,
-                                                        suffix=suffix,
-                                                        rarity=found_rairty,
-                                                        replica=replica,
-                                                    )
-
-                                                image_file_args = [
-                                                    x[len(FILE_PREFIX) :]
-                                                    for x in printing
-                                                    if x.lower().startswith(FILE_PREFIX)
-                                                ]
-                                                if image_file_args:
-                                                    image_filename = image_file_args[0]
-                                                else:
-                                                    image_exts = [
-                                                        x[len(EXT_PREFIX) :]
-                                                        for x in printing
-                                                        if x.lower().startswith(
-                                                            EXT_PREFIX
-                                                        )
-                                                    ]
-                                                    image_ext = (
-                                                        image_exts[0]
-                                                        if image_exts
-                                                        else "png"
-                                                    )
-                                                    image_normalized_name = re.sub(
-                                                        r"\W", r"", name
-                                                    )
-                                                    image_filename = (
-                                                        f"File:{image_normalized_name}"
-                                                    )
-                                                    setcode_before_dash = None
-                                                    if virtual_prefixes:
-                                                        setcode_before_dash = re.match(
-                                                            r"[^\-]+",
-                                                            virtual_prefixes[0],
-                                                        )
-                                                    elif locale.prefix:
-                                                        setcode_before_dash = re.match(
-                                                            r"[^\-]+", locale.prefix
-                                                        )
-                                                    if setcode_before_dash:
-                                                        image_filename += f"-{setcode_before_dash.group(0)}"
-                                                    image_filename += f"-{raw_lang}"
-                                                    if rarity:
-                                                        image_filename += f"-{RAIRTY_FULL_TO_SHORT.get(rarity.lower(), rarity)}"
-                                                    if raw_edition:
-                                                        image_filename += (
-                                                            f"-{raw_edition}"
-                                                        )
-                                                    image_filename += f".{image_ext}"
-
-                                                @batcher.getImageURL(image_filename)
-                                                def onImageGet(url: str):
-                                                    ed = edition or SetEdition.NONE
-                                                    locale.card_images.setdefault(
-                                                        ed, {}
-                                                    )
-                                                    locale.card_images[ed][
-                                                        found_printing
-                                                    ] = url
-
-                                                contents.cards.append(found_printing)
-
-                                            if (
-                                                printingid
-                                                not in db.cards_by_yugipedia_id
-                                            ):
-                                                # try looking for (card) version
-                                                @batcher.getPageID(name + " (card)")
-                                                def onGetCardID(
-                                                    printingid: int, _: str
-                                                ):
-                                                    @batcher.getPageCategories(name)
-                                                    def onGetCardCats(
-                                                        categories: typing.List[int],
-                                                    ):
-                                                        if unusableid in categories:
-                                                            pass  # skip unplayables
-                                                        elif (
-                                                            printingid
-                                                            not in db.cards_by_yugipedia_id
-                                                        ):
-                                                            logging.warn(
-                                                                f'Card "{name}" not found in database in "{galleryname}"'
-                                                            )
-                                                        else:
-                                                            addToContents(printingid)
-
-                                            else:
-                                                addToContents(printingid)
-
-                            getCardID(
-                                name,
-                                code,
-                                rarity,
-                                found_rairty,
-                                raw_edition,
-                                locale,
-                                virtual_prefixes,
-                                raw_lang,
-                            )
-
-                        for arg in settable.arguments:
-                            if arg.name and arg.name.strip().endswith(DBID_SUFFIX):
-                                lang = arg.name.strip()[: -len(DBID_SUFFIX)]
-                                if lang == "ja":
-                                    lang = "jp"  # hooray for consistency!
-
-                                if lang == locale.key:
-                                    db_ids = [
-                                        x.strip()
-                                        for x in arg.value.replace("*", "").split("\n")
-                                        if x.strip()
-                                    ]
-                                    try:
-                                        locale.db_ids = [
-                                            int(x) for x in db_ids if x != "none"
-                                        ]
-                                    except ValueError:
-                                        logging.warn(
-                                            f"Unknown Konami ID for {batcher.idsToNames[pageid]}: {db_ids}"
-                                        )
-
-                        if locale.key in set_.locales:
-                            # merge locales
-                            existing_locale = set_.locales[locale.key]
-
-                            if not existing_locale.prefix:
-                                existing_locale.prefix = locale.prefix
-                            existing_locale.db_ids.extend(
-                                [
-                                    x
-                                    for x in locale.db_ids
-                                    if x not in existing_locale.db_ids
-                                ]
-                            )
-                            for ed, images in locale.card_images.items():
-                                if ed in existing_locale.card_images:
-                                    existing_locale.card_images[ed].update(images)
-                                else:
-                                    existing_locale.card_images[ed] = images
-
-                            existing_locale.editions.extend(
-                                [
-                                    x
-                                    for x in locale.editions
-                                    if x not in existing_locale.editions
-                                ]
-                            )
-                            existing_locale.formats.extend(
-                                [
-                                    x
-                                    for x in locale.formats
-                                    if x not in existing_locale.formats
-                                ]
-                            )
-
-                            locale = existing_locale
-                            contents.locales = [locale]
-                        else:
-                            set_.locales[locale.key] = locale
-
-                        for similar_content in [
-                            other_contents
-                            for other_contents in set_.contents
-                            if (
-                                len(contents.cards) == len(other_contents.cards)
-                                and len(contents.removed_cards)
-                                == len(other_contents.removed_cards)
-                                and all(
-                                    _printing_equal(p1, p2)
-                                    for p1, p2 in zip(
-                                        contents.cards, other_contents.cards
-                                    )
-                                )
-                                and all(
-                                    _printing_equal(p1, p2)
-                                    for p1, p2 in zip(
-                                        contents.removed_cards,
-                                        other_contents.removed_cards,
-                                    )
-                                )
-                            )
-                        ]:
-                            # same contents; merge
-                            similar_content.locales.extend(
-                                [
-                                    x
-                                    for x in contents.locales
-                                    if x not in similar_content.locales
-                                ]
-                            )
-                            similar_content.formats.extend(
-                                [
-                                    x
-                                    for x in contents.formats
-                                    if x not in similar_content.formats
-                                ]
-                            )
-                            similar_content.editions.extend(
-                                [
-                                    x
-                                    for x in contents.editions
-                                    if x not in similar_content.editions
-                                ]
-                            )
-                            for ed, oldprintings in locale.card_images.items():
-                                for oldprinting in {**oldprintings}:
-                                    if (
-                                        oldprinting in contents.cards
-                                        or oldprinting in contents.removed_cards
-                                    ):
-                                        try:
-                                            oldindex = contents.cards.index(oldprinting)
-                                            oldwasremoved = False
-                                        except ValueError:
-                                            oldindex = contents.removed_cards.index(
-                                                oldprinting
-                                            )
-                                            oldwasremoved = True
-
-                                        if oldwasremoved:
-                                            newprinting = similar_content.removed_cards[
-                                                oldindex
-                                            ]
-                                        else:
-                                            newprinting = similar_content.cards[
-                                                oldindex
-                                            ]
-
-                                        locale.card_images[ed][
-                                            newprinting
-                                        ] = locale.card_images[ed][oldprinting]
-                                        del locale.card_images[ed][oldprinting]
-
-                            break
-                        else:
-                            set_.contents.append(contents)
-
-                do(link.target)
-
-    set_.yugipedia = ExternalIdPair(batcher.idsToNames[pageid], pageid)
     return True
 
 
@@ -2450,6 +2634,7 @@ def import_from_yugipedia(
 
         series_members: typing.Dict[str, typing.Set[Card]] = {}
 
+        cards = []
         if import_cards:
             banlists = get_banlist_pages(batcher)
             cards = [*get_card_pages(batcher)]
@@ -2545,7 +2730,7 @@ def import_from_yugipedia(
                 def do(pageid: int):
                     @batcher.getPageContents(pageid)
                     def onGetData(raw_data: str):
-                        nonlocal n_found, n_new
+                        nonlocal n_found, n_new, cards
 
                         data = wikitextparser.parse(raw_data)
 
@@ -2555,48 +2740,67 @@ def import_from_yugipedia(
                             if x.name.strip().lower() == "infobox set"
                         ]
                         for settable in settables:
-                            found = True
-                            set_ = db.sets_by_yugipedia_id.get(pageid)
-                            if not set_:
-                                for arg in settable.arguments:
-                                    if arg.name and arg.name.strip().endswith(
-                                        DBID_SUFFIX
-                                    ):
-                                        db_ids = [
-                                            x.strip()
-                                            for x in arg.value.replace("*", "").split(
-                                                "\n"
-                                            )
-                                            if x.strip()
-                                        ]
-                                        try:
-                                            for db_id in db_ids:
-                                                set_ = db.sets_by_konami_sid.get(
-                                                    int(db_id)
-                                                )
-                                                if set_:
-                                                    break
-                                        except ValueError:
-                                            if arg.value.strip() != "none":
-                                                logging.warn(
-                                                    f'Unparsable konami set ID for {arg.name} in {batcher.idsToNames[pageid]}: "{arg.value}"'
-                                                )
-                            if not set_:
-                                set_ = db.sets_by_en_name.get(
-                                    get_table_entry(settable, "en_name", "")
-                                )
-                            if not set_:
-                                set_ = Set(id=uuid.uuid4())
-                                found = False
 
-                            if parse_tcg_ocg_set(
-                                db, batcher, pageid, set_, data, raw_data, settable
-                            ):
-                                db.add_set(set_)
-                                if found:
-                                    n_found += 1
-                                else:
-                                    n_new += 1
+                            def do(settable: wikitextparser.Template):
+                                nonlocal cards
+
+                                found = True
+                                set_ = db.sets_by_yugipedia_id.get(pageid)
+                                if not set_:
+                                    for arg in settable.arguments:
+                                        if arg.name and arg.name.strip().endswith(
+                                            DBID_SUFFIX
+                                        ):
+                                            db_ids = [
+                                                x.strip()
+                                                for x in arg.value.replace(
+                                                    "*", ""
+                                                ).split("\n")
+                                                if x.strip()
+                                            ]
+                                            try:
+                                                for db_id in db_ids:
+                                                    set_ = db.sets_by_konami_sid.get(
+                                                        int(db_id)
+                                                    )
+                                                    if set_:
+                                                        break
+                                            except ValueError:
+                                                if arg.value.strip() != "none":
+                                                    logging.warn(
+                                                        f'Unparsable konami set ID for {arg.name} in {batcher.idsToNames.get(pageid, pageid)}: "{arg.value}"'
+                                                    )
+                                if not set_:
+                                    set_ = db.sets_by_en_name.get(
+                                        get_table_entry(settable, "en_name", "")
+                                    )
+                                if not set_:
+                                    set_ = Set(id=uuid.uuid4())
+                                    found = False
+
+                                cards = cards or [*get_card_pages(batcher)]
+
+                                @batcher.getPageID(pageid)
+                                def onGetID(pageid: int, title: str):
+                                    nonlocal n_found, n_new
+
+                                    if parse_tcg_ocg_set(
+                                        db,
+                                        batcher,
+                                        pageid,
+                                        set_,
+                                        data,
+                                        raw_data,
+                                        settable,
+                                        cards,
+                                    ):
+                                        db.add_set(set_)
+                                        if found:
+                                            n_found += 1
+                                        else:
+                                            n_new += 1
+
+                            do(settable)
 
                         md_settables = [
                             x
@@ -2604,20 +2808,30 @@ def import_from_yugipedia(
                             if x.name.strip().lower() == "infobox master duel set"
                         ]
                         for md_settable in md_settables:
-                            found = True
-                            set_ = db.sets_by_yugipedia_id.get(pageid)
-                            if not set_:
-                                set_ = Set(id=uuid.uuid4())
-                                found = False
 
-                            if parse_md_set(
-                                db, batcher, pageid, set_, data, raw_data, md_settable
-                            ):
-                                db.add_set(set_)
-                                if found:
-                                    n_found += 1
-                                else:
-                                    n_new += 1
+                            @batcher.getPageID(pageid)
+                            def onGetName(pageid: int, title: str):
+                                found = True
+                                set_ = db.sets_by_yugipedia_id.get(pageid)
+                                if not set_:
+                                    set_ = Set(id=uuid.uuid4())
+                                    found = False
+
+                                if parse_md_set(
+                                    db,
+                                    batcher,
+                                    pageid,
+                                    set_,
+                                    data,
+                                    raw_data,
+                                    md_settable,
+                                ):
+                                    nonlocal n_found, n_new
+                                    db.add_set(set_)
+                                    if found:
+                                        n_found += 1
+                                    else:
+                                        n_new += 1
 
                         dl_settables = [
                             x
@@ -2625,25 +2839,37 @@ def import_from_yugipedia(
                             if x.name.strip().lower() == "infobox duel links set"
                         ]
                         for dl_settable in dl_settables:
-                            found = True
-                            set_ = db.sets_by_yugipedia_id.get(pageid)
-                            if not set_:
-                                set_ = Set(id=uuid.uuid4())
-                                found = False
 
-                            if parse_dl_set(
-                                db, batcher, pageid, set_, data, raw_data, dl_settable
-                            ):
-                                db.add_set(set_)
-                                if found:
-                                    n_found += 1
-                                else:
-                                    n_new += 1
+                            @batcher.getPageID(pageid)
+                            def onGetName(pageid: int, title: str):
+                                found = True
+                                set_ = db.sets_by_yugipedia_id.get(pageid)
+                                if not set_:
+                                    set_ = Set(id=uuid.uuid4())
+                                    found = False
+
+                                if parse_dl_set(
+                                    db,
+                                    batcher,
+                                    pageid,
+                                    set_,
+                                    data,
+                                    raw_data,
+                                    dl_settable,
+                                ):
+                                    nonlocal n_found, n_new
+                                    db.add_set(set_)
+                                    if found:
+                                        n_found += 1
+                                    else:
+                                        n_new += 1
 
                         if not settables and not md_settables and not dl_settables:
-                            logging.warn(
-                                f"Found set without set table: {batcher.idsToNames[pageid]}"
-                            )
+
+                            @batcher.getPageID(pageid)
+                            def onGetName(pageid: int, title: str):
+                                logging.warn(f"Found set without set table: {title}")
+
                             return
 
                 do(setid)
@@ -2878,13 +3104,16 @@ class YugipediaBatcher:
         with open(path, "w", encoding="utf-8") as file:
             json.dump({str(k): v for k, v in self.imagesCache.items()}, file, indent=2)
 
-    def flushPendingOperations(self):
-        while (
+    def operationsPending(self) -> bool:
+        return bool(
             self.pendingGetPageContents
             or self.pendingGetPageCategories
             or self.pendingImages
             or self.pendingGetPageID
-        ):
+        )
+
+    def flushPendingOperations(self):
+        while self.operationsPending():
             self._executeGetContentsBatch()
             self._executeGetCategoriesBatch()
             self._executeGetImageURLBatch()
@@ -2945,7 +3174,6 @@ class YugipediaBatcher:
             pagetitles = [str(p) for p in pages if type(p) is str]
             query = {
                 "action": "query",
-                "redirects": "1",
                 "export": 1,
                 "exportnowrap": 1,
                 **({"pageids": "|".join(pageids)} if pageids else {}),
@@ -3028,7 +3256,6 @@ class YugipediaBatcher:
             pagetitles = [str(p) for p in pages if type(p) is str]
             query = {
                 "action": "query",
-                "redirects": "1",
                 "prop": "categories",
                 **({"pageids": "|".join(pageids)} if pageids else {}),
                 **({"titles": "|".join(pagetitles)} if pagetitles else {}),
@@ -3059,7 +3286,6 @@ class YugipediaBatcher:
                     if unknown_cats:
                         query2 = {
                             "action": "query",
-                            "redirects": "1",
                             "titles": "|".join(unknown_cats),
                         }
                         for result2_page in paginate_query(query2):
@@ -3093,7 +3319,6 @@ class YugipediaBatcher:
         query = {
             "action": "query",
             "list": "categorymembers",
-            "redirects": "1",
             **(
                 {
                     "cmtitle": page,
@@ -3326,6 +3551,18 @@ class YugipediaBatcher:
                         continue
 
                     for image in result["imageinfo"]:
+                        if result.get("filemissing"):
+                            # We can't download licensed images.
+                            # This is their (bad) way of telling us that.
+                            self.missingPagesCache.add(title)
+                            self.missingPagesCache.add(str(pageid))
+                            # logging.warn(f"Image file cannot be accessed: {title}")
+                            continue
+                        if "url" not in image:
+                            logging.warn(
+                                f"Found strange response from server for image URL: {json.dumps(image)}"
+                            )
+                            continue
                         url = image["url"]
                         self.imagesCache[pageid] = url
                         for callback in pending.get(pageid, []):
@@ -3387,7 +3624,11 @@ class YugipediaBatcher:
                 **({"pageids": "|".join(pageids)} if pageids else {}),
                 **({"titles": "|".join(pagetitles)} if pagetitles else {}),
             }
+            redirects: typing.Dict[str, str] = {}
             for result_page in paginate_query(query):
+                for redirect in result_page.get("redirects", []):
+                    redirects[redirect["from"]] = redirect["to"]
+
                 for result in result_page["pages"]:
                     if result.get("missing") or result.get("invalid"):
                         self.missingPagesCache.add(
@@ -3405,6 +3646,16 @@ class YugipediaBatcher:
                         callback(pageid, title)
                     for callback in pending.get(title, []):
                         callback(pageid, title)
+            for from_, to_ in redirects.items():
+                if to_ in self.namesToIDs:
+                    pageid = self.namesToIDs[to_]
+
+                    self.namesToIDs[from_] = pageid
+
+                    for callback in pending.get(from_, []):
+                        callback(pageid, to_)
+                else:
+                    self.missingPagesCache.add(from_)
 
         do([p for p in pages if type(p) is int])
         do([p for p in pages if type(p) is str])
