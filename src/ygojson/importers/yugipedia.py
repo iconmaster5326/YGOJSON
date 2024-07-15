@@ -17,7 +17,7 @@ import wikitextparser
 from ..database import *
 
 API_URL = "https://yugipedia.com/api.php"
-RATE_LIMIT = 0  # 1.1
+RATE_LIMIT = 1.1
 TIME_TO_JUST_REDOWNLOAD_ALL_PAGES = 30 * 24 * 60 * 60  # 1 month-ish
 
 _last_access = time.time()
