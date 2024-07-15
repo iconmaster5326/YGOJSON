@@ -1030,11 +1030,13 @@ _RARITY_FTS_RAW: typing.List[typing.Tuple[typing.List[str], str]] = [
     ),
     (
         [
-            "altr",
             "str",
-            "alternate",
             "starlight",
             "Starlight Rare",
+            "alt",
+            "altr",
+            "alternate",
+            "Alternate Rare",
         ],
         "StR",
     ),
@@ -1154,6 +1156,7 @@ _RARITY_FTS_RAW: typing.List[typing.Tuple[typing.List[str], str]] = [
         [
             "cr",
             "collectors",
+            "Collectors Rare",
             "Collector's Rare",
         ],
         "CR",
@@ -1801,6 +1804,8 @@ def parse_tcg_ocg_set(
     def get_gallery_data(
         setname: str, raw_locale: RawLocale, edition: SetEdition, locale_code: str
     ):
+        raw_locale.editions.add(edition)
+
         def do(galleryname: str):
             @batcher.getPageContents(galleryname)
             def onGetList(raw_gallery_data: str):
@@ -1842,9 +1847,10 @@ def parse_tcg_ocg_set(
                 for gallery in gallery_templates:
                     default_abbr = get_table_entry(gallery, "abbr", "").strip()
 
-                    raw_default_rarity = get_table_entry(
-                        gallery, "rarities", "C"
-                    ).strip()
+                    raw_default_rarity = (
+                        get_table_entry(gallery, "rarities", "").strip()
+                        or get_table_entry(gallery, "rarity", "").strip()
+                    )
                     if not raw_default_rarity:
                         raw_default_rarity = "C"
                     raw_short_default_rarity = RAIRTY_FULL_TO_SHORT.get(
@@ -1932,7 +1938,16 @@ def parse_tcg_ocg_set(
                                             image += f"-{code_before_dash.group(0)}"
                                     image += f"-{raw_locale.key.upper()}"
                                     if raw_rarity:
-                                        image += f"-{raw_rarity}"
+                                        rarity_code = RAIRTY_FULL_TO_SHORT.get(
+                                            raw_rarity.lower()
+                                        )
+                                        if rarity_code:
+                                            image += f"-{rarity_code}"
+                                        else:
+                                            image += f"-{raw_rarity}"
+                                            logging.warn(
+                                                f"Could not decipher rarity code for {name} in {galleryname}: {raw_rarity}"
+                                            )
                                     ed_str = EDITIONS_IN_NAV_REVERSE[edition].upper()
                                     if "-" + ed_str in galleryname:
                                         image += f"-{ed_str}"
@@ -1993,10 +2008,10 @@ def parse_tcg_ocg_set(
                 if link.target.strip().lower().startswith("set card galleries:")
             ]
 
-            @batcher.getImageURL(imagename.group(0))
+            @batcher.getImageURL("File:" + imagename.group(0))
             def onImage(url: str):
                 for gallery_link in gallery_links:
-                    lc = re.match(r"\([^\-]+\-([^\)]+)\)", gallery_link)
+                    lc = re.search(r"\([^\-]+\-([^\)]+)\)", gallery_link)
                     if lc:
                         packimages[lc.group(1).lower()] = url
 
