@@ -136,6 +136,12 @@ Initial release.
 
 # Python API Changelog
 
+## 0.3.0
+
+* Added support for per-locale editions and formats.
+* Completely revamped the Yugipedia set import process. It should be more accurate now.
+* Minor fixes for other importers.
+
 ## 0.2.0
 
 * Added options for downloading the data from the `database` module.
