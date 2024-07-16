@@ -58,6 +58,7 @@ jobs:
         SQUASH_HISTORY: true
     - name: Push Aggregates
       uses: s0/git-publish-subdir-action@v2.6.0
+      continue-on-error: true # TODO: files too big; we need to enable git-lfs to remove this line
       env:
         REPO: self
         BRANCH: v1/aggregate  # update this when we have new schema versions

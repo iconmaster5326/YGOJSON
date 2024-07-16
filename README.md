@@ -34,7 +34,7 @@ If you don't want everything, or don't want to unzip things, just fetch the foll
 
 * For individual card JSON files: https://raw.githubusercontent.com/iconmaster5326/YGOJSON/v1/individual/cards/00045021-f0d3-4473-8bbc-8aa6504d3562.json
 * For a list of all card UUIDs: https://raw.githubusercontent.com/iconmaster5326/YGOJSON/v1/individual/cards.json
-* For all information for all cards: https://raw.githubusercontent.com/iconmaster5326/YGOJSON/v1/aggregate/cards.json
+* For all information for all cards: https://raw.githubusercontent.com/iconmaster5326/YGOJSON/v1/aggregate/cards.json ***(NOTE: These files are currently BROKEN and OUT OF DATE due to GitHub file size limits. Use the individuals or download the aggregates ZIP file instead!)***
 
 You may have noticed the two different ways of getting the data: individual and aggregate. The differences between the two are as follows:
 
