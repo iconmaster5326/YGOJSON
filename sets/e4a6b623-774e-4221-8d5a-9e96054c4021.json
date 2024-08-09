@@ -1,0 +1,133 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e4a6b623-774e-4221-8d5a-9e96054c4021",
+  "name": {
+    "en": "Academy Duel Disk Special Set",
+    "ja": "\uff21\uff23\uff21\uff24\uff25\uff2d\uff39\u3000\uff24\uff35\uff25\uff2c\u3000\uff24\uff29\uff33\uff2b\u3000\uff33\uff30\uff25\uff23\uff29\uff21\uff2c\u3000\uff33\uff25\uff34",
+    "ko": "\ub4c0\uc5bc\ub514\uc2a4\ud06c\u3000\uff33\uff30\uff25\uff23\uff29\uff21\uff2c\u3000\uff33\uff25\uff34"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "DSK2-KR",
+      "date": "2007-09-14",
+      "image": "https://ms.yugipedia.com//4/41/DSK2-PromoKR.png",
+      "cardImages": {
+        "limited": {
+          "0f231cc4-d311-4c75-aad6-add37d6596bf": "https://ms.yugipedia.com//0/0b/CyberDragon-DSK2-KR-ScR-LE.png",
+          "27f32d6f-be34-4c80-a407-1e71682314f7": "https://ms.yugipedia.com//d/de/CyberEndDragon-DSK2-KR-ScR-LE.jpg",
+          "7a9cbe1e-01e4-4329-8992-b1cf606ab321": "https://ms.yugipedia.com//b/be/WingedKuriboh-DSK2-KR-ScR-LE.jpg",
+          "6fb04d56-ed7a-4e84-a4f3-2fc0b30585c9": "https://ms.yugipedia.com//4/4b/Blockman-DSK2-KR-ScR-LE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010000961000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "ADDS-JP",
+      "date": "2006-11-09",
+      "image": "https://ms.yugipedia.com//4/46/ADDS-PromoJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "87b8c85b-01a2-4b2e-b0e0-923244352027": "https://ms.yugipedia.com//7/79/CyberDragon-ADDS-JP-UR.jpg",
+          "71b2b6bd-b8f3-4694-98f7-211e21e72b27": "https://ms.yugipedia.com//f/f5/CyberEndDragon-ADDS-JP-UR.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          111107006
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//4/41/DSK2-PromoKR.png",
+      "cards": [
+        {
+          "id": "0f231cc4-d311-4c75-aad6-add37d6596bf",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "27f32d6f-be34-4c80-a407-1e71682314f7",
+          "card": "4d10fc5f-70c0-47f7-8731-a7b958b2de44",
+          "suffix": "002",
+          "rarity": "secret"
+        },
+        {
+          "id": "7a9cbe1e-01e4-4329-8992-b1cf606ab321",
+          "card": "a1371646-5405-49d6-9351-d549bdae4858",
+          "suffix": "003",
+          "rarity": "secret"
+        },
+        {
+          "id": "6fb04d56-ed7a-4e84-a4f3-2fc0b30585c9",
+          "card": "ef30d64c-2baf-4380-9c3b-12d819418d8e",
+          "suffix": "004",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/46/ADDS-PromoJP.jpg",
+      "cards": [
+        {
+          "id": "87b8c85b-01a2-4b2e-b0e0-923244352027",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "71b2b6bd-b8f3-4694-98f7-211e21e72b27",
+          "card": "4d10fc5f-70c0-47f7-8731-a7b958b2de44",
+          "suffix": "002",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Academy Duel Disk Special Set",
+      "id": 18106
+    }
+  }
+}

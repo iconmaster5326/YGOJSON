@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "cfcd874a-70a1-4b83-90ce-42aa58fda104",
+  "name": {
+    "en": "Yugi's Collector Box"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YUCB-EN",
+      "image": "https://ms.yugipedia.com//7/7d/YUCB-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "20a1e215-dd9b-4c91-aa2b-de26793f1bf0": "https://ms.yugipedia.com//b/bf/DarkMagician-YUCB-EN-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18811002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7d/YUCB-PromoEN.png",
+      "cards": [
+        {
+          "id": "20a1e215-dd9b-4c91-aa2b-de26793f1bf0",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yugi's Collector Box",
+      "id": 500205
+    }
+  }
+}
