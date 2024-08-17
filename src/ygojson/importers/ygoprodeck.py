@@ -170,7 +170,9 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
     if card.card_type in {CardType.MONSTER, CardType.TOKEN}:
         typeline = in_json["type"].split(" ")
 
-        card.attribute = Attribute(in_json["attribute"].lower())
+        card.attribute = (
+            Attribute(in_json["attribute"].lower()) if "attribute" in in_json else None
+        )
         card.monster_card_types = []
         for i, v in MONSTER_CARD_TYPES.items():
             if i in typeline:
