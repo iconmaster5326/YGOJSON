@@ -136,6 +136,12 @@ Initial release.
 
 # Python API Changelog
 
+## 0.3.1
+
+* Minor fix for YGOPRODECK importer.
+* Fixes for manual fixups.
+* Added ability to look up sets by Yugipedia page title.
+
 ## 0.3.0
 
 * Added support for per-locale editions and formats.
