@@ -1,0 +1,46 @@
+{
+  "sets": [
+    {
+      "yugipediaName": "Soul of the Duelist"
+    },
+    {
+      "yugipediaName": "Rise of Destiny"
+    },
+    {
+      "yugipediaName": "Flaming Eternity"
+    }
+  ],
+  "contents": [
+    {
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "distribution": {
+        "name": "TCG Core Booster Pre-CDIP"
+      },
+      "perSet": [
+        {
+          "ygoprodeck": "Soul of the Duelist"
+        },
+        {
+          "ygoprodeck": "Rise of Destiny"
+        },
+        {
+          "ygoprodeck": "Flaming Eternity"
+        }
+      ]
+    },
+    {
+      "$comment": "These packs have 5 cards instead of 9. TODO: what are the pack odds?",
+      "packsPerBox": 30,
+      "locales": [
+        "jp"
+      ]
+    },
+    {
+      "$comment": "These packs have 5 cards instead of 9. TODO: what are the pack odds?",
+      "locales": [
+        "ko"
+      ]
+    }
+  ]
+}

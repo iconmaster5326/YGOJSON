@@ -1823,6 +1823,9 @@ class Database:
     sets_by_yugipedia_id: typing.Dict[int, Set]
     """You may use this to look up sets by their Yugipedia page ID."""
 
+    sets_by_yugipedia_name: typing.Dict[str, Set]
+    """You may use this to look up sets by their Yugipedia page name."""
+
     sets_by_ygoprodeck_id: typing.Dict[str, Set]
     """You may use this to look up sets by their YGOPRODECK password."""
 
@@ -1898,6 +1901,7 @@ class Database:
         self.sets_by_en_name = {}
         self.sets_by_konami_sid = {}
         self.sets_by_yugipedia_id = {}
+        self.sets_by_yugipedia_name = {}
         self.sets_by_ygoprodeck_id = {}
 
         self.printings_by_id = {}
@@ -1952,6 +1956,7 @@ class Database:
             self.sets_by_en_name[set_.name["en"]] = set_
         if set_.yugipedia:
             self.sets_by_yugipedia_id[set_.yugipedia.id] = set_
+            self.sets_by_yugipedia_name[set_.yugipedia.name] = set_
         for locale in set_.locales.values():
             for db_id in locale.db_ids:
                 self.sets_by_konami_sid[db_id] = set_
@@ -2039,6 +2044,8 @@ class Database:
             result = self.sets_by_ygoprodeck_id.get(mfi.ygoprodeck_name, result)
         if not result and mfi.yugipedia_id:
             result = self.sets_by_yugipedia_id.get(mfi.yugipedia_id, result)
+        if not result and mfi.yugipedia_name:
+            result = self.sets_by_yugipedia_name.get(mfi.yugipedia_name, result)
         if not result and mfi.name:
             result = self.sets_by_en_name.get(mfi.name, result)
         return result
@@ -2176,7 +2183,8 @@ class Database:
                                     distro = in_contents.get("distribution")
                                     if distro:
                                         if (
-                                            distro
+                                            type(distro) is str
+                                            and distro
                                             in SpecialDistroType._value2member_map_
                                         ):
                                             contents.distrobution = SpecialDistroType(
@@ -2291,14 +2299,15 @@ class Database:
                                 )
                             in_pack["set"] = str(set_.id)
 
-                            card = self.lookup_card(
-                                ManualFixupIdentifier(in_pack["card"])
-                            )
-                            if not card:
-                                raise Exception(
-                                    f"In sealed product {filename}: Card not found: {json.dumps(in_pack['card'])}"
+                            if "card" in in_pack:
+                                card = self.lookup_card(
+                                    ManualFixupIdentifier(in_pack["card"])
                                 )
-                            in_pack["card"] = str(card.id)
+                                if not card:
+                                    raise Exception(
+                                        f"In sealed product {filename}: Card not found: {json.dumps(in_pack['card'])}"
+                                    )
+                                in_pack["card"] = str(card.id)
 
                     in_id = uuid.UUID(in_json["id"])
                     if in_id in self.products_by_id:

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "17bbd0c2-28db-4575-b6ad-34e2d7050d5e",
+  "name": "McDonald's Promotional Cards",
+  "slots": [
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 10,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "chance": 6,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

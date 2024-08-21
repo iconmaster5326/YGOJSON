@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+  "name": "TCG Core Booster Pre-SOD",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 7,
+      "rarity": [
+        {
+          "chance": 3,
+          "rarities": [
+            "shortprint"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "proportionate": true
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 6,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 12,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "chance": 31,
+          "rarities": [
+            "secret"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "d78451d7-7193-4011-b474-c7499484fe57",
+  "name": "Movie Pack",
+  "slots": [
+    {
+      "type": "pool",
+      "$comment": "This is assuming all cards have an equal pull chance, which may not be true. More pack opening videos need watched.",
+      "rarity": [
+        {
+          "rarities": [
+            "common",
+            "super"
+          ]
+        }
+      ]
+    }
+  ]
+}
