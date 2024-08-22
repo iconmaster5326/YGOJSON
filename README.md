@@ -136,6 +136,10 @@ Initial release.
 
 # Python API Changelog
 
+## 0.3.3
+
+* Fix for pack distributions not being able to be loaded properly.
+
 ## 0.3.2
 
 * Fix for pack distribution card-type filtering in slots, adding new "quota" mechanism, to properly model early TCG reprint packs.

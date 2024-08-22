@@ -1463,7 +1463,7 @@ class SetContents:
             return self.distrobution
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
-        distro = None
+        distro = self.distrobution
         if type(self.distrobution) is SpecialDistroType:
             distro = self.distrobution.value
         elif type(self.distrobution) is PackDistrobution:
@@ -2733,8 +2733,6 @@ class Database:
                             else uuid.UUID(content["distrobution"])
                         )
                         if content.get("distrobution")
-                        and content["distrobution"]
-                        in SpecialDistroType._value2member_map_
                         else None,
                         packs_per_box=content.get("packsPerBox"),
                         has_hobby_retail_differences=content.get(
