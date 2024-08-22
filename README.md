@@ -136,6 +136,11 @@ Initial release.
 
 # Python API Changelog
 
+## 0.3.2
+
+* Fix for pack distribution card-type filtering in slots, adding new "quota" mechanism, to properly model early TCG reprint packs.
+* Other small fixes in output of manually fixed up models.
+
 ## 0.3.1
 
 * Minor fix for YGOPRODECK importer.
