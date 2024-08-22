@@ -22,6 +22,22 @@
       "description": "A human-readable name for this distribution. This need have no bearing on reality, and is only useful for identifying what this distrobution represents.",
       "type": "string"
     },
+    "quotas": {
+      "description": "Some sets (old reprint sets, for one) had an exact number of monsters, spells, and traps in each pack, regardless of rarities. This is a map of card types to the number of cards that must be generated, at minimum, of that type.",
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "monster",
+          "spell",
+          "trap",
+          "token",
+          "skill"
+        ]
+      },
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
     "slots": {
       "description": "An array of slots in the pack.",
       "type": "array",
@@ -71,7 +87,7 @@
                 "type": "integer"
               },
               "cardTypes": {
-                "description": "Some sets (old reprint sets, for one) only had monsters, spells, or traps in certain slots. If provided, will only generate cards of the given types in this slot.",
+                "description": "If provided, will only generate cards of the given card types in this slot: Monster, Spell, Trap, etc.",
                 "type": "array",
                 "items": {
                   "enum": [
@@ -116,7 +132,7 @@
             }
           },
           {
-            "description": "This indicates that a set is guaranteed to appear here.",
+            "description": "This indicates that a set is guaranteed to appear here. This ignores the set's distribution, and acts as if it is preconstructed.",
             "type": "object",
             "required": [
               "type",

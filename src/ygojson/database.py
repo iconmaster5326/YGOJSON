@@ -1024,6 +1024,13 @@ class PackDistrobution:
     name: typing.Optional[str]
     """The optional name of this pack distribution. Used only for human reference purposes, and means nothing."""
 
+    quotas: typing.Dict[CardType, int]
+    """Some sets (old reprint sets, for one) had an exact number of
+    monsters, spells, and traps in each pack, regardless of rarities.
+    This is a map of card types to the number of cards that must be generated,
+    at minimum, of that type.
+    """
+
     slots: typing.List[PackDistroSlot]
     """Slots of cards in this pack."""
 
@@ -1032,10 +1039,12 @@ class PackDistrobution:
         *,
         id: uuid.UUID,
         name: typing.Optional[str] = None,
+        quotas: typing.Optional[typing.Dict[CardType, int]] = None,
         slots: typing.Optional[typing.List[PackDistroSlot]] = None,
     ) -> None:
         self.id = id
         self.name = name
+        self.quotas = quotas or {}
         self.slots = slots or []
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
@@ -1043,6 +1052,11 @@ class PackDistrobution:
             "$schema": f"https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v{SCHEMA_VERSION}/distribution.json",
             "id": str(self.id),
             **({"name": self.name} if self.name else {}),
+            **(
+                {"quotas": {k.value: v for k, v in self.quotas.items()}}
+                if self.quotas
+                else {}
+            ),
             "slots": [x._to_json() for x in self.slots],
         }
 
@@ -2841,6 +2855,9 @@ class Database:
         return PackDistrobution(
             id=uuid.UUID(rawdistro["id"]),
             name=rawdistro["name"] if rawdistro.get("name") else None,
+            quotas={CardType(k): v for k, v in rawdistro["quotas"].items()}
+            if "quotas" in rawdistro
+            else None,
             slots=[
                 DISTRO_SLOT_TYPES[x["type"]]._from_json(self, x)
                 for x in rawdistro["slots"]
