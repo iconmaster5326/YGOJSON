@@ -1454,11 +1454,13 @@ class SetContents:
             distro = self.distrobution.value
         elif type(self.distrobution) is PackDistrobution:
             distro = str(self.distrobution.id)
+        elif type(self.distrobution) is uuid.UUID:
+            distro = str(self.distrobution)
 
         return {
             **({"locales": [l.key for l in self.locales]} if self.locales else {}),
             "formats": [f.value for f in self.formats],
-            **({"distrobution": distro} if self.distrobution else {}),
+            **({"distrobution": distro} if distro else {}),
             **({"packsPerBox": self.packs_per_box} if self.packs_per_box else {}),
             **(
                 {"hasHobbyRetailDifferences": True}
