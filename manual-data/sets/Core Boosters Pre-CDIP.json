@@ -12,10 +12,12 @@
   ],
   "contents": [
     {
-      "packsPerBox": 24,
-      "hasHobbyRetailDifferences": true,
       "distribution": {
         "name": "TCG Core Booster Pre-CDIP"
+      },
+      "box": {
+        "nPacks": 24,
+        "hasHobbyRetailDifferences": true
       },
       "perSet": [
         {
@@ -31,10 +33,13 @@
     },
     {
       "$comment": "These packs have 5 cards instead of 9. TODO: what are the pack odds?",
-      "packsPerBox": 30,
       "locales": [
         "jp"
-      ]
+      ],
+      "box": {
+        "nPacks": 30,
+        "hasHobbyRetailDifferences": false
+      }
     },
     {
       "$comment": "These packs have 5 cards instead of 9. TODO: what are the pack odds?",

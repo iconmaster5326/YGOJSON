@@ -1076,6 +1076,11 @@ class SealedProductLocale:
     db_ids: typing.List[int]
     """Any Konami official database IDs for this product in this locale."""
 
+    has_hobby_retail_differences: bool
+    """Set this to true if this box has hobby and retail booster boxes,
+    and thier contents may differ with regard to thier secret/ultimate rares.
+    """
+
     def __init__(
         self,
         *,
@@ -1083,16 +1088,23 @@ class SealedProductLocale:
         date: typing.Optional[datetime.date] = None,
         image: typing.Optional[str] = None,
         db_ids: typing.Optional[typing.List[int]] = None,
+        has_hobby_retail_differences: bool = False,
     ) -> None:
         self.key = key
         self.date = date
         self.image = image
         self.db_ids = db_ids or []
+        self.has_hobby_retail_differences = has_hobby_retail_differences
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
             **({"date": self.date.isoformat()} if self.date else {}),
             **({"image": self.image} if self.image else {}),
+            **(
+                {"hasHobbyRetailDifferences": True}
+                if self.has_hobby_retail_differences
+                else {}
+            ),
             "externalIDs": {
                 **({"dbIDs": self.db_ids} if self.db_ids else {}),
             },
@@ -1156,9 +1168,8 @@ class SealedProductContents:
 
 
 class SealedProduct:
-    """A sealed product, such as a special booster box, collectible tin, or other hetereogenous mix of different packs and cards.
-    We do NOT store information about homogenous sealed products, such as normal booster boxes, here.
-    See `SetContents.packs_per_box` for that information.
+    """A sealed product, such as a special booster box, collectible tin,
+    or other mixes of packs and cards.
     """
 
     id: uuid.UUID
@@ -1181,6 +1192,11 @@ class SealedProduct:
     yugipedia: typing.Optional[ExternalIdPair]
     """The Yugipedia page of this product, if known."""
 
+    box_of: typing.List["Set"]
+    """Is this product considered a booster box (or case, etc.) of certain packs (or decks, etc.)?
+    If so, the involved sets are listed here.
+    """
+
     def __init__(
         self,
         *,
@@ -1190,6 +1206,7 @@ class SealedProduct:
         locales: typing.Optional[typing.Dict[str, SealedProductLocale]] = None,
         contents: typing.Optional[typing.List[SealedProductContents]] = None,
         yugipedia: typing.Optional[ExternalIdPair] = None,
+        box_of: typing.Optional[typing.List["Set"]] = None,
     ) -> None:
         self.id = id
         self.date = date
@@ -1197,12 +1214,14 @@ class SealedProduct:
         self.locales = locales or {}
         self.contents = contents or []
         self.yugipedia = yugipedia
+        self.box_of = box_of or []
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
             "id": str(self.id),
             **({"date": self.date.isoformat()} if self.date else {}),
             "name": self.name,
+            **({"boxOf": [str(x.id) for x in self.box_of]} if self.box_of else {}),
             **(
                 {"locales": {k: v._to_json() for k, v in self.locales.items()}}
                 if self.locales
@@ -1391,10 +1410,14 @@ class SetContents:
     """
 
     packs_per_box: typing.Optional[int]
-    """If this is a booster pack, this represents the number of packs of this that came in each booster box."""
+    """If this is a booster pack, this represents the number of packs of this that came in each booster box.
+    Deprecated; find the :class:`SealedProduct` with the ``boxOf`` property set to this set instead.
+    """
 
     has_hobby_retail_differences: bool
-    """If this is a booster pack, this represents whether or not booster boxes made for retail sale were different than boxes made for hobby-shop sale."""
+    """If this is a booster pack, this represents whether or not booster boxes made for retail sale were different than boxes made for hobby-shop sale.
+    Deprecated; find the :class:`SealedProduct` with the ``boxOf`` property set to this set instead.
+    """
 
     editions: typing.List[SetEdition]
     """What editions this product was released in: 1st Edition, Unlimited, etc. Empty for most OCG sets.
@@ -1409,6 +1432,7 @@ class SetContents:
     box_image: typing.Optional[str]
     """If this is a booster pack, this is a URL to a generic image of this product's booster box.
     Prefer per-locale images over this image!
+    Deprecated; find the :class:`SealedProduct` with the ``boxOf`` property set to this set instead.
     """
 
     cards: typing.List[CardPrinting]
@@ -1887,6 +1911,9 @@ class Database:
     products_by_konami_pid: typing.Dict[int, SealedProduct]
     """You may use this to look up sealed products by their Konami official database ID."""
 
+    products_by_pack_id: typing.Dict[uuid.UUID, SealedProduct]
+    """You may use this to look up sealed products by what packs they are a booster box of."""
+
     def __init__(
         self,
         *,
@@ -1937,6 +1964,7 @@ class Database:
         self.products_by_en_name = {}
         self.products_by_yugipedia_id = {}
         self.products_by_konami_pid = {}
+        self.products_by_pack_id = {}
 
     def add_card(self, card: Card):
         """Adds a card to this database, or updated its lookup information if it's already in the database."""
@@ -2024,6 +2052,8 @@ class Database:
         for locale in product.locales.values():
             for db_id in locale.db_ids:
                 self.products_by_konami_pid[db_id] = product
+        for pack in product.box_of:
+            self.products_by_pack_id[pack.id] = product
 
     def regenerate_backlinks(self):
         """This does the following fixups:
@@ -2170,6 +2200,12 @@ class Database:
     def manually_fixup_sets(self):
         """Applies all set manual fixups to this database."""
 
+        class BoxInfo(typing.NamedTuple):
+            locales: typing.List[str]
+            n_packs: int
+            has_hobby_retail_differences: bool
+            image: typing.Optional[str]
+
         for filename in tqdm.tqdm(
             os.listdir(MANUAL_SETS_DIR), desc="Applying manual fixups to sets"
         ):
@@ -2178,18 +2214,35 @@ class Database:
                     os.path.join(MANUAL_SETS_DIR, filename), encoding="utf-8"
                 ) as file:
                     in_json = json.load(file)
+                    box_info: typing.Dict[Set, typing.List[BoxInfo]] = {}
+                    box_images: typing.Dict[Set, typing.Dict[str, str]] = {}
+
                     for i, mfi in enumerate(
                         ManualFixupIdentifier(x) for x in in_json["sets"]
                     ):
-                        set = self.lookup_set(mfi)
-                        if not set:
+                        set_ = self.lookup_set(mfi)
+                        if not set_:
                             logging.warn(f"Unknown set to fixup: {mfi}")
                             continue
+
                         for in_contents in in_json["contents"]:
                             in_locales: typing.List[str] = in_contents.get(
                                 "locales", []
                             )
-                            for contents in set.contents:
+
+                            box = None
+                            if "box" in in_contents:
+                                in_box = in_contents["box"]
+                                box = BoxInfo(
+                                    in_locales,
+                                    in_box.get("nPacks", 1),
+                                    in_box.get("hasHobbyRetailDifferences", False),
+                                    in_box.get("image"),
+                                )
+                                box_info.setdefault(set_, [])
+                                box_info[set_].append(box)
+
+                            for contents in set_.contents:
                                 if (
                                     not in_locales
                                     or not contents.locales
@@ -2216,16 +2269,11 @@ class Database:
                                                     f"Unknown distro: {distro_mfi}"
                                                 )
 
-                                    # apply packsPerBox
-                                    if "packsPerBox" in in_contents:
-                                        contents.packs_per_box = in_contents[
-                                            "packsPerBox"
-                                        ]
-
-                                    # apply hasHobbyRetailDifferences
-                                    if "hasHobbyRetailDifferences" in in_contents:
+                                    # apply box
+                                    if box:
+                                        contents.packs_per_box = box.n_packs
                                         contents.has_hobby_retail_differences = (
-                                            in_contents["hasHobbyRetailDifferences"]
+                                            box.has_hobby_retail_differences
                                         )
 
                                     if "perSet" in in_contents and i < len(
@@ -2233,15 +2281,71 @@ class Database:
                                     ):
                                         in_per_set = in_contents["perSet"][i]
 
-                                        # apply boxImage
-                                        if "boxImage" in in_per_set:
-                                            contents.box_image = in_per_set["boxImage"]
-
                                         # apply ygoprodeck
                                         if "ygoprodeck" in in_per_set:
                                             contents.ygoprodeck = in_per_set[
                                                 "ygoprodeck"
                                             ]
+
+                        if "perSet" in in_json:
+                            per_set_info = in_json["perSet"][i]
+                            if "boxImages" in per_set_info:
+                                box_images[set_] = per_set_info["boxImages"]
+
+                    # generate sealed products based on booster boxes
+                    for set_, bis in box_info.items():
+                        product = self.products_by_pack_id.get(set_.id)
+                        if not product:
+                            product = SealedProduct(id=uuid.uuid4())
+
+                        product.date = set_.date
+                        product.name = {k: f"{v} (Box)" for k, v in set_.name.items()}
+                        product.locales.clear()
+                        for locale in set_.locales.values():
+                            product.locales[locale.key] = SealedProductLocale(
+                                key=locale.key,
+                                date=locale.date,
+                                db_ids=locale.db_ids,
+                                image=box_images.get(set_, {}).get(locale.key),
+                            )
+                        product.contents.clear()
+                        product.yugipedia = set_.yugipedia
+                        product.box_of = [set_]
+
+                        for i, bi in enumerate(bis):
+                            other_bis = bis[i + 1 :]
+                            locales = (
+                                [
+                                    x
+                                    for x in product.locales.values()
+                                    if x.key in bi.locales
+                                ]
+                                if bi.locales
+                                else [*product.locales.values()]
+                            )
+                            locales = [
+                                x
+                                for x in locales
+                                if all(
+                                    x.key not in other_bi.locales
+                                    for other_bi in other_bis
+                                )
+                            ]
+                            if not locales:
+                                continue
+                            for locale in locales:
+                                locale.has_hobby_retail_differences = (
+                                    bi.has_hobby_retail_differences
+                                )
+                            product.contents.append(
+                                SealedProductContents(
+                                    locales=locales,
+                                    packs={SealedProductPack(set=set_): bi.n_packs},
+                                    image=bi.image,
+                                )
+                            )
+
+                        self.add_product(product)
 
     def manually_fixup_distros(self):
         """Applies all pack distribution manual fixups to this database."""
@@ -2303,6 +2407,12 @@ class Database:
                     os.path.join(MANUAL_PRODUCTS_DIR, filename), encoding="utf-8"
                 ) as infile:
                     in_json = json.load(infile)
+
+                    if "boxOf" in in_json:
+                        in_json["boxOf"] = [
+                            str(self.lookup_set(ManualFixupIdentifier(in_set)).id)
+                            for in_set in in_json["boxOf"]
+                        ]
 
                     for in_content in in_json["contents"]:
                         for in_pack in in_content["packs"]:
@@ -2881,6 +2991,9 @@ class Database:
                 else None,
                 image=rawlocale.get("image"),
                 db_ids=rawlocale["externalIDs"].get("dbIDs", []),
+                has_hobby_retail_differences=rawlocale["hasHobbyRetailDifferences"]
+                if "hasHobbyRetailDifferences" in rawlocale
+                else False,
             )
             for k, rawlocale in rawproduct.get("locales", {}).items()
         }
@@ -2914,6 +3027,7 @@ class Database:
             )
             if "yugipedia" in rawproduct.get("externalIDs", {})
             else None,
+            box_of=[self.sets_by_id[uuid.UUID(x)] for x in rawproduct.get("boxOf", [])],
         )
 
     def _load_productlist(self) -> typing.List[uuid.UUID]:

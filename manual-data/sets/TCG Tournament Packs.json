@@ -18,10 +18,12 @@
   ],
   "contents": [
     {
-      "$comment": "packsPerBox was determined based on an eBay listing, which claims to have 8 boxes of TP5, totalling in 160 packs: https://www.ebay.com/itm/186272333486",
-      "packsPerBox": 20,
       "distribution": {
         "name": "TCG Tournament Pack"
+      },
+      "box": {
+        "$comment": "nPacks was determined based on an eBay listing, which claims to have 8 boxes of TP5, totalling in 160 packs: https://www.ebay.com/itm/186272333486",
+        "nPacks": 20
       },
       "perSet": [
         {

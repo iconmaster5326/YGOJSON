@@ -14,14 +14,23 @@ Each file here is a JSON file with the following sort of format:
         {
             "locales": ["en"], // optional; if omitted, will apply to all locales
             "distribution": {"name": "Basic Pack"}, // optional
-            "packsPerBox": 30, // optional
-            "hasHobbyRetailDifferences": true, // optional
+            "box": { // optional
+                "nPacks": 30, // required
+                "hasHobbyRetailDifferences": true, // optional
+                "image": "https://example.com/image.png", // optional
+            },
             "perSet": [ // per-set data to modify; order is in the same order as 'sets' above
                 {
-                    "boxImage": "https://example.com/image.png", // optional
                     "ygoprodeck": "Example Set 1" // optional
                 },
             ]
+        },
+    ],
+    "perSet": [ // per-set data to modify; order is in the same order as 'sets' above
+        {
+            "boxImages": { // optional; only if 'box' was specified
+                "en": "https://example.com/image.png",
+            },
         },
     ]
 }

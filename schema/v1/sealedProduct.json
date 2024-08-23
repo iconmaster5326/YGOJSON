@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json",
   "title": "Sealed Product",
-  "description": "A sealed product is a set of multiple other yugioh products, such as a tin or a booster box. NOTE: This database is not populated with most booster boxes; the existence of such is indicated by the 'packsPerBox' property in set JSONs.",
+  "description": "A sealed product is a set of multiple other yugioh products, such as a tin or a booster box.",
   "type": "object",
   "required": [
     "$schema",
@@ -33,6 +33,15 @@
         "type": "string"
       }
     },
+    "boxOf": {
+      "description": "Is this product considered a booster box (or case, etc.) of certain packs (or decks, etc.)? If so, the UUIDs of the involved sets are listed here.",
+      "type": "array",
+      "items": {
+        "description": "A UUID of a set this product is considered a booster box (or case, etc.) of.",
+        "type": "string",
+        "format": "uuid"
+      }
+    },
     "locales": {
       "description": "A mapping of locale to locale-specific information.",
       "type": "object",
@@ -52,6 +61,10 @@
             "description": "A URL to a image of this product in this locale, if available. Use this in preference to the 'image' field in 'contents'.",
             "type": "string",
             "format": "uri"
+          },
+          "hasHobbyRetailDifferences": {
+            "description": "Set this to true if this box has hobby and retail booster boxes, and thier contents may differ with regard to thier secret/ultimate rares.",
+            "type": "boolean"
           },
           "externalIDs": {
             "description": "IDs and other information, to access this set from various other sites.",

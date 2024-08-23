@@ -63,9 +63,10 @@
             "format": "uri"
           },
           "boxImage": {
-            "description": "A URL to a image of this set's booster box in this locale, if available. Use this in preference to the 'image' field in 'contents'.",
+            "description": "A URL to a image of this set's booster box in this locale, if available. Use this in preference to the 'image' field in 'contents'. Deprecated; find the sealed product with the boxOf property set to this instead.",
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "deprecated": true
           },
           "cardImages": {
             "description": "A mapping of editions (as per the edition enumeration, or the empty string if no edition) to sets of card images in this locale.",
@@ -171,12 +172,14 @@
             ]
           },
           "packsPerBox": {
-            "description": "How many packs are included per booster box. Used only if this is a pack that can come in boxes.",
-            "type": "integer"
+            "description": "How many packs are included per booster box. Used only if this is a pack that can come in boxes. Deprecated; find the sealed product with the boxOf property set to this instead.",
+            "type": "integer",
+            "deprecated": true
           },
           "hasHobbyRetailDifferences": {
-            "description": "Set this to true if this pack has hobby and retail booster boxes, and thier contents may differ with regard to thier secret/ultimate rares.",
-            "type": "boolean"
+            "description": "Set this to true if this pack has hobby and retail booster boxes, and thier contents may differ with regard to thier secret/ultimate rares. Deprecated; find the sealed product with the boxOf property set to this instead.",
+            "type": "boolean",
+            "deprecated": true
           },
           "editions": {
             "description": "The widest set of editions these contents were printed into. At least one is required in physical TCG (and some OCG) sets. This is not present in virtual sets. Prefer the locale edition list over this.",
@@ -196,9 +199,10 @@
             "format": "uri"
           },
           "boxImage": {
-            "description": "A URL to a image of this set's booster box, if available. Use the 'image' field in 'locales' first if also available.",
+            "description": "A URL to a image of this set's booster box, if available. Use the 'image' field in 'locales' first if also available. Deprecated; find the sealed product with the boxOf property set to this instead.",
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "deprecated": true
           },
           "cards": {
             "description": "Cards in this set.",
