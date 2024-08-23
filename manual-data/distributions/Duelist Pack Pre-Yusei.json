@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "9d490fa9-b2e6-40bc-9841-e9e5aa870d9c",
+  "name": "Duelist Pack Pre-Yusei",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 3,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 6,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 24,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}
