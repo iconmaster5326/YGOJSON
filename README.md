@@ -136,6 +136,11 @@ Initial release.
 
 # Python API Changelog
 
+## 0.4.0
+
+* Changed how booster boxes work; the properties for them on sets are deprecated, and instead sealed products represent booster boxes now. Booster boxes indicate what packs they are boxes of.
+* Other minor bugfixes.
+
 ## 0.3.3
 
 * Fix for pack distributions not being able to be loaded properly.
