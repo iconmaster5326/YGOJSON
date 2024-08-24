@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "01942318-2ce5-4154-8623-82665c482259",
+  "name": "TCG Core Booster Pre-STON",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 7,
+      "rarity": [
+        {
+          "chance": 3,
+          "rarities": [
+            "shortprint"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "proportionate": true
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 6,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 24,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "chance": 12,
+          "rarities": [
+            "ultimate"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

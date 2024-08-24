@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "83fed237-4553-4ca7-ad4c-31b2bf9da374",
+  "name": "TCG Champion Pack",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 2,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 12,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 48,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    }
+  ]
+}

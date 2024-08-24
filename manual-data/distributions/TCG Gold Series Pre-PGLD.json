@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "df9f9c73-7ac0-430d-97c2-e9a1c284e2f6",
+  "name": "TCG Gold Series Pre-PGLD",
+  "$comment": "Rarity odds based on the Yugipedia page and also this forum post: https://yugipedia.com/wiki/Forum:Gold_Series%3F",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 23,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 3,
+      "rarity": [
+        {
+          "rarities": [
+            "gold"
+          ]
+        }
+      ]
+    }
+  ]
+}

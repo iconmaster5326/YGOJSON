@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
-  "id": "01942318-2ce5-4154-8623-82665c482259",
-  "name": "TCG Core Booster Pre-CDIP",
+  "id": "40637431-9b38-4212-a0ae-7b045074090d",
+  "name": "TCG Core Booster Pre-TSHD",
   "slots": [
     {
       "type": "pool",
@@ -35,21 +35,33 @@
       "type": "pool",
       "rarity": [
         {
-          "chance": 6,
+          "chance": 5,
           "rarities": [
             "super"
           ]
         },
         {
-          "chance": 24,
+          "chance": 12,
           "rarities": [
             "ultra"
           ]
         },
         {
-          "chance": 12,
+          "chance": 31,
+          "rarities": [
+            "secret"
+          ]
+        },
+        {
+          "chance": 31,
           "rarities": [
             "ultimate"
+          ]
+        },
+        {
+          "chance": 288,
+          "rarities": [
+            "ghost"
           ]
         },
         {

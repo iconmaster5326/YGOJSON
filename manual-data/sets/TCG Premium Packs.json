@@ -1,0 +1,29 @@
+{
+  "sets": [
+    {
+      "yugipediaName": "Premium Pack (TCG)"
+    },
+    {
+      "yugipediaName": "Premium Pack 2"
+    }
+  ],
+  "contents": [
+    {
+      "distribution": {
+        "name": "TCG Premium Pack"
+      },
+      "box": {
+        "$comment": "nPacks was determined based on an eBay listing, which claims to have a sealed box of PP2, with 20 packs: https://www.ebay.com/itm/133914530151",
+        "nPacks": 20
+      },
+      "perSet": [
+        {
+          "ygoprodeck": "Premium Pack (TCG)"
+        },
+        {
+          "ygoprodeck": "Premium Pack 2"
+        }
+      ]
+    }
+  ]
+}

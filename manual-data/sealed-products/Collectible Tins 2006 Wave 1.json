@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json",
+  "id": "d3335ef2-623a-408f-89e0-c9195210070d",
+  "name": {
+    "en": "Collectible Tins 2006 Wave 1"
+  },
+  "locales": {
+    "en": {
+      "externalIDs": {}
+    },
+    "fr": {
+      "externalIDs": {}
+    },
+    "de": {
+      "externalIDs": {}
+    },
+    "it": {
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en",
+        "fr",
+        "de",
+        "it"
+      ],
+      "$comment": "TODO: figure out why I can't add the tin promo card here",
+      "packs": [
+        {
+          "set": {
+            "yugipediaName": "Cybernetic Revolution"
+          },
+          "qty": 2
+        },
+        {
+          "set": {
+            "yugipediaName": "Elemental Energy"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Shadow of Infinity"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Enemy of Justice"
+          },
+          "qty": 1
+        }
+      ]
+    }
+  ]
+}
