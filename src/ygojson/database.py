@@ -2288,7 +2288,11 @@ class Database:
                                             ]
 
                         if "perSet" in in_json:
-                            per_set_info = in_json["perSet"][i]
+                            per_set_info = (
+                                in_json["perSet"][i]
+                                if i < len(in_json["perSet"])
+                                else {}
+                            )
                             if "boxImages" in per_set_info:
                                 box_images[set_] = per_set_info["boxImages"]
 

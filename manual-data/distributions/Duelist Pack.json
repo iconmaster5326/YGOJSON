@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+  "name": "Duelist Pack",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 3,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 5,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 15,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

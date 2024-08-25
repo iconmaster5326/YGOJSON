@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+  "name": "TCG Core Booster Pre-BOSH",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 7,
+      "rarity": [
+        {
+          "chance": 3,
+          "rarities": [
+            "shortprint"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "proportionate": true
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 5,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 12,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "chance": 23,
+          "rarities": [
+            "secret"
+          ]
+        },
+        {
+          "chance": 23,
+          "rarities": [
+            "ultimate"
+          ]
+        },
+        {
+          "chance": 288,
+          "rarities": [
+            "ghost"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

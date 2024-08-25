@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "2745d563-17fb-4cfb-ba04-599005c79f28",
+  "name": "Duelist Pack: Kaiba",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 3,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 5,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 15,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "chance": 24,
+          "rarities": [
+            "ultimate"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

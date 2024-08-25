@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "49121976-d7bc-4d9f-aac1-d64803387dab",
+  "name": "TCG Turbo Pack",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 2,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 12,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 32,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "chance": 32,
+          "rarities": [
+            "ultimate"
+          ]
+        },
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "sets": [
+    {
+      "yugipediaName": "The Shining Darkness"
+    },
+    {
+      "yugipediaName": "Duelist Revolution"
+    },
+    {
+      "yugipediaName": "Starstrike Blast"
+    },
+    {
+      "yugipediaName": "Storm of Ragnarok"
+    },
+    {
+      "yugipediaName": "Extreme Victory"
+    }
+  ],
+  "contents": [
+    {
+      "distribution": {
+        "name": "TCG Core Booster Pre-BOSH"
+      },
+      "box": {
+        "nPacks": 24,
+        "hasHobbyRetailDifferences": true
+      },
+      "perSet": [
+        {
+          "ygoprodeck": "The Shining Darkness"
+        },
+        {
+          "ygoprodeck": "Duelist Revolution"
+        },
+        {
+          "ygoprodeck": "Starstrike Blast"
+        },
+        {
+          "ygoprodeck": "Storm of Ragnarok"
+        },
+        {
+          "ygoprodeck": "Extreme Victory"
+        }
+      ]
+    },
+    {
+      "$comment": "These packs have 5 cards instead of 9. TODO: what are the pack odds? TODO: Korea?",
+      "locales": [
+        "jp"
+      ],
+      "box": {
+        "nPacks": 30,
+        "hasHobbyRetailDifferences": false
+      }
+    }
+  ]
+}

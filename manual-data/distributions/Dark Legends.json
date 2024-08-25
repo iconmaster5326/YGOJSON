@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "ab7bf550-cd84-49cd-9600-4f67f1984f8a",
+  "name": "Dark Legends",
+  "quotas": {
+    "monster": 6,
+    "spell": 3,
+    "trap": 3
+  },
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 10,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 1,
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 1,
+      "rarity": [
+        {
+          "chance": 4,
+          "rarities": [
+            "super"
+          ]
+        },
+        {
+          "chance": 12,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}
