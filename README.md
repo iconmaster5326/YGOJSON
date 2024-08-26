@@ -136,6 +136,12 @@ Initial release.
 
 # Python API Changelog
 
+## 0.5.0
+
+* Replaced some common strings with enumeration values. Expanded `Format`, and added `Language` and `Locale`.
+* Fixed bug with YGOPRODECK importing of DEF values.
+* Deduplicated spurious booster box additions.
+
 ## 0.4.0
 
 * Changed how booster boxes work; the properties for them on sets are deprecated, and instead sealed products represent booster boxes now. Booster boxes indicate what packs they are boxes of.
