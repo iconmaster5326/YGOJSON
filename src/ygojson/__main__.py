@@ -207,6 +207,9 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             logging.info("\tImporting sealed products...")
             db.manually_fixup_products()
 
+    logging.info("Cleaning database...")
+    db.deduplicate()
+
     logging.info("Saving database...")
     db.save(
         generate_individuals=not args.no_individuals,

@@ -2041,7 +2041,7 @@ class Database:
     def add_product(self, product: SealedProduct):
         """Adds a sealed product to this database, or updated its lookup information if it's already in the database."""
 
-        if product.id not in self.sets_by_id:
+        if product.id not in self.products_by_id:
             self.products.append(product)
 
         self.products_by_id[product.id] = product
@@ -3055,6 +3055,27 @@ class Database:
             encoding="utf-8",
         ) as outfile:
             json.dump(product._to_json(), outfile, indent=2)
+
+    def _deduplicate(
+        self, list_: typing.List[typing.Any], dict_: typing.Dict[uuid.UUID, typing.Any]
+    ):
+        for i, thing in enumerate(list_):
+            if dict_.get(thing.id) != thing:
+                del list_[i]
+                return self._deduplicate(list_, dict_)
+
+    def deduplicate(self):
+        with tqdm.tqdm(total=5, desc="Deduplicating database") as progress_bar:
+            self._deduplicate(self.cards, self.cards_by_id)
+            progress_bar.update(1)
+            self._deduplicate(self.sets, self.sets_by_id)
+            progress_bar.update(1)
+            self._deduplicate(self.series, self.series_by_id)
+            progress_bar.update(1)
+            self._deduplicate(self.distros, self.distros_by_id)
+            progress_bar.update(1)
+            self._deduplicate(self.products, self.products_by_id)
+            progress_bar.update(1)
 
 
 def load_from_file(
