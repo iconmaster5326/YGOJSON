@@ -253,10 +253,16 @@ def _write_card(
                 f"Card {card.text['en'].name} has unknown legality in format {k}: {v}"
             )
             continue
-        if k in card.legality:
-            card.legality[k].current = LEGALITIES[v]
+        if k not in Format._value2member_map_:
+            logging.warn(
+                f"Found unknown legality format in {card.text['en'].name}: {k}"
+            )
+            continue
+        fmt = Format(k)
+        if fmt in card.legality:
+            card.legality[fmt].current = LEGALITIES[v]
         else:
-            card.legality[k] = CardLegality(current=LEGALITIES[v])
+            card.legality[fmt] = CardLegality(current=LEGALITIES[v])
 
     if "master_duel_rarity" in in_json:
         card.master_duel_rarity = VideoGameRaity(in_json["master_duel_rarity"].lower())

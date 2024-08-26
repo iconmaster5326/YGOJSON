@@ -275,6 +275,19 @@
     "legality": {
       "description": "A mapping of formats to legalities.",
       "type": "object",
+      "propertyNames": {
+        "description": "A format.",
+        "enum": [
+          "ocg",
+          "ocg-ae",
+          "ocg-kr",
+          "ocg-sc",
+          "tcg",
+          "speed",
+          "masterduel",
+          "duellinks"
+        ]
+      },
       "additionalProperties": {
         "description": "Legality information for this format. Never set for cards that are illegal or are not game pieces (such as tokens).",
         "type": "object",

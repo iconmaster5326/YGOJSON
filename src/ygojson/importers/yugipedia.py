@@ -699,7 +699,12 @@ def parse_card(
         card.illegal = True
         card.legality.clear()
     else:
-        for format, ban_history in banlists.items():
+        for rawformat, ban_history in banlists.items():
+            if rawformat not in Format._value2member_map_:
+                logging.warn(f"Found unknown legality format in {title}: {rawformat}")
+                continue
+            format = Format(rawformat)
+
             card_history = card.legality.get(format)
             if card_history:
                 card_history.history.clear()

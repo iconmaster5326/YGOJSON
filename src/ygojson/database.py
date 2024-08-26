@@ -235,15 +235,40 @@ class Legality(enum.Enum):
 
 
 class Format(enum.Enum):
-    """A format in which Yugioh :class:`CardPrinting`s are printed into.
-    This is NOT for banlist information, as those can be divided per-locale,
-    but is used for :class:`Set` printing information."""
+    """A format in which Yugioh :class:`CardPrinting`s are printed into."""
 
-    OCG = "ocg"
-    TCG = "tcg"
-    SPEED = "speed"
-    DUELLINKS = "duellinks"
-    MASTERDUEL = "masterduel"
+    OCG = "ocg"  # Japanese OCG.
+    OCG_AE = "ocg-ae"  # Asian-English OCG.
+    OCG_KR = "ocg-kr"  # Korean OCG.
+    OCG_SC = "ocg-sc"  # Simplified Chinese OCG.
+    TCG = "tcg"  # TCG.
+    SPEED = "speed"  # TCG Speed Duels.
+    DUELLINKS = "duellinks"  # Worldwide Duel Links.
+    MASTERDUEL = "masterduel"  # Worldwide Master Duel.
+
+    @property
+    def parent(self) -> typing.Optional["Format"]:
+        """Returns the 'parent format' of this format.
+        Cards printed in a child format are also considered printed in parent formats.
+        """
+        if self in FORMAT_PARENTS:
+            return FORMAT_PARENTS[self]
+        return None
+
+    @property
+    def subformats(self) -> typing.Iterable["Format"]:
+        """Returns any child formats of this format.
+        Cards printed in a child format are also considered printed in parent formats.
+        """
+        return [k for k, v in FORMAT_PARENTS.items() if v == self]
+
+
+FORMAT_PARENTS = {
+    Format.OCG_AE: Format.OCG,
+    Format.OCG_KR: Format.OCG,
+    Format.OCG_SC: Format.OCG,
+    Format.SPEED: Format.TCG,
+}
 
 
 class VideoGameRaity(enum.Enum):
@@ -573,7 +598,7 @@ class Card:
     Match winners, original god cards, etc. are illegal.
     """
 
-    legality: typing.Dict[str, CardLegality]
+    legality: typing.Dict[Format, CardLegality]
     """Current legality status and legality history for the various formats: tcg, ocg, ocg-kr, masterduel, etc."""
 
     master_duel_rarity: typing.Optional[VideoGameRaity]
@@ -627,7 +652,7 @@ class Card:
         images: typing.Optional[typing.List[CardImage]] = None,
         sets: typing.Optional[typing.List["Set"]] = None,
         illegal: bool = False,
-        legality: typing.Optional[typing.Dict[str, CardLegality]] = None,
+        legality: typing.Optional[typing.Dict[Format, CardLegality]] = None,
         master_duel_rarity: typing.Optional[VideoGameRaity] = None,
         master_duel_craftable: typing.Optional[bool] = None,
         duel_links_rarity: typing.Optional[VideoGameRaity] = None,
@@ -731,7 +756,7 @@ class Card:
             "sets": [str(x.id) for x in self.sets],
             **({"illegal": self.illegal} if self.illegal else {}),
             "legality": {
-                k: {
+                k.value: {
                     "current": v.current.value,
                     **(
                         {
@@ -2735,7 +2760,7 @@ class Database:
             ],
             illegal=rawcard.get("illegal", False),
             legality={
-                k: CardLegality(
+                Format(k): CardLegality(
                     current=Legality(v.get("current") or "unknown"),
                     history=[
                         LegalityPeriod(

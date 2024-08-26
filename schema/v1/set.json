@@ -97,9 +97,12 @@
             "description": "A list of formats this set was printed in in this locale.",
             "type": "array",
             "items": {
-              "description": "A format. This is more general than the list of card legality formats.",
+              "description": "A format.",
               "enum": [
                 "ocg",
+                "ocg-ae",
+                "ocg-kr",
+                "ocg-sc",
                 "tcg",
                 "speed",
                 "masterduel",
