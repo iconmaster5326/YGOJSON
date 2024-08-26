@@ -162,8 +162,8 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
     Overwrites any fields that have changed.
     """
 
-    card.text.setdefault("en", CardText(name=in_json["name"]))
-    en_text = card.text["en"]
+    card.text.setdefault(Language.ENGLISH, CardText(name=in_json["name"]))
+    en_text = card.text[Language.ENGLISH]
     en_text.effect = in_json.get("desc") or en_text.effect
     en_text.pendulum_effect = in_json.get("pend_desc") or en_text.pendulum_effect
 
@@ -196,7 +196,9 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
             else:
                 logging.warn(f"Card {en_text.name} has bad ATK: {in_json.get('atk')}")
         if "def" in in_json:
-            if type(in_json["def"]) is int or in_json["def"] == "?":
+            if in_json["def"] is None:
+                pass  # link monsters now have null def
+            elif type(in_json["def"]) is int or in_json["def"] == "?":
                 card.def_ = in_json["def"]
             else:
                 logging.warn(f"Card {en_text.name} has bad DEF: {in_json.get('def')}")

@@ -415,45 +415,46 @@ def parse_card(
     )
 
     for locale, key in LOCALES.items():
+        lang = Language.normalize(key)
         value = get_table_entry(cardtable, locale + "_name" if locale else "name")
         if not locale and not value:
             value = title
         if value and value.strip():
             value = _strip_markup(value.strip())
-            card.text.setdefault(key, CardText(name=value))
-            card.text[key].name = value
+            card.text.setdefault(lang, CardText(name=value))
+            card.text[lang].name = value
         value = get_table_entry(cardtable, locale + "_lore" if locale else "lore")
         if value and value.strip():
-            if key not in card.text:
+            if lang not in card.text:
                 # logging.warn(f"Card has no name in {key} but has effect: {title}")
                 pass
             else:
-                card.text[key].effect = _strip_markup(value.strip())
+                card.text[lang].effect = _strip_markup(value.strip())
         value = get_table_entry(
             cardtable, locale + "_pendulum_effect" if locale else "pendulum_effect"
         )
         if value and value.strip():
-            if key not in card.text:
+            if lang not in card.text:
                 # logging.warn(f"Card has no name in {key} but has pend. effect: {title}")
                 pass
             else:
-                card.text[key].pendulum_effect = _strip_markup(value.strip())
+                card.text[lang].pendulum_effect = _strip_markup(value.strip())
         if any(
             (t.name.strip() == "Unofficial name" or t.name.strip() == "Unofficial lore")
             and LOCALES_FULL.get(t.arguments[0].value.strip()) == key
             for t in data.templates
         ):
-            if key not in card.text:
+            if lang not in card.text:
                 # logging.warn(f"Card has no name in {key} but is unofficial: {title}")
                 pass
             else:
-                card.text[key].official = False
+                card.text[lang].official = False
 
     if "en" not in card.text:
-        card.text["en"] = CardText(name=title, official=False)
-    elif not card.text["en"].name:
-        card.text["en"].name = title
-        card.text["en"].official = False
+        card.text[Language.ENGLISH] = CardText(name=title, official=False)
+    elif not card.text[Language.ENGLISH].name:
+        card.text[Language.ENGLISH].name = title
+        card.text[Language.ENGLISH].official = False
 
     if card.card_type in {
         CardType.MONSTER,
@@ -1614,7 +1615,7 @@ def parse_tcg_ocg_set(
             namearg = title
         if namearg and namearg.strip():
             namearg = _strip_markup(namearg.strip())
-            set_.name[key] = namearg
+            set_.name[Language.normalize(key)] = namearg
 
     navs = [x for x in data.templates if x.name.strip().lower() == "set navigation"]
     if len(navs) > 1:
@@ -2153,7 +2154,7 @@ def parse_tcg_ocg_set(
             prefix = prefixfixer.group(0)
 
         locale = SetLocale(
-            key=raw_locale.key,
+            key=Locale.normalize(raw_locale.key),
             language=LOCALES.get(raw_locale.key, raw_locale.key),
             editions=[*raw_locale.editions],
             formats=[fmt],
@@ -2187,7 +2188,7 @@ def parse_tcg_ocg_set(
                 rcl = rc.locator()
                 if rcl in raw_printings_to_printings[content]:
                     logging.warn(
-                        f"Found mutliple printings with the same code and rarity in the same locale in {title}: {rcl.card.text['en'].name} / {rcl.rarity.value}"
+                        f"Found mutliple printings with the same code and rarity in the same locale in {title}: {rcl.card.text[Language.ENGLISH].name} / {rcl.rarity.value}"
                     )
                     continue
                 printing = CardPrinting(
@@ -2211,7 +2212,7 @@ def parse_tcg_ocg_set(
                 ils = [il for il in rc.image if il.edition == edition]
                 if len(ils) > 1:
                     logging.warn(
-                        f"Found multiple images for the same card {rc.card.text['en'].name} / {rc.rarity}, in {title}: {[il.altinfo for il in ils]}"
+                        f"Found multiple images for the same card {rc.card.text[Language.ENGLISH].name} / {rc.rarity}, in {title}: {[il.altinfo for il in ils]}"
                     )
                 if ils:
                     il = ils[0]
@@ -2238,7 +2239,7 @@ def parse_md_set(
     settable: wikitextparser.Template,
 ) -> bool:
     title = batcher.idsToNames[pageid]
-    set_.name["en"] = (
+    set_.name[Language.ENGLISH] = (
         title[: -len(MD_DISAMBIG_SUFFIX)]
         if title.endswith(MD_DISAMBIG_SUFFIX)
         else title
@@ -2337,7 +2338,7 @@ def parse_dl_set(
     settable: wikitextparser.Template,
 ) -> bool:
     title = batcher.idsToNames[pageid]
-    set_.name["en"] = (
+    set_.name[Language.ENGLISH] = (
         title[: -len(DL_DISAMBIG_SUFFIX)]
         if title.endswith(DL_DISAMBIG_SUFFIX)
         else title
@@ -2443,7 +2444,7 @@ def parse_series(
             value = name
         if value and value.strip():
             value = _strip_markup(value.strip())
-            series.name[key] = value
+            series.name[Language.normalize(key)] = value
 
     @batcher.getPageCategories(pageid)
     def onCatsGet(cats: typing.List[int]):

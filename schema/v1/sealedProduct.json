@@ -29,6 +29,9 @@
     "name": {
       "description": "A mapping of language to product names. In physical products, if the locales object has a mapping for this language, then this name is official, else it is unofficial.",
       "type": "object",
+      "propertyNames": {
+        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/language.json"
+      },
       "additionalProperties": {
         "type": "string"
       }
@@ -45,6 +48,9 @@
     "locales": {
       "description": "A mapping of locale to locale-specific information.",
       "type": "object",
+      "propertyNames": {
+        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/locale.json"
+      },
       "remainingProperties": {
         "description": "Locale-specific information for this product.",
         "type": "object",
@@ -98,7 +104,7 @@
             "description": "The locales these contents apply to. Not present in virtual products.",
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/locale.json"
             }
           },
           "image": {

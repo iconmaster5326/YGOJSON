@@ -78,15 +78,15 @@ INDIVIDUALS_DIR = "path/to/unzipped/individuals/dir"
 AGGREGATES_DIR = "path/to/unzipped/aggregates/dir"
 
 # import only the code that deals with the database schema
-import ygojson.database
+import ygojson.database as ygodb
 
 # construct the database; you can omit one if you don't have both downloaded
 # (there is also load_from_file if you already have the files)
-db = ygojson.database.load_from_internet(individuals_dir=INDIVIDUALS_DIR, aggregates_dir=AGGREGATES_DIR)
+db = ygodb.load_from_internet(individuals_dir=INDIVIDUALS_DIR, aggregates_dir=AGGREGATES_DIR)
 
 # print the name of every card
 for card in db.cards:
-    print(card.text["en"].name)
+    print(card.text[ygodb.Language.ENGLISH].name)
 ```
 
 # Generating the Database

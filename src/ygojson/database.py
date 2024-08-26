@@ -262,12 +262,156 @@ class Format(enum.Enum):
         """
         return [k for k, v in FORMAT_PARENTS.items() if v == self]
 
+    @property
+    def locales(self) -> typing.Iterable["Locale"]:
+        """Returns all locales that print cards into this format."""
+        return [k for k, v in LOCALE_FORMATS.items() if self in v]
+
 
 FORMAT_PARENTS = {
     Format.OCG_AE: Format.OCG,
     Format.OCG_KR: Format.OCG,
     Format.OCG_SC: Format.OCG,
     Format.SPEED: Format.TCG,
+}
+
+
+class Language(enum.Enum):
+    """A language in which a card was printed."""
+
+    GERMAN = "de"
+    ENGLISH = "en"
+    SPANISH = "es"
+    FRENCH = "fr"
+    ITALIAN = "it"
+    JAPANESE = "ja"
+    KOREAN = "ko"
+    PORTUGESE = "pt"
+    CHINESE_SIMPLIFIED = "zh-CN"
+    CHINESE_TRADITIONAL = "zh-TW"
+    # the following are not real languages, but are used to store sub-information about text in a language.
+    # TODO: get rid of these or move them somewhere more appropriate
+    JAPANESE_ROMAJI = "ja_romaji"
+    KOREAN_ROMANIZED = "ko_rr"
+
+    @classmethod
+    def normalize(cls, s: str) -> "Language":
+        """Attempt to parse a language/locale code to produce a Language enum."""
+        if s in Language._value2member_map_:
+            return Language(s)
+        if s in Locale._value2member_map_:
+            return Locale(s).language
+        if s == "au":
+            return Language.ENGLISH
+        raise ValueError(f"Bad language: {s}")
+
+    @property
+    def locales(self) -> typing.Iterable["Locale"]:
+        """Returns the locales cards of this language are printed in by default."""
+        return [k for k, v in LOCALE_LANGS.items() if self == v]
+
+
+class Locale(enum.Enum):
+    """The locale in which a product was printed.
+    Either a language, or a part of the world within a language.
+    """
+
+    ASIAN_ENGLISH = "ae"
+    GERMAN = "de"
+    ENGLISH = "en"
+    SPANISH = "sp"
+    ENGLISH_EUROPE = "eu"
+    FRENCH_CANADA = "fc"
+    FRENCH = "fr"
+    ITALIAN = "it"
+    JAPANESE = "jp"
+    KOREAN = "kr"
+    ENGLISH_AMERICA = "na"
+    ENGLISH_OCEANIA = "oc"
+    PORTUGESE = "pt"
+    CHINESE_SIMPLIFIED = "sc"
+    CHINESE_TRADITIONAL = "tc"
+
+    @classmethod
+    def normalize(cls, s: str) -> "Locale":
+        """Attempt to parse a language/locale code to produce a Locale enum."""
+        if s in Locale._value2member_map_:
+            return Locale(s)
+        if s in Language._value2member_map_:
+            locales = [*Language(s).locales]
+            if len(locales) != 1:
+                raise ValueError(f"Ambiguous locale: {s}")
+            return locales[0]
+        if s == "au":
+            return Locale.ENGLISH_OCEANIA
+        raise ValueError(f"Bad locale: {s}")
+
+    @property
+    def parent(self) -> typing.Optional["Locale"]:
+        """Get the parent locale. Some locales are part of a larger locale; for example, 'na' being part of 'en'."""
+        return LOCALE_PARENTS.get(self)
+
+    @property
+    def sublocales(self) -> typing.Iterable["Locale"]:
+        """Get the child locales. Some locales are part of a larger locale; for example, 'na' being part of 'en'."""
+        return [k for k, v in LOCALE_PARENTS.items() if self == v]
+
+    @property
+    def language(self) -> Language:
+        """Return the language cards in this locale are printed in by default."""
+        return LOCALE_LANGS[self]
+
+    @property
+    def formats(self) -> typing.Iterable[Format]:
+        """Return a list of possible formats that this locale prints cards into."""
+        if self not in LOCALE_FORMATS:
+            parent = self.parent
+            if parent:
+                return parent.formats
+            else:
+                return []
+        return LOCALE_FORMATS[self]
+
+
+LOCALE_PARENTS = {
+    Locale.ENGLISH_EUROPE: Locale.ENGLISH,
+    Locale.FRENCH_CANADA: Locale.ENGLISH_AMERICA,
+    Locale.ENGLISH_AMERICA: Locale.ENGLISH,
+    Locale.ENGLISH_OCEANIA: Locale.ENGLISH,
+}
+
+
+LOCALE_LANGS = {
+    Locale.ASIAN_ENGLISH: Language.ENGLISH,
+    Locale.GERMAN: Language.GERMAN,
+    Locale.ENGLISH: Language.ENGLISH,
+    Locale.SPANISH: Language.SPANISH,
+    Locale.ENGLISH_EUROPE: Language.ENGLISH,
+    Locale.FRENCH_CANADA: Language.FRENCH,
+    Locale.FRENCH: Language.FRENCH,
+    Locale.ITALIAN: Language.ITALIAN,
+    Locale.JAPANESE: Language.JAPANESE,
+    Locale.KOREAN: Language.KOREAN,
+    Locale.ENGLISH_AMERICA: Language.ENGLISH,
+    Locale.ENGLISH_OCEANIA: Language.ENGLISH,
+    Locale.PORTUGESE: Language.PORTUGESE,
+    Locale.CHINESE_SIMPLIFIED: Language.CHINESE_SIMPLIFIED,
+    Locale.CHINESE_TRADITIONAL: Language.CHINESE_TRADITIONAL,
+}
+
+
+LOCALE_FORMATS = {
+    Locale.ASIAN_ENGLISH: [Format.OCG_AE],
+    Locale.GERMAN: [Format.TCG, Format.SPEED],
+    Locale.ENGLISH: [Format.TCG, Format.SPEED],
+    Locale.SPANISH: [Format.TCG, Format.SPEED],
+    Locale.FRENCH: [Format.TCG, Format.SPEED],
+    Locale.ITALIAN: [Format.TCG, Format.SPEED],
+    Locale.JAPANESE: [Format.OCG],
+    Locale.KOREAN: [Format.OCG_KR],
+    Locale.PORTUGESE: [Format.TCG, Format.SPEED],
+    Locale.CHINESE_SIMPLIFIED: [Format.OCG_SC],
+    Locale.CHINESE_TRADITIONAL: [Format.OCG],
 }
 
 
@@ -534,7 +678,7 @@ class Card:
     id: uuid.UUID
     """The UUID of the card."""
 
-    text: typing.Dict[str, CardText]
+    text: typing.Dict[Language, CardText]
     """Localized text for the card, including the name, the effect/lore, and so on.
     Keys are locale abbreviations: en, fr, ja, zh-CN, etc.
     """
@@ -632,7 +776,7 @@ class Card:
         self,
         *,
         id: uuid.UUID,
-        text: typing.Optional[typing.Dict[str, CardText]] = None,
+        text: typing.Optional[typing.Dict[Language, CardText]] = None,
         card_type: CardType,
         attribute: typing.Optional[Attribute] = None,
         monster_card_types: typing.Optional[typing.List[MonsterCardType]] = None,
@@ -700,7 +844,7 @@ class Card:
             "$schema": f"https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v{SCHEMA_VERSION}/card.json",
             "id": str(self.id),
             "text": {
-                k: {
+                k.value: {
                     "name": v.name,
                     **({"effect": v.effect} if v.effect is not None else {}),
                     **(
@@ -1089,7 +1233,7 @@ class PackDistrobution:
 class SealedProductLocale:
     """A locale in which a :class:`SealedProduct` was released."""
 
-    key: str
+    key: Locale
     """The short language code for this locale: en, fr, ae, etc."""
 
     date: typing.Optional[datetime.date]
@@ -1109,7 +1253,7 @@ class SealedProductLocale:
     def __init__(
         self,
         *,
-        key: str,
+        key: Locale,
         date: typing.Optional[datetime.date] = None,
         image: typing.Optional[str] = None,
         db_ids: typing.Optional[typing.List[int]] = None,
@@ -1179,7 +1323,9 @@ class SealedProductContents:
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
-            **({"locales": [x.key for x in self.locales]} if self.locales else {}),
+            **(
+                {"locales": [x.key.value for x in self.locales]} if self.locales else {}
+            ),
             **({"image": self.image} if self.image else {}),
             "packs": [
                 {
@@ -1203,13 +1349,11 @@ class SealedProduct:
     date: typing.Optional[datetime.date]
     """The date this product was released. Only used in video-game-only products."""
 
-    name: typing.Dict[str, str]
-    """The localized name of this product. Keys are short locale codes: en, de, kr, etc."""
+    name: typing.Dict[Language, str]
+    """The localized name of this product."""
 
-    locales: typing.Dict[str, SealedProductLocale]
-    """The locales in which this product was released.
-    Keys are short locale codes: en, de, kr, etc.
-    """
+    locales: typing.Dict[Locale, SealedProductLocale]
+    """The locales in which this product was released."""
 
     contents: typing.List[SealedProductContents]
     """The contents of this product in various locales. Video game products only have one entry here."""
@@ -1227,8 +1371,8 @@ class SealedProduct:
         *,
         id: uuid.UUID,
         date: typing.Optional[datetime.date] = None,
-        name: typing.Optional[typing.Dict[str, str]] = None,
-        locales: typing.Optional[typing.Dict[str, SealedProductLocale]] = None,
+        name: typing.Optional[typing.Dict[Language, str]] = None,
+        locales: typing.Optional[typing.Dict[Locale, SealedProductLocale]] = None,
         contents: typing.Optional[typing.List[SealedProductContents]] = None,
         yugipedia: typing.Optional[ExternalIdPair] = None,
         box_of: typing.Optional[typing.List["Set"]] = None,
@@ -1245,10 +1389,10 @@ class SealedProduct:
         return {
             "id": str(self.id),
             **({"date": self.date.isoformat()} if self.date else {}),
-            "name": self.name,
+            "name": {k.value: v for k, v in self.name.items()},
             **({"boxOf": [str(x.id) for x in self.box_of]} if self.box_of else {}),
             **(
-                {"locales": {k: v._to_json() for k, v in self.locales.items()}}
+                {"locales": {k.value: v._to_json() for k, v in self.locales.items()}}
                 if self.locales
                 else {}
             ),
@@ -1274,8 +1418,8 @@ class Series:
     id: uuid.UUID
     """The UUID of this series/archetype."""
 
-    name: typing.Dict[str, str]
-    """The (sometimes unofficial) name of this series/archetype. Keys are short locale codes: en, es, it, etc."""
+    name: typing.Dict[Language, str]
+    """The (sometimes unofficial) name of this series/archetype."""
 
     archetype: bool
     """`True` if this represents an archetype (that is, cards that share a common name),
@@ -1292,7 +1436,7 @@ class Series:
         self,
         *,
         id: uuid.UUID,
-        name: typing.Optional[typing.Dict[str, str]] = None,
+        name: typing.Optional[typing.Dict[Language, str]] = None,
         archetype: bool = False,
         members: typing.Optional[typing.Set[Card]] = None,
         yugipedia: typing.Optional[ExternalIdPair] = None,
@@ -1306,7 +1450,7 @@ class Series:
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
             "id": str(self.id),
-            "name": self.name,
+            "name": {k.value: v for k, v in self.name.items()},
             "archetype": self.archetype,
             "members": sorted(str(c.id) for c in self.members),
             "externalIDs": {
@@ -1356,7 +1500,7 @@ class CardPrinting:
     NYI.
     """
 
-    language: typing.Optional[str]
+    language: typing.Optional[Language]
     """An override for the language this card was printed in.
     This may be different than the locale's language in some very rare cases.
     NYI.
@@ -1385,7 +1529,7 @@ class CardPrinting:
         rarity: typing.Optional[CardRarity] = None,
         only_in_box: typing.Optional[SetBoxType] = None,
         price: typing.Optional[float] = None,
-        language: typing.Optional[str] = None,
+        language: typing.Optional[Language] = None,
         image: typing.Optional[CardImage] = None,
         replica: bool = False,
         qty: int = 1,
@@ -1409,7 +1553,7 @@ class CardPrinting:
             **({"rarity": self.rarity.value} if self.rarity else {}),
             **({"onlyInBox": self.only_in_box.value} if self.only_in_box else {}),
             **({"price": self.price} if self.price else {}),
-            **({"language": self.language} if self.language else {}),
+            **({"language": self.language.value} if self.language else {}),
             **({"imageID": str(self.image.id)} if self.image else {}),
             **({"replica": True} if self.replica else {}),
             **({"qty": self.qty} if self.qty != 1 else {}),
@@ -1521,7 +1665,9 @@ class SetContents:
             distro = str(self.distrobution)
 
         return {
-            **({"locales": [l.key for l in self.locales]} if self.locales else {}),
+            **(
+                {"locales": [l.key.value for l in self.locales]} if self.locales else {}
+            ),
             "formats": [f.value for f in self.formats],
             **({"distrobution": distro} if distro else {}),
             **({"packsPerBox": self.packs_per_box} if self.packs_per_box else {}),
@@ -1548,8 +1694,8 @@ class SetContents:
 class SetLocale:
     """A locale in which a :class:`Set` was released."""
 
-    key: str
-    """The short language code for this locale: en, fr, ae, etc."""
+    key: Locale
+    """The locale code."""
 
     language: str
     """The language this set was printed in, as a short language code: en, fr, ae, etc.
@@ -1585,7 +1731,7 @@ class SetLocale:
     def __init__(
         self,
         *,
-        key: str,
+        key: Locale,
         language: str,
         prefix: typing.Optional[str] = None,
         date: typing.Optional[datetime.date] = None,
@@ -1639,13 +1785,11 @@ class Set:
     date: typing.Optional[datetime.date]
     """The date this product was released. Only used in video-game-only products."""
 
-    name: typing.Dict[str, str]
-    """The localized name of this product. Keys are short locale codes: en, de, kr, etc."""
+    name: typing.Dict[Language, str]
+    """The localized name of this product."""
 
-    locales: typing.Dict[str, SetLocale]
-    """The locales in which this product was released.
-    Keys are short locale codes: en, de, kr, etc.
-    """
+    locales: typing.Dict[Locale, SetLocale]
+    """The locales in which this product was released."""
 
     contents: typing.List[SetContents]
     """The contents of this product in various locales. Video game products only have one entry here."""
@@ -1661,7 +1805,7 @@ class Set:
         *,
         id: uuid.UUID,
         date: typing.Optional[datetime.date] = None,
-        name: typing.Optional[typing.Dict[str, str]] = None,
+        name: typing.Optional[typing.Dict[Language, str]] = None,
         locales: typing.Optional[typing.Iterable[SetLocale]] = None,
         contents: typing.Optional[typing.List[SetContents]] = None,
         yugipedia: typing.Optional[ExternalIdPair] = None,
@@ -1680,9 +1824,9 @@ class Set:
             "$schema": f"https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v{SCHEMA_VERSION}/set.json",
             "id": str(self.id),
             **({"date": self.date.isoformat()} if self.date else {}),
-            "name": self.name,
+            "name": {k.value: v for k, v in self.name.items()},
             **(
-                {"locales": {k: v._to_json() for k, v in self.locales.items()}}
+                {"locales": {k.value: v._to_json() for k, v in self.locales.items()}}
                 if self.locales
                 else {}
             ),
@@ -1737,7 +1881,7 @@ class ManualFixupIdentifier:
     set: typing.Optional["ManualFixupIdentifier"]
     """A :class:`Set` to look up. Only used in looking up :class:`CardPrinting`s."""
 
-    locale: typing.Optional[str]
+    locale: typing.Optional[Locale]
     """A locale short code to look up. Only used in looking up :class:`CardPrinting`s."""
 
     edition: typing.Optional[SetEdition]
@@ -1782,7 +1926,9 @@ class ManualFixupIdentifier:
             self.set = (
                 ManualFixupIdentifier(in_json["set"]) if "set" in in_json else None
             )
-            self.locale = in_json.get("locale")
+            self.locale = (
+                Locale.normalize(in_json["locale"]) if "locale" in in_json else None
+            )
             self.edition = (
                 SetEdition(in_json["edition"]) if "edition" in in_json else None
             )
@@ -1804,7 +1950,7 @@ class ManualFixupIdentifier:
             **({"yugipediaName": self.yugipedia_name} if self.yugipedia_name else {}),
             **({"yamlyugi": self.yamlyugi} if self.yamlyugi else {}),
             **({"set": self.set.to_json()} if self.set else {}),
-            **({"locale": self.locale} if self.locale else {}),
+            **({"locale": self.locale.value} if self.locale else {}),
             **({"edition": self.edition.value} if self.edition else {}),
             **({"rarity": self.rarity.value} if self.rarity else {}),
             **({"code": self.code} if self.code else {}),
@@ -2002,8 +2148,8 @@ class Database:
             self.cards_by_password[pw] = card
         if card.yamlyugi_id:
             self.cards_by_yamlyugi[card.yamlyugi_id] = card
-        if "en" in card.text:
-            self.cards_by_en_name[card.text["en"].name] = card
+        if Language.ENGLISH in card.text:
+            self.cards_by_en_name[card.text[Language.ENGLISH].name] = card
         if card.db_id:
             self.cards_by_konami_cid[card.db_id] = card
         for page in card.yugipedia_pages or []:
@@ -2021,8 +2167,8 @@ class Database:
             self.sets.append(set_)
 
         self.sets_by_id[set_.id] = set_
-        if "en" in set_.name:
-            self.sets_by_en_name[set_.name["en"]] = set_
+        if Language.ENGLISH in set_.name:
+            self.sets_by_en_name[set_.name[Language.ENGLISH]] = set_
         if set_.yugipedia:
             self.sets_by_yugipedia_id[set_.yugipedia.id] = set_
             self.sets_by_yugipedia_name[set_.yugipedia.name] = set_
@@ -2049,8 +2195,8 @@ class Database:
         if series.id not in self.series_by_id:
             self.series.append(series)
             self.series_by_id[series.id] = series
-        if "en" in series.name:
-            self.series_by_en_name[series.name["en"]] = series
+        if Language.ENGLISH in series.name:
+            self.series_by_en_name[series.name[Language.ENGLISH]] = series
         if series.yugipedia:
             self.series_by_yugipedia_id[series.yugipedia.id] = series
 
@@ -2070,8 +2216,8 @@ class Database:
             self.products.append(product)
 
         self.products_by_id[product.id] = product
-        if "en" in product.name:
-            self.products_by_en_name[product.name["en"]] = product
+        if Language.ENGLISH in product.name:
+            self.products_by_en_name[product.name[Language.ENGLISH]] = product
         if product.yugipedia:
             self.products_by_yugipedia_id[product.yugipedia.id] = product
         for locale in product.locales.values():
@@ -2226,7 +2372,7 @@ class Database:
         """Applies all set manual fixups to this database."""
 
         class BoxInfo(typing.NamedTuple):
-            locales: typing.List[str]
+            locales: typing.List[Locale]
             n_packs: int
             has_hobby_retail_differences: bool
             image: typing.Optional[str]
@@ -2240,7 +2386,7 @@ class Database:
                 ) as file:
                     in_json = json.load(file)
                     box_info: typing.Dict[Set, typing.List[BoxInfo]] = {}
-                    box_images: typing.Dict[Set, typing.Dict[str, str]] = {}
+                    box_images: typing.Dict[Set, typing.Dict[Locale, str]] = {}
 
                     for i, mfi in enumerate(
                         ManualFixupIdentifier(x) for x in in_json["sets"]
@@ -2251,9 +2397,10 @@ class Database:
                             continue
 
                         for in_contents in in_json["contents"]:
-                            in_locales: typing.List[str] = in_contents.get(
-                                "locales", []
-                            )
+                            in_locales: typing.List[Locale] = [
+                                Locale.normalize(x)
+                                for x in in_contents.get("locales", [])
+                            ]
 
                             box = None
                             if "box" in in_contents:
@@ -2271,7 +2418,9 @@ class Database:
                                 if (
                                     not in_locales
                                     or not contents.locales
-                                    or any(x in in_locales for x in contents.locales)
+                                    or any(
+                                        x.key in in_locales for x in contents.locales
+                                    )
                                 ):
                                     # apply distro
                                     distro = in_contents.get("distribution")
@@ -2319,7 +2468,10 @@ class Database:
                                 else {}
                             )
                             if "boxImages" in per_set_info:
-                                box_images[set_] = per_set_info["boxImages"]
+                                box_images[set_] = {
+                                    Locale.normalize(k): v
+                                    for k, v in per_set_info["boxImages"].items()
+                                }
 
                     # generate sealed products based on booster boxes
                     for set_, bis in box_info.items():
@@ -2713,7 +2865,7 @@ class Database:
         return Card(
             id=uuid.UUID(rawcard["id"]),
             text={
-                k: CardText(
+                Language.normalize(k): CardText(
                     name=v["name"],
                     effect=v.get("effect"),
                     pendulum_effect=v.get("pendulumEffect"),
@@ -2846,7 +2998,9 @@ class Database:
             if "onlyInBox" in rawprinting
             else None,
             price=rawprinting.get("price"),
-            language=rawprinting.get("language"),
+            language=Language.normalize(rawprinting["language"])
+            if "language" in rawprinting
+            else None,
             image=self.card_images_by_id[uuid.UUID(rawprinting["imageID"])]
             if "imageID" in rawprinting
             else None,
@@ -2896,8 +3050,8 @@ class Database:
             )
 
         locales = {
-            k: SetLocale(
-                key=k,
+            Locale.normalize(k): SetLocale(
+                key=Locale.normalize(k),
                 language=v["language"],
                 prefix=v.get("prefix"),
                 date=datetime.date.fromisoformat(v["date"]) if "date" in v else None,
@@ -2920,9 +3074,9 @@ class Database:
 
         for content, locale_names in contents:
             content.locales = [
-                locales[locale_name]
+                locales[Locale.normalize(locale_name)]
                 for locale_name in locale_names
-                if locale_name in locales
+                if Locale.normalize(locale_name) in locales
             ]
 
         return Set(
@@ -2930,7 +3084,7 @@ class Database:
             date=datetime.date.fromisoformat(rawset["date"])
             if "date" in rawset
             else None,
-            name=rawset["name"],
+            name={Language.normalize(k): v for k, v in rawset["name"].items()},
             locales=locales.values(),
             contents=[v[0] for v in contents],
             yugipedia=ExternalIdPair(
@@ -2955,7 +3109,7 @@ class Database:
     def _load_series(self, rawseries: typing.Dict[str, typing.Any]) -> Series:
         return Series(
             id=uuid.UUID(rawseries["id"]),
-            name=rawseries["name"],
+            name={Language.normalize(k): v for k, v in rawseries["name"].items()},
             archetype=rawseries["archetype"],
             members={self.cards_by_id[uuid.UUID(x)] for x in rawseries["members"]},
             yugipedia=ExternalIdPair(
@@ -3013,8 +3167,8 @@ class Database:
 
     def _load_product(self, rawproduct: typing.Dict[str, typing.Any]) -> SealedProduct:
         locales = {
-            k: SealedProductLocale(
-                key=k,
+            Locale.normalize(k): SealedProductLocale(
+                key=Locale.normalize(k),
                 date=datetime.date.fromisoformat(rawlocale["date"])
                 if rawlocale.get("date")
                 else None,
@@ -3029,7 +3183,7 @@ class Database:
 
         return SealedProduct(
             id=uuid.UUID(rawproduct["id"]),
-            name=rawproduct["name"],
+            name={Language.normalize(k): v for k, v in rawproduct["name"].items()},
             date=datetime.date.fromisoformat(rawproduct["date"])
             if rawproduct.get("date")
             else None,
@@ -3037,7 +3191,10 @@ class Database:
             contents=[
                 SealedProductContents(
                     image=rawcontents.get("image"),
-                    locales=[locales[x] for x in rawcontents.get("locales", [])],
+                    locales=[
+                        locales[Locale.normalize(x)]
+                        for x in rawcontents.get("locales", [])
+                    ],
                     packs={
                         SealedProductPack(
                             set=self.sets_by_id[uuid.UUID(rawpack["set"])],

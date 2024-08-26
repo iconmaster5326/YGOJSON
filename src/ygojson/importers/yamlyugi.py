@@ -170,17 +170,26 @@ def _write_card(
     Use an empty dict to represent a new card.
     """
 
-    for lang, text in in_json["name"].items():
-        if "_" not in lang and text is not None:
+    for rawlang, text in in_json["name"].items():
+        if "_" in rawlang:
+            continue
+        lang = Language.normalize(rawlang)
+        if text is not None:
             if lang not in card.text:
                 card.text[lang] = CardText(name=text)
             else:
                 card.text[lang].name = text
-    for lang, text in in_json.get("text", {}).items():
-        if "_" not in lang and text is not None:
+    for rawlang, text in in_json.get("text", {}).items():
+        if "_" in rawlang:
+            continue
+        lang = Language.normalize(rawlang)
+        if text is not None:
             card.text[lang].effect = text
-    for lang, text in in_json.get("pendulum_effect", {}).items():
-        if "_" not in lang and text is not None:
+    for rawlang, text in in_json.get("pendulum_effect", {}).items():
+        if "_" in rawlang:
+            continue
+        lang = Language.normalize(rawlang)
+        if text is not None:
             card.text[lang].pendulum_effect = text
 
     if card.card_type == CardType.MONSTER:
@@ -201,7 +210,7 @@ def _write_card(
                 break
         if not card.type:
             logging.warn(
-                f"Card {card.text['en'].name} has no race! Typeline: {in_json['monster_type_line']}"
+                f"Card {card.text[Language.ENGLISH].name} has no race! Typeline: {in_json['monster_type_line']}"
             )
             card.type = Race.CREATORGOD
 
@@ -250,12 +259,12 @@ def _write_card(
             continue
         if v not in LEGALITIES:
             logging.warn(
-                f"Card {card.text['en'].name} has unknown legality in format {k}: {v}"
+                f"Card {card.text[Language.ENGLISH].name} has unknown legality in format {k}: {v}"
             )
             continue
         if k not in Format._value2member_map_:
             logging.warn(
-                f"Found unknown legality format in {card.text['en'].name}: {k}"
+                f"Found unknown legality format in {card.text[Language.ENGLISH].name}: {k}"
             )
             continue
         fmt = Format(k)
@@ -341,7 +350,7 @@ def _write_series(
 
     for k, v in in_series.items():
         if v:
-            series.name[k] = v
+            series.name[Language.normalize(k)] = v
 
     for card in series_map.get(name, []):
         series.members.add(card)

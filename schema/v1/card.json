@@ -26,8 +26,11 @@
       "format": "uuid"
     },
     "text": {
-      "description": "A map of locales to textual card information.",
+      "description": "A map of languages to textual card information.",
       "type": "object",
+      "propertyNames": {
+        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/language.json"
+      },
       "additionalProperties": {
         "description": "Textual information on the card.",
         "type": "object",
@@ -276,17 +279,7 @@
       "description": "A mapping of formats to legalities.",
       "type": "object",
       "propertyNames": {
-        "description": "A format.",
-        "enum": [
-          "ocg",
-          "ocg-ae",
-          "ocg-kr",
-          "ocg-sc",
-          "tcg",
-          "speed",
-          "masterduel",
-          "duellinks"
-        ]
+        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/format.json"
       },
       "additionalProperties": {
         "description": "Legality information for this format. Never set for cards that are illegal or are not game pieces (such as tokens).",

@@ -40,7 +40,7 @@
     },
     "language": {
       "description": "Some cards are written in different languages than thier locale. (for example, Valuable Book 5 has 3 cards written in 3 different languages). If provided, this indicates that this printing is not in the language of its set.",
-      "type": "string"
+      "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/language.json"
     },
     "imageID": {
       "description": "If present, indicates the UUID of what art treatment this card uses, as defined in the card's art JSON.",

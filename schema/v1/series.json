@@ -23,6 +23,9 @@
     },
     "name": {
       "description": "A map of languages to series names.",
+      "propertyNames": {
+        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/language.json"
+      },
       "additionalProperties": {
         "type": "string"
       }

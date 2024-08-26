@@ -28,6 +28,9 @@
     "name": {
       "description": "A mapping of language to set names. In physical sets, if the locales object has a mapping for this language, then this name is official, else it is unofficial.",
       "type": "object",
+      "propertyNames": {
+        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/language.json"
+      },
       "additionalProperties": {
         "type": "string"
       }
@@ -35,6 +38,9 @@
     "locales": {
       "description": "A mapping of locale to locale-specific information. Only used in physical sets.",
       "type": "object",
+      "propertyNames": {
+        "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/locale.json"
+      },
       "remainingProperties": {
         "description": "Locale-specific information for this set.",
         "type": "object",
@@ -97,17 +103,7 @@
             "description": "A list of formats this set was printed in in this locale.",
             "type": "array",
             "items": {
-              "description": "A format.",
-              "enum": [
-                "ocg",
-                "ocg-ae",
-                "ocg-kr",
-                "ocg-sc",
-                "tcg",
-                "speed",
-                "masterduel",
-                "duellinks"
-              ]
+              "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/format.json"
             }
           },
           "externalIDs": {
@@ -143,7 +139,7 @@
             "description": "The locales these contents apply to. Not present in virtual packs.",
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/locale.json"
             }
           },
           "formats": {

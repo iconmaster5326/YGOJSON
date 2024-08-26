@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/language.json",
+  "title": "Language",
+  "description": "A language a card has been printed in. These are all ISO language codes.",
+  "enum": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "zh-CN",
+    "zh-TW",
+    "ja_romaji",
+    "ko_rr"
+  ]
+}
