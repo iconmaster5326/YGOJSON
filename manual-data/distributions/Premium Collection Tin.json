@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "d4d89b35-74a4-48df-a131-cccedb3f2316",
+  "name": "Premium Collection Tin",
+  "$comment": "TODO: Guarantee 01 and 02 in the tin, and make sure you can't pull them in the other secret slots.",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 6,
+      "rarity": [
+        {
+          "rarities": [
+            "secret"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 8,
+      "rarity": [
+        {
+          "rarities": [
+            "super"
+          ]
+        }
+      ]
+    }
+  ]
+}

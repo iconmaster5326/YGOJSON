@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json",
+  "id": "37d2cefd-01c0-41ac-8c46-89e2085a1a29",
+  "name": {
+    "en": "Shadow Samurai Value Box"
+  },
+  "locales": {
+    "na": {
+      "image": "",
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "na"
+      ],
+      "$comment": "TODO: For some reason the promo card is missing from the database!",
+      "packs": [
+        {
+          "set": {
+            "yugipediaName": "Samurai Warlords Structure Deck"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Generation Force"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Extreme Victory"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Storm of Ragnarok"
+          },
+          "qty": 2
+        }
+      ]
+    }
+  ]
+}

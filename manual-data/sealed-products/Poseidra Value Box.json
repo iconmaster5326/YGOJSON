@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json",
+  "id": "f30301db-cad1-4fe4-bd9a-1d44b9e96a3f",
+  "name": {
+    "en": "Poseidra Value Box"
+  },
+  "locales": {
+    "na": {
+      "image": "https://ms.yugipedia.com//thumb/2/2a/SDRE-PromoEN.png/386px-SDRE-PromoEN.png",
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "na"
+      ],
+      "$comment": "TODO: For some reason the promo card is missing from the database!",
+      "packs": [
+        {
+          "set": {
+            "yugipediaName": "Realm of the Sea Emperor Structure Deck"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Abyss Rising"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Return of the Duelist"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Galactic Overlord"
+          },
+          "qty": 1
+        },
+        {
+          "$comment": "TODO: This could randomly be either STOR, EXVR, or GENF!",
+          "set": {
+            "yugipediaName": "Storm of Ragnarok"
+          },
+          "qty": 1
+        }
+      ]
+    }
+  ]
+}

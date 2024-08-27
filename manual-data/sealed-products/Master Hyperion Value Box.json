@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json",
+  "id": "46dc0f32-eede-4300-bf00-aaf53d8da5c0",
+  "name": {
+    "en": "Master Hyperion Value Box"
+  },
+  "locales": {
+    "na": {
+      "image": "https://ms.yugipedia.com//thumb/4/45/SDLS-PromoEN.png/386px-SDLS-PromoEN.png",
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "na"
+      ],
+      "$comment": "TODO: For some reason the promo card is missing from the database!",
+      "packs": [
+        {
+          "set": {
+            "yugipediaName": "Structure Deck: Lost Sanctuary"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Generation Force"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Galactic Overlord"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Hidden Arsenal 5: Steelswarm Invasion"
+          },
+          "qty": 2
+        }
+      ]
+    }
+  ]
+}

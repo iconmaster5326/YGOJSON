@@ -1,0 +1,41 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "af31e407-11ee-4ce6-92ec-8fed1468ad02",
+  "name": "Battle Pack: Epic Dawn",
+  "$comment": "TODO: allow for the 'slot' system that Battle Packs 1 uses",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 1,
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 3,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 1,
+      "rarity": [
+        {
+          "rarities": [
+            "starfoil"
+          ]
+        }
+      ]
+    }
+  ]
+}

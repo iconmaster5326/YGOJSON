@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "47755375-f83c-4ceb-9f5c-87d48d7200b1",
+  "name": "Super Starter Power-Up Pack (EU)",
+  "$comment": "TODO: these pack odds may not be accurate! TODO: the ultras are predetermined cards actually.",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 2,
+      "rarity": [
+        {
+          "rarities": [
+            "ultra"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 8,
+      "rarity": [
+        {
+          "rarities": [
+            "super",
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

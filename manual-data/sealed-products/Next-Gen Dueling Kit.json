@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/sealedProduct.json",
+  "id": "17f7d943-c8e6-4fe4-be5d-f9beb2df454d",
+  "name": {
+    "en": "Next-Gen Dueling Kit"
+  },
+  "locales": {
+    "na": {
+      "image": "https://ms.yugipedia.com//thumb/9/9c/YS11-PromoEN.jpg/386px-YS11-PromoEN.jpg",
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "na"
+      ],
+      "$comment": "TODO: For some reason the promo card is missing from the database!",
+      "packs": [
+        {
+          "set": {
+            "yugipediaName": "Starter Deck: Dawn of the Xyz"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Generation Force"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Stardust Overdrive"
+          },
+          "qty": 1
+        },
+        {
+          "set": {
+            "yugipediaName": "Duelist Pack: Yusei 2"
+          },
+          "qty": 1
+        }
+      ]
+    }
+  ]
+}

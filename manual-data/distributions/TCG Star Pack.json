@@ -1,14 +1,24 @@
 {
   "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
-  "id": "22c4d928-9011-4cdf-bc1f-69ead7060a39",
-  "name": "TCG Plus Promo Card",
+  "id": "6b0a4844-d6cc-4c95-a8da-19c5370e64c7",
+  "name": "TCG Star Pack",
   "slots": [
+    {
+      "type": "pool",
+      "qty": 2,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
     {
       "type": "pool",
       "rarity": [
         {
           "rarities": [
-            "common",
             "starfoil"
           ]
         }

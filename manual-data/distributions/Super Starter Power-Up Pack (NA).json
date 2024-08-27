@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "30c6bba2-05c8-4903-b0a5-1ace049234c5",
+  "name": "Super Starter Power-Up Pack (NA)",
+  "$comment": "TODO: these pack odds may not be accurate!",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 1,
+      "rarity": [
+        {
+          "rarities": [
+            "ultra"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 4,
+      "rarity": [
+        {
+          "rarities": [
+            "super",
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}
