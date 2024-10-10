@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "c7b0e3df-f03c-4d02-9ab6-4916ed40701b",
+  "name": {
+    "en": "Yu-Gi-Oh! GX Volume 5",
+    "ja": "\u904a\u622f\u738b\uff27\uff38 \u7b2c\uff15\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "YG05-JP",
+      "date": "2009-05-01",
+      "image": "https://ms.yugipedia.com//2/23/YG05-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "3f29d4ae-4247-43ef-be4e-de1f399f1a17": "https://ms.yugipedia.com//c/c8/DarklordDesire-YG05-JP-UR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121211001
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "YG05-EN",
+      "date": "2010-10-05",
+      "image": "https://ms.yugipedia.com//b/bf/YG05-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "3f29d4ae-4247-43ef-be4e-de1f399f1a17": "https://ms.yugipedia.com//1/1b/DarklordDesire-YG05-EN-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          161601281
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/23/YG05-PromoJP.png",
+      "cards": [
+        {
+          "id": "3f29d4ae-4247-43ef-be4e-de1f399f1a17",
+          "card": "1aeef3b2-1b52-4725-8e27-cda43814338c",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//b/bf/YG05-PromoEN.png",
+      "cards": [
+        {
+          "id": "3f29d4ae-4247-43ef-be4e-de1f399f1a17",
+          "card": "1aeef3b2-1b52-4725-8e27-cda43814338c",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! GX Volume 5 promotional card",
+      "id": 165448
+    }
+  }
+}
