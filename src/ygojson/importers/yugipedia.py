@@ -3,7 +3,9 @@ import atexit
 import datetime
 import json
 import logging
+import math
 import os.path
+import random
 import re
 import time
 import typing
@@ -409,7 +411,16 @@ def parse_card(
     for the database, and True otherwise.
     """
 
-    title = batcher.idsToNames[page]
+    for possibly_out_of_date_set in series_members.values():
+        # we do this to ensure that we don't cache bad data when a series is removed from a card
+        if card in possibly_out_of_date_set:
+            possibly_out_of_date_set.remove(card)
+
+    title = batcher.idsToNames.get(page)
+    if title is None:
+        logging.warning(f"Card page has no title: {page}")
+        return False
+
     cardtable = next(
         iter([x for x in data.templates if x.name.strip().lower() == "cardtable2"])
     )
@@ -635,8 +646,13 @@ def parse_card(
                     out_image.card_art = url
 
             for image in card.images:
-                in_image = in_images.pop(0)
-                add_image(in_image, image)
+                if len(in_images) == 0:
+                    logging.warning(
+                        f'mismatch between number of images known and found in "{title}"\'s page!'
+                    )
+                else:
+                    in_image = in_images.pop(0)
+                    add_image(in_image, image)
             for in_image in in_images:
                 new_image = CardImage(id=uuid.uuid4())
                 if len(card.passwords) == 1:
@@ -2628,6 +2644,7 @@ def import_from_yugipedia(
     import_sets: bool = True,
     import_series: bool = True,
     production: bool = False,
+    partition_filepath: typing.Optional[str] = None,
 ) -> typing.Tuple[int, int]:
     n_found = n_new = 0
 
@@ -2636,29 +2653,37 @@ def import_from_yugipedia(
             lambda: batcher.saveCachesToDisk()
         )  # to ensure we never lose cache data
 
-        last_access = db.last_yugipedia_read
-        db.last_yugipedia_read = (
-            datetime.datetime.now()
-        )  # a conservative estimate of when we accessed, so we don't miss new changelog entries
-
-        if last_access is not None:
-            if (
-                production
-                and datetime.datetime.now().timestamp() - last_access.timestamp()
-                > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
-            ):
-                # fetching the changelog would take too long; just blow up the cache
-                batcher.clearCache()
-            else:
-                # clear the cache of any changed pages
-                _ = [*get_changelog(batcher, last_access)]
-
         series_members: typing.Dict[str, typing.Set[Card]] = {}
 
-        cards = []
+        if partition_filepath is None:
+            # process everything we can get our grubby mitts on
+            cards, sets, series = _get_lists(
+                db,
+                batcher,
+                import_cards=import_cards,
+                import_sets=import_sets,
+                import_series=import_series,
+                production=production,
+            )
+        else:
+            # only process what's given in the spec file
+            with open(partition_filepath, encoding="utf-8") as file:
+                things: typing.Dict[str, typing.List[int]] = json.load(file)
+                cards = things.get("cards", [])
+                sets = things.get("sets", [])
+                series = things.get("series", [])
+
+            # if we don't process every card before we process every series,
+            # the series table will be all messed up. Fix that via DB lookup.
+            for existing_series in db.series:
+                if existing_series.yugipedia:
+                    name = existing_series.yugipedia.name.lower()
+                    series_members.setdefault(name, set())
+                    for member in existing_series.members:
+                        series_members[name].add(member)
+
         if import_cards:
             banlists = get_banlist_pages(batcher)
-            cards = [*get_card_pages(batcher)]
 
             for pageid in tqdm.tqdm(cards, desc="Importing cards from Yugipedia"):
 
@@ -2744,8 +2769,6 @@ def import_from_yugipedia(
             batcher.saveCachesToDisk()
 
         if import_sets:
-            sets = [*get_set_pages(batcher)]
-
             for setid in tqdm.tqdm(sets, desc="Importing sets from Yugipedia"):
 
                 def do(pageid: int):
@@ -2898,8 +2921,6 @@ def import_from_yugipedia(
             batcher.saveCachesToDisk()
 
         if import_series:
-            series = [*get_series_pages(batcher)]
-
             for seriesid in tqdm.tqdm(series, desc="Importing series from Yugipedia"):
 
                 def do(pageid: int):
@@ -2907,7 +2928,10 @@ def import_from_yugipedia(
                     def onGetData(raw_data: str):
                         nonlocal n_found, n_new
 
-                        title = batcher.idsToNames[pageid]
+                        title = batcher.idsToNames.get(pageid)
+                        if title is None:
+                            logging.warning(f"Found series ID without title: {pageid}")
+                            return
                         data = wikitextparser.parse(raw_data)
 
                         seriestables = [
@@ -2962,6 +2986,104 @@ def import_from_yugipedia(
                 do(seriesid)
 
     return n_found, n_new
+
+
+def _get_lists(
+    db: Database,
+    batcher: "YugipediaBatcher",
+    *,
+    import_cards: bool = True,
+    import_sets: bool = True,
+    import_series: bool = True,
+    production: bool = False,
+) -> typing.Tuple[typing.List[int], typing.List[int], typing.List[int]]:
+    """Returns (cardIDs, setIDs, seriesIDs)."""
+
+    last_access = db.last_yugipedia_read
+    db.last_yugipedia_read = (
+        datetime.datetime.now()
+    )  # a conservative estimate of when we accessed, so we don't miss new changelog entries
+
+    if last_access is not None:
+        if (
+            production
+            and datetime.datetime.now().timestamp() - last_access.timestamp()
+            > TIME_TO_JUST_REDOWNLOAD_ALL_PAGES
+        ):
+            # fetching the changelog would take too long; just blow up the cache
+            batcher.clearCache()
+        else:
+            # clear the cache of any changed pages
+            _ = [*get_changelog(batcher, last_access)]
+
+    cards = []
+    if import_cards:
+        cards = [*get_card_pages(batcher)]
+
+    sets = []
+    if import_sets:
+        sets = [*get_set_pages(batcher)]
+
+    series = []
+    if import_series:
+        series = [*get_series_pages(batcher)]
+
+    return (cards, sets, series)
+
+
+def generate_yugipedia_partitions(
+    db: Database,
+    file_prefix: str,
+    n_parts: int,
+    *,
+    import_cards: bool = True,
+    import_sets: bool = True,
+    import_series: bool = True,
+    production: bool = False,
+) -> int:
+    """Generates ``n_parts`` partition files, each with the prefix of ``file_prefix``.
+    For example, a prefix of "folder/file" would write to files "folder/file1.json", "folder/file2.json", etc.
+    Returns the number of cards, sets, and series found.
+    """
+
+    with YugipediaBatcher() as batcher:
+        cards, sets, series = _get_lists(
+            db,
+            batcher,
+            import_cards=import_cards,
+            import_sets=import_sets,
+            import_series=import_series,
+            production=production,
+        )
+
+    unwrapped = [
+        *(("card", x) for x in cards),
+        *(("set", x) for x in sets),
+        *(("series", x) for x in series),
+    ]
+    random.shuffle(unwrapped)
+    n_things = len(unwrapped)
+    chunk_size = math.ceil(n_things / n_parts)
+
+    for i in range(1, n_parts + 1):
+        things = unwrapped[0:chunk_size]
+        del unwrapped[0:chunk_size]
+
+        part_cards = [x[1] for x in things if x[0] == "card"]
+        part_sets = [x[1] for x in things if x[0] == "set"]
+        part_series = [x[1] for x in things if x[0] == "series"]
+
+        with open(f"{file_prefix}{i}.json", "w", encoding="utf-8") as file:
+            json.dump(
+                {
+                    "cards": part_cards,
+                    "sets": part_sets,
+                    "series": part_series,
+                },
+                file,
+            )
+
+    return n_things
 
 
 BATCH_MAX = 50

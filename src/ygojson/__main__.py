@@ -109,12 +109,12 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         type=str,
         default="INFO",
         metavar="LEVEL",
-        help="The logging level. One of: DEBUG, INFO, WARNING, ERROR, CRITICAL.",
+        help="The logging level. One of: DEBUG, INFO, WARNING, ERROR, CRITICAL",
     )
     parser.add_argument(
         "--production",
         action="store_true",
-        help="Specify this if we're in production. Mostly this prevents unnecesary Yugipedia cache clears when not specified.",
+        help="Specify this if we're in production. Mostly this prevents unnecesary Yugipedia cache clears when not specified",
     )
     parser.add_argument(
         "--download",
@@ -127,6 +127,27 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         default=REPOSITORY,
         metavar="URL",
         help="The download URL for data ZIP files",
+    )
+    parser.add_argument(
+        "--yugipedia-gen-partitions",
+        type=int,
+        default=0,
+        metavar="N",
+        help="Generate N partition files instead of parsing Yugipedia (0 to disable)",
+    )
+    parser.add_argument(
+        "--yugipedia-gen-partitions-prefix",
+        type=str,
+        default="yugipedia-partition-",
+        metavar="PATHPREFIX",
+        help="The file path to begin all generated Yugipedia partitions at",
+    )
+    parser.add_argument(
+        "--yugipedia-use-partition",
+        type=str,
+        default="",
+        metavar="PATH",
+        help="Parse Yugipedia from a partition file rather than all at once (empty string to disable)",
     )
     args = parser.parse_args(argv[1:])
 
@@ -165,7 +186,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             import_sets=not args.no_sets,
             import_series=not args.no_series,
         )
-        logging.info(f"Added {n_new} cards and updated {n_old} cards.")
+        logging.info(f"Added {n_new} objects and updated {n_old} objects.")
 
     if not args.no_yamlyugi:
         logging.info("Importing from Yaml Yugi...")
@@ -175,18 +196,34 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
             import_sets=not args.no_sets,
             import_series=not args.no_series,
         )
-        logging.info(f"Added {n_new} cards and updated {n_old} cards.")
+        logging.info(f"Added {n_new} objects and updated {n_old} objects.")
 
     if not args.no_yugipedia:
-        logging.info("Importing from Yugipedia...")
-        n_old, n_new = import_from_yugipedia(
-            db,
-            import_cards=not args.no_cards,
-            import_sets=not args.no_sets,
-            import_series=not args.no_series,
-            production=args.production,
-        )
-        logging.info(f"Added {n_new} cards and updated {n_old} cards.")
+        if args.yugipedia_gen_partitions:
+            logging.info("Generating Yugipedia partitions...")
+            n = generate_yugipedia_partitions(
+                db,
+                args.yugipedia_gen_partitions_prefix,
+                args.yugipedia_gen_partitions,
+                import_cards=not args.no_cards,
+                import_sets=not args.no_sets,
+                import_series=not args.no_series,
+                production=args.production,
+            )
+            logging.info(
+                f"Generated {args.yugipedia_gen_partitions} partitions for {n} objects."
+            )
+        else:
+            logging.info("Importing from Yugipedia...")
+            n_old, n_new = import_from_yugipedia(
+                db,
+                import_cards=not args.no_cards,
+                import_sets=not args.no_sets,
+                import_series=not args.no_series,
+                production=args.production,
+                partition_filepath=args.yugipedia_use_partition or None,
+            )
+            logging.info(f"Added {n_new} objects and updated {n_old} objects.")
 
     if not args.no_regen_backlinks:
         logging.info("Regenerating backlinks...")

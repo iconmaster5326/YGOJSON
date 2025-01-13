@@ -34,9 +34,24 @@ jobs:
     - name: Lint
       run: |
         pre-commit run --all-files
-    - name: Run YGOJSON
+    - name: Run YGOJSON (Pre-Yugipedia)
       run: |
-        ygojson --download --production
+        ygojson --production --download --yugipedia-gen-partitions 4 --no-manual --individuals '' --no-individuals
+    - name: Run YGOJSON (Yugipedia 1)
+      run: |
+        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-1.json --no-manual --individuals '' --no-individuals
+    - name: Run YGOJSON (Yugipedia 2)
+      run: |
+        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-2.json --no-manual --individuals '' --no-individuals
+    - name: Run YGOJSON (Yugipedia 3)
+      run: |
+        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-3.json --no-manual --individuals '' --no-individuals
+    - name: Run YGOJSON (Yugipedia 4)
+      run: |
+        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-4.json --no-manual --individuals '' --no-individuals
+    - name: Run YGOJSON (Post-Yugipedia)
+      run: |
+        ygojson --production --no-ygoprodeck --no-yamlyugi --no-yugipedia
     - name: Test
       run: |
         python test/validate_data.py
