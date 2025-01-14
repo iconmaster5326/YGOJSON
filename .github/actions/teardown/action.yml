@@ -15,7 +15,7 @@ runs:
     - name: Save Cached Temp
       uses: actions/cache/save@v4.0.2
       continue-on-error: true
-      if: ${{ inputs.set-temp == "true" }}
+      if: ${{ inputs.set-temp == 'true' }}
       with:
         path: temp
         key: temp-${{ github.run_id }}
@@ -23,7 +23,7 @@ runs:
     - name: Save Cached DB
       uses: actions/cache/save@v4.0.2
       continue-on-error: true
-      if: ${{ inputs.set-data == "true" }}
+      if: ${{ inputs.set-data == 'true' }}
       with:
         path: data
         key: data-${{ github.run_id }}
