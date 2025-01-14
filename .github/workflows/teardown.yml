@@ -1,0 +1,32 @@
+name: Teardown
+
+on:
+  workflow_call:
+    inputs:
+      set-temp:
+        default: true
+        type: boolean
+      set-data:
+        default: true
+        type: boolean
+
+jobs:
+  teardown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Save Cached Temp
+        uses: actions/cache/save@v4.0.2
+        continue-on-error: true
+        if: inputs.set-temp
+        with:
+          path: temp
+          key: temp-${{ github.run_id }}
+          enableCrossOsArchive: true
+      - name: Save Cached DB
+        uses: actions/cache/save@v4.0.2
+        continue-on-error: true
+        if: inputs.set-data
+        with:
+          path: data
+          key: data-${{ github.run_id }}
+          enableCrossOsArchive: true

@@ -1,0 +1,45 @@
+name: Setup
+
+on:
+  workflow_call:
+    inputs:
+      get-temp:
+        default: true
+        type: boolean
+      get-data:
+        default: true
+        type: boolean
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.8"
+      - name: Install YGOJSON
+        run: |
+          python -m pip install -e .[dev,test]
+      - name: Restore Cached Temp
+        uses: actions/cache/restore@v4.0.2
+        if: inputs.get-temp
+        continue-on-error: true
+        with:
+          path: temp
+          key: temp
+          restore-keys: |
+            temp-
+          enableCrossOsArchive: true
+      - name: Restore Cached DB
+        uses: actions/cache/restore@v4.0.2
+        if: inputs.get-data
+        continue-on-error: true
+        with:
+          path: data
+          key: data
+          restore-keys: |
+            data-
+          enableCrossOsArchive: true

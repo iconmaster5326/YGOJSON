@@ -10,116 +10,169 @@ permissions:
   actions: write
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.8"
-    - name: Restore Cached Temp
-      uses: actions/cache/restore@v4.0.2
-      continue-on-error: true
-      with:
-        path: temp
-        key: temp
-        restore-keys: |
-          temp-
-        enableCrossOsArchive: true
-    - name: Install YGOJSON
-      run: |
-        python -m pip install -e .[dev,test]
-    - name: Lint
-      run: |
-        pre-commit run --all-files
-    - name: Run YGOJSON (Pre-Yugipedia)
-      run: |
-        ygojson --production --download --yugipedia-gen-partitions 4 --no-manual --individuals '' --no-individuals
-    - name: Run YGOJSON (Yugipedia 1)
-      run: |
-        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-1.json --no-manual --individuals '' --no-individuals
-    - name: Run YGOJSON (Yugipedia 2)
-      run: |
-        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-2.json --no-manual --individuals '' --no-individuals
-    - name: Run YGOJSON (Yugipedia 3)
-      run: |
-        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-3.json --no-manual --individuals '' --no-individuals
-    - name: Run YGOJSON (Yugipedia 4)
-      run: |
-        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition yugipedia-partition-4.json --no-manual --individuals '' --no-individuals
-    - name: Run YGOJSON (Post-Yugipedia)
-      run: |
-        ygojson --production --no-ygoprodeck --no-yamlyugi --no-yugipedia
-    - name: Test
-      run: |
-        python test/validate_data.py
-    - name: Save Cached Temp
-      uses: actions/cache/save@v4.0.2
-      continue-on-error: true
-      if: always()
-      with:
-        path: temp
-        key: temp-${{ github.run_id }}
-        enableCrossOsArchive: true
-    - name: Push Individuals
-      uses: s0/git-publish-subdir-action@v2.6.0
-      env:
-        REPO: self
-        BRANCH: v1/individual # update this when we have new schema versions
-        FOLDER: data/individual
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SQUASH_HISTORY: true
-    - name: Push Aggregates
-      uses: s0/git-publish-subdir-action@v2.6.0
-      continue-on-error: true # TODO: files too big; we need to enable git-lfs to remove this line
-      env:
-        REPO: self
-        BRANCH: v1/aggregate  # update this when we have new schema versions
-        FOLDER: data/aggregate
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SQUASH_HISTORY: true
-    - name: Archive Individuals
-      uses: vimtor/action-zip@v1.2
-      with:
-        files: data/individual
-        dest: individual.zip
-    - name: Archive Aggregates
-      uses: vimtor/action-zip@v1.2
-      with:
-        files: data/aggregate
-        dest: aggregate.zip
-    - name: Get Latest Release
-      id: latest_release
-      uses: gregziegan/fetch-latest-release@v2.0.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Remove Old Individuals ZIP
-      uses: flcdrg/remove-release-asset-action@v4.0.4
-      continue-on-error: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        release_id: ${{ steps.latest_release.outputs.id }}
-        asset_name: individual.zip
-    - name: Remove Old Aggregates ZIP
-      uses: flcdrg/remove-release-asset-action@v4.0.4
-      continue-on-error: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        release_id: ${{ steps.latest_release.outputs.id }}
-        asset_name: aggregate.zip
-    - name: Upload Individuals ZIP
-      uses: csexton/release-asset-action@v3
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        release-url: ${{ steps.latest_release.outputs.upload_url }}
-        file: individual.zip
-    - name: Upload Aggregates ZIP
-      uses: csexton/release-asset-action@v3
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        release-url: ${{ steps.latest_release.outputs.upload_url }}
-        file: aggregate.zip
+      - name: Setup
+        uses: ./.github/workflows/setup.yml
+        with:
+          get-temp: false
+          get-data: false
+      - name: Lint
+        run: |
+          pre-commit run --all-files
+  pre-yugipedia:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Setup
+        uses: ./.github/workflows/setup.yml
+        with:
+          get-data: false
+      - name: Run YGOJSON (Pre-Yugipedia)
+        run: |
+          ygojson --production --download --yugipedia-gen-partitions 8 --yugipedia-gen-partitions-prefix temp/part --no-manual --individuals '' --no-individuals
+      - name: Teardown
+        uses: ./.github/workflows/teardown.yml
+        if: always()
+  yugipedia-1:
+    runs-on: ubuntu-latest
+    needs: pre-yugipedia
+    steps:
+      - name: Run YGOJSON (Yugipedia 1)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 1
+  yugipedia-2:
+    runs-on: ubuntu-latest
+    needs: yugipedia-1
+    steps:
+      - name: Run YGOJSON (Yugipedia 2)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 2
+  yugipedia-3:
+    runs-on: ubuntu-latest
+    needs: yugipedia-2
+    steps:
+      - name: Run YGOJSON (Yugipedia 3)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 3
+  yugipedia-4:
+    runs-on: ubuntu-latest
+    needs: yugipedia-3
+    steps:
+      - name: Run YGOJSON (Yugipedia 4)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 4
+  yugipedia-5:
+    runs-on: ubuntu-latest
+    needs: yugipedia-4
+    steps:
+      - name: Run YGOJSON (Yugipedia 5)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 5
+  yugipedia-6:
+    runs-on: ubuntu-latest
+    needs: yugipedia-5
+    steps:
+      - name: Run YGOJSON (Yugipedia 6)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 6
+  yugipedia-7:
+    runs-on: ubuntu-latest
+    needs: yugipedia-6
+    steps:
+      - name: Run YGOJSON (Yugipedia 7)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 7
+  yugipedia-8:
+    runs-on: ubuntu-latest
+    needs: yugipedia-7
+    steps:
+      - name: Run YGOJSON (Yugipedia 8)
+        uses: ./.github/workflows/yugipedia.yml
+        with:
+          i: 8
+  post-yugipedia:
+    runs-on: ubuntu-latest
+    needs: yugipedia-8
+    steps:
+      - name: Setup
+        uses: ./.github/workflows/setup.yml
+      - name: Run YGOJSON (Post-Yugipedia)
+        run: |
+          ygojson --production --no-ygoprodeck --no-yamlyugi --no-yugipedia
+      - name: Test
+        run: |
+          python test/validate_data.py
+      - name: Push Individuals
+        uses: s0/git-publish-subdir-action@v2.6.0
+        env:
+          REPO: self
+          BRANCH: v1/individual # update this when we have new schema versions
+          FOLDER: data/individual
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+      - name: Push Aggregates
+        uses: s0/git-publish-subdir-action@v2.6.0
+        continue-on-error: true # TODO: files too big; we need to enable git-lfs to remove this line
+        env:
+          REPO: self
+          BRANCH: v1/aggregate # update this when we have new schema versions
+          FOLDER: data/aggregate
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+      - name: Archive Individuals
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: data/individual
+          dest: individual.zip
+      - name: Archive Aggregates
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: data/aggregate
+          dest: aggregate.zip
+      - name: Get Latest Release
+        id: latest_release
+        uses: gregziegan/fetch-latest-release@v2.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Remove Old Individuals ZIP
+        uses: flcdrg/remove-release-asset-action@v4.0.4
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_id: ${{ steps.latest_release.outputs.id }}
+          asset_name: individual.zip
+      - name: Remove Old Aggregates ZIP
+        uses: flcdrg/remove-release-asset-action@v4.0.4
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_id: ${{ steps.latest_release.outputs.id }}
+          asset_name: aggregate.zip
+      - name: Upload Individuals ZIP
+        uses: csexton/release-asset-action@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          release-url: ${{ steps.latest_release.outputs.upload_url }}
+          file: individual.zip
+      - name: Upload Aggregates ZIP
+        uses: csexton/release-asset-action@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          release-url: ${{ steps.latest_release.outputs.upload_url }}
+          file: aggregate.zip
+      - name: Teardown
+        uses: ./.github/workflows/teardown.yml
+        if: always()
+        with:
+          set-data: false
