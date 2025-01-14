@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup
-        uses: ./.github/workflows/setup.yml
+        uses: ./.github/actions/setup
       - name: Run YGOJSON (Yugipedia ${{inputs.i}})
         run: |
           ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition temp/part${{inputs.i}}.json --no-manual --individuals '' --no-individuals
       - name: Teardown
-        uses: ./.github/workflows/teardown.yml
+        uses: ./.github/actions/teardown
         if: always()

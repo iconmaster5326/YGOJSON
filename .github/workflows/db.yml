@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup
-        uses: ./.github/workflows/setup.yml
+        uses: ./.github/actions/setup
         with:
           get-temp: false
           get-data: false
@@ -30,14 +30,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup
-        uses: ./.github/workflows/setup.yml
+        uses: ./.github/actions/setup
         with:
           get-data: false
       - name: Run YGOJSON (Pre-Yugipedia)
         run: |
           ygojson --production --download --yugipedia-gen-partitions 8 --yugipedia-gen-partitions-prefix temp/part --no-manual --individuals '' --no-individuals
       - name: Teardown
-        uses: ./.github/workflows/teardown.yml
+        uses: ./.github/actions/teardown
         if: always()
   yugipedia-1:
     runs-on: ubuntu-latest
@@ -46,7 +46,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 1)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 1
   yugipedia-2:
@@ -56,7 +56,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 2)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 2
   yugipedia-3:
@@ -66,7 +66,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 3)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 3
   yugipedia-4:
@@ -76,7 +76,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 4)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 4
   yugipedia-5:
@@ -86,7 +86,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 5)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 5
   yugipedia-6:
@@ -96,7 +96,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 6)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 6
   yugipedia-7:
@@ -106,7 +106,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 7)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 7
   yugipedia-8:
@@ -116,7 +116,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run YGOJSON (Yugipedia 8)
-        uses: ./.github/workflows/yugipedia.yml
+        uses: ./.github/actions/yugipedia
         with:
           i: 8
   post-yugipedia:
@@ -126,7 +126,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup
-        uses: ./.github/workflows/setup.yml
+        uses: ./.github/actions/setup
       - name: Run YGOJSON (Post-Yugipedia)
         run: |
           ygojson --production --no-ygoprodeck --no-yamlyugi --no-yugipedia
@@ -194,7 +194,7 @@ jobs:
           release-url: ${{ steps.latest_release.outputs.upload_url }}
           file: aggregate.zip
       - name: Teardown
-        uses: ./.github/workflows/teardown.yml
+        uses: ./.github/actions/teardown
         if: always()
         with:
           set-data: false
