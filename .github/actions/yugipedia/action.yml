@@ -1,21 +1,20 @@
 name: Yugipedia Import
+description: Yugipedia Import
 
-on:
-  workflow_call:
-    inputs:
-      i:
-        type: number
-        required: true
+inputs:
+  i:
+    description: The part.
+    required: true
 
-jobs:
-  yugipedia:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup
-        uses: ./.github/actions/setup
-      - name: Run YGOJSON (Yugipedia ${{inputs.i}})
-        run: |
-          ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition temp/part${{inputs.i}}.json --no-manual --individuals '' --no-individuals
-      - name: Teardown
-        uses: ./.github/actions/teardown
-        if: always()
+runs:
+  using: composite
+  steps:
+    - name: Setup
+      uses: ./.github/actions/setup
+    - name: Run YGOJSON (Yugipedia ${{inputs.i}})
+      shell: bash
+      run: |
+        ygojson --production --no-ygoprodeck --no-yamlyugi --yugipedia-use-partition temp/part${{inputs.i}}.json --no-manual --individuals '' --no-individuals
+    - name: Teardown
+      uses: ./.github/actions/teardown
+      if: always()
