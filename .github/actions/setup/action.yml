@@ -22,7 +22,7 @@ runs:
         python -m pip install -e .[dev,test]
     - name: Restore Cached Temp
       uses: actions/cache/restore@v4.0.2
-      if: ${{ inputs.get-temp }}
+      if: ${{ inputs.get-temp == "true" }}
       continue-on-error: true
       with:
         path: temp
@@ -32,7 +32,7 @@ runs:
         enableCrossOsArchive: true
     - name: Restore Cached DB
       uses: actions/cache/restore@v4.0.2
-      if: ${{ inputs.get-data }}
+      if: ${{ inputs.get-data == "true" }}
       continue-on-error: true
       with:
         path: data
