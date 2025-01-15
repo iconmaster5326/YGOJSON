@@ -1852,7 +1852,7 @@ def parse_tcg_ocg_set(
                                     and card_rarity in FALLBACK_RARITIES
                                 ):
                                     onGetCard(card, FALLBACK_RARITIES[card_rarity])
-                                if (
+                                elif (
                                     not alt
                                 ):  # some special cards, like oversized cards, should be ignored
                                     logging.warn(
