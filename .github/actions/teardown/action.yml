@@ -18,7 +18,7 @@ runs:
       if: ${{ inputs.set-temp == 'true' }}
       with:
         path: temp
-        key: temp-${{ github.run_id }}
+        key: temp-${{ github.run_id }}-${{ github.job }}
         enableCrossOsArchive: true
     - name: Save Cached DB
       uses: actions/cache/save@v4.0.2
@@ -26,5 +26,5 @@ runs:
       if: ${{ inputs.set-data == 'true' }}
       with:
         path: data
-        key: data-${{ github.run_id }}
+        key: data-${{ github.run_id }}-${{ github.job }}
         enableCrossOsArchive: true
