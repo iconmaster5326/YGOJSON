@@ -1607,9 +1607,23 @@ class RawLocale:
         self.db_ids = []
 
 
+COLORFUL_RARES = {
+    (CardRarity.RARE, "Red"): CardRarity.RARE_RED,
+    (CardRarity.RARE, "Bronze"): CardRarity.RARE_COPPER,
+    (CardRarity.RARE, "Green"): CardRarity.RARE_GREEN,
+    (CardRarity.RARE, "Silver"): CardRarity.RARE_WEDGEWOOD,
+    (CardRarity.RARE, "Blue"): CardRarity.RARE_BLUE,
+    (CardRarity.RARE, "Purple"): CardRarity.RARE_PURPLE,
+    (CardRarity.ULTRA, "Green"): CardRarity.ULTRA_GREEN,
+    (CardRarity.ULTRA, "Blue"): CardRarity.ULTRA_BLUE,
+    (CardRarity.ULTRA, "Purple"): CardRarity.ULTRA_PURPLE,
+}
+
+
 FALLBACK_RARITIES = {
     CardRarity.COMMON: CardRarity.SHORTPRINT,
     CardRarity.SHORTPRINT: CardRarity.COMMON,
+    **{r2: r1 for (r1, alt), r2 in COLORFUL_RARES.items()},
 }
 
 
@@ -1944,12 +1958,13 @@ def parse_tcg_ocg_set(
                                         rarity = rarity_override
                                     col_index += 1
 
-                                alt = default_alt if default_alt else ""
+                                raw_alt = default_alt if default_alt else ""
                                 if len(cols) > col_index:
                                     raw_alt = cols[col_index]
-                                    if raw_alt:
-                                        raw_alt = alt
                                     col_index += 1
+
+                                alt = raw_alt
+                                rarity = COLORFUL_RARES.get((rarity, alt), rarity)
 
                                 if file_override:
                                     image = file_override.group(1)
@@ -1974,8 +1989,8 @@ def parse_tcg_ocg_set(
                                     ed_str = EDITIONS_IN_NAV_REVERSE[edition].upper()
                                     if "-" + ed_str in galleryname:
                                         image += f"-{ed_str}"
-                                    if alt:
-                                        image += f"-{alt}"
+                                    if raw_alt:
+                                        image += f"-{raw_alt}"
                                     if ext_override:
                                         image += f".{ext_override.group(1)}"
                                     else:
