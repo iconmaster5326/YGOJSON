@@ -2666,6 +2666,7 @@ def import_from_yugipedia(
     import_series: bool = True,
     production: bool = False,
     partition_filepath: typing.Optional[str] = None,
+    specific_pages: typing.Sequence[typing.Union[int, str]] = (),
 ) -> typing.Tuple[int, int]:
     n_found = n_new = 0
 
@@ -2702,6 +2703,21 @@ def import_from_yugipedia(
                     series_members.setdefault(name, set())
                     for member in existing_series.members:
                         series_members[name].add(member)
+
+        if len(specific_pages) > 0:
+            specific_ids: typing.List[int] = []
+            for page in specific_pages:
+
+                def get_page_id(page: typing.Union[int, str]):
+                    @batcher.getPageID(page)
+                    def on_get_id(id: int, title: str):
+                        specific_ids.append(id)
+
+                get_page_id(page)
+            batcher.flushPendingOperations()
+            cards = [x for x in cards if x in specific_ids]
+            sets = [x for x in sets if x in specific_ids]
+            series = [x for x in series if x in specific_ids]
 
         if import_cards:
             banlists = get_banlist_pages(batcher)

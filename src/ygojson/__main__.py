@@ -8,6 +8,13 @@ from ygojson import *
 from ygojson.version import __version__
 
 
+def _parse_yugipedia_page(x: str) -> typing.Union[int, str]:
+    try:
+        return int(x)
+    except ValueError:
+        return x
+
+
 def main(argv: typing.Optional[typing.List[str]] = None) -> int:
     """The main function to the YGOJSON CLI.
 
@@ -149,6 +156,13 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
         metavar="PATH",
         help="Parse Yugipedia from a partition file rather than all at once (empty string to disable)",
     )
+    parser.add_argument(
+        "--yugipedia-pages",
+        type=str,
+        metavar="TITLE/ID",
+        nargs="*",
+        help="Only operate on the given Yugipedia page titles/IDs",
+    )
     args = parser.parse_args(argv[1:])
 
     if args.version:
@@ -222,6 +236,7 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
                 import_series=not args.no_series,
                 production=args.production,
                 partition_filepath=args.yugipedia_use_partition or None,
+                specific_pages=[_parse_yugipedia_page(x) for x in args.yugipedia_pages],
             )
             logging.info(f"Added {n_new} objects and updated {n_old} objects.")
 
