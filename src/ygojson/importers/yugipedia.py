@@ -492,12 +492,17 @@ def parse_card(
             else:
                 card.attribute = Attribute(value)
 
-        typeline = [x.strip() for x in typeline.split("/") if x.strip()]
+        typeline = [
+            re.sub(r"<!--.*-->", r"", x).strip()
+            for x in typeline.split("/")
+            if x.strip()
+        ]
 
         for x in typeline:
             if (
                 x
                 not in {
+                    "",
                     "?",
                     "???",
                     "Token",
