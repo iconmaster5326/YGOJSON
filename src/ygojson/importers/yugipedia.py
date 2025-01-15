@@ -3694,7 +3694,7 @@ class YugipediaBatcher:
                         continue
 
                     for image in result["imageinfo"]:
-                        if result.get("filemissing"):
+                        if image.get("filemissing"):
                             # We can't download licensed images.
                             # This is their (bad) way of telling us that.
                             self.missingPagesCache.add(title)
