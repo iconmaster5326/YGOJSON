@@ -1399,6 +1399,7 @@ FULL_RARITY_STR_TO_ENUM = {
     "ultra rare": CardRarity.ULTRA,  # ur
     "ultimate rare": CardRarity.ULTIMATE,  # utr
     "secret rare": CardRarity.SECRET,  # se / scr
+    "secret rare (special red version)": CardRarity.SECRET,  # TODO: does this need to be its own rarity?
     "ultra secret rare": CardRarity.ULTRASECRET,  # uscr
     "prismatic secret rare": CardRarity.PRISMATICSECRET,  # pscr
     "holographic rare": CardRarity.GHOST,  # hr / hgr
