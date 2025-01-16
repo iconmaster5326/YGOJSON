@@ -236,7 +236,9 @@ def main(argv: typing.Optional[typing.List[str]] = None) -> int:
                 import_series=not args.no_series,
                 production=args.production,
                 partition_filepath=args.yugipedia_use_partition or None,
-                specific_pages=[_parse_yugipedia_page(x) for x in args.yugipedia_pages],
+                specific_pages=[
+                    _parse_yugipedia_page(x) for x in (args.yugipedia_pages or [])
+                ],
             )
             logging.info(f"Added {n_new} objects and updated {n_old} objects.")
 
