@@ -2605,40 +2605,46 @@ class Database:
                 with open(
                     os.path.join(MANUAL_PRODUCTS_DIR, filename), encoding="utf-8"
                 ) as infile:
-                    in_json = json.load(infile)
 
-                    if "boxOf" in in_json:
-                        in_json["boxOf"] = [
-                            str(self.lookup_set(ManualFixupIdentifier(in_set)).id)
-                            for in_set in in_json["boxOf"]
-                        ]
+                    def process():
+                        in_json = json.load(infile)
 
-                    for in_content in in_json["contents"]:
-                        for in_pack in in_content["packs"]:
-                            set_ = self.lookup_set(
-                                ManualFixupIdentifier(in_pack["set"])
-                            )
-                            if not set_:
-                                raise Exception(
-                                    f"In sealed product {filename}: Set not found: {json.dumps(in_pack['set'])}"
+                        if "boxOf" in in_json:
+                            in_json["boxOf"] = [
+                                str(self.lookup_set(ManualFixupIdentifier(in_set)).id)
+                                for in_set in in_json["boxOf"]
+                            ]
+
+                        for in_content in in_json["contents"]:
+                            for in_pack in in_content["packs"]:
+                                set_ = self.lookup_set(
+                                    ManualFixupIdentifier(in_pack["set"])
                                 )
-                            in_pack["set"] = str(set_.id)
-
-                            if "card" in in_pack:
-                                card = self.lookup_card(
-                                    ManualFixupIdentifier(in_pack["card"])
-                                )
-                                if not card:
-                                    raise Exception(
-                                        f"In sealed product {filename}: Card not found: {json.dumps(in_pack['card'])}"
+                                if not set_:
+                                    logging.warning(
+                                        f"In sealed product {filename}: Set not found: {json.dumps(in_pack['set'])}"
                                     )
-                                in_pack["card"] = str(card.id)
+                                    return
+                                in_pack["set"] = str(set_.id)
 
-                    in_id = uuid.UUID(in_json["id"])
-                    if in_id in self.products_by_id:
-                        self.products = [x for x in self.products if x.id != in_id]
-                        del self.products_by_id[in_id]
-                    self.add_product(self._load_product(in_json))
+                                if "card" in in_pack:
+                                    card = self.lookup_card(
+                                        ManualFixupIdentifier(in_pack["card"])
+                                    )
+                                    if not card:
+                                        logging.warning(
+                                            f"In sealed product {filename}: Card not found: {json.dumps(in_pack['card'])}"
+                                        )
+                                        return
+                                    in_pack["card"] = str(card.id)
+
+                        in_id = uuid.UUID(in_json["id"])
+                        if in_id in self.products_by_id:
+                            self.products = [x for x in self.products if x.id != in_id]
+                            del self.products_by_id[in_id]
+                        self.add_product(self._load_product(in_json))
+
+                    process()
 
     def _save_meta_json(self) -> typing.Dict[str, typing.Any]:
         return {
