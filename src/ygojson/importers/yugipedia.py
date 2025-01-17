@@ -2013,21 +2013,29 @@ def parse_tcg_ocg_set(
                                 rarity = default_rarity
                                 raw_rarity = raw_default_rarity
                                 if len(cols) > col_index:
-                                    raw_rarity = cols[col_index]
-                                    rarity_override = RARITY_STR_TO_ENUM.get(
-                                        raw_rarity.lower()
-                                    ) or FULL_RARITY_STR_TO_ENUM.get(raw_rarity.lower())
-                                    if rarity_override:
-                                        rarity = rarity_override
+                                    col_rarity = cols[col_index]
+                                    if col_rarity:
+                                        raw_rarity = col_rarity
+                                        rarity_override = RARITY_STR_TO_ENUM.get(
+                                            raw_rarity.lower()
+                                        ) or FULL_RARITY_STR_TO_ENUM.get(
+                                            raw_rarity.lower()
+                                        )
+                                        if rarity_override:
+                                            rarity = rarity_override
                                     col_index += 1
 
-                                raw_alt = default_alt if default_alt else ""
+                                raw_alt = default_alt or ""
                                 if len(cols) > col_index:
                                     raw_alt = cols[col_index]
                                     col_index += 1
 
-                                alt = raw_alt
-                                rarity = COLORFUL_RARES.get((rarity, alt), rarity)
+                                colorful_rare_selector = (rarity, raw_alt)
+                                if colorful_rare_selector in COLORFUL_RARES:
+                                    rarity = COLORFUL_RARES[colorful_rare_selector]
+                                    alt = ""
+                                else:
+                                    alt = raw_alt
 
                                 if file_override:
                                     image = file_override.group(1)
