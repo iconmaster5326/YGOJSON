@@ -425,22 +425,29 @@ def parse_card(
         iter([x for x in data.templates if x.name.strip().lower() == "cardtable2"])
     )
 
+    card.text = {}
     for locale, key in LOCALES.items():
         lang = Language.normalize(key)
+
         value = get_table_entry(cardtable, locale + "_name" if locale else "name")
         if not locale and not value:
             value = title
         if value and value.strip():
             value = _strip_markup(value.strip())
-            card.text.setdefault(lang, CardText(name=value))
-            card.text[lang].name = value
-        value = get_table_entry(cardtable, locale + "_lore" if locale else "lore")
+            card.text[lang] = CardText(name=value)
+
+        value = get_table_entry(
+            cardtable,
+            locale + "_lore" if locale else "lore",
+            get_table_entry(cardtable, locale + "_text" if locale else "text"),
+        )
         if value and value.strip():
             if lang not in card.text:
                 # logging.warn(f"Card has no name in {key} but has effect: {title}")
                 pass
             else:
                 card.text[lang].effect = _strip_markup(value.strip())
+
         value = get_table_entry(
             cardtable, locale + "_pendulum_effect" if locale else "pendulum_effect"
         )
@@ -450,8 +457,13 @@ def parse_card(
                 pass
             else:
                 card.text[lang].pendulum_effect = _strip_markup(value.strip())
+
         if any(
-            (t.name.strip() == "Unofficial name" or t.name.strip() == "Unofficial lore")
+            (
+                t.name.strip() == "Unofficial name"
+                or t.name.strip() == "Unofficial lore"
+                or t.name.strip() == "Unofficial text"
+            )
             and LOCALES_FULL.get(t.arguments[0].value.strip()) == key
             for t in data.templates
         ):
@@ -461,7 +473,7 @@ def parse_card(
             else:
                 card.text[lang].official = False
 
-    if "en" not in card.text:
+    if Language.ENGLISH not in card.text:
         card.text[Language.ENGLISH] = CardText(name=title, official=False)
     elif not card.text[Language.ENGLISH].name:
         card.text[Language.ENGLISH].name = title
@@ -3311,6 +3323,8 @@ class YugipediaBatcher:
             del_(self.categoryMembersCache, pageid)
 
     def saveCachesToDisk(self):
+        os.makedirs(TEMP_DIR, exist_ok=True)
+
         path = os.path.join(TEMP_DIR, PAGES_FILENAME)
         with open(path, "w", encoding="utf-8") as file:
             json.dump(
