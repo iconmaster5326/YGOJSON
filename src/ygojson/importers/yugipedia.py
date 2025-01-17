@@ -996,6 +996,7 @@ _RARITY_FTS_RAW: typing.List[typing.Tuple[typing.List[str], str]] = [
             "scr",
             "secret",
             "Secret Rare",
+            "Secret Rare (Special Red Version)",
         ],
         "ScR",
     ),
@@ -1508,6 +1509,44 @@ FALLBACK_LOCALES = {
     "kr": "ko",
 }
 
+_LD_RARITIES = {
+    CardRarity.ULTRA: [
+        CardRarity.ULTRA,
+        CardRarity.ULTRA_BLUE,
+        CardRarity.ULTRA_GREEN,
+        CardRarity.ULTRA_PURPLE,
+    ]
+}
+_DL_RARITIES = {
+    CardRarity.RARE: [
+        CardRarity.RARE_PURPLE,
+        CardRarity.RARE_RED,
+        CardRarity.RARE_GREEN,
+        CardRarity.RARE_BLUE,
+    ]
+}
+MANUAL_RARITY_FIXUPS = {
+    "Dragons of Legend: The Complete Series": _LD_RARITIES,
+    "Legendary Duelists: Season 1": _LD_RARITIES,
+    "Legendary Duelists: Season 2": _LD_RARITIES,
+    "Duelist League 2010 participation cards": {
+        CardRarity.RARE: [
+            CardRarity.RARE_BLUE,
+            CardRarity.RARE_GREEN,
+            CardRarity.RARE_COPPER,
+            CardRarity.RARE_WEDGEWOOD,
+        ]
+    },
+    "Duelist League 2 participation cards": _DL_RARITIES,
+    "Duelist League 3 participation cards": _DL_RARITIES,
+    "Duelist League 13 participation cards": _DL_RARITIES,
+    "Duelist League 14 participation cards": _DL_RARITIES,
+    "Duelist League 15 participation cards": _DL_RARITIES,
+    "Duelist League 16 participation cards": _DL_RARITIES,
+    "Duelist League 17 participation cards": _DL_RARITIES,
+    "Duelist League 18 participation cards": _DL_RARITIES,
+}
+
 
 def commonprefix(m: typing.Iterable[str]):
     "Given a list of strings, returns the longest common leading component"
@@ -1709,8 +1748,27 @@ def parse_tcg_ocg_set(
             ):
                 @get_card(name)
                 def onGetCard(card: Card):
-                    rc = RawPrinting(card, code, rarity, qty or 1, noabbr)
-                    raw_locale.cards[rc.locator()] = rc
+                    rcs: typing.List[RawPrinting] = []
+                    raw_rc = RawPrinting(card, code, rarity, qty or 1, noabbr)
+                    if (
+                        setname in MANUAL_RARITY_FIXUPS
+                        and rarity in MANUAL_RARITY_FIXUPS[setname]
+                    ):
+                        for new_rarity in MANUAL_RARITY_FIXUPS[setname][rarity]:
+                            rcs.append(
+                                RawPrinting(
+                                    raw_rc.card,
+                                    raw_rc.code,
+                                    new_rarity,
+                                    raw_rc.qty,
+                                    raw_rc.noabbr,
+                                )
+                            )
+                    else:
+                        rcs.append(raw_rc)
+
+                    for rc in rcs:
+                        raw_locale.cards[rc.locator()] = rc
 
             for setlist in setlists:
                 raw_default_rarity = get_table_entry(setlist, "rarities", "C").strip()
