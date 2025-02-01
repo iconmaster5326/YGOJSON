@@ -1,0 +1,1018 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e696e3cc-12ba-4d38-af9d-065e841da172",
+  "name": {
+    "en": "The Duelist Genesis",
+    "fr": "La Gen\u00e8se du Duelliste",
+    "de": "The Duelist Genesis",
+    "it": "La Genesi del Duellante",
+    "es": "La G\u00e9nesis del Duelista",
+    "ja": "\u30b6\u30fb\u30c7\u30e5\u30a8\u30ea\u30b9\u30c8\u30fb\u30b8\u30a7\u30cd\u30b7\u30b9",
+    "ko": "\ub4c0\uc5bc\ub9ac\uc2a4\ud2b8\uc758 \ud0dc\ub3d9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "TDGS-EN",
+      "image": "https://ms.yugipedia.com//5/53/TDGS-BoosterEN.jpg",
+      "cardImages": {
+        "1st": {
+          "4e3986e0-c6f8-4ab5-a1e0-15eb60cc9e62": "https://ms.yugipedia.com//8/86/ShieldWarrior-TDGS-EN-R-1E.jpg",
+          "33509a4e-545c-49f4-bf96-22bedc3e522a": "https://ms.yugipedia.com//e/e9/PsychicSnail-TDGS-EN-C-1E.jpg",
+          "52fa6607-1f7e-4be2-a55a-d64778d8b954": "https://ms.yugipedia.com//6/6a/GladiatorBeastEqueste-TDGS-EN-C-1E.png",
+          "d6b57da5-be58-4544-a521-27df5590992d": "https://ms.yugipedia.com//f/f3/NoisyGnat-TDGS-EN-C-1E.jpg",
+          "976419de-165d-4f93-aae1-88cf60cf21a0": "https://ms.yugipedia.com//2/2b/MultiplePieceGolem-TDGS-EN-UR-1E.png",
+          "0149c3dc-72bb-42fe-a2e6-94f7849cd086": "https://ms.yugipedia.com//2/25/MultiplePieceGolem-TDGS-EN-UtR-1E.jpg",
+          "453dd633-2caf-4fcf-a152-e9463da46c3a": "https://ms.yugipedia.com//3/3a/StardustDragon-TDGS-EN-UR-1E.png",
+          "a6f37f2d-5f29-49f2-972e-d556b4d75b65": "https://ms.yugipedia.com//1/1d/StardustDragon-TDGS-EN-UtR-1E.png",
+          "a94c2f98-82e7-4b0c-9c55-bbbc1d6985b2": "https://ms.yugipedia.com//0/02/StardustDragon-TDGS-EN-GR-1E.png",
+          "3d1ec523-b807-466b-83de-a9e9ea9dcb98": "https://ms.yugipedia.com//8/8b/PowerFilter-TDGS-EN-SR-1E.png",
+          "c1cd0155-12f8-474d-860b-6ea2f543f067": "https://ms.yugipedia.com//b/b1/RecyclingBatteries-TDGS-EN-C-1E.png",
+          "f400a4d7-5d8a-4300-996d-7ebf83f357da": "https://ms.yugipedia.com//6/6f/TrickySpell4-TDGS-EN-C-1E.png",
+          "042afe1f-750c-4299-8acb-4653e6e0e8d2": "https://ms.yugipedia.com//b/bd/SplendidVenus-TDGS-EN-ScR-1E.png",
+          "1a51f6a9-807d-41b4-8e8d-8677d9e651c5": "https://ms.yugipedia.com//a/a3/IceMaster-TDGS-EN-ScR-1E.jpg",
+          "6ea5c81b-0027-46b0-910f-f530cb5da662": "https://ms.yugipedia.com//b/bc/KunaiwithChain-TDGS-EN-SR-1E.png",
+          "f169e5eb-53ee-4a52-8a2b-08e8051733e7": "https://ms.yugipedia.com//4/48/ToyMagician-TDGS-EN-ScR-1E.png"
+        },
+        "unlimited": {
+          "4e3986e0-c6f8-4ab5-a1e0-15eb60cc9e62": "https://ms.yugipedia.com//b/b2/ShieldWarrior-TDGS-EN-R-UE.jpg",
+          "33509a4e-545c-49f4-bf96-22bedc3e522a": "https://ms.yugipedia.com//f/f5/PsychicSnail-TDGS-EN-C-UE.png",
+          "52fa6607-1f7e-4be2-a55a-d64778d8b954": "https://ms.yugipedia.com//c/c9/GladiatorBeastEqueste-TDGS-EN-C-UE.png",
+          "d6b57da5-be58-4544-a521-27df5590992d": "https://ms.yugipedia.com//7/7c/NoisyGnat-TDGS-EN-C-UE.png",
+          "976419de-165d-4f93-aae1-88cf60cf21a0": "https://ms.yugipedia.com//e/e0/MultiplePieceGolem-TDGS-EN-UR-UE.jpg",
+          "0149c3dc-72bb-42fe-a2e6-94f7849cd086": "https://ms.yugipedia.com//a/a0/MultiplePieceGolem-TDGS-EN-UtR-UE.jpg",
+          "453dd633-2caf-4fcf-a152-e9463da46c3a": "https://ms.yugipedia.com//c/ce/StardustDragon-TDGS-EN-UR-UE.png",
+          "a6f37f2d-5f29-49f2-972e-d556b4d75b65": "https://ms.yugipedia.com//4/4f/StardustDragon-TDGS-EN-UtR-UE.png",
+          "a94c2f98-82e7-4b0c-9c55-bbbc1d6985b2": "https://ms.yugipedia.com//a/a7/StardustDragon-TDGS-EN-GR-UE.png",
+          "3d1ec523-b807-466b-83de-a9e9ea9dcb98": "https://ms.yugipedia.com//d/df/PowerFilter-TDGS-EN-SR-UE.png",
+          "c1cd0155-12f8-474d-860b-6ea2f543f067": "https://ms.yugipedia.com//a/a1/RecyclingBatteries-TDGS-EN-C-UE.png",
+          "f400a4d7-5d8a-4300-996d-7ebf83f357da": "https://ms.yugipedia.com//a/a4/TrickySpell4-TDGS-EN-C-UE.jpg",
+          "042afe1f-750c-4299-8acb-4653e6e0e8d2": "https://ms.yugipedia.com//a/a7/SplendidVenus-TDGS-EN-ScR-UE.png",
+          "1a51f6a9-807d-41b4-8e8d-8677d9e651c5": "https://ms.yugipedia.com//8/86/IceMaster-TDGS-EN-ScR-UE.png",
+          "6ea5c81b-0027-46b0-910f-f530cb5da662": "https://ms.yugipedia.com//1/18/KunaiwithChain-TDGS-EN-SR-UE.jpg",
+          "f169e5eb-53ee-4a52-8a2b-08e8051733e7": "https://ms.yugipedia.com//3/3b/ToyMagician-TDGS-EN-ScR-UE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11107004
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "TDGS-IT",
+      "image": "https://ms.yugipedia.com//6/64/TDGS-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "3b70d0f5-19df-47c9-bdda-f277e027f342": "https://ms.yugipedia.com//e/e3/ShieldWarrior-TDGS-IT-R-1E.jpg",
+          "64be29a7-5455-4fff-a4a9-2945c6c4958b": "https://ms.yugipedia.com//a/a4/StardustDragon-TDGS-IT-UR-1E.jpg"
+        },
+        "unlimited": {
+          "3b70d0f5-19df-47c9-bdda-f277e027f342": "https://ms.yugipedia.com//f/f8/ShieldWarrior-TDGS-IT-R-UE.png",
+          "64be29a7-5455-4fff-a4a9-2945c6c4958b": "https://ms.yugipedia.com//1/13/StardustDragon-TDGS-IT-UR-UE.jpg",
+          "1ac49ecb-34c2-4f28-9064-5975530a2693": "https://ms.yugipedia.com//2/2c/StardustDragon-TDGS-IT-UtR-UE.jpg",
+          "ce8e81fb-750b-4bb0-9e3a-47819f495e00": "https://ms.yugipedia.com//e/ec/StardustDragon-TDGS-IT-GR-UE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41107004
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "TDGS-SP",
+      "image": "https://ms.yugipedia.com//f/f7/TDGS-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "2dc394ea-2616-4d0a-a42a-0d1fd0462a6f": "https://ms.yugipedia.com//d/da/StardustDragon-TDGS-SP-UR-1E.png"
+        },
+        "unlimited": {
+          "29c806ff-e295-45d2-963d-ebd80b56e9ac": "https://ms.yugipedia.com//3/31/ShieldWarrior-TDGS-SP-R-UE.jpg",
+          "a2c7c7a2-bd46-4289-af5e-c313f6926e42": "https://ms.yugipedia.com//4/42/MultiplePieceGolem-TDGS-SP-UtR-UE.png",
+          "2dc394ea-2616-4d0a-a42a-0d1fd0462a6f": "https://ms.yugipedia.com//a/a6/StardustDragon-TDGS-SP-UR-UE.png",
+          "359bf16b-1d75-4150-adcf-852eb41aaed1": "https://ms.yugipedia.com//a/a4/StardustDragon-TDGS-SP-GR-UE.png",
+          "f89f3061-e95b-465f-9e9d-6e540bd11286": "https://ms.yugipedia.com//1/1a/TrickySpell4-TDGS-SP-C-UE.png",
+          "2f6b1c2d-cc6f-452b-b343-9764dde1c615": "https://ms.yugipedia.com//a/a0/KunaiwithChain-TDGS-SP-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51106003
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "TDGS-JP",
+      "date": "2008-04-19",
+      "image": "https://ms.yugipedia.com//4/43/TDGS-BoosterJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "63e78a95-4f1f-41a7-b836-ae43c745a71c": "https://ms.yugipedia.com//f/f7/ShieldWarrior-TDGS-JP-R.jpg",
+          "86eed1ee-d5d6-44f7-9537-24644c9e0954": "https://ms.yugipedia.com//9/9e/PsychicSnail-TDGS-JP-R.jpg",
+          "a400ce69-fd3c-4225-b328-5e2cc6bbd2ed": "https://ms.yugipedia.com//8/8a/GladiatorBeastEqueste-TDGS-JP-C.jpg",
+          "adffdac2-f629-4b71-aa73-9e4970e9076d": "https://ms.yugipedia.com//9/94/NoisyGnat-TDGS-JP-C.jpg",
+          "99679729-4362-4b5c-b000-5f56afc3e2b4": "https://ms.yugipedia.com//5/51/MultiplePieceGolem-TDGS-JP-SR.jpg",
+          "1108bea6-1284-4f62-a826-6a7f985e2bc9": "https://ms.yugipedia.com//9/92/StardustDragon-TDGS-JP-UR.jpg",
+          "1556d168-d817-481c-89e6-f44f6fe75671": "https://ms.yugipedia.com//d/d7/StardustDragon-TDGS-JP-UtR.jpg",
+          "b869636c-7234-4e7f-be3a-17a4320fd8e6": "https://ms.yugipedia.com//8/88/StardustDragon-TDGS-JP-HGR.jpg",
+          "78708b6a-26f1-42cb-8699-1e9069ea8117": "https://ms.yugipedia.com//9/90/PowerFilter-TDGS-JP-NR.jpg",
+          "178a33f7-3caf-4975-bb98-1db9105b477c": "https://ms.yugipedia.com//8/8d/RecyclingBatteries-TDGS-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "TDGS-DE",
+      "cardImages": {
+        "1st": {
+          "1dde403c-c899-4914-a6d1-1acd358c7dc9": "https://ms.yugipedia.com//4/4d/StardustDragon-TDGS-DE-UR-1E.png",
+          "792200f0-b18d-4a8d-8267-5ab3ae9b073c": "https://ms.yugipedia.com//d/d7/StardustDragon-TDGS-DE-GR-1E.jpg"
+        },
+        "unlimited": {
+          "72cece21-d9d1-4c75-9319-ce1082961fc2": "https://ms.yugipedia.com//b/b7/ShieldWarrior-TDGS-DE-R-UE.png",
+          "3770f679-a61a-405f-ae51-2b6f3a230675": "https://ms.yugipedia.com//6/65/MultiplePieceGolem-TDGS-DE-UR-UE.png",
+          "1dde403c-c899-4914-a6d1-1acd358c7dc9": "https://ms.yugipedia.com//5/5b/StardustDragon-TDGS-DE-UR-UE.png",
+          "74eec2ba-1046-4be6-897a-7e21afa0b416": "https://ms.yugipedia.com//3/33/StardustDragon-TDGS-DE-UtR-UE.png",
+          "792200f0-b18d-4a8d-8267-5ab3ae9b073c": "https://ms.yugipedia.com//3/30/StardustDragon-TDGS-DE-GR-UE.png",
+          "f5085e35-4d22-4d76-be9c-5c24a09bc5cb": "https://ms.yugipedia.com//2/2d/PowerFilter-TDGS-DE-SR-UE.png",
+          "cb3a2c6e-a7a8-42a9-9161-6fb1dbaaac86": "https://ms.yugipedia.com//4/4b/TrickySpell4-TDGS-DE-C-UE.png",
+          "ac4facbc-dd3b-4108-bf17-e6fb811d418d": "https://ms.yugipedia.com//f/f6/SplendidVenus-TDGS-DE-ScR-UE.png",
+          "008ebbe5-17ee-4901-a3ea-d5e813720c1e": "https://ms.yugipedia.com//5/5a/IceMaster-TDGS-DE-ScR-UE.png",
+          "d99fb81a-dade-4738-b932-1c5f1ad79161": "https://ms.yugipedia.com//a/ac/KunaiwithChain-TDGS-DE-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21107004
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "TDGS-FR",
+      "image": "https://ms.yugipedia.com//5/53/TDGS-BoosterFR.jpg",
+      "cardImages": {
+        "1st": {
+          "a8298d37-133f-49a6-911b-6f12556f9fcf": "https://ms.yugipedia.com//4/4f/MultiplePieceGolem-TDGS-FR-UtR-1E.jpg",
+          "0d3e7085-d471-4076-86ef-0b2cf238fa80": "https://ms.yugipedia.com//a/a3/StardustDragon-TDGS-FR-UR-1E.jpg",
+          "af7e70c7-2c42-4be2-b6b2-f7cf3f6c7932": "https://ms.yugipedia.com//a/a4/StardustDragon-TDGS-FR-UtR-1E.jpg",
+          "a7b8a881-678b-4ffb-8030-ca93887d0554": "https://ms.yugipedia.com//9/9c/StardustDragon-TDGS-FR-GR-1E.jpg",
+          "240c72cc-5862-4c69-ae9b-7bd18701964f": "https://ms.yugipedia.com//2/2f/SplendidVenus-TDGS-FR-ScR-1E.jpg",
+          "b53130ac-552b-4b5b-b6f6-739e1eca9fb6": "https://ms.yugipedia.com//2/2f/IceMaster-TDGS-FR-ScR-1E.jpg"
+        },
+        "unlimited": {
+          "23faf43c-9679-41a6-a910-799dda7c2fbc": "https://ms.yugipedia.com//e/e7/MultiplePieceGolem-TDGS-FR-UR-UE.jpg",
+          "0d3e7085-d471-4076-86ef-0b2cf238fa80": "https://ms.yugipedia.com//a/a9/StardustDragon-TDGS-FR-UR-UE.png",
+          "af7e70c7-2c42-4be2-b6b2-f7cf3f6c7932": "https://ms.yugipedia.com//4/48/StardustDragon-TDGS-FR-UtR-UE.jpg",
+          "a7b8a881-678b-4ffb-8030-ca93887d0554": "https://ms.yugipedia.com//c/c9/StardustDragon-TDGS-FR-GR-UE.jpg",
+          "26f03a2a-e9e5-4a1f-9e9d-219f96fd8ee3": "https://ms.yugipedia.com//9/95/KunaiwithChain-TDGS-FR-SR-UE.jpg",
+          "7ae27af6-a719-4e75-94bd-516ed24e202c": "https://ms.yugipedia.com//b/bc/ToyMagician-TDGS-FR-ScR-UE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31107004
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "TDGS-KR",
+      "date": "2008-10-10",
+      "image": "https://ms.yugipedia.com//5/5c/TDGS-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "f28aaa52-5144-4b87-b66e-e2bb2f9bb071": "https://ms.yugipedia.com//a/a9/StardustDragon-TDGS-KR-UR-1E.jpg",
+          "4d7c2ecf-e102-4927-b3e9-3cf9c357cd13": "https://ms.yugipedia.com//7/7e/StardustDragon-TDGS-KR-UtR-1E.jpg",
+          "d75ecb61-77ac-497d-a604-63b32c08c271": "https://ms.yugipedia.com//e/eb/StardustDragon-TDGS-KR-HGR-1E.jpg"
+        },
+        "unlimited": {
+          "c4656be7-cba3-450b-99c8-07d33c86a646": "https://ms.yugipedia.com//3/3b/ShieldWarrior-TDGS-KR-R-UE.png",
+          "6a482b52-c43c-4a22-8259-65858c28e90d": "https://ms.yugipedia.com//2/21/PsychicSnail-TDGS-KR-R-UE.png",
+          "fb449574-31a7-4dc9-8ef0-cc2976c58939": "https://ms.yugipedia.com//d/d0/GladiatorBeastEqueste-TDGS-KR-C-UE.png",
+          "0a163af6-8157-4f99-8b12-3bb777b0d7c7": "https://ms.yugipedia.com//d/d7/NoisyGnat-TDGS-KR-C-UE.png",
+          "74e2ff32-fc65-40f8-9c89-a51ea6fb622c": "https://ms.yugipedia.com//b/b9/MultiplePieceGolem-TDGS-KR-SR-UE.png",
+          "f28aaa52-5144-4b87-b66e-e2bb2f9bb071": "https://ms.yugipedia.com//4/45/StardustDragon-TDGS-KR-UR-UE.png",
+          "4d7c2ecf-e102-4927-b3e9-3cf9c357cd13": "https://ms.yugipedia.com//3/38/StardustDragon-TDGS-KR-UtR-UE.png",
+          "d75ecb61-77ac-497d-a604-63b32c08c271": "https://ms.yugipedia.com//d/d5/StardustDragon-TDGS-KR-HGR-UE.png",
+          "b1c544d3-e63f-4b34-9403-2dd687b6ed15": "https://ms.yugipedia.com//d/d0/PowerFilter-TDGS-KR-C-UE.png",
+          "8a35c5a1-f98a-4c18-b975-89a27be56d58": "https://ms.yugipedia.com//9/97/RecyclingBatteries-TDGS-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71106003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/53/TDGS-BoosterEN.jpg",
+      "cards": [
+        {
+          "id": "4e3986e0-c6f8-4ab5-a1e0-15eb60cc9e62",
+          "card": "54f3254c-495a-4111-981c-017820458033",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "33509a4e-545c-49f4-bf96-22bedc3e522a",
+          "card": "2cea6d5b-1ff4-498f-ae0a-c4930d1d844e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "52fa6607-1f7e-4be2-a55a-d64778d8b954",
+          "card": "aa51ae5c-8a7c-4576-87bc-2e96b6224b64",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "d6b57da5-be58-4544-a521-27df5590992d",
+          "card": "3e93c2a1-d3eb-498d-bb39-00fe9f314e71",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "976419de-165d-4f93-aae1-88cf60cf21a0",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0149c3dc-72bb-42fe-a2e6-94f7849cd086",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "453dd633-2caf-4fcf-a152-e9463da46c3a",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a6f37f2d-5f29-49f2-972e-d556b4d75b65",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a94c2f98-82e7-4b0c-9c55-bbbc1d6985b2",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "3d1ec523-b807-466b-83de-a9e9ea9dcb98",
+          "card": "f67a6e6b-67a0-4ae4-bb93-e6c971c976d2",
+          "suffix": "058",
+          "rarity": "super"
+        },
+        {
+          "id": "c1cd0155-12f8-474d-860b-6ea2f543f067",
+          "card": "b3d19210-e341-42d9-be9c-d93deb75a445",
+          "suffix": "061",
+          "rarity": "common"
+        },
+        {
+          "id": "f400a4d7-5d8a-4300-996d-7ebf83f357da",
+          "card": "db3ae11b-e478-442e-acfb-3a7b53c1a880",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "042afe1f-750c-4299-8acb-4653e6e0e8d2",
+          "card": "ffd21136-54f3-4234-9bf5-579187508a68",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "1a51f6a9-807d-41b4-8e8d-8677d9e651c5",
+          "card": "2ba30c4b-cfdb-4140-a28e-57a744ebde32",
+          "suffix": "097",
+          "rarity": "secret"
+        },
+        {
+          "id": "6ea5c81b-0027-46b0-910f-f530cb5da662",
+          "card": "9468f3bd-9796-4259-93bc-61e33578f552",
+          "suffix": "098",
+          "rarity": "super"
+        },
+        {
+          "id": "f169e5eb-53ee-4a52-8a2b-08e8051733e7",
+          "card": "74f2a57f-f8f3-4758-afb2-2cdd44f2b9da",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Duelist Genesis"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/64/TDGS-BoosterIT.png",
+      "cards": [
+        {
+          "id": "3b70d0f5-19df-47c9-bdda-f277e027f342",
+          "card": "54f3254c-495a-4111-981c-017820458033",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "c919929e-36c4-4632-badf-97e507fa2093",
+          "card": "2cea6d5b-1ff4-498f-ae0a-c4930d1d844e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "e90be194-68c7-41dd-ba4c-6004356c163f",
+          "card": "aa51ae5c-8a7c-4576-87bc-2e96b6224b64",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "bfa2a1e4-ecc7-4352-bb8a-ce23ad384c55",
+          "card": "3e93c2a1-d3eb-498d-bb39-00fe9f314e71",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "923ce025-30f7-45b9-b9cb-9ece23cc9eda",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c70c66cd-a4a8-41c3-9dcd-214185d3f218",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "64be29a7-5455-4fff-a4a9-2945c6c4958b",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1ac49ecb-34c2-4f28-9064-5975530a2693",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "ce8e81fb-750b-4bb0-9e3a-47819f495e00",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "4982b05c-84f0-45e3-8e71-5a784a0dd2b0",
+          "card": "f67a6e6b-67a0-4ae4-bb93-e6c971c976d2",
+          "suffix": "058",
+          "rarity": "super"
+        },
+        {
+          "id": "155f19e2-272c-4080-9b35-7705f4c14a03",
+          "card": "b3d19210-e341-42d9-be9c-d93deb75a445",
+          "suffix": "061",
+          "rarity": "common"
+        },
+        {
+          "id": "be48197c-8a5c-47e9-ad71-3482ed6bfe93",
+          "card": "db3ae11b-e478-442e-acfb-3a7b53c1a880",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "1d49393c-b770-4575-bd8f-ee52526e3aa1",
+          "card": "ffd21136-54f3-4234-9bf5-579187508a68",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "48bfdaee-af58-4e76-b97e-e6f434787286",
+          "card": "2ba30c4b-cfdb-4140-a28e-57a744ebde32",
+          "suffix": "097",
+          "rarity": "secret"
+        },
+        {
+          "id": "3c8c3960-ca45-472e-9c04-b533a62ccb18",
+          "card": "9468f3bd-9796-4259-93bc-61e33578f552",
+          "suffix": "098",
+          "rarity": "super"
+        },
+        {
+          "id": "6acb1767-d6b0-42e2-899e-1e5b2536c491",
+          "card": "74f2a57f-f8f3-4758-afb2-2cdd44f2b9da",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Duelist Genesis"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/f7/TDGS-BoosterSP.png",
+      "cards": [
+        {
+          "id": "29c806ff-e295-45d2-963d-ebd80b56e9ac",
+          "card": "54f3254c-495a-4111-981c-017820458033",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "a93c6706-0b47-4041-81e8-f7298d892fa5",
+          "card": "2cea6d5b-1ff4-498f-ae0a-c4930d1d844e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "ce284f16-5b1d-4b0b-842f-540118fed780",
+          "card": "aa51ae5c-8a7c-4576-87bc-2e96b6224b64",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "172ef467-4f51-4a83-9b9c-189acfe45769",
+          "card": "3e93c2a1-d3eb-498d-bb39-00fe9f314e71",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "918b8752-94bb-45f1-bab2-f5b7e635e440",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a2c7c7a2-bd46-4289-af5e-c313f6926e42",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "2dc394ea-2616-4d0a-a42a-0d1fd0462a6f",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "df052c40-f948-47a5-82cb-448439749927",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "359bf16b-1d75-4150-adcf-852eb41aaed1",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "121687b5-98c9-473c-8a6f-8e72a99009d4",
+          "card": "f67a6e6b-67a0-4ae4-bb93-e6c971c976d2",
+          "suffix": "058",
+          "rarity": "super"
+        },
+        {
+          "id": "e0344f4f-1490-4e8b-b2fa-b5c2126b9383",
+          "card": "b3d19210-e341-42d9-be9c-d93deb75a445",
+          "suffix": "061",
+          "rarity": "common"
+        },
+        {
+          "id": "f89f3061-e95b-465f-9e9d-6e540bd11286",
+          "card": "db3ae11b-e478-442e-acfb-3a7b53c1a880",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "fa724219-55de-4777-b510-215520b002fc",
+          "card": "ffd21136-54f3-4234-9bf5-579187508a68",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "30993609-39fb-49ee-a1f3-685b6c19826c",
+          "card": "2ba30c4b-cfdb-4140-a28e-57a744ebde32",
+          "suffix": "097",
+          "rarity": "secret"
+        },
+        {
+          "id": "2f6b1c2d-cc6f-452b-b343-9764dde1c615",
+          "card": "9468f3bd-9796-4259-93bc-61e33578f552",
+          "suffix": "098",
+          "rarity": "super"
+        },
+        {
+          "id": "0b1bba58-463f-466e-8815-46fd5c4bca5a",
+          "card": "74f2a57f-f8f3-4758-afb2-2cdd44f2b9da",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Duelist Genesis"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/43/TDGS-BoosterJP.jpg",
+      "cards": [
+        {
+          "id": "63e78a95-4f1f-41a7-b836-ae43c745a71c",
+          "card": "54f3254c-495a-4111-981c-017820458033",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "86eed1ee-d5d6-44f7-9537-24644c9e0954",
+          "card": "2cea6d5b-1ff4-498f-ae0a-c4930d1d844e",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "a400ce69-fd3c-4225-b328-5e2cc6bbd2ed",
+          "card": "aa51ae5c-8a7c-4576-87bc-2e96b6224b64",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "adffdac2-f629-4b71-aa73-9e4970e9076d",
+          "card": "3e93c2a1-d3eb-498d-bb39-00fe9f314e71",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "99679729-4362-4b5c-b000-5f56afc3e2b4",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "super"
+        },
+        {
+          "id": "1108bea6-1284-4f62-a826-6a7f985e2bc9",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1556d168-d817-481c-89e6-f44f6fe75671",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b869636c-7234-4e7f-be3a-17a4320fd8e6",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "78708b6a-26f1-42cb-8699-1e9069ea8117",
+          "card": "f67a6e6b-67a0-4ae4-bb93-e6c971c976d2",
+          "suffix": "058",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "178a33f7-3caf-4975-bb98-1db9105b477c",
+          "card": "b3d19210-e341-42d9-be9c-d93deb75a445",
+          "suffix": "061",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Duelist Genesis"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "72cece21-d9d1-4c75-9319-ce1082961fc2",
+          "card": "54f3254c-495a-4111-981c-017820458033",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "efbaa5b5-5450-4e89-814a-dd0c86819a50",
+          "card": "2cea6d5b-1ff4-498f-ae0a-c4930d1d844e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9c942e0f-9205-4a43-a7b1-11b1a5aac51a",
+          "card": "aa51ae5c-8a7c-4576-87bc-2e96b6224b64",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "d765b9df-d493-421d-8fb1-20420961e6e9",
+          "card": "3e93c2a1-d3eb-498d-bb39-00fe9f314e71",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "3770f679-a61a-405f-ae51-2b6f3a230675",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cf35f923-0153-4a5a-a188-2f00f1f9807b",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "1dde403c-c899-4914-a6d1-1acd358c7dc9",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "74eec2ba-1046-4be6-897a-7e21afa0b416",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "792200f0-b18d-4a8d-8267-5ab3ae9b073c",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "f5085e35-4d22-4d76-be9c-5c24a09bc5cb",
+          "card": "f67a6e6b-67a0-4ae4-bb93-e6c971c976d2",
+          "suffix": "058",
+          "rarity": "super"
+        },
+        {
+          "id": "a48614d9-cdcf-4efb-8044-f653a11b66ed",
+          "card": "b3d19210-e341-42d9-be9c-d93deb75a445",
+          "suffix": "061",
+          "rarity": "common"
+        },
+        {
+          "id": "cb3a2c6e-a7a8-42a9-9161-6fb1dbaaac86",
+          "card": "db3ae11b-e478-442e-acfb-3a7b53c1a880",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "ac4facbc-dd3b-4108-bf17-e6fb811d418d",
+          "card": "ffd21136-54f3-4234-9bf5-579187508a68",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "008ebbe5-17ee-4901-a3ea-d5e813720c1e",
+          "card": "2ba30c4b-cfdb-4140-a28e-57a744ebde32",
+          "suffix": "097",
+          "rarity": "secret"
+        },
+        {
+          "id": "d99fb81a-dade-4738-b932-1c5f1ad79161",
+          "card": "9468f3bd-9796-4259-93bc-61e33578f552",
+          "suffix": "098",
+          "rarity": "super"
+        },
+        {
+          "id": "ed71d6e0-acc9-4c3a-a454-df646050bee9",
+          "card": "74f2a57f-f8f3-4758-afb2-2cdd44f2b9da",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Duelist Genesis"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/53/TDGS-BoosterFR.jpg",
+      "cards": [
+        {
+          "id": "85364560-6367-4de2-8bd2-5643dc774e14",
+          "card": "54f3254c-495a-4111-981c-017820458033",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "4d11a967-6bd3-486d-ba5a-0094148a07e0",
+          "card": "2cea6d5b-1ff4-498f-ae0a-c4930d1d844e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b4fc64e0-8c3d-44a8-bf78-344259c07baa",
+          "card": "aa51ae5c-8a7c-4576-87bc-2e96b6224b64",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "921dde1c-39e7-4066-854c-b62fdbb45f81",
+          "card": "3e93c2a1-d3eb-498d-bb39-00fe9f314e71",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "23faf43c-9679-41a6-a910-799dda7c2fbc",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a8298d37-133f-49a6-911b-6f12556f9fcf",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "0d3e7085-d471-4076-86ef-0b2cf238fa80",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "af7e70c7-2c42-4be2-b6b2-f7cf3f6c7932",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a7b8a881-678b-4ffb-8030-ca93887d0554",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "7d5441b8-2aa3-4e2e-8282-535d0e36e2c0",
+          "card": "f67a6e6b-67a0-4ae4-bb93-e6c971c976d2",
+          "suffix": "058",
+          "rarity": "super"
+        },
+        {
+          "id": "54fb223b-4ffd-4229-afd0-d1a9ff660599",
+          "card": "b3d19210-e341-42d9-be9c-d93deb75a445",
+          "suffix": "061",
+          "rarity": "common"
+        },
+        {
+          "id": "d01a3cff-92a5-4cdd-b46f-f292cc7f10f7",
+          "card": "db3ae11b-e478-442e-acfb-3a7b53c1a880",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "240c72cc-5862-4c69-ae9b-7bd18701964f",
+          "card": "ffd21136-54f3-4234-9bf5-579187508a68",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "b53130ac-552b-4b5b-b6f6-739e1eca9fb6",
+          "card": "2ba30c4b-cfdb-4140-a28e-57a744ebde32",
+          "suffix": "097",
+          "rarity": "secret"
+        },
+        {
+          "id": "26f03a2a-e9e5-4a1f-9e9d-219f96fd8ee3",
+          "card": "9468f3bd-9796-4259-93bc-61e33578f552",
+          "suffix": "098",
+          "rarity": "super"
+        },
+        {
+          "id": "7ae27af6-a719-4e75-94bd-516ed24e202c",
+          "card": "74f2a57f-f8f3-4758-afb2-2cdd44f2b9da",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Duelist Genesis"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/5c/TDGS-BoosterKR.png",
+      "cards": [
+        {
+          "id": "c4656be7-cba3-450b-99c8-07d33c86a646",
+          "card": "54f3254c-495a-4111-981c-017820458033",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "6a482b52-c43c-4a22-8259-65858c28e90d",
+          "card": "2cea6d5b-1ff4-498f-ae0a-c4930d1d844e",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "fb449574-31a7-4dc9-8ef0-cc2976c58939",
+          "card": "aa51ae5c-8a7c-4576-87bc-2e96b6224b64",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "0a163af6-8157-4f99-8b12-3bb777b0d7c7",
+          "card": "3e93c2a1-d3eb-498d-bb39-00fe9f314e71",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "74e2ff32-fc65-40f8-9c89-a51ea6fb622c",
+          "card": "4c7ae71d-1c8c-4ed2-a309-df1cb778d280",
+          "suffix": "038",
+          "rarity": "super"
+        },
+        {
+          "id": "f28aaa52-5144-4b87-b66e-e2bb2f9bb071",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4d7c2ecf-e102-4927-b3e9-3cf9c357cd13",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "d75ecb61-77ac-497d-a604-63b32c08c271",
+          "card": "61d244e6-8ced-4c36-a928-de1d3a0c5a63",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "b1c544d3-e63f-4b34-9403-2dd687b6ed15",
+          "card": "f67a6e6b-67a0-4ae4-bb93-e6c971c976d2",
+          "suffix": "058",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "8a35c5a1-f98a-4c18-b975-89a27be56d58",
+          "card": "b3d19210-e341-42d9-be9c-d93deb75a445",
+          "suffix": "061",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Duelist Genesis"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "The Duelist Genesis",
+      "id": 88902
+    }
+  }
+}

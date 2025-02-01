@@ -1,0 +1,798 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "1bb4074b-9483-4e95-a448-6eb35d8c5468",
+  "name": {
+    "en": "Brothers of Legend",
+    "fr": "Fr\u00e8res de L\u00e9gende",
+    "de": "Brothers of Legend",
+    "it": "Fratelli della Leggenda",
+    "pt": "Irm\u00e3os das Lendas",
+    "es": "Hermanos de Leyenda"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "BROL-EN",
+      "image": "https://ms.yugipedia.com//6/68/BROL-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "edb7e5f0-6c14-434e-ba2d-cbcea3f4db09": "https://ms.yugipedia.com//b/b3/Kuribah-BROL-EN-UR-1E.png",
+          "799368c9-3012-4f7f-87f0-a2379004c3ca": "https://ms.yugipedia.com//9/96/DoctorD-BROL-EN-UR-1E.png",
+          "bc59dff7-6675-4cbd-9639-de640e401012": "https://ms.yugipedia.com//a/a4/Dragonroid-BROL-EN-ScR-1E.png",
+          "5877c161-ac4c-4083-9498-1bde99e59909": "https://ms.yugipedia.com//f/fa/IceKnight-BROL-EN-UR-1E.png",
+          "8b3a8873-5520-4ba8-8c46-030b76eb28bd": "https://ms.yugipedia.com//3/34/HorseoftheFloralKnights-BROL-EN-UR-1E.png",
+          "60dc8138-e567-4d91-84bd-457e39b300f6": "https://ms.yugipedia.com//e/ec/FAIghtingSpirit-BROL-EN-UR-1E.png",
+          "5883f553-fc7f-48d6-a05e-572de2586488": "https://ms.yugipedia.com//7/7b/AppliancerConversion-BROL-EN-UR-1E.png",
+          "7f2f0cef-52c4-4160-a8f6-35129b625c0d": "https://ms.yugipedia.com//b/b7/RightHandShark-BROL-EN-UR-1E.png",
+          "9a99f5be-cddb-4f74-ba02-6d4a1a7ffd0e": "https://ms.yugipedia.com//1/11/WhiteMirror-BROL-EN-UR-1E.png",
+          "fa802b38-4cb1-479c-b253-076579913a70": "https://ms.yugipedia.com//8/8a/TheDealofDestiny-BROL-EN-UR-1E.png",
+          "d41ee1c1-5273-4b5e-8178-8f52f38a5d47": "https://ms.yugipedia.com//d/dd/EdeatheHeavenlySquire-BROL-EN-UR-1E.png",
+          "b79f1569-79cb-468f-b2c0-8cf3c1be3635": "https://ms.yugipedia.com//b/b2/ThePhantomKnightsofRaggedGloves-BROL-EN-UR-1E.png",
+          "71dd25c7-f057-4042-a385-2a3a89fad079": "https://ms.yugipedia.com//1/13/NibiruthePrimalBeing-BROL-EN-ScR-1E.png",
+          "d9ad1a2a-419a-47bb-ac2a-8ee05f2afb4c": "https://ms.yugipedia.com//8/85/AllureofDarkness-BROL-EN-UR-1E.png",
+          "9a0d9f53-a653-46f5-a0c5-657639a7ed00": "https://ms.yugipedia.com//c/cf/FossilDig-BROL-EN-UR-1E.png",
+          "01166e83-43fe-4349-8928-3ffc8d349bc0": "https://ms.yugipedia.com//b/bf/ResurgamXyz-BROL-EN-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001136000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "BROL-SP",
+      "image": "https://ms.yugipedia.com//c/cc/BROL-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "BROL-IT",
+      "image": "https://ms.yugipedia.com//3/34/BROL-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "BROL-FR",
+      "image": "https://ms.yugipedia.com//d/df/BROL-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "BROL-DE",
+      "image": "https://ms.yugipedia.com//3/33/BROL-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "BROL-PT",
+      "date": "2021-12-02",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/68/BROL-BoosterEN.png",
+      "cards": [
+        {
+          "id": "edb7e5f0-6c14-434e-ba2d-cbcea3f4db09",
+          "card": "7d064904-6a98-4d1c-88d0-7baf301d848b",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "799368c9-3012-4f7f-87f0-a2379004c3ca",
+          "card": "06c340c3-503e-4a81-95d2-82b140716a3d",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bc59dff7-6675-4cbd-9639-de640e401012",
+          "card": "8756f2eb-375a-4fc8-bee9-0462dd553a1c",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "5877c161-ac4c-4083-9498-1bde99e59909",
+          "card": "5bfd12bc-f699-402c-abac-2ce85c606688",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8b3a8873-5520-4ba8-8c46-030b76eb28bd",
+          "card": "afa272c1-353a-4a8e-994c-25d72ba08a12",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "60dc8138-e567-4d91-84bd-457e39b300f6",
+          "card": "846c79b9-eed4-4b5a-bb0b-2ee70afbaa19",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5883f553-fc7f-48d6-a05e-572de2586488",
+          "card": "e6df4595-fe6b-427f-a488-56105d9af356",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7f2f0cef-52c4-4160-a8f6-35129b625c0d",
+          "card": "d1dca4dc-bb33-46ed-a99c-aeee9f56d687",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9a99f5be-cddb-4f74-ba02-6d4a1a7ffd0e",
+          "card": "e1929df9-d493-4909-a358-a9d2fa0109ce",
+          "suffix": "051",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fa802b38-4cb1-479c-b253-076579913a70",
+          "card": "5dce9ef0-698f-49b5-ba6b-feafe2b85026",
+          "suffix": "055",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d41ee1c1-5273-4b5e-8178-8f52f38a5d47",
+          "card": "2cdc3795-d8cf-4602-ad13-c532082c7603",
+          "suffix": "078",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b79f1569-79cb-468f-b2c0-8cf3c1be3635",
+          "card": "4610f9d0-7ccd-4455-bcbc-58e72256f46a",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "71dd25c7-f057-4042-a385-2a3a89fad079",
+          "card": "049334b7-33ab-4f61-b0a2-7a2b385c8e77",
+          "suffix": "080",
+          "rarity": "secret"
+        },
+        {
+          "id": "d9ad1a2a-419a-47bb-ac2a-8ee05f2afb4c",
+          "card": "9ecfc4ba-581a-476b-aee6-3f6689c2db5c",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9a0d9f53-a653-46f5-a0c5-657639a7ed00",
+          "card": "90f2e7a5-5eca-4df1-8cd3-0ff1a5829abc",
+          "suffix": "089",
+          "rarity": "ultra"
+        },
+        {
+          "id": "01166e83-43fe-4349-8928-3ffc8d349bc0",
+          "card": "7b58fa3d-a0ca-4e95-9a18-9d083fc64c3c",
+          "suffix": "092",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/cc/BROL-BoosterSP.png",
+      "cards": [
+        {
+          "id": "a7dae61a-a05b-4fb3-bb66-9c7f1a855c14",
+          "card": "7d064904-6a98-4d1c-88d0-7baf301d848b",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2d4f965f-67a7-4720-829b-39f9f406cd95",
+          "card": "06c340c3-503e-4a81-95d2-82b140716a3d",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "16af11af-d7fd-4aff-8dab-9fd5df023177",
+          "card": "8756f2eb-375a-4fc8-bee9-0462dd553a1c",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "b254c271-18f3-43db-874d-52bf48900328",
+          "card": "5bfd12bc-f699-402c-abac-2ce85c606688",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "44dbb567-6cda-4d74-b5ca-bea0f270cb73",
+          "card": "afa272c1-353a-4a8e-994c-25d72ba08a12",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3640f5ec-9574-4de7-a592-6acb336c9bf4",
+          "card": "846c79b9-eed4-4b5a-bb0b-2ee70afbaa19",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5883f553-fc7f-48d6-a05e-572de2586488",
+          "card": "e6df4595-fe6b-427f-a488-56105d9af356",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "96040bf9-7de6-4f24-bd02-dd43c27d51e0",
+          "card": "d1dca4dc-bb33-46ed-a99c-aeee9f56d687",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0885137c-4085-4c62-9a54-348284f1855c",
+          "card": "e1929df9-d493-4909-a358-a9d2fa0109ce",
+          "suffix": "051",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cc6cdca1-465c-4474-9be6-7b2ac3d1808d",
+          "card": "5dce9ef0-698f-49b5-ba6b-feafe2b85026",
+          "suffix": "055",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a166e1fb-b36c-4095-b032-b7928774c553",
+          "card": "2cdc3795-d8cf-4602-ad13-c532082c7603",
+          "suffix": "078",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e5bee7f7-80fe-405f-bd99-058cfd5dcb58",
+          "card": "4610f9d0-7ccd-4455-bcbc-58e72256f46a",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ddb8b588-d41c-4536-bbfe-4ad4f9a77995",
+          "card": "049334b7-33ab-4f61-b0a2-7a2b385c8e77",
+          "suffix": "080",
+          "rarity": "secret"
+        },
+        {
+          "id": "d9ad1a2a-419a-47bb-ac2a-8ee05f2afb4c",
+          "card": "9ecfc4ba-581a-476b-aee6-3f6689c2db5c",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9a0d9f53-a653-46f5-a0c5-657639a7ed00",
+          "card": "90f2e7a5-5eca-4df1-8cd3-0ff1a5829abc",
+          "suffix": "089",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ea5d23db-7751-442a-a264-e25f8268868a",
+          "card": "7b58fa3d-a0ca-4e95-9a18-9d083fc64c3c",
+          "suffix": "092",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/34/BROL-BoosterIT.png",
+      "cards": [
+        {
+          "id": "cf4cb107-0f56-407f-bde7-67f1eea577d0",
+          "card": "7d064904-6a98-4d1c-88d0-7baf301d848b",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7efe6f21-7ecd-4802-a4dc-5a352aa924f2",
+          "card": "06c340c3-503e-4a81-95d2-82b140716a3d",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f41b9ecb-9486-4ec8-8c87-c109845ea327",
+          "card": "8756f2eb-375a-4fc8-bee9-0462dd553a1c",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "e44726f9-923c-4df9-bc1d-32c556843f15",
+          "card": "5bfd12bc-f699-402c-abac-2ce85c606688",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "89a8e449-6375-4f49-9e05-4ca4abe8247c",
+          "card": "afa272c1-353a-4a8e-994c-25d72ba08a12",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ca62447c-8c2f-4617-90f7-e575e09c075e",
+          "card": "846c79b9-eed4-4b5a-bb0b-2ee70afbaa19",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5883f553-fc7f-48d6-a05e-572de2586488",
+          "card": "e6df4595-fe6b-427f-a488-56105d9af356",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bc256e90-4fb4-47e5-a4d3-7a91a869720d",
+          "card": "d1dca4dc-bb33-46ed-a99c-aeee9f56d687",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "276f2534-78ab-40ab-aa50-6606d49d30d4",
+          "card": "e1929df9-d493-4909-a358-a9d2fa0109ce",
+          "suffix": "051",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3f2242b2-72d7-4e9f-8339-0b0baa823f2a",
+          "card": "5dce9ef0-698f-49b5-ba6b-feafe2b85026",
+          "suffix": "055",
+          "rarity": "ultra"
+        },
+        {
+          "id": "be6d22c7-1720-4098-a85c-311d78c74d72",
+          "card": "2cdc3795-d8cf-4602-ad13-c532082c7603",
+          "suffix": "078",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6ebbb2b1-0afe-4692-b9a8-3eebbce9ed58",
+          "card": "4610f9d0-7ccd-4455-bcbc-58e72256f46a",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "270d5512-019b-42f0-a0e8-0a8c8448b377",
+          "card": "049334b7-33ab-4f61-b0a2-7a2b385c8e77",
+          "suffix": "080",
+          "rarity": "secret"
+        },
+        {
+          "id": "d9ad1a2a-419a-47bb-ac2a-8ee05f2afb4c",
+          "card": "9ecfc4ba-581a-476b-aee6-3f6689c2db5c",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9a0d9f53-a653-46f5-a0c5-657639a7ed00",
+          "card": "90f2e7a5-5eca-4df1-8cd3-0ff1a5829abc",
+          "suffix": "089",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f21ec69e-042d-4c14-9474-9698728917cf",
+          "card": "7b58fa3d-a0ca-4e95-9a18-9d083fc64c3c",
+          "suffix": "092",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/df/BROL-BoosterFR.png",
+      "cards": [
+        {
+          "id": "577f92b7-735d-4d9d-832a-cea44c2233ef",
+          "card": "7d064904-6a98-4d1c-88d0-7baf301d848b",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8e40c8f7-e5c1-4125-906a-85bbddf0fdfb",
+          "card": "06c340c3-503e-4a81-95d2-82b140716a3d",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cc7d0bfc-8738-4980-ab27-66e82c292eb3",
+          "card": "8756f2eb-375a-4fc8-bee9-0462dd553a1c",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "0be11152-5599-47a2-8f2d-a33525193671",
+          "card": "5bfd12bc-f699-402c-abac-2ce85c606688",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f3761c5d-eed2-457d-b1c8-fe0d66794312",
+          "card": "afa272c1-353a-4a8e-994c-25d72ba08a12",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "90329fd1-7139-42b4-93d9-a1ac446b685a",
+          "card": "846c79b9-eed4-4b5a-bb0b-2ee70afbaa19",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5883f553-fc7f-48d6-a05e-572de2586488",
+          "card": "e6df4595-fe6b-427f-a488-56105d9af356",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b7c865b6-994d-4542-b921-e8d0e902c5ba",
+          "card": "d1dca4dc-bb33-46ed-a99c-aeee9f56d687",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c7dd9515-7434-44ac-88f5-c75867c06672",
+          "card": "e1929df9-d493-4909-a358-a9d2fa0109ce",
+          "suffix": "051",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bdf8d5c5-62b5-45f5-b09a-4a345a4fe1b4",
+          "card": "5dce9ef0-698f-49b5-ba6b-feafe2b85026",
+          "suffix": "055",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b3806d69-a304-419d-9e08-d05cff48346f",
+          "card": "2cdc3795-d8cf-4602-ad13-c532082c7603",
+          "suffix": "078",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9b45a0ef-89c3-4c71-bb39-437a1810254d",
+          "card": "4610f9d0-7ccd-4455-bcbc-58e72256f46a",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3f2cd73a-f886-48c0-a4a8-631cddcf204e",
+          "card": "049334b7-33ab-4f61-b0a2-7a2b385c8e77",
+          "suffix": "080",
+          "rarity": "secret"
+        },
+        {
+          "id": "d9ad1a2a-419a-47bb-ac2a-8ee05f2afb4c",
+          "card": "9ecfc4ba-581a-476b-aee6-3f6689c2db5c",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9a0d9f53-a653-46f5-a0c5-657639a7ed00",
+          "card": "90f2e7a5-5eca-4df1-8cd3-0ff1a5829abc",
+          "suffix": "089",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2258baad-8d7c-4d56-b6fe-647d8b679ad4",
+          "card": "7b58fa3d-a0ca-4e95-9a18-9d083fc64c3c",
+          "suffix": "092",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/33/BROL-BoosterDE.png",
+      "cards": [
+        {
+          "id": "e3ffff6e-82d0-46a4-af77-c6506304de3e",
+          "card": "7d064904-6a98-4d1c-88d0-7baf301d848b",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4f609de1-558b-4320-acbf-962611b3f0de",
+          "card": "06c340c3-503e-4a81-95d2-82b140716a3d",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "53d96ef5-0d34-4bfb-a2b8-a120bf38ef5e",
+          "card": "8756f2eb-375a-4fc8-bee9-0462dd553a1c",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "ca5081f2-0d1d-4ccf-ad7b-d5f93840294b",
+          "card": "5bfd12bc-f699-402c-abac-2ce85c606688",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9f3f7f65-69fc-4c33-9a1e-1a105546304c",
+          "card": "afa272c1-353a-4a8e-994c-25d72ba08a12",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "89a201d2-1db7-452e-b116-ea40fda35c51",
+          "card": "846c79b9-eed4-4b5a-bb0b-2ee70afbaa19",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5883f553-fc7f-48d6-a05e-572de2586488",
+          "card": "e6df4595-fe6b-427f-a488-56105d9af356",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d234a284-0054-4093-83af-1ab4b08edb0d",
+          "card": "d1dca4dc-bb33-46ed-a99c-aeee9f56d687",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "58409907-6d7e-433e-ba9d-9db6f815be2c",
+          "card": "e1929df9-d493-4909-a358-a9d2fa0109ce",
+          "suffix": "051",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9efe407a-df37-4f78-a2b2-81a82129d0d8",
+          "card": "5dce9ef0-698f-49b5-ba6b-feafe2b85026",
+          "suffix": "055",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0dfae598-ae0d-4a53-9dab-fb70c5a59491",
+          "card": "2cdc3795-d8cf-4602-ad13-c532082c7603",
+          "suffix": "078",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dba76f86-64fd-41a7-96ae-daf9a8555c55",
+          "card": "4610f9d0-7ccd-4455-bcbc-58e72256f46a",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8ed2f64c-4dcb-4d4f-8c7e-91e8ee0b58a2",
+          "card": "049334b7-33ab-4f61-b0a2-7a2b385c8e77",
+          "suffix": "080",
+          "rarity": "secret"
+        },
+        {
+          "id": "d9ad1a2a-419a-47bb-ac2a-8ee05f2afb4c",
+          "card": "9ecfc4ba-581a-476b-aee6-3f6689c2db5c",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9a0d9f53-a653-46f5-a0c5-657639a7ed00",
+          "card": "90f2e7a5-5eca-4df1-8cd3-0ff1a5829abc",
+          "suffix": "089",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f012f37a-15b5-421a-8aa7-bb5007d51888",
+          "card": "7b58fa3d-a0ca-4e95-9a18-9d083fc64c3c",
+          "suffix": "092",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "a5d92663-0574-40a9-a0cd-71aa8ae806cb",
+          "card": "7d064904-6a98-4d1c-88d0-7baf301d848b",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5970a76d-0f99-48f3-8890-7fb099bbdcfc",
+          "card": "06c340c3-503e-4a81-95d2-82b140716a3d",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d309efb8-a5ed-402b-9116-ee051e1a0c85",
+          "card": "8756f2eb-375a-4fc8-bee9-0462dd553a1c",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "dc75d3c2-c7ae-4e6b-a7f4-7faed2a34d11",
+          "card": "5bfd12bc-f699-402c-abac-2ce85c606688",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8cece9ab-8b88-46a7-ba72-b7dab4e32b4b",
+          "card": "afa272c1-353a-4a8e-994c-25d72ba08a12",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "253da291-7cb1-444b-8915-266779bf3832",
+          "card": "846c79b9-eed4-4b5a-bb0b-2ee70afbaa19",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5883f553-fc7f-48d6-a05e-572de2586488",
+          "card": "e6df4595-fe6b-427f-a488-56105d9af356",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d972ed81-859b-4442-a209-ebf122222137",
+          "card": "d1dca4dc-bb33-46ed-a99c-aeee9f56d687",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a743d840-b14c-4077-a841-281eff4e7abc",
+          "card": "e1929df9-d493-4909-a358-a9d2fa0109ce",
+          "suffix": "051",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2fddf685-f546-4e40-a88e-196edb85dfd2",
+          "card": "5dce9ef0-698f-49b5-ba6b-feafe2b85026",
+          "suffix": "055",
+          "rarity": "ultra"
+        },
+        {
+          "id": "453bac1d-82f9-4bbe-9b28-90139a4bdb74",
+          "card": "2cdc3795-d8cf-4602-ad13-c532082c7603",
+          "suffix": "078",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18d0ad3e-0c3d-466e-a9b3-c958c1f2448d",
+          "card": "4610f9d0-7ccd-4455-bcbc-58e72256f46a",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d3d2fef4-740a-4138-91dc-d030c2fc1c38",
+          "card": "049334b7-33ab-4f61-b0a2-7a2b385c8e77",
+          "suffix": "080",
+          "rarity": "secret"
+        },
+        {
+          "id": "d9ad1a2a-419a-47bb-ac2a-8ee05f2afb4c",
+          "card": "9ecfc4ba-581a-476b-aee6-3f6689c2db5c",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9a0d9f53-a653-46f5-a0c5-657639a7ed00",
+          "card": "90f2e7a5-5eca-4df1-8cd3-0ff1a5829abc",
+          "suffix": "089",
+          "rarity": "ultra"
+        },
+        {
+          "id": "baf65a9e-db0f-43e4-a23b-04c8cc1f6d7a",
+          "card": "7b58fa3d-a0ca-4e95-9a18-9d083fc64c3c",
+          "suffix": "092",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Brothers of Legend",
+      "id": 720215
+    }
+  }
+}

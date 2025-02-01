@@ -1,0 +1,830 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e58ea1fb-ecf8-4538-8b09-bb0346bc69e8",
+  "name": {
+    "en": "Duel Power",
+    "fr": "Le Pouvoir du Duel",
+    "de": "Duel Power",
+    "it": "Il Potere del Duello",
+    "pt": "O Poder do Duelo",
+    "es": "El Poder del Duelo"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "DUPO-PT",
+      "date": "2019-04-04",
+      "cardImages": {
+        "limited": {
+          "55c8897e-6a8c-4fdf-aa98-91e5b6451761": "https://ms.yugipedia.com//a/ab/DarkMagician-DUPO-PT-UR-LE.png"
+        },
+        "1st": {
+          "91bbe866-4067-42b2-a384-2f0cffc87caa": "https://ms.yugipedia.com//6/6e/TheWingedDragonofRaImmortalPhoenix-DUPO-PT-UR-1E.png",
+          "f3c560da-f488-4b20-b9b5-5ce537fb02a4": "https://ms.yugipedia.com//0/07/GalaxySoldier-DUPO-PT-UR-1E.png",
+          "1881ed1d-48f5-4a8c-b8f4-63dc64afd62f": "https://ms.yugipedia.com//7/78/ElShaddollConstruct-DUPO-PT-UR-1E.png",
+          "1079dd64-3627-42df-966f-f75e2f751978": "https://ms.yugipedia.com//d/dc/InfiniteImpermanence-DUPO-PT-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813001,
+          18813000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "DUPO-SP",
+      "image": "https://ms.yugipedia.com//5/59/DUPO-BoosterSP.png",
+      "cardImages": {
+        "limited": {
+          "55c8897e-6a8c-4fdf-aa98-91e5b6451761": "https://ms.yugipedia.com//5/5a/DarkMagician-DUPO-SP-UR-LE.png",
+          "47f8965e-fb2d-4d83-a07c-e3c795576b59": "https://ms.yugipedia.com//7/74/Number39Utopia-DUPO-SP-UR-LE.png"
+        },
+        "1st": {
+          "4390bb98-acdf-446e-a8fa-c59b7008a400": "https://ms.yugipedia.com//7/79/TrickstarFoxgloveWitch-DUPO-SP-UR-1E.png",
+          "e829bd2c-0dd3-4e75-9fd8-9ef3ab8ad6af": "https://ms.yugipedia.com//e/ed/NineTailedFox-DUPO-SP-UR-1E.png",
+          "91bbe866-4067-42b2-a384-2f0cffc87caa": "https://ms.yugipedia.com//8/86/TheWingedDragonofRaImmortalPhoenix-DUPO-SP-UR-1E.png",
+          "2afd9aa2-6ac0-4e60-86a3-f15dfe22b360": "https://ms.yugipedia.com//1/1b/CardofDemise-DUPO-SP-UR-1E.png",
+          "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9": "https://ms.yugipedia.com//4/4a/EternalSoul-DUPO-SP-UR-1E.png",
+          "4b25ce47-38cb-47ab-a835-5da7500fea02": "https://ms.yugipedia.com//e/ef/GalaxySoldier-DUPO-SP-UR-1E.png",
+          "7a88d6f7-f3fb-4666-9a97-ff2ca251151c": "https://ms.yugipedia.com//f/fc/PredaplantOphrysScorpio-DUPO-SP-UR-1E.png",
+          "1c53cb5f-2e8a-4ea4-b7d7-7e18ca54e26d": "https://ms.yugipedia.com//a/ae/ZaborgtheMegaMonarch-DUPO-SP-UR-1E.png",
+          "9fea0652-157a-4661-9d4f-50906b775493": "https://ms.yugipedia.com//b/be/ElShaddollConstruct-DUPO-SP-UR-1E.png",
+          "0759e065-1c40-4305-822c-4c5ce9d1b4ed": "https://ms.yugipedia.com//7/74/HieraticDragonKingofAtum-DUPO-SP-UR-1E.png",
+          "8c845dbb-7b63-49b9-9750-cb397404fc48": "https://ms.yugipedia.com//5/55/ShaddollConstruct-DUPO-SP-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813001,
+          18813000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "DUPO-EN",
+      "image": "https://ms.yugipedia.com//f/f0/DUPO-BoosterEN.png",
+      "cardImages": {
+        "limited": {
+          "55c8897e-6a8c-4fdf-aa98-91e5b6451761": "https://ms.yugipedia.com//b/b6/DarkMagician-DUPO-EN-UR-LE.png",
+          "eb256b83-35a7-4290-bc55-69f3a154be22": "https://ms.yugipedia.com//3/3c/Number39Utopia-DUPO-EN-UR-LE.png"
+        },
+        "1st": {
+          "0971e227-7ffb-48c9-92d8-f60b7bba6d72": "https://ms.yugipedia.com//f/ff/MagicianofChaos-DUPO-EN-UR-1E.png",
+          "00ad1720-bfe7-45c0-918a-2bb09b885b3a": "https://ms.yugipedia.com//3/38/TrickstarFoxgloveWitch-DUPO-EN-UR-1E.png",
+          "5da5f018-8fd3-4ec0-939f-f696670316ba": "https://ms.yugipedia.com//2/26/NineTailedFox-DUPO-EN-UR-1E.png",
+          "91bbe866-4067-42b2-a384-2f0cffc87caa": "https://ms.yugipedia.com//d/dd/TheWingedDragonofRaImmortalPhoenix-DUPO-EN-UR-1E.png",
+          "cf278dbf-9c07-4c44-9738-c78e2f3663ea": "https://ms.yugipedia.com//a/a5/CardofDemise-DUPO-EN-UR-1E.png",
+          "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9": "https://ms.yugipedia.com//b/bb/EternalSoul-DUPO-EN-UR-1E.png",
+          "73216ab1-8765-4a5a-8510-6028dc4a04a5": "https://ms.yugipedia.com//1/13/GalaxySoldier-DUPO-EN-UR-1E.png",
+          "26fd6872-adf5-4816-bab6-a3587f454515": "https://ms.yugipedia.com//1/1c/PredaplantOphrysScorpio-DUPO-EN-UR-1E.png",
+          "5765e3e1-8fe8-49c7-82ca-7799d90a3895": "https://ms.yugipedia.com//9/97/ZaborgtheMegaMonarch-DUPO-EN-UR-1E.png",
+          "e166a96f-fdb4-4306-b858-1e099dd21f1d": "https://ms.yugipedia.com//3/33/ElShaddollConstruct-DUPO-EN-UR-1E.png",
+          "b7553798-8a18-4c21-ad18-8694e2bf5136": "https://ms.yugipedia.com//6/62/HieraticDragonKingofAtum-DUPO-EN-UR-1E.png",
+          "32e8d7f1-548d-4ce7-a63d-d81ad035856c": "https://ms.yugipedia.com//1/10/ShaddollConstruct-DUPO-EN-UR-1E.png",
+          "fb6f718c-b64f-4b60-a496-85751e24f7b6": "https://ms.yugipedia.com//c/c5/InfiniteImpermanence-DUPO-EN-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813001,
+          18813000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DUPO-FR",
+      "image": "https://ms.yugipedia.com//8/8b/DUPO-BoosterFR.png",
+      "cardImages": {
+        "limited": {},
+        "1st": {
+          "9431a6b3-1dae-4e39-ad10-eff02e2e4364": "https://ms.yugipedia.com//2/27/InfiniteImpermanence-DUPO-FR-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813001,
+          18813000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "DUPO-IT",
+      "image": "https://ms.yugipedia.com//3/39/DUPO-BoosterIT.png",
+      "cardImages": {
+        "limited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813001,
+          18813000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "DUPO-DE",
+      "image": "https://ms.yugipedia.com//f/f0/DUPO-BoosterEN.png",
+      "cardImages": {
+        "limited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813001,
+          18813000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "55c8897e-6a8c-4fdf-aa98-91e5b6451761",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "101",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fedd99d8-2f54-425f-85c3-410f9f6ac787",
+          "card": "c2e1b77c-8a38-4a26-8274-e8d6aea7e776",
+          "suffix": "104",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8f2063f1-5dd7-442a-80e0-e9d313bbcd3f",
+          "card": "39ae8ce5-60ff-4455-8d31-0200530e84c4",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f0596d2f-08f1-422b-8316-a3dca7a00f01",
+          "card": "ee4b8b20-b0f3-4a4d-83a8-c8a9349a6562",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2109c71f-2cac-4d9f-8f17-268ed007e32e",
+          "card": "afb32683-545b-4171-b530-3d608a787d96",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "91bbe866-4067-42b2-a384-2f0cffc87caa",
+          "card": "666b05bf-a868-431c-ae74-8ee0fac9a8e5",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2aa2ef20-50e3-41eb-9465-d1a7a4a376f4",
+          "card": "29672937-941b-42f7-9e15-1f3c3d22a037",
+          "suffix": "050",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9",
+          "card": "58cd71fb-09f8-49e1-8dac-95e829fecd10",
+          "suffix": "052",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f3c560da-f488-4b20-b9b5-5ce537fb02a4",
+          "card": "d8461f2c-a41b-4b19-94c7-a474c14c5ec2",
+          "suffix": "062",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a41a81a1-1d30-4f4c-a0bd-53f1708d7d68",
+          "card": "54be2e2a-ba5f-4d04-9f7b-7ba3cca21000",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "da37e3c9-b510-4417-ad42-2f79c99d929c",
+          "card": "1ee72cd1-518c-4c12-acd8-0fa99a574213",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1881ed1d-48f5-4a8c-b8f4-63dc64afd62f",
+          "card": "e0e73bd4-640a-4487-87af-a063577ac953",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a5c8d2e7-bb68-4f42-9367-094721fa184c",
+          "card": "41d5b04a-de5f-4d9c-8da5-4b17cd4e6421",
+          "suffix": "092",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a0a120ad-a1b8-4729-aff9-83bcb84adb67",
+          "card": "6ba39d45-1266-452b-b943-d7c43e6c6ad5",
+          "suffix": "094",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1079dd64-3627-42df-966f-f75e2f751978",
+          "card": "9f9029ac-4ba5-4175-b536-a5645b0712da",
+          "suffix": "100",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/59/DUPO-BoosterSP.png",
+      "cards": [
+        {
+          "id": "55c8897e-6a8c-4fdf-aa98-91e5b6451761",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "101",
+          "rarity": "ultra"
+        },
+        {
+          "id": "47f8965e-fb2d-4d83-a07c-e3c795576b59",
+          "card": "c2e1b77c-8a38-4a26-8274-e8d6aea7e776",
+          "suffix": "104",
+          "rarity": "ultra"
+        },
+        {
+          "id": "78a9f2da-2337-434a-9126-5bcae83710e0",
+          "card": "39ae8ce5-60ff-4455-8d31-0200530e84c4",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4390bb98-acdf-446e-a8fa-c59b7008a400",
+          "card": "ee4b8b20-b0f3-4a4d-83a8-c8a9349a6562",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e829bd2c-0dd3-4e75-9fd8-9ef3ab8ad6af",
+          "card": "afb32683-545b-4171-b530-3d608a787d96",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "91bbe866-4067-42b2-a384-2f0cffc87caa",
+          "card": "666b05bf-a868-431c-ae74-8ee0fac9a8e5",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2afd9aa2-6ac0-4e60-86a3-f15dfe22b360",
+          "card": "29672937-941b-42f7-9e15-1f3c3d22a037",
+          "suffix": "050",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9",
+          "card": "58cd71fb-09f8-49e1-8dac-95e829fecd10",
+          "suffix": "052",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4b25ce47-38cb-47ab-a835-5da7500fea02",
+          "card": "d8461f2c-a41b-4b19-94c7-a474c14c5ec2",
+          "suffix": "062",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7a88d6f7-f3fb-4666-9a97-ff2ca251151c",
+          "card": "54be2e2a-ba5f-4d04-9f7b-7ba3cca21000",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1c53cb5f-2e8a-4ea4-b7d7-7e18ca54e26d",
+          "card": "1ee72cd1-518c-4c12-acd8-0fa99a574213",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9fea0652-157a-4661-9d4f-50906b775493",
+          "card": "e0e73bd4-640a-4487-87af-a063577ac953",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0759e065-1c40-4305-822c-4c5ce9d1b4ed",
+          "card": "41d5b04a-de5f-4d9c-8da5-4b17cd4e6421",
+          "suffix": "092",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8c845dbb-7b63-49b9-9750-cb397404fc48",
+          "card": "6ba39d45-1266-452b-b943-d7c43e6c6ad5",
+          "suffix": "094",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5da1c1c3-aa80-4fda-8f20-77e127aa45a4",
+          "card": "9f9029ac-4ba5-4175-b536-a5645b0712da",
+          "suffix": "100",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/f0/DUPO-BoosterEN.png",
+      "cards": [
+        {
+          "id": "55c8897e-6a8c-4fdf-aa98-91e5b6451761",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "101",
+          "rarity": "ultra"
+        },
+        {
+          "id": "eb256b83-35a7-4290-bc55-69f3a154be22",
+          "card": "c2e1b77c-8a38-4a26-8274-e8d6aea7e776",
+          "suffix": "104",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0971e227-7ffb-48c9-92d8-f60b7bba6d72",
+          "card": "39ae8ce5-60ff-4455-8d31-0200530e84c4",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "00ad1720-bfe7-45c0-918a-2bb09b885b3a",
+          "card": "ee4b8b20-b0f3-4a4d-83a8-c8a9349a6562",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5da5f018-8fd3-4ec0-939f-f696670316ba",
+          "card": "afb32683-545b-4171-b530-3d608a787d96",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "91bbe866-4067-42b2-a384-2f0cffc87caa",
+          "card": "666b05bf-a868-431c-ae74-8ee0fac9a8e5",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cf278dbf-9c07-4c44-9738-c78e2f3663ea",
+          "card": "29672937-941b-42f7-9e15-1f3c3d22a037",
+          "suffix": "050",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9",
+          "card": "58cd71fb-09f8-49e1-8dac-95e829fecd10",
+          "suffix": "052",
+          "rarity": "ultra"
+        },
+        {
+          "id": "73216ab1-8765-4a5a-8510-6028dc4a04a5",
+          "card": "d8461f2c-a41b-4b19-94c7-a474c14c5ec2",
+          "suffix": "062",
+          "rarity": "ultra"
+        },
+        {
+          "id": "26fd6872-adf5-4816-bab6-a3587f454515",
+          "card": "54be2e2a-ba5f-4d04-9f7b-7ba3cca21000",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5765e3e1-8fe8-49c7-82ca-7799d90a3895",
+          "card": "1ee72cd1-518c-4c12-acd8-0fa99a574213",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e166a96f-fdb4-4306-b858-1e099dd21f1d",
+          "card": "e0e73bd4-640a-4487-87af-a063577ac953",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b7553798-8a18-4c21-ad18-8694e2bf5136",
+          "card": "41d5b04a-de5f-4d9c-8da5-4b17cd4e6421",
+          "suffix": "092",
+          "rarity": "ultra"
+        },
+        {
+          "id": "32e8d7f1-548d-4ce7-a63d-d81ad035856c",
+          "card": "6ba39d45-1266-452b-b943-d7c43e6c6ad5",
+          "suffix": "094",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fb6f718c-b64f-4b60-a496-85751e24f7b6",
+          "card": "9f9029ac-4ba5-4175-b536-a5645b0712da",
+          "suffix": "100",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/8b/DUPO-BoosterFR.png",
+      "cards": [
+        {
+          "id": "55c8897e-6a8c-4fdf-aa98-91e5b6451761",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "101",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bfa16aa7-b8a9-404d-ae16-4430a5d3dbbc",
+          "card": "c2e1b77c-8a38-4a26-8274-e8d6aea7e776",
+          "suffix": "104",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c337740c-8876-45f5-916a-a16569d61eee",
+          "card": "39ae8ce5-60ff-4455-8d31-0200530e84c4",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "839ee308-4645-4aeb-bdcc-24eeb7771c31",
+          "card": "ee4b8b20-b0f3-4a4d-83a8-c8a9349a6562",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1760624c-3ff1-47cf-a9d4-46706ac308b4",
+          "card": "afb32683-545b-4171-b530-3d608a787d96",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "91bbe866-4067-42b2-a384-2f0cffc87caa",
+          "card": "666b05bf-a868-431c-ae74-8ee0fac9a8e5",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "14004214-afc7-4c92-811a-dafed463ea3e",
+          "card": "29672937-941b-42f7-9e15-1f3c3d22a037",
+          "suffix": "050",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9",
+          "card": "58cd71fb-09f8-49e1-8dac-95e829fecd10",
+          "suffix": "052",
+          "rarity": "ultra"
+        },
+        {
+          "id": "23ed39ee-46ed-4eb9-bda8-74f388b73bc8",
+          "card": "d8461f2c-a41b-4b19-94c7-a474c14c5ec2",
+          "suffix": "062",
+          "rarity": "ultra"
+        },
+        {
+          "id": "06b5534a-2561-43db-8331-d3ba2362646f",
+          "card": "54be2e2a-ba5f-4d04-9f7b-7ba3cca21000",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4987e460-6a7f-485b-a806-9b5f494d6474",
+          "card": "1ee72cd1-518c-4c12-acd8-0fa99a574213",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ded08722-1d64-4913-95a1-a0bd956b8047",
+          "card": "e0e73bd4-640a-4487-87af-a063577ac953",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f5ec466e-c7f6-4b2f-aed5-195354671756",
+          "card": "41d5b04a-de5f-4d9c-8da5-4b17cd4e6421",
+          "suffix": "092",
+          "rarity": "ultra"
+        },
+        {
+          "id": "94155182-381d-4eee-b45b-eede12ca696b",
+          "card": "6ba39d45-1266-452b-b943-d7c43e6c6ad5",
+          "suffix": "094",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9431a6b3-1dae-4e39-ad10-eff02e2e4364",
+          "card": "9f9029ac-4ba5-4175-b536-a5645b0712da",
+          "suffix": "100",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/39/DUPO-BoosterIT.png",
+      "cards": [
+        {
+          "id": "55c8897e-6a8c-4fdf-aa98-91e5b6451761",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "101",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fb944dd2-9b68-446e-8b51-aedf8874d87c",
+          "card": "c2e1b77c-8a38-4a26-8274-e8d6aea7e776",
+          "suffix": "104",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9135575b-2b77-4eda-b8c2-adae3e0a826d",
+          "card": "39ae8ce5-60ff-4455-8d31-0200530e84c4",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "962e61ed-44da-4211-96de-26c93bd0353f",
+          "card": "ee4b8b20-b0f3-4a4d-83a8-c8a9349a6562",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "38ed63fc-e4b6-425c-9094-c743dadf95e1",
+          "card": "afb32683-545b-4171-b530-3d608a787d96",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "91bbe866-4067-42b2-a384-2f0cffc87caa",
+          "card": "666b05bf-a868-431c-ae74-8ee0fac9a8e5",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b20c5789-8027-40f1-bdd0-53d7bc3a0e0a",
+          "card": "29672937-941b-42f7-9e15-1f3c3d22a037",
+          "suffix": "050",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9",
+          "card": "58cd71fb-09f8-49e1-8dac-95e829fecd10",
+          "suffix": "052",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dc63ef94-93a3-4818-abb5-0f283ad4ba99",
+          "card": "d8461f2c-a41b-4b19-94c7-a474c14c5ec2",
+          "suffix": "062",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bcdd4822-2e3c-40e5-af08-586e844d0202",
+          "card": "54be2e2a-ba5f-4d04-9f7b-7ba3cca21000",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f5000593-5722-485b-8de8-cb4af9104f3e",
+          "card": "1ee72cd1-518c-4c12-acd8-0fa99a574213",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bc9e58bb-2890-424e-8c9b-75a5e8681033",
+          "card": "e0e73bd4-640a-4487-87af-a063577ac953",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ef09d28d-875b-4777-bed7-04e3f36b93a1",
+          "card": "41d5b04a-de5f-4d9c-8da5-4b17cd4e6421",
+          "suffix": "092",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9927ca8d-3a3c-4533-a305-24e5863d9e74",
+          "card": "6ba39d45-1266-452b-b943-d7c43e6c6ad5",
+          "suffix": "094",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fa91df7a-faf8-4d70-bbaf-c7dc88a46ca0",
+          "card": "9f9029ac-4ba5-4175-b536-a5645b0712da",
+          "suffix": "100",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/f0/DUPO-BoosterEN.png",
+      "cards": [
+        {
+          "id": "55c8897e-6a8c-4fdf-aa98-91e5b6451761",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "101",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b5837c3d-4e6c-44c6-bc8f-c9d6ae86930b",
+          "card": "c2e1b77c-8a38-4a26-8274-e8d6aea7e776",
+          "suffix": "104",
+          "rarity": "ultra"
+        },
+        {
+          "id": "eab4d06a-339a-4354-b92e-7a2e983bb146",
+          "card": "39ae8ce5-60ff-4455-8d31-0200530e84c4",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dd6f5ed0-18a9-4082-ae36-e4a49483bfe4",
+          "card": "ee4b8b20-b0f3-4a4d-83a8-c8a9349a6562",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ccd96fbf-3494-43d3-8ca3-2856be8d4742",
+          "card": "afb32683-545b-4171-b530-3d608a787d96",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "91bbe866-4067-42b2-a384-2f0cffc87caa",
+          "card": "666b05bf-a868-431c-ae74-8ee0fac9a8e5",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "db2dda94-13c9-44ca-87a1-3c5729e43e0f",
+          "card": "29672937-941b-42f7-9e15-1f3c3d22a037",
+          "suffix": "050",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7dee3ea4-e1aa-40b3-819d-2237ab0e64b9",
+          "card": "58cd71fb-09f8-49e1-8dac-95e829fecd10",
+          "suffix": "052",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0532f388-c668-4739-8e34-c3f0f4f27f32",
+          "card": "d8461f2c-a41b-4b19-94c7-a474c14c5ec2",
+          "suffix": "062",
+          "rarity": "ultra"
+        },
+        {
+          "id": "58e4e0db-3eb1-482e-9d3e-63400d78380d",
+          "card": "54be2e2a-ba5f-4d04-9f7b-7ba3cca21000",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f7167a10-9ecb-4401-9419-f6de429c932d",
+          "card": "1ee72cd1-518c-4c12-acd8-0fa99a574213",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7163988f-b6e1-43df-aff2-5a4d88771fc2",
+          "card": "e0e73bd4-640a-4487-87af-a063577ac953",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5491ffda-cd30-4e26-883f-c51b3ca2bdd0",
+          "card": "41d5b04a-de5f-4d9c-8da5-4b17cd4e6421",
+          "suffix": "092",
+          "rarity": "ultra"
+        },
+        {
+          "id": "590dfc9d-d34d-4c77-82ed-a65bf00794e0",
+          "card": "6ba39d45-1266-452b-b943-d7c43e6c6ad5",
+          "suffix": "094",
+          "rarity": "ultra"
+        },
+        {
+          "id": "726dc5a1-b6e4-4d4e-9c09-f83503a5e882",
+          "card": "9f9029ac-4ba5-4175-b536-a5645b0712da",
+          "suffix": "100",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Duel Power",
+      "id": 584288
+    }
+  }
+}

@@ -1,0 +1,905 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "cd1d81f4-d113-4741-a912-67e72bd993a5",
+  "name": {
+    "en": "Judgment of the Light",
+    "fr": "Le Jugement de la Lumi\u00e8re",
+    "de": "Judgment of the Light",
+    "it": "Giudizio della Luce",
+    "pt": "O Julgamento da Luz",
+    "es": "El Juicio de la Luz",
+    "ja": "\u30b8\u30e3\u30c3\u30b8\u30e1\u30f3\u30c8\u30fb\u30aa\u30d6\u30fb\u30b6\u30fb\u30e9\u30a4\u30c8",
+    "ko": "\uc800\uc9c0\uba3c\ud2b8 \uc624\ube0c \ub354 \ub77c\uc774\ud2b8"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "JOTL-PT",
+      "date": "2013-08-09",
+      "image": "https://ms.yugipedia.com//c/c4/JOTL-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//1/14/Interceptomato-JOTL-PT-C-1E.png",
+          "b53772f2-939b-41fb-a096-5269c5b940d3": "https://ms.yugipedia.com//0/04/FireFormationYoko-JOTL-PT-SR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "JOTL-SP",
+      "date": "2013-08-08",
+      "image": "https://ms.yugipedia.com//6/68/JOTL-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//b/b8/Interceptomato-JOTL-SP-C-1E.png",
+          "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e": "https://ms.yugipedia.com//5/52/SuperDefenseRobotLio-JOTL-SP-C-1E.png",
+          "329809c4-a702-4609-901c-7b4aeed0fbe4": "https://ms.yugipedia.com//0/0e/SuperDefenseRobotMonki-JOTL-SP-C-1E.png",
+          "2ba7e4e7-de0c-4dc1-be37-6ac3f839bcc5": "https://ms.yugipedia.com//e/e3/SchwarzschildLimitDragon-JOTL-SP-C-1E.png",
+          "c933425e-cdcb-45e3-a033-b1fa819ea30e": "https://ms.yugipedia.com//4/40/GooglyEyesDrumDragon-JOTL-SP-C-1E.png",
+          "9bf81e70-cb43-4ef9-a0f2-1d1d71dfd334": "https://ms.yugipedia.com//6/66/SonicBoom-JOTL-SP-C-1E.png",
+          "43b0ddbc-26ba-4ed3-a1fc-e8f18837786a": "https://ms.yugipedia.com//a/a4/BujingiWarg-JOTL-SP-C-1E.png"
+        },
+        "unlimited": {
+          "9bf81e70-cb43-4ef9-a0f2-1d1d71dfd334": "https://ms.yugipedia.com//5/53/SonicBoom-JOTL-SP-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51111007
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "JOTL-KR",
+      "date": "2013-07-19",
+      "image": "https://ms.yugipedia.com//4/47/JOTL-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//5/57/Interceptomato-JOTL-KR-C-1E.png",
+          "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e": "https://ms.yugipedia.com//b/b6/SuperDefenseRobotLio-JOTL-KR-C-1E.png",
+          "3632ad9c-17d6-4e60-b951-240a46251550": "https://ms.yugipedia.com//0/05/SuperDefenseRobotMonki-JOTL-KR-C-1E.png",
+          "60631c84-6255-4774-8562-e37480012dd8": "https://ms.yugipedia.com//6/6d/SchwarzschildLimitDragon-JOTL-KR-C-1E.png",
+          "b8532655-b390-422a-8c5e-caa0d75411aa": "https://ms.yugipedia.com//b/ba/BujinYamato-JOTL-KR-SR-1E.png",
+          "9d77be42-2eb2-41c9-9440-9db1a54617e5": "https://ms.yugipedia.com//2/2d/MaskedChameleon-JOTL-KR-C-1E.png",
+          "ff34f718-9b0e-4f47-b46e-edef17ef8afe": "https://ms.yugipedia.com//2/24/GooglyEyesDrumDragon-JOTL-KR-C-1E.png",
+          "ca8f84b6-a344-41e2-9e0b-4cbb2e53fdc8": "https://ms.yugipedia.com//a/a8/FireFormationYoko-JOTL-KR-C-1E.png",
+          "76cca720-0018-4fd3-9693-02ec528d2052": "https://ms.yugipedia.com//e/ed/SonicBoom-JOTL-KR-C-1E.png"
+        },
+        "unlimited": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//9/94/Interceptomato-JOTL-KR-C-UE.png",
+          "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e": "https://ms.yugipedia.com//2/29/SuperDefenseRobotLio-JOTL-KR-C-UE.png",
+          "3632ad9c-17d6-4e60-b951-240a46251550": "https://ms.yugipedia.com//f/fa/SuperDefenseRobotMonki-JOTL-KR-C-UE.png",
+          "60631c84-6255-4774-8562-e37480012dd8": "https://ms.yugipedia.com//e/ef/SchwarzschildLimitDragon-JOTL-KR-C-UE.png",
+          "b8532655-b390-422a-8c5e-caa0d75411aa": "https://ms.yugipedia.com//2/26/BujinYamato-JOTL-KR-SR-UE.png",
+          "9d77be42-2eb2-41c9-9440-9db1a54617e5": "https://ms.yugipedia.com//f/f5/MaskedChameleon-JOTL-KR-C-UE.png",
+          "ff34f718-9b0e-4f47-b46e-edef17ef8afe": "https://ms.yugipedia.com//8/82/GooglyEyesDrumDragon-JOTL-KR-C-UE.png",
+          "ca8f84b6-a344-41e2-9e0b-4cbb2e53fdc8": "https://ms.yugipedia.com//f/f3/FireFormationYoko-JOTL-KR-C-UE.png",
+          "76cca720-0018-4fd3-9693-02ec528d2052": "https://ms.yugipedia.com//3/3c/SonicBoom-JOTL-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71111002
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "JOTL-JP",
+      "date": "2013-04-20",
+      "image": "https://ms.yugipedia.com//b/b9/JOTL-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//8/82/Interceptomato-JOTL-JP-C.png",
+          "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e": "https://ms.yugipedia.com//c/c7/SuperDefenseRobotLio-JOTL-JP-C.png",
+          "5032edbc-5bce-4c4a-9b57-b2847723cfc8": "https://ms.yugipedia.com//9/9b/SuperDefenseRobotMonki-JOTL-JP-C.png",
+          "11b65982-1641-4ad2-9170-736781fb623d": "https://ms.yugipedia.com//1/11/SchwarzschildLimitDragon-JOTL-JP-C.png",
+          "b01b64a7-0b14-49b7-bb29-5ec3d3060ba2": "https://ms.yugipedia.com//3/31/BujinYamato-JOTL-JP-SR.png",
+          "71fbbff0-2f1c-4070-b5df-1daa4d5f54d1": "https://ms.yugipedia.com//5/54/MaskedChameleon-JOTL-JP-C.png",
+          "d69ae5eb-001f-46e0-82e1-439951ca540e": "https://ms.yugipedia.com//3/39/GooglyEyesDrumDragon-JOTL-JP-C.png",
+          "7be6dcf5-ed9f-4d0d-ba6d-585c588a67a5": "https://ms.yugipedia.com//3/38/FireFormationYoko-JOTL-JP-C.png",
+          "52dd9066-101e-4fe8-b996-1b2b8c9e80f9": "https://ms.yugipedia.com//b/b5/SonicBoom-JOTL-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1116000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "JOTL-EN",
+      "image": "https://ms.yugipedia.com//e/e4/JOTL-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//d/d0/Interceptomato-JOTL-EN-C-1E.png",
+          "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e": "https://ms.yugipedia.com//5/55/SuperDefenseRobotLio-JOTL-EN-C-1E.png",
+          "bd619971-f264-4204-b4d5-167e8b1d45a2": "https://ms.yugipedia.com//f/fd/SuperDefenseRobotMonki-JOTL-EN-C-1E.png",
+          "cf08be28-6434-4d83-8d66-1116f28a7930": "https://ms.yugipedia.com//d/d2/SchwarzschildLimitDragon-JOTL-EN-C-1E.png",
+          "48210dbc-ed53-448e-aa11-6845fbf4d48e": "https://ms.yugipedia.com//d/dc/BujinYamato-JOTL-EN-UR-1E.png",
+          "b546aa09-7540-4484-9793-3c185e156d49": "https://ms.yugipedia.com//d/df/MaskedChameleon-JOTL-EN-UR-1E.png",
+          "9ffa5a0a-d284-469f-bccb-e41c2accce56": "https://ms.yugipedia.com//9/9c/GooglyEyesDrumDragon-JOTL-EN-C-1E.png",
+          "4856d78f-2170-4d28-a72a-976cbb53332d": "https://ms.yugipedia.com//9/97/FireFormationYoko-JOTL-EN-SR-1E.png",
+          "644d2eb2-2ecc-4bf3-8270-31f78143372b": "https://ms.yugipedia.com//9/98/SonicBoom-JOTL-EN-C-1E.png",
+          "798c8054-59f3-4324-b3f2-48b986faa714": "https://ms.yugipedia.com//1/1b/BujingiWarg-JOTL-EN-C-1E.png"
+        },
+        "unlimited": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//9/9b/Interceptomato-JOTL-EN-C-UE.png",
+          "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e": "https://ms.yugipedia.com//0/0f/SuperDefenseRobotLio-JOTL-EN-C-UE.png",
+          "bd619971-f264-4204-b4d5-167e8b1d45a2": "https://ms.yugipedia.com//e/e1/SuperDefenseRobotMonki-JOTL-EN-C-UE.png",
+          "cf08be28-6434-4d83-8d66-1116f28a7930": "https://ms.yugipedia.com//9/9b/SchwarzschildLimitDragon-JOTL-EN-C-UE.png",
+          "48210dbc-ed53-448e-aa11-6845fbf4d48e": "https://ms.yugipedia.com//1/12/BujinYamato-JOTL-EN-UR-UE.png",
+          "b546aa09-7540-4484-9793-3c185e156d49": "https://ms.yugipedia.com//7/77/MaskedChameleon-JOTL-EN-UR-UE.png",
+          "9ffa5a0a-d284-469f-bccb-e41c2accce56": "https://ms.yugipedia.com//8/81/GooglyEyesDrumDragon-JOTL-EN-C-UE.png",
+          "4856d78f-2170-4d28-a72a-976cbb53332d": "https://ms.yugipedia.com//a/aa/FireFormationYoko-JOTL-EN-SR-UE.png",
+          "644d2eb2-2ecc-4bf3-8270-31f78143372b": "https://ms.yugipedia.com//1/19/SonicBoom-JOTL-EN-C-UE.png",
+          "798c8054-59f3-4324-b3f2-48b986faa714": "https://ms.yugipedia.com//a/a0/BujingiWarg-JOTL-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112007
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "JOTL-FR",
+      "date": "2013-08-08",
+      "image": "https://ms.yugipedia.com//a/a3/JOTL-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "15c43913-0e75-41dc-973c-d168bd4cf7e1": "https://ms.yugipedia.com//b/bb/Interceptomato-JOTL-FR-C-1E.png",
+          "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e": "https://ms.yugipedia.com//5/5d/SuperDefenseRobotLio-JOTL-FR-C-1E.png",
+          "4082cc11-eb22-47b8-b870-5bc8a9da8331": "https://ms.yugipedia.com//a/a4/SuperDefenseRobotMonki-JOTL-FR-C-1E.png",
+          "fd4fcd55-844f-4d00-958d-e2c1d90c8ac5": "https://ms.yugipedia.com//c/c1/SchwarzschildLimitDragon-JOTL-FR-C-1E.png",
+          "f89f7337-826b-4e08-b1fe-7f4b10f2a420": "https://ms.yugipedia.com//3/39/BujinYamato-JOTL-FR-UR-1E.png",
+          "f0333384-ee2a-4acb-b5d8-b6e4ebffcca8": "https://ms.yugipedia.com//2/29/MaskedChameleon-JOTL-FR-UR-1E.png",
+          "9836f999-1ff8-414c-9495-70d52f403182": "https://ms.yugipedia.com//f/f9/GooglyEyesDrumDragon-JOTL-FR-C-1E.png",
+          "b72635f2-9bfa-460b-8ba5-4cd11a21807a": "https://ms.yugipedia.com//7/7d/FireFormationYoko-JOTL-FR-SR-1E.png",
+          "ee31d583-7db9-4ff0-af29-cb5e2f97b451": "https://ms.yugipedia.com//0/08/SonicBoom-JOTL-FR-C-1E.png",
+          "549ed5ca-643b-41e9-aa40-b274d2b0afc1": "https://ms.yugipedia.com//6/63/BujingiWarg-JOTL-FR-C-1E.png"
+        },
+        "unlimited": {
+          "fd4fcd55-844f-4d00-958d-e2c1d90c8ac5": "https://ms.yugipedia.com//4/48/SchwarzschildLimitDragon-JOTL-FR-C-UE.png",
+          "b72635f2-9bfa-460b-8ba5-4cd11a21807a": "https://ms.yugipedia.com//3/30/FireFormationYoko-JOTL-FR-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31112007
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "JOTL-IT",
+      "date": "2013-08-28",
+      "image": "https://ms.yugipedia.com//4/43/JOTL-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41112007
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "JOTL-DE",
+      "date": "2013-08-08",
+      "image": "https://ms.yugipedia.com//6/69/JOTL-BoosterDE.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21112007
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c4/JOTL-BoosterPT.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e6bc7cf-3bb0-4665-b158-9d3e809b8f50",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "aea0822b-59b6-4058-895b-bee2d308263e",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "3e089ac2-8e22-454e-87f7-b9f6a47f960f",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c69b0e2f-867a-46d0-afec-40f3e5093785",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3a9ac951-9d5e-44b7-9947-213971e177b3",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "b53772f2-939b-41fb-a096-5269c5b940d3",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "super"
+        },
+        {
+          "id": "6554b104-e160-40a3-a23d-68d862e0cdd9",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "975887ea-ab2c-4513-a1ec-77650c91ad7b",
+          "card": "991432b2-356d-4989-b555-3cd35e345174",
+          "suffix": "081",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/68/JOTL-BoosterSP.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "329809c4-a702-4609-901c-7b4aeed0fbe4",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "2ba7e4e7-de0c-4dc1-be37-6ac3f839bcc5",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "03827f55-bcf1-4618-9383-1131c8d6a277",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bbe53143-6598-4e0b-bf44-b331f02b4e9d",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c933425e-cdcb-45e3-a033-b1fa819ea30e",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "16765b26-faea-4f0a-8338-5fff4333ce7d",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "super"
+        },
+        {
+          "id": "9bf81e70-cb43-4ef9-a0f2-1d1d71dfd334",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "43b0ddbc-26ba-4ed3-a1fc-e8f18837786a",
+          "card": "991432b2-356d-4989-b555-3cd35e345174",
+          "suffix": "081",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/47/JOTL-BoosterKR.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "3632ad9c-17d6-4e60-b951-240a46251550",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "60631c84-6255-4774-8562-e37480012dd8",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "b8532655-b390-422a-8c5e-caa0d75411aa",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "super"
+        },
+        {
+          "id": "9d77be42-2eb2-41c9-9440-9db1a54617e5",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "ff34f718-9b0e-4f47-b46e-edef17ef8afe",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "ca8f84b6-a344-41e2-9e0b-4cbb2e53fdc8",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "76cca720-0018-4fd3-9693-02ec528d2052",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/b9/JOTL-BoosterJP.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "5032edbc-5bce-4c4a-9b57-b2847723cfc8",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "11b65982-1641-4ad2-9170-736781fb623d",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "b01b64a7-0b14-49b7-bb29-5ec3d3060ba2",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "super"
+        },
+        {
+          "id": "71fbbff0-2f1c-4070-b5df-1daa4d5f54d1",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "d69ae5eb-001f-46e0-82e1-439951ca540e",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "7be6dcf5-ed9f-4d0d-ba6d-585c588a67a5",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "52dd9066-101e-4fe8-b996-1b2b8c9e80f9",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e4/JOTL-BoosterEN.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "bd619971-f264-4204-b4d5-167e8b1d45a2",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "cf08be28-6434-4d83-8d66-1116f28a7930",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "48210dbc-ed53-448e-aa11-6845fbf4d48e",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b546aa09-7540-4484-9793-3c185e156d49",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9ffa5a0a-d284-469f-bccb-e41c2accce56",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "4856d78f-2170-4d28-a72a-976cbb53332d",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "super"
+        },
+        {
+          "id": "644d2eb2-2ecc-4bf3-8270-31f78143372b",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "798c8054-59f3-4324-b3f2-48b986faa714",
+          "card": "991432b2-356d-4989-b555-3cd35e345174",
+          "suffix": "081",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/a3/JOTL-BoosterFR.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "4082cc11-eb22-47b8-b870-5bc8a9da8331",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "fd4fcd55-844f-4d00-958d-e2c1d90c8ac5",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "f89f7337-826b-4e08-b1fe-7f4b10f2a420",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f0333384-ee2a-4acb-b5d8-b6e4ebffcca8",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9836f999-1ff8-414c-9495-70d52f403182",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "b72635f2-9bfa-460b-8ba5-4cd11a21807a",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "super"
+        },
+        {
+          "id": "ee31d583-7db9-4ff0-af29-cb5e2f97b451",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "549ed5ca-643b-41e9-aa40-b274d2b0afc1",
+          "card": "991432b2-356d-4989-b555-3cd35e345174",
+          "suffix": "081",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/43/JOTL-BoosterIT.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "93e44ee5-4e1c-41e1-b677-5a4fd7caa260",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "df8bd12f-beec-4922-a0a7-700d45e195a9",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "688935a1-122e-433a-8396-8c4d21d78497",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4f9948f9-db9f-4aee-9dac-3f8eace97110",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bfc74701-cf9a-44e0-81a7-f31ea3a23b0f",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "0456194f-fe9c-444b-b1f2-aa9bfdc68ad8",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "super"
+        },
+        {
+          "id": "e067a0b2-9b0b-4a2b-87dd-b89e1f038861",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "4e7b99f1-5f0b-4196-99ad-e51554c1c690",
+          "card": "991432b2-356d-4989-b555-3cd35e345174",
+          "suffix": "081",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/69/JOTL-BoosterDE.png",
+      "cards": [
+        {
+          "id": "15c43913-0e75-41dc-973c-d168bd4cf7e1",
+          "card": "c866b3ca-a1b8-4f1f-bcfa-5379d8941a00",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f108ecc2-cfd4-4620-b3e3-9a3b4bbed27e",
+          "card": "ef0976f5-59a3-45f9-bc9f-a14b35cb98dc",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1a834347-ff11-4853-9f56-b70d4e23ff31",
+          "card": "34392fda-4f8e-41f6-86ae-03eeed99eceb",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "8abefdb7-b307-4ddf-acad-69b4f2ef82ba",
+          "card": "dda98e7b-df30-46ef-a08f-ebc70fb2f81d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "fbe37344-4226-47f0-b43c-80f35f72b77e",
+          "card": "0d0acb46-c36d-4c0f-a4b6-dc68cb4da2be",
+          "suffix": "016",
+          "rarity": "ultra"
+        },
+        {
+          "id": "81cf23be-207a-4f8b-83e8-e06801a3dfa5",
+          "card": "31fd42ec-a4b9-440b-acf1-68935fe11148",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4c838a44-19d5-426c-b2e1-1d7925f0cd68",
+          "card": "d7a301e5-2229-4f5c-8472-74419b39eb96",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "c21a50e8-9f21-4389-8f32-4c453609e76f",
+          "card": "8c420956-fcb8-4558-9bb1-b119e5f2e07d",
+          "suffix": "065",
+          "rarity": "super"
+        },
+        {
+          "id": "0a47cf7b-0785-46fb-b408-1f5b35e5f2ff",
+          "card": "a440f666-17ef-484a-9edc-e58939b80ba3",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "49243d62-6a63-4d55-9756-b64f6c565b7f",
+          "card": "991432b2-356d-4989-b555-3cd35e345174",
+          "suffix": "081",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Judgment of the Light"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Judgment of the Light",
+      "id": 268158
+    }
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "6262a6b3-71e3-427a-9bdf-a3bdc8ade832",
+  "name": {
+    "en": "Starter Deck: Kaiba Evolution",
+    "fr": "Deck de D\u00e9marrage: Kaiba \u00c9volution",
+    "de": "Starter Deck: Kaiba Evolution",
+    "it": "Mazzo Introduttivo: Kaiba Evoluzione",
+    "pt": "Deck Inicial do Kaiba Evolu\u00e7\u00e3o",
+    "es": "Baraja Inicial: Kaiba Evoluci\u00f3n",
+    "ko": "\uff33\uff34\uff21\uff32\uff34\uff25\uff32 \uff24\uff25\uff23\uff2b \u2014\uce74\uc774\ubc14 \ud3b8\u2014 \uff25\uff56\uff4f\uff4c\uff55\uff54\uff49\uff4f\uff4e"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "SKE-KR",
+      "date": "2005-04-12",
+      "image": "https://ms.yugipedia.com//8/80/SKE-DeckKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          72203000
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SKE-PT",
+      "date": "2004-01-01",
+      "image": "https://ms.yugipedia.com//5/5d/SKE-DeckPT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "0660b877-bce8-49b9-8067-b61aa19546e0": "https://ms.yugipedia.com//6/6e/KoumoriDragon-SKE-PT-C-1E.png",
+          "a5f71963-4af6-480a-9a0a-2035b58fba6e": "https://ms.yugipedia.com//b/b6/Uraby-SKE-PT-C-1E.png",
+          "a231c821-4dcc-4cf9-a6d3-3a8ac2d77d09": "https://ms.yugipedia.com//1/16/RyuKishinPowered-SKE-PT-C-1E.png",
+          "ef2447c3-515f-4296-9471-2790ef61037d": "https://ms.yugipedia.com//a/ac/LordofD-SKE-PT-C-1E.png",
+          "f89ef08d-a0b2-4d49-ab9d-120229dd852c": "https://ms.yugipedia.com//c/c3/WhiteDragonRitual-SKE-PT-C-1E.png",
+          "8543d7ee-5c84-4999-8f61-a27ad826b732": "https://ms.yugipedia.com//9/92/TheInexperiencedSpy-SKE-PT-C-1E.png",
+          "396689ba-7695-4a32-84c2-f1c2007bd1e3": "https://ms.yugipedia.com//a/ab/TrapHole-SKE-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SKE-FR",
+      "date": "2004-09-01",
+      "image": "https://ms.yugipedia.com//4/42/SKE-DeckFR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "0b67665f-14d7-4ae1-90b0-870dd8149295": "https://ms.yugipedia.com//3/3c/KoumoriDragon-SKE-FR-C-1E.jpg",
+          "7f5bb0e6-b6c2-4bc6-9f1f-5e4cadb372cd": "https://ms.yugipedia.com//2/2e/TrapHole-SKE-FR-C-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          33303000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SKE-",
+      "date": "2004-03-01",
+      "image": "https://ms.yugipedia.com//7/79/SKE-DeckEN.png",
+      "cardImages": {
+        "unlimited": {
+          "9334d843-68d8-4438-bdca-9bd48e4f78dc": "https://ms.yugipedia.com//f/fc/KoumoriDragon-SKE-EN-C-UE.png",
+          "1f61ddbb-b5b4-4083-a8ac-3e632d851c15": "https://ms.yugipedia.com//1/1b/Uraby-SKE-EN-C-UE.png",
+          "40dba73c-9ff0-464e-80ec-16cb95f4cba7": "https://ms.yugipedia.com//f/fe/RyuKishinPowered-SKE-EN-C-UE.png",
+          "d0853358-6d56-435b-afad-447975f8adf6": "https://ms.yugipedia.com//d/db/LordofD-SKE-EN-C-UE.png",
+          "863424e1-5b63-4525-976c-b1e0d4e09b4c": "https://ms.yugipedia.com//9/93/WhiteDragonRitual-SKE-EN-C-UE.png",
+          "d2187abd-57e6-46a7-a177-2031b2db788c": "https://ms.yugipedia.com//f/f0/TrapHole-SKE-EN-C-UE.png"
+        },
+        "1st": {
+          "9334d843-68d8-4438-bdca-9bd48e4f78dc": "https://ms.yugipedia.com//5/55/KoumoriDragon-SKE-EN-C-1E.jpg",
+          "1f61ddbb-b5b4-4083-a8ac-3e632d851c15": "https://ms.yugipedia.com//5/5a/Uraby-SKE-EN-C-1E.jpg",
+          "40dba73c-9ff0-464e-80ec-16cb95f4cba7": "https://ms.yugipedia.com//6/69/RyuKishinPowered-SKE-EN-C-1E.jpg",
+          "d0853358-6d56-435b-afad-447975f8adf6": "https://ms.yugipedia.com//2/29/LordofD-SKE-EN-C-1E.jpg",
+          "863424e1-5b63-4525-976c-b1e0d4e09b4c": "https://ms.yugipedia.com//b/b4/WhiteDragonRitual-SKE-EN-C-1E.jpg",
+          "1d4aefeb-e30b-4702-a601-5b784f39148f": "https://ms.yugipedia.com//7/7c/TheInexperiencedSpy-SKE-EN-C-1E.jpg",
+          "d2187abd-57e6-46a7-a177-2031b2db788c": "https://ms.yugipedia.com//3/3d/TrapHole-SKE-EN-C-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13303001
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SKE-SP",
+      "date": "2004-10-01",
+      "image": "https://ms.yugipedia.com//6/69/SKE-DeckSP.png",
+      "cardImages": {
+        "unlimited": {
+          "823b5f54-ea46-4053-aea1-e28715b5b0d0": "https://ms.yugipedia.com//1/16/KoumoriDragon-SKE-SP-C-UE.png",
+          "0051b529-7445-4444-a79a-c6908efc6f00": "https://ms.yugipedia.com//4/4d/WhiteDragonRitual-SKE-SP-C-UE.png",
+          "7df0a9b2-3e84-47d1-b72f-3bf7a830033e": "https://ms.yugipedia.com//4/42/TheInexperiencedSpy-SKE-SP-C-UE.png"
+        },
+        "1st": {
+          "823b5f54-ea46-4053-aea1-e28715b5b0d0": "https://ms.yugipedia.com//7/74/KoumoriDragon-SKE-SP-C-1E.png",
+          "3c628457-1d14-4ddd-9455-03a3f1e4021c": "https://ms.yugipedia.com//8/80/Uraby-SKE-SP-C-1E.png",
+          "9442150a-1658-4291-9c79-11f2ed5b6a00": "https://ms.yugipedia.com//4/40/RyuKishinPowered-SKE-SP-C-1E.png",
+          "dd00d92d-4ad6-4670-b59f-f15f4073e83b": "https://ms.yugipedia.com//6/62/LordofD-SKE-SP-C-1E.png",
+          "0051b529-7445-4444-a79a-c6908efc6f00": "https://ms.yugipedia.com//e/e1/WhiteDragonRitual-SKE-SP-C-1E.png",
+          "7df0a9b2-3e84-47d1-b72f-3bf7a830033e": "https://ms.yugipedia.com//9/97/TheInexperiencedSpy-SKE-SP-C-1E.png",
+          "5873953b-f6ee-45c8-8014-f43d5a915f5f": "https://ms.yugipedia.com//3/37/TrapHole-SKE-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          53303000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SKE-IT",
+      "date": "2004-10-01",
+      "image": "https://ms.yugipedia.com//e/ef/SKE-DeckIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          43303000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SKE-DE",
+      "date": "2004-09-01",
+      "image": "https://ms.yugipedia.com//b/b3/SKE-DeckDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "14f221d4-a087-40b4-b9c8-b4ca6b541651": "https://ms.yugipedia.com//5/56/Uraby-SKE-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          23303001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/80/SKE-DeckKR.png",
+      "cards": [
+        {
+          "id": "5327680e-997b-48b6-b904-5175c7d6d13a",
+          "card": "e7f3cd7f-f536-412c-935d-0b9dee4e12ca",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "ea5ba47e-a1fc-4300-91fd-2915d5d8d105",
+          "card": "0de6b15f-4d3f-4fbf-b9d1-3f735eed3777",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "7667c9cc-6be3-44f5-a2ce-ad450b1f307c",
+          "card": "267befc8-710e-43b7-832d-b68cb86f69f4",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "0369d6a6-073c-41cc-b31c-47417951601e",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "dce29413-e1c1-4f0a-96cc-fa5464608368",
+          "card": "8655695f-1212-4377-98d3-473d80e21227",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "029d6983-1cb3-4b6b-8261-05ec7cb0d4b3",
+          "card": "6b73bf33-0d00-40bf-b890-cdc00cbaf0fa",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "8cd7cd38-d5dd-470e-9fad-7ea41a1cac98",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "042",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba Evolution"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/5d/SKE-DeckPT.png",
+      "cards": [
+        {
+          "id": "0660b877-bce8-49b9-8067-b61aa19546e0",
+          "card": "e7f3cd7f-f536-412c-935d-0b9dee4e12ca",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "a5f71963-4af6-480a-9a0a-2035b58fba6e",
+          "card": "0de6b15f-4d3f-4fbf-b9d1-3f735eed3777",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "a231c821-4dcc-4cf9-a6d3-3a8ac2d77d09",
+          "card": "267befc8-710e-43b7-832d-b68cb86f69f4",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "ef2447c3-515f-4296-9471-2790ef61037d",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "f89ef08d-a0b2-4d49-ab9d-120229dd852c",
+          "card": "8655695f-1212-4377-98d3-473d80e21227",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "8543d7ee-5c84-4999-8f61-a27ad826b732",
+          "card": "6b73bf33-0d00-40bf-b890-cdc00cbaf0fa",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "396689ba-7695-4a32-84c2-f1c2007bd1e3",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "042",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba Evolution"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/42/SKE-DeckFR.png",
+      "cards": [
+        {
+          "id": "0b67665f-14d7-4ae1-90b0-870dd8149295",
+          "card": "e7f3cd7f-f536-412c-935d-0b9dee4e12ca",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "87700281-5808-4add-95ae-a94e22b495c0",
+          "card": "0de6b15f-4d3f-4fbf-b9d1-3f735eed3777",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "2642bd1a-597f-4754-8f7e-49484aac0a4d",
+          "card": "267befc8-710e-43b7-832d-b68cb86f69f4",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "2869d7e1-678e-4e0d-91bc-4422d902e401",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "5d7a7e92-32cd-4d35-8ab5-29bd08777684",
+          "card": "8655695f-1212-4377-98d3-473d80e21227",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "7af70015-5af9-4c2d-af46-aa2d273f6efd",
+          "card": "6b73bf33-0d00-40bf-b890-cdc00cbaf0fa",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "7f5bb0e6-b6c2-4bc6-9f1f-5e4cadb372cd",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "042",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba Evolution"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/79/SKE-DeckEN.png",
+      "cards": [
+        {
+          "id": "9334d843-68d8-4438-bdca-9bd48e4f78dc",
+          "card": "e7f3cd7f-f536-412c-935d-0b9dee4e12ca",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "1f61ddbb-b5b4-4083-a8ac-3e632d851c15",
+          "card": "0de6b15f-4d3f-4fbf-b9d1-3f735eed3777",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "40dba73c-9ff0-464e-80ec-16cb95f4cba7",
+          "card": "267befc8-710e-43b7-832d-b68cb86f69f4",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "d0853358-6d56-435b-afad-447975f8adf6",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "863424e1-5b63-4525-976c-b1e0d4e09b4c",
+          "card": "8655695f-1212-4377-98d3-473d80e21227",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "1d4aefeb-e30b-4702-a601-5b784f39148f",
+          "card": "6b73bf33-0d00-40bf-b890-cdc00cbaf0fa",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "d2187abd-57e6-46a7-a177-2031b2db788c",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "042",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba Evolution"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/69/SKE-DeckSP.png",
+      "cards": [
+        {
+          "id": "823b5f54-ea46-4053-aea1-e28715b5b0d0",
+          "card": "e7f3cd7f-f536-412c-935d-0b9dee4e12ca",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "3c628457-1d14-4ddd-9455-03a3f1e4021c",
+          "card": "0de6b15f-4d3f-4fbf-b9d1-3f735eed3777",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "9442150a-1658-4291-9c79-11f2ed5b6a00",
+          "card": "267befc8-710e-43b7-832d-b68cb86f69f4",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "dd00d92d-4ad6-4670-b59f-f15f4073e83b",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "0051b529-7445-4444-a79a-c6908efc6f00",
+          "card": "8655695f-1212-4377-98d3-473d80e21227",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "7df0a9b2-3e84-47d1-b72f-3bf7a830033e",
+          "card": "6b73bf33-0d00-40bf-b890-cdc00cbaf0fa",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "5873953b-f6ee-45c8-8014-f43d5a915f5f",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "042",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba Evolution"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/ef/SKE-DeckIT.png",
+      "cards": [
+        {
+          "id": "5f1218c2-b1e5-4d6b-8d2f-b40c757fc1c3",
+          "card": "e7f3cd7f-f536-412c-935d-0b9dee4e12ca",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "ebba4725-cf73-450e-9f97-a7cf04924092",
+          "card": "0de6b15f-4d3f-4fbf-b9d1-3f735eed3777",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "60cfeec5-e1ae-40e5-982e-779e4a21131f",
+          "card": "267befc8-710e-43b7-832d-b68cb86f69f4",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "72adc1b5-096b-4eee-8401-5c912e3fda7a",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "fd38dd21-3317-4a12-a25e-e068536a3f06",
+          "card": "8655695f-1212-4377-98d3-473d80e21227",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "94919afc-3db0-42ee-9d3e-dbedfc0a31dc",
+          "card": "6b73bf33-0d00-40bf-b890-cdc00cbaf0fa",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "7ce17d12-a4f1-47a9-98e5-df7772b6fc5b",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "042",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba Evolution"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b3/SKE-DeckDE.png",
+      "cards": [
+        {
+          "id": "1a2fcb77-4cc2-4fd4-8f9b-2f15e46b44b4",
+          "card": "e7f3cd7f-f536-412c-935d-0b9dee4e12ca",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "14f221d4-a087-40b4-b9c8-b4ca6b541651",
+          "card": "0de6b15f-4d3f-4fbf-b9d1-3f735eed3777",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "2c7e9f98-5835-412b-81f8-3c29afdfcb9d",
+          "card": "267befc8-710e-43b7-832d-b68cb86f69f4",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "f80b5eb2-6231-44e3-98c9-4bb90a05ac7a",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "e5f3a27a-b86c-46d8-a216-2563e05df81e",
+          "card": "8655695f-1212-4377-98d3-473d80e21227",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "e11ebdf5-cfdb-4831-b0b0-3fd6cba0f617",
+          "card": "6b73bf33-0d00-40bf-b890-cdc00cbaf0fa",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "fd80db8a-d1d4-4eca-95d5-e9bd0cd908d5",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "042",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba Evolution"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starter Deck: Kaiba Evolution",
+      "id": 426
+    }
+  }
+}

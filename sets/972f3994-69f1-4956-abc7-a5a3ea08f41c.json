@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "972f3994-69f1-4956-abc7-a5a3ea08f41c",
+  "name": {
+    "en": "Yu-Gi-Oh! Elemental Hero Collection 1"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "EHC1-EN",
+      "image": "https://ms.yugipedia.com//e/e1/EHC-PromoEN.jpg",
+      "cardImages": {
+        "limited": {
+          "fc1f6be6-b14c-4d69-a980-83b22476a126": "https://ms.yugipedia.com//4/4f/ElementalHEROBubbleman-EHC1-EN-ScR-LE.png",
+          "600015de-7736-4dc2-a336-37cf1530a44b": "https://ms.yugipedia.com//a/a0/ElementalHEROFlameWingman-EHC1-EN-ScR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e1/EHC-PromoEN.jpg",
+      "cards": [
+        {
+          "id": "fc1f6be6-b14c-4d69-a980-83b22476a126",
+          "card": "f5e01ed6-b6b0-4c2e-b0fc-1191d31e728d",
+          "suffix": "003",
+          "rarity": "secret"
+        },
+        {
+          "id": "600015de-7736-4dc2-a336-37cf1530a44b",
+          "card": "171ff0d7-1ba2-450a-8e17-dfae7edf599b",
+          "suffix": "004",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Elemental Hero Collection 1",
+      "id": 12161
+    }
+  }
+}

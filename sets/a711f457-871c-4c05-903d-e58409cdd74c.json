@@ -1,0 +1,624 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a711f457-871c-4c05-903d-e58409cdd74c",
+  "name": {
+    "en": "Maze of Memories",
+    "fr": "Le Labyrinthe des Souvenirs",
+    "de": "Maze of Memories",
+    "it": "Labirinto delle Memorie",
+    "pt": "Labirinto de Mem\u00f3rias",
+    "es": "Laberinto de Recuerdos"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "MAZE-DE",
+      "image": "https://ms.yugipedia.com//c/c0/MAZE-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "MAZE-PT",
+      "date": "2023-03-09",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "MAZE-IT",
+      "image": "https://ms.yugipedia.com//6/62/MAZE-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "MAZE-SP",
+      "image": "https://ms.yugipedia.com//2/2e/MAZE-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "MAZE-FR",
+      "image": "https://ms.yugipedia.com//7/7d/MAZE-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "dd91925b-62ef-42b6-a210-e5800703dc47": "https://ms.yugipedia.com//b/b3/LabyrinthHeavyTank-MAZE-FR-SR-1E.png",
+          "ea7f8b05-185a-45fe-99f4-94b2c1944430": "https://ms.yugipedia.com//b/b6/GateGuardianofWindandWater-MAZE-FR-SR-1E.png",
+          "629e96b6-1837-4e9e-82ad-6f2658b9d1fb": "https://ms.yugipedia.com//5/5a/EvolutionEndBurst-MAZE-FR-SR-1E.png",
+          "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b": "https://ms.yugipedia.com//3/3d/AccelSynchroStardustDragon-MAZE-FR-UR-1E.png",
+          "5449c3e0-264c-4d04-a9af-f189caf65008": "https://ms.yugipedia.com//d/d3/BattleRoyalModeJoining-MAZE-FR-R-1E.png",
+          "f60d131c-4c1a-4958-b4b6-eb45cf02fa3d": "https://ms.yugipedia.com//8/88/Suijin-MAZE-FR-R-1E.png",
+          "bb986d39-94ef-47b5-9846-58467c162e1e": "https://ms.yugipedia.com//3/31/MekkKnightRedMoon-MAZE-FR-R-1E.png",
+          "e54a8c18-ff8f-4317-a55c-aa83e3cc4898": "https://ms.yugipedia.com//e/e9/AncientFairyDragon-MAZE-FR-R-1E.png",
+          "7a412481-d6d7-4488-ba2b-d6710a7a1bca": "https://ms.yugipedia.com//4/4b/OverloadFusion-MAZE-FR-R-1E.png",
+          "a4a0882f-56e9-4710-aed8-dd5f26bc09cf": "https://ms.yugipedia.com//9/9a/ChaosForm-MAZE-FR-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "MAZE-EN",
+      "image": "https://ms.yugipedia.com//0/02/MAZE-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "38020148-7afa-4ae5-9dbd-ae4e8afe0670": "https://ms.yugipedia.com//e/ed/LabyrinthHeavyTank-MAZE-EN-SR-1E.png",
+          "8af016da-482c-4761-8027-c9dea6d183fb": "https://ms.yugipedia.com//5/53/GateGuardianofWindandWater-MAZE-EN-SR-1E.png",
+          "b117073c-a3a6-4a4b-8026-4f8af1135ff4": "https://ms.yugipedia.com//7/73/EvolutionEndBurst-MAZE-EN-SR-1E.png",
+          "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b": "https://ms.yugipedia.com//8/8d/AccelSynchroStardustDragon-MAZE-EN-UR-1E.png",
+          "dac88622-4b00-4bd8-8021-ef420779b365": "https://ms.yugipedia.com//3/35/AccelSynchroStardustDragon-MAZE-EN-CR-1E.png",
+          "a46aca88-18f7-41d1-8a38-96b409c994d3": "https://ms.yugipedia.com//4/4d/BattleRoyalModeJoining-MAZE-EN-R-1E.png",
+          "f0960bef-6011-430d-aa50-1e8a56e9df2c": "https://ms.yugipedia.com//5/54/Suijin-MAZE-EN-R-1E.png",
+          "1626c783-b7af-4ac8-a2de-00e7eb4443a6": "https://ms.yugipedia.com//c/ce/MekkKnightRedMoon-MAZE-EN-R-1E.png",
+          "54df85ad-9131-475a-8796-9cdb215bf7dd": "https://ms.yugipedia.com//6/67/AncientFairyDragon-MAZE-EN-R-1E.png",
+          "7bad07ae-dc06-499c-8488-701227264328": "https://ms.yugipedia.com//7/76/OverloadFusion-MAZE-EN-R-1E.png",
+          "acf5ef39-01cb-421a-a592-2681a481ea21": "https://ms.yugipedia.com//1/1c/ChaosForm-MAZE-EN-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001235000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c0/MAZE-BoosterDE.png",
+      "cards": [
+        {
+          "id": "a253df89-a93c-4fb4-ab12-c4f23297177e",
+          "card": "7632f022-0c47-43a4-85a1-6349f30d6916",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "bda7c079-2c19-4efe-a1a6-a98eeefb81cf",
+          "card": "02fb38c0-b3ab-4702-bab8-bbaa9ff44e86",
+          "suffix": "005",
+          "rarity": "super"
+        },
+        {
+          "id": "bf622d05-a857-44c6-aeef-eeb6ec775efa",
+          "card": "53efdd13-5828-4492-96af-65485f22a408",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dac88622-4b00-4bd8-8021-ef420779b365",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "collectors"
+        },
+        {
+          "id": "da59dea1-97f3-4c6c-98b5-002da21264fe",
+          "card": "f2e24eae-052d-41d5-9df6-c8c4887c39d5",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "a726f5ed-5f43-4322-9de2-d68f9cbf7d9d",
+          "card": "5a11d7d5-5846-41b4-a523-c92a9d53de7b",
+          "suffix": "034",
+          "rarity": "rare"
+        },
+        {
+          "id": "a2f77739-fe49-41b6-b977-5b721c8814ef",
+          "card": "d224a81e-f7e3-435f-8db9-1021a4875fcc",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "af9b5e2c-2cf5-43e8-93d9-32fc50d10fe5",
+          "card": "90b133b2-6751-4e39-8bc3-71617014dfa5",
+          "suffix": "050",
+          "rarity": "rare"
+        },
+        {
+          "id": "2e4b43e1-afc2-4d09-9bd2-cd8276d40222",
+          "card": "f8040a36-6bc6-4b1b-8364-645553002c62",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "7ae2d840-b202-402e-97a2-c0ba26e22660",
+          "card": "ef0f7894-092b-4b32-b035-072c853a93b7",
+          "suffix": "061",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "92235ca3-37d2-4e75-807c-109cef3b973b",
+          "card": "7632f022-0c47-43a4-85a1-6349f30d6916",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "d889ddbf-91ab-4699-bbeb-5b53959aecea",
+          "card": "02fb38c0-b3ab-4702-bab8-bbaa9ff44e86",
+          "suffix": "005",
+          "rarity": "super"
+        },
+        {
+          "id": "5dcbc47b-230b-4c21-9fb1-f2b5355079f5",
+          "card": "53efdd13-5828-4492-96af-65485f22a408",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dac88622-4b00-4bd8-8021-ef420779b365",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "collectors"
+        },
+        {
+          "id": "61bc3f66-1fb2-415c-b82d-e78e3f340d33",
+          "card": "f2e24eae-052d-41d5-9df6-c8c4887c39d5",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "80bea324-5eb5-4dc7-baed-b06dbca2105e",
+          "card": "5a11d7d5-5846-41b4-a523-c92a9d53de7b",
+          "suffix": "034",
+          "rarity": "rare"
+        },
+        {
+          "id": "0229eaf7-6418-40e3-9f5f-e3659308c1f7",
+          "card": "d224a81e-f7e3-435f-8db9-1021a4875fcc",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "4a476fc0-6c42-434b-b43e-6a7718d4ee0e",
+          "card": "90b133b2-6751-4e39-8bc3-71617014dfa5",
+          "suffix": "050",
+          "rarity": "rare"
+        },
+        {
+          "id": "e7faec12-5879-40c2-a52e-f2431209d0d6",
+          "card": "f8040a36-6bc6-4b1b-8364-645553002c62",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "f18be83c-6ab3-422d-b031-d7778dd75d32",
+          "card": "ef0f7894-092b-4b32-b035-072c853a93b7",
+          "suffix": "061",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/62/MAZE-BoosterIT.png",
+      "cards": [
+        {
+          "id": "a1238afa-ffa0-4c2b-8f09-1ddb70f8dab2",
+          "card": "7632f022-0c47-43a4-85a1-6349f30d6916",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "c3c78896-59b9-4577-af42-963e022a9269",
+          "card": "02fb38c0-b3ab-4702-bab8-bbaa9ff44e86",
+          "suffix": "005",
+          "rarity": "super"
+        },
+        {
+          "id": "37ef24b0-0090-432d-99f8-bf71a4501bac",
+          "card": "53efdd13-5828-4492-96af-65485f22a408",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dac88622-4b00-4bd8-8021-ef420779b365",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "collectors"
+        },
+        {
+          "id": "e9574d04-3fa6-44d4-9fc0-e81fb68a34de",
+          "card": "f2e24eae-052d-41d5-9df6-c8c4887c39d5",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "08a151a0-81b3-45ce-9144-4ae514b3c869",
+          "card": "5a11d7d5-5846-41b4-a523-c92a9d53de7b",
+          "suffix": "034",
+          "rarity": "rare"
+        },
+        {
+          "id": "32d7e56e-e1fa-4e9e-9d19-fe83b7ebd15b",
+          "card": "d224a81e-f7e3-435f-8db9-1021a4875fcc",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "1ce1c56a-1fe4-464f-98d1-b14512c23b83",
+          "card": "90b133b2-6751-4e39-8bc3-71617014dfa5",
+          "suffix": "050",
+          "rarity": "rare"
+        },
+        {
+          "id": "d01e0026-24fa-40c9-8cc0-eb277851823c",
+          "card": "f8040a36-6bc6-4b1b-8364-645553002c62",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "ccfd8b5a-a105-4d15-8212-436478185362",
+          "card": "ef0f7894-092b-4b32-b035-072c853a93b7",
+          "suffix": "061",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/2e/MAZE-BoosterSP.png",
+      "cards": [
+        {
+          "id": "2470944b-5fde-498f-ab51-449e439cae6a",
+          "card": "7632f022-0c47-43a4-85a1-6349f30d6916",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "3545b645-30be-4edf-98a5-81a36e429c71",
+          "card": "02fb38c0-b3ab-4702-bab8-bbaa9ff44e86",
+          "suffix": "005",
+          "rarity": "super"
+        },
+        {
+          "id": "41bcbc33-2f7b-46a2-af5e-d71e3bed05ce",
+          "card": "53efdd13-5828-4492-96af-65485f22a408",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dac88622-4b00-4bd8-8021-ef420779b365",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "collectors"
+        },
+        {
+          "id": "fbd81b3c-5ce0-4caf-a3f1-a1cee25264c2",
+          "card": "f2e24eae-052d-41d5-9df6-c8c4887c39d5",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "2135cd03-029a-4da2-a111-9ed30ab1dcc1",
+          "card": "5a11d7d5-5846-41b4-a523-c92a9d53de7b",
+          "suffix": "034",
+          "rarity": "rare"
+        },
+        {
+          "id": "14e8f631-5c4d-4f42-b53a-9972055079da",
+          "card": "d224a81e-f7e3-435f-8db9-1021a4875fcc",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "4457b041-cb04-4f01-b16b-71c5050c9a13",
+          "card": "90b133b2-6751-4e39-8bc3-71617014dfa5",
+          "suffix": "050",
+          "rarity": "rare"
+        },
+        {
+          "id": "e7dcff7c-f15e-4430-acf6-98a04c7353af",
+          "card": "f8040a36-6bc6-4b1b-8364-645553002c62",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "e88335c8-1a9a-4fa2-987f-4d686ec2ffbc",
+          "card": "ef0f7894-092b-4b32-b035-072c853a93b7",
+          "suffix": "061",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/7d/MAZE-BoosterFR.png",
+      "cards": [
+        {
+          "id": "dd91925b-62ef-42b6-a210-e5800703dc47",
+          "card": "7632f022-0c47-43a4-85a1-6349f30d6916",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "ea7f8b05-185a-45fe-99f4-94b2c1944430",
+          "card": "02fb38c0-b3ab-4702-bab8-bbaa9ff44e86",
+          "suffix": "005",
+          "rarity": "super"
+        },
+        {
+          "id": "629e96b6-1837-4e9e-82ad-6f2658b9d1fb",
+          "card": "53efdd13-5828-4492-96af-65485f22a408",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dac88622-4b00-4bd8-8021-ef420779b365",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "collectors"
+        },
+        {
+          "id": "5449c3e0-264c-4d04-a9af-f189caf65008",
+          "card": "f2e24eae-052d-41d5-9df6-c8c4887c39d5",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "f60d131c-4c1a-4958-b4b6-eb45cf02fa3d",
+          "card": "5a11d7d5-5846-41b4-a523-c92a9d53de7b",
+          "suffix": "034",
+          "rarity": "rare"
+        },
+        {
+          "id": "bb986d39-94ef-47b5-9846-58467c162e1e",
+          "card": "d224a81e-f7e3-435f-8db9-1021a4875fcc",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "e54a8c18-ff8f-4317-a55c-aa83e3cc4898",
+          "card": "90b133b2-6751-4e39-8bc3-71617014dfa5",
+          "suffix": "050",
+          "rarity": "rare"
+        },
+        {
+          "id": "7a412481-d6d7-4488-ba2b-d6710a7a1bca",
+          "card": "f8040a36-6bc6-4b1b-8364-645553002c62",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "a4a0882f-56e9-4710-aed8-dd5f26bc09cf",
+          "card": "ef0f7894-092b-4b32-b035-072c853a93b7",
+          "suffix": "061",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/02/MAZE-BoosterEN.png",
+      "cards": [
+        {
+          "id": "38020148-7afa-4ae5-9dbd-ae4e8afe0670",
+          "card": "7632f022-0c47-43a4-85a1-6349f30d6916",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "8af016da-482c-4761-8027-c9dea6d183fb",
+          "card": "02fb38c0-b3ab-4702-bab8-bbaa9ff44e86",
+          "suffix": "005",
+          "rarity": "super"
+        },
+        {
+          "id": "b117073c-a3a6-4a4b-8026-4f8af1135ff4",
+          "card": "53efdd13-5828-4492-96af-65485f22a408",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1fdd98d8-877d-4d8e-a7d3-7e766c4fc22b",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dac88622-4b00-4bd8-8021-ef420779b365",
+          "card": "a20de163-e557-4d9e-a14f-92672c58a072",
+          "suffix": "019",
+          "rarity": "collectors"
+        },
+        {
+          "id": "a46aca88-18f7-41d1-8a38-96b409c994d3",
+          "card": "f2e24eae-052d-41d5-9df6-c8c4887c39d5",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "f0960bef-6011-430d-aa50-1e8a56e9df2c",
+          "card": "5a11d7d5-5846-41b4-a523-c92a9d53de7b",
+          "suffix": "034",
+          "rarity": "rare"
+        },
+        {
+          "id": "1626c783-b7af-4ac8-a2de-00e7eb4443a6",
+          "card": "d224a81e-f7e3-435f-8db9-1021a4875fcc",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "54df85ad-9131-475a-8796-9cdb215bf7dd",
+          "card": "90b133b2-6751-4e39-8bc3-71617014dfa5",
+          "suffix": "050",
+          "rarity": "rare"
+        },
+        {
+          "id": "7bad07ae-dc06-499c-8488-701227264328",
+          "card": "f8040a36-6bc6-4b1b-8364-645553002c62",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "acf5ef39-01cb-421a-a592-2681a481ea21",
+          "card": "ef0f7894-092b-4b32-b035-072c853a93b7",
+          "suffix": "061",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Maze of Memories",
+      "id": 709631
+    }
+  }
+}

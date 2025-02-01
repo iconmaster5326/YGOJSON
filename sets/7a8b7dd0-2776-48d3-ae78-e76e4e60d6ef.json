@@ -1,0 +1,797 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "7a8b7dd0-2776-48d3-ae78-e76e4e60d6ef",
+  "name": {
+    "en": "Shadow Specters",
+    "fr": "Spectres de l'Ombre",
+    "de": "Shadow Specters",
+    "it": "Spettri dell'Ombra",
+    "pt": "Espectros das Sombras",
+    "es": "Espectros de las Sombras",
+    "ja": "\u30b7\u30e3\u30c9\u30a6\u30fb\u30b9\u30da\u30af\u30bf\u30fc\u30ba",
+    "ko": "\uc100\ub3c4\uc6b0 \uc2a4\ud399\ud130\uc988"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "SHSP-FR",
+      "image": "https://ms.yugipedia.com//1/18/SHSP-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "24b75254-705a-4e8b-9b19-05a80f1b57ba": "https://ms.yugipedia.com//d/dc/GhostrickYukionna-SHSP-FR-C-1E.png",
+          "267e9234-055e-4b1e-bfe2-6d4e8c0d7246": "https://ms.yugipedia.com//4/4d/BujingiCrow-SHSP-FR-R-1E.png",
+          "50b0f074-be5d-4312-89b7-c14afb5ad2c9": "https://ms.yugipedia.com//0/05/Skelesaurus-SHSP-FR-C-1E.png",
+          "0b5d5dbc-4aa7-419f-9dc4-dad31f7ed952": "https://ms.yugipedia.com//c/cf/IntrigueShield-SHSP-FR-C-1E.png",
+          "7239ce11-b57a-4867-90a5-9e18dd2fd17b": "https://ms.yugipedia.com//e/ee/LadyoftheLake-SHSP-FR-ScR-1E.png",
+          "43f8f6c3-2be1-4e1b-8b24-9ab3f960bfb9": "https://ms.yugipedia.com//9/9b/MiratheStarBearer-SHSP-FR-C-1E.png",
+          "be0fc67c-57d7-46ac-ae00-9215297cad40": "https://ms.yugipedia.com//7/78/ArmoredKappa-SHSP-FR-SR-1E.png",
+          "8e9662a1-5b90-47c6-b151-6dd7247ca5d5": "https://ms.yugipedia.com//1/1d/OhTokenbaum-SHSP-FR-R-1E.png",
+          "3c1fe67b-b317-4059-9442-3c3a4c643ce7": "https://ms.yugipedia.com//e/e7/VividKnight-SHSP-FR-R-1E.png"
+        },
+        "unlimited": {
+          "50b0f074-be5d-4312-89b7-c14afb5ad2c9": "https://ms.yugipedia.com//1/15/Skelesaurus-SHSP-FR-C-UE.png",
+          "8e9662a1-5b90-47c6-b151-6dd7247ca5d5": "https://ms.yugipedia.com//0/0b/OhTokenbaum-SHSP-FR-R-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31112009
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SHSP-SP",
+      "image": "https://ms.yugipedia.com//5/59/SHSP-BoosterSP.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51111009
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SHSP-EN",
+      "image": "https://ms.yugipedia.com//1/18/SHSP-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "48850ee4-4b38-4fc6-8c01-d30e695fb99f": "https://ms.yugipedia.com//b/b0/GhostrickYukionna-SHSP-EN-C-1E.png",
+          "8f9b43d5-6a0c-4330-9720-bbaf32064282": "https://ms.yugipedia.com//1/12/BujingiCrow-SHSP-EN-R-1E.png",
+          "50b0f074-be5d-4312-89b7-c14afb5ad2c9": "https://ms.yugipedia.com//c/c5/Skelesaurus-SHSP-EN-C-1E.png",
+          "ebefa548-4ab3-4066-973b-c44d66175ee5": "https://ms.yugipedia.com//0/00/IntrigueShield-SHSP-EN-C-1E.png",
+          "7239ce11-b57a-4867-90a5-9e18dd2fd17b": "https://ms.yugipedia.com//b/b4/LadyoftheLake-SHSP-EN-ScR-1E.png",
+          "db94bd08-b370-45b2-b129-03e1a8f5fc82": "https://ms.yugipedia.com//1/18/MiratheStarBearer-SHSP-EN-C-1E.png",
+          "ee2595a0-c85e-4051-bafd-2bf712946887": "https://ms.yugipedia.com//e/e0/ArmoredKappa-SHSP-EN-SR-1E.png",
+          "29baae9b-511d-41a6-96c3-15ab66c72b48": "https://ms.yugipedia.com//8/83/OhTokenbaum-SHSP-EN-R-1E.png",
+          "0c33babe-d7a1-46c4-8d63-2e17c64e500c": "https://ms.yugipedia.com//a/a2/VividKnight-SHSP-EN-R-1E.png"
+        },
+        "unlimited": {
+          "48850ee4-4b38-4fc6-8c01-d30e695fb99f": "https://ms.yugipedia.com//b/bf/GhostrickYukionna-SHSP-EN-C-UE.png",
+          "8f9b43d5-6a0c-4330-9720-bbaf32064282": "https://ms.yugipedia.com//b/b6/BujingiCrow-SHSP-EN-R-UE.png",
+          "50b0f074-be5d-4312-89b7-c14afb5ad2c9": "https://ms.yugipedia.com//e/e7/Skelesaurus-SHSP-EN-C-UE.png",
+          "ebefa548-4ab3-4066-973b-c44d66175ee5": "https://ms.yugipedia.com//7/7b/IntrigueShield-SHSP-EN-C-UE.png",
+          "7239ce11-b57a-4867-90a5-9e18dd2fd17b": "https://ms.yugipedia.com//8/80/LadyoftheLake-SHSP-EN-ScR-UE.png",
+          "db94bd08-b370-45b2-b129-03e1a8f5fc82": "https://ms.yugipedia.com//9/9d/MiratheStarBearer-SHSP-EN-C-UE.png",
+          "ee2595a0-c85e-4051-bafd-2bf712946887": "https://ms.yugipedia.com//b/b9/ArmoredKappa-SHSP-EN-SR-UE.png",
+          "29baae9b-511d-41a6-96c3-15ab66c72b48": "https://ms.yugipedia.com//e/eb/OhTokenbaum-SHSP-EN-R-UE.png",
+          "0c33babe-d7a1-46c4-8d63-2e17c64e500c": "https://ms.yugipedia.com//6/65/VividKnight-SHSP-EN-R-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112009
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SHSP-DE",
+      "image": "https://ms.yugipedia.com//1/1e/SHSP-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "54e7a23c-d01b-415e-83e8-77f0911df1d9": "https://ms.yugipedia.com//e/ee/VividKnight-SHSP-DE-R-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21112009
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SHSP-KR",
+      "date": "2013-10-28",
+      "image": "https://ms.yugipedia.com//2/20/SHSP-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "90f9b72f-90ad-46db-ae6c-f66b0be2016a": "https://ms.yugipedia.com//a/a1/GhostrickYukionna-SHSP-KR-R-1E.png",
+          "f02bbe20-2ba7-455c-bb39-a5b0d1bc8ef6": "https://ms.yugipedia.com//8/8d/BujingiCrow-SHSP-KR-R-1E.png",
+          "50b0f074-be5d-4312-89b7-c14afb5ad2c9": "https://ms.yugipedia.com//6/6c/Skelesaurus-SHSP-KR-C-1E.png",
+          "7dc6f019-ccaf-4efd-a434-100ec01dc862": "https://ms.yugipedia.com//5/54/IntrigueShield-SHSP-KR-C-1E.png"
+        },
+        "unlimited": {
+          "90f9b72f-90ad-46db-ae6c-f66b0be2016a": "https://ms.yugipedia.com//1/1b/GhostrickYukionna-SHSP-KR-R-UE.png",
+          "50b0f074-be5d-4312-89b7-c14afb5ad2c9": "https://ms.yugipedia.com//d/d5/Skelesaurus-SHSP-KR-C-UE.png",
+          "7dc6f019-ccaf-4efd-a434-100ec01dc862": "https://ms.yugipedia.com//4/4c/IntrigueShield-SHSP-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71111004
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SHSP-IT",
+      "image": "https://ms.yugipedia.com//5/54/SHSP-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "0a8e41f5-3b4d-48f3-8077-06f256db107b": "https://ms.yugipedia.com//e/e5/VividKnight-SHSP-IT-R-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41112009
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SHSP-PT",
+      "date": "2013-11-08",
+      "image": "https://ms.yugipedia.com//8/86/SHSP-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "b9922d81-bc0f-4cb1-966a-2a54f0093898": "https://ms.yugipedia.com//d/d9/MiratheStarBearer-SHSP-PT-C-1E.png"
+        },
+        "unlimited": {
+          "7239ce11-b57a-4867-90a5-9e18dd2fd17b": "https://ms.yugipedia.com//e/e1/LadyoftheLake-SHSP-PT-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112009
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SHSP-JP",
+      "date": "2013-07-20",
+      "image": "https://ms.yugipedia.com//4/44/SHSP-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "c3a5a1c6-275a-4b55-8c50-fc632572a8df": "https://ms.yugipedia.com//e/ec/GhostrickYukionna-SHSP-JP-R.png",
+          "f6915041-f228-4766-bb4a-175eb2e589a2": "https://ms.yugipedia.com//2/23/BujingiCrow-SHSP-JP-R.png",
+          "50b0f074-be5d-4312-89b7-c14afb5ad2c9": "https://ms.yugipedia.com//d/d5/Skelesaurus-SHSP-JP-C.png",
+          "031d64dc-be7c-4b83-af73-24620f958b24": "https://ms.yugipedia.com//8/89/IntrigueShield-SHSP-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1116001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/18/SHSP-BoosterFR.png",
+      "cards": [
+        {
+          "id": "24b75254-705a-4e8b-9b19-05a80f1b57ba",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "267e9234-055e-4b1e-bfe2-6d4e8c0d7246",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "0b5d5dbc-4aa7-419f-9dc4-dad31f7ed952",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7239ce11-b57a-4867-90a5-9e18dd2fd17b",
+          "card": "1afd9a95-aff5-4670-8258-17272c24c6fa",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "43f8f6c3-2be1-4e1b-8b24-9ab3f960bfb9",
+          "card": "1549f652-75a9-491f-9ebf-ed6680bbea6e",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "be0fc67c-57d7-46ac-ae00-9215297cad40",
+          "card": "bac9a111-0a67-4a33-9bb8-44820fb51083",
+          "suffix": "097",
+          "rarity": "super"
+        },
+        {
+          "id": "8e9662a1-5b90-47c6-b151-6dd7247ca5d5",
+          "card": "7a9be7ce-9204-4292-9808-b7c03cf565df",
+          "suffix": "098",
+          "rarity": "rare"
+        },
+        {
+          "id": "3c1fe67b-b317-4059-9442-3c3a4c643ce7",
+          "card": "6e4e6aec-e01f-44c3-92a5-f6f4252e671c",
+          "suffix": "099",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/59/SHSP-BoosterSP.png",
+      "cards": [
+        {
+          "id": "bdf3b516-8fcb-472f-8644-44c444ffb06b",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "1f8f89c6-06d2-4af4-a921-d1d7a1e4cff5",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "bdf7287d-a54f-4de6-9896-9d6372da0caa",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7239ce11-b57a-4867-90a5-9e18dd2fd17b",
+          "card": "1afd9a95-aff5-4670-8258-17272c24c6fa",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "1717e940-3dce-4096-8d16-5a3b1cfbb75a",
+          "card": "1549f652-75a9-491f-9ebf-ed6680bbea6e",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "6bb2235c-3957-46a8-ac31-5c0ba1c79392",
+          "card": "bac9a111-0a67-4a33-9bb8-44820fb51083",
+          "suffix": "097",
+          "rarity": "super"
+        },
+        {
+          "id": "948c6543-dcd7-43bc-8c3d-676849cbce3f",
+          "card": "7a9be7ce-9204-4292-9808-b7c03cf565df",
+          "suffix": "098",
+          "rarity": "rare"
+        },
+        {
+          "id": "bd079d87-0061-414d-87b1-14a268d28e9f",
+          "card": "6e4e6aec-e01f-44c3-92a5-f6f4252e671c",
+          "suffix": "099",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/18/SHSP-BoosterEN.png",
+      "cards": [
+        {
+          "id": "48850ee4-4b38-4fc6-8c01-d30e695fb99f",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "8f9b43d5-6a0c-4330-9720-bbaf32064282",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "70db0b6a-f412-4d53-9c6c-f8460af25b8e",
+          "card": "2a2f4442-2bcf-41ea-883d-d1fa938c960f",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f13fd384-aaaa-408f-8d8d-18f27355f2d0",
+          "card": "db4a037b-1333-4484-a5c0-a23541d4553e",
+          "suffix": "043",
+          "rarity": "common"
+        },
+        {
+          "id": "ebefa548-4ab3-4066-973b-c44d66175ee5",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7239ce11-b57a-4867-90a5-9e18dd2fd17b",
+          "card": "1afd9a95-aff5-4670-8258-17272c24c6fa",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "db94bd08-b370-45b2-b129-03e1a8f5fc82",
+          "card": "1549f652-75a9-491f-9ebf-ed6680bbea6e",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "ee2595a0-c85e-4051-bafd-2bf712946887",
+          "card": "bac9a111-0a67-4a33-9bb8-44820fb51083",
+          "suffix": "097",
+          "rarity": "super"
+        },
+        {
+          "id": "29baae9b-511d-41a6-96c3-15ab66c72b48",
+          "card": "7a9be7ce-9204-4292-9808-b7c03cf565df",
+          "suffix": "098",
+          "rarity": "rare"
+        },
+        {
+          "id": "0c33babe-d7a1-46c4-8d63-2e17c64e500c",
+          "card": "6e4e6aec-e01f-44c3-92a5-f6f4252e671c",
+          "suffix": "099",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1e/SHSP-BoosterDE.png",
+      "cards": [
+        {
+          "id": "5e21dbd4-b503-405d-ad59-1a0938beb157",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "d9842cd6-5e0b-4823-9e30-8509ee0bee45",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "28955520-33cc-47fa-b635-b66344d6f680",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7239ce11-b57a-4867-90a5-9e18dd2fd17b",
+          "card": "1afd9a95-aff5-4670-8258-17272c24c6fa",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "959e2514-f39a-44c5-aa78-4182abd31e13",
+          "card": "1549f652-75a9-491f-9ebf-ed6680bbea6e",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "a94e2bbf-f0f0-42c6-9920-7f188eefefbf",
+          "card": "bac9a111-0a67-4a33-9bb8-44820fb51083",
+          "suffix": "097",
+          "rarity": "super"
+        },
+        {
+          "id": "94a5cbd5-b197-492c-bf59-bd02d11ebf5a",
+          "card": "7a9be7ce-9204-4292-9808-b7c03cf565df",
+          "suffix": "098",
+          "rarity": "rare"
+        },
+        {
+          "id": "54e7a23c-d01b-415e-83e8-77f0911df1d9",
+          "card": "6e4e6aec-e01f-44c3-92a5-f6f4252e671c",
+          "suffix": "099",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/SHSP-BoosterKR.png",
+      "cards": [
+        {
+          "id": "90f9b72f-90ad-46db-ae6c-f66b0be2016a",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "f02bbe20-2ba7-455c-bb39-a5b0d1bc8ef6",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "7dc6f019-ccaf-4efd-a434-100ec01dc862",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/54/SHSP-BoosterIT.png",
+      "cards": [
+        {
+          "id": "1ebde87c-db88-40a5-8fb9-b0f9b3fca08e",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "5a57004e-a094-4074-ae77-4edf75a7ec1f",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "81eb4de6-f67f-4694-ac1b-b783a38e7fb0",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7239ce11-b57a-4867-90a5-9e18dd2fd17b",
+          "card": "1afd9a95-aff5-4670-8258-17272c24c6fa",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "80d2d9cf-802a-49fd-bb4c-d8409d814de9",
+          "card": "1549f652-75a9-491f-9ebf-ed6680bbea6e",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "016f1ed7-7140-4d64-a128-b7bb1b2e4188",
+          "card": "bac9a111-0a67-4a33-9bb8-44820fb51083",
+          "suffix": "097",
+          "rarity": "super"
+        },
+        {
+          "id": "57473f53-b2a7-47d2-8885-9461d873bcee",
+          "card": "7a9be7ce-9204-4292-9808-b7c03cf565df",
+          "suffix": "098",
+          "rarity": "rare"
+        },
+        {
+          "id": "0a8e41f5-3b4d-48f3-8077-06f256db107b",
+          "card": "6e4e6aec-e01f-44c3-92a5-f6f4252e671c",
+          "suffix": "099",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/86/SHSP-BoosterPT.png",
+      "cards": [
+        {
+          "id": "97a1dda0-1344-49b7-af98-042e48efa037",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "a1f29c9f-a88f-4444-9b68-db78aa1a2afc",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "a3da2a59-5f85-424b-9244-db3696d2f168",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7239ce11-b57a-4867-90a5-9e18dd2fd17b",
+          "card": "1afd9a95-aff5-4670-8258-17272c24c6fa",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "b9922d81-bc0f-4cb1-966a-2a54f0093898",
+          "card": "1549f652-75a9-491f-9ebf-ed6680bbea6e",
+          "suffix": "091",
+          "rarity": "common"
+        },
+        {
+          "id": "977dbd01-938c-4237-8670-bc0dbf75bab2",
+          "card": "bac9a111-0a67-4a33-9bb8-44820fb51083",
+          "suffix": "097",
+          "rarity": "super"
+        },
+        {
+          "id": "01f954f1-6335-455f-bb24-6c6080863d0b",
+          "card": "7a9be7ce-9204-4292-9808-b7c03cf565df",
+          "suffix": "098",
+          "rarity": "rare"
+        },
+        {
+          "id": "7cc303ca-bf42-4908-aeff-7c8606c304fe",
+          "card": "6e4e6aec-e01f-44c3-92a5-f6f4252e671c",
+          "suffix": "099",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/44/SHSP-BoosterJP.png",
+      "cards": [
+        {
+          "id": "c3a5a1c6-275a-4b55-8c50-fc632572a8df",
+          "card": "05413bcf-d334-492d-849c-e2a4bb3ae26d",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "f6915041-f228-4766-bb4a-175eb2e589a2",
+          "card": "8a1e9b77-4fe8-4029-b8ce-bc73950faba1",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b0f074-be5d-4312-89b7-c14afb5ad2c9",
+          "card": "2d576085-e719-4ddf-aeff-210bc8a7ef19",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "031d64dc-be7c-4b83-af73-24620f958b24",
+          "card": "39456b92-6550-469f-a83c-0a8308ddd536",
+          "suffix": "072",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Shadow Specters"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Shadow Specters",
+      "id": 275334
+    }
+  }
+}

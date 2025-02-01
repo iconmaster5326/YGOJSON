@@ -1,0 +1,975 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "3468dec0-e626-42fc-8adc-fa5df7b67ff0",
+  "name": {
+    "en": "Breakers of Shadow",
+    "fr": "Les Destructeurs de L'ombre",
+    "de": "Breakers of Shadow",
+    "it": "Distruttori dell'Ombra",
+    "pt": "Destruidores das Sombras",
+    "es": "Destructores de las Sombras",
+    "ja": "\u30d6\u30ec\u30a4\u30ab\u30fc\u30ba\u30fb\u30aa\u30d6\u30fb\u30b7\u30e3\u30c9\u30a6",
+    "ko": "\ube0c\ub808\uc774\ucee4\uc988 \uc624\ube0c \uc100\ub3c4\uc6b0"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "BOSH-KR",
+      "date": "2016-02-16",
+      "image": "https://ms.yugipedia.com//d/d9/BOSH-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "29f213d6-7e53-447b-80c6-d9ee313c404d": "https://ms.yugipedia.com//0/0a/SuperheavySamuraiMagnet-BOSH-KR-C-UE.png",
+          "d10693ad-610f-4b6e-89d8-6fdc312feb68": "https://ms.yugipedia.com//a/af/TwilightNinjaShingetsu-BOSH-KR-C-UE.png",
+          "bca34309-586b-4e22-a7ef-66f6a6468adb": "https://ms.yugipedia.com//a/af/DinomistPteran-BOSH-KR-R-UE.png",
+          "5c1166a5-abab-4abf-9a8a-b6019a3cc516": "https://ms.yugipedia.com//a/a3/PendulumStorm-BOSH-KR-R-UE.png",
+          "206cc3e6-3fcf-4497-a7c9-1159c8dd229f": "https://ms.yugipedia.com//c/c9/DinomicPowerload-BOSH-KR-C-UE.png",
+          "5bd0b520-e568-4d46-9ff3-3428d0428a8e": "https://ms.yugipedia.com//1/1e/OddEyesAdvent-BOSH-KR-R-UE.png",
+          "41e9d7d5-bdf9-45b4-b6fd-9488fcf2341d": "https://ms.yugipedia.com//a/ac/TwinTwisters-BOSH-KR-R-UE.png",
+          "c00bd89b-1b10-45fc-b8a9-6bcb54794e71": "https://ms.yugipedia.com//2/21/MajespecterSupercell-BOSH-KR-C-UE.png",
+          "9c5af79c-b1ba-4cad-8b95-984e8f5d29f7": "https://ms.yugipedia.com//1/14/PendulumReborn-BOSH-KR-R-UE.png"
+        },
+        "1st": {
+          "b376a264-a9c2-4c5d-9bc1-2042d1aff01f": "https://ms.yugipedia.com//5/58/MasterPendulumtheDracoslayer-BOSH-KR-SR-1E.png",
+          "4459bb3d-66e7-4a2c-9d68-a3574dc572fd": "https://ms.yugipedia.com//e/e6/MasterPendulumtheDracoslayer-BOSH-KR-ScR-1E.png",
+          "5bd0b520-e568-4d46-9ff3-3428d0428a8e": "https://ms.yugipedia.com//d/de/OddEyesAdvent-BOSH-KR-R-1E.png",
+          "41e9d7d5-bdf9-45b4-b6fd-9488fcf2341d": "https://ms.yugipedia.com//4/48/TwinTwisters-BOSH-KR-R-1E.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71114000
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "BOSH-PT",
+      "date": "2016-01-15",
+      "image": "https://ms.yugipedia.com//7/79/BOSH-BoosterPT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "02588813-05f5-4120-a3d8-2fae6ccf1942": "https://ms.yugipedia.com//2/20/SuperheavySamuraiMagnet-BOSH-PT-C-1E.png",
+          "af2172ef-04d4-4d7e-891a-c4568e076833": "https://ms.yugipedia.com//a/ab/TwilightNinjaShingetsu-BOSH-PT-C-1E.png",
+          "7064fb37-8427-4f87-8b82-b43d7573894a": "https://ms.yugipedia.com//0/04/MasterPendulumtheDracoslayer-BOSH-PT-SR-1E.png",
+          "62d718e4-cf05-47ae-bb18-c0812f153d78": "https://ms.yugipedia.com//6/60/DinomistPteran-BOSH-PT-R-1E.png",
+          "50b2b307-5b41-4abf-a101-0cf1da98fc93": "https://ms.yugipedia.com//3/38/PendulumStorm-BOSH-PT-SR-1E.png",
+          "991e891d-d34e-4949-ac39-718126301899": "https://ms.yugipedia.com//a/a9/DinomicPowerload-BOSH-PT-C-1E.png",
+          "c6a53c80-8699-4ffb-a30d-c0a38af5b08a": "https://ms.yugipedia.com//f/f1/OddEyesAdvent-BOSH-PT-R-1E.png",
+          "094b5990-bcf9-4c14-9705-3a5c5baedd60": "https://ms.yugipedia.com//1/14/TwinTwisters-BOSH-PT-SR-1E.png",
+          "1e5f0f93-f97b-4752-9977-743487c01df0": "https://ms.yugipedia.com//5/56/MajespecterSupercell-BOSH-PT-SR-1E.png",
+          "7699165d-c9c0-4213-9c2b-564c044178ff": "https://ms.yugipedia.com//5/56/PendulumReborn-BOSH-PT-R-1E.png",
+          "10a98021-af9f-4afe-a112-b83fd0df2257": "https://ms.yugipedia.com//7/71/CyberDragonInfinity-BOSH-PT-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11115000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "BOSH-FR",
+      "image": "https://ms.yugipedia.com//5/55/BOSH-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "094b5990-bcf9-4c14-9705-3a5c5baedd60": "https://ms.yugipedia.com//5/56/TwinTwisters-BOSH-FR-SR-1E.png",
+          "b5a63ddc-8474-41a2-87cc-bb69c951b86c": "https://ms.yugipedia.com//f/fa/CyberDragonInfinity-BOSH-FR-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31115000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "BOSH-JP",
+      "date": "2015-10-17",
+      "image": "https://ms.yugipedia.com//b/bb/BOSH-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "2d39064c-e192-4d8e-8878-6287f7112a4f": "https://ms.yugipedia.com//f/f8/SuperheavySamuraiMagnet-BOSH-JP-C.png",
+          "e627383e-0f01-4c84-85b3-02b3e45580a8": "https://ms.yugipedia.com//2/22/TwilightNinjaShingetsu-BOSH-JP-C.png",
+          "ab22d0e6-f53a-4e59-bd36-a4f38528a8df": "https://ms.yugipedia.com//a/aa/MasterPendulumtheDracoslayer-BOSH-JP-SR.png",
+          "88b1b931-331a-40f0-b3b5-531c80bc1e01": "https://ms.yugipedia.com//c/c1/MasterPendulumtheDracoslayer-BOSH-JP-ScR.png",
+          "768a2377-ccc9-4d24-b9ef-b2a4bf3dce75": "https://ms.yugipedia.com//e/e8/DinomistPteran-BOSH-JP-R.png",
+          "5c1166a5-abab-4abf-9a8a-b6019a3cc516": "https://ms.yugipedia.com//6/69/PendulumStorm-BOSH-JP-R.png",
+          "358fdebf-024b-44b0-95ce-4d9ecc88415a": "https://ms.yugipedia.com//5/5f/DinomicPowerload-BOSH-JP-C.png",
+          "3d0c6ba4-21f7-411e-8444-a451f9c6c5ae": "https://ms.yugipedia.com//4/41/OddEyesAdvent-BOSH-JP-R.png",
+          "41e9d7d5-bdf9-45b4-b6fd-9488fcf2341d": "https://ms.yugipedia.com//0/06/TwinTwisters-BOSH-JP-R.png",
+          "b02e5601-f38b-41f4-bc2d-12fd9b8555c2": "https://ms.yugipedia.com//0/00/MajespecterSupercell-BOSH-JP-C.png",
+          "e4462c55-7a1a-490f-b5cb-4103d8f39b29": "https://ms.yugipedia.com//e/ef/PendulumReborn-BOSH-JP-R.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1118002
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "BOSH-EN",
+      "image": "https://ms.yugipedia.com//5/54/BOSH-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "f249b93f-0bb1-4c8d-8560-d0986722cbc1": "https://ms.yugipedia.com//0/04/SuperheavySamuraiMagnet-BOSH-EN-C-UE.png",
+          "0809f475-e369-4487-81fd-7bb37bf18041": "https://ms.yugipedia.com//8/8c/TwilightNinjaShingetsu-BOSH-EN-C-UE.png",
+          "a03a9228-aefa-40f8-96a5-d23ae60ac2d6": "https://ms.yugipedia.com//c/c9/MasterPendulumtheDracoslayer-BOSH-EN-SR-UE.png",
+          "6a1a00ad-6a84-4711-a461-afb41e82bd45": "https://ms.yugipedia.com//d/df/DinomistPteran-BOSH-EN-R-UE.png",
+          "50b2b307-5b41-4abf-a101-0cf1da98fc93": "https://ms.yugipedia.com//e/e4/PendulumStorm-BOSH-EN-SR-UE.png",
+          "4df2103b-d339-47bf-a5f4-021bd1d0935c": "https://ms.yugipedia.com//3/37/DinomicPowerload-BOSH-EN-C-UE.png",
+          "6c56e90b-4535-4f16-80db-a33f07d5a4f8": "https://ms.yugipedia.com//d/da/OddEyesAdvent-BOSH-EN-R-UE.png",
+          "094b5990-bcf9-4c14-9705-3a5c5baedd60": "https://ms.yugipedia.com//d/d8/TwinTwisters-BOSH-EN-SR-UE.png",
+          "4982cd28-5231-48d0-a9e9-5a12f54f685d": "https://ms.yugipedia.com//d/d6/MajespecterSupercell-BOSH-EN-SR-UE.png",
+          "75bc098b-1b89-4593-8a4d-4111de3ab8a4": "https://ms.yugipedia.com//1/16/PendulumReborn-BOSH-EN-R-UE.png",
+          "523979e2-c326-4c85-8149-5c648f01ca4b": "https://ms.yugipedia.com//d/d3/Kozmojo-BOSH-EN-ScR-UE.png",
+          "88ab67da-76de-4935-bb97-82eb4f0479ee": "https://ms.yugipedia.com//e/ec/CyberDragonInfinity-BOSH-EN-ScR-UE.png"
+        },
+        "1st": {
+          "f249b93f-0bb1-4c8d-8560-d0986722cbc1": "https://ms.yugipedia.com//9/97/SuperheavySamuraiMagnet-BOSH-EN-C-1E.png",
+          "0809f475-e369-4487-81fd-7bb37bf18041": "https://ms.yugipedia.com//e/ea/TwilightNinjaShingetsu-BOSH-EN-C-1E.png",
+          "a03a9228-aefa-40f8-96a5-d23ae60ac2d6": "https://ms.yugipedia.com//f/f2/MasterPendulumtheDracoslayer-BOSH-EN-SR-1E.png",
+          "6a1a00ad-6a84-4711-a461-afb41e82bd45": "https://ms.yugipedia.com//e/ee/DinomistPteran-BOSH-EN-R-1E.png",
+          "50b2b307-5b41-4abf-a101-0cf1da98fc93": "https://ms.yugipedia.com//d/d3/PendulumStorm-BOSH-EN-SR-1E.png",
+          "4df2103b-d339-47bf-a5f4-021bd1d0935c": "https://ms.yugipedia.com//b/bc/DinomicPowerload-BOSH-EN-C-1E.png",
+          "6c56e90b-4535-4f16-80db-a33f07d5a4f8": "https://ms.yugipedia.com//d/d5/OddEyesAdvent-BOSH-EN-R-1E.png",
+          "094b5990-bcf9-4c14-9705-3a5c5baedd60": "https://ms.yugipedia.com//2/21/TwinTwisters-BOSH-EN-SR-1E.png",
+          "4982cd28-5231-48d0-a9e9-5a12f54f685d": "https://ms.yugipedia.com//0/06/MajespecterSupercell-BOSH-EN-SR-1E.png",
+          "75bc098b-1b89-4593-8a4d-4111de3ab8a4": "https://ms.yugipedia.com//3/3b/PendulumReborn-BOSH-EN-R-1E.png",
+          "523979e2-c326-4c85-8149-5c648f01ca4b": "https://ms.yugipedia.com//d/d8/Kozmojo-BOSH-EN-ScR-1E.png",
+          "88ab67da-76de-4935-bb97-82eb4f0479ee": "https://ms.yugipedia.com//e/e2/CyberDragonInfinity-BOSH-EN-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11115000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "BOSH-SP",
+      "image": "https://ms.yugipedia.com//6/61/BOSH-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {
+          "0240f3bb-aac6-4db7-8ca2-9f055c164f4a": "https://ms.yugipedia.com//9/95/MajespecterSupercell-BOSH-SP-SR-UE.png"
+        },
+        "1st": {
+          "b3b836a8-36d6-4b1b-baa6-1f8cf8124024": "https://ms.yugipedia.com//1/15/SuperheavySamuraiMagnet-BOSH-SP-C-1E.png",
+          "a4872c5e-28cc-4790-b53b-83dac918aeda": "https://ms.yugipedia.com//5/57/TwilightNinjaShingetsu-BOSH-SP-C-1E.png",
+          "867e43ad-c07b-4003-880f-5ad41e3fa50f": "https://ms.yugipedia.com//c/c3/MasterPendulumtheDracoslayer-BOSH-SP-SR-1E.png",
+          "4e2669d8-b50b-45be-840b-e600ad38d65c": "https://ms.yugipedia.com//8/80/DinomistPteran-BOSH-SP-R-1E.png",
+          "50b2b307-5b41-4abf-a101-0cf1da98fc93": "https://ms.yugipedia.com//f/ff/PendulumStorm-BOSH-SP-SR-1E.png",
+          "094b5990-bcf9-4c14-9705-3a5c5baedd60": "https://ms.yugipedia.com//1/18/TwinTwisters-BOSH-SP-SR-1E.png",
+          "1ade1120-66f4-49e1-b180-4e076be1d93e": "https://ms.yugipedia.com//9/9d/PendulumReborn-BOSH-SP-R-1E.png",
+          "f5796f2f-ea9c-4d29-9918-bcb4b47ee028": "https://ms.yugipedia.com//a/af/Kozmojo-BOSH-SP-ScR-1E.png",
+          "3babf693-7898-4c46-b45f-d49a91b94c01": "https://ms.yugipedia.com//f/f4/CyberDragonInfinity-BOSH-SP-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51114000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "BOSH-IT",
+      "image": "https://ms.yugipedia.com//3/34/BOSH-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "caaa94b8-d61f-410b-8720-e2465f8caa01": "https://ms.yugipedia.com//e/e8/DinomistPteran-BOSH-IT-R-1E.png",
+          "094b5990-bcf9-4c14-9705-3a5c5baedd60": "https://ms.yugipedia.com//1/1c/TwinTwisters-BOSH-IT-SR-1E.png",
+          "de60693a-0796-470e-9ef1-2ba29f59be41": "https://ms.yugipedia.com//7/73/MajespecterSupercell-BOSH-IT-SR-1E.png",
+          "ef23d417-accd-4725-8673-7da1abe5afb4": "https://ms.yugipedia.com//c/c1/PendulumReborn-BOSH-IT-R-1E.png",
+          "ddca92f1-29fc-4d4b-9fe9-2eddb8727aad": "https://ms.yugipedia.com//9/9b/Kozmojo-BOSH-IT-ScR-1E.png",
+          "e36a371c-f132-4dbd-b277-418d1b4d9f3d": "https://ms.yugipedia.com//f/ff/CyberDragonInfinity-BOSH-IT-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41115000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "BOSH-DE",
+      "image": "https://ms.yugipedia.com//e/ed/BOSH-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "094b5990-bcf9-4c14-9705-3a5c5baedd60": "https://ms.yugipedia.com//2/27/TwinTwisters-BOSH-DE-SR-1E.png",
+          "02882612-7d6a-427d-ae52-58b53c9872ab": "https://ms.yugipedia.com//e/ef/Kozmojo-BOSH-DE-ScR-1E.png",
+          "a223bcea-d5d2-4ec8-9d03-56f293ac8a6b": "https://ms.yugipedia.com//3/36/CyberDragonInfinity-BOSH-DE-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21115000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/d9/BOSH-BoosterKR.png",
+      "cards": [
+        {
+          "id": "29f213d6-7e53-447b-80c6-d9ee313c404d",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "d10693ad-610f-4b6e-89d8-6fdc312feb68",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "b376a264-a9c2-4c5d-9bc1-2042d1aff01f",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "4459bb3d-66e7-4a2c-9d68-a3574dc572fd",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "secret"
+        },
+        {
+          "id": "bca34309-586b-4e22-a7ef-66f6a6468adb",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "5c1166a5-abab-4abf-9a8a-b6019a3cc516",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "rare"
+        },
+        {
+          "id": "206cc3e6-3fcf-4497-a7c9-1159c8dd229f",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "5bd0b520-e568-4d46-9ff3-3428d0428a8e",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "41e9d7d5-bdf9-45b4-b6fd-9488fcf2341d",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "rare"
+        },
+        {
+          "id": "c00bd89b-1b10-45fc-b8a9-6bcb54794e71",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "9c5af79c-b1ba-4cad-8b95-984e8f5d29f7",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/79/BOSH-BoosterPT.png",
+      "cards": [
+        {
+          "id": "02588813-05f5-4120-a3d8-2fae6ccf1942",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "af2172ef-04d4-4d7e-891a-c4568e076833",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "7064fb37-8427-4f87-8b82-b43d7573894a",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "62d718e4-cf05-47ae-bb18-c0812f153d78",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b2b307-5b41-4abf-a101-0cf1da98fc93",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "991e891d-d34e-4949-ac39-718126301899",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "c6a53c80-8699-4ffb-a30d-c0a38af5b08a",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "094b5990-bcf9-4c14-9705-3a5c5baedd60",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "1e5f0f93-f97b-4752-9977-743487c01df0",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "7699165d-c9c0-4213-9c2b-564c044178ff",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "6a327c38-1059-479b-9c36-4dfef95f897e",
+          "card": "14c25383-471d-4696-9f9c-5339fd3a2b8a",
+          "suffix": "086",
+          "rarity": "secret"
+        },
+        {
+          "id": "10a98021-af9f-4afe-a112-b83fd0df2257",
+          "card": "0a5c3f72-054c-4b0a-828d-c327a33b5683",
+          "suffix": "094",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/55/BOSH-BoosterFR.png",
+      "cards": [
+        {
+          "id": "30c3c299-a75f-432c-afbd-a0bf1ee91edc",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "ea70b648-d5b7-4092-b0cb-f04a1ba30cec",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "672531b3-c348-452d-9c92-f4b5e0c01d3d",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "ba31d4d6-e429-4fb3-98e8-69a299424bb3",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b2b307-5b41-4abf-a101-0cf1da98fc93",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "4c1e185b-b03e-47d9-95bf-a6b4ff565ca7",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "7158c8e2-4847-4edc-958f-e8e8c1d81846",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "094b5990-bcf9-4c14-9705-3a5c5baedd60",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "69986005-35f3-4cd5-96ec-778f5b295ad0",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "435d1812-3c03-4d76-9962-00e9107e5dcb",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "79f2ccf5-6929-490f-aa92-12d640ceba8a",
+          "card": "14c25383-471d-4696-9f9c-5339fd3a2b8a",
+          "suffix": "086",
+          "rarity": "secret"
+        },
+        {
+          "id": "b5a63ddc-8474-41a2-87cc-bb69c951b86c",
+          "card": "0a5c3f72-054c-4b0a-828d-c327a33b5683",
+          "suffix": "094",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/bb/BOSH-BoosterJP.png",
+      "cards": [
+        {
+          "id": "2d39064c-e192-4d8e-8878-6287f7112a4f",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "e627383e-0f01-4c84-85b3-02b3e45580a8",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "ab22d0e6-f53a-4e59-bd36-a4f38528a8df",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "88b1b931-331a-40f0-b3b5-531c80bc1e01",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "secret"
+        },
+        {
+          "id": "768a2377-ccc9-4d24-b9ef-b2a4bf3dce75",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "5c1166a5-abab-4abf-9a8a-b6019a3cc516",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "rare"
+        },
+        {
+          "id": "358fdebf-024b-44b0-95ce-4d9ecc88415a",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "3d0c6ba4-21f7-411e-8444-a451f9c6c5ae",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "41e9d7d5-bdf9-45b4-b6fd-9488fcf2341d",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "rare"
+        },
+        {
+          "id": "b02e5601-f38b-41f4-bc2d-12fd9b8555c2",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "e4462c55-7a1a-490f-b5cb-4103d8f39b29",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/54/BOSH-BoosterEN.png",
+      "cards": [
+        {
+          "id": "f249b93f-0bb1-4c8d-8560-d0986722cbc1",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "0809f475-e369-4487-81fd-7bb37bf18041",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "a03a9228-aefa-40f8-96a5-d23ae60ac2d6",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "6a1a00ad-6a84-4711-a461-afb41e82bd45",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b2b307-5b41-4abf-a101-0cf1da98fc93",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "4df2103b-d339-47bf-a5f4-021bd1d0935c",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "6c56e90b-4535-4f16-80db-a33f07d5a4f8",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "094b5990-bcf9-4c14-9705-3a5c5baedd60",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "4982cd28-5231-48d0-a9e9-5a12f54f685d",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "75bc098b-1b89-4593-8a4d-4111de3ab8a4",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "523979e2-c326-4c85-8149-5c648f01ca4b",
+          "card": "14c25383-471d-4696-9f9c-5339fd3a2b8a",
+          "suffix": "086",
+          "rarity": "secret"
+        },
+        {
+          "id": "88ab67da-76de-4935-bb97-82eb4f0479ee",
+          "card": "0a5c3f72-054c-4b0a-828d-c327a33b5683",
+          "suffix": "094",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/61/BOSH-BoosterSP.png",
+      "cards": [
+        {
+          "id": "b3b836a8-36d6-4b1b-baa6-1f8cf8124024",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "a4872c5e-28cc-4790-b53b-83dac918aeda",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "867e43ad-c07b-4003-880f-5ad41e3fa50f",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "4e2669d8-b50b-45be-840b-e600ad38d65c",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b2b307-5b41-4abf-a101-0cf1da98fc93",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "4682f6e3-9342-4752-9cf4-aa153cb2513d",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "2dfbbdf7-1490-4bd4-8b53-8e5cfb2cd59e",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "094b5990-bcf9-4c14-9705-3a5c5baedd60",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "0240f3bb-aac6-4db7-8ca2-9f055c164f4a",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "1ade1120-66f4-49e1-b180-4e076be1d93e",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "f5796f2f-ea9c-4d29-9918-bcb4b47ee028",
+          "card": "14c25383-471d-4696-9f9c-5339fd3a2b8a",
+          "suffix": "086",
+          "rarity": "secret"
+        },
+        {
+          "id": "3babf693-7898-4c46-b45f-d49a91b94c01",
+          "card": "0a5c3f72-054c-4b0a-828d-c327a33b5683",
+          "suffix": "094",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/34/BOSH-BoosterIT.png",
+      "cards": [
+        {
+          "id": "971851d0-6601-4176-9b6f-fadebd3dffac",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "bc641917-b9b6-4ea1-9adb-045133a896e6",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "08295e6a-829e-4093-973e-649bbf54fe6f",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "caaa94b8-d61f-410b-8720-e2465f8caa01",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b2b307-5b41-4abf-a101-0cf1da98fc93",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "5cc39e68-3854-4a9a-9a47-5839427011cd",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "c4b6cd8a-7bb1-455a-9845-7d5850d0c14b",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "094b5990-bcf9-4c14-9705-3a5c5baedd60",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "de60693a-0796-470e-9ef1-2ba29f59be41",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "ef23d417-accd-4725-8673-7da1abe5afb4",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "ddca92f1-29fc-4d4b-9fe9-2eddb8727aad",
+          "card": "14c25383-471d-4696-9f9c-5339fd3a2b8a",
+          "suffix": "086",
+          "rarity": "secret"
+        },
+        {
+          "id": "e36a371c-f132-4dbd-b277-418d1b4d9f3d",
+          "card": "0a5c3f72-054c-4b0a-828d-c327a33b5683",
+          "suffix": "094",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/ed/BOSH-BoosterDE.png",
+      "cards": [
+        {
+          "id": "8995751b-f073-488a-8132-d4ff9f8a6a8d",
+          "card": "f475ad49-00d8-4db8-8f94-efc4cca57e26",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "643a2649-22a8-459f-871f-76691a225669",
+          "card": "6d6c5b22-b70f-4ce6-91f3-7ccf644e0815",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "dd076d07-e80f-4ca3-83e6-cf696adc3bd9",
+          "card": "97a494e3-7ef8-4a1f-9027-ad33b9049e82",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "5f47a939-0c39-4a09-b588-6f5b4b942d52",
+          "card": "e30d8f86-f6b5-4b52-ae97-22ac98cebe5f",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "50b2b307-5b41-4abf-a101-0cf1da98fc93",
+          "card": "f6afeb87-3b37-48c9-9c2c-605348d39af4",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "ec65c905-ecb6-43ae-8dee-58971320ef12",
+          "card": "5ad4f393-ab93-416a-bd79-8b0bae5782a4",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "4a9aa69f-026b-41ed-b113-947d73f94304",
+          "card": "00665b0f-3582-4e2f-aef3-c73a14488172",
+          "suffix": "066",
+          "rarity": "rare"
+        },
+        {
+          "id": "094b5990-bcf9-4c14-9705-3a5c5baedd60",
+          "card": "5dd7e0ac-9495-47e7-b158-1328d6180a42",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "a396d200-2aa5-42ce-971b-b44c1064e78f",
+          "card": "e3e0622e-2e9c-42c2-bfe9-0ec4afc83887",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "5a6893c6-740a-499f-98b3-40d68a209148",
+          "card": "afefb1dc-9923-4d19-821f-e96d59504d8e",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "02882612-7d6a-427d-ae52-58b53c9872ab",
+          "card": "14c25383-471d-4696-9f9c-5339fd3a2b8a",
+          "suffix": "086",
+          "rarity": "secret"
+        },
+        {
+          "id": "a223bcea-d5d2-4ec8-9d03-56f293ac8a6b",
+          "card": "0a5c3f72-054c-4b0a-828d-c327a33b5683",
+          "suffix": "094",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Breakers of Shadow",
+      "id": 397914
+    }
+  }
+}

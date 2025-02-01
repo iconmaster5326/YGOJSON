@@ -1,0 +1,931 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "01928592-ab7a-4552-9c3c-6ce2bfe5a9fa",
+  "name": {
+    "en": "Code of the Duelist",
+    "fr": "Code des Duellistes",
+    "de": "Code of the Duelist",
+    "it": "Codice del Duellante",
+    "pt": "C\u00f3digo do Duelista",
+    "es": "C\u00f3digo del Duelista",
+    "ja": "\u30b3\u30fc\u30c9\u30fb\u30aa\u30d6\u30fb\u30b6\u30fb\u30c7\u30e5\u30a8\u30ea\u30b9\u30c8",
+    "ko": "\ucf54\ub4dc \uc624\ube0c \ub354 \ub4c0\uc5bc\ub9ac\uc2a4\ud2b8"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "COTD-EN",
+      "image": "https://ms.yugipedia.com//7/73/COTD-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "5ab998ef-b1dc-4251-aa89-e99a1153e9c1": "https://ms.yugipedia.com//d/dd/JackWyvern-COTD-EN-C-1E.png",
+          "5cd84192-3c5d-44d2-a83f-f422fccd3f87": "https://ms.yugipedia.com//0/0d/Zombina-COTD-EN-C-1E.png",
+          "84006c7a-736d-4ba5-be2a-d77e18d2436b": "https://ms.yugipedia.com//4/48/SupremeKingDragonDarkRebellion-COTD-EN-R-1E.png",
+          "d1b24424-3da4-404d-80ba-396999b8f931": "https://ms.yugipedia.com//e/e9/DDDWaveHighKingCaesar-COTD-EN-SR-1E.png",
+          "0e135cef-cd41-4793-bc70-d6bccc0ea7cd": "https://ms.yugipedia.com//a/ad/IbtheWorldChalicePriestess-COTD-EN-SR-1E.png",
+          "6fc66498-fa90-4c59-8091-df5f5d2f87df": "https://ms.yugipedia.com//2/29/TwilightTwinDragons-COTD-EN-C-1E.png",
+          "159ec13e-c40d-4936-b3eb-e74e973da812": "https://ms.yugipedia.com//5/51/PulseMines-COTD-EN-C-1E.png",
+          "d1809648-9d99-406a-b698-3d8141bc307d": "https://ms.yugipedia.com//9/90/SupremeRage-COTD-EN-C-1E.png",
+          "3c229d23-35b8-4ad9-8265-722a6eaeaa17": "https://ms.yugipedia.com//1/1d/Recall-COTD-EN-R-1E.png",
+          "9757fca2-e53c-4181-a426-b8e9092477ec": "https://ms.yugipedia.com//c/c2/FASonicMeister-COTD-EN-C-1E.png",
+          "b0069af8-75ad-45ea-a12d-d9602da0079c": "https://ms.yugipedia.com//6/6c/WickedAcolyteChilamSabak-COTD-EN-C-1E.png",
+          "fcaa1884-05b2-4a8c-9452-0e0c807737fb": "https://ms.yugipedia.com//b/b1/AncientGearGolemUltimatePound-COTD-EN-C-1E.png"
+        },
+        "unlimited": {
+          "5ab998ef-b1dc-4251-aa89-e99a1153e9c1": "https://ms.yugipedia.com//5/52/JackWyvern-COTD-EN-C-UE.png",
+          "5cd84192-3c5d-44d2-a83f-f422fccd3f87": "https://ms.yugipedia.com//6/60/Zombina-COTD-EN-C-UE.png",
+          "84006c7a-736d-4ba5-be2a-d77e18d2436b": "https://ms.yugipedia.com//c/ca/SupremeKingDragonDarkRebellion-COTD-EN-R-UE.png",
+          "d1b24424-3da4-404d-80ba-396999b8f931": "https://ms.yugipedia.com//8/8e/DDDWaveHighKingCaesar-COTD-EN-SR-UE.png",
+          "0e135cef-cd41-4793-bc70-d6bccc0ea7cd": "https://ms.yugipedia.com//4/47/IbtheWorldChalicePriestess-COTD-EN-SR-UE.png",
+          "6fc66498-fa90-4c59-8091-df5f5d2f87df": "https://ms.yugipedia.com//a/a8/TwilightTwinDragons-COTD-EN-C-UE.png",
+          "159ec13e-c40d-4936-b3eb-e74e973da812": "https://ms.yugipedia.com//d/dc/PulseMines-COTD-EN-C-UE.png",
+          "d1809648-9d99-406a-b698-3d8141bc307d": "https://ms.yugipedia.com//0/00/SupremeRage-COTD-EN-C-UE.png",
+          "3c229d23-35b8-4ad9-8265-722a6eaeaa17": "https://ms.yugipedia.com//0/09/Recall-COTD-EN-R-UE.png",
+          "9757fca2-e53c-4181-a426-b8e9092477ec": "https://ms.yugipedia.com//b/b0/FASonicMeister-COTD-EN-C-UE.png",
+          "b0069af8-75ad-45ea-a12d-d9602da0079c": "https://ms.yugipedia.com//d/dc/WickedAcolyteChilamSabak-COTD-EN-C-UE.png",
+          "fcaa1884-05b2-4a8c-9452-0e0c807737fb": "https://ms.yugipedia.com//7/7a/AncientGearGolemUltimatePound-COTD-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11116006
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "COTD-SP",
+      "image": "https://ms.yugipedia.com//3/3a/COTD-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "5ab998ef-b1dc-4251-aa89-e99a1153e9c1": "https://ms.yugipedia.com//4/47/JackWyvern-COTD-SP-C-1E.png",
+          "5cd84192-3c5d-44d2-a83f-f422fccd3f87": "https://ms.yugipedia.com//8/8c/Zombina-COTD-SP-C-1E.png",
+          "7c9b6dbb-ce7c-4eb0-b1f0-4d7b030f8de4": "https://ms.yugipedia.com//a/a1/SupremeKingDragonDarkRebellion-COTD-SP-R-1E.png",
+          "5e40f22a-eaed-4c73-afd5-689b4881e5e4": "https://ms.yugipedia.com//4/49/IbtheWorldChalicePriestess-COTD-SP-SR-1E.png",
+          "a89c9bae-6f74-4866-bd48-c355b099af3b": "https://ms.yugipedia.com//3/3f/TwilightTwinDragons-COTD-SP-C-1E.png",
+          "42c01fb3-d03b-46f7-9976-c06d5fb3daf4": "https://ms.yugipedia.com//5/52/PulseMines-COTD-SP-C-1E.png",
+          "f64b7b6e-6afc-4cda-aba4-6673f28d63d5": "https://ms.yugipedia.com//8/8f/SupremeRage-COTD-SP-C-1E.png",
+          "588e3c81-a1ce-4df3-ad1f-03ed0fb22d51": "https://ms.yugipedia.com//f/f7/FASonicMeister-COTD-SP-C-1E.png",
+          "d8dac388-fe3e-45e9-aac4-f31fce154bba": "https://ms.yugipedia.com//f/fd/WickedAcolyteChilamSabak-COTD-SP-C-1E.png",
+          "842363d8-7173-4c77-a446-1a96ec9700e4": "https://ms.yugipedia.com//b/be/AncientGearGolemUltimatePound-COTD-SP-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51115006
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "COTD-IT",
+      "image": "https://ms.yugipedia.com//a/aa/COTD-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41116006
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "COTD-FR",
+      "image": "https://ms.yugipedia.com//0/0a/COTD-BoosterFR.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31116006
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "COTD-DE",
+      "image": "https://ms.yugipedia.com//7/7f/COTD-BoosterDE.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21116006
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "COTD-JP",
+      "date": "2017-04-15",
+      "image": "https://ms.yugipedia.com//7/78/COTD-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "5ab998ef-b1dc-4251-aa89-e99a1153e9c1": "https://ms.yugipedia.com//0/03/JackWyvern-COTD-JP-C.png",
+          "5cd84192-3c5d-44d2-a83f-f422fccd3f87": "https://ms.yugipedia.com//7/75/Zombina-COTD-JP-C.png",
+          "5e15558c-0721-4e29-a09b-baac39873c00": "https://ms.yugipedia.com//3/3a/SupremeKingDragonDarkRebellion-COTD-JP-R.png",
+          "0de51439-2f3d-4443-840e-fd2eb90a62f0": "https://ms.yugipedia.com//a/ad/DDDWaveHighKingCaesar-COTD-JP-SR.png",
+          "318e97cc-ceda-4011-9a9b-cd5224cc17c1": "https://ms.yugipedia.com//1/10/DDDWaveHighKingCaesar-COTD-JP-ScR.png",
+          "fa43de25-657d-4ad1-bbd6-79e2a881b685": "https://ms.yugipedia.com//4/47/IbtheWorldChalicePriestess-COTD-JP-R.png",
+          "d645b0b1-11d8-472b-a623-581702b4453b": "https://ms.yugipedia.com//6/66/TwilightTwinDragons-COTD-JP-C.png",
+          "d0def091-5116-468d-a3a8-f20c58b9013f": "https://ms.yugipedia.com//b/b6/PulseMines-COTD-JP-C.png",
+          "6fa3a04a-0c81-4991-871d-a3f66121b6c1": "https://ms.yugipedia.com//d/d8/SupremeRage-COTD-JP-C.png",
+          "2a65011f-083d-4c5c-90b5-7e4d5e8c5401": "https://ms.yugipedia.com//3/31/Recall-COTD-JP-R.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1120000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "COTD-KR",
+      "date": "2017-07-13",
+      "image": "https://ms.yugipedia.com//5/57/COTD-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "5ab998ef-b1dc-4251-aa89-e99a1153e9c1": "https://ms.yugipedia.com//1/15/JackWyvern-COTD-KR-C-UE.png",
+          "5cd84192-3c5d-44d2-a83f-f422fccd3f87": "https://ms.yugipedia.com//7/73/Zombina-COTD-KR-C-UE.png",
+          "0bc242d7-851c-4de6-a752-2c15ea3c0cd5": "https://ms.yugipedia.com//2/21/SupremeKingDragonDarkRebellion-COTD-KR-R-UE.png",
+          "f0ba83ca-930f-46c7-bf49-e1cc30d854f8": "https://ms.yugipedia.com//4/44/DDDWaveHighKingCaesar-COTD-KR-SR-UE.png",
+          "d001c247-cfec-42c8-8b07-d50708619de8": "https://ms.yugipedia.com//5/5a/DDDWaveHighKingCaesar-COTD-KR-ScR-UE.png",
+          "bd0ced3e-00d6-4623-bdaa-1c3617a2407a": "https://ms.yugipedia.com//f/f2/IbtheWorldChalicePriestess-COTD-KR-R-UE.png",
+          "37d397f6-44f3-4119-ba49-1dddca5f5a6c": "https://ms.yugipedia.com//2/27/TwilightTwinDragons-COTD-KR-C-UE.png",
+          "622ccecd-cd97-442f-b7f6-a432b911a692": "https://ms.yugipedia.com//c/c7/PulseMines-COTD-KR-C-UE.png",
+          "a03fb711-c818-4208-826d-b82c22703d3e": "https://ms.yugipedia.com//0/01/SupremeRage-COTD-KR-C-UE.png",
+          "94dc436d-6409-4641-ac39-d5d330beda13": "https://ms.yugipedia.com//8/85/Recall-COTD-KR-R-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71115002
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "COTD-PT",
+      "date": "2017-08-22",
+      "image": "https://ms.yugipedia.com//2/21/COTD-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "5ab998ef-b1dc-4251-aa89-e99a1153e9c1": "https://ms.yugipedia.com//1/1b/JackWyvern-COTD-PT-C-1E.png",
+          "004e5874-3a87-44ad-a331-21738013bd96": "https://ms.yugipedia.com//6/68/Recall-COTD-PT-R-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11116006
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/73/COTD-BoosterEN.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "84006c7a-736d-4ba5-be2a-d77e18d2436b",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "d1b24424-3da4-404d-80ba-396999b8f931",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "0e135cef-cd41-4793-bc70-d6bccc0ea7cd",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "6fc66498-fa90-4c59-8091-df5f5d2f87df",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "159ec13e-c40d-4936-b3eb-e74e973da812",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "d1809648-9d99-406a-b698-3d8141bc307d",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "3c229d23-35b8-4ad9-8265-722a6eaeaa17",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "9757fca2-e53c-4181-a426-b8e9092477ec",
+          "card": "4fd51135-6654-4144-9f2c-683194fc026f",
+          "suffix": "086",
+          "rarity": "common"
+        },
+        {
+          "id": "b0069af8-75ad-45ea-a12d-d9602da0079c",
+          "card": "08174fdd-9523-4de3-a51d-5fde03cbe52c",
+          "suffix": "093",
+          "rarity": "common"
+        },
+        {
+          "id": "fcaa1884-05b2-4a8c-9452-0e0c807737fb",
+          "card": "12f92d5c-a473-4e59-931a-18e583f69a18",
+          "suffix": "099",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3a/COTD-BoosterSP.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "7c9b6dbb-ce7c-4eb0-b1f0-4d7b030f8de4",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "d6179c09-a69a-4575-8256-a33c7ade69b2",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "5e40f22a-eaed-4c73-afd5-689b4881e5e4",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "a89c9bae-6f74-4866-bd48-c355b099af3b",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "42c01fb3-d03b-46f7-9976-c06d5fb3daf4",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "f64b7b6e-6afc-4cda-aba4-6673f28d63d5",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "b1138168-0671-49a0-870b-e3c78fb6d00f",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "588e3c81-a1ce-4df3-ad1f-03ed0fb22d51",
+          "card": "4fd51135-6654-4144-9f2c-683194fc026f",
+          "suffix": "086",
+          "rarity": "common"
+        },
+        {
+          "id": "d8dac388-fe3e-45e9-aac4-f31fce154bba",
+          "card": "08174fdd-9523-4de3-a51d-5fde03cbe52c",
+          "suffix": "093",
+          "rarity": "common"
+        },
+        {
+          "id": "842363d8-7173-4c77-a446-1a96ec9700e4",
+          "card": "12f92d5c-a473-4e59-931a-18e583f69a18",
+          "suffix": "099",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/aa/COTD-BoosterIT.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "4830eb16-ceef-4c4c-af1d-7647569858a0",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "485d6026-7337-4b5b-a08c-055f2b8a739a",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "d066f0d8-78dd-4f7a-a1f9-850c81ac14a0",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "474f55fe-34c4-48ef-98fa-ec94d90e7a4a",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "5d4eeaff-dab4-4dd4-a659-4ac19ca9c6ed",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "c7f72403-cb65-4760-b221-27188e4ca07e",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "f0da1d57-6260-487a-b4f9-224e8829d382",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "51ae2450-01ef-4261-ac75-aacdfe4d2172",
+          "card": "4fd51135-6654-4144-9f2c-683194fc026f",
+          "suffix": "086",
+          "rarity": "common"
+        },
+        {
+          "id": "4e0a12e3-74f8-4d65-8472-3015d547e5ed",
+          "card": "08174fdd-9523-4de3-a51d-5fde03cbe52c",
+          "suffix": "093",
+          "rarity": "common"
+        },
+        {
+          "id": "ab55ecd3-09c8-4a29-96b9-74b00f7a4193",
+          "card": "12f92d5c-a473-4e59-931a-18e583f69a18",
+          "suffix": "099",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/0a/COTD-BoosterFR.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "7e33f998-7d07-47cc-9c2f-c107e4f2361a",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "c586a03f-c7d8-48fa-9361-c5b5195b5d36",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "005e9a17-a0d0-44e8-8370-0cbd9e3c7509",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "5723c855-6cc5-4b61-a85d-5f252f5cd420",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "6d77c755-2883-42fc-92f6-24ce01adce5b",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "8906562a-6c3b-4762-97db-df936b2a9129",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "8fd9f5f8-18cb-4635-b730-1b1b2ad8b7ce",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "598f708e-2f11-4369-b928-dfccc946015d",
+          "card": "4fd51135-6654-4144-9f2c-683194fc026f",
+          "suffix": "086",
+          "rarity": "common"
+        },
+        {
+          "id": "85a82d6e-dd2f-48a9-bcf3-9976383d526e",
+          "card": "08174fdd-9523-4de3-a51d-5fde03cbe52c",
+          "suffix": "093",
+          "rarity": "common"
+        },
+        {
+          "id": "d557d751-6285-4376-a9bb-4e24168b0aaa",
+          "card": "12f92d5c-a473-4e59-931a-18e583f69a18",
+          "suffix": "099",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7f/COTD-BoosterDE.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "8b5515c2-63f8-40de-9ecc-333ece8c7e50",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "3c668e8a-888b-4f8d-bf9b-3171d65362af",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "634ccf05-c644-47ca-ace9-e88860aaaac8",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "ea14df7b-a49a-4a0f-8835-d25e81b0df5c",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "5067369c-90f4-4a2a-a7d2-bf6e5d958d39",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "9e198550-fde2-41b7-868b-8b34697d45f6",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "e9d072f9-a475-4990-952d-f4a7c731adb1",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "26429cae-1d07-4943-b011-5d1b015df3bb",
+          "card": "4fd51135-6654-4144-9f2c-683194fc026f",
+          "suffix": "086",
+          "rarity": "common"
+        },
+        {
+          "id": "576ccdfd-4a60-4947-8923-a2faeac2798f",
+          "card": "08174fdd-9523-4de3-a51d-5fde03cbe52c",
+          "suffix": "093",
+          "rarity": "common"
+        },
+        {
+          "id": "a0ea2e0d-de2f-4126-94fa-b9bd142390f8",
+          "card": "12f92d5c-a473-4e59-931a-18e583f69a18",
+          "suffix": "099",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/78/COTD-BoosterJP.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "5e15558c-0721-4e29-a09b-baac39873c00",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "0de51439-2f3d-4443-840e-fd2eb90a62f0",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "318e97cc-ceda-4011-9a9b-cd5224cc17c1",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "secret"
+        },
+        {
+          "id": "fa43de25-657d-4ad1-bbd6-79e2a881b685",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "d645b0b1-11d8-472b-a623-581702b4453b",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "d0def091-5116-468d-a3a8-f20c58b9013f",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "6fa3a04a-0c81-4991-871d-a3f66121b6c1",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "2a65011f-083d-4c5c-90b5-7e4d5e8c5401",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/57/COTD-BoosterKR.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "0bc242d7-851c-4de6-a752-2c15ea3c0cd5",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "f0ba83ca-930f-46c7-bf49-e1cc30d854f8",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "d001c247-cfec-42c8-8b07-d50708619de8",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "secret"
+        },
+        {
+          "id": "bd0ced3e-00d6-4623-bdaa-1c3617a2407a",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "37d397f6-44f3-4119-ba49-1dddca5f5a6c",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "622ccecd-cd97-442f-b7f6-a432b911a692",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "a03fb711-c818-4208-826d-b82c22703d3e",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "94dc436d-6409-4641-ac39-d5d330beda13",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/21/COTD-BoosterPT.png",
+      "cards": [
+        {
+          "id": "5ab998ef-b1dc-4251-aa89-e99a1153e9c1",
+          "card": "3524ef59-b726-4925-acd0-e853400efea6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5cd84192-3c5d-44d2-a83f-f422fccd3f87",
+          "card": "b6b39a09-dc97-4d0f-ac74-ae7075c00ecc",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "89a810b2-f2f8-4560-aaf8-338d485e8bc9",
+          "card": "0a0c959f-3e0e-4219-85ed-79fb0a291140",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "2b8b0d05-d6fd-48ae-885d-277df514fbd7",
+          "card": "e3acc5b5-4cd7-4ab2-bc5c-9aa5ad4fc3a2",
+          "suffix": "042",
+          "rarity": "super"
+        },
+        {
+          "id": "1e78d841-4bfd-4e85-8bdd-f5d79b8af7ab",
+          "card": "33f6279b-c32d-4287-b791-f8718895f514",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "56d91102-ab4e-4ff0-85a1-4d5e25ea1bca",
+          "card": "0410e4e9-c805-4260-9a59-a8250e34782c",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "96d252e9-f748-4bbc-81f8-8550d9705826",
+          "card": "fd6a1948-f733-4d22-b5c7-b07b3c3638c6",
+          "suffix": "069",
+          "rarity": "common"
+        },
+        {
+          "id": "2f87a74f-7cb5-416c-82b2-9eba374924e9",
+          "card": "45c7b873-aa70-4921-9770-d1542e789522",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "004e5874-3a87-44ad-a331-21738013bd96",
+          "card": "7a863c1a-e6e6-4150-b067-a5e251656f0d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "601f7838-2d0b-4e07-b2bd-5cc02d510347",
+          "card": "4fd51135-6654-4144-9f2c-683194fc026f",
+          "suffix": "086",
+          "rarity": "common"
+        },
+        {
+          "id": "9affdbe9-911a-4ede-87a9-8a67597a41a9",
+          "card": "08174fdd-9523-4de3-a51d-5fde03cbe52c",
+          "suffix": "093",
+          "rarity": "common"
+        },
+        {
+          "id": "7e0c1115-b9cf-4f8d-a9f7-3305a4916631",
+          "card": "12f92d5c-a473-4e59-931a-18e583f69a18",
+          "suffix": "099",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Code of the Duelist",
+      "id": 432982
+    }
+  }
+}

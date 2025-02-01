@@ -1,0 +1,687 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e920585c-ca5a-432e-bf90-c18b81709bc2",
+  "name": {
+    "en": "Battles of Legend: Terminal Revenge",
+    "fr": "Batailles de L\u00e9gende : La Vengeance du Terminal",
+    "de": "Battles of Legend: Terminal Revenge",
+    "it": "Battaglie della Leggenda: Vendetta Terminale",
+    "pt": "Batalha das Lendas: Vingan\u00e7a do Terminal",
+    "es": "Batallas de Leyenda: Venganza Terminal"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "BLTR-PT",
+      "date": "2024-06-20",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "BLTR-SP",
+      "image": "https://ms.yugipedia.com//3/38/BLTR-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "BLTR-EN",
+      "image": "https://ms.yugipedia.com//4/4a/BLTR-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "2ef7e166-939a-4991-8c04-c273db9660c7": "https://ms.yugipedia.com//7/71/WingedKuribohLV6-BLTR-EN-ScR-1E.png",
+          "35a52397-6c5c-4bbd-8866-4acebc144b48": "https://ms.yugipedia.com//4/42/WingedKuribohLV6-BLTR-EN-QCScR-1E.png",
+          "5716964a-a7b4-4c97-8506-9c4a360096a3": "https://ms.yugipedia.com//9/9a/BrionactheMagicalIceDragon-BLTR-EN-ScR-1E.png",
+          "6202b561-c9a0-48c7-a4bb-f7bed6f6d79b": "https://ms.yugipedia.com//0/05/ArmsofGenexReturnZero-BLTR-EN-ScR-1E.png",
+          "c7f6b25a-4722-4fcd-90de-efc6e39dbed3": "https://ms.yugipedia.com//c/c3/RGenexTuring-BLTR-EN-UR-1E.png",
+          "f1043b49-7d45-4a64-999f-c075e93ccd8d": "https://ms.yugipedia.com//3/33/SpiritualBeastTamerWinda-BLTR-EN-UR-1E.png",
+          "5222575b-55d6-44f4-9f64-5ac761535dd6": "https://ms.yugipedia.com//c/c1/BlazingCartesiatheVirtuous-BLTR-EN-UR-1E.png",
+          "cd8ecc39-6c46-453d-b1fa-05d07eb1d254": "https://ms.yugipedia.com//e/e0/Barox-BLTR-EN-UR-1E.png",
+          "cfe76d56-a143-4e85-95f1-ce761d12e641": "https://ms.yugipedia.com//3/30/GenexAllyAxel-BLTR-EN-UR-1E.png",
+          "43342b34-9252-4c63-a957-e85008bf13b7": "https://ms.yugipedia.com//f/f2/GiganticSpright-BLTR-EN-ScR-1E.png",
+          "a289ff3d-2fbf-445e-bd1a-1da86e2b4ba6": "https://ms.yugipedia.com//7/7e/GiganticSpright-BLTR-EN-QCScR-1E.png",
+          "4d7a91e9-b428-4ced-b0b1-609e3bad7ec0": "https://ms.yugipedia.com//d/d7/RitualBeastAmbush-BLTR-EN-UR-1E.png",
+          "fd7716c0-dd98-4583-9c8a-3522b7ef7746": "https://ms.yugipedia.com//7/70/MirrorjadetheIcebladeDragon-BLTR-EN-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001360000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "BLTR-FR",
+      "image": "https://ms.yugipedia.com//5/53/BLTR-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "BLTR-IT",
+      "image": "https://ms.yugipedia.com//9/9e/BLTR-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "BLTR-DE",
+      "image": "https://ms.yugipedia.com//b/b8/BLTR-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "7eddd7fb-1e88-4b0e-b3c4-767ecd4c75ca",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "b422ff07-5dc6-4390-8ed2-17fb963a64d7",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "3060540c-1448-442f-a75f-ecb470a6e5f3",
+          "card": "e6ea1792-c881-4385-a2aa-7e185f87eaaf",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "8de11167-3e49-4d65-8392-412aa7ea0ce5",
+          "card": "2c384d6a-bb28-4300-b4cf-e61028412b0b",
+          "suffix": "009",
+          "rarity": "secret"
+        },
+        {
+          "id": "954aa4fe-6b87-4519-8f8c-3b8a591d8d0c",
+          "card": "b5e1d7c8-5fbf-4427-b7a0-84cb6172906d",
+          "suffix": "012",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ef9edeed-f00f-4e43-9d82-0bf526402079",
+          "card": "841ed815-e64a-4233-8b3b-2df89697101d",
+          "suffix": "070",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8f2fe668-929e-44a5-a797-8e6b4a27ac4c",
+          "card": "d5140244-f3a1-4107-8dee-7f52cd800b1c",
+          "suffix": "080",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cd8ecc39-6c46-453d-b1fa-05d07eb1d254",
+          "card": "460db1bd-86f6-45e3-9153-c06b60ba6551",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1e785bbb-d822-491e-9668-5345daaed58e",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "304f7bce-eab2-41d9-9ef3-0ca655d24f22",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "secret"
+        },
+        {
+          "id": "49fb6579-8af9-4fa8-a007-4e7e05ccddfa",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "4d7a91e9-b428-4ced-b0b1-609e3bad7ec0",
+          "card": "63055bf2-83ca-4238-a674-cae496a1fbfc",
+          "suffix": "106",
+          "rarity": "ultra"
+        },
+        {
+          "id": "70b3293e-b490-485c-85bb-0d22c8394b53",
+          "card": "5241448e-c4d5-4066-8f87-3764c7854fe0",
+          "suffix": "114",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/38/BLTR-BoosterSP.png",
+      "cards": [
+        {
+          "id": "2c44b2aa-6944-4a8a-ac51-020883527a4b",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "d441173d-57da-4bef-9294-2663dcf022c5",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "d34520e2-c74f-4a41-8885-bb8f96bab837",
+          "card": "e6ea1792-c881-4385-a2aa-7e185f87eaaf",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "90b9d7eb-0c6d-46c3-815a-7364940d4e44",
+          "card": "2c384d6a-bb28-4300-b4cf-e61028412b0b",
+          "suffix": "009",
+          "rarity": "secret"
+        },
+        {
+          "id": "a676c185-995c-417c-94e4-7bcd63c64209",
+          "card": "b5e1d7c8-5fbf-4427-b7a0-84cb6172906d",
+          "suffix": "012",
+          "rarity": "ultra"
+        },
+        {
+          "id": "49bfcb54-a8c6-4d52-a8cc-9f891e179dbe",
+          "card": "841ed815-e64a-4233-8b3b-2df89697101d",
+          "suffix": "070",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ff1c7a39-38f4-44de-a566-7bb0fe6476bb",
+          "card": "d5140244-f3a1-4107-8dee-7f52cd800b1c",
+          "suffix": "080",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cd8ecc39-6c46-453d-b1fa-05d07eb1d254",
+          "card": "460db1bd-86f6-45e3-9153-c06b60ba6551",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "03a03b6b-eb1f-417e-a1a9-41de544c91f0",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "eff4edaf-e41d-40d8-b742-221f5b0b2ea7",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "secret"
+        },
+        {
+          "id": "2022ab8d-949b-4432-a9c1-09a40e53d0b6",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "4d7a91e9-b428-4ced-b0b1-609e3bad7ec0",
+          "card": "63055bf2-83ca-4238-a674-cae496a1fbfc",
+          "suffix": "106",
+          "rarity": "ultra"
+        },
+        {
+          "id": "283043c6-d5f8-4b9e-aaeb-4cd5be591fd0",
+          "card": "5241448e-c4d5-4066-8f87-3764c7854fe0",
+          "suffix": "114",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4a/BLTR-BoosterEN.png",
+      "cards": [
+        {
+          "id": "2ef7e166-939a-4991-8c04-c273db9660c7",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "35a52397-6c5c-4bbd-8866-4acebc144b48",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "5716964a-a7b4-4c97-8506-9c4a360096a3",
+          "card": "e6ea1792-c881-4385-a2aa-7e185f87eaaf",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "6202b561-c9a0-48c7-a4bb-f7bed6f6d79b",
+          "card": "2c384d6a-bb28-4300-b4cf-e61028412b0b",
+          "suffix": "009",
+          "rarity": "secret"
+        },
+        {
+          "id": "c7f6b25a-4722-4fcd-90de-efc6e39dbed3",
+          "card": "b5e1d7c8-5fbf-4427-b7a0-84cb6172906d",
+          "suffix": "012",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f1043b49-7d45-4a64-999f-c075e93ccd8d",
+          "card": "841ed815-e64a-4233-8b3b-2df89697101d",
+          "suffix": "070",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5222575b-55d6-44f4-9f64-5ac761535dd6",
+          "card": "d5140244-f3a1-4107-8dee-7f52cd800b1c",
+          "suffix": "080",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cd8ecc39-6c46-453d-b1fa-05d07eb1d254",
+          "card": "460db1bd-86f6-45e3-9153-c06b60ba6551",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cfe76d56-a143-4e85-95f1-ce761d12e641",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "43342b34-9252-4c63-a957-e85008bf13b7",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "secret"
+        },
+        {
+          "id": "a289ff3d-2fbf-445e-bd1a-1da86e2b4ba6",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "4d7a91e9-b428-4ced-b0b1-609e3bad7ec0",
+          "card": "63055bf2-83ca-4238-a674-cae496a1fbfc",
+          "suffix": "106",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fd7716c0-dd98-4583-9c8a-3522b7ef7746",
+          "card": "5241448e-c4d5-4066-8f87-3764c7854fe0",
+          "suffix": "114",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/53/BLTR-BoosterFR.png",
+      "cards": [
+        {
+          "id": "ee2c27c2-ffd9-4367-b387-996ea58cd36f",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "42d83050-7137-4a59-b9a3-353e6de03713",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "20a12c26-0ffb-4afe-a077-5cd3129eabc7",
+          "card": "e6ea1792-c881-4385-a2aa-7e185f87eaaf",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "4b7b99bc-f8b3-4f2c-8844-34ac1681ab35",
+          "card": "2c384d6a-bb28-4300-b4cf-e61028412b0b",
+          "suffix": "009",
+          "rarity": "secret"
+        },
+        {
+          "id": "286f78e9-a0aa-4ef8-8b7d-2709ef0d2fb3",
+          "card": "b5e1d7c8-5fbf-4427-b7a0-84cb6172906d",
+          "suffix": "012",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e71e04b6-2ca4-46c8-8314-602f464e569f",
+          "card": "841ed815-e64a-4233-8b3b-2df89697101d",
+          "suffix": "070",
+          "rarity": "ultra"
+        },
+        {
+          "id": "42c1ea26-f560-453e-8305-aa1b1257265f",
+          "card": "d5140244-f3a1-4107-8dee-7f52cd800b1c",
+          "suffix": "080",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cd8ecc39-6c46-453d-b1fa-05d07eb1d254",
+          "card": "460db1bd-86f6-45e3-9153-c06b60ba6551",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "985333d4-a008-493d-b882-3cee8a1bb621",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6c0b9edf-490c-4bf5-92e5-a71247b19963",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "secret"
+        },
+        {
+          "id": "fdad0ca0-509a-44d1-8d18-b71f1adceb4e",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "4d7a91e9-b428-4ced-b0b1-609e3bad7ec0",
+          "card": "63055bf2-83ca-4238-a674-cae496a1fbfc",
+          "suffix": "106",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e29abc16-86ca-4aac-87c8-b2b70fd3465e",
+          "card": "5241448e-c4d5-4066-8f87-3764c7854fe0",
+          "suffix": "114",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/9e/BLTR-BoosterIT.png",
+      "cards": [
+        {
+          "id": "dd897178-324c-466c-b0ba-657a842af32d",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "bbcc7a95-e70c-43b3-ac10-3acd44b501cd",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "162c27eb-cfcb-4bdb-bfc0-4dd7bf1dc2b2",
+          "card": "e6ea1792-c881-4385-a2aa-7e185f87eaaf",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "655e932f-8adb-4559-82b3-fd7213079b07",
+          "card": "2c384d6a-bb28-4300-b4cf-e61028412b0b",
+          "suffix": "009",
+          "rarity": "secret"
+        },
+        {
+          "id": "f6bffcb6-741d-4c61-a520-a81539feaf39",
+          "card": "b5e1d7c8-5fbf-4427-b7a0-84cb6172906d",
+          "suffix": "012",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8101139a-c2e0-4b32-b536-385f55e41683",
+          "card": "841ed815-e64a-4233-8b3b-2df89697101d",
+          "suffix": "070",
+          "rarity": "ultra"
+        },
+        {
+          "id": "eb157140-f80c-4292-a2ac-1a8bc6f2a732",
+          "card": "d5140244-f3a1-4107-8dee-7f52cd800b1c",
+          "suffix": "080",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cd8ecc39-6c46-453d-b1fa-05d07eb1d254",
+          "card": "460db1bd-86f6-45e3-9153-c06b60ba6551",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4f17e46b-8558-4ed7-a1e2-0dd54f7295b7",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "beb0d01f-54a1-4e3b-9b86-94c00b3f9af2",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "secret"
+        },
+        {
+          "id": "8f83b368-29bd-40da-b52c-6c4b4732191f",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "4d7a91e9-b428-4ced-b0b1-609e3bad7ec0",
+          "card": "63055bf2-83ca-4238-a674-cae496a1fbfc",
+          "suffix": "106",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f1359b25-f544-4716-8a2f-438ef82d5fb5",
+          "card": "5241448e-c4d5-4066-8f87-3764c7854fe0",
+          "suffix": "114",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b8/BLTR-BoosterDE.png",
+      "cards": [
+        {
+          "id": "b74d13f7-118b-4aab-baa4-e8e19e47cb49",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "8f519374-1310-4f72-b72d-9bd855af1ad4",
+          "card": "f9830af0-65ce-4ec9-a8f6-b046d76a4a66",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "95e0e072-8c37-48ee-baa4-1a17217043c2",
+          "card": "e6ea1792-c881-4385-a2aa-7e185f87eaaf",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "b13d92a7-b012-4798-a1f8-61197e880cc4",
+          "card": "2c384d6a-bb28-4300-b4cf-e61028412b0b",
+          "suffix": "009",
+          "rarity": "secret"
+        },
+        {
+          "id": "9548d109-20a2-4a86-be24-0f6d1e7358b5",
+          "card": "b5e1d7c8-5fbf-4427-b7a0-84cb6172906d",
+          "suffix": "012",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aa1b12b0-6cab-4880-afe5-45e1775a5c4c",
+          "card": "841ed815-e64a-4233-8b3b-2df89697101d",
+          "suffix": "070",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e35fec4d-e038-421b-9a1f-db0301e04d50",
+          "card": "d5140244-f3a1-4107-8dee-7f52cd800b1c",
+          "suffix": "080",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cd8ecc39-6c46-453d-b1fa-05d07eb1d254",
+          "card": "460db1bd-86f6-45e3-9153-c06b60ba6551",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a6c1db92-033a-40d3-8a81-9eef760b2391",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "088",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a2c852dc-8822-453c-8c29-6bb9fc0ed368",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "secret"
+        },
+        {
+          "id": "1d2334bb-827a-4a55-a8f1-677bdf832bee",
+          "card": "86584750-8196-44bc-94b1-52534d88219d",
+          "suffix": "091",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "4d7a91e9-b428-4ced-b0b1-609e3bad7ec0",
+          "card": "63055bf2-83ca-4238-a674-cae496a1fbfc",
+          "suffix": "106",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0cfacd92-95f1-4e68-aa01-2471a1bf9946",
+          "card": "5241448e-c4d5-4066-8f87-3764c7854fe0",
+          "suffix": "114",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Battles of Legend: Terminal Revenge",
+      "id": 1045007
+    }
+  }
+}

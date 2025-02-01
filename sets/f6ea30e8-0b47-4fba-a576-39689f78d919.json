@@ -1,0 +1,602 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "f6ea30e8-0b47-4fba-a576-39689f78d919",
+  "name": {
+    "en": "Spirit Warriors",
+    "fr": "l'Esprit des Guerriers",
+    "de": "Spirit Warriors",
+    "it": "Guerrieri Spirito",
+    "pt": "Guerreiros do Esp\u00edrito",
+    "es": "Guerreros del Esp\u00edritu"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "SPWA-FR",
+      "image": "https://ms.yugipedia.com//4/4e/SPWA-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "f05c7a8d-6cab-4f3d-938f-90e26e3fb632": "https://ms.yugipedia.com//6/61/MagicalMusketeerCaspar-SPWA-FR-ScR-1E.png",
+          "33f057b1-2dac-46f3-8400-01797c23677c": "https://ms.yugipedia.com//0/0e/MagicalMusketSteadyHands-SPWA-FR-SR-1E.png",
+          "b7d4f395-9e7f-47c2-af2a-e4073ce6b8f9": "https://ms.yugipedia.com//8/8b/MagicalMusketDancingNeedle-SPWA-FR-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31116009
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SPWA-SP",
+      "image": "https://ms.yugipedia.com//f/f2/SPWA-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51115009
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SPWA-EN",
+      "image": "https://ms.yugipedia.com//2/28/SPWA-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "c5f8f2c7-a5e7-4090-a05b-1a39b4618210": "https://ms.yugipedia.com//f/f2/SecretSixSamuraiDoji-SPWA-EN-ScR-1E.png",
+          "864b8d33-f41b-4208-8841-02958da008b1": "https://ms.yugipedia.com//b/b8/ShadowoftheSixSamuraiShien-SPWA-EN-SR-1E.png",
+          "7386f259-d976-4c8d-b67f-1f4a78196a47": "https://ms.yugipedia.com//7/7b/MagicalMusketeerCaspar-SPWA-EN-ScR-1E.png",
+          "c0fda93e-d3c8-448a-a42e-0549ba84c37c": "https://ms.yugipedia.com//2/22/MagicalMusketSteadyHands-SPWA-EN-SR-1E.png",
+          "3c78dff7-3b2a-4bea-9ba6-77fe19173798": "https://ms.yugipedia.com//3/3f/MagicalMusketDancingNeedle-SPWA-EN-ScR-1E.png",
+          "59585600-d357-491b-a8e6-5406c7e531e3": "https://ms.yugipedia.com//c/c3/TheWeatherPainterAurora-SPWA-EN-ScR-1E.png",
+          "2e145d2c-516d-442f-a799-6e2f912d5e3d": "https://ms.yugipedia.com//2/2c/TheWeatherSnowyCanvas-SPWA-EN-SR-1E.png",
+          "c11ee2d7-6fde-4b30-a009-e654d7a69fad": "https://ms.yugipedia.com//b/b8/TheWeatherRainyCanvas-SPWA-EN-SR-1E.png",
+          "e725c605-d6a1-438f-8c07-3ee7e770c96c": "https://ms.yugipedia.com//b/b1/LegendarySixSamuraiShinai-SPWA-EN-SR-1E.png",
+          "73e3b829-ee8f-45c1-9a5c-1c4cb96cfbd2": "https://ms.yugipedia.com//8/86/MusakaniMagatama-SPWA-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11116009
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SPWA-DE",
+      "image": "https://ms.yugipedia.com//3/36/SPWA-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21116009
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SPWA-IT",
+      "image": "https://ms.yugipedia.com//c/c4/SPWA-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41116009
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SPWA-PT",
+      "date": "2017-11-16",
+      "image": "https://ms.yugipedia.com//0/04/SPWA-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11116009
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4e/SPWA-BoosterFR.png",
+      "cards": [
+        {
+          "id": "96992999-9ce8-41e9-9e83-4aac1d6cb7d3",
+          "card": "417e06ea-f38b-4b25-9585-3d17700a861c",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "839c058d-980b-448a-b83a-fa31fc76cfcd",
+          "card": "90e558eb-b4b0-440f-931f-de95b768b4e4",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "f05c7a8d-6cab-4f3d-938f-90e26e3fb632",
+          "card": "5cb4ec3f-0d1b-424c-b39c-6c051da55fff",
+          "suffix": "016",
+          "rarity": "secret"
+        },
+        {
+          "id": "33f057b1-2dac-46f3-8400-01797c23677c",
+          "card": "86b4185b-49a1-4966-96b6-898bdd0ba557",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "b7d4f395-9e7f-47c2-af2a-e4073ce6b8f9",
+          "card": "808a383b-c541-47c6-9945-be83cbba8c40",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "269d93f4-6d0e-49da-a5d7-a921bb68abd4",
+          "card": "971a4e20-f00a-4876-a970-93d28f0454b5",
+          "suffix": "034",
+          "rarity": "secret"
+        },
+        {
+          "id": "2e145d2c-516d-442f-a799-6e2f912d5e3d",
+          "card": "af649a50-dcbf-4471-b182-dc6d4da51523",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "f2f9f470-1859-471e-a614-5e3143d0d647",
+          "card": "ba3ff7d1-ccd3-417c-b143-aeee16aaf0dc",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "ce93c102-b3d9-40b5-82f4-37c12ccf8b65",
+          "card": "4b670bf6-4152-4438-97b0-1281c4292a2f",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "c0149fef-edbf-4f60-94dc-ecb8c948678b",
+          "card": "9ff1887d-3af6-43b0-a7f2-d113aa2f1b03",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/f2/SPWA-BoosterSP.png",
+      "cards": [
+        {
+          "id": "594ccb8c-fb30-4135-9611-5112002bc4e6",
+          "card": "417e06ea-f38b-4b25-9585-3d17700a861c",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "8d6e457b-d354-4639-a447-3553edf44ed1",
+          "card": "90e558eb-b4b0-440f-931f-de95b768b4e4",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "04cc7fcb-078d-498f-b4c7-87ff8638ebb5",
+          "card": "5cb4ec3f-0d1b-424c-b39c-6c051da55fff",
+          "suffix": "016",
+          "rarity": "secret"
+        },
+        {
+          "id": "3769c393-8158-4a85-9a77-30c80336c3d1",
+          "card": "86b4185b-49a1-4966-96b6-898bdd0ba557",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "eaa47761-43e3-4787-92d3-3ca5169cd3da",
+          "card": "808a383b-c541-47c6-9945-be83cbba8c40",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "7f46b7c5-8412-4fc4-ba8d-df9f4deca2ef",
+          "card": "971a4e20-f00a-4876-a970-93d28f0454b5",
+          "suffix": "034",
+          "rarity": "secret"
+        },
+        {
+          "id": "2e145d2c-516d-442f-a799-6e2f912d5e3d",
+          "card": "af649a50-dcbf-4471-b182-dc6d4da51523",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "dea49bfc-88a0-4c9e-9791-7e1394656b3f",
+          "card": "ba3ff7d1-ccd3-417c-b143-aeee16aaf0dc",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "56899d5c-60e3-4288-8080-e8cc90884d47",
+          "card": "4b670bf6-4152-4438-97b0-1281c4292a2f",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "52a4f865-c708-47b4-864b-4a75acd89e71",
+          "card": "9ff1887d-3af6-43b0-a7f2-d113aa2f1b03",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/28/SPWA-BoosterEN.png",
+      "cards": [
+        {
+          "id": "c5f8f2c7-a5e7-4090-a05b-1a39b4618210",
+          "card": "417e06ea-f38b-4b25-9585-3d17700a861c",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "864b8d33-f41b-4208-8841-02958da008b1",
+          "card": "90e558eb-b4b0-440f-931f-de95b768b4e4",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "7386f259-d976-4c8d-b67f-1f4a78196a47",
+          "card": "5cb4ec3f-0d1b-424c-b39c-6c051da55fff",
+          "suffix": "016",
+          "rarity": "secret"
+        },
+        {
+          "id": "c0fda93e-d3c8-448a-a42e-0549ba84c37c",
+          "card": "86b4185b-49a1-4966-96b6-898bdd0ba557",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "3c78dff7-3b2a-4bea-9ba6-77fe19173798",
+          "card": "808a383b-c541-47c6-9945-be83cbba8c40",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "59585600-d357-491b-a8e6-5406c7e531e3",
+          "card": "971a4e20-f00a-4876-a970-93d28f0454b5",
+          "suffix": "034",
+          "rarity": "secret"
+        },
+        {
+          "id": "2e145d2c-516d-442f-a799-6e2f912d5e3d",
+          "card": "af649a50-dcbf-4471-b182-dc6d4da51523",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "c11ee2d7-6fde-4b30-a009-e654d7a69fad",
+          "card": "ba3ff7d1-ccd3-417c-b143-aeee16aaf0dc",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "e725c605-d6a1-438f-8c07-3ee7e770c96c",
+          "card": "4b670bf6-4152-4438-97b0-1281c4292a2f",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "73e3b829-ee8f-45c1-9a5c-1c4cb96cfbd2",
+          "card": "9ff1887d-3af6-43b0-a7f2-d113aa2f1b03",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/36/SPWA-BoosterDE.png",
+      "cards": [
+        {
+          "id": "a51ec9f9-a560-452f-ae4f-86fe421cb553",
+          "card": "417e06ea-f38b-4b25-9585-3d17700a861c",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "dd37af54-8bea-44f8-a218-d5e59494c76c",
+          "card": "90e558eb-b4b0-440f-931f-de95b768b4e4",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "8ffdb582-a68b-4ee7-821d-28e4768eefa2",
+          "card": "5cb4ec3f-0d1b-424c-b39c-6c051da55fff",
+          "suffix": "016",
+          "rarity": "secret"
+        },
+        {
+          "id": "02e6295c-7f1c-4917-83e1-c9b930803065",
+          "card": "86b4185b-49a1-4966-96b6-898bdd0ba557",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "8e94a140-e606-4b11-83b0-2c8182c7485c",
+          "card": "808a383b-c541-47c6-9945-be83cbba8c40",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "d42d6e69-d476-4fc8-a155-934bd87d57b8",
+          "card": "971a4e20-f00a-4876-a970-93d28f0454b5",
+          "suffix": "034",
+          "rarity": "secret"
+        },
+        {
+          "id": "2e145d2c-516d-442f-a799-6e2f912d5e3d",
+          "card": "af649a50-dcbf-4471-b182-dc6d4da51523",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "ba57d612-e431-4cee-ba26-04b74b07dbb6",
+          "card": "ba3ff7d1-ccd3-417c-b143-aeee16aaf0dc",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "170f6d18-759c-43e8-b3f9-3b8e9d09eee8",
+          "card": "4b670bf6-4152-4438-97b0-1281c4292a2f",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "fa932191-dcab-497b-bff9-7162e107f00a",
+          "card": "9ff1887d-3af6-43b0-a7f2-d113aa2f1b03",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c4/SPWA-BoosterIT.png",
+      "cards": [
+        {
+          "id": "020eaec1-b1e1-4b1d-aa39-4c6e017fb06a",
+          "card": "417e06ea-f38b-4b25-9585-3d17700a861c",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "b4d4f7d3-26bb-4c2a-a75c-2d9dc5edf542",
+          "card": "90e558eb-b4b0-440f-931f-de95b768b4e4",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "53f5adfe-4f68-4c4d-91b8-4d573492ef12",
+          "card": "5cb4ec3f-0d1b-424c-b39c-6c051da55fff",
+          "suffix": "016",
+          "rarity": "secret"
+        },
+        {
+          "id": "9168c7e5-3921-4ef1-8e8b-48d812e84a96",
+          "card": "86b4185b-49a1-4966-96b6-898bdd0ba557",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "eedd8f7f-a9fc-45b2-b0f3-a854259f27fa",
+          "card": "808a383b-c541-47c6-9945-be83cbba8c40",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "c9a2a7e6-5487-4d84-9801-ef3ee323e659",
+          "card": "971a4e20-f00a-4876-a970-93d28f0454b5",
+          "suffix": "034",
+          "rarity": "secret"
+        },
+        {
+          "id": "2e145d2c-516d-442f-a799-6e2f912d5e3d",
+          "card": "af649a50-dcbf-4471-b182-dc6d4da51523",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "bc2f0c71-9a4e-421f-98eb-bbfaab2561d1",
+          "card": "ba3ff7d1-ccd3-417c-b143-aeee16aaf0dc",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "83e401a4-ad3c-443d-ab87-68b73aae922a",
+          "card": "4b670bf6-4152-4438-97b0-1281c4292a2f",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "106254a1-6258-427d-9833-1f7605bdd819",
+          "card": "9ff1887d-3af6-43b0-a7f2-d113aa2f1b03",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/04/SPWA-BoosterPT.png",
+      "cards": [
+        {
+          "id": "61029db5-32d6-4e13-9208-09081bcbb2a0",
+          "card": "417e06ea-f38b-4b25-9585-3d17700a861c",
+          "suffix": "004",
+          "rarity": "secret"
+        },
+        {
+          "id": "f4603e50-3484-4f26-8740-5835d10eed05",
+          "card": "90e558eb-b4b0-440f-931f-de95b768b4e4",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "6320a156-7aa9-4363-a2e7-f289c3230ada",
+          "card": "5cb4ec3f-0d1b-424c-b39c-6c051da55fff",
+          "suffix": "016",
+          "rarity": "secret"
+        },
+        {
+          "id": "04c0fdde-320f-4f9a-a0e9-f27d4c655c48",
+          "card": "86b4185b-49a1-4966-96b6-898bdd0ba557",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "b599938f-8c85-4b7c-a4a0-40560f3166c9",
+          "card": "808a383b-c541-47c6-9945-be83cbba8c40",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "3ade7ccb-430a-49a2-b87f-9f7b8bd0dfbe",
+          "card": "971a4e20-f00a-4876-a970-93d28f0454b5",
+          "suffix": "034",
+          "rarity": "secret"
+        },
+        {
+          "id": "2e145d2c-516d-442f-a799-6e2f912d5e3d",
+          "card": "af649a50-dcbf-4471-b182-dc6d4da51523",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "b6716782-18e0-4737-81f6-a63fd542e972",
+          "card": "ba3ff7d1-ccd3-417c-b143-aeee16aaf0dc",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "86427c49-c197-4d07-9c9b-45801a7008cc",
+          "card": "4b670bf6-4152-4438-97b0-1281c4292a2f",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "12b554dd-13e9-4521-a195-f92bfb1e3baf",
+          "card": "9ff1887d-3af6-43b0-a7f2-d113aa2f1b03",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Spirit Warriors",
+      "id": 451978
+    }
+  }
+}

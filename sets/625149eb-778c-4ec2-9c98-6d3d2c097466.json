@@ -1,0 +1,895 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "625149eb-778c-4ec2-9c98-6d3d2c097466",
+  "name": {
+    "en": "Starter Deck: Kaiba",
+    "fr": "Deck de D\u00e9marrage: Kaiba",
+    "de": "Starter Deck: Kaiba",
+    "it": "Mazzo Introduttivo: Kaiba",
+    "pt": "Deck Inicial do Kaiba",
+    "es": "Baraja de Inicio: Kaiba",
+    "ko": "\uff33\uff34\uff21\uff32\uff34\uff25\uff32 \uff24\uff25\uff23\uff2b \u2014\uce74\uc774\ubc14 \ud3b8\u2014"
+  },
+  "locales": {
+    "eu": {
+      "language": "en",
+      "prefix": "SDK-E",
+      "date": "2002-12-01",
+      "cardImages": {
+        "unlimited": {
+          "ff2b0588-8355-4d98-af85-b2f5b267121a": "https://ms.yugipedia.com//9/90/DarkAssailant-SDK-EU-C-UE.png"
+        },
+        "1st": {
+          "08b11ee9-f0d2-4d33-a918-686f9feee9bb": "https://ms.yugipedia.com//1/13/DarkTitanofTerror-SDK-EU-C-1E.png",
+          "ff2b0588-8355-4d98-af85-b2f5b267121a": "https://ms.yugipedia.com//d/d0/DarkAssailant-SDK-EU-C-1E.jpg",
+          "9de3e420-da70-4c92-bcf8-e40b6a92b153": "https://ms.yugipedia.com//e/e2/Invigoration-SDK-EU-C-1E.png",
+          "d29d1edf-b844-42b6-9fcc-5e2fd40a09ef": "https://ms.yugipedia.com//b/b9/JustDesserts-SDK-EU-C-1E.png",
+          "f24e3424-d69a-4bd5-ad88-3c17d5db40e2": "https://ms.yugipedia.com//5/5d/RemoveTrap-SDK-EU-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13301001
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "MIK-I",
+      "date": "2003-09-01",
+      "image": "https://ms.yugipedia.com//0/02/MIK-DeckIT.png",
+      "cardImages": {
+        "unlimited": {
+          "65281916-cc33-43a7-963f-ca3aaa97e55c": "https://ms.yugipedia.com//f/f7/DarkAssailant-MIK-IT-C-UE.png",
+          "cebd7e9a-9093-4524-b360-e77868036fbf": "https://ms.yugipedia.com//f/f0/JustDesserts-MIK-IT-C-UE.png"
+        },
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          43301000
+        ]
+      }
+    },
+    "oc": {
+      "language": "en",
+      "prefix": "SDK-A",
+      "image": "https://ms.yugipedia.com//6/6d/SDK-DeckAU.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "60598886-ed5e-4bfe-b63c-999e4286f6ee": "https://ms.yugipedia.com//6/67/HitotsuMeGiant-SDK-AU-C-1E.png",
+          "a66c6514-70e9-4705-8b8c-d2f99f92a85a": "https://ms.yugipedia.com//6/68/DarkTitanofTerror-SDK-AU-C-1E.png",
+          "10f6b93e-9817-494b-b4f3-9e182b6918c6": "https://ms.yugipedia.com//4/43/DarkAssailant-SDK-AU-C-1E.png",
+          "6d7d39e4-5144-44c3-a97e-43c38ed1f6e9": "https://ms.yugipedia.com//e/e7/Invigoration-SDK-AU-C-1E.png",
+          "6d181ec1-3941-4171-bd9e-09c2990c3490": "https://ms.yugipedia.com//b/b5/JustDesserts-SDK-AU-C-1E.png",
+          "0c64c20b-e491-437b-b4f8-ad77d8ccb128": "https://ms.yugipedia.com//8/83/RemoveTrap-SDK-AU-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13301001
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "BIK-S",
+      "date": "2003-10-01",
+      "image": "https://ms.yugipedia.com//c/c2/BIK-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "51a63b1b-ec5b-4e30-b73e-52e53996217b": "https://ms.yugipedia.com//8/8f/HitotsuMeGiant-BIK-SP-C-1E.png",
+          "f3a17b64-5ea1-44a2-b471-cbd01fe22106": "https://ms.yugipedia.com//d/d2/DarkTitanofTerror-BIK-SP-C-1E.png",
+          "1b119b26-44c8-4f84-9900-8206cefde3b8": "https://ms.yugipedia.com//8/8c/DarkAssailant-BIK-SP-C-1E.png",
+          "19867f98-7968-466c-ad75-1f75b511140c": "https://ms.yugipedia.com//b/bc/Invigoration-BIK-SP-C-1E.png",
+          "d3e8d85e-3840-4464-8752-288b4bfdd343": "https://ms.yugipedia.com//e/e6/JustDesserts-BIK-SP-C-1E.png",
+          "780385c2-2f1b-4f8d-a678-e7bece664971": "https://ms.yugipedia.com//9/9d/RemoveTrap-BIK-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          53301000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DDK-F",
+      "date": "2003-03-26",
+      "image": "https://ms.yugipedia.com//0/07/DDK-DeckFR.png",
+      "cardImages": {
+        "unlimited": {
+          "c4752303-5dbf-446b-bbf4-7df7e8727fb3": "https://ms.yugipedia.com//7/70/DarkAssailant-DDK-FR-C-UE.jpg",
+          "90abfcac-7d09-4cf3-bf7f-cb3b39bf21e2": "https://ms.yugipedia.com//9/91/Invigoration-DDK-FR-C-UE.jpg"
+        },
+        "1st": {
+          "c4752303-5dbf-446b-bbf4-7df7e8727fb3": "https://ms.yugipedia.com//8/80/DarkAssailant-DDK-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          33301000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SDK-G",
+      "date": "2003-04-25",
+      "cardImages": {
+        "unlimited": {
+          "a4a7fdbb-0d95-4773-9352-9e9ae1d3326a": "https://ms.yugipedia.com//8/81/DarkTitanofTerror-SDK-DE-C-UE.png",
+          "2567d24a-35fe-40de-bf38-152a8fb3297d": "https://ms.yugipedia.com//6/6d/DarkAssailant-SDK-DE-C-UE.png",
+          "b69b028c-2849-49fe-9c89-6fdddea9223a": "https://ms.yugipedia.com//8/8c/Invigoration-SDK-DE-C-UE.png",
+          "e020a8aa-ce61-4790-8ffb-cd375b633c5c": "https://ms.yugipedia.com//0/02/JustDesserts-SDK-DE-C-UE.png",
+          "e24b924c-93b4-4d67-98e2-fdb7a6c4e0b2": "https://ms.yugipedia.com//7/7e/RemoveTrap-SDK-DE-C-UE.png"
+        },
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          23301001
+        ]
+      }
+    },
+    "fc": {
+      "language": "fr",
+      "prefix": "DDK-C",
+      "date": "2003-07-26",
+      "image": "https://ms.yugipedia.com//8/86/DDK-DeckFC.png",
+      "cardImages": {
+        "unlimited": {
+          "26da1c8f-dc37-425e-9afb-87dc9cb79943": "https://ms.yugipedia.com//8/85/DarkAssailant-DDK-FC-C-UE.png",
+          "1ce198e7-78ea-4b33-afc4-eb195339b365": "https://ms.yugipedia.com//a/aa/JustDesserts-DDK-FC-C-UE.jpg",
+          "9e9f5abd-d8fe-4bc2-b2a3-2e795b6d5c0c": "https://ms.yugipedia.com//7/7b/RemoveTrap-DDK-FC-C-UE.png"
+        },
+        "1st": {
+          "26da1c8f-dc37-425e-9afb-87dc9cb79943": "https://ms.yugipedia.com//6/6b/DarkAssailant-DDK-FC-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          33301000
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "DIK-P",
+      "date": "2004-06-01",
+      "image": "https://ms.yugipedia.com//e/ee/DIK-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "8fa5aa5f-38ee-43f2-91f2-7af84daa274e": "https://ms.yugipedia.com//2/20/HitotsuMeGiant-DIK-PT-C-1E.png",
+          "506d47a4-a0cb-4a40-830c-0abc97a6afc7": "https://ms.yugipedia.com//a/a8/DarkTitanofTerror-DIK-PT-C-1E.png",
+          "025b8c25-6aca-4e57-94cc-9f3d69c4f846": "https://ms.yugipedia.com//9/9a/DarkAssailant-DIK-PT-C-1E.png",
+          "69ae73ee-152e-410b-b329-15f386a0bc23": "https://ms.yugipedia.com//c/cb/Invigoration-DIK-PT-C-1E.png",
+          "fa492325-4149-4221-9031-78c6005ce2d5": "https://ms.yugipedia.com//e/e8/JustDesserts-DIK-PT-C-1E.png",
+          "15d23975-f7ce-48fe-aed5-76ec0085ef02": "https://ms.yugipedia.com//1/1f/RemoveTrap-DIK-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13301001
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SDK-K",
+      "date": "2003-12-09",
+      "image": "https://ms.yugipedia.com//0/04/SDK-DeckKR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          72201000
+        ]
+      }
+    },
+    "na": {
+      "language": "en",
+      "prefix": "SDK-",
+      "date": "2002-03-29",
+      "image": "https://ms.yugipedia.com//8/84/SDK-DeckNA.png",
+      "cardImages": {
+        "unlimited": {
+          "d3e940b5-f871-451e-bb45-563bf7a55345": "https://ms.yugipedia.com//8/8e/HitotsuMeGiant-SDK-NA-C-UE.png",
+          "b939a139-5bf0-460d-af85-1968dae9e17f": "https://ms.yugipedia.com//a/a7/DarkTitanofTerror-SDK-NA-C-UE.png",
+          "5be039b5-a3da-4189-b866-e28261f1f7c6": "https://ms.yugipedia.com//8/8d/DarkAssailant-SDK-NA-C-UE.png",
+          "602f2a22-72bb-4371-a50f-62ce09aaa911": "https://ms.yugipedia.com//c/c1/Invigoration-SDK-NA-C-UE.png",
+          "1640d87a-0974-4c88-a008-3b0c3172f69d": "https://ms.yugipedia.com//6/67/JustDesserts-SDK-NA-C-UE.png",
+          "d2131119-2d36-42ac-b82d-eaa22ba600a1": "https://ms.yugipedia.com//e/e9/RemoveTrap-SDK-NA-C-UE.png"
+        },
+        "1st": {
+          "d3e940b5-f871-451e-bb45-563bf7a55345": "https://ms.yugipedia.com//3/32/HitotsuMeGiant-SDK-NA-C-1E.png",
+          "b939a139-5bf0-460d-af85-1968dae9e17f": "https://ms.yugipedia.com//4/4d/DarkTitanofTerror-SDK-NA-C-1E.png",
+          "5be039b5-a3da-4189-b866-e28261f1f7c6": "https://ms.yugipedia.com//1/15/DarkAssailant-SDK-NA-C-1E.jpg",
+          "602f2a22-72bb-4371-a50f-62ce09aaa911": "https://ms.yugipedia.com//6/6c/Invigoration-SDK-NA-C-1E.png",
+          "1640d87a-0974-4c88-a008-3b0c3172f69d": "https://ms.yugipedia.com//b/b7/JustDesserts-SDK-NA-C-1E.png",
+          "d2131119-2d36-42ac-b82d-eaa22ba600a1": "https://ms.yugipedia.com//a/a6/RemoveTrap-SDK-NA-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13301001
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "SDK-",
+      "date": "2002-08-08",
+      "image": "https://ms.yugipedia.com//7/7f/SDK-DeckAE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000000002000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "eu"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "08b11ee9-f0d2-4d33-a918-686f9feee9bb",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "ff2b0588-8355-4d98-af85-b2f5b267121a",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "9de3e420-da70-4c92-bcf8-e40b6a92b153",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "d29d1edf-b844-42b6-9fcc-5e2fd40a09ef",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "f24e3424-d69a-4bd5-ad88-3c17d5db40e2",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/02/MIK-DeckIT.png",
+      "cards": [
+        {
+          "id": "45ace557-ffba-4334-a563-bcc54c2ab84b",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "65281916-cc33-43a7-963f-ca3aaa97e55c",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "6155dd2a-f48f-4d64-af62-52002ac83c35",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "cebd7e9a-9093-4524-b360-e77868036fbf",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "fad2f0a0-1248-4955-97ef-d73cc96456a4",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "oc"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6d/SDK-DeckAU.png",
+      "cards": [
+        {
+          "id": "60598886-ed5e-4bfe-b63c-999e4286f6ee",
+          "card": "6bfc3150-6122-461d-9d7c-d05ed9b940d0",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "a66c6514-70e9-4705-8b8c-d2f99f92a85a",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "10f6b93e-9817-494b-b4f3-9e182b6918c6",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "6d7d39e4-5144-44c3-a97e-43c38ed1f6e9",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "6d181ec1-3941-4171-bd9e-09c2990c3490",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "0c64c20b-e491-437b-b4f8-ad77d8ccb128",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c2/BIK-DeckSP.png",
+      "cards": [
+        {
+          "id": "51a63b1b-ec5b-4e30-b73e-52e53996217b",
+          "card": "6bfc3150-6122-461d-9d7c-d05ed9b940d0",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "f3a17b64-5ea1-44a2-b471-cbd01fe22106",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "1b119b26-44c8-4f84-9900-8206cefde3b8",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "19867f98-7968-466c-ad75-1f75b511140c",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "d3e8d85e-3840-4464-8752-288b4bfdd343",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "780385c2-2f1b-4f8d-a678-e7bece664971",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/07/DDK-DeckFR.png",
+      "cards": [
+        {
+          "id": "f7516b46-1084-4240-b67f-0c5f52c381c5",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "c4752303-5dbf-446b-bbf4-7df7e8727fb3",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "90abfcac-7d09-4cf3-bf7f-cb3b39bf21e2",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "883e0b88-4a39-4cc4-9576-d26e5019f038",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "6c354ecb-4b25-4b04-9a1f-c22920515003",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "a4a7fdbb-0d95-4773-9352-9e9ae1d3326a",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "2567d24a-35fe-40de-bf38-152a8fb3297d",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "b69b028c-2849-49fe-9c89-6fdddea9223a",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "e020a8aa-ce61-4790-8ffb-cd375b633c5c",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "e24b924c-93b4-4d67-98e2-fdb7a6c4e0b2",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "fc"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/86/DDK-DeckFC.png",
+      "cards": [
+        {
+          "id": "f41ad0e3-32c4-4f94-a8ea-bcbf247b9c93",
+          "card": "6bfc3150-6122-461d-9d7c-d05ed9b940d0",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "101ca824-ecf8-43f5-9c01-c5d9a8c73dd5",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "26da1c8f-dc37-425e-9afb-87dc9cb79943",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "67e05f30-af2f-4849-94a6-838427510b03",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "1ce198e7-78ea-4b33-afc4-eb195339b365",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "9e9f5abd-d8fe-4bc2-b2a3-2e795b6d5c0c",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/ee/DIK-DeckPT.png",
+      "cards": [
+        {
+          "id": "8fa5aa5f-38ee-43f2-91f2-7af84daa274e",
+          "card": "6bfc3150-6122-461d-9d7c-d05ed9b940d0",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "506d47a4-a0cb-4a40-830c-0abc97a6afc7",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "025b8c25-6aca-4e57-94cc-9f3d69c4f846",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "69ae73ee-152e-410b-b329-15f386a0bc23",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "fa492325-4149-4221-9031-78c6005ce2d5",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "15d23975-f7ce-48fe-aed5-76ec0085ef02",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/04/SDK-DeckKR.png",
+      "cards": [
+        {
+          "id": "5559bd33-86ca-4392-9a77-0f1125c6a4cc",
+          "card": "6bfc3150-6122-461d-9d7c-d05ed9b940d0",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "d0da085b-3af7-4c4a-8872-abe9589197b5",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "131f53c0-f31f-4948-a5fc-d3a128e32fde",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "461207cf-db96-4643-8294-6733a4f7d15a",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "fb2fcce6-a81d-4de1-ae1a-3c00508ae4b0",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "721786fd-3846-4678-807a-836fbea40805",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/84/SDK-DeckNA.png",
+      "cards": [
+        {
+          "id": "d3e940b5-f871-451e-bb45-563bf7a55345",
+          "card": "6bfc3150-6122-461d-9d7c-d05ed9b940d0",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b939a139-5bf0-460d-af85-1968dae9e17f",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "5be039b5-a3da-4189-b866-e28261f1f7c6",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "602f2a22-72bb-4371-a50f-62ce09aaa911",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "1640d87a-0974-4c88-a008-3b0c3172f69d",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "d2131119-2d36-42ac-b82d-eaa22ba600a1",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/7f/SDK-DeckAE.png",
+      "cards": [
+        {
+          "id": "cf19be76-a604-49c3-be96-b2733d925224",
+          "card": "6bfc3150-6122-461d-9d7c-d05ed9b940d0",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "cfe788f4-dcc8-473a-bfb5-674832af7501",
+          "card": "0027e707-a1ca-4986-bdc9-8d8ea1e3f00b",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "e0d02472-10d7-4ef3-bcb3-743fbce254fd",
+          "card": "cc20370d-3a56-48a1-b9ce-ce43be692252",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "5f665a73-31b5-4894-a43a-d3f45da5538e",
+          "card": "551b7e31-bc6b-4b48-8a5a-f3343e9fff8b",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "5bceea6b-b45c-4d4c-83c4-0066ea92d981",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "9c2b32ad-0eec-4364-b809-c64ed50fb5bf",
+          "card": "c52cfe82-9749-4d0f-b674-fcd1b282c599",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Kaiba"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starter Deck: Kaiba",
+      "id": 564
+    }
+  }
+}

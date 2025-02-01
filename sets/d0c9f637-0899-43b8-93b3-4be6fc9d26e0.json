@@ -1,0 +1,151 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "d0c9f637-0899-43b8-93b3-4be6fc9d26e0",
+  "name": {
+    "en": "Anniversary Pack",
+    "ja": "\uff21\uff2e\uff2e\uff29\uff36\uff25\uff32\uff33\uff21\uff32\uff39 \uff30\uff21\uff23\uff2b",
+    "ko": "ANNIVERSARY PACK"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "YAP1-JP",
+      "date": "2008-12-20",
+      "image": "https://ms.yugipedia.com//d/da/YAP1-BoosterJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "ab550197-22a2-4c77-b872-187d4e965221": "https://ms.yugipedia.com//9/91/ShibaWarriorTaro-YAP1-JP-UR.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          3304000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "YAP1-KR",
+      "date": "2009-08-18",
+      "image": "https://ms.yugipedia.com//d/dc/YAP1-BoosterKR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "d235360c-3c34-4780-a0a2-0844cc7201ee": "https://ms.yugipedia.com//7/70/ShibaWarriorTaro-YAP1-KR-UR-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          78804005
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "YAP1-EN",
+      "date": "2008-12-08",
+      "image": "https://ms.yugipedia.com//e/ef/YAP1-BoosterEN.png",
+      "cardImages": {
+        "limited": {
+          "dbdede53-5ae9-47ad-8d30-ce4f35008a58": "https://ms.yugipedia.com//c/c6/ShibaWarriorTaro-YAP1-EN-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          161601255
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/da/YAP1-BoosterJP.jpg",
+      "cards": [
+        {
+          "id": "ab550197-22a2-4c77-b872-187d4e965221",
+          "card": "37dbc68f-8718-4869-9f5a-b9c45d23c98d",
+          "suffix": "009",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/dc/YAP1-BoosterKR.jpg",
+      "cards": [
+        {
+          "id": "d235360c-3c34-4780-a0a2-0844cc7201ee",
+          "card": "37dbc68f-8718-4869-9f5a-b9c45d23c98d",
+          "suffix": "008",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/ef/YAP1-BoosterEN.png",
+      "cards": [
+        {
+          "id": "dbdede53-5ae9-47ad-8d30-ce4f35008a58",
+          "card": "37dbc68f-8718-4869-9f5a-b9c45d23c98d",
+          "suffix": "008",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Anniversary Pack",
+      "id": 48971
+    }
+  }
+}

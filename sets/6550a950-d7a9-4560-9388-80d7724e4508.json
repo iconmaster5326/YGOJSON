@@ -1,0 +1,886 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "6550a950-d7a9-4560-9388-80d7724e4508",
+  "name": {
+    "en": "Starter Deck: Yugi Evolution",
+    "fr": "Deck de D\u00e9marrage: Yugi \u00c9volution",
+    "de": "Starter Deck: Yugi Evolution",
+    "it": "Mazzo Introduttivo: Yugi Evoluzione",
+    "pt": "Deck Inicial do Yugi Evolu\u00e7\u00e3o",
+    "es": "Baraja Inicial: Yugi Evoluci\u00f3n",
+    "ko": "\uff33\uff34\uff21\uff32\uff34\uff25\uff32 \uff24\uff25\uff23\uff2b \u2014\uc720\ud76c \ud3b8\u2014 \uff25\uff56\uff4f\uff4c\uff55\uff54\uff49\uff4f\uff4e"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "SYE-PT",
+      "date": "2004-01-01",
+      "image": "https://ms.yugipedia.com//f/ff/SYE-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "122b063a-eb1c-4926-86b5-910ec229c2fa": "https://ms.yugipedia.com//e/ef/DarkMagician-SYE-PT-SR-1E.png",
+          "5c51e71b-4eff-480a-bf23-3f48a2bc7193": "https://ms.yugipedia.com//2/2b/MysticalElf-SYE-PT-C-1E.png",
+          "900db16b-d0bf-4035-9583-5b097876e193": "https://ms.yugipedia.com//0/04/SummonedSkull-SYE-PT-C-1E.png",
+          "df3e3a75-8017-4eb4-b408-7c6d7c29db8b": "https://ms.yugipedia.com//0/02/DarkBlade-SYE-PT-C-1E.png",
+          "fe8660e5-41ce-4f92-baba-4260c9d917f2": "https://ms.yugipedia.com//7/7c/WallofIllusion-SYE-PT-C-1E.png",
+          "af7d54c0-0ebf-4967-92e3-3375a3c13fca": "https://ms.yugipedia.com//5/5c/Kuriboh-SYE-PT-C-1E.png",
+          "4bcd2f78-b2b4-4457-9e66-2802e7fdc7eb": "https://ms.yugipedia.com//d/d8/SonicBird-SYE-PT-C-1E.png",
+          "717322e3-186f-4c03-84b4-114992f11b52": "https://ms.yugipedia.com//4/47/RoyalMagicalLibrary-SYE-PT-C-1E.png",
+          "baf74a92-5142-441a-ac48-aa662531de6d": "https://ms.yugipedia.com//c/c3/BlackLusterSoldier-SYE-PT-UR-1E.png",
+          "0383ead4-5766-4eb3-865e-ac644455302d": "https://ms.yugipedia.com//7/7a/DarkHole-SYE-PT-C-1E.png",
+          "840c8e1d-714a-4a59-89a8-ef27a9dc4e90": "https://ms.yugipedia.com//f/ff/TheEyeofTruth-SYE-PT-C-1E.png",
+          "1c3943c8-f7cf-45f3-a415-0f05b089da86": "https://ms.yugipedia.com//9/91/Shift-SYE-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13303000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SYE-SP",
+      "date": "2004-10-01",
+      "image": "https://ms.yugipedia.com//2/23/SYE-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "7a1fcd6b-0342-43aa-9e32-8306c9554475": "https://ms.yugipedia.com//e/e0/DarkMagician-SYE-SP-SR-1E.png",
+          "f9282821-cce9-4e9b-a805-db5736dde425": "https://ms.yugipedia.com//9/94/MysticalElf-SYE-SP-C-1E.png",
+          "3d845a91-2d6f-451d-abe6-8f6e272b6bec": "https://ms.yugipedia.com//7/73/SummonedSkull-SYE-SP-C-1E.png",
+          "df3e3a75-8017-4eb4-b408-7c6d7c29db8b": "https://ms.yugipedia.com//c/c1/DarkBlade-SYE-SP-C-1E.png",
+          "e8933891-2ed2-4102-8861-240aae3c6a8d": "https://ms.yugipedia.com//9/9d/WallofIllusion-SYE-SP-C-1E.png",
+          "dd3a85ad-ddb1-4d48-9791-3bd6568c0663": "https://ms.yugipedia.com//6/6c/Kuriboh-SYE-SP-C-1E.png",
+          "764d32f6-0186-4f88-80c8-331883cc7987": "https://ms.yugipedia.com//2/22/SonicBird-SYE-SP-C-1E.png",
+          "a4fb4a06-e549-4832-a2e6-da5507b8e36f": "https://ms.yugipedia.com//c/c2/RoyalMagicalLibrary-SYE-SP-C-1E.png",
+          "d696d3e7-6f8c-4d70-9856-dfdfa91080a5": "https://ms.yugipedia.com//8/81/BlackLusterSoldier-SYE-SP-UR-1E.png",
+          "aa8cb87b-5224-4e54-961c-62cf9e01293f": "https://ms.yugipedia.com//e/ee/DarkHole-SYE-SP-C-1E.png",
+          "840c8e1d-714a-4a59-89a8-ef27a9dc4e90": "https://ms.yugipedia.com//2/22/TheEyeofTruth-SYE-SP-C-1E.png",
+          "9204b6cb-5966-472b-96db-7084fe6b692c": "https://ms.yugipedia.com//0/09/Shift-SYE-SP-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          53303001
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SYE-KR",
+      "date": "2005-04-12",
+      "image": "https://ms.yugipedia.com//8/87/SYE-DeckKR.png",
+      "cardImages": {
+        "unlimited": {
+          "29d389c4-8260-405a-bd8e-cd71c8026fe8": "https://ms.yugipedia.com//6/67/MysticalElf-SYE-KR-C-UE.jpg",
+          "122ff7e4-7b91-404c-b167-701007f4a3fe": "https://ms.yugipedia.com//0/02/BlackLusterSoldier-SYE-KR-UR-UE.png",
+          "913cecde-094b-484a-9433-e261d7935700": "https://ms.yugipedia.com//6/6d/DarkHole-SYE-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          72203001
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SYE-",
+      "image": "https://ms.yugipedia.com//2/27/SYE-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "3c837bf2-27f9-48d2-b489-af0ce4abb2f1": "https://ms.yugipedia.com//b/b0/DarkMagician-SYE-EN-SR-1E.jpg",
+          "ba048baa-d528-414f-b1c1-ba9023c7eaf1": "https://ms.yugipedia.com//2/28/MysticalElf-SYE-EN-C-1E.jpg",
+          "9d49cbda-81c1-4624-bb6c-b799f5d1ef0b": "https://ms.yugipedia.com//a/a9/SummonedSkull-SYE-EN-C-1E.jpg",
+          "df3e3a75-8017-4eb4-b408-7c6d7c29db8b": "https://ms.yugipedia.com//d/d3/DarkBlade-SYE-EN-C-1E.jpg",
+          "a575ed24-e691-4ad7-a9ab-ceba210747ab": "https://ms.yugipedia.com//c/cd/WallofIllusion-SYE-EN-C-1E.jpg",
+          "0e366118-3f0c-49e5-b38b-a86ffab65149": "https://ms.yugipedia.com//2/23/Kuriboh-SYE-EN-C-1E.jpg",
+          "1a512df8-c03e-4d5b-b911-80c05ccac75a": "https://ms.yugipedia.com//7/75/SonicBird-SYE-EN-C-1E.jpg",
+          "144d67a2-3fe4-4ecb-b480-e134624bf14d": "https://ms.yugipedia.com//5/50/RoyalMagicalLibrary-SYE-EN-C-1E.jpg",
+          "f0ac8e91-61a2-414d-a3ed-8a054e406db2": "https://ms.yugipedia.com//5/5a/BlackLusterSoldier-SYE-EN-UR-1E.jpg",
+          "d897166d-91cc-4670-afc4-1b1978f5acad": "https://ms.yugipedia.com//9/9b/DarkHole-SYE-EN-C-1E.jpg",
+          "840c8e1d-714a-4a59-89a8-ef27a9dc4e90": "https://ms.yugipedia.com//3/3f/TheEyeofTruth-SYE-EN-C-1E.jpg",
+          "23aa06a6-7e17-4b8c-9b12-511d8b164183": "https://ms.yugipedia.com//9/9f/Shift-SYE-EN-C-1E.jpg"
+        },
+        "unlimited": {
+          "3c837bf2-27f9-48d2-b489-af0ce4abb2f1": "https://ms.yugipedia.com//a/ae/DarkMagician-SYE-EN-SR-UE.png",
+          "ba048baa-d528-414f-b1c1-ba9023c7eaf1": "https://ms.yugipedia.com//7/7e/MysticalElf-SYE-EN-C-UE.png",
+          "9d49cbda-81c1-4624-bb6c-b799f5d1ef0b": "https://ms.yugipedia.com//f/f1/SummonedSkull-SYE-EN-C-UE.png",
+          "df3e3a75-8017-4eb4-b408-7c6d7c29db8b": "https://ms.yugipedia.com//b/b6/DarkBlade-SYE-EN-C-UE.png",
+          "a575ed24-e691-4ad7-a9ab-ceba210747ab": "https://ms.yugipedia.com//4/45/WallofIllusion-SYE-EN-C-UE.png",
+          "0e366118-3f0c-49e5-b38b-a86ffab65149": "https://ms.yugipedia.com//3/33/Kuriboh-SYE-EN-C-UE.png",
+          "1a512df8-c03e-4d5b-b911-80c05ccac75a": "https://ms.yugipedia.com//b/bf/SonicBird-SYE-EN-C-UE.png",
+          "144d67a2-3fe4-4ecb-b480-e134624bf14d": "https://ms.yugipedia.com//6/6d/RoyalMagicalLibrary-SYE-EN-C-UE.png",
+          "f0ac8e91-61a2-414d-a3ed-8a054e406db2": "https://ms.yugipedia.com//c/ce/BlackLusterSoldier-SYE-EN-UR-UE.png",
+          "d897166d-91cc-4670-afc4-1b1978f5acad": "https://ms.yugipedia.com//4/43/DarkHole-SYE-EN-C-UE.png",
+          "840c8e1d-714a-4a59-89a8-ef27a9dc4e90": "https://ms.yugipedia.com//5/5f/TheEyeofTruth-SYE-EN-C-UE.png",
+          "23aa06a6-7e17-4b8c-9b12-511d8b164183": "https://ms.yugipedia.com//9/9a/Shift-SYE-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13303000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SYE-FR",
+      "date": "2004-09-01",
+      "image": "https://ms.yugipedia.com//2/22/SYE-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "7b42b2bd-751a-4749-aa2d-c3b3fbbc5784": "https://ms.yugipedia.com//c/cd/DarkMagician-SYE-FR-SR-1E.jpg",
+          "ebd07c24-315d-43c3-82b7-21b08ca0d755": "https://ms.yugipedia.com//2/2a/MysticalElf-SYE-FR-C-1E.jpg",
+          "ed72abfa-d529-4d50-a622-12e1294cd0c7": "https://ms.yugipedia.com//4/4f/Kuriboh-SYE-FR-C-1E.png",
+          "f748bf22-42bf-4533-a16c-acefb228973b": "https://ms.yugipedia.com//2/25/SonicBird-SYE-FR-C-1E.jpg",
+          "769919bb-9822-4fe8-a263-177aa643dd43": "https://ms.yugipedia.com//1/15/BlackLusterSoldier-SYE-FR-UR-1E.jpg",
+          "c68fbbfe-eee3-4089-a2c8-634d9c6beec7": "https://ms.yugipedia.com//4/4b/DarkHole-SYE-FR-C-1E.png",
+          "840c8e1d-714a-4a59-89a8-ef27a9dc4e90": "https://ms.yugipedia.com//9/90/TheEyeofTruth-SYE-FR-C-1E.png"
+        },
+        "unlimited": {
+          "7b42b2bd-751a-4749-aa2d-c3b3fbbc5784": "https://ms.yugipedia.com//4/4e/DarkMagician-SYE-FR-SR-UE.jpg",
+          "ebd07c24-315d-43c3-82b7-21b08ca0d755": "https://ms.yugipedia.com//a/a3/MysticalElf-SYE-FR-C-UE.png",
+          "a7184a66-5baa-4b75-ae54-79e024acc97e": "https://ms.yugipedia.com//2/27/SummonedSkull-SYE-FR-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          33303001
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SYE-IT",
+      "date": "2004-10-01",
+      "image": "https://ms.yugipedia.com//9/9d/SYE-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "2372f1cd-9b6b-454a-bc3b-d42d35e9b752": "https://ms.yugipedia.com//f/ff/DarkMagician-SYE-IT-SR-1E.png",
+          "591b2281-36fc-4250-81ed-eeb7ea5388b5": "https://ms.yugipedia.com//d/d3/MysticalElf-SYE-IT-C-1E.jpg",
+          "4ea7915c-9c33-48e1-bce1-c1a496f4b105": "https://ms.yugipedia.com//4/4d/SummonedSkull-SYE-IT-C-1E.png",
+          "996640f1-361b-4952-8ff8-ad58ef59a281": "https://ms.yugipedia.com//e/e0/Kuriboh-SYE-IT-C-1E.png",
+          "a9b3e6c2-ca54-4cbb-a7da-2790d3119731": "https://ms.yugipedia.com//8/8a/BlackLusterSoldier-SYE-IT-UR-1E.png",
+          "840c8e1d-714a-4a59-89a8-ef27a9dc4e90": "https://ms.yugipedia.com//f/f8/TheEyeofTruth-SYE-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          43303001
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SYE-DE",
+      "date": "2004-09-01",
+      "cardImages": {
+        "1st": {
+          "9372548e-c45e-4f6e-a8c7-00f6db64f687": "https://ms.yugipedia.com//f/fc/DarkMagician-SYE-DE-SR-1E.png",
+          "d899fa73-a163-40c7-8090-38aff4bd1e85": "https://ms.yugipedia.com//7/79/MysticalElf-SYE-DE-C-1E.jpg",
+          "fffea0c0-3a0d-4b2d-b6ca-7260f41205a0": "https://ms.yugipedia.com//c/cb/SummonedSkull-SYE-DE-C-1E.png",
+          "df3e3a75-8017-4eb4-b408-7c6d7c29db8b": "https://ms.yugipedia.com//d/dd/DarkBlade-SYE-DE-C-1E.jpg",
+          "9fbc2b09-3293-4202-96ce-4b1856d13024": "https://ms.yugipedia.com//c/c7/Kuriboh-SYE-DE-C-1E.png",
+          "21dca9c8-482c-46f4-bdba-7d44427baa40": "https://ms.yugipedia.com//f/fd/BlackLusterSoldier-SYE-DE-UR-1E.png",
+          "49ba30ee-b1fe-410e-800e-0fea38f11160": "https://ms.yugipedia.com//f/f0/DarkHole-SYE-DE-C-1E.png",
+          "840c8e1d-714a-4a59-89a8-ef27a9dc4e90": "https://ms.yugipedia.com//9/9c/TheEyeofTruth-SYE-DE-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          23303000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/ff/SYE-DeckPT.png",
+      "cards": [
+        {
+          "id": "122b063a-eb1c-4926-86b5-910ec229c2fa",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "5c51e71b-4eff-480a-bf23-3f48a2bc7193",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "900db16b-d0bf-4035-9583-5b097876e193",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "df3e3a75-8017-4eb4-b408-7c6d7c29db8b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "fe8660e5-41ce-4f92-baba-4260c9d917f2",
+          "card": "d09c37c0-6623-4fb7-8a1c-70b5989d854a",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "af7d54c0-0ebf-4967-92e3-3375a3c13fca",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "4bcd2f78-b2b4-4457-9e66-2802e7fdc7eb",
+          "card": "171d7aa5-c145-4b0a-8301-1c1f9d3a0dab",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "717322e3-186f-4c03-84b4-114992f11b52",
+          "card": "9c644632-c5ed-4e38-a637-7cabba748d8c",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "baf74a92-5142-441a-ac48-aa662531de6d",
+          "card": "1c35a99c-265e-4db2-9e37-60fb4ec92eb7",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0383ead4-5766-4eb3-865e-ac644455302d",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "840c8e1d-714a-4a59-89a8-ef27a9dc4e90",
+          "card": "b2dac25d-364e-447d-8ab0-12804582ed6f",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "1c3943c8-f7cf-45f3-a415-0f05b089da86",
+          "card": "d67076cb-7720-4f91-bc7f-a2f83cad71aa",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Evolution"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/23/SYE-DeckSP.png",
+      "cards": [
+        {
+          "id": "7a1fcd6b-0342-43aa-9e32-8306c9554475",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "f9282821-cce9-4e9b-a805-db5736dde425",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "3d845a91-2d6f-451d-abe6-8f6e272b6bec",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "df3e3a75-8017-4eb4-b408-7c6d7c29db8b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "e8933891-2ed2-4102-8861-240aae3c6a8d",
+          "card": "d09c37c0-6623-4fb7-8a1c-70b5989d854a",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "dd3a85ad-ddb1-4d48-9791-3bd6568c0663",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "764d32f6-0186-4f88-80c8-331883cc7987",
+          "card": "171d7aa5-c145-4b0a-8301-1c1f9d3a0dab",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "a4fb4a06-e549-4832-a2e6-da5507b8e36f",
+          "card": "9c644632-c5ed-4e38-a637-7cabba748d8c",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "d696d3e7-6f8c-4d70-9856-dfdfa91080a5",
+          "card": "1c35a99c-265e-4db2-9e37-60fb4ec92eb7",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aa8cb87b-5224-4e54-961c-62cf9e01293f",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "840c8e1d-714a-4a59-89a8-ef27a9dc4e90",
+          "card": "b2dac25d-364e-447d-8ab0-12804582ed6f",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "9204b6cb-5966-472b-96db-7084fe6b692c",
+          "card": "d67076cb-7720-4f91-bc7f-a2f83cad71aa",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Evolution"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/87/SYE-DeckKR.png",
+      "cards": [
+        {
+          "id": "86eb4e51-b129-4a57-873d-b62f40dd3a96",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "29d389c4-8260-405a-bd8e-cd71c8026fe8",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "257b6446-db14-462d-bd0d-d00c3d55d2a4",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "df3e3a75-8017-4eb4-b408-7c6d7c29db8b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "f2672002-3eca-4a14-bf12-dfd12e0698e8",
+          "card": "d09c37c0-6623-4fb7-8a1c-70b5989d854a",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "7404d868-5490-43fa-9817-df7bedacb6f9",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "f1d4dbc8-3c9f-47a5-a8cd-f74e84d9ea05",
+          "card": "171d7aa5-c145-4b0a-8301-1c1f9d3a0dab",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "75c46cf2-ee65-4601-8e57-7364e27afd5b",
+          "card": "9c644632-c5ed-4e38-a637-7cabba748d8c",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "122ff7e4-7b91-404c-b167-701007f4a3fe",
+          "card": "1c35a99c-265e-4db2-9e37-60fb4ec92eb7",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "913cecde-094b-484a-9433-e261d7935700",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "840c8e1d-714a-4a59-89a8-ef27a9dc4e90",
+          "card": "b2dac25d-364e-447d-8ab0-12804582ed6f",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "e320bef6-662e-4bc0-b898-ded932a131e7",
+          "card": "d67076cb-7720-4f91-bc7f-a2f83cad71aa",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Evolution"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/27/SYE-DeckEN.png",
+      "cards": [
+        {
+          "id": "3c837bf2-27f9-48d2-b489-af0ce4abb2f1",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "ba048baa-d528-414f-b1c1-ba9023c7eaf1",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "9d49cbda-81c1-4624-bb6c-b799f5d1ef0b",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "df3e3a75-8017-4eb4-b408-7c6d7c29db8b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "a575ed24-e691-4ad7-a9ab-ceba210747ab",
+          "card": "d09c37c0-6623-4fb7-8a1c-70b5989d854a",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "0e366118-3f0c-49e5-b38b-a86ffab65149",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "1a512df8-c03e-4d5b-b911-80c05ccac75a",
+          "card": "171d7aa5-c145-4b0a-8301-1c1f9d3a0dab",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "144d67a2-3fe4-4ecb-b480-e134624bf14d",
+          "card": "9c644632-c5ed-4e38-a637-7cabba748d8c",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f0ac8e91-61a2-414d-a3ed-8a054e406db2",
+          "card": "1c35a99c-265e-4db2-9e37-60fb4ec92eb7",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d897166d-91cc-4670-afc4-1b1978f5acad",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "840c8e1d-714a-4a59-89a8-ef27a9dc4e90",
+          "card": "b2dac25d-364e-447d-8ab0-12804582ed6f",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "23aa06a6-7e17-4b8c-9b12-511d8b164183",
+          "card": "d67076cb-7720-4f91-bc7f-a2f83cad71aa",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Evolution"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/22/SYE-DeckFR.png",
+      "cards": [
+        {
+          "id": "7b42b2bd-751a-4749-aa2d-c3b3fbbc5784",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "ebd07c24-315d-43c3-82b7-21b08ca0d755",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "a7184a66-5baa-4b75-ae54-79e024acc97e",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "df3e3a75-8017-4eb4-b408-7c6d7c29db8b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "01a55ae2-bea2-40c4-82eb-8e7319eec08b",
+          "card": "d09c37c0-6623-4fb7-8a1c-70b5989d854a",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "ed72abfa-d529-4d50-a622-12e1294cd0c7",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "f748bf22-42bf-4533-a16c-acefb228973b",
+          "card": "171d7aa5-c145-4b0a-8301-1c1f9d3a0dab",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "ad1d2ae4-1371-4b6e-b942-fcad0771df9b",
+          "card": "9c644632-c5ed-4e38-a637-7cabba748d8c",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "769919bb-9822-4fe8-a263-177aa643dd43",
+          "card": "1c35a99c-265e-4db2-9e37-60fb4ec92eb7",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c68fbbfe-eee3-4089-a2c8-634d9c6beec7",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "840c8e1d-714a-4a59-89a8-ef27a9dc4e90",
+          "card": "b2dac25d-364e-447d-8ab0-12804582ed6f",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "5f9e9915-ea6a-4360-9263-6abf1f881ab0",
+          "card": "d67076cb-7720-4f91-bc7f-a2f83cad71aa",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Evolution"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/9d/SYE-DeckIT.png",
+      "cards": [
+        {
+          "id": "2372f1cd-9b6b-454a-bc3b-d42d35e9b752",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "591b2281-36fc-4250-81ed-eeb7ea5388b5",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "4ea7915c-9c33-48e1-bce1-c1a496f4b105",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "df3e3a75-8017-4eb4-b408-7c6d7c29db8b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "23ddb1d8-7ab2-4cb3-9947-079166059051",
+          "card": "d09c37c0-6623-4fb7-8a1c-70b5989d854a",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "996640f1-361b-4952-8ff8-ad58ef59a281",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "1dbca2f6-594a-4b39-a752-9ffae7bda901",
+          "card": "171d7aa5-c145-4b0a-8301-1c1f9d3a0dab",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "642219b3-dece-4733-8e45-ae75cfae8e84",
+          "card": "9c644632-c5ed-4e38-a637-7cabba748d8c",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "a9b3e6c2-ca54-4cbb-a7da-2790d3119731",
+          "card": "1c35a99c-265e-4db2-9e37-60fb4ec92eb7",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2fcb73af-4ac2-4a96-917f-ebd5a186bb37",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "840c8e1d-714a-4a59-89a8-ef27a9dc4e90",
+          "card": "b2dac25d-364e-447d-8ab0-12804582ed6f",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "57f93be1-07ea-45cd-854c-343810df7c74",
+          "card": "d67076cb-7720-4f91-bc7f-a2f83cad71aa",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Evolution"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "9372548e-c45e-4f6e-a8c7-00f6db64f687",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "d899fa73-a163-40c7-8090-38aff4bd1e85",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "fffea0c0-3a0d-4b2d-b6ca-7260f41205a0",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "df3e3a75-8017-4eb4-b408-7c6d7c29db8b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "c1b0b383-5c7c-4d4c-9d03-af1f3add8f56",
+          "card": "d09c37c0-6623-4fb7-8a1c-70b5989d854a",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "9fbc2b09-3293-4202-96ce-4b1856d13024",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "4428d998-8810-478b-b603-145f8150c2aa",
+          "card": "171d7aa5-c145-4b0a-8301-1c1f9d3a0dab",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "448b9804-448e-4227-afe5-0583c2066382",
+          "card": "9c644632-c5ed-4e38-a637-7cabba748d8c",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "21dca9c8-482c-46f4-bdba-7d44427baa40",
+          "card": "1c35a99c-265e-4db2-9e37-60fb4ec92eb7",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "49ba30ee-b1fe-410e-800e-0fea38f11160",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "840c8e1d-714a-4a59-89a8-ef27a9dc4e90",
+          "card": "b2dac25d-364e-447d-8ab0-12804582ed6f",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "4d8497c1-e04b-4582-8517-5b5a86228cd3",
+          "card": "d67076cb-7720-4f91-bc7f-a2f83cad71aa",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Evolution"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starter Deck: Yugi Evolution",
+      "id": 567
+    }
+  }
+}

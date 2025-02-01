@@ -1,0 +1,978 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "facd3f34-4100-4290-80d8-6981a40ffe4f",
+  "name": {
+    "en": "Phantom Darkness",
+    "fr": "T\u00e9n\u00e8bres Fant\u00f4mes",
+    "de": "Phantom Darkness",
+    "it": "Oscurit\u00e0 Fantasma",
+    "es": "Oscuridad Fantasma",
+    "ja": "\u30d5\u30a1\u30f3\u30c8\u30e0\u30fb\u30c0\u30fc\u30af\u30cd\u30b9",
+    "ko": "\ud658\uc601\uc758 \uc5b4\ub460"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "PTDN-EN",
+      "image": "https://ms.yugipedia.com//0/07/PTDN-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "497e803a-77c5-4afd-b44b-d3eb7dcb760a": "https://ms.yugipedia.com//2/20/AtlanteanPikeman-PTDN-EN-C-1E.jpg",
+          "87472c2d-b3b4-42f9-8011-495f264dbbd2": "https://ms.yugipedia.com//f/f7/SamsaraLotus-PTDN-EN-C-1E.png",
+          "5252cc85-4d06-49e6-8067-f24cb573f16c": "https://ms.yugipedia.com//a/ad/YubelTheUltimateNightmare-PTDN-EN-ScR-1E.png",
+          "c313a30a-0a0e-46c6-b91f-d9bbc8e9e9df": "https://ms.yugipedia.com//d/db/CyberOuroboros-PTDN-EN-C-1E.jpg",
+          "d1ea87e8-dad7-4b52-b035-56539b0131be": "https://ms.yugipedia.com//5/50/FireTrooper-PTDN-EN-C-1E.jpg",
+          "0faabc9b-4632-4cd1-aa69-4634c71eae02": "https://ms.yugipedia.com//8/82/ArmageddonKnight-PTDN-EN-SR-1E.png",
+          "7a983060-53e2-42a6-b3a9-929681a074f2": "https://ms.yugipedia.com//c/c5/ImprisonedQueenArchfiend-PTDN-EN-C-1E.png",
+          "62a2a949-471b-4834-87be-39b76ca2237c": "https://ms.yugipedia.com//0/0e/NeoSpacianTwinkleMoss-PTDN-EN-C-1E.png",
+          "6f47d61f-e56d-4013-95b2-113fda792f0b": "https://ms.yugipedia.com//a/a6/MirageTube-PTDN-EN-C-1E.png",
+          "b4c63810-0e92-46bd-ac0e-21377dca58c5": "https://ms.yugipedia.com//e/e3/GeminiTrapHole-PTDN-EN-C-1E.png",
+          "f115a2ec-943a-43e0-bf9d-82f0a6f5a68f": "https://ms.yugipedia.com//8/89/VampiresCurse-PTDN-EN-UR-1E.png",
+          "c16d2079-0ffc-4c8b-a3ea-4e1055d98ed3": "https://ms.yugipedia.com//6/61/VampiresCurse-PTDN-EN-UtR-1E.png",
+          "c132f77d-578f-4ecc-80fd-f80ea8855236": "https://ms.yugipedia.com//6/6b/ZomatheSpirit-PTDN-EN-SR-1E.png",
+          "b4fc956f-4132-45fd-a195-9427774c3775": "https://ms.yugipedia.com//3/35/BelialMarquisofDarkness-PTDN-EN-ScR-1E.png"
+        },
+        "unlimited": {
+          "497e803a-77c5-4afd-b44b-d3eb7dcb760a": "https://ms.yugipedia.com//0/0d/AtlanteanPikeman-PTDN-EN-C-UE.jpg",
+          "87472c2d-b3b4-42f9-8011-495f264dbbd2": "https://ms.yugipedia.com//e/ee/SamsaraLotus-PTDN-EN-C-UE.png",
+          "5252cc85-4d06-49e6-8067-f24cb573f16c": "https://ms.yugipedia.com//0/00/YubelTheUltimateNightmare-PTDN-EN-ScR-UE.png",
+          "c313a30a-0a0e-46c6-b91f-d9bbc8e9e9df": "https://ms.yugipedia.com//e/e6/CyberOuroboros-PTDN-EN-C-UE.png",
+          "d1ea87e8-dad7-4b52-b035-56539b0131be": "https://ms.yugipedia.com//8/83/FireTrooper-PTDN-EN-C-UE.png",
+          "0faabc9b-4632-4cd1-aa69-4634c71eae02": "https://ms.yugipedia.com//5/50/ArmageddonKnight-PTDN-EN-SR-UE.jpg",
+          "7a983060-53e2-42a6-b3a9-929681a074f2": "https://ms.yugipedia.com//7/77/ImprisonedQueenArchfiend-PTDN-EN-C-UE.png",
+          "62a2a949-471b-4834-87be-39b76ca2237c": "https://ms.yugipedia.com//e/e7/NeoSpacianTwinkleMoss-PTDN-EN-C-UE.png",
+          "6f47d61f-e56d-4013-95b2-113fda792f0b": "https://ms.yugipedia.com//3/3c/MirageTube-PTDN-EN-C-UE.jpg",
+          "b4c63810-0e92-46bd-ac0e-21377dca58c5": "https://ms.yugipedia.com//5/58/GeminiTrapHole-PTDN-EN-C-UE.jpg",
+          "f115a2ec-943a-43e0-bf9d-82f0a6f5a68f": "https://ms.yugipedia.com//5/5a/VampiresCurse-PTDN-EN-UR-UE.png",
+          "c16d2079-0ffc-4c8b-a3ea-4e1055d98ed3": "https://ms.yugipedia.com//3/31/VampiresCurse-PTDN-EN-UtR-UE.png",
+          "c132f77d-578f-4ecc-80fd-f80ea8855236": "https://ms.yugipedia.com//4/46/ZomatheSpirit-PTDN-EN-SR-UE.png",
+          "b4fc956f-4132-45fd-a195-9427774c3775": "https://ms.yugipedia.com//1/1f/BelialMarquisofDarkness-PTDN-EN-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11107000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "PTDN-IT",
+      "date": "2008-02-13",
+      "image": "https://ms.yugipedia.com//2/27/PTDN-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "5e727d7e-1b76-4a94-8f19-4416f89bf578": "https://ms.yugipedia.com//f/ff/ArmageddonKnight-PTDN-IT-SR-1E.png",
+          "407c053d-da4d-44d2-9cff-4924b135fce6": "https://ms.yugipedia.com//4/4b/ImprisonedQueenArchfiend-PTDN-IT-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41107000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "PTDN-SP",
+      "date": "2008-01-26",
+      "image": "https://ms.yugipedia.com//2/2b/PTDN-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "ae67ef9c-e2bb-43a4-9fa0-a7979e27c78e": "https://ms.yugipedia.com//d/d1/AtlanteanPikeman-PTDN-SP-C-1E.png",
+          "d8ea501f-959c-4846-b02a-0f5df1f0417c": "https://ms.yugipedia.com//2/2a/SamsaraLotus-PTDN-SP-C-1E.png",
+          "d01de18c-6da0-4523-968a-0e0386fd8f74": "https://ms.yugipedia.com//f/fc/YubelTheUltimateNightmare-PTDN-SP-ScR-1E.png",
+          "069eca5f-9097-4c55-ae96-55a0cec77474": "https://ms.yugipedia.com//4/40/CyberOuroboros-PTDN-SP-C-1E.png",
+          "ccbaa361-93ac-4192-94f8-02442f2b1e58": "https://ms.yugipedia.com//e/e2/ArmageddonKnight-PTDN-SP-SR-1E.png",
+          "5f5d2f1e-f0ff-474e-91d1-57dd4be221fe": "https://ms.yugipedia.com//5/54/ImprisonedQueenArchfiend-PTDN-SP-C-1E.png",
+          "62a2a949-471b-4834-87be-39b76ca2237c": "https://ms.yugipedia.com//1/14/NeoSpacianTwinkleMoss-PTDN-SP-C-1E.png",
+          "ae1a9b72-eacd-4bc6-a53c-6467ff3d1347": "https://ms.yugipedia.com//d/da/GeminiTrapHole-PTDN-SP-C-1E.png",
+          "b4fc956f-4132-45fd-a195-9427774c3775": "https://ms.yugipedia.com//3/31/BelialMarquisofDarkness-PTDN-SP-ScR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51106000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "PTDN-JP",
+      "date": "2007-11-23",
+      "image": "https://ms.yugipedia.com//c/cf/PTDN-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "0f5bbbd3-49d4-45d9-8fd3-e690b38d67b4": "https://ms.yugipedia.com//9/94/AtlanteanPikeman-PTDN-JP-C.jpg",
+          "aa228fe4-dc62-4db2-b9d1-2a30bcd9f4dd": "https://ms.yugipedia.com//d/dd/SamsaraLotus-PTDN-JP-C.jpg",
+          "cc6be46a-553c-4242-862f-fdf9810d8a9d": "https://ms.yugipedia.com//2/2e/YubelTheUltimateNightmare-PTDN-JP-UR.jpg",
+          "c2c0e001-3ad4-42d4-bd2b-652bc0524fce": "https://ms.yugipedia.com//b/ba/YubelTheUltimateNightmare-PTDN-JP-UtR.jpg",
+          "cb13b164-ab02-4aec-bb6e-cad1f981472e": "https://ms.yugipedia.com//3/32/CyberOuroboros-PTDN-JP-C.jpg",
+          "31730715-c02a-41df-83d5-d6bc2e2914ee": "https://ms.yugipedia.com//6/6c/FireTrooper-PTDN-JP-R.jpg",
+          "589a5a18-49d9-49d3-bc08-bfd8bb22af4c": "https://ms.yugipedia.com//1/12/ArmageddonKnight-PTDN-JP-R.jpg",
+          "340d8e45-ccaf-4a86-bd0b-7aa9a54d7a13": "https://ms.yugipedia.com//f/fa/ImprisonedQueenArchfiend-PTDN-JP-C.png",
+          "62a2a949-471b-4834-87be-39b76ca2237c": "https://ms.yugipedia.com//b/bb/NeoSpacianTwinkleMoss-PTDN-JP-C.jpg",
+          "1f3fc4f4-1a39-41c4-a827-4275c16c1a3d": "https://ms.yugipedia.com//8/8b/MirageTube-PTDN-JP-R.jpg",
+          "b69872c1-65dd-4569-9d81-6251cc37ee70": "https://ms.yugipedia.com//6/6d/GeminiTrapHole-PTDN-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1110002
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "PTDN-DE",
+      "date": "2008-01-26",
+      "image": "https://ms.yugipedia.com//4/4e/PTDN-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "1f4040a2-26c1-4170-a7ca-9f3056e01304": "https://ms.yugipedia.com//d/d6/AtlanteanPikeman-PTDN-DE-C-1E.jpg",
+          "9debfe9f-3197-42c4-9a27-b58a220e8917": "https://ms.yugipedia.com//c/ce/SamsaraLotus-PTDN-DE-C-1E.jpg",
+          "fbc9fb05-64f3-4bf9-8104-7504ddde34f9": "https://ms.yugipedia.com//7/7e/YubelTheUltimateNightmare-PTDN-DE-ScR-1E.jpg",
+          "fc5dce3b-0cf5-4793-b268-6e6a2cc2ee73": "https://ms.yugipedia.com//c/c2/CyberOuroboros-PTDN-DE-C-1E.jpg",
+          "09cacccf-d906-4f1a-a005-bb1bca2a1886": "https://ms.yugipedia.com//f/f0/FireTrooper-PTDN-DE-C-1E.jpg",
+          "1d484beb-4348-42ed-8eba-dbdadc99b24b": "https://ms.yugipedia.com//2/27/ArmageddonKnight-PTDN-DE-SR-1E.jpg",
+          "63ae52e3-1fe3-430a-93fa-0a59efc03de0": "https://ms.yugipedia.com//6/68/ImprisonedQueenArchfiend-PTDN-DE-C-1E.jpg",
+          "62a2a949-471b-4834-87be-39b76ca2237c": "https://ms.yugipedia.com//3/3c/NeoSpacianTwinkleMoss-PTDN-DE-C-1E.jpg",
+          "550830df-6f28-4442-8bb2-f58ee1c153e7": "https://ms.yugipedia.com//5/51/MirageTube-PTDN-DE-C-1E.jpg",
+          "36c4a0fa-2652-41bd-b641-59993546b8d7": "https://ms.yugipedia.com//c/ce/GeminiTrapHole-PTDN-DE-C-1E.jpg",
+          "a2774bfd-72ac-4677-a705-797eb01bff20": "https://ms.yugipedia.com//a/ab/VampiresCurse-PTDN-DE-UR-1E.jpg",
+          "3e4c8499-adb2-4914-9106-c7cf68340a3c": "https://ms.yugipedia.com//e/e3/VampiresCurse-PTDN-DE-UtR-1E.png",
+          "c132f77d-578f-4ecc-80fd-f80ea8855236": "https://ms.yugipedia.com//b/b4/ZomatheSpirit-PTDN-DE-SR-1E.jpg",
+          "b4fc956f-4132-45fd-a195-9427774c3775": "https://ms.yugipedia.com//5/5c/BelialMarquisofDarkness-PTDN-DE-ScR-1E.jpg"
+        },
+        "unlimited": {
+          "63ae52e3-1fe3-430a-93fa-0a59efc03de0": "https://ms.yugipedia.com//1/1e/ImprisonedQueenArchfiend-PTDN-DE-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21107000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "PTDN-FR",
+      "date": "2008-01-26",
+      "image": "https://ms.yugipedia.com//5/5b/PTDN-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "8c764e3c-0cfa-4163-817f-d8cdf944566e": "https://ms.yugipedia.com//5/5b/AtlanteanPikeman-PTDN-FR-C-1E.jpg",
+          "661449f4-9b26-4106-a9e0-a48b87c4b9e0": "https://ms.yugipedia.com//7/74/SamsaraLotus-PTDN-FR-C-1E.jpg",
+          "6a4582e6-7434-424d-b412-84afa35fca02": "https://ms.yugipedia.com//6/69/YubelTheUltimateNightmare-PTDN-FR-ScR-1E.jpg",
+          "68349d72-1178-4f11-a0c0-57789bdc88b1": "https://ms.yugipedia.com//9/9a/CyberOuroboros-PTDN-FR-C-1E.jpg",
+          "7466fa0e-406b-4f14-ae06-f5511e0549bb": "https://ms.yugipedia.com//e/ee/FireTrooper-PTDN-FR-C-1E.jpg",
+          "f51b8d09-d6d5-494b-a513-5492956be560": "https://ms.yugipedia.com//f/f2/ArmageddonKnight-PTDN-FR-SR-1E.jpg",
+          "b269129d-1593-443b-84e8-16ec59d1056c": "https://ms.yugipedia.com//c/cc/ImprisonedQueenArchfiend-PTDN-FR-C-1E.png",
+          "62a2a949-471b-4834-87be-39b76ca2237c": "https://ms.yugipedia.com//0/02/NeoSpacianTwinkleMoss-PTDN-FR-C-1E.jpg",
+          "424567ae-7c73-4d9f-afc6-ed3117bb4f8c": "https://ms.yugipedia.com//4/44/MirageTube-PTDN-FR-C-1E.jpg",
+          "28854fdf-1245-48ef-bf94-7a7b038292e2": "https://ms.yugipedia.com//f/ff/GeminiTrapHole-PTDN-FR-C-1E.png",
+          "5f61dab1-cd69-4cee-b553-cab9ba8269c0": "https://ms.yugipedia.com//f/fe/VampiresCurse-PTDN-FR-UR-1E.jpg",
+          "2d788768-7275-4d29-9f9d-ba8a6004235a": "https://ms.yugipedia.com//9/98/VampiresCurse-PTDN-FR-UtR-1E.jpg",
+          "c132f77d-578f-4ecc-80fd-f80ea8855236": "https://ms.yugipedia.com//b/b2/ZomatheSpirit-PTDN-FR-SR-1E.jpg",
+          "b4fc956f-4132-45fd-a195-9427774c3775": "https://ms.yugipedia.com//5/52/BelialMarquisofDarkness-PTDN-FR-ScR-1E.jpg"
+        },
+        "unlimited": {
+          "8c764e3c-0cfa-4163-817f-d8cdf944566e": "https://ms.yugipedia.com//9/99/AtlanteanPikeman-PTDN-FR-C-UE.png",
+          "661449f4-9b26-4106-a9e0-a48b87c4b9e0": "https://ms.yugipedia.com//1/1c/SamsaraLotus-PTDN-FR-C-UE.png",
+          "f51b8d09-d6d5-494b-a513-5492956be560": "https://ms.yugipedia.com//5/50/ArmageddonKnight-PTDN-FR-SR-UE.jpg",
+          "b269129d-1593-443b-84e8-16ec59d1056c": "https://ms.yugipedia.com//1/16/ImprisonedQueenArchfiend-PTDN-FR-C-UE.png",
+          "5f61dab1-cd69-4cee-b553-cab9ba8269c0": "https://ms.yugipedia.com//2/20/VampiresCurse-PTDN-FR-UR-UE.jpg",
+          "2d788768-7275-4d29-9f9d-ba8a6004235a": "https://ms.yugipedia.com//5/5e/VampiresCurse-PTDN-FR-UtR-UE.jpg",
+          "c132f77d-578f-4ecc-80fd-f80ea8855236": "https://ms.yugipedia.com//e/e5/ZomatheSpirit-PTDN-FR-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31107000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "PTDN-KR",
+      "date": "2008-03-04",
+      "image": "https://ms.yugipedia.com//6/68/PTDN-BoosterKR.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {
+          "ccc1c095-aa35-449b-b31b-4c6a37501221": "https://ms.yugipedia.com//a/a9/AtlanteanPikeman-PTDN-KR-C-UE.png",
+          "5a4ce27d-aa8a-42e5-9fe2-88f6cc9e4732": "https://ms.yugipedia.com//8/80/SamsaraLotus-PTDN-KR-C-UE.png",
+          "af8226f3-c5ed-4f24-ae6f-cd189cf5cb19": "https://ms.yugipedia.com//8/88/YubelTheUltimateNightmare-PTDN-KR-UR-UE.png",
+          "31477134-1308-49e1-8eb3-400e374cf021": "https://ms.yugipedia.com//0/05/YubelTheUltimateNightmare-PTDN-KR-UtR-UE.png",
+          "2359eb77-9757-44bc-8a75-7d003ce42f7b": "https://ms.yugipedia.com//1/13/CyberOuroboros-PTDN-KR-C-UE.png",
+          "5ab02103-8b1e-4fc9-9f45-2a4b01df7013": "https://ms.yugipedia.com//3/34/FireTrooper-PTDN-KR-R-UE.png",
+          "05887638-b962-4ae2-94b5-c832f146b2ac": "https://ms.yugipedia.com//0/04/ArmageddonKnight-PTDN-KR-R-UE.png",
+          "f145bf80-ad80-4a95-805c-632fdf54e3f2": "https://ms.yugipedia.com//4/46/ImprisonedQueenArchfiend-PTDN-KR-C-UE.png",
+          "62a2a949-471b-4834-87be-39b76ca2237c": "https://ms.yugipedia.com//e/ec/NeoSpacianTwinkleMoss-PTDN-KR-C-UE.png",
+          "8f17b82c-d175-459b-a8b6-6111f315bc82": "https://ms.yugipedia.com//7/73/MirageTube-PTDN-KR-R-UE.png",
+          "bcb12edc-0287-44f9-9f18-1ef49c96f2af": "https://ms.yugipedia.com//f/f3/GeminiTrapHole-PTDN-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71106001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/07/PTDN-BoosterEN.png",
+      "cards": [
+        {
+          "id": "497e803a-77c5-4afd-b44b-d3eb7dcb760a",
+          "card": "4b55eb49-60ff-4ea9-bfb9-a2ae614427ed",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "87472c2d-b3b4-42f9-8011-495f264dbbd2",
+          "card": "feb797ab-2979-405f-a81c-f68f13da7e26",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "5252cc85-4d06-49e6-8067-f24cb573f16c",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "c313a30a-0a0e-46c6-b91f-d9bbc8e9e9df",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "d1ea87e8-dad7-4b52-b035-56539b0131be",
+          "card": "bdbe4031-d000-4991-b97b-f72ec84d6f3b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "0faabc9b-4632-4cd1-aa69-4634c71eae02",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "7a983060-53e2-42a6-b3a9-929681a074f2",
+          "card": "f56326e1-1104-41a1-aa2a-158e2b9bc1d6",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "62a2a949-471b-4834-87be-39b76ca2237c",
+          "card": "db2e61a4-e29c-478b-87e1-6d34649f1231",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "6f47d61f-e56d-4013-95b2-113fda792f0b",
+          "card": "fdae8b75-7555-488a-b6d5-e462783fc55a",
+          "suffix": "049",
+          "rarity": "common"
+        },
+        {
+          "id": "b4c63810-0e92-46bd-ac0e-21377dca58c5",
+          "card": "f8385fc0-fa0b-4e1b-9a77-f04c3fd47452",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "f115a2ec-943a-43e0-bf9d-82f0a6f5a68f",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c16d2079-0ffc-4c8b-a3ea-4e1055d98ed3",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c132f77d-578f-4ecc-80fd-f80ea8855236",
+          "card": "ab03d04f-2f9f-49e1-8d86-ffeeef3dbf34",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "b4fc956f-4132-45fd-a195-9427774c3775",
+          "card": "52f41bf0-c965-4062-b945-6f5d4e4c7464",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/27/PTDN-BoosterIT.png",
+      "cards": [
+        {
+          "id": "53131a93-0e63-45eb-b501-c8649bc5fbf0",
+          "card": "4b55eb49-60ff-4ea9-bfb9-a2ae614427ed",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b0848102-61a9-4f3d-b1e2-8731b6c79cba",
+          "card": "feb797ab-2979-405f-a81c-f68f13da7e26",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "bc082061-809c-4015-b883-4e2bee5c03dd",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "6a2b89fd-f71e-490a-8944-7a56199eb4d3",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "d9071c33-46a9-4f4e-a225-ce19203af378",
+          "card": "bdbe4031-d000-4991-b97b-f72ec84d6f3b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "5e727d7e-1b76-4a94-8f19-4416f89bf578",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "407c053d-da4d-44d2-9cff-4924b135fce6",
+          "card": "f56326e1-1104-41a1-aa2a-158e2b9bc1d6",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "62a2a949-471b-4834-87be-39b76ca2237c",
+          "card": "db2e61a4-e29c-478b-87e1-6d34649f1231",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "d53147e0-6b1f-4e4b-bf07-4e6458517b35",
+          "card": "fdae8b75-7555-488a-b6d5-e462783fc55a",
+          "suffix": "049",
+          "rarity": "common"
+        },
+        {
+          "id": "f731a650-6d8d-48b0-97f0-13e0d6d06ab3",
+          "card": "f8385fc0-fa0b-4e1b-9a77-f04c3fd47452",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "2ec13976-44bd-4a4f-9207-ce6892d3715a",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7c8c4e5c-3fd1-4032-bdd4-3314a0473e55",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c132f77d-578f-4ecc-80fd-f80ea8855236",
+          "card": "ab03d04f-2f9f-49e1-8d86-ffeeef3dbf34",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "b4fc956f-4132-45fd-a195-9427774c3775",
+          "card": "52f41bf0-c965-4062-b945-6f5d4e4c7464",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/2b/PTDN-BoosterSP.png",
+      "cards": [
+        {
+          "id": "ae67ef9c-e2bb-43a4-9fa0-a7979e27c78e",
+          "card": "4b55eb49-60ff-4ea9-bfb9-a2ae614427ed",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "d8ea501f-959c-4846-b02a-0f5df1f0417c",
+          "card": "feb797ab-2979-405f-a81c-f68f13da7e26",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "d01de18c-6da0-4523-968a-0e0386fd8f74",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "069eca5f-9097-4c55-ae96-55a0cec77474",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3ba92c15-449f-4113-a6f6-add341ccd7b0",
+          "card": "bdbe4031-d000-4991-b97b-f72ec84d6f3b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "ccbaa361-93ac-4192-94f8-02442f2b1e58",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "5f5d2f1e-f0ff-474e-91d1-57dd4be221fe",
+          "card": "f56326e1-1104-41a1-aa2a-158e2b9bc1d6",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "62a2a949-471b-4834-87be-39b76ca2237c",
+          "card": "db2e61a4-e29c-478b-87e1-6d34649f1231",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "9d0a97cc-7603-4890-9719-6d22d2a01a09",
+          "card": "fdae8b75-7555-488a-b6d5-e462783fc55a",
+          "suffix": "049",
+          "rarity": "common"
+        },
+        {
+          "id": "ae1a9b72-eacd-4bc6-a53c-6467ff3d1347",
+          "card": "f8385fc0-fa0b-4e1b-9a77-f04c3fd47452",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "509d0bd4-6e5b-4165-8960-770cc67da5cb",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d29cdb14-67cc-4b88-b936-e05a4d7066c8",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c132f77d-578f-4ecc-80fd-f80ea8855236",
+          "card": "ab03d04f-2f9f-49e1-8d86-ffeeef3dbf34",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "b4fc956f-4132-45fd-a195-9427774c3775",
+          "card": "52f41bf0-c965-4062-b945-6f5d4e4c7464",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/cf/PTDN-BoosterJP.png",
+      "cards": [
+        {
+          "id": "0f5bbbd3-49d4-45d9-8fd3-e690b38d67b4",
+          "card": "4b55eb49-60ff-4ea9-bfb9-a2ae614427ed",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "aa228fe4-dc62-4db2-b9d1-2a30bcd9f4dd",
+          "card": "feb797ab-2979-405f-a81c-f68f13da7e26",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "cc6be46a-553c-4242-862f-fdf9810d8a9d",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c2c0e001-3ad4-42d4-bd2b-652bc0524fce",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "cb13b164-ab02-4aec-bb6e-cad1f981472e",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "31730715-c02a-41df-83d5-d6bc2e2914ee",
+          "card": "bdbe4031-d000-4991-b97b-f72ec84d6f3b",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "589a5a18-49d9-49d3-bc08-bfd8bb22af4c",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "340d8e45-ccaf-4a86-bd0b-7aa9a54d7a13",
+          "card": "f56326e1-1104-41a1-aa2a-158e2b9bc1d6",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "62a2a949-471b-4834-87be-39b76ca2237c",
+          "card": "db2e61a4-e29c-478b-87e1-6d34649f1231",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "1f3fc4f4-1a39-41c4-a827-4275c16c1a3d",
+          "card": "fdae8b75-7555-488a-b6d5-e462783fc55a",
+          "suffix": "049",
+          "rarity": "rare"
+        },
+        {
+          "id": "b69872c1-65dd-4569-9d81-6251cc37ee70",
+          "card": "f8385fc0-fa0b-4e1b-9a77-f04c3fd47452",
+          "suffix": "073",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4e/PTDN-BoosterDE.png",
+      "cards": [
+        {
+          "id": "1f4040a2-26c1-4170-a7ca-9f3056e01304",
+          "card": "4b55eb49-60ff-4ea9-bfb9-a2ae614427ed",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "9debfe9f-3197-42c4-9a27-b58a220e8917",
+          "card": "feb797ab-2979-405f-a81c-f68f13da7e26",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "fbc9fb05-64f3-4bf9-8104-7504ddde34f9",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "fc5dce3b-0cf5-4793-b268-6e6a2cc2ee73",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "09cacccf-d906-4f1a-a005-bb1bca2a1886",
+          "card": "bdbe4031-d000-4991-b97b-f72ec84d6f3b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "1d484beb-4348-42ed-8eba-dbdadc99b24b",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "63ae52e3-1fe3-430a-93fa-0a59efc03de0",
+          "card": "f56326e1-1104-41a1-aa2a-158e2b9bc1d6",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "62a2a949-471b-4834-87be-39b76ca2237c",
+          "card": "db2e61a4-e29c-478b-87e1-6d34649f1231",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "550830df-6f28-4442-8bb2-f58ee1c153e7",
+          "card": "fdae8b75-7555-488a-b6d5-e462783fc55a",
+          "suffix": "049",
+          "rarity": "common"
+        },
+        {
+          "id": "36c4a0fa-2652-41bd-b641-59993546b8d7",
+          "card": "f8385fc0-fa0b-4e1b-9a77-f04c3fd47452",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "a2774bfd-72ac-4677-a705-797eb01bff20",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3e4c8499-adb2-4914-9106-c7cf68340a3c",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c132f77d-578f-4ecc-80fd-f80ea8855236",
+          "card": "ab03d04f-2f9f-49e1-8d86-ffeeef3dbf34",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "b4fc956f-4132-45fd-a195-9427774c3775",
+          "card": "52f41bf0-c965-4062-b945-6f5d4e4c7464",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/5b/PTDN-BoosterFR.png",
+      "cards": [
+        {
+          "id": "8c764e3c-0cfa-4163-817f-d8cdf944566e",
+          "card": "4b55eb49-60ff-4ea9-bfb9-a2ae614427ed",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "661449f4-9b26-4106-a9e0-a48b87c4b9e0",
+          "card": "feb797ab-2979-405f-a81c-f68f13da7e26",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "6a4582e6-7434-424d-b412-84afa35fca02",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "68349d72-1178-4f11-a0c0-57789bdc88b1",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "7466fa0e-406b-4f14-ae06-f5511e0549bb",
+          "card": "bdbe4031-d000-4991-b97b-f72ec84d6f3b",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "f51b8d09-d6d5-494b-a513-5492956be560",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "b269129d-1593-443b-84e8-16ec59d1056c",
+          "card": "f56326e1-1104-41a1-aa2a-158e2b9bc1d6",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "62a2a949-471b-4834-87be-39b76ca2237c",
+          "card": "db2e61a4-e29c-478b-87e1-6d34649f1231",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "424567ae-7c73-4d9f-afc6-ed3117bb4f8c",
+          "card": "fdae8b75-7555-488a-b6d5-e462783fc55a",
+          "suffix": "049",
+          "rarity": "common"
+        },
+        {
+          "id": "28854fdf-1245-48ef-bf94-7a7b038292e2",
+          "card": "f8385fc0-fa0b-4e1b-9a77-f04c3fd47452",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "5f61dab1-cd69-4cee-b553-cab9ba8269c0",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2d788768-7275-4d29-9f9d-ba8a6004235a",
+          "card": "a53b9c10-5402-4c3f-a184-d87cdcda3c90",
+          "suffix": "090",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c132f77d-578f-4ecc-80fd-f80ea8855236",
+          "card": "ab03d04f-2f9f-49e1-8d86-ffeeef3dbf34",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "b4fc956f-4132-45fd-a195-9427774c3775",
+          "card": "52f41bf0-c965-4062-b945-6f5d4e4c7464",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/68/PTDN-BoosterKR.png",
+      "cards": [
+        {
+          "id": "ccc1c095-aa35-449b-b31b-4c6a37501221",
+          "card": "4b55eb49-60ff-4ea9-bfb9-a2ae614427ed",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "5a4ce27d-aa8a-42e5-9fe2-88f6cc9e4732",
+          "card": "feb797ab-2979-405f-a81c-f68f13da7e26",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "af8226f3-c5ed-4f24-ae6f-cd189cf5cb19",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "31477134-1308-49e1-8eb3-400e374cf021",
+          "card": "72ccc917-c2a8-47f6-a0e8-0f89c2184709",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "2359eb77-9757-44bc-8a75-7d003ce42f7b",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "5ab02103-8b1e-4fc9-9f45-2a4b01df7013",
+          "card": "bdbe4031-d000-4991-b97b-f72ec84d6f3b",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "05887638-b962-4ae2-94b5-c832f146b2ac",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "f145bf80-ad80-4a95-805c-632fdf54e3f2",
+          "card": "f56326e1-1104-41a1-aa2a-158e2b9bc1d6",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "62a2a949-471b-4834-87be-39b76ca2237c",
+          "card": "db2e61a4-e29c-478b-87e1-6d34649f1231",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "8f17b82c-d175-459b-a8b6-6111f315bc82",
+          "card": "fdae8b75-7555-488a-b6d5-e462783fc55a",
+          "suffix": "049",
+          "rarity": "rare"
+        },
+        {
+          "id": "bcb12edc-0287-44f9-9f18-1ef49c96f2af",
+          "card": "f8385fc0-fa0b-4e1b-9a77-f04c3fd47452",
+          "suffix": "073",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Phantom Darkness",
+      "id": 508762
+    }
+  }
+}

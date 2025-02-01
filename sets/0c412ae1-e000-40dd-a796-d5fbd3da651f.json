@@ -1,0 +1,832 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "0c412ae1-e000-40dd-a796-d5fbd3da651f",
+  "name": {
+    "en": "Star Pack ARC-V",
+    "fr": "Pack \u00c9toile ARC-V",
+    "de": "Star Pack ARC-V",
+    "it": "Star Pack ARC-V",
+    "pt": "Pacote Estelar ARC-V",
+    "es": "Sobre de Estrellas ARC-V"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "SP15-PT",
+      "date": "2015-06-12",
+      "image": "https://ms.yugipedia.com//9/9b/SP15-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "27a12651-a4cd-4208-baaa-c0627936ef8e": "https://ms.yugipedia.com//5/53/PerformapalTrumpWitch-SP15-PT-C-1E.png",
+          "76fa256f-2734-4171-9dd4-0e8ec922a9e5": "https://ms.yugipedia.com//0/08/Polymerization-SP15-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11114004
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SP15-SP",
+      "image": "https://ms.yugipedia.com//6/6c/SP15-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "df45331c-a332-4d96-89ef-238eb925450d": "https://ms.yugipedia.com//3/31/FluffalBear-SP15-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51113004
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SP15-EN",
+      "image": "https://ms.yugipedia.com//c/c8/SP15-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "dfaf11c1-6ced-48b3-b506-9667afdc7075": "https://ms.yugipedia.com//9/9c/XXSaberBoggartKnight-SP15-EN-C-1E.png",
+          "0bdb8149-c6be-4f9c-8df6-ee1e49c2a2cb": "https://ms.yugipedia.com//f/fb/XXSaberBoggartKnight-SP15-EN-SHR-1E.png",
+          "46a03a8a-da33-4243-8d9f-9bac3ef01f75": "https://ms.yugipedia.com//8/86/EdgeImpSabres-SP15-EN-C-1E.png",
+          "ab972261-e8c4-4496-9fa1-6a80f0cb78f8": "https://ms.yugipedia.com//b/b6/EdgeImpSabres-SP15-EN-SHR-1E.png",
+          "fe42ed0e-7794-4fad-88c6-cd97d84baa48": "https://ms.yugipedia.com//e/e3/FluffalBear-SP15-EN-C-1E.png",
+          "58b24618-e0c1-454c-8357-de27a66a7aeb": "https://ms.yugipedia.com//3/3e/FluffalBear-SP15-EN-SHR-1E.png",
+          "00bb84b5-28a1-4d73-baa2-672ab047a31a": "https://ms.yugipedia.com//5/5b/PerformapalPartnaga-SP15-EN-C-1E.png",
+          "b78a4870-1351-4bac-ba8f-fbacfc74165d": "https://ms.yugipedia.com//2/26/PerformapalPartnaga-SP15-EN-SHR-1E.png",
+          "74f83f6c-01d9-49e9-80f9-d28098d4e0ac": "https://ms.yugipedia.com//0/0c/PerformapalTrumpWitch-SP15-EN-C-1E.png",
+          "686028b4-1f63-49c0-9e94-81a6566a113f": "https://ms.yugipedia.com//6/69/PerformapalTrumpWitch-SP15-EN-SHR-1E.png",
+          "375d32d3-cae1-4b34-b3ae-6529cb56144e": "https://ms.yugipedia.com//1/1d/GemKnightMasterDiamond-SP15-EN-C-1E.png",
+          "e20edeac-0d78-46f8-a10a-4d944376dcd8": "https://ms.yugipedia.com//d/d3/GemKnightMasterDiamond-SP15-EN-SHR-1E.png",
+          "4e6ec9eb-1692-451e-ad6d-d1baa1aed3bc": "https://ms.yugipedia.com//1/1d/Polymerization-SP15-EN-C-1E.png",
+          "e9056d5b-723c-4ff7-b3aa-98c97fb1753b": "https://ms.yugipedia.com//4/4f/Polymerization-SP15-EN-SHR-1E.png",
+          "0574c98c-795f-4771-8ab4-08e857b775bd": "https://ms.yugipedia.com//0/0d/PerformapalRevival-SP15-EN-C-1E.png",
+          "eb5f989d-ca94-4059-9b71-238fef0bbe02": "https://ms.yugipedia.com//f/f4/PerformapalRevival-SP15-EN-SHR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11114004
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SP15-FR",
+      "image": "https://ms.yugipedia.com//3/3e/SP15-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "e669d4a4-12ea-4294-886e-fa39106305be": "https://ms.yugipedia.com//d/d8/Polymerization-SP15-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31114004
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SP15-IT",
+      "image": "https://ms.yugipedia.com//e/e4/SP15-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "faac7728-748c-4dd4-a9da-220723f49dcf": "https://ms.yugipedia.com//e/e6/Polymerization-SP15-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41114004
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SP15-DE",
+      "image": "https://ms.yugipedia.com//8/82/SP15-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "a3e40181-cb2b-4820-b247-ee427fe7938b": "https://ms.yugipedia.com//b/ba/PerformapalTrumpWitch-SP15-DE-C-1E.png",
+          "f2a0a005-e5e3-4351-9171-421c513776a8": "https://ms.yugipedia.com//1/12/GemKnightMasterDiamond-SP15-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21114004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/9b/SP15-BoosterPT.png",
+      "cards": [
+        {
+          "id": "83a933e4-4ce0-4810-b005-97bd92ecab85",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "3240cb4e-07e0-4f60-a678-e51c02069062",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "46a03a8a-da33-4243-8d9f-9bac3ef01f75",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "9e793c41-0b7b-43a5-8f37-131979d25d5f",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "b0fb333a-f600-4c29-8489-414d28b9fda4",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "a718d84e-c2e4-4a60-a20f-71737db1df2b",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "7fe00291-fcf0-486d-bd34-0bcf553d40d9",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "c6417f2d-5c48-497a-9d66-df912768d2ec",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "27a12651-a4cd-4208-baaa-c0627936ef8e",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "de1bf58a-e377-4b17-b3bd-b27c4b721c48",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "5add95c8-42f1-4140-9755-07b9286edb8a",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "d8769a01-0b4d-4d2c-8f8d-c6d3dfd2d213",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "76fa256f-2734-4171-9dd4-0e8ec922a9e5",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "97a952f1-7e21-47be-b795-6cb3fae10421",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "68905892-a9f0-45b0-bc4e-f6f3f5a58e60",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "3e19f28d-1038-4a69-95eb-0142735920e6",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "starfoil"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6c/SP15-BoosterSP.png",
+      "cards": [
+        {
+          "id": "0ca3b4b0-0f35-4ec0-9236-32b554b27418",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "3c62da46-a138-4233-84f1-daf56a1d957f",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "46a03a8a-da33-4243-8d9f-9bac3ef01f75",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "9e793c41-0b7b-43a5-8f37-131979d25d5f",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "df45331c-a332-4d96-89ef-238eb925450d",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f9649b6c-ede4-40b4-9cc6-a2c2caa78ca7",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "3835254c-544d-4e97-bc45-7a2c1e78b7c8",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "0c0c70a2-dc3a-469b-93f9-9cf6eca15e70",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "b0a06ca4-59b6-49cc-92fc-bfb8348886af",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "2c4791a3-81e1-4646-9c5a-dde905ab92ae",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "66043960-b780-45d8-aff4-bce30c10c508",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "d05bb89a-c430-4d24-a689-e9f824375bd6",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "90159a5d-5d78-48b9-ad16-2802c278497a",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "8303f5d4-f65f-4691-8665-7be413143b52",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "5f25a908-3852-4e07-af1d-8501571abc55",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "7bbc50ce-0feb-4c65-91e0-f4716eaf3dfc",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "starfoil"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c8/SP15-BoosterEN.png",
+      "cards": [
+        {
+          "id": "dfaf11c1-6ced-48b3-b506-9667afdc7075",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "0bdb8149-c6be-4f9c-8df6-ee1e49c2a2cb",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "shatterfoil"
+        },
+        {
+          "id": "46a03a8a-da33-4243-8d9f-9bac3ef01f75",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "ab972261-e8c4-4496-9fa1-6a80f0cb78f8",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "shatterfoil"
+        },
+        {
+          "id": "fe42ed0e-7794-4fad-88c6-cd97d84baa48",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "58b24618-e0c1-454c-8357-de27a66a7aeb",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "shatterfoil"
+        },
+        {
+          "id": "00bb84b5-28a1-4d73-baa2-672ab047a31a",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b78a4870-1351-4bac-ba8f-fbacfc74165d",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "shatterfoil"
+        },
+        {
+          "id": "74f83f6c-01d9-49e9-80f9-d28098d4e0ac",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "686028b4-1f63-49c0-9e94-81a6566a113f",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "shatterfoil"
+        },
+        {
+          "id": "375d32d3-cae1-4b34-b3ae-6529cb56144e",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "e20edeac-0d78-46f8-a10a-4d944376dcd8",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "shatterfoil"
+        },
+        {
+          "id": "4e6ec9eb-1692-451e-ad6d-d1baa1aed3bc",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "e9056d5b-723c-4ff7-b3aa-98c97fb1753b",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "shatterfoil"
+        },
+        {
+          "id": "0574c98c-795f-4771-8ab4-08e857b775bd",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "eb5f989d-ca94-4059-9b71-238fef0bbe02",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "shatterfoil"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3e/SP15-BoosterFR.png",
+      "cards": [
+        {
+          "id": "c756eb27-49e1-4fa0-8f5b-3df85e504c47",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "14af4acf-1738-4330-9688-fdb734c646c4",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "46a03a8a-da33-4243-8d9f-9bac3ef01f75",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "9e793c41-0b7b-43a5-8f37-131979d25d5f",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "2b29a7b3-f637-4dc2-93b0-7e2f145e8550",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "211d743a-af8a-4399-8b2a-27d485ec099f",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "ac85282b-d362-4a0d-a5f3-a51ba95b784d",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "331d6ca0-472a-46ef-ae32-c66e084c8455",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "de3b8753-5587-45f8-963c-7ee508d25364",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "6f1f5ad5-467d-409a-bd7a-5d39f2ab54e7",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "83078702-7ddb-4fea-9683-a9802c5d5d7b",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "6075f487-cafd-4ec3-8e5a-253d78ee5c54",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "e669d4a4-12ea-4294-886e-fa39106305be",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "c88ec2f2-a068-42f7-96f0-31d1cc90e25c",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "37e0638f-9ffa-452f-99b3-98a66aa82dac",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "0618fd42-efb7-464f-89d1-89c815a0dd30",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "starfoil"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e4/SP15-BoosterIT.png",
+      "cards": [
+        {
+          "id": "8fc1e0fe-52ca-455c-a574-558ff11c942a",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e3d8195-73d0-4c30-b11a-b8a78d9bb8aa",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "46a03a8a-da33-4243-8d9f-9bac3ef01f75",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "9e793c41-0b7b-43a5-8f37-131979d25d5f",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "e38f4a90-c564-4ef7-b472-15f6e15490b8",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "d9899fff-7210-4844-8205-8bbaa59bb7eb",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "db71604e-374a-4dd1-b2df-2d79ce67d41c",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "bd19093a-6bd7-49ec-b279-02f44601496a",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "d9278118-9e19-42a6-9e71-2ccbaff95e91",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "d07f6a73-e70d-40f0-8204-69cf45738160",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "96428738-8ec1-4cbd-aaa9-43e5d56ea332",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "b2e136fd-6a06-4f1e-b7c4-e469d317c410",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "faac7728-748c-4dd4-a9da-220723f49dcf",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "aca1dc40-5c3a-4fe4-bee2-ee3962763c4c",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "babd3ab3-a52e-4ef0-948d-50e7490a08e6",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "5c3db258-47e4-4c34-bc44-c627d5daf4dd",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "starfoil"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/82/SP15-BoosterDE.png",
+      "cards": [
+        {
+          "id": "36167d37-474d-42f6-ae3e-ca0eb9ed5ac8",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "bbe5876c-ccd6-465c-ad48-532385574e74",
+          "card": "146ee2e5-41fe-41e4-ba35-42889644358d",
+          "suffix": "006",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "46a03a8a-da33-4243-8d9f-9bac3ef01f75",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "9e793c41-0b7b-43a5-8f37-131979d25d5f",
+          "card": "878d1eed-be6b-4664-b7bc-3d742cfddfa7",
+          "suffix": "022",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "c9cc596e-6d5e-46e3-bf83-ccf58ab43740",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "b0f3f6de-cd46-4287-9131-02069678c71d",
+          "card": "cbddabf5-7490-4c69-8ee8-4dacf4d4c3c9",
+          "suffix": "023",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "95de547b-7b22-4ace-a880-da650970bb34",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "7bbcce78-ca14-4a36-a29e-cbab412ab430",
+          "card": "7a666749-8042-456f-9d7f-4a82132e70a0",
+          "suffix": "025",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "a3e40181-cb2b-4820-b247-ee427fe7938b",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "6310ce69-6b8b-4dd4-8ce3-071076cabb7c",
+          "card": "fbea42fb-c4fa-45a1-ad76-269457c54892",
+          "suffix": "027",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "f2a0a005-e5e3-4351-9171-421c513776a8",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "0c88d159-b681-4a7e-86ea-bbec222f9a8a",
+          "card": "9b6fc48f-8f83-45c9-bd4d-dd2f0d274b2d",
+          "suffix": "030",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "2da45015-51c5-496a-bb53-d554d16fdcf0",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "96c43d71-5355-4f01-8b51-3b08c4adb69d",
+          "card": "6e2e39c1-e5b2-4070-aff4-ee935a14a83e",
+          "suffix": "038",
+          "rarity": "starfoil"
+        },
+        {
+          "id": "9e91747d-5421-4003-8619-ba5c2286bad1",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "d85fba35-fc51-4faa-9148-24a57614602c",
+          "card": "4d96bfed-1f3a-4c96-9f10-f582a4837fea",
+          "suffix": "047",
+          "rarity": "starfoil"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Star Pack ARC-V",
+      "id": 348085
+    }
+  }
+}

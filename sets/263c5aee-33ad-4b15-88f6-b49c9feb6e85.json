@@ -1,0 +1,797 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "263c5aee-33ad-4b15-88f6-b49c9feb6e85",
+  "name": {
+    "en": "Structure Deck: Yugi Muto",
+    "fr": "Deck de Structure : Yugi Muto",
+    "de": "Structure Deck: Yugi Muto",
+    "it": "Structure Deck: Yugi Muto",
+    "pt": "Deck Estrutural: Yugi Muto",
+    "es": "Baraja de Estructura: Yugi Muto",
+    "ja": "\u30b9\u30c8\u30e9\u30af\u30c1\u30e3\u30fc\u30c7\u30c3\u30ad \uff0d\u6b66\u85e4\u904a\u622f\uff0d",
+    "ko": "\uff33\uff34\uff32\uff35\uff23\uff34\uff35\uff32\uff25 \uff24\uff25\uff23\uff2b -\uc720\ud76c-"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "SDMY-FR",
+      "image": "https://ms.yugipedia.com//f/f4/SDMY-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "0a6be5d5-d50e-4d6e-b952-d3ee8f6ed7e9": "https://ms.yugipedia.com//d/d0/BetaTheElectromagnetWarrior-SDMY-FR-SR-1E.png",
+          "d4577b57-35f6-4cfb-aea3-a16414103bc9": "https://ms.yugipedia.com//e/e8/BetaTheMagnetWarrior-SDMY-FR-C-1E.png",
+          "bd18ca8d-a431-40da-8e4a-58d3708868b8": "https://ms.yugipedia.com//0/06/JacksKnight-SDMY-FR-C-1E.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//a/a6/ObnoxiousCelticGuard-SDMY-FR-C-1E.png",
+          "0302ca7b-c651-41ed-a869-6f999fc93e8f": "https://ms.yugipedia.com//a/a6/SkilledWhiteMagician-SDMY-FR-C-1E.png",
+          "2b425d0b-43ba-400a-ba47-60566a5fdbf3": "https://ms.yugipedia.com//6/65/TwinHeadedBehemoth-SDMY-FR-C-1E.png",
+          "32cb84ae-529b-440c-abe1-08f10b36ecf5": "https://ms.yugipedia.com//2/2a/DarkMagicCurtain-SDMY-FR-C-1E.png",
+          "abae81d6-42bc-4f2d-a088-ca24adc8a6cd": "https://ms.yugipedia.com//5/5c/MysticBox-SDMY-FR-C-1E.png",
+          "d82d9e89-50e1-484a-900f-11695377342b": "https://ms.yugipedia.com//0/06/MagnetConversion-SDMY-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          34412003
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SDMY-SP",
+      "image": "https://ms.yugipedia.com//0/00/SDMY-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "a8380ea9-0b38-4e74-a45d-d211f4ac880d": "https://ms.yugipedia.com//b/b4/BetaTheElectromagnetWarrior-SDMY-SP-SR-1E.png",
+          "ac9cc462-7571-4258-89f6-008a904b0fe4": "https://ms.yugipedia.com//5/54/BetaTheMagnetWarrior-SDMY-SP-C-1E.png",
+          "f1758d15-0098-4905-bca4-2009635a91ad": "https://ms.yugipedia.com//f/f1/JacksKnight-SDMY-SP-C-1E.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//e/e4/ObnoxiousCelticGuard-SDMY-SP-C-1E.png",
+          "613311b3-776c-41b5-b2a4-7fdb8daa256b": "https://ms.yugipedia.com//9/9c/SkilledWhiteMagician-SDMY-SP-C-1E.png",
+          "a36086d0-7b65-4c92-ade4-d37ed2aa7f9e": "https://ms.yugipedia.com//e/e3/TwinHeadedBehemoth-SDMY-SP-C-1E.png",
+          "2d92f8ea-7874-406c-98f2-05146990b313": "https://ms.yugipedia.com//5/54/DarkMagicCurtain-SDMY-SP-C-1E.png",
+          "23261336-6293-44db-9502-4748efa40eec": "https://ms.yugipedia.com//f/f3/MysticBox-SDMY-SP-C-1E.png",
+          "9466172c-f9b2-4d4a-964c-cee209a1c5a2": "https://ms.yugipedia.com//6/68/MagnetConversion-SDMY-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          54412003
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SDMY-EN",
+      "image": "https://ms.yugipedia.com//4/4e/SDMY-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "908f2042-5031-4997-b13e-4e087cb960e0": "https://ms.yugipedia.com//4/4c/BetaTheElectromagnetWarrior-SDMY-EN-SR-1E.png",
+          "d3bdd24e-80b4-433c-aba9-e9fc13295354": "https://ms.yugipedia.com//d/da/BetaTheMagnetWarrior-SDMY-EN-C-1E.png",
+          "a20f8b6b-2c3c-4fa8-8b5e-cbc498457a38": "https://ms.yugipedia.com//c/c6/JacksKnight-SDMY-EN-C-1E.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//3/37/ObnoxiousCelticGuard-SDMY-EN-C-1E.png",
+          "90a476f7-37fa-40aa-8d16-8e85613c75e0": "https://ms.yugipedia.com//b/bc/SkilledWhiteMagician-SDMY-EN-C-1E.png",
+          "ab963bab-d8f1-46de-bada-08c873bd0332": "https://ms.yugipedia.com//8/84/TwinHeadedBehemoth-SDMY-EN-C-1E.png",
+          "baf3c991-cda2-4a9f-b95b-3ee6a335c0e5": "https://ms.yugipedia.com//f/f9/DarkMagicCurtain-SDMY-EN-C-1E.png",
+          "293663da-ad1b-424f-a958-476aea1589d5": "https://ms.yugipedia.com//f/fc/MysticBox-SDMY-EN-C-1E.png",
+          "4a20ec8a-3509-4c6f-a9ac-4ea66f221be9": "https://ms.yugipedia.com//3/38/MagnetConversion-SDMY-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14412003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SDMY-DE",
+      "image": "https://ms.yugipedia.com//f/fd/SDMY-DeckDE.png",
+      "cardImages": {
+        "1st": {
+          "e42c759b-9d0b-491a-b9ed-c5c3fec197f7": "https://ms.yugipedia.com//1/1b/BetaTheElectromagnetWarrior-SDMY-DE-SR-1E.png",
+          "6b0888ab-699a-470f-ba1c-48bc1005d49c": "https://ms.yugipedia.com//6/66/BetaTheMagnetWarrior-SDMY-DE-C-1E.png",
+          "4c6fc27a-ad46-40ca-ab73-aaadbb05840b": "https://ms.yugipedia.com//7/73/JacksKnight-SDMY-DE-C-1E.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//4/41/ObnoxiousCelticGuard-SDMY-DE-C-1E.png",
+          "478fa0f8-4c02-44c9-a53b-e7a946ab616e": "https://ms.yugipedia.com//e/e6/SkilledWhiteMagician-SDMY-DE-C-1E.png",
+          "4e1bebba-31e0-4694-9796-8b1d48b959a6": "https://ms.yugipedia.com//0/02/TwinHeadedBehemoth-SDMY-DE-C-1E.png",
+          "379cfca0-66e2-4c5b-b0f2-b352aef01a46": "https://ms.yugipedia.com//7/78/DarkMagicCurtain-SDMY-DE-C-1E.png",
+          "95a258b6-9194-4570-b6a6-32950baa4187": "https://ms.yugipedia.com//0/08/MysticBox-SDMY-DE-C-1E.png",
+          "7c7155da-9fc3-463e-b423-0ba17053c790": "https://ms.yugipedia.com//7/7a/MagnetConversion-SDMY-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          24412003
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SDMY-KR",
+      "date": "2016-09-09",
+      "image": "https://ms.yugipedia.com//c/ca/SDMY-DeckKR.png",
+      "cardImages": {
+        "1st": {
+          "fd906d3e-9291-4dda-963d-41cb350c35be": "https://ms.yugipedia.com//0/03/BetaTheElectromagnetWarrior-SDMY-KR-SR-1E.png",
+          "bc34e054-75d9-45d6-87dc-9c8ffdb2532e": "https://ms.yugipedia.com//9/98/BetaTheMagnetWarrior-SDMY-KR-C-1E.png",
+          "65b561b8-b947-4cf8-ae0e-c3ef7ab7a610": "https://ms.yugipedia.com//3/34/JacksKnight-SDMY-KR-C-1E.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//a/a7/ObnoxiousCelticGuard-SDMY-KR-C-1E.png",
+          "cb130f6e-c4ee-492d-8983-b93fbdb44be3": "https://ms.yugipedia.com//b/b1/DarkMagicCurtain-SDMY-KR-C-1E.png",
+          "38374fad-4d83-4d15-8a34-537c5338ded2": "https://ms.yugipedia.com//5/58/MysticBox-SDMY-KR-C-1E.png",
+          "95ce264a-3bc1-4eb0-9fa0-01420ab5cf17": "https://ms.yugipedia.com//f/fd/MonsterReborn-SDMY-KR-C-1E.png",
+          "76cfcf38-c08b-4765-91df-497b9cebbc04": "https://ms.yugipedia.com//8/8d/MagnetConversion-SDMY-KR-NPR-1E.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          73312002
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SDMY-IT",
+      "image": "https://ms.yugipedia.com//0/08/SDMY-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "f48947f5-aa7f-48b3-8b8f-83fb559e9e4f": "https://ms.yugipedia.com//0/05/BetaTheElectromagnetWarrior-SDMY-IT-SR-1E.png",
+          "1bdbe2b0-1dc3-41c8-8068-53f91c3717f3": "https://ms.yugipedia.com//2/27/BetaTheMagnetWarrior-SDMY-IT-C-1E.png",
+          "bed5b627-ad93-452f-aad4-ea589b6d0ce4": "https://ms.yugipedia.com//7/79/JacksKnight-SDMY-IT-C-1E.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//6/6c/ObnoxiousCelticGuard-SDMY-IT-C-1E.png",
+          "069616a9-42b9-4ac4-a67c-e13101c02e20": "https://ms.yugipedia.com//8/80/SkilledWhiteMagician-SDMY-IT-C-1E.png",
+          "42323bc7-b413-419e-81d0-20781deaa4da": "https://ms.yugipedia.com//3/36/TwinHeadedBehemoth-SDMY-IT-C-1E.png",
+          "50560c37-1731-4c9a-a479-600b0b62ae6b": "https://ms.yugipedia.com//5/5c/DarkMagicCurtain-SDMY-IT-C-1E.png",
+          "87cc1d11-a95c-4249-8eac-2812e29cdb3c": "https://ms.yugipedia.com//7/7a/MysticBox-SDMY-IT-C-1E.png",
+          "1a180689-786f-44ca-9ea3-0a8a9cf7ded4": "https://ms.yugipedia.com//1/17/MagnetConversion-SDMY-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          44412003
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SDMY-PT",
+      "date": "2016-10-21",
+      "image": "https://ms.yugipedia.com//a/a7/SDMY-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "aabb2c58-e789-4e97-bc09-70ed5a4a9d65": "https://ms.yugipedia.com//3/37/BetaTheElectromagnetWarrior-SDMY-PT-SR-1E.png",
+          "a0ea47cf-ef3b-4f64-954c-255fb859482b": "https://ms.yugipedia.com//e/eb/BetaTheMagnetWarrior-SDMY-PT-C-1E.png",
+          "396ca31d-9413-49ea-acd6-ecb5d9cd6c27": "https://ms.yugipedia.com//7/7d/JacksKnight-SDMY-PT-C-1E.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//d/d0/ObnoxiousCelticGuard-SDMY-PT-C-1E.png",
+          "0dc8b3cd-f411-4925-921a-122cefd68340": "https://ms.yugipedia.com//c/c3/SkilledWhiteMagician-SDMY-PT-C-1E.png",
+          "7b4feaf1-8ce8-4727-b2ec-3f205cb8e1ef": "https://ms.yugipedia.com//b/b5/TwinHeadedBehemoth-SDMY-PT-C-1E.png",
+          "9e625b50-929f-4391-a497-8c6151a9a710": "https://ms.yugipedia.com//2/2a/DarkMagicCurtain-SDMY-PT-C-1E.png",
+          "cbc5e561-545d-430f-931b-ec54ec74a9a8": "https://ms.yugipedia.com//7/73/MysticBox-SDMY-PT-C-1E.png",
+          "b8fcd1ae-604a-4fd8-b33a-a3ec262531be": "https://ms.yugipedia.com//5/57/MagnetConversion-SDMY-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14412003
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SDMY-JP",
+      "date": "2016-06-18",
+      "image": "https://ms.yugipedia.com//1/1f/SDMY-DeckJP.png",
+      "cardImages": {
+        "unlimited": {
+          "2df984b0-f80a-41b1-8ee5-f22f749ca0ff": "https://ms.yugipedia.com//f/f8/BetaTheElectromagnetWarrior-SDMY-JP-SR.png",
+          "c171a2c2-c0fa-4b5a-91e3-f54402da2f73": "https://ms.yugipedia.com//1/1f/BetaTheMagnetWarrior-SDMY-JP-C.png",
+          "e5aea301-571f-4e41-85de-2e8d31a38d96": "https://ms.yugipedia.com//8/89/JacksKnight-SDMY-JP-C.png",
+          "fe510987-b411-4985-9b25-02d58514556b": "https://ms.yugipedia.com//4/4a/ObnoxiousCelticGuard-SDMY-JP-C.png",
+          "bd038995-e072-47a7-baf2-0dcb3833ef80": "https://ms.yugipedia.com//2/25/DarkMagicCurtain-SDMY-JP-C.png",
+          "60b2e19a-062e-44d7-a16e-cbeb72586621": "https://ms.yugipedia.com//9/9a/MysticBox-SDMY-JP-C.png",
+          "154d4b57-0fed-4b0a-bdc9-4b851df74f0b": "https://ms.yugipedia.com//d/d5/MonsterReborn-SDMY-JP-C.png",
+          "e256cb01-4493-4fb2-a253-c32399fda0ce": "https://ms.yugipedia.com//9/9f/MagnetConversion-SDMY-JP-NPR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2201045
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/f4/SDMY-DeckFR.png",
+      "cards": [
+        {
+          "id": "0a6be5d5-d50e-4d6e-b952-d3ee8f6ed7e9",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "d4577b57-35f6-4cfb-aea3-a16414103bc9",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "bd18ca8d-a431-40da-8e4a-58d3708868b8",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "0302ca7b-c651-41ed-a869-6f999fc93e8f",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "2b425d0b-43ba-400a-ba47-60566a5fdbf3",
+          "card": "530f38db-882f-457c-894f-56599bc1ee12",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "32cb84ae-529b-440c-abe1-08f10b36ecf5",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "abae81d6-42bc-4f2d-a088-ca24adc8a6cd",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "d82d9e89-50e1-484a-900f-11695377342b",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "035",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/00/SDMY-DeckSP.png",
+      "cards": [
+        {
+          "id": "a8380ea9-0b38-4e74-a45d-d211f4ac880d",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "ac9cc462-7571-4258-89f6-008a904b0fe4",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "f1758d15-0098-4905-bca4-2009635a91ad",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "613311b3-776c-41b5-b2a4-7fdb8daa256b",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "a36086d0-7b65-4c92-ade4-d37ed2aa7f9e",
+          "card": "530f38db-882f-457c-894f-56599bc1ee12",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "2d92f8ea-7874-406c-98f2-05146990b313",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "23261336-6293-44db-9502-4748efa40eec",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "9466172c-f9b2-4d4a-964c-cee209a1c5a2",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "035",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4e/SDMY-DeckEN.png",
+      "cards": [
+        {
+          "id": "908f2042-5031-4997-b13e-4e087cb960e0",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "d3bdd24e-80b4-433c-aba9-e9fc13295354",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "a20f8b6b-2c3c-4fa8-8b5e-cbc498457a38",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "90a476f7-37fa-40aa-8d16-8e85613c75e0",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "ab963bab-d8f1-46de-bada-08c873bd0332",
+          "card": "530f38db-882f-457c-894f-56599bc1ee12",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "baf3c991-cda2-4a9f-b95b-3ee6a335c0e5",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "293663da-ad1b-424f-a958-476aea1589d5",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "4a20ec8a-3509-4c6f-a9ac-4ea66f221be9",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "035",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/fd/SDMY-DeckDE.png",
+      "cards": [
+        {
+          "id": "e42c759b-9d0b-491a-b9ed-c5c3fec197f7",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "6b0888ab-699a-470f-ba1c-48bc1005d49c",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "4c6fc27a-ad46-40ca-ab73-aaadbb05840b",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "478fa0f8-4c02-44c9-a53b-e7a946ab616e",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "4e1bebba-31e0-4694-9796-8b1d48b959a6",
+          "card": "530f38db-882f-457c-894f-56599bc1ee12",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "379cfca0-66e2-4c5b-b0f2-b352aef01a46",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "95a258b6-9194-4570-b6a6-32950baa4187",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "7c7155da-9fc3-463e-b423-0ba17053c790",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "035",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/ca/SDMY-DeckKR.png",
+      "cards": [
+        {
+          "id": "fd906d3e-9291-4dda-963d-41cb350c35be",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "bc34e054-75d9-45d6-87dc-9c8ffdb2532e",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "65b561b8-b947-4cf8-ae0e-c3ef7ab7a610",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "cb130f6e-c4ee-492d-8983-b93fbdb44be3",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "38374fad-4d83-4d15-8a34-537c5338ded2",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "95ce264a-3bc1-4eb0-9fa0-01420ab5cf17",
+          "card": "08a59d85-df4c-4a8d-a9f6-b07dc21f58b0",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "76cfcf38-c08b-4765-91df-497b9cebbc04",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "033",
+          "rarity": "commonparallel"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/08/SDMY-DeckIT.png",
+      "cards": [
+        {
+          "id": "f48947f5-aa7f-48b3-8b8f-83fb559e9e4f",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "1bdbe2b0-1dc3-41c8-8068-53f91c3717f3",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "bed5b627-ad93-452f-aad4-ea589b6d0ce4",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "069616a9-42b9-4ac4-a67c-e13101c02e20",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "42323bc7-b413-419e-81d0-20781deaa4da",
+          "card": "530f38db-882f-457c-894f-56599bc1ee12",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "50560c37-1731-4c9a-a479-600b0b62ae6b",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "87cc1d11-a95c-4249-8eac-2812e29cdb3c",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "1a180689-786f-44ca-9ea3-0a8a9cf7ded4",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "035",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/a7/SDMY-DeckPT.png",
+      "cards": [
+        {
+          "id": "aabb2c58-e789-4e97-bc09-70ed5a4a9d65",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "a0ea47cf-ef3b-4f64-954c-255fb859482b",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "396ca31d-9413-49ea-acd6-ecb5d9cd6c27",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "0dc8b3cd-f411-4925-921a-122cefd68340",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "7b4feaf1-8ce8-4727-b2ec-3f205cb8e1ef",
+          "card": "530f38db-882f-457c-894f-56599bc1ee12",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "9e625b50-929f-4391-a497-8c6151a9a710",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "cbc5e561-545d-430f-931b-ec54ec74a9a8",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "b8fcd1ae-604a-4fd8-b33a-a3ec262531be",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "035",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1f/SDMY-DeckJP.png",
+      "cards": [
+        {
+          "id": "2df984b0-f80a-41b1-8ee5-f22f749ca0ff",
+          "card": "e3e7cbd3-60c9-450e-accd-1223375c0ad9",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "c171a2c2-c0fa-4b5a-91e3-f54402da2f73",
+          "card": "aa7a4690-beea-45cd-83d8-02aacd3a8951",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "e5aea301-571f-4e41-85de-2e8d31a38d96",
+          "card": "08a4a40b-d71b-482c-b5a7-0f8c9d59ab47",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "fe510987-b411-4985-9b25-02d58514556b",
+          "card": "a67cdc23-1c24-4efd-926e-a34f249d130a",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "bd038995-e072-47a7-baf2-0dcb3833ef80",
+          "card": "5e07ceab-8f84-4d9e-85f3-5d684186c23f",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "60b2e19a-062e-44d7-a16e-cbeb72586621",
+          "card": "1c33e63e-ae7a-450a-a7af-ba8ebdde8ac6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "154d4b57-0fed-4b0a-bdc9-4b851df74f0b",
+          "card": "08a59d85-df4c-4a8d-a9f6-b07dc21f58b0",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "e256cb01-4493-4fb2-a253-c32399fda0ce",
+          "card": "914d1f95-693b-4ff8-be74-6d7be4641ce9",
+          "suffix": "033",
+          "rarity": "commonparallel"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Structure Deck: Yugi Muto",
+      "id": 362417
+    }
+  }
+}

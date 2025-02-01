@@ -1,0 +1,165 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b17dce4a-d96f-4a88-b4d4-247721c94969",
+  "name": {
+    "en": "Yu-Gi-Oh! Advent Calendar",
+    "fr": "Yu-Gi-Oh! Calendrier de l'avent",
+    "de": "Yu-Gi-Oh! Adventskalender"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "AC19-EN",
+      "image": "https://ms.yugipedia.com//6/62/AC19-PromoEN.png",
+      "cardImages": {
+        "1st": {
+          "6f07507c-ab3a-4828-acd4-ff7d572fd92d": "https://ms.yugipedia.com//5/52/ClearKuriboh-AC19-EN-SR-1E.png",
+          "7b362f84-3131-4cf8-8430-5c0ae744fefe": "https://ms.yugipedia.com//b/bb/OneforOne-AC19-EN-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "AC19-DE",
+      "date": "2019-09-26",
+      "image": "https://ms.yugipedia.com//3/3b/AC19-PromoDE.png",
+      "cardImages": {
+        "1st": {
+          "b154366d-c3f1-49ba-bcb9-4c7e9dacc4dd": "https://ms.yugipedia.com//0/01/ClearKuriboh-AC19-DE-SR-1E.png",
+          "efaeea33-7e3e-4e41-ad13-084dfe136fdf": "https://ms.yugipedia.com//e/e0/OneforOne-AC19-DE-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813003
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "AC19-FR",
+      "date": "2019-09-26",
+      "image": "https://ms.yugipedia.com//2/20/AC19-PromoFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18813003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/62/AC19-PromoEN.png",
+      "cards": [
+        {
+          "id": "6f07507c-ab3a-4828-acd4-ff7d572fd92d",
+          "card": "a2edd578-122f-481b-8489-16abba083e4d",
+          "suffix": "004",
+          "rarity": "super"
+        },
+        {
+          "id": "7b362f84-3131-4cf8-8430-5c0ae744fefe",
+          "card": "018e7605-5930-42b8-9a12-864b16e71469",
+          "suffix": "018",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3b/AC19-PromoDE.png",
+      "cards": [
+        {
+          "id": "b154366d-c3f1-49ba-bcb9-4c7e9dacc4dd",
+          "card": "a2edd578-122f-481b-8489-16abba083e4d",
+          "suffix": "004",
+          "rarity": "super"
+        },
+        {
+          "id": "efaeea33-7e3e-4e41-ad13-084dfe136fdf",
+          "card": "018e7605-5930-42b8-9a12-864b16e71469",
+          "suffix": "018",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/AC19-PromoFR.png",
+      "cards": [
+        {
+          "id": "e5c3618a-1088-48be-b5c1-eaecf72b7a59",
+          "card": "a2edd578-122f-481b-8489-16abba083e4d",
+          "suffix": "004",
+          "rarity": "super"
+        },
+        {
+          "id": "6bf80bd4-f224-43ce-9306-46516b67190e",
+          "card": "018e7605-5930-42b8-9a12-864b16e71469",
+          "suffix": "018",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Advent Calendar (2019)",
+      "id": 594761
+    }
+  }
+}

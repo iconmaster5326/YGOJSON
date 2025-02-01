@@ -1,0 +1,850 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "afb0a575-e181-469b-9325-11cdcc5464c6",
+  "name": {
+    "en": "Starstrike Blast",
+    "fr": "Explosion des Etoiles",
+    "de": "Starstrike Blast",
+    "it": "Esplosione Astrale",
+    "es": "La Explosi\u00f3n del Ataque Estelar",
+    "ja": "\u30b9\u30bf\u30fc\u30b9\u30c8\u30e9\u30a4\u30af\u30fb\u30d6\u30e9\u30b9\u30c8",
+    "ko": "\ud3ed\ud48d\uc758 \uc2a4\ud0c0\uc2a4\ud2b8\ub77c\uc774\ud06c"
+  },
+  "locales": {
+    "sp": {
+      "language": "es",
+      "prefix": "STBL-SP",
+      "image": "https://ms.yugipedia.com//f/f1/STBL-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "86104c7c-e34f-4e38-98f5-acd45b13dc80": "https://ms.yugipedia.com//b/b7/SwiftScarecrow-STBL-SP-C-1E.png",
+          "e5b0dda5-e004-411c-aa6e-b63d01d11b10": "https://ms.yugipedia.com//9/91/RescueWarrior-STBL-SP-C-1E.png",
+          "7316542a-0413-4049-a8bd-b982cd64ce6e": "https://ms.yugipedia.com//a/a9/KarakuriMerchantmdl177Inashichi-STBL-SP-R-1E.png",
+          "99016fce-7795-4ebc-9626-e38eea4bb299": "https://ms.yugipedia.com//0/09/ScrapSoldier-STBL-SP-R-1E.png",
+          "ae76afe6-0933-46b5-8172-2793d85a10be": "https://ms.yugipedia.com//3/30/FormulaSynchron-STBL-SP-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51108004
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "STBL-KR",
+      "date": "2010-10-25",
+      "image": "https://ms.yugipedia.com//b/b4/STBL-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "4e2d578e-42f2-4fc3-8447-f9d624be9ca5": "https://ms.yugipedia.com//a/a7/SwiftScarecrow-STBL-KR-C-1E.png",
+          "d7502269-1a49-4d5c-9d51-0d75801e1a22": "https://ms.yugipedia.com//5/5d/RescueWarrior-STBL-KR-C-1E.png",
+          "3763dbef-e0d5-46ab-9663-acf8e18d9ec4": "https://ms.yugipedia.com//a/aa/FormulaSynchron-STBL-KR-SR-1E.png"
+        },
+        "unlimited": {
+          "4e2d578e-42f2-4fc3-8447-f9d624be9ca5": "https://ms.yugipedia.com//7/76/SwiftScarecrow-STBL-KR-C-UE.png",
+          "d7502269-1a49-4d5c-9d51-0d75801e1a22": "https://ms.yugipedia.com//b/b9/RescueWarrior-STBL-KR-C-UE.png",
+          "616bee5e-9591-46da-97ce-eac12afe567e": "https://ms.yugipedia.com//0/03/ExtraVeiler-STBL-KR-C-UE.png",
+          "3bad84ce-5a97-43d6-9b05-e5aa663720ca": "https://ms.yugipedia.com//5/5d/KarakuriMerchantmdl177Inashichi-STBL-KR-R-UE.png",
+          "6035fd85-ff92-4e45-b77a-cfdcba1ab4d3": "https://ms.yugipedia.com//d/d9/KarakuriNinjamdl339Sazank-STBL-KR-SR-UE.png",
+          "918ded0c-64fb-4996-9607-772c80453a82": "https://ms.yugipedia.com//b/bc/ScrapSoldier-STBL-KR-R-UE.png",
+          "0cd74e23-9df9-47be-9c80-35a92658cf7c": "https://ms.yugipedia.com//8/8d/AnarchistMonkRanshin-STBL-KR-SR-UE.png",
+          "3763dbef-e0d5-46ab-9663-acf8e18d9ec4": "https://ms.yugipedia.com//3/37/FormulaSynchron-STBL-KR-SR-UE.png",
+          "5ed5c21b-d104-4614-91b1-32dcb78d6b20": "https://ms.yugipedia.com//a/a0/KarakuriShowdownCastle-STBL-KR-R-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71108003
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "STBL-JP",
+      "date": "2010-07-17",
+      "image": "https://ms.yugipedia.com//4/4a/STBL-BoosterJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "81a93487-628f-4b52-9be9-eb5a1998f0f4": "https://ms.yugipedia.com//e/ea/SwiftScarecrow-STBL-JP-C.jpg",
+          "a9c32f25-e2e8-44bf-a736-bb99a65aff65": "https://ms.yugipedia.com//1/17/RescueWarrior-STBL-JP-C.jpg",
+          "24e0bfac-b480-4ec3-afe3-42753910158a": "https://ms.yugipedia.com//3/3e/ExtraVeiler-STBL-JP-C.jpg",
+          "0ee93fe4-6d53-4b03-81fe-cf39ee97c954": "https://ms.yugipedia.com//1/15/KarakuriMerchantmdl177Inashichi-STBL-JP-R.jpg",
+          "57452afe-8e5b-4da7-b2e9-e77c0d87c9d6": "https://ms.yugipedia.com//6/60/KarakuriNinjamdl339Sazank-STBL-JP-SR.jpg",
+          "6474524a-ee6a-4677-b206-25db94295663": "https://ms.yugipedia.com//6/62/ScrapSoldier-STBL-JP-R.jpg",
+          "e820aa07-c61f-4497-92a5-8927c5775dfc": "https://ms.yugipedia.com//b/b4/AnarchistMonkRanshin-STBL-JP-SR.jpg",
+          "32af7b73-0bcf-4ec7-a5bb-dcaf93198a03": "https://ms.yugipedia.com//1/15/FormulaSynchron-STBL-JP-SR.jpg",
+          "cc75cbe0-dbe6-4173-96c7-629f5f487987": "https://ms.yugipedia.com//e/ec/KarakuriShowdownCastle-STBL-JP-R.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1113001
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "STBL-EN",
+      "image": "https://ms.yugipedia.com//5/52/STBL-BoosterEN.jpg",
+      "cardImages": {
+        "1st": {
+          "8ae21e2a-a196-4138-b0ab-d10ada750826": "https://ms.yugipedia.com//b/bb/SwiftScarecrow-STBL-EN-C-1E.png",
+          "e032e227-0093-46fa-81c3-c90c23e6e4b3": "https://ms.yugipedia.com//4/4d/RescueWarrior-STBL-EN-C-1E.jpg",
+          "838bb6b8-6d05-45a4-b3e0-a929dfbaaa5e": "https://ms.yugipedia.com//8/83/ExtraVeiler-STBL-EN-C-1E.jpg",
+          "54d71bcb-b5e4-42e3-acc8-1ccd3f1dac84": "https://ms.yugipedia.com//1/1b/KarakuriMerchantmdl177Inashichi-STBL-EN-R-1E.jpg",
+          "ba879bc1-5a50-4eea-9148-d18fc7c51c0a": "https://ms.yugipedia.com//5/58/KarakuriNinjamdl339Sazank-STBL-EN-SR-1E.jpg",
+          "1147489b-0fdc-4d54-a0f0-a4fc75762fcb": "https://ms.yugipedia.com//8/87/ScrapSoldier-STBL-EN-R-1E.jpg",
+          "82ba969f-9a8e-492f-a900-4670e371abf4": "https://ms.yugipedia.com//3/37/AnarchistMonkRanshin-STBL-EN-SR-1E.png",
+          "9731be5b-0bef-4945-bc8b-4e0eec78ff9f": "https://ms.yugipedia.com//c/c0/FormulaSynchron-STBL-EN-R-1E.png",
+          "85ec20f3-527a-4038-9ad4-c6cb2649e610": "https://ms.yugipedia.com//c/c8/KarakuriShowdownCastle-STBL-EN-R-1E.jpg",
+          "830cad14-9637-407b-9e27-4b05895730c7": "https://ms.yugipedia.com//3/3a/KarakuriBarrelmdl96Shinkuro-STBL-EN-R-1E.jpg",
+          "a41723cf-a3ac-4340-8ab8-9a148e837b1a": "https://ms.yugipedia.com//a/aa/AllySalvo-STBL-EN-R-1E.jpg",
+          "946a98d1-766c-4df4-8f9e-9ca1b7bf8c19": "https://ms.yugipedia.com//7/79/TheFabledRubyruda-STBL-EN-ScR-1E.jpg",
+          "cee107c9-38bf-46a2-9f10-57281148c319": "https://ms.yugipedia.com//9/91/GenexAllyAxel-STBL-EN-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11109004
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "STBL-FR",
+      "image": "https://ms.yugipedia.com//d/d1/STBL-BoosterFR.jpg",
+      "cardImages": {
+        "1st": {
+          "9658ab27-05b7-402c-a492-f3530635665f": "https://ms.yugipedia.com//2/2b/RescueWarrior-STBL-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31109004
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "STBL-IT",
+      "image": "https://ms.yugipedia.com//c/ca/STBL-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "81e514d0-65c7-440f-842e-bff6a99a8bb5": "https://ms.yugipedia.com//0/0f/RescueWarrior-STBL-IT-C-1E.png",
+          "9f443a8e-9c34-419e-ad9c-5e0045bf18eb": "https://ms.yugipedia.com//d/d4/FormulaSynchron-STBL-IT-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41109004
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "STBL-DE",
+      "image": "https://ms.yugipedia.com//0/04/STBL-BoosterDE.jpg",
+      "cardImages": {
+        "1st": {
+          "c375b846-d0f1-4ceb-abbb-01dee898d065": "https://ms.yugipedia.com//3/3e/SwiftScarecrow-STBL-DE-C-1E.png",
+          "a1fd64f7-4b36-46a3-85d3-b787185ee6a2": "https://ms.yugipedia.com//f/f2/RescueWarrior-STBL-DE-C-1E.png",
+          "cf6d2fbb-f750-4bf0-a1b5-86f6263a8624": "https://ms.yugipedia.com//3/3a/FormulaSynchron-STBL-DE-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21109004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/f1/STBL-BoosterSP.png",
+      "cards": [
+        {
+          "id": "86104c7c-e34f-4e38-98f5-acd45b13dc80",
+          "card": "829760ba-dfff-4495-b22a-11c8cd61b4cb",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "e5b0dda5-e004-411c-aa6e-b63d01d11b10",
+          "card": "1766467b-f535-4681-a998-7b1a8fc94561",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1d7d4546-2971-444e-8a59-607f5635693f",
+          "card": "fc24ab0a-bf56-4bb0-817a-c058b6f85444",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "7316542a-0413-4049-a8bd-b982cd64ce6e",
+          "card": "9e6fa8c7-6679-45d8-8f11-9cb3a4f49af2",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "70048811-3f21-4115-af2b-053f8a27a022",
+          "card": "917ad027-3869-4912-9824-468f06e4e09a",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "99016fce-7795-4ebc-9626-e38eea4bb299",
+          "card": "b33fdcad-1e4d-48fb-96c8-5202dc998d54",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "85add35c-db37-4b5f-80e0-f803b8157ac0",
+          "card": "d0501af3-0815-471b-9d55-901ace76a2ad",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "ae76afe6-0933-46b5-8172-2793d85a10be",
+          "card": "9a7e7c1a-343b-4485-aad1-281dcededa69",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "14fea110-c51e-4a68-919e-b83ab7b0496f",
+          "card": "6f581344-607c-4bdf-b695-953d5ecef856",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "0e5e3ef1-3138-4cef-b941-64ae2f217578",
+          "card": "1fa75588-3dd6-4f1f-b833-19882144257a",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "4b0144fc-e09a-4b31-95eb-4689e20a4a6d",
+          "card": "ea82931d-ac8e-499a-b5a4-5c9b49748ecf",
+          "suffix": "092",
+          "rarity": "rare"
+        },
+        {
+          "id": "946a98d1-766c-4df4-8f9e-9ca1b7bf8c19",
+          "card": "a0f0f644-6d94-4f33-8eaa-8dbfaf75cba6",
+          "suffix": "096",
+          "rarity": "secret"
+        },
+        {
+          "id": "61322fa5-0a87-411c-8648-84fb9ca5c842",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starstrike Blast"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/b4/STBL-BoosterKR.png",
+      "cards": [
+        {
+          "id": "4e2d578e-42f2-4fc3-8447-f9d624be9ca5",
+          "card": "829760ba-dfff-4495-b22a-11c8cd61b4cb",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "d7502269-1a49-4d5c-9d51-0d75801e1a22",
+          "card": "1766467b-f535-4681-a998-7b1a8fc94561",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "616bee5e-9591-46da-97ce-eac12afe567e",
+          "card": "fc24ab0a-bf56-4bb0-817a-c058b6f85444",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3bad84ce-5a97-43d6-9b05-e5aa663720ca",
+          "card": "9e6fa8c7-6679-45d8-8f11-9cb3a4f49af2",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "6035fd85-ff92-4e45-b77a-cfdcba1ab4d3",
+          "card": "917ad027-3869-4912-9824-468f06e4e09a",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "918ded0c-64fb-4996-9607-772c80453a82",
+          "card": "b33fdcad-1e4d-48fb-96c8-5202dc998d54",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "0cd74e23-9df9-47be-9c80-35a92658cf7c",
+          "card": "d0501af3-0815-471b-9d55-901ace76a2ad",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "3763dbef-e0d5-46ab-9663-acf8e18d9ec4",
+          "card": "9a7e7c1a-343b-4485-aad1-281dcededa69",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "5ed5c21b-d104-4614-91b1-32dcb78d6b20",
+          "card": "6f581344-607c-4bdf-b695-953d5ecef856",
+          "suffix": "046",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starstrike Blast"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4a/STBL-BoosterJP.jpg",
+      "cards": [
+        {
+          "id": "81a93487-628f-4b52-9be9-eb5a1998f0f4",
+          "card": "829760ba-dfff-4495-b22a-11c8cd61b4cb",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a9c32f25-e2e8-44bf-a736-bb99a65aff65",
+          "card": "1766467b-f535-4681-a998-7b1a8fc94561",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "24e0bfac-b480-4ec3-afe3-42753910158a",
+          "card": "fc24ab0a-bf56-4bb0-817a-c058b6f85444",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "0ee93fe4-6d53-4b03-81fe-cf39ee97c954",
+          "card": "9e6fa8c7-6679-45d8-8f11-9cb3a4f49af2",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "57452afe-8e5b-4da7-b2e9-e77c0d87c9d6",
+          "card": "917ad027-3869-4912-9824-468f06e4e09a",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "6474524a-ee6a-4677-b206-25db94295663",
+          "card": "b33fdcad-1e4d-48fb-96c8-5202dc998d54",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "e820aa07-c61f-4497-92a5-8927c5775dfc",
+          "card": "d0501af3-0815-471b-9d55-901ace76a2ad",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "32af7b73-0bcf-4ec7-a5bb-dcaf93198a03",
+          "card": "9a7e7c1a-343b-4485-aad1-281dcededa69",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "cc75cbe0-dbe6-4173-96c7-629f5f487987",
+          "card": "6f581344-607c-4bdf-b695-953d5ecef856",
+          "suffix": "046",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starstrike Blast"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/52/STBL-BoosterEN.jpg",
+      "cards": [
+        {
+          "id": "8ae21e2a-a196-4138-b0ab-d10ada750826",
+          "card": "829760ba-dfff-4495-b22a-11c8cd61b4cb",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "e032e227-0093-46fa-81c3-c90c23e6e4b3",
+          "card": "1766467b-f535-4681-a998-7b1a8fc94561",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "838bb6b8-6d05-45a4-b3e0-a929dfbaaa5e",
+          "card": "fc24ab0a-bf56-4bb0-817a-c058b6f85444",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "54d71bcb-b5e4-42e3-acc8-1ccd3f1dac84",
+          "card": "9e6fa8c7-6679-45d8-8f11-9cb3a4f49af2",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "ba879bc1-5a50-4eea-9148-d18fc7c51c0a",
+          "card": "917ad027-3869-4912-9824-468f06e4e09a",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "1147489b-0fdc-4d54-a0f0-a4fc75762fcb",
+          "card": "b33fdcad-1e4d-48fb-96c8-5202dc998d54",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "82ba969f-9a8e-492f-a900-4670e371abf4",
+          "card": "d0501af3-0815-471b-9d55-901ace76a2ad",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "9731be5b-0bef-4945-bc8b-4e0eec78ff9f",
+          "card": "9a7e7c1a-343b-4485-aad1-281dcededa69",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "85ec20f3-527a-4038-9ad4-c6cb2649e610",
+          "card": "6f581344-607c-4bdf-b695-953d5ecef856",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "830cad14-9637-407b-9e27-4b05895730c7",
+          "card": "1fa75588-3dd6-4f1f-b833-19882144257a",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "a41723cf-a3ac-4340-8ab8-9a148e837b1a",
+          "card": "ea82931d-ac8e-499a-b5a4-5c9b49748ecf",
+          "suffix": "092",
+          "rarity": "rare"
+        },
+        {
+          "id": "946a98d1-766c-4df4-8f9e-9ca1b7bf8c19",
+          "card": "a0f0f644-6d94-4f33-8eaa-8dbfaf75cba6",
+          "suffix": "096",
+          "rarity": "secret"
+        },
+        {
+          "id": "cee107c9-38bf-46a2-9f10-57281148c319",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starstrike Blast"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/d1/STBL-BoosterFR.jpg",
+      "cards": [
+        {
+          "id": "a93d2a3a-a871-4030-aa27-07fb3568b561",
+          "card": "829760ba-dfff-4495-b22a-11c8cd61b4cb",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "9658ab27-05b7-402c-a492-f3530635665f",
+          "card": "1766467b-f535-4681-a998-7b1a8fc94561",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "dbedcb88-9fab-476f-9fd6-c965e36ae713",
+          "card": "fc24ab0a-bf56-4bb0-817a-c058b6f85444",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "d76ac9a3-2503-4c93-a60a-904b22019d8c",
+          "card": "9e6fa8c7-6679-45d8-8f11-9cb3a4f49af2",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "4c110667-9e53-40af-80ca-16b8df53a6d4",
+          "card": "917ad027-3869-4912-9824-468f06e4e09a",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "cfe679bf-b733-4d53-b3f6-d8dc85fbcfc8",
+          "card": "b33fdcad-1e4d-48fb-96c8-5202dc998d54",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "50759c01-fa09-40e3-a51c-cb1b8879f796",
+          "card": "d0501af3-0815-471b-9d55-901ace76a2ad",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "dafcbda8-9a93-4381-8a93-f07cfa3f8ce6",
+          "card": "9a7e7c1a-343b-4485-aad1-281dcededa69",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "7ed87fb3-9f75-4d31-a958-d26dd04847e0",
+          "card": "6f581344-607c-4bdf-b695-953d5ecef856",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "4e963846-ff10-4284-9cb4-c733a924a04f",
+          "card": "1fa75588-3dd6-4f1f-b833-19882144257a",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "cdf201f7-1f4c-4d07-bd96-8e6495c7de63",
+          "card": "ea82931d-ac8e-499a-b5a4-5c9b49748ecf",
+          "suffix": "092",
+          "rarity": "rare"
+        },
+        {
+          "id": "946a98d1-766c-4df4-8f9e-9ca1b7bf8c19",
+          "card": "a0f0f644-6d94-4f33-8eaa-8dbfaf75cba6",
+          "suffix": "096",
+          "rarity": "secret"
+        },
+        {
+          "id": "11ec0e27-c914-453c-b51f-5266673b8585",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starstrike Blast"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/ca/STBL-BoosterIT.png",
+      "cards": [
+        {
+          "id": "f898fa30-b6ae-42d1-9bc9-3a7f6a20198e",
+          "card": "829760ba-dfff-4495-b22a-11c8cd61b4cb",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "81e514d0-65c7-440f-842e-bff6a99a8bb5",
+          "card": "1766467b-f535-4681-a998-7b1a8fc94561",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1904830b-d5b7-4da1-9965-8073453179ef",
+          "card": "fc24ab0a-bf56-4bb0-817a-c058b6f85444",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ae94ca13-a788-4805-94be-8fb7fd250e74",
+          "card": "9e6fa8c7-6679-45d8-8f11-9cb3a4f49af2",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "01fab8be-37d4-4c4b-abf6-cad3ca701627",
+          "card": "917ad027-3869-4912-9824-468f06e4e09a",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "558222b6-c21c-42ec-8585-244fcd4dfccf",
+          "card": "b33fdcad-1e4d-48fb-96c8-5202dc998d54",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "bc703ab6-0b65-46cf-8fa3-87bbc25c49dc",
+          "card": "d0501af3-0815-471b-9d55-901ace76a2ad",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "9f443a8e-9c34-419e-ad9c-5e0045bf18eb",
+          "card": "9a7e7c1a-343b-4485-aad1-281dcededa69",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "a787bffd-b675-4c8a-ac09-287fab0287e5",
+          "card": "6f581344-607c-4bdf-b695-953d5ecef856",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "cda17282-d458-4c6d-8560-b1bb28dc675d",
+          "card": "1fa75588-3dd6-4f1f-b833-19882144257a",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "23249f32-45f7-4bca-adac-39bf21c2146d",
+          "card": "ea82931d-ac8e-499a-b5a4-5c9b49748ecf",
+          "suffix": "092",
+          "rarity": "rare"
+        },
+        {
+          "id": "946a98d1-766c-4df4-8f9e-9ca1b7bf8c19",
+          "card": "a0f0f644-6d94-4f33-8eaa-8dbfaf75cba6",
+          "suffix": "096",
+          "rarity": "secret"
+        },
+        {
+          "id": "f0f28455-ee9c-43f3-bf4f-750796ea6b95",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starstrike Blast"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/04/STBL-BoosterDE.jpg",
+      "cards": [
+        {
+          "id": "c375b846-d0f1-4ceb-abbb-01dee898d065",
+          "card": "829760ba-dfff-4495-b22a-11c8cd61b4cb",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a1fd64f7-4b36-46a3-85d3-b787185ee6a2",
+          "card": "1766467b-f535-4681-a998-7b1a8fc94561",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "a2fe4147-1d59-4c01-8726-af30b6380d8b",
+          "card": "fc24ab0a-bf56-4bb0-817a-c058b6f85444",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "81de2885-d702-4bf1-b4b5-dce5cc20f1f4",
+          "card": "9e6fa8c7-6679-45d8-8f11-9cb3a4f49af2",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "9120b60a-1525-418c-a7c4-cdd89a739333",
+          "card": "917ad027-3869-4912-9824-468f06e4e09a",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "4fc9721c-1abf-4fdc-b476-7a406101ed89",
+          "card": "b33fdcad-1e4d-48fb-96c8-5202dc998d54",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "716d2a49-d5f6-4a09-a90b-59c1ef597ad2",
+          "card": "d0501af3-0815-471b-9d55-901ace76a2ad",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "cf6d2fbb-f750-4bf0-a1b5-86f6263a8624",
+          "card": "9a7e7c1a-343b-4485-aad1-281dcededa69",
+          "suffix": "041",
+          "rarity": "rare"
+        },
+        {
+          "id": "a2ae48fa-ec2c-4847-b678-7edffcedeb1b",
+          "card": "6f581344-607c-4bdf-b695-953d5ecef856",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "7feb5c2c-396f-495d-a947-84cec57fb1a4",
+          "card": "1fa75588-3dd6-4f1f-b833-19882144257a",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "9de4b7a5-bed1-4ee0-a794-1ea2ebfea47c",
+          "card": "ea82931d-ac8e-499a-b5a4-5c9b49748ecf",
+          "suffix": "092",
+          "rarity": "rare"
+        },
+        {
+          "id": "946a98d1-766c-4df4-8f9e-9ca1b7bf8c19",
+          "card": "a0f0f644-6d94-4f33-8eaa-8dbfaf75cba6",
+          "suffix": "096",
+          "rarity": "secret"
+        },
+        {
+          "id": "25b1c6f9-4a3f-4add-9470-0f9da3cbee95",
+          "card": "a96b6e97-4a3b-4c41-a98c-cfb56cd3730e",
+          "suffix": "099",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starstrike Blast"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starstrike Blast",
+      "id": 123853
+    }
+  }
+}

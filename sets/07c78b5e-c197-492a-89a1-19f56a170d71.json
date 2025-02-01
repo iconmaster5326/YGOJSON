@@ -1,0 +1,543 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "07c78b5e-c197-492a-89a1-19f56a170d71",
+  "name": {
+    "en": "Dragons Collide Structure Deck",
+    "fr": "Le Choc des Dragons Deck de Structure",
+    "de": "Dragons Collide Structure Deck",
+    "it": "Conflitto dei Draghi Structure Deck",
+    "es": "Choque de Dragones Baraja de Estructura"
+  },
+  "locales": {
+    "sp": {
+      "language": "es",
+      "prefix": "SDDC-SP",
+      "image": "https://ms.yugipedia.com//9/9e/SDDC-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "bfa39248-476b-4e5c-8215-8cafb5eb7b1c": "https://ms.yugipedia.com//2/24/TheWhiteStoneofLegend-SDDC-SP-C-1E.png",
+          "af39e5fc-98ce-424d-8226-c4c47c20ac7a": "https://ms.yugipedia.com//8/82/BlackDragonsChick-SDDC-SP-C-1E.png",
+          "3bba96c7-e0f3-4899-88df-b654d36a50e8": "https://ms.yugipedia.com//0/02/AxeDragonute-SDDC-SP-C-1E.png",
+          "8947207e-d253-4c33-a180-b15e440f6004": "https://ms.yugipedia.com//7/7a/ChaosSorcerer-SDDC-SP-C-1E.png",
+          "454dbe99-53a8-4080-85f0-93e0321d231d": "https://ms.yugipedia.com//d/d3/LylaLightswornSorceress-SDDC-SP-C-1E.png",
+          "a1e39ddd-46c9-4c97-9bd6-c0d55a9f8bc5": "https://ms.yugipedia.com//4/49/InfernoFireBlast-SDDC-SP-C-1E.png",
+          "308cb688-7fc8-4358-af13-464c16bef1bf": "https://ms.yugipedia.com//6/6a/MonsterGate-SDDC-SP-C-1E.png",
+          "81be8efb-97c2-4760-bef9-6164dc7505fb": "https://ms.yugipedia.com//0/0e/DragonsRebirth-SDDC-SP-C-1E.png",
+          "bdbe8091-8383-45c4-8ff5-aaf01c10ce40": "https://ms.yugipedia.com//3/36/CalloftheHaunted-SDDC-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          54408000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SDDC-EN",
+      "image": "https://ms.yugipedia.com//1/1f/SDDC-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "6432f800-f668-4cfb-b1dc-97d3d177bd66": "https://ms.yugipedia.com//4/40/TheWhiteStoneofLegend-SDDC-EN-C-1E.jpg",
+          "af39e5fc-98ce-424d-8226-c4c47c20ac7a": "https://ms.yugipedia.com//3/3a/BlackDragonsChick-SDDC-EN-C-1E.jpg",
+          "4da08fd2-547f-4e21-9861-1aed98d5c4fd": "https://ms.yugipedia.com//7/77/AxeDragonute-SDDC-EN-C-1E.jpg",
+          "735539ed-31b0-4835-8e76-43130c8ed9a4": "https://ms.yugipedia.com//c/c4/ChaosSorcerer-SDDC-EN-C-1E.jpg",
+          "acf652a6-f2f1-47ce-8081-6a259304132f": "https://ms.yugipedia.com//e/e2/LylaLightswornSorceress-SDDC-EN-C-1E.jpg",
+          "dd941557-0fcc-403a-b42b-225ec1054185": "https://ms.yugipedia.com//2/23/InfernoFireBlast-SDDC-EN-C-1E.png",
+          "4852ce39-8812-49de-9c2c-cdf88061915e": "https://ms.yugipedia.com//c/c6/MonsterGate-SDDC-EN-C-1E.jpg",
+          "2f6e11d1-0765-4f68-858c-f71cd1db654b": "https://ms.yugipedia.com//0/0c/DragonsRebirth-SDDC-EN-C-1E.jpg",
+          "75aff4c6-6b36-4018-ad52-5e856e3a85ce": "https://ms.yugipedia.com//0/05/CalloftheHaunted-SDDC-EN-C-1E.jpg"
+        },
+        "unlimited": {
+          "6432f800-f668-4cfb-b1dc-97d3d177bd66": "https://ms.yugipedia.com//d/d4/TheWhiteStoneofLegend-SDDC-EN-C-UE.png",
+          "af39e5fc-98ce-424d-8226-c4c47c20ac7a": "https://ms.yugipedia.com//9/99/BlackDragonsChick-SDDC-EN-C-UE.png",
+          "4da08fd2-547f-4e21-9861-1aed98d5c4fd": "https://ms.yugipedia.com//0/0f/AxeDragonute-SDDC-EN-C-UE.png",
+          "735539ed-31b0-4835-8e76-43130c8ed9a4": "https://ms.yugipedia.com//c/ce/ChaosSorcerer-SDDC-EN-C-UE.png",
+          "acf652a6-f2f1-47ce-8081-6a259304132f": "https://ms.yugipedia.com//6/6c/LylaLightswornSorceress-SDDC-EN-C-UE.png",
+          "dd941557-0fcc-403a-b42b-225ec1054185": "https://ms.yugipedia.com//8/80/InfernoFireBlast-SDDC-EN-C-UE.png",
+          "4852ce39-8812-49de-9c2c-cdf88061915e": "https://ms.yugipedia.com//b/bc/MonsterGate-SDDC-EN-C-UE.png",
+          "2f6e11d1-0765-4f68-858c-f71cd1db654b": "https://ms.yugipedia.com//7/7e/DragonsRebirth-SDDC-EN-C-UE.png",
+          "75aff4c6-6b36-4018-ad52-5e856e3a85ce": "https://ms.yugipedia.com//d/d6/CalloftheHaunted-SDDC-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14408000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SDDC-FR",
+      "image": "https://ms.yugipedia.com//e/ef/SDDC-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "00408821-d389-4978-9348-c0bf53ee80e4": "https://ms.yugipedia.com//6/62/TheWhiteStoneofLegend-SDDC-FR-C-1E.png",
+          "af39e5fc-98ce-424d-8226-c4c47c20ac7a": "https://ms.yugipedia.com//d/d5/BlackDragonsChick-SDDC-FR-C-1E.png",
+          "49ffbd50-07e4-46b2-ad15-25ff1568aa92": "https://ms.yugipedia.com//3/3a/AxeDragonute-SDDC-FR-C-1E.png",
+          "f21b93db-03a7-49e9-9b3b-10a42cc2b885": "https://ms.yugipedia.com//1/1f/ChaosSorcerer-SDDC-FR-C-1E.png",
+          "04955b36-a2c0-4e07-8137-3424fbacb84a": "https://ms.yugipedia.com//f/f8/LylaLightswornSorceress-SDDC-FR-C-1E.png",
+          "e99ce838-deaf-46ef-8508-9a2949814a16": "https://ms.yugipedia.com//e/ee/InfernoFireBlast-SDDC-FR-C-1E.png",
+          "5f4bc116-bbcd-4a3d-9e61-8c99469ee057": "https://ms.yugipedia.com//0/0a/MonsterGate-SDDC-FR-C-1E.png",
+          "cab65a55-43dd-4acb-bc74-c9a1ff29824c": "https://ms.yugipedia.com//b/bd/DragonsRebirth-SDDC-FR-C-1E.png",
+          "f76c2c5f-ca1c-433f-a513-3995e56b2692": "https://ms.yugipedia.com//f/f7/CalloftheHaunted-SDDC-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          34408000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SDDC-IT",
+      "image": "https://ms.yugipedia.com//4/42/SDDC-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "25a2556d-8d58-4f6c-9bca-1a1569e4da0d": "https://ms.yugipedia.com//e/e4/TheWhiteStoneofLegend-SDDC-IT-C-1E.png",
+          "af39e5fc-98ce-424d-8226-c4c47c20ac7a": "https://ms.yugipedia.com//d/d9/BlackDragonsChick-SDDC-IT-C-1E.png",
+          "eb129649-567d-4bd7-93f9-16e57736c98d": "https://ms.yugipedia.com//7/7d/AxeDragonute-SDDC-IT-C-1E.png",
+          "589ad893-b4ed-4b00-9cef-16d7909cb3bd": "https://ms.yugipedia.com//9/96/ChaosSorcerer-SDDC-IT-C-1E.png",
+          "1315f18c-a9df-480a-9433-f99a483eddeb": "https://ms.yugipedia.com//1/1c/LylaLightswornSorceress-SDDC-IT-C-1E.png",
+          "17372a80-7cbd-44fb-a903-4a5a52b6b04a": "https://ms.yugipedia.com//6/62/InfernoFireBlast-SDDC-IT-C-1E.png",
+          "5e397e1d-50f4-4ac1-a299-a7f56bc22a5f": "https://ms.yugipedia.com//0/07/MonsterGate-SDDC-IT-C-1E.png",
+          "81c155ea-2601-467b-b741-1700597a3874": "https://ms.yugipedia.com//a/a6/DragonsRebirth-SDDC-IT-C-1E.png",
+          "d6d3facc-df37-486c-aa78-5b3535eeb093": "https://ms.yugipedia.com//0/09/CalloftheHaunted-SDDC-IT-C-1E.png"
+        },
+        "unlimited": {
+          "af39e5fc-98ce-424d-8226-c4c47c20ac7a": "https://ms.yugipedia.com//9/97/BlackDragonsChick-SDDC-IT-C-UE.png",
+          "17372a80-7cbd-44fb-a903-4a5a52b6b04a": "https://ms.yugipedia.com//3/38/InfernoFireBlast-SDDC-IT-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          44408000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SDDC-DE",
+      "cardImages": {
+        "1st": {
+          "87bda75c-4c18-44d9-8d04-0a4f3c0b9689": "https://ms.yugipedia.com//d/d9/TheWhiteStoneofLegend-SDDC-DE-C-1E.jpg",
+          "af39e5fc-98ce-424d-8226-c4c47c20ac7a": "https://ms.yugipedia.com//5/5b/BlackDragonsChick-SDDC-DE-C-1E.jpg",
+          "0f2367fb-13a9-4ab8-bc5e-e66de8fcd4a7": "https://ms.yugipedia.com//c/c8/AxeDragonute-SDDC-DE-C-1E.jpg",
+          "f3bb052c-ac3a-40f6-a4dd-ea06743d4e82": "https://ms.yugipedia.com//5/58/ChaosSorcerer-SDDC-DE-C-1E.jpg",
+          "de2b5515-16db-4691-8498-30139404e689": "https://ms.yugipedia.com//2/24/LylaLightswornSorceress-SDDC-DE-C-1E.jpg",
+          "b9c95875-c499-4b9a-a89e-d0c4625b706d": "https://ms.yugipedia.com//f/f6/InfernoFireBlast-SDDC-DE-C-1E.jpg",
+          "3ef8695f-1670-4a3d-8d8b-4cb28f71b9b5": "https://ms.yugipedia.com//3/3c/MonsterGate-SDDC-DE-C-1E.jpg",
+          "517e1de9-216e-4192-8b06-039840aa4fec": "https://ms.yugipedia.com//1/11/DragonsRebirth-SDDC-DE-C-1E.jpg",
+          "1150f11b-a3e2-46e7-a4cf-8026f55fa383": "https://ms.yugipedia.com//9/9d/CalloftheHaunted-SDDC-DE-C-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          24408000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/9e/SDDC-DeckSP.png",
+      "cards": [
+        {
+          "id": "bfa39248-476b-4e5c-8215-8cafb5eb7b1c",
+          "card": "dcc1b7f7-a7ed-4edf-9f10-892f981209ae",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "af39e5fc-98ce-424d-8226-c4c47c20ac7a",
+          "card": "d58a9f46-61a1-4f2a-8bac-0a8daf1bc748",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "3bba96c7-e0f3-4899-88df-b654d36a50e8",
+          "card": "7f0ae38b-7441-41f4-8178-9e0201fb0a2d",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "8947207e-d253-4c33-a180-b15e440f6004",
+          "card": "fb0f9941-3719-485f-bda2-39a81d4919f9",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "454dbe99-53a8-4080-85f0-93e0321d231d",
+          "card": "408b4ae5-2d46-4c55-af62-d0367546992e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "a1e39ddd-46c9-4c97-9bd6-c0d55a9f8bc5",
+          "card": "cd803ec3-ce2e-4fb3-8c44-afa05f919f48",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "308cb688-7fc8-4358-af13-464c16bef1bf",
+          "card": "ee45f4a7-0d05-4ce2-bb65-77aee0b90aa3",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "81be8efb-97c2-4760-bef9-6164dc7505fb",
+          "card": "7a64ca0d-34d7-4b7e-a2e6-5c8c9f98b38a",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "bdbe8091-8383-45c4-8ff5-aaf01c10ce40",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "038",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Dragons Collide Structure Deck"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1f/SDDC-DeckEN.png",
+      "cards": [
+        {
+          "id": "6432f800-f668-4cfb-b1dc-97d3d177bd66",
+          "card": "dcc1b7f7-a7ed-4edf-9f10-892f981209ae",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "af39e5fc-98ce-424d-8226-c4c47c20ac7a",
+          "card": "d58a9f46-61a1-4f2a-8bac-0a8daf1bc748",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "4da08fd2-547f-4e21-9861-1aed98d5c4fd",
+          "card": "7f0ae38b-7441-41f4-8178-9e0201fb0a2d",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "735539ed-31b0-4835-8e76-43130c8ed9a4",
+          "card": "fb0f9941-3719-485f-bda2-39a81d4919f9",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "acf652a6-f2f1-47ce-8081-6a259304132f",
+          "card": "408b4ae5-2d46-4c55-af62-d0367546992e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "dd941557-0fcc-403a-b42b-225ec1054185",
+          "card": "cd803ec3-ce2e-4fb3-8c44-afa05f919f48",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "4852ce39-8812-49de-9c2c-cdf88061915e",
+          "card": "ee45f4a7-0d05-4ce2-bb65-77aee0b90aa3",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "2f6e11d1-0765-4f68-858c-f71cd1db654b",
+          "card": "7a64ca0d-34d7-4b7e-a2e6-5c8c9f98b38a",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "75aff4c6-6b36-4018-ad52-5e856e3a85ce",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "038",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Dragons Collide Structure Deck"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/ef/SDDC-DeckFR.png",
+      "cards": [
+        {
+          "id": "00408821-d389-4978-9348-c0bf53ee80e4",
+          "card": "dcc1b7f7-a7ed-4edf-9f10-892f981209ae",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "af39e5fc-98ce-424d-8226-c4c47c20ac7a",
+          "card": "d58a9f46-61a1-4f2a-8bac-0a8daf1bc748",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "49ffbd50-07e4-46b2-ad15-25ff1568aa92",
+          "card": "7f0ae38b-7441-41f4-8178-9e0201fb0a2d",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "f21b93db-03a7-49e9-9b3b-10a42cc2b885",
+          "card": "fb0f9941-3719-485f-bda2-39a81d4919f9",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "04955b36-a2c0-4e07-8137-3424fbacb84a",
+          "card": "408b4ae5-2d46-4c55-af62-d0367546992e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "e99ce838-deaf-46ef-8508-9a2949814a16",
+          "card": "cd803ec3-ce2e-4fb3-8c44-afa05f919f48",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "5f4bc116-bbcd-4a3d-9e61-8c99469ee057",
+          "card": "ee45f4a7-0d05-4ce2-bb65-77aee0b90aa3",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "cab65a55-43dd-4acb-bc74-c9a1ff29824c",
+          "card": "7a64ca0d-34d7-4b7e-a2e6-5c8c9f98b38a",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "f76c2c5f-ca1c-433f-a513-3995e56b2692",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "038",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Dragons Collide Structure Deck"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/42/SDDC-DeckIT.png",
+      "cards": [
+        {
+          "id": "25a2556d-8d58-4f6c-9bca-1a1569e4da0d",
+          "card": "dcc1b7f7-a7ed-4edf-9f10-892f981209ae",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "af39e5fc-98ce-424d-8226-c4c47c20ac7a",
+          "card": "d58a9f46-61a1-4f2a-8bac-0a8daf1bc748",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "eb129649-567d-4bd7-93f9-16e57736c98d",
+          "card": "7f0ae38b-7441-41f4-8178-9e0201fb0a2d",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "589ad893-b4ed-4b00-9cef-16d7909cb3bd",
+          "card": "fb0f9941-3719-485f-bda2-39a81d4919f9",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "1315f18c-a9df-480a-9433-f99a483eddeb",
+          "card": "408b4ae5-2d46-4c55-af62-d0367546992e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "17372a80-7cbd-44fb-a903-4a5a52b6b04a",
+          "card": "cd803ec3-ce2e-4fb3-8c44-afa05f919f48",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "5e397e1d-50f4-4ac1-a299-a7f56bc22a5f",
+          "card": "ee45f4a7-0d05-4ce2-bb65-77aee0b90aa3",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "81c155ea-2601-467b-b741-1700597a3874",
+          "card": "7a64ca0d-34d7-4b7e-a2e6-5c8c9f98b38a",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "d6d3facc-df37-486c-aa78-5b3535eeb093",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "038",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Dragons Collide Structure Deck"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "87bda75c-4c18-44d9-8d04-0a4f3c0b9689",
+          "card": "dcc1b7f7-a7ed-4edf-9f10-892f981209ae",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "af39e5fc-98ce-424d-8226-c4c47c20ac7a",
+          "card": "d58a9f46-61a1-4f2a-8bac-0a8daf1bc748",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "0f2367fb-13a9-4ab8-bc5e-e66de8fcd4a7",
+          "card": "7f0ae38b-7441-41f4-8178-9e0201fb0a2d",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "f3bb052c-ac3a-40f6-a4dd-ea06743d4e82",
+          "card": "fb0f9941-3719-485f-bda2-39a81d4919f9",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "de2b5515-16db-4691-8498-30139404e689",
+          "card": "408b4ae5-2d46-4c55-af62-d0367546992e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b9c95875-c499-4b9a-a89e-d0c4625b706d",
+          "card": "cd803ec3-ce2e-4fb3-8c44-afa05f919f48",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "3ef8695f-1670-4a3d-8d8b-4cb28f71b9b5",
+          "card": "ee45f4a7-0d05-4ce2-bb65-77aee0b90aa3",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "517e1de9-216e-4192-8b06-039840aa4fec",
+          "card": "7a64ca0d-34d7-4b7e-a2e6-5c8c9f98b38a",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "1150f11b-a3e2-46e7-a4cf-8026f55fa383",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "038",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Dragons Collide Structure Deck"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Dragons Collide Structure Deck",
+      "id": 248465
+    }
+  }
+}

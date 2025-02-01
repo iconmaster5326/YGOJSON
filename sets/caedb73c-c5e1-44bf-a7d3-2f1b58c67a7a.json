@@ -1,0 +1,1103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "caedb73c-c5e1-44bf-a7d3-2f1b58c67a7a",
+  "name": {
+    "en": "Tactical Evolution",
+    "fr": "\u00c9volution Tactique",
+    "de": "Tactical Evolution",
+    "it": "Evoluzione Tattica",
+    "es": "Evoluci\u00f3n T\u00e1ctica",
+    "ja": "\u30bf\u30af\u30c6\u30a3\u30ab\u30eb\u30fb\u30a8\u30dc\u30ea\u30e5\u30fc\u30b7\u30e7\u30f3",
+    "ko": "\uc804\uc220\uc758 \ubc1c\uc804"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "TAEV-EN",
+      "image": "https://ms.yugipedia.com//4/48/TAEV-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "0f66c75e-547d-4029-8c46-3e4145673ba2": "https://ms.yugipedia.com//6/66/HunterDragon-TAEV-EN-R-1E.jpg",
+          "aa9fbb35-a067-43a9-b213-803214f50c6a": "https://ms.yugipedia.com//9/98/RainbowDragon-TAEV-EN-ScR-1E.jpg",
+          "ab577e33-6e62-46d1-95df-3099bb5a280a": "https://ms.yugipedia.com//1/1c/RainbowDragon-TAEV-EN-GR-1E.png",
+          "d533b6ff-689d-4a42-a6d0-42d750557f2a": "https://ms.yugipedia.com//7/78/ChrysalisChicky-TAEV-EN-C-1E.jpg",
+          "23644387-d0c4-4ec3-a8df-297bad9c662e": "https://ms.yugipedia.com//7/7d/VenomSerpent-TAEV-EN-C-1E.jpg",
+          "46c37db3-c74a-4aa8-b495-a3e3d6c9575a": "https://ms.yugipedia.com//d/d4/ShadowDelver-TAEV-EN-C-1E.jpg",
+          "2604f1f5-f4b6-4051-b3ea-83568856859c": "https://ms.yugipedia.com//0/09/GraviticOrb-TAEV-EN-C-1E.jpg",
+          "748eca00-d3f9-438b-803b-48c89ed3305d": "https://ms.yugipedia.com//2/2c/RitualRaven-TAEV-EN-C-1E.jpg",
+          "7ae712e6-4fa7-41ae-aa29-ee3f6383f034": "https://ms.yugipedia.com//7/72/NeoSpacianMarineDolphin-TAEV-EN-C-1E.jpg",
+          "913c3bde-9d9c-4e28-b98a-78ec67dac8d2": "https://ms.yugipedia.com//a/a9/ElementalHEROMagmaNeos-TAEV-EN-ScR-1E.jpg",
+          "d094d609-adc9-4b13-824a-2ff0644e99c3": "https://ms.yugipedia.com//3/3a/SnakeRain-TAEV-EN-R-1E.jpg",
+          "9b53f851-a0aa-4bbe-ab5b-93978cf35fc6": "https://ms.yugipedia.com//6/6b/FlintMissile-TAEV-EN-C-1E.png",
+          "be516430-c189-4be9-866f-18de528b4f92": "https://ms.yugipedia.com//1/1a/DoubleSummon-TAEV-EN-R-1E.jpg",
+          "3ad9f215-f828-40ec-9fd2-6538d154fb20": "https://ms.yugipedia.com//c/cf/CommonCharity-TAEV-EN-R-1E.jpg",
+          "27e6de4f-9399-4a1b-a220-e007652116e4": "https://ms.yugipedia.com//9/9c/GiftCard-TAEV-EN-C-1E.jpg",
+          "b32a301d-1c2d-429e-972c-6f0aa91c1fd9": "https://ms.yugipedia.com//f/fb/TheGiftofGreed-TAEV-EN-C-1E.jpg"
+        },
+        "unlimited": {
+          "0f66c75e-547d-4029-8c46-3e4145673ba2": "https://ms.yugipedia.com//2/26/HunterDragon-TAEV-EN-R-UE.jpg",
+          "aa9fbb35-a067-43a9-b213-803214f50c6a": "https://ms.yugipedia.com//a/a4/RainbowDragon-TAEV-EN-ScR-UE.jpg",
+          "ab577e33-6e62-46d1-95df-3099bb5a280a": "https://ms.yugipedia.com//d/da/RainbowDragon-TAEV-EN-GR-UE.png",
+          "d533b6ff-689d-4a42-a6d0-42d750557f2a": "https://ms.yugipedia.com//e/ec/ChrysalisChicky-TAEV-EN-C-UE.png",
+          "23644387-d0c4-4ec3-a8df-297bad9c662e": "https://ms.yugipedia.com//a/a2/VenomSerpent-TAEV-EN-C-UE.png",
+          "46c37db3-c74a-4aa8-b495-a3e3d6c9575a": "https://ms.yugipedia.com//6/66/ShadowDelver-TAEV-EN-C-UE.png",
+          "2604f1f5-f4b6-4051-b3ea-83568856859c": "https://ms.yugipedia.com//5/50/GraviticOrb-TAEV-EN-C-UE.png",
+          "748eca00-d3f9-438b-803b-48c89ed3305d": "https://ms.yugipedia.com//1/1b/RitualRaven-TAEV-EN-C-UE.png",
+          "7ae712e6-4fa7-41ae-aa29-ee3f6383f034": "https://ms.yugipedia.com//6/64/NeoSpacianMarineDolphin-TAEV-EN-C-UE.png",
+          "913c3bde-9d9c-4e28-b98a-78ec67dac8d2": "https://ms.yugipedia.com//a/a3/ElementalHEROMagmaNeos-TAEV-EN-ScR-UE.png",
+          "d094d609-adc9-4b13-824a-2ff0644e99c3": "https://ms.yugipedia.com//7/76/SnakeRain-TAEV-EN-R-UE.jpg",
+          "9b53f851-a0aa-4bbe-ab5b-93978cf35fc6": "https://ms.yugipedia.com//3/34/FlintMissile-TAEV-EN-C-UE.png",
+          "be516430-c189-4be9-866f-18de528b4f92": "https://ms.yugipedia.com//1/15/DoubleSummon-TAEV-EN-R-UE.png",
+          "3ad9f215-f828-40ec-9fd2-6538d154fb20": "https://ms.yugipedia.com//1/1d/CommonCharity-TAEV-EN-R-UE.png",
+          "27e6de4f-9399-4a1b-a220-e007652116e4": "https://ms.yugipedia.com//b/b6/GiftCard-TAEV-EN-C-UE.png",
+          "b32a301d-1c2d-429e-972c-6f0aa91c1fd9": "https://ms.yugipedia.com//d/d5/TheGiftofGreed-TAEV-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11106003
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "TAEV-IT",
+      "date": "2007-08-15",
+      "image": "https://ms.yugipedia.com//d/d7/TAEV-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "19842725-d21c-4707-840f-2fdc8cafbe73": "https://ms.yugipedia.com//1/15/RainbowDragon-TAEV-IT-ScR-1E.png",
+          "944b2591-1700-48d4-9221-cf05bf18f497": "https://ms.yugipedia.com//5/56/VenomSerpent-TAEV-IT-C-1E.png",
+          "71981f62-0263-4b22-a06f-832cdbbd519b": "https://ms.yugipedia.com//5/5f/ElementalHEROMagmaNeos-TAEV-IT-ScR-1E.png"
+        },
+        "unlimited": {
+          "944b2591-1700-48d4-9221-cf05bf18f497": "https://ms.yugipedia.com//f/f7/VenomSerpent-TAEV-IT-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41106003
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "TAEV-SP",
+      "date": "2007-08-15",
+      "image": "https://ms.yugipedia.com//3/3d/TAEV-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "e4aeea4b-95b9-42c3-86a8-6725881be317": "https://ms.yugipedia.com//4/4f/RainbowDragon-TAEV-SP-ScR-1E.png",
+          "eaf74a45-41d9-4e41-a7e4-e7cc6eaae006": "https://ms.yugipedia.com//1/17/NeoSpacianMarineDolphin-TAEV-SP-C-1E.jpg",
+          "e89c3cee-62e8-4ae9-96e8-362a032dc603": "https://ms.yugipedia.com//8/89/SnakeRain-TAEV-SP-R-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51105003
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "TAEV-JP",
+      "date": "2007-05-12",
+      "image": "https://ms.yugipedia.com//d/da/TAEV-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "decb847f-61e5-437f-8abb-9e9f371ba318": "https://ms.yugipedia.com//0/04/HunterDragon-TAEV-JP-R.jpg",
+          "fde712ca-86b8-45d2-9efc-8880552e7fcb": "https://ms.yugipedia.com//c/c2/RainbowDragon-TAEV-JP-UR.jpg",
+          "e8a4eec6-3d7f-4b96-b8b5-574c21bd540c": "https://ms.yugipedia.com//7/79/RainbowDragon-TAEV-JP-UtR.jpg",
+          "d1a0779f-3eb3-4d75-9bce-83537950de92": "https://ms.yugipedia.com//b/bd/RainbowDragon-TAEV-JP-HGR.png",
+          "4e7fde4a-23e5-4ce2-8a95-bf160299581f": "https://ms.yugipedia.com//4/4e/ChrysalisChicky-TAEV-JP-C.jpg",
+          "4beda0e3-b39b-4527-bf27-71d1930487b5": "https://ms.yugipedia.com//f/f5/VenomSerpent-TAEV-JP-C.jpg",
+          "f630e7ae-7bcf-4b78-b17a-a6e6f7235406": "https://ms.yugipedia.com//9/9c/ShadowDelver-TAEV-JP-R.jpg",
+          "bf6f8203-de5b-461c-a728-773777c62bf1": "https://ms.yugipedia.com//d/dc/GraviticOrb-TAEV-JP-C.jpg",
+          "3e118841-e9bf-45df-9bfb-2df30411ff92": "https://ms.yugipedia.com//6/63/RitualRaven-TAEV-JP-C.jpg",
+          "5ea8fad3-3e63-43c9-b619-8c0f1762990a": "https://ms.yugipedia.com//d/d7/NeoSpacianMarineDolphin-TAEV-JP-C.jpg",
+          "74d6287d-1bf3-4cb2-b7fb-3e2b27433b17": "https://ms.yugipedia.com//6/6b/ElementalHEROMagmaNeos-TAEV-JP-UR.jpg",
+          "1ee5219b-ab85-4946-90a9-e9fdc9b16c30": "https://ms.yugipedia.com//0/0c/ElementalHEROMagmaNeos-TAEV-JP-UtR.jpg",
+          "59336c54-a2d2-44a1-8065-fc26481cf4be": "https://ms.yugipedia.com//9/97/SnakeRain-TAEV-JP-R.jpg",
+          "2c4de638-c82c-4d57-8e89-a21ca0c07e24": "https://ms.yugipedia.com//4/45/FlintMissile-TAEV-JP-C.jpg",
+          "e7010244-ae73-417f-95da-13ebf77b65db": "https://ms.yugipedia.com//9/92/DoubleSummon-TAEV-JP-R.jpg",
+          "d45de3f9-8285-428f-8b0d-926f55594605": "https://ms.yugipedia.com//b/b3/CommonCharity-TAEV-JP-R.jpg",
+          "9fb3a164-822c-40d0-b4af-d43f8bfddfd6": "https://ms.yugipedia.com//8/88/GiftCard-TAEV-JP-C.jpg",
+          "737bd9f7-1945-49a5-ac5d-5e9093b2452d": "https://ms.yugipedia.com//e/e9/TheGiftofGreed-TAEV-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1110000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "TAEV-DE",
+      "date": "2007-08-15",
+      "cardImages": {
+        "1st": {
+          "80583951-3e14-4479-8593-45bb20b35cbd": "https://ms.yugipedia.com//7/70/ElementalHEROMagmaNeos-TAEV-DE-ScR-1E.png"
+        },
+        "unlimited": {
+          "c911906b-dd92-4fa5-bed2-7681bc56c4e8": "https://ms.yugipedia.com//0/0d/RainbowDragon-TAEV-DE-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21106003
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "TAEV-FR",
+      "date": "2007-08-04",
+      "image": "https://ms.yugipedia.com//4/4d/TAEV-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "f6c2c6d0-5b30-4d15-8beb-960367eb2c48": "https://ms.yugipedia.com//2/2b/RainbowDragon-TAEV-FR-GR-1E.png",
+          "24467e37-cc0e-4594-8cc4-d31f9b63bfac": "https://ms.yugipedia.com//e/e5/GiftCard-TAEV-FR-C-1E.png"
+        },
+        "unlimited": {
+          "0901efec-2765-4942-8c27-93ac57f141b8": "https://ms.yugipedia.com//e/ea/RainbowDragon-TAEV-FR-ScR-UE.jpg",
+          "0cd227bf-e147-4ae5-b52d-f80195df7f5c": "https://ms.yugipedia.com//f/f4/ElementalHEROMagmaNeos-TAEV-FR-ScR-UE.jpg",
+          "24467e37-cc0e-4594-8cc4-d31f9b63bfac": "https://ms.yugipedia.com//9/9d/GiftCard-TAEV-FR-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31106004
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "TAEV-KR",
+      "date": "2007-06-08",
+      "image": "https://ms.yugipedia.com//c/c0/TAEV-BoosterKR.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {
+          "68a84757-3f64-4b22-b12e-a8def7a76672": "https://ms.yugipedia.com//0/01/HunterDragon-TAEV-KR-R-UE.png",
+          "62d032fb-6b52-4004-a198-0da81e050568": "https://ms.yugipedia.com//e/e0/RainbowDragon-TAEV-KR-UR-UE.png",
+          "d80900b3-cbf5-4e6c-970b-a0ff0de7cf8d": "https://ms.yugipedia.com//4/42/ChrysalisChicky-TAEV-KR-C-UE.png",
+          "bcf87573-fda1-47cb-a853-cde174542910": "https://ms.yugipedia.com//3/3e/VenomSerpent-TAEV-KR-C-UE.png",
+          "37ad199f-96dc-4444-b5e6-e0ce227f585b": "https://ms.yugipedia.com//e/e3/ShadowDelver-TAEV-KR-R-UE.png",
+          "546325f3-2427-46b6-bddd-177545845ace": "https://ms.yugipedia.com//9/9f/GraviticOrb-TAEV-KR-C-UE.png",
+          "fbde56b9-3830-4cc5-adf1-328dc236cf7b": "https://ms.yugipedia.com//7/76/RitualRaven-TAEV-KR-C-UE.png",
+          "659daf45-2f7a-496b-b9da-4b72ff73fb63": "https://ms.yugipedia.com//5/5d/NeoSpacianMarineDolphin-TAEV-KR-C-UE.png",
+          "9868adf2-652c-4ac7-906a-704be5969fe4": "https://ms.yugipedia.com//7/76/ElementalHEROMagmaNeos-TAEV-KR-UtR-UE.png",
+          "9dbd5902-425a-472b-be37-b7fe324d335e": "https://ms.yugipedia.com//0/00/SnakeRain-TAEV-KR-R-UE.png",
+          "6bece5a6-7cd2-46a2-8458-ca2eaa6fc3ef": "https://ms.yugipedia.com//5/57/FlintMissile-TAEV-KR-C-UE.png",
+          "2b22e1bd-76fe-497f-a2d9-4cf0c1750188": "https://ms.yugipedia.com//8/80/DoubleSummon-TAEV-KR-R-UE.png",
+          "663e7319-cc72-4a15-a2d7-7b6ced5844c7": "https://ms.yugipedia.com//2/2e/CommonCharity-TAEV-KR-R-UE.png",
+          "fbb532d1-64d0-4c38-910a-f4da0ab2e2fc": "https://ms.yugipedia.com//e/e7/GiftCard-TAEV-KR-NR-UE.png",
+          "dbb87dcf-3eb5-4a8f-afc1-da4a72e254b6": "https://ms.yugipedia.com//d/d0/TheGiftofGreed-TAEV-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71105002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/48/TAEV-BoosterEN.png",
+      "cards": [
+        {
+          "id": "0f66c75e-547d-4029-8c46-3e4145673ba2",
+          "card": "bc3a0245-86ff-4134-8f50-bf48f5d01847",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "aa9fbb35-a067-43a9-b213-803214f50c6a",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "secret"
+        },
+        {
+          "id": "ab577e33-6e62-46d1-95df-3099bb5a280a",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ghost"
+        },
+        {
+          "id": "d533b6ff-689d-4a42-a6d0-42d750557f2a",
+          "card": "c0e41472-ac06-4c63-bd59-6d131d50d128",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "23644387-d0c4-4ec3-a8df-297bad9c662e",
+          "card": "ecf8fa75-efae-44ad-a83e-a3750c3e65a2",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "46c37db3-c74a-4aa8-b495-a3e3d6c9575a",
+          "card": "a4cedc16-6c0a-48d5-8a7e-9c4c4a7da67e",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "2604f1f5-f4b6-4051-b3ea-83568856859c",
+          "card": "2cffa9b8-fb1f-4aa7-8158-ae5075ae389f",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "748eca00-d3f9-438b-803b-48c89ed3305d",
+          "card": "14ae87bf-0c19-4bdd-96e6-8d7a80c578f7",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "7ae712e6-4fa7-41ae-aa29-ee3f6383f034",
+          "card": "a8baabfd-695e-49ec-93a1-e8caba36e0d7",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "913c3bde-9d9c-4e28-b98a-78ec67dac8d2",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "secret"
+        },
+        {
+          "id": "d094d609-adc9-4b13-824a-2ff0644e99c3",
+          "card": "4d003c51-7964-4401-b4ec-becb2e88a0e4",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "9b53f851-a0aa-4bbe-ab5b-93978cf35fc6",
+          "card": "60cda61b-be7b-4d40-8d56-337dfdefd8b5",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "be516430-c189-4be9-866f-18de528b4f92",
+          "card": "14c08f49-ed0e-4562-aa27-82ffd83a8edd",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "3ad9f215-f828-40ec-9fd2-6538d154fb20",
+          "card": "5caafa16-0fc8-4d70-ab4d-5e42b9748926",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "27e6de4f-9399-4a1b-a220-e007652116e4",
+          "card": "8687a087-2972-40f2-8b86-0aa44247bac6",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "b32a301d-1c2d-429e-972c-6f0aa91c1fd9",
+          "card": "22a2256f-0eae-4a27-921c-5cc4a16dde88",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tactical Evolution"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d7/TAEV-BoosterIT.png",
+      "cards": [
+        {
+          "id": "c28d5c9c-c8bd-4041-868e-c8312a8c6f09",
+          "card": "bc3a0245-86ff-4134-8f50-bf48f5d01847",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "19842725-d21c-4707-840f-2fdc8cafbe73",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "secret"
+        },
+        {
+          "id": "b5b9787a-7317-4993-8098-0c0e401beb4f",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ghost"
+        },
+        {
+          "id": "d8c9d22b-1488-4d94-8b95-e0c7c3745774",
+          "card": "c0e41472-ac06-4c63-bd59-6d131d50d128",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "944b2591-1700-48d4-9221-cf05bf18f497",
+          "card": "ecf8fa75-efae-44ad-a83e-a3750c3e65a2",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "4212b213-42bd-440f-af14-9db95a11bb51",
+          "card": "a4cedc16-6c0a-48d5-8a7e-9c4c4a7da67e",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "f7be0e7a-5cc3-4ae5-88dd-f27a830953a4",
+          "card": "2cffa9b8-fb1f-4aa7-8158-ae5075ae389f",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "f7bdd86b-377d-4ba4-8f0a-2618dd5fe580",
+          "card": "14ae87bf-0c19-4bdd-96e6-8d7a80c578f7",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "929af404-7472-4689-bd70-7298a4a4fc25",
+          "card": "a8baabfd-695e-49ec-93a1-e8caba36e0d7",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "71981f62-0263-4b22-a06f-832cdbbd519b",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "secret"
+        },
+        {
+          "id": "8d2cad78-63c9-4823-bcec-0cbf46bc4304",
+          "card": "4d003c51-7964-4401-b4ec-becb2e88a0e4",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "101ffc25-9d54-4215-8692-4fd10d3ae6dc",
+          "card": "60cda61b-be7b-4d40-8d56-337dfdefd8b5",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "03c794ef-fddb-4a3a-bd3c-fdb0c640669a",
+          "card": "14c08f49-ed0e-4562-aa27-82ffd83a8edd",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "b41cb215-cf1d-473a-b939-0c458d8d3e5b",
+          "card": "5caafa16-0fc8-4d70-ab4d-5e42b9748926",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "ac5e2884-1e8d-4d2f-9f35-c5d294649098",
+          "card": "8687a087-2972-40f2-8b86-0aa44247bac6",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "5183d740-1c17-43ca-9c27-ecfe133c2ae2",
+          "card": "22a2256f-0eae-4a27-921c-5cc4a16dde88",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tactical Evolution"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3d/TAEV-BoosterSP.png",
+      "cards": [
+        {
+          "id": "7ee6a9a2-7e44-43c3-9cd6-d1a19185dfc4",
+          "card": "bc3a0245-86ff-4134-8f50-bf48f5d01847",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "e4aeea4b-95b9-42c3-86a8-6725881be317",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "secret"
+        },
+        {
+          "id": "a6826d55-d6c9-47d1-8490-483acd528a8c",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ghost"
+        },
+        {
+          "id": "fd1e8b4b-b233-47ff-9245-69227200fc0b",
+          "card": "c0e41472-ac06-4c63-bd59-6d131d50d128",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "18548539-01f9-4313-be6d-9444aa39ac65",
+          "card": "ecf8fa75-efae-44ad-a83e-a3750c3e65a2",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "4efe1e6d-da10-4b46-b8f3-4468c82d618d",
+          "card": "a4cedc16-6c0a-48d5-8a7e-9c4c4a7da67e",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "c9ed2728-7fa5-4909-a05b-ae89e7053c21",
+          "card": "2cffa9b8-fb1f-4aa7-8158-ae5075ae389f",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "7fbc9dbf-5870-47b2-88e6-1d3ba0d0d442",
+          "card": "14ae87bf-0c19-4bdd-96e6-8d7a80c578f7",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "eaf74a45-41d9-4e41-a7e4-e7cc6eaae006",
+          "card": "a8baabfd-695e-49ec-93a1-e8caba36e0d7",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "e3133f1d-16a7-41ac-850a-aa392147d3b8",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "secret"
+        },
+        {
+          "id": "e89c3cee-62e8-4ae9-96e8-362a032dc603",
+          "card": "4d003c51-7964-4401-b4ec-becb2e88a0e4",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "2baee161-d1ce-44f0-9e57-e1e72a86a788",
+          "card": "60cda61b-be7b-4d40-8d56-337dfdefd8b5",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "a7e4a935-f47b-4b82-bf6c-95edd330a3db",
+          "card": "14c08f49-ed0e-4562-aa27-82ffd83a8edd",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "ef4a3667-eed3-4b25-a4af-77edf8fdf66e",
+          "card": "5caafa16-0fc8-4d70-ab4d-5e42b9748926",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "c6f25db9-d689-461a-9dee-08aad451129a",
+          "card": "8687a087-2972-40f2-8b86-0aa44247bac6",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "b4264414-145f-4f51-832c-c6d716825821",
+          "card": "22a2256f-0eae-4a27-921c-5cc4a16dde88",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tactical Evolution"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/da/TAEV-BoosterJP.png",
+      "cards": [
+        {
+          "id": "decb847f-61e5-437f-8abb-9e9f371ba318",
+          "card": "bc3a0245-86ff-4134-8f50-bf48f5d01847",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "fde712ca-86b8-45d2-9efc-8880552e7fcb",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e8a4eec6-3d7f-4b96-b8b5-574c21bd540c",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "d1a0779f-3eb3-4d75-9bce-83537950de92",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ghost"
+        },
+        {
+          "id": "4e7fde4a-23e5-4ce2-8a95-bf160299581f",
+          "card": "c0e41472-ac06-4c63-bd59-6d131d50d128",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "4beda0e3-b39b-4527-bf27-71d1930487b5",
+          "card": "ecf8fa75-efae-44ad-a83e-a3750c3e65a2",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "f630e7ae-7bcf-4b78-b17a-a6e6f7235406",
+          "card": "a4cedc16-6c0a-48d5-8a7e-9c4c4a7da67e",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "bf6f8203-de5b-461c-a728-773777c62bf1",
+          "card": "2cffa9b8-fb1f-4aa7-8158-ae5075ae389f",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "3e118841-e9bf-45df-9bfb-2df30411ff92",
+          "card": "14ae87bf-0c19-4bdd-96e6-8d7a80c578f7",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "5ea8fad3-3e63-43c9-b619-8c0f1762990a",
+          "card": "a8baabfd-695e-49ec-93a1-e8caba36e0d7",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "74d6287d-1bf3-4cb2-b7fb-3e2b27433b17",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1ee5219b-ab85-4946-90a9-e9fdc9b16c30",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "59336c54-a2d2-44a1-8065-fc26481cf4be",
+          "card": "4d003c51-7964-4401-b4ec-becb2e88a0e4",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "2c4de638-c82c-4d57-8e89-a21ca0c07e24",
+          "card": "60cda61b-be7b-4d40-8d56-337dfdefd8b5",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "e7010244-ae73-417f-95da-13ebf77b65db",
+          "card": "14c08f49-ed0e-4562-aa27-82ffd83a8edd",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "d45de3f9-8285-428f-8b0d-926f55594605",
+          "card": "5caafa16-0fc8-4d70-ab4d-5e42b9748926",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "9fb3a164-822c-40d0-b4af-d43f8bfddfd6",
+          "card": "8687a087-2972-40f2-8b86-0aa44247bac6",
+          "suffix": "078",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "737bd9f7-1945-49a5-ac5d-5e9093b2452d",
+          "card": "22a2256f-0eae-4a27-921c-5cc4a16dde88",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tactical Evolution"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "a356169b-0e77-4f2c-8bc3-b10248e7ba12",
+          "card": "bc3a0245-86ff-4134-8f50-bf48f5d01847",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "c911906b-dd92-4fa5-bed2-7681bc56c4e8",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "secret"
+        },
+        {
+          "id": "8f59169d-bc28-482b-9024-c8fa827793ff",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ghost"
+        },
+        {
+          "id": "1f556c25-07fb-4278-b6cb-fd7c03b87fb7",
+          "card": "c0e41472-ac06-4c63-bd59-6d131d50d128",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "9e7c9b3c-11f6-4fb1-9b70-f401eb8c3e7e",
+          "card": "ecf8fa75-efae-44ad-a83e-a3750c3e65a2",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "e34db676-6508-4798-8a70-e6b644e53949",
+          "card": "a4cedc16-6c0a-48d5-8a7e-9c4c4a7da67e",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "a2a78b38-0d26-4559-a6b5-d41f9f6b14fc",
+          "card": "2cffa9b8-fb1f-4aa7-8158-ae5075ae389f",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "f1a38139-9704-40f7-a0e2-2574a1d4bbdd",
+          "card": "14ae87bf-0c19-4bdd-96e6-8d7a80c578f7",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "abaa5801-4579-4032-b15e-b737ab736d3b",
+          "card": "a8baabfd-695e-49ec-93a1-e8caba36e0d7",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "80583951-3e14-4479-8593-45bb20b35cbd",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "secret"
+        },
+        {
+          "id": "f1a0ecbd-7c07-4a2b-a464-758d6aa1f6f0",
+          "card": "4d003c51-7964-4401-b4ec-becb2e88a0e4",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "a8d16244-c105-46c2-a8ec-a1c5c15955d9",
+          "card": "60cda61b-be7b-4d40-8d56-337dfdefd8b5",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "0d9ef281-404f-42b5-b893-53ff8ebef0ed",
+          "card": "14c08f49-ed0e-4562-aa27-82ffd83a8edd",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "4a66e720-766b-43b4-852c-f3accb0e686a",
+          "card": "5caafa16-0fc8-4d70-ab4d-5e42b9748926",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "c09d3629-8269-4117-9fef-f008822d57b5",
+          "card": "8687a087-2972-40f2-8b86-0aa44247bac6",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "7256f5c8-28a1-4b0b-b9f5-7c10a7171df1",
+          "card": "22a2256f-0eae-4a27-921c-5cc4a16dde88",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tactical Evolution"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4d/TAEV-BoosterFR.png",
+      "cards": [
+        {
+          "id": "1d1ee99b-f395-40bd-8915-c2c07f59d534",
+          "card": "bc3a0245-86ff-4134-8f50-bf48f5d01847",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "0901efec-2765-4942-8c27-93ac57f141b8",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "secret"
+        },
+        {
+          "id": "f6c2c6d0-5b30-4d15-8beb-960367eb2c48",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ghost"
+        },
+        {
+          "id": "2af3b067-8acb-4c01-a104-7f651279baa0",
+          "card": "c0e41472-ac06-4c63-bd59-6d131d50d128",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "07cf3c15-1161-4d40-8bb9-4ffb11e6cfbc",
+          "card": "ecf8fa75-efae-44ad-a83e-a3750c3e65a2",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "e44d43ed-ab1f-475e-9adb-fe14c9c490d8",
+          "card": "a4cedc16-6c0a-48d5-8a7e-9c4c4a7da67e",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "9ed4ccf5-2403-4cf9-9bec-d502f77ed9fa",
+          "card": "2cffa9b8-fb1f-4aa7-8158-ae5075ae389f",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "882aaa38-f80e-40f8-8c94-c28ca28f4332",
+          "card": "14ae87bf-0c19-4bdd-96e6-8d7a80c578f7",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "0b80c335-250f-4685-8623-620c3e75aff7",
+          "card": "a8baabfd-695e-49ec-93a1-e8caba36e0d7",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "0cd227bf-e147-4ae5-b52d-f80195df7f5c",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "secret"
+        },
+        {
+          "id": "a2461738-efc8-4cdf-bd82-2bd3fdf669f5",
+          "card": "4d003c51-7964-4401-b4ec-becb2e88a0e4",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "cd96be48-817f-4596-95e6-0dfd2294c489",
+          "card": "60cda61b-be7b-4d40-8d56-337dfdefd8b5",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "ee42cde4-526f-4c6a-b7d6-426ce64a15d6",
+          "card": "14c08f49-ed0e-4562-aa27-82ffd83a8edd",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "dbc587de-c9a2-488e-b70d-28892b2b68e7",
+          "card": "5caafa16-0fc8-4d70-ab4d-5e42b9748926",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "24467e37-cc0e-4594-8cc4-d31f9b63bfac",
+          "card": "8687a087-2972-40f2-8b86-0aa44247bac6",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "b9469141-3988-4201-9c06-4506f3af1500",
+          "card": "22a2256f-0eae-4a27-921c-5cc4a16dde88",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tactical Evolution"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c0/TAEV-BoosterKR.png",
+      "cards": [
+        {
+          "id": "68a84757-3f64-4b22-b12e-a8def7a76672",
+          "card": "bc3a0245-86ff-4134-8f50-bf48f5d01847",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "62d032fb-6b52-4004-a198-0da81e050568",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c4a8a412-0442-4256-912b-6c5d5a91c8f6",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "caa9d3d5-6d41-49cf-95e6-741c956b1e88",
+          "card": "1589f9eb-d64f-4af0-98a5-b878c89f2991",
+          "suffix": "006",
+          "rarity": "ghost"
+        },
+        {
+          "id": "d80900b3-cbf5-4e6c-970b-a0ff0de7cf8d",
+          "card": "c0e41472-ac06-4c63-bd59-6d131d50d128",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "bcf87573-fda1-47cb-a853-cde174542910",
+          "card": "ecf8fa75-efae-44ad-a83e-a3750c3e65a2",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "37ad199f-96dc-4444-b5e6-e0ce227f585b",
+          "card": "a4cedc16-6c0a-48d5-8a7e-9c4c4a7da67e",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "546325f3-2427-46b6-bddd-177545845ace",
+          "card": "2cffa9b8-fb1f-4aa7-8158-ae5075ae389f",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "fbde56b9-3830-4cc5-adf1-328dc236cf7b",
+          "card": "14ae87bf-0c19-4bdd-96e6-8d7a80c578f7",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "659daf45-2f7a-496b-b9da-4b72ff73fb63",
+          "card": "a8baabfd-695e-49ec-93a1-e8caba36e0d7",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "2a7eff25-b5c1-4011-ab0c-048b44e5e082",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9868adf2-652c-4ac7-906a-704be5969fe4",
+          "card": "34159a17-146a-471a-82d4-ac16e49b6382",
+          "suffix": "043",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "9dbd5902-425a-472b-be37-b7fe324d335e",
+          "card": "4d003c51-7964-4401-b4ec-becb2e88a0e4",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "6bece5a6-7cd2-46a2-8458-ca2eaa6fc3ef",
+          "card": "60cda61b-be7b-4d40-8d56-337dfdefd8b5",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "2b22e1bd-76fe-497f-a2d9-4cf0c1750188",
+          "card": "14c08f49-ed0e-4562-aa27-82ffd83a8edd",
+          "suffix": "056",
+          "rarity": "rare"
+        },
+        {
+          "id": "663e7319-cc72-4a15-a2d7-7b6ced5844c7",
+          "card": "5caafa16-0fc8-4d70-ab4d-5e42b9748926",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "fbb532d1-64d0-4c38-910a-f4da0ab2e2fc",
+          "card": "8687a087-2972-40f2-8b86-0aa44247bac6",
+          "suffix": "078",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "dbb87dcf-3eb5-4a8f-afc1-da4a72e254b6",
+          "card": "22a2256f-0eae-4a27-921c-5cc4a16dde88",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tactical Evolution"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Tactical Evolution",
+      "id": 21235
+    }
+  }
+}

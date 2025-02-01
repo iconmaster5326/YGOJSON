@@ -1,0 +1,850 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "8672f2cc-8af9-4fef-a74e-f7cece3da038",
+  "name": {
+    "en": "Eternity Code",
+    "fr": "Le Code de l'\u00c9ternit\u00e9",
+    "de": "Eternity Code",
+    "it": "Codice Eternit\u00e0",
+    "pt": "C\u00f3digo da Eternidade",
+    "es": "C\u00f3digo de Eternidad",
+    "ja": "\u30a8\u30bf\u30fc\u30cb\u30c6\u30a3\u30fb\u30b3\u30fc\u30c9",
+    "ko": "\uc774\ud130\ub2c8\ud2f0 \ucf54\ub4dc"
+  },
+  "locales": {
+    "it": {
+      "language": "it",
+      "prefix": "ETCO-IT",
+      "image": "https://ms.yugipedia.com//a/ae/ETCO-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "ETCO-JP",
+      "date": "2020-01-11",
+      "image": "https://ms.yugipedia.com//4/48/ETCO-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "bef88aaf-ccb8-47f8-a070-d86d7c1c21a4": "https://ms.yugipedia.com//d/d2/MarincessBasilalima-ETCO-JP-C.png",
+          "40eecca6-bcfc-44dd-bbaa-0970b35f63fa": "https://ms.yugipedia.com//d/d8/AncientWarriorsFearsomeZhangYuan-ETCO-JP-C.png",
+          "61b59891-2bba-4589-9679-b8c74069b770": "https://ms.yugipedia.com//b/bd/AncientWarriorsDeceptiveJiaWen-ETCO-JP-C.png",
+          "99d53bbe-63c3-4558-8abb-412b34de28ee": "https://ms.yugipedia.com//1/1f/AccesscodeTalker-ETCO-JP-UR.png",
+          "3cc7d1b9-04b1-49ff-921c-a904eaa30fb9": "https://ms.yugipedia.com//e/e5/AccesscodeTalker-ETCO-JP-ScR.png",
+          "5d8c7253-29d3-4dc4-8ec3-268b8705971b": "https://ms.yugipedia.com//5/57/AccesscodeTalker-ETCO-JP-20ScR.png",
+          "36ae421f-fa74-4fe6-807b-b1b871b43046": "https://ms.yugipedia.com//1/16/AccesscodeTalker-ETCO-JP-UtR.png",
+          "63145218-0330-4b94-b2ca-6e3d60ff539e": "https://ms.yugipedia.com//8/85/AccesscodeTalker-ETCO-JP-HGR.png",
+          "24e503a2-bda8-405d-a12f-fbdaf5507177": "https://ms.yugipedia.com//3/35/StairsofMail-ETCO-JP-C.png",
+          "65ed871e-b003-4ea9-b38e-4445c0adca44": "https://ms.yugipedia.com//e/e3/MadolcheSalon-ETCO-JP-R.png",
+          "7d334ebc-260d-4162-933f-687c9fb41497": "https://ms.yugipedia.com//4/41/HeavyForward-ETCO-JP-C.png",
+          "9c66e864-df65-4407-bda7-2d83bbc0c9ee": "https://ms.yugipedia.com//6/6b/WitchcrafterUnveiling-ETCO-JP-C.png",
+          "81001661-dbd0-47d2-8a33-1235e4d319c6": "https://ms.yugipedia.com//5/59/FusionDeployment-ETCO-JP-SR.png",
+          "151cef8c-1128-4492-95a6-73a4d204903d": "https://ms.yugipedia.com//a/a3/FusionDeployment-ETCO-JP-ScR.png",
+          "a9813840-184f-48c9-9555-f40239762d70": "https://ms.yugipedia.com//a/a4/FusionDeployment-ETCO-JP-20ScR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1122003
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "ETCO-SP",
+      "image": "https://ms.yugipedia.com//c/c5/ETCO-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "ETCO-FR",
+      "image": "https://ms.yugipedia.com//0/08/ETCO-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "ETCO-EN",
+      "image": "https://ms.yugipedia.com//c/c4/ETCO-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "19811430-ce95-4c08-bf83-89de60e29f2b": "https://ms.yugipedia.com//7/79/MarincessBasilalima-ETCO-EN-C-1E.png",
+          "49a52ec1-1183-4c4a-b27e-0a4175fa4c10": "https://ms.yugipedia.com//b/b6/AncientWarriorsFearsomeZhangYuan-ETCO-EN-C-1E.png",
+          "40cb0a42-1ce7-4b42-a871-ada4ddda2880": "https://ms.yugipedia.com//c/c0/AncientWarriorsDeceptiveJiaWen-ETCO-EN-C-1E.png",
+          "b12f271f-131a-48f0-ad76-44d139c72548": "https://ms.yugipedia.com//7/74/AccesscodeTalker-ETCO-EN-ScR-1E.png",
+          "24e503a2-bda8-405d-a12f-fbdaf5507177": "https://ms.yugipedia.com//5/5a/StairsofMail-ETCO-EN-C-1E.png",
+          "d2db4561-c9d0-4147-925a-418ff879c015": "https://ms.yugipedia.com//3/37/MadolcheSalon-ETCO-EN-UR-1E.png",
+          "33330dd9-a267-4c86-90d0-e07f92083a6d": "https://ms.yugipedia.com//f/ff/HeavyForward-ETCO-EN-UR-1E.png",
+          "f042ceed-1273-436c-b5b5-ccf807d2a2a8": "https://ms.yugipedia.com//6/6a/WitchcrafterUnveiling-ETCO-EN-SR-1E.png",
+          "7f0fd442-8766-439c-ab83-608101388e77": "https://ms.yugipedia.com//d/d3/FusionDeployment-ETCO-EN-UR-1E.png",
+          "2a6946c4-b844-4d97-8408-bdfcbdba1685": "https://ms.yugipedia.com//a/aa/EffectVeiler-ETCO-EN-StR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11119003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "ETCO-DE",
+      "image": "https://ms.yugipedia.com//8/85/ETCO-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "ETCO-PT",
+      "date": "2020-04-30",
+      "image": "https://ms.yugipedia.com//4/42/ETCO-BoosterPT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "ETCO-KR",
+      "date": "2020-04-14",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71118001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/ae/ETCO-BoosterIT.png",
+      "cards": [
+        {
+          "id": "8ec44eb6-4ed4-4cf8-8d21-0cd30b80b7aa",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "ddc24341-5c6e-44b9-9bff-74115a166e8a",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "6c15a6aa-5621-4947-95a1-ee6a18a5ad80",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "ed358e7d-6ce3-470d-b32d-86fafe83b955",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "f504471e-486c-4d4f-bb8a-8e07e0c4ab5c",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c1068a30-1201-45bb-8813-062781abfe68",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "226ed849-4bf8-44f9-a075-538a028d262b",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "34eaed34-fc60-4c7c-89fa-f2b0bc18e205",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "35bcbfe1-70f7-4fbd-93ff-d341b5a2edd5",
+          "card": "6c8c49a6-f514-4b0f-844b-ffc3832f1481",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/48/ETCO-BoosterJP.png",
+      "cards": [
+        {
+          "id": "bef88aaf-ccb8-47f8-a070-d86d7c1c21a4",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "40eecca6-bcfc-44dd-bbaa-0970b35f63fa",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "61b59891-2bba-4589-9679-b8c74069b770",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "99d53bbe-63c3-4558-8abb-412b34de28ee",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3cc7d1b9-04b1-49ff-921c-a904eaa30fb9",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "5d8c7253-29d3-4dc4-8ec3-268b8705971b",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "20thsecret"
+        },
+        {
+          "id": "36ae421f-fa74-4fe6-807b-b1b871b43046",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "63145218-0330-4b94-b2ca-6e3d60ff539e",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "ghost"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "65ed871e-b003-4ea9-b38e-4445c0adca44",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "rare"
+        },
+        {
+          "id": "7d334ebc-260d-4162-933f-687c9fb41497",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "9c66e864-df65-4407-bda7-2d83bbc0c9ee",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "81001661-dbd0-47d2-8a33-1235e4d319c6",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "151cef8c-1128-4492-95a6-73a4d204903d",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "secret"
+        },
+        {
+          "id": "a9813840-184f-48c9-9555-f40239762d70",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "20thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c5/ETCO-BoosterSP.png",
+      "cards": [
+        {
+          "id": "ae4222cd-9ea7-4899-8614-21a89f6ba129",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e1b73fc5-4dc0-4791-b5e5-300c6350462d",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "4321979d-d288-475b-b375-8eb183f766f3",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "ad9e4183-2f75-4aa5-b794-ff2f11068383",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "89365f61-d590-4fc6-bebe-34e71c3bd2b1",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "ultra"
+        },
+        {
+          "id": "53550f05-61f4-4c09-aa59-e42c4edad466",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2965752f-52a0-4f4f-b173-0c45c087ab0d",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "7699d8c8-bb5a-4812-9879-78eb57a8355f",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3b9499be-bf8d-4228-a37a-507fdc0a0e61",
+          "card": "6c8c49a6-f514-4b0f-844b-ffc3832f1481",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/08/ETCO-BoosterFR.png",
+      "cards": [
+        {
+          "id": "525e19c9-5bc3-48ce-abba-005b9dde20f6",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "62d1cf01-75b4-49b5-a15a-9615e3fcbce2",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "a8ac50fb-cc36-41f2-9146-bd445d006c29",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "125acad8-1fb7-4903-8a95-f7426c86c1c7",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "86276db8-714b-452c-acf4-768fd740637c",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bbfccf3b-2b1a-4cb2-b5fa-495387885054",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0d21a369-7835-48c6-b01d-e58743376fda",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "71ed08e2-2570-4ae5-ad3e-d402ea3aa921",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d01e93ab-1af1-4d7d-898c-3135fe86fc43",
+          "card": "6c8c49a6-f514-4b0f-844b-ffc3832f1481",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c4/ETCO-BoosterEN.png",
+      "cards": [
+        {
+          "id": "19811430-ce95-4c08-bf83-89de60e29f2b",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "49a52ec1-1183-4c4a-b27e-0a4175fa4c10",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "40cb0a42-1ce7-4b42-a871-ada4ddda2880",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "b12f271f-131a-48f0-ad76-44d139c72548",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "d2db4561-c9d0-4147-925a-418ff879c015",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "ultra"
+        },
+        {
+          "id": "33330dd9-a267-4c86-90d0-e07f92083a6d",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f042ceed-1273-436c-b5b5-ccf807d2a2a8",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "7f0fd442-8766-439c-ab83-608101388e77",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2a6946c4-b844-4d97-8408-bdfcbdba1685",
+          "card": "6c8c49a6-f514-4b0f-844b-ffc3832f1481",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/85/ETCO-BoosterDE.png",
+      "cards": [
+        {
+          "id": "e65924fc-5fb5-4b90-943c-deac5fa61398",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "c405645f-7375-43bb-ba54-abf36699fa36",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "0b879e23-dd7d-41f3-a0f6-68a50235a70a",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "810101b0-34d9-4f3a-b6ba-ea10226176de",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "1b02c5bb-b4d2-40f7-8bb1-7e4715d569aa",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "ultra"
+        },
+        {
+          "id": "173f3135-e082-4148-b3fe-665ebb7fcef0",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b1fabe62-a036-48e1-8b18-4b83e00ba7af",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "53e028a0-13ab-4ee8-8df2-90959afa0d73",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "22fba57b-5c2d-43da-9f82-2e11a3c8de60",
+          "card": "6c8c49a6-f514-4b0f-844b-ffc3832f1481",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/42/ETCO-BoosterPT.png",
+      "cards": [
+        {
+          "id": "b2324859-7f1b-4d97-a7e7-2e76f3065462",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "3eadb64e-d76c-4dc2-85af-370d13164a5e",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9c891da3-4b0b-4bad-81c3-29317a581534",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "784006ae-8b97-4565-a3d1-545925f7e3c4",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "524e69a8-f681-418a-b23a-a003ee9edbfd",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e3dfc73e-5569-436f-9290-48a572774292",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "ultra"
+        },
+        {
+          "id": "860534a8-e893-46e1-be89-3b70c20fb944",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "super"
+        },
+        {
+          "id": "cefeba31-3b9e-4b77-a144-a1fc3b732f70",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1b868e5d-f2f0-4a4f-af2d-cf8cb1b2054d",
+          "card": "6c8c49a6-f514-4b0f-844b-ffc3832f1481",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "5fc359e9-e176-4cda-9f0a-23fcdaea9467",
+          "card": "4ba6d77d-1529-40b4-bc38-546994585e1c",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "142b098d-c05a-4e23-a827-6900afd20e1a",
+          "card": "427ac81d-6659-420e-aa18-f213c0fa41da",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "194cc5e7-aaca-4da4-a2da-a6500224d250",
+          "card": "9e1c3e22-a3a8-4bc9-b337-07cda70a6b80",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "e6c2b526-be86-4d4f-b72b-ebfa1c4176a8",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "ultra"
+        },
+        {
+          "id": "41ed1493-d8ec-4031-9311-258531fe0049",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "secret"
+        },
+        {
+          "id": "a942a862-dd50-45e7-aec0-00c954c3a54a",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "d1698056-11ce-4e9d-a606-e769d8aff8da",
+          "card": "98e6559a-3bbe-4521-bcd7-49babe327fdb",
+          "suffix": "046",
+          "rarity": "ghost"
+        },
+        {
+          "id": "24e503a2-bda8-405d-a12f-fbdaf5507177",
+          "card": "da3b0496-808c-4c41-9fcd-236f992e5c7a",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "66394faf-8eb9-472e-82ce-300cb8c9213d",
+          "card": "f6f4c0f7-68e8-4a34-bc2e-614d624259a9",
+          "suffix": "064",
+          "rarity": "rare"
+        },
+        {
+          "id": "a3a79719-2ce4-4af3-a236-93abeb5d051b",
+          "card": "ae0131bf-5aea-4881-a682-92c60260e877",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "a0478235-c454-413c-a1bd-6b2c790ef704",
+          "card": "02395e82-38b9-4515-80dc-8d16cb050e8e",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "3b6d1961-954f-4fa1-86db-5ad6a699ac91",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "02945278-2e95-4c49-bfcb-51644d73452e",
+          "card": "df084ba1-cd4f-494f-9fb4-07c089783dfe",
+          "suffix": "071",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Eternity Code",
+      "id": 663218
+    }
+  }
+}

@@ -1,0 +1,573 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "12c81bd9-a2d8-4006-b835-6899928c548f",
+  "name": {
+    "en": "Starter Deck: Joey",
+    "fr": "Deck de D\u00e9marrage: Joey",
+    "de": "Starter Deck: Joey Wheeler",
+    "it": "Mazzo Introduttivo: Joey",
+    "pt": "Deck Inicial do Joey",
+    "es": "Baraja de Inicio: Joey",
+    "ko": "\uff33\uff34\uff21\uff32\uff34\uff25\uff32 \uff24\uff25\uff23\uff2b \u2014\uc870\uc774 \ud3b8\u2014"
+  },
+  "locales": {
+    "sp": {
+      "language": "es",
+      "prefix": "BIJ-S",
+      "date": "2004-06-01",
+      "image": "https://ms.yugipedia.com//e/e0/BIJ-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "205d8790-d5d0-4e1f-9afb-a633a7738818": "https://ms.yugipedia.com//6/6e/BabyDragon-BIJ-SP-C-1E.png",
+          "d78c89fa-ed2a-44a1-bef2-9febdae1450b": "https://ms.yugipedia.com//1/19/MasakitheLegendarySwordsman-BIJ-SP-C-1E.png",
+          "c4c0596f-9700-4c2c-a7b6-ac74b0aba56e": "https://ms.yugipedia.com//8/8e/ArmoredLizard-BIJ-SP-C-1E.png",
+          "bbbb3638-367a-41cf-8c4f-7f96be73a817": "https://ms.yugipedia.com//9/99/TimeWizard-BIJ-SP-C-1E.png",
+          "9eb60918-3d99-47ce-8d72-cf3fd966dd3c": "https://ms.yugipedia.com//9/9d/DragonTreasure-BIJ-SP-C-1E.png",
+          "a877ec76-6eff-4285-b2cb-bbd76e6b5a31": "https://ms.yugipedia.com//3/38/SevenToolsoftheBandit-BIJ-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          53302000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "MIJ-I",
+      "date": "2004-05-01",
+      "image": "https://ms.yugipedia.com//7/7e/MIJ-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "76eae41f-c11f-4869-9d89-392d08252777": "https://ms.yugipedia.com//5/55/SevenToolsoftheBandit-MIJ-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          43302000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DDJ-F",
+      "date": "2004-05-01",
+      "image": "https://ms.yugipedia.com//c/c0/DDJ-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "673aa183-e0d2-45ff-af4e-0a28f07de0c8": "https://ms.yugipedia.com//4/47/TimeWizard-DDJ-FR-C-1E.jpg",
+          "6591970a-2203-430f-b998-21313d83f6b9": "https://ms.yugipedia.com//8/81/DragonTreasure-DDJ-FR-C-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          33302000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SDJ-G",
+      "date": "2004-05-01",
+      "image": "https://ms.yugipedia.com//a/a7/SDJ-DeckDE.png",
+      "cardImages": {
+        "1st": {
+          "f3c09ee4-01a6-4bc5-9216-03c07d2f7436": "https://ms.yugipedia.com//6/61/BabyDragon-SDJ-DE-C-1E.png",
+          "2e1d5db4-f4ee-45b3-a1c6-0eb6634d4c12": "https://ms.yugipedia.com//c/ca/MasakitheLegendarySwordsman-SDJ-DE-C-1E.png",
+          "fdbaac25-f09f-45a3-b9ef-1324ecfd4eaa": "https://ms.yugipedia.com//1/19/ArmoredLizard-SDJ-DE-C-1E.png",
+          "7ae5e792-1e7d-4771-92aa-a4a13e9d31bb": "https://ms.yugipedia.com//6/69/TimeWizard-SDJ-DE-C-1E.png",
+          "2d3b2838-5202-4176-a860-1600ee720b98": "https://ms.yugipedia.com//a/a7/DragonTreasure-SDJ-DE-C-1E.png",
+          "0da68979-fa14-4a9f-b624-5b38a3e0038d": "https://ms.yugipedia.com//d/d9/SevenToolsoftheBandit-SDJ-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          23302000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SDJ-KR",
+      "date": "2004-08-16",
+      "image": "https://ms.yugipedia.com//2/21/SDJ-DeckKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          72202000
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "DIJ-P",
+      "date": "2004-01-01",
+      "image": "https://ms.yugipedia.com//8/8d/DIJ-DeckPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "na": {
+      "language": "en",
+      "prefix": "SDJ-",
+      "date": "2003-03-30",
+      "image": "https://ms.yugipedia.com//5/56/SDJ-DeckNA.png",
+      "cardImages": {
+        "1st": {
+          "fe038da5-1501-48a1-825e-92390ee681fe": "https://ms.yugipedia.com//8/8f/BabyDragon-SDJ-NA-C-1E.jpg",
+          "3ce77306-5c4a-4552-8047-d0915e7242cd": "https://ms.yugipedia.com//d/d2/MasakitheLegendarySwordsman-SDJ-NA-C-1E.png",
+          "6d05e640-7e1e-4e93-ba06-28ef1df6c96c": "https://ms.yugipedia.com//e/ec/ArmoredLizard-SDJ-NA-C-1E.png",
+          "ec355e9d-0e2d-40a7-a71c-89f41327b07a": "https://ms.yugipedia.com//8/85/TimeWizard-SDJ-NA-C-1E.png",
+          "1ce6e6b6-c9a8-4456-ac4e-57fbb5ae951d": "https://ms.yugipedia.com//0/01/DragonTreasure-SDJ-NA-C-1E.png",
+          "796a3d57-38b1-420d-a68e-049c848f779d": "https://ms.yugipedia.com//f/ff/SevenToolsoftheBandit-SDJ-NA-C-1E.png"
+        },
+        "unlimited": {
+          "fe038da5-1501-48a1-825e-92390ee681fe": "https://ms.yugipedia.com//3/38/BabyDragon-SDJ-NA-C-UE.png",
+          "3ce77306-5c4a-4552-8047-d0915e7242cd": "https://ms.yugipedia.com//a/a3/MasakitheLegendarySwordsman-SDJ-NA-C-UE.png",
+          "6d05e640-7e1e-4e93-ba06-28ef1df6c96c": "https://ms.yugipedia.com//8/8c/ArmoredLizard-SDJ-NA-C-UE.png",
+          "ec355e9d-0e2d-40a7-a71c-89f41327b07a": "https://ms.yugipedia.com//d/d7/TimeWizard-SDJ-NA-C-UE.png",
+          "1ce6e6b6-c9a8-4456-ac4e-57fbb5ae951d": "https://ms.yugipedia.com//4/41/DragonTreasure-SDJ-NA-C-UE.png",
+          "796a3d57-38b1-420d-a68e-049c848f779d": "https://ms.yugipedia.com//f/f8/SevenToolsoftheBandit-SDJ-NA-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13302000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e0/BIJ-DeckSP.png",
+      "cards": [
+        {
+          "id": "205d8790-d5d0-4e1f-9afb-a633a7738818",
+          "card": "a906d7cf-e2a6-4f21-b7d6-7e6b72794a09",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "d78c89fa-ed2a-44a1-bef2-9febdae1450b",
+          "card": "449a8b35-c5a0-4f8f-a41c-7f7efb8bf636",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "c4c0596f-9700-4c2c-a7b6-ac74b0aba56e",
+          "card": "55f44aa2-39d7-4212-ada9-1b1351662341",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "bbbb3638-367a-41cf-8c4f-7f96be73a817",
+          "card": "1e483af1-e05f-4698-9ad2-62e5cd7f3b78",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "9eb60918-3d99-47ce-8d72-cf3fd966dd3c",
+          "card": "dfe00223-3802-4233-9949-9e5dbdd1b3c0",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "a877ec76-6eff-4285-b2cb-bbd76e6b5a31",
+          "card": "e6100e20-d56e-488a-96ad-1fed7d700f4a",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Joey"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/7e/MIJ-DeckIT.png",
+      "cards": [
+        {
+          "id": "832a428e-8f85-4354-9feb-832f53efd8c7",
+          "card": "a906d7cf-e2a6-4f21-b7d6-7e6b72794a09",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "495269dd-e6ef-40b6-a3a4-0a76ec0c4a74",
+          "card": "449a8b35-c5a0-4f8f-a41c-7f7efb8bf636",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "e5bd6aa8-06b6-4104-8e7d-e4ba867f57c6",
+          "card": "55f44aa2-39d7-4212-ada9-1b1351662341",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "42cb3a39-5cbb-4d98-bdff-2f77da4b3906",
+          "card": "1e483af1-e05f-4698-9ad2-62e5cd7f3b78",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "c3c941ad-63b0-47e5-ac59-a6068b1a2f02",
+          "card": "dfe00223-3802-4233-9949-9e5dbdd1b3c0",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "76eae41f-c11f-4869-9d89-392d08252777",
+          "card": "e6100e20-d56e-488a-96ad-1fed7d700f4a",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Joey"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c0/DDJ-DeckFR.png",
+      "cards": [
+        {
+          "id": "2bebc8fa-5f42-4a0c-8aaa-ab8be32184e1",
+          "card": "a906d7cf-e2a6-4f21-b7d6-7e6b72794a09",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "737160f4-3f64-48d7-816c-ee6bbe3a68c7",
+          "card": "449a8b35-c5a0-4f8f-a41c-7f7efb8bf636",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "5dd58e91-53b0-4011-a10f-34dcde213ad9",
+          "card": "55f44aa2-39d7-4212-ada9-1b1351662341",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "673aa183-e0d2-45ff-af4e-0a28f07de0c8",
+          "card": "1e483af1-e05f-4698-9ad2-62e5cd7f3b78",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "6591970a-2203-430f-b998-21313d83f6b9",
+          "card": "dfe00223-3802-4233-9949-9e5dbdd1b3c0",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "7a87dcd2-883e-4331-a70f-3aec17dbb61f",
+          "card": "e6100e20-d56e-488a-96ad-1fed7d700f4a",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Joey"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/a7/SDJ-DeckDE.png",
+      "cards": [
+        {
+          "id": "f3c09ee4-01a6-4bc5-9216-03c07d2f7436",
+          "card": "a906d7cf-e2a6-4f21-b7d6-7e6b72794a09",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "2e1d5db4-f4ee-45b3-a1c6-0eb6634d4c12",
+          "card": "449a8b35-c5a0-4f8f-a41c-7f7efb8bf636",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "fdbaac25-f09f-45a3-b9ef-1324ecfd4eaa",
+          "card": "55f44aa2-39d7-4212-ada9-1b1351662341",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "7ae5e792-1e7d-4771-92aa-a4a13e9d31bb",
+          "card": "1e483af1-e05f-4698-9ad2-62e5cd7f3b78",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "2d3b2838-5202-4176-a860-1600ee720b98",
+          "card": "dfe00223-3802-4233-9949-9e5dbdd1b3c0",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "0da68979-fa14-4a9f-b624-5b38a3e0038d",
+          "card": "e6100e20-d56e-488a-96ad-1fed7d700f4a",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Joey"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/21/SDJ-DeckKR.png",
+      "cards": [
+        {
+          "id": "c74712a2-8132-488b-bf8e-a185d4803469",
+          "card": "a906d7cf-e2a6-4f21-b7d6-7e6b72794a09",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "8bbc1c0e-85c8-4440-882d-e5b01de49a8d",
+          "card": "449a8b35-c5a0-4f8f-a41c-7f7efb8bf636",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "65ee9ca6-65db-4d00-a138-a25a3c3b68cb",
+          "card": "55f44aa2-39d7-4212-ada9-1b1351662341",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "44ef6b04-192b-4da7-ba60-ce6b26951d01",
+          "card": "1e483af1-e05f-4698-9ad2-62e5cd7f3b78",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "db1a16ac-84c7-4596-ad8b-fd1f187f2b69",
+          "card": "dfe00223-3802-4233-9949-9e5dbdd1b3c0",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "9c6111cc-4ce0-40a5-9e8a-bb2823fe2a25",
+          "card": "e6100e20-d56e-488a-96ad-1fed7d700f4a",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Joey"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/8d/DIJ-DeckPT.png",
+      "cards": [
+        {
+          "id": "79a90a24-363d-4d5c-be1d-f28269f8263b",
+          "card": "a906d7cf-e2a6-4f21-b7d6-7e6b72794a09",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "1aede21e-c042-4123-8ec2-e27d95ec1d10",
+          "card": "449a8b35-c5a0-4f8f-a41c-7f7efb8bf636",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "2c4b83d8-e6c2-434b-b32a-15c9d0c300f6",
+          "card": "55f44aa2-39d7-4212-ada9-1b1351662341",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "f03d00b8-4bf9-42bd-b61f-f9cd75d1d518",
+          "card": "1e483af1-e05f-4698-9ad2-62e5cd7f3b78",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "b512f660-f364-4806-a5e9-f25723bb340c",
+          "card": "dfe00223-3802-4233-9949-9e5dbdd1b3c0",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "caf2011d-05bb-4171-a740-76942cc8ca82",
+          "card": "e6100e20-d56e-488a-96ad-1fed7d700f4a",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Joey"
+      }
+    },
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/56/SDJ-DeckNA.png",
+      "cards": [
+        {
+          "id": "fe038da5-1501-48a1-825e-92390ee681fe",
+          "card": "a906d7cf-e2a6-4f21-b7d6-7e6b72794a09",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "3ce77306-5c4a-4552-8047-d0915e7242cd",
+          "card": "449a8b35-c5a0-4f8f-a41c-7f7efb8bf636",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "6d05e640-7e1e-4e93-ba06-28ef1df6c96c",
+          "card": "55f44aa2-39d7-4212-ada9-1b1351662341",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "ec355e9d-0e2d-40a7-a71c-89f41327b07a",
+          "card": "1e483af1-e05f-4698-9ad2-62e5cd7f3b78",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "1ce6e6b6-c9a8-4456-ac4e-57fbb5ae951d",
+          "card": "dfe00223-3802-4233-9949-9e5dbdd1b3c0",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "796a3d57-38b1-420d-a68e-049c848f779d",
+          "card": "e6100e20-d56e-488a-96ad-1fed7d700f4a",
+          "suffix": "048",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Joey"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starter Deck: Joey",
+      "id": 434
+    }
+  }
+}

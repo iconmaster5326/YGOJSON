@@ -1,0 +1,585 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "6aedf094-7963-4255-8f4f-f2875f21e087",
+  "name": {
+    "en": "Hidden Arsenal 7: Knight of Stars",
+    "fr": "Arsenal Myst\u00e9rieux 7: Le Chevalier des \u00c9toiles",
+    "de": "Hidden Arsenal 7: Knight of Stars",
+    "it": "Arsenale Nascosto 7: Il Cavaliere delle Stelle",
+    "pt": "Arsenal Oculto 7: Cavaleiro das Estrelas",
+    "es": "Arsenal Secreto 7: Caballero de las Estrellas",
+    "ko": "\uc228\uaca8\uc9c4 \uc138\ub825 7"
+  },
+  "locales": {
+    "it": {
+      "language": "it",
+      "prefix": "HA07-IT",
+      "image": "https://ms.yugipedia.com//2/21/HA07-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41112002
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "HA07-DE",
+      "image": "https://ms.yugipedia.com//9/91/HA07-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "f8e66658-e8e9-4007-9fcd-feb693654f3a": "https://ms.yugipedia.com//3/33/EvilswarmAzzathoth-HA07-DE-SR-1E.png"
+        },
+        "unlimited": {
+          "bb484d4b-105a-401e-b048-386d1823552e": "https://ms.yugipedia.com//d/d3/ConstellarStarCradle-HA07-DE-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21112002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "HA07-SP",
+      "image": "https://ms.yugipedia.com//d/d6/HA07-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "b6e51550-01a8-419f-91bd-a6cd34cdb69b": "https://ms.yugipedia.com//f/f0/EvilswarmAzzathoth-HA07-SP-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51111002
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "HA07-PT",
+      "date": "2013-04-26",
+      "image": "https://ms.yugipedia.com//d/db/HA07-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "88914871-8e6a-4a93-8263-a76cd741058d": "https://ms.yugipedia.com//d/d1/GishkiPhotomirror-HA07-PT-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112002
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "HA07-FR",
+      "image": "https://ms.yugipedia.com//f/fc/HA07-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "fb12e0c8-402a-41e0-86e5-0695e2232901": "https://ms.yugipedia.com//e/e8/GishkiPhotomirror-HA07-FR-SR-1E.png",
+          "24ef4a14-88a9-495c-9b15-22fb7d8c7a40": "https://ms.yugipedia.com//f/f6/DustStormofGusto-HA07-FR-SR-1E.png",
+          "aecf9945-5501-42f6-8eb0-505f00e77da0": "https://ms.yugipedia.com//c/cc/BeastWarriorPuma-HA07-FR-SR-1E.png",
+          "bd3e85d6-ff7b-4ada-8d1b-01abe76249e7": "https://ms.yugipedia.com//3/3b/EvilswarmAzzathoth-HA07-FR-SR-1E.png",
+          "af244780-9c9e-4e6c-b857-de8fc79f4c4d": "https://ms.yugipedia.com//4/43/SophiaGoddessofRebirth-HA07-FR-ScR-1E.png",
+          "72c84dc8-533d-4acc-b1f1-630cb34267ac": "https://ms.yugipedia.com//4/4b/ConstellarStarCradle-HA07-FR-SR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31112002
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "HA07-EN",
+      "date": "2013-04-26",
+      "image": "https://ms.yugipedia.com//2/21/HA07-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "a9b40f0f-6a86-4cfe-a93c-b27a856abd98": "https://ms.yugipedia.com//f/fe/GishkiPhotomirror-HA07-EN-SR-1E.png",
+          "5539e245-2ebb-4889-9819-907bde47138e": "https://ms.yugipedia.com//b/b6/DustStormofGusto-HA07-EN-SR-1E.png",
+          "f0ccb17e-d5bb-40b2-b0ad-4be32608a5cc": "https://ms.yugipedia.com//d/d8/BeastWarriorPuma-HA07-EN-SR-1E.png",
+          "0daa5787-88c9-4b0a-bf91-a3e66a7f57d0": "https://ms.yugipedia.com//3/3b/EvilswarmAzzathoth-HA07-EN-SR-1E.png",
+          "c1b6cd36-8cca-4ff5-8bc8-d51b184f558f": "https://ms.yugipedia.com//5/54/SophiaGoddessofRebirth-HA07-EN-ScR-1E.png",
+          "c024e6ae-4d84-4886-a19e-91a42849b0d8": "https://ms.yugipedia.com//6/62/ConstellarStarCradle-HA07-EN-SR-1E.png"
+        },
+        "unlimited": {
+          "a9b40f0f-6a86-4cfe-a93c-b27a856abd98": "https://ms.yugipedia.com//e/e3/GishkiPhotomirror-HA07-EN-SR-UE.png",
+          "5539e245-2ebb-4889-9819-907bde47138e": "https://ms.yugipedia.com//1/19/DustStormofGusto-HA07-EN-SR-UE.png",
+          "f0ccb17e-d5bb-40b2-b0ad-4be32608a5cc": "https://ms.yugipedia.com//8/82/BeastWarriorPuma-HA07-EN-SR-UE.png",
+          "0daa5787-88c9-4b0a-bf91-a3e66a7f57d0": "https://ms.yugipedia.com//5/55/EvilswarmAzzathoth-HA07-EN-SR-UE.png",
+          "c1b6cd36-8cca-4ff5-8bc8-d51b184f558f": "https://ms.yugipedia.com//6/61/SophiaGoddessofRebirth-HA07-EN-ScR-UE.png",
+          "c024e6ae-4d84-4886-a19e-91a42849b0d8": "https://ms.yugipedia.com//2/2f/ConstellarStarCradle-HA07-EN-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112002
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "HA07-KR",
+      "date": "2013-08-12",
+      "image": "https://ms.yugipedia.com//3/30/HA07-BoosterKR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71111003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 36,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/21/HA07-BoosterIT.png",
+      "cards": [
+        {
+          "id": "646148b2-3912-40c1-a7d0-043ec13cae5a",
+          "card": "410432e0-a60c-41ce-988a-046c866c0e38",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "8be590db-ccb2-4aef-8ac8-26592d7a9cb7",
+          "card": "c8afc313-2995-4a9b-9a26-35f1770d813e",
+          "suffix": "029",
+          "rarity": "super"
+        },
+        {
+          "id": "676a1aff-8849-4e27-8895-d27214047d8d",
+          "card": "84469018-688e-4dd6-8cf2-29e9d63c9cdd",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "10b3232a-fa31-41b9-b9dc-9dc1e948f270",
+          "card": "acea08f4-5a8e-4249-b2d7-95b6f609cede",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "730dab30-3729-46a3-8db0-f1a6e34497fd",
+          "card": "beaf97f2-cc5f-4c02-b11d-cb80f62b6c40",
+          "suffix": "055",
+          "rarity": "secret"
+        },
+        {
+          "id": "e4e9cd3f-d48a-42fb-8ede-a47d8ddafff6",
+          "card": "2bdd044d-681c-4579-964b-3e4a36bc5bfb",
+          "suffix": "067",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Hidden Arsenal 7: Knight of Stars"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 36,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/91/HA07-BoosterDE.png",
+      "cards": [
+        {
+          "id": "509892a4-4d16-4039-96ef-8b4d6603b5f4",
+          "card": "410432e0-a60c-41ce-988a-046c866c0e38",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "89103cbe-1bcf-480e-a2df-d3c6e4302b46",
+          "card": "c8afc313-2995-4a9b-9a26-35f1770d813e",
+          "suffix": "029",
+          "rarity": "super"
+        },
+        {
+          "id": "e061f21b-3d84-42ce-9200-05b3ff832ab9",
+          "card": "84469018-688e-4dd6-8cf2-29e9d63c9cdd",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "f8e66658-e8e9-4007-9fcd-feb693654f3a",
+          "card": "acea08f4-5a8e-4249-b2d7-95b6f609cede",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "2d473ee5-5207-4de9-834f-c9b18f6fbd3f",
+          "card": "beaf97f2-cc5f-4c02-b11d-cb80f62b6c40",
+          "suffix": "055",
+          "rarity": "secret"
+        },
+        {
+          "id": "bb484d4b-105a-401e-b048-386d1823552e",
+          "card": "2bdd044d-681c-4579-964b-3e4a36bc5bfb",
+          "suffix": "067",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Hidden Arsenal 7: Knight of Stars"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 36,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/d6/HA07-BoosterSP.png",
+      "cards": [
+        {
+          "id": "60229e48-a4d6-44c7-a77d-e40e8a1bd95f",
+          "card": "410432e0-a60c-41ce-988a-046c866c0e38",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "630f4b90-9765-4928-b217-5f069accf567",
+          "card": "c8afc313-2995-4a9b-9a26-35f1770d813e",
+          "suffix": "029",
+          "rarity": "super"
+        },
+        {
+          "id": "5ae09f9c-332a-4cb5-bf5c-32b9a182321e",
+          "card": "84469018-688e-4dd6-8cf2-29e9d63c9cdd",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "b6e51550-01a8-419f-91bd-a6cd34cdb69b",
+          "card": "acea08f4-5a8e-4249-b2d7-95b6f609cede",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "d1932078-d63a-453b-a4c0-207c091eaf2d",
+          "card": "beaf97f2-cc5f-4c02-b11d-cb80f62b6c40",
+          "suffix": "055",
+          "rarity": "secret"
+        },
+        {
+          "id": "940983e1-2530-404d-8434-bf44fe89fe88",
+          "card": "2bdd044d-681c-4579-964b-3e4a36bc5bfb",
+          "suffix": "067",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Hidden Arsenal 7: Knight of Stars"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 36,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/db/HA07-BoosterPT.png",
+      "cards": [
+        {
+          "id": "88914871-8e6a-4a93-8263-a76cd741058d",
+          "card": "410432e0-a60c-41ce-988a-046c866c0e38",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "a7bd10c8-3823-415d-9bae-6d2db3fd638d",
+          "card": "c8afc313-2995-4a9b-9a26-35f1770d813e",
+          "suffix": "029",
+          "rarity": "super"
+        },
+        {
+          "id": "16326ba0-76e4-4df9-ae9e-91754dfd0234",
+          "card": "84469018-688e-4dd6-8cf2-29e9d63c9cdd",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "6889bc0b-f67c-481b-9be6-d1305804204d",
+          "card": "acea08f4-5a8e-4249-b2d7-95b6f609cede",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "896c96b7-2dd8-4502-908c-a0c40b568e03",
+          "card": "beaf97f2-cc5f-4c02-b11d-cb80f62b6c40",
+          "suffix": "055",
+          "rarity": "secret"
+        },
+        {
+          "id": "7b9637e6-bbb3-47f6-8e67-5dc57f50b3d2",
+          "card": "2bdd044d-681c-4579-964b-3e4a36bc5bfb",
+          "suffix": "067",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Hidden Arsenal 7: Knight of Stars"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 36,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/fc/HA07-BoosterFR.png",
+      "cards": [
+        {
+          "id": "fb12e0c8-402a-41e0-86e5-0695e2232901",
+          "card": "410432e0-a60c-41ce-988a-046c866c0e38",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "24ef4a14-88a9-495c-9b15-22fb7d8c7a40",
+          "card": "c8afc313-2995-4a9b-9a26-35f1770d813e",
+          "suffix": "029",
+          "rarity": "super"
+        },
+        {
+          "id": "aecf9945-5501-42f6-8eb0-505f00e77da0",
+          "card": "84469018-688e-4dd6-8cf2-29e9d63c9cdd",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "bd3e85d6-ff7b-4ada-8d1b-01abe76249e7",
+          "card": "acea08f4-5a8e-4249-b2d7-95b6f609cede",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "af244780-9c9e-4e6c-b857-de8fc79f4c4d",
+          "card": "beaf97f2-cc5f-4c02-b11d-cb80f62b6c40",
+          "suffix": "055",
+          "rarity": "secret"
+        },
+        {
+          "id": "72c84dc8-533d-4acc-b1f1-630cb34267ac",
+          "card": "2bdd044d-681c-4579-964b-3e4a36bc5bfb",
+          "suffix": "067",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Hidden Arsenal 7: Knight of Stars"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 36,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/21/HA07-BoosterEN.png",
+      "cards": [
+        {
+          "id": "a9b40f0f-6a86-4cfe-a93c-b27a856abd98",
+          "card": "410432e0-a60c-41ce-988a-046c866c0e38",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "5539e245-2ebb-4889-9819-907bde47138e",
+          "card": "c8afc313-2995-4a9b-9a26-35f1770d813e",
+          "suffix": "029",
+          "rarity": "super"
+        },
+        {
+          "id": "f0ccb17e-d5bb-40b2-b0ad-4be32608a5cc",
+          "card": "84469018-688e-4dd6-8cf2-29e9d63c9cdd",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "0daa5787-88c9-4b0a-bf91-a3e66a7f57d0",
+          "card": "acea08f4-5a8e-4249-b2d7-95b6f609cede",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "c1b6cd36-8cca-4ff5-8bc8-d51b184f558f",
+          "card": "beaf97f2-cc5f-4c02-b11d-cb80f62b6c40",
+          "suffix": "055",
+          "rarity": "secret"
+        },
+        {
+          "id": "c024e6ae-4d84-4886-a19e-91a42849b0d8",
+          "card": "2bdd044d-681c-4579-964b-3e4a36bc5bfb",
+          "suffix": "067",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Hidden Arsenal 7: Knight of Stars"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 30,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/30/HA07-BoosterKR.png",
+      "cards": [
+        {
+          "id": "77e05f7e-268e-4597-9673-1c9ebe05a70a",
+          "card": "410432e0-a60c-41ce-988a-046c866c0e38",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "81356a5b-8109-4570-af15-dd4290876d41",
+          "card": "c8afc313-2995-4a9b-9a26-35f1770d813e",
+          "suffix": "029",
+          "rarity": "super"
+        },
+        {
+          "id": "f21c7227-63cb-4ca6-9a7e-de50fb1fa982",
+          "card": "84469018-688e-4dd6-8cf2-29e9d63c9cdd",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "54992fc5-a225-44d1-9bd1-d50a81c2d0cb",
+          "card": "acea08f4-5a8e-4249-b2d7-95b6f609cede",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "7f3d84a9-1b5c-4fab-84be-5cb2e073b013",
+          "card": "beaf97f2-cc5f-4c02-b11d-cb80f62b6c40",
+          "suffix": "055",
+          "rarity": "secret"
+        },
+        {
+          "id": "14ccd3bf-bf82-4c48-a5b1-a15fdfcdaeb9",
+          "card": "2bdd044d-681c-4579-964b-3e4a36bc5bfb",
+          "suffix": "067",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Hidden Arsenal 7: Knight of Stars"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Hidden Arsenal 7: Knight of Stars",
+      "id": 272061
+    }
+  }
+}

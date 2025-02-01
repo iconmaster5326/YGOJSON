@@ -1,0 +1,145 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a2e0adab-6848-4fc1-94f9-88a3bd8d4a77",
+  "name": {
+    "en": "Yu-Gi-Oh! Advent Calendar",
+    "de": "Yu-Gi-Oh! Adventskalender"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "AC18-EN",
+      "image": "https://ms.yugipedia.com//7/76/AC18-PromoEN.png",
+      "cardImages": {
+        "1st": {
+          "163e322c-232f-4af3-befb-718413d316d9": "https://ms.yugipedia.com//7/73/CeremonialBell-AC18-EN-SR-1E.png",
+          "4ddf1d22-4e14-4f2a-88eb-7c18783b2113": "https://ms.yugipedia.com//1/18/BoxofFriends-AC18-EN-SR-1E.png",
+          "5dc86b1e-a2bb-41c0-92c9-ff7f59e2683c": "https://ms.yugipedia.com//0/01/SnowmanEater-AC18-EN-SR-1E.png",
+          "767fd68c-1e13-4d58-be5f-80a6f311e5ab": "https://ms.yugipedia.com//9/90/TokenFeastevil-AC18-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18812003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "AC18-DE",
+      "date": "2018-10-25",
+      "image": "https://ms.yugipedia.com//1/13/AC18-PromoDE.png",
+      "cardImages": {
+        "1st": {
+          "638b3304-93ba-4e5a-a5b0-218a838ef7ec": "https://ms.yugipedia.com//1/1e/CeremonialBell-AC18-DE-SR-1E.png",
+          "be36c212-f4e1-4e4a-80a8-cc4dff60bfff": "https://ms.yugipedia.com//7/7a/BoxofFriends-AC18-DE-SR-1E.png",
+          "b3bbdcf0-527c-4721-b25a-d61f88e13770": "https://ms.yugipedia.com//4/4b/SnowmanEater-AC18-DE-SR-1E.png",
+          "6ebf4a41-949a-4bd8-88fe-e9abea2036e8": "https://ms.yugipedia.com//8/88/TokenFeastevil-AC18-DE-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18812003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/76/AC18-PromoEN.png",
+      "cards": [
+        {
+          "id": "163e322c-232f-4af3-befb-718413d316d9",
+          "card": "51e3692f-d5c5-4986-9eeb-306a06834c90",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "4ddf1d22-4e14-4f2a-88eb-7c18783b2113",
+          "card": "c9ec8d11-64ee-471f-8e32-7667479c1480",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "5dc86b1e-a2bb-41c0-92c9-ff7f59e2683c",
+          "card": "b47f40a9-91f9-4946-ad3d-6ed23d777630",
+          "suffix": "008",
+          "rarity": "super"
+        },
+        {
+          "id": "767fd68c-1e13-4d58-be5f-80a6f311e5ab",
+          "card": "2e4101a3-6608-410c-9319-34d41f8c0af0",
+          "suffix": "015",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/13/AC18-PromoDE.png",
+      "cards": [
+        {
+          "id": "638b3304-93ba-4e5a-a5b0-218a838ef7ec",
+          "card": "51e3692f-d5c5-4986-9eeb-306a06834c90",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "be36c212-f4e1-4e4a-80a8-cc4dff60bfff",
+          "card": "c9ec8d11-64ee-471f-8e32-7667479c1480",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "b3bbdcf0-527c-4721-b25a-d61f88e13770",
+          "card": "b47f40a9-91f9-4946-ad3d-6ed23d777630",
+          "suffix": "008",
+          "rarity": "super"
+        },
+        {
+          "id": "6ebf4a41-949a-4bd8-88fe-e9abea2036e8",
+          "card": "2e4101a3-6608-410c-9319-34d41f8c0af0",
+          "suffix": "015",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Advent Calendar (2018)",
+      "id": 556911
+    }
+  }
+}

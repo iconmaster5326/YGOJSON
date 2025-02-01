@@ -1,0 +1,911 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "6651399f-45d7-4ccb-af30-3315ee938022",
+  "name": {
+    "en": "The New Challengers",
+    "fr": "Les Nouveaux Challengers",
+    "de": "The New Challengers",
+    "it": "I Nuovi Sfidanti",
+    "pt": "Novos Desafiantes",
+    "es": "Los Nuevos Contendientes",
+    "ja": "\u30cd\u30af\u30b9\u30c8\u30fb\u30c1\u30e3\u30ec\u30f3\u30b8\u30e3\u30fc\u30ba",
+    "ko": "\ub125\uc2a4\ud2b8 \ucc4c\ub9b0\uc800\uc2a4"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "NECH-FR",
+      "image": "https://ms.yugipedia.com//4/43/NECH-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "d22e5933-afab-49bc-830b-5febee9d32b0": "https://ms.yugipedia.com//e/e2/ApoqliphortTowers-NECH-FR-R-1E.png",
+          "df4b5ace-a7d1-4d56-8bf6-7fd1026cfb0c": "https://ms.yugipedia.com//8/8f/MachinaMegaform-NECH-FR-SR-1E.png",
+          "0c55c47e-c569-4676-a2df-efe9da6ae058": "https://ms.yugipedia.com//e/e8/HeraldofUltimateness-NECH-FR-UR-1E.png",
+          "28960ffd-ba68-48ad-a407-b27daace13c1": "https://ms.yugipedia.com//8/84/StellarknightTriverr-NECH-FR-UR-1E.png",
+          "9fdc2414-d041-4623-b105-ce6f5f6a4026": "https://ms.yugipedia.com//8/8f/ToyVendor-NECH-FR-C-1E.png",
+          "aabd57bb-459e-4725-87a7-1c25968e3e8c": "https://ms.yugipedia.com//5/52/PunchintheBox-NECH-FR-C-1E.png",
+          "949efe5c-870a-41d2-b9cb-49dcf47e7fdd": "https://ms.yugipedia.com//6/68/NaturiaSacredTree-NECH-FR-R-1E.png",
+          "9f9e5657-6633-4127-b62d-5d69af2e26f5": "https://ms.yugipedia.com//9/91/VirgilRockStaroftheBurningAbyss-NECH-FR-ScR-1E.png",
+          "30ac5dcf-667c-435f-9f02-88aa956d9a61": "https://ms.yugipedia.com//a/aa/UAGoalkeeper-NECH-FR-R-1E.png",
+          "ed5402d4-bdc1-45e5-a483-1ffc098f0f70": "https://ms.yugipedia.com//e/eb/SZWFenrirSword-NECH-FR-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31113010
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "NECH-SP",
+      "image": "https://ms.yugipedia.com//3/36/NECH-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "7fe5297b-7c58-43ca-9591-20d880718b8d": "https://ms.yugipedia.com//0/03/ApoqliphortTowers-NECH-SP-R-1E.png",
+          "7ff0dc63-3ed6-47e7-8256-ba654d6edc94": "https://ms.yugipedia.com//3/31/StellarknightTriverr-NECH-SP-UR-1E.png",
+          "0e67cb78-86f0-4c7e-88c0-88db2de6c328": "https://ms.yugipedia.com//a/a4/StellarknightTriverr-NECH-SP-UtR-1E.png",
+          "a61f03b0-8eef-4411-95fc-90b0dce8d675": "https://ms.yugipedia.com//7/79/ToyVendor-NECH-SP-C-1E.png",
+          "301efe62-3a88-4110-8617-2896c68f6c6b": "https://ms.yugipedia.com//7/78/PunchintheBox-NECH-SP-C-1E.png",
+          "0db5f1f8-a67f-4c32-a253-5d5ac7dd1ceb": "https://ms.yugipedia.com//5/5d/NaturiaSacredTree-NECH-SP-R-1E.png",
+          "6e62dcd0-bff1-4f6f-b2b9-8a68004ba8e8": "https://ms.yugipedia.com//4/4c/VirgilRockStaroftheBurningAbyss-NECH-SP-ScR-1E.png",
+          "48ac750c-1e02-44a8-ac9d-1fb15eb3f011": "https://ms.yugipedia.com//1/1d/UAGoalkeeper-NECH-SP-R-1E.png",
+          "d1a234a2-0548-488c-83cd-d788e67eb2f5": "https://ms.yugipedia.com//9/9a/SZWFenrirSword-NECH-SP-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51112010
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "NECH-EN",
+      "image": "https://ms.yugipedia.com//2/22/NECH-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "a263c429-0755-484f-8b7e-374751230935": "https://ms.yugipedia.com//b/bc/ApoqliphortTowers-NECH-EN-R-1E.png",
+          "5c4830f1-f651-4d46-af4a-b12d2d54549b": "https://ms.yugipedia.com//c/c8/MachinaMegaform-NECH-EN-SR-1E.png",
+          "68803ce2-001a-49d5-a1c1-11913d6d9347": "https://ms.yugipedia.com//2/26/HeraldofUltimateness-NECH-EN-UR-1E.png",
+          "87c43620-8033-4b9c-962d-c36f4ad2fb65": "https://ms.yugipedia.com//6/6b/StellarknightTriverr-NECH-EN-UR-1E.png",
+          "cf686676-6f87-4acc-a6d0-e075a943a4a1": "https://ms.yugipedia.com//9/93/StellarknightTriverr-NECH-EN-UtR-1E.png",
+          "8afdb272-439b-496a-a4ea-fb03f1d25074": "https://ms.yugipedia.com//a/ab/ToyVendor-NECH-EN-C-1E.png",
+          "21cf32d6-003d-418b-8d5f-18438d186881": "https://ms.yugipedia.com//8/81/PunchintheBox-NECH-EN-C-1E.png",
+          "6e9797fe-3714-4156-a783-90833f973c59": "https://ms.yugipedia.com//9/95/NaturiaSacredTree-NECH-EN-R-1E.png",
+          "c2825bee-d41b-4e93-bd81-a892b599770e": "https://ms.yugipedia.com//9/93/VirgilRockStaroftheBurningAbyss-NECH-EN-ScR-1E.png",
+          "54f31f02-3f3d-4da2-a29b-858dac309f50": "https://ms.yugipedia.com//1/1f/UAGoalkeeper-NECH-EN-R-1E.png",
+          "7c63753a-7967-4cf6-bd42-b42046ae3890": "https://ms.yugipedia.com//5/59/SZWFenrirSword-NECH-EN-C-1E.png"
+        },
+        "unlimited": {
+          "a263c429-0755-484f-8b7e-374751230935": "https://ms.yugipedia.com//e/e5/ApoqliphortTowers-NECH-EN-R-UE.png",
+          "5c4830f1-f651-4d46-af4a-b12d2d54549b": "https://ms.yugipedia.com//6/64/MachinaMegaform-NECH-EN-SR-UE.png",
+          "68803ce2-001a-49d5-a1c1-11913d6d9347": "https://ms.yugipedia.com//1/1b/HeraldofUltimateness-NECH-EN-UR-UE.png",
+          "87c43620-8033-4b9c-962d-c36f4ad2fb65": "https://ms.yugipedia.com//4/42/StellarknightTriverr-NECH-EN-UR-UE.png",
+          "cf686676-6f87-4acc-a6d0-e075a943a4a1": "https://ms.yugipedia.com//0/05/StellarknightTriverr-NECH-EN-UtR-UE.png",
+          "8afdb272-439b-496a-a4ea-fb03f1d25074": "https://ms.yugipedia.com//3/36/ToyVendor-NECH-EN-C-UE.png",
+          "21cf32d6-003d-418b-8d5f-18438d186881": "https://ms.yugipedia.com//9/90/PunchintheBox-NECH-EN-C-UE.png",
+          "6e9797fe-3714-4156-a783-90833f973c59": "https://ms.yugipedia.com//8/8e/NaturiaSacredTree-NECH-EN-R-UE.png",
+          "c2825bee-d41b-4e93-bd81-a892b599770e": "https://ms.yugipedia.com//4/40/VirgilRockStaroftheBurningAbyss-NECH-EN-ScR-UE.png",
+          "54f31f02-3f3d-4da2-a29b-858dac309f50": "https://ms.yugipedia.com//2/2e/UAGoalkeeper-NECH-EN-R-UE.png",
+          "7c63753a-7967-4cf6-bd42-b42046ae3890": "https://ms.yugipedia.com//e/e0/SZWFenrirSword-NECH-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11113011
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "NECH-DE",
+      "image": "https://ms.yugipedia.com//3/35/NECH-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "d2ef064c-9018-49f3-bc3c-c3963bb2f5da": "https://ms.yugipedia.com//5/51/ApoqliphortTowers-NECH-DE-R-1E.png",
+          "feb002e9-6a6a-44d1-83a9-e7ea988c6363": "https://ms.yugipedia.com//4/45/MachinaMegaform-NECH-DE-SR-1E.png",
+          "4a983c8b-eeb6-445c-b5dd-b74526d36125": "https://ms.yugipedia.com//4/43/StellarknightTriverr-NECH-DE-UR-1E.png"
+        },
+        "unlimited": {
+          "1049ae2f-c65c-45b9-9afb-18c158836ea1": "https://ms.yugipedia.com//7/73/VirgilRockStaroftheBurningAbyss-NECH-DE-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21113010
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "NECH-KR",
+      "date": "2014-10-20",
+      "image": "https://ms.yugipedia.com//1/1c/NECH-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "b70976e0-4bf0-40d7-b212-4d8c4c04cf22": "https://ms.yugipedia.com//e/e7/ApoqliphortTowers-NECH-KR-R-1E.png",
+          "81263e43-3dce-483d-b7ea-c4a579fe3f4e": "https://ms.yugipedia.com//c/c4/MachinaMegaform-NECH-KR-C-1E.png",
+          "1955df56-09c7-453c-9a69-75588d690ad5": "https://ms.yugipedia.com//3/35/HeraldofUltimateness-NECH-KR-SR-1E.png",
+          "bf25e1fa-59c1-4d4b-9f93-281df162a027": "https://ms.yugipedia.com//2/22/StellarknightTriverr-NECH-KR-UR-1E.png",
+          "d5452e1e-f08b-4d4c-a042-d7e331430879": "https://ms.yugipedia.com//e/ef/StellarknightTriverr-NECH-KR-ScR-1E.png"
+        },
+        "unlimited": {
+          "b70976e0-4bf0-40d7-b212-4d8c4c04cf22": "https://ms.yugipedia.com//f/f8/ApoqliphortTowers-NECH-KR-R-UE.png",
+          "81263e43-3dce-483d-b7ea-c4a579fe3f4e": "https://ms.yugipedia.com//7/71/MachinaMegaform-NECH-KR-C-UE.png",
+          "1955df56-09c7-453c-9a69-75588d690ad5": "https://ms.yugipedia.com//6/65/HeraldofUltimateness-NECH-KR-SR-UE.png",
+          "bf25e1fa-59c1-4d4b-9f93-281df162a027": "https://ms.yugipedia.com//d/d5/StellarknightTriverr-NECH-KR-UR-UE.png",
+          "d5452e1e-f08b-4d4c-a042-d7e331430879": "https://ms.yugipedia.com//d/d2/StellarknightTriverr-NECH-KR-ScR-UE.png",
+          "c41b420e-6971-4781-9276-0ece816ab6ab": "https://ms.yugipedia.com//c/c0/ToyVendor-NECH-KR-C-UE.png",
+          "b69822b7-0f35-49ae-8f5e-ce05124ef5bb": "https://ms.yugipedia.com//d/da/PunchintheBox-NECH-KR-C-UE.png",
+          "4ca4a8d0-39c3-4a15-a04f-2eb1eb6155b1": "https://ms.yugipedia.com//0/01/NaturiaSacredTree-NECH-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71112003
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "NECH-IT",
+      "image": "https://ms.yugipedia.com//0/00/NECH-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "9225cd84-7f24-415d-b79e-27de2d75eafa": "https://ms.yugipedia.com//a/a6/ApoqliphortTowers-NECH-IT-R-1E.png",
+          "b46fc60d-01c2-44c7-9e2c-c7e2b5461862": "https://ms.yugipedia.com//8/87/MachinaMegaform-NECH-IT-SR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41113010
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "NECH-PT",
+      "date": "2014-11-07",
+      "image": "https://ms.yugipedia.com//7/78/NECH-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "40f3f5bf-3d0f-412d-8d21-cdc0765a6bf4": "https://ms.yugipedia.com//9/94/ApoqliphortTowers-NECH-PT-R-1E.png",
+          "d2d355e3-6b69-4f40-906c-bd92e317cf20": "https://ms.yugipedia.com//0/0d/MachinaMegaform-NECH-PT-SR-1E.png",
+          "6103a391-eee3-42fe-bb29-be9c7ac91c48": "https://ms.yugipedia.com//f/ff/ToyVendor-NECH-PT-C-1E.png",
+          "49c54fb1-3d5b-4357-8540-d22e72002e6d": "https://ms.yugipedia.com//2/21/VirgilRockStaroftheBurningAbyss-NECH-PT-ScR-1E.png",
+          "40661cf5-87e5-4329-8a76-1ab6f153c077": "https://ms.yugipedia.com//4/48/UAGoalkeeper-NECH-PT-R-1E.png",
+          "0946bde5-7b07-4026-abf2-bc62f671b529": "https://ms.yugipedia.com//e/ec/SZWFenrirSword-NECH-PT-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11113011
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "NECH-JP",
+      "date": "2014-07-19",
+      "image": "https://ms.yugipedia.com//a/a7/NECH-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "49cce4f5-c9b2-4cad-9394-acd9c8a8dee8": "https://ms.yugipedia.com//e/e2/ApoqliphortTowers-NECH-JP-R.png",
+          "1d0f7d68-75cb-4008-938c-a9caf2a3f3da": "https://ms.yugipedia.com//2/2a/MachinaMegaform-NECH-JP-C.png",
+          "e7d55be9-5202-4614-8d42-3fafc4499962": "https://ms.yugipedia.com//a/a5/HeraldofUltimateness-NECH-JP-SR.png",
+          "00d3c3c1-3aef-4d37-af38-c977d051dab9": "https://ms.yugipedia.com//8/82/StellarknightTriverr-NECH-JP-UR.png",
+          "f60d8429-f4f8-47f2-9139-874d261ebec8": "https://ms.yugipedia.com//0/00/StellarknightTriverr-NECH-JP-ScR.png",
+          "ff7c5602-134c-4d55-9a40-f8f1dc8685f0": "https://ms.yugipedia.com//5/5f/StellarknightTriverr-NECH-JP-UtR.png",
+          "5d8d2f9c-6b9d-4b11-a024-a35292eabcda": "https://ms.yugipedia.com//8/86/ToyVendor-NECH-JP-C.png",
+          "d9839182-9913-4b64-a4bb-c0187e060d82": "https://ms.yugipedia.com//0/0f/PunchintheBox-NECH-JP-C.png",
+          "79e9275c-0aac-4f03-a92f-292871166d9b": "https://ms.yugipedia.com//e/e0/NaturiaSacredTree-NECH-JP-C.png",
+          "39f5980f-f4a6-484a-9005-849241389b1a": "https://ms.yugipedia.com//7/71/TheDoorofDestiny-NECH-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1117001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/43/NECH-BoosterFR.png",
+      "cards": [
+        {
+          "id": "d22e5933-afab-49bc-830b-5febee9d32b0",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "df4b5ace-a7d1-4d56-8bf6-7fd1026cfb0c",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "0c55c47e-c569-4676-a2df-efe9da6ae058",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "28960ffd-ba68-48ad-a407-b27daace13c1",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c391fefa-ce97-419f-bb08-9acb64494f43",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "9fdc2414-d041-4623-b105-ce6f5f6a4026",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "aabd57bb-459e-4725-87a7-1c25968e3e8c",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "949efe5c-870a-41d2-b9cb-49dcf47e7fdd",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "rare"
+        },
+        {
+          "id": "9f9e5657-6633-4127-b62d-5d69af2e26f5",
+          "card": "5eb07e7b-a55e-45b4-90f4-d472666567b8",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "30ac5dcf-667c-435f-9f02-88aa956d9a61",
+          "card": "2885e870-b4af-46ca-bdac-0cc1c20cd4e0",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "ed5402d4-bdc1-45e5-a483-1ffc098f0f70",
+          "card": "35f0f7a4-e523-4792-b510-fa78cbe646cb",
+          "suffix": "091",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/36/NECH-BoosterSP.png",
+      "cards": [
+        {
+          "id": "7fe5297b-7c58-43ca-9591-20d880718b8d",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "6a5a2ea8-c917-4fbb-9e11-b72a5d8f4db6",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "475c7200-a9a4-461f-aca1-559fc60b9985",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7ff0dc63-3ed6-47e7-8256-ba654d6edc94",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0e67cb78-86f0-4c7e-88c0-88db2de6c328",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a61f03b0-8eef-4411-95fc-90b0dce8d675",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "301efe62-3a88-4110-8617-2896c68f6c6b",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "0db5f1f8-a67f-4c32-a253-5d5ac7dd1ceb",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "rare"
+        },
+        {
+          "id": "6e62dcd0-bff1-4f6f-b2b9-8a68004ba8e8",
+          "card": "5eb07e7b-a55e-45b4-90f4-d472666567b8",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "48ac750c-1e02-44a8-ac9d-1fb15eb3f011",
+          "card": "2885e870-b4af-46ca-bdac-0cc1c20cd4e0",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "d1a234a2-0548-488c-83cd-d788e67eb2f5",
+          "card": "35f0f7a4-e523-4792-b510-fa78cbe646cb",
+          "suffix": "091",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/22/NECH-BoosterEN.png",
+      "cards": [
+        {
+          "id": "a263c429-0755-484f-8b7e-374751230935",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "5c4830f1-f651-4d46-af4a-b12d2d54549b",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "68803ce2-001a-49d5-a1c1-11913d6d9347",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "87c43620-8033-4b9c-962d-c36f4ad2fb65",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cf686676-6f87-4acc-a6d0-e075a943a4a1",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "8afdb272-439b-496a-a4ea-fb03f1d25074",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "21cf32d6-003d-418b-8d5f-18438d186881",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "6e9797fe-3714-4156-a783-90833f973c59",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "rare"
+        },
+        {
+          "id": "c2825bee-d41b-4e93-bd81-a892b599770e",
+          "card": "5eb07e7b-a55e-45b4-90f4-d472666567b8",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "54f31f02-3f3d-4da2-a29b-858dac309f50",
+          "card": "2885e870-b4af-46ca-bdac-0cc1c20cd4e0",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "7c63753a-7967-4cf6-bd42-b42046ae3890",
+          "card": "35f0f7a4-e523-4792-b510-fa78cbe646cb",
+          "suffix": "091",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/35/NECH-BoosterDE.png",
+      "cards": [
+        {
+          "id": "d2ef064c-9018-49f3-bc3c-c3963bb2f5da",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "feb002e9-6a6a-44d1-83a9-e7ea988c6363",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "de40d9ef-5217-4f89-8ed4-200dc4df8c58",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4a983c8b-eeb6-445c-b5dd-b74526d36125",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aae85c69-0620-4864-b036-fa0d4557d6e2",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "84b12ab6-f116-4630-9d24-0fe145bbc34b",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "0d29b681-23fd-4bf0-bb03-5bdd9ba7921e",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "f46c845c-887f-4e74-8fb5-0299269a05f1",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "rare"
+        },
+        {
+          "id": "1049ae2f-c65c-45b9-9afb-18c158836ea1",
+          "card": "5eb07e7b-a55e-45b4-90f4-d472666567b8",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "8b056ce7-8bb2-4a29-858f-13d3a76986c8",
+          "card": "2885e870-b4af-46ca-bdac-0cc1c20cd4e0",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "f6aa3ced-fa6f-45a6-a357-9bee320a47ca",
+          "card": "35f0f7a4-e523-4792-b510-fa78cbe646cb",
+          "suffix": "091",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1c/NECH-BoosterKR.png",
+      "cards": [
+        {
+          "id": "b70976e0-4bf0-40d7-b212-4d8c4c04cf22",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "81263e43-3dce-483d-b7ea-c4a579fe3f4e",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "1955df56-09c7-453c-9a69-75588d690ad5",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "bf25e1fa-59c1-4d4b-9f93-281df162a027",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d5452e1e-f08b-4d4c-a042-d7e331430879",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "secret"
+        },
+        {
+          "id": "c41b420e-6971-4781-9276-0ece816ab6ab",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "b69822b7-0f35-49ae-8f5e-ce05124ef5bb",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "4ca4a8d0-39c3-4a15-a04f-2eb1eb6155b1",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/00/NECH-BoosterIT.png",
+      "cards": [
+        {
+          "id": "9225cd84-7f24-415d-b79e-27de2d75eafa",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "b46fc60d-01c2-44c7-9e2c-c7e2b5461862",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "e8b8c61e-b82e-4757-b543-465a9c2b5c97",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "58509d7d-6b09-4440-8485-581092b2697e",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18acd3fd-2bcb-45ca-8da0-7f1007e2bd43",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "6907a376-44bd-4c52-b66b-a56e14a5a20d",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "f382bc25-7ec0-47d5-881f-1145ecf6d71f",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "c75cc274-a57e-4b5f-98b8-62e208d70ea6",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "rare"
+        },
+        {
+          "id": "b0e49d70-0227-478f-9302-ad28be42ce7f",
+          "card": "5eb07e7b-a55e-45b4-90f4-d472666567b8",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "689d6015-f6a5-405c-bb95-5cc6db5375a9",
+          "card": "2885e870-b4af-46ca-bdac-0cc1c20cd4e0",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "9537080a-8866-4c77-8a46-8c911375abb4",
+          "card": "35f0f7a4-e523-4792-b510-fa78cbe646cb",
+          "suffix": "091",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/78/NECH-BoosterPT.png",
+      "cards": [
+        {
+          "id": "40f3f5bf-3d0f-412d-8d21-cdc0765a6bf4",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "d2d355e3-6b69-4f40-906c-bd92e317cf20",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "3a18f844-58fb-4786-a4aa-00dcfda2323a",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f950c724-c808-42d3-895d-eb7cacf9a378",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "71c49d46-61e0-4f32-9a51-356ebd7b4d15",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "6103a391-eee3-42fe-bb29-be9c7ac91c48",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "99db4c10-53b3-4088-ab03-7133ed760095",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "147efb9a-c8d4-4eb2-8413-69f4a97c00c9",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "rare"
+        },
+        {
+          "id": "49c54fb1-3d5b-4357-8540-d22e72002e6d",
+          "card": "5eb07e7b-a55e-45b4-90f4-d472666567b8",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "40661cf5-87e5-4329-8a76-1ab6f153c077",
+          "card": "2885e870-b4af-46ca-bdac-0cc1c20cd4e0",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "0946bde5-7b07-4026-abf2-bc62f671b529",
+          "card": "35f0f7a4-e523-4792-b510-fa78cbe646cb",
+          "suffix": "091",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/a7/NECH-BoosterJP.png",
+      "cards": [
+        {
+          "id": "49cce4f5-c9b2-4cad-9394-acd9c8a8dee8",
+          "card": "6dd937e0-6f6a-47c1-811f-071cee691786",
+          "suffix": "026",
+          "rarity": "rare"
+        },
+        {
+          "id": "1d0f7d68-75cb-4008-938c-a9caf2a3f3da",
+          "card": "d48f683e-e475-4c4c-b21c-d211b579e654",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "e7d55be9-5202-4614-8d42-3fafc4499962",
+          "card": "b2749876-5082-43a7-8d83-cf52b23d0fc5",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "00d3c3c1-3aef-4d37-af38-c977d051dab9",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f60d8429-f4f8-47f2-9139-874d261ebec8",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "secret"
+        },
+        {
+          "id": "ff7c5602-134c-4d55-9a40-f8f1dc8685f0",
+          "card": "5eb3f530-3de1-4c0a-932d-2507ad06ec4a",
+          "suffix": "054",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "5d8d2f9c-6b9d-4b11-a024-a35292eabcda",
+          "card": "00d05c2c-ba6c-41b6-ab6f-c6dac6fac793",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "d9839182-9913-4b64-a4bb-c0187e060d82",
+          "card": "10a9bba4-60f0-40d8-857e-ff2b12faa1b9",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "79e9275c-0aac-4f03-a92f-292871166d9b",
+          "card": "0cc357ee-2726-47c1-98a2-66e64991d4cb",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "39f5980f-f4a6-484a-9005-849241389b1a",
+          "card": "31280d42-652b-4f3c-88f6-d573cd107186",
+          "suffix": "086",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "The New Challengers",
+      "id": 342155
+    }
+  }
+}

@@ -1,0 +1,720 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e8d0db56-17aa-46fe-a97e-c54936e91bdb",
+  "name": {
+    "en": "Phantom Rage",
+    "fr": "La Rage Fant\u00f4me",
+    "de": "Phantom Rage",
+    "it": "Rabbia Fantasma",
+    "pt": "F\u00faria Fantasma",
+    "es": "Ira Fantasma",
+    "ja": "\u30d5\u30a1\u30f3\u30c8\u30e0\u30fb\u30ec\u30a4\u30b8",
+    "ko": "\ud32c\ud140 \ub808\uc774\uc9c0"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "PHRA-FR",
+      "image": "https://ms.yugipedia.com//f/fb/PHRA-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "PHRA-SP",
+      "image": "https://ms.yugipedia.com//b/b8/PHRA-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "PHRA-EN",
+      "image": "https://ms.yugipedia.com//1/13/PHRA-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "18bbf603-6283-467b-af5e-07bf1f42bb5c": "https://ms.yugipedia.com//5/5e/RockBandXenoguitar-PHRA-EN-SR-1E.png",
+          "458e4d6a-0633-497d-9155-327b9c9969eb": "https://ms.yugipedia.com//a/ae/VirtualWorldKyubiShenshen-PHRA-EN-ScR-1E.png",
+          "a25ec948-922b-4a3c-97dc-d5affa364a06": "https://ms.yugipedia.com//9/9e/UALockerRoom-PHRA-EN-C-1E.png",
+          "0020ba84-c601-4b1b-926c-4f87634ddf08": "https://ms.yugipedia.com//a/a5/RaidraptorsPhantomKnightsClaw-PHRA-EN-SR-1E.png",
+          "60e28866-c348-40ad-9857-a4ac73d115c3": "https://ms.yugipedia.com//f/f9/InfernitySuppression-PHRA-EN-C-1E.png",
+          "316c3832-2a32-4abc-9337-2a1110984c8c": "https://ms.yugipedia.com//2/24/FreeRangeMonsters-PHRA-EN-C-1E.png",
+          "b8b5716e-a780-4ff6-a8c6-c4c57b1cf5df": "https://ms.yugipedia.com//4/45/MyutantBlast-PHRA-EN-C-1E.png",
+          "dc2b79ff-b7cc-4246-8af7-b31a9e695ea5": "https://ms.yugipedia.com//3/37/MyutantExpansion-PHRA-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11119008
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "PHRA-DE",
+      "image": "https://ms.yugipedia.com//3/36/PHRA-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "PHRA-KR",
+      "date": "2020-11-10",
+      "image": "https://ms.yugipedia.com//5/56/PHRA-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71118003
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "PHRA-IT",
+      "image": "https://ms.yugipedia.com//9/95/PHRA-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "PHRA-PT",
+      "date": "2020-11-05",
+      "image": "https://ms.yugipedia.com//7/79/PHRA-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "PHRA-JP",
+      "date": "2020-08-08",
+      "image": "https://ms.yugipedia.com//a/a9/PHRA-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "7796b0e9-9490-4353-8c8b-b4781ed7716f": "https://ms.yugipedia.com//3/33/RockBandXenoguitar-PHRA-JP-R.png",
+          "4ec7b6f4-1a26-40ca-82a4-c41bfb458909": "https://ms.yugipedia.com//7/72/VirtualWorldKyubiShenshen-PHRA-JP-UR.png",
+          "e6ee8c4b-190a-4a06-804a-dc0896ca4ce0": "https://ms.yugipedia.com//b/b9/VirtualWorldKyubiShenshen-PHRA-JP-UtR.png",
+          "7f5b4760-8fe3-48d8-b3a4-c51ad1138f1c": "https://ms.yugipedia.com//c/ce/VirtualWorldKyubiShenshen-PHRA-JP-ScR.png",
+          "ab2edc94-ec89-4221-879c-e35c4bf46dca": "https://ms.yugipedia.com//7/76/VirtualWorldKyubiShenshen-PHRA-JP-PScR.png",
+          "7a98961f-5eb8-4a9e-abed-c454357355a5": "https://ms.yugipedia.com//7/7c/UALockerRoom-PHRA-JP-C.png",
+          "c8a7f08b-4b0e-43ed-a76d-6066f2c9765a": "https://ms.yugipedia.com//0/02/RaidraptorsPhantomKnightsClaw-PHRA-JP-SR.png",
+          "7b4f3cc1-8107-4d9e-895c-b980be4e4c69": "https://ms.yugipedia.com//6/6f/RaidraptorsPhantomKnightsClaw-PHRA-JP-ScR.png",
+          "8b8e39c0-4fb0-4b4c-a808-81f51d339d0e": "https://ms.yugipedia.com//e/ed/RaidraptorsPhantomKnightsClaw-PHRA-JP-PScR.png",
+          "e69b9df4-0d94-4dce-9d09-d39293c48e54": "https://ms.yugipedia.com//0/02/InfernitySuppression-PHRA-JP-C.png",
+          "874cf25a-52d3-4c98-805b-0a5633653d9c": "https://ms.yugipedia.com//b/b7/FreeRangeMonsters-PHRA-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1123003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/fb/PHRA-BoosterFR.png",
+      "cards": [
+        {
+          "id": "7139ca2d-f1bc-4ad8-b55e-560946ed04a3",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "785a45ec-1f46-40be-b8ab-ff9f7a038068",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "b1bc2d5f-7f2b-4d29-9342-9c6de942d32f",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "c1b5f949-b364-4de4-893d-f9df3914ea73",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "60c3daf2-42cb-49aa-a13e-33b434e3c663",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "db9c714b-985f-4929-8023-e27e3df76a38",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "1a9337d7-2485-4410-9ad0-8f7e962278dc",
+          "card": "a65a7d8d-cf3f-49b3-8307-ad859544db78",
+          "suffix": "094",
+          "rarity": "common"
+        },
+        {
+          "id": "b03db6df-7f5f-4437-82f0-d3e1706212e6",
+          "card": "f8a66bcd-120c-40fe-88d8-e542244e81ff",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b8/PHRA-BoosterSP.png",
+      "cards": [
+        {
+          "id": "02fc9d20-0901-4a48-b540-479142ab009f",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "958f82ac-4ec0-4686-8bf3-d3a958d5b496",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "83b43499-9fcd-4824-9579-3dbe05e3a8e7",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "feb3ff69-9e59-4da8-b91f-34a27bf53e96",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "0253c08e-d5c5-4cb3-8a61-98baed4884ce",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "5a42f485-3407-46ee-87ac-7885c8b5a145",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "fe1269e1-4d6a-4f4e-9fbe-c90d2da02b56",
+          "card": "a65a7d8d-cf3f-49b3-8307-ad859544db78",
+          "suffix": "094",
+          "rarity": "common"
+        },
+        {
+          "id": "9654eadf-d7fa-43af-b6a1-7df6c58b462b",
+          "card": "f8a66bcd-120c-40fe-88d8-e542244e81ff",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/13/PHRA-BoosterEN.png",
+      "cards": [
+        {
+          "id": "18bbf603-6283-467b-af5e-07bf1f42bb5c",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "458e4d6a-0633-497d-9155-327b9c9969eb",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "a25ec948-922b-4a3c-97dc-d5affa364a06",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "0020ba84-c601-4b1b-926c-4f87634ddf08",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "60e28866-c348-40ad-9857-a4ac73d115c3",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "316c3832-2a32-4abc-9337-2a1110984c8c",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "b8b5716e-a780-4ff6-a8c6-c4c57b1cf5df",
+          "card": "a65a7d8d-cf3f-49b3-8307-ad859544db78",
+          "suffix": "094",
+          "rarity": "common"
+        },
+        {
+          "id": "dc2b79ff-b7cc-4246-8af7-b31a9e695ea5",
+          "card": "f8a66bcd-120c-40fe-88d8-e542244e81ff",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/36/PHRA-BoosterDE.png",
+      "cards": [
+        {
+          "id": "61ac65b0-0052-4cea-b7fa-ab8ad34e9986",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "eab0e949-8e78-4f0e-aabf-3f5bcb991588",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "e64476ab-9dae-41ed-8011-942dc6b1e12a",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "34290363-8066-4ca6-8dd2-9bb73725e485",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "af7d9f29-18ad-4406-a12b-895ad7213684",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "8fc4ce02-eba6-4dc9-bcfb-72fd5ea77de8",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "79fc579f-adbf-431a-b3a9-56f35f95eb79",
+          "card": "a65a7d8d-cf3f-49b3-8307-ad859544db78",
+          "suffix": "094",
+          "rarity": "common"
+        },
+        {
+          "id": "ae35bfd4-b1dd-4800-809b-fb4c4a1c1eaa",
+          "card": "f8a66bcd-120c-40fe-88d8-e542244e81ff",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/56/PHRA-BoosterKR.png",
+      "cards": [
+        {
+          "id": "9537cf73-945e-430d-995a-e573117bbe23",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "rare"
+        },
+        {
+          "id": "a2bd27a0-80d2-43a5-ae41-bc508a92bb08",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6b838b6d-b41e-4217-96e5-247ed5a6d3f9",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "95247bcb-63c1-4330-8558-a4b08e9dce15",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "93351291-11da-4755-b453-7678b1eb7fa5",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "d395f771-a931-4869-a012-a085b2e5cf85",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "3f6def6c-f37e-4d3b-ae5f-e9088321b653",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "1e28a713-f813-4fec-89b6-e5fe361476eb",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "secret"
+        },
+        {
+          "id": "9ef060b1-b75a-4dde-b7ad-475603b28c91",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "9b41665a-aa8c-4a7e-b2ae-18b572238647",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "2a4ca3f4-67e8-41a1-b9a9-123f19d6a8d9",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/95/PHRA-BoosterIT.png",
+      "cards": [
+        {
+          "id": "3ad50d8c-d75c-42f0-be88-93aa01868829",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "edc68e9c-b3e4-4354-b26d-6dbff7140a88",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "116d09cd-f931-4cfc-b4c0-6672d3a9d6d4",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "238169b0-c461-4e39-8b7f-466871c773a6",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "faab1a6b-7250-4314-b634-01430e6a4597",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "dca15def-3b67-4e0f-8cc0-cd4129e9381e",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "eda1aa0d-352c-41a9-94b0-f9025b4d1afa",
+          "card": "a65a7d8d-cf3f-49b3-8307-ad859544db78",
+          "suffix": "094",
+          "rarity": "common"
+        },
+        {
+          "id": "b8567604-4592-481d-b76d-b5afb5e2d61b",
+          "card": "f8a66bcd-120c-40fe-88d8-e542244e81ff",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/79/PHRA-BoosterPT.png",
+      "cards": [
+        {
+          "id": "45da4b07-1848-4d4f-9ff4-704871080858",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "f0f8417a-36e6-45ec-84d5-9ab247cb9b6b",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "f0d206fa-88c6-4345-8781-c06f5eb0e875",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "a42802de-6f95-4cfa-be2a-b162fa14badc",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "68bf26c4-22c2-4bec-abd0-a360d016feeb",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "18d04325-0ea4-4b7b-8ebf-deb8590ae65b",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "1bc7ede4-55f8-400b-9971-48ad1a9a68ac",
+          "card": "a65a7d8d-cf3f-49b3-8307-ad859544db78",
+          "suffix": "094",
+          "rarity": "common"
+        },
+        {
+          "id": "62e0dc5c-0d51-4383-9a0d-d52ebc7768be",
+          "card": "f8a66bcd-120c-40fe-88d8-e542244e81ff",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/a9/PHRA-BoosterJP.png",
+      "cards": [
+        {
+          "id": "7796b0e9-9490-4353-8c8b-b4781ed7716f",
+          "card": "ff67866a-fc2b-4c0a-b331-f287c662b833",
+          "suffix": "025",
+          "rarity": "rare"
+        },
+        {
+          "id": "4ec7b6f4-1a26-40ca-82a4-c41bfb458909",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e6ee8c4b-190a-4a06-804a-dc0896ca4ce0",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "7f5b4760-8fe3-48d8-b3a4-c51ad1138f1c",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "secret"
+        },
+        {
+          "id": "ab2edc94-ec89-4221-879c-e35c4bf46dca",
+          "card": "fbc4a519-68ce-4950-95a6-2382ad4390b5",
+          "suffix": "036",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "7a98961f-5eb8-4a9e-abed-c454357355a5",
+          "card": "d617a00b-f38c-43da-8bf6-788b7812878a",
+          "suffix": "062",
+          "rarity": "common"
+        },
+        {
+          "id": "c8a7f08b-4b0e-43ed-a76d-6066f2c9765a",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "super"
+        },
+        {
+          "id": "7b4f3cc1-8107-4d9e-895c-b980be4e4c69",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "secret"
+        },
+        {
+          "id": "8b8e39c0-4fb0-4b4c-a808-81f51d339d0e",
+          "card": "a0bf4c2d-8c57-4347-963e-2487b598ec92",
+          "suffix": "069",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "e69b9df4-0d94-4dce-9d09-d39293c48e54",
+          "card": "60d93c92-03e1-4ce7-9c92-8d9ea2ec052c",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "874cf25a-52d3-4c98-805b-0a5633653d9c",
+          "card": "3a56d73b-566b-4421-acd2-7694a470b717",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Phantom Rage",
+      "id": 720252
+    }
+  }
+}

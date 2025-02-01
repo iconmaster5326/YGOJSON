@@ -1,0 +1,965 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "f2e4f57d-cb43-4a75-bf39-cc857f6d7a55",
+  "name": {
+    "en": "Storm of Ragnarok",
+    "fr": "La Temp\u00eate de Ragnar\u00f6k",
+    "de": "Storm of Ragnarok",
+    "it": "Tempesta dei Ragnarok",
+    "es": "La Tormenta del Ragnarok",
+    "ja": "\u30b9\u30c8\u30fc\u30e0\u30fb\u30aa\u30d6\u30fb\u30e9\u30b0\u30ca\u30ed\u30af",
+    "ko": "\uc2a4\ud1b0 \uc624\ube0c \ub77c\uadf8\ub098\ub85c\ud06c"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "STOR-EN",
+      "image": "https://ms.yugipedia.com//8/80/STOR-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "48b89e8f-c9f7-4fc1-a17d-b5eb5b037b49": "https://ms.yugipedia.com//b/b2/Doppelwarrior-STOR-EN-R-1E.png",
+          "d3075734-c3a2-4ce5-b13a-bf4a5c18b6a4": "https://ms.yugipedia.com//9/9b/BlackwingBoreastheSharp-STOR-EN-R-1E.png",
+          "a314b795-296a-4300-b132-befc09a027d6": "https://ms.yugipedia.com//4/45/DvergoftheNordicAlfar-STOR-EN-R-1E.jpg",
+          "97186a7c-b99c-4057-a4d5-c81e0c4d804e": "https://ms.yugipedia.com//c/c7/ScrapWorm-STOR-EN-R-1E.png",
+          "0a3cf669-9835-4fc1-aac4-3595e8d541dd": "https://ms.yugipedia.com//d/d6/Majioshaleon-STOR-EN-C-1E.jpg",
+          "d8c7d6ac-02e3-4b27-933a-e0775d288c00": "https://ms.yugipedia.com//b/b1/OdinFatheroftheAesir-STOR-EN-UR-1E.png",
+          "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba": "https://ms.yugipedia.com//a/a7/OdinFatheroftheAesir-STOR-EN-UtR-1E.png",
+          "306297e0-331f-4f09-b35d-d148192f0943": "https://ms.yugipedia.com//0/00/OdinFatheroftheAesir-STOR-EN-GR-1E.png",
+          "3a1ee012-e0ad-4488-9ae9-70e592e7fa04": "https://ms.yugipedia.com//9/91/ShiensSmokeSignal-STOR-EN-R-1E.jpg",
+          "aaae8425-a0c0-4999-868c-e0b33d076aeb": "https://ms.yugipedia.com//3/3c/FoolishReturn-STOR-EN-R-1E.jpg",
+          "fa4ebeec-a42f-4faa-9510-36f22d792605": "https://ms.yugipedia.com//c/ca/GleipnirtheFettersofFenrir-STOR-EN-UR-1E.jpg",
+          "33611689-75c5-4de1-b159-a6c26f0d66c1": "https://ms.yugipedia.com//7/70/GleipnirtheFettersofFenrir-STOR-EN-UtR-1E.jpg",
+          "5d914961-9f59-4593-a450-0447a4b4a34f": "https://ms.yugipedia.com//2/2b/TyrantsTirade-STOR-EN-C-1E.jpg",
+          "24bf866e-11c6-4133-bac6-2f65982d1359": "https://ms.yugipedia.com//f/f0/NordicRelicMegingjord-STOR-EN-ScR-1E.png"
+        },
+        "unlimited": {
+          "48b89e8f-c9f7-4fc1-a17d-b5eb5b037b49": "https://ms.yugipedia.com//6/65/Doppelwarrior-STOR-EN-R-UE.jpg",
+          "d3075734-c3a2-4ce5-b13a-bf4a5c18b6a4": "https://ms.yugipedia.com//a/a0/BlackwingBoreastheSharp-STOR-EN-R-UE.png",
+          "a314b795-296a-4300-b132-befc09a027d6": "https://ms.yugipedia.com//5/59/DvergoftheNordicAlfar-STOR-EN-R-UE.png",
+          "97186a7c-b99c-4057-a4d5-c81e0c4d804e": "https://ms.yugipedia.com//2/2b/ScrapWorm-STOR-EN-R-UE.png",
+          "0a3cf669-9835-4fc1-aac4-3595e8d541dd": "https://ms.yugipedia.com//7/72/Majioshaleon-STOR-EN-C-UE.png",
+          "d8c7d6ac-02e3-4b27-933a-e0775d288c00": "https://ms.yugipedia.com//2/27/OdinFatheroftheAesir-STOR-EN-UR-UE.png",
+          "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba": "https://ms.yugipedia.com//9/90/OdinFatheroftheAesir-STOR-EN-UtR-UE.png",
+          "306297e0-331f-4f09-b35d-d148192f0943": "https://ms.yugipedia.com//9/92/OdinFatheroftheAesir-STOR-EN-GR-UE.png",
+          "3a1ee012-e0ad-4488-9ae9-70e592e7fa04": "https://ms.yugipedia.com//b/be/ShiensSmokeSignal-STOR-EN-R-UE.png",
+          "aaae8425-a0c0-4999-868c-e0b33d076aeb": "https://ms.yugipedia.com//a/ad/FoolishReturn-STOR-EN-R-UE.png",
+          "fa4ebeec-a42f-4faa-9510-36f22d792605": "https://ms.yugipedia.com//7/78/GleipnirtheFettersofFenrir-STOR-EN-UR-UE.jpg",
+          "33611689-75c5-4de1-b159-a6c26f0d66c1": "https://ms.yugipedia.com//6/6b/GleipnirtheFettersofFenrir-STOR-EN-UtR-UE.png",
+          "5d914961-9f59-4593-a450-0447a4b4a34f": "https://ms.yugipedia.com//4/49/TyrantsTirade-STOR-EN-C-UE.png",
+          "24bf866e-11c6-4133-bac6-2f65982d1359": "https://ms.yugipedia.com//0/0b/NordicRelicMegingjord-STOR-EN-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11110000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "STOR-SP",
+      "image": "https://ms.yugipedia.com//1/1f/STOR-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "9c603a6c-76ac-4557-b3aa-6fc0f3ba0968": "https://ms.yugipedia.com//3/34/Doppelwarrior-STOR-SP-R-1E.png",
+          "db274c15-4d9a-45fa-8629-1287ee89cbfb": "https://ms.yugipedia.com//b/ba/BlackwingBoreastheSharp-STOR-SP-R-1E.png",
+          "351bfbe7-4272-4bf0-800f-157111b0abc3": "https://ms.yugipedia.com//1/15/DvergoftheNordicAlfar-STOR-SP-R-1E.png",
+          "2bbb6bc9-5861-47c1-b5b6-7f32bfa93e95": "https://ms.yugipedia.com//4/46/ScrapWorm-STOR-SP-R-1E.png",
+          "186ab38c-9007-4f7d-bd0c-c0b98b02681d": "https://ms.yugipedia.com//8/83/Majioshaleon-STOR-SP-C-1E.png",
+          "d8c7d6ac-02e3-4b27-933a-e0775d288c00": "https://ms.yugipedia.com//e/e9/OdinFatheroftheAesir-STOR-SP-UR-1E.png",
+          "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba": "https://ms.yugipedia.com//e/e8/OdinFatheroftheAesir-STOR-SP-UtR-1E.png",
+          "aea7733c-9bc5-42b5-a1cd-95117e42b31b": "https://ms.yugipedia.com//6/60/ShiensSmokeSignal-STOR-SP-R-1E.jpg",
+          "f9f862b1-2599-4cc1-b3f8-10e3f8f56401": "https://ms.yugipedia.com//d/d4/FoolishReturn-STOR-SP-R-1E.jpg",
+          "a183cb49-8ad7-4a17-8663-9c1cbe25b86e": "https://ms.yugipedia.com//b/be/GleipnirtheFettersofFenrir-STOR-SP-UR-1E.jpg",
+          "35c39f60-13af-4b7f-b574-500ae24d39ba": "https://ms.yugipedia.com//1/16/GleipnirtheFettersofFenrir-STOR-SP-UtR-1E.png",
+          "e305e8a7-2fbf-4969-9ec8-70889f143d7d": "https://ms.yugipedia.com//e/e0/TyrantsTirade-STOR-SP-C-1E.jpg",
+          "e41e0622-eea7-46cf-b9e4-c53fb112dac8": "https://ms.yugipedia.com//8/8a/NordicRelicMegingjord-STOR-SP-ScR-1E.png"
+        },
+        "unlimited": {
+          "db274c15-4d9a-45fa-8629-1287ee89cbfb": "https://ms.yugipedia.com//6/62/BlackwingBoreastheSharp-STOR-SP-R-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51109000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "STOR-IT",
+      "image": "https://ms.yugipedia.com//8/84/STOR-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41110000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "STOR-FR",
+      "image": "https://ms.yugipedia.com//7/7d/STOR-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "09a0254a-a558-4343-8cab-2597bf8f846d": "https://ms.yugipedia.com//a/ac/DvergoftheNordicAlfar-STOR-FR-R-1E.png",
+          "0fc423c0-b0a6-4813-ad0b-faa4bc666042": "https://ms.yugipedia.com//a/ad/Majioshaleon-STOR-FR-C-1E.png",
+          "d8c7d6ac-02e3-4b27-933a-e0775d288c00": "https://ms.yugipedia.com//2/26/OdinFatheroftheAesir-STOR-FR-UR-1E.png",
+          "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba": "https://ms.yugipedia.com//a/a9/OdinFatheroftheAesir-STOR-FR-UtR-1E.png",
+          "306297e0-331f-4f09-b35d-d148192f0943": "https://ms.yugipedia.com//0/0c/OdinFatheroftheAesir-STOR-FR-GR-1E.png",
+          "953f6d7e-ef68-4c89-9b19-9d2866ed1c49": "https://ms.yugipedia.com//b/b1/ShiensSmokeSignal-STOR-FR-R-1E.png",
+          "b4db47ad-96b3-4296-8ed6-865ecb5ca8bd": "https://ms.yugipedia.com//4/48/GleipnirtheFettersofFenrir-STOR-FR-UR-1E.png",
+          "1d9acc84-e182-4ce1-a449-557b62947108": "https://ms.yugipedia.com//a/ab/GleipnirtheFettersofFenrir-STOR-FR-UtR-1E.png",
+          "4a71cd7f-dfe3-4f34-9e09-0202cbe04f02": "https://ms.yugipedia.com//e/eb/NordicRelicMegingjord-STOR-FR-ScR-1E.png"
+        },
+        "unlimited": {
+          "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba": "https://ms.yugipedia.com//7/73/OdinFatheroftheAesir-STOR-FR-UtR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31110000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "STOR-DE",
+      "image": "https://ms.yugipedia.com//5/51/STOR-BoosterDE.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21110000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "STOR-JP",
+      "date": "2010-11-13",
+      "image": "https://ms.yugipedia.com//9/98/STOR-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "9f78a90e-1dab-42c3-b019-f2b11e094b67": "https://ms.yugipedia.com//e/e6/Doppelwarrior-STOR-JP-R.jpg",
+          "5cd8dc56-1098-4f38-999e-1f366ce2d4ce": "https://ms.yugipedia.com//f/f4/BlackwingBoreastheSharp-STOR-JP-R.jpg",
+          "e7241c33-f7b7-4c54-a3dc-e603878a3a85": "https://ms.yugipedia.com//c/c0/DvergoftheNordicAlfar-STOR-JP-R.jpg",
+          "0c27c8ae-5a79-4314-b02f-d3e48f9bdf8d": "https://ms.yugipedia.com//d/d8/ScrapWorm-STOR-JP-R.jpg",
+          "548d993e-b270-492e-840f-4b19f8a018b3": "https://ms.yugipedia.com//c/c7/Majioshaleon-STOR-JP-NR.jpg",
+          "d8c7d6ac-02e3-4b27-933a-e0775d288c00": "https://ms.yugipedia.com//c/c3/OdinFatheroftheAesir-STOR-JP-UR.png",
+          "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba": "https://ms.yugipedia.com//7/72/OdinFatheroftheAesir-STOR-JP-UtR.png",
+          "306297e0-331f-4f09-b35d-d148192f0943": "https://ms.yugipedia.com//8/86/OdinFatheroftheAesir-STOR-JP-HGR.png",
+          "0904e1f2-fe43-4dbc-8a32-80fdaf461d0a": "https://ms.yugipedia.com//8/80/ShiensSmokeSignal-STOR-JP-R.jpg",
+          "042adcf7-b85f-48f4-932f-dafb918f9fa6": "https://ms.yugipedia.com//1/19/FoolishReturn-STOR-JP-R.jpg",
+          "ce7afdeb-0266-41a4-aaca-0e11ed8353f8": "https://ms.yugipedia.com//2/26/GleipnirtheFettersofFenrir-STOR-JP-R.jpg",
+          "67c34b0b-7673-40a1-896c-5b24271f1f31": "https://ms.yugipedia.com//2/20/TyrantsTirade-STOR-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1113002
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "STOR-KR",
+      "date": "2011-02-07",
+      "image": "https://ms.yugipedia.com//0/0e/STOR-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "7c9c7ae0-9667-41d8-a24d-83b2514c5b70": "https://ms.yugipedia.com//9/96/DvergoftheNordicAlfar-STOR-KR-R-1E.png",
+          "d8c7d6ac-02e3-4b27-933a-e0775d288c00": "https://ms.yugipedia.com//4/40/OdinFatheroftheAesir-STOR-KR-UR-1E.png",
+          "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba": "https://ms.yugipedia.com//8/87/OdinFatheroftheAesir-STOR-KR-UtR-1E.png",
+          "306297e0-331f-4f09-b35d-d148192f0943": "https://ms.yugipedia.com//d/dd/OdinFatheroftheAesir-STOR-KR-HGR-1E.png"
+        },
+        "unlimited": {
+          "4ec565a1-1836-44c5-a734-d5a27bd3481f": "https://ms.yugipedia.com//e/ee/Doppelwarrior-STOR-KR-R-UE.png",
+          "2a619f8a-968c-40a8-a4ed-424a98f3d6c4": "https://ms.yugipedia.com//d/d8/BlackwingBoreastheSharp-STOR-KR-R-UE.png",
+          "7c9c7ae0-9667-41d8-a24d-83b2514c5b70": "https://ms.yugipedia.com//e/ea/DvergoftheNordicAlfar-STOR-KR-R-UE.png",
+          "d8e99653-4ae6-4801-996e-bc962694bd30": "https://ms.yugipedia.com//d/db/ScrapWorm-STOR-KR-R-UE.png",
+          "04ea6e23-3052-447c-882a-7839c05a0b11": "https://ms.yugipedia.com//8/89/Majioshaleon-STOR-KR-NR-UE.png",
+          "d8c7d6ac-02e3-4b27-933a-e0775d288c00": "https://ms.yugipedia.com//1/10/OdinFatheroftheAesir-STOR-KR-UR-UE.png",
+          "9f067ba0-93b3-4290-99b9-616a37816fea": "https://ms.yugipedia.com//3/3e/ShiensSmokeSignal-STOR-KR-R-UE.png",
+          "c5dce739-8ce7-4868-a131-96ea8c95aca0": "https://ms.yugipedia.com//1/1f/FoolishReturn-STOR-KR-R-UE.png",
+          "eac26b56-c17c-40b9-8977-2d4cc6d35b87": "https://ms.yugipedia.com//1/1a/GleipnirtheFettersofFenrir-STOR-KR-R-UE.png",
+          "f4961e64-863e-4141-b324-25e8f8bfbd8c": "https://ms.yugipedia.com//2/2c/TyrantsTirade-STOR-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71109000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/80/STOR-BoosterEN.png",
+      "cards": [
+        {
+          "id": "48b89e8f-c9f7-4fc1-a17d-b5eb5b037b49",
+          "card": "310c1dbe-4c59-4f24-9564-4cee69d0da2c",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "d3075734-c3a2-4ce5-b13a-bf4a5c18b6a4",
+          "card": "a15c79d8-de57-4921-a051-3c406750aedc",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "a314b795-296a-4300-b132-befc09a027d6",
+          "card": "ca7e6c15-b36f-47bb-a358-aae73ed671de",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "97186a7c-b99c-4057-a4d5-c81e0c4d804e",
+          "card": "d20046c0-9f5a-4ed1-a854-4e1016b489b2",
+          "suffix": "029",
+          "rarity": "rare"
+        },
+        {
+          "id": "0a3cf669-9835-4fc1-aac4-3595e8d541dd",
+          "card": "04b14b1b-b9ac-4794-bc5d-aca55878810d",
+          "suffix": "036",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d8c7d6ac-02e3-4b27-933a-e0775d288c00",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "306297e0-331f-4f09-b35d-d148192f0943",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "3a1ee012-e0ad-4488-9ae9-70e592e7fa04",
+          "card": "838711b6-9047-4c58-b441-1d57ffe6970b",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "aaae8425-a0c0-4999-868c-e0b33d076aeb",
+          "card": "d5c4ab8d-5bfb-43f4-937e-e67d2567d9cf",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "fa4ebeec-a42f-4faa-9510-36f22d792605",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultra"
+        },
+        {
+          "id": "33611689-75c5-4de1-b159-a6c26f0d66c1",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "5d914961-9f59-4593-a450-0447a4b4a34f",
+          "card": "515bea2b-947a-467e-b930-9ac8b369040f",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "24bf866e-11c6-4133-bac6-2f65982d1359",
+          "card": "f3ba925d-851d-4838-b28e-3aedeed4dd5d",
+          "suffix": "088",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Storm of Ragnarok"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1f/STOR-BoosterSP.png",
+      "cards": [
+        {
+          "id": "9c603a6c-76ac-4557-b3aa-6fc0f3ba0968",
+          "card": "310c1dbe-4c59-4f24-9564-4cee69d0da2c",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "db274c15-4d9a-45fa-8629-1287ee89cbfb",
+          "card": "a15c79d8-de57-4921-a051-3c406750aedc",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "351bfbe7-4272-4bf0-800f-157111b0abc3",
+          "card": "ca7e6c15-b36f-47bb-a358-aae73ed671de",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "2bbb6bc9-5861-47c1-b5b6-7f32bfa93e95",
+          "card": "d20046c0-9f5a-4ed1-a854-4e1016b489b2",
+          "suffix": "029",
+          "rarity": "rare"
+        },
+        {
+          "id": "186ab38c-9007-4f7d-bd0c-c0b98b02681d",
+          "card": "04b14b1b-b9ac-4794-bc5d-aca55878810d",
+          "suffix": "036",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d8c7d6ac-02e3-4b27-933a-e0775d288c00",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "306297e0-331f-4f09-b35d-d148192f0943",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "aea7733c-9bc5-42b5-a1cd-95117e42b31b",
+          "card": "838711b6-9047-4c58-b441-1d57ffe6970b",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "f9f862b1-2599-4cc1-b3f8-10e3f8f56401",
+          "card": "d5c4ab8d-5bfb-43f4-937e-e67d2567d9cf",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "a183cb49-8ad7-4a17-8663-9c1cbe25b86e",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultra"
+        },
+        {
+          "id": "35c39f60-13af-4b7f-b574-500ae24d39ba",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e305e8a7-2fbf-4969-9ec8-70889f143d7d",
+          "card": "515bea2b-947a-467e-b930-9ac8b369040f",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "e41e0622-eea7-46cf-b9e4-c53fb112dac8",
+          "card": "f3ba925d-851d-4838-b28e-3aedeed4dd5d",
+          "suffix": "088",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Storm of Ragnarok"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/84/STOR-BoosterIT.png",
+      "cards": [
+        {
+          "id": "6687df6b-2a0e-4ae1-829d-a0a265bcd999",
+          "card": "310c1dbe-4c59-4f24-9564-4cee69d0da2c",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "26f51cab-800a-4745-bfa9-781e13452360",
+          "card": "a15c79d8-de57-4921-a051-3c406750aedc",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "3f6f0227-0c2e-410b-a75e-d73225a78a98",
+          "card": "ca7e6c15-b36f-47bb-a358-aae73ed671de",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "6c523876-4fb5-438e-8cd3-fe0d08746303",
+          "card": "d20046c0-9f5a-4ed1-a854-4e1016b489b2",
+          "suffix": "029",
+          "rarity": "rare"
+        },
+        {
+          "id": "8950113c-8ae6-49f6-a9cf-557b4dd65d92",
+          "card": "04b14b1b-b9ac-4794-bc5d-aca55878810d",
+          "suffix": "036",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d8c7d6ac-02e3-4b27-933a-e0775d288c00",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "306297e0-331f-4f09-b35d-d148192f0943",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "1d9dec17-8026-4907-ab59-ce93cd44c0f6",
+          "card": "838711b6-9047-4c58-b441-1d57ffe6970b",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "0d54a265-dd6d-486a-bd3b-a0762656159d",
+          "card": "d5c4ab8d-5bfb-43f4-937e-e67d2567d9cf",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "53d8b961-e530-4ce1-926c-a08a8606bd75",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultra"
+        },
+        {
+          "id": "37f8659b-8cda-4f02-b863-1431bfad18bc",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "adee18c0-838d-406a-b4a4-d838a1a47f4b",
+          "card": "515bea2b-947a-467e-b930-9ac8b369040f",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "73dc5a18-2fbe-4314-8fb7-93ef81700b88",
+          "card": "f3ba925d-851d-4838-b28e-3aedeed4dd5d",
+          "suffix": "088",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Storm of Ragnarok"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7d/STOR-BoosterFR.png",
+      "cards": [
+        {
+          "id": "87bdc939-593d-4516-bb52-346f82692fb0",
+          "card": "310c1dbe-4c59-4f24-9564-4cee69d0da2c",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "3c9dd953-0374-4d8e-ac81-cd8ba05512d1",
+          "card": "a15c79d8-de57-4921-a051-3c406750aedc",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "09a0254a-a558-4343-8cab-2597bf8f846d",
+          "card": "ca7e6c15-b36f-47bb-a358-aae73ed671de",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "a7c6e5a9-40bb-4d29-a264-d5edfc4cba96",
+          "card": "d20046c0-9f5a-4ed1-a854-4e1016b489b2",
+          "suffix": "029",
+          "rarity": "rare"
+        },
+        {
+          "id": "0fc423c0-b0a6-4813-ad0b-faa4bc666042",
+          "card": "04b14b1b-b9ac-4794-bc5d-aca55878810d",
+          "suffix": "036",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d8c7d6ac-02e3-4b27-933a-e0775d288c00",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "306297e0-331f-4f09-b35d-d148192f0943",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "953f6d7e-ef68-4c89-9b19-9d2866ed1c49",
+          "card": "838711b6-9047-4c58-b441-1d57ffe6970b",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "53aba823-45b6-47ba-8472-1a0df19476de",
+          "card": "d5c4ab8d-5bfb-43f4-937e-e67d2567d9cf",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "b4db47ad-96b3-4296-8ed6-865ecb5ca8bd",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1d9acc84-e182-4ce1-a449-557b62947108",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "f0a4c44c-0056-4b87-aed4-fb3917023cfa",
+          "card": "515bea2b-947a-467e-b930-9ac8b369040f",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "4a71cd7f-dfe3-4f34-9e09-0202cbe04f02",
+          "card": "f3ba925d-851d-4838-b28e-3aedeed4dd5d",
+          "suffix": "088",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Storm of Ragnarok"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/51/STOR-BoosterDE.png",
+      "cards": [
+        {
+          "id": "7fb63dff-1f69-4ff2-91e8-d2318193437f",
+          "card": "310c1dbe-4c59-4f24-9564-4cee69d0da2c",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "d4e02e25-3c80-494a-9713-ef903d22abe1",
+          "card": "a15c79d8-de57-4921-a051-3c406750aedc",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "d629b592-e046-430e-b3ec-ba44b600e5c5",
+          "card": "ca7e6c15-b36f-47bb-a358-aae73ed671de",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "d97f08a1-c688-4f6a-b829-bb68c01a0686",
+          "card": "d20046c0-9f5a-4ed1-a854-4e1016b489b2",
+          "suffix": "029",
+          "rarity": "rare"
+        },
+        {
+          "id": "b73cb550-4e80-48dd-9b3e-4f6ffcd98eac",
+          "card": "04b14b1b-b9ac-4794-bc5d-aca55878810d",
+          "suffix": "036",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d8c7d6ac-02e3-4b27-933a-e0775d288c00",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "306297e0-331f-4f09-b35d-d148192f0943",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "94d7cbd0-9b7e-4ad8-9dfc-db0a20d22b97",
+          "card": "838711b6-9047-4c58-b441-1d57ffe6970b",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "fe3ca219-c813-48fe-af37-280cc510e198",
+          "card": "d5c4ab8d-5bfb-43f4-937e-e67d2567d9cf",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "046d86bc-aeae-4aa9-8621-efe38002e604",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a649088d-72b0-444a-b6cd-6426ca2d865e",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "4d0c61a4-9e57-4974-a4b2-5255084a9809",
+          "card": "515bea2b-947a-467e-b930-9ac8b369040f",
+          "suffix": "078",
+          "rarity": "common"
+        },
+        {
+          "id": "60928d2e-ff3c-45fd-884a-d99af4c8e50b",
+          "card": "f3ba925d-851d-4838-b28e-3aedeed4dd5d",
+          "suffix": "088",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Storm of Ragnarok"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/98/STOR-BoosterJP.png",
+      "cards": [
+        {
+          "id": "9f78a90e-1dab-42c3-b019-f2b11e094b67",
+          "card": "310c1dbe-4c59-4f24-9564-4cee69d0da2c",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "5cd8dc56-1098-4f38-999e-1f366ce2d4ce",
+          "card": "a15c79d8-de57-4921-a051-3c406750aedc",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "e7241c33-f7b7-4c54-a3dc-e603878a3a85",
+          "card": "ca7e6c15-b36f-47bb-a358-aae73ed671de",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "0c27c8ae-5a79-4314-b02f-d3e48f9bdf8d",
+          "card": "d20046c0-9f5a-4ed1-a854-4e1016b489b2",
+          "suffix": "029",
+          "rarity": "rare"
+        },
+        {
+          "id": "548d993e-b270-492e-840f-4b19f8a018b3",
+          "card": "04b14b1b-b9ac-4794-bc5d-aca55878810d",
+          "suffix": "036",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d8c7d6ac-02e3-4b27-933a-e0775d288c00",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "306297e0-331f-4f09-b35d-d148192f0943",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "0904e1f2-fe43-4dbc-8a32-80fdaf461d0a",
+          "card": "838711b6-9047-4c58-b441-1d57ffe6970b",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "042adcf7-b85f-48f4-932f-dafb918f9fa6",
+          "card": "d5c4ab8d-5bfb-43f4-937e-e67d2567d9cf",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "ce7afdeb-0266-41a4-aaca-0e11ed8353f8",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "rare"
+        },
+        {
+          "id": "67c34b0b-7673-40a1-896c-5b24271f1f31",
+          "card": "515bea2b-947a-467e-b930-9ac8b369040f",
+          "suffix": "078",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Storm of Ragnarok"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/0e/STOR-BoosterKR.png",
+      "cards": [
+        {
+          "id": "4ec565a1-1836-44c5-a734-d5a27bd3481f",
+          "card": "310c1dbe-4c59-4f24-9564-4cee69d0da2c",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "2a619f8a-968c-40a8-a4ed-424a98f3d6c4",
+          "card": "a15c79d8-de57-4921-a051-3c406750aedc",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "7c9c7ae0-9667-41d8-a24d-83b2514c5b70",
+          "card": "ca7e6c15-b36f-47bb-a358-aae73ed671de",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "d8e99653-4ae6-4801-996e-bc962694bd30",
+          "card": "d20046c0-9f5a-4ed1-a854-4e1016b489b2",
+          "suffix": "029",
+          "rarity": "rare"
+        },
+        {
+          "id": "04ea6e23-3052-447c-882a-7839c05a0b11",
+          "card": "04b14b1b-b9ac-4794-bc5d-aca55878810d",
+          "suffix": "036",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d8c7d6ac-02e3-4b27-933a-e0775d288c00",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a4be1a98-1ad2-4540-ab0b-2d9e32c22cba",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "306297e0-331f-4f09-b35d-d148192f0943",
+          "card": "281cc4df-4369-49ae-a421-dbcc545417f8",
+          "suffix": "040",
+          "rarity": "ghost"
+        },
+        {
+          "id": "9f067ba0-93b3-4290-99b9-616a37816fea",
+          "card": "838711b6-9047-4c58-b441-1d57ffe6970b",
+          "suffix": "048",
+          "rarity": "rare"
+        },
+        {
+          "id": "c5dce739-8ce7-4868-a131-96ea8c95aca0",
+          "card": "d5c4ab8d-5bfb-43f4-937e-e67d2567d9cf",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "eac26b56-c17c-40b9-8977-2d4cc6d35b87",
+          "card": "79f69246-4cb7-4c8a-859d-9a9e47518aa8",
+          "suffix": "073",
+          "rarity": "rare"
+        },
+        {
+          "id": "f4961e64-863e-4141-b324-25e8f8bfbd8c",
+          "card": "515bea2b-947a-467e-b930-9ac8b369040f",
+          "suffix": "078",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Storm of Ragnarok"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Storm of Ragnarok",
+      "id": 164711
+    }
+  }
+}

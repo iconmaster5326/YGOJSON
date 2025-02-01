@@ -1,0 +1,957 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "1580fcff-4b95-4fa3-85ec-bb63b58fff84",
+  "name": {
+    "en": "The Shining Darkness",
+    "fr": "Les T\u00e9n\u00e8bres Scintillantes",
+    "de": "The Shining Darkness",
+    "it": "L'Oscurit\u00e0 Brillante",
+    "es": "Oscuridad Brillante",
+    "ja": "\u30b6\u30fb\u30b7\u30e3\u30a4\u30cb\u30f3\u30b0\u30fb\u30c0\u30fc\u30af\u30cd\u30b9",
+    "ko": "\ube5b\ub098\ub294 \uc5b4\ub460"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "TSHD-EN",
+      "image": "https://ms.yugipedia.com//9/93/TSHD-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "e64d7d66-6d07-4c87-8e42-5f0784264b8d": "https://ms.yugipedia.com//6/63/DreadDragon-TSHD-EN-R-1E.png",
+          "2a089ca0-e0f4-48c2-9998-95cb0a5d71f6": "https://ms.yugipedia.com//6/66/InfernityMirage-TSHD-EN-SR-1E.png",
+          "e670a9e7-bc79-476a-99eb-f26dcf3d59a9": "https://ms.yugipedia.com//0/04/InfernityBeetle-TSHD-EN-R-1E.png",
+          "5c7b29d1-f5d9-4206-889b-03905aea041d": "https://ms.yugipedia.com//8/8f/Spore-TSHD-EN-C-1E.png",
+          "9e155229-7897-438c-b11c-24cb128a79d3": "https://ms.yugipedia.com//b/b4/Magidog-TSHD-EN-R-1E.png",
+          "bb12ade9-b1b5-4f27-8f44-04ccbfb7fd53": "https://ms.yugipedia.com//5/53/Wattwoodpecker-TSHD-EN-C-1E.png",
+          "ef4ba19c-4af9-4534-83a0-5570f76ec340": "https://ms.yugipedia.com//f/f5/MemoryCrushKing-TSHD-EN-C-1E.png",
+          "678d1970-a557-409b-8221-214315fcdd65": "https://ms.yugipedia.com//2/2a/Wattcube-TSHD-EN-C-1E.png",
+          "3641db5d-9707-4a5a-8e67-f30e624762c2": "https://ms.yugipedia.com//f/f4/KoakiMeiruInitialize-TSHD-EN-C-1E.png",
+          "950b06ca-eb86-40c2-b797-816541b4f807": "https://ms.yugipedia.com//2/2d/BlackwingBacklash-TSHD-EN-R-1E.png",
+          "ec2407ea-d0eb-4a0a-a707-f6cc73755788": "https://ms.yugipedia.com//c/c6/InfernityReflector-TSHD-EN-C-1E.png",
+          "25f89488-1b49-4660-b90a-7de4884ed570": "https://ms.yugipedia.com//6/66/MorphtronicsScramble-TSHD-EN-C-1E.png",
+          "1ebf6b40-ee74-4679-a22c-8d3a31b85ffd": "https://ms.yugipedia.com//7/7a/HydroGenex-TSHD-EN-SR-1E.png",
+          "7b281ef2-00e8-445e-8abf-a971e3bf1606": "https://ms.yugipedia.com//c/c9/GenexNeutron-TSHD-EN-ScR-1E.png"
+        },
+        "unlimited": {
+          "e64d7d66-6d07-4c87-8e42-5f0784264b8d": "https://ms.yugipedia.com//9/9e/DreadDragon-TSHD-EN-R-UE.jpg",
+          "2a089ca0-e0f4-48c2-9998-95cb0a5d71f6": "https://ms.yugipedia.com//4/43/InfernityMirage-TSHD-EN-SR-UE.png",
+          "e670a9e7-bc79-476a-99eb-f26dcf3d59a9": "https://ms.yugipedia.com//f/f1/InfernityBeetle-TSHD-EN-R-UE.jpg",
+          "5c7b29d1-f5d9-4206-889b-03905aea041d": "https://ms.yugipedia.com//9/94/Spore-TSHD-EN-C-UE.png",
+          "9e155229-7897-438c-b11c-24cb128a79d3": "https://ms.yugipedia.com//b/be/Magidog-TSHD-EN-R-UE.jpg",
+          "bb12ade9-b1b5-4f27-8f44-04ccbfb7fd53": "https://ms.yugipedia.com//4/4a/Wattwoodpecker-TSHD-EN-C-UE.png",
+          "ef4ba19c-4af9-4534-83a0-5570f76ec340": "https://ms.yugipedia.com//9/9c/MemoryCrushKing-TSHD-EN-C-UE.png",
+          "678d1970-a557-409b-8221-214315fcdd65": "https://ms.yugipedia.com//b/b4/Wattcube-TSHD-EN-C-UE.png",
+          "3641db5d-9707-4a5a-8e67-f30e624762c2": "https://ms.yugipedia.com//f/f8/KoakiMeiruInitialize-TSHD-EN-C-UE.png",
+          "950b06ca-eb86-40c2-b797-816541b4f807": "https://ms.yugipedia.com//f/fc/BlackwingBacklash-TSHD-EN-R-UE.png",
+          "ec2407ea-d0eb-4a0a-a707-f6cc73755788": "https://ms.yugipedia.com//9/98/InfernityReflector-TSHD-EN-C-UE.png",
+          "25f89488-1b49-4660-b90a-7de4884ed570": "https://ms.yugipedia.com//3/3e/MorphtronicsScramble-TSHD-EN-C-UE.jpg",
+          "1ebf6b40-ee74-4679-a22c-8d3a31b85ffd": "https://ms.yugipedia.com//b/ba/HydroGenex-TSHD-EN-SR-UE.jpg",
+          "7b281ef2-00e8-445e-8abf-a971e3bf1606": "https://ms.yugipedia.com//f/f4/GenexNeutron-TSHD-EN-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11109001
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "TSHD-IT",
+      "image": "https://ms.yugipedia.com//5/56/TSHD-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41109001
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "TSHD-SP",
+      "image": "https://ms.yugipedia.com//a/a4/TSHD-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "950b06ca-eb86-40c2-b797-816541b4f807": "https://ms.yugipedia.com//a/a1/BlackwingBacklash-TSHD-SP-R-1E.jpg",
+          "de000ada-65ce-4eab-8093-3814e3f49ceb": "https://ms.yugipedia.com//9/97/HydroGenex-TSHD-SP-SR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51108001
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "TSHD-JP",
+      "date": "2010-02-20",
+      "image": "https://ms.yugipedia.com//4/4d/TSHD-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "e64d7d66-6d07-4c87-8e42-5f0784264b8d": "https://ms.yugipedia.com//1/10/DreadDragon-TSHD-JP-R.jpg",
+          "a9dbbac0-de7e-4d2e-a5d5-b0458ae3132c": "https://ms.yugipedia.com//8/84/InfernityMirage-TSHD-JP-C.jpg",
+          "ebbf7649-d853-4045-9cc9-8e99ded3178c": "https://ms.yugipedia.com//5/54/InfernityBeetle-TSHD-JP-C.jpg",
+          "6abf3ecc-88cc-40a4-b288-5e4b72791d8c": "https://ms.yugipedia.com//a/a0/Spore-TSHD-JP-C.jpg",
+          "6a876050-8bcc-4ea9-a925-74dadb09ad22": "https://ms.yugipedia.com//3/34/Magidog-TSHD-JP-SR.jpg",
+          "79b323c5-2b86-462c-9b46-bc3906c07b85": "https://ms.yugipedia.com//e/e6/Wattwoodpecker-TSHD-JP-C.jpg",
+          "ef4ba19c-4af9-4534-83a0-5570f76ec340": "https://ms.yugipedia.com//1/18/MemoryCrushKing-TSHD-JP-C.jpg",
+          "026610e1-7499-4fdb-9edb-12c4a0bf1de5": "https://ms.yugipedia.com//5/58/Wattcube-TSHD-JP-C.jpg",
+          "0c88c326-6624-4d04-8e3d-1e8dc2545fc8": "https://ms.yugipedia.com//d/db/KoakiMeiruInitialize-TSHD-JP-C.jpg",
+          "408fa132-e23b-48bc-90f4-6cd892e29f53": "https://ms.yugipedia.com//f/f7/BlackwingBacklash-TSHD-JP-C.jpg",
+          "8539d08e-5e2d-4ebd-9170-ae67fc899b2d": "https://ms.yugipedia.com//4/43/InfernityReflector-TSHD-JP-C.jpg",
+          "3149e30f-da12-4015-a1ee-017023675262": "https://ms.yugipedia.com//4/4a/MorphtronicsScramble-TSHD-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1112003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "TSHD-DE",
+      "image": "https://ms.yugipedia.com//3/3f/TSHD-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "e64d7d66-6d07-4c87-8e42-5f0784264b8d": "https://ms.yugipedia.com//7/7a/DreadDragon-TSHD-DE-R-1E.jpg",
+          "8b7eedc2-c794-42fe-9873-2e243a51eb10": "https://ms.yugipedia.com//6/6d/InfernityMirage-TSHD-DE-SR-1E.jpg",
+          "02db1791-897c-4915-88c7-6e6d99af8e4d": "https://ms.yugipedia.com//d/d0/InfernityBeetle-TSHD-DE-R-1E.jpg",
+          "0a2136bb-0ffd-4ac7-864c-cafc4e162b2d": "https://ms.yugipedia.com//7/77/Spore-TSHD-DE-C-1E.jpg",
+          "be66db6d-622e-4016-92d7-06495225e63a": "https://ms.yugipedia.com//0/0d/Magidog-TSHD-DE-R-1E.jpg",
+          "53c1d0fa-a1b0-43ba-b7c5-87f9c678053a": "https://ms.yugipedia.com//0/09/Wattwoodpecker-TSHD-DE-C-1E.jpg",
+          "ef4ba19c-4af9-4534-83a0-5570f76ec340": "https://ms.yugipedia.com//3/3e/MemoryCrushKing-TSHD-DE-C-1E.jpg",
+          "c9276b5b-570d-497f-ad78-855c957c7780": "https://ms.yugipedia.com//5/56/Wattcube-TSHD-DE-C-1E.jpg",
+          "89152044-b721-4dbc-bead-72d01f4093a6": "https://ms.yugipedia.com//4/45/KoakiMeiruInitialize-TSHD-DE-C-1E.jpg",
+          "950b06ca-eb86-40c2-b797-816541b4f807": "https://ms.yugipedia.com//4/41/BlackwingBacklash-TSHD-DE-R-1E.jpg",
+          "a72d0701-5a8f-4c02-93a4-c62525044260": "https://ms.yugipedia.com//f/fd/InfernityReflector-TSHD-DE-C-1E.jpg",
+          "1030470d-3590-4062-a5bb-40c44b9da910": "https://ms.yugipedia.com//8/8f/MorphtronicsScramble-TSHD-DE-C-1E.jpg",
+          "20a69274-c198-437a-a61c-a8b045b38d20": "https://ms.yugipedia.com//9/98/HydroGenex-TSHD-DE-SR-1E.png",
+          "18e2dbe5-b1fa-4b38-b0b8-4f89ea45bdf4": "https://ms.yugipedia.com//8/89/GenexNeutron-TSHD-DE-ScR-1E.jpg"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21109001
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "TSHD-FR",
+      "image": "https://ms.yugipedia.com//d/d2/TSHD-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "30c9bdcc-df39-44e6-a3a6-1d3b9262073f": "https://ms.yugipedia.com//8/8e/Magidog-TSHD-FR-R-1E.jpg",
+          "075b34d8-f965-4bca-9fc9-384196ebd92e": "https://ms.yugipedia.com//1/18/Wattwoodpecker-TSHD-FR-C-1E.png",
+          "38d05f97-87a8-4cd4-b163-39d7c26651e5": "https://ms.yugipedia.com//1/13/Wattcube-TSHD-FR-C-1E.png",
+          "c099158e-4222-4062-8060-865a76381f54": "https://ms.yugipedia.com//3/3a/KoakiMeiruInitialize-TSHD-FR-C-1E.jpg",
+          "d419ba20-19af-4b54-9da1-98a4d0719be6": "https://ms.yugipedia.com//2/27/MorphtronicsScramble-TSHD-FR-C-1E.jpg",
+          "0546c68b-a308-4c46-950a-ba8c33904f95": "https://ms.yugipedia.com//8/81/HydroGenex-TSHD-FR-SR-1E.jpg",
+          "f5cc6785-9285-4af8-ab4b-c67b7f5df8ff": "https://ms.yugipedia.com//6/60/GenexNeutron-TSHD-FR-ScR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31109001
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "TSHD-KR",
+      "date": "2010-04-19",
+      "image": "https://ms.yugipedia.com//c/c1/TSHD-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "e64d7d66-6d07-4c87-8e42-5f0784264b8d": "https://ms.yugipedia.com//7/7e/DreadDragon-TSHD-KR-R-1E.png",
+          "820b3e47-933d-42a5-9072-e6332d4f8d6f": "https://ms.yugipedia.com//e/eb/InfernityMirage-TSHD-KR-C-1E.png",
+          "f5c6ae9a-b851-4a80-8978-d1972727a110": "https://ms.yugipedia.com//1/13/InfernityBeetle-TSHD-KR-C-1E.png",
+          "9a4db8b8-2e7f-4b7b-b6bc-7e3bed459801": "https://ms.yugipedia.com//9/95/Spore-TSHD-KR-C-1E.png",
+          "b0ae1f1b-7891-4229-a0c7-7d196a036d47": "https://ms.yugipedia.com//4/46/Magidog-TSHD-KR-SR-1E.png",
+          "e740f1b1-7e87-44cc-912c-98d7d13571a7": "https://ms.yugipedia.com//6/64/Wattwoodpecker-TSHD-KR-C-1E.png",
+          "ef4ba19c-4af9-4534-83a0-5570f76ec340": "https://ms.yugipedia.com//7/7f/MemoryCrushKing-TSHD-KR-C-1E.png",
+          "0c7fb889-a841-46c9-acef-9df3363304b4": "https://ms.yugipedia.com//8/84/Wattcube-TSHD-KR-C-1E.png",
+          "e1da0597-d309-4b10-8c18-e5c37b83e373": "https://ms.yugipedia.com//3/38/KoakiMeiruInitialize-TSHD-KR-C-1E.png",
+          "408fa132-e23b-48bc-90f4-6cd892e29f53": "https://ms.yugipedia.com//0/01/BlackwingBacklash-TSHD-KR-C-1E.png",
+          "63e9b89a-b551-431c-8070-a98abca0b93e": "https://ms.yugipedia.com//1/1f/InfernityReflector-TSHD-KR-C-1E.png",
+          "3fee16e4-5478-475c-b6c8-ef0e765128c2": "https://ms.yugipedia.com//2/2e/MorphtronicsScramble-TSHD-KR-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71108001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/93/TSHD-BoosterEN.png",
+      "cards": [
+        {
+          "id": "e64d7d66-6d07-4c87-8e42-5f0784264b8d",
+          "card": "7394b599-4f4e-47b5-9816-2e4bf4fafcdd",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "2a089ca0-e0f4-48c2-9998-95cb0a5d71f6",
+          "card": "20d78ed7-5f69-4232-880a-16c35bf7f64a",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "e670a9e7-bc79-476a-99eb-f26dcf3d59a9",
+          "card": "6cefa8d0-f781-476d-9f27-43908499911a",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "5c7b29d1-f5d9-4206-889b-03905aea041d",
+          "card": "e782c59e-2829-4f2f-8dd0-520cf06bae08",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "9e155229-7897-438c-b11c-24cb128a79d3",
+          "card": "48b4ea70-85b9-42ef-8818-13a20a33724f",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "bb12ade9-b1b5-4f27-8f44-04ccbfb7fd53",
+          "card": "25bcbc67-27d0-42a6-8f1a-cb8e12b92b99",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ef4ba19c-4af9-4534-83a0-5570f76ec340",
+          "card": "27c181f4-c8dd-4604-ac17-19882d7070b6",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "678d1970-a557-409b-8221-214315fcdd65",
+          "card": "3005c6ad-95af-46f6-9431-0e0ee6953497",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "3641db5d-9707-4a5a-8e67-f30e624762c2",
+          "card": "92789983-fe8c-47b9-abd7-06a3396565da",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "950b06ca-eb86-40c2-b797-816541b4f807",
+          "card": "d5692b8d-be25-4ecb-92d9-8e9cd3eb0262",
+          "suffix": "064",
+          "rarity": "rare"
+        },
+        {
+          "id": "ec2407ea-d0eb-4a0a-a707-f6cc73755788",
+          "card": "f75e8957-ab28-44cc-a12e-604bdc09022d",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "25f89488-1b49-4660-b90a-7de4884ed570",
+          "card": "5f04eab0-5ceb-421f-a238-d64e79af0608",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "1ebf6b40-ee74-4679-a22c-8d3a31b85ffd",
+          "card": "4ca20774-a5df-4314-b198-6b522085ac8e",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "7b281ef2-00e8-445e-8abf-a971e3bf1606",
+          "card": "92fd7148-f082-4eb0-be4c-96a2e6cb7977",
+          "suffix": "097",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Shining Darkness"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/56/TSHD-BoosterIT.png",
+      "cards": [
+        {
+          "id": "e64d7d66-6d07-4c87-8e42-5f0784264b8d",
+          "card": "7394b599-4f4e-47b5-9816-2e4bf4fafcdd",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "1a0cb9f2-bac0-40db-adc3-bbba472de87e",
+          "card": "20d78ed7-5f69-4232-880a-16c35bf7f64a",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "1ff2b5ee-d5b7-4b69-9a03-04abe2bacde1",
+          "card": "6cefa8d0-f781-476d-9f27-43908499911a",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "93e6bd25-5210-45bd-bff8-e598056af852",
+          "card": "e782c59e-2829-4f2f-8dd0-520cf06bae08",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "fd569ccb-d541-4c55-9bdc-f256db1bd293",
+          "card": "48b4ea70-85b9-42ef-8818-13a20a33724f",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "64be9e31-8331-41d8-99aa-c1510fd5caa9",
+          "card": "25bcbc67-27d0-42a6-8f1a-cb8e12b92b99",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ef4ba19c-4af9-4534-83a0-5570f76ec340",
+          "card": "27c181f4-c8dd-4604-ac17-19882d7070b6",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "a78c4a9c-a90b-44af-92c7-64ca342a4b7b",
+          "card": "3005c6ad-95af-46f6-9431-0e0ee6953497",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "4ad2cae1-b767-432c-9e8a-00657b33d1c6",
+          "card": "92789983-fe8c-47b9-abd7-06a3396565da",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "950b06ca-eb86-40c2-b797-816541b4f807",
+          "card": "d5692b8d-be25-4ecb-92d9-8e9cd3eb0262",
+          "suffix": "064",
+          "rarity": "rare"
+        },
+        {
+          "id": "094eec21-c9ce-4e5b-8c84-2500570b57b5",
+          "card": "f75e8957-ab28-44cc-a12e-604bdc09022d",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "9797c02b-d81c-4fe7-998a-b92016cab2db",
+          "card": "5f04eab0-5ceb-421f-a238-d64e79af0608",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "2dc8f0cf-8ac7-4b23-8f37-ed3746759871",
+          "card": "4ca20774-a5df-4314-b198-6b522085ac8e",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "4caa9a83-3b18-42ba-99cb-6719c69fd2f8",
+          "card": "92fd7148-f082-4eb0-be4c-96a2e6cb7977",
+          "suffix": "097",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Shining Darkness"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/a4/TSHD-BoosterSP.png",
+      "cards": [
+        {
+          "id": "e64d7d66-6d07-4c87-8e42-5f0784264b8d",
+          "card": "7394b599-4f4e-47b5-9816-2e4bf4fafcdd",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "1cc607b6-f4cf-4591-9e49-377008fbde6e",
+          "card": "20d78ed7-5f69-4232-880a-16c35bf7f64a",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "84777b3e-3d4b-4016-b2ce-6a09a62f011b",
+          "card": "6cefa8d0-f781-476d-9f27-43908499911a",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "ce7c096e-ec8f-4bb8-9c77-aafb62792815",
+          "card": "e782c59e-2829-4f2f-8dd0-520cf06bae08",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "22567c3a-3322-4e33-b1fc-962f7694fc45",
+          "card": "48b4ea70-85b9-42ef-8818-13a20a33724f",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "880627d0-9f00-452d-9c8a-02208f0f0b05",
+          "card": "25bcbc67-27d0-42a6-8f1a-cb8e12b92b99",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ef4ba19c-4af9-4534-83a0-5570f76ec340",
+          "card": "27c181f4-c8dd-4604-ac17-19882d7070b6",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "bdd421cd-858a-4e05-a97c-e5435d3f0a2f",
+          "card": "3005c6ad-95af-46f6-9431-0e0ee6953497",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "d26830cc-39c2-439a-aa44-057f40a9bcf7",
+          "card": "92789983-fe8c-47b9-abd7-06a3396565da",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "950b06ca-eb86-40c2-b797-816541b4f807",
+          "card": "d5692b8d-be25-4ecb-92d9-8e9cd3eb0262",
+          "suffix": "064",
+          "rarity": "rare"
+        },
+        {
+          "id": "66c9a63e-81d7-49c7-8726-e61ec6d3632b",
+          "card": "f75e8957-ab28-44cc-a12e-604bdc09022d",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "e5a374b3-7367-43cf-85c5-86ceddc0d967",
+          "card": "5f04eab0-5ceb-421f-a238-d64e79af0608",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "de000ada-65ce-4eab-8093-3814e3f49ceb",
+          "card": "4ca20774-a5df-4314-b198-6b522085ac8e",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "634fec6a-86e1-42fb-b396-d8e4ec951970",
+          "card": "92fd7148-f082-4eb0-be4c-96a2e6cb7977",
+          "suffix": "097",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Shining Darkness"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4d/TSHD-BoosterJP.png",
+      "cards": [
+        {
+          "id": "e64d7d66-6d07-4c87-8e42-5f0784264b8d",
+          "card": "7394b599-4f4e-47b5-9816-2e4bf4fafcdd",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "a9dbbac0-de7e-4d2e-a5d5-b0458ae3132c",
+          "card": "20d78ed7-5f69-4232-880a-16c35bf7f64a",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "ebbf7649-d853-4045-9cc9-8e99ded3178c",
+          "card": "6cefa8d0-f781-476d-9f27-43908499911a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "6abf3ecc-88cc-40a4-b288-5e4b72791d8c",
+          "card": "e782c59e-2829-4f2f-8dd0-520cf06bae08",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "6a876050-8bcc-4ea9-a925-74dadb09ad22",
+          "card": "48b4ea70-85b9-42ef-8818-13a20a33724f",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "79b323c5-2b86-462c-9b46-bc3906c07b85",
+          "card": "25bcbc67-27d0-42a6-8f1a-cb8e12b92b99",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ef4ba19c-4af9-4534-83a0-5570f76ec340",
+          "card": "27c181f4-c8dd-4604-ac17-19882d7070b6",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "026610e1-7499-4fdb-9edb-12c4a0bf1de5",
+          "card": "3005c6ad-95af-46f6-9431-0e0ee6953497",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "0c88c326-6624-4d04-8e3d-1e8dc2545fc8",
+          "card": "92789983-fe8c-47b9-abd7-06a3396565da",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "408fa132-e23b-48bc-90f4-6cd892e29f53",
+          "card": "d5692b8d-be25-4ecb-92d9-8e9cd3eb0262",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "8539d08e-5e2d-4ebd-9170-ae67fc899b2d",
+          "card": "f75e8957-ab28-44cc-a12e-604bdc09022d",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "3149e30f-da12-4015-a1ee-017023675262",
+          "card": "5f04eab0-5ceb-421f-a238-d64e79af0608",
+          "suffix": "075",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Shining Darkness"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3f/TSHD-BoosterDE.png",
+      "cards": [
+        {
+          "id": "e64d7d66-6d07-4c87-8e42-5f0784264b8d",
+          "card": "7394b599-4f4e-47b5-9816-2e4bf4fafcdd",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "8b7eedc2-c794-42fe-9873-2e243a51eb10",
+          "card": "20d78ed7-5f69-4232-880a-16c35bf7f64a",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "02db1791-897c-4915-88c7-6e6d99af8e4d",
+          "card": "6cefa8d0-f781-476d-9f27-43908499911a",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "0a2136bb-0ffd-4ac7-864c-cafc4e162b2d",
+          "card": "e782c59e-2829-4f2f-8dd0-520cf06bae08",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "be66db6d-622e-4016-92d7-06495225e63a",
+          "card": "48b4ea70-85b9-42ef-8818-13a20a33724f",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "53c1d0fa-a1b0-43ba-b7c5-87f9c678053a",
+          "card": "25bcbc67-27d0-42a6-8f1a-cb8e12b92b99",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ef4ba19c-4af9-4534-83a0-5570f76ec340",
+          "card": "27c181f4-c8dd-4604-ac17-19882d7070b6",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "c9276b5b-570d-497f-ad78-855c957c7780",
+          "card": "3005c6ad-95af-46f6-9431-0e0ee6953497",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "89152044-b721-4dbc-bead-72d01f4093a6",
+          "card": "92789983-fe8c-47b9-abd7-06a3396565da",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "950b06ca-eb86-40c2-b797-816541b4f807",
+          "card": "d5692b8d-be25-4ecb-92d9-8e9cd3eb0262",
+          "suffix": "064",
+          "rarity": "rare"
+        },
+        {
+          "id": "a72d0701-5a8f-4c02-93a4-c62525044260",
+          "card": "f75e8957-ab28-44cc-a12e-604bdc09022d",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "1030470d-3590-4062-a5bb-40c44b9da910",
+          "card": "5f04eab0-5ceb-421f-a238-d64e79af0608",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "20a69274-c198-437a-a61c-a8b045b38d20",
+          "card": "4ca20774-a5df-4314-b198-6b522085ac8e",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "18e2dbe5-b1fa-4b38-b0b8-4f89ea45bdf4",
+          "card": "92fd7148-f082-4eb0-be4c-96a2e6cb7977",
+          "suffix": "097",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Shining Darkness"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d2/TSHD-BoosterFR.png",
+      "cards": [
+        {
+          "id": "e64d7d66-6d07-4c87-8e42-5f0784264b8d",
+          "card": "7394b599-4f4e-47b5-9816-2e4bf4fafcdd",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "e1c48d72-e047-4b21-934b-92448ab162c8",
+          "card": "20d78ed7-5f69-4232-880a-16c35bf7f64a",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "294cf5fe-bff7-47ab-b4b8-a89063b0d62d",
+          "card": "6cefa8d0-f781-476d-9f27-43908499911a",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "da907307-3024-4db5-b8d9-345e59297b4d",
+          "card": "e782c59e-2829-4f2f-8dd0-520cf06bae08",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "30c9bdcc-df39-44e6-a3a6-1d3b9262073f",
+          "card": "48b4ea70-85b9-42ef-8818-13a20a33724f",
+          "suffix": "023",
+          "rarity": "rare"
+        },
+        {
+          "id": "075b34d8-f965-4bca-9fc9-384196ebd92e",
+          "card": "25bcbc67-27d0-42a6-8f1a-cb8e12b92b99",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ef4ba19c-4af9-4534-83a0-5570f76ec340",
+          "card": "27c181f4-c8dd-4604-ac17-19882d7070b6",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "38d05f97-87a8-4cd4-b163-39d7c26651e5",
+          "card": "3005c6ad-95af-46f6-9431-0e0ee6953497",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "c099158e-4222-4062-8060-865a76381f54",
+          "card": "92789983-fe8c-47b9-abd7-06a3396565da",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "950b06ca-eb86-40c2-b797-816541b4f807",
+          "card": "d5692b8d-be25-4ecb-92d9-8e9cd3eb0262",
+          "suffix": "064",
+          "rarity": "rare"
+        },
+        {
+          "id": "42aa4ff4-e0b7-4f6d-849e-e530cdea8491",
+          "card": "f75e8957-ab28-44cc-a12e-604bdc09022d",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "d419ba20-19af-4b54-9da1-98a4d0719be6",
+          "card": "5f04eab0-5ceb-421f-a238-d64e79af0608",
+          "suffix": "075",
+          "rarity": "common"
+        },
+        {
+          "id": "0546c68b-a308-4c46-950a-ba8c33904f95",
+          "card": "4ca20774-a5df-4314-b198-6b522085ac8e",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "f5cc6785-9285-4af8-ab4b-c67b7f5df8ff",
+          "card": "92fd7148-f082-4eb0-be4c-96a2e6cb7977",
+          "suffix": "097",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Shining Darkness"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c1/TSHD-BoosterKR.png",
+      "cards": [
+        {
+          "id": "e64d7d66-6d07-4c87-8e42-5f0784264b8d",
+          "card": "7394b599-4f4e-47b5-9816-2e4bf4fafcdd",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "820b3e47-933d-42a5-9072-e6332d4f8d6f",
+          "card": "20d78ed7-5f69-4232-880a-16c35bf7f64a",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "f5c6ae9a-b851-4a80-8978-d1972727a110",
+          "card": "6cefa8d0-f781-476d-9f27-43908499911a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "9a4db8b8-2e7f-4b7b-b6bc-7e3bed459801",
+          "card": "e782c59e-2829-4f2f-8dd0-520cf06bae08",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "b0ae1f1b-7891-4229-a0c7-7d196a036d47",
+          "card": "48b4ea70-85b9-42ef-8818-13a20a33724f",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "e740f1b1-7e87-44cc-912c-98d7d13571a7",
+          "card": "25bcbc67-27d0-42a6-8f1a-cb8e12b92b99",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ef4ba19c-4af9-4534-83a0-5570f76ec340",
+          "card": "27c181f4-c8dd-4604-ac17-19882d7070b6",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "0c7fb889-a841-46c9-acef-9df3363304b4",
+          "card": "3005c6ad-95af-46f6-9431-0e0ee6953497",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "e1da0597-d309-4b10-8c18-e5c37b83e373",
+          "card": "92789983-fe8c-47b9-abd7-06a3396565da",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "408fa132-e23b-48bc-90f4-6cd892e29f53",
+          "card": "d5692b8d-be25-4ecb-92d9-8e9cd3eb0262",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "63e9b89a-b551-431c-8070-a98abca0b93e",
+          "card": "f75e8957-ab28-44cc-a12e-604bdc09022d",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "3fee16e4-5478-475c-b6c8-ef0e765128c2",
+          "card": "5f04eab0-5ceb-421f-a238-d64e79af0608",
+          "suffix": "075",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "The Shining Darkness"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "The Shining Darkness",
+      "id": 108709
+    }
+  }
+}

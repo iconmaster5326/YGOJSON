@@ -1,0 +1,966 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a7649aac-46ac-4d78-bf79-cab4c849ff6e",
+  "name": {
+    "en": "Number Hunters",
+    "fr": "Chasseurs de Num\u00e9ros",
+    "de": "Number Hunters",
+    "it": "Cacciatori di Numeri",
+    "pt": "Ca\u00e7adores de N\u00fameros",
+    "es": "Los Cazadores de N\u00fameros"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "NUMH-DE",
+      "image": "https://ms.yugipedia.com//3/3d/NUMH-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "0c61f9ec-b44f-4469-99bb-100a35e5da84": "https://ms.yugipedia.com//a/aa/ChronomalyAztecMaskGolem-NUMH-DE-SR-1E.png",
+          "3ab54290-f059-4a6a-b452-0f96756f870f": "https://ms.yugipedia.com//3/3a/GimmickPuppetTwilightJoker-NUMH-DE-SR-1E.png",
+          "2a27890c-2a1e-4d52-a2da-663f0b985fbe": "https://ms.yugipedia.com//0/09/GimmickPuppetNightmare-NUMH-DE-SR-1E.png",
+          "30948d01-1036-4f24-ae11-8b8da7b65176": "https://ms.yugipedia.com//4/41/HeroicChallengerAmbushSoldier-NUMH-DE-ScR-1E.png",
+          "08a78819-de27-4294-9299-686338aa912d": "https://ms.yugipedia.com//c/c3/HeroicChallengerClaspSword-NUMH-DE-SR-1E.png",
+          "d7e89565-c8df-4ecf-b57f-cf433b440fe1": "https://ms.yugipedia.com//1/18/Zombowwow-NUMH-DE-SR-1E.png",
+          "0ab60a18-6efa-48f3-a23c-043b70b07a55": "https://ms.yugipedia.com//3/38/GashtheDustLord-NUMH-DE-SR-1E.png",
+          "1df5a696-f73c-43bf-a095-80df2f58697e": "https://ms.yugipedia.com//7/78/Kagetokage-NUMH-DE-SR-1E.png",
+          "799e2fe1-f4a2-4dc9-82b2-93b783d05ebe": "https://ms.yugipedia.com//7/7f/GogogoGiant-NUMH-DE-SR-1E.png",
+          "61e94b82-37fd-4507-8fd3-ea4d2910e3a6": "https://ms.yugipedia.com//2/21/PhotonLizard-NUMH-DE-SR-1E.png",
+          "c73947d7-a6ed-40fe-92e2-60be79868a3e": "https://ms.yugipedia.com//f/fd/Number54LionHeart-NUMH-DE-ScR-1E.png",
+          "07b730bc-49bc-4970-8715-eb011e016034": "https://ms.yugipedia.com//7/75/Number57TriHeadDustDragon-NUMH-DE-ScR-1E.png",
+          "b9eb8b61-583e-4e24-820a-614d2cb15b62": "https://ms.yugipedia.com//c/cb/CoachKingGiantrainer-NUMH-DE-ScR-1E.png",
+          "87227998-c672-4b86-b540-91773adfb318": "https://ms.yugipedia.com//f/f7/CXyzBattleshipCherryBlossom-NUMH-DE-ScR-1E.png",
+          "d0035729-eba2-4098-a22d-261faca8edcf": "https://ms.yugipedia.com//e/ec/OverlayCapture-NUMH-DE-SR-1E.png",
+          "2587bc10-76d5-4746-88ec-747ad883d3df": "https://ms.yugipedia.com//7/78/HeraldryRecord-NUMH-DE-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21112006
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "NUMH-PT",
+      "date": "2013-07-12",
+      "image": "https://ms.yugipedia.com//d/dd/NUMH-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "0c61f9ec-b44f-4469-99bb-100a35e5da84": "https://ms.yugipedia.com//6/62/ChronomalyAztecMaskGolem-NUMH-PT-SR-1E.png",
+          "01f33336-30e1-40ec-a341-b26210aa76e4": "https://ms.yugipedia.com//9/99/GimmickPuppetTwilightJoker-NUMH-PT-SR-1E.png",
+          "2c1acbb8-7a46-4796-8f1b-0f6aa827ceb1": "https://ms.yugipedia.com//a/a5/GimmickPuppetNightmare-NUMH-PT-SR-1E.png",
+          "2de183b7-0368-4fb2-92e7-e720c97341b6": "https://ms.yugipedia.com//3/3e/HeroicChallengerAmbushSoldier-NUMH-PT-ScR-1E.png",
+          "08a78819-de27-4294-9299-686338aa912d": "https://ms.yugipedia.com//3/3a/HeroicChallengerClaspSword-NUMH-PT-SR-1E.png",
+          "48fe54ae-4bc5-40cb-98ec-c0de7b221b24": "https://ms.yugipedia.com//2/20/Zombowwow-NUMH-PT-SR-1E.png",
+          "0ab60a18-6efa-48f3-a23c-043b70b07a55": "https://ms.yugipedia.com//4/48/GashtheDustLord-NUMH-PT-SR-1E.png",
+          "d79372f1-e72b-4b54-825e-d7eb4409721c": "https://ms.yugipedia.com//6/6b/Kagetokage-NUMH-PT-SR-1E.png",
+          "049bf856-61e2-427e-8e88-24dcc60ed294": "https://ms.yugipedia.com//c/c2/GogogoGiant-NUMH-PT-SR-1E.png",
+          "f5f75157-47c4-4f76-9cc1-db42ea72e97a": "https://ms.yugipedia.com//4/45/PhotonLizard-NUMH-PT-SR-1E.png",
+          "b366181c-fbdd-405c-b601-d4e6746eb09c": "https://ms.yugipedia.com//a/ab/Number54LionHeart-NUMH-PT-ScR-1E.png",
+          "42755c4c-9d3d-412a-8ffe-99e9c0ca52dc": "https://ms.yugipedia.com//5/5d/Number57TriHeadDustDragon-NUMH-PT-ScR-1E.png",
+          "b9eb8b61-583e-4e24-820a-614d2cb15b62": "https://ms.yugipedia.com//d/d2/CoachKingGiantrainer-NUMH-PT-ScR-1E.png",
+          "6ae98c60-b196-4d53-9e9d-bbfb986edc95": "https://ms.yugipedia.com//a/a9/CXyzBattleshipCherryBlossom-NUMH-PT-ScR-1E.png",
+          "893b3acf-2278-4e94-940c-0ecb434d110e": "https://ms.yugipedia.com//8/89/OverlayCapture-NUMH-PT-SR-1E.png",
+          "2587bc10-76d5-4746-88ec-747ad883d3df": "https://ms.yugipedia.com//a/af/HeraldryRecord-NUMH-PT-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112006
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "NUMH-IT",
+      "image": "https://ms.yugipedia.com//e/e5/NUMH-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {
+          "2872b93f-a97f-445c-a779-bd56803b3b64": "https://ms.yugipedia.com//d/db/Kagetokage-NUMH-IT-SR-UE.png",
+          "3159ce12-c26a-43b6-a204-fd5ad65da197": "https://ms.yugipedia.com//2/29/Number54LionHeart-NUMH-IT-ScR-UE.png"
+        },
+        "1st": {
+          "2872b93f-a97f-445c-a779-bd56803b3b64": "https://ms.yugipedia.com//3/37/Kagetokage-NUMH-IT-SR-1E.png",
+          "9df57d8a-42f7-4e02-bc87-0d8a3ebee082": "https://ms.yugipedia.com//2/20/Number57TriHeadDustDragon-NUMH-IT-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41112006
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "NUMH-SP",
+      "image": "https://ms.yugipedia.com//5/52/NUMH-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "ed95e57b-fa66-462f-9b80-9aa64093c390": "https://ms.yugipedia.com//5/58/Zombowwow-NUMH-SP-SR-1E.png",
+          "0ab60a18-6efa-48f3-a23c-043b70b07a55": "https://ms.yugipedia.com//d/d8/GashtheDustLord-NUMH-SP-SR-1E.png",
+          "ffd5e9bd-8f7a-4050-938b-5ff0c4085e9f": "https://ms.yugipedia.com//0/07/PhotonLizard-NUMH-SP-SR-1E.png",
+          "2bc5dc71-38d9-42b4-81ce-751249845a3e": "https://ms.yugipedia.com//b/b1/Number54LionHeart-NUMH-SP-ScR-1E.png",
+          "b9eb8b61-583e-4e24-820a-614d2cb15b62": "https://ms.yugipedia.com//3/37/CoachKingGiantrainer-NUMH-SP-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51111006
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "NUMH-FR",
+      "image": "https://ms.yugipedia.com//3/3a/NUMH-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "0c61f9ec-b44f-4469-99bb-100a35e5da84": "https://ms.yugipedia.com//3/33/ChronomalyAztecMaskGolem-NUMH-FR-SR-1E.png",
+          "82fbe43b-87dc-4619-aae0-77cc83aea2b9": "https://ms.yugipedia.com//3/33/GimmickPuppetTwilightJoker-NUMH-FR-SR-1E.png",
+          "d1f82772-643b-4cf1-88ca-a8cd4d5d95bf": "https://ms.yugipedia.com//1/11/GimmickPuppetNightmare-NUMH-FR-SR-1E.png",
+          "1985a147-b679-4c1e-83bc-eb891fa20476": "https://ms.yugipedia.com//8/84/HeroicChallengerAmbushSoldier-NUMH-FR-ScR-1E.png",
+          "08a78819-de27-4294-9299-686338aa912d": "https://ms.yugipedia.com//b/b9/HeroicChallengerClaspSword-NUMH-FR-SR-1E.png",
+          "410bbac8-e8a5-40b5-a844-3f9873cadc8a": "https://ms.yugipedia.com//b/b5/Zombowwow-NUMH-FR-SR-1E.png",
+          "0ab60a18-6efa-48f3-a23c-043b70b07a55": "https://ms.yugipedia.com//5/58/GashtheDustLord-NUMH-FR-SR-1E.png",
+          "c1a0ad54-b1e1-4d75-92ee-d232ca2d5f84": "https://ms.yugipedia.com//7/7f/Kagetokage-NUMH-FR-SR-1E.png",
+          "f7cdbbab-0834-432c-9b61-d6ed9bb3b1cd": "https://ms.yugipedia.com//7/78/GogogoGiant-NUMH-FR-SR-1E.png",
+          "2c424658-16c8-41b3-a9fc-04ad7b599491": "https://ms.yugipedia.com//4/4c/PhotonLizard-NUMH-FR-SR-1E.png",
+          "d5fea8b3-5722-466d-af58-8bc02185a212": "https://ms.yugipedia.com//4/42/Number54LionHeart-NUMH-FR-ScR-1E.png",
+          "63e07810-b371-45eb-96ea-6dba3297dd41": "https://ms.yugipedia.com//d/de/Number57TriHeadDustDragon-NUMH-FR-ScR-1E.png",
+          "b9eb8b61-583e-4e24-820a-614d2cb15b62": "https://ms.yugipedia.com//c/cb/CoachKingGiantrainer-NUMH-FR-ScR-1E.png",
+          "eb44948b-a62b-4a6a-a8c6-e3b39b694c9a": "https://ms.yugipedia.com//5/52/CXyzBattleshipCherryBlossom-NUMH-FR-ScR-1E.png",
+          "057409f3-ebbf-45bd-92f7-3c8b64e8bac8": "https://ms.yugipedia.com//e/ee/OverlayCapture-NUMH-FR-SR-1E.png",
+          "2587bc10-76d5-4746-88ec-747ad883d3df": "https://ms.yugipedia.com//9/96/HeraldryRecord-NUMH-FR-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31112006
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "NUMH-EN",
+      "image": "https://ms.yugipedia.com//1/15/NUMH-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "0c61f9ec-b44f-4469-99bb-100a35e5da84": "https://ms.yugipedia.com//e/ed/ChronomalyAztecMaskGolem-NUMH-EN-SR-UE.png",
+          "9b98659f-f918-4d0a-a95d-901c7ad00c01": "https://ms.yugipedia.com//e/eb/GimmickPuppetTwilightJoker-NUMH-EN-SR-UE.png",
+          "9bb03fa1-c820-45f4-b145-d44d3f939af1": "https://ms.yugipedia.com//6/6e/GimmickPuppetNightmare-NUMH-EN-SR-UE.png",
+          "5ae5086f-1c8e-4c8a-babc-d95b1e675d86": "https://ms.yugipedia.com//d/d6/HeroicChallengerAmbushSoldier-NUMH-EN-ScR-UE.png",
+          "08a78819-de27-4294-9299-686338aa912d": "https://ms.yugipedia.com//e/e9/HeroicChallengerClaspSword-NUMH-EN-SR-UE.png",
+          "0449d688-5804-4d60-9645-9a931f67c86e": "https://ms.yugipedia.com//6/60/Zombowwow-NUMH-EN-SR-UE.png",
+          "0ab60a18-6efa-48f3-a23c-043b70b07a55": "https://ms.yugipedia.com//d/d9/GashtheDustLord-NUMH-EN-SR-UE.png",
+          "e1497783-64bf-426f-b4bc-4b08789c04d0": "https://ms.yugipedia.com//d/d5/Kagetokage-NUMH-EN-SR-UE.png",
+          "6c92402b-231e-4761-b2ba-77114733f764": "https://ms.yugipedia.com//a/a2/GogogoGiant-NUMH-EN-SR-UE.png",
+          "44f46dc0-2d9c-4b45-98b9-cbb7e7294ee0": "https://ms.yugipedia.com//4/47/PhotonLizard-NUMH-EN-SR-UE.png",
+          "0896686a-b547-493f-9bf5-44599af2d113": "https://ms.yugipedia.com//f/fd/Number54LionHeart-NUMH-EN-ScR-UE.png",
+          "953900c4-8eca-43fd-939d-da57eccfa58c": "https://ms.yugipedia.com//e/ea/Number57TriHeadDustDragon-NUMH-EN-ScR-UE.png",
+          "b9eb8b61-583e-4e24-820a-614d2cb15b62": "https://ms.yugipedia.com//3/3f/CoachKingGiantrainer-NUMH-EN-ScR-UE.png",
+          "c0e64e88-89e4-4913-bbe2-85c8077c22fe": "https://ms.yugipedia.com//4/49/CXyzBattleshipCherryBlossom-NUMH-EN-ScR-UE.png",
+          "1d27e50f-8d48-401d-8cc7-8d53681c136e": "https://ms.yugipedia.com//8/8e/OverlayCapture-NUMH-EN-SR-UE.png",
+          "2587bc10-76d5-4746-88ec-747ad883d3df": "https://ms.yugipedia.com//5/50/HeraldryRecord-NUMH-EN-SR-UE.png"
+        },
+        "1st": {
+          "0c61f9ec-b44f-4469-99bb-100a35e5da84": "https://ms.yugipedia.com//0/05/ChronomalyAztecMaskGolem-NUMH-EN-SR-1E.png",
+          "9b98659f-f918-4d0a-a95d-901c7ad00c01": "https://ms.yugipedia.com//9/9c/GimmickPuppetTwilightJoker-NUMH-EN-SR-1E.png",
+          "9bb03fa1-c820-45f4-b145-d44d3f939af1": "https://ms.yugipedia.com//8/87/GimmickPuppetNightmare-NUMH-EN-SR-1E.png",
+          "5ae5086f-1c8e-4c8a-babc-d95b1e675d86": "https://ms.yugipedia.com//8/8b/HeroicChallengerAmbushSoldier-NUMH-EN-ScR-1E.png",
+          "08a78819-de27-4294-9299-686338aa912d": "https://ms.yugipedia.com//4/4b/HeroicChallengerClaspSword-NUMH-EN-SR-1E.png",
+          "0449d688-5804-4d60-9645-9a931f67c86e": "https://ms.yugipedia.com//6/6f/Zombowwow-NUMH-EN-SR-1E.png",
+          "0ab60a18-6efa-48f3-a23c-043b70b07a55": "https://ms.yugipedia.com//c/c5/GashtheDustLord-NUMH-EN-SR-1E.png",
+          "e1497783-64bf-426f-b4bc-4b08789c04d0": "https://ms.yugipedia.com//4/49/Kagetokage-NUMH-EN-SR-1E.png",
+          "6c92402b-231e-4761-b2ba-77114733f764": "https://ms.yugipedia.com//c/c1/GogogoGiant-NUMH-EN-SR-1E.png",
+          "44f46dc0-2d9c-4b45-98b9-cbb7e7294ee0": "https://ms.yugipedia.com//6/63/PhotonLizard-NUMH-EN-SR-1E.png",
+          "0896686a-b547-493f-9bf5-44599af2d113": "https://ms.yugipedia.com//7/7f/Number54LionHeart-NUMH-EN-ScR-1E.png",
+          "953900c4-8eca-43fd-939d-da57eccfa58c": "https://ms.yugipedia.com//2/25/Number57TriHeadDustDragon-NUMH-EN-ScR-1E.png",
+          "b9eb8b61-583e-4e24-820a-614d2cb15b62": "https://ms.yugipedia.com//1/14/CoachKingGiantrainer-NUMH-EN-ScR-1E.png",
+          "c0e64e88-89e4-4913-bbe2-85c8077c22fe": "https://ms.yugipedia.com//e/e6/CXyzBattleshipCherryBlossom-NUMH-EN-ScR-1E.png",
+          "1d27e50f-8d48-401d-8cc7-8d53681c136e": "https://ms.yugipedia.com//c/c3/OverlayCapture-NUMH-EN-SR-1E.png",
+          "2587bc10-76d5-4746-88ec-747ad883d3df": "https://ms.yugipedia.com//7/7f/HeraldryRecord-NUMH-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112006
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 24,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3d/NUMH-BoosterDE.png",
+      "cards": [
+        {
+          "id": "0c61f9ec-b44f-4469-99bb-100a35e5da84",
+          "card": "1cfa1307-e4f7-44a1-8270-fa009fdffd5b",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "3ab54290-f059-4a6a-b452-0f96756f870f",
+          "card": "d2c3c3b4-c7a4-429f-9443-1cf720b42427",
+          "suffix": "007",
+          "rarity": "super"
+        },
+        {
+          "id": "2a27890c-2a1e-4d52-a2da-663f0b985fbe",
+          "card": "85750869-41f7-430c-8718-1c4e289ac771",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "30948d01-1036-4f24-ae11-8b8da7b65176",
+          "card": "137ab507-b1de-49c1-b17c-2305d217a9cf",
+          "suffix": "010",
+          "rarity": "secret"
+        },
+        {
+          "id": "08a78819-de27-4294-9299-686338aa912d",
+          "card": "57cc0fb0-5f8a-4453-83e8-058303714e12",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "d7e89565-c8df-4ecf-b57f-cf433b440fe1",
+          "card": "3780517f-73cb-47aa-8b9f-9bf9bb550e90",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "0ab60a18-6efa-48f3-a23c-043b70b07a55",
+          "card": "2db20724-e0a7-4773-aec8-2086dfa02d3d",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1df5a696-f73c-43bf-a095-80df2f58697e",
+          "card": "ca184526-07c9-4679-bf5b-d1c86a237131",
+          "suffix": "018",
+          "rarity": "super"
+        },
+        {
+          "id": "799e2fe1-f4a2-4dc9-82b2-93b783d05ebe",
+          "card": "912364c8-8a40-4d4f-96bc-f204d039b580",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "61e94b82-37fd-4507-8fd3-ea4d2910e3a6",
+          "card": "c8656801-c051-4888-9c7d-aa93f60e79c8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "c73947d7-a6ed-40fe-92e2-60be79868a3e",
+          "card": "84b7d3df-d59a-49ef-9307-a700a22fcfd7",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "07b730bc-49bc-4970-8715-eb011e016034",
+          "card": "33b62802-54aa-4d17-b675-ca502dff048c",
+          "suffix": "030",
+          "rarity": "secret"
+        },
+        {
+          "id": "b9eb8b61-583e-4e24-820a-614d2cb15b62",
+          "card": "162665c1-266a-4e47-8f7a-d17ec9ca6ae6",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "87227998-c672-4b86-b540-91773adfb318",
+          "card": "5fcbdf48-f2af-44c5-bbf0-f497ca481923",
+          "suffix": "044",
+          "rarity": "secret"
+        },
+        {
+          "id": "e38dd7dd-e09c-401c-a57b-fb5ecfcccbcd",
+          "card": "d03b3fb2-7e42-4e3c-b83a-bb5d1d8c2c3e",
+          "suffix": "050",
+          "rarity": "secret"
+        },
+        {
+          "id": "d0035729-eba2-4098-a22d-261faca8edcf",
+          "card": "c3fe8866-a754-4f55-9a63-3e730bdae511",
+          "suffix": "056",
+          "rarity": "super"
+        },
+        {
+          "id": "2587bc10-76d5-4746-88ec-747ad883d3df",
+          "card": "43c9119c-62db-4891-9171-d59659968d82",
+          "suffix": "059",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Number Hunters"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 24,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/dd/NUMH-BoosterPT.png",
+      "cards": [
+        {
+          "id": "0c61f9ec-b44f-4469-99bb-100a35e5da84",
+          "card": "1cfa1307-e4f7-44a1-8270-fa009fdffd5b",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "01f33336-30e1-40ec-a341-b26210aa76e4",
+          "card": "d2c3c3b4-c7a4-429f-9443-1cf720b42427",
+          "suffix": "007",
+          "rarity": "super"
+        },
+        {
+          "id": "2c1acbb8-7a46-4796-8f1b-0f6aa827ceb1",
+          "card": "85750869-41f7-430c-8718-1c4e289ac771",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "2de183b7-0368-4fb2-92e7-e720c97341b6",
+          "card": "137ab507-b1de-49c1-b17c-2305d217a9cf",
+          "suffix": "010",
+          "rarity": "secret"
+        },
+        {
+          "id": "08a78819-de27-4294-9299-686338aa912d",
+          "card": "57cc0fb0-5f8a-4453-83e8-058303714e12",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "48fe54ae-4bc5-40cb-98ec-c0de7b221b24",
+          "card": "3780517f-73cb-47aa-8b9f-9bf9bb550e90",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "0ab60a18-6efa-48f3-a23c-043b70b07a55",
+          "card": "2db20724-e0a7-4773-aec8-2086dfa02d3d",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "d79372f1-e72b-4b54-825e-d7eb4409721c",
+          "card": "ca184526-07c9-4679-bf5b-d1c86a237131",
+          "suffix": "018",
+          "rarity": "super"
+        },
+        {
+          "id": "049bf856-61e2-427e-8e88-24dcc60ed294",
+          "card": "912364c8-8a40-4d4f-96bc-f204d039b580",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "f5f75157-47c4-4f76-9cc1-db42ea72e97a",
+          "card": "c8656801-c051-4888-9c7d-aa93f60e79c8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "b366181c-fbdd-405c-b601-d4e6746eb09c",
+          "card": "84b7d3df-d59a-49ef-9307-a700a22fcfd7",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "42755c4c-9d3d-412a-8ffe-99e9c0ca52dc",
+          "card": "33b62802-54aa-4d17-b675-ca502dff048c",
+          "suffix": "030",
+          "rarity": "secret"
+        },
+        {
+          "id": "b9eb8b61-583e-4e24-820a-614d2cb15b62",
+          "card": "162665c1-266a-4e47-8f7a-d17ec9ca6ae6",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "6ae98c60-b196-4d53-9e9d-bbfb986edc95",
+          "card": "5fcbdf48-f2af-44c5-bbf0-f497ca481923",
+          "suffix": "044",
+          "rarity": "secret"
+        },
+        {
+          "id": "9ded36c0-7816-4ec3-96cc-39e03d5fb1f1",
+          "card": "d03b3fb2-7e42-4e3c-b83a-bb5d1d8c2c3e",
+          "suffix": "050",
+          "rarity": "secret"
+        },
+        {
+          "id": "893b3acf-2278-4e94-940c-0ecb434d110e",
+          "card": "c3fe8866-a754-4f55-9a63-3e730bdae511",
+          "suffix": "056",
+          "rarity": "super"
+        },
+        {
+          "id": "2587bc10-76d5-4746-88ec-747ad883d3df",
+          "card": "43c9119c-62db-4891-9171-d59659968d82",
+          "suffix": "059",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Number Hunters"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 24,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e5/NUMH-BoosterIT.png",
+      "cards": [
+        {
+          "id": "0c61f9ec-b44f-4469-99bb-100a35e5da84",
+          "card": "1cfa1307-e4f7-44a1-8270-fa009fdffd5b",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "177a0ba4-2579-4a91-8336-bcc034fb737c",
+          "card": "d2c3c3b4-c7a4-429f-9443-1cf720b42427",
+          "suffix": "007",
+          "rarity": "super"
+        },
+        {
+          "id": "06ae37b1-dbd3-44db-9148-4a089d4691f5",
+          "card": "85750869-41f7-430c-8718-1c4e289ac771",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "aba5e0e0-14d6-4581-a6e1-923498998b51",
+          "card": "137ab507-b1de-49c1-b17c-2305d217a9cf",
+          "suffix": "010",
+          "rarity": "secret"
+        },
+        {
+          "id": "08a78819-de27-4294-9299-686338aa912d",
+          "card": "57cc0fb0-5f8a-4453-83e8-058303714e12",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "d4da42d7-b18e-4da0-9a4f-995ef764d8f1",
+          "card": "3780517f-73cb-47aa-8b9f-9bf9bb550e90",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "0ab60a18-6efa-48f3-a23c-043b70b07a55",
+          "card": "2db20724-e0a7-4773-aec8-2086dfa02d3d",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "2872b93f-a97f-445c-a779-bd56803b3b64",
+          "card": "ca184526-07c9-4679-bf5b-d1c86a237131",
+          "suffix": "018",
+          "rarity": "super"
+        },
+        {
+          "id": "d1a2fd8f-7272-4ca5-83ea-a79aebe3cf41",
+          "card": "912364c8-8a40-4d4f-96bc-f204d039b580",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "6e518596-59a7-4d5e-833e-923620ba0084",
+          "card": "c8656801-c051-4888-9c7d-aa93f60e79c8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "3159ce12-c26a-43b6-a204-fd5ad65da197",
+          "card": "84b7d3df-d59a-49ef-9307-a700a22fcfd7",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "9df57d8a-42f7-4e02-bc87-0d8a3ebee082",
+          "card": "33b62802-54aa-4d17-b675-ca502dff048c",
+          "suffix": "030",
+          "rarity": "secret"
+        },
+        {
+          "id": "b9eb8b61-583e-4e24-820a-614d2cb15b62",
+          "card": "162665c1-266a-4e47-8f7a-d17ec9ca6ae6",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "9fac7ad6-2003-473f-96da-f9f98692991a",
+          "card": "5fcbdf48-f2af-44c5-bbf0-f497ca481923",
+          "suffix": "044",
+          "rarity": "secret"
+        },
+        {
+          "id": "de777d6c-a189-4e1c-aa47-ed62827345f7",
+          "card": "d03b3fb2-7e42-4e3c-b83a-bb5d1d8c2c3e",
+          "suffix": "050",
+          "rarity": "secret"
+        },
+        {
+          "id": "1ad9a614-b90c-4773-bae9-abace1dafcf1",
+          "card": "c3fe8866-a754-4f55-9a63-3e730bdae511",
+          "suffix": "056",
+          "rarity": "super"
+        },
+        {
+          "id": "2587bc10-76d5-4746-88ec-747ad883d3df",
+          "card": "43c9119c-62db-4891-9171-d59659968d82",
+          "suffix": "059",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Number Hunters"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 24,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/52/NUMH-BoosterSP.png",
+      "cards": [
+        {
+          "id": "0c61f9ec-b44f-4469-99bb-100a35e5da84",
+          "card": "1cfa1307-e4f7-44a1-8270-fa009fdffd5b",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "5c11561a-d054-418c-9e63-ed01484d74b8",
+          "card": "d2c3c3b4-c7a4-429f-9443-1cf720b42427",
+          "suffix": "007",
+          "rarity": "super"
+        },
+        {
+          "id": "d3ea9493-55a0-47ba-84c1-6ee1e3ee60cb",
+          "card": "85750869-41f7-430c-8718-1c4e289ac771",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "5a82fd8f-fb4c-495a-9f97-8c59e1c568ae",
+          "card": "137ab507-b1de-49c1-b17c-2305d217a9cf",
+          "suffix": "010",
+          "rarity": "secret"
+        },
+        {
+          "id": "08a78819-de27-4294-9299-686338aa912d",
+          "card": "57cc0fb0-5f8a-4453-83e8-058303714e12",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "ed95e57b-fa66-462f-9b80-9aa64093c390",
+          "card": "3780517f-73cb-47aa-8b9f-9bf9bb550e90",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "0ab60a18-6efa-48f3-a23c-043b70b07a55",
+          "card": "2db20724-e0a7-4773-aec8-2086dfa02d3d",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "53b397ed-4c5f-428d-aa7e-ab81f22e2fd6",
+          "card": "ca184526-07c9-4679-bf5b-d1c86a237131",
+          "suffix": "018",
+          "rarity": "super"
+        },
+        {
+          "id": "e2cb9a1e-8ead-411d-a375-fe2e3e830be1",
+          "card": "912364c8-8a40-4d4f-96bc-f204d039b580",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "ffd5e9bd-8f7a-4050-938b-5ff0c4085e9f",
+          "card": "c8656801-c051-4888-9c7d-aa93f60e79c8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "2bc5dc71-38d9-42b4-81ce-751249845a3e",
+          "card": "84b7d3df-d59a-49ef-9307-a700a22fcfd7",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "68e601aa-ffa3-4c6b-a9d9-08643f59afa9",
+          "card": "33b62802-54aa-4d17-b675-ca502dff048c",
+          "suffix": "030",
+          "rarity": "secret"
+        },
+        {
+          "id": "b9eb8b61-583e-4e24-820a-614d2cb15b62",
+          "card": "162665c1-266a-4e47-8f7a-d17ec9ca6ae6",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "e64f0104-239e-42a3-8a78-e3525a73f6d3",
+          "card": "5fcbdf48-f2af-44c5-bbf0-f497ca481923",
+          "suffix": "044",
+          "rarity": "secret"
+        },
+        {
+          "id": "1f1cb76a-3c7d-4484-9c06-42a7a9bee2a0",
+          "card": "d03b3fb2-7e42-4e3c-b83a-bb5d1d8c2c3e",
+          "suffix": "050",
+          "rarity": "secret"
+        },
+        {
+          "id": "eaac4b10-971c-4a42-a4b9-f0841324f27f",
+          "card": "c3fe8866-a754-4f55-9a63-3e730bdae511",
+          "suffix": "056",
+          "rarity": "super"
+        },
+        {
+          "id": "2587bc10-76d5-4746-88ec-747ad883d3df",
+          "card": "43c9119c-62db-4891-9171-d59659968d82",
+          "suffix": "059",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Number Hunters"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 24,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3a/NUMH-BoosterFR.png",
+      "cards": [
+        {
+          "id": "0c61f9ec-b44f-4469-99bb-100a35e5da84",
+          "card": "1cfa1307-e4f7-44a1-8270-fa009fdffd5b",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "82fbe43b-87dc-4619-aae0-77cc83aea2b9",
+          "card": "d2c3c3b4-c7a4-429f-9443-1cf720b42427",
+          "suffix": "007",
+          "rarity": "super"
+        },
+        {
+          "id": "d1f82772-643b-4cf1-88ca-a8cd4d5d95bf",
+          "card": "85750869-41f7-430c-8718-1c4e289ac771",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "1985a147-b679-4c1e-83bc-eb891fa20476",
+          "card": "137ab507-b1de-49c1-b17c-2305d217a9cf",
+          "suffix": "010",
+          "rarity": "secret"
+        },
+        {
+          "id": "08a78819-de27-4294-9299-686338aa912d",
+          "card": "57cc0fb0-5f8a-4453-83e8-058303714e12",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "410bbac8-e8a5-40b5-a844-3f9873cadc8a",
+          "card": "3780517f-73cb-47aa-8b9f-9bf9bb550e90",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "0ab60a18-6efa-48f3-a23c-043b70b07a55",
+          "card": "2db20724-e0a7-4773-aec8-2086dfa02d3d",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "c1a0ad54-b1e1-4d75-92ee-d232ca2d5f84",
+          "card": "ca184526-07c9-4679-bf5b-d1c86a237131",
+          "suffix": "018",
+          "rarity": "super"
+        },
+        {
+          "id": "f7cdbbab-0834-432c-9b61-d6ed9bb3b1cd",
+          "card": "912364c8-8a40-4d4f-96bc-f204d039b580",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "2c424658-16c8-41b3-a9fc-04ad7b599491",
+          "card": "c8656801-c051-4888-9c7d-aa93f60e79c8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "d5fea8b3-5722-466d-af58-8bc02185a212",
+          "card": "84b7d3df-d59a-49ef-9307-a700a22fcfd7",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "63e07810-b371-45eb-96ea-6dba3297dd41",
+          "card": "33b62802-54aa-4d17-b675-ca502dff048c",
+          "suffix": "030",
+          "rarity": "secret"
+        },
+        {
+          "id": "b9eb8b61-583e-4e24-820a-614d2cb15b62",
+          "card": "162665c1-266a-4e47-8f7a-d17ec9ca6ae6",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "eb44948b-a62b-4a6a-a8c6-e3b39b694c9a",
+          "card": "5fcbdf48-f2af-44c5-bbf0-f497ca481923",
+          "suffix": "044",
+          "rarity": "secret"
+        },
+        {
+          "id": "6a1988ef-1cba-4738-86fc-a31f12240a05",
+          "card": "d03b3fb2-7e42-4e3c-b83a-bb5d1d8c2c3e",
+          "suffix": "050",
+          "rarity": "secret"
+        },
+        {
+          "id": "057409f3-ebbf-45bd-92f7-3c8b64e8bac8",
+          "card": "c3fe8866-a754-4f55-9a63-3e730bdae511",
+          "suffix": "056",
+          "rarity": "super"
+        },
+        {
+          "id": "2587bc10-76d5-4746-88ec-747ad883d3df",
+          "card": "43c9119c-62db-4891-9171-d59659968d82",
+          "suffix": "059",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Number Hunters"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "2e33ad14-fd18-4f42-8135-c4293948d006",
+      "packsPerBox": 24,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/15/NUMH-BoosterEN.png",
+      "cards": [
+        {
+          "id": "0c61f9ec-b44f-4469-99bb-100a35e5da84",
+          "card": "1cfa1307-e4f7-44a1-8270-fa009fdffd5b",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "9b98659f-f918-4d0a-a95d-901c7ad00c01",
+          "card": "d2c3c3b4-c7a4-429f-9443-1cf720b42427",
+          "suffix": "007",
+          "rarity": "super"
+        },
+        {
+          "id": "9bb03fa1-c820-45f4-b145-d44d3f939af1",
+          "card": "85750869-41f7-430c-8718-1c4e289ac771",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "5ae5086f-1c8e-4c8a-babc-d95b1e675d86",
+          "card": "137ab507-b1de-49c1-b17c-2305d217a9cf",
+          "suffix": "010",
+          "rarity": "secret"
+        },
+        {
+          "id": "08a78819-de27-4294-9299-686338aa912d",
+          "card": "57cc0fb0-5f8a-4453-83e8-058303714e12",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "0449d688-5804-4d60-9645-9a931f67c86e",
+          "card": "3780517f-73cb-47aa-8b9f-9bf9bb550e90",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "0ab60a18-6efa-48f3-a23c-043b70b07a55",
+          "card": "2db20724-e0a7-4773-aec8-2086dfa02d3d",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "e1497783-64bf-426f-b4bc-4b08789c04d0",
+          "card": "ca184526-07c9-4679-bf5b-d1c86a237131",
+          "suffix": "018",
+          "rarity": "super"
+        },
+        {
+          "id": "6c92402b-231e-4761-b2ba-77114733f764",
+          "card": "912364c8-8a40-4d4f-96bc-f204d039b580",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "44f46dc0-2d9c-4b45-98b9-cbb7e7294ee0",
+          "card": "c8656801-c051-4888-9c7d-aa93f60e79c8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "0896686a-b547-493f-9bf5-44599af2d113",
+          "card": "84b7d3df-d59a-49ef-9307-a700a22fcfd7",
+          "suffix": "026",
+          "rarity": "secret"
+        },
+        {
+          "id": "953900c4-8eca-43fd-939d-da57eccfa58c",
+          "card": "33b62802-54aa-4d17-b675-ca502dff048c",
+          "suffix": "030",
+          "rarity": "secret"
+        },
+        {
+          "id": "b9eb8b61-583e-4e24-820a-614d2cb15b62",
+          "card": "162665c1-266a-4e47-8f7a-d17ec9ca6ae6",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "c0e64e88-89e4-4913-bbe2-85c8077c22fe",
+          "card": "5fcbdf48-f2af-44c5-bbf0-f497ca481923",
+          "suffix": "044",
+          "rarity": "secret"
+        },
+        {
+          "id": "4ae9bdde-e9b6-4a8a-9ea0-fa7f96dfd195",
+          "card": "d03b3fb2-7e42-4e3c-b83a-bb5d1d8c2c3e",
+          "suffix": "050",
+          "rarity": "secret"
+        },
+        {
+          "id": "1d27e50f-8d48-401d-8cc7-8d53681c136e",
+          "card": "c3fe8866-a754-4f55-9a63-3e730bdae511",
+          "suffix": "056",
+          "rarity": "super"
+        },
+        {
+          "id": "2587bc10-76d5-4746-88ec-747ad883d3df",
+          "card": "43c9119c-62db-4891-9171-d59659968d82",
+          "suffix": "059",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Number Hunters"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Number Hunters",
+      "id": 276449
+    }
+  }
+}

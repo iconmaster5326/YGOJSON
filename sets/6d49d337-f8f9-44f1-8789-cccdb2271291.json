@@ -1,0 +1,155 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "6d49d337-f8f9-44f1-8789-cccdb2271291",
+  "name": {
+    "en": "Structure Deck: Forest of the Traptrix",
+    "ja": "\u30b9\u30c8\u30e9\u30af\u30c1\u30e3\u30fc\u30c7\u30c3\u30ad \uff0d\u87f2\u60d1\u9b54\u306e\u68ee\uff0d",
+    "ko": "STRUCTURE DECK \ucda9\ud639\ub9c8\uc758 \uc232"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "SD45-KR",
+      "date": "2023-03-11",
+      "image": "https://ms.yugipedia.com//b/bf/SD45-DeckKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001230000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SD45-JP",
+      "date": "2022-12-03",
+      "image": "https://ms.yugipedia.com//7/7b/SD45-DeckJP.png",
+      "cardImages": {
+        "unlimited": {
+          "bc6b2469-8e1c-4cea-9668-84438d2078cb": "https://ms.yugipedia.com//6/6d/TraptrixHoleutea-SD45-JP-SR.png",
+          "3e05a702-bd06-42fb-a71b-a37dbe531de6": "https://ms.yugipedia.com//e/e7/TraptrixHoleutea-SD45-JP-ScR.png",
+          "cad45aa0-acbc-46e5-ab99-7eb1d58eda97": "https://ms.yugipedia.com//8/80/TraptrixDionaea-SD45-JP-NPR.png",
+          "8f602fe0-1f6f-4164-8c2f-400340500ff6": "https://ms.yugipedia.com//9/97/TraptrixVesiculo-SD45-JP-NPR.png",
+          "12f70690-1a69-4638-a9fe-9fd62fbe3bfd": "https://ms.yugipedia.com//d/d9/TrapHole-SD45-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000000887000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/bf/SD45-DeckKR.png",
+      "cards": [
+        {
+          "id": "f59e5f3b-b4ca-40d6-859f-d922be836d85",
+          "card": "00d906f0-5e8a-482d-8866-8cd449a4453a",
+          "suffix": "P05",
+          "rarity": "super"
+        },
+        {
+          "id": "5c4f1953-c331-4020-9d9b-7e953112af10",
+          "card": "00d906f0-5e8a-482d-8866-8cd449a4453a",
+          "suffix": "P05",
+          "rarity": "secret"
+        },
+        {
+          "id": "22a40d6e-6120-4d01-9725-3f8838c22bb9",
+          "card": "78fa172b-580e-4fa3-9193-02f9eb2cfb9d",
+          "suffix": "006",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "87e981c6-7cd5-4ffb-9526-eb00ed19214e",
+          "card": "ad1639d1-86ef-484a-b9a1-8127feb31511",
+          "suffix": "008",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "dd3862e8-f33c-4144-bf24-b284f6620126",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7b/SD45-DeckJP.png",
+      "cards": [
+        {
+          "id": "bc6b2469-8e1c-4cea-9668-84438d2078cb",
+          "card": "00d906f0-5e8a-482d-8866-8cd449a4453a",
+          "suffix": "P05",
+          "rarity": "super"
+        },
+        {
+          "id": "3e05a702-bd06-42fb-a71b-a37dbe531de6",
+          "card": "00d906f0-5e8a-482d-8866-8cd449a4453a",
+          "suffix": "P05",
+          "rarity": "secret"
+        },
+        {
+          "id": "cad45aa0-acbc-46e5-ab99-7eb1d58eda97",
+          "card": "78fa172b-580e-4fa3-9193-02f9eb2cfb9d",
+          "suffix": "006",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "8f602fe0-1f6f-4164-8c2f-400340500ff6",
+          "card": "ad1639d1-86ef-484a-b9a1-8127feb31511",
+          "suffix": "008",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "12f70690-1a69-4638-a9fe-9fd62fbe3bfd",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Structure Deck: Forest of the Traptrix",
+      "id": 720296
+    }
+  }
+}

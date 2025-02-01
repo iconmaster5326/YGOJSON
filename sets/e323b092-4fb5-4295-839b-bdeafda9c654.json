@@ -1,0 +1,637 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e323b092-4fb5-4295-839b-bdeafda9c654",
+  "name": {
+    "en": "Speed Duel: Attack from the Deep",
+    "fr": "Speed Duel : L'Assaut des Profondeurs",
+    "de": "Speed Duel: Attack from the Deep",
+    "it": "Speed Duel: Creature degli Abissi",
+    "pt": "Speed Duel: Ataque das Profundezas",
+    "es": "Speed Duel: Ataque desde las Profundidades"
+  },
+  "locales": {
+    "it": {
+      "language": "it",
+      "prefix": "SBAD-IT",
+      "image": "https://ms.yugipedia.com//3/3e/SBAD-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SBAD-SP",
+      "image": "https://ms.yugipedia.com//5/51/SBAD-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "ece993c9-80c0-4f15-a806-1eacc32baddf": "https://ms.yugipedia.com//0/09/MagicalUndertaker-SBAD-SP-C-1E.png",
+          "2fc9e8fc-60e5-4376-8c91-9d9a397910e7": "https://ms.yugipedia.com//8/87/FulfillmentoftheContract-SBAD-SP-C-1E.png",
+          "3a48a8e0-fb71-421e-b6e9-984d8097c416": "https://ms.yugipedia.com//2/26/AmazonessTrainee-SBAD-SP-C-1E.png",
+          "c61bb034-ff84-4029-8c07-4eb583594ce2": "https://ms.yugipedia.com//c/c7/GoblinZombie-SBAD-SP-C-1E.png",
+          "917e190e-0ba7-4d66-9c72-20f533351a11": "https://ms.yugipedia.com//1/1c/TheLegendaryFisherman-SBAD-SP-C-1E.png",
+          "829febbf-6bf1-4524-9784-96c062e89881": "https://ms.yugipedia.com//e/ec/LostBlueBreaker-SBAD-SP-C-1E.png",
+          "8874d5a1-1186-4a5a-95fd-71789819277e": "https://ms.yugipedia.com//f/f8/FishborgPlanter-SBAD-SP-C-1E.png",
+          "13a109ae-6a4d-4f7f-a8ff-297b17cbac9f": "https://ms.yugipedia.com//6/68/PowerofKaishin-SBAD-SP-C-1E.png",
+          "de3dbb81-8a7a-4731-8ce9-ac3314aa678e": "https://ms.yugipedia.com//b/b6/Umi-SBAD-SP-C-1E.png",
+          "6aaa38d5-5602-46d6-96b4-7c2dd3eb7696": "https://ms.yugipedia.com//9/9b/InfernityBeast-SBAD-SP-C-1E.png",
+          "0b5e868b-9c9c-4e43-aafd-7a8063967a27": "https://ms.yugipedia.com//a/ad/DustTornado-SBAD-SP-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SBAD-FR",
+      "image": "https://ms.yugipedia.com//d/d6/SBAD-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "cd44bc7c-587a-4324-8728-4ffa43af443c": "https://ms.yugipedia.com//9/9f/MagicalUndertaker-SBAD-FR-C-1E.png",
+          "ef8a1a0d-943f-469b-9325-3ab9a85cd1e5": "https://ms.yugipedia.com//2/29/FulfillmentoftheContract-SBAD-FR-C-1E.png",
+          "6ec0b3e8-dfbe-47b7-ac27-5ac884462384": "https://ms.yugipedia.com//d/d2/AmazonessTrainee-SBAD-FR-C-1E.png",
+          "bca28d57-4887-492f-8cf0-b0efb3165037": "https://ms.yugipedia.com//6/61/GoblinZombie-SBAD-FR-C-1E.png",
+          "cdc2deaa-18b1-4817-a57b-00a4b287da4f": "https://ms.yugipedia.com//a/ab/TheLegendaryFisherman-SBAD-FR-C-1E.png",
+          "08856742-87c4-4b21-b505-0f135d962a78": "https://ms.yugipedia.com//2/2d/LostBlueBreaker-SBAD-FR-C-1E.png",
+          "8874d5a1-1186-4a5a-95fd-71789819277e": "https://ms.yugipedia.com//9/9c/FishborgPlanter-SBAD-FR-C-1E.png",
+          "b47b89bf-aca2-4eae-a78c-6f469fb29779": "https://ms.yugipedia.com//2/2c/PowerofKaishin-SBAD-FR-C-1E.png",
+          "de3dbb81-8a7a-4731-8ce9-ac3314aa678e": "https://ms.yugipedia.com//a/a1/Umi-SBAD-FR-C-1E.png",
+          "4d71717f-82cc-45ba-af5e-a8ba4d26edc8": "https://ms.yugipedia.com//3/35/InfernityBeast-SBAD-FR-C-1E.png",
+          "c49ad467-1561-43da-8b90-603787c7aba4": "https://ms.yugipedia.com//4/4a/DustTornado-SBAD-FR-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SBAD-EN",
+      "image": "https://ms.yugipedia.com//c/cd/SBAD-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "8f278bd4-7a5b-49d2-b726-f749516ce3c8": "https://ms.yugipedia.com//0/0e/MagicalUndertaker-SBAD-EN-C-1E.png",
+          "210f7f54-baf9-4b2b-b65d-8c1ddb7de71e": "https://ms.yugipedia.com//d/d2/FulfillmentoftheContract-SBAD-EN-C-1E.png",
+          "8bfb06cd-6d91-489b-aeb0-66975f79409e": "https://ms.yugipedia.com//2/29/AmazonessTrainee-SBAD-EN-C-1E.png",
+          "12c573cb-121d-4c82-9de8-86824f74f938": "https://ms.yugipedia.com//2/2d/GoblinZombie-SBAD-EN-C-1E.png",
+          "c51ba71e-398f-4f44-9054-bfd828e7ae62": "https://ms.yugipedia.com//7/73/TheLegendaryFisherman-SBAD-EN-C-1E.png",
+          "2ca79035-7bf1-4bb9-bcc6-e1729ff8b493": "https://ms.yugipedia.com//7/72/LostBlueBreaker-SBAD-EN-C-1E.png",
+          "8874d5a1-1186-4a5a-95fd-71789819277e": "https://ms.yugipedia.com//7/70/FishborgPlanter-SBAD-EN-C-1E.png",
+          "4d636ffb-83c8-4fdf-a972-c97b22316aee": "https://ms.yugipedia.com//5/53/PowerofKaishin-SBAD-EN-C-1E.png",
+          "de3dbb81-8a7a-4731-8ce9-ac3314aa678e": "https://ms.yugipedia.com//4/4f/Umi-SBAD-EN-C-1E.png",
+          "d1b5d7cd-7dc2-497f-91d1-cee53376fb91": "https://ms.yugipedia.com//f/f3/InfernityBeast-SBAD-EN-C-1E.png",
+          "b1005bc7-3f1f-4aee-b7fd-97c77a2f818c": "https://ms.yugipedia.com//f/fa/DustTornado-SBAD-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1202001001
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SBAD-DE",
+      "image": "https://ms.yugipedia.com//9/91/SBAD-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SBAD-PT",
+      "date": "2019-05-30",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3e/SBAD-BoosterIT.png",
+      "cards": [
+        {
+          "id": "f53a8407-5be7-403c-86c4-78b34ea268a2",
+          "card": "6c5cc98b-2905-4cb3-94b2-96e42099d5bb",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "703f4ad4-0387-4fb8-a152-5ce5829b1791",
+          "card": "ef818369-ce26-447a-8692-b8c223ab81a6",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "116d921c-1ef0-422e-85ab-7ae809c78d59",
+          "card": "0bee1696-3168-495b-b4fc-9b9029fb37e6",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "4be18149-2e8a-44e9-ab58-3f2c3ea48b3d",
+          "card": "fa92a0bb-a6b2-4f03-ad01-f0a04483bd43",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "66c6f363-c414-4219-8e7b-d980d21bbd5f",
+          "card": "8cbeb75f-408b-4a88-9e70-78bba0b85c8d",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "b5e69ad4-8513-448d-b411-69b4621da91e",
+          "card": "70913017-f185-4b23-88cf-48beaece1679",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "8874d5a1-1186-4a5a-95fd-71789819277e",
+          "card": "588338fe-ec80-45bd-9680-8cfacb1b3a4c",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "d8b31936-3e53-46e3-8542-9b484fe33005",
+          "card": "94868883-03a6-4ee2-b89b-e74224dfa562",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "de3dbb81-8a7a-4731-8ce9-ac3314aa678e",
+          "card": "ab4821a3-8f81-4f60-9dac-784496371094",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "01b0e969-f7c3-42ce-9b82-89d8fd35732d",
+          "card": "cf2310c8-5974-4d77-9c4e-5cc2f501125b",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "281cea0c-905f-4343-b4ae-fe9f4359dbbe",
+          "card": "255cb7b7-8539-43ff-954f-a69945d4b565",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/51/SBAD-BoosterSP.png",
+      "cards": [
+        {
+          "id": "ece993c9-80c0-4f15-a806-1eacc32baddf",
+          "card": "6c5cc98b-2905-4cb3-94b2-96e42099d5bb",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "2fc9e8fc-60e5-4376-8c91-9d9a397910e7",
+          "card": "ef818369-ce26-447a-8692-b8c223ab81a6",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "3a48a8e0-fb71-421e-b6e9-984d8097c416",
+          "card": "0bee1696-3168-495b-b4fc-9b9029fb37e6",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "c61bb034-ff84-4029-8c07-4eb583594ce2",
+          "card": "fa92a0bb-a6b2-4f03-ad01-f0a04483bd43",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "917e190e-0ba7-4d66-9c72-20f533351a11",
+          "card": "8cbeb75f-408b-4a88-9e70-78bba0b85c8d",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "829febbf-6bf1-4524-9784-96c062e89881",
+          "card": "70913017-f185-4b23-88cf-48beaece1679",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "8874d5a1-1186-4a5a-95fd-71789819277e",
+          "card": "588338fe-ec80-45bd-9680-8cfacb1b3a4c",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "13a109ae-6a4d-4f7f-a8ff-297b17cbac9f",
+          "card": "94868883-03a6-4ee2-b89b-e74224dfa562",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "de3dbb81-8a7a-4731-8ce9-ac3314aa678e",
+          "card": "ab4821a3-8f81-4f60-9dac-784496371094",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "6aaa38d5-5602-46d6-96b4-7c2dd3eb7696",
+          "card": "cf2310c8-5974-4d77-9c4e-5cc2f501125b",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "0b5e868b-9c9c-4e43-aafd-7a8063967a27",
+          "card": "255cb7b7-8539-43ff-954f-a69945d4b565",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/d6/SBAD-BoosterFR.png",
+      "cards": [
+        {
+          "id": "cd44bc7c-587a-4324-8728-4ffa43af443c",
+          "card": "6c5cc98b-2905-4cb3-94b2-96e42099d5bb",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "ef8a1a0d-943f-469b-9325-3ab9a85cd1e5",
+          "card": "ef818369-ce26-447a-8692-b8c223ab81a6",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "6ec0b3e8-dfbe-47b7-ac27-5ac884462384",
+          "card": "0bee1696-3168-495b-b4fc-9b9029fb37e6",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "bca28d57-4887-492f-8cf0-b0efb3165037",
+          "card": "fa92a0bb-a6b2-4f03-ad01-f0a04483bd43",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "cdc2deaa-18b1-4817-a57b-00a4b287da4f",
+          "card": "8cbeb75f-408b-4a88-9e70-78bba0b85c8d",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "08856742-87c4-4b21-b505-0f135d962a78",
+          "card": "70913017-f185-4b23-88cf-48beaece1679",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "8874d5a1-1186-4a5a-95fd-71789819277e",
+          "card": "588338fe-ec80-45bd-9680-8cfacb1b3a4c",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "b47b89bf-aca2-4eae-a78c-6f469fb29779",
+          "card": "94868883-03a6-4ee2-b89b-e74224dfa562",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "de3dbb81-8a7a-4731-8ce9-ac3314aa678e",
+          "card": "ab4821a3-8f81-4f60-9dac-784496371094",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "4d71717f-82cc-45ba-af5e-a8ba4d26edc8",
+          "card": "cf2310c8-5974-4d77-9c4e-5cc2f501125b",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "c49ad467-1561-43da-8b90-603787c7aba4",
+          "card": "255cb7b7-8539-43ff-954f-a69945d4b565",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/cd/SBAD-BoosterEN.png",
+      "cards": [
+        {
+          "id": "8f278bd4-7a5b-49d2-b726-f749516ce3c8",
+          "card": "6c5cc98b-2905-4cb3-94b2-96e42099d5bb",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "210f7f54-baf9-4b2b-b65d-8c1ddb7de71e",
+          "card": "ef818369-ce26-447a-8692-b8c223ab81a6",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "8bfb06cd-6d91-489b-aeb0-66975f79409e",
+          "card": "0bee1696-3168-495b-b4fc-9b9029fb37e6",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "12c573cb-121d-4c82-9de8-86824f74f938",
+          "card": "fa92a0bb-a6b2-4f03-ad01-f0a04483bd43",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "c51ba71e-398f-4f44-9054-bfd828e7ae62",
+          "card": "8cbeb75f-408b-4a88-9e70-78bba0b85c8d",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "2ca79035-7bf1-4bb9-bcc6-e1729ff8b493",
+          "card": "70913017-f185-4b23-88cf-48beaece1679",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "8874d5a1-1186-4a5a-95fd-71789819277e",
+          "card": "588338fe-ec80-45bd-9680-8cfacb1b3a4c",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "4d636ffb-83c8-4fdf-a972-c97b22316aee",
+          "card": "94868883-03a6-4ee2-b89b-e74224dfa562",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "de3dbb81-8a7a-4731-8ce9-ac3314aa678e",
+          "card": "ab4821a3-8f81-4f60-9dac-784496371094",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "d1b5d7cd-7dc2-497f-91d1-cee53376fb91",
+          "card": "cf2310c8-5974-4d77-9c4e-5cc2f501125b",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "b1005bc7-3f1f-4aee-b7fd-97c77a2f818c",
+          "card": "255cb7b7-8539-43ff-954f-a69945d4b565",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/91/SBAD-BoosterDE.png",
+      "cards": [
+        {
+          "id": "34ffcd54-c5be-458c-9933-ea421c7936f4",
+          "card": "6c5cc98b-2905-4cb3-94b2-96e42099d5bb",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "386a8a47-ba7d-46d7-8584-dfd740b1b15a",
+          "card": "ef818369-ce26-447a-8692-b8c223ab81a6",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "489c46f2-e0d4-4625-9d48-5ce2af83fee4",
+          "card": "0bee1696-3168-495b-b4fc-9b9029fb37e6",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "9f7b0bcd-9d3d-43e1-bc91-ebe5d1dadbd7",
+          "card": "fa92a0bb-a6b2-4f03-ad01-f0a04483bd43",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "02fa02c7-db19-4f16-b57e-f4e4476b09b0",
+          "card": "8cbeb75f-408b-4a88-9e70-78bba0b85c8d",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "4ef750d6-fa71-48e7-b6ef-d509c8179977",
+          "card": "70913017-f185-4b23-88cf-48beaece1679",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "8874d5a1-1186-4a5a-95fd-71789819277e",
+          "card": "588338fe-ec80-45bd-9680-8cfacb1b3a4c",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "fb436063-9892-4e5f-aeb3-e4368284b7cd",
+          "card": "94868883-03a6-4ee2-b89b-e74224dfa562",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "de3dbb81-8a7a-4731-8ce9-ac3314aa678e",
+          "card": "ab4821a3-8f81-4f60-9dac-784496371094",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "c51ad9dc-dba3-4b9f-981a-57e560330154",
+          "card": "cf2310c8-5974-4d77-9c4e-5cc2f501125b",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "27148400-8406-425e-9f99-e1537ea2240c",
+          "card": "255cb7b7-8539-43ff-954f-a69945d4b565",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "14541935-754e-481f-b3cb-6f2e05bcc120",
+          "card": "6c5cc98b-2905-4cb3-94b2-96e42099d5bb",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "fede0582-0511-4096-94fc-ac0ea4c5c4d6",
+          "card": "ef818369-ce26-447a-8692-b8c223ab81a6",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "0d6626ee-284c-49c2-8311-90a626666763",
+          "card": "0bee1696-3168-495b-b4fc-9b9029fb37e6",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "7212f6c4-887c-44c9-97ce-eeb0a6be2170",
+          "card": "fa92a0bb-a6b2-4f03-ad01-f0a04483bd43",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "2ed8d7bc-b01c-42bb-b977-782f05eb7fb3",
+          "card": "8cbeb75f-408b-4a88-9e70-78bba0b85c8d",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "d24a7531-d16e-4a43-9b88-38924b602a96",
+          "card": "70913017-f185-4b23-88cf-48beaece1679",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "8874d5a1-1186-4a5a-95fd-71789819277e",
+          "card": "588338fe-ec80-45bd-9680-8cfacb1b3a4c",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "4716616b-f7d6-4526-8039-356401d89c14",
+          "card": "94868883-03a6-4ee2-b89b-e74224dfa562",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "de3dbb81-8a7a-4731-8ce9-ac3314aa678e",
+          "card": "ab4821a3-8f81-4f60-9dac-784496371094",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "0c8f6272-9286-402e-8a27-6ad9b8aa558d",
+          "card": "cf2310c8-5974-4d77-9c4e-5cc2f501125b",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "c90dec81-635c-455a-a8d2-bf3214022837",
+          "card": "255cb7b7-8539-43ff-954f-a69945d4b565",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Speed Duel: Attack from the Deep",
+      "id": 597137
+    }
+  }
+}

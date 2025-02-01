@@ -1,0 +1,966 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "842cb66e-e6b6-4dd7-a24f-94496b29e9f7",
+  "name": {
+    "en": "Rise of the Duelist",
+    "fr": "L'Ascension du Duelliste",
+    "de": "Rise of the Duelist",
+    "it": "Ascesa del Duellante",
+    "pt": "Ascens\u00e3o do Duelista",
+    "es": "Alzamiento del Duelista",
+    "ja": "\u30e9\u30a4\u30ba\u30fb\u30aa\u30d6\u30fb\u30b6\u30fb\u30c7\u30e5\u30a8\u30ea\u30b9\u30c8",
+    "ko": "\ub77c\uc774\uc988 \uc624\ube0c \ub354 \ub4c0\uc5bc\ub9ac\uc2a4\ud2b8"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "ROTD-EN",
+      "image": "https://ms.yugipedia.com//6/62/ROTD-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "cc4b9177-86e5-4bfd-bdf0-a8442ff16586": "https://ms.yugipedia.com//4/41/DogmatikaFleurdelistheKnighted-ROTD-EN-ScR-1E.png",
+          "da713992-4a78-441b-b397-b87010576af9": "https://ms.yugipedia.com//c/c4/MelffyPony-ROTD-EN-C-1E.png",
+          "93b409b0-a5d4-49c7-9a13-9642e43f4156": "https://ms.yugipedia.com//6/65/MegalithPhul-ROTD-EN-C-1E.png",
+          "3d8dc579-9300-42ba-802a-c9b4a479e837": "https://ms.yugipedia.com//9/9d/InfernobleArmsDurendal-ROTD-EN-UR-1E.png",
+          "64d0fec2-2ddb-4743-af87-359f73d59118": "https://ms.yugipedia.com//c/c5/SpiralDischarge-ROTD-EN-C-1E.png",
+          "fcc49d93-bf69-446c-bacb-66fc8dc35618": "https://ms.yugipedia.com//6/66/DogmatikaEncounter-ROTD-EN-C-1E.png",
+          "e3e7867e-49cb-46e7-aadb-b5d4ec8112cd": "https://ms.yugipedia.com//e/ee/FrightfurJar-ROTD-EN-C-1E.png",
+          "6f236916-f88e-46cd-ae20-8d33b12ce573": "https://ms.yugipedia.com//e/ed/IceDragonsPrison-ROTD-EN-UR-1E.png",
+          "9cfd87ef-8259-49c1-a088-d66da80334da": "https://ms.yugipedia.com//4/40/DDArk-ROTD-EN-C-1E.png",
+          "82fc5aef-a2af-496e-9e8d-7cccf19e482d": "https://ms.yugipedia.com//b/ba/WynntheWindChanneler-ROTD-EN-UR-1E.png",
+          "8ffe4748-de43-448e-9945-bb9c73b0625b": "https://ms.yugipedia.com//3/31/WynntheWindChanneler-ROTD-EN-StR-1E.png",
+          "5dd4bac9-5c9d-4363-968b-4e9bacb099d3": "https://ms.yugipedia.com//3/31/SpeedroidCarTurbo-ROTD-EN-UR-1E.png",
+          "3e6b7fb3-f5d2-4e0e-b606-2210e269c24a": "https://ms.yugipedia.com//3/3a/RampagingSmashtankRhynosaber-ROTD-EN-SR-1E.png",
+          "6aff2dca-9e74-4932-a32c-af86daf92223": "https://ms.yugipedia.com//2/28/RevengeRally-ROTD-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11119006
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "ROTD-SP",
+      "image": "https://ms.yugipedia.com//9/9e/ROTD-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "ROTD-IT",
+      "image": "https://ms.yugipedia.com//6/62/ROTD-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "ROTD-FR",
+      "image": "https://ms.yugipedia.com//d/db/ROTD-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "ROTD-DE",
+      "image": "https://ms.yugipedia.com//7/79/ROTD-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "ROTD-JP",
+      "date": "2020-04-18",
+      "image": "https://ms.yugipedia.com//d/d7/ROTD-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "819e5659-ff8e-41f2-a085-4ffdad6d3605": "https://ms.yugipedia.com//5/57/DogmatikaFleurdelistheKnighted-ROTD-JP-UR.png",
+          "cc4b9177-86e5-4bfd-bdf0-a8442ff16586": "https://ms.yugipedia.com//8/80/DogmatikaFleurdelistheKnighted-ROTD-JP-ScR.png",
+          "1c4513bd-c9a6-47f1-ad42-21d5b4a9a15d": "https://ms.yugipedia.com//b/b5/DogmatikaFleurdelistheKnighted-ROTD-JP-UtR.png",
+          "a6ea4734-936b-44f4-acdb-92b5090bf457": "https://ms.yugipedia.com//0/0c/DogmatikaFleurdelistheKnighted-ROTD-JP-PScR.png",
+          "44e1263d-e964-40d4-9aa9-f736ed192f73": "https://ms.yugipedia.com//d/d4/MelffyPony-ROTD-JP-C.png",
+          "01abcad0-15b9-435e-ac03-86d2f550b76b": "https://ms.yugipedia.com//1/1f/MegalithPhul-ROTD-JP-C.png",
+          "1903b56c-0af5-49d7-9b13-860286ef9373": "https://ms.yugipedia.com//8/8f/InfernobleArmsDurendal-ROTD-JP-R.png",
+          "c41c3496-36d8-4c88-9b78-f8d94f484e3d": "https://ms.yugipedia.com//4/4b/SpiralDischarge-ROTD-JP-C.png",
+          "03824d77-0e8f-4223-8433-d4a5f6fecd09": "https://ms.yugipedia.com//6/69/DogmatikaEncounter-ROTD-JP-C.png",
+          "03983ea0-97ad-4e25-9516-38ad0e83ba6e": "https://ms.yugipedia.com//3/37/FrightfurJar-ROTD-JP-C.png",
+          "98c7399b-99ab-4ea1-a562-eca9511bb74e": "https://ms.yugipedia.com//1/16/IceDragonsPrison-ROTD-JP-SR.png",
+          "ca517058-e6e3-484b-9dba-67779274b4e9": "https://ms.yugipedia.com//d/d7/IceDragonsPrison-ROTD-JP-ScR.png",
+          "50f44333-84c8-4636-b524-8b3211da1940": "https://ms.yugipedia.com//5/51/IceDragonsPrison-ROTD-JP-PScR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1123001
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "ROTD-KR",
+      "date": "2020-07-29",
+      "image": "https://ms.yugipedia.com//6/67/ROTD-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71118002
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "ROTD-PT",
+      "date": "2020-08-06",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/62/ROTD-BoosterEN.png",
+      "cards": [
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "da713992-4a78-441b-b397-b87010576af9",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "93b409b0-a5d4-49c7-9a13-9642e43f4156",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "3d8dc579-9300-42ba-802a-c9b4a479e837",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "ultra"
+        },
+        {
+          "id": "64d0fec2-2ddb-4743-af87-359f73d59118",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "fcc49d93-bf69-446c-bacb-66fc8dc35618",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "e3e7867e-49cb-46e7-aadb-b5d4ec8112cd",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "6f236916-f88e-46cd-ae20-8d33b12ce573",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9cfd87ef-8259-49c1-a088-d66da80334da",
+          "card": "a8287a5f-2e3f-48da-8afc-2b85f1de4cad",
+          "suffix": "084",
+          "rarity": "common"
+        },
+        {
+          "id": "82fc5aef-a2af-496e-9e8d-7cccf19e482d",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8ffe4748-de43-448e-9945-bb9c73b0625b",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "starlight"
+        },
+        {
+          "id": "5dd4bac9-5c9d-4363-968b-4e9bacb099d3",
+          "card": "96497c18-c4b2-4d30-9f18-0698eeca3e2d",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3e6b7fb3-f5d2-4e0e-b606-2210e269c24a",
+          "card": "0fbc2ef3-202b-4c7b-9da1-31a9b05ca489",
+          "suffix": "093",
+          "rarity": "super"
+        },
+        {
+          "id": "6aff2dca-9e74-4932-a32c-af86daf92223",
+          "card": "05d8e7a8-37f0-45b1-8042-4b7407ca4930",
+          "suffix": "099",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/9e/ROTD-BoosterSP.png",
+      "cards": [
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "e9f7bb96-48ce-44fd-bc9d-c6c07b32bd2d",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "d6ca1a36-112a-4366-af32-8378ab571b30",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "830484bc-6814-4347-9272-753ae5aa6f47",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6339e678-b426-4beb-b1ba-a73d120cb28c",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "d7e9473e-58f5-4be9-ab4c-f5bb5a5aa788",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "d88f4f9d-9daf-4526-8327-6532be55ebf0",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "6f236916-f88e-46cd-ae20-8d33b12ce573",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "81fbea99-2bed-4772-8c18-affd5a4b75a5",
+          "card": "a8287a5f-2e3f-48da-8afc-2b85f1de4cad",
+          "suffix": "084",
+          "rarity": "common"
+        },
+        {
+          "id": "b4513dfa-4540-4adc-9cb3-66acfe19d54f",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5bfeb43f-f5e5-4220-b9d4-11c992584f23",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "starlight"
+        },
+        {
+          "id": "5dd4bac9-5c9d-4363-968b-4e9bacb099d3",
+          "card": "96497c18-c4b2-4d30-9f18-0698eeca3e2d",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "73baaab9-3783-4e51-b697-089020989dca",
+          "card": "0fbc2ef3-202b-4c7b-9da1-31a9b05ca489",
+          "suffix": "093",
+          "rarity": "super"
+        },
+        {
+          "id": "44163d28-c664-4d74-894a-143ae038438e",
+          "card": "05d8e7a8-37f0-45b1-8042-4b7407ca4930",
+          "suffix": "099",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/62/ROTD-BoosterIT.png",
+      "cards": [
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "19700641-2088-4fed-89d1-bda053e036cd",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "cedf778b-417f-4c64-9f01-0151c3b76237",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "35accc74-ac54-4771-a9e0-4bcf6fb97b62",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cd0a45fd-364e-458d-b4a4-b1769f3409cf",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "35c0085d-3470-4fe2-8efe-6ac9aeb21c5d",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "a557d8cd-ca64-4c5c-9e82-8db4cd0537dc",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "6f236916-f88e-46cd-ae20-8d33b12ce573",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "065ae1f9-4bf9-48e6-a2d6-4e63320c91d9",
+          "card": "a8287a5f-2e3f-48da-8afc-2b85f1de4cad",
+          "suffix": "084",
+          "rarity": "common"
+        },
+        {
+          "id": "6a4ffea7-39af-4797-89ac-36e1df084084",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "ultra"
+        },
+        {
+          "id": "26c999ee-f811-415a-bad0-6142cafe5c5e",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "starlight"
+        },
+        {
+          "id": "5dd4bac9-5c9d-4363-968b-4e9bacb099d3",
+          "card": "96497c18-c4b2-4d30-9f18-0698eeca3e2d",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6cf11261-3f1b-4a47-a375-f0a5a83a8e64",
+          "card": "0fbc2ef3-202b-4c7b-9da1-31a9b05ca489",
+          "suffix": "093",
+          "rarity": "super"
+        },
+        {
+          "id": "eb8cbe95-bb05-4de0-8016-c7a57eb289bd",
+          "card": "05d8e7a8-37f0-45b1-8042-4b7407ca4930",
+          "suffix": "099",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/db/ROTD-BoosterFR.png",
+      "cards": [
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "e581ef75-98de-4082-b87d-a338b29070e7",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "1acf3e8f-aa4d-4d5f-9e9e-2818b91d15e7",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "6cdb1bfb-52f2-43ee-90d5-93d3b5f50787",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2d364816-3964-4bc7-8874-a0ce56caa5cc",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "c855e7fc-11c0-4c40-a13c-0a20647bae7b",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "7c4604e4-5451-49a2-87ab-18d9bba986bb",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "6f236916-f88e-46cd-ae20-8d33b12ce573",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d43391d2-cefe-4387-a785-4669e200ef94",
+          "card": "a8287a5f-2e3f-48da-8afc-2b85f1de4cad",
+          "suffix": "084",
+          "rarity": "common"
+        },
+        {
+          "id": "fa7a4339-25df-4d4d-93c0-ab9905d1ab1e",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7cddfa4c-42aa-4f08-9a1b-d76ab7f0fc8a",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "starlight"
+        },
+        {
+          "id": "5dd4bac9-5c9d-4363-968b-4e9bacb099d3",
+          "card": "96497c18-c4b2-4d30-9f18-0698eeca3e2d",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a615a6a5-6cf9-455b-b27e-07017a90d269",
+          "card": "0fbc2ef3-202b-4c7b-9da1-31a9b05ca489",
+          "suffix": "093",
+          "rarity": "super"
+        },
+        {
+          "id": "4ab7b396-c7bb-44f1-aac9-3b7b85f087fe",
+          "card": "05d8e7a8-37f0-45b1-8042-4b7407ca4930",
+          "suffix": "099",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/79/ROTD-BoosterDE.png",
+      "cards": [
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "70a9d9a2-4f51-45d7-a736-2d0a2c381ef3",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "586f5a86-d64a-4f4f-b174-26ee2f2d8369",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "1727f725-9313-4166-8d0b-b914226b8443",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9db9391e-f27e-4122-a28b-facb2eea4e16",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "48d34d45-250f-4701-8c09-02f982e1d6d8",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "afeb1254-5981-4afa-a20a-24768b3820a9",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "6f236916-f88e-46cd-ae20-8d33b12ce573",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "20793b10-93a5-4a19-8126-dabaad931728",
+          "card": "a8287a5f-2e3f-48da-8afc-2b85f1de4cad",
+          "suffix": "084",
+          "rarity": "common"
+        },
+        {
+          "id": "90ceb6f1-8c6c-41cd-a462-bc4a7e110fa5",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d774ec2b-3e04-48c0-879a-e0f08326f0fc",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "starlight"
+        },
+        {
+          "id": "5dd4bac9-5c9d-4363-968b-4e9bacb099d3",
+          "card": "96497c18-c4b2-4d30-9f18-0698eeca3e2d",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "66602e74-5752-4caf-b1de-ab826caf2a1d",
+          "card": "0fbc2ef3-202b-4c7b-9da1-31a9b05ca489",
+          "suffix": "093",
+          "rarity": "super"
+        },
+        {
+          "id": "62c8d2b9-e6ac-44df-8daa-a1d9e7aaecfd",
+          "card": "05d8e7a8-37f0-45b1-8042-4b7407ca4930",
+          "suffix": "099",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d7/ROTD-BoosterJP.png",
+      "cards": [
+        {
+          "id": "819e5659-ff8e-41f2-a085-4ffdad6d3605",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "1c4513bd-c9a6-47f1-ad42-21d5b4a9a15d",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a6ea4734-936b-44f4-acdb-92b5090bf457",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "44e1263d-e964-40d4-9aa9-f736ed192f73",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "01abcad0-15b9-435e-ac03-86d2f550b76b",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "1903b56c-0af5-49d7-9b13-860286ef9373",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "rare"
+        },
+        {
+          "id": "c41c3496-36d8-4c88-9b78-f8d94f484e3d",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "03824d77-0e8f-4223-8433-d4a5f6fecd09",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "03983ea0-97ad-4e25-9516-38ad0e83ba6e",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "98c7399b-99ab-4ea1-a562-eca9511bb74e",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "super"
+        },
+        {
+          "id": "ca517058-e6e3-484b-9dba-67779274b4e9",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "50f44333-84c8-4636-b524-8b3211da1940",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "prismaticsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/67/ROTD-BoosterKR.png",
+      "cards": [
+        {
+          "id": "819e5659-ff8e-41f2-a085-4ffdad6d3605",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "1c4513bd-c9a6-47f1-ad42-21d5b4a9a15d",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a6ea4734-936b-44f4-acdb-92b5090bf457",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "047ecc32-0ffc-47cf-ba51-159761d63e13",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "9a3ff570-edb2-4468-ac79-1aaba8686569",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "8b6b8369-b2a1-4544-b478-456e9630cd56",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "rare"
+        },
+        {
+          "id": "c5a20487-8766-40ad-933c-77433d1444a4",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "9917582e-a62c-4060-8f86-ffbe8f7ca1db",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "84256ea9-fad3-4b5a-a30d-99e15964b3f3",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "98c7399b-99ab-4ea1-a562-eca9511bb74e",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "super"
+        },
+        {
+          "id": "ca517058-e6e3-484b-9dba-67779274b4e9",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "50f44333-84c8-4636-b524-8b3211da1940",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "prismaticsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "cc4b9177-86e5-4bfd-bdf0-a8442ff16586",
+          "card": "e06734ac-cb77-42e6-9d3f-9bdb463188db",
+          "suffix": "008",
+          "rarity": "secret"
+        },
+        {
+          "id": "a232c445-ebcc-47b4-86ea-051a400fa597",
+          "card": "bef63783-de3d-44b3-897b-db55cea903fd",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "ce593cec-3410-4115-8de6-23ccbc4da94a",
+          "card": "b93b5b1f-f79b-4f98-92e5-aac3b478760e",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "6239c615-3e8f-42ee-a89b-49dbadd9df3b",
+          "card": "f9877532-bf70-4c48-a78d-23c2aeb2a675",
+          "suffix": "053",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f6a59362-5205-4a91-99a3-7f8909845809",
+          "card": "6d130413-93c6-450d-aaf4-0d31aa965077",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "4776d1a1-3342-4658-b10c-603852637314",
+          "card": "7fa692c0-933a-40b9-a159-87c76da58d11",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "977c3b52-4128-4d0a-83c3-2085e4e8fa8d",
+          "card": "f9ceb04e-19d5-4b11-89d5-4d237955f400",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "6f236916-f88e-46cd-ae20-8d33b12ce573",
+          "card": "a46f2c57-ed53-42e6-b54f-d84293448908",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "418b63d1-7f4c-4a6d-8b9a-09c2a2607dd2",
+          "card": "a8287a5f-2e3f-48da-8afc-2b85f1de4cad",
+          "suffix": "084",
+          "rarity": "common"
+        },
+        {
+          "id": "29c2ab8c-8ef3-4cd0-8ca2-c13c36a92a99",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4fde1bbe-f3e9-4e10-a99b-2f1d2d8d1f96",
+          "card": "0f11573b-b919-4c8b-bc54-f1622e2626b3",
+          "suffix": "086",
+          "rarity": "starlight"
+        },
+        {
+          "id": "5dd4bac9-5c9d-4363-968b-4e9bacb099d3",
+          "card": "96497c18-c4b2-4d30-9f18-0698eeca3e2d",
+          "suffix": "090",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2455db97-ff35-4e00-af3b-58bea2815c7d",
+          "card": "0fbc2ef3-202b-4c7b-9da1-31a9b05ca489",
+          "suffix": "093",
+          "rarity": "super"
+        },
+        {
+          "id": "dd7f4867-ec60-4944-83dd-c08282a7da1a",
+          "card": "05d8e7a8-37f0-45b1-8042-4b7407ca4930",
+          "suffix": "099",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Rise of the Duelist",
+      "id": 695447
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "ab033ce7-64e4-4de3-88b6-10a7cfc22849",
+  "name": {
+    "en": "Yu-Gi-Oh! Advent Calendar",
+    "de": "Yu-Gi-Oh! Adventskalender"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "AC11-DE",
+      "date": "2011-10-13",
+      "image": "https://ms.yugipedia.com//b/b7/AC11-PromoDE.png",
+      "cardImages": {
+        "limited": {
+          "614a3a66-7ab1-40a5-99c2-5599bb59c95b": "https://ms.yugipedia.com//b/be/BlackRoseDragon-AC11-DE-UR-LE.png",
+          "fde69a2b-26fd-4a81-a548-e0666adc2a25": "https://ms.yugipedia.com//4/48/NitroWarrior-AC11-DE-UR-LE.jpg",
+          "03653392-96d3-4969-8f06-b36e63ca153f": "https://ms.yugipedia.com//a/a9/BlackwingAuroratheNorthernLights-AC11-DE-SR-LE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          28804001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//b/b7/AC11-PromoDE.png",
+      "cards": [
+        {
+          "id": "614a3a66-7ab1-40a5-99c2-5599bb59c95b",
+          "card": "09dc48ae-4e9a-459c-9519-ddd1fbb11d9d",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fde69a2b-26fd-4a81-a548-e0666adc2a25",
+          "card": "c70ce226-dbae-4f01-81c7-9a3cdd29b18e",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "03653392-96d3-4969-8f06-b36e63ca153f",
+          "card": "eaf719af-ecfa-4713-b74e-98add77fbc49",
+          "suffix": "023",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Advent Calendar",
+      "id": 177402
+    }
+  }
+}

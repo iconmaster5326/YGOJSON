@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "da4d8dfb-3ec1-47c7-908f-e4c35bff57e1",
+  "name": {
+    "en": "Promotion Pack",
+    "ja": "\u30d7\u30ed\u30e2\u30fc\u30b7\u30e7\u30f3\u30d1\u30c3\u30af \uff12\uff10\uff11\uff10"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "PR01-JP",
+      "date": "2010-11-13",
+      "image": "https://ms.yugipedia.com//f/f2/PR01-PromoJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "81c68943-7339-4bbf-8034-84a429eb0dfe": "https://ms.yugipedia.com//1/18/SnowmanEater-PR01-JP-C.png",
+          "950a645b-6ea2-4091-97a7-dfb1e2b2a267": "https://ms.yugipedia.com//6/63/OjamaRed-PR01-JP-C.jpg",
+          "9f6717ad-d69c-4a97-bd9d-8b9679bab2f6": "https://ms.yugipedia.com//9/9d/SweetCorn-PR01-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          141410003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/f2/PR01-PromoJP.jpg",
+      "cards": [
+        {
+          "id": "81c68943-7339-4bbf-8034-84a429eb0dfe",
+          "card": "b47f40a9-91f9-4946-ad3d-6ed23d777630",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "950a645b-6ea2-4091-97a7-dfb1e2b2a267",
+          "card": "3f77cd9c-03b6-4be9-ab4f-35be7cbf8891",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "9f6717ad-d69c-4a97-bd9d-8b9679bab2f6",
+          "card": "ae901100-0733-4a09-904b-990f8dfa520d",
+          "suffix": "008",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Promotion Pack",
+      "id": 149931
+    }
+  }
+}

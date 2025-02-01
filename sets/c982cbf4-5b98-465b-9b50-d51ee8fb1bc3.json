@@ -1,0 +1,818 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "c982cbf4-5b98-465b-9b50-d51ee8fb1bc3",
+  "name": {
+    "en": "Duelist Saga",
+    "fr": "La Saga des Duellistes",
+    "de": "Duelist Saga",
+    "it": "Saga dei Duellanti",
+    "pt": "Saga dos Duelistas",
+    "es": "La Saga del Duelista"
+  },
+  "locales": {
+    "it": {
+      "language": "it",
+      "prefix": "DUSA-IT",
+      "image": "https://ms.yugipedia.com//6/67/DUSA-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          48810001
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "DUSA-DE",
+      "image": "https://ms.yugipedia.com//f/fc/DUSA-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "edbf7ac6-0a0f-4cf0-b080-c1fde9f6496e": "https://ms.yugipedia.com//e/e7/ImperialOrder-DUSA-DE-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          28810001
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "DUSA-SP",
+      "image": "https://ms.yugipedia.com//4/49/DUSA-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "5f2ce713-cd1f-4828-922e-8fb83ce65ff3": "https://ms.yugipedia.com//5/51/DarkMagicianofChaos-DUSA-SP-UR-1E.png",
+          "17f45240-685f-427d-913c-4fe16fff1039": "https://ms.yugipedia.com//c/ca/BrionacDragonoftheIceBarrier-DUSA-SP-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          58810001
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "DUSA-PT",
+      "date": "2017-05-26",
+      "cardImages": {
+        "1st": {
+          "02428d24-5dd7-423a-b273-7458aa7dda89": "https://ms.yugipedia.com//c/ce/DoubleFinShark-DUSA-PT-UR-1E.png",
+          "089ef259-a8ae-4183-9a97-b7f11891bfbc": "https://ms.yugipedia.com//f/fb/FullArmoredBlackRayLancer-DUSA-PT-UR-1E.png",
+          "4f53176c-b6b4-4a47-bae8-fde3438de1b1": "https://ms.yugipedia.com//c/c2/Number70MalevolentSin-DUSA-PT-UR-1E.png",
+          "c3ab4614-1415-4e7a-bb80-271a2f013627": "https://ms.yugipedia.com//9/9d/VisionHEROVyon-DUSA-PT-UR-1E.png",
+          "630a7f3b-4410-4541-a8b9-b02aeaef608e": "https://ms.yugipedia.com//9/9f/LegacyoftheDuelist-DUSA-PT-UR-1E.png",
+          "6d410025-e99c-411c-ad76-47c45f31009f": "https://ms.yugipedia.com//a/a4/PowerWall-DUSA-PT-UR-1E.png",
+          "aab8131b-990a-4936-99f5-625cb1c25cd8": "https://ms.yugipedia.com//d/d6/BlueEyesWhiteDragon-DUSA-PT-UR-1E.png",
+          "4121b936-8efd-4dae-b79a-6314548d9794": "https://ms.yugipedia.com//f/f3/ImperialOrder-DUSA-PT-UR-1E.png",
+          "48c5acd3-6238-4708-9295-2c52d82bb73a": "https://ms.yugipedia.com//d/d7/DarkMagicianofChaos-DUSA-PT-UR-1E.png",
+          "5e4a86e5-6721-4b49-83ee-a0625d734280": "https://ms.yugipedia.com//8/82/CyberDragon-DUSA-PT-UR-1E.png",
+          "3f56212a-1f8e-4f4e-b4f9-33122e86f56f": "https://ms.yugipedia.com//a/ad/DimensionalFissure-DUSA-PT-UR-1E.png",
+          "3332c933-0763-4372-863b-3d6425525160": "https://ms.yugipedia.com//c/c8/AdvancedRitualArt-DUSA-PT-UR-1E.png",
+          "8e827ada-e981-414e-bb65-1ade0c1d321f": "https://ms.yugipedia.com//d/d5/Honest-DUSA-PT-UR-1E.png",
+          "347a2d7b-8a7d-42a8-a9bb-119602572876": "https://ms.yugipedia.com//f/f8/GladiatorBeastGyzarus-DUSA-PT-UR-1E.png",
+          "abfd8752-bc54-483a-81ce-ffc42f6efce2": "https://ms.yugipedia.com//1/16/BrionacDragonoftheIceBarrier-DUSA-PT-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18811001
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DUSA-FR",
+      "image": "https://ms.yugipedia.com//3/32/DUSA-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "02428d24-5dd7-423a-b273-7458aa7dda89": "https://ms.yugipedia.com//1/1c/DoubleFinShark-DUSA-FR-UR-1E.png",
+          "b3828023-38a3-42ac-8f29-f60c9b03af2e": "https://ms.yugipedia.com//9/93/FullArmoredBlackRayLancer-DUSA-FR-UR-1E.png",
+          "42046e62-99fc-4cd3-87bd-691bd61a25d0": "https://ms.yugipedia.com//7/7e/Number70MalevolentSin-DUSA-FR-UR-1E.png",
+          "16b5ecb6-8bcd-4416-b507-ef688ab50a59": "https://ms.yugipedia.com//9/97/VisionHEROVyon-DUSA-FR-UR-1E.png",
+          "babda405-520c-411e-b9a8-64d8fecb38d2": "https://ms.yugipedia.com//f/fb/LegacyoftheDuelist-DUSA-FR-UR-1E.png",
+          "6d410025-e99c-411c-ad76-47c45f31009f": "https://ms.yugipedia.com//5/5d/PowerWall-DUSA-FR-UR-1E.png",
+          "616bf945-0632-4b2c-9f92-04029dd27b00": "https://ms.yugipedia.com//9/9c/BlueEyesWhiteDragon-DUSA-FR-UR-1E.png",
+          "cbe8cd8f-0f91-4628-bb87-18dc52f99bd9": "https://ms.yugipedia.com//3/3b/ImperialOrder-DUSA-FR-UR-1E.png",
+          "da5e67c5-6b9d-4b75-a3c5-4b1f025c4899": "https://ms.yugipedia.com//1/14/DarkMagicianofChaos-DUSA-FR-UR-1E.png",
+          "3414925d-1ab8-4777-91b9-25a1d00a467e": "https://ms.yugipedia.com//b/b9/CyberDragon-DUSA-FR-UR-1E.png",
+          "ed4eed32-0ead-470f-9e89-37a4771ca78a": "https://ms.yugipedia.com//2/28/DimensionalFissure-DUSA-FR-UR-1E.png",
+          "a36a35ec-0f26-4d8b-99ad-38669f666e20": "https://ms.yugipedia.com//8/83/AdvancedRitualArt-DUSA-FR-UR-1E.png",
+          "941b5493-d383-4976-9b1d-3f56a17c0c13": "https://ms.yugipedia.com//f/fd/Honest-DUSA-FR-UR-1E.png",
+          "ee642a75-9e03-4ac6-9fa6-501019c78db8": "https://ms.yugipedia.com//2/20/GladiatorBeastGyzarus-DUSA-FR-UR-1E.png",
+          "79afc899-67fd-415a-8916-9906e3d67ab0": "https://ms.yugipedia.com//1/12/BrionacDragonoftheIceBarrier-DUSA-FR-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          38810001
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "DUSA-EN",
+      "image": "https://ms.yugipedia.com//3/37/DUSA-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "02428d24-5dd7-423a-b273-7458aa7dda89": "https://ms.yugipedia.com//f/f2/DoubleFinShark-DUSA-EN-UR-1E.png",
+          "25c99ca3-7279-415e-bdfd-aaecc740eb53": "https://ms.yugipedia.com//7/76/FullArmoredBlackRayLancer-DUSA-EN-UR-1E.png",
+          "582543a6-d2de-414f-996b-dbc0dcdf85f4": "https://ms.yugipedia.com//7/74/Number70MalevolentSin-DUSA-EN-UR-1E.png",
+          "5f06e635-f812-4de9-b21c-f56affc64415": "https://ms.yugipedia.com//4/42/VisionHEROVyon-DUSA-EN-UR-1E.png",
+          "93213b17-6c66-45f9-968a-8f97f74a26ad": "https://ms.yugipedia.com//0/0f/LegacyoftheDuelist-DUSA-EN-UR-1E.png",
+          "6d410025-e99c-411c-ad76-47c45f31009f": "https://ms.yugipedia.com//0/0c/PowerWall-DUSA-EN-UR-1E.png",
+          "e7105fc3-9fab-45e9-adf6-2038c999dadc": "https://ms.yugipedia.com//d/d4/BlueEyesWhiteDragon-DUSA-EN-UR-1E.png",
+          "41f9252c-7d59-4c1c-8ee3-42f245c88c7a": "https://ms.yugipedia.com//b/b6/ImperialOrder-DUSA-EN-UR-1E.png",
+          "aa25258c-90c2-44fb-b080-fee7b51ea62c": "https://ms.yugipedia.com//a/ad/DarkMagicianofChaos-DUSA-EN-UR-1E.png",
+          "486bf91e-2524-4227-a574-9627057c16f9": "https://ms.yugipedia.com//e/ef/CyberDragon-DUSA-EN-UR-1E.png",
+          "9bb47d21-eafe-48ee-a7bc-8bc41062ed24": "https://ms.yugipedia.com//c/c7/DimensionalFissure-DUSA-EN-UR-1E.png",
+          "04416a13-2050-4f4a-a625-fe6a2fa8a645": "https://ms.yugipedia.com//4/4d/AdvancedRitualArt-DUSA-EN-UR-1E.png",
+          "b255c73e-642e-46c2-9f77-ec667bd9fd0a": "https://ms.yugipedia.com//f/fb/Honest-DUSA-EN-UR-1E.png",
+          "a08200d7-c3d8-4584-bfe3-0cab4dea3290": "https://ms.yugipedia.com//1/14/GladiatorBeastGyzarus-DUSA-EN-UR-1E.png",
+          "2f2f3368-52f3-41bd-a677-3bfff89f6c8b": "https://ms.yugipedia.com//1/1f/BrionacDragonoftheIceBarrier-DUSA-EN-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18811001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/67/DUSA-BoosterIT.png",
+      "cards": [
+        {
+          "id": "02428d24-5dd7-423a-b273-7458aa7dda89",
+          "card": "0618c11d-ed22-4613-9b14-fab8f7b5eb38",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5ee54c0f-9e02-4bd2-b668-d922de037f74",
+          "card": "a07edf16-082a-4501-a136-15b50bd5d181",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "dd26d64c-3ed0-4f8d-a9a3-72d91d449736",
+          "card": "950a8db0-dd56-4e17-b44a-197fc828e10d",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "db9aa7f2-c6a2-4637-a13e-a092835fdded",
+          "card": "ef084d1f-5631-4efa-8d54-940bf2a185f3",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7da01757-6647-4f7e-9843-f15a4714f617",
+          "card": "0f2d8782-4fd6-406c-99d9-2866110a8498",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d410025-e99c-411c-ad76-47c45f31009f",
+          "card": "f3f268bb-af87-4341-bfbc-fbcbabeacb3b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4962b83c-f73a-4496-9188-038349085602",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e8763f00-4278-4b45-ab36-5e1b90d836e5",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "61c4c796-e5b3-46bd-b0f2-190375f3375f",
+          "card": "9dd2ce8b-589d-4733-9644-eab895111c71",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3dc0d175-e878-407b-9557-80fa374cef04",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "057",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bbfc3509-8221-478e-b8b7-713c488a34f6",
+          "card": "b523d52b-4aa1-4a6c-9b8f-fcecb8908837",
+          "suffix": "060",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8032f0d6-9ff8-4af2-95a6-04e16023caed",
+          "card": "077a27fe-4bdc-4600-a22b-d19d72686704",
+          "suffix": "063",
+          "rarity": "ultra"
+        },
+        {
+          "id": "efad47dc-2513-4dcf-8a2c-8ccc2e8c971b",
+          "card": "a07fd96a-dac9-41f1-8da5-e453f9654cb7",
+          "suffix": "069",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d86a588d-5376-4b7f-a714-857deab69631",
+          "card": "26a7bdfa-a703-49b7-a74f-bbd8809b27b5",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "19a2842e-ad95-4902-8819-515b7c75d364",
+          "card": "38aa0dc9-481f-453b-ac52-9579f1ea4039",
+          "suffix": "073",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/fc/DUSA-BoosterDE.png",
+      "cards": [
+        {
+          "id": "02428d24-5dd7-423a-b273-7458aa7dda89",
+          "card": "0618c11d-ed22-4613-9b14-fab8f7b5eb38",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "65cba8c3-318d-447c-8d21-42f69e030553",
+          "card": "a07edf16-082a-4501-a136-15b50bd5d181",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "57b6709a-58e1-4b6d-bb76-ab4831398a5a",
+          "card": "950a8db0-dd56-4e17-b44a-197fc828e10d",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "97e721c8-ae50-43a2-ac76-3623f1fa56da",
+          "card": "ef084d1f-5631-4efa-8d54-940bf2a185f3",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "129921ff-9d82-40f2-a7d2-7361c23ac97b",
+          "card": "0f2d8782-4fd6-406c-99d9-2866110a8498",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d410025-e99c-411c-ad76-47c45f31009f",
+          "card": "f3f268bb-af87-4341-bfbc-fbcbabeacb3b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7cf77454-9652-4a3b-9946-1d868a137c3c",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "edbf7ac6-0a0f-4cf0-b080-c1fde9f6496e",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "399222a5-3460-4d47-b951-4a786d981677",
+          "card": "9dd2ce8b-589d-4733-9644-eab895111c71",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fc33fa1e-07f9-426e-a73b-a4712e4002db",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "057",
+          "rarity": "ultra"
+        },
+        {
+          "id": "139fdfbb-e5ae-42a8-9aa4-8cb59597ef97",
+          "card": "b523d52b-4aa1-4a6c-9b8f-fcecb8908837",
+          "suffix": "060",
+          "rarity": "ultra"
+        },
+        {
+          "id": "177b996b-9d71-4087-a1da-a3ded0b4d301",
+          "card": "077a27fe-4bdc-4600-a22b-d19d72686704",
+          "suffix": "063",
+          "rarity": "ultra"
+        },
+        {
+          "id": "62255c5d-fee3-497a-ab51-24ac3274a00a",
+          "card": "a07fd96a-dac9-41f1-8da5-e453f9654cb7",
+          "suffix": "069",
+          "rarity": "ultra"
+        },
+        {
+          "id": "180a9924-eda6-4787-b346-dd2166adcb26",
+          "card": "26a7bdfa-a703-49b7-a74f-bbd8809b27b5",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bf52c3ea-17e2-437a-8456-d5310270adda",
+          "card": "38aa0dc9-481f-453b-ac52-9579f1ea4039",
+          "suffix": "073",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/49/DUSA-BoosterSP.png",
+      "cards": [
+        {
+          "id": "02428d24-5dd7-423a-b273-7458aa7dda89",
+          "card": "0618c11d-ed22-4613-9b14-fab8f7b5eb38",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ed242c51-a483-4e5f-a861-4656dfedbe90",
+          "card": "a07edf16-082a-4501-a136-15b50bd5d181",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "846af01d-50fc-4ff6-aa63-770d04271eb2",
+          "card": "950a8db0-dd56-4e17-b44a-197fc828e10d",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e42b369c-4533-4e14-8332-f35fedffed39",
+          "card": "ef084d1f-5631-4efa-8d54-940bf2a185f3",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "48eca29c-d5ae-43b2-a039-2a87887221f3",
+          "card": "0f2d8782-4fd6-406c-99d9-2866110a8498",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d410025-e99c-411c-ad76-47c45f31009f",
+          "card": "f3f268bb-af87-4341-bfbc-fbcbabeacb3b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "02779a8c-b01d-452b-aaee-87ced06001a7",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e34a0a9a-83fd-47ae-86f1-3152abd2b5b6",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5f2ce713-cd1f-4828-922e-8fb83ce65ff3",
+          "card": "9dd2ce8b-589d-4733-9644-eab895111c71",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "02db07f1-a76b-4e73-8f66-7061600f8692",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "057",
+          "rarity": "ultra"
+        },
+        {
+          "id": "77cde7d0-0d2e-49e1-9beb-e91be0415f8c",
+          "card": "b523d52b-4aa1-4a6c-9b8f-fcecb8908837",
+          "suffix": "060",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2c5eba7b-ac4f-4ed4-83a2-eedb0a02e3ab",
+          "card": "077a27fe-4bdc-4600-a22b-d19d72686704",
+          "suffix": "063",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d77e3fb1-06b2-40c4-bcd0-3f34350382e4",
+          "card": "a07fd96a-dac9-41f1-8da5-e453f9654cb7",
+          "suffix": "069",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f56a24d8-8eee-4ea4-bc96-699760ada279",
+          "card": "26a7bdfa-a703-49b7-a74f-bbd8809b27b5",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "17f45240-685f-427d-913c-4fe16fff1039",
+          "card": "38aa0dc9-481f-453b-ac52-9579f1ea4039",
+          "suffix": "073",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "02428d24-5dd7-423a-b273-7458aa7dda89",
+          "card": "0618c11d-ed22-4613-9b14-fab8f7b5eb38",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "089ef259-a8ae-4183-9a97-b7f11891bfbc",
+          "card": "a07edf16-082a-4501-a136-15b50bd5d181",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4f53176c-b6b4-4a47-bae8-fde3438de1b1",
+          "card": "950a8db0-dd56-4e17-b44a-197fc828e10d",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c3ab4614-1415-4e7a-bb80-271a2f013627",
+          "card": "ef084d1f-5631-4efa-8d54-940bf2a185f3",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "630a7f3b-4410-4541-a8b9-b02aeaef608e",
+          "card": "0f2d8782-4fd6-406c-99d9-2866110a8498",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d410025-e99c-411c-ad76-47c45f31009f",
+          "card": "f3f268bb-af87-4341-bfbc-fbcbabeacb3b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aab8131b-990a-4936-99f5-625cb1c25cd8",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4121b936-8efd-4dae-b79a-6314548d9794",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "48c5acd3-6238-4708-9295-2c52d82bb73a",
+          "card": "9dd2ce8b-589d-4733-9644-eab895111c71",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5e4a86e5-6721-4b49-83ee-a0625d734280",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "057",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3f56212a-1f8e-4f4e-b4f9-33122e86f56f",
+          "card": "b523d52b-4aa1-4a6c-9b8f-fcecb8908837",
+          "suffix": "060",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3332c933-0763-4372-863b-3d6425525160",
+          "card": "077a27fe-4bdc-4600-a22b-d19d72686704",
+          "suffix": "063",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8e827ada-e981-414e-bb65-1ade0c1d321f",
+          "card": "a07fd96a-dac9-41f1-8da5-e453f9654cb7",
+          "suffix": "069",
+          "rarity": "ultra"
+        },
+        {
+          "id": "347a2d7b-8a7d-42a8-a9bb-119602572876",
+          "card": "26a7bdfa-a703-49b7-a74f-bbd8809b27b5",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "abfd8752-bc54-483a-81ce-ffc42f6efce2",
+          "card": "38aa0dc9-481f-453b-ac52-9579f1ea4039",
+          "suffix": "073",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/32/DUSA-BoosterFR.png",
+      "cards": [
+        {
+          "id": "02428d24-5dd7-423a-b273-7458aa7dda89",
+          "card": "0618c11d-ed22-4613-9b14-fab8f7b5eb38",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b3828023-38a3-42ac-8f29-f60c9b03af2e",
+          "card": "a07edf16-082a-4501-a136-15b50bd5d181",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "42046e62-99fc-4cd3-87bd-691bd61a25d0",
+          "card": "950a8db0-dd56-4e17-b44a-197fc828e10d",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "16b5ecb6-8bcd-4416-b507-ef688ab50a59",
+          "card": "ef084d1f-5631-4efa-8d54-940bf2a185f3",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "babda405-520c-411e-b9a8-64d8fecb38d2",
+          "card": "0f2d8782-4fd6-406c-99d9-2866110a8498",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d410025-e99c-411c-ad76-47c45f31009f",
+          "card": "f3f268bb-af87-4341-bfbc-fbcbabeacb3b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "616bf945-0632-4b2c-9f92-04029dd27b00",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cbe8cd8f-0f91-4628-bb87-18dc52f99bd9",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "da5e67c5-6b9d-4b75-a3c5-4b1f025c4899",
+          "card": "9dd2ce8b-589d-4733-9644-eab895111c71",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3414925d-1ab8-4777-91b9-25a1d00a467e",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "057",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ed4eed32-0ead-470f-9e89-37a4771ca78a",
+          "card": "b523d52b-4aa1-4a6c-9b8f-fcecb8908837",
+          "suffix": "060",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a36a35ec-0f26-4d8b-99ad-38669f666e20",
+          "card": "077a27fe-4bdc-4600-a22b-d19d72686704",
+          "suffix": "063",
+          "rarity": "ultra"
+        },
+        {
+          "id": "941b5493-d383-4976-9b1d-3f56a17c0c13",
+          "card": "a07fd96a-dac9-41f1-8da5-e453f9654cb7",
+          "suffix": "069",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ee642a75-9e03-4ac6-9fa6-501019c78db8",
+          "card": "26a7bdfa-a703-49b7-a74f-bbd8809b27b5",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "79afc899-67fd-415a-8916-9906e3d67ab0",
+          "card": "38aa0dc9-481f-453b-ac52-9579f1ea4039",
+          "suffix": "073",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/37/DUSA-BoosterEN.png",
+      "cards": [
+        {
+          "id": "02428d24-5dd7-423a-b273-7458aa7dda89",
+          "card": "0618c11d-ed22-4613-9b14-fab8f7b5eb38",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "25c99ca3-7279-415e-bdfd-aaecc740eb53",
+          "card": "a07edf16-082a-4501-a136-15b50bd5d181",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "582543a6-d2de-414f-996b-dbc0dcdf85f4",
+          "card": "950a8db0-dd56-4e17-b44a-197fc828e10d",
+          "suffix": "014",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5f06e635-f812-4de9-b21c-f56affc64415",
+          "card": "ef084d1f-5631-4efa-8d54-940bf2a185f3",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "93213b17-6c66-45f9-968a-8f97f74a26ad",
+          "card": "0f2d8782-4fd6-406c-99d9-2866110a8498",
+          "suffix": "024",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d410025-e99c-411c-ad76-47c45f31009f",
+          "card": "f3f268bb-af87-4341-bfbc-fbcbabeacb3b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e7105fc3-9fab-45e9-adf6-2038c999dadc",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "41f9252c-7d59-4c1c-8ee3-42f245c88c7a",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aa25258c-90c2-44fb-b080-fee7b51ea62c",
+          "card": "9dd2ce8b-589d-4733-9644-eab895111c71",
+          "suffix": "054",
+          "rarity": "ultra"
+        },
+        {
+          "id": "486bf91e-2524-4227-a574-9627057c16f9",
+          "card": "77bc0807-d7fc-461d-98dc-ea23a2acc6fa",
+          "suffix": "057",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9bb47d21-eafe-48ee-a7bc-8bc41062ed24",
+          "card": "b523d52b-4aa1-4a6c-9b8f-fcecb8908837",
+          "suffix": "060",
+          "rarity": "ultra"
+        },
+        {
+          "id": "04416a13-2050-4f4a-a625-fe6a2fa8a645",
+          "card": "077a27fe-4bdc-4600-a22b-d19d72686704",
+          "suffix": "063",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b255c73e-642e-46c2-9f77-ec667bd9fd0a",
+          "card": "a07fd96a-dac9-41f1-8da5-e453f9654cb7",
+          "suffix": "069",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a08200d7-c3d8-4584-bfe3-0cab4dea3290",
+          "card": "26a7bdfa-a703-49b7-a74f-bbd8809b27b5",
+          "suffix": "071",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2f2f3368-52f3-41bd-a677-3bfff89f6c8b",
+          "card": "38aa0dc9-481f-453b-ac52-9579f1ea4039",
+          "suffix": "073",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Duelist Saga",
+      "id": 465042
+    }
+  }
+}

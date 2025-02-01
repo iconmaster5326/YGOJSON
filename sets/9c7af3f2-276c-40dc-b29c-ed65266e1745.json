@@ -1,0 +1,923 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "9c7af3f2-276c-40dc-b29c-ed65266e1745",
+  "name": {
+    "en": "Spell Ruler",
+    "fr": "Le Ma\u00eetre des Magies",
+    "de": "Spell Ruler",
+    "it": "Sovrano della Magia",
+    "es": "Se\u00f1or de Hechizos",
+    "ko": "\ub9c8\ubc95\uc758 \uc9c0\ubc30\uc790"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "MDM-F",
+      "date": "2003-10-22",
+      "image": "https://ms.yugipedia.com//1/11/MDM-BoosterFR.jpg",
+      "cardImages": {
+        "1st": {
+          "6ca0c096-c09d-4968-b0d9-82029619b4bf": "https://ms.yugipedia.com//a/a0/TrialofNightmare-MDM-FR-C-1E.jpg"
+        },
+        "unlimited": {
+          "86e4b2ef-76cc-45d9-9c33-ee7720f9d312": "https://ms.yugipedia.com//1/10/DarknessApproaches-MDM-FR-SSP-UE.png",
+          "6ca0c096-c09d-4968-b0d9-82029619b4bf": "https://ms.yugipedia.com//d/dd/TrialofNightmare-MDM-FR-C-UE.png",
+          "4e06aea8-8238-46ac-9294-35b5c1aa7770": "https://ms.yugipedia.com//f/f9/OneEyedShieldDragon-MDM-FR-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31101002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SDH-S",
+      "date": "2004-09-01",
+      "image": "https://ms.yugipedia.com//e/e8/SDH-BoosterSP.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {
+          "95a09904-510d-4dc6-8f52-2ec9324607c6": "https://ms.yugipedia.com//c/c4/PenguinKnight-SDH-SP-C-UE.png",
+          "9de2b9cc-9220-4483-b608-5cc4a7438bf1": "https://ms.yugipedia.com//d/d9/InvaderoftheThrone-SDH-SP-SR-UE.png",
+          "1178c6f2-6201-4d2b-8f36-268728afdd49": "https://ms.yugipedia.com//3/36/DarknessApproaches-SDH-SP-SSP-UE.png",
+          "593e0d87-9f85-4581-9df1-222e4ba63a5c": "https://ms.yugipedia.com//1/1a/SnakeFang-SDH-SP-C-UE.png",
+          "7f7d7751-f348-4f1b-b2b4-6a8e5303e567": "https://ms.yugipedia.com//9/98/HamburgerRecipe-SDH-SP-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51101002
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SRL-EN",
+      "date": "2004-12-01",
+      "image": "https://ms.yugipedia.com//c/cb/SRL-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "959122bc-5698-4394-bf3b-359843383eab": "https://ms.yugipedia.com//a/a6/PenguinKnight-SRL-EN-C-UE.png",
+          "b1677711-a8ec-490e-a344-5c310046b08f": "https://ms.yugipedia.com//3/3f/InvaderoftheThrone-SRL-EN-SR-UE.png",
+          "96ac2855-71dc-4cf9-bea7-0da22a3e25e4": "https://ms.yugipedia.com//f/fb/DarknessApproaches-SRL-EN-SSP-UE.png",
+          "5d3f603a-cefa-40e0-8c22-d5dfc4e7b999": "https://ms.yugipedia.com//7/7e/SnakeFang-SRL-EN-C-UE.png",
+          "63f9256b-c2c7-44c6-9048-1c7ee7d37fce": "https://ms.yugipedia.com//3/37/HamburgerRecipe-SRL-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11101002
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SRL-G",
+      "date": "2003-10-21",
+      "image": "https://ms.yugipedia.com//0/0e/SRL-BoosterDE.jpg",
+      "cardImages": {
+        "1st": {
+          "f24abd05-9ef3-404e-9f97-fc385a49e5cb": "https://ms.yugipedia.com//a/ae/PenguinKnight-SRL-DE-C-1E.png",
+          "bd794425-8cd3-4e43-8ecc-2cec89598f07": "https://ms.yugipedia.com//9/99/InvaderoftheThrone-SRL-DE-SR-1E.png",
+          "161d0ed0-56da-4d96-869d-9350f0c9eb39": "https://ms.yugipedia.com//7/7f/DarknessApproaches-SRL-DE-SSP-1E.png",
+          "7e15e24c-1a37-4db7-9531-96285b4d8d09": "https://ms.yugipedia.com//1/18/HamburgerRecipe-SRL-DE-C-1E.png",
+          "9ec1b0cb-5207-4df2-82fa-e443ad8dbe39": "https://ms.yugipedia.com//f/f1/Kurama-SRL-DE-C-1E.png",
+          "3635bc47-bcaa-434e-9638-8b21a2eeae5e": "https://ms.yugipedia.com//e/ec/Hinotama-SRL-DE-C-1E.png",
+          "5a498c8e-4f3e-4924-91fe-9e80de877198": "https://ms.yugipedia.com//e/ed/OneEyedShieldDragon-SRL-DE-C-1E.png"
+        },
+        "unlimited": {
+          "f24abd05-9ef3-404e-9f97-fc385a49e5cb": "https://ms.yugipedia.com//8/88/PenguinKnight-SRL-DE-C-UE.png",
+          "1fe74a00-a966-4ff9-9331-a72d15a84623": "https://ms.yugipedia.com//a/a7/SnakeFang-SRL-DE-C-UE.png",
+          "7e15e24c-1a37-4db7-9531-96285b4d8d09": "https://ms.yugipedia.com//1/14/HamburgerRecipe-SRL-DE-C-UE.png",
+          "fefee0d5-4a11-45c6-98e0-b7308265c7f3": "https://ms.yugipedia.com//6/65/TrialofNightmare-SRL-DE-C-UE.png",
+          "5a498c8e-4f3e-4924-91fe-9e80de877198": "https://ms.yugipedia.com//b/be/OneEyedShieldDragon-SRL-DE-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21101002
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SRL-K",
+      "date": "2004-05-07",
+      "image": "https://ms.yugipedia.com//c/c4/SRL-BoosterKR.jpg",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71102001
+        ]
+      }
+    },
+    "na": {
+      "language": "en",
+      "prefix": "MRL-",
+      "date": "2002-09-16",
+      "image": "https://ms.yugipedia.com//e/e4/MRL-BoosterNA.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {
+          "274ac39d-048e-47a7-81b1-953633f92a30": "https://ms.yugipedia.com//c/c9/PenguinKnight-SRL-NA-C-UE.png",
+          "3aab29ae-9489-4600-baf5-fec3ab64175d": "https://ms.yugipedia.com//4/48/InvaderoftheThrone-SRL-NA-SR-UE.png",
+          "0ac4165d-af8d-4cba-a0de-7fbcf76675a8": "https://ms.yugipedia.com//0/0f/DarknessApproaches-SRL-NA-SSP-UE.png",
+          "801f000a-1ef2-44f5-9fe5-3fa19ff90233": "https://ms.yugipedia.com//a/a1/SnakeFang-SRL-NA-C-UE.png",
+          "e629b0c5-52cc-4f56-a094-eaa9f2aa0f71": "https://ms.yugipedia.com//0/0a/HamburgerRecipe-SRL-NA-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11101002
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "MRL-",
+      "date": "2002-10-24",
+      "image": "https://ms.yugipedia.com//8/8d/MRL-BoosterAE.jpg",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000000005000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SDM-I",
+      "date": "2003-12-01",
+      "image": "https://ms.yugipedia.com//6/65/SDM-BoosterIT.jpg",
+      "cardImages": {
+        "1st": {
+          "e4757d57-9887-4a95-9228-33ecf706c7e2": "https://ms.yugipedia.com//2/2c/DarknessApproaches-SDM-IT-SSP-1E.png",
+          "49811814-017a-4019-86ea-2a67ca76d493": "https://ms.yugipedia.com//2/27/HamburgerRecipe-SDM-IT-C-1E.png",
+          "8690422f-9934-4ffb-b6e7-588a7bec683d": "https://ms.yugipedia.com//c/ca/TrialofNightmare-SDM-IT-C-1E.png",
+          "13ad2cec-0ae3-47ee-9550-370ce4e3c92f": "https://ms.yugipedia.com//8/82/OneEyedShieldDragon-SDM-IT-C-1E.png"
+        },
+        "unlimited": {
+          "13ad2cec-0ae3-47ee-9550-370ce4e3c92f": "https://ms.yugipedia.com//0/04/OneEyedShieldDragon-SDM-IT-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41101002
+        ]
+      }
+    },
+    "eu": {
+      "language": "en",
+      "prefix": "MRL-E",
+      "date": "2003-10-24",
+      "image": "https://ms.yugipedia.com//c/ce/MRL-BoosterEU.jpg",
+      "cardImages": {
+        "1st": {
+          "4803058b-232d-4fe0-a09d-ec05574f96ef": "https://ms.yugipedia.com//4/4f/PenguinKnight-MRL-EU-C-1E.png",
+          "0a2dbcb8-1e80-443e-a10a-79b11c70ca4f": "https://ms.yugipedia.com//8/80/SnakeFang-MRL-EU-C-1E.png",
+          "048568bc-f5a2-4a10-a478-1d97a603c979": "https://ms.yugipedia.com//e/e8/TrialofNightmare-MRL-EU-C-1E.png",
+          "cdc09894-6968-48f7-88af-f1c8f4cd2070": "https://ms.yugipedia.com//b/ba/PetitAngel-MRL-EU-C-1E.png",
+          "c3a7764a-0fb2-4c58-a28b-6ac06dabcdde": "https://ms.yugipedia.com//3/34/Hinotama-MRL-EU-C-1E.jpg"
+        },
+        "unlimited": {
+          "4803058b-232d-4fe0-a09d-ec05574f96ef": "https://ms.yugipedia.com//9/9b/PenguinKnight-MRL-EU-C-UE.jpg",
+          "5e7d7a01-3286-4a68-b1fa-a8c6e753b30c": "https://ms.yugipedia.com//c/c1/InvaderoftheThrone-MRL-EU-SR-UE.jpg",
+          "2ded243d-1432-4ec0-8be0-e79cb51477d2": "https://ms.yugipedia.com//d/d2/DarknessApproaches-MRL-EU-SSP-UE.jpg",
+          "0a2dbcb8-1e80-443e-a10a-79b11c70ca4f": "https://ms.yugipedia.com//d/dd/SnakeFang-MRL-EU-C-UE.jpg",
+          "2ffe5217-b658-44a9-9b15-a2d766d334ca": "https://ms.yugipedia.com//5/56/HamburgerRecipe-MRL-EU-C-UE.jpg",
+          "048568bc-f5a2-4a10-a478-1d97a603c979": "https://ms.yugipedia.com//5/5e/TrialofNightmare-MRL-EU-C-UE.jpg",
+          "cdc09894-6968-48f7-88af-f1c8f4cd2070": "https://ms.yugipedia.com//7/7c/PetitAngel-MRL-EU-C-UE.jpg",
+          "2545cab5-75b9-41bc-8948-9c091a66a57b": "https://ms.yugipedia.com//4/4a/Kurama-MRL-EU-C-UE.jpg",
+          "ed0aa249-dff0-41af-9899-f2577f448a66": "https://ms.yugipedia.com//6/62/OneEyedShieldDragon-MRL-EU-C-UE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11101002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/11/MDM-BoosterFR.jpg",
+      "cards": [
+        {
+          "id": "8aa4e9da-545d-44f8-9448-3ca9a895d5ca",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "2f31e189-e454-49f0-a33c-0ef9f7f72743",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "86e4b2ef-76cc-45d9-9c33-ee7720f9d312",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "aca514d9-1a9a-4121-b2a2-ba8fdb567010",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "fc90fc0b-c8ae-4e3a-b4c3-faadfddcf7e8",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "6ca0c096-c09d-4968-b0d9-82029619b4bf",
+          "card": "11153b83-49ec-45f3-840c-31709f1a241a",
+          "suffix": "112",
+          "rarity": "common"
+        },
+        {
+          "id": "cdc09894-6968-48f7-88af-f1c8f4cd2070",
+          "card": "1dd65f02-136f-437d-8036-528efaa0035b",
+          "suffix": "114",
+          "rarity": "common"
+        },
+        {
+          "id": "7662c161-4304-4d30-a26a-33ff65115ced",
+          "card": "6af5b63d-9772-44b5-859c-dc03872d2ec7",
+          "suffix": "115",
+          "rarity": "common"
+        },
+        {
+          "id": "458f2332-21d4-447d-a3f9-851dc23e3e63",
+          "card": "f943e901-e9bc-41fa-93bb-a6750932c9ea",
+          "suffix": "117",
+          "rarity": "common"
+        },
+        {
+          "id": "43deedb9-8042-47cd-bda0-fda4fc01fd34",
+          "card": "9756bdd7-deb8-4a72-b94a-ee9f0fd4071b",
+          "suffix": "120",
+          "rarity": "common"
+        },
+        {
+          "id": "4e06aea8-8238-46ac-9294-35b5c1aa7770",
+          "card": "f7ce5d01-e681-4206-8f45-05c913a100e7",
+          "suffix": "127",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e8/SDH-BoosterSP.png",
+      "cards": [
+        {
+          "id": "95a09904-510d-4dc6-8f52-2ec9324607c6",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "9de2b9cc-9220-4483-b608-5cc4a7438bf1",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "1178c6f2-6201-4d2b-8f36-268728afdd49",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "593e0d87-9f85-4581-9df1-222e4ba63a5c",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "7f7d7751-f348-4f1b-b2b4-6a8e5303e567",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/cb/SRL-BoosterEN.png",
+      "cards": [
+        {
+          "id": "959122bc-5698-4394-bf3b-359843383eab",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "b1677711-a8ec-490e-a344-5c310046b08f",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "96ac2855-71dc-4cf9-bea7-0da22a3e25e4",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "5d3f603a-cefa-40e0-8c22-d5dfc4e7b999",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "63f9256b-c2c7-44c6-9048-1c7ee7d37fce",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/0e/SRL-BoosterDE.jpg",
+      "cards": [
+        {
+          "id": "f24abd05-9ef3-404e-9f97-fc385a49e5cb",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "bd794425-8cd3-4e43-8ecc-2cec89598f07",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "161d0ed0-56da-4d96-869d-9350f0c9eb39",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "1fe74a00-a966-4ff9-9331-a72d15a84623",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "7e15e24c-1a37-4db7-9531-96285b4d8d09",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "fefee0d5-4a11-45c6-98e0-b7308265c7f3",
+          "card": "11153b83-49ec-45f3-840c-31709f1a241a",
+          "suffix": "112",
+          "rarity": "common"
+        },
+        {
+          "id": "cdc09894-6968-48f7-88af-f1c8f4cd2070",
+          "card": "1dd65f02-136f-437d-8036-528efaa0035b",
+          "suffix": "114",
+          "rarity": "common"
+        },
+        {
+          "id": "ec7ae498-f303-4985-ac68-191e02d33e63",
+          "card": "6af5b63d-9772-44b5-859c-dc03872d2ec7",
+          "suffix": "115",
+          "rarity": "common"
+        },
+        {
+          "id": "9ec1b0cb-5207-4df2-82fa-e443ad8dbe39",
+          "card": "f943e901-e9bc-41fa-93bb-a6750932c9ea",
+          "suffix": "117",
+          "rarity": "common"
+        },
+        {
+          "id": "3635bc47-bcaa-434e-9638-8b21a2eeae5e",
+          "card": "9756bdd7-deb8-4a72-b94a-ee9f0fd4071b",
+          "suffix": "120",
+          "rarity": "common"
+        },
+        {
+          "id": "5a498c8e-4f3e-4924-91fe-9e80de877198",
+          "card": "f7ce5d01-e681-4206-8f45-05c913a100e7",
+          "suffix": "127",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c4/SRL-BoosterKR.jpg",
+      "cards": [
+        {
+          "id": "067d6986-3fd1-4f7e-a476-27e7d0848faa",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a437fb91-2408-4601-aedb-de7f3f0543d7",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "0f3c515a-8be2-4590-b7b7-d7892985d467",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "6a4171b6-91fb-4ae0-8511-08ee8bbb90b8",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "2bceaddb-9ca6-438a-97df-bc6477aa1c46",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e4/MRL-BoosterNA.png",
+      "cards": [
+        {
+          "id": "274ac39d-048e-47a7-81b1-953633f92a30",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "3aab29ae-9489-4600-baf5-fec3ab64175d",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "0ac4165d-af8d-4cba-a0de-7fbcf76675a8",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "801f000a-1ef2-44f5-9fe5-3fa19ff90233",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "e629b0c5-52cc-4f56-a094-eaa9f2aa0f71",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/8d/MRL-BoosterAE.jpg",
+      "cards": [
+        {
+          "id": "5f2bfe59-ba5f-43bb-ac57-5d128d764562",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a512a922-696a-43fd-bee7-06d34853414b",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "b1bff661-70be-47ed-80f8-b17eefaf6801",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "379ee498-4511-4c16-afa4-f1b5a7cf6a44",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "a5c3e0f0-3d39-4b3c-97d9-4ea253658f78",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/65/SDM-BoosterIT.jpg",
+      "cards": [
+        {
+          "id": "1e7266bc-7cef-47af-8a7b-0b5e5a8fd8ce",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "da0eea50-0063-40ca-8b9b-b699511638a4",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "e4757d57-9887-4a95-9228-33ecf706c7e2",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "49e1d8fb-5577-42f7-9450-65de33cb1d75",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "49811814-017a-4019-86ea-2a67ca76d493",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "8690422f-9934-4ffb-b6e7-588a7bec683d",
+          "card": "11153b83-49ec-45f3-840c-31709f1a241a",
+          "suffix": "112",
+          "rarity": "common"
+        },
+        {
+          "id": "cdc09894-6968-48f7-88af-f1c8f4cd2070",
+          "card": "1dd65f02-136f-437d-8036-528efaa0035b",
+          "suffix": "114",
+          "rarity": "common"
+        },
+        {
+          "id": "60004b7a-ce8d-497d-b875-8dd12ba21bd1",
+          "card": "6af5b63d-9772-44b5-859c-dc03872d2ec7",
+          "suffix": "115",
+          "rarity": "common"
+        },
+        {
+          "id": "8a98f063-d441-430b-ade3-7f15acefb5ac",
+          "card": "f943e901-e9bc-41fa-93bb-a6750932c9ea",
+          "suffix": "117",
+          "rarity": "common"
+        },
+        {
+          "id": "cac79116-4d93-4413-bedd-bd31e8761a7e",
+          "card": "9756bdd7-deb8-4a72-b94a-ee9f0fd4071b",
+          "suffix": "120",
+          "rarity": "common"
+        },
+        {
+          "id": "13ad2cec-0ae3-47ee-9550-370ce4e3c92f",
+          "card": "f7ce5d01-e681-4206-8f45-05c913a100e7",
+          "suffix": "127",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    },
+    {
+      "locales": [
+        "eu"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "05ca82bb-373c-4bf3-95a9-697f41855a89",
+      "packsPerBox": 24,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/ce/MRL-BoosterEU.jpg",
+      "cards": [
+        {
+          "id": "4803058b-232d-4fe0-a09d-ec05574f96ef",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "5e7d7a01-3286-4a68-b1fa-a8c6e753b30c",
+          "card": "def6c16f-933b-4b4d-a723-2e4f34207b97",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "2ded243d-1432-4ec0-8be0-e79cb51477d2",
+          "card": "8bae7c25-e8c3-4d0f-b576-9c4de9ca8c97",
+          "suffix": "040",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "0a2dbcb8-1e80-443e-a10a-79b11c70ca4f",
+          "card": "8f6f06b8-5c16-41fe-b653-d9c7ea7f44c6",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "6c725849-0ac2-4985-a094-0001eee99443",
+          "card": "064688e8-725d-4d13-a79c-8bb02a60fcde",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "2ffe5217-b658-44a9-9b15-a2d766d334ca",
+          "card": "a977ecbc-a174-4c39-b4bd-0a747611562e",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "048568bc-f5a2-4a10-a478-1d97a603c979",
+          "card": "11153b83-49ec-45f3-840c-31709f1a241a",
+          "suffix": "112",
+          "rarity": "common"
+        },
+        {
+          "id": "cdc09894-6968-48f7-88af-f1c8f4cd2070",
+          "card": "1dd65f02-136f-437d-8036-528efaa0035b",
+          "suffix": "114",
+          "rarity": "common"
+        },
+        {
+          "id": "dc710c61-a1ff-4d60-95c1-3e30c25efd28",
+          "card": "6af5b63d-9772-44b5-859c-dc03872d2ec7",
+          "suffix": "115",
+          "rarity": "common"
+        },
+        {
+          "id": "2545cab5-75b9-41bc-8948-9c091a66a57b",
+          "card": "f943e901-e9bc-41fa-93bb-a6750932c9ea",
+          "suffix": "117",
+          "rarity": "common"
+        },
+        {
+          "id": "c3a7764a-0fb2-4c58-a28b-6ac06dabcdde",
+          "card": "9756bdd7-deb8-4a72-b94a-ee9f0fd4071b",
+          "suffix": "120",
+          "rarity": "common"
+        },
+        {
+          "id": "ed0aa249-dff0-41af-9899-f2577f448a66",
+          "card": "f7ce5d01-e681-4206-8f45-05c913a100e7",
+          "suffix": "127",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Spell Ruler"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Spell Ruler",
+      "id": 117
+    }
+  }
+}

@@ -1,0 +1,931 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e5d373f3-d45d-420a-8805-6ea019c48f22",
+  "name": {
+    "en": "Soul Fusion",
+    "fr": "La Fusion de l'\u00c2me",
+    "de": "Soul Fusion",
+    "it": "Fusione delle Anime",
+    "pt": "Fus\u00e3o da Alma",
+    "es": "Fusi\u00f3n del Alma",
+    "ja": "\u30bd\u30a6\u30eb\u30fb\u30d5\u30e5\u30fc\u30b8\u30e7\u30f3",
+    "ko": "\uc18c\uc6b8 \ud4e8\uc804"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SOFU-EN",
+      "image": "https://ms.yugipedia.com//3/37/SOFU-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "b0208235-5046-40c1-a87c-5f1f4d9bfe47": "https://ms.yugipedia.com//0/08/SalamangreatFalco-SOFU-EN-C-1E.png",
+          "150a0537-9a03-4640-8c2c-eb477b335443": "https://ms.yugipedia.com//8/8a/SalamangreatJackJaguar-SOFU-EN-C-1E.png",
+          "309d7307-30a3-498b-acdf-e9f4dfb3a456": "https://ms.yugipedia.com//6/68/ThunderDragondark-SOFU-EN-UR-1E.png",
+          "08ed9036-23e1-4ab3-9e06-0bda029aa5ef": "https://ms.yugipedia.com//1/11/TwoforOneTeam-SOFU-EN-SP-1E.png",
+          "d77821a2-6f10-49bf-a9e6-b6360f9c283b": "https://ms.yugipedia.com//c/c2/SomeSummerSummoner-SOFU-EN-SR-1E.png",
+          "2720c4e7-bd51-4837-a95a-24b4d235f108": "https://ms.yugipedia.com//6/67/SalamangreatSanctuary-SOFU-EN-C-1E.png",
+          "2f7e2339-3d7f-4adf-b598-8f862fe96406": "https://ms.yugipedia.com//a/aa/ParallelPanzer-SOFU-EN-SP-1E.png",
+          "b87a2852-9646-4e48-82f5-4b8c1ffce80b": "https://ms.yugipedia.com//e/e1/TheRevengeoftheNormal-SOFU-EN-C-1E.png",
+          "04705d53-a118-4e64-9047-6ff67b8a3290": "https://ms.yugipedia.com//2/20/DangerMothman-SOFU-EN-SR-1E.png",
+          "106d7d6d-68da-4e69-ba13-c62deea4ff9c": "https://ms.yugipedia.com//4/4b/DangerTsuchinoko-SOFU-EN-ScR-1E.png",
+          "0b439bf3-e49b-455a-9689-17455466e878": "https://ms.yugipedia.com//5/5f/NobleKnightIyvanne-SOFU-EN-SR-1E.png",
+          "cd9b8cb0-badc-4234-bf78-da9ed714b268": "https://ms.yugipedia.com//b/bd/DDDFlameHighKingGenghis-SOFU-EN-C-1E.png",
+          "a88d87bc-e6d9-4432-aae5-df14a9ca3673": "https://ms.yugipedia.com//6/6a/Predaplast-SOFU-EN-C-1E.png"
+        },
+        "unlimited": {
+          "b0208235-5046-40c1-a87c-5f1f4d9bfe47": "https://ms.yugipedia.com//3/37/SalamangreatFalco-SOFU-EN-C-UE.png",
+          "150a0537-9a03-4640-8c2c-eb477b335443": "https://ms.yugipedia.com//c/c7/SalamangreatJackJaguar-SOFU-EN-C-UE.png",
+          "309d7307-30a3-498b-acdf-e9f4dfb3a456": "https://ms.yugipedia.com//0/0e/ThunderDragondark-SOFU-EN-UR-UE.png",
+          "08ed9036-23e1-4ab3-9e06-0bda029aa5ef": "https://ms.yugipedia.com//9/9f/TwoforOneTeam-SOFU-EN-SP-UE.png",
+          "d77821a2-6f10-49bf-a9e6-b6360f9c283b": "https://ms.yugipedia.com//e/ed/SomeSummerSummoner-SOFU-EN-SR-UE.png",
+          "2720c4e7-bd51-4837-a95a-24b4d235f108": "https://ms.yugipedia.com//1/18/SalamangreatSanctuary-SOFU-EN-C-UE.png",
+          "2f7e2339-3d7f-4adf-b598-8f862fe96406": "https://ms.yugipedia.com//3/3c/ParallelPanzer-SOFU-EN-SP-UE.png",
+          "b87a2852-9646-4e48-82f5-4b8c1ffce80b": "https://ms.yugipedia.com//7/79/TheRevengeoftheNormal-SOFU-EN-C-UE.png",
+          "04705d53-a118-4e64-9047-6ff67b8a3290": "https://ms.yugipedia.com//8/81/DangerMothman-SOFU-EN-SR-UE.png",
+          "106d7d6d-68da-4e69-ba13-c62deea4ff9c": "https://ms.yugipedia.com//2/24/DangerTsuchinoko-SOFU-EN-ScR-UE.png",
+          "0b439bf3-e49b-455a-9689-17455466e878": "https://ms.yugipedia.com//b/bd/NobleKnightIyvanne-SOFU-EN-SR-UE.png",
+          "cd9b8cb0-badc-4234-bf78-da9ed714b268": "https://ms.yugipedia.com//a/a4/DDDFlameHighKingGenghis-SOFU-EN-C-UE.png",
+          "a88d87bc-e6d9-4432-aae5-df14a9ca3673": "https://ms.yugipedia.com//5/52/Predaplast-SOFU-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11117009
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SOFU-IT",
+      "image": "https://ms.yugipedia.com//3/39/SOFU-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SOFU-SP",
+      "image": "https://ms.yugipedia.com//e/ef/SOFU-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "896da4c9-1f6f-41bf-9ace-c81239de6932": "https://ms.yugipedia.com//0/08/TheRevengeoftheNormal-SOFU-SP-C-1E.png",
+          "5d22943f-c1af-4383-ae4a-d110a8af53fb": "https://ms.yugipedia.com//3/37/NobleKnightIyvanne-SOFU-SP-SR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SOFU-JP",
+      "date": "2018-07-14",
+      "image": "https://ms.yugipedia.com//f/fd/SOFU-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "ce9df8f1-263f-43ca-a67f-3183474e545a": "https://ms.yugipedia.com//4/42/SalamangreatFalco-SOFU-JP-C.png",
+          "af92fb8b-f089-43e1-9b1f-22b958b643dc": "https://ms.yugipedia.com//8/81/SalamangreatJackJaguar-SOFU-JP-R.png",
+          "2a3332e7-71c3-49ba-8fed-e98afa728ca8": "https://ms.yugipedia.com//b/bc/ThunderDragondark-SOFU-JP-R.png",
+          "7393be58-b10e-4d4b-9a7b-81b29d15e11a": "https://ms.yugipedia.com//1/15/TwoforOneTeam-SOFU-JP-NR.png",
+          "cc0420a0-d22e-41ab-9bb2-943da2579356": "https://ms.yugipedia.com//a/a8/SomeSummerSummoner-SOFU-JP-SR.png",
+          "e726efe9-4069-4a4d-be3f-53c882639923": "https://ms.yugipedia.com//b/b9/SomeSummerSummoner-SOFU-JP-ScR.png",
+          "71890c54-e05d-43a0-9025-d857f1d34ce4": "https://ms.yugipedia.com//d/d2/SomeSummerSummoner-SOFU-JP-20ScR.png",
+          "3e4dc780-6396-48fb-8a70-0a6de11ee2fd": "https://ms.yugipedia.com//8/84/SalamangreatSanctuary-SOFU-JP-C.png",
+          "ff9f91ad-3a25-464c-9d23-0fb827637549": "https://ms.yugipedia.com//5/59/ParallelPanzer-SOFU-JP-NR.png",
+          "3566ac7a-4ad9-47a3-88b1-6528589dae2b": "https://ms.yugipedia.com//e/ee/TheRevengeoftheNormal-SOFU-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121001
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SOFU-DE",
+      "image": "https://ms.yugipedia.com//6/6c/SOFU-BoosterDE.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SOFU-FR",
+      "image": "https://ms.yugipedia.com//1/10/SOFU-BoosterFR.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SOFU-PT",
+      "date": "2018-10-18",
+      "image": "https://ms.yugipedia.com//d/d5/SOFU-BoosterPT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SOFU-KR",
+      "date": "2018-10-23",
+      "image": "https://ms.yugipedia.com//c/c1/SOFU-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "30ee9bd2-11b3-4be2-8576-b3dce7f3dd7b": "https://ms.yugipedia.com//d/db/SalamangreatFalco-SOFU-KR-C-UE.png",
+          "2886c0c0-d792-43cf-b792-6c8379e7f9b2": "https://ms.yugipedia.com//a/a7/SalamangreatJackJaguar-SOFU-KR-R-UE.png",
+          "f4c738e6-d8d3-48b8-b433-44fd593d3475": "https://ms.yugipedia.com//4/47/ThunderDragondark-SOFU-KR-R-UE.png",
+          "544fac5b-1d63-4b33-b03c-30b533e5bca9": "https://ms.yugipedia.com//3/34/TwoforOneTeam-SOFU-KR-NR-UE.png",
+          "57d39879-3a74-48ab-a5b5-776662e9a3ef": "https://ms.yugipedia.com//b/ba/SomeSummerSummoner-SOFU-KR-SR-UE.png",
+          "7be6981f-9548-47ae-b1fd-67554e5a5b01": "https://ms.yugipedia.com//5/5f/SomeSummerSummoner-SOFU-KR-ScR-UE.png",
+          "bb94fd2b-0452-4d31-8195-8aacb6b2bad8": "https://ms.yugipedia.com//c/c7/SalamangreatSanctuary-SOFU-KR-C-UE.png",
+          "0f254462-ab14-4261-98ff-fec86281f5d8": "https://ms.yugipedia.com//9/9d/ParallelPanzer-SOFU-KR-NR-UE.png",
+          "427947d9-fbdc-44aa-9715-23e8a11b7e74": "https://ms.yugipedia.com//4/4b/TheRevengeoftheNormal-SOFU-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71116003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/37/SOFU-BoosterEN.png",
+      "cards": [
+        {
+          "id": "b0208235-5046-40c1-a87c-5f1f4d9bfe47",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "150a0537-9a03-4640-8c2c-eb477b335443",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "309d7307-30a3-498b-acdf-e9f4dfb3a456",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "08ed9036-23e1-4ab3-9e06-0bda029aa5ef",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "d77821a2-6f10-49bf-a9e6-b6360f9c283b",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "2720c4e7-bd51-4837-a95a-24b4d235f108",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "2f7e2339-3d7f-4adf-b598-8f862fe96406",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "b87a2852-9646-4e48-82f5-4b8c1ffce80b",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "04705d53-a118-4e64-9047-6ff67b8a3290",
+          "card": "d19f0591-97e7-4f97-aa82-e35ae8cddc73",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "106d7d6d-68da-4e69-ba13-c62deea4ff9c",
+          "card": "6827293b-8da2-4122-ae33-7178ae9c6b5b",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "0b439bf3-e49b-455a-9689-17455466e878",
+          "card": "2e45925b-7374-4f55-b217-92e28df8eaf1",
+          "suffix": "088",
+          "rarity": "super"
+        },
+        {
+          "id": "cd9b8cb0-badc-4234-bf78-da9ed714b268",
+          "card": "403639f4-db3c-4da9-ac02-abb06f970a5b",
+          "suffix": "095",
+          "rarity": "common"
+        },
+        {
+          "id": "a88d87bc-e6d9-4432-aae5-df14a9ca3673",
+          "card": "d9fee886-d06c-4b82-ab77-5d58efc39ef6",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/39/SOFU-BoosterIT.png",
+      "cards": [
+        {
+          "id": "ede3ad72-1d2f-40c9-a6e5-6ead2270642d",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "b81d670c-6343-46c5-bc7d-fdde3b24c072",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "191fbacf-866a-4ca3-b383-09c2749d9400",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1e8f61fe-8d9a-4df8-974d-6dbb05b83547",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "9855fb50-38c5-4cc9-a98e-651dd8326096",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "538d843f-e435-45e2-ae7f-1c33bafbfed4",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "ed503ac5-0f68-4108-b86c-797ac85164c1",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "a62811c5-7624-4d26-a366-ba9e836a6f0e",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "1b681b40-52c2-44f5-b6a4-ccb95fa15a07",
+          "card": "d19f0591-97e7-4f97-aa82-e35ae8cddc73",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "e29b3e80-b78c-4dc6-a73d-6fd4b2d5dbd9",
+          "card": "6827293b-8da2-4122-ae33-7178ae9c6b5b",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "9745faab-584f-4c1b-a069-f97b6ec14ba9",
+          "card": "2e45925b-7374-4f55-b217-92e28df8eaf1",
+          "suffix": "088",
+          "rarity": "super"
+        },
+        {
+          "id": "70e37c83-65ee-477b-bd1f-03f09a7ecf76",
+          "card": "403639f4-db3c-4da9-ac02-abb06f970a5b",
+          "suffix": "095",
+          "rarity": "common"
+        },
+        {
+          "id": "0677b874-6578-4742-a851-d1489f44676a",
+          "card": "d9fee886-d06c-4b82-ab77-5d58efc39ef6",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/ef/SOFU-BoosterSP.png",
+      "cards": [
+        {
+          "id": "be98a02c-713f-462f-b464-7b842cb8b04f",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "1054528b-4175-4017-9877-f8ab7af93af9",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "ade3c088-9a0e-4f79-b3d4-b8e14a51d031",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0ec5db7c-d88a-4242-bfa7-90d6094ebff5",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "5169f95b-0ca0-4b3f-9df4-178aeec27ba1",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "dcd6339f-47f6-4798-ab22-b08994b9aabe",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "cc426ffd-457a-48ef-94b5-9ca4ece773b3",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "896da4c9-1f6f-41bf-9ace-c81239de6932",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "f08b8784-9f92-4ebd-9e03-0d61c4ee0c56",
+          "card": "d19f0591-97e7-4f97-aa82-e35ae8cddc73",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "406fe8b6-5e00-4d2a-8584-dbf16b9de929",
+          "card": "6827293b-8da2-4122-ae33-7178ae9c6b5b",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "5d22943f-c1af-4383-ae4a-d110a8af53fb",
+          "card": "2e45925b-7374-4f55-b217-92e28df8eaf1",
+          "suffix": "088",
+          "rarity": "super"
+        },
+        {
+          "id": "1c91f7e0-10e3-4aa7-bdc4-e9c597f4787e",
+          "card": "403639f4-db3c-4da9-ac02-abb06f970a5b",
+          "suffix": "095",
+          "rarity": "common"
+        },
+        {
+          "id": "ce1c06f4-4600-4ad0-81a4-6110a96872e7",
+          "card": "d9fee886-d06c-4b82-ab77-5d58efc39ef6",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/fd/SOFU-BoosterJP.png",
+      "cards": [
+        {
+          "id": "ce9df8f1-263f-43ca-a67f-3183474e545a",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "af92fb8b-f089-43e1-9b1f-22b958b643dc",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "2a3332e7-71c3-49ba-8fed-e98afa728ca8",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "7393be58-b10e-4d4b-9a7b-81b29d15e11a",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "cc0420a0-d22e-41ab-9bb2-943da2579356",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "e726efe9-4069-4a4d-be3f-53c882639923",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "secret"
+        },
+        {
+          "id": "71890c54-e05d-43a0-9025-d857f1d34ce4",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "20thsecret"
+        },
+        {
+          "id": "3e4dc780-6396-48fb-8a70-0a6de11ee2fd",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "ff9f91ad-3a25-464c-9d23-0fb827637549",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "3566ac7a-4ad9-47a3-88b1-6528589dae2b",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/6c/SOFU-BoosterDE.png",
+      "cards": [
+        {
+          "id": "3a3df408-d39f-43e1-b319-686df8b27fe9",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "edc8911f-2fb6-460f-85ea-a7e147f034be",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f6ecf1a2-c7d2-4acd-a777-4ba161b6cf99",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aecd9276-1340-4da7-ba11-319d942ff471",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "6395b988-f2b5-4fdf-8587-1eb85a01947b",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "41e0bbb4-3f8d-4f2b-a67f-26061d9400db",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "586fbf53-d38a-449a-9732-1b9401f84a6c",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "5d8055e0-f841-4e9c-942e-b5cb3ed331bd",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "bf88e4b9-3497-4b6b-9403-1dd0c7660751",
+          "card": "d19f0591-97e7-4f97-aa82-e35ae8cddc73",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "b29fbd74-2927-4b45-a0e6-a5391db323f3",
+          "card": "6827293b-8da2-4122-ae33-7178ae9c6b5b",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "56c44726-e79a-4f3f-aa79-d91953449fda",
+          "card": "2e45925b-7374-4f55-b217-92e28df8eaf1",
+          "suffix": "088",
+          "rarity": "super"
+        },
+        {
+          "id": "fba2b99d-2d4d-4ec6-8e56-364a62160f49",
+          "card": "403639f4-db3c-4da9-ac02-abb06f970a5b",
+          "suffix": "095",
+          "rarity": "common"
+        },
+        {
+          "id": "f9f17e88-ca75-4581-a461-3a746f75832b",
+          "card": "d9fee886-d06c-4b82-ab77-5d58efc39ef6",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/10/SOFU-BoosterFR.png",
+      "cards": [
+        {
+          "id": "730eace6-a207-404b-a70a-0a2f0521f71b",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "6ac04fe3-5c7b-4309-86f4-e5e92293c659",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "0d26bd94-5d86-422c-ac2b-2e97a046d35e",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3cc05589-2999-4b54-ad39-9238145b691c",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "f51f17cc-da32-43be-a6a3-c21a6bae31d7",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "1eb7c4a8-6971-4933-8100-c2e95437b2af",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "56783f96-1bac-4f6f-80ab-e35f09952d2e",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "e151f432-fa57-40cc-88d0-f24ef5a6de75",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "39c37097-fabf-4b5e-af0f-f468275aed4b",
+          "card": "d19f0591-97e7-4f97-aa82-e35ae8cddc73",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "49237c35-de93-46eb-84ab-28ac93929553",
+          "card": "6827293b-8da2-4122-ae33-7178ae9c6b5b",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "e766b6ca-28ab-4c1d-b23a-d0c9809122c8",
+          "card": "2e45925b-7374-4f55-b217-92e28df8eaf1",
+          "suffix": "088",
+          "rarity": "super"
+        },
+        {
+          "id": "acb2ba8d-90fa-4230-977d-02d3b5add1ff",
+          "card": "403639f4-db3c-4da9-ac02-abb06f970a5b",
+          "suffix": "095",
+          "rarity": "common"
+        },
+        {
+          "id": "1fb72d41-86eb-412a-9f85-566dde6689b9",
+          "card": "d9fee886-d06c-4b82-ab77-5d58efc39ef6",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d5/SOFU-BoosterPT.png",
+      "cards": [
+        {
+          "id": "7f7cc4a0-784a-4b04-8406-b5808567dd96",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "c4493bea-3f44-4ddb-8ba7-addef49d5b21",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "168b11c3-4d87-486e-b8c5-8edde142c583",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5f9e3ee9-add2-4c75-8b63-132da813c7cd",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "3201551c-8e6f-413a-9827-394814e2845d",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "c298b1ed-9135-41dc-832a-71da2c536377",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "dcbb3929-9d5f-46a0-a5c0-6bbadfec5d98",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "46585cd8-7f15-438c-b40f-1daa03bc395f",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "b6869600-7f13-4776-95e6-74cc309c3a8f",
+          "card": "d19f0591-97e7-4f97-aa82-e35ae8cddc73",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "36755696-123d-4c77-9308-700f49fb75c4",
+          "card": "6827293b-8da2-4122-ae33-7178ae9c6b5b",
+          "suffix": "085",
+          "rarity": "secret"
+        },
+        {
+          "id": "01ac254f-d866-478f-8e0b-fe6fd4af9b76",
+          "card": "2e45925b-7374-4f55-b217-92e28df8eaf1",
+          "suffix": "088",
+          "rarity": "super"
+        },
+        {
+          "id": "d590e32f-319e-4de7-bafc-c1f1c1459586",
+          "card": "403639f4-db3c-4da9-ac02-abb06f970a5b",
+          "suffix": "095",
+          "rarity": "common"
+        },
+        {
+          "id": "172f414a-25ff-48e7-a436-34d702c6a79c",
+          "card": "d9fee886-d06c-4b82-ab77-5d58efc39ef6",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c1/SOFU-BoosterKR.png",
+      "cards": [
+        {
+          "id": "30ee9bd2-11b3-4be2-8576-b3dce7f3dd7b",
+          "card": "22d343fa-efaf-4421-9b8c-7ab0558f1259",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "2886c0c0-d792-43cf-b792-6c8379e7f9b2",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "005",
+          "rarity": "rare"
+        },
+        {
+          "id": "f4c738e6-d8d3-48b8-b433-44fd593d3475",
+          "card": "746b2ce6-6418-41ab-a0f3-80f96d5495e0",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "544fac5b-1d63-4b33-b03c-30b533e5bca9",
+          "card": "eac06722-351e-442c-aeb6-80dbc53b69e7",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "57d39879-3a74-48ab-a5b5-776662e9a3ef",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "7be6981f-9548-47ae-b1fd-67554e5a5b01",
+          "card": "316ce6de-ad5d-464a-81c4-ea7ac091f2e2",
+          "suffix": "049",
+          "rarity": "secret"
+        },
+        {
+          "id": "bb94fd2b-0452-4d31-8195-8aacb6b2bad8",
+          "card": "c0207a21-6b32-4d96-bc31-f707991bdf38",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "0f254462-ab14-4261-98ff-fec86281f5d8",
+          "card": "86e3407c-3fec-46a5-9136-d7c5044d7b82",
+          "suffix": "066",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "427947d9-fbdc-44aa-9715-23e8a11b7e74",
+          "card": "0d73281d-1d65-4434-8062-d501f7293721",
+          "suffix": "079",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Soul Fusion",
+      "id": 555844
+    }
+  }
+}

@@ -1,0 +1,1228 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "85a1680b-873c-4eb4-9c28-4f7cf8aab4d9",
+  "name": {
+    "en": "Light of Destruction",
+    "fr": "Lumi\u00e8re de la Destruction",
+    "de": "Light of Destruction",
+    "it": "Luce della Distruzione",
+    "es": "Luz de la Destrucci\u00f3n",
+    "ja": "\u30e9\u30a4\u30c8\u30fb\u30aa\u30d6\u30fb\u30c7\u30b9\u30c8\u30e9\u30af\u30b7\u30e7\u30f3",
+    "ko": "\ud30c\uad34\uc758 \ube5b"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "LODT-EN",
+      "image": "https://ms.yugipedia.com//1/15/LODT-Booster-EN-1E.png",
+      "cardImages": {
+        "1st": {
+          "655297f4-01e3-4325-ab79-93108b11086a": "https://ms.yugipedia.com//3/30/VolcanicQueen-LODT-EN-C-1E.png",
+          "f12155f3-cc1d-48c2-bdfb-2ac87705bc77": "https://ms.yugipedia.com//6/6a/ArcanaForceITheMagician-LODT-EN-C-1E.png",
+          "44173b5c-f8b4-4931-a1e5-e2b1ad7d8f1b": "https://ms.yugipedia.com//b/bb/ArcanaForceIVTheEmperor-LODT-EN-C-1E.png",
+          "62ac1987-6a88-4a0f-be2f-73cedb2080a0": "https://ms.yugipedia.com//3/36/ArcanaForceVITheLovers-LODT-EN-C-1E.png",
+          "6621f73c-16bc-4f34-a939-d875715da382": "https://ms.yugipedia.com//5/52/BatterymanMicroCell-LODT-EN-C-1E.png",
+          "8bc83cc7-80d8-4cad-8106-2df79c1e3dc9": "https://ms.yugipedia.com//a/af/SimorghBirdofAncestry-LODT-EN-R-1E.png",
+          "dea6fd2d-b1ab-44b7-8be8-c9353dc17455": "https://ms.yugipedia.com//4/49/CloudianStormDragon-LODT-EN-C-1E.png",
+          "adbc3371-bca5-4d4f-9c91-7d69c2355983": "https://ms.yugipedia.com//b/b0/DestinyEndDragoon-LODT-EN-UR-1E.png",
+          "8080ff18-2803-4984-90b5-9ed13ef39343": "https://ms.yugipedia.com//0/02/DestinyEndDragoon-LODT-EN-UtR-1E.png",
+          "279bf517-d988-4a6b-877b-68f69886f1fe": "https://ms.yugipedia.com//e/e9/CupofAce-LODT-EN-C-1E.png",
+          "be851a83-c650-4ca6-87c1-7cf59e8f6ac1": "https://ms.yugipedia.com//e/eb/RealmofLight-LODT-EN-C-1E.png",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//c/c3/LightofRedemption-LODT-EN-SR-1E.png",
+          "5f6dba89-baf0-403f-a3bd-9245de0a06fe": "https://ms.yugipedia.com//8/8a/RainbowGravity-LODT-EN-C-1E.png",
+          "396074df-1fe4-4ec0-9fa9-130b8873f685": "https://ms.yugipedia.com//7/78/RagingCloudian-LODT-EN-C-1E.png",
+          "107f39d6-27a5-4b5a-bc1b-31c5e44727b6": "https://ms.yugipedia.com//0/06/SummonLimit-LODT-EN-C-1E.png",
+          "4be4fbc2-f649-4325-8141-9c732de8e317": "https://ms.yugipedia.com//c/cf/DiceTry-LODT-EN-C-1E.png",
+          "299c6fd0-6000-476e-acb5-e6a5993c7a67": "https://ms.yugipedia.com//d/dc/NimbleMusasabi-LODT-EN-R-1E.png",
+          "dd313c7b-7831-4d37-83ed-043ddd96a5a6": "https://ms.yugipedia.com//0/06/MaximumSix-LODT-EN-UR-1E.png",
+          "b2602737-872d-4772-9c97-f553c48dccf9": "https://ms.yugipedia.com//6/69/MaximumSix-LODT-EN-UtR-1E.png"
+        },
+        "unlimited": {
+          "655297f4-01e3-4325-ab79-93108b11086a": "https://ms.yugipedia.com//0/06/VolcanicQueen-LODT-EN-C-UE.png",
+          "f12155f3-cc1d-48c2-bdfb-2ac87705bc77": "https://ms.yugipedia.com//0/09/ArcanaForceITheMagician-LODT-EN-C-UE.png",
+          "44173b5c-f8b4-4931-a1e5-e2b1ad7d8f1b": "https://ms.yugipedia.com//f/fd/ArcanaForceIVTheEmperor-LODT-EN-C-UE.png",
+          "62ac1987-6a88-4a0f-be2f-73cedb2080a0": "https://ms.yugipedia.com//0/0b/ArcanaForceVITheLovers-LODT-EN-C-UE.png",
+          "6621f73c-16bc-4f34-a939-d875715da382": "https://ms.yugipedia.com//5/50/BatterymanMicroCell-LODT-EN-C-UE.png",
+          "8bc83cc7-80d8-4cad-8106-2df79c1e3dc9": "https://ms.yugipedia.com//7/7f/SimorghBirdofAncestry-LODT-EN-R-UE.png",
+          "dea6fd2d-b1ab-44b7-8be8-c9353dc17455": "https://ms.yugipedia.com//6/64/CloudianStormDragon-LODT-EN-C-UE.png",
+          "adbc3371-bca5-4d4f-9c91-7d69c2355983": "https://ms.yugipedia.com//3/39/DestinyEndDragoon-LODT-EN-UR-UE.png",
+          "8080ff18-2803-4984-90b5-9ed13ef39343": "https://ms.yugipedia.com//b/b5/DestinyEndDragoon-LODT-EN-UtR-UE.png",
+          "279bf517-d988-4a6b-877b-68f69886f1fe": "https://ms.yugipedia.com//c/c0/CupofAce-LODT-EN-C-UE.png",
+          "be851a83-c650-4ca6-87c1-7cf59e8f6ac1": "https://ms.yugipedia.com//6/67/RealmofLight-LODT-EN-C-UE.png",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//0/0a/LightofRedemption-LODT-EN-SR-UE.jpg",
+          "5f6dba89-baf0-403f-a3bd-9245de0a06fe": "https://ms.yugipedia.com//6/6a/RainbowGravity-LODT-EN-C-UE.png",
+          "396074df-1fe4-4ec0-9fa9-130b8873f685": "https://ms.yugipedia.com//7/74/RagingCloudian-LODT-EN-C-UE.png",
+          "107f39d6-27a5-4b5a-bc1b-31c5e44727b6": "https://ms.yugipedia.com//9/97/SummonLimit-LODT-EN-C-UE.png",
+          "4be4fbc2-f649-4325-8141-9c732de8e317": "https://ms.yugipedia.com//6/67/DiceTry-LODT-EN-C-UE.png",
+          "299c6fd0-6000-476e-acb5-e6a5993c7a67": "https://ms.yugipedia.com//d/d1/NimbleMusasabi-LODT-EN-R-UE.png",
+          "dd313c7b-7831-4d37-83ed-043ddd96a5a6": "https://ms.yugipedia.com//3/3b/MaximumSix-LODT-EN-UR-UE.jpg",
+          "b2602737-872d-4772-9c97-f553c48dccf9": "https://ms.yugipedia.com//8/84/MaximumSix-LODT-EN-UtR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          161601230
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "LODT-IT",
+      "cardImages": {
+        "1st": {
+          "fec37686-5c29-4a9d-bffd-b063dfd2ddda": "https://ms.yugipedia.com//4/40/VolcanicQueen-LODT-IT-C-1E.png",
+          "ca4fbddb-762b-48e8-a672-2b7623e7b0ef": "https://ms.yugipedia.com//9/92/ArcanaForceITheMagician-LODT-IT-C-1E.jpg",
+          "1097a286-8b2c-49ea-9dfe-38063424a179": "https://ms.yugipedia.com//d/dc/ArcanaForceIVTheEmperor-LODT-IT-C-1E.jpg",
+          "a83444db-e999-4776-b667-fc98c926a17c": "https://ms.yugipedia.com//f/fd/ArcanaForceVITheLovers-LODT-IT-C-1E.jpg",
+          "6621f73c-16bc-4f34-a939-d875715da382": "https://ms.yugipedia.com//4/46/BatterymanMicroCell-LODT-IT-C-1E.png",
+          "50d079b6-a3e6-4c3f-a84b-a41bec91ce96": "https://ms.yugipedia.com//d/dd/SimorghBirdofAncestry-LODT-IT-R-1E.jpg",
+          "dea6fd2d-b1ab-44b7-8be8-c9353dc17455": "https://ms.yugipedia.com//9/95/CloudianStormDragon-LODT-IT-C-1E.jpg",
+          "2ee77a2c-cb8e-473c-8d54-ba5930f576c2": "https://ms.yugipedia.com//c/cb/DestinyEndDragoon-LODT-IT-UR-1E.png",
+          "b4743e91-38e0-46f2-8c1a-c99d8f979b5b": "https://ms.yugipedia.com//a/a8/CupofAce-LODT-IT-C-1E.jpg",
+          "be851a83-c650-4ca6-87c1-7cf59e8f6ac1": "https://ms.yugipedia.com//5/56/RealmofLight-LODT-IT-C-1E.png",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//b/b8/LightofRedemption-LODT-IT-SR-1E.jpg",
+          "a985df8f-d12b-468e-84ec-27367d05efe8": "https://ms.yugipedia.com//2/27/RainbowGravity-LODT-IT-C-1E.jpg",
+          "09a279a9-fa40-4fed-ba03-6dac1bbab79f": "https://ms.yugipedia.com//e/e2/RagingCloudian-LODT-IT-C-1E.jpg",
+          "107f39d6-27a5-4b5a-bc1b-31c5e44727b6": "https://ms.yugipedia.com//3/32/SummonLimit-LODT-IT-C-1E.jpg",
+          "1ba44764-affa-45cf-9fd2-093b6ae3c5d3": "https://ms.yugipedia.com//b/b7/DiceTry-LODT-IT-C-1E.jpg",
+          "a7c76f62-7960-44c8-9435-e5e302eca46a": "https://ms.yugipedia.com//b/bb/NimbleMusasabi-LODT-IT-R-1E.jpg",
+          "50f5c615-792a-446e-b6d1-48841edbe542": "https://ms.yugipedia.com//4/45/MaximumSix-LODT-IT-UR-1E.jpg",
+          "040142e8-3f2f-411f-9ebf-155717c2fc9c": "https://ms.yugipedia.com//3/3c/MaximumSix-LODT-IT-UtR-1E.jpg"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41107001
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "LODT-SP",
+      "image": "https://ms.yugipedia.com//4/47/LODT-BoosterSP.jpg",
+      "cardImages": {
+        "1st": {
+          "6712af18-5e83-4cd6-9fd6-7e7196b1697c": "https://ms.yugipedia.com//b/b3/VolcanicQueen-LODT-SP-C-1E.png",
+          "c9f8dce1-4c94-4c8d-8a8f-18e6501d4fd5": "https://ms.yugipedia.com//9/98/ArcanaForceITheMagician-LODT-SP-C-1E.png",
+          "44c3ba28-0755-4684-8cb7-fb526a5bbde4": "https://ms.yugipedia.com//c/cf/ArcanaForceIVTheEmperor-LODT-SP-C-1E.png",
+          "18232685-0e01-4dd6-9051-9fe3b539898b": "https://ms.yugipedia.com//b/b3/ArcanaForceVITheLovers-LODT-SP-C-1E.png",
+          "6621f73c-16bc-4f34-a939-d875715da382": "https://ms.yugipedia.com//f/fe/BatterymanMicroCell-LODT-SP-C-1E.png",
+          "47cc184c-73ab-4e5a-b847-be9f06f9b373": "https://ms.yugipedia.com//6/61/SimorghBirdofAncestry-LODT-SP-R-1E.png",
+          "0d9529a4-1353-47d0-b207-215344e9f5ad": "https://ms.yugipedia.com//d/d0/DestinyEndDragoon-LODT-SP-UR-1E.png",
+          "d6862d37-c589-4d46-b582-707479c4a65e": "https://ms.yugipedia.com//7/79/RainbowGravity-LODT-SP-C-1E.png",
+          "343e6a9e-0d15-4743-a276-1ee000c9040a": "https://ms.yugipedia.com//c/cb/RagingCloudian-LODT-SP-C-1E.png",
+          "911547fb-dbfa-4c58-a0e9-968bea6d279d": "https://ms.yugipedia.com//4/43/NimbleMusasabi-LODT-SP-R-1E.jpg"
+        },
+        "unlimited": {
+          "44c3ba28-0755-4684-8cb7-fb526a5bbde4": "https://ms.yugipedia.com//5/5c/ArcanaForceIVTheEmperor-LODT-SP-C-UE.png",
+          "6621f73c-16bc-4f34-a939-d875715da382": "https://ms.yugipedia.com//0/00/BatterymanMicroCell-LODT-SP-C-UE.png",
+          "600fc341-6581-4676-af63-01db37fb8818": "https://ms.yugipedia.com//f/f0/MaximumSix-LODT-SP-UR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51106001
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "LODT-JP",
+      "date": "2008-02-23",
+      "image": "https://ms.yugipedia.com//8/8d/LODT-BoosterJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "f544c4b3-60b7-4161-98c5-7558f3672f30": "https://ms.yugipedia.com//d/d9/VolcanicQueen-LODT-JP-C.png",
+          "f37c03f1-d36e-4200-979c-7c5d59a8e99e": "https://ms.yugipedia.com//9/96/ArcanaForceITheMagician-LODT-JP-C.jpg",
+          "83ff950c-5268-4a30-af71-f951c1490d56": "https://ms.yugipedia.com//b/b0/ArcanaForceIVTheEmperor-LODT-JP-C.jpg",
+          "ae86a451-d12a-43a3-8cc2-049cad408e23": "https://ms.yugipedia.com//a/a1/ArcanaForceVITheLovers-LODT-JP-C.jpg",
+          "8268efdf-21e4-41ab-8135-da346fb649a1": "https://ms.yugipedia.com//0/05/BatterymanMicroCell-LODT-JP-R.jpg",
+          "844dd3d5-7059-47ce-a766-d77bc4da3f14": "https://ms.yugipedia.com//c/cc/SimorghBirdofAncestry-LODT-JP-R.jpg",
+          "dea6fd2d-b1ab-44b7-8be8-c9353dc17455": "https://ms.yugipedia.com//3/37/CloudianStormDragon-LODT-JP-C.jpg",
+          "28be83fd-96f3-4ace-8112-6e0737e3183e": "https://ms.yugipedia.com//0/09/DestinyEndDragoon-LODT-JP-UR.jpg",
+          "b523f1ff-01ff-4075-8851-11594bd1e781": "https://ms.yugipedia.com//6/6b/DestinyEndDragoon-LODT-JP-UtR.jpg",
+          "d7d33860-8788-45a0-b234-ed9fbe8dcee2": "https://ms.yugipedia.com//0/08/CupofAce-LODT-JP-C.jpg",
+          "3b8bc95f-237d-4485-98d0-0f8c5be0cd25": "https://ms.yugipedia.com//5/54/RealmofLight-LODT-JP-R.jpg",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//c/ce/LightofRedemption-LODT-JP-SR.jpg",
+          "08bb6a66-a957-4166-987a-728b14eee5f3": "https://ms.yugipedia.com//3/3e/RainbowGravity-LODT-JP-C.jpg",
+          "a4916262-4764-4622-80d7-7716c31379e7": "https://ms.yugipedia.com//a/a3/RagingCloudian-LODT-JP-C.jpg",
+          "6a30b4e8-76e0-4bfd-998e-4176dd5b69a7": "https://ms.yugipedia.com//0/0b/SummonLimit-LODT-JP-R.jpg",
+          "c11a55b1-f211-466b-a9a1-28ca8e7905ed": "https://ms.yugipedia.com//e/e6/DiceTry-LODT-JP-NR.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1110003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "LODT-DE",
+      "image": "https://ms.yugipedia.com//3/3a/LODT-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "c5e2a90f-083d-47ed-9ba2-b1d190eac3f0": "https://ms.yugipedia.com//c/cf/VolcanicQueen-LODT-DE-C-1E.png",
+          "a9a9538e-1e22-4cb2-a915-057b60b39f5f": "https://ms.yugipedia.com//0/0c/ArcanaForceITheMagician-LODT-DE-C-1E.jpg",
+          "dcd21a81-8f1f-4420-9b48-f0155c140e52": "https://ms.yugipedia.com//f/f8/ArcanaForceIVTheEmperor-LODT-DE-C-1E.png",
+          "232a4eb9-8d9e-4407-963f-a0f4c27b6b81": "https://ms.yugipedia.com//a/a6/ArcanaForceVITheLovers-LODT-DE-C-1E.jpg",
+          "6621f73c-16bc-4f34-a939-d875715da382": "https://ms.yugipedia.com//2/23/BatterymanMicroCell-LODT-DE-C-1E.jpg",
+          "396e3d1a-ad8f-49e3-bc06-4cf54bb54877": "https://ms.yugipedia.com//5/5e/SimorghBirdofAncestry-LODT-DE-R-1E.jpg",
+          "dea6fd2d-b1ab-44b7-8be8-c9353dc17455": "https://ms.yugipedia.com//9/99/CloudianStormDragon-LODT-DE-C-1E.jpg",
+          "fdcb9587-d342-46f1-96f3-388b7f395295": "https://ms.yugipedia.com//f/f8/DestinyEndDragoon-LODT-DE-UR-1E.jpg",
+          "f1a0b983-fd5b-4237-9b5e-03f321bfc049": "https://ms.yugipedia.com//e/e1/DestinyEndDragoon-LODT-DE-UtR-1E.png",
+          "2f15e489-3715-42af-b938-b0d760c0462f": "https://ms.yugipedia.com//2/20/CupofAce-LODT-DE-C-1E.jpg",
+          "be851a83-c650-4ca6-87c1-7cf59e8f6ac1": "https://ms.yugipedia.com//d/de/RealmofLight-LODT-DE-C-1E.png",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//b/b4/LightofRedemption-LODT-DE-SR-1E.jpg",
+          "73c37aab-ba6b-4864-a81f-5fb751e5d0a2": "https://ms.yugipedia.com//4/41/RainbowGravity-LODT-DE-C-1E.jpg",
+          "27897ab9-cd7b-4a6d-9158-8cb5b2b4445d": "https://ms.yugipedia.com//a/a0/RagingCloudian-LODT-DE-C-1E.jpg",
+          "107f39d6-27a5-4b5a-bc1b-31c5e44727b6": "https://ms.yugipedia.com//d/de/SummonLimit-LODT-DE-C-1E.jpg",
+          "9ba15007-fd10-4239-94d0-ff8bf62de072": "https://ms.yugipedia.com//6/6e/DiceTry-LODT-DE-C-1E.jpg",
+          "0635f6ba-acbb-4232-acd6-c10c4aeead5d": "https://ms.yugipedia.com//5/58/NimbleMusasabi-LODT-DE-R-1E.jpg",
+          "27e77e0e-8316-4876-a3f1-fe32eb57fd69": "https://ms.yugipedia.com//0/03/MaximumSix-LODT-DE-UR-1E.jpg",
+          "4c5c66a3-600e-49b0-be45-3c79e41250d9": "https://ms.yugipedia.com//7/7d/MaximumSix-LODT-DE-UtR-1E.jpg"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21107001
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "LODT-FR",
+      "image": "https://ms.yugipedia.com//8/8a/LODT-BoosterFR.jpg",
+      "cardImages": {
+        "1st": {
+          "b217a7a1-17d3-4281-842d-c0233a33e32c": "https://ms.yugipedia.com//4/42/ArcanaForceIVTheEmperor-LODT-FR-C-1E.png",
+          "7527a89b-e222-4942-a1de-10615c73127c": "https://ms.yugipedia.com//1/14/ArcanaForceVITheLovers-LODT-FR-C-1E.png",
+          "9d8a98d2-8d2e-4148-b996-20a730f9da29": "https://ms.yugipedia.com//b/b3/SimorghBirdofAncestry-LODT-FR-R-1E.jpg",
+          "743dded7-e03e-4520-b9e4-088c13cb6b7f": "https://ms.yugipedia.com//f/fc/DestinyEndDragoon-LODT-FR-UR-1E.jpg",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//5/53/LightofRedemption-LODT-FR-SR-1E.jpg",
+          "5b33c04f-6f8d-436d-a0b6-0e08b580f9ce": "https://ms.yugipedia.com//7/70/NimbleMusasabi-LODT-FR-R-1E.png",
+          "4c24bbf9-6067-4425-9358-7661501742ba": "https://ms.yugipedia.com//6/63/MaximumSix-LODT-FR-UR-1E.png",
+          "4fa0bfe2-7347-4c04-b0b7-64c746297430": "https://ms.yugipedia.com//7/74/MaximumSix-LODT-FR-UtR-1E.png"
+        },
+        "unlimited": {
+          "be851a83-c650-4ca6-87c1-7cf59e8f6ac1": "https://ms.yugipedia.com//7/71/RealmofLight-LODT-FR-C-UE.png",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//8/84/LightofRedemption-LODT-FR-SR-UE.jpg",
+          "bf19186b-3c5a-4e7b-a38e-36a6ca563e7b": "https://ms.yugipedia.com//8/81/RainbowGravity-LODT-FR-C-UE.png",
+          "4c24bbf9-6067-4425-9358-7661501742ba": "https://ms.yugipedia.com//9/99/MaximumSix-LODT-FR-UR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31107001
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "LODT-KR",
+      "date": "2008-06-02",
+      "image": "https://ms.yugipedia.com//8/84/LODT-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "c095348e-693b-4613-b8ed-0493ba524040": "https://ms.yugipedia.com//2/2c/VolcanicQueen-LODT-KR-C-1E.png",
+          "8268efdf-21e4-41ab-8135-da346fb649a1": "https://ms.yugipedia.com//4/40/BatterymanMicroCell-LODT-KR-R-1E.png",
+          "e300aa75-3f16-446d-8acd-81ffe1bdfd7b": "https://ms.yugipedia.com//b/b4/SimorghBirdofAncestry-LODT-KR-R-1E.png",
+          "6a30b4e8-76e0-4bfd-998e-4176dd5b69a7": "https://ms.yugipedia.com//2/2a/SummonLimit-LODT-KR-R-1E.png"
+        },
+        "unlimited": {
+          "c095348e-693b-4613-b8ed-0493ba524040": "https://ms.yugipedia.com//7/74/VolcanicQueen-LODT-KR-C-UE.png",
+          "dc7feb4d-7499-4c62-9a13-10b4417c9654": "https://ms.yugipedia.com//7/78/ArcanaForceITheMagician-LODT-KR-C-UE.png",
+          "b787112e-5788-47ae-bcdf-53a14d28038a": "https://ms.yugipedia.com//3/3b/ArcanaForceIVTheEmperor-LODT-KR-C-UE.png",
+          "0e3e9512-adc6-4074-ba11-ab5ee911e7bd": "https://ms.yugipedia.com//4/43/ArcanaForceVITheLovers-LODT-KR-C-UE.png",
+          "8268efdf-21e4-41ab-8135-da346fb649a1": "https://ms.yugipedia.com//4/49/BatterymanMicroCell-LODT-KR-R-UE.png",
+          "e300aa75-3f16-446d-8acd-81ffe1bdfd7b": "https://ms.yugipedia.com//e/ef/SimorghBirdofAncestry-LODT-KR-R-UE.png",
+          "dea6fd2d-b1ab-44b7-8be8-c9353dc17455": "https://ms.yugipedia.com//9/9a/CloudianStormDragon-LODT-KR-C-UE.png",
+          "aed38a5e-c3fb-4642-a512-ed614a84c613": "https://ms.yugipedia.com//6/62/DestinyEndDragoon-LODT-KR-UR-UE.png",
+          "b519ea01-204e-4570-8014-7779d51cd332": "https://ms.yugipedia.com//5/52/DestinyEndDragoon-LODT-KR-UtR-UE.png",
+          "c45c52b6-b2ae-43d1-ba79-a115af3f1f21": "https://ms.yugipedia.com//3/3b/CupofAce-LODT-KR-C-UE.png",
+          "3b8bc95f-237d-4485-98d0-0f8c5be0cd25": "https://ms.yugipedia.com//9/93/RealmofLight-LODT-KR-R-UE.png",
+          "8ad9549f-f71c-47b5-8bce-04e1ea3190ce": "https://ms.yugipedia.com//d/db/LightofRedemption-LODT-KR-SR-UE.png",
+          "9707fc2a-0d0f-4ecc-be0d-43ade3585c28": "https://ms.yugipedia.com//5/5a/RainbowGravity-LODT-KR-C-UE.png",
+          "d9ccddc2-7fd5-4c66-9994-4a6a08fc7a20": "https://ms.yugipedia.com//a/ad/RagingCloudian-LODT-KR-C-UE.png",
+          "6a30b4e8-76e0-4bfd-998e-4176dd5b69a7": "https://ms.yugipedia.com//1/1f/SummonLimit-LODT-KR-R-UE.png",
+          "3755f7e8-fb8d-4e47-a69a-b94bc0584ae3": "https://ms.yugipedia.com//4/4c/DiceTry-LODT-KR-NR-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71106002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/15/LODT-Booster-EN-1E.png",
+      "cards": [
+        {
+          "id": "655297f4-01e3-4325-ab79-93108b11086a",
+          "card": "75fcaed4-893c-4b8f-8310-6393a2dd607a",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f12155f3-cc1d-48c2-bdfb-2ac87705bc77",
+          "card": "6f0f3a6d-ca74-4b96-b64d-c3df1a2ef9a4",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "44173b5c-f8b4-4931-a1e5-e2b1ad7d8f1b",
+          "card": "582da1ee-e71b-4310-9a5d-773e521bf873",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "62ac1987-6a88-4a0f-be2f-73cedb2080a0",
+          "card": "9c0c7847-bf9e-4acb-b560-c1dced6a6af8",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "6621f73c-16bc-4f34-a939-d875715da382",
+          "card": "efdcc45d-088a-47d0-aff7-ae7a673dd2bd",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "8bc83cc7-80d8-4cad-8106-2df79c1e3dc9",
+          "card": "e7ac63d2-208a-4a1f-a3dd-6b681d2c6770",
+          "suffix": "039",
+          "rarity": "rare"
+        },
+        {
+          "id": "dea6fd2d-b1ab-44b7-8be8-c9353dc17455",
+          "card": "5c0166ca-2a06-4276-9e50-2c50acdeb2e8",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "adbc3371-bca5-4d4f-9c91-7d69c2355983",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8080ff18-2803-4984-90b5-9ed13ef39343",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "279bf517-d988-4a6b-877b-68f69886f1fe",
+          "card": "b23c9f99-efdc-4817-af05-919c20f0c984",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "be851a83-c650-4ca6-87c1-7cf59e8f6ac1",
+          "card": "0f94eba3-5e01-4cd0-a609-7be400972d92",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "8ad9549f-f71c-47b5-8bce-04e1ea3190ce",
+          "card": "56f65901-e2fd-4c26-8913-d1c9d0d02e87",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "5f6dba89-baf0-403f-a3bd-9245de0a06fe",
+          "card": "f1d6fd45-78e0-4c2c-bff8-beb176096db0",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "396074df-1fe4-4ec0-9fa9-130b8873f685",
+          "card": "5dee4491-fdcf-4df6-9a58-b2d8d4a77c53",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "107f39d6-27a5-4b5a-bc1b-31c5e44727b6",
+          "card": "8da5568c-697c-4890-a932-892540cca116",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "4be4fbc2-f649-4325-8141-9c732de8e317",
+          "card": "75581af0-d79b-4505-9bae-9ef29588f0f8",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "299c6fd0-6000-476e-acb5-e6a5993c7a67",
+          "card": "df942ae4-9e4c-46aa-bbf5-01646d7fa1f5",
+          "suffix": "086",
+          "rarity": "rare"
+        },
+        {
+          "id": "dd313c7b-7831-4d37-83ed-043ddd96a5a6",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b2602737-872d-4772-9c97-f553c48dccf9",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Light of Destruction"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "fec37686-5c29-4a9d-bffd-b063dfd2ddda",
+          "card": "75fcaed4-893c-4b8f-8310-6393a2dd607a",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "ca4fbddb-762b-48e8-a672-2b7623e7b0ef",
+          "card": "6f0f3a6d-ca74-4b96-b64d-c3df1a2ef9a4",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "1097a286-8b2c-49ea-9dfe-38063424a179",
+          "card": "582da1ee-e71b-4310-9a5d-773e521bf873",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "a83444db-e999-4776-b667-fc98c926a17c",
+          "card": "9c0c7847-bf9e-4acb-b560-c1dced6a6af8",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "6621f73c-16bc-4f34-a939-d875715da382",
+          "card": "efdcc45d-088a-47d0-aff7-ae7a673dd2bd",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "50d079b6-a3e6-4c3f-a84b-a41bec91ce96",
+          "card": "e7ac63d2-208a-4a1f-a3dd-6b681d2c6770",
+          "suffix": "039",
+          "rarity": "rare"
+        },
+        {
+          "id": "dea6fd2d-b1ab-44b7-8be8-c9353dc17455",
+          "card": "5c0166ca-2a06-4276-9e50-2c50acdeb2e8",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "2ee77a2c-cb8e-473c-8d54-ba5930f576c2",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ecca2dac-1f09-4a3f-897e-a5d30867b14e",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b4743e91-38e0-46f2-8c1a-c99d8f979b5b",
+          "card": "b23c9f99-efdc-4817-af05-919c20f0c984",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "be851a83-c650-4ca6-87c1-7cf59e8f6ac1",
+          "card": "0f94eba3-5e01-4cd0-a609-7be400972d92",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "8ad9549f-f71c-47b5-8bce-04e1ea3190ce",
+          "card": "56f65901-e2fd-4c26-8913-d1c9d0d02e87",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "a985df8f-d12b-468e-84ec-27367d05efe8",
+          "card": "f1d6fd45-78e0-4c2c-bff8-beb176096db0",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "09a279a9-fa40-4fed-ba03-6dac1bbab79f",
+          "card": "5dee4491-fdcf-4df6-9a58-b2d8d4a77c53",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "107f39d6-27a5-4b5a-bc1b-31c5e44727b6",
+          "card": "8da5568c-697c-4890-a932-892540cca116",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "1ba44764-affa-45cf-9fd2-093b6ae3c5d3",
+          "card": "75581af0-d79b-4505-9bae-9ef29588f0f8",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "a7c76f62-7960-44c8-9435-e5e302eca46a",
+          "card": "df942ae4-9e4c-46aa-bbf5-01646d7fa1f5",
+          "suffix": "086",
+          "rarity": "rare"
+        },
+        {
+          "id": "50f5c615-792a-446e-b6d1-48841edbe542",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultra"
+        },
+        {
+          "id": "040142e8-3f2f-411f-9ebf-155717c2fc9c",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Light of Destruction"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/47/LODT-BoosterSP.jpg",
+      "cards": [
+        {
+          "id": "6712af18-5e83-4cd6-9fd6-7e7196b1697c",
+          "card": "75fcaed4-893c-4b8f-8310-6393a2dd607a",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "c9f8dce1-4c94-4c8d-8a8f-18e6501d4fd5",
+          "card": "6f0f3a6d-ca74-4b96-b64d-c3df1a2ef9a4",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "44c3ba28-0755-4684-8cb7-fb526a5bbde4",
+          "card": "582da1ee-e71b-4310-9a5d-773e521bf873",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "18232685-0e01-4dd6-9051-9fe3b539898b",
+          "card": "9c0c7847-bf9e-4acb-b560-c1dced6a6af8",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "6621f73c-16bc-4f34-a939-d875715da382",
+          "card": "efdcc45d-088a-47d0-aff7-ae7a673dd2bd",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "47cc184c-73ab-4e5a-b847-be9f06f9b373",
+          "card": "e7ac63d2-208a-4a1f-a3dd-6b681d2c6770",
+          "suffix": "039",
+          "rarity": "rare"
+        },
+        {
+          "id": "dea6fd2d-b1ab-44b7-8be8-c9353dc17455",
+          "card": "5c0166ca-2a06-4276-9e50-2c50acdeb2e8",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "0d9529a4-1353-47d0-b207-215344e9f5ad",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ed0b216c-7350-49be-94e2-9d13bd4f488b",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "43da3906-7ffb-4c4b-a59d-f5d7ea44dee4",
+          "card": "b23c9f99-efdc-4817-af05-919c20f0c984",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "be851a83-c650-4ca6-87c1-7cf59e8f6ac1",
+          "card": "0f94eba3-5e01-4cd0-a609-7be400972d92",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "8ad9549f-f71c-47b5-8bce-04e1ea3190ce",
+          "card": "56f65901-e2fd-4c26-8913-d1c9d0d02e87",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "d6862d37-c589-4d46-b582-707479c4a65e",
+          "card": "f1d6fd45-78e0-4c2c-bff8-beb176096db0",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "343e6a9e-0d15-4743-a276-1ee000c9040a",
+          "card": "5dee4491-fdcf-4df6-9a58-b2d8d4a77c53",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "107f39d6-27a5-4b5a-bc1b-31c5e44727b6",
+          "card": "8da5568c-697c-4890-a932-892540cca116",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "9742b3cf-75b4-4dd0-a5c7-f4df232eff41",
+          "card": "75581af0-d79b-4505-9bae-9ef29588f0f8",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "911547fb-dbfa-4c58-a0e9-968bea6d279d",
+          "card": "df942ae4-9e4c-46aa-bbf5-01646d7fa1f5",
+          "suffix": "086",
+          "rarity": "rare"
+        },
+        {
+          "id": "600fc341-6581-4676-af63-01db37fb8818",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultra"
+        },
+        {
+          "id": "12144e93-2388-46be-9e03-be1a5c4b024d",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Light of Destruction"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/8d/LODT-BoosterJP.jpg",
+      "cards": [
+        {
+          "id": "f544c4b3-60b7-4161-98c5-7558f3672f30",
+          "card": "75fcaed4-893c-4b8f-8310-6393a2dd607a",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f37c03f1-d36e-4200-979c-7c5d59a8e99e",
+          "card": "6f0f3a6d-ca74-4b96-b64d-c3df1a2ef9a4",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "83ff950c-5268-4a30-af71-f951c1490d56",
+          "card": "582da1ee-e71b-4310-9a5d-773e521bf873",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ae86a451-d12a-43a3-8cc2-049cad408e23",
+          "card": "9c0c7847-bf9e-4acb-b560-c1dced6a6af8",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "8268efdf-21e4-41ab-8135-da346fb649a1",
+          "card": "efdcc45d-088a-47d0-aff7-ae7a673dd2bd",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "844dd3d5-7059-47ce-a766-d77bc4da3f14",
+          "card": "e7ac63d2-208a-4a1f-a3dd-6b681d2c6770",
+          "suffix": "039",
+          "rarity": "rare"
+        },
+        {
+          "id": "dea6fd2d-b1ab-44b7-8be8-c9353dc17455",
+          "card": "5c0166ca-2a06-4276-9e50-2c50acdeb2e8",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "28be83fd-96f3-4ace-8112-6e0737e3183e",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b523f1ff-01ff-4075-8851-11594bd1e781",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "d7d33860-8788-45a0-b234-ed9fbe8dcee2",
+          "card": "b23c9f99-efdc-4817-af05-919c20f0c984",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "3b8bc95f-237d-4485-98d0-0f8c5be0cd25",
+          "card": "0f94eba3-5e01-4cd0-a609-7be400972d92",
+          "suffix": "053",
+          "rarity": "rare"
+        },
+        {
+          "id": "8ad9549f-f71c-47b5-8bce-04e1ea3190ce",
+          "card": "56f65901-e2fd-4c26-8913-d1c9d0d02e87",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "08bb6a66-a957-4166-987a-728b14eee5f3",
+          "card": "f1d6fd45-78e0-4c2c-bff8-beb176096db0",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "a4916262-4764-4622-80d7-7716c31379e7",
+          "card": "5dee4491-fdcf-4df6-9a58-b2d8d4a77c53",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "6a30b4e8-76e0-4bfd-998e-4176dd5b69a7",
+          "card": "8da5568c-697c-4890-a932-892540cca116",
+          "suffix": "079",
+          "rarity": "rare"
+        },
+        {
+          "id": "c11a55b1-f211-466b-a9a1-28ca8e7905ed",
+          "card": "75581af0-d79b-4505-9bae-9ef29588f0f8",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Light of Destruction"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3a/LODT-BoosterDE.png",
+      "cards": [
+        {
+          "id": "c5e2a90f-083d-47ed-9ba2-b1d190eac3f0",
+          "card": "75fcaed4-893c-4b8f-8310-6393a2dd607a",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "a9a9538e-1e22-4cb2-a915-057b60b39f5f",
+          "card": "6f0f3a6d-ca74-4b96-b64d-c3df1a2ef9a4",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "dcd21a81-8f1f-4420-9b48-f0155c140e52",
+          "card": "582da1ee-e71b-4310-9a5d-773e521bf873",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "232a4eb9-8d9e-4407-963f-a0f4c27b6b81",
+          "card": "9c0c7847-bf9e-4acb-b560-c1dced6a6af8",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "6621f73c-16bc-4f34-a939-d875715da382",
+          "card": "efdcc45d-088a-47d0-aff7-ae7a673dd2bd",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "396e3d1a-ad8f-49e3-bc06-4cf54bb54877",
+          "card": "e7ac63d2-208a-4a1f-a3dd-6b681d2c6770",
+          "suffix": "039",
+          "rarity": "rare"
+        },
+        {
+          "id": "dea6fd2d-b1ab-44b7-8be8-c9353dc17455",
+          "card": "5c0166ca-2a06-4276-9e50-2c50acdeb2e8",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "fdcb9587-d342-46f1-96f3-388b7f395295",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f1a0b983-fd5b-4237-9b5e-03f321bfc049",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "2f15e489-3715-42af-b938-b0d760c0462f",
+          "card": "b23c9f99-efdc-4817-af05-919c20f0c984",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "be851a83-c650-4ca6-87c1-7cf59e8f6ac1",
+          "card": "0f94eba3-5e01-4cd0-a609-7be400972d92",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "8ad9549f-f71c-47b5-8bce-04e1ea3190ce",
+          "card": "56f65901-e2fd-4c26-8913-d1c9d0d02e87",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "73c37aab-ba6b-4864-a81f-5fb751e5d0a2",
+          "card": "f1d6fd45-78e0-4c2c-bff8-beb176096db0",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "27897ab9-cd7b-4a6d-9158-8cb5b2b4445d",
+          "card": "5dee4491-fdcf-4df6-9a58-b2d8d4a77c53",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "107f39d6-27a5-4b5a-bc1b-31c5e44727b6",
+          "card": "8da5568c-697c-4890-a932-892540cca116",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "9ba15007-fd10-4239-94d0-ff8bf62de072",
+          "card": "75581af0-d79b-4505-9bae-9ef29588f0f8",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "0635f6ba-acbb-4232-acd6-c10c4aeead5d",
+          "card": "df942ae4-9e4c-46aa-bbf5-01646d7fa1f5",
+          "suffix": "086",
+          "rarity": "rare"
+        },
+        {
+          "id": "27e77e0e-8316-4876-a3f1-fe32eb57fd69",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4c5c66a3-600e-49b0-be45-3c79e41250d9",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Light of Destruction"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/8a/LODT-BoosterFR.jpg",
+      "cards": [
+        {
+          "id": "a0b2e8db-0770-4e97-b639-efbc2c00d31b",
+          "card": "146e5cd2-1251-4b46-b642-6e4ac26a34e7",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "4b52dc3f-93f2-43d6-86a9-abcbb4355ad3",
+          "card": "75fcaed4-893c-4b8f-8310-6393a2dd607a",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "4083dab2-c3cb-4d24-bbc8-51017ae41ea4",
+          "card": "6f0f3a6d-ca74-4b96-b64d-c3df1a2ef9a4",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "b217a7a1-17d3-4281-842d-c0233a33e32c",
+          "card": "582da1ee-e71b-4310-9a5d-773e521bf873",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "7527a89b-e222-4942-a1de-10615c73127c",
+          "card": "9c0c7847-bf9e-4acb-b560-c1dced6a6af8",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "6621f73c-16bc-4f34-a939-d875715da382",
+          "card": "efdcc45d-088a-47d0-aff7-ae7a673dd2bd",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "9d8a98d2-8d2e-4148-b996-20a730f9da29",
+          "card": "e7ac63d2-208a-4a1f-a3dd-6b681d2c6770",
+          "suffix": "039",
+          "rarity": "rare"
+        },
+        {
+          "id": "dea6fd2d-b1ab-44b7-8be8-c9353dc17455",
+          "card": "5c0166ca-2a06-4276-9e50-2c50acdeb2e8",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "743dded7-e03e-4520-b9e4-088c13cb6b7f",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1f5a7904-8daf-40ce-8002-987caeb8319b",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "f97b09e7-0e44-4d5e-9d87-3da94496b399",
+          "card": "b23c9f99-efdc-4817-af05-919c20f0c984",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "be851a83-c650-4ca6-87c1-7cf59e8f6ac1",
+          "card": "0f94eba3-5e01-4cd0-a609-7be400972d92",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "8ad9549f-f71c-47b5-8bce-04e1ea3190ce",
+          "card": "56f65901-e2fd-4c26-8913-d1c9d0d02e87",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "bf19186b-3c5a-4e7b-a38e-36a6ca563e7b",
+          "card": "f1d6fd45-78e0-4c2c-bff8-beb176096db0",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "ad97ddec-fee5-40a0-94d9-a551ec6bfc00",
+          "card": "5dee4491-fdcf-4df6-9a58-b2d8d4a77c53",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "107f39d6-27a5-4b5a-bc1b-31c5e44727b6",
+          "card": "8da5568c-697c-4890-a932-892540cca116",
+          "suffix": "079",
+          "rarity": "common"
+        },
+        {
+          "id": "1227d04a-fea5-419b-9ba9-b60d05e2fd28",
+          "card": "75581af0-d79b-4505-9bae-9ef29588f0f8",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "5b33c04f-6f8d-436d-a0b6-0e08b580f9ce",
+          "card": "df942ae4-9e4c-46aa-bbf5-01646d7fa1f5",
+          "suffix": "086",
+          "rarity": "rare"
+        },
+        {
+          "id": "4c24bbf9-6067-4425-9358-7661501742ba",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4fa0bfe2-7347-4c04-b0b7-64c746297430",
+          "card": "08af0847-d28f-4daa-8823-e200e65c7411",
+          "suffix": "097",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Light of Destruction"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/84/LODT-BoosterKR.png",
+      "cards": [
+        {
+          "id": "c095348e-693b-4613-b8ed-0493ba524040",
+          "card": "75fcaed4-893c-4b8f-8310-6393a2dd607a",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "dc7feb4d-7499-4c62-9a13-10b4417c9654",
+          "card": "6f0f3a6d-ca74-4b96-b64d-c3df1a2ef9a4",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "b787112e-5788-47ae-bcdf-53a14d28038a",
+          "card": "582da1ee-e71b-4310-9a5d-773e521bf873",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "0e3e9512-adc6-4074-ba11-ab5ee911e7bd",
+          "card": "9c0c7847-bf9e-4acb-b560-c1dced6a6af8",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "8268efdf-21e4-41ab-8135-da346fb649a1",
+          "card": "efdcc45d-088a-47d0-aff7-ae7a673dd2bd",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "e300aa75-3f16-446d-8acd-81ffe1bdfd7b",
+          "card": "e7ac63d2-208a-4a1f-a3dd-6b681d2c6770",
+          "suffix": "039",
+          "rarity": "rare"
+        },
+        {
+          "id": "dea6fd2d-b1ab-44b7-8be8-c9353dc17455",
+          "card": "5c0166ca-2a06-4276-9e50-2c50acdeb2e8",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "aed38a5e-c3fb-4642-a512-ed614a84c613",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b519ea01-204e-4570-8014-7779d51cd332",
+          "card": "5a7a7f47-d878-4993-a235-b1b8e1ae88c5",
+          "suffix": "042",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c45c52b6-b2ae-43d1-ba79-a115af3f1f21",
+          "card": "b23c9f99-efdc-4817-af05-919c20f0c984",
+          "suffix": "050",
+          "rarity": "common"
+        },
+        {
+          "id": "3b8bc95f-237d-4485-98d0-0f8c5be0cd25",
+          "card": "0f94eba3-5e01-4cd0-a609-7be400972d92",
+          "suffix": "053",
+          "rarity": "rare"
+        },
+        {
+          "id": "8ad9549f-f71c-47b5-8bce-04e1ea3190ce",
+          "card": "56f65901-e2fd-4c26-8913-d1c9d0d02e87",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "9707fc2a-0d0f-4ecc-be0d-43ade3585c28",
+          "card": "f1d6fd45-78e0-4c2c-bff8-beb176096db0",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "d9ccddc2-7fd5-4c66-9994-4a6a08fc7a20",
+          "card": "5dee4491-fdcf-4df6-9a58-b2d8d4a77c53",
+          "suffix": "076",
+          "rarity": "common"
+        },
+        {
+          "id": "6a30b4e8-76e0-4bfd-998e-4176dd5b69a7",
+          "card": "8da5568c-697c-4890-a932-892540cca116",
+          "suffix": "079",
+          "rarity": "rare"
+        },
+        {
+          "id": "3755f7e8-fb8d-4e47-a69a-b94bc0584ae3",
+          "card": "75581af0-d79b-4505-9bae-9ef29588f0f8",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Light of Destruction"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Light of Destruction",
+      "id": 63619
+    }
+  }
+}

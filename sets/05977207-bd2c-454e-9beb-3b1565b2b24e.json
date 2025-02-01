@@ -1,0 +1,971 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "05977207-bd2c-454e-9beb-3b1565b2b24e",
+  "name": {
+    "en": "Power of the Elements",
+    "fr": "Le Pouvoir des \u00c9l\u00e9ments",
+    "de": "Power of the Elements",
+    "it": "Potere degli Elementi",
+    "pt": "Poder dos Elementos",
+    "es": "Poder de los Elementos",
+    "ja": "\u30d1\u30ef\u30fc\u30fb\u30aa\u30d6\u30fb\u30b8\u30fb\u30a8\u30ec\u30e1\u30f3\u30c4",
+    "ko": "\ud30c\uc6cc \uc624\ube0c \ub514 \uc5d8\ub9ac\uba58\uce20"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "POTE-EN",
+      "image": "https://ms.yugipedia.com//c/ca/POTE-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "082b20c0-b9d6-4197-b46c-2f7ad8129ac8": "https://ms.yugipedia.com//6/67/SprightPixies-POTE-EN-C-1E.png",
+          "f471923a-f515-43c2-aa15-eee97a4374fc": "https://ms.yugipedia.com//a/a7/ScaroftheVendread-POTE-EN-C-1E.png",
+          "a739694e-b0f0-4ad7-954a-ec7a34ec4f6a": "https://ms.yugipedia.com//c/ce/ExosisterMartha-POTE-EN-ScR-1E.png",
+          "42210273-eb38-4ffe-b7e0-1d5878f5e275": "https://ms.yugipedia.com//5/5a/ExosisterMartha-POTE-EN-StR-1E.png",
+          "bc388505-2d4b-4eaa-b7eb-d86f7796eb37": "https://ms.yugipedia.com//5/54/KrawlerSoma-POTE-EN-C-1E.png",
+          "533a684d-a0a2-4fc6-8769-2ede3130cb4d": "https://ms.yugipedia.com//9/98/EmperorTanukisCritterCount-POTE-EN-SR-1E.png",
+          "a7fc3f40-4d3f-41d2-8eed-9df53bb8c4fa": "https://ms.yugipedia.com//2/28/ElementalHEROShiningNeosWingman-POTE-EN-UR-1E.png",
+          "8089f477-224d-416d-b796-65d028a3e103": "https://ms.yugipedia.com//a/ae/InstantContact-POTE-EN-ScR-1E.png",
+          "b4828863-49ee-4ec7-ad11-ef11376b0ab1": "https://ms.yugipedia.com//c/cf/ScareclawStraddle-POTE-EN-SR-1E.png",
+          "49534198-071c-4eae-b6a2-2a3217575a38": "https://ms.yugipedia.com//c/c6/BrandedExpulsion-POTE-EN-C-1E.png",
+          "a38e631a-3714-4a78-b082-0d38c344dc71": "https://ms.yugipedia.com//5/5a/DracoUtopianAura-POTE-EN-ScR-1E.png",
+          "9982e5e8-5651-4e62-8903-e45bc9b06609": "https://ms.yugipedia.com//b/b0/LorisLadyofLament-POTE-EN-SR-1E.png",
+          "b1996d69-13a7-4354-b18a-d218dcbbae02": "https://ms.yugipedia.com//9/9c/DestinyHERODestroyerPhoenixEnforcer-POTE-EN-StR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001197000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "POTE-IT",
+      "image": "https://ms.yugipedia.com//0/0e/POTE-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "POTE-SP",
+      "image": "https://ms.yugipedia.com//7/77/POTE-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "POTE-JP",
+      "date": "2022-04-23",
+      "image": "https://ms.yugipedia.com//1/19/POTE-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "f3135ad0-e5f0-48b2-b362-d57e2b170990": "https://ms.yugipedia.com//7/73/SprightPixies-POTE-JP-C.png",
+          "22f8b763-5506-46ac-b61b-8f1735f8ec89": "https://ms.yugipedia.com//a/a7/ScaroftheVendread-POTE-JP-C.png",
+          "ea0a1594-243e-45d1-a445-3996bde119ee": "https://ms.yugipedia.com//f/f6/ExosisterMartha-POTE-JP-R.png",
+          "1115c4e9-46cf-4bde-b003-4ff6f57f033d": "https://ms.yugipedia.com//e/ea/KrawlerSoma-POTE-JP-C.png",
+          "5881e3e6-3780-4658-a628-130cd03b96ae": "https://ms.yugipedia.com//b/ba/EmperorTanukisCritterCount-POTE-JP-C.png",
+          "02b2308b-2210-4039-8359-72884143e352": "https://ms.yugipedia.com//e/ee/ElementalHEROShiningNeosWingman-POTE-JP-UR.png",
+          "4073addd-4eac-4b70-88a8-f925843e53a9": "https://ms.yugipedia.com//2/2a/ElementalHEROShiningNeosWingman-POTE-JP-UtR.png",
+          "7977b3bf-6d85-45f9-b30c-3b681cc1f4fb": "https://ms.yugipedia.com//d/d4/ElementalHEROShiningNeosWingman-POTE-JP-ScR.png",
+          "5a2afba8-ec0f-45b7-8cd7-231f5f363da1": "https://ms.yugipedia.com//c/cb/ElementalHEROShiningNeosWingman-POTE-JP-PScR.png",
+          "a778299f-7232-4de8-91b7-59eedb921dbe": "https://ms.yugipedia.com//3/31/InstantContact-POTE-JP-R.png",
+          "11b00de4-390c-43f3-8ec7-7396a815eab4": "https://ms.yugipedia.com//2/2c/ScareclawStraddle-POTE-JP-C.png",
+          "33839e98-8bf6-4312-9e11-d6fb68361b21": "https://ms.yugipedia.com//2/2c/BrandedExpulsion-POTE-JP-C.png",
+          "961dd84f-2050-464f-9b8f-4b6724e73e38": "https://ms.yugipedia.com//f/f0/DracoUtopianAura-POTE-JP-UR.png",
+          "c191b90f-a9c9-4e2c-be32-8e74fce402bd": "https://ms.yugipedia.com//6/62/DracoUtopianAura-POTE-JP-UtR.png",
+          "8a86fa66-9560-414b-808f-0c9b429af287": "https://ms.yugipedia.com//a/aa/DracoUtopianAura-POTE-JP-ScR.png",
+          "3c702e4b-42e0-4205-a2b3-d1eddc436cb0": "https://ms.yugipedia.com//c/c1/DracoUtopianAura-POTE-JP-PScR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000008900000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "POTE-DE",
+      "image": "https://ms.yugipedia.com//1/1b/POTE-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "POTE-FR",
+      "image": "https://ms.yugipedia.com//4/47/POTE-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "POTE-PT",
+      "date": "2022-08-04",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "POTE-KR",
+      "date": "2022-07-19",
+      "image": "https://ms.yugipedia.com//b/be/POTE-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001197000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/ca/POTE-BoosterEN.png",
+      "cards": [
+        {
+          "id": "082b20c0-b9d6-4197-b46c-2f7ad8129ac8",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f471923a-f515-43c2-aa15-eee97a4374fc",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "a739694e-b0f0-4ad7-954a-ec7a34ec4f6a",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "42210273-eb38-4ffe-b7e0-1d5878f5e275",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "starlight"
+        },
+        {
+          "id": "bc388505-2d4b-4eaa-b7eb-d86f7796eb37",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "533a684d-a0a2-4fc6-8769-2ede3130cb4d",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "a7fc3f40-4d3f-41d2-8eed-9df53bb8c4fa",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8089f477-224d-416d-b796-65d028a3e103",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "secret"
+        },
+        {
+          "id": "b4828863-49ee-4ec7-ad11-ef11376b0ab1",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "49534198-071c-4eae-b6a2-2a3217575a38",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "a38e631a-3714-4a78-b082-0d38c344dc71",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "9982e5e8-5651-4e62-8903-e45bc9b06609",
+          "card": "520b8800-e5c6-4763-8609-525bc3f5f330",
+          "suffix": "092",
+          "rarity": "super"
+        },
+        {
+          "id": "b1996d69-13a7-4354-b18a-d218dcbbae02",
+          "card": "85232686-4b4f-4dde-ad9f-68763a14841e",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0e/POTE-BoosterIT.png",
+      "cards": [
+        {
+          "id": "1344c594-9cd9-4f52-9edb-1e7e6517f083",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "8bbeed85-4a72-4a10-9573-1c783cd1554b",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "170ff56b-d903-46af-93fe-147edda42bbb",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "d47248d8-132f-4045-ab9d-45f2880b56cb",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "starlight"
+        },
+        {
+          "id": "08e7923e-a137-4783-b219-16bf59346652",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "3bc6ebf0-83fd-472a-a770-c79b76191f77",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "8a528c3a-6733-4ffa-9949-cee1d04db9b2",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "884843a3-f7b5-4051-99d7-d8b1fd5c4d1b",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "secret"
+        },
+        {
+          "id": "55585671-cd60-4b2f-b611-550e30f579db",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "a1dc3351-ca81-45cb-a872-d89bd637e09d",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "638588e6-25e2-4680-9770-e6f12d266560",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "daeaa36a-b05f-4c3d-96ac-3bc1771de114",
+          "card": "520b8800-e5c6-4763-8609-525bc3f5f330",
+          "suffix": "092",
+          "rarity": "super"
+        },
+        {
+          "id": "a0e80ee0-2ef9-4952-87df-f7489de59e89",
+          "card": "85232686-4b4f-4dde-ad9f-68763a14841e",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/77/POTE-BoosterSP.png",
+      "cards": [
+        {
+          "id": "edb049ba-7086-49ca-aa5b-7ecb78e6e092",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "4534bb2c-114a-4da2-9c7e-eafcae955505",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "82694e82-5fa0-4240-8004-6a7d874a16aa",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "4f59ff09-3fe0-479a-8923-9308ebb8694c",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "starlight"
+        },
+        {
+          "id": "5022f48e-484d-42b7-adc6-6a55d49c9f15",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "b2e02432-bba4-4e79-ad68-253c3d3c5fd5",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "11a363e2-1792-4c86-abf8-513874634262",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "639d515f-de4f-44e5-82a6-c452257e2624",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "secret"
+        },
+        {
+          "id": "580d5fac-18bc-4c40-bc21-97674a914b5c",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "ceb603ba-d1bc-4789-8368-e20b9089d0e7",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "91a54625-b582-43a9-836c-684a0d05948d",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "5ac2b861-5a5d-432b-b6ab-2517750b6ff2",
+          "card": "520b8800-e5c6-4763-8609-525bc3f5f330",
+          "suffix": "092",
+          "rarity": "super"
+        },
+        {
+          "id": "ae842c59-e85e-41fc-9e87-803a2686ffd6",
+          "card": "85232686-4b4f-4dde-ad9f-68763a14841e",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/19/POTE-BoosterJP.png",
+      "cards": [
+        {
+          "id": "f3135ad0-e5f0-48b2-b362-d57e2b170990",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "22f8b763-5506-46ac-b61b-8f1735f8ec89",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "ea0a1594-243e-45d1-a445-3996bde119ee",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "rare"
+        },
+        {
+          "id": "1115c4e9-46cf-4bde-b003-4ff6f57f033d",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "5881e3e6-3780-4658-a628-130cd03b96ae",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "02b2308b-2210-4039-8359-72884143e352",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4073addd-4eac-4b70-88a8-f925843e53a9",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "7977b3bf-6d85-45f9-b30c-3b681cc1f4fb",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "secret"
+        },
+        {
+          "id": "5a2afba8-ec0f-45b7-8cd7-231f5f363da1",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "a778299f-7232-4de8-91b7-59eedb921dbe",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "11b00de4-390c-43f3-8ec7-7396a815eab4",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "33839e98-8bf6-4312-9e11-d6fb68361b21",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "961dd84f-2050-464f-9b8f-4b6724e73e38",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c191b90f-a9c9-4e2c-be32-8e74fce402bd",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "8a86fa66-9560-414b-808f-0c9b429af287",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "3c702e4b-42e0-4205-a2b3-d1eddc436cb0",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "prismaticsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/1b/POTE-BoosterDE.png",
+      "cards": [
+        {
+          "id": "ef6ff27a-ea49-4730-a2d7-a44fc2e4bda2",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "61b8e7e3-2744-4c25-bf8e-c092f4191594",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "c9feb915-acb9-48be-97f5-3e0160ce4cdf",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "759e320b-4167-458d-9775-cf075da8df02",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "starlight"
+        },
+        {
+          "id": "501abb60-c1a9-46e8-aefc-1cc7d7ba0248",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "13a572c4-4058-4161-b66f-884aca8d59c6",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "3b34fac7-9390-4f7a-9771-398b5d32db28",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b1c24df2-51aa-456f-b4eb-2cfacddcb3c4",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "secret"
+        },
+        {
+          "id": "32154ce9-21d0-4105-8ccc-3611abefc2bc",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "902707fe-ebbd-47c0-a71d-5d42f1e343e3",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "d2ccda6b-1538-4f21-b887-08e6e1c46713",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "ee3d705e-2916-4b94-b564-a73fdac9115e",
+          "card": "520b8800-e5c6-4763-8609-525bc3f5f330",
+          "suffix": "092",
+          "rarity": "super"
+        },
+        {
+          "id": "eb176ce4-870f-4855-83e8-b6d056d687f5",
+          "card": "85232686-4b4f-4dde-ad9f-68763a14841e",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/47/POTE-BoosterFR.png",
+      "cards": [
+        {
+          "id": "eae673d4-0ce8-43e7-8363-aec11fb5ecf0",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "bb861e9a-adc5-491b-8c5e-d22bd983abfa",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "bd33aef7-bdd4-49f7-a3c8-2158c9fe6f03",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "bbe99418-d364-4343-875d-311feecb8774",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "starlight"
+        },
+        {
+          "id": "937b343c-395b-4d86-bcf5-d3611d956365",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "7cf46924-5c85-4aba-83cd-ad63fa2169fb",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "3d25e784-d32c-4a11-9789-9170ecaed0ea",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1a5153b6-f3be-48e0-a1ed-747a06aa3675",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "secret"
+        },
+        {
+          "id": "d156ccd9-a3a1-4ddc-945c-6f613af35932",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "22a32f15-ae1a-4c99-8696-cd5f9dccbb01",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "3192299b-0c11-4f37-b122-f57c2e3e5c56",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "227eeaac-5516-4521-a139-556ecdd7dd59",
+          "card": "520b8800-e5c6-4763-8609-525bc3f5f330",
+          "suffix": "092",
+          "rarity": "super"
+        },
+        {
+          "id": "4e6e1dbb-3697-4a41-9cd7-d016dcc9ef0b",
+          "card": "85232686-4b4f-4dde-ad9f-68763a14841e",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "c38e561b-fdf9-424a-818c-18c882c15ec3",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "57f507ee-8129-4e2b-9558-a749a57e0919",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "1b0de393-45a5-4cfd-874d-0c89084c4144",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "247686b1-0032-4b22-b762-7ef48ca32c30",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "starlight"
+        },
+        {
+          "id": "dd7e31de-65b7-4e39-b4d1-a04f97977768",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "70ae20d0-1a3b-4235-b781-93b9d565b633",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "super"
+        },
+        {
+          "id": "b60799b9-dd14-4035-83e1-6d8545162bfc",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "94862126-e186-475a-8681-1cfd7788bb43",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "secret"
+        },
+        {
+          "id": "19e5181e-249a-45ee-88bd-aee2aa621855",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "22f40fd5-0460-44d9-96f3-d5054941cd7a",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "d7b5c71a-029e-4757-8337-1921e70529b3",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "6b27c3a1-62f9-4456-af4c-2531c0a5b8ae",
+          "card": "520b8800-e5c6-4763-8609-525bc3f5f330",
+          "suffix": "092",
+          "rarity": "super"
+        },
+        {
+          "id": "62791fd2-131f-4404-b551-a95db3f081a2",
+          "card": "85232686-4b4f-4dde-ad9f-68763a14841e",
+          "suffix": "100",
+          "rarity": "starlight"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/be/POTE-BoosterKR.png",
+      "cards": [
+        {
+          "id": "40461e2d-cbf9-4e1c-9aaf-40d7f21aa1c3",
+          "card": "c3306294-8626-457c-a4d2-17efc88c0670",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "909179cb-3072-4e35-930e-9776c0f9335d",
+          "card": "89a43a9c-c6fd-4369-9811-192db0da4e99",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "9076bb43-097a-4946-af98-462bf330a523",
+          "card": "cdfabcf4-a137-44d3-a766-e522d784a3bc",
+          "suffix": "025",
+          "rarity": "rare"
+        },
+        {
+          "id": "e73a7b0d-7dc5-4ac6-b565-29583e22b8d8",
+          "card": "1eb21be7-36d3-497b-9c38-ae10e03c5e2d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "7e73b364-e127-43f6-8807-e8f42c4a5452",
+          "card": "45288bdb-548b-4a34-9c85-c7622fc32bec",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "18b69ba6-a041-42e6-a388-5648b189e1b4",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b01829a9-078f-4ba0-ba7a-c1e6ac96b605",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "9a56fc40-4d87-40d1-becc-0bbb02eb5037",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "secret"
+        },
+        {
+          "id": "3208d839-5a03-4586-9064-46c5f7807549",
+          "card": "0d634729-99a1-4e55-b44b-890a1f4c3063",
+          "suffix": "041",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "106e5695-7413-4879-a208-864088a2c4e1",
+          "card": "9f0d64cf-9a17-47e1-ba97-1067d97fcf7b",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "4bdc40fd-ebc8-4872-984e-31eecf150be9",
+          "card": "c5828aad-c447-4e2d-89cb-99fc5bf67ed8",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "f35962f0-b210-48c1-91fe-a0f6b0e59df1",
+          "card": "65dd592d-f586-4899-8892-2ec3c1c81777",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "d70a5473-8bf7-44a0-bb6e-253417b2dfa7",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a253ac56-e899-498e-9d30-35198b983a67",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "9f305f50-3712-4016-b7f2-afda117ae905",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "secret"
+        },
+        {
+          "id": "799a67b3-4333-4c5e-a9fa-d28eca3180ee",
+          "card": "bd68d460-6d6e-4c42-9bbd-7a5141beca86",
+          "suffix": "079",
+          "rarity": "prismaticsecret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Power of the Elements",
+      "id": 720253
+    }
+  }
+}

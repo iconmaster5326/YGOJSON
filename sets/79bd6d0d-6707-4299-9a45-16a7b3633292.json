@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "79bd6d0d-6707-4299-9a45-16a7b3633292",
+  "name": {
+    "en": "Yu-Gi-Oh! ARC-V Volume 6",
+    "ja": "\u904a\u622f\u738b\uff21\uff32\uff23\uff0d\u2164 \u7b2c\uff16\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "YA06-JP",
+      "date": "2018-10-04",
+      "image": "https://ms.yugipedia.com//4/4a/YA06-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "156d68f4-fe8d-4718-964b-19d380f4a4dd": "https://ms.yugipedia.com//7/72/TimelordProgenitorVorpgate-YA06-JP-UR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121220011
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "YA06-EN",
+      "image": "https://ms.yugipedia.com//7/78/YA06-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "7dcd4dba-9a5a-47fb-9b1c-d32f65c74886": "https://ms.yugipedia.com//archive/1/13/20230512001141%21TimelordProgenitorVorpgate-YA06-EN-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111115004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4a/YA06-PromoJP.png",
+      "cards": [
+        {
+          "id": "156d68f4-fe8d-4718-964b-19d380f4a4dd",
+          "card": "0ad723fa-0879-4153-bdb1-edb767b50e71",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//7/78/YA06-PromoEN.png",
+      "cards": [
+        {
+          "id": "7dcd4dba-9a5a-47fb-9b1c-d32f65c74886",
+          "card": "0ad723fa-0879-4153-bdb1-edb767b50e71",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! ARC-V Volume 6 promotional card",
+      "id": 570489
+    }
+  }
+}

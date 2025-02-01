@@ -1,0 +1,801 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "7658756a-6d9f-4a26-836f-393415e66577",
+  "name": {
+    "en": "Gladiator's Assault",
+    "fr": "L'Assaut du Gladiateur",
+    "de": "Gladiator's Assault",
+    "it": "Assalto del Gladiatore",
+    "es": "Asalto del Gladiador",
+    "ja": "\u30b0\u30e9\u30c7\u30a3\u30a8\u30a4\u30bf\u30fc\u30ba\u30fb\u30a2\u30b5\u30eb\u30c8",
+    "ko": "\uac80\ud22c\uc0ac\uc758 \uae09\uc2b5"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "GLAS-FR",
+      "date": "2007-11-14",
+      "image": "https://ms.yugipedia.com//8/86/GLAS-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "40ad7129-f536-4e99-a568-c7956f5f0432": "https://ms.yugipedia.com//8/8f/GladiatorBeastMurmillo-GLAS-FR-R-1E.jpg",
+          "446ab223-a92d-4b24-93d5-429289bf1730": "https://ms.yugipedia.com//b/b3/MagicalReflectSlime-GLAS-FR-C-1E.png",
+          "b0016775-1411-496e-a25f-494a438db457": "https://ms.yugipedia.com//a/a6/EnishiShiensChancellor-GLAS-FR-UR-1E.jpg",
+          "5dcdde7a-b8a5-4e8e-8c65-df0d58f539ba": "https://ms.yugipedia.com//4/47/EnishiShiensChancellor-GLAS-FR-UtR-1E.png",
+          "11e89902-8e26-4448-84a1-ea7f1eeb034e": "https://ms.yugipedia.com//5/52/GladiatorBeastsRespite-GLAS-FR-R-1E.png",
+          "fcd0c04b-3e09-4ed7-bf6e-14d94cfaca42": "https://ms.yugipedia.com//a/ae/SoulDevouringBambooSword-GLAS-FR-C-1E.png",
+          "cf7d667c-ba0b-4205-ace3-9661f8928b1e": "https://ms.yugipedia.com//b/b2/ReleasefromStone-GLAS-FR-C-1E.png",
+          "c02f6d9e-9c55-480e-b414-a00cb560f563": "https://ms.yugipedia.com//c/c2/TestTiger-GLAS-FR-UR-1E.jpg",
+          "c0a00a02-4897-4b6d-b65d-6da2f5c5c3fe": "https://ms.yugipedia.com//7/75/TestTiger-GLAS-FR-UtR-1E.jpg",
+          "a2dff320-5501-4ef8-aa05-adcae1a1d424": "https://ms.yugipedia.com//1/1e/DragonIce-GLAS-FR-ScR-1E.jpg",
+          "dc0ea48b-2f91-4410-82b4-93c071cef571": "https://ms.yugipedia.com//3/30/TongueTwister-GLAS-FR-ScR-1E.jpg"
+        },
+        "unlimited": {
+          "40ad7129-f536-4e99-a568-c7956f5f0432": "https://ms.yugipedia.com//d/d9/GladiatorBeastMurmillo-GLAS-FR-R-UE.png",
+          "c02f6d9e-9c55-480e-b414-a00cb560f563": "https://ms.yugipedia.com//8/87/TestTiger-GLAS-FR-UR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31106005
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "GLAS-SP",
+      "date": "2007-11-14",
+      "image": "https://ms.yugipedia.com//8/84/GLAS-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "b99a8a27-05fd-4ff7-a9b7-8fc3904beb2e": "https://ms.yugipedia.com//7/72/GladiatorBeastMurmillo-GLAS-SP-R-1E.png",
+          "426e41bf-5fc1-4183-9d95-4d918b29178e": "https://ms.yugipedia.com//c/c7/ReleasefromStone-GLAS-SP-C-1E.png",
+          "5360e874-e742-4cfa-84c2-41d428e8cb2f": "https://ms.yugipedia.com//6/63/TestTiger-GLAS-SP-UR-1E.jpg",
+          "b4a0d3da-6f52-4489-baeb-84bcc2822334": "https://ms.yugipedia.com//9/93/DragonIce-GLAS-SP-ScR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51105004
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "GLAS-EN",
+      "image": "https://ms.yugipedia.com//4/47/GLAS-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "699c2348-e70d-4ae8-9b88-15453fb8ba1b": "https://ms.yugipedia.com//4/44/GladiatorBeastMurmillo-GLAS-EN-R-1E.jpg",
+          "446ab223-a92d-4b24-93d5-429289bf1730": "https://ms.yugipedia.com//f/fd/MagicalReflectSlime-GLAS-EN-C-1E.png",
+          "67d0f86f-2531-4d73-945e-c4f457b80d44": "https://ms.yugipedia.com//f/fa/EnishiShiensChancellor-GLAS-EN-UR-1E.png",
+          "ff61832a-68c6-4349-9bed-d8029b252c41": "https://ms.yugipedia.com//7/72/EnishiShiensChancellor-GLAS-EN-UtR-1E.png",
+          "dc000bd2-edd2-4b31-a072-7af6facc6fb2": "https://ms.yugipedia.com//9/95/GladiatorBeastsRespite-GLAS-EN-R-1E.png",
+          "8b561a5e-e12f-411d-90c2-5502c463ddaa": "https://ms.yugipedia.com//3/35/SoulDevouringBambooSword-GLAS-EN-C-1E.png",
+          "bae6e408-25bd-43b2-ae9d-a8f7a21f8fe7": "https://ms.yugipedia.com//1/12/ReleasefromStone-GLAS-EN-C-1E.png",
+          "8a370a99-9a74-4424-bc24-30057188ce25": "https://ms.yugipedia.com//e/e6/TestTiger-GLAS-EN-UR-1E.png",
+          "968998c4-4128-4d32-9597-9b62e100af29": "https://ms.yugipedia.com//3/31/TestTiger-GLAS-EN-UtR-1E.png",
+          "86facd8a-0c46-4192-ad20-3c00f14a9996": "https://ms.yugipedia.com//d/d8/DragonIce-GLAS-EN-ScR-1E.png",
+          "909246f8-3c94-46bd-afba-4676ab8a0bf0": "https://ms.yugipedia.com//5/5c/TongueTwister-GLAS-EN-ScR-1E.jpg"
+        },
+        "unlimited": {
+          "699c2348-e70d-4ae8-9b88-15453fb8ba1b": "https://ms.yugipedia.com//a/aa/GladiatorBeastMurmillo-GLAS-EN-R-UE.png",
+          "446ab223-a92d-4b24-93d5-429289bf1730": "https://ms.yugipedia.com//6/6f/MagicalReflectSlime-GLAS-EN-C-UE.png",
+          "67d0f86f-2531-4d73-945e-c4f457b80d44": "https://ms.yugipedia.com//9/93/EnishiShiensChancellor-GLAS-EN-UR-UE.png",
+          "ff61832a-68c6-4349-9bed-d8029b252c41": "https://ms.yugipedia.com//a/a3/EnishiShiensChancellor-GLAS-EN-UtR-UE.jpg",
+          "dc000bd2-edd2-4b31-a072-7af6facc6fb2": "https://ms.yugipedia.com//0/0c/GladiatorBeastsRespite-GLAS-EN-R-UE.png",
+          "8b561a5e-e12f-411d-90c2-5502c463ddaa": "https://ms.yugipedia.com//9/9c/SoulDevouringBambooSword-GLAS-EN-C-UE.jpg",
+          "bae6e408-25bd-43b2-ae9d-a8f7a21f8fe7": "https://ms.yugipedia.com//3/34/ReleasefromStone-GLAS-EN-C-UE.png",
+          "8a370a99-9a74-4424-bc24-30057188ce25": "https://ms.yugipedia.com//1/18/TestTiger-GLAS-EN-UR-UE.png",
+          "968998c4-4128-4d32-9597-9b62e100af29": "https://ms.yugipedia.com//7/7c/TestTiger-GLAS-EN-UtR-UE.png",
+          "86facd8a-0c46-4192-ad20-3c00f14a9996": "https://ms.yugipedia.com//7/7b/DragonIce-GLAS-EN-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11106004
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "GLAS-DE",
+      "date": "2007-11-12",
+      "image": "https://ms.yugipedia.com//7/72/GLAS-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "5eb63f71-bad2-4ed1-9cce-fccaa6ee549c": "https://ms.yugipedia.com//e/e5/GladiatorBeastMurmillo-GLAS-DE-R-1E.jpg",
+          "446ab223-a92d-4b24-93d5-429289bf1730": "https://ms.yugipedia.com//d/d5/MagicalReflectSlime-GLAS-DE-C-1E.jpg",
+          "c6e72c48-3497-46c4-a91e-98c3db4d7bdc": "https://ms.yugipedia.com//b/b5/EnishiShiensChancellor-GLAS-DE-UR-1E.jpg",
+          "da5231da-3d3b-48b5-9a66-f6d2acf855f3": "https://ms.yugipedia.com//b/be/EnishiShiensChancellor-GLAS-DE-UtR-1E.png",
+          "b49fb5d3-add2-4875-a2fb-6bfb6467896b": "https://ms.yugipedia.com//9/97/GladiatorBeastsRespite-GLAS-DE-R-1E.jpg",
+          "1970fd1d-b9a2-413d-bd8a-49f0305ccb4e": "https://ms.yugipedia.com//0/01/SoulDevouringBambooSword-GLAS-DE-C-1E.jpg",
+          "8d06ce61-6e90-436b-86ef-97afb88e1c78": "https://ms.yugipedia.com//a/a6/ReleasefromStone-GLAS-DE-C-1E.png",
+          "344be312-15fa-4a57-bd67-85517007f3c8": "https://ms.yugipedia.com//4/49/TestTiger-GLAS-DE-UR-1E.jpg",
+          "ec650593-d433-44f2-8026-95c78a6f2cf2": "https://ms.yugipedia.com//4/4d/TestTiger-GLAS-DE-UtR-1E.jpg",
+          "1a13a6cc-fd99-48c9-bcdf-41d29a07eca6": "https://ms.yugipedia.com//a/a4/DragonIce-GLAS-DE-ScR-1E.png",
+          "7a338d31-c69e-47b4-b5b1-c2c86d2db7b1": "https://ms.yugipedia.com//5/5f/TongueTwister-GLAS-DE-ScR-1E.png"
+        },
+        "unlimited": {
+          "8d06ce61-6e90-436b-86ef-97afb88e1c78": "https://ms.yugipedia.com//4/4c/ReleasefromStone-GLAS-DE-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21106005
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "GLAS-KR",
+      "date": "2007-09-08",
+      "image": "https://ms.yugipedia.com//0/03/GLAS-BoosterKR.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {
+          "f83137f4-8684-49bd-9c43-5ae5cfc0896c": "https://ms.yugipedia.com//b/b8/GladiatorBeastMurmillo-GLAS-KR-R-UE.png",
+          "446ab223-a92d-4b24-93d5-429289bf1730": "https://ms.yugipedia.com//2/2d/MagicalReflectSlime-GLAS-KR-C-UE.png",
+          "66aec307-03bc-45c2-aa2c-76e474e2c3e3": "https://ms.yugipedia.com//6/6c/EnishiShiensChancellor-GLAS-KR-SR-UE.jpg",
+          "263682c3-257f-435a-8ef8-4b624023e9cd": "https://ms.yugipedia.com//6/6d/GladiatorBeastsRespite-GLAS-KR-R-UE.png",
+          "04fb454e-11a0-4a10-9726-6fa3f93704b2": "https://ms.yugipedia.com//f/fb/SoulDevouringBambooSword-GLAS-KR-C-UE.png",
+          "6379c7e5-c47e-462c-8f6b-83725ca64b2e": "https://ms.yugipedia.com//9/96/ReleasefromStone-GLAS-KR-R-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71105005
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "GLAS-IT",
+      "date": "2007-11-03",
+      "image": "https://ms.yugipedia.com//7/7e/GLAS-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "dd62a016-d0b4-4382-97ef-c94914b178c7": "https://ms.yugipedia.com//2/25/GladiatorBeastMurmillo-GLAS-IT-R-1E.jpg",
+          "446ab223-a92d-4b24-93d5-429289bf1730": "https://ms.yugipedia.com//7/72/MagicalReflectSlime-GLAS-IT-C-1E.jpg",
+          "62180bd2-1e27-4083-a34d-81cd397bc0aa": "https://ms.yugipedia.com//d/d8/EnishiShiensChancellor-GLAS-IT-UR-1E.jpg",
+          "8c261383-6fa5-4968-9016-e83fa38e971b": "https://ms.yugipedia.com//7/70/EnishiShiensChancellor-GLAS-IT-UtR-1E.jpg",
+          "5c6aa04e-7e07-4550-b583-3b7eb314e75a": "https://ms.yugipedia.com//5/5f/GladiatorBeastsRespite-GLAS-IT-R-1E.jpg",
+          "3f63d136-aa24-4ea3-b98d-eade98c5b97c": "https://ms.yugipedia.com//8/89/SoulDevouringBambooSword-GLAS-IT-C-1E.jpg",
+          "48299f6c-fa7f-42a7-a0a4-60b60f1ca2a0": "https://ms.yugipedia.com//9/9d/ReleasefromStone-GLAS-IT-C-1E.png",
+          "6a30a95b-9a4c-4d5c-ad6f-bbeb1d4f836e": "https://ms.yugipedia.com//1/10/TestTiger-GLAS-IT-UR-1E.jpg",
+          "6c1be64e-35d5-49e8-adbb-fc6720d9d69a": "https://ms.yugipedia.com//2/28/TestTiger-GLAS-IT-UtR-1E.jpg",
+          "f99f873c-ceda-4ca2-8e89-13d9fbe491a5": "https://ms.yugipedia.com//6/69/DragonIce-GLAS-IT-ScR-1E.jpg",
+          "95bc3cae-cca0-4c67-8fa6-766c2ae3e48e": "https://ms.yugipedia.com//1/13/TongueTwister-GLAS-IT-ScR-1E.jpg"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41106005
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "GLAS-JP",
+      "date": "2007-07-21",
+      "image": "https://ms.yugipedia.com//9/9b/GLAS-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "ce0acce4-f2cb-4cbe-8cda-7db1181a79b6": "https://ms.yugipedia.com//0/04/GladiatorBeastMurmillo-GLAS-JP-R.jpg",
+          "446ab223-a92d-4b24-93d5-429289bf1730": "https://ms.yugipedia.com//c/c8/MagicalReflectSlime-GLAS-JP-C.jpg",
+          "c1e9c7a0-9620-48aa-8f8a-ddb9c85b82f8": "https://ms.yugipedia.com//7/70/EnishiShiensChancellor-GLAS-JP-SR.jpg",
+          "b5e9b926-e94a-496d-ba27-c0259a92d6f8": "https://ms.yugipedia.com//c/cd/GladiatorBeastsRespite-GLAS-JP-R.jpg",
+          "d44149b9-d061-44b7-b7b2-2906eee4246d": "https://ms.yugipedia.com//5/58/SoulDevouringBambooSword-GLAS-JP-C.jpg",
+          "660ef5cd-311d-4b7c-b610-ac9d91f8d7a9": "https://ms.yugipedia.com//7/78/ReleasefromStone-GLAS-JP-R.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1110001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/86/GLAS-BoosterFR.png",
+      "cards": [
+        {
+          "id": "40ad7129-f536-4e99-a568-c7956f5f0432",
+          "card": "e09a829a-3fc1-4c92-b607-772b83d11f6a",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "446ab223-a92d-4b24-93d5-429289bf1730",
+          "card": "687b0403-64e0-4e33-9124-6f1dd256867f",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "b0016775-1411-496e-a25f-494a438db457",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5dcdde7a-b8a5-4e8e-8c65-df0d58f539ba",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "11e89902-8e26-4448-84a1-ea7f1eeb034e",
+          "card": "850237c9-3a2e-4af6-a45b-0a0af1c968ae",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "fcd0c04b-3e09-4ed7-bf6e-14d94cfaca42",
+          "card": "747b483b-da39-4019-a88a-9d41cc9902cc",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "cf7d667c-ba0b-4205-ace3-9661f8928b1e",
+          "card": "860d9ca8-d5b7-4436-a087-517ed7db21ec",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "c02f6d9e-9c55-480e-b414-a00cb560f563",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c0a00a02-4897-4b6d-b65d-6da2f5c5c3fe",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a2dff320-5501-4ef8-aa05-adcae1a1d424",
+          "card": "601100e9-ca1d-47cb-b4de-db937354c12b",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "dc0ea48b-2f91-4410-82b4-93c071cef571",
+          "card": "f4f03475-908e-4789-9fde-992fb71f7887",
+          "suffix": "085",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Gladiator's Assault"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/84/GLAS-BoosterSP.png",
+      "cards": [
+        {
+          "id": "b99a8a27-05fd-4ff7-a9b7-8fc3904beb2e",
+          "card": "e09a829a-3fc1-4c92-b607-772b83d11f6a",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "446ab223-a92d-4b24-93d5-429289bf1730",
+          "card": "687b0403-64e0-4e33-9124-6f1dd256867f",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "6b0a6f07-3e24-4036-a133-b85e057b24dd",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0aecd3df-207b-4d93-a45d-7c75d3ff6cc2",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "88a0da88-931e-43be-8471-d02e2961564c",
+          "card": "850237c9-3a2e-4af6-a45b-0a0af1c968ae",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "1713bf2e-d7ab-4024-a9e7-36323c7e18c7",
+          "card": "747b483b-da39-4019-a88a-9d41cc9902cc",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "426e41bf-5fc1-4183-9d95-4d918b29178e",
+          "card": "860d9ca8-d5b7-4436-a087-517ed7db21ec",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "5360e874-e742-4cfa-84c2-41d428e8cb2f",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6aec1680-7d5b-4d1e-93ef-447f4bc67f17",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b4a0d3da-6f52-4489-baeb-84bcc2822334",
+          "card": "601100e9-ca1d-47cb-b4de-db937354c12b",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "cab5a441-7168-4fdc-b630-e91593102375",
+          "card": "f4f03475-908e-4789-9fde-992fb71f7887",
+          "suffix": "085",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Gladiator's Assault"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/47/GLAS-BoosterEN.png",
+      "cards": [
+        {
+          "id": "699c2348-e70d-4ae8-9b88-15453fb8ba1b",
+          "card": "e09a829a-3fc1-4c92-b607-772b83d11f6a",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "446ab223-a92d-4b24-93d5-429289bf1730",
+          "card": "687b0403-64e0-4e33-9124-6f1dd256867f",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "67d0f86f-2531-4d73-945e-c4f457b80d44",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ff61832a-68c6-4349-9bed-d8029b252c41",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "dc000bd2-edd2-4b31-a072-7af6facc6fb2",
+          "card": "850237c9-3a2e-4af6-a45b-0a0af1c968ae",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "8b561a5e-e12f-411d-90c2-5502c463ddaa",
+          "card": "747b483b-da39-4019-a88a-9d41cc9902cc",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "bae6e408-25bd-43b2-ae9d-a8f7a21f8fe7",
+          "card": "860d9ca8-d5b7-4436-a087-517ed7db21ec",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "8a370a99-9a74-4424-bc24-30057188ce25",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "968998c4-4128-4d32-9597-9b62e100af29",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "86facd8a-0c46-4192-ad20-3c00f14a9996",
+          "card": "601100e9-ca1d-47cb-b4de-db937354c12b",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "909246f8-3c94-46bd-afba-4676ab8a0bf0",
+          "card": "f4f03475-908e-4789-9fde-992fb71f7887",
+          "suffix": "085",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Gladiator's Assault"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/72/GLAS-BoosterDE.png",
+      "cards": [
+        {
+          "id": "5eb63f71-bad2-4ed1-9cce-fccaa6ee549c",
+          "card": "e09a829a-3fc1-4c92-b607-772b83d11f6a",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "446ab223-a92d-4b24-93d5-429289bf1730",
+          "card": "687b0403-64e0-4e33-9124-6f1dd256867f",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "c6e72c48-3497-46c4-a91e-98c3db4d7bdc",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultra"
+        },
+        {
+          "id": "da5231da-3d3b-48b5-9a66-f6d2acf855f3",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b49fb5d3-add2-4875-a2fb-6bfb6467896b",
+          "card": "850237c9-3a2e-4af6-a45b-0a0af1c968ae",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "1970fd1d-b9a2-413d-bd8a-49f0305ccb4e",
+          "card": "747b483b-da39-4019-a88a-9d41cc9902cc",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "8d06ce61-6e90-436b-86ef-97afb88e1c78",
+          "card": "860d9ca8-d5b7-4436-a087-517ed7db21ec",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "344be312-15fa-4a57-bd67-85517007f3c8",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ec650593-d433-44f2-8026-95c78a6f2cf2",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "1a13a6cc-fd99-48c9-bcdf-41d29a07eca6",
+          "card": "601100e9-ca1d-47cb-b4de-db937354c12b",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "7a338d31-c69e-47b4-b5b1-c2c86d2db7b1",
+          "card": "f4f03475-908e-4789-9fde-992fb71f7887",
+          "suffix": "085",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Gladiator's Assault"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/03/GLAS-BoosterKR.png",
+      "cards": [
+        {
+          "id": "f83137f4-8684-49bd-9c43-5ae5cfc0896c",
+          "card": "e09a829a-3fc1-4c92-b607-772b83d11f6a",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "446ab223-a92d-4b24-93d5-429289bf1730",
+          "card": "687b0403-64e0-4e33-9124-6f1dd256867f",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "66aec307-03bc-45c2-aa2c-76e474e2c3e3",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "263682c3-257f-435a-8ef8-4b624023e9cd",
+          "card": "850237c9-3a2e-4af6-a45b-0a0af1c968ae",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "04fb454e-11a0-4a10-9726-6fa3f93704b2",
+          "card": "747b483b-da39-4019-a88a-9d41cc9902cc",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "6379c7e5-c47e-462c-8f6b-83725ca64b2e",
+          "card": "860d9ca8-d5b7-4436-a087-517ed7db21ec",
+          "suffix": "068",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Gladiator's Assault"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7e/GLAS-BoosterIT.png",
+      "cards": [
+        {
+          "id": "dd62a016-d0b4-4382-97ef-c94914b178c7",
+          "card": "e09a829a-3fc1-4c92-b607-772b83d11f6a",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "446ab223-a92d-4b24-93d5-429289bf1730",
+          "card": "687b0403-64e0-4e33-9124-6f1dd256867f",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "62180bd2-1e27-4083-a34d-81cd397bc0aa",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8c261383-6fa5-4968-9016-e83fa38e971b",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "5c6aa04e-7e07-4550-b583-3b7eb314e75a",
+          "card": "850237c9-3a2e-4af6-a45b-0a0af1c968ae",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "3f63d136-aa24-4ea3-b98d-eade98c5b97c",
+          "card": "747b483b-da39-4019-a88a-9d41cc9902cc",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "48299f6c-fa7f-42a7-a0a4-60b60f1ca2a0",
+          "card": "860d9ca8-d5b7-4436-a087-517ed7db21ec",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "6a30a95b-9a4c-4d5c-ad6f-bbeb1d4f836e",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6c1be64e-35d5-49e8-adbb-fc6720d9d69a",
+          "card": "14c61fdb-d9af-48f2-8daa-de3e10b03c27",
+          "suffix": "082",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "f99f873c-ceda-4ca2-8e89-13d9fbe491a5",
+          "card": "601100e9-ca1d-47cb-b4de-db937354c12b",
+          "suffix": "084",
+          "rarity": "secret"
+        },
+        {
+          "id": "95bc3cae-cca0-4c67-8fa6-766c2ae3e48e",
+          "card": "f4f03475-908e-4789-9fde-992fb71f7887",
+          "suffix": "085",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Gladiator's Assault"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/9b/GLAS-BoosterJP.png",
+      "cards": [
+        {
+          "id": "ce0acce4-f2cb-4cbe-8cda-7db1181a79b6",
+          "card": "e09a829a-3fc1-4c92-b607-772b83d11f6a",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "446ab223-a92d-4b24-93d5-429289bf1730",
+          "card": "687b0403-64e0-4e33-9124-6f1dd256867f",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "c1e9c7a0-9620-48aa-8f8a-ddb9c85b82f8",
+          "card": "2db88a68-9bcf-4a4c-b433-64c8950046b6",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "b5e9b926-e94a-496d-ba27-c0259a92d6f8",
+          "card": "850237c9-3a2e-4af6-a45b-0a0af1c968ae",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "d44149b9-d061-44b7-b7b2-2906eee4246d",
+          "card": "747b483b-da39-4019-a88a-9d41cc9902cc",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "660ef5cd-311d-4b7c-b610-ac9d91f8d7a9",
+          "card": "860d9ca8-d5b7-4436-a087-517ed7db21ec",
+          "suffix": "068",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Gladiator's Assault"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Gladiator's Assault",
+      "id": 511196
+    }
+  }
+}

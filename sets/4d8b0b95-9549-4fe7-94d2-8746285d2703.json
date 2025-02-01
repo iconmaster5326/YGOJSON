@@ -1,0 +1,932 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "4d8b0b95-9549-4fe7-94d2-8746285d2703",
+  "name": {
+    "en": "Flames of Destruction",
+    "fr": "Les Flammes de la Destruction",
+    "de": "Flames of Destruction",
+    "it": "Fiamme della Distruzione",
+    "pt": "Chamas da Destrui\u00e7\u00e3o",
+    "es": "Llamas de la Destrucci\u00f3n",
+    "ja": "\u30d5\u30ec\u30a4\u30e0\u30ba\u30fb\u30aa\u30d6\u30fb\u30c7\u30b9\u30c8\u30e9\u30af\u30b7\u30e7\u30f3",
+    "ko": "\ud50c\ub808\uc784\uc988 \uc624\ube0c \ub514\uc2a4\ud2b8\ub7ed\uc158"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "FLOD-FR",
+      "image": "https://ms.yugipedia.com//7/7d/FLOD-BoosterFR.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "FLOD-SP",
+      "image": "https://ms.yugipedia.com//f/f1/FLOD-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "3b5919f5-3b6b-4037-a713-ca10e9751459": "https://ms.yugipedia.com//e/ee/TrickstarBellaMadonna-FLOD-SP-UR-1E.png",
+          "9b52ecd1-bd2e-4d6f-b599-78f34dedaf37": "https://ms.yugipedia.com//c/c0/KnightmarePhoenix-FLOD-SP-SR-1E.png",
+          "4ae8c2a0-174d-4c37-950e-c72e2ad75537": "https://ms.yugipedia.com//b/ba/FireFightingDarumaDoll-FLOD-SP-R-1E.png",
+          "c99ad977-11b4-47ae-a459-4558e4266634": "https://ms.yugipedia.com//6/6a/CybersalCyclone-FLOD-SP-C-1E.png",
+          "5781e24c-fc71-4b8d-883c-16ae5760b194": "https://ms.yugipedia.com//2/23/StaringContest-FLOD-SP-C-1E.png",
+          "67ae73c3-d589-4fb6-be36-962f92f42a68": "https://ms.yugipedia.com//2/2d/WorldLegacyAwakens-FLOD-SP-R-1E.png",
+          "b3d2bf56-f890-4742-a809-0067cb2971bf": "https://ms.yugipedia.com//9/97/CrystalMaster-FLOD-SP-C-1E.png",
+          "410a4559-6d2e-46d9-b612-489170e52a35": "https://ms.yugipedia.com//9/92/CrystalKeeper-FLOD-SP-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "FLOD-EN",
+      "image": "https://ms.yugipedia.com//1/15/FLOD-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "73bacf5d-76dd-47ce-b396-af7b435ddb38": "https://ms.yugipedia.com//d/d0/Boycotton-FLOD-EN-SP-1E.png",
+          "ab4440b8-1546-42e9-8c92-5565aec0393c": "https://ms.yugipedia.com//e/eb/TrickstarBellaMadonna-FLOD-EN-UR-1E.png",
+          "f6a981f6-d8da-4c18-9429-ad435ddc4aa3": "https://ms.yugipedia.com//f/f5/KnightmareMermaid-FLOD-EN-R-1E.png",
+          "c746b33e-4d56-4f22-83e4-b40816639483": "https://ms.yugipedia.com//4/48/KnightmarePhoenix-FLOD-EN-SR-1E.png",
+          "15b464ec-000d-462d-a437-8d8c78caa03f": "https://ms.yugipedia.com//5/56/FireFightingDarumaDoll-FLOD-EN-R-1E.png",
+          "e68b856e-e5c6-463c-948f-a12f731355f4": "https://ms.yugipedia.com//f/fa/CybersalCyclone-FLOD-EN-C-1E.png",
+          "3a97f158-6a5b-4e40-97d6-2ce3c892783a": "https://ms.yugipedia.com//f/f2/TrickstarLightArena-FLOD-EN-R-1E.png",
+          "8802bebb-957a-43b6-a16e-5592f8904118": "https://ms.yugipedia.com//c/c5/WorldLegacysCorruption-FLOD-EN-C-1E.png",
+          "5781e24c-fc71-4b8d-883c-16ae5760b194": "https://ms.yugipedia.com//0/0f/StaringContest-FLOD-EN-C-1E.png",
+          "f5e76af1-4c6f-4a92-a4b4-6984816c71a9": "https://ms.yugipedia.com//2/22/WorldLegacyAwakens-FLOD-EN-R-1E.png",
+          "32caaea0-3bb9-4049-9a81-a2d9b17d1afe": "https://ms.yugipedia.com//0/0a/CrystalMaster-FLOD-EN-C-1E.png",
+          "ce0aa60c-2832-4a7d-b1aa-2594eb186c98": "https://ms.yugipedia.com//5/58/CrystalKeeper-FLOD-EN-C-1E.png"
+        },
+        "unlimited": {
+          "73bacf5d-76dd-47ce-b396-af7b435ddb38": "https://ms.yugipedia.com//c/c1/Boycotton-FLOD-EN-SP-UE.png",
+          "ab4440b8-1546-42e9-8c92-5565aec0393c": "https://ms.yugipedia.com//c/cb/TrickstarBellaMadonna-FLOD-EN-UR-UE.png",
+          "f6a981f6-d8da-4c18-9429-ad435ddc4aa3": "https://ms.yugipedia.com//4/43/KnightmareMermaid-FLOD-EN-R-UE.png",
+          "c746b33e-4d56-4f22-83e4-b40816639483": "https://ms.yugipedia.com//e/e9/KnightmarePhoenix-FLOD-EN-SR-UE.png",
+          "15b464ec-000d-462d-a437-8d8c78caa03f": "https://ms.yugipedia.com//7/78/FireFightingDarumaDoll-FLOD-EN-R-UE.png",
+          "e68b856e-e5c6-463c-948f-a12f731355f4": "https://ms.yugipedia.com//4/4d/CybersalCyclone-FLOD-EN-C-UE.png",
+          "3a97f158-6a5b-4e40-97d6-2ce3c892783a": "https://ms.yugipedia.com//0/09/TrickstarLightArena-FLOD-EN-R-UE.png",
+          "8802bebb-957a-43b6-a16e-5592f8904118": "https://ms.yugipedia.com//8/8d/WorldLegacysCorruption-FLOD-EN-C-UE.png",
+          "5781e24c-fc71-4b8d-883c-16ae5760b194": "https://ms.yugipedia.com//5/53/StaringContest-FLOD-EN-C-UE.png",
+          "f5e76af1-4c6f-4a92-a4b4-6984816c71a9": "https://ms.yugipedia.com//4/4c/WorldLegacyAwakens-FLOD-EN-R-UE.png",
+          "32caaea0-3bb9-4049-9a81-a2d9b17d1afe": "https://ms.yugipedia.com//1/1a/CrystalMaster-FLOD-EN-C-UE.png",
+          "ce0aa60c-2832-4a7d-b1aa-2594eb186c98": "https://ms.yugipedia.com//b/bb/CrystalKeeper-FLOD-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11117003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "FLOD-DE",
+      "image": "https://ms.yugipedia.com//0/00/FLOD-BoosterDE.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "FLOD-KR",
+      "date": "2018-04-10",
+      "image": "https://ms.yugipedia.com//c/c8/FLOD-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "642f7eef-b647-4168-8293-dd441953de96": "https://ms.yugipedia.com//a/a7/Boycotton-FLOD-KR-NR-UE.png",
+          "a787c93e-a9a0-4eb1-89db-33f561f9c917": "https://ms.yugipedia.com//5/53/TrickstarBellaMadonna-FLOD-KR-UR-UE.png",
+          "0134b2e3-21b9-4a66-8124-7768b6dd66cb": "https://ms.yugipedia.com//b/b5/KnightmareMermaid-FLOD-KR-R-UE.png",
+          "61e389f7-085a-4404-9ddc-65b32771cd17": "https://ms.yugipedia.com//9/98/KnightmarePhoenix-FLOD-KR-R-UE.png",
+          "61b76a17-2546-4a0c-9f0a-96a3da06208d": "https://ms.yugipedia.com//c/cf/FireFightingDarumaDoll-FLOD-KR-R-UE.png",
+          "29505689-d572-41a1-ba34-05efec70d53f": "https://ms.yugipedia.com//c/cd/CybersalCyclone-FLOD-KR-C-UE.png",
+          "c112e61b-888b-4375-a156-2ab338e0d9a7": "https://ms.yugipedia.com//b/b9/TrickstarLightArena-FLOD-KR-R-UE.png",
+          "31eed3a1-79ce-4bc9-b9fe-a639c4b41c9e": "https://ms.yugipedia.com//2/27/WorldLegacysCorruption-FLOD-KR-C-UE.png",
+          "5781e24c-fc71-4b8d-883c-16ae5760b194": "https://ms.yugipedia.com//6/6e/StaringContest-FLOD-KR-C-UE.png",
+          "39a85910-1a68-4c36-a104-b909d57b9c3a": "https://ms.yugipedia.com//b/bd/WorldLegacyAwakens-FLOD-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71116001
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "FLOD-IT",
+      "image": "https://ms.yugipedia.com//9/9e/FLOD-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "FLOD-PT",
+      "date": "2018-05-04",
+      "image": "https://ms.yugipedia.com//e/e9/FLOD-BoosterPT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "FLOD-JP",
+      "date": "2018-01-13",
+      "image": "https://ms.yugipedia.com//6/68/FLOD-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "ef0c74d2-2755-43d8-ba8b-5250ed105969": "https://ms.yugipedia.com//3/35/Boycotton-FLOD-JP-NR.png",
+          "09bbb7cb-47ba-4c8e-ac57-6f68f60aeedd": "https://ms.yugipedia.com//0/0d/TrickstarBellaMadonna-FLOD-JP-UR.png",
+          "06d08dec-a62d-48ec-9b19-3a447e6a01b1": "https://ms.yugipedia.com//b/ba/TrickstarBellaMadonna-FLOD-JP-ScR.png",
+          "abea0de3-bdde-4e97-a94e-aadc4fe376fe": "https://ms.yugipedia.com//5/5b/TrickstarBellaMadonna-FLOD-JP-UtR.png",
+          "395ed0af-8143-49f7-bcc7-6ce1d44f5d35": "https://ms.yugipedia.com//0/04/KnightmareMermaid-FLOD-JP-R.png",
+          "f3db9be6-1d3e-4222-ac46-d4dd4eab14ac": "https://ms.yugipedia.com//a/a8/KnightmarePhoenix-FLOD-JP-R.png",
+          "2581da8b-6814-46ba-a314-939f32e3545c": "https://ms.yugipedia.com//1/1b/FireFightingDarumaDoll-FLOD-JP-R.png",
+          "242a645b-d280-4fba-9aaa-f39302aaa649": "https://ms.yugipedia.com//3/3f/CybersalCyclone-FLOD-JP-C.png",
+          "c41239f2-aecf-4327-9352-c86f6d3921c5": "https://ms.yugipedia.com//b/b3/TrickstarLightArena-FLOD-JP-R.png",
+          "a792fc9f-9e1d-45ec-bc83-28320c9a4b10": "https://ms.yugipedia.com//1/10/WorldLegacysCorruption-FLOD-JP-C.png",
+          "5781e24c-fc71-4b8d-883c-16ae5760b194": "https://ms.yugipedia.com//7/74/StaringContest-FLOD-JP-C.png",
+          "ac77a7a8-668c-4438-b4dc-5ed9419070bb": "https://ms.yugipedia.com//c/cb/WorldLegacyAwakens-FLOD-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1120003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7d/FLOD-BoosterFR.png",
+      "cards": [
+        {
+          "id": "395ee3bd-426b-4f3a-9939-e58cd85283a6",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "983dcfa2-5868-4917-930a-2aebafb3de3f",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "02f6fb56-13ca-48ec-864e-71eb6e23f8c6",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "0e57dea6-1d60-4a43-b175-a39c5bd04050",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "ce028cd0-943f-422c-893b-66ccad4f41d0",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "7e7dc2b2-a20a-49da-8dba-447957d74691",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "59ff2e26-ff20-4139-8046-61bf28e67cc7",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "850aadc1-31b4-4bdc-99f8-97ace171ad8c",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "686b1fb3-ccb0-4cb7-9965-3335f8ec18c7",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "rare"
+        },
+        {
+          "id": "b90fd6b0-c505-43b1-b2c0-148daaa7b79b",
+          "card": "dfbe0671-d34c-4867-8600-bc99ef56f101",
+          "suffix": "092",
+          "rarity": "common"
+        },
+        {
+          "id": "f6060575-b585-4484-8e34-04b08bc2dcf7",
+          "card": "169b456c-b073-4635-a12d-25895176ba37",
+          "suffix": "093",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/f1/FLOD-BoosterSP.png",
+      "cards": [
+        {
+          "id": "6ba7e2a4-cffc-4edc-a1e1-a91d4463eb11",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "3b5919f5-3b6b-4037-a713-ca10e9751459",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ad84ac64-08d5-4a73-9685-323d37b812a9",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "9b52ecd1-bd2e-4d6f-b599-78f34dedaf37",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "4ae8c2a0-174d-4c37-950e-c72e2ad75537",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "c99ad977-11b4-47ae-a459-4558e4266634",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "201006ae-cbad-4dad-8417-cab7788bf7b5",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "41ccab09-5a8d-4dbd-b29c-2565c3465f3e",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "67ae73c3-d589-4fb6-be36-962f92f42a68",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "rare"
+        },
+        {
+          "id": "b3d2bf56-f890-4742-a809-0067cb2971bf",
+          "card": "dfbe0671-d34c-4867-8600-bc99ef56f101",
+          "suffix": "092",
+          "rarity": "common"
+        },
+        {
+          "id": "410a4559-6d2e-46d9-b612-489170e52a35",
+          "card": "169b456c-b073-4635-a12d-25895176ba37",
+          "suffix": "093",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/15/FLOD-BoosterEN.png",
+      "cards": [
+        {
+          "id": "73bacf5d-76dd-47ce-b396-af7b435ddb38",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "ab4440b8-1546-42e9-8c92-5565aec0393c",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f6a981f6-d8da-4c18-9429-ad435ddc4aa3",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "c746b33e-4d56-4f22-83e4-b40816639483",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "15b464ec-000d-462d-a437-8d8c78caa03f",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "e68b856e-e5c6-463c-948f-a12f731355f4",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "3a97f158-6a5b-4e40-97d6-2ce3c892783a",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "8802bebb-957a-43b6-a16e-5592f8904118",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "f5e76af1-4c6f-4a92-a4b4-6984816c71a9",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "rare"
+        },
+        {
+          "id": "32caaea0-3bb9-4049-9a81-a2d9b17d1afe",
+          "card": "dfbe0671-d34c-4867-8600-bc99ef56f101",
+          "suffix": "092",
+          "rarity": "common"
+        },
+        {
+          "id": "ce0aa60c-2832-4a7d-b1aa-2594eb186c98",
+          "card": "169b456c-b073-4635-a12d-25895176ba37",
+          "suffix": "093",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/00/FLOD-BoosterDE.png",
+      "cards": [
+        {
+          "id": "2c333c64-a737-4575-9179-24f8ebd14d7c",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "856a49cc-0135-455c-9d24-64db93d03262",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b3a881d2-65e6-4149-9577-7f95248980a5",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "2d6dcff1-1358-40d1-9b28-045c1b32ff38",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "a52a1dda-7423-48df-b27d-bd4bbaf4fc57",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "50cb021a-658f-4a59-a0fa-1d5f8df2a0e4",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "0f2d7ba7-861a-4b9c-a500-234f76b9b8cb",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "a9a74bb8-9bc2-4334-8646-6f7edc25145b",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "75b75135-c694-4e1c-b4e6-1a24cde2abeb",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "rare"
+        },
+        {
+          "id": "9d2f3064-ba6e-4877-8d32-b5b48bf0bba7",
+          "card": "dfbe0671-d34c-4867-8600-bc99ef56f101",
+          "suffix": "092",
+          "rarity": "common"
+        },
+        {
+          "id": "bfe5314b-af09-4722-a9f8-2e32414dc431",
+          "card": "169b456c-b073-4635-a12d-25895176ba37",
+          "suffix": "093",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c8/FLOD-BoosterKR.png",
+      "cards": [
+        {
+          "id": "642f7eef-b647-4168-8293-dd441953de96",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "a787c93e-a9a0-4eb1-89db-33f561f9c917",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c3168967-5b79-4adf-8e57-6b38668e5e88",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "secret"
+        },
+        {
+          "id": "3decf1c1-0308-46de-84a2-5efe59c38605",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "0134b2e3-21b9-4a66-8124-7768b6dd66cb",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "61e389f7-085a-4404-9ddc-65b32771cd17",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "61b76a17-2546-4a0c-9f0a-96a3da06208d",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "29505689-d572-41a1-ba34-05efec70d53f",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "c112e61b-888b-4375-a156-2ab338e0d9a7",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "31eed3a1-79ce-4bc9-b9fe-a639c4b41c9e",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "39a85910-1a68-4c36-a104-b909d57b9c3a",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/9e/FLOD-BoosterIT.png",
+      "cards": [
+        {
+          "id": "3acc9e2e-96ce-4792-bfe4-e4fd31d1b9f1",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "955e59c7-d717-4f94-85f4-95812337bac0",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0c656d34-6095-4aa7-8ccf-04538fd6c119",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "339212ca-f5c3-4651-ab25-cd6dbfeb01c2",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "8649e493-fb73-4e67-8a65-5542790a3570",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "6354a95d-6e33-43d5-a55e-7bde573a4f3b",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "2c9abbf4-c888-4a91-b574-fbe7718057a7",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "3862a1f8-6838-4638-bd21-6daf48a87e00",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "cd592415-4746-42c0-88c7-4846adfbf70b",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "rare"
+        },
+        {
+          "id": "bf5cb429-6f4b-4b6c-b3d2-3d05f71824ba",
+          "card": "dfbe0671-d34c-4867-8600-bc99ef56f101",
+          "suffix": "092",
+          "rarity": "common"
+        },
+        {
+          "id": "d1f44bae-1bf8-4666-a412-07edec80db42",
+          "card": "169b456c-b073-4635-a12d-25895176ba37",
+          "suffix": "093",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e9/FLOD-BoosterPT.png",
+      "cards": [
+        {
+          "id": "425a9a4c-6c2c-496d-b3a6-9b58bfe76b92",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "26f1cd79-33d5-4a28-a7c6-9f51ed95f726",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b295ae29-fbca-41f4-8bd7-9f7301e0cd93",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "dfd528eb-e96d-49b8-b125-27cda6c337bf",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "25f5c3cc-3ac4-4509-9a88-85468822176c",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "db06449c-42bb-4072-8d34-896975934898",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "fbb697ae-f62a-46bf-8843-c8932df713d2",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "b192d6c5-1683-4375-ab4d-3c8c66cd3c6a",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "86c82436-9069-454b-8ea3-61405cb3784d",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "rare"
+        },
+        {
+          "id": "ca4b8459-8721-4c58-8b0f-b2706b747ccf",
+          "card": "dfbe0671-d34c-4867-8600-bc99ef56f101",
+          "suffix": "092",
+          "rarity": "common"
+        },
+        {
+          "id": "cd9b3264-c407-4ecf-a367-0964bbff88f5",
+          "card": "169b456c-b073-4635-a12d-25895176ba37",
+          "suffix": "093",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/68/FLOD-BoosterJP.png",
+      "cards": [
+        {
+          "id": "ef0c74d2-2755-43d8-ba8b-5250ed105969",
+          "card": "0e232c18-ca64-4261-be92-f931835d2151",
+          "suffix": "035",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "09bbb7cb-47ba-4c8e-ac57-6f68f60aeedd",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultra"
+        },
+        {
+          "id": "06d08dec-a62d-48ec-9b19-3a447e6a01b1",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "secret"
+        },
+        {
+          "id": "abea0de3-bdde-4e97-a94e-aadc4fe376fe",
+          "card": "5088ca3a-e23a-447c-84ca-fd47f7d801d0",
+          "suffix": "038",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "395ed0af-8143-49f7-bcc7-6ce1d44f5d35",
+          "card": "7c42b21c-371f-4a6a-904f-a27ef276c30f",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "f3db9be6-1d3e-4222-ac46-d4dd4eab14ac",
+          "card": "73ff2233-1127-4793-8cd3-ffc29701c806",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "2581da8b-6814-46ba-a314-939f32e3545c",
+          "card": "65538792-fa68-41bc-ba99-df8d9fb1a209",
+          "suffix": "051",
+          "rarity": "rare"
+        },
+        {
+          "id": "242a645b-d280-4fba-9aaa-f39302aaa649",
+          "card": "ce7a21c7-c7ee-4501-8d0f-a5085215a930",
+          "suffix": "053",
+          "rarity": "common"
+        },
+        {
+          "id": "c41239f2-aecf-4327-9352-c86f6d3921c5",
+          "card": "3923b545-2abb-4fd4-8988-fafdd80a40e3",
+          "suffix": "054",
+          "rarity": "rare"
+        },
+        {
+          "id": "a792fc9f-9e1d-45ec-bc83-28320c9a4b10",
+          "card": "3a8fc7c7-5c99-4314-adfb-d7f5b6f41056",
+          "suffix": "057",
+          "rarity": "common"
+        },
+        {
+          "id": "5781e24c-fc71-4b8d-883c-16ae5760b194",
+          "card": "be3b431d-3117-402a-a4a4-0714a837451e",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "ac77a7a8-668c-4438-b4dc-5ed9419070bb",
+          "card": "019978b2-609f-476c-8f8d-8ea455408eca",
+          "suffix": "071",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Flames of Destruction",
+      "id": 526690
+    }
+  }
+}
