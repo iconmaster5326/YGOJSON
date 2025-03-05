@@ -13,7 +13,7 @@ runs:
   using: composite
   steps:
     - name: Save Cached Temp
-      uses: actions/cache/save@v4.0.2
+      uses: actions/cache/save@v4.2.2
       continue-on-error: true
       if: ${{ inputs.set-temp == 'true' }}
       with:
@@ -21,7 +21,7 @@ runs:
         key: temp-${{ github.run_id }}-${{ github.job }}
         enableCrossOsArchive: true
     - name: Save Cached DB
-      uses: actions/cache/save@v4.0.2
+      uses: actions/cache/save@v4.2.2
       continue-on-error: true
       if: ${{ inputs.set-data == 'true' }}
       with:
