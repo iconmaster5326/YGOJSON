@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "d0c9f637-0899-43b8-93b3-4be6fc9d26e0",
+  "name": {
+    "en": "Anniversary Pack",
+    "ja": "\uff21\uff2e\uff2e\uff29\uff36\uff25\uff32\uff33\uff21\uff32\uff39 \uff30\uff21\uff23\uff2b",
+    "ko": "ANNIVERSARY PACK"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YAP1-EN",
+      "date": "2008-12-08",
+      "image": "https://ms.yugipedia.com//e/ef/YAP1-BoosterEN.png",
+      "cardImages": {
+        "limited": {
+          "c9082228-d795-4209-a47b-39a7b634aae2": "https://ms.yugipedia.com//c/ca/GyakutennoMegami-YAP1-EN-UR-LE.png",
+          "7c2605c1-2676-4161-8237-5da031cda766": "https://ms.yugipedia.com//7/79/BusterBlader-YAP1-EN-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          161601255
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YAP1-JP",
+      "date": "2008-12-20",
+      "image": "https://ms.yugipedia.com//d/da/YAP1-BoosterJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "ba8c7503-52c6-40c1-8490-3426cad760f8": "https://ms.yugipedia.com//8/81/GyakutennoMegami-YAP1-JP-UR.jpg",
+          "25fc2d07-0ea2-4ff2-816b-e2817765bd3d": "https://ms.yugipedia.com//b/bb/BusterBlader-YAP1-JP-UR.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          3304000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "date": "2009-08-18",
+      "image": "https://ms.yugipedia.com//d/dc/YAP1-BoosterKR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "3d6da645-9cca-46e1-90b6-e46729349d5f": "https://ms.yugipedia.com//a/ad/GyakutennoMegami-YAP1-KR-UR-UE.png",
+          "189d3c8b-13a0-46b5-9c33-bdaec267f72f": "https://ms.yugipedia.com//1/1e/BusterBlader-YAP1-KR-UR-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          78804005
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/ef/YAP1-BoosterEN.png",
+      "cards": [
+        {
+          "id": "c9082228-d795-4209-a47b-39a7b634aae2",
+          "card": "a0ed8c60-072e-459f-8a5b-d8ba027abd8a",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7c2605c1-2676-4161-8237-5da031cda766",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "006",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/da/YAP1-BoosterJP.jpg",
+      "cards": [
+        {
+          "id": "ba8c7503-52c6-40c1-8490-3426cad760f8",
+          "card": "a0ed8c60-072e-459f-8a5b-d8ba027abd8a",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "25fc2d07-0ea2-4ff2-816b-e2817765bd3d",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "007",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/dc/YAP1-BoosterKR.jpg",
+      "cards": [
+        {
+          "id": "3d6da645-9cca-46e1-90b6-e46729349d5f",
+          "card": "a0ed8c60-072e-459f-8a5b-d8ba027abd8a",
+          "suffix": "YAP1-KR005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "189d3c8b-13a0-46b5-9c33-bdaec267f72f",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "YAP1-KR006",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b93c1cd3-ca26-44c6-8e15-d5149d5704c7",
+          "card": "a2d51581-0d11-4a4b-ae72-8d2bc0932c32",
+          "suffix": "TKN-KR007",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Anniversary Pack",
+      "id": 48971
+    }
+  }
+}

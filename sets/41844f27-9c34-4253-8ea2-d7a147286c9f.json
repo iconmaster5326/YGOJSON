@@ -1,0 +1,101 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "41844f27-9c34-4253-8ea2-d7a147286c9f",
+  "name": {
+    "en": "Master Collection Volume 2",
+    "ja": "\uff2d\uff21\uff33\uff34\uff25\uff32 \uff23\uff2f\uff2c\uff2c\uff25\uff23\uff34\uff29\uff2f\uff2e \uff36\uff4f\uff4c\uff55\uff4d\uff45 \uff12"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "MC2-EN",
+      "image": "https://ms.yugipedia.com//1/18/MC2-PromoEN.jpg",
+      "cardImages": {
+        "limited": {
+          "689babf3-80e0-480a-871d-7a45a55fbc00": "https://ms.yugipedia.com//4/46/BlackLusterSoldierEnvoyoftheBeginning-MC2-EN-ScR-LE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "MC2-JP",
+      "date": "2006-03-16",
+      "image": "https://ms.yugipedia.com//4/4d/MC2-PromoJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "bb06ffa2-860a-4d8a-a945-beaf5533ee7a": "https://ms.yugipedia.com//b/bc/ElementalHEROShiningPhoenixEnforcer-MC2-JP-ScR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          111106003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//1/18/MC2-PromoEN.jpg",
+      "cards": [
+        {
+          "id": "689babf3-80e0-480a-871d-7a45a55fbc00",
+          "card": "0626cd7e-9544-4a18-8625-85b0ac76bb54",
+          "suffix": "004",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4d/MC2-PromoJP.jpg",
+      "cards": [
+        {
+          "id": "bb06ffa2-860a-4d8a-a945-beaf5533ee7a",
+          "card": "d42be888-fd3a-46bd-8482-f24b4ee4c6c7",
+          "suffix": "004",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Master Collection Volume 2",
+      "id": 1046
+    }
+  }
+}

@@ -1,0 +1,527 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "5f6f92a8-8f43-4adf-991e-013bab0f8a0e",
+  "name": {
+    "en": "Speed Duel: Trials of the Kingdom",
+    "fr": "Speed Duel : Les \u00c9preuves du Royaume",
+    "de": "Speed Duel: Trials of the Kingdom",
+    "it": "Speed Duel: Prove del Regno",
+    "pt": "Speed Duel: Prova\u00e7\u00f5es do Reino",
+    "es": "Speed Duel: Desaf\u00edos del Reino"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SBTK-EN",
+      "image": "https://ms.yugipedia.com//8/8a/SBTK-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "896ffa0b-fc96-4372-a4f7-ec9ffda39fc5": "https://ms.yugipedia.com//6/6a/TerrorfromtheDeep-SBTK-EN-SR-1E.png",
+          "a6920a80-8ed6-494e-a4c4-3e2fbf2594a7": "https://ms.yugipedia.com//0/06/MagicianofBlackChaos-SBTK-EN-UR-1E.png",
+          "897e1644-7afd-4c6c-9025-431cd1ba957d": "https://ms.yugipedia.com//4/45/CyberRaider-SBTK-EN-C-1E.png",
+          "c951d22f-84b4-4b71-a0da-4b77025f0f8e": "https://ms.yugipedia.com//1/1e/SasukeSamurai-SBTK-EN-C-1E.png",
+          "ec0a56cb-ec94-4813-a6b5-7bfc476282ef": "https://ms.yugipedia.com//7/70/FlintLock-SBTK-EN-C-1E.png",
+          "b04e67a1-ab29-4348-b6d4-4d39c58e9426": "https://ms.yugipedia.com//4/47/JurracStauriko-SBTK-EN-SR-1E.png",
+          "1e17ef40-3fa9-4b60-b63d-72fa3fbf5e28": "https://ms.yugipedia.com//8/8d/SuperWarLion-SBTK-EN-C-1E.png",
+          "2b3a93ab-efdf-46b0-8d07-485372dd2bcb": "https://ms.yugipedia.com//a/a6/SharethePain-SBTK-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1202001007
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SBTK-DE",
+      "image": "https://ms.yugipedia.com//4/41/SBTK-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "e5814d73-8971-4125-9caf-83b8538045c5": "https://ms.yugipedia.com//8/88/TerrorfromtheDeep-SBTK-DE-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SBTK-FR",
+      "image": "https://ms.yugipedia.com//6/6f/SBTK-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "ddb0fc4a-acab-422b-9945-e92e29ecedf5": "https://ms.yugipedia.com//5/56/TerrorfromtheDeep-SBTK-FR-SR-1E.png",
+          "bbed619d-da12-43d2-a30b-113b3dfdbd82": "https://ms.yugipedia.com//a/ac/MagicianofBlackChaos-SBTK-FR-UR-1E.png",
+          "cebb545e-3e3a-4765-ad73-48d5fcc9231b": "https://ms.yugipedia.com//e/ec/CyberRaider-SBTK-FR-C-1E.png",
+          "5940ebce-004d-49c3-9d80-5a089a419c64": "https://ms.yugipedia.com//c/c6/SasukeSamurai-SBTK-FR-C-1E.png",
+          "ec0a56cb-ec94-4813-a6b5-7bfc476282ef": "https://ms.yugipedia.com//d/d9/FlintLock-SBTK-FR-C-1E.png",
+          "b04e67a1-ab29-4348-b6d4-4d39c58e9426": "https://ms.yugipedia.com//f/fd/JurracStauriko-SBTK-FR-SR-1E.png",
+          "9a52ccca-b30b-4f5b-8ff3-994880546d1b": "https://ms.yugipedia.com//d/d9/SuperWarLion-SBTK-FR-C-1E.png",
+          "53951fdc-8559-4d3b-8b26-9b08de7760bd": "https://ms.yugipedia.com//9/92/SharethePain-SBTK-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SBTK-PT",
+      "date": "2019-12-05",
+      "image": "https://ms.yugipedia.com//0/0e/SBTK-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SBTK-IT",
+      "image": "https://ms.yugipedia.com//b/b4/SBTK-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "70b5e3d8-8831-4b64-85e4-27882dd2ad78": "https://ms.yugipedia.com//5/50/TerrorfromtheDeep-SBTK-IT-SR-1E.png",
+          "de8060f7-2b5e-46e3-b108-48fd5feb8084": "https://ms.yugipedia.com//a/a7/CyberRaider-SBTK-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SBTK-SP",
+      "image": "https://ms.yugipedia.com//c/ce/SBTK-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "9addf891-3942-441b-8852-35a627cb17eb": "https://ms.yugipedia.com//7/76/TerrorfromtheDeep-SBTK-SP-SR-1E.png",
+          "051fbc43-b308-49ad-9b66-ae6b53e81e32": "https://ms.yugipedia.com//f/fd/MagicianofBlackChaos-SBTK-SP-UR-1E.png",
+          "f7fd8ac3-eb46-41bf-812a-2bca099ff0c4": "https://ms.yugipedia.com//5/53/CyberRaider-SBTK-SP-C-1E.png",
+          "8f8fbc6d-ca74-4386-9e4a-23d0a7d931a7": "https://ms.yugipedia.com//8/8c/SasukeSamurai-SBTK-SP-C-1E.png",
+          "ec0a56cb-ec94-4813-a6b5-7bfc476282ef": "https://ms.yugipedia.com//c/c1/FlintLock-SBTK-SP-C-1E.png",
+          "b04e67a1-ab29-4348-b6d4-4d39c58e9426": "https://ms.yugipedia.com//8/8a/JurracStauriko-SBTK-SP-SR-1E.png",
+          "7179d2b3-9e2c-4d83-a8b8-90ff03bd30b7": "https://ms.yugipedia.com//b/b5/SuperWarLion-SBTK-SP-C-1E.png",
+          "d34c802d-0f4f-46d5-a402-7137063ab5b9": "https://ms.yugipedia.com//7/71/SharethePain-SBTK-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/8a/SBTK-BoosterEN.png",
+      "cards": [
+        {
+          "id": "896ffa0b-fc96-4372-a4f7-ec9ffda39fc5",
+          "card": "ecc83ed8-dce2-44de-bd54-10e4d7866b33",
+          "suffix": "S02",
+          "rarity": "super"
+        },
+        {
+          "id": "a6920a80-8ed6-494e-a4c4-3e2fbf2594a7",
+          "card": "3ae0131e-6896-4176-894a-78659b2f4751",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "897e1644-7afd-4c6c-9025-431cd1ba957d",
+          "card": "5f9bcf6a-32eb-4c55-8865-ed641802bb51",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "c951d22f-84b4-4b71-a0da-4b77025f0f8e",
+          "card": "4ac409d2-5c24-4ca7-8195-046cb0326827",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "ec0a56cb-ec94-4813-a6b5-7bfc476282ef",
+          "card": "c7518654-117a-4918-ae88-a3f9b6d3e32e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b04e67a1-ab29-4348-b6d4-4d39c58e9426",
+          "card": "4dd06634-6f20-4ffd-a3a6-4f21125587dc",
+          "suffix": "024",
+          "rarity": "super"
+        },
+        {
+          "id": "1e17ef40-3fa9-4b60-b63d-72fa3fbf5e28",
+          "card": "1f1b0d2b-3234-4b09-afa7-b78e1c85e7f1",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "2b3a93ab-efdf-46b0-8d07-485372dd2bcb",
+          "card": "9bd1d356-a12b-4141-92e8-1f2c9c049b26",
+          "suffix": "032",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/41/SBTK-BoosterDE.png",
+      "cards": [
+        {
+          "id": "e5814d73-8971-4125-9caf-83b8538045c5",
+          "card": "ecc83ed8-dce2-44de-bd54-10e4d7866b33",
+          "suffix": "S02",
+          "rarity": "super"
+        },
+        {
+          "id": "d786b4f8-6290-42b7-98fd-7dd2cf1552a2",
+          "card": "3ae0131e-6896-4176-894a-78659b2f4751",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4fb9988e-7ac7-41da-b921-8096a643b3b1",
+          "card": "5f9bcf6a-32eb-4c55-8865-ed641802bb51",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "6f438bd6-757e-4ae9-976b-da766032a733",
+          "card": "4ac409d2-5c24-4ca7-8195-046cb0326827",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "ec0a56cb-ec94-4813-a6b5-7bfc476282ef",
+          "card": "c7518654-117a-4918-ae88-a3f9b6d3e32e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b04e67a1-ab29-4348-b6d4-4d39c58e9426",
+          "card": "4dd06634-6f20-4ffd-a3a6-4f21125587dc",
+          "suffix": "024",
+          "rarity": "super"
+        },
+        {
+          "id": "e8eb8104-5cf6-4b58-b572-080368367e3e",
+          "card": "1f1b0d2b-3234-4b09-afa7-b78e1c85e7f1",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "de59d0d4-52b1-4512-a426-1a6021a66d1a",
+          "card": "9bd1d356-a12b-4141-92e8-1f2c9c049b26",
+          "suffix": "032",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6f/SBTK-BoosterFR.png",
+      "cards": [
+        {
+          "id": "ddb0fc4a-acab-422b-9945-e92e29ecedf5",
+          "card": "ecc83ed8-dce2-44de-bd54-10e4d7866b33",
+          "suffix": "S02",
+          "rarity": "super"
+        },
+        {
+          "id": "bbed619d-da12-43d2-a30b-113b3dfdbd82",
+          "card": "3ae0131e-6896-4176-894a-78659b2f4751",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cebb545e-3e3a-4765-ad73-48d5fcc9231b",
+          "card": "5f9bcf6a-32eb-4c55-8865-ed641802bb51",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "5940ebce-004d-49c3-9d80-5a089a419c64",
+          "card": "4ac409d2-5c24-4ca7-8195-046cb0326827",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "ec0a56cb-ec94-4813-a6b5-7bfc476282ef",
+          "card": "c7518654-117a-4918-ae88-a3f9b6d3e32e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b04e67a1-ab29-4348-b6d4-4d39c58e9426",
+          "card": "4dd06634-6f20-4ffd-a3a6-4f21125587dc",
+          "suffix": "024",
+          "rarity": "super"
+        },
+        {
+          "id": "9a52ccca-b30b-4f5b-8ff3-994880546d1b",
+          "card": "1f1b0d2b-3234-4b09-afa7-b78e1c85e7f1",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "53951fdc-8559-4d3b-8b26-9b08de7760bd",
+          "card": "9bd1d356-a12b-4141-92e8-1f2c9c049b26",
+          "suffix": "032",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0e/SBTK-BoosterPT.png",
+      "cards": [
+        {
+          "id": "8498031b-6099-4c15-bc0d-3d7fac7a511f",
+          "card": "ecc83ed8-dce2-44de-bd54-10e4d7866b33",
+          "suffix": "S02",
+          "rarity": "super"
+        },
+        {
+          "id": "fd7515f5-ec2a-4c18-885e-28cf2f5ce83d",
+          "card": "3ae0131e-6896-4176-894a-78659b2f4751",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d249bbe1-63a9-4671-9c3d-bed587468cb5",
+          "card": "5f9bcf6a-32eb-4c55-8865-ed641802bb51",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "18672755-3bbd-4e06-9f16-a31bd1120fd3",
+          "card": "4ac409d2-5c24-4ca7-8195-046cb0326827",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "ec0a56cb-ec94-4813-a6b5-7bfc476282ef",
+          "card": "c7518654-117a-4918-ae88-a3f9b6d3e32e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b04e67a1-ab29-4348-b6d4-4d39c58e9426",
+          "card": "4dd06634-6f20-4ffd-a3a6-4f21125587dc",
+          "suffix": "024",
+          "rarity": "super"
+        },
+        {
+          "id": "4a509e95-0e79-47d0-b464-4629b897e111",
+          "card": "1f1b0d2b-3234-4b09-afa7-b78e1c85e7f1",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "3b2a0247-97ef-4e7a-8e05-914c71aa4095",
+          "card": "9bd1d356-a12b-4141-92e8-1f2c9c049b26",
+          "suffix": "032",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b4/SBTK-BoosterIT.png",
+      "cards": [
+        {
+          "id": "70b5e3d8-8831-4b64-85e4-27882dd2ad78",
+          "card": "ecc83ed8-dce2-44de-bd54-10e4d7866b33",
+          "suffix": "S02",
+          "rarity": "super"
+        },
+        {
+          "id": "1ce9d226-7614-49bd-af48-1a99336a6ae9",
+          "card": "3ae0131e-6896-4176-894a-78659b2f4751",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "de8060f7-2b5e-46e3-b108-48fd5feb8084",
+          "card": "5f9bcf6a-32eb-4c55-8865-ed641802bb51",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "063f710c-3e6e-4b8f-b26e-bd3e0fd6484e",
+          "card": "4ac409d2-5c24-4ca7-8195-046cb0326827",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "ec0a56cb-ec94-4813-a6b5-7bfc476282ef",
+          "card": "c7518654-117a-4918-ae88-a3f9b6d3e32e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b04e67a1-ab29-4348-b6d4-4d39c58e9426",
+          "card": "4dd06634-6f20-4ffd-a3a6-4f21125587dc",
+          "suffix": "024",
+          "rarity": "super"
+        },
+        {
+          "id": "d9f4ce61-671d-49c7-9375-6e0c083ebdb0",
+          "card": "1f1b0d2b-3234-4b09-afa7-b78e1c85e7f1",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "d729a1a3-70b4-4a50-a681-05ce2c288c9c",
+          "card": "9bd1d356-a12b-4141-92e8-1f2c9c049b26",
+          "suffix": "032",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/ce/SBTK-BoosterSP.png",
+      "cards": [
+        {
+          "id": "9addf891-3942-441b-8852-35a627cb17eb",
+          "card": "ecc83ed8-dce2-44de-bd54-10e4d7866b33",
+          "suffix": "S02",
+          "rarity": "super"
+        },
+        {
+          "id": "051fbc43-b308-49ad-9b66-ae6b53e81e32",
+          "card": "3ae0131e-6896-4176-894a-78659b2f4751",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f7fd8ac3-eb46-41bf-812a-2bca099ff0c4",
+          "card": "5f9bcf6a-32eb-4c55-8865-ed641802bb51",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "8f8fbc6d-ca74-4386-9e4a-23d0a7d931a7",
+          "card": "4ac409d2-5c24-4ca7-8195-046cb0326827",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "ec0a56cb-ec94-4813-a6b5-7bfc476282ef",
+          "card": "c7518654-117a-4918-ae88-a3f9b6d3e32e",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "b04e67a1-ab29-4348-b6d4-4d39c58e9426",
+          "card": "4dd06634-6f20-4ffd-a3a6-4f21125587dc",
+          "suffix": "024",
+          "rarity": "super"
+        },
+        {
+          "id": "7179d2b3-9e2c-4d83-a8b8-90ff03bd30b7",
+          "card": "1f1b0d2b-3234-4b09-afa7-b78e1c85e7f1",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "d34c802d-0f4f-46d5-a402-7137063ab5b9",
+          "card": "9bd1d356-a12b-4141-92e8-1f2c9c049b26",
+          "suffix": "032",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Speed Duel: Trials of the Kingdom",
+      "id": 652212
+    }
+  }
+}

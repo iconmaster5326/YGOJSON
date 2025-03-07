@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "da4d8dfb-3ec1-47c7-908f-e4c35bff57e1",
+  "name": {
+    "en": "Promotion Pack",
+    "ja": "\u30d7\u30ed\u30e2\u30fc\u30b7\u30e7\u30f3\u30d1\u30c3\u30af \uff12\uff10\uff11\uff10"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "PR01-JP",
+      "date": "2010-11-13",
+      "image": "https://ms.yugipedia.com//f/f2/PR01-PromoJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "70544d38-292a-475c-8963-7ba44f97a4a0": "https://ms.yugipedia.com//1/1e/OjamaBlue-PR01-JP-C.jpg",
+          "7c9d150e-6fca-467a-86c5-55af02d0d0ca": "https://ms.yugipedia.com//f/fa/VampiricKoala-PR01-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          141410003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/f2/PR01-PromoJP.jpg",
+      "cards": [
+        {
+          "id": "70544d38-292a-475c-8963-7ba44f97a4a0",
+          "card": "62b6a5ea-d2b3-491d-b7b8-300f3cc82808",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "7c9d150e-6fca-467a-86c5-55af02d0d0ca",
+          "card": "c3804352-31ad-4296-bf9c-090d15a5fba6",
+          "suffix": "009",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Promotion Pack",
+      "id": 149931
+    }
+  }
+}

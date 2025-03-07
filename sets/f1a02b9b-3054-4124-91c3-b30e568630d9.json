@@ -1,0 +1,857 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "f1a02b9b-3054-4124-91c3-b30e568630d9",
+  "name": {
+    "en": "Blazing Vortex",
+    "fr": "Vortex Embras\u00e9",
+    "de": "Blazing Vortex",
+    "it": "Vortice Fiammeggiante",
+    "pt": "V\u00f3rtice Ardente",
+    "es": "V\u00f3rtice Abrasador",
+    "ja": "\u30d6\u30ec\u30a4\u30b8\u30f3\u30b0\u30fb\u30dc\u30eb\u30c6\u30c3\u30af\u30b9",
+    "ko": "\ube14\ub808\uc774\uc9d5 \ubcf4\ud14d\uc2a4"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "BLVO-EN",
+      "image": "https://ms.yugipedia.com//3/3d/BLVO-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "f1aefb3b-bb25-4c3c-bc14-fa5aad9b646f": "https://ms.yugipedia.com//7/76/SForceRappaChiyomaru-BLVO-EN-ScR-1E.png",
+          "87081975-5c3f-49c7-a725-6297512402b5": "https://ms.yugipedia.com//e/ef/SForcePlaTina-BLVO-EN-UR-1E.png",
+          "3e511df6-94b7-4439-a624-2ffdca7b729a": "https://ms.yugipedia.com//5/56/FabledMarcosia-BLVO-EN-C-1E.png",
+          "95ea661c-6b9c-4d44-a26c-6ac7b97e2ee2": "https://ms.yugipedia.com//f/fb/MetalfoesVanisher-BLVO-EN-SR-1E.png",
+          "0f2ae95a-f6dd-4573-a0a4-b1401a05b3bf": "https://ms.yugipedia.com//8/86/AncientWarriorsRebelliousLuFeng-BLVO-EN-SR-1E.png",
+          "38d7e191-019a-4fa7-8613-9d57cfa1b6d4": "https://ms.yugipedia.com//9/94/DragunityKnightGormfaobhar-BLVO-EN-SR-1E.png",
+          "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c": "https://ms.yugipedia.com//2/27/SForceShowdown-BLVO-EN-C-1E.png",
+          "5af7aebe-2546-4fdc-8770-be9e7bb8bbed": "https://ms.yugipedia.com//0/07/StairwaytoaFabledRealm-BLVO-EN-C-1E.png",
+          "fadf8cae-cb99-4305-a93c-133ba834043e": "https://ms.yugipedia.com//7/74/IcyBreezeRefrain-BLVO-EN-C-1E.png",
+          "d6d0e4e5-a53a-4a80-9517-c624ca0cbbaa": "https://ms.yugipedia.com//a/a1/MateriactorGigaboros-BLVO-EN-SR-1E.png",
+          "2206e5ce-3ee3-428f-bb74-dfb5e7e876d9": "https://ms.yugipedia.com//8/8a/WarRockSkyler-BLVO-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001101000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "BLVO-DE",
+      "image": "https://ms.yugipedia.com//0/06/BLVO-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "BLVO-JP",
+      "date": "2020-10-31",
+      "image": "https://ms.yugipedia.com//7/77/BLVO-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "a33ee485-5cc3-4be7-a9fd-6ad62e692f38": "https://ms.yugipedia.com//2/25/SForceRappaChiyomaru-BLVO-JP-SR.png",
+          "e8dd8b66-aa9a-4038-a634-1e15f360b89a": "https://ms.yugipedia.com//8/88/SForceRappaChiyomaru-BLVO-JP-ScR.png",
+          "c27431b8-8ae0-493e-a590-e3fbd5df5810": "https://ms.yugipedia.com//d/dd/SForceRappaChiyomaru-BLVO-JP-PScR.png",
+          "b6db8f87-1bc5-40f4-be76-fb4265d7584a": "https://ms.yugipedia.com//1/19/SForcePlaTina-BLVO-JP-R.png",
+          "726813c6-051d-48fa-bf2e-1ce1cf9553f1": "https://ms.yugipedia.com//8/86/FabledMarcosia-BLVO-JP-R.png",
+          "1dd21745-7497-4bf1-affd-f08f743ddfce": "https://ms.yugipedia.com//7/71/MetalfoesVanisher-BLVO-JP-R.png",
+          "813bfbe9-693d-4a59-b33d-024f8279c925": "https://ms.yugipedia.com//f/f7/AncientWarriorsRebelliousLuFeng-BLVO-JP-SR.png",
+          "e21611f4-03a9-40bf-a113-b2e497421787": "https://ms.yugipedia.com//d/d2/AncientWarriorsRebelliousLuFeng-BLVO-JP-ScR.png",
+          "177c07c2-1834-45f3-b0ce-007e848df7af": "https://ms.yugipedia.com//7/75/AncientWarriorsRebelliousLuFeng-BLVO-JP-PScR.png",
+          "3f479bd5-61fa-4b0b-a35b-52715c13dbbe": "https://ms.yugipedia.com//3/3f/DragunityKnightGormfaobhar-BLVO-JP-R.png",
+          "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c": "https://ms.yugipedia.com//e/ee/SForceShowdown-BLVO-JP-C.png",
+          "4dea2758-5637-4890-bafc-c0e64dd2ad3e": "https://ms.yugipedia.com//4/43/StairwaytoaFabledRealm-BLVO-JP-C.png",
+          "2e9a96e3-1efc-4bb0-acc7-8182b81c0e00": "https://ms.yugipedia.com//3/32/IcyBreezeRefrain-BLVO-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1123005
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "BLVO-SP",
+      "image": "https://ms.yugipedia.com//0/04/BLVO-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "BLVO-IT",
+      "image": "https://ms.yugipedia.com//2/22/BLVO-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "BLVO-PT",
+      "date": "2021-02-04",
+      "image": "https://ms.yugipedia.com//5/50/BLVO-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "BLVO-FR",
+      "image": "https://ms.yugipedia.com//9/90/BLVO-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "BLVO-KR",
+      "date": "2021-02-04",
+      "image": "https://ms.yugipedia.com//7/71/BLVO-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001101000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3d/BLVO-BoosterEN.png",
+      "cards": [
+        {
+          "id": "f1aefb3b-bb25-4c3c-bc14-fa5aad9b646f",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "87081975-5c3f-49c7-a725-6297512402b5",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3e511df6-94b7-4439-a624-2ffdca7b729a",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "95ea661c-6b9c-4d44-a26c-6ac7b97e2ee2",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "0f2ae95a-f6dd-4573-a0a4-b1401a05b3bf",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "38d7e191-019a-4fa7-8613-9d57cfa1b6d4",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "5af7aebe-2546-4fdc-8770-be9e7bb8bbed",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "fadf8cae-cb99-4305-a93c-133ba834043e",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "d6d0e4e5-a53a-4a80-9517-c624ca0cbbaa",
+          "card": "b09dc26d-88a9-47b0-ad25-3a73bf467333",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "2206e5ce-3ee3-428f-bb74-dfb5e7e876d9",
+          "card": "9d24cda1-f223-4da4-8ff0-50d63dd851d9",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/06/BLVO-BoosterDE.png",
+      "cards": [
+        {
+          "id": "3a4de504-2e1e-4e25-8666-03e6c5072178",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "0a0dac20-3739-4bf0-9e0f-36bcdbf7d46a",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5f53605d-b26e-4f87-bdef-4c3ed086abf7",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "0ad85173-d2d0-4322-b188-7dd261f69274",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "1cbfbc1d-3f82-41e9-849e-4a55d3cbbb79",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "59dc0f7f-4764-492f-a29e-967e589bb912",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "ed22e2bb-9d47-437f-9b33-890b82c73606",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "481aeea1-cd83-4aa8-ae65-5eb10a5184ea",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "f6ea4a67-2ee0-41ec-a55f-66ae616093b6",
+          "card": "b09dc26d-88a9-47b0-ad25-3a73bf467333",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "aebeca4c-403f-4573-83d0-931ca8195d22",
+          "card": "9d24cda1-f223-4da4-8ff0-50d63dd851d9",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/77/BLVO-BoosterJP.png",
+      "cards": [
+        {
+          "id": "a33ee485-5cc3-4be7-a9fd-6ad62e692f38",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "e8dd8b66-aa9a-4038-a634-1e15f360b89a",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "c27431b8-8ae0-493e-a590-e3fbd5df5810",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "b6db8f87-1bc5-40f4-be76-fb4265d7584a",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "rare"
+        },
+        {
+          "id": "726813c6-051d-48fa-bf2e-1ce1cf9553f1",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "rare"
+        },
+        {
+          "id": "1dd21745-7497-4bf1-affd-f08f743ddfce",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "813bfbe9-693d-4a59-b33d-024f8279c925",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "e21611f4-03a9-40bf-a113-b2e497421787",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "177c07c2-1834-45f3-b0ce-007e848df7af",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "3f479bd5-61fa-4b0b-a35b-52715c13dbbe",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "4dea2758-5637-4890-bafc-c0e64dd2ad3e",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "2e9a96e3-1efc-4bb0-acc7-8182b81c0e00",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/04/BLVO-BoosterSP.png",
+      "cards": [
+        {
+          "id": "05f50cf3-8038-40a0-a2a2-21d629f3707f",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "16e5a28c-2dc4-405d-8290-db4033b7b26f",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "36c7622f-d4f7-4b57-9ecd-2c0f242173b5",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "1cbc8cbc-62c9-4a95-a8ae-5ba8d67738dc",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "616ec366-8125-4f63-9011-197add298663",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "23c3da71-6d32-4a25-89e7-021ce764b7f0",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "c2aaf299-033f-438d-9a25-d9aedb7b2f86",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "60289e3f-1c47-4a20-a6f1-4a6238ef1393",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "08622875-1f8e-40c4-9a50-0790756b6aba",
+          "card": "b09dc26d-88a9-47b0-ad25-3a73bf467333",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "3ecd9744-f5db-4b21-af82-eb4e417f49ff",
+          "card": "9d24cda1-f223-4da4-8ff0-50d63dd851d9",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/22/BLVO-BoosterIT.png",
+      "cards": [
+        {
+          "id": "bd6473fe-2625-423a-92b1-85bc916795f0",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "8ad74b74-5a54-4174-8074-a28adc084377",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ec38641d-6479-42c2-97f7-0cdc91b0b813",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "7549d7a8-5fff-4fde-bc01-a4254f1e935d",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "c8575a66-1c9f-4ba1-9bb3-5b445e742131",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "c7a9af59-ab06-4d4b-b220-119fd71c91d8",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "96f55891-230a-4b48-992d-51e435159ce7",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "cca00078-949a-4424-82f8-b3d7569a389b",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "9e88809a-59a5-4544-b253-36cbfd648b84",
+          "card": "b09dc26d-88a9-47b0-ad25-3a73bf467333",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "54277e5c-7be3-41b6-937c-568574aa28bd",
+          "card": "9d24cda1-f223-4da4-8ff0-50d63dd851d9",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/50/BLVO-BoosterPT.png",
+      "cards": [
+        {
+          "id": "5a913239-52b6-468b-aa47-4becd1a02655",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "a1a49c8c-3f8c-453c-88a1-de932b8b9680",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9826e66d-988b-44b8-a3a9-5606cabb7d47",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "45e26003-0481-428f-9a2c-45f0733a0171",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "b84df319-250e-4a8d-a2ab-930e3f4932b1",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "da1532d8-922b-4063-9c40-cca3d4cde011",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "9f0603c0-0781-45a9-bb4d-a65d5a10bfcb",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "2e0141de-11de-4c44-8a52-037d915d780b",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7126a8ff-44ff-4a81-91f3-470cc844dbf8",
+          "card": "b09dc26d-88a9-47b0-ad25-3a73bf467333",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "8226f2b7-d6df-4ccb-a05e-35844ab1f5a9",
+          "card": "9d24cda1-f223-4da4-8ff0-50d63dd851d9",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/90/BLVO-BoosterFR.png",
+      "cards": [
+        {
+          "id": "69bbf07f-f2e9-4f67-9973-98b69ee58683",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "14182c4d-b648-4724-acd5-2a244bd2243a",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d851be17-b500-458e-9a8f-13994ff6a048",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "2d1c946b-8819-42a9-bc41-742cb7d95e14",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "cdb2f86f-df47-48ad-a168-b40977272439",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "055c1ab3-3f8b-4114-8119-1cde5cf7b4f4",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "super"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "8559bdff-64fa-48e3-b761-970030ad3992",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "e1b04a00-32b6-4db9-b5d8-90344aa3e4e9",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "a4777883-3e2d-42ee-8820-4452b9472d4c",
+          "card": "b09dc26d-88a9-47b0-ad25-3a73bf467333",
+          "suffix": "084",
+          "rarity": "super"
+        },
+        {
+          "id": "66246532-025c-48c6-adad-3387c6752050",
+          "card": "9d24cda1-f223-4da4-8ff0-50d63dd851d9",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/71/BLVO-BoosterKR.png",
+      "cards": [
+        {
+          "id": "c381ba23-d64f-4eb6-a187-c273de565d3e",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "super"
+        },
+        {
+          "id": "345db9c4-e42b-4e0e-8c0d-7a9af789ee0f",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "secret"
+        },
+        {
+          "id": "45801754-9d82-4483-a4e7-1a7bb910fa88",
+          "card": "88c33c1a-beec-4f64-93f0-e92c276fd7aa",
+          "suffix": "011",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "14404c1f-7f20-4199-a073-692cd5e0a893",
+          "card": "83c197fa-6b16-4eeb-a837-8bc41c141d17",
+          "suffix": "015",
+          "rarity": "rare"
+        },
+        {
+          "id": "2ac168a0-14d6-4099-a0d9-88b6b2bd381c",
+          "card": "e29c2f3c-ad33-45c2-ae97-ed5bfd9553d9",
+          "suffix": "018",
+          "rarity": "rare"
+        },
+        {
+          "id": "1afa0cec-b9a5-4420-b8d8-0e9638738104",
+          "card": "6d51fddc-2397-48fd-882c-45e352783b77",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "a055659b-c553-446b-a2c6-b50f446e6c3f",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "super"
+        },
+        {
+          "id": "b4a9d017-ca3b-4e1d-a20d-67bcb9329e44",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "secret"
+        },
+        {
+          "id": "47c1b7a3-1197-4472-8577-05f18a67be7a",
+          "card": "3f6ff462-3574-48e7-a17b-2490ee483488",
+          "suffix": "025",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "d2f82007-c584-4b8c-b25e-84e45d4fc51d",
+          "card": "8a022048-56f0-4a27-bfe8-f13b4ee837d9",
+          "suffix": "045",
+          "rarity": "rare"
+        },
+        {
+          "id": "0b74eaa4-d5ab-4f38-b08c-04b2e4fa607c",
+          "card": "955db443-c5de-448c-9034-d81e0eb13c4b",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "eacff412-3c58-44cd-b7d1-d3062d4e14b6",
+          "card": "69e9b4fe-94df-416f-9712-57cdddc6f282",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "0dece37e-1086-4178-8622-9ff752fdf110",
+          "card": "9cfef4cb-d8e2-4196-a80f-3f216a3d2572",
+          "suffix": "072",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Blazing Vortex",
+      "id": 815950
+    }
+  }
+}

@@ -1,0 +1,1121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "59061cea-ab88-4396-90d9-8a3f145880e3",
+  "name": {
+    "en": "Crimson Crisis",
+    "fr": "La Crise \u00c9carlate",
+    "de": "Crimson Crisis",
+    "it": "Crisi Scarlatta",
+    "es": "Crisis Carmesi",
+    "ja": "\u30af\u30ea\u30e0\u30be\u30f3\u30fb\u30af\u30e9\u30a4\u30b7\u30b9",
+    "ko": "\uc2ec\ud64d\uc758 \uc704\uae30"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "CRMS-EN",
+      "image": "https://ms.yugipedia.com//b/b8/CRMS-BoosterEN.jpg",
+      "cardImages": {
+        "unlimited": {
+          "9ef9822e-ab1a-4923-ad2e-ddfa164f4226": "https://ms.yugipedia.com//0/02/DebrisDragon-CRMS-EN-R-UE.png",
+          "4e197e9b-23df-4da5-afe5-2e2b12f7e441": "https://ms.yugipedia.com//9/90/TrapReactorYFI-CRMS-EN-C-UE.png",
+          "e11076df-2419-451f-a7a1-c86d6fc13d46": "https://ms.yugipedia.com//1/11/SpellReactorRE-CRMS-EN-C-UE.png",
+          "8294a051-9154-454a-ad32-7758ecaa611d": "https://ms.yugipedia.com//3/35/BlackSalvo-CRMS-EN-SR-UE.png",
+          "78849303-f7b6-4a0e-9b0b-048aea6ad41a": "https://ms.yugipedia.com//d/d2/FlyingFortressSKYFIRE-CRMS-EN-R-UE.png",
+          "6ef15930-8556-42f4-af13-c2beff47f6d4": "https://ms.yugipedia.com//e/ee/DoomkaiserDragonAssaultMode-CRMS-EN-UR-UE.jpg",
+          "0c81d998-cf44-4e1e-8210-a53df656902a": "https://ms.yugipedia.com//7/7f/DoomkaiserDragonAssaultMode-CRMS-EN-UtR-UE.jpg",
+          "6052284e-4139-4b23-ba28-9253fce84895": "https://ms.yugipedia.com//c/cc/ArcaniteMagicianAssaultMode-CRMS-EN-UR-UE.png",
+          "28719063-08a6-477e-a909-b74fe395c3b7": "https://ms.yugipedia.com//1/19/ArcaniteMagicianAssaultMode-CRMS-EN-UtR-UE.png",
+          "2f087449-68e5-4a7b-9649-23531088abf8": "https://ms.yugipedia.com//a/a2/TelekineticPowerWell-CRMS-EN-C-UE.png",
+          "ad2bdb7d-20b0-403e-97dd-b2915e93313a": "https://ms.yugipedia.com//1/11/VerdantSanctuary-CRMS-EN-C-UE.png",
+          "b06b3ed8-e92d-4d14-8734-eb1375065cbe": "https://ms.yugipedia.com//4/4a/MorphtronicMixup-CRMS-EN-C-UE.png",
+          "e9d74f17-804a-4231-8add-dd3c9353a0a4": "https://ms.yugipedia.com//f/fc/WallofThorns-CRMS-EN-R-UE.jpg",
+          "ff731124-357e-470a-aa3b-a30348f42d80": "https://ms.yugipedia.com//0/01/SubmarineFrog-CRMS-EN-C-UE.png",
+          "ca64ea69-5895-47f6-a856-9e569e1f355b": "https://ms.yugipedia.com//a/a2/SynchroChange-CRMS-EN-R-UE.jpg"
+        },
+        "1st": {
+          "9ef9822e-ab1a-4923-ad2e-ddfa164f4226": "https://ms.yugipedia.com//3/3c/DebrisDragon-CRMS-EN-R-1E.png",
+          "4e197e9b-23df-4da5-afe5-2e2b12f7e441": "https://ms.yugipedia.com//8/85/TrapReactorYFI-CRMS-EN-C-1E.png",
+          "e11076df-2419-451f-a7a1-c86d6fc13d46": "https://ms.yugipedia.com//5/55/SpellReactorRE-CRMS-EN-C-1E.png",
+          "8294a051-9154-454a-ad32-7758ecaa611d": "https://ms.yugipedia.com//2/2f/BlackSalvo-CRMS-EN-SR-1E.png",
+          "78849303-f7b6-4a0e-9b0b-048aea6ad41a": "https://ms.yugipedia.com//7/7c/FlyingFortressSKYFIRE-CRMS-EN-R-1E.png",
+          "6ef15930-8556-42f4-af13-c2beff47f6d4": "https://ms.yugipedia.com//d/d7/DoomkaiserDragonAssaultMode-CRMS-EN-UR-1E.png",
+          "0c81d998-cf44-4e1e-8210-a53df656902a": "https://ms.yugipedia.com//a/a4/DoomkaiserDragonAssaultMode-CRMS-EN-UtR-1E.png",
+          "6052284e-4139-4b23-ba28-9253fce84895": "https://ms.yugipedia.com//5/5b/ArcaniteMagicianAssaultMode-CRMS-EN-UR-1E.png",
+          "28719063-08a6-477e-a909-b74fe395c3b7": "https://ms.yugipedia.com//c/c6/ArcaniteMagicianAssaultMode-CRMS-EN-UtR-1E.png",
+          "2f087449-68e5-4a7b-9649-23531088abf8": "https://ms.yugipedia.com//c/ca/TelekineticPowerWell-CRMS-EN-C-1E.png",
+          "ad2bdb7d-20b0-403e-97dd-b2915e93313a": "https://ms.yugipedia.com//5/5e/VerdantSanctuary-CRMS-EN-C-1E.png",
+          "b06b3ed8-e92d-4d14-8734-eb1375065cbe": "https://ms.yugipedia.com//6/6a/MorphtronicMixup-CRMS-EN-C-1E.png",
+          "e9d74f17-804a-4231-8add-dd3c9353a0a4": "https://ms.yugipedia.com//c/c8/WallofThorns-CRMS-EN-R-1E.png",
+          "ff731124-357e-470a-aa3b-a30348f42d80": "https://ms.yugipedia.com//e/e6/SubmarineFrog-CRMS-EN-C-1E.png",
+          "ca64ea69-5895-47f6-a856-9e569e1f355b": "https://ms.yugipedia.com//e/e1/SynchroChange-CRMS-EN-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11108000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "CRMS-DE",
+      "image": "https://ms.yugipedia.com//3/38/CRMS-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "bef42ac4-2327-4a42-ac74-9f9d4ee5bfae": "https://ms.yugipedia.com//3/3f/SubmarineFrog-CRMS-DE-C-1E.png",
+          "604de5d5-75e1-4df1-982b-85e36d587214": "https://ms.yugipedia.com//e/e9/SynchroChange-CRMS-DE-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21108000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "CRMS-JP",
+      "date": "2008-11-15",
+      "image": "https://ms.yugipedia.com//6/6d/CRMS-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "387e0c97-a890-45a1-8f36-ca029e05380a": "https://ms.yugipedia.com//6/61/DebrisDragon-CRMS-JP-R.jpg",
+          "b5eaf14f-af78-4539-978c-082faf08370c": "https://ms.yugipedia.com//5/5d/TrapReactorYFI-CRMS-JP-C.jpg",
+          "7556d4c1-bf3c-42dd-9111-050e37881210": "https://ms.yugipedia.com//9/96/SpellReactorRE-CRMS-JP-C.jpg",
+          "d2ce1e7a-1193-4b15-9674-a524321dc37b": "https://ms.yugipedia.com//b/bb/BlackSalvo-CRMS-JP-R.jpg",
+          "5ef6125a-8120-4454-9a51-becfb83eed05": "https://ms.yugipedia.com//1/19/FlyingFortressSKYFIRE-CRMS-JP-R.jpg",
+          "e584c1a6-b2e4-4530-8cca-cba9bc8dd0a4": "https://ms.yugipedia.com//8/84/DoomkaiserDragonAssaultMode-CRMS-JP-UR.jpg",
+          "01337f07-0e5e-40f0-a708-d29b2799b55b": "https://ms.yugipedia.com//f/fd/DoomkaiserDragonAssaultMode-CRMS-JP-UtR.jpg",
+          "566cb30a-7259-4623-9378-c180778b8c3b": "https://ms.yugipedia.com//1/10/ArcaniteMagicianAssaultMode-CRMS-JP-UR.jpg",
+          "3499ced0-4cf8-484b-aa26-459352c12322": "https://ms.yugipedia.com//6/6f/ArcaniteMagicianAssaultMode-CRMS-JP-UtR.jpg",
+          "643db6c4-1752-4de3-b0bc-784164a10c4a": "https://ms.yugipedia.com//0/0a/TelekineticPowerWell-CRMS-JP-C.jpg",
+          "b0ea6776-76f6-4fd0-80ad-95e64fea89d1": "https://ms.yugipedia.com//6/6c/VerdantSanctuary-CRMS-JP-C.jpg",
+          "683ddb49-89a1-4088-8b29-eb5fa0fe4733": "https://ms.yugipedia.com//4/48/MorphtronicMixup-CRMS-JP-C.jpg",
+          "f915ec92-a673-44dd-a7d6-66435d22afe2": "https://ms.yugipedia.com//5/5e/WallofThorns-CRMS-JP-R.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111002
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "CRMS-AE",
+      "date": "2009-04-16",
+      "image": "https://ms.yugipedia.com//2/20/CRMS-BoosterAE.png",
+      "cardImages": {
+        "1st": {
+          "3e951e93-6454-40dd-b98b-0465f983c82c": "https://ms.yugipedia.com//f/f7/DebrisDragon-CRMS-AE-R-1E.png",
+          "1c36bcf9-b631-4222-9bdd-1d2062fb6f81": "https://ms.yugipedia.com//2/2e/ArcaniteMagicianAssaultMode-CRMS-AE-UR-1E.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000000195000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "CRMS-SP",
+      "image": "https://ms.yugipedia.com//9/91/CRMS-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "cc4525ed-6c06-4189-aee5-43fb40f61c21": "https://ms.yugipedia.com//3/37/DebrisDragon-CRMS-SP-R-1E.jpg",
+          "7763ca86-e0fb-4da8-83a0-db61f8ff5979": "https://ms.yugipedia.com//b/b6/TrapReactorYFI-CRMS-SP-C-1E.png",
+          "c3f777b3-bda5-430f-a1bc-28bea5a1e826": "https://ms.yugipedia.com//7/72/DoomkaiserDragonAssaultMode-CRMS-SP-UR-1E.png",
+          "b96ed9d6-ad34-4e71-ad27-4558ef73ddca": "https://ms.yugipedia.com//9/9c/SubmarineFrog-CRMS-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51107000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "CRMS-IT",
+      "image": "https://ms.yugipedia.com//4/4c/CRMS-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {
+          "02294d44-3f4f-4fc4-808e-215e9268a71e": "https://ms.yugipedia.com//6/68/SubmarineFrog-CRMS-IT-C-UE.png"
+        },
+        "1st": {
+          "e35834d2-3754-45e7-bcce-f858bde8cb40": "https://ms.yugipedia.com//5/5c/ArcaniteMagicianAssaultMode-CRMS-IT-UtR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41108000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "CRMS-FR",
+      "image": "https://ms.yugipedia.com//a/a9/CRMS-BoosterFR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "5c53cd30-c041-4eff-ba55-c3457b309d53": "https://ms.yugipedia.com//5/5a/DebrisDragon-CRMS-FR-R-UE.png",
+          "ef9cb932-9844-485d-82b0-bd6f86fa237f": "https://ms.yugipedia.com//d/dc/DoomkaiserDragonAssaultMode-CRMS-FR-UR-UE.png",
+          "6d8da760-7b45-4a50-8647-3c57e07cb7c8": "https://ms.yugipedia.com//9/9c/DoomkaiserDragonAssaultMode-CRMS-FR-UtR-UE.jpg",
+          "e3eaee93-8bb7-46cd-a632-61950f8e9067": "https://ms.yugipedia.com//4/49/TelekineticPowerWell-CRMS-FR-C-UE.jpg"
+        },
+        "1st": {
+          "55782e45-ac4f-4245-8564-c04efbf31841": "https://ms.yugipedia.com//1/11/BlackSalvo-CRMS-FR-SR-1E.jpg",
+          "ef9cb932-9844-485d-82b0-bd6f86fa237f": "https://ms.yugipedia.com//d/d0/DoomkaiserDragonAssaultMode-CRMS-FR-UR-1E.jpg",
+          "0ff83f80-099e-4825-a2d3-6c24aa74aff5": "https://ms.yugipedia.com//b/b1/ArcaniteMagicianAssaultMode-CRMS-FR-UR-1E.jpg",
+          "42200dec-8587-47b3-bf50-4001596c4e4a": "https://ms.yugipedia.com//1/11/SubmarineFrog-CRMS-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31108000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "CRMS-KR",
+      "date": "2009-05-18",
+      "image": "https://ms.yugipedia.com//2/2f/CRMS-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "6d3a0622-6383-4c9a-b70b-2ec7d08adcfe": "https://ms.yugipedia.com//4/40/DebrisDragon-CRMS-KR-R-UE.png",
+          "48317076-806d-40ab-ab6c-84616490277d": "https://ms.yugipedia.com//b/ba/TrapReactorYFI-CRMS-KR-C-UE.png",
+          "519c9e07-ef6a-4c50-8950-51238980515a": "https://ms.yugipedia.com//f/f5/SpellReactorRE-CRMS-KR-C-UE.png",
+          "6f2d93b0-bb1d-4fc2-96d0-aa0485544ae9": "https://ms.yugipedia.com//9/9c/BlackSalvo-CRMS-KR-R-UE.png",
+          "675fefa3-1994-4b5e-aed7-ca4c63a6c1d3": "https://ms.yugipedia.com//d/d1/FlyingFortressSKYFIRE-CRMS-KR-R-UE.png",
+          "aa605414-ed55-42a2-acbb-f78bb0ca6d7e": "https://ms.yugipedia.com//d/d0/DoomkaiserDragonAssaultMode-CRMS-KR-UR-UE.png",
+          "ff83b550-88e2-400e-9b14-40cb31f28f5f": "https://ms.yugipedia.com//e/e3/DoomkaiserDragonAssaultMode-CRMS-KR-UtR-UE.png",
+          "f4ee8c61-ea75-42f9-bb81-e3ff981a5288": "https://ms.yugipedia.com//e/e8/TelekineticPowerWell-CRMS-KR-C-UE.png",
+          "88f9b315-dba5-4e37-bac2-c957c7fdd7ce": "https://ms.yugipedia.com//4/46/VerdantSanctuary-CRMS-KR-C-UE.png",
+          "2c8b4090-f4b2-49c6-98ba-01a178157312": "https://ms.yugipedia.com//1/17/MorphtronicMixup-CRMS-KR-C-UE.png"
+        },
+        "1st": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71107001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b8/CRMS-BoosterEN.jpg",
+      "cards": [
+        {
+          "id": "9ef9822e-ab1a-4923-ad2e-ddfa164f4226",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "4e197e9b-23df-4da5-afe5-2e2b12f7e441",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "e11076df-2419-451f-a7a1-c86d6fc13d46",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "8294a051-9154-454a-ad32-7758ecaa611d",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "78849303-f7b6-4a0e-9b0b-048aea6ad41a",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "6ef15930-8556-42f4-af13-c2beff47f6d4",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0c81d998-cf44-4e1e-8210-a53df656902a",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "6052284e-4139-4b23-ba28-9253fce84895",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "28719063-08a6-477e-a909-b74fe395c3b7",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "2f087449-68e5-4a7b-9649-23531088abf8",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "ad2bdb7d-20b0-403e-97dd-b2915e93313a",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "b06b3ed8-e92d-4d14-8734-eb1375065cbe",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "e9d74f17-804a-4231-8add-dd3c9353a0a4",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        },
+        {
+          "id": "ff731124-357e-470a-aa3b-a30348f42d80",
+          "card": "c6e01176-d7e3-4372-a941-731f64f3a0ad",
+          "suffix": "087",
+          "rarity": "common"
+        },
+        {
+          "id": "ca64ea69-5895-47f6-a856-9e569e1f355b",
+          "card": "b3b05551-b6ab-4ef3-a502-ea7e8d2036aa",
+          "suffix": "089",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/38/CRMS-BoosterDE.png",
+      "cards": [
+        {
+          "id": "2f81d785-e966-4e71-9024-25fbba8a8607",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "e7c12ed5-1a72-4414-85fa-a98ab65c0d83",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "60b66b17-cdaa-485b-8e58-79d404be024f",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "fb388573-d300-4f38-b9bb-5f88dab6697b",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "a319d585-12af-48ee-9567-499cbcad5c83",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "9549b6ee-30d5-4f67-ab2d-c6809c9253f8",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "68ff386a-09b3-4e4d-a2a9-a84910dc2668",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "14f551d8-050c-4614-989d-8e4bba14a8e5",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7d73fd73-f4e4-49a6-b57e-cf58c58cf4a2",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "9aac2145-c20b-4407-b139-4961983c5579",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "4a784fa1-a7a0-4343-86f0-8523fe858125",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "b48b335a-816e-4a18-9538-9ec936df08ba",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "9c27f45d-657d-4abf-b7cd-28d0ab17e024",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        },
+        {
+          "id": "bef42ac4-2327-4a42-ac74-9f9d4ee5bfae",
+          "card": "c6e01176-d7e3-4372-a941-731f64f3a0ad",
+          "suffix": "087",
+          "rarity": "common"
+        },
+        {
+          "id": "604de5d5-75e1-4df1-982b-85e36d587214",
+          "card": "b3b05551-b6ab-4ef3-a502-ea7e8d2036aa",
+          "suffix": "089",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/6d/CRMS-BoosterJP.png",
+      "cards": [
+        {
+          "id": "387e0c97-a890-45a1-8f36-ca029e05380a",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "b5eaf14f-af78-4539-978c-082faf08370c",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "7556d4c1-bf3c-42dd-9111-050e37881210",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "d2ce1e7a-1193-4b15-9674-a524321dc37b",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "rare"
+        },
+        {
+          "id": "5ef6125a-8120-4454-9a51-becfb83eed05",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "e584c1a6-b2e4-4530-8cca-cba9bc8dd0a4",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "01337f07-0e5e-40f0-a708-d29b2799b55b",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "566cb30a-7259-4623-9378-c180778b8c3b",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3499ced0-4cf8-484b-aa26-459352c12322",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "643db6c4-1752-4de3-b0bc-784164a10c4a",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "b0ea6776-76f6-4fd0-80ad-95e64fea89d1",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "683ddb49-89a1-4088-8b29-eb5fa0fe4733",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "f915ec92-a673-44dd-a7d6-66435d22afe2",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/CRMS-BoosterAE.png",
+      "cards": [
+        {
+          "id": "3e951e93-6454-40dd-b98b-0465f983c82c",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "404b8f9e-a8f6-4e3f-9ac4-e2c79d6b8643",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "51247b20-c153-40fb-8e0e-275be9cdeafb",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "65292b53-2e2e-4503-8717-d0987eb757eb",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "rare"
+        },
+        {
+          "id": "b029bc2c-aaa2-4b1f-b60e-7b5005487953",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "5ce9b9ad-f4b0-4385-82b1-091d93444e74",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d5f65db-b172-413f-b173-8878491891c3",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "1c36bcf9-b631-4222-9bdd-1d2062fb6f81",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9d3002bf-9f24-4b7d-a106-74dd339106a4",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "04c69132-3655-480c-a41d-1d3db2a95198",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "792c0955-099e-43be-8e80-7c00bd6d0d4c",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "c0bde60c-b7c7-41f8-9efc-e4ca5b692c9a",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "247d7c17-f5ba-445b-a943-66614b14dfbb",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/91/CRMS-BoosterSP.png",
+      "cards": [
+        {
+          "id": "cc4525ed-6c06-4189-aee5-43fb40f61c21",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "7763ca86-e0fb-4da8-83a0-db61f8ff5979",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "c8638bc5-6172-4316-ab96-23b2072126ac",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "28f6b1a6-9239-44aa-9c60-2d12080df966",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "6e2853d1-705f-4651-89be-16075c9bf860",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "c3f777b3-bda5-430f-a1bc-28bea5a1e826",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "963d73a4-e6f6-492e-9c88-4fc69b628ce7",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b486eb2a-a4a5-4aec-b607-e9dc34d14406",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bd9ded7d-ac07-41a4-addb-45231b137f2f",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "aaa45658-434a-4410-98bf-7d5d5eb3845e",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "a1530394-21e3-437e-a19e-4e3e3aadc526",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "514c34e1-bed7-4599-bd98-88929f6d6b36",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "318d818e-5aae-4878-b4f0-8bb3bb0e22fe",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        },
+        {
+          "id": "b96ed9d6-ad34-4e71-ad27-4558ef73ddca",
+          "card": "c6e01176-d7e3-4372-a941-731f64f3a0ad",
+          "suffix": "087",
+          "rarity": "common"
+        },
+        {
+          "id": "68cfa438-0800-48f4-ba5d-7017e3e16a11",
+          "card": "b3b05551-b6ab-4ef3-a502-ea7e8d2036aa",
+          "suffix": "089",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4c/CRMS-BoosterIT.png",
+      "cards": [
+        {
+          "id": "51400953-1b0d-42fe-bedb-7ffc6ac27c66",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "a8f52ffa-ca56-43bd-a24f-4b7cd9037b34",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "c552a43d-4046-4858-b42f-fbd0d9b9b6ed",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "86f19593-002b-4caf-8a0d-341ca5725157",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "0325cd98-fe93-4693-a3cf-ba234406b686",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "c418a3c3-d596-4cfe-afa4-d1a6aa2964d8",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "786ee3f8-d501-4edc-a231-fc925b52e551",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "7e6e1ec7-0da4-431d-bd7e-606593641781",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e35834d2-3754-45e7-bcce-f858bde8cb40",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "1341143d-508d-48fb-a99c-c8a5ca9255f2",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "43b335c5-b61d-414e-ac55-96df99a61249",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "8c2fb568-03a5-4de1-ab7a-f64b4492d865",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "a26a5894-5fdb-4922-a4a3-6afb0ebba035",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        },
+        {
+          "id": "02294d44-3f4f-4fc4-808e-215e9268a71e",
+          "card": "c6e01176-d7e3-4372-a941-731f64f3a0ad",
+          "suffix": "087",
+          "rarity": "common"
+        },
+        {
+          "id": "775464fa-cfa9-4c20-b7da-5c5ccaf203d2",
+          "card": "b3b05551-b6ab-4ef3-a502-ea7e8d2036aa",
+          "suffix": "089",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/a9/CRMS-BoosterFR.jpg",
+      "cards": [
+        {
+          "id": "5c53cd30-c041-4eff-ba55-c3457b309d53",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "918eed8e-0d90-4671-83d0-1a25f09a7709",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "85b1dac5-2d19-4ee4-bdbd-c18566d1455c",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "55782e45-ac4f-4245-8564-c04efbf31841",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "super"
+        },
+        {
+          "id": "1adcd41e-22c6-49a3-95da-532b9e64dd90",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "ef9cb932-9844-485d-82b0-bd6f86fa237f",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6d8da760-7b45-4a50-8647-3c57e07cb7c8",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "0ff83f80-099e-4825-a2d3-6c24aa74aff5",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "44e6f407-f06c-484c-9b1a-6135c9c98399",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e3eaee93-8bb7-46cd-a632-61950f8e9067",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "9dd737f2-4553-4d12-8c62-ba5df91ae642",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "3525a7a2-4020-4484-94c2-d8473506446d",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "e45766ce-ff44-42b7-993e-f832e3325d6a",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        },
+        {
+          "id": "42200dec-8587-47b3-bf50-4001596c4e4a",
+          "card": "c6e01176-d7e3-4372-a941-731f64f3a0ad",
+          "suffix": "087",
+          "rarity": "common"
+        },
+        {
+          "id": "2c82c785-7ead-473a-846e-60e1b55113ec",
+          "card": "b3b05551-b6ab-4ef3-a502-ea7e8d2036aa",
+          "suffix": "089",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/2f/CRMS-BoosterKR.png",
+      "cards": [
+        {
+          "id": "6d3a0622-6383-4c9a-b70b-2ec7d08adcfe",
+          "card": "f3599637-d4dc-4ca9-8d88-19fd4472ede1",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "48317076-806d-40ab-ab6c-84616490277d",
+          "card": "9d7a32bc-4d3d-4c2d-9f75-40ccd6d85d9c",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "519c9e07-ef6a-4c50-8950-51238980515a",
+          "card": "d4c8e343-decc-4bcf-a34e-803d493dcc4a",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "6f2d93b0-bb1d-4fc2-96d0-aa0485544ae9",
+          "card": "d1af5c3c-41ad-428f-a036-7dbeb5981b76",
+          "suffix": "015",
+          "rarity": "rare"
+        },
+        {
+          "id": "675fefa3-1994-4b5e-aed7-ca4c63a6c1d3",
+          "card": "ad4fdc93-dade-4ed9-892a-e6f6e485bceb",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "aa605414-ed55-42a2-acbb-f78bb0ca6d7e",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ff83b550-88e2-400e-9b14-40cb31f28f5f",
+          "card": "885feb00-2f38-487c-b392-7be82e6473e8",
+          "suffix": "019",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "99cd3654-0981-41e6-ae9e-79bb5249772d",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultra"
+        },
+        {
+          "id": "25e3a19f-1d6a-40d1-8f70-d2524f7c0509",
+          "card": "ee673406-5149-4d8d-bd49-c731a44700d2",
+          "suffix": "021",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "f4ee8c61-ea75-42f9-bb81-e3ff981a5288",
+          "card": "948ef08f-454f-48ea-b961-e9a9929344c3",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "88f9b315-dba5-4e37-bac2-c957c7fdd7ce",
+          "card": "c4ba801d-888b-40bc-a086-362f17d8d99f",
+          "suffix": "060",
+          "rarity": "common"
+        },
+        {
+          "id": "2c8b4090-f4b2-49c6-98ba-01a178157312",
+          "card": "d4ae6255-0683-451e-b7eb-30dd417922ad",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "23f8c811-7d10-4c6d-b996-b2b297d05843",
+          "card": "0e4b1be2-78cc-4d78-ab67-4968bb08552b",
+          "suffix": "079",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Crimson Crisis"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Crimson Crisis",
+      "id": 41549
+    }
+  }
+}

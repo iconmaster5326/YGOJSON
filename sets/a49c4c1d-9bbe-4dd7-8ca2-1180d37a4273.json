@@ -1,0 +1,1426 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a49c4c1d-9bbe-4dd7-8ca2-1180d37a4273",
+  "name": {
+    "en": "Duelist Nexus",
+    "fr": "Nexus du Duelliste",
+    "de": "Duelist Nexus",
+    "it": "Nexus dei Duellanti",
+    "pt": "Nexus Duelista",
+    "es": "Nexus Duelista",
+    "ja": "\u30c7\u30e5\u30a8\u30ea\u30b9\u30c8\u30fb\u30cd\u30af\u30b5\u30b9",
+    "ko": "\ub4c0\uc5bc\ub9ac\uc2a4\ud2b8 \ub125\uc11c\uc2a4",
+    "zh-CN": "\u51b3\u6597\u8005\u4e4b\u7eca"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "DUNE-KR",
+      "date": "2023-06-24",
+      "image": "https://ms.yugipedia.com//7/7e/DUNE-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001272000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "DUNE-JP",
+      "date": "2023-04-22",
+      "image": "https://ms.yugipedia.com//d/dd/DUNE-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "af1af529-0207-4815-8d4e-200245c2ca17": "https://ms.yugipedia.com//3/30/MagiciansofBondsandUnity-DUNE-JP-QCScR.png",
+          "28bc31a2-0086-40ce-907d-e316d5f96abb": "https://ms.yugipedia.com//7/78/DoubleHeadedDinoKingRex-DUNE-JP-C.png",
+          "b16a4358-8e51-41e9-98d1-8c9de542e151": "https://ms.yugipedia.com//1/10/BehemoththeKingofaHundredBattles-DUNE-JP-R.png",
+          "565984b9-d0d0-4fbc-aef8-4e70cdc7b1d2": "https://ms.yugipedia.com//c/c0/VisasAmritara-DUNE-JP-UR.png",
+          "35417148-52e3-44c0-91bc-19b4b5c22477": "https://ms.yugipedia.com//4/49/VisasAmritara-DUNE-JP-UtR.png",
+          "b8b59c86-57e0-4288-b6ba-f97be9616b44": "https://ms.yugipedia.com//d/db/VisasAmritara-DUNE-JP-ScR.png",
+          "db7960cf-b6da-40e4-8ded-067670b96400": "https://ms.yugipedia.com//9/98/VisasAmritara-DUNE-JP-QCScR.png",
+          "ae9d5b16-ac52-4eb2-80b9-2c9502a9a008": "https://ms.yugipedia.com//0/03/UnchainedSoulLordofYama-DUNE-JP-SR.png",
+          "8e39d4e7-d253-44d4-a189-cb4d79cad106": "https://ms.yugipedia.com//e/e1/UnchainedSoulLordofYama-DUNE-JP-ScR.png",
+          "cddc13da-7a79-4a37-9145-7280f3a08a10": "https://ms.yugipedia.com//f/f4/UnchainedSoulLordofYama-DUNE-JP-QCScR.png",
+          "827592d6-4762-40f6-b63f-74ac3f5da49a": "https://ms.yugipedia.com//e/e1/ChimeraFusion-DUNE-JP-R.png",
+          "65f24024-29ef-4937-9901-a84b312df87e": "https://ms.yugipedia.com//e/ee/SinfulSpoilsofSubversionSnakeEye-DUNE-JP-R.png",
+          "e5d41b81-3de2-4443-9482-d21b914cef4d": "https://ms.yugipedia.com//2/23/NewWorldFormation-DUNE-JP-C.png",
+          "bdcc1cad-1403-48b3-b051-304ae7a256f0": "https://ms.yugipedia.com//7/7f/NemleriaLouve-DUNE-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000009000000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DUNE-FR",
+      "image": "https://ms.yugipedia.com//0/0f/DUNE-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "DUNE-IT",
+      "image": "https://ms.yugipedia.com//6/6d/DUNE-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "DUNE-DE",
+      "image": "https://ms.yugipedia.com//3/36/DUNE-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "DUNE-EN",
+      "image": "https://ms.yugipedia.com//f/fc/DUNE-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "8b23ee43-8c70-47e7-b668-a0bacce7d834": "https://ms.yugipedia.com//8/87/MagiciansofBondsandUnity-DUNE-EN-QCScR-1E.png",
+          "3686428c-e806-45c1-aad9-fb50315145c3": "https://ms.yugipedia.com//b/ba/DoubleHeadedDinoKingRex-DUNE-EN-C-1E.png",
+          "31c99065-0e4b-48c8-9f88-08b87424bba5": "https://ms.yugipedia.com//5/55/BehemoththeKingofaHundredBattles-DUNE-EN-C-1E.png",
+          "579deeac-86eb-44dd-97bf-69134ace3ff5": "https://ms.yugipedia.com//4/44/VisasAmritara-DUNE-EN-ScR-1E.png",
+          "13c23cec-31b4-48a0-a55f-79b1216561f4": "https://ms.yugipedia.com//5/58/VisasAmritara-DUNE-EN-QCScR-1E.png",
+          "cc2e788b-f08b-4cc9-a3ff-d3a653bb8784": "https://ms.yugipedia.com//6/65/UnchainedSoulLordofYama-DUNE-EN-UR-1E.png",
+          "cddc13da-7a79-4a37-9145-7280f3a08a10": "https://ms.yugipedia.com//f/f9/UnchainedSoulLordofYama-DUNE-EN-QCScR-1E.png",
+          "efb678bb-ef65-4a32-a7cd-f193c796e76a": "https://ms.yugipedia.com//e/e0/ChimeraFusion-DUNE-EN-SR-1E.png",
+          "bd43f7f0-3fd0-412b-bcb4-095b10481b78": "https://ms.yugipedia.com//e/e6/SinfulSpoilsofSubversionSnakeEye-DUNE-EN-ScR-1E.png",
+          "970349c4-2a5f-4365-9836-0d9e5ea54112": "https://ms.yugipedia.com//5/56/SinfulSpoilsofSubversionSnakeEye-DUNE-EN-QCScR-1E.png",
+          "d168ae22-6af1-4a4c-bd5e-6f4876055d41": "https://ms.yugipedia.com//8/86/NewWorldFormation-DUNE-EN-C-1E.png",
+          "dd1db6ed-1683-4899-9f2a-4b975f1eb06c": "https://ms.yugipedia.com//f/f7/NemleriaLouve-DUNE-EN-C-1E.png",
+          "38e8cbc6-468e-42e3-bb71-a1bcd26cac43": "https://ms.yugipedia.com//4/4c/Zuttomozaurus-DUNE-EN-C-1E.png",
+          "a1aa3daa-2860-4c0d-85f5-c5638545fc21": "https://ms.yugipedia.com//c/cd/HoundoftheTistina-DUNE-EN-SR-1E.png",
+          "fe741eb6-b98d-449f-a91b-c81af8244f40": "https://ms.yugipedia.com//f/f2/CrystalGodTistina-DUNE-EN-ScR-1E.png",
+          "11ccb41a-e7cc-455f-81c7-56498a259e1c": "https://ms.yugipedia.com//c/ce/CrystalGodTistina-DUNE-EN-QCScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001272000
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "DUNE-AE",
+      "date": "2023-12-16",
+      "image": "https://ms.yugipedia.com//0/0d/DUNE-BoosterAE.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000001301000
+        ]
+      }
+    },
+    "sc": {
+      "language": "zh-CN",
+      "prefix": "DUNE-SC",
+      "date": "2023-08-19",
+      "image": "https://ms.yugipedia.com//8/86/DUNE-BoosterSC.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          3000001272000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "DUNE-SP",
+      "image": "https://ms.yugipedia.com//4/4b/DUNE-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "DUNE-PT",
+      "date": "2023-07-27",
+      "image": "https://ms.yugipedia.com//f/fc/DUNE-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7e/DUNE-BoosterKR.png",
+      "cards": [
+        {
+          "id": "90cfae10-94e3-4704-bf3a-64c5b112ef3e",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "979de197-23fd-4329-8833-ffa5c1040010",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "76b61018-0bb9-48aa-a67c-acc20043c3f2",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "35708465-a303-4031-979f-978f9d2ed875",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a33e54b6-edda-4987-b9f5-60623f75672d",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "bc6df7db-7955-40dd-82aa-86240dfcb265",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "c50685ae-935a-41a4-af6f-e9b586534191",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "ae9d5b16-ac52-4eb2-80b9-2c9502a9a008",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "8e39d4e7-d253-44d4-a189-cb4d79cad106",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "secret"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "a3b7f7b8-55ca-4c1f-b54a-4e64362e2a78",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "2e11aa3e-2672-4173-9a29-e0f0063223b8",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "rare"
+        },
+        {
+          "id": "7f9e5a2d-3192-41c2-824d-fe16e0cb7bfe",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "e4e30a86-3868-4480-869d-69cb4c82ac21",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/dd/DUNE-BoosterJP.png",
+      "cards": [
+        {
+          "id": "af1af529-0207-4815-8d4e-200245c2ca17",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "28bc31a2-0086-40ce-907d-e316d5f96abb",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "b16a4358-8e51-41e9-98d1-8c9de542e151",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "565984b9-d0d0-4fbc-aef8-4e70cdc7b1d2",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "35417148-52e3-44c0-91bc-19b4b5c22477",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b8b59c86-57e0-4288-b6ba-f97be9616b44",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "db7960cf-b6da-40e4-8ded-067670b96400",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "ae9d5b16-ac52-4eb2-80b9-2c9502a9a008",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "8e39d4e7-d253-44d4-a189-cb4d79cad106",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "secret"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "827592d6-4762-40f6-b63f-74ac3f5da49a",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "65f24024-29ef-4937-9901-a84b312df87e",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "rare"
+        },
+        {
+          "id": "e5d41b81-3de2-4443-9482-d21b914cef4d",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "bdcc1cad-1403-48b3-b051-304ae7a256f0",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0f/DUNE-BoosterFR.png",
+      "cards": [
+        {
+          "id": "3c549701-37d0-4b25-a492-2dba3b4ee049",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "0edb4699-1a0a-4713-840b-f601a44cd2fa",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "0e78ae10-41d6-4238-8aa7-7a0574ce1ced",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "2ea3953c-3792-47c6-8bf4-c12b6e6532a5",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "d3aaeb11-766d-4cec-953d-668da0620d58",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "cc2e788b-f08b-4cc9-a3ff-d3a653bb8784",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "f2d68ea9-3d79-4566-bdf6-fc120dc169b2",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "super"
+        },
+        {
+          "id": "080e8752-d61f-4d06-ab97-39b0572c6427",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "b8c03f11-f639-42a0-97d3-cf77fc49ff88",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "47d85099-a17e-4043-aec6-fa52b11ff3b3",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "95ccef76-ad80-4ee9-9fa4-964d3ba6dde8",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "38e8cbc6-468e-42e3-bb71-a1bcd26cac43",
+          "card": "f9f2d066-e3a1-409e-b4bb-793feff2160d",
+          "suffix": "081",
+          "rarity": "common"
+        },
+        {
+          "id": "e2893d6a-dd29-46ef-898c-27cfd9a43118",
+          "card": "a3298ebe-91f9-450f-af22-33635aa54377",
+          "suffix": "087",
+          "rarity": "super"
+        },
+        {
+          "id": "bdabc557-f695-4bcd-913e-c837a7e01690",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "secret"
+        },
+        {
+          "id": "61df9296-2f68-4660-891d-16360b825571",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6d/DUNE-BoosterIT.png",
+      "cards": [
+        {
+          "id": "9a9aa76d-4a41-49b9-8d2e-dc5a82e6c0a3",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "c9746dce-0ebe-46aa-bce9-396fd0bd0dc6",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "2afb5b4d-7eae-4844-8744-82396b0e9187",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "bc437804-c34a-4ea9-8ffd-d851a8aefceb",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "9e4ae63a-1952-4261-a53f-bdee7b2e1255",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "cc2e788b-f08b-4cc9-a3ff-d3a653bb8784",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "9f838f4c-85be-4f12-972c-c84c2b498e00",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "super"
+        },
+        {
+          "id": "9d8a72ec-1827-492a-bfe1-7f9d06af3580",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "5f665e23-73aa-4c5f-911b-3171693ee114",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "dbfa663d-a80d-4f90-84f3-43091435c370",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "3bf58e91-59f3-486d-88a5-1e49f0a48bd1",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "38e8cbc6-468e-42e3-bb71-a1bcd26cac43",
+          "card": "f9f2d066-e3a1-409e-b4bb-793feff2160d",
+          "suffix": "081",
+          "rarity": "common"
+        },
+        {
+          "id": "7a3b04d9-ff6b-4e55-a4ab-f8f570703278",
+          "card": "a3298ebe-91f9-450f-af22-33635aa54377",
+          "suffix": "087",
+          "rarity": "super"
+        },
+        {
+          "id": "b55285ad-32e1-445e-8300-1159bd560028",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "secret"
+        },
+        {
+          "id": "8b226438-253a-4397-a5af-0fa6b1f11a6a",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/36/DUNE-BoosterDE.png",
+      "cards": [
+        {
+          "id": "92085b57-b9a5-4ad2-829c-99890555bbec",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "d9207b1f-c2b2-4a4c-9f88-d1f7b6aed6ad",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "18461bbf-4a69-4adb-83fd-798ab1671778",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "05ba8dd7-5cd7-4f21-b524-3de6dad5bb2c",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "b08c7788-582f-40de-ad0f-543e1f0909ba",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "cc2e788b-f08b-4cc9-a3ff-d3a653bb8784",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "ec6ef917-2d23-4645-96bb-795ff094d37a",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "super"
+        },
+        {
+          "id": "34f7bdf7-a051-48d7-82bd-e567e3357041",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "df01b9ba-ac17-4a33-8a92-4b2bd84dc29f",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "f7cb6fc0-2d9a-480d-bb4a-9d15b3b5c29f",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "5bde503c-7a76-4786-bd06-3d5f9b77652a",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "38e8cbc6-468e-42e3-bb71-a1bcd26cac43",
+          "card": "f9f2d066-e3a1-409e-b4bb-793feff2160d",
+          "suffix": "081",
+          "rarity": "common"
+        },
+        {
+          "id": "ee063c83-ff9d-48dd-8044-637054eea812",
+          "card": "a3298ebe-91f9-450f-af22-33635aa54377",
+          "suffix": "087",
+          "rarity": "super"
+        },
+        {
+          "id": "3aa697b1-a817-4983-9c13-35a8bac5e869",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "secret"
+        },
+        {
+          "id": "8bdaba91-4cdb-458f-875f-6f8a092380e5",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/fc/DUNE-BoosterEN.png",
+      "cards": [
+        {
+          "id": "8b23ee43-8c70-47e7-b668-a0bacce7d834",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "3686428c-e806-45c1-aad9-fb50315145c3",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "31c99065-0e4b-48c8-9f88-08b87424bba5",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "579deeac-86eb-44dd-97bf-69134ace3ff5",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "13c23cec-31b4-48a0-a55f-79b1216561f4",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "cc2e788b-f08b-4cc9-a3ff-d3a653bb8784",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "efb678bb-ef65-4a32-a7cd-f193c796e76a",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "super"
+        },
+        {
+          "id": "bd43f7f0-3fd0-412b-bcb4-095b10481b78",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "970349c4-2a5f-4365-9836-0d9e5ea54112",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "d168ae22-6af1-4a4c-bd5e-6f4876055d41",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "dd1db6ed-1683-4899-9f2a-4b975f1eb06c",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "38e8cbc6-468e-42e3-bb71-a1bcd26cac43",
+          "card": "f9f2d066-e3a1-409e-b4bb-793feff2160d",
+          "suffix": "081",
+          "rarity": "common"
+        },
+        {
+          "id": "a1aa3daa-2860-4c0d-85f5-c5638545fc21",
+          "card": "a3298ebe-91f9-450f-af22-33635aa54377",
+          "suffix": "087",
+          "rarity": "super"
+        },
+        {
+          "id": "fe741eb6-b98d-449f-a91b-c81af8244f40",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "secret"
+        },
+        {
+          "id": "11ccb41a-e7cc-455f-81c7-56498a259e1c",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/0d/DUNE-BoosterAE.png",
+      "cards": [
+        {
+          "id": "7a8f38c5-6214-42fa-9983-6ba83eb91b65",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "1da26db6-cc3a-48d8-b402-7ecd0a4616a2",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "dae05b1f-3507-4032-8977-c886e54719b9",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "473895d2-8bf6-4b46-a66f-91e985a0e756",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ec9c8879-a521-4ef8-9030-6ebb14026665",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "f3a186d0-bfda-47df-94bf-7dffdc6f32d5",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "5e441491-ff3f-40a2-a2a7-a77bf77c7f2c",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "ae9d5b16-ac52-4eb2-80b9-2c9502a9a008",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "8e39d4e7-d253-44d4-a189-cb4d79cad106",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "secret"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "721398f7-dd83-4ffd-bdd0-0e404195b34b",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "1b842da8-3e1c-410c-bb24-89c5cdbda50a",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "super"
+        },
+        {
+          "id": "f8a2a3ea-d903-4f32-91cc-228ac40c00d4",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "fcee7630-25ef-4ca8-8a2c-6f534ca36c7f",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "b6f3acfa-7384-4cc8-b832-a5837ea419ac",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "c84ff657-47c2-4fd9-9060-646cc68c3cf0",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "8d1023b6-b15b-4971-9346-23b88695cae3",
+          "card": "88dd82fd-ab7e-4c79-b922-db6998e2a948",
+          "suffix": "089",
+          "rarity": "common"
+        },
+        {
+          "id": "a9d521a0-0fbe-4e1d-a8b4-bc4c6155c3c2",
+          "card": "78e51932-777d-4dfd-9b46-f549f5ea5921",
+          "suffix": "092",
+          "rarity": "rare"
+        },
+        {
+          "id": "8ebe4af4-55b8-4bad-ae5d-a1723cdf10a2",
+          "card": "38b165b3-4c8b-4292-8d68-af0c436b2784",
+          "suffix": "094",
+          "rarity": "super"
+        },
+        {
+          "id": "f0a1e07b-5731-4ac4-90c6-c84c75e48a90",
+          "card": "38b165b3-4c8b-4292-8d68-af0c436b2784",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "5448b63c-bac1-46c9-806a-91ed5bb3154b",
+          "card": "38b165b3-4c8b-4292-8d68-af0c436b2784",
+          "suffix": "094",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "c62bd0aa-7982-4f0a-aef7-6d8a0d6627d8",
+          "card": "58689d68-7d53-4507-a153-251ea66bbb73",
+          "suffix": "102",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a9c57913-f7b2-4b39-8d1e-5f9293884194",
+          "card": "58689d68-7d53-4507-a153-251ea66bbb73",
+          "suffix": "102",
+          "rarity": "secret"
+        },
+        {
+          "id": "0f193aa1-c98d-4808-9a6b-646050a1d2bc",
+          "card": "58689d68-7d53-4507-a153-251ea66bbb73",
+          "suffix": "102",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "5f858b2c-fd37-4b38-a5a9-190571fef453",
+          "card": "41a2b485-ca6b-4725-a710-e49f2f3a93bd",
+          "suffix": "103",
+          "rarity": "common"
+        },
+        {
+          "id": "b0d5da8b-2682-475a-940d-97c5e2ea7c9f",
+          "card": "20bbf3ce-be75-4f59-a14e-2d10b5672150",
+          "suffix": "104",
+          "rarity": "ultra"
+        },
+        {
+          "id": "44ca33cb-1ce6-4be3-9ee6-7a65756d9174",
+          "card": "20bbf3ce-be75-4f59-a14e-2d10b5672150",
+          "suffix": "104",
+          "rarity": "secret"
+        },
+        {
+          "id": "d5e704dd-60b3-4093-9ce1-ff00b5bb80ee",
+          "card": "20bbf3ce-be75-4f59-a14e-2d10b5672150",
+          "suffix": "104",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "34c3d6e0-4b65-4c9b-b5ab-907c2876c9ee",
+          "card": "3d37cff8-3179-459a-8915-d2cdb204b5de",
+          "suffix": "117",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/86/DUNE-BoosterSC.png",
+      "cards": [
+        {
+          "id": "429ba72b-21db-4bee-a8d5-5bb08dfac9d0",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "e4bbdd64-e9c1-4f00-9192-91532179fa97",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "934aee9c-be83-4895-b516-62734ee31ffe",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "rare"
+        },
+        {
+          "id": "38e6e57e-e3c5-498d-95e7-84bd96595aa7",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4cf73fae-8f70-4148-9a67-c436f4adaf8d",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "85b02cf1-780a-48a5-b0b6-af9a8b234f0d",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "d247e9a8-1e5f-4451-b209-3e78eb9b6393",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "ae9d5b16-ac52-4eb2-80b9-2c9502a9a008",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "8e39d4e7-d253-44d4-a189-cb4d79cad106",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "secret"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "ea600522-71ef-41ce-a76e-33ff18499d77",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "rare"
+        },
+        {
+          "id": "d0cfe1cf-0192-405a-a3fd-2b0665dfdad6",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "super"
+        },
+        {
+          "id": "7882bcd0-d524-415c-8d7e-c9696f489177",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "90c2d828-5a37-4407-bf83-802f41cfcc0d",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "771df91b-a87f-44f2-9b87-6112aa48e1c3",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "1edb88a1-4fc6-4503-bae9-56e2b34df944",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "4388e7b8-546e-4c15-a91f-7196de780571",
+          "card": "58689d68-7d53-4507-a153-251ea66bbb73",
+          "suffix": "100",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3b9a66db-8272-4b9b-a52c-d5ce7c25f035",
+          "card": "58689d68-7d53-4507-a153-251ea66bbb73",
+          "suffix": "100",
+          "rarity": "secret"
+        },
+        {
+          "id": "be7dcd10-a182-4aee-a07f-051c684e049e",
+          "card": "58689d68-7d53-4507-a153-251ea66bbb73",
+          "suffix": "100",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "28d2460f-5f8e-4a7a-aa98-b5787cb5cff2",
+          "card": "3d37cff8-3179-459a-8915-d2cdb204b5de",
+          "suffix": "111",
+          "rarity": "super"
+        },
+        {
+          "id": "a400aae5-f2d7-4a6a-ae04-8d784c36950a",
+          "card": "e138ebbe-9491-4b5c-8b58-a8f69031921e",
+          "suffix": "116",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4b/DUNE-BoosterSP.png",
+      "cards": [
+        {
+          "id": "715f8953-5c45-48ae-b06e-0583b783e95c",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "26b111e7-bcbf-44df-8129-cb3134160690",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "59b54bba-5b67-4d79-b24f-217391c4c271",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "b241e454-7a5c-4863-b7e0-8db038de1b91",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "44e46b0e-210d-4a9b-bf15-491608748dfd",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "cc2e788b-f08b-4cc9-a3ff-d3a653bb8784",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "def64225-13f1-4baf-82b1-75eca3635849",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "super"
+        },
+        {
+          "id": "49f0b31a-cf9e-4c1b-b2dc-cbda1a24a1ff",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "f0d353d7-920d-4d70-a62b-fca60e92c71e",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "26c0681d-2f81-4012-8fd0-d7c43c822d10",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "8a014558-241f-4c79-b592-dced91464c8a",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "38e8cbc6-468e-42e3-bb71-a1bcd26cac43",
+          "card": "f9f2d066-e3a1-409e-b4bb-793feff2160d",
+          "suffix": "081",
+          "rarity": "common"
+        },
+        {
+          "id": "f81149ac-7e2d-43e7-8d94-681609e3c4ee",
+          "card": "a3298ebe-91f9-450f-af22-33635aa54377",
+          "suffix": "087",
+          "rarity": "super"
+        },
+        {
+          "id": "abb49f8b-0778-426c-9a20-633e21052f7a",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "secret"
+        },
+        {
+          "id": "260fb72b-f7e0-4130-8016-0f259f6b8b3c",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/fc/DUNE-BoosterPT.png",
+      "cards": [
+        {
+          "id": "54fbc21e-707f-435c-8748-ae17cf416043",
+          "card": "c8c7e375-5ba2-4373-ab4c-e4bdb442d69b",
+          "suffix": "000",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "2d670453-a80a-4e35-a3c4-c5c84226fcc2",
+          "card": "e262cb56-ac60-411b-a83e-9821600db559",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "5980c58c-5bf0-4831-a229-beab7517bec9",
+          "card": "feafc331-7f40-4f7d-b0b0-501ce1ef1d1e",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "62574dbc-6195-4639-9635-27a25cdff4bd",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "secret"
+        },
+        {
+          "id": "2adf9a30-4333-404c-aa25-d67e31a86ee6",
+          "card": "1b5d9249-320d-42b2-96fe-cc6b277c47fb",
+          "suffix": "039",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "cc2e788b-f08b-4cc9-a3ff-d3a653bb8784",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cddc13da-7a79-4a37-9145-7280f3a08a10",
+          "card": "90e81800-5483-48ba-b4a7-16a4022965de",
+          "suffix": "049",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "30f40601-e1df-494e-846f-8d8ee2393ae6",
+          "card": "0cc5ff3c-cdf3-4ac4-af33-7d67392dba95",
+          "suffix": "052",
+          "rarity": "super"
+        },
+        {
+          "id": "d72b5ac2-10a6-43ba-a09d-f068add98023",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "secret"
+        },
+        {
+          "id": "1a6e508d-f5ee-4cb9-9115-70f89886a8f0",
+          "card": "ee4ef921-cac4-43ca-8b37-b1e1558b3a3a",
+          "suffix": "060",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "cc6ca909-0d03-469d-9554-318cfcffd7dc",
+          "card": "97573ed2-17b7-4033-a04e-eb7b15ae71d2",
+          "suffix": "070",
+          "rarity": "common"
+        },
+        {
+          "id": "ea10264b-ece2-42be-9fee-92f61d8d068f",
+          "card": "42eb264e-ded8-4f8b-9c2c-b9fb0b078762",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "38e8cbc6-468e-42e3-bb71-a1bcd26cac43",
+          "card": "f9f2d066-e3a1-409e-b4bb-793feff2160d",
+          "suffix": "081",
+          "rarity": "common"
+        },
+        {
+          "id": "ad472977-8647-4cb0-a4a6-d26a9ad6cdea",
+          "card": "a3298ebe-91f9-450f-af22-33635aa54377",
+          "suffix": "087",
+          "rarity": "super"
+        },
+        {
+          "id": "7126e517-f5b1-4f57-b6e5-0cf72fc47c40",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "secret"
+        },
+        {
+          "id": "459e34d0-b2b4-41a8-b37c-9ee25fca908e",
+          "card": "fa2a5404-ec4a-4d8c-9e2f-5e96b972ac9a",
+          "suffix": "089",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Duelist Nexus",
+      "id": 711332
+    }
+  }
+}

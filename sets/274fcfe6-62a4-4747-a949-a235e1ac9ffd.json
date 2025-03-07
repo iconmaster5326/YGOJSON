@@ -1,0 +1,165 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "274fcfe6-62a4-4747-a949-a235e1ac9ffd",
+  "name": {
+    "en": "Deck Build Pack: Wild Survivors",
+    "ja": "\u30c7\u30c3\u30ad\u30d3\u30eb\u30c9\u30d1\u30c3\u30af \uff0d\u30ef\u30a4\u30eb\u30c9\u30fb\u30b5\u30d0\u30a4\u30d0\u30fc\u30ba\uff0d",
+    "ko": "\ub371 \ube4c\ub4dc \ud329\uff0d\uc640\uc77c\ub4dc \uc11c\ubc14\uc774\ubc84\uc988\uff0d"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "DBWS-JP",
+      "date": "2023-03-18",
+      "image": "https://ms.yugipedia.com//d/df/DBWS-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "47ae24d0-b7fa-4a80-aec3-70018b20ba85": "https://ms.yugipedia.com//c/c7/GroundXeno-DBWS-JP-SR.png",
+          "17a9b36f-f971-4eef-bef1-69949d7c0ac3": "https://ms.yugipedia.com//3/38/GiantRex-DBWS-JP-C.png",
+          "3abaa931-f392-45a3-a358-ab183cd549fd": "https://ms.yugipedia.com//6/61/GiantRex-DBWS-JP-NPR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000007417000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "DBWS-KR",
+      "date": "2023-06-14",
+      "image": "https://ms.yugipedia.com//2/26/DBWS-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001258000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/df/DBWS-BoosterJP.png",
+      "cards": [
+        {
+          "id": "47ae24d0-b7fa-4a80-aec3-70018b20ba85",
+          "card": "3d37cff8-3179-459a-8915-d2cdb204b5de",
+          "suffix": "006",
+          "rarity": "super"
+        },
+        {
+          "id": "17a9b36f-f971-4eef-bef1-69949d7c0ac3",
+          "card": "50599e12-1341-4ebc-8150-9e01598fd9f4",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "3abaa931-f392-45a3-a358-ab183cd549fd",
+          "card": "50599e12-1341-4ebc-8150-9e01598fd9f4",
+          "suffix": "010",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "5d7e3fb7-cdc9-4cff-b602-46d0ba448f65",
+          "card": "2cedc0dc-c2d4-4c70-bb06-aab67ea64804",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "0639b1ca-2b1b-42d7-a2fd-c8b85be108a1",
+          "card": "47804f40-603a-4106-b7e1-fde584e710ce",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "1e38f86c-9434-468c-89d6-bf13d6103c07",
+          "card": "47804f40-603a-4106-b7e1-fde584e710ce",
+          "suffix": "038",
+          "rarity": "commonparallel"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/26/DBWS-BoosterKR.png",
+      "cards": [
+        {
+          "id": "8f07f804-5d9c-4902-93aa-3b7c366f8f57",
+          "card": "3d37cff8-3179-459a-8915-d2cdb204b5de",
+          "suffix": "006",
+          "rarity": "super"
+        },
+        {
+          "id": "697cf3c0-92ba-447a-a44e-0c7746fc06b3",
+          "card": "50599e12-1341-4ebc-8150-9e01598fd9f4",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "441456fc-4f9d-46a6-92be-23bd90a78b53",
+          "card": "50599e12-1341-4ebc-8150-9e01598fd9f4",
+          "suffix": "010",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "e0fc17e4-6183-4b22-9e5b-bc4481755c5f",
+          "card": "2cedc0dc-c2d4-4c70-bb06-aab67ea64804",
+          "suffix": "036",
+          "rarity": "super"
+        },
+        {
+          "id": "107134c2-83e1-4713-8c58-3316ffd4a9cf",
+          "card": "47804f40-603a-4106-b7e1-fde584e710ce",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "8a151668-37dd-47b3-a821-3460a95de71d",
+          "card": "47804f40-603a-4106-b7e1-fde584e710ce",
+          "suffix": "038",
+          "rarity": "commonparallel"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Deck Build Pack: Wild Survivors",
+      "id": 806103
+    }
+  }
+}

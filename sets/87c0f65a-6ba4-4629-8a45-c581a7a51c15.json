@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "87c0f65a-6ba4-4629-8a45-c581a7a51c15",
+  "name": {
+    "en": "Yu-Gi-Oh! Dark Duel Stories"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "DDS-",
+      "cardImages": {},
+      "formats": [
+        "tcg"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1141401000
+        ]
+      }
+    },
+    "na": {
+      "language": "en",
+      "date": "2002-03-19",
+      "cardImages": {},
+      "formats": [
+        "tcg"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1141401000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "cards": [
+        {
+          "id": "d3d062f5-29d1-4d21-9883-b699ba2d77bc",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "aa6bef7a-d61a-4af2-b034-5a09b870b927",
+          "card": "ae2ca47a-0068-458c-9fe7-8128dc63cad6",
+          "suffix": "003",
+          "rarity": "prismaticsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "cards": [],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Dark Duel Stories promotional cards",
+      "id": 2020
+    }
+  }
+}

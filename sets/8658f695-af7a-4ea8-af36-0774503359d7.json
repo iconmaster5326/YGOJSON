@@ -1,0 +1,810 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "8658f695-af7a-4ea8-af36-0774503359d7",
+  "name": {
+    "en": "War of the Giants Reinforcements",
+    "fr": "La Guerre des G\u00e9ants Recommence",
+    "de": "War of the Giants Reinforcements",
+    "it": "Guerra dei Giganti I Rinforzi",
+    "pt": "Guerra dos Gigantes Refor\u00e7os",
+    "es": "Guerra de los Gigantes Refuerzos"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "WGRT-FR",
+      "date": "2014-01-17",
+      "image": "https://ms.yugipedia.com//1/10/WGRT-BoosterFR.png",
+      "cardImages": {
+        "limited": {
+          "8a45dc50-e061-49f5-930e-d52048156183": "https://ms.yugipedia.com//8/83/InvaderofDarkness-WGRT-FR-C-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31113000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "WGRT-DE",
+      "date": "2014-01-16",
+      "cardImages": {
+        "limited": {
+          "8a45dc50-e061-49f5-930e-d52048156183": "https://ms.yugipedia.com//8/8e/InvaderofDarkness-WGRT-DE-C-LE.png",
+          "2803fc58-987d-49c5-8034-3f860d60df66": "https://ms.yugipedia.com//b/b7/GolemSentry-WGRT-DE-SR-LE.png",
+          "b2d23f26-5052-426e-8fe6-29fae9875cea": "https://ms.yugipedia.com//7/7a/MajesticMechGoryu-WGRT-DE-C-LE.png",
+          "fb26d872-de4c-4076-b1ba-ecb95f07212d": "https://ms.yugipedia.com//f/ff/DestinyHERODefender-WGRT-DE-C-LE.png",
+          "f890d7aa-b4be-4587-870d-b58fa7778120": "https://ms.yugipedia.com//f/fa/BlackwingElphintheRaven-WGRT-DE-SR-LE.png",
+          "46191b57-c323-4b10-88a5-67c12cc3242d": "https://ms.yugipedia.com//3/36/MeklordArmyofGranel-WGRT-DE-SR-LE.png",
+          "d1542a7e-dad7-4326-8345-edcd5494d912": "https://ms.yugipedia.com//e/e9/MadolcheBaaple-WGRT-DE-SR-LE.png",
+          "5caf2799-29ce-4ca8-be66-5be322a98400": "https://ms.yugipedia.com//8/8f/EvilswarmKetos-WGRT-DE-SR-LE.png",
+          "a13e7ee5-7a25-4017-af1a-9eabbb977485": "https://ms.yugipedia.com//9/9b/Mogmole-WGRT-DE-C-LE.png",
+          "7729979a-0c8f-4f57-aa75-ca05a29fb052": "https://ms.yugipedia.com//8/87/GarbageLord-WGRT-DE-C-LE.png",
+          "25d07c11-cc65-4847-8ed0-e2ebb6988b3b": "https://ms.yugipedia.com//1/1f/StimPack-WGRT-DE-C-LE.png",
+          "09601fe2-cc75-43ed-b13a-0e7a1964a3d8": "https://ms.yugipedia.com//3/35/RiryokuField-WGRT-DE-C-LE.png",
+          "c1152edf-583f-42f3-b52d-a2747cfb36ae": "https://ms.yugipedia.com//d/de/RaigekiBottle-WGRT-DE-SR-LE.png",
+          "d1ca7580-6009-4ac1-b480-a0a87b5a2156": "https://ms.yugipedia.com//1/1b/SafeZone-WGRT-DE-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21113000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "WGRT-SP",
+      "date": "2014-01-16",
+      "image": "https://ms.yugipedia.com//3/3b/WGRT-BoosterSP.png",
+      "cardImages": {
+        "limited": {
+          "10d35035-8b47-4bb4-8f6b-317d3ba1b1cb": "https://ms.yugipedia.com//2/20/GolemSentry-WGRT-SP-SR-LE.png",
+          "262a6670-a8d5-44ec-877c-f46d08528396": "https://ms.yugipedia.com//e/e5/EvilswarmKetos-WGRT-SP-SR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51112000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "WGRT-IT",
+      "date": "2014-01-16",
+      "image": "https://ms.yugipedia.com//5/58/WGRT-BoosterIT.png",
+      "cardImages": {
+        "limited": {
+          "8a45dc50-e061-49f5-930e-d52048156183": "https://ms.yugipedia.com//b/b4/InvaderofDarkness-WGRT-IT-C-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41113000
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "WGRT-PT",
+      "date": "2014-01-17",
+      "image": "https://ms.yugipedia.com//a/a0/WGRT-BoosterPT.png",
+      "cardImages": {
+        "limited": {
+          "8a45dc50-e061-49f5-930e-d52048156183": "https://ms.yugipedia.com//c/c6/InvaderofDarkness-WGRT-PT-C-LE.png",
+          "f494e859-7e69-4276-8d91-e15df2d6d7de": "https://ms.yugipedia.com//5/54/GolemSentry-WGRT-PT-SR-LE.png",
+          "25a8fafa-8916-4b3f-87bc-876c397780f4": "https://ms.yugipedia.com//5/5a/MajesticMechGoryu-WGRT-PT-C-LE.png",
+          "6ce558b0-e71a-4527-8f12-7ac00af3516e": "https://ms.yugipedia.com//7/7a/DestinyHERODefender-WGRT-PT-C-LE.png",
+          "f6387549-d332-4d0b-82ac-50f60b033c6d": "https://ms.yugipedia.com//e/eb/BlackwingElphintheRaven-WGRT-PT-SR-LE.png",
+          "dd1b8c7e-a75f-4d63-b60e-21696ed74dcc": "https://ms.yugipedia.com//b/b6/MeklordArmyofGranel-WGRT-PT-SR-LE.png",
+          "00d6bca4-d174-42c4-9611-fd777d4de201": "https://ms.yugipedia.com//4/40/MadolcheBaaple-WGRT-PT-SR-LE.png",
+          "35ffa04b-16c9-44e2-a2d9-eee5c129e70c": "https://ms.yugipedia.com//f/f9/EvilswarmKetos-WGRT-PT-SR-LE.png",
+          "3f338ba9-d001-4228-a8e9-bbc02a02f718": "https://ms.yugipedia.com//a/a1/Mogmole-WGRT-PT-C-LE.png",
+          "90217acb-b4fa-43af-9e55-2c667cdc5d1d": "https://ms.yugipedia.com//1/10/GarbageLord-WGRT-PT-C-LE.png",
+          "9afc8396-3251-4108-b719-99580355ceb3": "https://ms.yugipedia.com//8/8c/StimPack-WGRT-PT-C-LE.png",
+          "df5a6b0d-4c31-42bc-a713-1adcbdae71bd": "https://ms.yugipedia.com//4/42/RiryokuField-WGRT-PT-C-LE.png",
+          "9653ca05-92b0-4dda-9582-ddf5b9b8b75b": "https://ms.yugipedia.com//9/94/RaigekiBottle-WGRT-PT-SR-LE.png",
+          "cbee14e2-a93d-49e2-8210-85a946607d90": "https://ms.yugipedia.com//2/2f/SafeZone-WGRT-PT-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11113001
+        ]
+      }
+    },
+    "eu": {
+      "language": "en",
+      "prefix": "WGRT-EN",
+      "date": "2014-01-17",
+      "image": "https://ms.yugipedia.com//b/b7/WGRT-BoosterEU.png",
+      "cardImages": {
+        "limited": {
+          "8a45dc50-e061-49f5-930e-d52048156183": "https://ms.yugipedia.com//3/3d/InvaderofDarkness-WGRT-EU-C-LE.png",
+          "0cb06faf-20d3-4607-8b3f-c60735657288": "https://ms.yugipedia.com//0/03/GolemSentry-WGRT-EU-SR-LE.png",
+          "ff601fb5-0d95-4703-9aa3-a7dca916ea48": "https://ms.yugipedia.com//b/b7/MajesticMechGoryu-WGRT-EU-C-LE.png",
+          "032ae3d3-63ef-4d10-93f5-34a7dc6c3c93": "https://ms.yugipedia.com//e/e3/DestinyHERODefender-WGRT-EU-C-LE.png",
+          "0a7c540a-dc12-4bf6-89f7-b55be8746857": "https://ms.yugipedia.com//6/68/BlackwingElphintheRaven-WGRT-EU-SR-LE.png",
+          "0cffd98e-b704-4222-a1d3-8dcfac58f7bc": "https://ms.yugipedia.com//6/62/MeklordArmyofGranel-WGRT-EU-SR-LE.png",
+          "e06eacd2-80bc-483e-a29d-f41a3eaff96c": "https://ms.yugipedia.com//0/06/MadolcheBaaple-WGRT-EU-SR-LE.png",
+          "d1446d58-0300-4310-bcc0-c752a876ca7d": "https://ms.yugipedia.com//6/6a/EvilswarmKetos-WGRT-EU-SR-LE.png",
+          "b74bc54b-1dfc-42ba-a85f-cd330e7248a6": "https://ms.yugipedia.com//c/ce/Mogmole-WGRT-EU-C-LE.png",
+          "40f90676-a300-497d-814f-7e01d7d820e6": "https://ms.yugipedia.com//c/c8/GarbageLord-WGRT-EU-C-LE.png",
+          "0bbcde36-03da-40a9-9715-477602c543c2": "https://ms.yugipedia.com//9/98/StimPack-WGRT-EU-C-LE.png",
+          "b03765bc-de27-4d42-86bf-df8ab64d19e5": "https://ms.yugipedia.com//3/39/RiryokuField-WGRT-EU-C-LE.png",
+          "4d51cc67-da7a-477e-baee-157236ef3a4b": "https://ms.yugipedia.com//e/e8/RaigekiBottle-WGRT-EU-SR-LE.png",
+          "b9e51a4e-8cc7-4ca6-8db4-2a2762ee3517": "https://ms.yugipedia.com//a/a3/SafeZone-WGRT-EU-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11113001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "71426d25-3c5c-4f10-acf6-e99010f683a5",
+      "packsPerBox": 6,
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//1/10/WGRT-BoosterFR.png",
+      "cards": [
+        {
+          "id": "8a45dc50-e061-49f5-930e-d52048156183",
+          "card": "d37665f6-14a5-4149-91ab-49ceecaf70c3",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "9f1f31f2-4b25-4068-821d-27418d61634b",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "c6cf7f11-df9d-469f-95c9-90b6602ffb9d",
+          "card": "78fe574b-2bed-44de-81e9-5ca91ac305e4",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "cc5d6c0a-64f1-40db-bbfa-e74075749a41",
+          "card": "8ab882d3-aba2-4a8f-bf09-bd3b7177e61b",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "0e71d029-9c6a-4d54-9768-10b7ed7c1dde",
+          "card": "0e9f1d6a-fc00-4c5a-876c-562436987e24",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "ada92cc0-d90c-4e32-ada2-11eb2c83c995",
+          "card": "5f9451e4-2753-494d-87ad-b13bd864ee1d",
+          "suffix": "040",
+          "rarity": "super"
+        },
+        {
+          "id": "335cdbde-1791-43e0-831c-2cd7f2ec7d15",
+          "card": "24068414-9498-4f5f-a5b4-84a7d3673406",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "bdbd8e50-7f86-4cbe-9114-9c28758fe9b6",
+          "card": "87b8be3a-85b2-4f75-84eb-2f5622b84270",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "a34ae20a-43da-4035-b66b-1470dc7b95f5",
+          "card": "52cb1396-d0d6-47b9-907a-9d09924cafe4",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "31920ea1-e9ec-4627-b689-0945248c47ad",
+          "card": "3969a4ea-87f2-483f-972e-2817866d4506",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "a03525e2-9a63-4acd-adc8-d0e43f346c8b",
+          "card": "8a753550-72c8-4bd2-8a56-6534b1fddde4",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "06ae14d3-6b4e-49e9-b660-dd84d847be84",
+          "card": "f92b46f7-6152-4ff2-959b-9a1bda3d4f43",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "ab0ae5ee-ec99-4dde-b456-6785a9bca015",
+          "card": "357ed220-2bf1-4dca-9dde-3cda37f97b08",
+          "suffix": "091",
+          "rarity": "super"
+        },
+        {
+          "id": "a88a9206-4990-4754-9c12-ba2dca62bef2",
+          "card": "7dc6f122-0896-4370-be90-99a6ffca8fdd",
+          "suffix": "103",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "War of the Giants Reinforcements"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "71426d25-3c5c-4f10-acf6-e99010f683a5",
+      "packsPerBox": 6,
+      "editions": [
+        "limited"
+      ],
+      "cards": [
+        {
+          "id": "8a45dc50-e061-49f5-930e-d52048156183",
+          "card": "d37665f6-14a5-4149-91ab-49ceecaf70c3",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "2803fc58-987d-49c5-8034-3f860d60df66",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "b2d23f26-5052-426e-8fe6-29fae9875cea",
+          "card": "78fe574b-2bed-44de-81e9-5ca91ac305e4",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "fb26d872-de4c-4076-b1ba-ecb95f07212d",
+          "card": "8ab882d3-aba2-4a8f-bf09-bd3b7177e61b",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "f890d7aa-b4be-4587-870d-b58fa7778120",
+          "card": "0e9f1d6a-fc00-4c5a-876c-562436987e24",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "46191b57-c323-4b10-88a5-67c12cc3242d",
+          "card": "5f9451e4-2753-494d-87ad-b13bd864ee1d",
+          "suffix": "040",
+          "rarity": "super"
+        },
+        {
+          "id": "d1542a7e-dad7-4326-8345-edcd5494d912",
+          "card": "24068414-9498-4f5f-a5b4-84a7d3673406",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "5caf2799-29ce-4ca8-be66-5be322a98400",
+          "card": "87b8be3a-85b2-4f75-84eb-2f5622b84270",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "a13e7ee5-7a25-4017-af1a-9eabbb977485",
+          "card": "52cb1396-d0d6-47b9-907a-9d09924cafe4",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "7729979a-0c8f-4f57-aa75-ca05a29fb052",
+          "card": "3969a4ea-87f2-483f-972e-2817866d4506",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "25d07c11-cc65-4847-8ed0-e2ebb6988b3b",
+          "card": "8a753550-72c8-4bd2-8a56-6534b1fddde4",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "09601fe2-cc75-43ed-b13a-0e7a1964a3d8",
+          "card": "f92b46f7-6152-4ff2-959b-9a1bda3d4f43",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "c1152edf-583f-42f3-b52d-a2747cfb36ae",
+          "card": "357ed220-2bf1-4dca-9dde-3cda37f97b08",
+          "suffix": "091",
+          "rarity": "super"
+        },
+        {
+          "id": "d1ca7580-6009-4ac1-b480-a0a87b5a2156",
+          "card": "7dc6f122-0896-4370-be90-99a6ffca8fdd",
+          "suffix": "103",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "War of the Giants Reinforcements"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "71426d25-3c5c-4f10-acf6-e99010f683a5",
+      "packsPerBox": 6,
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3b/WGRT-BoosterSP.png",
+      "cards": [
+        {
+          "id": "8a45dc50-e061-49f5-930e-d52048156183",
+          "card": "d37665f6-14a5-4149-91ab-49ceecaf70c3",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "10d35035-8b47-4bb4-8f6b-317d3ba1b1cb",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "42361425-7aa3-4a99-9cbb-cc98f7d40160",
+          "card": "78fe574b-2bed-44de-81e9-5ca91ac305e4",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "b153a180-0102-48f3-b38b-408071e13d16",
+          "card": "8ab882d3-aba2-4a8f-bf09-bd3b7177e61b",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "e9854407-c4cc-4fd9-88bd-1533ae15b4e6",
+          "card": "0e9f1d6a-fc00-4c5a-876c-562436987e24",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "5cf12c5e-83cc-4704-90d2-5cdb2c0668b1",
+          "card": "5f9451e4-2753-494d-87ad-b13bd864ee1d",
+          "suffix": "040",
+          "rarity": "super"
+        },
+        {
+          "id": "7ac63469-d086-4dd5-b2bc-82e5ad2ce9ce",
+          "card": "24068414-9498-4f5f-a5b4-84a7d3673406",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "262a6670-a8d5-44ec-877c-f46d08528396",
+          "card": "87b8be3a-85b2-4f75-84eb-2f5622b84270",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "32f9bb91-ec3e-4307-85b0-c670cf494cce",
+          "card": "52cb1396-d0d6-47b9-907a-9d09924cafe4",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "54dbc335-14b8-480e-b6c9-79ad1826f504",
+          "card": "3969a4ea-87f2-483f-972e-2817866d4506",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "38c26909-876c-40e8-b4c9-3d517cff5e49",
+          "card": "8a753550-72c8-4bd2-8a56-6534b1fddde4",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "9bac1ec4-70af-470e-a066-28412d2b3a82",
+          "card": "f92b46f7-6152-4ff2-959b-9a1bda3d4f43",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "12bf08db-09bb-400b-8dfe-d87a37285838",
+          "card": "357ed220-2bf1-4dca-9dde-3cda37f97b08",
+          "suffix": "091",
+          "rarity": "super"
+        },
+        {
+          "id": "6e59c332-b160-47f1-9493-4f0c176c1a6f",
+          "card": "7dc6f122-0896-4370-be90-99a6ffca8fdd",
+          "suffix": "103",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "War of the Giants Reinforcements"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "71426d25-3c5c-4f10-acf6-e99010f683a5",
+      "packsPerBox": 6,
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//5/58/WGRT-BoosterIT.png",
+      "cards": [
+        {
+          "id": "8a45dc50-e061-49f5-930e-d52048156183",
+          "card": "d37665f6-14a5-4149-91ab-49ceecaf70c3",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "5858c2c7-25f1-4115-b0c9-2bc6fe5a8baa",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "7f1a56ee-582e-44ac-a20f-4ed2fbcb944a",
+          "card": "78fe574b-2bed-44de-81e9-5ca91ac305e4",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "6c228a69-280b-4cff-988c-b333e074bf1b",
+          "card": "8ab882d3-aba2-4a8f-bf09-bd3b7177e61b",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "e9d04387-f17b-4377-91b8-c6c9f45ae8d6",
+          "card": "0e9f1d6a-fc00-4c5a-876c-562436987e24",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "895bd2a6-4deb-4aeb-86bb-1ababaee4ade",
+          "card": "5f9451e4-2753-494d-87ad-b13bd864ee1d",
+          "suffix": "040",
+          "rarity": "super"
+        },
+        {
+          "id": "d9c4c1de-61be-4c68-941e-3685ae119f24",
+          "card": "24068414-9498-4f5f-a5b4-84a7d3673406",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "1458ccba-de68-42d3-814c-a54bbf2bd489",
+          "card": "87b8be3a-85b2-4f75-84eb-2f5622b84270",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "26e8d3e3-26d5-4a59-8b29-a584782a35d1",
+          "card": "52cb1396-d0d6-47b9-907a-9d09924cafe4",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "4224e376-0dfd-4615-a04e-8b739a311074",
+          "card": "3969a4ea-87f2-483f-972e-2817866d4506",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "66416937-3a14-4c82-bfa9-7a00eedd4d45",
+          "card": "8a753550-72c8-4bd2-8a56-6534b1fddde4",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "fab2a380-df55-47d5-bd4a-4d0b027e7417",
+          "card": "f92b46f7-6152-4ff2-959b-9a1bda3d4f43",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "11ecf055-81cd-4e3d-b2bd-dbdbca45def0",
+          "card": "357ed220-2bf1-4dca-9dde-3cda37f97b08",
+          "suffix": "091",
+          "rarity": "super"
+        },
+        {
+          "id": "9a4d68f5-4ef4-4dba-9ae2-f8b9b832e981",
+          "card": "7dc6f122-0896-4370-be90-99a6ffca8fdd",
+          "suffix": "103",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "War of the Giants Reinforcements"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "71426d25-3c5c-4f10-acf6-e99010f683a5",
+      "packsPerBox": 6,
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//a/a0/WGRT-BoosterPT.png",
+      "cards": [
+        {
+          "id": "8a45dc50-e061-49f5-930e-d52048156183",
+          "card": "d37665f6-14a5-4149-91ab-49ceecaf70c3",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "f494e859-7e69-4276-8d91-e15df2d6d7de",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "25a8fafa-8916-4b3f-87bc-876c397780f4",
+          "card": "78fe574b-2bed-44de-81e9-5ca91ac305e4",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "6ce558b0-e71a-4527-8f12-7ac00af3516e",
+          "card": "8ab882d3-aba2-4a8f-bf09-bd3b7177e61b",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "f6387549-d332-4d0b-82ac-50f60b033c6d",
+          "card": "0e9f1d6a-fc00-4c5a-876c-562436987e24",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "dd1b8c7e-a75f-4d63-b60e-21696ed74dcc",
+          "card": "5f9451e4-2753-494d-87ad-b13bd864ee1d",
+          "suffix": "040",
+          "rarity": "super"
+        },
+        {
+          "id": "00d6bca4-d174-42c4-9611-fd777d4de201",
+          "card": "24068414-9498-4f5f-a5b4-84a7d3673406",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "35ffa04b-16c9-44e2-a2d9-eee5c129e70c",
+          "card": "87b8be3a-85b2-4f75-84eb-2f5622b84270",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "3f338ba9-d001-4228-a8e9-bbc02a02f718",
+          "card": "52cb1396-d0d6-47b9-907a-9d09924cafe4",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "90217acb-b4fa-43af-9e55-2c667cdc5d1d",
+          "card": "3969a4ea-87f2-483f-972e-2817866d4506",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "9afc8396-3251-4108-b719-99580355ceb3",
+          "card": "8a753550-72c8-4bd2-8a56-6534b1fddde4",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "df5a6b0d-4c31-42bc-a713-1adcbdae71bd",
+          "card": "f92b46f7-6152-4ff2-959b-9a1bda3d4f43",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "9653ca05-92b0-4dda-9582-ddf5b9b8b75b",
+          "card": "357ed220-2bf1-4dca-9dde-3cda37f97b08",
+          "suffix": "091",
+          "rarity": "super"
+        },
+        {
+          "id": "cbee14e2-a93d-49e2-8210-85a946607d90",
+          "card": "7dc6f122-0896-4370-be90-99a6ffca8fdd",
+          "suffix": "103",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "War of the Giants Reinforcements"
+      }
+    },
+    {
+      "locales": [
+        "eu"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "71426d25-3c5c-4f10-acf6-e99010f683a5",
+      "packsPerBox": 6,
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//b/b7/WGRT-BoosterEU.png",
+      "cards": [
+        {
+          "id": "8a45dc50-e061-49f5-930e-d52048156183",
+          "card": "d37665f6-14a5-4149-91ab-49ceecaf70c3",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "0cb06faf-20d3-4607-8b3f-c60735657288",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "ff601fb5-0d95-4703-9aa3-a7dca916ea48",
+          "card": "78fe574b-2bed-44de-81e9-5ca91ac305e4",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "032ae3d3-63ef-4d10-93f5-34a7dc6c3c93",
+          "card": "8ab882d3-aba2-4a8f-bf09-bd3b7177e61b",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "0a7c540a-dc12-4bf6-89f7-b55be8746857",
+          "card": "0e9f1d6a-fc00-4c5a-876c-562436987e24",
+          "suffix": "026",
+          "rarity": "super"
+        },
+        {
+          "id": "0cffd98e-b704-4222-a1d3-8dcfac58f7bc",
+          "card": "5f9451e4-2753-494d-87ad-b13bd864ee1d",
+          "suffix": "040",
+          "rarity": "super"
+        },
+        {
+          "id": "e06eacd2-80bc-483e-a29d-f41a3eaff96c",
+          "card": "24068414-9498-4f5f-a5b4-84a7d3673406",
+          "suffix": "049",
+          "rarity": "super"
+        },
+        {
+          "id": "d1446d58-0300-4310-bcc0-c752a876ca7d",
+          "card": "87b8be3a-85b2-4f75-84eb-2f5622b84270",
+          "suffix": "050",
+          "rarity": "super"
+        },
+        {
+          "id": "b74bc54b-1dfc-42ba-a85f-cd330e7248a6",
+          "card": "52cb1396-d0d6-47b9-907a-9d09924cafe4",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "40f90676-a300-497d-814f-7e01d7d820e6",
+          "card": "3969a4ea-87f2-483f-972e-2817866d4506",
+          "suffix": "055",
+          "rarity": "common"
+        },
+        {
+          "id": "0bbcde36-03da-40a9-9715-477602c543c2",
+          "card": "8a753550-72c8-4bd2-8a56-6534b1fddde4",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "b03765bc-de27-4d42-86bf-df8ab64d19e5",
+          "card": "f92b46f7-6152-4ff2-959b-9a1bda3d4f43",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "4d51cc67-da7a-477e-baee-157236ef3a4b",
+          "card": "357ed220-2bf1-4dca-9dde-3cda37f97b08",
+          "suffix": "091",
+          "rarity": "super"
+        },
+        {
+          "id": "b9e51a4e-8cc7-4ca6-8db4-2a2762ee3517",
+          "card": "7dc6f122-0896-4370-be90-99a6ffca8fdd",
+          "suffix": "103",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "War of the Giants Reinforcements"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "War of the Giants Reinforcements",
+      "id": 284401
+    }
+  }
+}

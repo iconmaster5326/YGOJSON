@@ -1,0 +1,782 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "be8eff3c-cfd6-4846-8578-dd2cf8077256",
+  "name": {
+    "en": "Supreme Darkness",
+    "ja": "\u30b9\u30d7\u30ea\u30fc\u30e0\u30fb\u30c0\u30fc\u30af\u30cd\u30b9",
+    "zh-CN": "\u81f3\u9738\u6df1\u6697",
+    "fr": "Les T\u00e9n\u00e8bres Supr\u00eames",
+    "de": "Supreme Darkness",
+    "it": "Oscurit\u00e0 Suprema",
+    "es": "Oscuridad Suprema",
+    "ko": "\uc288\ud504\ub9bc \ub2e4\ud06c\ub2c8\uc2a4",
+    "pt": "Escurid\u00e3o Suprema"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "SUDA-KR",
+      "date": "2025-01-10",
+      "image": "https://ms.yugipedia.com//e/e0/SUDA-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001453000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SUDA-JP",
+      "date": "2024-10-26",
+      "image": "https://ms.yugipedia.com//9/98/SUDA-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "340ed9f0-13eb-4dd9-9023-0ca5148e22f5": "https://ms.yugipedia.com//7/7d/EvilHERODeadEndPrison-SUDA-JP-R.png",
+          "773f9808-154c-4c0a-a4a9-700fdea84746": "https://ms.yugipedia.com//7/73/GrandKnightoftheRedLotus-SUDA-JP-C.png",
+          "edf71ce2-5149-47f5-8a28-7b26d4354517": "https://ms.yugipedia.com//c/cf/Abysssteam-SUDA-JP-C.png",
+          "9b62d953-c018-4f7d-a64e-074eac94165c": "https://ms.yugipedia.com//2/2c/CrystronCluster-SUDA-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000009203000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SUDA-FR",
+      "image": "https://ms.yugipedia.com//7/7d/SUDA-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SUDA-IT",
+      "image": "https://ms.yugipedia.com//1/11/SUDA-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SUDA-DE",
+      "image": "https://ms.yugipedia.com//0/09/SUDA-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SUDA-EN",
+      "image": "https://ms.yugipedia.com//a/ad/SUDA-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "b76f10d1-ce86-4e0a-b467-6edf1f1c1268": "https://ms.yugipedia.com//2/21/EvilHERODeadEndPrison-SUDA-EN-ScR-1E.png",
+          "0adc2f9e-64c8-4ac1-a875-a9e7c305bd75": "https://ms.yugipedia.com//a/a2/EvilHERODeadEndPrison-SUDA-EN-QCScR-1E.png",
+          "bbca6b88-f882-4af6-8ed3-8ecc84e65730": "https://ms.yugipedia.com//a/a4/GrandKnightoftheRedLotus-SUDA-EN-C-1E.png",
+          "64e000b2-46de-413c-8d10-57f2d6839005": "https://ms.yugipedia.com//7/7e/Abysssteam-SUDA-EN-SR-1E.png",
+          "fe9fb43c-14e2-4920-87bd-d527195b77d3": "https://ms.yugipedia.com//f/f4/CrystronCluster-SUDA-EN-C-1E.png",
+          "5da8bc18-6015-412f-aa54-8cc2e258f309": "https://ms.yugipedia.com//b/b1/ShadowSeveringStrike-SUDA-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001429000
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "SUDA-AE",
+      "date": "2025-02-15",
+      "image": "https://ms.yugipedia.com//a/ab/SUDA-BoosterAE.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000001440000
+        ]
+      }
+    },
+    "sc": {
+      "language": "zh-CN",
+      "prefix": "SUDA-SC",
+      "date": "2024-11-16",
+      "image": "https://ms.yugipedia.com//d/d1/SUDA-BoosterSC.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          3000001417000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SUDA-SP",
+      "image": "https://ms.yugipedia.com//7/70/SUDA-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SUDA-PT",
+      "date": "2025-01-23",
+      "image": "https://ms.yugipedia.com//b/b7/SUDA-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e0/SUDA-BoosterKR.png",
+      "cards": [
+        {
+          "id": "4e703051-311d-4fb7-8036-fc2d2dec0059",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "37bfc548-e214-4cfd-b83a-5cb4daeeb49b",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "518f8c1f-ab43-4e5e-bc7b-4a0275649ba4",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "be87725a-7cce-4c7c-8ab6-de4a7baa5480",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/98/SUDA-BoosterJP.png",
+      "cards": [
+        {
+          "id": "340ed9f0-13eb-4dd9-9023-0ca5148e22f5",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "773f9808-154c-4c0a-a4a9-700fdea84746",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "edf71ce2-5149-47f5-8a28-7b26d4354517",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "9b62d953-c018-4f7d-a64e-074eac94165c",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/7d/SUDA-BoosterFR.png",
+      "cards": [
+        {
+          "id": "136ef1ae-19a2-4dad-932a-6a7ec4eb7881",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "secret"
+        },
+        {
+          "id": "5a9976b7-9172-4f72-92c1-c2c31852b1ab",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "9029c612-7fd0-49ae-b29f-0b30fbf6db84",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "787a7777-b8ea-4645-97e3-a43fa83382cc",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "super"
+        },
+        {
+          "id": "a74e360a-7e67-4f9a-9636-c936f5bc3ed9",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "ff0b8b65-3d7b-4325-bc7c-42733dc1aa80",
+          "card": "ad325149-2c84-4152-84c8-26891d590622",
+          "suffix": "085",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/11/SUDA-BoosterIT.png",
+      "cards": [
+        {
+          "id": "41f21035-81f8-4b2a-8033-9504c1345eed",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "secret"
+        },
+        {
+          "id": "2faf0e17-9498-4051-99de-31f9df1989c8",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "4370015f-088b-4958-b625-c99297b6a935",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "d7b08199-005a-442a-9d1a-30218d0daa8d",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "super"
+        },
+        {
+          "id": "3d3f2cb9-bbc7-4767-8e9c-66583ae44d05",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "b82e9ba5-9b25-4750-961d-51bc8df100b9",
+          "card": "ad325149-2c84-4152-84c8-26891d590622",
+          "suffix": "085",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/09/SUDA-BoosterDE.png",
+      "cards": [
+        {
+          "id": "64927015-0bf9-407e-b2ba-304e2ed79322",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "secret"
+        },
+        {
+          "id": "0ec8f2f7-3576-4310-8625-bf2bda18c4ff",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "d3e7b874-b309-4cae-8627-f3cab2770c43",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "cc35b19d-3d30-4c8c-b819-2763ce6d5b69",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "super"
+        },
+        {
+          "id": "0ce56dcc-777e-482e-9375-debe844710f9",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "0aaa9027-9ede-4cf4-a9cc-37b84c47a5bd",
+          "card": "ad325149-2c84-4152-84c8-26891d590622",
+          "suffix": "085",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/ad/SUDA-BoosterEN.png",
+      "cards": [
+        {
+          "id": "b76f10d1-ce86-4e0a-b467-6edf1f1c1268",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "secret"
+        },
+        {
+          "id": "0adc2f9e-64c8-4ac1-a875-a9e7c305bd75",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "bbca6b88-f882-4af6-8ed3-8ecc84e65730",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "64e000b2-46de-413c-8d10-57f2d6839005",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "super"
+        },
+        {
+          "id": "fe9fb43c-14e2-4920-87bd-d527195b77d3",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "5da8bc18-6015-412f-aa54-8cc2e258f309",
+          "card": "ad325149-2c84-4152-84c8-26891d590622",
+          "suffix": "085",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/ab/SUDA-BoosterAE.png",
+      "cards": [
+        {
+          "id": "2f5c8ad7-9fca-4d50-99bc-035e48446229",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "8e610197-6e39-41d5-9178-9d2c7dc5a543",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "5e813579-c8fb-42b4-8b5d-bbcb19ed67d7",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "5b10c1bb-b3f3-4be6-96c1-e41f03127e12",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "948ab2d1-1ce9-47ac-8077-c45901b10c34",
+          "card": "da80cedf-f83a-441c-8cf3-46094145f448",
+          "suffix": "081",
+          "rarity": "rare"
+        },
+        {
+          "id": "e4be6ba0-38b8-40ac-9b67-f7b8d9abab52",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "091",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ae3713ed-82da-418b-81bf-a1fbd8b023d3",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "091",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "259afb9b-7db2-468d-9379-55e794dc8ef2",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "091",
+          "rarity": "secret"
+        },
+        {
+          "id": "420fc848-6fca-4e64-ac0e-a33652678eec",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "091",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "b016b289-c3dc-430b-a8b9-998d41dbe350",
+          "card": "7dc5b59f-fc25-4779-8b97-96a14db317d1",
+          "suffix": "116",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d1/SUDA-BoosterSC.png",
+      "cards": [
+        {
+          "id": "2d7d9ef5-6168-491c-8cf3-534b6068bd6e",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "rare"
+        },
+        {
+          "id": "f6339414-f881-4022-93e8-289c291b869f",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "c130a3b8-a736-4734-b2ef-8b7ad5b67fcb",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "common"
+        },
+        {
+          "id": "10493d68-539c-4a1f-9fa5-33a4a931aba7",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "bb07f527-95a4-4b5c-8f02-ea038aa1338b",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "095",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2222ae86-7b1d-4e7b-b7fe-2e55e7d7ba23",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "095",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "ee5a2453-a918-4f55-8f69-be0494b7e515",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "095",
+          "rarity": "secret"
+        },
+        {
+          "id": "a0916846-d290-4b44-8201-195bc9f04ec0",
+          "card": "148ff8ee-889c-43e8-8aea-d57e5ab87992",
+          "suffix": "095",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "e9585656-e6d9-4cc5-a5df-9240dc350ce0",
+          "card": "da80cedf-f83a-441c-8cf3-46094145f448",
+          "suffix": "096",
+          "rarity": "rare"
+        },
+        {
+          "id": "b64963ba-c23e-4a84-b590-b86deea0aad0",
+          "card": "d6ca96ef-bb2b-4199-b8ca-886dc6a9fb08",
+          "suffix": "101",
+          "rarity": "common"
+        },
+        {
+          "id": "a78695b0-7abd-4ce2-9b7f-bff0d5582197",
+          "card": "e786b90a-1121-4fa3-863f-0ab71cd8afde",
+          "suffix": "112",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3a083776-89f3-4158-8642-50722a984ccd",
+          "card": "e786b90a-1121-4fa3-863f-0ab71cd8afde",
+          "suffix": "112",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "74711371-805e-4de5-ac19-6c41deacc906",
+          "card": "e786b90a-1121-4fa3-863f-0ab71cd8afde",
+          "suffix": "112",
+          "rarity": "secret"
+        },
+        {
+          "id": "26833aa3-92e6-45cb-9f72-1ec3a93c5879",
+          "card": "e786b90a-1121-4fa3-863f-0ab71cd8afde",
+          "suffix": "112",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "8a555c98-75ce-4045-b10f-b7942bb0a5a9",
+          "card": "bbc364bf-4418-4f21-99c9-5e8ac7e12c9f",
+          "suffix": "114",
+          "rarity": "rare"
+        },
+        {
+          "id": "3db17b8b-f944-48d1-8567-bfbc4b495326",
+          "card": "f798f61a-2859-48b0-98eb-0aff4ca8eb43",
+          "suffix": "115",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/70/SUDA-BoosterSP.png",
+      "cards": [
+        {
+          "id": "911ebe71-c27a-4d69-8cdd-f6a507fc6d9a",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "secret"
+        },
+        {
+          "id": "9fc60b38-0171-4cc5-9be6-b0eae00b35d9",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "f03b5f42-2487-417a-8c8b-905792788682",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "24decdf9-bf0c-4f14-b73f-8a4d5be05ac0",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "super"
+        },
+        {
+          "id": "a69c5369-3a7e-4eef-99fd-e108d6bbe25d",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "a539dcd8-d261-4d97-84f1-0655e95af960",
+          "card": "ad325149-2c84-4152-84c8-26891d590622",
+          "suffix": "085",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b7/SUDA-BoosterPT.png",
+      "cards": [
+        {
+          "id": "ddf64c56-d6d5-47b6-bf23-31a37819f938",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "secret"
+        },
+        {
+          "id": "a96d7d66-96fb-4c8b-ac54-39420f1a79a0",
+          "card": "be9ddc54-ddd7-4192-a08d-2f3a2e6ed447",
+          "suffix": "002",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "37c20820-b10e-496b-a8f8-143aa68480e4",
+          "card": "666116bc-0fc8-487b-ac69-6af9a7bd249d",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "d2474469-4602-49a4-9e18-a6a2b3584574",
+          "card": "2e97c69c-a1e8-4fa7-803c-073a83bc1d45",
+          "suffix": "077",
+          "rarity": "super"
+        },
+        {
+          "id": "92914b96-3e96-43d1-83ce-141152dc55e4",
+          "card": "9a5d19f0-ba78-4e58-9941-523b7b0850b9",
+          "suffix": "080",
+          "rarity": "common"
+        },
+        {
+          "id": "bc704c37-0624-4672-ba72-052683a1e6a6",
+          "card": "ad325149-2c84-4152-84c8-26891d590622",
+          "suffix": "085",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Supreme Darkness",
+      "id": 1066643
+    }
+  }
+}

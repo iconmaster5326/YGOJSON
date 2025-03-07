@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "0ecea6b6-ce6d-4c5d-b970-81bc98c6638d",
+  "name": {
+    "en": "Limited Edition 1"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "JUMP-EN",
+      "cardImages": {
+        "limited": {
+          "2cc0ffc1-0fcc-4b09-99e0-d5c82c6c0c66": "https://ms.yugipedia.com//6/65/Copycat-JUMP-EN-UR-LE.png",
+          "b86a3909-8e8d-4581-a6b9-bdb5b888fdd0": "https://ms.yugipedia.com//0/04/RelieveMonster-JUMP-EN-UR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111104001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "cards": [
+        {
+          "id": "2cc0ffc1-0fcc-4b09-99e0-d5c82c6c0c66",
+          "card": "81055c48-677a-4d2e-b784-42b0b53b24eb",
+          "suffix": "020",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b86a3909-8e8d-4581-a6b9-bdb5b888fdd0",
+          "card": "256c1f88-c987-4c42-a159-740b1d94d2cc",
+          "suffix": "021",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Limited Edition 1",
+      "id": 271903
+    }
+  }
+}

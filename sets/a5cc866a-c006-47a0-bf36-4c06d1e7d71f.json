@@ -1,0 +1,762 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a5cc866a-c006-47a0-bf36-4c06d1e7d71f",
+  "name": {
+    "en": "Flaming Eternity",
+    "fr": "\u00c9ternit\u00e9 Br\u00fblante",
+    "de": "Flaming Eternity",
+    "it": "Eternit\u00e0 Fiammeggiante",
+    "pt": "Eternidade Flamejante",
+    "es": "Eternidad Llameante",
+    "ja": "\u30d5\u30ec\u30a4\u30df\u30f3\u30b0\u30fb\u30a8\u30bf\u30fc\u30cb\u30c6\u30a3",
+    "ko": "\uc601\uc6d0\ud55c \ud654\uc5fc"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "FET-FR",
+      "image": "https://ms.yugipedia.com//0/0f/FET-BoosterFR.jpg",
+      "cardImages": {
+        "1st": {
+          "af669058-a983-443c-bf0a-9af2c874b4a5": "https://ms.yugipedia.com//e/e8/SpaceMambo-FET-FR-C-1E.jpg",
+          "a27baef9-0d04-4752-8296-dda064fdeb03": "https://ms.yugipedia.com//9/9a/SilentSwordsmanLV5-FET-FR-UR-1E.jpg",
+          "d9314d31-61d9-4386-8512-af8f91d6c073": "https://ms.yugipedia.com//8/88/Hyena-FET-FR-C-1E.png",
+          "bd8197e9-2217-47e0-9385-ac7575da3e62": "https://ms.yugipedia.com//a/a3/GolemSentry-FET-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31104000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "FET-DE",
+      "cardImages": {
+        "unlimited": {
+          "16fb8f60-f6fb-44a9-8626-f877836d2def": "https://ms.yugipedia.com//d/d6/SpaceMambo-FET-DE-C-UE.png",
+          "40d30500-29d4-41a9-98fc-5336beb24bec": "https://ms.yugipedia.com//6/6f/Hyena-FET-DE-C-UE.png",
+          "663d470b-a9a9-49bc-a9ec-c84c234a9308": "https://ms.yugipedia.com//8/85/CentrifugalField-FET-DE-C-UE.png"
+        },
+        "1st": {
+          "16fb8f60-f6fb-44a9-8626-f877836d2def": "https://ms.yugipedia.com//3/3e/SpaceMambo-FET-DE-C-1E.png",
+          "4fdae41b-4c67-4e4f-98be-cc28bd788386": "https://ms.yugipedia.com//2/26/GolemSentry-FET-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21104000
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "FET-AE",
+      "date": "2005-10-20",
+      "image": "https://ms.yugipedia.com//1/17/FET-BoosterAE.jpg",
+      "cardImages": {
+        "1st": {
+          "a27baef9-0d04-4752-8296-dda064fdeb03": "https://ms.yugipedia.com//8/86/SilentSwordsmanLV5-FET-AE-UR-1E.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000000023000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "FET-KR",
+      "date": "2006-05-19",
+      "image": "https://ms.yugipedia.com//1/16/FET-BoosterKR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "771ee211-06a3-407b-ade3-ae94c1806c0a": "https://ms.yugipedia.com//8/8f/SpaceMambo-FET-KR-C-UE.jpg",
+          "a27baef9-0d04-4752-8296-dda064fdeb03": "https://ms.yugipedia.com//0/07/SilentSwordsmanLV5-FET-KR-UR-UE.png"
+        },
+        "1st": {
+          "771ee211-06a3-407b-ade3-ae94c1806c0a": "https://ms.yugipedia.com//f/ff/SpaceMambo-FET-KR-C-1E.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71104002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "FET-SP",
+      "cardImages": {
+        "1st": {
+          "f26c0435-d87b-41e7-b7c9-fe0ad5a9ff01": "https://ms.yugipedia.com//c/cc/SpaceMambo-FET-SP-C-1E.jpg",
+          "a27baef9-0d04-4752-8296-dda064fdeb03": "https://ms.yugipedia.com//7/77/SilentSwordsmanLV5-FET-SP-UR-1E.png",
+          "0f9d473d-4234-4647-8dfa-c1a0a943460e": "https://ms.yugipedia.com//1/17/Hyena-FET-SP-C-1E.png",
+          "c7e37484-bcee-4bba-9630-e334ef6c0e92": "https://ms.yugipedia.com//4/42/CentrifugalField-FET-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51103000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "FET-IT",
+      "image": "https://ms.yugipedia.com//e/ed/FET-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "561f7ce2-a5e1-47e2-9a91-46776b502142": "https://ms.yugipedia.com//9/91/SpaceMambo-FET-IT-C-1E.png",
+          "ad3d04b0-918e-4db1-9498-c7d1a0fee167": "https://ms.yugipedia.com//5/5a/Hyena-FET-IT-C-1E.png",
+          "d5c989ef-6ea0-4283-8ae1-6082ed471a56": "https://ms.yugipedia.com//c/cf/GolemSentry-FET-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41104000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "FET-EN",
+      "date": "2005-03-01",
+      "image": "https://ms.yugipedia.com//d/da/FET-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "afef9cce-4781-4560-bbbd-66ba30a46c08": "https://ms.yugipedia.com//0/01/SpaceMambo-FET-EN-C-UE.jpg",
+          "a27baef9-0d04-4752-8296-dda064fdeb03": "https://ms.yugipedia.com//d/d9/SilentSwordsmanLV5-FET-EN-UR-UE.png",
+          "1911b4b5-7a39-495d-b7b2-d69e4921ca67": "https://ms.yugipedia.com//4/48/Hyena-FET-EN-C-UE.png",
+          "064905c5-0046-4c9a-99ef-7b267b224aca": "https://ms.yugipedia.com//1/15/GolemSentry-FET-EN-C-UE.png",
+          "1a832a1e-540d-4ed5-8766-2d911e948615": "https://ms.yugipedia.com//8/89/CentrifugalField-FET-EN-C-UE.png"
+        },
+        "1st": {
+          "afef9cce-4781-4560-bbbd-66ba30a46c08": "https://ms.yugipedia.com//b/b2/SpaceMambo-FET-EN-C-1E.jpg",
+          "a27baef9-0d04-4752-8296-dda064fdeb03": "https://ms.yugipedia.com//6/67/SilentSwordsmanLV5-FET-EN-UR-1E.jpg",
+          "5a6c715b-b814-4653-95c9-92221fb31b10": "https://ms.yugipedia.com//0/0b/SilentSwordsmanLV5-FET-EN-UtR-1E.jpg",
+          "1911b4b5-7a39-495d-b7b2-d69e4921ca67": "https://ms.yugipedia.com//9/92/Hyena-FET-EN-C-1E.jpg",
+          "064905c5-0046-4c9a-99ef-7b267b224aca": "https://ms.yugipedia.com//c/c3/GolemSentry-FET-EN-C-1E.jpg",
+          "1a832a1e-540d-4ed5-8766-2d911e948615": "https://ms.yugipedia.com//d/d2/CentrifugalField-FET-EN-C-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11104000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "FET-JP",
+      "date": "2004-11-25",
+      "image": "https://ms.yugipedia.com//3/38/FET-BoosterJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "ed202e57-736c-47f0-a8d5-2fe7b7f5a552": "https://ms.yugipedia.com//5/57/SpaceMambo-FET-JP-C.png",
+          "a27baef9-0d04-4752-8296-dda064fdeb03": "https://ms.yugipedia.com//a/a8/SilentSwordsmanLV5-FET-JP-UR.png",
+          "5a6c715b-b814-4653-95c9-92221fb31b10": "https://ms.yugipedia.com//5/52/SilentSwordsmanLV5-FET-JP-UtR.png",
+          "e512c97e-9296-4150-8539-8ad8dc4296b6": "https://ms.yugipedia.com//6/66/Hyena-FET-JP-C.png",
+          "357647c8-0243-4a9f-aba1-a3c3ed3beed5": "https://ms.yugipedia.com//0/0e/GolemSentry-FET-JP-C.png",
+          "138e231f-2ecf-413d-b2a4-0b4d1b78736f": "https://ms.yugipedia.com//0/00/CentrifugalField-FET-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1107002
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "FET-PT",
+      "date": "2005-03-01",
+      "image": "https://ms.yugipedia.com//3/3d/FET-BoosterPT.jpg",
+      "cardImages": {
+        "1st": {
+          "0d1c71db-d911-478c-9bce-f1b0c05dd559": "https://ms.yugipedia.com//f/fd/SpaceMambo-FET-PT-C-1E.png",
+          "5a6c715b-b814-4653-95c9-92221fb31b10": "https://ms.yugipedia.com//6/64/SilentSwordsmanLV5-FET-PT-UtR-1E.png",
+          "9a8c4784-75a5-4574-a3a8-19fc278890e8": "https://ms.yugipedia.com//a/a2/Hyena-FET-PT-C-1E.png",
+          "d9acdcc1-6309-4445-a2c4-c5d7a5b91fd8": "https://ms.yugipedia.com//5/5e/GolemSentry-FET-PT-C-1E.png",
+          "b1f2e898-4aea-4f62-9cbf-5147fa10ab9c": "https://ms.yugipedia.com//a/ae/CentrifugalField-FET-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11104000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0f/FET-BoosterFR.jpg",
+      "cards": [
+        {
+          "id": "af669058-a983-443c-bf0a-9af2c874b4a5",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "d9314d31-61d9-4386-8512-af8f91d6c073",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "bd8197e9-2217-47e0-9385-ac7575da3e62",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "7e06777c-d0e8-49b6-96bf-43a2e1ef1b08",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "16fb8f60-f6fb-44a9-8626-f877836d2def",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "40d30500-29d4-41a9-98fc-5336beb24bec",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "4fdae41b-4c67-4e4f-98be-cc28bd788386",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "663d470b-a9a9-49bc-a9ec-c84c234a9308",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/17/FET-BoosterAE.jpg",
+      "cards": [
+        {
+          "id": "f7cc6f99-bfaa-4e85-944a-39ab66bfae11",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "aceb95d7-8fc1-40a7-a2b7-16bcc15a23c3",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "9f7dd097-b7b2-4161-85b1-f0513efede9c",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "f30d0a4e-37c6-4c43-9b11-73c108f2adf0",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/16/FET-BoosterKR.jpg",
+      "cards": [
+        {
+          "id": "771ee211-06a3-407b-ade3-ae94c1806c0a",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "7f107258-e10f-4191-8701-adeb4c08c5c1",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "bee2528e-fd2f-4da8-8886-4d93edbaf27c",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "f31294c7-051f-42d8-98b6-ed6fac549b4d",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "f26c0435-d87b-41e7-b7c9-fe0ad5a9ff01",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "0f9d473d-4234-4647-8dfa-c1a0a943460e",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "27f84d43-586a-4acd-980a-71d02fc701ef",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "c7e37484-bcee-4bba-9630-e334ef6c0e92",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/ed/FET-BoosterIT.png",
+      "cards": [
+        {
+          "id": "561f7ce2-a5e1-47e2-9a91-46776b502142",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "ad3d04b0-918e-4db1-9498-c7d1a0fee167",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "d5c989ef-6ea0-4283-8ae1-6082ed471a56",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "13e9c28b-3779-4a16-95bb-4b5ae5dffe3f",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/da/FET-BoosterEN.png",
+      "cards": [
+        {
+          "id": "afef9cce-4781-4560-bbbd-66ba30a46c08",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "1911b4b5-7a39-495d-b7b2-d69e4921ca67",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "064905c5-0046-4c9a-99ef-7b267b224aca",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "1a832a1e-540d-4ed5-8766-2d911e948615",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/38/FET-BoosterJP.jpg",
+      "cards": [
+        {
+          "id": "ed202e57-736c-47f0-a8d5-2fe7b7f5a552",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e512c97e-9296-4150-8539-8ad8dc4296b6",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "357647c8-0243-4a9f-aba1-a3c3ed3beed5",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "138e231f-2ecf-413d-b2a4-0b4d1b78736f",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3d/FET-BoosterPT.jpg",
+      "cards": [
+        {
+          "id": "0d1c71db-d911-478c-9bce-f1b0c05dd559",
+          "card": "b82a98ea-f4e6-4561-9f40-e208981667af",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "a27baef9-0d04-4752-8296-dda064fdeb03",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a6c715b-b814-4653-95c9-92221fb31b10",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "008",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "9a8c4784-75a5-4574-a3a8-19fc278890e8",
+          "card": "1cbe4148-2ea2-46b3-9afd-f76cdb834479",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "d9acdcc1-6309-4445-a2c4-c5d7a5b91fd8",
+          "card": "9129ab43-4aa5-4f2b-bd2f-b466a96cc9c6",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b1f2e898-4aea-4f62-9cbf-5147fa10ab9c",
+          "card": "ffb254a8-ad18-446c-8e4a-2946f1d6e5e3",
+          "suffix": "045",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Flaming Eternity"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Flaming Eternity",
+      "id": 153
+    }
+  }
+}

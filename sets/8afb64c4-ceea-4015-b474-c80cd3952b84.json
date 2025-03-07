@@ -1,0 +1,1519 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "8afb64c4-ceea-4015-b474-c80cd3952b84",
+  "name": {
+    "en": "Abyss Rising",
+    "fr": "L'Ascension des Abysses",
+    "de": "Abyss Rising",
+    "it": "Risveglio degli Abissi",
+    "es": "Levantamiento Abismal",
+    "ja": "\u30a2\u30d3\u30b9\u30fb\u30e9\u30a4\u30b8\u30f3\u30b0",
+    "ko": "\uc5b4\ube44\uc2a4 \ub77c\uc774\uc9d5",
+    "zh-TW": "\u6df1\u6df5\u6607\u83ef"
+  },
+  "locales": {
+    "it": {
+      "language": "it",
+      "prefix": "ABYR-IT",
+      "image": "https://ms.yugipedia.com//4/4c/ABYR-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "d0d7af39-2914-4288-b80a-ad2e3d58cf82": "https://ms.yugipedia.com//8/83/IgnobleKnightofBlackLaundsallyn-ABYR-IT-SR-1E.png",
+          "3003196f-5bf0-4d76-b3e9-21f5d8163165": "https://ms.yugipedia.com//8/89/MadolcheCruffssant-ABYR-IT-C-1E.png",
+          "656a2f8c-971f-4ce3-94d4-c02f6e8938f5": "https://ms.yugipedia.com//7/7f/GagagaCowboy-ABYR-IT-SR-1E.png",
+          "629a778e-4cf6-4ab1-a1ae-57715231e063": "https://ms.yugipedia.com//a/a8/EmpressofProphecy-ABYR-IT-UR-1E.png",
+          "2cc99e43-baaf-48e8-a33c-6c8a2e5d8476": "https://ms.yugipedia.com//5/5b/EmpressofProphecy-ABYR-IT-UtR-1E.png"
+        },
+        "unlimited": {
+          "d0d7af39-2914-4288-b80a-ad2e3d58cf82": "https://ms.yugipedia.com//b/ba/IgnobleKnightofBlackLaundsallyn-ABYR-IT-SR-UE.png",
+          "629a778e-4cf6-4ab1-a1ae-57715231e063": "https://ms.yugipedia.com//a/ab/EmpressofProphecy-ABYR-IT-UR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41111007
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "ABYR-DE",
+      "image": "https://ms.yugipedia.com//7/72/ABYR-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "7b68a621-6575-4f6e-b4e0-f766466da840": "https://ms.yugipedia.com//c/c1/IgnobleKnightofBlackLaundsallyn-ABYR-DE-SR-1E.png",
+          "c2bcef30-75ec-400d-8504-3cc54244a08f": "https://ms.yugipedia.com//4/45/HeroicChallengerExtraSword-ABYR-DE-C-1E.png",
+          "7012a470-0164-44dd-99a4-fd077f3ef8bb": "https://ms.yugipedia.com//5/50/MadolcheCruffssant-ABYR-DE-C-1E.jpg",
+          "4295bf4e-a045-4baf-a1e1-536a2b42a1c6": "https://ms.yugipedia.com//1/1a/MadolcheMessengelato-ABYR-DE-R-1E.jpg",
+          "b050473f-8695-4da3-8ea1-14e425467543": "https://ms.yugipedia.com//d/dc/SnowmanCreator-ABYR-DE-C-1E.jpg",
+          "4e1479b7-21f5-48a2-9bdc-c08ea4113de7": "https://ms.yugipedia.com//d/d4/MoulinglaciatheElementalLord-ABYR-DE-ScR-1E.png",
+          "e6f5e774-c162-4ed2-90c3-61ef56b776bb": "https://ms.yugipedia.com//1/14/GagagaCowboy-ABYR-DE-SR-1E.png",
+          "952fccea-f844-49a0-91c1-a0539591a42b": "https://ms.yugipedia.com//c/c3/Number9DysonSphere-ABYR-DE-UtR-1E.jpg",
+          "a31a9f41-72f2-4570-a7b3-d050ff724d46": "https://ms.yugipedia.com//7/72/EmpressofProphecy-ABYR-DE-UR-1E.png",
+          "3fa7c6a7-4860-4f53-a411-fe04460049b2": "https://ms.yugipedia.com//7/74/EmpressofProphecy-ABYR-DE-UtR-1E.png",
+          "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc": "https://ms.yugipedia.com//0/03/MadolcheQueenTiaramisu-ABYR-DE-UR-1E.jpg",
+          "18ef4925-67e5-407f-8137-42da71498cbc": "https://ms.yugipedia.com//c/c9/MadolcheQueenTiaramisu-ABYR-DE-UtR-1E.png",
+          "c1ac5762-b9b0-42ad-ab3d-a6bdbd8f9a19": "https://ms.yugipedia.com//4/42/GravityBlaster-ABYR-DE-C-1E.jpg",
+          "583721ba-374a-4e62-8313-c5ef3800a2ca": "https://ms.yugipedia.com//1/10/AbyssscaleoftheKraken-ABYR-DE-C-1E.png",
+          "bf7e1820-dedf-4094-b3df-c8942b965de3": "https://ms.yugipedia.com//d/d7/SpellbookofEternity-ABYR-DE-R-1E.jpg",
+          "d12d84dc-a74e-49a4-9961-80fb0e42d47d": "https://ms.yugipedia.com//9/99/ForbiddenDress-ABYR-DE-SR-1E.jpg",
+          "facaa8c2-e4f3-40a4-87da-5b040420b634": "https://ms.yugipedia.com//5/50/FinalGesture-ABYR-DE-C-1E.png",
+          "b1a71e76-5eea-4046-945e-c5531a1fc9d7": "https://ms.yugipedia.com//f/f8/BattleBreak-ABYR-DE-C-1E.png",
+          "be27e614-639a-483c-9c53-65e2e80efa9c": "https://ms.yugipedia.com//2/24/Madolchepalooza-ABYR-DE-SR-1E.png",
+          "651f41ee-fd6e-4683-aaf9-f84a283250e3": "https://ms.yugipedia.com//6/61/ElectromagneticBagworm-ABYR-DE-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21111007
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "ABYR-SP",
+      "image": "https://ms.yugipedia.com//2/27/ABYR-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "38c6b8cd-3f52-45aa-ae48-985d64371c88": "https://ms.yugipedia.com//1/10/IgnobleKnightofBlackLaundsallyn-ABYR-SP-SR-1E.png",
+          "4673f821-5121-4f03-a91e-b56afc4b3734": "https://ms.yugipedia.com//8/82/HeroicChallengerExtraSword-ABYR-SP-C-1E.png",
+          "2b28600e-6084-4a1f-a8f2-b6a5775cc641": "https://ms.yugipedia.com//e/e9/MadolcheCruffssant-ABYR-SP-C-1E.png",
+          "b890f874-20ef-4a64-9210-3dececd7d4aa": "https://ms.yugipedia.com//f/f4/MadolcheMessengelato-ABYR-SP-R-1E.png",
+          "e917714e-ce83-4b2a-a7d3-f13e0f4725bc": "https://ms.yugipedia.com//6/6c/SnowmanCreator-ABYR-SP-C-1E.png",
+          "80c3e88a-da48-4580-8007-134f9857bfb2": "https://ms.yugipedia.com//b/b1/MoulinglaciatheElementalLord-ABYR-SP-ScR-1E.png",
+          "2f983002-ff58-431c-953d-77acf9819b8b": "https://ms.yugipedia.com//0/05/GagagaCowboy-ABYR-SP-SR-1E.png",
+          "1437bc66-3a53-486a-bf97-66c86084baac": "https://ms.yugipedia.com//c/c7/Number9DysonSphere-ABYR-SP-UR-1E.png",
+          "426e5e48-ef1d-45c2-a324-1175e0684a32": "https://ms.yugipedia.com//b/ba/Number9DysonSphere-ABYR-SP-UtR-1E.png",
+          "4f9e0f78-64eb-4985-ae45-382e9790c359": "https://ms.yugipedia.com//2/21/EmpressofProphecy-ABYR-SP-UR-1E.png",
+          "ec76e46f-509b-4caf-bb01-cf0a6ab31c64": "https://ms.yugipedia.com//b/b3/EmpressofProphecy-ABYR-SP-UtR-1E.png",
+          "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc": "https://ms.yugipedia.com//b/b3/MadolcheQueenTiaramisu-ABYR-SP-UR-1E.png",
+          "18ef4925-67e5-407f-8137-42da71498cbc": "https://ms.yugipedia.com//1/11/MadolcheQueenTiaramisu-ABYR-SP-UtR-1E.png",
+          "aebd2724-38f3-4734-baf6-cf9cc708f16f": "https://ms.yugipedia.com//a/a6/ForbiddenDress-ABYR-SP-SR-1E.png",
+          "21c25e04-e2f0-49cb-aab8-e012601b0f92": "https://ms.yugipedia.com//a/a3/ElectromagneticBagworm-ABYR-SP-C-1E.jpg"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51110007
+        ]
+      }
+    },
+    "tc": {
+      "language": "zh-TW",
+      "prefix": "ABYR-TC",
+      "date": "2015-08-29",
+      "image": "https://ms.yugipedia.com//c/cf/ABYR-BoosterTC.png",
+      "cardImages": {
+        "unlimited": {
+          "61e5cf88-5055-4294-8c4b-bdb33f60ba84": "https://ms.yugipedia.com//2/26/HeroicChallengerExtraSword-ABYR-TC-C.png",
+          "7b078a28-f830-4bc8-8b95-9f5ac6f527b4": "https://ms.yugipedia.com//7/72/MadolcheCruffssant-ABYR-TC-C.png",
+          "7df73448-1e8e-4a9f-a4a3-e1e0e622c6d2": "https://ms.yugipedia.com//2/21/MadolcheMessengelato-ABYR-TC-R.png",
+          "c148e869-e4d6-41b1-8e2c-cb951f7749a9": "https://ms.yugipedia.com//0/00/SnowmanCreator-ABYR-TC-C.png",
+          "c35e7c7e-98bc-4ce1-92f5-b846889ea6b5": "https://ms.yugipedia.com//1/14/MoulinglaciatheElementalLord-ABYR-TC-SR.png",
+          "594661fe-1ea2-4cfa-8a8b-8a08872bd982": "https://ms.yugipedia.com//5/5c/MoulinglaciatheElementalLord-ABYR-TC-ScR.png",
+          "9abdf0f8-3588-4ca7-8111-8d36274c32b7": "https://ms.yugipedia.com//a/ae/GagagaCowboy-ABYR-TC-SR.png",
+          "e746d756-e2db-44a7-81f7-f98e028813eb": "https://ms.yugipedia.com//1/1e/GagagaCowboy-ABYR-TC-ScR.png",
+          "6e09399b-23ed-4be7-bc25-85f0b344d402": "https://ms.yugipedia.com//d/d1/Number9DysonSphere-ABYR-TC-UR.png",
+          "a0319aad-078f-4065-9f32-20c018b02e5f": "https://ms.yugipedia.com//8/88/Number9DysonSphere-ABYR-TC-ScR.png",
+          "3fa43b55-09bd-484d-b098-37026286b6e0": "https://ms.yugipedia.com//2/2a/Number9DysonSphere-ABYR-TC-UtR.png",
+          "45880eda-9ec6-455a-8cc3-9290f2308c2d": "https://ms.yugipedia.com//5/5c/EmpressofProphecy-ABYR-TC-SR.png",
+          "0043671c-483f-4272-9558-001d0d23f26e": "https://ms.yugipedia.com//5/5b/EmpressofProphecy-ABYR-TC-ScR.png",
+          "93c186ee-4f7a-41a1-831b-cbcf799c7e38": "https://ms.yugipedia.com//4/46/MadolcheQueenTiaramisu-ABYR-TC-SR.png",
+          "2446044c-0a03-4c4e-8bc5-5ee4ecc0ea40": "https://ms.yugipedia.com//e/e2/MadolcheQueenTiaramisu-ABYR-TC-ScR.png",
+          "759a7df6-552e-4a76-a81d-102fe382b016": "https://ms.yugipedia.com//c/c5/GravityBlaster-ABYR-TC-C.png",
+          "1d09e0c5-c5c1-4766-bb26-1d7b9bda4442": "https://ms.yugipedia.com//c/cd/AbyssscaleoftheKraken-ABYR-TC-C.png",
+          "c8ffe90c-4a9b-4f4a-b94d-474aa35bcbf5": "https://ms.yugipedia.com//b/b3/SpellbookofEternity-ABYR-TC-C.png",
+          "cefd0625-02f2-4145-8544-bb2ed7e11a60": "https://ms.yugipedia.com//9/9c/ForbiddenDress-ABYR-TC-SR.png",
+          "4dbbfb6f-0bd1-46ef-9754-208001491d87": "https://ms.yugipedia.com//b/bd/ForbiddenDress-ABYR-TC-ScR.png",
+          "facaa8c2-e4f3-40a4-87da-5b040420b634": "https://ms.yugipedia.com//3/37/FinalGesture-ABYR-TC-C.png",
+          "ed5ccc44-1898-4b0b-90e5-1054910143ae": "https://ms.yugipedia.com//1/1d/BattleBreak-ABYR-TC-C.png",
+          "4d7411b1-e39a-41a3-afe9-509506f346d3": "https://ms.yugipedia.com//2/21/Madolchepalooza-ABYR-TC-C.png",
+          "7df0548f-8ac9-4982-b84d-9dbe93873b85": "https://ms.yugipedia.com//5/5a/IgnobleKnightofBlackLaundsallyn-ABYR-TC-R.png",
+          "58ccd03c-f8ba-4a37-9a2c-acdbf2647644": "https://ms.yugipedia.com//0/0b/Tatsunoko-ABYR-TC-SR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "ABYR-EN",
+      "date": "2012-11-09",
+      "image": "https://ms.yugipedia.com//f/fa/ABYR-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "4d8dbe28-f8e2-4cd2-96d2-b889a80919a2": "https://ms.yugipedia.com//5/57/IgnobleKnightofBlackLaundsallyn-ABYR-EN-SR-1E.png",
+          "a9d8fa6b-185f-4e94-8eb0-ebcb95db33b7": "https://ms.yugipedia.com//8/88/HeroicChallengerExtraSword-ABYR-EN-C-1E.png",
+          "702c80ed-c61d-4c1b-a991-c6f17cff9dab": "https://ms.yugipedia.com//9/9d/MadolcheCruffssant-ABYR-EN-C-1E.png",
+          "16779014-7f3b-4520-b38c-f49a3041ad05": "https://ms.yugipedia.com//8/8b/MadolcheMessengelato-ABYR-EN-R-1E.png",
+          "7b6e9183-b7cc-49ae-b64b-758147b37971": "https://ms.yugipedia.com//7/75/SnowmanCreator-ABYR-EN-C-1E.png",
+          "c2bcd65d-0e5e-499d-9d01-82294b071c27": "https://ms.yugipedia.com//2/2a/MoulinglaciatheElementalLord-ABYR-EN-ScR-1E.png",
+          "547cf369-be24-4431-8b8e-b18246bed8a1": "https://ms.yugipedia.com//7/74/GagagaCowboy-ABYR-EN-SR-1E.png",
+          "f870d6ec-ba64-436b-baae-1fb72ba91136": "https://ms.yugipedia.com//f/fc/Number9DysonSphere-ABYR-EN-UR-1E.png",
+          "287f81c3-fb5f-48ce-a7b8-89df2bd078fb": "https://ms.yugipedia.com//2/27/Number9DysonSphere-ABYR-EN-UtR-1E.png",
+          "54a52258-589d-4787-abe8-bfa0f4331112": "https://ms.yugipedia.com//8/81/EmpressofProphecy-ABYR-EN-UR-1E.png",
+          "cc4ec7dc-b7ec-495d-945d-011b9053ce18": "https://ms.yugipedia.com//5/5b/EmpressofProphecy-ABYR-EN-UtR-1E.png",
+          "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc": "https://ms.yugipedia.com//8/81/MadolcheQueenTiaramisu-ABYR-EN-UR-1E.png",
+          "18ef4925-67e5-407f-8137-42da71498cbc": "https://ms.yugipedia.com//a/a5/MadolcheQueenTiaramisu-ABYR-EN-UtR-1E.png",
+          "45ae0996-befe-4562-8a45-84752a164d4d": "https://ms.yugipedia.com//f/f9/GravityBlaster-ABYR-EN-C-1E.png",
+          "5dbb1e8b-cfe6-4c7e-87e7-8278e8f2164a": "https://ms.yugipedia.com//4/40/AbyssscaleoftheKraken-ABYR-EN-C-1E.png",
+          "bf7e1820-dedf-4094-b3df-c8942b965de3": "https://ms.yugipedia.com//b/b8/SpellbookofEternity-ABYR-EN-R-1E.png",
+          "ddc44b95-837b-4be7-879f-468ed99ce202": "https://ms.yugipedia.com//8/83/ForbiddenDress-ABYR-EN-SR-1E.png",
+          "facaa8c2-e4f3-40a4-87da-5b040420b634": "https://ms.yugipedia.com//7/78/FinalGesture-ABYR-EN-C-1E.png",
+          "4e89c1e2-5fa6-42fc-9ed4-74de93188a7b": "https://ms.yugipedia.com//0/03/BattleBreak-ABYR-EN-C-1E.png",
+          "ec17c5d7-0ab6-4d77-8568-d8550f5a7189": "https://ms.yugipedia.com//e/ea/Madolchepalooza-ABYR-EN-SR-1E.png",
+          "b67b792d-b79f-41e6-a0c1-6891d67868e8": "https://ms.yugipedia.com//7/7c/ElectromagneticBagworm-ABYR-EN-C-1E.png"
+        },
+        "unlimited": {
+          "4d8dbe28-f8e2-4cd2-96d2-b889a80919a2": "https://ms.yugipedia.com//6/6d/IgnobleKnightofBlackLaundsallyn-ABYR-EN-SR-UE.png",
+          "a9d8fa6b-185f-4e94-8eb0-ebcb95db33b7": "https://ms.yugipedia.com//1/10/HeroicChallengerExtraSword-ABYR-EN-C-UE.png",
+          "702c80ed-c61d-4c1b-a991-c6f17cff9dab": "https://ms.yugipedia.com//2/23/MadolcheCruffssant-ABYR-EN-C-UE.png",
+          "16779014-7f3b-4520-b38c-f49a3041ad05": "https://ms.yugipedia.com//8/83/MadolcheMessengelato-ABYR-EN-R-UE.png",
+          "7b6e9183-b7cc-49ae-b64b-758147b37971": "https://ms.yugipedia.com//7/7e/SnowmanCreator-ABYR-EN-C-UE.png",
+          "c2bcd65d-0e5e-499d-9d01-82294b071c27": "https://ms.yugipedia.com//0/01/MoulinglaciatheElementalLord-ABYR-EN-ScR-UE.png",
+          "547cf369-be24-4431-8b8e-b18246bed8a1": "https://ms.yugipedia.com//f/fc/GagagaCowboy-ABYR-EN-SR-UE.png",
+          "f870d6ec-ba64-436b-baae-1fb72ba91136": "https://ms.yugipedia.com//c/c8/Number9DysonSphere-ABYR-EN-UR-UE.png",
+          "287f81c3-fb5f-48ce-a7b8-89df2bd078fb": "https://ms.yugipedia.com//7/77/Number9DysonSphere-ABYR-EN-UtR-UE.png",
+          "54a52258-589d-4787-abe8-bfa0f4331112": "https://ms.yugipedia.com//8/81/EmpressofProphecy-ABYR-EN-UR-UE.png",
+          "cc4ec7dc-b7ec-495d-945d-011b9053ce18": "https://ms.yugipedia.com//d/d8/EmpressofProphecy-ABYR-EN-UtR-UE.png",
+          "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc": "https://ms.yugipedia.com//5/52/MadolcheQueenTiaramisu-ABYR-EN-UR-UE.png",
+          "18ef4925-67e5-407f-8137-42da71498cbc": "https://ms.yugipedia.com//e/e2/MadolcheQueenTiaramisu-ABYR-EN-UtR-UE.png",
+          "45ae0996-befe-4562-8a45-84752a164d4d": "https://ms.yugipedia.com//1/1d/GravityBlaster-ABYR-EN-C-UE.png",
+          "5dbb1e8b-cfe6-4c7e-87e7-8278e8f2164a": "https://ms.yugipedia.com//2/2c/AbyssscaleoftheKraken-ABYR-EN-C-UE.png",
+          "bf7e1820-dedf-4094-b3df-c8942b965de3": "https://ms.yugipedia.com//9/90/SpellbookofEternity-ABYR-EN-R-UE.png",
+          "ddc44b95-837b-4be7-879f-468ed99ce202": "https://ms.yugipedia.com//c/c7/ForbiddenDress-ABYR-EN-SR-UE.png",
+          "facaa8c2-e4f3-40a4-87da-5b040420b634": "https://ms.yugipedia.com//5/54/FinalGesture-ABYR-EN-C-UE.png",
+          "4e89c1e2-5fa6-42fc-9ed4-74de93188a7b": "https://ms.yugipedia.com//0/06/BattleBreak-ABYR-EN-C-UE.png",
+          "ec17c5d7-0ab6-4d77-8568-d8550f5a7189": "https://ms.yugipedia.com//0/03/Madolchepalooza-ABYR-EN-SR-UE.png",
+          "b67b792d-b79f-41e6-a0c1-6891d67868e8": "https://ms.yugipedia.com//a/a2/ElectromagneticBagworm-ABYR-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11111007
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "ABYR-FR",
+      "image": "https://ms.yugipedia.com//2/20/ABYR-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "21b96454-0d94-49f9-9db3-2efe13e786be": "https://ms.yugipedia.com//9/99/IgnobleKnightofBlackLaundsallyn-ABYR-FR-SR-1E.png",
+          "e09d2bea-30d7-45d3-8355-fbbe9c855365": "https://ms.yugipedia.com//1/11/HeroicChallengerExtraSword-ABYR-FR-C-1E.jpg",
+          "3fe3b193-e24b-49d6-8de1-6a519ca4a67b": "https://ms.yugipedia.com//2/28/MadolcheCruffssant-ABYR-FR-C-1E.jpg",
+          "6f0b0326-e268-4b59-b005-c315c5fd74cd": "https://ms.yugipedia.com//0/07/MadolcheMessengelato-ABYR-FR-R-1E.jpg",
+          "a54287fa-c6fc-4df0-a9ff-7e4a6409c659": "https://ms.yugipedia.com//a/a7/SnowmanCreator-ABYR-FR-C-1E.jpg",
+          "29e3cab7-8f2a-4bef-9c5c-014cffa84c96": "https://ms.yugipedia.com//8/87/MoulinglaciatheElementalLord-ABYR-FR-ScR-1E.png",
+          "14c03edd-9a95-472b-82a5-2cf020d3f5ac": "https://ms.yugipedia.com//6/6a/GagagaCowboy-ABYR-FR-SR-1E.png",
+          "9a62f19b-64c9-4af4-a240-fc43e4445000": "https://ms.yugipedia.com//1/1c/Number9DysonSphere-ABYR-FR-UR-1E.jpg",
+          "e0f40990-a708-48b5-9ad4-c4ebd0aa2abe": "https://ms.yugipedia.com//f/f7/EmpressofProphecy-ABYR-FR-UR-1E.png",
+          "bb4f5221-4eaf-4a4b-a49a-13a86fcb7f85": "https://ms.yugipedia.com//5/51/EmpressofProphecy-ABYR-FR-UtR-1E.png",
+          "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc": "https://ms.yugipedia.com//f/fc/MadolcheQueenTiaramisu-ABYR-FR-UR-1E.jpg",
+          "18ef4925-67e5-407f-8137-42da71498cbc": "https://ms.yugipedia.com//a/ae/MadolcheQueenTiaramisu-ABYR-FR-UtR-1E.jpg",
+          "24be3667-214b-4122-9e56-a0c42975751a": "https://ms.yugipedia.com//6/66/GravityBlaster-ABYR-FR-C-1E.jpg",
+          "bd65972f-cca8-4166-b773-5e7aace329ad": "https://ms.yugipedia.com//4/41/AbyssscaleoftheKraken-ABYR-FR-C-1E.jpg",
+          "bf7e1820-dedf-4094-b3df-c8942b965de3": "https://ms.yugipedia.com//7/79/SpellbookofEternity-ABYR-FR-R-1E.jpg",
+          "21762325-93ce-476a-8819-c529f64a8146": "https://ms.yugipedia.com//8/89/ForbiddenDress-ABYR-FR-SR-1E.jpg",
+          "facaa8c2-e4f3-40a4-87da-5b040420b634": "https://ms.yugipedia.com//6/6b/FinalGesture-ABYR-FR-C-1E.jpg",
+          "ee953aa8-d6c8-4b47-8700-596fcaaacdac": "https://ms.yugipedia.com//6/69/BattleBreak-ABYR-FR-C-1E.jpg",
+          "e8fa6ef4-3260-416c-95f0-2712fd32ef62": "https://ms.yugipedia.com//3/3a/Madolchepalooza-ABYR-FR-SR-1E.jpg",
+          "17d251a5-10a8-45a0-9866-818fd1fe6133": "https://ms.yugipedia.com//7/7f/ElectromagneticBagworm-ABYR-FR-C-1E.jpg"
+        },
+        "unlimited": {
+          "e0f40990-a708-48b5-9ad4-c4ebd0aa2abe": "https://ms.yugipedia.com//2/29/EmpressofProphecy-ABYR-FR-UR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31111007
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "ABYR-KR",
+      "date": "2012-10-09",
+      "image": "https://ms.yugipedia.com//1/1e/ABYR-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "cf7023ac-dee9-4743-ba20-3f94732712b5": "https://ms.yugipedia.com//0/08/MoulinglaciatheElementalLord-ABYR-KR-SR-1E.png",
+          "4136e923-03d7-4a58-9f44-00d2d53829da": "https://ms.yugipedia.com//5/52/GagagaCowboy-ABYR-KR-SR-1E.png",
+          "34e650db-c7ab-49d1-a9fa-b2bdad42fea0": "https://ms.yugipedia.com//2/2d/EmpressofProphecy-ABYR-KR-SR-1E.png",
+          "1c1327ed-de17-427d-aa6c-ed3cbcb6173b": "https://ms.yugipedia.com//e/e4/AbyssscaleoftheKraken-ABYR-KR-C-1E.png"
+        },
+        "unlimited": {
+          "5d30bf47-b8c3-45fb-a85c-ee5cec5f0ed0": "https://ms.yugipedia.com//5/58/HeroicChallengerExtraSword-ABYR-KR-C-UE.png",
+          "1b2bad65-c4e8-4891-8cc1-d95514a191be": "https://ms.yugipedia.com//6/60/MadolcheCruffssant-ABYR-KR-C-UE.png",
+          "8c15600f-4611-47eb-bf17-71cabeb83d20": "https://ms.yugipedia.com//8/81/MadolcheMessengelato-ABYR-KR-R-UE.png",
+          "759faa51-72f4-4ff9-9945-80910b7673f1": "https://ms.yugipedia.com//8/8d/SnowmanCreator-ABYR-KR-C-UE.png",
+          "cf7023ac-dee9-4743-ba20-3f94732712b5": "https://ms.yugipedia.com//2/2b/MoulinglaciatheElementalLord-ABYR-KR-SR-UE.png",
+          "6450a928-a2d1-4aa3-820b-0e4f15631d5a": "https://ms.yugipedia.com//9/9c/Number9DysonSphere-ABYR-KR-UR-UE.png",
+          "34e650db-c7ab-49d1-a9fa-b2bdad42fea0": "https://ms.yugipedia.com//9/91/EmpressofProphecy-ABYR-KR-SR-UE.png",
+          "93c186ee-4f7a-41a1-831b-cbcf799c7e38": "https://ms.yugipedia.com//8/81/MadolcheQueenTiaramisu-ABYR-KR-SR-UE.png",
+          "eaeb968b-380c-4da9-9740-3164f499ea89": "https://ms.yugipedia.com//7/75/GravityBlaster-ABYR-KR-C-UE.png",
+          "1c1327ed-de17-427d-aa6c-ed3cbcb6173b": "https://ms.yugipedia.com//d/dd/AbyssscaleoftheKraken-ABYR-KR-C-UE.png",
+          "c8ffe90c-4a9b-4f4a-b94d-474aa35bcbf5": "https://ms.yugipedia.com//1/10/SpellbookofEternity-ABYR-KR-C-UE.png",
+          "a84696d2-ed9a-4c8a-aa5e-e9754d5ada76": "https://ms.yugipedia.com//f/fd/ForbiddenDress-ABYR-KR-SR-UE.png",
+          "facaa8c2-e4f3-40a4-87da-5b040420b634": "https://ms.yugipedia.com//9/96/FinalGesture-ABYR-KR-C-UE.png",
+          "66845d84-69b3-4dd4-937d-ee89447d14ff": "https://ms.yugipedia.com//8/88/BattleBreak-ABYR-KR-C-UE.png",
+          "c870a967-6b3e-49ab-b2cc-08a488132898": "https://ms.yugipedia.com//a/ae/Madolchepalooza-ABYR-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71110004
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "ABYR-JP",
+      "date": "2012-07-21",
+      "image": "https://ms.yugipedia.com//9/98/ABYR-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "0308eef4-1baf-4739-8079-9b3d36dca6cc": "https://ms.yugipedia.com//b/bd/HeroicChallengerExtraSword-ABYR-JP-C.png",
+          "05cf37c7-e58d-4eff-a6c4-c3bd0ca27fd1": "https://ms.yugipedia.com//6/64/MadolcheCruffssant-ABYR-JP-C.png",
+          "89375216-d9e4-4882-9a6f-97ac81522982": "https://ms.yugipedia.com//9/90/MadolcheMessengelato-ABYR-JP-R.png",
+          "321b0c70-33a5-4615-ac8c-eeb6649e5344": "https://ms.yugipedia.com//c/c6/SnowmanCreator-ABYR-JP-C.png",
+          "4976bd7f-9092-4f19-9c49-1f623d15e566": "https://ms.yugipedia.com//8/80/MoulinglaciatheElementalLord-ABYR-JP-SR.png",
+          "76691ae8-b6a2-4420-aa12-0f98e17fb6ea": "https://ms.yugipedia.com//d/df/GagagaCowboy-ABYR-JP-SR.png",
+          "062322ae-b1cd-41b5-bf3f-99026eb3f1a9": "https://ms.yugipedia.com//7/7b/Number9DysonSphere-ABYR-JP-UR.png",
+          "2ec4a64f-4a7c-40ba-87e1-5261554d1d48": "https://ms.yugipedia.com//e/e6/Number9DysonSphere-ABYR-JP-UtR.png",
+          "6e140ab4-6ab2-4187-99e7-338c6ce3f1b5": "https://ms.yugipedia.com//3/3d/EmpressofProphecy-ABYR-JP-SR.png",
+          "93c186ee-4f7a-41a1-831b-cbcf799c7e38": "https://ms.yugipedia.com//4/4d/MadolcheQueenTiaramisu-ABYR-JP-SR.png",
+          "961a8877-e515-46d3-844f-341437e1deef": "https://ms.yugipedia.com//9/9f/GravityBlaster-ABYR-JP-C.png",
+          "68438459-cc8f-4531-a903-9547fb3cae7a": "https://ms.yugipedia.com//5/5c/AbyssscaleoftheKraken-ABYR-JP-C.png",
+          "c8ffe90c-4a9b-4f4a-b94d-474aa35bcbf5": "https://ms.yugipedia.com//f/fe/SpellbookofEternity-ABYR-JP-C.png",
+          "58877e59-db79-42b7-b4e0-c647df3bc86a": "https://ms.yugipedia.com//a/a5/ForbiddenDress-ABYR-JP-SR.png",
+          "facaa8c2-e4f3-40a4-87da-5b040420b634": "https://ms.yugipedia.com//7/72/FinalGesture-ABYR-JP-C.png",
+          "59a3720d-e7b9-4d7f-a5fc-dd876ea9eaa7": "https://ms.yugipedia.com//2/25/BattleBreak-ABYR-JP-C.png",
+          "e893e173-aec6-4c0e-a4d9-4fdcfd9232b1": "https://ms.yugipedia.com//7/7c/Madolchepalooza-ABYR-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1115001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4c/ABYR-BoosterIT.png",
+      "cards": [
+        {
+          "id": "d0d7af39-2914-4288-b80a-ad2e3d58cf82",
+          "card": "ad2604a4-42b2-4b21-aeaf-ef32fc856e8e",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "b6a3cd94-213b-4770-b7fe-96b71e3cecfe",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "3003196f-5bf0-4d76-b3e9-21f5d8163165",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "a7998122-6c21-4ede-80cf-1fab818b88ae",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "30fbd88c-fe4c-4356-900a-6fc70e1df1b0",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "535b549f-5878-4190-b1e2-13d291d56ffc",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "secret"
+        },
+        {
+          "id": "656a2f8c-971f-4ce3-94d4-c02f6e8938f5",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "de8d6e80-e583-4586-bb7e-65000bfd3254",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "918f5e9e-415f-490d-9217-569d84f15563",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "629a778e-4cf6-4ab1-a1ae-57715231e063",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2cc99e43-baaf-48e8-a33c-6c8a2e5d8476",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18ef4925-67e5-407f-8137-42da71498cbc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "62a31f41-d281-475c-a0c8-0d5e179794c2",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "ccfc53c9-2115-41e3-b496-5b6b8bdf8344",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "bf7e1820-dedf-4094-b3df-c8942b965de3",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "f44c9167-44f8-493e-84b2-5fb554674226",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "bc059a6a-3b6f-45b0-a4ed-be81606d8007",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "fa459089-7f1e-43b7-83c5-76478880d0f5",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "bffe1987-7306-4741-867b-1dda675b3221",
+          "card": "3c99ddcc-17d2-4364-b960-e3cac3d9dcb9",
+          "suffix": "090",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/72/ABYR-BoosterDE.png",
+      "cards": [
+        {
+          "id": "7b68a621-6575-4f6e-b4e0-f766466da840",
+          "card": "ad2604a4-42b2-4b21-aeaf-ef32fc856e8e",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "c2bcef30-75ec-400d-8504-3cc54244a08f",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "7012a470-0164-44dd-99a4-fd077f3ef8bb",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "4295bf4e-a045-4baf-a1e1-536a2b42a1c6",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "b050473f-8695-4da3-8ea1-14e425467543",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "4e1479b7-21f5-48a2-9bdc-c08ea4113de7",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "secret"
+        },
+        {
+          "id": "e6f5e774-c162-4ed2-90c3-61ef56b776bb",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "94d925fd-902d-4c55-bc04-1e612c8a613d",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "952fccea-f844-49a0-91c1-a0539591a42b",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a31a9f41-72f2-4570-a7b3-d050ff724d46",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3fa7c6a7-4860-4f53-a411-fe04460049b2",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18ef4925-67e5-407f-8137-42da71498cbc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c1ac5762-b9b0-42ad-ab3d-a6bdbd8f9a19",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "583721ba-374a-4e62-8313-c5ef3800a2ca",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "bf7e1820-dedf-4094-b3df-c8942b965de3",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "d12d84dc-a74e-49a4-9961-80fb0e42d47d",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "b1a71e76-5eea-4046-945e-c5531a1fc9d7",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "be27e614-639a-483c-9c53-65e2e80efa9c",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "651f41ee-fd6e-4683-aaf9-f84a283250e3",
+          "card": "3c99ddcc-17d2-4364-b960-e3cac3d9dcb9",
+          "suffix": "090",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/27/ABYR-BoosterSP.png",
+      "cards": [
+        {
+          "id": "38c6b8cd-3f52-45aa-ae48-985d64371c88",
+          "card": "ad2604a4-42b2-4b21-aeaf-ef32fc856e8e",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "4673f821-5121-4f03-a91e-b56afc4b3734",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "2b28600e-6084-4a1f-a8f2-b6a5775cc641",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b890f874-20ef-4a64-9210-3dececd7d4aa",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "e917714e-ce83-4b2a-a7d3-f13e0f4725bc",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "80c3e88a-da48-4580-8007-134f9857bfb2",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "secret"
+        },
+        {
+          "id": "2f983002-ff58-431c-953d-77acf9819b8b",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "1437bc66-3a53-486a-bf97-66c86084baac",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "426e5e48-ef1d-45c2-a324-1175e0684a32",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "4f9e0f78-64eb-4985-ae45-382e9790c359",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ec76e46f-509b-4caf-bb01-cf0a6ab31c64",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18ef4925-67e5-407f-8137-42da71498cbc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "7c2d0212-3743-419d-b205-b07bc9aff408",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "240b558b-35e2-412e-951b-41123b5d5317",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "bf7e1820-dedf-4094-b3df-c8942b965de3",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "aebd2724-38f3-4734-baf6-cf9cc708f16f",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "b3d3ea6a-134d-453e-8d7f-b4c412accb31",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "1455f01a-35ea-49dd-9408-a7fd5f2f8b43",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "21c25e04-e2f0-49cb-aab8-e012601b0f92",
+          "card": "3c99ddcc-17d2-4364-b960-e3cac3d9dcb9",
+          "suffix": "090",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    },
+    {
+      "locales": [
+        "tc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/cf/ABYR-BoosterTC.png",
+      "cards": [
+        {
+          "id": "61e5cf88-5055-4294-8c4b-bdb33f60ba84",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "7b078a28-f830-4bc8-8b95-9f5ac6f527b4",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "7df73448-1e8e-4a9f-a4a3-e1e0e622c6d2",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "c148e869-e4d6-41b1-8e2c-cb951f7749a9",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "c35e7c7e-98bc-4ce1-92f5-b846889ea6b5",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "super"
+        },
+        {
+          "id": "594661fe-1ea2-4cfa-8a8b-8a08872bd982",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "secret"
+        },
+        {
+          "id": "9abdf0f8-3588-4ca7-8111-8d36274c32b7",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "e746d756-e2db-44a7-81f7-f98e028813eb",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "secret"
+        },
+        {
+          "id": "6e09399b-23ed-4be7-bc25-85f0b344d402",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a0319aad-078f-4065-9f32-20c018b02e5f",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "secret"
+        },
+        {
+          "id": "3fa43b55-09bd-484d-b098-37026286b6e0",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "45880eda-9ec6-455a-8cc3-9290f2308c2d",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "super"
+        },
+        {
+          "id": "0043671c-483f-4272-9558-001d0d23f26e",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "secret"
+        },
+        {
+          "id": "93c186ee-4f7a-41a1-831b-cbcf799c7e38",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "2446044c-0a03-4c4e-8bc5-5ee4ecc0ea40",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "secret"
+        },
+        {
+          "id": "759a7df6-552e-4a76-a81d-102fe382b016",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "1d09e0c5-c5c1-4766-bb26-1d7b9bda4442",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "c8ffe90c-4a9b-4f4a-b94d-474aa35bcbf5",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "cefd0625-02f2-4145-8544-bb2ed7e11a60",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "4dbbfb6f-0bd1-46ef-9754-208001491d87",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "secret"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "ed5ccc44-1898-4b0b-90e5-1054910143ae",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "4d7411b1-e39a-41a3-afe9-509506f346d3",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "common"
+        },
+        {
+          "id": "7df0548f-8ac9-4982-b84d-9dbe93873b85",
+          "card": "ad2604a4-42b2-4b21-aeaf-ef32fc856e8e",
+          "suffix": "081",
+          "rarity": "rare"
+        },
+        {
+          "id": "58ccd03c-f8ba-4a37-9a2c-acdbf2647644",
+          "card": "e7d35194-c626-4ad7-b86b-d877193cb52d",
+          "suffix": "095",
+          "rarity": "super"
+        },
+        {
+          "id": "08c6f5b6-a32c-41d4-976f-391515ac9b38",
+          "card": "e7d35194-c626-4ad7-b86b-d877193cb52d",
+          "suffix": "095",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/fa/ABYR-BoosterEN.png",
+      "cards": [
+        {
+          "id": "4d8dbe28-f8e2-4cd2-96d2-b889a80919a2",
+          "card": "ad2604a4-42b2-4b21-aeaf-ef32fc856e8e",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "a9d8fa6b-185f-4e94-8eb0-ebcb95db33b7",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "702c80ed-c61d-4c1b-a991-c6f17cff9dab",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "16779014-7f3b-4520-b38c-f49a3041ad05",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "7b6e9183-b7cc-49ae-b64b-758147b37971",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "c2bcd65d-0e5e-499d-9d01-82294b071c27",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "secret"
+        },
+        {
+          "id": "547cf369-be24-4431-8b8e-b18246bed8a1",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "f870d6ec-ba64-436b-baae-1fb72ba91136",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "287f81c3-fb5f-48ce-a7b8-89df2bd078fb",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "54a52258-589d-4787-abe8-bfa0f4331112",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cc4ec7dc-b7ec-495d-945d-011b9053ce18",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18ef4925-67e5-407f-8137-42da71498cbc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "45ae0996-befe-4562-8a45-84752a164d4d",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "5dbb1e8b-cfe6-4c7e-87e7-8278e8f2164a",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "bf7e1820-dedf-4094-b3df-c8942b965de3",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "ddc44b95-837b-4be7-879f-468ed99ce202",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "4e89c1e2-5fa6-42fc-9ed4-74de93188a7b",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "ec17c5d7-0ab6-4d77-8568-d8550f5a7189",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "b67b792d-b79f-41e6-a0c1-6891d67868e8",
+          "card": "3c99ddcc-17d2-4364-b960-e3cac3d9dcb9",
+          "suffix": "090",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/ABYR-BoosterFR.png",
+      "cards": [
+        {
+          "id": "21b96454-0d94-49f9-9db3-2efe13e786be",
+          "card": "ad2604a4-42b2-4b21-aeaf-ef32fc856e8e",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "e09d2bea-30d7-45d3-8355-fbbe9c855365",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "3fe3b193-e24b-49d6-8de1-6a519ca4a67b",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "6f0b0326-e268-4b59-b005-c315c5fd74cd",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "a54287fa-c6fc-4df0-a9ff-7e4a6409c659",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "29e3cab7-8f2a-4bef-9c5c-014cffa84c96",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "secret"
+        },
+        {
+          "id": "14c03edd-9a95-472b-82a5-2cf020d3f5ac",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "9a62f19b-64c9-4af4-a240-fc43e4445000",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c57ee52f-c009-4d53-9ab1-9f884de0d752",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e0f40990-a708-48b5-9ad4-c4ebd0aa2abe",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bb4f5221-4eaf-4a4b-a49a-13a86fcb7f85",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "e4d80a4a-f8a2-4eca-a874-8eff10b91bfc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18ef4925-67e5-407f-8137-42da71498cbc",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "24be3667-214b-4122-9e56-a0c42975751a",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "bd65972f-cca8-4166-b773-5e7aace329ad",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "bf7e1820-dedf-4094-b3df-c8942b965de3",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "rare"
+        },
+        {
+          "id": "21762325-93ce-476a-8819-c529f64a8146",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "ee953aa8-d6c8-4b47-8700-596fcaaacdac",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "e8fa6ef4-3260-416c-95f0-2712fd32ef62",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "super"
+        },
+        {
+          "id": "17d251a5-10a8-45a0-9866-818fd1fe6133",
+          "card": "3c99ddcc-17d2-4364-b960-e3cac3d9dcb9",
+          "suffix": "090",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1e/ABYR-BoosterKR.png",
+      "cards": [
+        {
+          "id": "5d30bf47-b8c3-45fb-a85c-ee5cec5f0ed0",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "1b2bad65-c4e8-4891-8cc1-d95514a191be",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "8c15600f-4611-47eb-bf17-71cabeb83d20",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "759faa51-72f4-4ff9-9945-80910b7673f1",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "cf7023ac-dee9-4743-ba20-3f94732712b5",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "super"
+        },
+        {
+          "id": "4136e923-03d7-4a58-9f44-00d2d53829da",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "6450a928-a2d1-4aa3-820b-0e4f15631d5a",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "71c0b4cf-07d5-4969-8de7-81d589cbfb2a",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "34e650db-c7ab-49d1-a9fa-b2bdad42fea0",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "super"
+        },
+        {
+          "id": "93c186ee-4f7a-41a1-831b-cbcf799c7e38",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "eaeb968b-380c-4da9-9740-3164f499ea89",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "1c1327ed-de17-427d-aa6c-ed3cbcb6173b",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "c8ffe90c-4a9b-4f4a-b94d-474aa35bcbf5",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "a84696d2-ed9a-4c8a-aa5e-e9754d5ada76",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "66845d84-69b3-4dd4-937d-ee89447d14ff",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "c870a967-6b3e-49ab-b2cc-08a488132898",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/98/ABYR-BoosterJP.png",
+      "cards": [
+        {
+          "id": "0308eef4-1baf-4739-8079-9b3d36dca6cc",
+          "card": "7ea80d8d-d918-4ef8-8f9f-ecf328219ba0",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "05cf37c7-e58d-4eff-a6c4-c3bd0ca27fd1",
+          "card": "791d8076-9d94-4f55-81e1-6898f54f887e",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "89375216-d9e4-4882-9a6f-97ac81522982",
+          "card": "39c32c8a-3d57-41e3-aa13-458fbd304f5a",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "321b0c70-33a5-4615-ac8c-eeb6649e5344",
+          "card": "9b5f6e64-2305-4a44-a7d0-9215bc4b76de",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "4976bd7f-9092-4f19-9c49-1f623d15e566",
+          "card": "100e99bc-28a7-4c36-bd35-2945486f0e5c",
+          "suffix": "035",
+          "rarity": "super"
+        },
+        {
+          "id": "76691ae8-b6a2-4420-aa12-0f98e17fb6ea",
+          "card": "84e704c0-5fe1-4acc-b2b8-8aa0b45968ce",
+          "suffix": "041",
+          "rarity": "super"
+        },
+        {
+          "id": "062322ae-b1cd-41b5-bf3f-99026eb3f1a9",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2ec4a64f-4a7c-40ba-87e1-5261554d1d48",
+          "card": "69e615f9-a255-4a10-9322-416961e062b7",
+          "suffix": "044",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "6e140ab4-6ab2-4187-99e7-338c6ce3f1b5",
+          "card": "0f9a80a3-bcd6-4c9f-907c-d4dce43fd944",
+          "suffix": "047",
+          "rarity": "super"
+        },
+        {
+          "id": "93c186ee-4f7a-41a1-831b-cbcf799c7e38",
+          "card": "37e01dc8-5799-4e70-9c4d-36c282bc3484",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "961a8877-e515-46d3-844f-341437e1deef",
+          "card": "73c24612-65a3-457a-91fa-fbc47715d480",
+          "suffix": "054",
+          "rarity": "common"
+        },
+        {
+          "id": "68438459-cc8f-4531-a903-9547fb3cae7a",
+          "card": "2ebaafec-0a59-4f82-af3e-75e4a5b5ea71",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "c8ffe90c-4a9b-4f4a-b94d-474aa35bcbf5",
+          "card": "b3dbfaf9-087b-45c8-8cf8-56b50b21d50f",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "58877e59-db79-42b7-b4e0-c647df3bc86a",
+          "card": "ae1bd96d-34b6-45b2-932a-e252eb11fa20",
+          "suffix": "062",
+          "rarity": "super"
+        },
+        {
+          "id": "facaa8c2-e4f3-40a4-87da-5b040420b634",
+          "card": "a23bb5a4-34bd-467d-bd53-a3c49ccdf98f",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "59a3720d-e7b9-4d7f-a5fc-dd876ea9eaa7",
+          "card": "438846aa-33d1-4c66-b11a-f3cdf9cf9711",
+          "suffix": "066",
+          "rarity": "common"
+        },
+        {
+          "id": "e893e173-aec6-4c0e-a4d9-4fdcfd9232b1",
+          "card": "0a3e496a-b44e-40bc-837b-108a70ece788",
+          "suffix": "074",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Abyss Rising"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Abyss Rising",
+      "id": 211122
+    }
+  }
+}

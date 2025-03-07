@@ -1,0 +1,118 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "d0e44d01-e43c-41ae-af23-87ab31669e07",
+  "name": {
+    "en": "Secret Shiny Box",
+    "ja": "\uff33\uff25\uff23\uff32\uff25\uff34 \uff33\uff28\uff29\uff2e\uff39 \uff22\uff2f\uff38",
+    "ko": "SECRET SHINY SET"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "SSB1-JP",
+      "date": "2021-12-25",
+      "image": "https://ms.yugipedia.com//4/4b/SSB1-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "979edb5b-6a53-4d7b-9694-9ddce8888ea9": "https://ms.yugipedia.com//5/58/ShiranuiSolitaire-SSB1-JP-NPR.png",
+          "cefe55d2-3cb4-43df-8cd5-8c666bf46a3e": "https://ms.yugipedia.com//a/a5/InstantFusion-SSB1-JP-NPR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000007719000,
+          1000007720000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SSB1-KR",
+      "date": "2022-06-14",
+      "image": "https://ms.yugipedia.com//4/48/SSB1-PromoKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001173000,
+          1010001174000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4b/SSB1-PromoJP.png",
+      "cards": [
+        {
+          "id": "979edb5b-6a53-4d7b-9694-9ddce8888ea9",
+          "card": "247c0bb9-bba8-404d-9b6f-d85e4871e257",
+          "suffix": "023",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "cefe55d2-3cb4-43df-8cd5-8c666bf46a3e",
+          "card": "680e0ecd-8147-434d-836d-5c998bbc60d7",
+          "suffix": "034",
+          "rarity": "commonparallel"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/48/SSB1-PromoKR.png",
+      "cards": [
+        {
+          "id": "23d07a7e-9d6f-43ab-81c6-45a92f677cdf",
+          "card": "247c0bb9-bba8-404d-9b6f-d85e4871e257",
+          "suffix": "023",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "a46d1ca6-fc9e-473f-9559-f1991afeea40",
+          "card": "680e0ecd-8147-434d-836d-5c998bbc60d7",
+          "suffix": "034",
+          "rarity": "commonparallel"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Secret Shiny Box",
+      "id": 903288
+    }
+  }
+}

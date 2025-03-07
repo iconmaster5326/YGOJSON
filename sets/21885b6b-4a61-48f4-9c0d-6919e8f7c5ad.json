@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "21885b6b-4a61-48f4-9c0d-6919e8f7c5ad",
+  "name": {
+    "en": "Yu-Gi-Oh! Elemental Hero Collection 2"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "EHC2-EN",
+      "image": "https://ms.yugipedia.com//e/e1/EHC-PromoEN.jpg",
+      "cardImages": {
+        "limited": {
+          "f69102fc-fa45-41d2-b830-811f5321435d": "https://ms.yugipedia.com//7/75/ElementalHEROSparkman-EHC2-EN-ScR-LE.png",
+          "9ec95f77-ae79-4884-8a54-ab88187803a0": "https://ms.yugipedia.com//5/58/ElementalHEROThunderGiant-EHC2-EN-ScR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e1/EHC-PromoEN.jpg",
+      "cards": [
+        {
+          "id": "f69102fc-fa45-41d2-b830-811f5321435d",
+          "card": "971c1b3b-1360-43c5-80c6-1a2c76511a53",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "9ec95f77-ae79-4884-8a54-ab88187803a0",
+          "card": "1bee9923-5ea0-4664-9eb5-7badb65d665a",
+          "suffix": "004",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Elemental Hero Collection 2",
+      "id": 249380
+    }
+  }
+}

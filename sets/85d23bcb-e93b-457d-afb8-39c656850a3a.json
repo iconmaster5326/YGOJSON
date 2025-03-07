@@ -1,0 +1,687 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "85d23bcb-e93b-457d-afb8-39c656850a3a",
+  "name": {
+    "en": "Spell Ruler",
+    "fr": "Le Ma\u00eetre des Magies",
+    "de": "Spell Ruler",
+    "it": "Sovrano della Magia",
+    "pt": "Soberano da Magia",
+    "es": "El Amo de la Magia"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SRL-EN",
+      "image": "https://ms.yugipedia.com//f/f2/SRL-BoosterEN-25thAnniversaryEdition.png",
+      "cardImages": {
+        "unlimited": {
+          "0c7c3bfd-2350-47fb-abc4-30968168d109": "https://ms.yugipedia.com//1/13/PenguinKnight-SRL-EN-C-UE-25thAnniversaryEdition.png",
+          "3043ace9-fffd-401e-a07c-02acf29493b8": "https://ms.yugipedia.com//5/56/QueenBird-SRL-EN-C-UE-25thAnniversaryEdition.png",
+          "b3572b7f-3054-44bb-89e8-b0d04b937818": "https://ms.yugipedia.com//c/c7/FireKraken-SRL-EN-C-UE-25thAnniversaryEdition.png",
+          "c0ba97f0-b6dd-4bad-b6b0-64c65446ee12": "https://ms.yugipedia.com//1/14/WeatherReport-SRL-EN-C-UE-25thAnniversaryEdition.png",
+          "0dad1221-0b59-4eec-8b2d-94db3770f5f9": "https://ms.yugipedia.com//3/33/MechanicalSnail-SRL-EN-C-UE-25thAnniversaryEdition.png",
+          "0d7e4937-19d4-450a-b769-cb79a8733167": "https://ms.yugipedia.com//2/25/DelinquentDuo-SRL-EN-UR-UE-25thAnniversaryEdition.png",
+          "ac40aca3-8f00-4911-9b1d-023fbb5202a9": "https://ms.yugipedia.com//3/34/ChainEnergy-SRL-EN-C-UE-25thAnniversaryEdition.png",
+          "d6eeddf4-c67c-4683-a3ae-5e1d7be685c0": "https://ms.yugipedia.com//0/05/Octoberser-SRL-EN-C-UE-25thAnniversaryEdition.png",
+          "922738eb-25d1-4fde-a0ec-c64b9eaf5d47": "https://ms.yugipedia.com//e/e0/CyberJar-SRL-EN-R-UE-25thAnniversaryEdition.png",
+          "b40520be-d976-4213-aedc-a9a3063883c9": "https://ms.yugipedia.com//c/c4/GiantGerm-SRL-EN-R-UE-25thAnniversaryEdition.png",
+          "ad69b34b-3af4-438b-b362-1905ab4015ff": "https://ms.yugipedia.com//4/43/ShiningAngel-SRL-EN-R-UE-25thAnniversaryEdition.png",
+          "bc070ed6-f693-48c5-b6b8-dad4ddde22bd": "https://ms.yugipedia.com//5/58/MotherGrizzly-SRL-EN-R-UE-25thAnniversaryEdition.png",
+          "b77e41f1-ef0a-4b82-81b6-0089cad02531": "https://ms.yugipedia.com//0/0a/Umiiruka-SRL-EN-C-UE-25thAnniversaryEdition.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001242000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SRL-DE",
+      "image": "https://ms.yugipedia.com//c/c7/SRL-BoosterDE-25thAnniversaryEdition.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SRL-FR",
+      "image": "https://ms.yugipedia.com//c/c1/SRL-BoosterFR-25thAnniversaryEdition.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SRL-PT",
+      "date": "2023-04-20",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SRL-SP",
+      "image": "https://ms.yugipedia.com//6/66/SRL-BoosterSP-25thAnniversaryEdition.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SRL-IT",
+      "image": "https://ms.yugipedia.com//0/08/SRL-BoosterIT-25thAnniversaryEdition.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/f2/SRL-BoosterEN-25thAnniversaryEdition.png",
+      "cards": [
+        {
+          "id": "0c7c3bfd-2350-47fb-abc4-30968168d109",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "3043ace9-fffd-401e-a07c-02acf29493b8",
+          "card": "0bb8cf93-84eb-4337-8597-a324f5bb9b88",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "b3572b7f-3054-44bb-89e8-b0d04b937818",
+          "card": "fbe3d990-18d5-44b6-a43f-19509854baae",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ba97f0-b6dd-4bad-b6b0-64c65446ee12",
+          "card": "59deb9d2-6069-478e-bc45-f235a5149a5d",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "0dad1221-0b59-4eec-8b2d-94db3770f5f9",
+          "card": "eedecd49-c6ab-42c0-8fb5-d58927859771",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "0d7e4937-19d4-450a-b769-cb79a8733167",
+          "card": "d314cd9e-21fe-44c6-b24a-7a6febb7fdcb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ac40aca3-8f00-4911-9b1d-023fbb5202a9",
+          "card": "ed525d97-691f-4150-b647-ce65452b1064",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "d6eeddf4-c67c-4683-a3ae-5e1d7be685c0",
+          "card": "ce4066c7-dfa5-4ebe-b90e-5a0342e9e886",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "922738eb-25d1-4fde-a0ec-c64b9eaf5d47",
+          "card": "ef7683fe-c963-4586-bfa7-f4129b2c846a",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "b40520be-d976-4213-aedc-a9a3063883c9",
+          "card": "e65263dc-4583-4d87-a96c-686f6e755174",
+          "suffix": "085",
+          "rarity": "rare"
+        },
+        {
+          "id": "ad69b34b-3af4-438b-b362-1905ab4015ff",
+          "card": "e1d69b9a-dd3f-4446-85de-28d2e770d68b",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "bc070ed6-f693-48c5-b6b8-dad4ddde22bd",
+          "card": "b3e95450-c358-42e4-8acd-5bf2de0736ad",
+          "suffix": "090",
+          "rarity": "rare"
+        },
+        {
+          "id": "b77e41f1-ef0a-4b82-81b6-0089cad02531",
+          "card": "ec7b4e97-1bad-45b8-8df9-04459ccb57d3",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c7/SRL-BoosterDE-25thAnniversaryEdition.png",
+      "cards": [
+        {
+          "id": "a3d942d0-77cf-4eb6-a5f6-8cd827759c50",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "056138ff-4f7c-4da9-b0c8-00e8f6b441f5",
+          "card": "0bb8cf93-84eb-4337-8597-a324f5bb9b88",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "03173e0a-6170-4219-b4d5-410d09f57175",
+          "card": "fbe3d990-18d5-44b6-a43f-19509854baae",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "d60272f0-098d-430e-8fd2-3b51e85a579b",
+          "card": "59deb9d2-6069-478e-bc45-f235a5149a5d",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "9a733ca4-b4d0-409d-aad7-94f1c7642863",
+          "card": "eedecd49-c6ab-42c0-8fb5-d58927859771",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9616cece-1457-44c6-a08b-4fb73c647a05",
+          "card": "d314cd9e-21fe-44c6-b24a-7a6febb7fdcb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2816cc92-1274-4166-b66e-61470fb7068f",
+          "card": "ed525d97-691f-4150-b647-ce65452b1064",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "5182579a-98e0-4983-b8db-0c7d03d1476f",
+          "card": "ce4066c7-dfa5-4ebe-b90e-5a0342e9e886",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "6a5ae899-93db-4a39-b4fc-f6db2ae91d55",
+          "card": "ef7683fe-c963-4586-bfa7-f4129b2c846a",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "60f9a6a9-1831-4aca-805c-a67fa11666db",
+          "card": "e65263dc-4583-4d87-a96c-686f6e755174",
+          "suffix": "085",
+          "rarity": "rare"
+        },
+        {
+          "id": "46ceb929-4a1c-4211-95df-33bb5f696bdd",
+          "card": "e1d69b9a-dd3f-4446-85de-28d2e770d68b",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "e0231ab5-a408-41db-92d9-fe17531db8c4",
+          "card": "b3e95450-c358-42e4-8acd-5bf2de0736ad",
+          "suffix": "090",
+          "rarity": "rare"
+        },
+        {
+          "id": "5648536c-0739-46ee-bfe4-486accb0d068",
+          "card": "ec7b4e97-1bad-45b8-8df9-04459ccb57d3",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c1/SRL-BoosterFR-25thAnniversaryEdition.png",
+      "cards": [
+        {
+          "id": "49145d0e-bb0e-4a69-bf09-18e321033f41",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "5af8a2be-00bb-45c9-bbe2-01f5c72f1589",
+          "card": "0bb8cf93-84eb-4337-8597-a324f5bb9b88",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "c5001397-41a2-4dbd-8ca0-39bfae430d6f",
+          "card": "fbe3d990-18d5-44b6-a43f-19509854baae",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "d4b2c135-ae1b-484f-a5e4-d24e4c93453e",
+          "card": "59deb9d2-6069-478e-bc45-f235a5149a5d",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "451bcbc1-1cac-4507-b088-9addf419acd0",
+          "card": "eedecd49-c6ab-42c0-8fb5-d58927859771",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "c54b895e-9896-4b7b-88b3-c3d5430bd322",
+          "card": "d314cd9e-21fe-44c6-b24a-7a6febb7fdcb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a81ce5d8-4b2b-4899-aea0-e86ad975983f",
+          "card": "ed525d97-691f-4150-b647-ce65452b1064",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "e01601e2-7b68-4502-8bf0-dcf58ac09acf",
+          "card": "ce4066c7-dfa5-4ebe-b90e-5a0342e9e886",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "cd1c21df-21ae-4e9b-acc2-1c69d9365713",
+          "card": "ef7683fe-c963-4586-bfa7-f4129b2c846a",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "321d54c6-6f27-4429-af73-7aedf5aa990c",
+          "card": "e65263dc-4583-4d87-a96c-686f6e755174",
+          "suffix": "085",
+          "rarity": "rare"
+        },
+        {
+          "id": "ea193bab-a26e-4b27-99f6-3a3225b97740",
+          "card": "e1d69b9a-dd3f-4446-85de-28d2e770d68b",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "f0b8f5a9-da3f-4f72-9159-27763a10ac74",
+          "card": "b3e95450-c358-42e4-8acd-5bf2de0736ad",
+          "suffix": "090",
+          "rarity": "rare"
+        },
+        {
+          "id": "879f0d98-6e92-4ab6-a51f-024b5405571b",
+          "card": "ec7b4e97-1bad-45b8-8df9-04459ccb57d3",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "fa4c427f-3e0f-47d5-9228-01cb40cf9b59",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "6759eb1c-7c9b-4584-98c1-e444f8ee7c99",
+          "card": "0bb8cf93-84eb-4337-8597-a324f5bb9b88",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "50b6f2fa-7b10-41a6-abe4-13a47ee34cb8",
+          "card": "fbe3d990-18d5-44b6-a43f-19509854baae",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "5ed18c0f-4966-43c0-83d1-b54d19f95e78",
+          "card": "59deb9d2-6069-478e-bc45-f235a5149a5d",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "da87224b-c5d4-48ea-95e7-a352c327f496",
+          "card": "eedecd49-c6ab-42c0-8fb5-d58927859771",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "cd8ed19d-842b-4352-92a4-5d8fe9afb68e",
+          "card": "d314cd9e-21fe-44c6-b24a-7a6febb7fdcb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "47ba9b55-9be0-48e4-b1d2-4c30aaaf8013",
+          "card": "ed525d97-691f-4150-b647-ce65452b1064",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "340aa42b-2d0c-4181-9ff5-413022e4dc2e",
+          "card": "ce4066c7-dfa5-4ebe-b90e-5a0342e9e886",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "76986907-c6df-4876-bee4-1daf8c0c4221",
+          "card": "ef7683fe-c963-4586-bfa7-f4129b2c846a",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "f7fd55af-afb0-4312-ab74-a1c1e1f05eda",
+          "card": "e65263dc-4583-4d87-a96c-686f6e755174",
+          "suffix": "085",
+          "rarity": "rare"
+        },
+        {
+          "id": "1fd99b3d-a077-4a83-b137-ee1a5974af5d",
+          "card": "e1d69b9a-dd3f-4446-85de-28d2e770d68b",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "3d69103b-4944-42bd-a5c5-ba85a729b370",
+          "card": "b3e95450-c358-42e4-8acd-5bf2de0736ad",
+          "suffix": "090",
+          "rarity": "rare"
+        },
+        {
+          "id": "aa237561-1efe-4e1a-a1ca-a1cce5e974f6",
+          "card": "ec7b4e97-1bad-45b8-8df9-04459ccb57d3",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/66/SRL-BoosterSP-25thAnniversaryEdition.png",
+      "cards": [
+        {
+          "id": "cbe6dfdc-d676-477e-90ff-086cc0395c4c",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "eba905d2-6af8-4680-8b0d-e2d22ffc6cb7",
+          "card": "0bb8cf93-84eb-4337-8597-a324f5bb9b88",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "a2b55240-2811-4ac9-8d29-3f53dc7561e9",
+          "card": "fbe3d990-18d5-44b6-a43f-19509854baae",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "78f4007f-838f-4ec5-9c8e-b6274124520f",
+          "card": "59deb9d2-6069-478e-bc45-f235a5149a5d",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "fb8d84fb-633f-494c-9544-7fd5f6f4c9b7",
+          "card": "eedecd49-c6ab-42c0-8fb5-d58927859771",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "ecc4e8e4-dbd8-456f-8e35-f0bf965b2622",
+          "card": "d314cd9e-21fe-44c6-b24a-7a6febb7fdcb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "13722c32-03f5-4094-9a8c-989af11c94ba",
+          "card": "ed525d97-691f-4150-b647-ce65452b1064",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "91f7c9b2-bb8d-4df9-96be-ce35d9857630",
+          "card": "ce4066c7-dfa5-4ebe-b90e-5a0342e9e886",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "992ecde2-34f6-413d-9472-c573b31e774b",
+          "card": "ef7683fe-c963-4586-bfa7-f4129b2c846a",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "6c3111e5-416f-4cbb-a58d-7d6a2b6a9670",
+          "card": "e65263dc-4583-4d87-a96c-686f6e755174",
+          "suffix": "085",
+          "rarity": "rare"
+        },
+        {
+          "id": "02fb02ee-25ee-483b-8ecc-8aab1fa2857d",
+          "card": "e1d69b9a-dd3f-4446-85de-28d2e770d68b",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "1cda3cb9-ca82-4e7f-b8c1-d619a18e137e",
+          "card": "b3e95450-c358-42e4-8acd-5bf2de0736ad",
+          "suffix": "090",
+          "rarity": "rare"
+        },
+        {
+          "id": "f6acab6c-ff7f-4ebc-af11-05c581e3f317",
+          "card": "ec7b4e97-1bad-45b8-8df9-04459ccb57d3",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/08/SRL-BoosterIT-25thAnniversaryEdition.png",
+      "cards": [
+        {
+          "id": "2cfa2433-f744-46fb-900d-1f161ab2dbd5",
+          "card": "75b7946f-1758-4155-b0db-1b0886459298",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "7d6a2991-dd0c-4647-b15d-a33c8a1486a1",
+          "card": "0bb8cf93-84eb-4337-8597-a324f5bb9b88",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "f5c36011-04e8-48c1-83f9-7ef636d7c762",
+          "card": "fbe3d990-18d5-44b6-a43f-19509854baae",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "efb7ef39-82ee-4b17-ba8d-c77e34de8a82",
+          "card": "59deb9d2-6069-478e-bc45-f235a5149a5d",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "9b5ac102-611c-4b32-8f91-ceaf659d4627",
+          "card": "eedecd49-c6ab-42c0-8fb5-d58927859771",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "a65d5ea5-c5bd-4b6c-aeac-1eb368593b07",
+          "card": "d314cd9e-21fe-44c6-b24a-7a6febb7fdcb",
+          "suffix": "039",
+          "rarity": "ultra"
+        },
+        {
+          "id": "521fc850-e3d6-4382-a1b7-07f005a81c23",
+          "card": "ed525d97-691f-4150-b647-ce65452b1064",
+          "suffix": "046",
+          "rarity": "common"
+        },
+        {
+          "id": "00f05f70-34d5-4e16-87c9-011c141bc5fb",
+          "card": "ce4066c7-dfa5-4ebe-b90e-5a0342e9e886",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "a89f43ff-17e3-4c47-b3f7-5461563ee0aa",
+          "card": "ef7683fe-c963-4586-bfa7-f4129b2c846a",
+          "suffix": "077",
+          "rarity": "rare"
+        },
+        {
+          "id": "6d1c266c-26b2-4f9e-be01-6f58f0c54f47",
+          "card": "e65263dc-4583-4d87-a96c-686f6e755174",
+          "suffix": "085",
+          "rarity": "rare"
+        },
+        {
+          "id": "be3833c2-4adf-4160-b0a9-6091d69d2957",
+          "card": "e1d69b9a-dd3f-4446-85de-28d2e770d68b",
+          "suffix": "088",
+          "rarity": "rare"
+        },
+        {
+          "id": "5444b201-403a-43c5-b087-83a31d76c1b0",
+          "card": "b3e95450-c358-42e4-8acd-5bf2de0736ad",
+          "suffix": "090",
+          "rarity": "rare"
+        },
+        {
+          "id": "1130bf64-ba07-4cad-bdad-51db00a547e7",
+          "card": "ec7b4e97-1bad-45b8-8df9-04459ccb57d3",
+          "suffix": "097",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Spell Ruler (25th Anniversary Edition)",
+      "id": 937073
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a2e0adab-6848-4fc1-94f9-88a3bd8d4a77",
+  "name": {
+    "en": "Yu-Gi-Oh! Advent Calendar",
+    "de": "Yu-Gi-Oh! Adventskalender"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "AC18-EN",
+      "image": "https://ms.yugipedia.com//7/76/AC18-PromoEN.png",
+      "cardImages": {
+        "1st": {
+          "957e5e8c-38f8-41b6-bccd-7db3ba5e29ca": "https://ms.yugipedia.com//2/29/SantaClaws-AC18-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18812003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "AC18-DE",
+      "date": "2018-10-25",
+      "image": "https://ms.yugipedia.com//1/13/AC18-PromoDE.png",
+      "cardImages": {
+        "1st": {
+          "68f25ce1-6dfc-4fb4-9596-29e42c91d2dc": "https://ms.yugipedia.com//5/54/SantaClaws-AC18-DE-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          18812003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/76/AC18-PromoEN.png",
+      "cards": [
+        {
+          "id": "957e5e8c-38f8-41b6-bccd-7db3ba5e29ca",
+          "card": "dc92e76a-cf47-4707-acf3-5881451b9e1b",
+          "suffix": "012",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/13/AC18-PromoDE.png",
+      "cards": [
+        {
+          "id": "68f25ce1-6dfc-4fb4-9596-29e42c91d2dc",
+          "card": "dc92e76a-cf47-4707-acf3-5881451b9e1b",
+          "suffix": "012",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Advent Calendar (2018)",
+      "id": 556911
+    }
+  }
+}

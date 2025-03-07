@@ -1,0 +1,720 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "5235a531-5af5-4a42-8e0b-15a7f0c6bc39",
+  "name": {
+    "en": "Stardust Overdrive",
+    "fr": "Pouvoir de la Poussi\u00e8re d'Etoile",
+    "de": "Stardust Overdrive",
+    "it": "Potere della Polvere di Stelle",
+    "es": "Poder de Polvo de Estrellas",
+    "ja": "\u30b9\u30bf\u30fc\u30c0\u30b9\u30c8\u30fb\u30aa\u30fc\u30d0\u30fc\u30c9\u30e9\u30a4\u30d6",
+    "ko": "\uad11\uc18d\uc758 \uc2a4\ud0c0\ub354\uc2a4\ud2b8"
+  },
+  "locales": {
+    "it": {
+      "language": "it",
+      "prefix": "SOVR-IT",
+      "image": "https://ms.yugipedia.com//f/f3/SOVR-BoosterIT.png",
+      "cardImages": {
+        "1st": {},
+        "unlimited": {
+          "e46e32e2-c8a9-4bf8-bac9-f575c72dd03a": "https://ms.yugipedia.com//2/2d/MajesticDragon-SOVR-IT-SR-UE.png",
+          "c7c26193-39ff-459c-898c-cbdfdd7470f3": "https://ms.yugipedia.com//3/3e/CatoblepasandtheWitchofFate-SOVR-IT-R-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41108005
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SOVR-DE",
+      "cardImages": {
+        "1st": {
+          "d97d52b0-5842-4b58-a3f2-105365c0a7fd": "https://ms.yugipedia.com//3/3d/CatoblepasandtheWitchofFate-SOVR-DE-R-1E.png",
+          "7ef43a94-167d-4e68-97b9-f0a74f6a0ee5": "https://ms.yugipedia.com//c/cd/ArchlordKristya-SOVR-DE-ScR-1E.png"
+        },
+        "unlimited": {
+          "d97d52b0-5842-4b58-a3f2-105365c0a7fd": "https://ms.yugipedia.com//e/e6/CatoblepasandtheWitchofFate-SOVR-DE-R-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21108005
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SOVR-SP",
+      "image": "https://ms.yugipedia.com//1/15/SOVR-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "03e1dfd9-4f94-472b-8ce3-cd47fa60794a": "https://ms.yugipedia.com//5/59/MajesticDragon-SOVR-SP-SR-1E.jpg",
+          "4180800b-5bf2-4c2e-93a6-939686ca554c": "https://ms.yugipedia.com//3/30/ArchlordKristya-SOVR-SP-ScR-1E.png"
+        },
+        "unlimited": {
+          "03e1dfd9-4f94-472b-8ce3-cd47fa60794a": "https://ms.yugipedia.com//1/10/MajesticDragon-SOVR-SP-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51107005
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SOVR-EN",
+      "image": "https://ms.yugipedia.com//4/4e/SOVR-BoosterEN.jpg",
+      "cardImages": {
+        "1st": {
+          "0a0c2583-b934-4bf0-9ba6-954210a3eeb0": "https://ms.yugipedia.com//b/b4/MajesticDragon-SOVR-EN-SR-1E.png",
+          "95ae3cca-039d-4a09-880c-acd0e4c4682d": "https://ms.yugipedia.com//8/83/MaxWarrior-SOVR-EN-SR-1E.png",
+          "07ac8de0-4bfe-4b0e-88c7-9ba2951fc0b1": "https://ms.yugipedia.com//0/04/CatoblepasandtheWitchofFate-SOVR-EN-R-1E.jpg",
+          "c1b8bdff-9eea-4202-8b56-20fd3e1329f8": "https://ms.yugipedia.com//5/5b/ReptilianneViper-SOVR-EN-C-1E.png",
+          "cccfdc37-9611-4cc2-97fc-bde447ca0b25": "https://ms.yugipedia.com//6/65/CrusaderofEndymion-SOVR-EN-UR-1E.jpg",
+          "ebe2267d-c3cd-42cb-af45-9c83514fd674": "https://ms.yugipedia.com//1/1c/CrusaderofEndymion-SOVR-EN-UtR-1E.jpg",
+          "1d8dd5b6-1c89-4be6-8373-b9dd00fe46f7": "https://ms.yugipedia.com//c/cc/LordBritishSpaceFighter-SOVR-EN-R-1E.jpg",
+          "05bce300-d83f-4e5a-8b32-32e0da9b5e93": "https://ms.yugipedia.com//9/9e/IceQueen-SOVR-EN-ScR-1E.jpg",
+          "0a968d76-d90d-4008-973d-5be7c9bd7c32": "https://ms.yugipedia.com//8/83/ArchlordKristya-SOVR-EN-ScR-1E.jpg"
+        },
+        "unlimited": {
+          "0a0c2583-b934-4bf0-9ba6-954210a3eeb0": "https://ms.yugipedia.com//b/b5/MajesticDragon-SOVR-EN-SR-UE.png",
+          "95ae3cca-039d-4a09-880c-acd0e4c4682d": "https://ms.yugipedia.com//6/63/MaxWarrior-SOVR-EN-SR-UE.jpg",
+          "07ac8de0-4bfe-4b0e-88c7-9ba2951fc0b1": "https://ms.yugipedia.com//1/1f/CatoblepasandtheWitchofFate-SOVR-EN-R-UE.png",
+          "c1b8bdff-9eea-4202-8b56-20fd3e1329f8": "https://ms.yugipedia.com//c/c5/ReptilianneViper-SOVR-EN-C-UE.jpg",
+          "cccfdc37-9611-4cc2-97fc-bde447ca0b25": "https://ms.yugipedia.com//2/20/CrusaderofEndymion-SOVR-EN-UR-UE.jpg",
+          "ebe2267d-c3cd-42cb-af45-9c83514fd674": "https://ms.yugipedia.com//a/a7/CrusaderofEndymion-SOVR-EN-UtR-UE.jpg",
+          "1d8dd5b6-1c89-4be6-8373-b9dd00fe46f7": "https://ms.yugipedia.com//3/3b/LordBritishSpaceFighter-SOVR-EN-R-UE.png",
+          "05bce300-d83f-4e5a-8b32-32e0da9b5e93": "https://ms.yugipedia.com//2/2a/IceQueen-SOVR-EN-ScR-UE.jpg",
+          "0a968d76-d90d-4008-973d-5be7c9bd7c32": "https://ms.yugipedia.com//6/60/ArchlordKristya-SOVR-EN-ScR-UE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11108005
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SOVR-FR",
+      "image": "https://ms.yugipedia.com//1/16/SOVR-BoosterFR.jpg",
+      "cardImages": {
+        "1st": {
+          "41c7aed5-5fc5-4fef-9173-9c0cf8c27646": "https://ms.yugipedia.com//3/3e/CatoblepasandtheWitchofFate-SOVR-FR-R-1E.png",
+          "f14bafb7-a634-4ccd-a850-e8834810f574": "https://ms.yugipedia.com//6/6f/ArchlordKristya-SOVR-FR-ScR-1E.jpg"
+        },
+        "unlimited": {
+          "963ed331-0be7-4135-8975-15db3df24815": "https://ms.yugipedia.com//f/fb/MajesticDragon-SOVR-FR-SR-UE.jpg",
+          "97d03fd3-9874-4dbd-b447-6bc0a2656323": "https://ms.yugipedia.com//d/de/MaxWarrior-SOVR-FR-SR-UE.jpg",
+          "41c7aed5-5fc5-4fef-9173-9c0cf8c27646": "https://ms.yugipedia.com//1/13/CatoblepasandtheWitchofFate-SOVR-FR-R-UE.jpg",
+          "adaa7b62-f3ee-445d-955c-18ff34f1c421": "https://ms.yugipedia.com//2/20/ReptilianneViper-SOVR-FR-C-UE.jpg",
+          "90f1afd8-78bd-49e3-af13-8262d8dd2998": "https://ms.yugipedia.com//2/2c/CrusaderofEndymion-SOVR-FR-UR-UE.jpg",
+          "3b2ee013-bab0-4908-96f7-f373ff10cb85": "https://ms.yugipedia.com//9/95/LordBritishSpaceFighter-SOVR-FR-R-UE.png",
+          "05bce300-d83f-4e5a-8b32-32e0da9b5e93": "https://ms.yugipedia.com//1/16/IceQueen-SOVR-FR-ScR-UE.jpg",
+          "f14bafb7-a634-4ccd-a850-e8834810f574": "https://ms.yugipedia.com//8/84/ArchlordKristya-SOVR-FR-ScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31108004
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SOVR-KR",
+      "date": "2009-11-19",
+      "image": "https://ms.yugipedia.com//a/ac/SOVR-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "a9d01c66-0165-4cb3-9bfd-c0cb20bc5f92": "https://ms.yugipedia.com//1/1c/MajesticDragon-SOVR-KR-R-1E.jpg",
+          "bcb9bc9d-e48d-4665-8e37-fbbda7b9234c": "https://ms.yugipedia.com//2/28/MaxWarrior-SOVR-KR-SR-1E.jpg",
+          "53593a35-6027-4d1b-bb8a-3c2a23b73af5": "https://ms.yugipedia.com//d/df/CatoblepasandtheWitchofFate-SOVR-KR-SR-1E.jpg",
+          "8156c1d1-45c9-42c3-a833-d039d69b25a3": "https://ms.yugipedia.com//f/f4/CrusaderofEndymion-SOVR-KR-SR-1E.png",
+          "8d5a92de-3f90-4ae1-adb2-c2f0924f132d": "https://ms.yugipedia.com//c/c9/LordBritishSpaceFighter-SOVR-KR-R-1E.jpg"
+        },
+        "unlimited": {
+          "a9d01c66-0165-4cb3-9bfd-c0cb20bc5f92": "https://ms.yugipedia.com//2/22/MajesticDragon-SOVR-KR-R-UE.png",
+          "bcb9bc9d-e48d-4665-8e37-fbbda7b9234c": "https://ms.yugipedia.com//a/a7/MaxWarrior-SOVR-KR-SR-UE.png",
+          "53593a35-6027-4d1b-bb8a-3c2a23b73af5": "https://ms.yugipedia.com//1/1f/CatoblepasandtheWitchofFate-SOVR-KR-SR-UE.png",
+          "9b5cd3a0-e33a-4463-9646-3df4cb73651f": "https://ms.yugipedia.com//b/ba/ReptilianneViper-SOVR-KR-C-UE.png",
+          "8156c1d1-45c9-42c3-a833-d039d69b25a3": "https://ms.yugipedia.com//4/4e/CrusaderofEndymion-SOVR-KR-SR-UE.png",
+          "8d5a92de-3f90-4ae1-adb2-c2f0924f132d": "https://ms.yugipedia.com//5/53/LordBritishSpaceFighter-SOVR-KR-R-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71107004
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SOVR-JP",
+      "date": "2009-07-18",
+      "image": "https://ms.yugipedia.com//3/37/SOVR-BoosterJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "86fc10d1-7af2-4788-8b4b-920de04e3cf6": "https://ms.yugipedia.com//0/0f/MajesticDragon-SOVR-JP-R.jpg",
+          "62cf2e32-9d59-4529-a7b9-2234225fa662": "https://ms.yugipedia.com//5/5a/MaxWarrior-SOVR-JP-SR.jpg",
+          "9825a4ca-bb3f-41b6-bdb8-486f91dd986b": "https://ms.yugipedia.com//7/76/CatoblepasandtheWitchofFate-SOVR-JP-SR.jpg",
+          "3a8c4510-5ac5-441b-95fd-9ce4dd9294bb": "https://ms.yugipedia.com//5/51/ReptilianneViper-SOVR-JP-C.jpg",
+          "20d14a47-d2f7-4a1b-aa02-29a901bcca9b": "https://ms.yugipedia.com//5/56/CrusaderofEndymion-SOVR-JP-SR.jpg",
+          "53b15f7a-365d-4b1c-b781-f4d11c785d45": "https://ms.yugipedia.com//0/05/LordBritishSpaceFighter-SOVR-JP-R.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1112001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/f3/SOVR-BoosterIT.png",
+      "cards": [
+        {
+          "id": "e46e32e2-c8a9-4bf8-bac9-f575c72dd03a",
+          "card": "b8c56540-40a4-42c3-81e0-63b78d15fe81",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "55872aad-2601-4acc-8d53-096927bf9ffa",
+          "card": "33f10857-27e6-4b82-96c9-746da674abcb",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "c7c26193-39ff-459c-898c-cbdfdd7470f3",
+          "card": "e194c7ca-4166-4c1c-9bd0-3ea624a90756",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "065430de-c532-429c-bea7-2300b0a8938c",
+          "card": "ac7530b6-4448-4936-a694-d63fa2004ead",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "bdef8bb7-2354-4df9-81ad-ed4e6b920529",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4a1f71ac-2107-4f15-a428-17bd8e132660",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "0e46be5a-1481-419d-9754-a41f63b31642",
+          "card": "b8d38b0e-1ffa-4608-b4f4-512bf7c9c99d",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "05bce300-d83f-4e5a-8b32-32e0da9b5e93",
+          "card": "b9fd9114-2223-42da-8475-466b4fd8d228",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "c2ef4ac7-1322-4e42-b887-882fc2404b61",
+          "card": "644c5dfb-a53d-44f5-886d-c86830ee0420",
+          "suffix": "096",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Stardust Overdrive"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "2f5be091-88fe-420c-b26e-d76deb2bfb33",
+          "card": "b8c56540-40a4-42c3-81e0-63b78d15fe81",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "b589589d-8c66-4e7d-9317-9467c379f062",
+          "card": "33f10857-27e6-4b82-96c9-746da674abcb",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "d97d52b0-5842-4b58-a3f2-105365c0a7fd",
+          "card": "e194c7ca-4166-4c1c-9bd0-3ea624a90756",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "ebf15b7b-396a-4a89-b89d-ce750ae5b494",
+          "card": "ac7530b6-4448-4936-a694-d63fa2004ead",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "c0cc190d-07b5-46f4-b56e-627eea4bd476",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultra"
+        },
+        {
+          "id": "145e0618-2d25-42b4-93cf-6cf3ffd41a35",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "4c648a93-0db0-41e0-9526-ad51738f2719",
+          "card": "b8d38b0e-1ffa-4608-b4f4-512bf7c9c99d",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "05bce300-d83f-4e5a-8b32-32e0da9b5e93",
+          "card": "b9fd9114-2223-42da-8475-466b4fd8d228",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "7ef43a94-167d-4e68-97b9-f0a74f6a0ee5",
+          "card": "644c5dfb-a53d-44f5-886d-c86830ee0420",
+          "suffix": "096",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Stardust Overdrive"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/15/SOVR-BoosterSP.png",
+      "cards": [
+        {
+          "id": "03e1dfd9-4f94-472b-8ce3-cd47fa60794a",
+          "card": "b8c56540-40a4-42c3-81e0-63b78d15fe81",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "b8650bf2-b817-42ad-8c3d-6fdffe6d0778",
+          "card": "33f10857-27e6-4b82-96c9-746da674abcb",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "600728d8-eb3a-471f-8639-e8e94c3421c3",
+          "card": "e194c7ca-4166-4c1c-9bd0-3ea624a90756",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "2995c1ea-ec2f-4a63-bc6c-f3bc911261f1",
+          "card": "ac7530b6-4448-4936-a694-d63fa2004ead",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "4f5868ec-e35c-4907-99fb-50a3f19f94de",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1399dff2-1441-432f-84e4-585a482c5950",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "aa8a1557-c740-4018-83d3-a363e29d80d4",
+          "card": "b8d38b0e-1ffa-4608-b4f4-512bf7c9c99d",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "05bce300-d83f-4e5a-8b32-32e0da9b5e93",
+          "card": "b9fd9114-2223-42da-8475-466b4fd8d228",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "4180800b-5bf2-4c2e-93a6-939686ca554c",
+          "card": "644c5dfb-a53d-44f5-886d-c86830ee0420",
+          "suffix": "096",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Stardust Overdrive"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4e/SOVR-BoosterEN.jpg",
+      "cards": [
+        {
+          "id": "0a0c2583-b934-4bf0-9ba6-954210a3eeb0",
+          "card": "b8c56540-40a4-42c3-81e0-63b78d15fe81",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "95ae3cca-039d-4a09-880c-acd0e4c4682d",
+          "card": "33f10857-27e6-4b82-96c9-746da674abcb",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "07ac8de0-4bfe-4b0e-88c7-9ba2951fc0b1",
+          "card": "e194c7ca-4166-4c1c-9bd0-3ea624a90756",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "c1b8bdff-9eea-4202-8b56-20fd3e1329f8",
+          "card": "ac7530b6-4448-4936-a694-d63fa2004ead",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "cccfdc37-9611-4cc2-97fc-bde447ca0b25",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ebe2267d-c3cd-42cb-af45-9c83514fd674",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "1d8dd5b6-1c89-4be6-8373-b9dd00fe46f7",
+          "card": "b8d38b0e-1ffa-4608-b4f4-512bf7c9c99d",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "05bce300-d83f-4e5a-8b32-32e0da9b5e93",
+          "card": "b9fd9114-2223-42da-8475-466b4fd8d228",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "0a968d76-d90d-4008-973d-5be7c9bd7c32",
+          "card": "644c5dfb-a53d-44f5-886d-c86830ee0420",
+          "suffix": "096",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Stardust Overdrive"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/16/SOVR-BoosterFR.jpg",
+      "cards": [
+        {
+          "id": "963ed331-0be7-4135-8975-15db3df24815",
+          "card": "b8c56540-40a4-42c3-81e0-63b78d15fe81",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "97d03fd3-9874-4dbd-b447-6bc0a2656323",
+          "card": "33f10857-27e6-4b82-96c9-746da674abcb",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "41c7aed5-5fc5-4fef-9173-9c0cf8c27646",
+          "card": "e194c7ca-4166-4c1c-9bd0-3ea624a90756",
+          "suffix": "014",
+          "rarity": "rare"
+        },
+        {
+          "id": "adaa7b62-f3ee-445d-955c-18ff34f1c421",
+          "card": "ac7530b6-4448-4936-a694-d63fa2004ead",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "90f1afd8-78bd-49e3-af13-8262d8dd2998",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultra"
+        },
+        {
+          "id": "6afa18b1-e2ad-4766-8935-4ccdca9228f1",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "3b2ee013-bab0-4908-96f7-f373ff10cb85",
+          "card": "b8d38b0e-1ffa-4608-b4f4-512bf7c9c99d",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "05bce300-d83f-4e5a-8b32-32e0da9b5e93",
+          "card": "b9fd9114-2223-42da-8475-466b4fd8d228",
+          "suffix": "094",
+          "rarity": "secret"
+        },
+        {
+          "id": "f14bafb7-a634-4ccd-a850-e8834810f574",
+          "card": "644c5dfb-a53d-44f5-886d-c86830ee0420",
+          "suffix": "096",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Stardust Overdrive"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/ac/SOVR-BoosterKR.png",
+      "cards": [
+        {
+          "id": "a9d01c66-0165-4cb3-9bfd-c0cb20bc5f92",
+          "card": "b8c56540-40a4-42c3-81e0-63b78d15fe81",
+          "suffix": "001",
+          "rarity": "rare"
+        },
+        {
+          "id": "bcb9bc9d-e48d-4665-8e37-fbbda7b9234c",
+          "card": "33f10857-27e6-4b82-96c9-746da674abcb",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "53593a35-6027-4d1b-bb8a-3c2a23b73af5",
+          "card": "e194c7ca-4166-4c1c-9bd0-3ea624a90756",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "9b5cd3a0-e33a-4463-9646-3df4cb73651f",
+          "card": "ac7530b6-4448-4936-a694-d63fa2004ead",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "8156c1d1-45c9-42c3-a833-d039d69b25a3",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "super"
+        },
+        {
+          "id": "8d5a92de-3f90-4ae1-adb2-c2f0924f132d",
+          "card": "b8d38b0e-1ffa-4608-b4f4-512bf7c9c99d",
+          "suffix": "035",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Stardust Overdrive"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/37/SOVR-BoosterJP.jpg",
+      "cards": [
+        {
+          "id": "86fc10d1-7af2-4788-8b4b-920de04e3cf6",
+          "card": "b8c56540-40a4-42c3-81e0-63b78d15fe81",
+          "suffix": "001",
+          "rarity": "rare"
+        },
+        {
+          "id": "62cf2e32-9d59-4529-a7b9-2234225fa662",
+          "card": "33f10857-27e6-4b82-96c9-746da674abcb",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "9825a4ca-bb3f-41b6-bdb8-486f91dd986b",
+          "card": "e194c7ca-4166-4c1c-9bd0-3ea624a90756",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "3a8c4510-5ac5-441b-95fd-9ce4dd9294bb",
+          "card": "ac7530b6-4448-4936-a694-d63fa2004ead",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "20d14a47-d2f7-4a1b-aa02-29a901bcca9b",
+          "card": "43bc4e62-7b2c-4dc6-8173-ddcad39add08",
+          "suffix": "030",
+          "rarity": "super"
+        },
+        {
+          "id": "53b15f7a-365d-4b1c-b781-f4d11c785d45",
+          "card": "b8d38b0e-1ffa-4608-b4f4-512bf7c9c99d",
+          "suffix": "035",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Stardust Overdrive"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Stardust Overdrive",
+      "id": 98128
+    }
+  }
+}

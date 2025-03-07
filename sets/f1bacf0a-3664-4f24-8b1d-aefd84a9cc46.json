@@ -1,0 +1,573 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "f1bacf0a-3664-4f24-8b1d-aefd84a9cc46",
+  "name": {
+    "en": "Structure Deck: Seto Kaiba",
+    "fr": "Deck de Structure : Seto Kaiba",
+    "de": "Structure Deck: Seto Kaiba",
+    "it": "Structure Deck: Seto Kaiba",
+    "pt": "Deck Estrutural: Seto Kaiba",
+    "es": "Baraja de Estructura: Seto Kaiba",
+    "ja": "\u30b9\u30c8\u30e9\u30af\u30c1\u30e3\u30fc\u30c7\u30c3\u30ad \uff0d\u6d77\u99ac\u702c\u4eba\uff0d",
+    "ko": "\uff33\uff34\uff32\uff35\uff23\uff34\uff35\uff32\uff25 \uff24\uff25\uff23\uff2b -\uce74\uc774\ubc14-"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SDKS-EN",
+      "image": "https://ms.yugipedia.com//7/7f/SDKS-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "24b53ae4-d467-4f2e-86c1-79e9b135c093": "https://ms.yugipedia.com//e/ef/YDragonHead-SDKS-EN-C-1E.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//5/54/LordofD-SDKS-EN-C-1E.png",
+          "ef0a1ca8-90a0-4b10-9a05-d491f3e7e822": "https://ms.yugipedia.com//3/3a/LusterDragon-SDKS-EN-C-1E.png",
+          "f68e755d-66f4-44bc-b883-d377a40c0663": "https://ms.yugipedia.com//6/67/Shrink-SDKS-EN-C-1E.png",
+          "9f7a133d-84dc-42fd-b69f-46066f9ee94f": "https://ms.yugipedia.com//9/95/LimiterRemoval-SDKS-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14412002
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SDKS-DE",
+      "image": "https://ms.yugipedia.com//9/93/SDKS-DeckDE.png",
+      "cardImages": {
+        "1st": {
+          "e9de4330-d2c1-4c37-a7ab-db41a620b21d": "https://ms.yugipedia.com//9/93/YDragonHead-SDKS-DE-C-1E.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//d/dc/LordofD-SDKS-DE-C-1E.png",
+          "187abb74-45d6-4f79-b089-a1a9a194e7ad": "https://ms.yugipedia.com//4/4f/LusterDragon-SDKS-DE-C-1E.png",
+          "b6b18866-ec98-4f79-ac4e-79ad9d905a73": "https://ms.yugipedia.com//4/46/Shrink-SDKS-DE-C-1E.png",
+          "b557581b-8c53-483e-aa23-34d81a2dfa12": "https://ms.yugipedia.com//e/e0/LimiterRemoval-SDKS-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          24412002
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SDKS-FR",
+      "image": "https://ms.yugipedia.com//b/b1/SDKS-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "249a2382-57c9-46aa-84b5-ad0eb10f47cb": "https://ms.yugipedia.com//9/91/YDragonHead-SDKS-FR-C-1E.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//c/c7/LordofD-SDKS-FR-C-1E.png",
+          "67060e1b-8eee-4b03-b635-251113d8f89b": "https://ms.yugipedia.com//8/87/LusterDragon-SDKS-FR-C-1E.png",
+          "fbbb5861-cb21-44df-b0f5-dcbbf3aa46e7": "https://ms.yugipedia.com//a/a2/Shrink-SDKS-FR-C-1E.png",
+          "ef790f6f-67ce-4d9c-a662-82ff862ed0c5": "https://ms.yugipedia.com//3/31/LimiterRemoval-SDKS-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          34412002
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SDKS-JP",
+      "date": "2016-06-18",
+      "image": "https://ms.yugipedia.com//e/e8/SDKS-DeckJP.png",
+      "cardImages": {
+        "unlimited": {
+          "1cedc269-721b-450d-ad84-77e91a9a07cf": "https://ms.yugipedia.com//9/97/YDragonHead-SDKS-JP-C.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//7/7e/LordofD-SDKS-JP-C.png",
+          "587e841f-6b79-4bc7-a809-cfeb261eaa81": "https://ms.yugipedia.com//6/65/Shrink-SDKS-JP-C.png",
+          "5034a966-100d-4fd5-9500-40c722b8b8bd": "https://ms.yugipedia.com//a/a7/SoulExchange-SDKS-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2201044
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SDKS-PT",
+      "date": "2016-10-21",
+      "image": "https://ms.yugipedia.com//5/59/SDKS-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "99491d1b-3798-4713-b688-c3011635c670": "https://ms.yugipedia.com//d/dc/YDragonHead-SDKS-PT-C-1E.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//c/cf/LordofD-SDKS-PT-C-1E.png",
+          "bcb5bc00-c56c-4ffd-b694-0c2a9cd8a18c": "https://ms.yugipedia.com//5/54/LusterDragon-SDKS-PT-C-1E.png",
+          "a5a7d81d-9f4c-43e8-a9f3-2e1363e321b2": "https://ms.yugipedia.com//c/cd/Shrink-SDKS-PT-C-1E.png",
+          "d53d5575-a215-464e-ac1a-1fb9c7e4b882": "https://ms.yugipedia.com//c/c8/LimiterRemoval-SDKS-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14412002
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SDKS-IT",
+      "image": "https://ms.yugipedia.com//e/ee/SDKS-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "5f0c7d9a-a882-4f75-8f4b-e798bfaa02a5": "https://ms.yugipedia.com//4/48/YDragonHead-SDKS-IT-C-1E.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//1/11/LordofD-SDKS-IT-C-1E.png",
+          "8ccd175a-ec78-41ea-98ee-68db7f5683a8": "https://ms.yugipedia.com//b/b4/LusterDragon-SDKS-IT-C-1E.png",
+          "2460d1b0-a9bf-422d-b2c1-c00921763a06": "https://ms.yugipedia.com//1/13/Shrink-SDKS-IT-C-1E.png",
+          "daf691c9-728e-4441-95c4-42a63b1a0c05": "https://ms.yugipedia.com//9/9e/LimiterRemoval-SDKS-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          44412002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SDKS-SP",
+      "image": "https://ms.yugipedia.com//f/ff/SDKS-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "26ed7fd1-6110-47b1-ae37-5f6aaa4cf35a": "https://ms.yugipedia.com//9/97/YDragonHead-SDKS-SP-C-1E.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//f/f0/LordofD-SDKS-SP-C-1E.png",
+          "638322f6-6488-4273-a413-8b0f9f086d77": "https://ms.yugipedia.com//e/e0/LusterDragon-SDKS-SP-C-1E.png",
+          "426b62a8-2561-4777-b736-072a16b4806c": "https://ms.yugipedia.com//0/00/Shrink-SDKS-SP-C-1E.png",
+          "73ab65e8-ee68-49d4-8a33-045ca1fb14ec": "https://ms.yugipedia.com//0/0d/LimiterRemoval-SDKS-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          54412002
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SDKS-KR",
+      "date": "2016-10-07",
+      "image": "https://ms.yugipedia.com//6/62/SDKS-DeckKR.png",
+      "cardImages": {
+        "1st": {
+          "60aca7ba-69de-4bf5-8684-066b7986be4f": "https://ms.yugipedia.com//9/9f/YDragonHead-SDKS-KR-C-1E.png",
+          "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1": "https://ms.yugipedia.com//b/b2/LordofD-SDKS-KR-C-1E.png",
+          "a4bc7515-8434-42b6-bbbf-0eb388a18014": "https://ms.yugipedia.com//f/f6/Shrink-SDKS-KR-C-1E.png",
+          "4cf66c14-1ec5-4af1-b14d-8774b7b14d8a": "https://ms.yugipedia.com//0/06/SoulExchange-SDKS-KR-C-1E.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          73312003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/7f/SDKS-DeckEN.png",
+      "cards": [
+        {
+          "id": "24b53ae4-d467-4f2e-86c1-79e9b135c093",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ef0a1ca8-90a0-4b10-9a05-d491f3e7e822",
+          "card": "09012550-8561-4b4b-a0c6-c70a36ad5510",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "f68e755d-66f4-44bc-b883-d377a40c0663",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "9f7a133d-84dc-42fd-b69f-46066f9ee94f",
+          "card": "c961c3cb-ad2c-4327-87a7-3fc0f6955ede",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/93/SDKS-DeckDE.png",
+      "cards": [
+        {
+          "id": "e9de4330-d2c1-4c37-a7ab-db41a620b21d",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "187abb74-45d6-4f79-b089-a1a9a194e7ad",
+          "card": "09012550-8561-4b4b-a0c6-c70a36ad5510",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "b6b18866-ec98-4f79-ac4e-79ad9d905a73",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b557581b-8c53-483e-aa23-34d81a2dfa12",
+          "card": "c961c3cb-ad2c-4327-87a7-3fc0f6955ede",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b1/SDKS-DeckFR.png",
+      "cards": [
+        {
+          "id": "249a2382-57c9-46aa-84b5-ad0eb10f47cb",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "67060e1b-8eee-4b03-b635-251113d8f89b",
+          "card": "09012550-8561-4b4b-a0c6-c70a36ad5510",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "fbbb5861-cb21-44df-b0f5-dcbbf3aa46e7",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "ef790f6f-67ce-4d9c-a662-82ff862ed0c5",
+          "card": "c961c3cb-ad2c-4327-87a7-3fc0f6955ede",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e8/SDKS-DeckJP.png",
+      "cards": [
+        {
+          "id": "1cedc269-721b-450d-ad84-77e91a9a07cf",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "587e841f-6b79-4bc7-a809-cfeb261eaa81",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "5034a966-100d-4fd5-9500-40c722b8b8bd",
+          "card": "80446784-e5db-444e-93ed-b4fc934eff29",
+          "suffix": "029",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/59/SDKS-DeckPT.png",
+      "cards": [
+        {
+          "id": "99491d1b-3798-4713-b688-c3011635c670",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "bcb5bc00-c56c-4ffd-b694-0c2a9cd8a18c",
+          "card": "09012550-8561-4b4b-a0c6-c70a36ad5510",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "a5a7d81d-9f4c-43e8-a9f3-2e1363e321b2",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "d53d5575-a215-464e-ac1a-1fb9c7e4b882",
+          "card": "c961c3cb-ad2c-4327-87a7-3fc0f6955ede",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/ee/SDKS-DeckIT.png",
+      "cards": [
+        {
+          "id": "5f0c7d9a-a882-4f75-8f4b-e798bfaa02a5",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "8ccd175a-ec78-41ea-98ee-68db7f5683a8",
+          "card": "09012550-8561-4b4b-a0c6-c70a36ad5510",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "2460d1b0-a9bf-422d-b2c1-c00921763a06",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "daf691c9-728e-4441-95c4-42a63b1a0c05",
+          "card": "c961c3cb-ad2c-4327-87a7-3fc0f6955ede",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/ff/SDKS-DeckSP.png",
+      "cards": [
+        {
+          "id": "26ed7fd1-6110-47b1-ae37-5f6aaa4cf35a",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "638322f6-6488-4273-a413-8b0f9f086d77",
+          "card": "09012550-8561-4b4b-a0c6-c70a36ad5510",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "426b62a8-2561-4777-b736-072a16b4806c",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "73ab65e8-ee68-49d4-8a33-045ca1fb14ec",
+          "card": "c961c3cb-ad2c-4327-87a7-3fc0f6955ede",
+          "suffix": "028",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/62/SDKS-DeckKR.png",
+      "cards": [
+        {
+          "id": "60aca7ba-69de-4bf5-8684-066b7986be4f",
+          "card": "4eff163b-3a0c-403d-b79d-b7bf596e881b",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "e2adc8c9-e02c-4d9a-aa01-3dd415ae09e1",
+          "card": "c46898c0-1ddf-404a-bcfc-47c81b693958",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "a4bc7515-8434-42b6-bbbf-0eb388a18014",
+          "card": "d2e31861-9fbc-455a-9c77-f8eef2058c7b",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "4cf66c14-1ec5-4af1-b14d-8774b7b14d8a",
+          "card": "80446784-e5db-444e-93ed-b4fc934eff29",
+          "suffix": "029",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Structure Deck: Seto Kaiba",
+      "id": 362453
+    }
+  }
+}

@@ -1,0 +1,968 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "facd3f34-4100-4290-80d8-6981a40ffe4f",
+  "name": {
+    "en": "Phantom Darkness",
+    "fr": "T\u00e9n\u00e8bres Fant\u00f4mes",
+    "de": "Phantom Darkness",
+    "it": "Oscurit\u00e0 Fantasma",
+    "es": "Oscuridad Fantasma",
+    "ja": "\u30d5\u30a1\u30f3\u30c8\u30e0\u30fb\u30c0\u30fc\u30af\u30cd\u30b9",
+    "ko": "\ud658\uc601\uc758 \uc5b4\ub460"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "PTDN-KR",
+      "date": "2008-03-04",
+      "image": "https://ms.yugipedia.com//6/68/PTDN-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "238680dc-3e4b-4c10-9e17-7f9da63f3be3": "https://ms.yugipedia.com//1/13/CyberOuroboros-PTDN-KR-C-UE.png",
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//9/99/VolcanicCounter-PTDN-KR-SR-UE.png",
+          "665ac3e3-e38f-49f4-adde-dfb3c6f6a565": "https://ms.yugipedia.com//b/b6/DestinyHERODunker-PTDN-KR-C-UE.png",
+          "02221246-9694-4ae7-8345-7d70a565a796": "https://ms.yugipedia.com//4/48/DarkArmedDragon-PTDN-KR-R-UE.png",
+          "88a37472-3603-4690-a6d7-2382d02b69a1": "https://ms.yugipedia.com//0/04/ArmageddonKnight-PTDN-KR-R-UE.png",
+          "7201cf61-301e-4a38-abb4-91f01c73ff7e": "https://ms.yugipedia.com//c/c9/GeminiLancer-PTDN-KR-C-UE.png",
+          "0547934a-7032-41db-b75d-803556c095a0": "https://ms.yugipedia.com//e/ee/BlueThunderT45-PTDN-KR-R-UE.png",
+          "56e29092-1558-488b-9b38-271924bdced5": "https://ms.yugipedia.com//d/da/ElementalHEROStormNeos-PTDN-KR-UR-UE.png",
+          "a2ae2b12-84e5-4444-b10a-45af05bbc661": "https://ms.yugipedia.com//4/47/ElementalHEROStormNeos-PTDN-KR-UtR-UE.png",
+          "bfa4f6cc-a421-4370-a089-9763fc4a9cd8": "https://ms.yugipedia.com//9/95/SuperPolymerization-PTDN-KR-SR-UE.png",
+          "6826d922-3196-4b39-ab76-b9f7a56f2020": "https://ms.yugipedia.com//8/8c/CyberneticZone-PTDN-KR-C-UE.png",
+          "14e7a14d-c873-4f00-9851-2f11b696305a": "https://ms.yugipedia.com//0/0b/UnleashYourPower-PTDN-KR-C-UE.png",
+          "11992a86-1592-4170-bd19-c5f1696d350d": "https://ms.yugipedia.com//c/c1/EscapefromtheDarkDimension-PTDN-KR-NR-UE.png"
+        },
+        "1st": {
+          "bfa4f6cc-a421-4370-a089-9763fc4a9cd8": "https://ms.yugipedia.com//4/48/SuperPolymerization-PTDN-KR-SR-1E.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71106001
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "PTDN-JP",
+      "date": "2007-11-23",
+      "image": "https://ms.yugipedia.com//c/cf/PTDN-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "9e4cfb3a-5362-4ccc-b2e1-68a280648045": "https://ms.yugipedia.com//3/32/CyberOuroboros-PTDN-JP-C.jpg",
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//e/e0/VolcanicCounter-PTDN-JP-SR.jpg",
+          "89e556eb-97bc-4ad5-9681-4dce5a1d568f": "https://ms.yugipedia.com//6/6e/DestinyHERODunker-PTDN-JP-C.jpg",
+          "7001cdbb-5afa-4e5d-82b0-e938366b51f2": "https://ms.yugipedia.com//7/7c/DarkArmedDragon-PTDN-JP-R.jpg",
+          "88a37472-3603-4690-a6d7-2382d02b69a1": "https://ms.yugipedia.com//1/12/ArmageddonKnight-PTDN-JP-R.jpg",
+          "60358e2b-1f02-466e-982f-d5acec7f2a24": "https://ms.yugipedia.com//5/53/GeminiLancer-PTDN-JP-C.jpg",
+          "0547934a-7032-41db-b75d-803556c095a0": "https://ms.yugipedia.com//7/72/BlueThunderT45-PTDN-JP-R.jpg",
+          "7e5989d6-9256-4ba8-92d0-cde808a204d3": "https://ms.yugipedia.com//a/ab/ElementalHEROStormNeos-PTDN-JP-UR.jpg",
+          "1d7a8977-d88a-4e94-a095-47c8f7d1c96f": "https://ms.yugipedia.com//9/96/ElementalHEROStormNeos-PTDN-JP-UtR.jpg",
+          "c238277d-9e76-4af6-a3fa-080a08ca5f5f": "https://ms.yugipedia.com//9/9d/SuperPolymerization-PTDN-JP-SR.jpg",
+          "c8618eae-0701-4ec6-b8df-6ab3107b62c2": "https://ms.yugipedia.com//7/7a/CyberneticZone-PTDN-JP-C.jpg",
+          "5a4faed1-426a-4661-883c-cf8a03959115": "https://ms.yugipedia.com//c/cd/UnleashYourPower-PTDN-JP-C.jpg",
+          "3ab6e048-d473-40c2-8763-249af809a471": "https://ms.yugipedia.com//0/03/EscapefromtheDarkDimension-PTDN-JP-NR.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1110002
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "PTDN-FR",
+      "date": "2008-01-26",
+      "image": "https://ms.yugipedia.com//5/5b/PTDN-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//b/bd/VolcanicCounter-PTDN-FR-SR-UE.jpg",
+          "9b65b1e0-e2d1-4156-a56f-52389080e658": "https://ms.yugipedia.com//b/b8/DarkArmedDragon-PTDN-FR-ScR-UE.png",
+          "d6fa2cc8-ce04-4328-ae9e-edcd784fc540": "https://ms.yugipedia.com//5/50/ArmageddonKnight-PTDN-FR-SR-UE.jpg",
+          "67f44a5a-d989-432b-820f-729f4db3c8f3": "https://ms.yugipedia.com//a/a2/BlueThunderT45-PTDN-FR-C-UE.png",
+          "2ce22c6d-1175-458d-b8cc-f06ebbd977f6": "https://ms.yugipedia.com//3/39/EscapefromtheDarkDimension-PTDN-FR-SR-UE.png"
+        },
+        "1st": {
+          "9ad6f2b4-6eaa-421d-882c-88662f2bbc9f": "https://ms.yugipedia.com//9/9a/CyberOuroboros-PTDN-FR-C-1E.jpg",
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//4/47/VolcanicCounter-PTDN-FR-SR-1E.jpg",
+          "46c12e9c-7ea1-4da9-909a-fcb7f5235b89": "https://ms.yugipedia.com//3/32/DestinyHERODunker-PTDN-FR-C-1E.png",
+          "9b65b1e0-e2d1-4156-a56f-52389080e658": "https://ms.yugipedia.com//3/32/DarkArmedDragon-PTDN-FR-ScR-1E.png",
+          "d6fa2cc8-ce04-4328-ae9e-edcd784fc540": "https://ms.yugipedia.com//f/f2/ArmageddonKnight-PTDN-FR-SR-1E.jpg",
+          "e8dd914f-34b3-4b13-b409-22f79c33da17": "https://ms.yugipedia.com//f/fb/GeminiLancer-PTDN-FR-C-1E.png",
+          "67f44a5a-d989-432b-820f-729f4db3c8f3": "https://ms.yugipedia.com//1/1e/BlueThunderT45-PTDN-FR-C-1E.png",
+          "a345d761-e36a-4d66-9ace-a995cda53c48": "https://ms.yugipedia.com//c/c9/ElementalHEROStormNeos-PTDN-FR-SR-1E.png",
+          "dff63f43-9c7f-49b3-a9fd-e5e67c00c966": "https://ms.yugipedia.com//9/97/SuperPolymerization-PTDN-FR-R-1E.jpg",
+          "f6fc5634-8b28-4b02-a2ff-42dab6c6442a": "https://ms.yugipedia.com//2/2d/CyberneticZone-PTDN-FR-C-1E.jpg",
+          "627c3df4-417f-420b-a182-5b2d0f9286b4": "https://ms.yugipedia.com//1/1b/UnleashYourPower-PTDN-FR-C-1E.jpg",
+          "2ce22c6d-1175-458d-b8cc-f06ebbd977f6": "https://ms.yugipedia.com//1/1f/EscapefromtheDarkDimension-PTDN-FR-SR-1E.jpg",
+          "214fa5fe-b12f-40d9-9ad8-adaf5d7063c9": "https://ms.yugipedia.com//0/0a/MetaboGlobster-PTDN-FR-R-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31107000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "PTDN-IT",
+      "date": "2008-02-13",
+      "image": "https://ms.yugipedia.com//2/27/PTDN-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "ce9cd68a-c729-4038-a1bc-0e11407a287d": "https://ms.yugipedia.com//2/23/DarkArmedDragon-PTDN-IT-ScR-1E.png",
+          "d6fa2cc8-ce04-4328-ae9e-edcd784fc540": "https://ms.yugipedia.com//f/ff/ArmageddonKnight-PTDN-IT-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41107000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "PTDN-DE",
+      "date": "2008-01-26",
+      "image": "https://ms.yugipedia.com//4/4e/PTDN-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {
+          "5a45bf4d-026c-4527-aade-b5c199cffdf9": "https://ms.yugipedia.com//7/70/DarkArmedDragon-PTDN-DE-ScR-UE.png"
+        },
+        "1st": {
+          "c57e1032-7ec8-4c75-adeb-cffcbc2ab99e": "https://ms.yugipedia.com//c/c2/CyberOuroboros-PTDN-DE-C-1E.jpg",
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//7/70/VolcanicCounter-PTDN-DE-SR-1E.jpg",
+          "5a45bf4d-026c-4527-aade-b5c199cffdf9": "https://ms.yugipedia.com//4/48/DarkArmedDragon-PTDN-DE-ScR-1E.png",
+          "d6fa2cc8-ce04-4328-ae9e-edcd784fc540": "https://ms.yugipedia.com//2/27/ArmageddonKnight-PTDN-DE-SR-1E.jpg",
+          "9b05c781-b975-4909-88cd-370014bbc55d": "https://ms.yugipedia.com//d/d2/GeminiLancer-PTDN-DE-C-1E.jpg",
+          "67f44a5a-d989-432b-820f-729f4db3c8f3": "https://ms.yugipedia.com//3/3d/BlueThunderT45-PTDN-DE-C-1E.jpg",
+          "c77a3640-3b4b-41bf-bc1b-bab18d165138": "https://ms.yugipedia.com//0/02/ElementalHEROStormNeos-PTDN-DE-SR-1E.jpg",
+          "790aa508-93bf-4ba1-a697-54cc953ea936": "https://ms.yugipedia.com//d/d7/SuperPolymerization-PTDN-DE-R-1E.jpg",
+          "4dad5dfe-aa18-433f-87bc-54cb934aa905": "https://ms.yugipedia.com//4/42/CyberneticZone-PTDN-DE-C-1E.jpg",
+          "424070eb-4ee0-4a10-93a2-ed78fc58174f": "https://ms.yugipedia.com//d/da/UnleashYourPower-PTDN-DE-C-1E.jpg",
+          "689d1a59-c5ac-4cbf-95ed-7deeb08786ac": "https://ms.yugipedia.com//3/34/EscapefromtheDarkDimension-PTDN-DE-SR-1E.jpg",
+          "e914c0b1-887c-43c6-8340-5cc48d18791c": "https://ms.yugipedia.com//9/92/MetaboGlobster-PTDN-DE-R-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21107000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "PTDN-EN",
+      "image": "https://ms.yugipedia.com//0/07/PTDN-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "3da25265-eaa2-42d0-ad00-f27542c680c7": "https://ms.yugipedia.com//e/e6/CyberOuroboros-PTDN-EN-C-UE.png",
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//e/ea/VolcanicCounter-PTDN-EN-SR-UE.png",
+          "11074b33-354b-422d-b60e-c31066c34da0": "https://ms.yugipedia.com//c/c9/DestinyHERODunker-PTDN-EN-C-UE.png",
+          "cfa19e59-ed96-4dae-9c2a-9c9db6589d7f": "https://ms.yugipedia.com//f/fd/DarkArmedDragon-PTDN-EN-ScR-UE.jpg",
+          "d6fa2cc8-ce04-4328-ae9e-edcd784fc540": "https://ms.yugipedia.com//5/50/ArmageddonKnight-PTDN-EN-SR-UE.jpg",
+          "01c01dc9-2707-429b-be9b-92c0b4efe58b": "https://ms.yugipedia.com//0/08/GeminiLancer-PTDN-EN-C-UE.png",
+          "67f44a5a-d989-432b-820f-729f4db3c8f3": "https://ms.yugipedia.com//d/d7/BlueThunderT45-PTDN-EN-C-UE.png",
+          "90d0e3b2-c41b-4f78-ad7b-cfa8ac196b58": "https://ms.yugipedia.com//d/d1/ElementalHEROStormNeos-PTDN-EN-SR-UE.jpg",
+          "89ea4445-cea5-4a92-b18c-e2fef542b078": "https://ms.yugipedia.com//3/32/SuperPolymerization-PTDN-EN-R-UE.png",
+          "685fe83c-2bfa-423f-9787-62b4e427ab56": "https://ms.yugipedia.com//0/0a/CyberneticZone-PTDN-EN-C-UE.jpg",
+          "5350d127-acea-4dd2-a712-292bba852c20": "https://ms.yugipedia.com//6/65/UnleashYourPower-PTDN-EN-C-UE.png",
+          "e95f6b9f-20fa-4e02-a293-e8ef520f55a6": "https://ms.yugipedia.com//5/53/EscapefromtheDarkDimension-PTDN-EN-SR-UE.png",
+          "9a4cdf44-5890-410b-8077-2bd5f7054b5a": "https://ms.yugipedia.com//2/24/MetaboGlobster-PTDN-EN-R-UE.png"
+        },
+        "1st": {
+          "3da25265-eaa2-42d0-ad00-f27542c680c7": "https://ms.yugipedia.com//d/db/CyberOuroboros-PTDN-EN-C-1E.jpg",
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//c/cb/VolcanicCounter-PTDN-EN-SR-1E.png",
+          "cfa19e59-ed96-4dae-9c2a-9c9db6589d7f": "https://ms.yugipedia.com//5/57/DarkArmedDragon-PTDN-EN-ScR-1E.png",
+          "d6fa2cc8-ce04-4328-ae9e-edcd784fc540": "https://ms.yugipedia.com//8/82/ArmageddonKnight-PTDN-EN-SR-1E.png",
+          "01c01dc9-2707-429b-be9b-92c0b4efe58b": "https://ms.yugipedia.com//7/73/GeminiLancer-PTDN-EN-C-1E.png",
+          "67f44a5a-d989-432b-820f-729f4db3c8f3": "https://ms.yugipedia.com//2/26/BlueThunderT45-PTDN-EN-C-1E.png",
+          "89ea4445-cea5-4a92-b18c-e2fef542b078": "https://ms.yugipedia.com//4/41/SuperPolymerization-PTDN-EN-R-1E.png",
+          "685fe83c-2bfa-423f-9787-62b4e427ab56": "https://ms.yugipedia.com//1/1d/CyberneticZone-PTDN-EN-C-1E.png",
+          "5350d127-acea-4dd2-a712-292bba852c20": "https://ms.yugipedia.com//d/d4/UnleashYourPower-PTDN-EN-C-1E.png",
+          "e95f6b9f-20fa-4e02-a293-e8ef520f55a6": "https://ms.yugipedia.com//e/e9/EscapefromtheDarkDimension-PTDN-EN-SR-1E.png",
+          "9a4cdf44-5890-410b-8077-2bd5f7054b5a": "https://ms.yugipedia.com//2/2d/MetaboGlobster-PTDN-EN-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11107000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "PTDN-SP",
+      "date": "2008-01-26",
+      "image": "https://ms.yugipedia.com//2/2b/PTDN-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "401d6c06-2564-4b15-a150-8bf908b8b84e": "https://ms.yugipedia.com//4/40/CyberOuroboros-PTDN-SP-C-1E.png",
+          "ce82259f-ebfe-4c08-b342-6839328945f1": "https://ms.yugipedia.com//a/ac/VolcanicCounter-PTDN-SP-SR-1E.png",
+          "abdc23ca-9bb1-4d3e-b0b0-749c113f670d": "https://ms.yugipedia.com//0/04/DarkArmedDragon-PTDN-SP-ScR-1E.jpg",
+          "d6fa2cc8-ce04-4328-ae9e-edcd784fc540": "https://ms.yugipedia.com//e/e2/ArmageddonKnight-PTDN-SP-SR-1E.png",
+          "3aab513b-1ad0-48a6-876f-817ec3c23016": "https://ms.yugipedia.com//e/e1/SuperPolymerization-PTDN-SP-R-1E.png",
+          "516a78eb-5207-4afa-9b2e-6ce079926f3d": "https://ms.yugipedia.com//b/b5/CyberneticZone-PTDN-SP-C-1E.png",
+          "e8b2fa68-458d-46cc-a477-e00fa4391765": "https://ms.yugipedia.com//e/e7/EscapefromtheDarkDimension-PTDN-SP-SR-1E.jpg",
+          "146a543e-12a8-4480-a932-a779d5b42362": "https://ms.yugipedia.com//d/d6/MetaboGlobster-PTDN-SP-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51106000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/68/PTDN-BoosterKR.png",
+      "cards": [
+        {
+          "id": "238680dc-3e4b-4c10-9e17-7f9da63f3be3",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ce82259f-ebfe-4c08-b342-6839328945f1",
+          "card": "e6398581-0d81-4a8d-9ee3-991f4292eefe",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "665ac3e3-e38f-49f4-adde-dfb3c6f6a565",
+          "card": "88db4b8d-7b11-4076-a38f-74dbbfc48a3d",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "02221246-9694-4ae7-8345-7d70a565a796",
+          "card": "b3427d48-d6e8-4081-afe2-ab6353d70e9e",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "88a37472-3603-4690-a6d7-2382d02b69a1",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "7201cf61-301e-4a38-abb4-91f01c73ff7e",
+          "card": "94e68af2-d98a-4774-a593-cf65d60cb744",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "0547934a-7032-41db-b75d-803556c095a0",
+          "card": "c5efe75f-8a34-4124-beae-3ab63ef80db8",
+          "suffix": "038",
+          "rarity": "rare"
+        },
+        {
+          "id": "56e29092-1558-488b-9b38-271924bdced5",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a2ae2b12-84e5-4444-b10a-45af05bbc661",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "bfa4f6cc-a421-4370-a089-9763fc4a9cd8",
+          "card": "ed8e74ca-1c43-4e82-9213-cc3cdca94320",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "6826d922-3196-4b39-ab76-b9f7a56f2020",
+          "card": "59555a65-f37b-48ad-9b51-9ca8bac8f181",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "14e7a14d-c873-4f00-9851-2f11b696305a",
+          "card": "7e68b1d0-f83b-4897-bcbb-f37d18756cae",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "11992a86-1592-4170-bd19-c5f1696d350d",
+          "card": "5dae6c7a-5a4e-48a7-bf0e-c456a63003c7",
+          "suffix": "072",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/cf/PTDN-BoosterJP.png",
+      "cards": [
+        {
+          "id": "9e4cfb3a-5362-4ccc-b2e1-68a280648045",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ce82259f-ebfe-4c08-b342-6839328945f1",
+          "card": "e6398581-0d81-4a8d-9ee3-991f4292eefe",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "89e556eb-97bc-4ad5-9681-4dce5a1d568f",
+          "card": "88db4b8d-7b11-4076-a38f-74dbbfc48a3d",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "7001cdbb-5afa-4e5d-82b0-e938366b51f2",
+          "card": "b3427d48-d6e8-4081-afe2-ab6353d70e9e",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "88a37472-3603-4690-a6d7-2382d02b69a1",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "rare"
+        },
+        {
+          "id": "60358e2b-1f02-466e-982f-d5acec7f2a24",
+          "card": "94e68af2-d98a-4774-a593-cf65d60cb744",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "0547934a-7032-41db-b75d-803556c095a0",
+          "card": "c5efe75f-8a34-4124-beae-3ab63ef80db8",
+          "suffix": "038",
+          "rarity": "rare"
+        },
+        {
+          "id": "7e5989d6-9256-4ba8-92d0-cde808a204d3",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1d7a8977-d88a-4e94-a095-47c8f7d1c96f",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c238277d-9e76-4af6-a3fa-080a08ca5f5f",
+          "card": "ed8e74ca-1c43-4e82-9213-cc3cdca94320",
+          "suffix": "046",
+          "rarity": "super"
+        },
+        {
+          "id": "c8618eae-0701-4ec6-b8df-6ab3107b62c2",
+          "card": "59555a65-f37b-48ad-9b51-9ca8bac8f181",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "5a4faed1-426a-4661-883c-cf8a03959115",
+          "card": "7e68b1d0-f83b-4897-bcbb-f37d18756cae",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "3ab6e048-d473-40c2-8763-249af809a471",
+          "card": "5dae6c7a-5a4e-48a7-bf0e-c456a63003c7",
+          "suffix": "072",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/5b/PTDN-BoosterFR.png",
+      "cards": [
+        {
+          "id": "9ad6f2b4-6eaa-421d-882c-88662f2bbc9f",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ce82259f-ebfe-4c08-b342-6839328945f1",
+          "card": "e6398581-0d81-4a8d-9ee3-991f4292eefe",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "46c12e9c-7ea1-4da9-909a-fcb7f5235b89",
+          "card": "88db4b8d-7b11-4076-a38f-74dbbfc48a3d",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "9b65b1e0-e2d1-4156-a56f-52389080e658",
+          "card": "b3427d48-d6e8-4081-afe2-ab6353d70e9e",
+          "suffix": "019",
+          "rarity": "secret"
+        },
+        {
+          "id": "d6fa2cc8-ce04-4328-ae9e-edcd784fc540",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "e8dd914f-34b3-4b13-b409-22f79c33da17",
+          "card": "94e68af2-d98a-4774-a593-cf65d60cb744",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "67f44a5a-d989-432b-820f-729f4db3c8f3",
+          "card": "c5efe75f-8a34-4124-beae-3ab63ef80db8",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "a345d761-e36a-4d66-9ace-a995cda53c48",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "dff63f43-9c7f-49b3-a9fd-e5e67c00c966",
+          "card": "ed8e74ca-1c43-4e82-9213-cc3cdca94320",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "f6fc5634-8b28-4b02-a2ff-42dab6c6442a",
+          "card": "59555a65-f37b-48ad-9b51-9ca8bac8f181",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "627c3df4-417f-420b-a182-5b2d0f9286b4",
+          "card": "7e68b1d0-f83b-4897-bcbb-f37d18756cae",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "2ce22c6d-1175-458d-b8cc-f06ebbd977f6",
+          "card": "5dae6c7a-5a4e-48a7-bf0e-c456a63003c7",
+          "suffix": "072",
+          "rarity": "super"
+        },
+        {
+          "id": "214fa5fe-b12f-40d9-9ad8-adaf5d7063c9",
+          "card": "56546597-d991-4262-b995-f628fa407454",
+          "suffix": "085",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/27/PTDN-BoosterIT.png",
+      "cards": [
+        {
+          "id": "1b1ac8fd-ec37-4c09-a1ce-e948373fdf72",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ce82259f-ebfe-4c08-b342-6839328945f1",
+          "card": "e6398581-0d81-4a8d-9ee3-991f4292eefe",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "ce3da110-7b4e-408e-b10e-b7f54c0460bb",
+          "card": "88db4b8d-7b11-4076-a38f-74dbbfc48a3d",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "ce9cd68a-c729-4038-a1bc-0e11407a287d",
+          "card": "b3427d48-d6e8-4081-afe2-ab6353d70e9e",
+          "suffix": "019",
+          "rarity": "secret"
+        },
+        {
+          "id": "d6fa2cc8-ce04-4328-ae9e-edcd784fc540",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "e8151db9-578a-475a-9026-2060104e6946",
+          "card": "94e68af2-d98a-4774-a593-cf65d60cb744",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "67f44a5a-d989-432b-820f-729f4db3c8f3",
+          "card": "c5efe75f-8a34-4124-beae-3ab63ef80db8",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "6ed57dbc-5aa2-4baf-8f64-f382c37b64b6",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "8c9d0519-a9cf-441d-aa3b-3c3f53a215f2",
+          "card": "ed8e74ca-1c43-4e82-9213-cc3cdca94320",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "83e099f7-5da6-4584-87dd-711cb7542ab9",
+          "card": "59555a65-f37b-48ad-9b51-9ca8bac8f181",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "0446ee15-71bc-4de1-bc24-7102fec3427b",
+          "card": "7e68b1d0-f83b-4897-bcbb-f37d18756cae",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "7839262e-cba9-42ea-88f3-5dba097f2851",
+          "card": "5dae6c7a-5a4e-48a7-bf0e-c456a63003c7",
+          "suffix": "072",
+          "rarity": "super"
+        },
+        {
+          "id": "8ac18c58-82ef-48cd-8413-ed288667fffe",
+          "card": "56546597-d991-4262-b995-f628fa407454",
+          "suffix": "085",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4e/PTDN-BoosterDE.png",
+      "cards": [
+        {
+          "id": "c57e1032-7ec8-4c75-adeb-cffcbc2ab99e",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ce82259f-ebfe-4c08-b342-6839328945f1",
+          "card": "e6398581-0d81-4a8d-9ee3-991f4292eefe",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "a29391ef-956b-489d-8a74-77260303768c",
+          "card": "88db4b8d-7b11-4076-a38f-74dbbfc48a3d",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "5a45bf4d-026c-4527-aade-b5c199cffdf9",
+          "card": "b3427d48-d6e8-4081-afe2-ab6353d70e9e",
+          "suffix": "019",
+          "rarity": "secret"
+        },
+        {
+          "id": "d6fa2cc8-ce04-4328-ae9e-edcd784fc540",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "9b05c781-b975-4909-88cd-370014bbc55d",
+          "card": "94e68af2-d98a-4774-a593-cf65d60cb744",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "67f44a5a-d989-432b-820f-729f4db3c8f3",
+          "card": "c5efe75f-8a34-4124-beae-3ab63ef80db8",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "c77a3640-3b4b-41bf-bc1b-bab18d165138",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "790aa508-93bf-4ba1-a697-54cc953ea936",
+          "card": "ed8e74ca-1c43-4e82-9213-cc3cdca94320",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "4dad5dfe-aa18-433f-87bc-54cb934aa905",
+          "card": "59555a65-f37b-48ad-9b51-9ca8bac8f181",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "424070eb-4ee0-4a10-93a2-ed78fc58174f",
+          "card": "7e68b1d0-f83b-4897-bcbb-f37d18756cae",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "689d1a59-c5ac-4cbf-95ed-7deeb08786ac",
+          "card": "5dae6c7a-5a4e-48a7-bf0e-c456a63003c7",
+          "suffix": "072",
+          "rarity": "super"
+        },
+        {
+          "id": "e914c0b1-887c-43c6-8340-5cc48d18791c",
+          "card": "56546597-d991-4262-b995-f628fa407454",
+          "suffix": "085",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/07/PTDN-BoosterEN.png",
+      "cards": [
+        {
+          "id": "3da25265-eaa2-42d0-ad00-f27542c680c7",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ce82259f-ebfe-4c08-b342-6839328945f1",
+          "card": "e6398581-0d81-4a8d-9ee3-991f4292eefe",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "11074b33-354b-422d-b60e-c31066c34da0",
+          "card": "88db4b8d-7b11-4076-a38f-74dbbfc48a3d",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "cfa19e59-ed96-4dae-9c2a-9c9db6589d7f",
+          "card": "b3427d48-d6e8-4081-afe2-ab6353d70e9e",
+          "suffix": "019",
+          "rarity": "secret"
+        },
+        {
+          "id": "d6fa2cc8-ce04-4328-ae9e-edcd784fc540",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "01c01dc9-2707-429b-be9b-92c0b4efe58b",
+          "card": "94e68af2-d98a-4774-a593-cf65d60cb744",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "67f44a5a-d989-432b-820f-729f4db3c8f3",
+          "card": "c5efe75f-8a34-4124-beae-3ab63ef80db8",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "90d0e3b2-c41b-4f78-ad7b-cfa8ac196b58",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "89ea4445-cea5-4a92-b18c-e2fef542b078",
+          "card": "ed8e74ca-1c43-4e82-9213-cc3cdca94320",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "685fe83c-2bfa-423f-9787-62b4e427ab56",
+          "card": "59555a65-f37b-48ad-9b51-9ca8bac8f181",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "5350d127-acea-4dd2-a712-292bba852c20",
+          "card": "7e68b1d0-f83b-4897-bcbb-f37d18756cae",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "e95f6b9f-20fa-4e02-a293-e8ef520f55a6",
+          "card": "5dae6c7a-5a4e-48a7-bf0e-c456a63003c7",
+          "suffix": "072",
+          "rarity": "super"
+        },
+        {
+          "id": "9a4cdf44-5890-410b-8077-2bd5f7054b5a",
+          "card": "56546597-d991-4262-b995-f628fa407454",
+          "suffix": "085",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "40637431-9b38-4212-a0ae-7b045074090d",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/2b/PTDN-BoosterSP.png",
+      "cards": [
+        {
+          "id": "401d6c06-2564-4b15-a150-8bf908b8b84e",
+          "card": "ba66c8f7-a4ce-4b05-9a0d-cf674463c9f9",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "ce82259f-ebfe-4c08-b342-6839328945f1",
+          "card": "e6398581-0d81-4a8d-9ee3-991f4292eefe",
+          "suffix": "012",
+          "rarity": "super"
+        },
+        {
+          "id": "a5e38bc3-836b-4d89-b1b0-9b31021f4d78",
+          "card": "88db4b8d-7b11-4076-a38f-74dbbfc48a3d",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "abdc23ca-9bb1-4d3e-b0b0-749c113f670d",
+          "card": "b3427d48-d6e8-4081-afe2-ab6353d70e9e",
+          "suffix": "019",
+          "rarity": "secret"
+        },
+        {
+          "id": "d6fa2cc8-ce04-4328-ae9e-edcd784fc540",
+          "card": "5ae3f88a-3ef0-4667-a29b-af94cc20ca35",
+          "suffix": "021",
+          "rarity": "super"
+        },
+        {
+          "id": "4f8b8d2d-933d-487c-8020-1b994a0f4793",
+          "card": "94e68af2-d98a-4774-a593-cf65d60cb744",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "67f44a5a-d989-432b-820f-729f4db3c8f3",
+          "card": "c5efe75f-8a34-4124-beae-3ab63ef80db8",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "1cf8e6b0-36e8-4e96-bcc8-3a7de0aa6924",
+          "card": "916ba3ca-f8ba-4a12-a54e-ce0205cc83db",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "3aab513b-1ad0-48a6-876f-817ec3c23016",
+          "card": "ed8e74ca-1c43-4e82-9213-cc3cdca94320",
+          "suffix": "046",
+          "rarity": "rare"
+        },
+        {
+          "id": "516a78eb-5207-4afa-9b2e-6ce079926f3d",
+          "card": "59555a65-f37b-48ad-9b51-9ca8bac8f181",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "bae148ba-87d5-4606-8c3b-929f3269e5f1",
+          "card": "7e68b1d0-f83b-4897-bcbb-f37d18756cae",
+          "suffix": "056",
+          "rarity": "common"
+        },
+        {
+          "id": "e8b2fa68-458d-46cc-a477-e00fa4391765",
+          "card": "5dae6c7a-5a4e-48a7-bf0e-c456a63003c7",
+          "suffix": "072",
+          "rarity": "super"
+        },
+        {
+          "id": "146a543e-12a8-4480-a932-a779d5b42362",
+          "card": "56546597-d991-4262-b995-f628fa407454",
+          "suffix": "085",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Phantom Darkness"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Phantom Darkness",
+      "id": 508762
+    }
+  }
+}

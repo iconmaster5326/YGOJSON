@@ -1,0 +1,975 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "2ef551bc-1b3e-44a6-832a-1df3acbe0827",
+  "name": {
+    "en": "Dark Neostorm",
+    "fr": "N\u00e9otemp\u00eate des T\u00e9n\u00e8bres",
+    "de": "Dark Neostorm",
+    "it": "Neotempesta Oscura",
+    "pt": "Neotempestade Negra",
+    "es": "Neotormenta Oscura",
+    "ja": "\u30c0\u30fc\u30af\u30fb\u30cd\u30aa\u30b9\u30c8\u30fc\u30e0",
+    "ko": "\ub2e4\ud06c \ub124\uc624\uc2a4\ud1b0"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "DANE-DE",
+      "image": "https://ms.yugipedia.com//1/17/DANE-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "9d3b9d6b-8079-4893-b3ab-a1260efc03a9": "https://ms.yugipedia.com//7/72/DangerExcitementMystery-DANE-DE-UR-1E.png",
+          "42f13164-f9af-41ca-bc51-8875c791bc36": "https://ms.yugipedia.com//a/ab/PegasusWing-DANE-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "DANE-PT",
+      "date": "2019-05-02",
+      "image": "https://ms.yugipedia.com//1/15/DANE-BoosterPT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "DANE-KR",
+      "date": "2019-04-17",
+      "image": "https://ms.yugipedia.com//d/d8/DANE-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "0a0d9a4f-4430-40f7-b66c-dce6ec4347bb": "https://ms.yugipedia.com//4/4d/SalamangreatFennec-DANE-KR-C-UE.png",
+          "30bb9906-fdcf-4ede-b46c-ced4c24dcd0b": "https://ms.yugipedia.com//d/d6/DinowrestlerMartialAnga-DANE-KR-C-UE.png",
+          "54041e7d-ca7b-4dc1-8f08-f948c1125932": "https://ms.yugipedia.com//6/6c/PsiReflector-DANE-KR-R-UE.png",
+          "deb3f8b3-fb8f-4de2-9165-795730c4b864": "https://ms.yugipedia.com//6/64/SuperQuantumWhiteLayer-DANE-KR-R-UE.png",
+          "fd679cd4-685d-4c3a-812c-09378694401a": "https://ms.yugipedia.com//a/ac/KnightmareIncarnationIdlee-DANE-KR-SR-UE.png",
+          "c9d95d30-95ea-4c9b-95c2-1a4405502047": "https://ms.yugipedia.com//9/90/DillingerousDragon-DANE-KR-C-UE.png",
+          "ee903014-9218-42ba-a34b-a7cd17cfb3b0": "https://ms.yugipedia.com//6/6d/MayakashiWinter-DANE-KR-R-UE.png",
+          "5014d2bd-cf8c-4c62-888c-44b11a121d71": "https://ms.yugipedia.com//b/b3/DirgeoftheLostDragon-DANE-KR-C-UE.png",
+          "59f33f42-8169-41df-bb38-ee2600a2ab4f": "https://ms.yugipedia.com//b/b1/AltergeistHauntedRock-DANE-KR-C-UE.png",
+          "72a92ca0-3746-4ec9-88d6-cb28378faf4a": "https://ms.yugipedia.com//c/cb/Crackdown-DANE-KR-R-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71117001
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "DANE-IT",
+      "image": "https://ms.yugipedia.com//6/68/DANE-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "dbfa4b97-2e7c-42ae-a4ec-e1b4b85caa08": "https://ms.yugipedia.com//7/7c/SalamangreatFennec-DANE-IT-C-1E.png",
+          "a582f6ab-b3b1-4527-9310-ddb3aa81014e": "https://ms.yugipedia.com//0/05/DinowrestlerMartialAnga-DANE-IT-C-1E.png",
+          "ae689a57-addf-4a58-b7d3-9e20e486b8c7": "https://ms.yugipedia.com//c/cd/PsiReflector-DANE-IT-R-1E.png",
+          "aaa9edff-76ec-41ba-891e-657be90d4cd7": "https://ms.yugipedia.com//2/23/SuperQuantumWhiteLayer-DANE-IT-R-1E.png",
+          "25e4b511-c64f-4483-9c7a-194911d0a104": "https://ms.yugipedia.com//6/60/KnightmareIncarnationIdlee-DANE-IT-ScR-1E.png",
+          "53a538a8-9904-481f-8551-6f5b63e6aab1": "https://ms.yugipedia.com//8/8f/DillingerousDragon-DANE-IT-C-1E.png",
+          "c7076649-1790-4fdf-809a-0ac4c5077901": "https://ms.yugipedia.com//7/71/MayakashiWinter-DANE-IT-SR-1E.png",
+          "e1dda557-c432-4c01-b505-4019741b429e": "https://ms.yugipedia.com//e/e4/DirgeoftheLostDragon-DANE-IT-SR-1E.png",
+          "d9683a0e-1b37-4449-b827-88cbbc450a72": "https://ms.yugipedia.com//3/3c/AltergeistHauntedRock-DANE-IT-C-1E.png",
+          "0b1effaf-b19a-4fe9-be4e-1c09829fa7cb": "https://ms.yugipedia.com//4/4e/Crackdown-DANE-IT-SR-1E.png",
+          "0941bb62-6436-4d16-989e-d1c2692a7a40": "https://ms.yugipedia.com//8/87/DangerExcitementMystery-DANE-IT-UR-1E.png",
+          "d2d7c266-ef2f-43ca-91a9-48fd68abc1e6": "https://ms.yugipedia.com//5/50/PegasusWing-DANE-IT-C-1E.png",
+          "e292f14d-c3c1-4241-b36a-3b9ee1e69303": "https://ms.yugipedia.com//d/df/Speedlift-DANE-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DANE-FR",
+      "image": "https://ms.yugipedia.com//7/76/DANE-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "DANE-JP",
+      "date": "2019-01-12",
+      "image": "https://ms.yugipedia.com//5/51/DANE-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "6c0e72ad-1f68-4aaf-89a5-a7113d3d9bc7": "https://ms.yugipedia.com//b/b9/SalamangreatFennec-DANE-JP-C.png",
+          "b0a6d2cd-7d22-487b-a19b-c175e3602f87": "https://ms.yugipedia.com//2/23/DinowrestlerMartialAnga-DANE-JP-C.png",
+          "91ec8115-eb82-47f8-849a-a62525cd306d": "https://ms.yugipedia.com//8/8b/PsiReflector-DANE-JP-R.png",
+          "7b66dd70-3103-49ba-8fbf-041788f9f958": "https://ms.yugipedia.com//3/30/SuperQuantumWhiteLayer-DANE-JP-R.png",
+          "5903ac7f-46e5-4b3e-aa44-a2f13d1a7cbc": "https://ms.yugipedia.com//6/6f/KnightmareIncarnationIdlee-DANE-JP-SR.png",
+          "b510a01a-094c-4d1c-a117-bc9de47e6098": "https://ms.yugipedia.com//c/c4/KnightmareIncarnationIdlee-DANE-JP-ScR.png",
+          "c5c318e2-df7d-43d1-b399-b09f89a15e52": "https://ms.yugipedia.com//2/2f/KnightmareIncarnationIdlee-DANE-JP-20ScR.png",
+          "aabebd44-f152-40f8-87ed-af01957da94f": "https://ms.yugipedia.com//a/a0/DillingerousDragon-DANE-JP-C.png",
+          "1dea06a9-e162-44fd-a91a-c022fa2f77ce": "https://ms.yugipedia.com//8/8f/MayakashiWinter-DANE-JP-R.png",
+          "e63efb59-2cd3-4847-938d-47eb053608b5": "https://ms.yugipedia.com//d/dc/DirgeoftheLostDragon-DANE-JP-C.png",
+          "bf0c1b1e-e8b1-4b71-a0a1-b41c82c4f750": "https://ms.yugipedia.com//9/98/AltergeistHauntedRock-DANE-JP-C.png",
+          "8c0f11c8-77bc-49c3-86b4-f44186c514eb": "https://ms.yugipedia.com//1/19/Crackdown-DANE-JP-R.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121003
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "DANE-EN",
+      "image": "https://ms.yugipedia.com//d/db/DANE-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "c5b777dd-b037-4d75-be0b-618c2851bbca": "https://ms.yugipedia.com//e/e6/SalamangreatFennec-DANE-EN-C-UE.png",
+          "8f7ae5be-b494-447a-9c16-2d5fb19c1cc7": "https://ms.yugipedia.com//a/a8/DinowrestlerMartialAnga-DANE-EN-C-UE.png",
+          "0b9ac4a5-85be-4eed-925b-5d346ed6557d": "https://ms.yugipedia.com//a/a5/PsiReflector-DANE-EN-R-UE.png",
+          "e70244cd-d112-4074-bd27-9612c0e3b809": "https://ms.yugipedia.com//8/86/SuperQuantumWhiteLayer-DANE-EN-R-UE.png",
+          "4b56e936-4dd6-4292-8cd4-5cda01683907": "https://ms.yugipedia.com//e/eb/KnightmareIncarnationIdlee-DANE-EN-ScR-UE.png",
+          "60afc4e2-073b-4b4a-9553-d51ff3fa4c74": "https://ms.yugipedia.com//a/a7/DillingerousDragon-DANE-EN-C-UE.png",
+          "215eb845-5bf5-4f90-bb42-a2d3621050a6": "https://ms.yugipedia.com//0/0c/MayakashiWinter-DANE-EN-SR-UE.png",
+          "6a7f3ea3-eec8-4475-a05d-a3163aa83b3d": "https://ms.yugipedia.com//6/68/DirgeoftheLostDragon-DANE-EN-SR-UE.png",
+          "e76c9b27-a88b-490a-83dc-0c5f08bc9654": "https://ms.yugipedia.com//c/ce/AltergeistHauntedRock-DANE-EN-C-UE.png",
+          "4b4a19b4-646e-4646-8ed7-7741ff4a6ddf": "https://ms.yugipedia.com//5/5c/Crackdown-DANE-EN-SR-UE.png",
+          "8fd7a331-bc5c-44c1-97a1-3587162ec152": "https://ms.yugipedia.com//a/a4/DangerExcitementMystery-DANE-EN-UR-UE.png",
+          "f9395416-6816-4501-95b3-eb3599b18ddb": "https://ms.yugipedia.com//e/e5/PegasusWing-DANE-EN-C-UE.png",
+          "e292f14d-c3c1-4241-b36a-3b9ee1e69303": "https://ms.yugipedia.com//a/ab/Speedlift-DANE-EN-C-UE.png"
+        },
+        "1st": {
+          "c5b777dd-b037-4d75-be0b-618c2851bbca": "https://ms.yugipedia.com//8/8c/SalamangreatFennec-DANE-EN-C-1E.png",
+          "8f7ae5be-b494-447a-9c16-2d5fb19c1cc7": "https://ms.yugipedia.com//4/4d/DinowrestlerMartialAnga-DANE-EN-C-1E.png",
+          "0b9ac4a5-85be-4eed-925b-5d346ed6557d": "https://ms.yugipedia.com//d/d6/PsiReflector-DANE-EN-R-1E.png",
+          "e70244cd-d112-4074-bd27-9612c0e3b809": "https://ms.yugipedia.com//7/71/SuperQuantumWhiteLayer-DANE-EN-R-1E.png",
+          "4b56e936-4dd6-4292-8cd4-5cda01683907": "https://ms.yugipedia.com//6/68/KnightmareIncarnationIdlee-DANE-EN-ScR-1E.png",
+          "60afc4e2-073b-4b4a-9553-d51ff3fa4c74": "https://ms.yugipedia.com//7/75/DillingerousDragon-DANE-EN-C-1E.png",
+          "215eb845-5bf5-4f90-bb42-a2d3621050a6": "https://ms.yugipedia.com//3/34/MayakashiWinter-DANE-EN-SR-1E.png",
+          "6a7f3ea3-eec8-4475-a05d-a3163aa83b3d": "https://ms.yugipedia.com//1/14/DirgeoftheLostDragon-DANE-EN-SR-1E.png",
+          "e76c9b27-a88b-490a-83dc-0c5f08bc9654": "https://ms.yugipedia.com//4/48/AltergeistHauntedRock-DANE-EN-C-1E.png",
+          "4b4a19b4-646e-4646-8ed7-7741ff4a6ddf": "https://ms.yugipedia.com//3/38/Crackdown-DANE-EN-SR-1E.png",
+          "8fd7a331-bc5c-44c1-97a1-3587162ec152": "https://ms.yugipedia.com//7/74/DangerExcitementMystery-DANE-EN-UR-1E.png",
+          "f9395416-6816-4501-95b3-eb3599b18ddb": "https://ms.yugipedia.com//3/34/PegasusWing-DANE-EN-C-1E.png",
+          "e292f14d-c3c1-4241-b36a-3b9ee1e69303": "https://ms.yugipedia.com//c/c3/Speedlift-DANE-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11118004
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "DANE-SP",
+      "image": "https://ms.yugipedia.com//3/3b/DANE-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "f7023946-12d1-4e45-83c6-c8ef2b78363a": "https://ms.yugipedia.com//1/12/DinowrestlerMartialAnga-DANE-SP-C-1E.png",
+          "eca1be8d-7187-487a-9171-ef4be1dbb7cc": "https://ms.yugipedia.com//0/06/PegasusWing-DANE-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/17/DANE-BoosterDE.png",
+      "cards": [
+        {
+          "id": "a685457a-84dd-45ee-a923-5f4fef52f21e",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "fc82fa49-7f6a-4afc-bf2f-124f3d33761b",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "bcca6e36-95ee-4b61-ab9c-171e3afcf734",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "b5e0a8c7-b332-4922-b688-cb1a72652db7",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "6f263282-ba72-4120-aba0-3a4121a73aee",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "5136ad71-547c-40f3-b147-21d2c52fffee",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "aff1c3ed-f99e-419c-b3b8-cf61c07511e9",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "1d74ebc4-6cfe-41ba-85d2-4e0da6614906",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "super"
+        },
+        {
+          "id": "99fc1e2b-3a96-47bb-9b84-c1623f596671",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "bbf19e2d-6f40-4ba0-9c1a-a769cefe2310",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "super"
+        },
+        {
+          "id": "9d3b9d6b-8079-4893-b3ab-a1260efc03a9",
+          "card": "7f9c7691-1c1b-486b-9bd3-1a712f2f9d2d",
+          "suffix": "083",
+          "rarity": "ultra"
+        },
+        {
+          "id": "42f13164-f9af-41ca-bc51-8875c791bc36",
+          "card": "a99b6b9f-73ab-4d19-a8d1-7742f8441721",
+          "suffix": "090",
+          "rarity": "common"
+        },
+        {
+          "id": "e292f14d-c3c1-4241-b36a-3b9ee1e69303",
+          "card": "c7a2373f-e869-4609-8865-72b79f0fb692",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/15/DANE-BoosterPT.png",
+      "cards": [
+        {
+          "id": "41c10479-19dc-4e74-8c1b-59405f11acea",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "7f22578e-1783-4fa5-90f9-592671397def",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "dafdd835-5da3-412c-91f5-7340e698297b",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "b10ced7d-0cc9-4978-85fe-eefb07f00f93",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "819f279a-fec1-4b7f-95e0-482594ce927e",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "7e27d073-75c3-4f2a-99a6-5e0f85445272",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "1c84ab58-0969-4fb2-a798-e7e36415b658",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "734af3f9-700c-4e0d-964e-8e64db804478",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "super"
+        },
+        {
+          "id": "5d0de464-ee42-4910-92b3-841275b9536a",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "2d775175-579d-4429-b882-1aaca95d570a",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "super"
+        },
+        {
+          "id": "6555f0ca-f249-4007-b957-6d1d8458ca5d",
+          "card": "7f9c7691-1c1b-486b-9bd3-1a712f2f9d2d",
+          "suffix": "083",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4ff84cf2-3ef7-4806-aaee-c5e793aae0e5",
+          "card": "a99b6b9f-73ab-4d19-a8d1-7742f8441721",
+          "suffix": "090",
+          "rarity": "common"
+        },
+        {
+          "id": "e292f14d-c3c1-4241-b36a-3b9ee1e69303",
+          "card": "c7a2373f-e869-4609-8865-72b79f0fb692",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d8/DANE-BoosterKR.png",
+      "cards": [
+        {
+          "id": "0a0d9a4f-4430-40f7-b66c-dce6ec4347bb",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "30bb9906-fdcf-4ede-b46c-ced4c24dcd0b",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "54041e7d-ca7b-4dc1-8f08-f948c1125932",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "deb3f8b3-fb8f-4de2-9165-795730c4b864",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "fd679cd4-685d-4c3a-812c-09378694401a",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "ee3adefb-cc05-446c-bd15-03ca5155bfb6",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "c9d95d30-95ea-4c9b-95c2-1a4405502047",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "ee903014-9218-42ba-a34b-a7cd17cfb3b0",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "rare"
+        },
+        {
+          "id": "5014d2bd-cf8c-4c62-888c-44b11a121d71",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "59f33f42-8169-41df-bb38-ee2600a2ab4f",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "72a92ca0-3746-4ec9-88d6-cb28378faf4a",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/68/DANE-BoosterIT.png",
+      "cards": [
+        {
+          "id": "dbfa4b97-2e7c-42ae-a4ec-e1b4b85caa08",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "a582f6ab-b3b1-4527-9310-ddb3aa81014e",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "ae689a57-addf-4a58-b7d3-9e20e486b8c7",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "aaa9edff-76ec-41ba-891e-657be90d4cd7",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "25e4b511-c64f-4483-9c7a-194911d0a104",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "53a538a8-9904-481f-8551-6f5b63e6aab1",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "c7076649-1790-4fdf-809a-0ac4c5077901",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "e1dda557-c432-4c01-b505-4019741b429e",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "super"
+        },
+        {
+          "id": "d9683a0e-1b37-4449-b827-88cbbc450a72",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "0b1effaf-b19a-4fe9-be4e-1c09829fa7cb",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "super"
+        },
+        {
+          "id": "0941bb62-6436-4d16-989e-d1c2692a7a40",
+          "card": "7f9c7691-1c1b-486b-9bd3-1a712f2f9d2d",
+          "suffix": "083",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d2d7c266-ef2f-43ca-91a9-48fd68abc1e6",
+          "card": "a99b6b9f-73ab-4d19-a8d1-7742f8441721",
+          "suffix": "090",
+          "rarity": "common"
+        },
+        {
+          "id": "e292f14d-c3c1-4241-b36a-3b9ee1e69303",
+          "card": "c7a2373f-e869-4609-8865-72b79f0fb692",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/76/DANE-BoosterFR.png",
+      "cards": [
+        {
+          "id": "ded068ad-2bb6-4366-a6b3-a9e3e8d94d77",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "8f2818f9-bbb0-4b68-be25-890208328b63",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "893f2d54-1192-463a-8b9a-b3d0be033f6d",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "c592e977-d645-4d3d-9839-3933ac2b9df6",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "9b83b352-e2aa-4f50-a834-66e1a5900ddb",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "0948ebe4-0015-457c-ad9c-e353e8ed88b6",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "3b092ba3-87e0-40d4-9967-3f85eb5c0541",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "8f3c7fd0-a19f-4015-8d1c-101a4930b4ef",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "super"
+        },
+        {
+          "id": "b354cfcd-2dd5-4ec2-9fb9-6ddbdc804ec0",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "a3099684-4845-4c19-a7fd-6c3a037a90c2",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "super"
+        },
+        {
+          "id": "63439f52-649e-4f84-a097-b7d281d2b50f",
+          "card": "7f9c7691-1c1b-486b-9bd3-1a712f2f9d2d",
+          "suffix": "083",
+          "rarity": "ultra"
+        },
+        {
+          "id": "bf7edf40-6060-42cd-9552-d91294c54496",
+          "card": "a99b6b9f-73ab-4d19-a8d1-7742f8441721",
+          "suffix": "090",
+          "rarity": "common"
+        },
+        {
+          "id": "e292f14d-c3c1-4241-b36a-3b9ee1e69303",
+          "card": "c7a2373f-e869-4609-8865-72b79f0fb692",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/51/DANE-BoosterJP.png",
+      "cards": [
+        {
+          "id": "6c0e72ad-1f68-4aaf-89a5-a7113d3d9bc7",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "b0a6d2cd-7d22-487b-a19b-c175e3602f87",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "91ec8115-eb82-47f8-849a-a62525cd306d",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "7b66dd70-3103-49ba-8fbf-041788f9f958",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "5903ac7f-46e5-4b3e-aa44-a2f13d1a7cbc",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "b510a01a-094c-4d1c-a117-bc9de47e6098",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "c5c318e2-df7d-43d1-b399-b09f89a15e52",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "20thsecret"
+        },
+        {
+          "id": "aabebd44-f152-40f8-87ed-af01957da94f",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "1dea06a9-e162-44fd-a91a-c022fa2f77ce",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "rare"
+        },
+        {
+          "id": "e63efb59-2cd3-4847-938d-47eb053608b5",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "common"
+        },
+        {
+          "id": "bf0c1b1e-e8b1-4b71-a0a1-b41c82c4f750",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "8c0f11c8-77bc-49c3-86b4-f44186c514eb",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/db/DANE-BoosterEN.png",
+      "cards": [
+        {
+          "id": "c5b777dd-b037-4d75-be0b-618c2851bbca",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "8f7ae5be-b494-447a-9c16-2d5fb19c1cc7",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "0b9ac4a5-85be-4eed-925b-5d346ed6557d",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "e70244cd-d112-4074-bd27-9612c0e3b809",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "4b56e936-4dd6-4292-8cd4-5cda01683907",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "60afc4e2-073b-4b4a-9553-d51ff3fa4c74",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "215eb845-5bf5-4f90-bb42-a2d3621050a6",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "6a7f3ea3-eec8-4475-a05d-a3163aa83b3d",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "super"
+        },
+        {
+          "id": "e76c9b27-a88b-490a-83dc-0c5f08bc9654",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "4b4a19b4-646e-4646-8ed7-7741ff4a6ddf",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "super"
+        },
+        {
+          "id": "8fd7a331-bc5c-44c1-97a1-3587162ec152",
+          "card": "7f9c7691-1c1b-486b-9bd3-1a712f2f9d2d",
+          "suffix": "083",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f9395416-6816-4501-95b3-eb3599b18ddb",
+          "card": "a99b6b9f-73ab-4d19-a8d1-7742f8441721",
+          "suffix": "090",
+          "rarity": "common"
+        },
+        {
+          "id": "e292f14d-c3c1-4241-b36a-3b9ee1e69303",
+          "card": "c7a2373f-e869-4609-8865-72b79f0fb692",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3b/DANE-BoosterSP.png",
+      "cards": [
+        {
+          "id": "abce2bc0-181e-46bd-b524-42adc5752116",
+          "card": "2ddc6801-45f5-487f-90c4-4222d90df123",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f7023946-12d1-4e45-83c6-c8ef2b78363a",
+          "card": "3f08b6a5-2e5b-490c-914a-4f38e57baf06",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "1c1fab16-9cb4-47ba-8d22-a544fcb46308",
+          "card": "f307cd4e-a6b9-422f-897f-1f6ac2fc6116",
+          "suffix": "010",
+          "rarity": "rare"
+        },
+        {
+          "id": "2c8acd0c-8cc9-42b6-a89d-d500038407d4",
+          "card": "a70473fb-a513-486d-96d4-15f0c8a44bac",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "cde630db-3dbb-4df3-a6d2-efdac79619c0",
+          "card": "d9f41afa-7ee2-4d3b-90c8-d71de9f3f2f8",
+          "suffix": "017",
+          "rarity": "secret"
+        },
+        {
+          "id": "5484238a-f11c-4867-ae86-efa50c87e97f",
+          "card": "04a23933-9cf5-4470-954b-6e0c62b76c93",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "b9ee5d29-0ee5-4fd9-bc81-3be5f553a3b9",
+          "card": "04edf505-10a3-4b1b-95c2-22aff2c9c81a",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "b7321fdf-9e80-45ae-a77b-58dc38e59837",
+          "card": "9983d1a0-fdfd-4879-9d97-f405f0671e60",
+          "suffix": "063",
+          "rarity": "super"
+        },
+        {
+          "id": "b8b643f7-cb9a-4567-b1fe-21ea86b27bd9",
+          "card": "7fae97e9-95e2-416a-a50d-274d4261642f",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "4395b001-6a7b-430d-88d6-368f442accd0",
+          "card": "d6eb8957-a7e8-4c69-8b84-1b1450be818b",
+          "suffix": "078",
+          "rarity": "super"
+        },
+        {
+          "id": "d04ff3a7-e8ef-4295-a40f-ce6c145848fc",
+          "card": "7f9c7691-1c1b-486b-9bd3-1a712f2f9d2d",
+          "suffix": "083",
+          "rarity": "ultra"
+        },
+        {
+          "id": "eca1be8d-7187-487a-9171-ef4be1dbb7cc",
+          "card": "a99b6b9f-73ab-4d19-a8d1-7742f8441721",
+          "suffix": "090",
+          "rarity": "common"
+        },
+        {
+          "id": "e292f14d-c3c1-4241-b36a-3b9ee1e69303",
+          "card": "c7a2373f-e869-4609-8865-72b79f0fb692",
+          "suffix": "096",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Dark Neostorm",
+      "id": 574517
+    }
+  }
+}

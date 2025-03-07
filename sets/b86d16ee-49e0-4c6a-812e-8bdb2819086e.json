@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b86d16ee-49e0-4c6a-812e-8bdb2819086e",
+  "name": {
+    "en": "The New Challengers: Super Edition",
+    "de": "The New Challengers: Super Edition"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "NECH-DES",
+      "date": "2014-12-04",
+      "image": "https://ms.yugipedia.com//1/1b/NECH-PromoDE.png",
+      "cardImages": {
+        "limited": {
+          "a11e9dad-c499-44f9-9a4a-e935b87e5fbe": "https://ms.yugipedia.com//e/e8/HeraldoftheArcLight-NECH-DE-SR-LE.png",
+          "255d8e4b-6823-4535-a039-014876fcc4fe": "https://ms.yugipedia.com//5/57/1stMovementSolo-NECH-DE-SR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          22211003
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "NECH-ENS",
+      "image": "https://ms.yugipedia.com//8/86/NECH-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "89a3c2c4-18e3-4192-a22b-146cfbdc350f": "https://ms.yugipedia.com//8/8a/HeraldoftheArcLight-NECH-EN-SR-LE.png",
+          "bcd6ad39-14b6-44a4-90b3-80509d64d8f1": "https://ms.yugipedia.com//2/2d/1stMovementSolo-NECH-EN-SR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          12210004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1b/NECH-PromoDE.png",
+      "cards": [
+        {
+          "id": "a11e9dad-c499-44f9-9a4a-e935b87e5fbe",
+          "card": "9e796b0d-95da-44e6-8bcf-1ed011cb90c0",
+          "suffix": "09",
+          "rarity": "super"
+        },
+        {
+          "id": "255d8e4b-6823-4535-a039-014876fcc4fe",
+          "card": "46007d3b-8941-419f-b34b-e3458e6bf0cd",
+          "suffix": "10",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//8/86/NECH-PromoEN.png",
+      "cards": [
+        {
+          "id": "89a3c2c4-18e3-4192-a22b-146cfbdc350f",
+          "card": "9e796b0d-95da-44e6-8bcf-1ed011cb90c0",
+          "suffix": "09",
+          "rarity": "super"
+        },
+        {
+          "id": "bcd6ad39-14b6-44a4-90b3-80509d64d8f1",
+          "card": "46007d3b-8941-419f-b34b-e3458e6bf0cd",
+          "suffix": "10",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "The New Challengers: Super Edition",
+      "id": 314118
+    }
+  }
+}

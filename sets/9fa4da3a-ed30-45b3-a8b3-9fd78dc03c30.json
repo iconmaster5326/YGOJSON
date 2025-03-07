@@ -1,0 +1,501 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "9fa4da3a-ed30-45b3-a8b3-9fd78dc03c30",
+  "name": {
+    "en": "Duelist Pack: Yusei",
+    "fr": "Pack du Duelliste: Yusei",
+    "de": "Duelist Pack: Yusei",
+    "it": "Duelist Pack: Yusei",
+    "es": "Sobre de Duelista: Yusei",
+    "ja": "\u30c7\u30e5\u30a8\u30ea\u30b9\u30c8\u30d1\u30c3\u30af \uff0d\u904a\u661f\u7de8\uff0d",
+    "ko": "\uff24\uff35\uff25\uff2c\uff29\uff33\uff34 \uff30\uff21\uff23\uff2b \u2014\uc720\uc131 \ud3b8\u2014"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "DP08-EN",
+      "image": "https://ms.yugipedia.com//2/24/DP08-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "e9534c77-16e2-404a-b07d-9d7f01b2b84f": "https://ms.yugipedia.com//9/9f/ConfusionChaff-DP08-EN-C-UE.png"
+        },
+        "1st": {
+          "a209be5a-2032-40ed-8521-5c3fe861982f": "https://ms.yugipedia.com//f/f5/NitroSynchron-DP08-EN-R-1E.jpg",
+          "e9534c77-16e2-404a-b07d-9d7f01b2b84f": "https://ms.yugipedia.com//7/7b/ConfusionChaff-DP08-EN-C-1E.jpg",
+          "a86b7f00-d50b-4462-816e-c50d4c273b77": "https://ms.yugipedia.com//1/18/SynchroStrike-DP08-EN-C-1E.jpg",
+          "90154ba4-f9be-4124-bec6-017222cfd45b": "https://ms.yugipedia.com//8/80/GiveandTake-DP08-EN-SR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          16604000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "DP08-DE",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "900b23b9-8720-454d-acb5-15fbaedb3bc5": "https://ms.yugipedia.com//4/4b/NitroSynchron-DP08-DE-R-1E.jpg",
+          "c49b495f-823a-433a-847e-3ba66059005a": "https://ms.yugipedia.com//0/0e/ConfusionChaff-DP08-DE-C-1E.jpg",
+          "6d8312bd-d340-49c4-a874-142eb51245ae": "https://ms.yugipedia.com//a/ae/SynchroStrike-DP08-DE-C-1E.jpg",
+          "e60344b9-ba29-4609-b655-60ee38c47a7e": "https://ms.yugipedia.com//f/f7/GiveandTake-DP08-DE-SR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          26604000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "DP08-JP",
+      "date": "2008-10-18",
+      "image": "https://ms.yugipedia.com//c/c2/DP08-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "830d043b-1fe3-43fc-94f9-fdb492e69bf4": "https://ms.yugipedia.com//3/34/NitroSynchron-DP08-JP-R.jpg",
+          "5aaa33bc-9f7f-4f42-94d3-5d886ac9094c": "https://ms.yugipedia.com//d/d3/ConfusionChaff-DP08-JP-C.jpg",
+          "47f4855d-ece7-44cc-9c25-b44eb620fad8": "https://ms.yugipedia.com//2/2f/SynchroStrike-DP08-JP-C.jpg",
+          "84086c02-ef14-4c4d-a546-76ef007bee15": "https://ms.yugipedia.com//c/c6/GiveandTake-DP08-JP-SR.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          3309007
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "DP08-SP",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "455b599c-d0f4-4d7c-b610-51202c095e1c": "https://ms.yugipedia.com//4/42/NitroSynchron-DP08-SP-R-1E.png",
+          "d3ced192-7a40-4aad-9dc7-084cb5c8e076": "https://ms.yugipedia.com//b/b8/GiveandTake-DP08-SP-SR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          56604000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "DP08-IT",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "606848ea-ce86-49f7-ae5e-32e8fa7167b2": "https://ms.yugipedia.com//7/73/NitroSynchron-DP08-IT-R-1E.jpg",
+          "deae0375-8a96-420d-aeba-7f812456b726": "https://ms.yugipedia.com//2/2b/ConfusionChaff-DP08-IT-C-1E.png",
+          "6bc52220-d8db-4f99-83c0-e02b49e1823c": "https://ms.yugipedia.com//0/05/SynchroStrike-DP08-IT-C-1E.jpg",
+          "8c134db4-5f6e-4c71-bd75-72f9cc718496": "https://ms.yugipedia.com//5/5d/GiveandTake-DP08-IT-SR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          46605000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DP08-FR",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "70619bbd-5077-49ec-bf33-16bd635b0e13": "https://ms.yugipedia.com//a/a4/NitroSynchron-DP08-FR-R-1E.jpg",
+          "52689dc0-8e46-4924-bfa6-a01a88ce14ca": "https://ms.yugipedia.com//4/4e/ConfusionChaff-DP08-FR-C-1E.jpg",
+          "ce59069d-35d4-472b-9c05-d15d9611f224": "https://ms.yugipedia.com//3/37/SynchroStrike-DP08-FR-C-1E.jpg",
+          "61f20f31-fca0-4c98-b666-075b38ec37c2": "https://ms.yugipedia.com//2/2e/GiveandTake-DP08-FR-SR-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          36604000
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "DP08-KR",
+      "date": "2009-04-23",
+      "image": "https://ms.yugipedia.com//2/21/DP08-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "204dab14-7434-46d2-9cca-cab9b46a8012": "https://ms.yugipedia.com//4/43/NitroSynchron-DP08-KR-R-UE.png",
+          "05ca4098-4103-4d6a-835c-8a68fa0c7159": "https://ms.yugipedia.com//8/84/ConfusionChaff-DP08-KR-C-UE.png",
+          "b6f8ca44-0da2-47da-8dac-33b0be4f0f04": "https://ms.yugipedia.com//9/93/SynchroStrike-DP08-KR-C-UE.png",
+          "c7ca0ef0-20fa-4993-adb2-d9c1049bbbe1": "https://ms.yugipedia.com//2/29/GiveandTake-DP08-KR-SR-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          78804004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/24/DP08-BoosterEN.png",
+      "cards": [
+        {
+          "id": "a209be5a-2032-40ed-8521-5c3fe861982f",
+          "card": "811f8617-6ea1-4748-8a97-4d175b322a64",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "e9534c77-16e2-404a-b07d-9d7f01b2b84f",
+          "card": "eca7776b-bfc4-4c64-8034-a02c3f245036",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a86b7f00-d50b-4462-816e-c50d4c273b77",
+          "card": "20a17247-4b61-470d-a2d8-eb2e8e22e582",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "90154ba4-f9be-4124-bec6-017222cfd45b",
+          "card": "281bca8c-044a-4d34-83ed-6cc5ca091096",
+          "suffix": "029",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Duelist Pack: Yusei"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "900b23b9-8720-454d-acb5-15fbaedb3bc5",
+          "card": "811f8617-6ea1-4748-8a97-4d175b322a64",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "c49b495f-823a-433a-847e-3ba66059005a",
+          "card": "eca7776b-bfc4-4c64-8034-a02c3f245036",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "6d8312bd-d340-49c4-a874-142eb51245ae",
+          "card": "20a17247-4b61-470d-a2d8-eb2e8e22e582",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "e60344b9-ba29-4609-b655-60ee38c47a7e",
+          "card": "281bca8c-044a-4d34-83ed-6cc5ca091096",
+          "suffix": "029",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Duelist Pack: Yusei"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+      "packsPerBox": 15,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c2/DP08-BoosterJP.png",
+      "cards": [
+        {
+          "id": "830d043b-1fe3-43fc-94f9-fdb492e69bf4",
+          "card": "811f8617-6ea1-4748-8a97-4d175b322a64",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "5aaa33bc-9f7f-4f42-94d3-5d886ac9094c",
+          "card": "eca7776b-bfc4-4c64-8034-a02c3f245036",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "47f4855d-ece7-44cc-9c25-b44eb620fad8",
+          "card": "20a17247-4b61-470d-a2d8-eb2e8e22e582",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "84086c02-ef14-4c4d-a546-76ef007bee15",
+          "card": "281bca8c-044a-4d34-83ed-6cc5ca091096",
+          "suffix": "029",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Duelist Pack: Yusei"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "455b599c-d0f4-4d7c-b610-51202c095e1c",
+          "card": "811f8617-6ea1-4748-8a97-4d175b322a64",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "c566be02-2b3c-46b6-82da-c634def44dcf",
+          "card": "eca7776b-bfc4-4c64-8034-a02c3f245036",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "9bb29529-eac0-47de-aad0-4cc1679b939c",
+          "card": "20a17247-4b61-470d-a2d8-eb2e8e22e582",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "d3ced192-7a40-4aad-9dc7-084cb5c8e076",
+          "card": "281bca8c-044a-4d34-83ed-6cc5ca091096",
+          "suffix": "029",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Duelist Pack: Yusei"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "606848ea-ce86-49f7-ae5e-32e8fa7167b2",
+          "card": "811f8617-6ea1-4748-8a97-4d175b322a64",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "deae0375-8a96-420d-aeba-7f812456b726",
+          "card": "eca7776b-bfc4-4c64-8034-a02c3f245036",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "6bc52220-d8db-4f99-83c0-e02b49e1823c",
+          "card": "20a17247-4b61-470d-a2d8-eb2e8e22e582",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "8c134db4-5f6e-4c71-bd75-72f9cc718496",
+          "card": "281bca8c-044a-4d34-83ed-6cc5ca091096",
+          "suffix": "029",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Duelist Pack: Yusei"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "70619bbd-5077-49ec-bf33-16bd635b0e13",
+          "card": "811f8617-6ea1-4748-8a97-4d175b322a64",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "52689dc0-8e46-4924-bfa6-a01a88ce14ca",
+          "card": "eca7776b-bfc4-4c64-8034-a02c3f245036",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "ce59069d-35d4-472b-9c05-d15d9611f224",
+          "card": "20a17247-4b61-470d-a2d8-eb2e8e22e582",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "61f20f31-fca0-4c98-b666-075b38ec37c2",
+          "card": "281bca8c-044a-4d34-83ed-6cc5ca091096",
+          "suffix": "029",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Duelist Pack: Yusei"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "73af5c41-dac3-42eb-ac3d-7d6fd726703f",
+      "packsPerBox": 15,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/21/DP08-BoosterKR.png",
+      "cards": [
+        {
+          "id": "204dab14-7434-46d2-9cca-cab9b46a8012",
+          "card": "811f8617-6ea1-4748-8a97-4d175b322a64",
+          "suffix": "004",
+          "rarity": "rare"
+        },
+        {
+          "id": "05ca4098-4103-4d6a-835c-8a68fa0c7159",
+          "card": "eca7776b-bfc4-4c64-8034-a02c3f245036",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "b6f8ca44-0da2-47da-8dac-33b0be4f0f04",
+          "card": "20a17247-4b61-470d-a2d8-eb2e8e22e582",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "c7ca0ef0-20fa-4993-adb2-d9c1049bbbe1",
+          "card": "281bca8c-044a-4d34-83ed-6cc5ca091096",
+          "suffix": "029",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Duelist Pack: Yusei"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Duelist Pack: Yusei",
+      "id": 33499
+    }
+  }
+}

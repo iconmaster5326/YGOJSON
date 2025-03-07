@@ -1,0 +1,952 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "748b8fe3-6fd9-45fa-8000-c62d42dc7294",
+  "name": {
+    "en": "Savage Strike",
+    "fr": "L'Attaque Sauvage",
+    "de": "Savage Strike",
+    "it": "Attacco Selvaggio",
+    "pt": "Ataque Selvagem",
+    "es": "Golpe Salvaje",
+    "ja": "\u30b5\u30d9\u30fc\u30b8\u30fb\u30b9\u30c8\u30e9\u30a4\u30af",
+    "ko": "\uc0c8\ube44\uc9c0 \uc2a4\ud2b8\ub77c\uc774\ud06c"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SAST-EN",
+      "image": "https://ms.yugipedia.com//f/f7/SAST-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "7d7d5035-9faf-44df-a5d8-9ee5ea14a28d": "https://ms.yugipedia.com//d/d9/NeoSpaceConnector-SAST-EN-C-UE.png",
+          "78d91663-ce03-4724-8350-eeafeb96a009": "https://ms.yugipedia.com//5/5f/WorldLegacyWorldArk-SAST-EN-R-UE.png",
+          "03422a9a-648e-4d43-87c3-cea595205628": "https://ms.yugipedia.com//c/ce/PsychicTracker-SAST-EN-C-UE.png",
+          "6f32e70d-fe81-4b56-b197-094d91ea54f3": "https://ms.yugipedia.com//f/f8/LappisDragon-SAST-EN-R-UE.png",
+          "29ed4f76-9b0d-4370-9b3b-5152e4883a95": "https://ms.yugipedia.com//f/f9/BorreloadSavageDragon-SAST-EN-UR-UE.png",
+          "5f60a90a-e7a6-4fc3-8820-47c28b62af51": "https://ms.yugipedia.com//c/c6/ShiranuiSwordsaga-SAST-EN-C-UE.png",
+          "d5630fc9-4a13-4b9b-b89f-53bd85f6ec08": "https://ms.yugipedia.com//1/11/ShiranuiSquiresaga-SAST-EN-C-UE.png",
+          "7a0fd62d-c9f1-4c6a-9ee3-7260818e8ded": "https://ms.yugipedia.com//f/f8/TrickstarDivaridis-SAST-EN-UR-UE.png",
+          "63bafa2b-a4db-4ff7-a10a-95ec4d797a42": "https://ms.yugipedia.com//3/39/TrickstarLiveStage-SAST-EN-ScR-UE.png",
+          "e598e7da-9077-4f73-9f03-724e3ceda3a3": "https://ms.yugipedia.com//8/8e/EdgeoftheRing-SAST-EN-C-UE.png",
+          "4e8dcd86-3981-409a-8e5c-6ea155fe09b6": "https://ms.yugipedia.com//e/e6/NEXT-SAST-EN-SR-UE.png",
+          "fc30d367-bd28-492d-9a6c-4a62749d530b": "https://ms.yugipedia.com//f/f4/SuperAntiKaijuWarMachineMechaThunderKing-SAST-EN-ScR-UE.png"
+        },
+        "1st": {
+          "7d7d5035-9faf-44df-a5d8-9ee5ea14a28d": "https://ms.yugipedia.com//f/f2/NeoSpaceConnector-SAST-EN-C-1E.png",
+          "78d91663-ce03-4724-8350-eeafeb96a009": "https://ms.yugipedia.com//6/66/WorldLegacyWorldArk-SAST-EN-R-1E.png",
+          "03422a9a-648e-4d43-87c3-cea595205628": "https://ms.yugipedia.com//d/d7/PsychicTracker-SAST-EN-C-1E.png",
+          "6f32e70d-fe81-4b56-b197-094d91ea54f3": "https://ms.yugipedia.com//5/54/LappisDragon-SAST-EN-R-1E.png",
+          "29ed4f76-9b0d-4370-9b3b-5152e4883a95": "https://ms.yugipedia.com//f/f5/BorreloadSavageDragon-SAST-EN-UR-1E.png",
+          "5f60a90a-e7a6-4fc3-8820-47c28b62af51": "https://ms.yugipedia.com//6/6b/ShiranuiSwordsaga-SAST-EN-C-1E.png",
+          "d5630fc9-4a13-4b9b-b89f-53bd85f6ec08": "https://ms.yugipedia.com//b/b5/ShiranuiSquiresaga-SAST-EN-C-1E.png",
+          "7a0fd62d-c9f1-4c6a-9ee3-7260818e8ded": "https://ms.yugipedia.com//4/4c/TrickstarDivaridis-SAST-EN-UR-1E.png",
+          "63bafa2b-a4db-4ff7-a10a-95ec4d797a42": "https://ms.yugipedia.com//f/ff/TrickstarLiveStage-SAST-EN-ScR-1E.png",
+          "e598e7da-9077-4f73-9f03-724e3ceda3a3": "https://ms.yugipedia.com//8/83/EdgeoftheRing-SAST-EN-C-1E.png",
+          "4e8dcd86-3981-409a-8e5c-6ea155fe09b6": "https://ms.yugipedia.com//f/f6/NEXT-SAST-EN-SR-1E.png",
+          "fc30d367-bd28-492d-9a6c-4a62749d530b": "https://ms.yugipedia.com//4/43/SuperAntiKaijuWarMachineMechaThunderKing-SAST-EN-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11118001
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SAST-DE",
+      "image": "https://ms.yugipedia.com//b/bf/SAST-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "fa40b0c9-da44-4e45-a584-27524c60a89b": "https://ms.yugipedia.com//2/2e/WorldLegacyWorldArk-SAST-DE-R-1E.png",
+          "9b5cf394-f000-47e9-8cdb-4511b7303239": "https://ms.yugipedia.com//1/15/ShiranuiSquiresaga-SAST-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SAST-JP",
+      "date": "2018-10-13",
+      "image": "https://ms.yugipedia.com//d/da/SAST-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "77bcaaab-396e-4a2a-a162-d381e4bc9e5c": "https://ms.yugipedia.com//0/04/NeoSpaceConnector-SAST-JP-C.png",
+          "e639aa15-3d89-44bd-b87e-dbe932c380c8": "https://ms.yugipedia.com//1/1c/WorldLegacyWorldArk-SAST-JP-R.png",
+          "03422a9a-648e-4d43-87c3-cea595205628": "https://ms.yugipedia.com//d/dc/PsychicTracker-SAST-JP-C.png",
+          "7fd816fe-d1e4-453c-8323-12aa7b420ca1": "https://ms.yugipedia.com//0/0e/LappisDragon-SAST-JP-R.png",
+          "c6d10b24-fccf-4dc7-9da7-3691f8574e0f": "https://ms.yugipedia.com//0/0f/BorreloadSavageDragon-SAST-JP-UR.png",
+          "15bfe777-3706-4e7f-a3dc-b3e95fd65ede": "https://ms.yugipedia.com//5/57/BorreloadSavageDragon-SAST-JP-ScR.png",
+          "b19d78a9-45c1-44b5-8e13-113847289855": "https://ms.yugipedia.com//7/74/BorreloadSavageDragon-SAST-JP-UtR.png",
+          "28dd06c5-8e04-475b-b22d-8f5ecd96d276": "https://ms.yugipedia.com//6/6a/BorreloadSavageDragon-SAST-JP-20ScR.png",
+          "e0904a5a-1b2c-498c-97ea-22a33b4cf68f": "https://ms.yugipedia.com//c/cf/BorreloadSavageDragon-SAST-JP-HGR.png",
+          "4c7e470d-00a6-4e5b-a1f7-b1296f463695": "https://ms.yugipedia.com//9/99/ShiranuiSwordsaga-SAST-JP-C.png",
+          "575bd7ef-7fd8-4ff9-b6d7-1869f7cb8e76": "https://ms.yugipedia.com//7/74/ShiranuiSquiresaga-SAST-JP-C.png",
+          "89be3a12-78f2-4dd9-bcb6-761264cfdf01": "https://ms.yugipedia.com//e/eb/TrickstarLiveStage-SAST-JP-C.png",
+          "4f235ba3-2be9-4a66-91aa-249e527fe2c3": "https://ms.yugipedia.com//8/87/EdgeoftheRing-SAST-JP-C.png",
+          "431079cd-e4d1-4245-93e4-d24556c93580": "https://ms.yugipedia.com//a/a5/NEXT-SAST-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SAST-SP",
+      "image": "https://ms.yugipedia.com//e/e9/SAST-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "68411ebd-8880-4ebf-a700-c3f892c75741": "https://ms.yugipedia.com//2/25/NeoSpaceConnector-SAST-SP-C-1E.png",
+          "33a83180-ff5b-46f9-8d1f-82d4874426f3": "https://ms.yugipedia.com//d/db/WorldLegacyWorldArk-SAST-SP-R-1E.png",
+          "03422a9a-648e-4d43-87c3-cea595205628": "https://ms.yugipedia.com//4/4d/PsychicTracker-SAST-SP-C-1E.png",
+          "26c796af-c8bd-49b8-8a3b-3bd3a9268549": "https://ms.yugipedia.com//1/1e/LappisDragon-SAST-SP-R-1E.png",
+          "02311048-4ce7-45a8-97d6-6311cefb2e53": "https://ms.yugipedia.com//e/e3/BorreloadSavageDragon-SAST-SP-UR-1E.png",
+          "b06062a8-56ea-4542-a673-1c9de84cb63b": "https://ms.yugipedia.com//b/ba/TrickstarLiveStage-SAST-SP-ScR-1E.png",
+          "76d347cf-020d-401b-8cf1-8fc30c4460bc": "https://ms.yugipedia.com//2/2e/EdgeoftheRing-SAST-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SAST-IT",
+      "image": "https://ms.yugipedia.com//8/88/SAST-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "f1543cf2-a8a1-41d5-aa53-38950e2c2939": "https://ms.yugipedia.com//5/51/ShiranuiSquiresaga-SAST-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SAST-PT",
+      "date": "2019-01-31",
+      "image": "https://ms.yugipedia.com//7/7b/SAST-BoosterPT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "0f9428b1-ab51-45e8-8937-2688cfc4a11a": "https://ms.yugipedia.com//8/83/ShiranuiSquiresaga-SAST-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SAST-FR",
+      "image": "https://ms.yugipedia.com//7/7c/SAST-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SAST-KR",
+      "date": "2019-01-15",
+      "image": "https://ms.yugipedia.com//e/e0/SAST-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "17a41803-c1c0-47d4-a5a2-5086e6b17597": "https://ms.yugipedia.com//f/f6/NeoSpaceConnector-SAST-KR-C-UE.png",
+          "3ffe4731-492b-4ba4-8912-9d4e9bdad28f": "https://ms.yugipedia.com//1/19/WorldLegacyWorldArk-SAST-KR-R-UE.png",
+          "03422a9a-648e-4d43-87c3-cea595205628": "https://ms.yugipedia.com//d/dd/PsychicTracker-SAST-KR-C-UE.png",
+          "96e1cefe-ba61-49d7-9613-fa4d80202ca0": "https://ms.yugipedia.com//7/79/LappisDragon-SAST-KR-R-UE.png",
+          "2ef08ca7-4d4c-4bdc-83f0-c44cd58f81a1": "https://ms.yugipedia.com//f/f1/BorreloadSavageDragon-SAST-KR-UR-UE.png",
+          "8d3c3786-2928-4d84-a77f-e836adfc7ddf": "https://ms.yugipedia.com//a/a5/ShiranuiSwordsaga-SAST-KR-C-UE.png",
+          "ae2cb178-ffb5-46f0-94c7-3d9a53fc9d53": "https://ms.yugipedia.com//1/1c/ShiranuiSquiresaga-SAST-KR-C-UE.png",
+          "898abf9e-7354-4b7a-8925-8d7a94ee5dad": "https://ms.yugipedia.com//8/86/TrickstarLiveStage-SAST-KR-C-UE.png",
+          "62f99802-bf1b-4d15-9c3d-54a9a9fdd6b0": "https://ms.yugipedia.com//4/45/EdgeoftheRing-SAST-KR-C-UE.png",
+          "6ac384b9-8bd4-47bd-a067-11e42ecaec5b": "https://ms.yugipedia.com//b/bc/NEXT-SAST-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71117000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/f7/SAST-BoosterEN.png",
+      "cards": [
+        {
+          "id": "7d7d5035-9faf-44df-a5d8-9ee5ea14a28d",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "78d91663-ce03-4724-8350-eeafeb96a009",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "6f32e70d-fe81-4b56-b197-094d91ea54f3",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "29ed4f76-9b0d-4370-9b3b-5152e4883a95",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5f60a90a-e7a6-4fc3-8820-47c28b62af51",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "d5630fc9-4a13-4b9b-b89f-53bd85f6ec08",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "7a0fd62d-c9f1-4c6a-9ee3-7260818e8ded",
+          "card": "06c07928-1555-48e6-bd51-607b77af50f9",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "63bafa2b-a4db-4ff7-a10a-95ec4d797a42",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "secret"
+        },
+        {
+          "id": "e598e7da-9077-4f73-9f03-724e3ceda3a3",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "4e8dcd86-3981-409a-8e5c-6ea155fe09b6",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "fc30d367-bd28-492d-9a6c-4a62749d530b",
+          "card": "0396cdbe-2831-4ed6-bb39-c4535c7653e1",
+          "suffix": "081",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/bf/SAST-BoosterDE.png",
+      "cards": [
+        {
+          "id": "b3c606b1-0478-4e6f-a007-bc4f27c01286",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "fa40b0c9-da44-4e45-a584-27524c60a89b",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "1748a0b9-5f4b-4ca8-9808-471c5947ac1b",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "ffa47e7a-56c4-4f45-b73d-8620e71968b0",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7bcc484e-3161-4c13-9221-c21edacceb5d",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "9b5cf394-f000-47e9-8cdb-4511b7303239",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "a560bd12-b01c-4533-afeb-10eb5293918c",
+          "card": "06c07928-1555-48e6-bd51-607b77af50f9",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "812d4425-1a5b-4dd6-a1d9-6ffe69ccf3e0",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "secret"
+        },
+        {
+          "id": "2d380644-5ad8-4196-80a7-e7a7118ac71d",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "139fce1a-f31a-4c91-971b-df64ceae28ab",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "65455dcd-f544-4721-bf7f-70d8fb137b17",
+          "card": "0396cdbe-2831-4ed6-bb39-c4535c7653e1",
+          "suffix": "081",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/da/SAST-BoosterJP.png",
+      "cards": [
+        {
+          "id": "77bcaaab-396e-4a2a-a162-d381e4bc9e5c",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "e639aa15-3d89-44bd-b87e-dbe932c380c8",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "7fd816fe-d1e4-453c-8323-12aa7b420ca1",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "c6d10b24-fccf-4dc7-9da7-3691f8574e0f",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "15bfe777-3706-4e7f-a3dc-b3e95fd65ede",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "b19d78a9-45c1-44b5-8e13-113847289855",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "28dd06c5-8e04-475b-b22d-8f5ecd96d276",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "20thsecret"
+        },
+        {
+          "id": "e0904a5a-1b2c-498c-97ea-22a33b4cf68f",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ghost"
+        },
+        {
+          "id": "4c7e470d-00a6-4e5b-a1f7-b1296f463695",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "575bd7ef-7fd8-4ff9-b6d7-1869f7cb8e76",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "89be3a12-78f2-4dd9-bcb6-761264cfdf01",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "4f235ba3-2be9-4a66-91aa-249e527fe2c3",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "431079cd-e4d1-4245-93e4-d24556c93580",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e9/SAST-BoosterSP.png",
+      "cards": [
+        {
+          "id": "68411ebd-8880-4ebf-a700-c3f892c75741",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "33a83180-ff5b-46f9-8d1f-82d4874426f3",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "26c796af-c8bd-49b8-8a3b-3bd3a9268549",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "02311048-4ce7-45a8-97d6-6311cefb2e53",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cc9549af-5865-4fbb-8b04-2e3a122e8734",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "0d822bbf-b337-4f73-8cbe-baf3a155d388",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "92c67aba-1841-4b2a-a5c6-ef26cf066ff4",
+          "card": "06c07928-1555-48e6-bd51-607b77af50f9",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b06062a8-56ea-4542-a673-1c9de84cb63b",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "secret"
+        },
+        {
+          "id": "76d347cf-020d-401b-8cf1-8fc30c4460bc",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "8e9ddb6d-b364-4e4d-9b7e-e995458c4f55",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "878ad0e6-c9ce-4c3a-b9d2-c1197a88b08f",
+          "card": "0396cdbe-2831-4ed6-bb39-c4535c7653e1",
+          "suffix": "081",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/88/SAST-BoosterIT.png",
+      "cards": [
+        {
+          "id": "10785222-c0a3-46ee-8971-12dd634bd22c",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "9a61bfc1-fbf4-46f8-95c1-429fe48f0f0c",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "27ddf5e5-9887-4c23-adec-74bc9d30be3f",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "f71ab4de-d3bb-4522-9550-f1712b6a4665",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b9a11f7c-3312-41eb-b7d1-bd1f0e3536e8",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "f1543cf2-a8a1-41d5-aa53-38950e2c2939",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "95b7a3db-8a85-4edf-8f7f-d82498a21227",
+          "card": "06c07928-1555-48e6-bd51-607b77af50f9",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "800403ad-c79c-436b-ae26-f3bef6a7239e",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "secret"
+        },
+        {
+          "id": "f43d83c7-9890-4096-b55f-a4101781d3ae",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "5e0e5272-dd33-42b6-afaf-196ae708ecf0",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "8d252c41-58e5-480e-a3ac-ee4341da64e6",
+          "card": "0396cdbe-2831-4ed6-bb39-c4535c7653e1",
+          "suffix": "081",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/7b/SAST-BoosterPT.png",
+      "cards": [
+        {
+          "id": "584d6985-de4a-49b0-af68-bcaa7f0fb845",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "a2d20fdb-cb16-482c-8fe4-53cc74b0bccc",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "d2589b6e-551a-4656-8ddb-8ccbcaaccbd8",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "d03c1c36-f832-418f-87f6-56b18e33a2e6",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "328feec9-4f7f-411b-bcd7-8a47b76b17b8",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "0f9428b1-ab51-45e8-8937-2688cfc4a11a",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "2c2de1c7-fbb9-4467-ad9c-c1e7f01b0a8b",
+          "card": "06c07928-1555-48e6-bd51-607b77af50f9",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "2883f795-c52b-4b6b-ae41-168bbfa36e8b",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "secret"
+        },
+        {
+          "id": "2b552325-a385-493d-9779-7967ee760042",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "553de626-bf78-40c8-a126-7ef045e69318",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "493c067a-0fa1-4ad9-8c72-756cce610435",
+          "card": "0396cdbe-2831-4ed6-bb39-c4535c7653e1",
+          "suffix": "081",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/7c/SAST-BoosterFR.png",
+      "cards": [
+        {
+          "id": "7aa2c46e-b71d-467b-b9f0-a3a25296ae59",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "13b700d5-e2df-480d-9fe9-ad6a856b8623",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "456766f3-ce2a-4cc1-b1eb-685daad92883",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "d4c2f183-9285-4ebc-880c-5df4c397b842",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "51e541d7-81b7-4276-abed-a0835587b38b",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "3184eab9-c8f4-4338-abf1-8a843a7fc239",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "6a2681f6-b41c-4e1b-9eaf-849ca5fc5c82",
+          "card": "06c07928-1555-48e6-bd51-607b77af50f9",
+          "suffix": "049",
+          "rarity": "ultra"
+        },
+        {
+          "id": "302b05ed-20a5-4e9a-8ac7-8fce2c7e6e57",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "secret"
+        },
+        {
+          "id": "4c749a13-b413-41fc-9aca-f616250f7372",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "a6554b59-317f-4544-a505-d08405edcd6e",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "super"
+        },
+        {
+          "id": "c4177740-7040-4cd6-a1fc-ad06aed7a6e5",
+          "card": "0396cdbe-2831-4ed6-bb39-c4535c7653e1",
+          "suffix": "081",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e0/SAST-BoosterKR.png",
+      "cards": [
+        {
+          "id": "17a41803-c1c0-47d4-a5a2-5086e6b17597",
+          "card": "af19f27d-783c-47f1-a5fd-da1c4b959bf3",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "3ffe4731-492b-4ba4-8912-9d4e9bdad28f",
+          "card": "b744570b-542a-436c-a1da-5c4e4875fd92",
+          "suffix": "016",
+          "rarity": "rare"
+        },
+        {
+          "id": "03422a9a-648e-4d43-87c3-cea595205628",
+          "card": "54fac208-039e-455a-8c09-569c0d92351d",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "96e1cefe-ba61-49d7-9613-fa4d80202ca0",
+          "card": "25c8822a-0a62-48c5-8e78-7cf203101340",
+          "suffix": "027",
+          "rarity": "rare"
+        },
+        {
+          "id": "2ef08ca7-4d4c-4bdc-83f0-c44cd58f81a1",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultra"
+        },
+        {
+          "id": "9de25e48-1460-45d9-945c-58c3563e03c0",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "secret"
+        },
+        {
+          "id": "68c90691-a69c-4b84-86b3-9116c8561215",
+          "card": "0ebf68a7-6e26-4392-87df-c0b7025b5d14",
+          "suffix": "037",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "8d3c3786-2928-4d84-a77f-e836adfc7ddf",
+          "card": "4996a491-be3b-4d76-b62a-95a79a908c7c",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "ae2cb178-ffb5-46f0-94c7-3d9a53fc9d53",
+          "card": "0a3a266c-5341-4ba1-a3fd-686da8df93cd",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "898abf9e-7354-4b7a-8925-8d7a94ee5dad",
+          "card": "4cc96f3b-a1e7-4dd9-ad28-d525e8162993",
+          "suffix": "058",
+          "rarity": "common"
+        },
+        {
+          "id": "62f99802-bf1b-4d15-9c3d-54a9a9fdd6b0",
+          "card": "0960dd16-be2a-4201-9527-9ef368ed46db",
+          "suffix": "068",
+          "rarity": "common"
+        },
+        {
+          "id": "6ac384b9-8bd4-47bd-a067-11e42ecaec5b",
+          "card": "747a1176-29af-4bb9-9f6b-301c83e114ea",
+          "suffix": "071",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Savage Strike",
+      "id": 563837
+    }
+  }
+}

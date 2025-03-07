@@ -1,0 +1,616 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "188c6e83-1fc5-4e9d-a21e-d92dc86d656e",
+  "name": {
+    "en": "Pendulum Evolution",
+    "fr": "\u00c9volution des Pendules",
+    "de": "Pendulum Evolution",
+    "it": "Evoluzione Pendulum",
+    "pt": "Evolu\u00e7\u00e3o P\u00eandulo",
+    "es": "Evoluci\u00f3n del P\u00e9ndulo"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "PEVO-DE",
+      "image": "https://ms.yugipedia.com//6/65/PEVO-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21116004
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "PEVO-PT",
+      "date": "2017-06-22",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11116004
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "PEVO-IT",
+      "image": "https://ms.yugipedia.com//9/9f/PEVO-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41116004
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "PEVO-FR",
+      "image": "https://ms.yugipedia.com//4/4c/PEVO-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "f69a1437-2927-480b-b58d-5405def5626d": "https://ms.yugipedia.com//f/f0/ChronographSorcerer-PEVO-FR-UR-1E.png",
+          "98eda95f-9444-4b3b-921b-fbb662e27604": "https://ms.yugipedia.com//f/f4/DoubleIrisMagician-PEVO-FR-UR-1E.png",
+          "c9eb55f2-387b-4c11-834f-4218ff13aa7a": "https://ms.yugipedia.com//2/22/WhiteWingMagician-PEVO-FR-UR-1E.png",
+          "db2f98f6-5ac5-4474-8858-a1c44adf7794": "https://ms.yugipedia.com//f/fb/HarmonizingMagician-PEVO-FR-UR-1E.png",
+          "82f11b92-8a84-4160-93d5-cac53dc80023": "https://ms.yugipedia.com//8/85/TimebreakerMagician-PEVO-FR-SR-1E.png",
+          "5188e4a9-fbee-44d4-80a7-c2d3c346b90e": "https://ms.yugipedia.com//a/a0/TuningMagician-PEVO-FR-SR-1E.png",
+          "9765b2d7-bcd1-44b2-8af9-05c97588a221": "https://ms.yugipedia.com//f/f2/RescueHamster-PEVO-FR-SR-1E.png",
+          "669d75f7-9dee-4195-956b-b60ce627a76d": "https://ms.yugipedia.com//7/7e/OddEyesMeteorburstDragon-PEVO-FR-SR-1E.png",
+          "482814f9-b466-4750-b296-e0b755fc8f55": "https://ms.yugipedia.com//a/a2/SatellarknightZefrathuban-PEVO-FR-SR-1E.png",
+          "c709f287-6731-40b5-a4f2-7b5e88acd858": "https://ms.yugipedia.com//2/2f/RitualBeastTamerZeframpilica-PEVO-FR-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31116004
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "PEVO-EN",
+      "image": "https://ms.yugipedia.com//1/16/PEVO-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "e635fbc6-ec01-4426-b7a2-6a52889b26e0": "https://ms.yugipedia.com//7/7e/ChronographSorcerer-PEVO-EN-UR-1E.png",
+          "1761bd6b-dcf2-4dd8-aea5-f240007b1cde": "https://ms.yugipedia.com//5/5b/DoubleIrisMagician-PEVO-EN-UR-1E.png",
+          "e4bdbe14-33fe-491b-b329-9efd40da3fb7": "https://ms.yugipedia.com//f/f8/WhiteWingMagician-PEVO-EN-UR-1E.png",
+          "cbf7f579-3122-4536-b696-92d6eb9460fb": "https://ms.yugipedia.com//b/b7/HarmonizingMagician-PEVO-EN-UR-1E.png",
+          "4511925a-d28a-4e99-929c-691ae137c780": "https://ms.yugipedia.com//e/eb/TimebreakerMagician-PEVO-EN-SR-1E.png",
+          "622507da-214a-4c52-b2e4-62197fba5f74": "https://ms.yugipedia.com//c/c9/TuningMagician-PEVO-EN-SR-1E.png",
+          "9b658679-f9b3-42b5-b0cc-660064f49d9d": "https://ms.yugipedia.com//8/85/RescueHamster-PEVO-EN-SR-1E.png",
+          "51a43eff-6938-4590-9709-8b23eda48781": "https://ms.yugipedia.com//3/38/OddEyesMeteorburstDragon-PEVO-EN-SR-1E.png",
+          "2215c129-1e10-4d59-8594-f7b42f26b1f9": "https://ms.yugipedia.com//3/39/SatellarknightZefrathuban-PEVO-EN-SR-1E.png",
+          "4303f95f-041c-41b6-aa9b-be52f367fcc0": "https://ms.yugipedia.com//8/80/RitualBeastTamerZeframpilica-PEVO-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11116004
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "PEVO-SP",
+      "image": "https://ms.yugipedia.com//0/0f/PEVO-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "3496706d-3f76-4590-8ff4-8d16dc511281": "https://ms.yugipedia.com//2/26/ChronographSorcerer-PEVO-SP-UR-1E.png",
+          "509e18c9-81e8-4334-aaa6-c8a419b89eda": "https://ms.yugipedia.com//3/3e/DoubleIrisMagician-PEVO-SP-UR-1E.png",
+          "8ad7c007-9b6c-411f-87d0-d9cd43e646bd": "https://ms.yugipedia.com//0/08/WhiteWingMagician-PEVO-SP-UR-1E.png",
+          "ea54dea4-3202-4ece-9931-95c350bd0f8d": "https://ms.yugipedia.com//f/ff/HarmonizingMagician-PEVO-SP-UR-1E.png",
+          "9eb5ae28-b00d-4006-b29f-7ce7220a221f": "https://ms.yugipedia.com//c/c1/RescueHamster-PEVO-SP-SR-1E.png",
+          "c5184de2-e4ad-4f33-83c4-a28635ae76e4": "https://ms.yugipedia.com//9/90/OddEyesMeteorburstDragon-PEVO-SP-SR-1E.png",
+          "fa4fa8a3-2cf0-4e87-9ed2-74318e75f41d": "https://ms.yugipedia.com//d/d0/SatellarknightZefrathuban-PEVO-SP-SR-1E.png",
+          "47791526-d7f8-4699-a1a5-5f957cedac36": "https://ms.yugipedia.com//8/82/RitualBeastTamerZeframpilica-PEVO-SP-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51115004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/65/PEVO-BoosterDE.png",
+      "cards": [
+        {
+          "id": "a7fd8d19-6914-467f-b90a-6d91cb9f8843",
+          "card": "cf8f4b3d-4d9f-4ddd-81c6-69c8a25a0e6e",
+          "suffix": "002",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ecccad24-6274-4d32-8892-a8dca91a889c",
+          "card": "649aee0f-f588-404f-a8b7-dcd531fe82c4",
+          "suffix": "003",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0bf067b7-e72f-430e-8e59-1fe9d23a548d",
+          "card": "546a9730-b171-460a-b2ff-ee3f8bcc5863",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e22f58e3-2714-4b06-93df-79ac61026f1c",
+          "card": "e0017bd2-0799-4a2b-b393-642556c2c055",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8fa4338f-6246-414d-90a7-c86735d8db18",
+          "card": "fd5aab63-7da9-4480-a0b9-66ec47a913d2",
+          "suffix": "019",
+          "rarity": "super"
+        },
+        {
+          "id": "fbe225cd-6365-4568-a2ab-49e7b7bf7299",
+          "card": "21626fdf-7cc9-4125-a241-984e83860df6",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "7f5e3ab4-486f-4372-980d-507f1b62ed5f",
+          "card": "b8ae8a78-b015-4a0c-83a0-abda178e522d",
+          "suffix": "028",
+          "rarity": "super"
+        },
+        {
+          "id": "4aef5194-9241-4589-b852-1bc654caba08",
+          "card": "eb648981-9495-4bd6-8508-a05ca51ed5b3",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "7a941d09-f367-45f9-ac37-fd9f3ce1b1ce",
+          "card": "7440481c-096f-47ed-b34a-8a6ad6768ab9",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "8e73ddfd-2ce4-40e0-992d-bf7c28ae24e8",
+          "card": "c2d1bad9-3336-4845-a7d5-4003d13dbe50",
+          "suffix": "048",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "d1745629-950a-4d51-8a86-fe159af9338f",
+          "card": "cf8f4b3d-4d9f-4ddd-81c6-69c8a25a0e6e",
+          "suffix": "002",
+          "rarity": "ultra"
+        },
+        {
+          "id": "14e82c0f-8492-4cac-8a3c-fd9bd26f9397",
+          "card": "649aee0f-f588-404f-a8b7-dcd531fe82c4",
+          "suffix": "003",
+          "rarity": "ultra"
+        },
+        {
+          "id": "69b43764-5ed9-47db-801b-1362261802bc",
+          "card": "546a9730-b171-460a-b2ff-ee3f8bcc5863",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "fd0b441d-8922-445d-b43d-5e4da013efab",
+          "card": "e0017bd2-0799-4a2b-b393-642556c2c055",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e54283f8-a858-4664-8e76-8d04f8cd0393",
+          "card": "fd5aab63-7da9-4480-a0b9-66ec47a913d2",
+          "suffix": "019",
+          "rarity": "super"
+        },
+        {
+          "id": "b48efd36-5694-4556-8275-0bf9f8c0baeb",
+          "card": "21626fdf-7cc9-4125-a241-984e83860df6",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "86f0aed6-9d19-4604-9869-fa89accb7755",
+          "card": "b8ae8a78-b015-4a0c-83a0-abda178e522d",
+          "suffix": "028",
+          "rarity": "super"
+        },
+        {
+          "id": "813133bb-e436-4409-9d80-0ac3a5d7aa8b",
+          "card": "eb648981-9495-4bd6-8508-a05ca51ed5b3",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "5120539d-889f-48d0-9149-fe28e199a707",
+          "card": "7440481c-096f-47ed-b34a-8a6ad6768ab9",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "88d81f2e-15b4-422f-bf9f-82aa14a18d4a",
+          "card": "c2d1bad9-3336-4845-a7d5-4003d13dbe50",
+          "suffix": "048",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//9/9f/PEVO-BoosterIT.png",
+      "cards": [
+        {
+          "id": "a2701e55-3f71-46d1-8771-a850064de180",
+          "card": "cf8f4b3d-4d9f-4ddd-81c6-69c8a25a0e6e",
+          "suffix": "002",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a949bf51-1391-4772-aa1e-d5c343765f43",
+          "card": "649aee0f-f588-404f-a8b7-dcd531fe82c4",
+          "suffix": "003",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c590f61f-a3cf-456f-8dc2-1eba9b6d4457",
+          "card": "546a9730-b171-460a-b2ff-ee3f8bcc5863",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "18620cf3-5273-4920-8cf2-c637085e5282",
+          "card": "e0017bd2-0799-4a2b-b393-642556c2c055",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "f6ff0f08-0c45-41e8-b734-6bc45e79ca37",
+          "card": "fd5aab63-7da9-4480-a0b9-66ec47a913d2",
+          "suffix": "019",
+          "rarity": "super"
+        },
+        {
+          "id": "3daa9d0d-d15a-4d20-a42e-a1c2cf592a7d",
+          "card": "21626fdf-7cc9-4125-a241-984e83860df6",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "7c818dcb-a132-4827-b2e6-7fd3672f85b0",
+          "card": "b8ae8a78-b015-4a0c-83a0-abda178e522d",
+          "suffix": "028",
+          "rarity": "super"
+        },
+        {
+          "id": "8402b690-8e5b-45aa-a597-dd03acb77ace",
+          "card": "eb648981-9495-4bd6-8508-a05ca51ed5b3",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "ebc72848-2550-477c-9bd1-eb24cc31b209",
+          "card": "7440481c-096f-47ed-b34a-8a6ad6768ab9",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "fcfd4b21-c901-4aee-a3ed-fb38f57a9080",
+          "card": "c2d1bad9-3336-4845-a7d5-4003d13dbe50",
+          "suffix": "048",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4c/PEVO-BoosterFR.png",
+      "cards": [
+        {
+          "id": "f69a1437-2927-480b-b58d-5405def5626d",
+          "card": "cf8f4b3d-4d9f-4ddd-81c6-69c8a25a0e6e",
+          "suffix": "002",
+          "rarity": "ultra"
+        },
+        {
+          "id": "98eda95f-9444-4b3b-921b-fbb662e27604",
+          "card": "649aee0f-f588-404f-a8b7-dcd531fe82c4",
+          "suffix": "003",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c9eb55f2-387b-4c11-834f-4218ff13aa7a",
+          "card": "546a9730-b171-460a-b2ff-ee3f8bcc5863",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "db2f98f6-5ac5-4474-8858-a1c44adf7794",
+          "card": "e0017bd2-0799-4a2b-b393-642556c2c055",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "82f11b92-8a84-4160-93d5-cac53dc80023",
+          "card": "fd5aab63-7da9-4480-a0b9-66ec47a913d2",
+          "suffix": "019",
+          "rarity": "super"
+        },
+        {
+          "id": "5188e4a9-fbee-44d4-80a7-c2d3c346b90e",
+          "card": "21626fdf-7cc9-4125-a241-984e83860df6",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "9765b2d7-bcd1-44b2-8af9-05c97588a221",
+          "card": "b8ae8a78-b015-4a0c-83a0-abda178e522d",
+          "suffix": "028",
+          "rarity": "super"
+        },
+        {
+          "id": "669d75f7-9dee-4195-956b-b60ce627a76d",
+          "card": "eb648981-9495-4bd6-8508-a05ca51ed5b3",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "482814f9-b466-4750-b296-e0b755fc8f55",
+          "card": "7440481c-096f-47ed-b34a-8a6ad6768ab9",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "c709f287-6731-40b5-a4f2-7b5e88acd858",
+          "card": "c2d1bad9-3336-4845-a7d5-4003d13dbe50",
+          "suffix": "048",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/16/PEVO-BoosterEN.png",
+      "cards": [
+        {
+          "id": "e635fbc6-ec01-4426-b7a2-6a52889b26e0",
+          "card": "cf8f4b3d-4d9f-4ddd-81c6-69c8a25a0e6e",
+          "suffix": "002",
+          "rarity": "ultra"
+        },
+        {
+          "id": "1761bd6b-dcf2-4dd8-aea5-f240007b1cde",
+          "card": "649aee0f-f588-404f-a8b7-dcd531fe82c4",
+          "suffix": "003",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e4bdbe14-33fe-491b-b329-9efd40da3fb7",
+          "card": "546a9730-b171-460a-b2ff-ee3f8bcc5863",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "cbf7f579-3122-4536-b696-92d6eb9460fb",
+          "card": "e0017bd2-0799-4a2b-b393-642556c2c055",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4511925a-d28a-4e99-929c-691ae137c780",
+          "card": "fd5aab63-7da9-4480-a0b9-66ec47a913d2",
+          "suffix": "019",
+          "rarity": "super"
+        },
+        {
+          "id": "622507da-214a-4c52-b2e4-62197fba5f74",
+          "card": "21626fdf-7cc9-4125-a241-984e83860df6",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "9b658679-f9b3-42b5-b0cc-660064f49d9d",
+          "card": "b8ae8a78-b015-4a0c-83a0-abda178e522d",
+          "suffix": "028",
+          "rarity": "super"
+        },
+        {
+          "id": "51a43eff-6938-4590-9709-8b23eda48781",
+          "card": "eb648981-9495-4bd6-8508-a05ca51ed5b3",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "2215c129-1e10-4d59-8594-f7b42f26b1f9",
+          "card": "7440481c-096f-47ed-b34a-8a6ad6768ab9",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "4303f95f-041c-41b6-aa9b-be52f367fcc0",
+          "card": "c2d1bad9-3336-4845-a7d5-4003d13dbe50",
+          "suffix": "048",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0f/PEVO-BoosterSP.png",
+      "cards": [
+        {
+          "id": "3496706d-3f76-4590-8ff4-8d16dc511281",
+          "card": "cf8f4b3d-4d9f-4ddd-81c6-69c8a25a0e6e",
+          "suffix": "002",
+          "rarity": "ultra"
+        },
+        {
+          "id": "509e18c9-81e8-4334-aaa6-c8a419b89eda",
+          "card": "649aee0f-f588-404f-a8b7-dcd531fe82c4",
+          "suffix": "003",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8ad7c007-9b6c-411f-87d0-d9cd43e646bd",
+          "card": "546a9730-b171-460a-b2ff-ee3f8bcc5863",
+          "suffix": "005",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ea54dea4-3202-4ece-9931-95c350bd0f8d",
+          "card": "e0017bd2-0799-4a2b-b393-642556c2c055",
+          "suffix": "010",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4f12735c-9c12-4d98-8fa1-cd70a5503fc7",
+          "card": "fd5aab63-7da9-4480-a0b9-66ec47a913d2",
+          "suffix": "019",
+          "rarity": "super"
+        },
+        {
+          "id": "615b3330-070e-47bc-8baa-19d6b40b1990",
+          "card": "21626fdf-7cc9-4125-a241-984e83860df6",
+          "suffix": "020",
+          "rarity": "super"
+        },
+        {
+          "id": "9eb5ae28-b00d-4006-b29f-7ce7220a221f",
+          "card": "b8ae8a78-b015-4a0c-83a0-abda178e522d",
+          "suffix": "028",
+          "rarity": "super"
+        },
+        {
+          "id": "c5184de2-e4ad-4f33-83c4-a28635ae76e4",
+          "card": "eb648981-9495-4bd6-8508-a05ca51ed5b3",
+          "suffix": "032",
+          "rarity": "super"
+        },
+        {
+          "id": "fa4fa8a3-2cf0-4e87-9ed2-74318e75f41d",
+          "card": "7440481c-096f-47ed-b34a-8a6ad6768ab9",
+          "suffix": "044",
+          "rarity": "super"
+        },
+        {
+          "id": "47791526-d7f8-4699-a1a5-5f957cedac36",
+          "card": "c2d1bad9-3336-4845-a7d5-4003d13dbe50",
+          "suffix": "048",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Pendulum Evolution",
+      "id": 503375
+    }
+  }
+}

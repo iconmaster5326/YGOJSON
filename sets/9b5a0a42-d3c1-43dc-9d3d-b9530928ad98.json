@@ -1,0 +1,485 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "9b5a0a42-d3c1-43dc-9d3d-b9530928ad98",
+  "name": {
+    "en": "Structure Deck: Rokket Revolt",
+    "fr": "Deck de Structure : La Revolte Rokkette",
+    "de": "Structure Deck: Rokket Revolt",
+    "it": "Structure Deck: Rivolta del Mizzile",
+    "pt": "Deck Estrutural: Revolta do Foguette",
+    "es": "Baraja de Estructura: Rebeli\u00f3n de los Cohettes"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "SDRR-DE",
+      "image": "https://ms.yugipedia.com//0/04/SDRR-DeckDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SDRR-PT",
+      "date": "2019-08-15",
+      "image": "https://ms.yugipedia.com//b/bb/SDRR-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "5918d8d0-cfa0-467d-896b-dbe018146ed1": "https://ms.yugipedia.com//c/cb/BorreloadFuriousDragon-SDRR-PT-UR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SDRR-IT",
+      "image": "https://ms.yugipedia.com//e/eb/SDRR-DeckIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SDRR-FR",
+      "image": "https://ms.yugipedia.com//4/4a/SDRR-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "4681d126-0d60-4812-bdcd-5f1de67ccf10": "https://ms.yugipedia.com//8/8e/ChecksumDragon-SDRR-FR-C-1E.png",
+          "cd9e30fe-975c-4317-aaea-349c3663698e": "https://ms.yugipedia.com//7/7a/AnesthrokketDragon-SDRR-FR-C-1E.png",
+          "062039c7-b02f-46f3-bca5-81baafd5db27": "https://ms.yugipedia.com//6/61/KeeperoftheShrine-SDRR-FR-C-1E.png",
+          "4788b03e-f7d4-4bcc-aeca-7c5b311478e5": "https://ms.yugipedia.com//0/07/QuickLaunch-SDRR-FR-C-1E.png",
+          "24fbc9b8-35ad-4674-8fb8-d0b530bab7b0": "https://ms.yugipedia.com//5/5f/ImperialOrder-SDRR-FR-C-1E.png",
+          "fbadcabb-6178-4e78-b575-fc8b844f8ab1": "https://ms.yugipedia.com//f/f0/BorreloadFuriousDragon-SDRR-FR-UR-1E.png",
+          "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467": "https://ms.yugipedia.com//0/0d/BoosterDragon-SDRR-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SDRR-EN",
+      "image": "https://ms.yugipedia.com//f/fd/SDRR-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "6e927e4c-ce54-4e4e-ad4f-9e66c8ae885b": "https://ms.yugipedia.com//e/ec/ChecksumDragon-SDRR-EN-C-1E.png",
+          "cbc6c957-b69c-4e3c-8b48-d94b669d27ab": "https://ms.yugipedia.com//7/74/AnesthrokketDragon-SDRR-EN-C-1E.png",
+          "8b4aec39-d60e-4cd5-966e-0bf911e30faa": "https://ms.yugipedia.com//5/52/KeeperoftheShrine-SDRR-EN-C-1E.png",
+          "065a9721-cc56-41ad-931f-6d71a51d9558": "https://ms.yugipedia.com//1/11/QuickLaunch-SDRR-EN-C-1E.png",
+          "956dd0d2-373e-453a-be19-f7a177baa230": "https://ms.yugipedia.com//e/ef/ImperialOrder-SDRR-EN-C-1E.png",
+          "d92857c9-9a1a-4638-ab6a-b9b71878d6a1": "https://ms.yugipedia.com//7/71/BorreloadFuriousDragon-SDRR-EN-UR-1E.png",
+          "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467": "https://ms.yugipedia.com//d/d5/BoosterDragon-SDRR-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14415002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SDRR-SP",
+      "image": "https://ms.yugipedia.com//0/0d/SDRR-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "4e11bb7f-f241-43e8-87fa-cb81e2919ba9": "https://ms.yugipedia.com//2/2e/ChecksumDragon-SDRR-SP-C-1E.png",
+          "4046eec7-8c90-414f-8401-ba2e69e35983": "https://ms.yugipedia.com//4/43/AnesthrokketDragon-SDRR-SP-C-1E.png",
+          "7f1e9759-ec09-4b49-bc41-360bc3d7b5a1": "https://ms.yugipedia.com//a/a4/KeeperoftheShrine-SDRR-SP-C-1E.png",
+          "25bbac73-2ea5-423e-9ae1-f788869c8b0e": "https://ms.yugipedia.com//5/51/QuickLaunch-SDRR-SP-C-1E.png",
+          "6e0440f3-2cea-4553-8a71-83c52e612ac8": "https://ms.yugipedia.com//1/17/ImperialOrder-SDRR-SP-C-1E.png",
+          "c6e700cd-e06b-4be5-b5f6-cb827dadebd8": "https://ms.yugipedia.com//1/12/BorreloadFuriousDragon-SDRR-SP-UR-1E.png",
+          "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467": "https://ms.yugipedia.com//9/97/BoosterDragon-SDRR-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/04/SDRR-DeckDE.png",
+      "cards": [
+        {
+          "id": "f8873356-7b5a-4943-a5dc-4c030ecabc05",
+          "card": "390088f0-c11c-4ae6-88e8-e93bb4e3b7b3",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "61109c39-403e-45ca-bbc6-364d1fd8cd1b",
+          "card": "0c1125e2-8543-4fc8-9ec3-dea3c86eefe8",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "cfdf147e-cbb2-4f38-b683-943759e1256d",
+          "card": "b62d29fd-b8c9-44a0-aa03-bb888c8b4919",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "a9859119-aeed-452b-b379-6f189b363463",
+          "card": "9e53d768-bd8b-41e3-b104-6abac37d512a",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "886f86e7-8b26-49dc-8bbe-dac6fc4cfcbe",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "3aad9445-4e96-48ed-9cf9-2c513f62bf70",
+          "card": "a7bb5aec-e8d5-47f6-8426-70fbba3e2c50",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467",
+          "card": "7278f15a-bbb7-4179-aee6-85b8a1a8bb67",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/bb/SDRR-DeckPT.png",
+      "cards": [
+        {
+          "id": "b18e989f-9060-4d20-9626-65af6a42d70d",
+          "card": "390088f0-c11c-4ae6-88e8-e93bb4e3b7b3",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "2d764dd4-bbef-40b3-af8f-54d2a750b9c9",
+          "card": "0c1125e2-8543-4fc8-9ec3-dea3c86eefe8",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "14b7e8c3-c705-44a1-b1d9-49ddd480eb17",
+          "card": "b62d29fd-b8c9-44a0-aa03-bb888c8b4919",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "71f24401-64a8-4308-a80b-6974576ef203",
+          "card": "9e53d768-bd8b-41e3-b104-6abac37d512a",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "ef892790-8e7f-406f-aa5b-4696570acabf",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "5918d8d0-cfa0-467d-896b-dbe018146ed1",
+          "card": "a7bb5aec-e8d5-47f6-8426-70fbba3e2c50",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467",
+          "card": "7278f15a-bbb7-4179-aee6-85b8a1a8bb67",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/eb/SDRR-DeckIT.png",
+      "cards": [
+        {
+          "id": "aab2347a-ea69-484b-8328-20f0cb7eae51",
+          "card": "390088f0-c11c-4ae6-88e8-e93bb4e3b7b3",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "588c6f75-7551-4cc2-8a4f-e1d1e067e8c0",
+          "card": "0c1125e2-8543-4fc8-9ec3-dea3c86eefe8",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "423cd590-3368-4651-b8ee-3bcccc811688",
+          "card": "b62d29fd-b8c9-44a0-aa03-bb888c8b4919",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "cafc4632-025f-4773-a2cb-7006689e698a",
+          "card": "9e53d768-bd8b-41e3-b104-6abac37d512a",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "9b59e26b-be2a-4346-bf81-9cd90204ae97",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ee7b3a-c4de-4738-bd32-8650b0a4782d",
+          "card": "a7bb5aec-e8d5-47f6-8426-70fbba3e2c50",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467",
+          "card": "7278f15a-bbb7-4179-aee6-85b8a1a8bb67",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4a/SDRR-DeckFR.png",
+      "cards": [
+        {
+          "id": "4681d126-0d60-4812-bdcd-5f1de67ccf10",
+          "card": "390088f0-c11c-4ae6-88e8-e93bb4e3b7b3",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "cd9e30fe-975c-4317-aaea-349c3663698e",
+          "card": "0c1125e2-8543-4fc8-9ec3-dea3c86eefe8",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "062039c7-b02f-46f3-bca5-81baafd5db27",
+          "card": "b62d29fd-b8c9-44a0-aa03-bb888c8b4919",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "4788b03e-f7d4-4bcc-aeca-7c5b311478e5",
+          "card": "9e53d768-bd8b-41e3-b104-6abac37d512a",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "24fbc9b8-35ad-4674-8fb8-d0b530bab7b0",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "fbadcabb-6178-4e78-b575-fc8b844f8ab1",
+          "card": "a7bb5aec-e8d5-47f6-8426-70fbba3e2c50",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467",
+          "card": "7278f15a-bbb7-4179-aee6-85b8a1a8bb67",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//f/fd/SDRR-DeckEN.png",
+      "cards": [
+        {
+          "id": "6e927e4c-ce54-4e4e-ad4f-9e66c8ae885b",
+          "card": "390088f0-c11c-4ae6-88e8-e93bb4e3b7b3",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "cbc6c957-b69c-4e3c-8b48-d94b669d27ab",
+          "card": "0c1125e2-8543-4fc8-9ec3-dea3c86eefe8",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "8b4aec39-d60e-4cd5-966e-0bf911e30faa",
+          "card": "b62d29fd-b8c9-44a0-aa03-bb888c8b4919",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "065a9721-cc56-41ad-931f-6d71a51d9558",
+          "card": "9e53d768-bd8b-41e3-b104-6abac37d512a",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "956dd0d2-373e-453a-be19-f7a177baa230",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "d92857c9-9a1a-4638-ab6a-b9b71878d6a1",
+          "card": "a7bb5aec-e8d5-47f6-8426-70fbba3e2c50",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467",
+          "card": "7278f15a-bbb7-4179-aee6-85b8a1a8bb67",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0d/SDRR-DeckSP.png",
+      "cards": [
+        {
+          "id": "4e11bb7f-f241-43e8-87fa-cb81e2919ba9",
+          "card": "390088f0-c11c-4ae6-88e8-e93bb4e3b7b3",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "4046eec7-8c90-414f-8401-ba2e69e35983",
+          "card": "0c1125e2-8543-4fc8-9ec3-dea3c86eefe8",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "7f1e9759-ec09-4b49-bc41-360bc3d7b5a1",
+          "card": "b62d29fd-b8c9-44a0-aa03-bb888c8b4919",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "25bbac73-2ea5-423e-9ae1-f788869c8b0e",
+          "card": "9e53d768-bd8b-41e3-b104-6abac37d512a",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "6e0440f3-2cea-4553-8a71-83c52e612ac8",
+          "card": "b68b3353-dadd-44d3-ad1e-da945eafc142",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "c6e700cd-e06b-4be5-b5f6-cb827dadebd8",
+          "card": "a7bb5aec-e8d5-47f6-8426-70fbba3e2c50",
+          "suffix": "042",
+          "rarity": "ultra"
+        },
+        {
+          "id": "52ba11e7-fbb1-4d9a-a2ce-bd50e2a94467",
+          "card": "7278f15a-bbb7-4179-aee6-85b8a1a8bb67",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Structure Deck: Rokket Revolt",
+      "id": 608968
+    }
+  }
+}

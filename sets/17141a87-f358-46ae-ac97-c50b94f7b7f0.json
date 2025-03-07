@@ -1,0 +1,112 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "17141a87-f358-46ae-ac97-c50b94f7b7f0",
+  "name": {
+    "en": "Half-Deck: DARK",
+    "ja": "\u30cf\u30fc\u30d5\u30c7\u30c3\u30ad \u95c7",
+    "zh-TW": "HALF DECK \u95c7"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "HD13-JPD",
+      "date": "2013-07-20",
+      "image": "https://ms.yugipedia.com//7/7d/HD13-DeckJP-VerB.png",
+      "cardImages": {
+        "unlimited": {
+          "e02352a5-1160-4621-803d-517a8fb99485": "https://ms.yugipedia.com//0/06/DeSpell-HD13-JP-C-D.png",
+          "748ed7ef-b77e-4c07-8f5a-1d1075c795c1": "https://ms.yugipedia.com//8/82/GoblinsSecretRemedy-HD13-JP-C-D.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          141413001
+        ]
+      }
+    },
+    "tc": {
+      "language": "zh-TW",
+      "prefix": "HD13-TCD",
+      "date": "2015-01-01",
+      "image": "https://ms.yugipedia.com//a/ad/HD13-DeckTC-VerB.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7d/HD13-DeckJP-VerB.png",
+      "cards": [
+        {
+          "id": "e02352a5-1160-4621-803d-517a8fb99485",
+          "card": "6eec20dc-7a04-456f-8349-3e2beae0a586",
+          "suffix": "13",
+          "rarity": "common"
+        },
+        {
+          "id": "748ed7ef-b77e-4c07-8f5a-1d1075c795c1",
+          "card": "6190b2fd-ac21-4781-a067-18cdc6064aeb",
+          "suffix": "14",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "tc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/ad/HD13-DeckTC-VerB.png",
+      "cards": [
+        {
+          "id": "d5c8c28c-a1b8-4c92-9c46-84911fcb5b5a",
+          "card": "6eec20dc-7a04-456f-8349-3e2beae0a586",
+          "suffix": "13",
+          "rarity": "common"
+        },
+        {
+          "id": "dc0369c1-ad40-4348-92bf-70bf9d0c9dc5",
+          "card": "6190b2fd-ac21-4781-a067-18cdc6064aeb",
+          "suffix": "14",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Half-Deck: DARK",
+      "id": 273777
+    }
+  }
+}

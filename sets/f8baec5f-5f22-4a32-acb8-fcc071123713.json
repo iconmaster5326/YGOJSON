@@ -1,0 +1,156 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "f8baec5f-5f22-4a32-acb8-fcc071123713",
+  "name": {
+    "en": "The Pot Collection",
+    "ja": "\u58fa\uff23\uff2f\uff2c\uff2c\uff25\uff23\uff34\uff29\uff2f\uff2e",
+    "zh-CN": "\u58f6\u4e4b\u6536\u85cf\u96c6"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "TBC1-EN",
+      "image": "https://ms.yugipedia.com//3/3d/TBC1-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "7765a9c8-4248-437c-bf1b-bc4be02909a5": "https://ms.yugipedia.com//5/50/PotofGreed-TBC1-EN-QCScR-LE.png",
+          "39f94069-150a-4f52-b36d-8edc6b00464f": "https://ms.yugipedia.com//2/23/PotofGreed-TBC1-EN-UPR-LE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    },
+    "sc": {
+      "language": "zh-CN",
+      "prefix": "TBC1-SCS",
+      "date": "2023-09-30",
+      "image": "https://ms.yugipedia.com//4/45/TBC1-PromoJP.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          3000001248000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "TBC1-JP",
+      "date": "2023-09-16",
+      "image": "https://ms.yugipedia.com//4/45/TBC1-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "b1e2ca25-cb05-4e80-96c2-1d5da8e58f90": "https://ms.yugipedia.com//8/8e/PotofGreed-TBC1-JP-QCScR.png",
+          "7f5581eb-57a6-47a1-8db9-95270b7f0b8b": "https://ms.yugipedia.com//1/15/PotofGreed-TBC1-JP-UPR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000008504000,
+          1000008505000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3d/TBC1-PromoEN.png",
+      "cards": [
+        {
+          "id": "7765a9c8-4248-437c-bf1b-bc4be02909a5",
+          "card": "3dc62228-c78c-4cbb-9c5a-72962718d2e4",
+          "suffix": "S01",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "39f94069-150a-4f52-b36d-8edc6b00464f",
+          "card": "3dc62228-c78c-4cbb-9c5a-72962718d2e4",
+          "suffix": "001",
+          "rarity": "ultraparallel"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/45/TBC1-PromoJP.png",
+      "cards": [
+        {
+          "id": "777917f4-316e-45b3-a654-01af8bc5b637",
+          "card": "3dc62228-c78c-4cbb-9c5a-72962718d2e4",
+          "suffix": "01",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/45/TBC1-PromoJP.png",
+      "cards": [
+        {
+          "id": "b1e2ca25-cb05-4e80-96c2-1d5da8e58f90",
+          "card": "3dc62228-c78c-4cbb-9c5a-72962718d2e4",
+          "suffix": "S01",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "7f5581eb-57a6-47a1-8db9-95270b7f0b8b",
+          "card": "3dc62228-c78c-4cbb-9c5a-72962718d2e4",
+          "suffix": "001",
+          "rarity": "ultraparallel"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "The Pot Collection",
+      "id": 720311
+    }
+  }
+}

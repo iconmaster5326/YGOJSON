@@ -1,0 +1,587 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "c4e26ff9-9ab9-4d95-ac9a-144583d0571f",
+  "name": {
+    "en": "Hidden Summoners",
+    "fr": "Les Invocateurs Cach\u00e9s",
+    "de": "Hidden Summoners",
+    "it": "Evocatori Nascosti",
+    "pt": "Invocadores Ocultos",
+    "es": "Invocadores Ocultos"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "HISU-EN",
+      "image": "https://ms.yugipedia.com//5/5f/HISU-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "4cb95561-76b7-4d58-8d1b-9c1bedb48119": "https://ms.yugipedia.com//a/a2/MatriarchofNephthys-HISU-EN-SR-1E.png",
+          "c33408d4-02b8-43e3-b2c7-0ab15408034d": "https://ms.yugipedia.com//e/eb/NephthystheSacredPreserver-HISU-EN-ScR-1E.png",
+          "544c024f-b452-4f5a-bdab-14b3c5ad4254": "https://ms.yugipedia.com//4/4c/RebirthofNephthys-HISU-EN-SR-1E.png",
+          "68124766-9c27-4899-8356-053f723b26b9": "https://ms.yugipedia.com//5/58/PrankKidsFansies-HISU-EN-SR-1E.png",
+          "e3da1d38-0872-4860-9dcb-dee31920315a": "https://ms.yugipedia.com//8/89/PrankKidsRocketRide-HISU-EN-SR-1E.png",
+          "3b9d0073-f2e4-403f-b328-ba5ff0d31e65": "https://ms.yugipedia.com//5/5c/PrankKidsRipRoarinRoaster-HISU-EN-ScR-1E.png",
+          "9a334b65-92c6-4be2-aa73-95e4ef3728d5": "https://ms.yugipedia.com//2/2a/TsuchigumothePoisonousMayakashi-HISU-EN-ScR-1E.png",
+          "57645d00-c543-427b-a89b-80fcaa0a82f5": "https://ms.yugipedia.com//c/cc/MayakashiMetamorphosis-HISU-EN-SR-1E.png",
+          "e19b889a-9683-4457-8ab6-a3784499b357": "https://ms.yugipedia.com//7/77/ShiranuiSpiritmaster-HISU-EN-SR-1E.png",
+          "d76b26f0-b152-4061-b255-1ae729336fa3": "https://ms.yugipedia.com//7/7d/OnslaughtoftheFireKings-HISU-EN-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11117010
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "HISU-DE",
+      "image": "https://ms.yugipedia.com//c/c1/HISU-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "c33408d4-02b8-43e3-b2c7-0ab15408034d": "https://ms.yugipedia.com//2/28/NephthystheSacredPreserver-HISU-DE-ScR-1E.png",
+          "9a334b65-92c6-4be2-aa73-95e4ef3728d5": "https://ms.yugipedia.com//b/b9/TsuchigumothePoisonousMayakashi-HISU-DE-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "HISU-FR",
+      "image": "https://ms.yugipedia.com//0/09/HISU-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "c33408d4-02b8-43e3-b2c7-0ab15408034d": "https://ms.yugipedia.com//d/d0/NephthystheSacredPreserver-HISU-FR-ScR-1E.png",
+          "9a334b65-92c6-4be2-aa73-95e4ef3728d5": "https://ms.yugipedia.com//f/fb/TsuchigumothePoisonousMayakashi-HISU-FR-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "HISU-PT",
+      "date": "2018-11-15",
+      "image": "https://ms.yugipedia.com//0/0f/HISU-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "HISU-IT",
+      "image": "https://ms.yugipedia.com//1/10/HISU-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "c33408d4-02b8-43e3-b2c7-0ab15408034d": "https://ms.yugipedia.com//3/30/NephthystheSacredPreserver-HISU-IT-ScR-1E.png",
+          "9a334b65-92c6-4be2-aa73-95e4ef3728d5": "https://ms.yugipedia.com//e/e9/TsuchigumothePoisonousMayakashi-HISU-IT-ScR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "HISU-SP",
+      "image": "https://ms.yugipedia.com//5/53/HISU-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/5f/HISU-BoosterEN.png",
+      "cards": [
+        {
+          "id": "4cb95561-76b7-4d58-8d1b-9c1bedb48119",
+          "card": "5388a366-7281-4599-99a4-855117158c5e",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "c33408d4-02b8-43e3-b2c7-0ab15408034d",
+          "card": "81155139-ee28-4ab8-a81c-fda026e06183",
+          "suffix": "007",
+          "rarity": "secret"
+        },
+        {
+          "id": "544c024f-b452-4f5a-bdab-14b3c5ad4254",
+          "card": "20b5ad45-b597-44d5-b69f-2164f1aae193",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "68124766-9c27-4899-8356-053f723b26b9",
+          "card": "049d4711-28df-4d1c-b0b5-f70de5dc1840",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "e3da1d38-0872-4860-9dcb-dee31920315a",
+          "card": "bf47a0bb-5b76-4159-8b80-071f6102f211",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "3b9d0073-f2e4-403f-b328-ba5ff0d31e65",
+          "card": "b9cdeced-277e-431b-93da-a2ef39ae638a",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "9a334b65-92c6-4be2-aa73-95e4ef3728d5",
+          "card": "1a47a09e-0963-46d9-99bc-9ae85c339979",
+          "suffix": "033",
+          "rarity": "secret"
+        },
+        {
+          "id": "57645d00-c543-427b-a89b-80fcaa0a82f5",
+          "card": "c9204cac-f517-41e5-bb6f-603705afc7c5",
+          "suffix": "039",
+          "rarity": "super"
+        },
+        {
+          "id": "e19b889a-9683-4457-8ab6-a3784499b357",
+          "card": "8ceb0418-d2a0-4b47-8fd5-ad46e33a0267",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "d76b26f0-b152-4061-b255-1ae729336fa3",
+          "card": "47c28551-38c5-4601-8590-a2e6bec025cc",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c1/HISU-BoosterDE.png",
+      "cards": [
+        {
+          "id": "e03173cc-6589-48f7-ae79-8176a69cbf32",
+          "card": "5388a366-7281-4599-99a4-855117158c5e",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "c33408d4-02b8-43e3-b2c7-0ab15408034d",
+          "card": "81155139-ee28-4ab8-a81c-fda026e06183",
+          "suffix": "007",
+          "rarity": "secret"
+        },
+        {
+          "id": "544c024f-b452-4f5a-bdab-14b3c5ad4254",
+          "card": "20b5ad45-b597-44d5-b69f-2164f1aae193",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "473ef962-5012-441c-9c29-53a0e773eb01",
+          "card": "049d4711-28df-4d1c-b0b5-f70de5dc1840",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "c652820a-f535-4cff-b2a5-67d9fd6e5c1f",
+          "card": "bf47a0bb-5b76-4159-8b80-071f6102f211",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "92d371a2-b842-4daa-b002-97e0865fb105",
+          "card": "b9cdeced-277e-431b-93da-a2ef39ae638a",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "9a334b65-92c6-4be2-aa73-95e4ef3728d5",
+          "card": "1a47a09e-0963-46d9-99bc-9ae85c339979",
+          "suffix": "033",
+          "rarity": "secret"
+        },
+        {
+          "id": "f61d5994-21cd-4673-a19d-88f782d163fc",
+          "card": "c9204cac-f517-41e5-bb6f-603705afc7c5",
+          "suffix": "039",
+          "rarity": "super"
+        },
+        {
+          "id": "ed291e2f-672f-4cfe-b48e-ce78075edbc8",
+          "card": "8ceb0418-d2a0-4b47-8fd5-ad46e33a0267",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "d76b26f0-b152-4061-b255-1ae729336fa3",
+          "card": "47c28551-38c5-4601-8590-a2e6bec025cc",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/09/HISU-BoosterFR.png",
+      "cards": [
+        {
+          "id": "e11320d3-5609-4311-a38f-262ee8ca394c",
+          "card": "5388a366-7281-4599-99a4-855117158c5e",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "c33408d4-02b8-43e3-b2c7-0ab15408034d",
+          "card": "81155139-ee28-4ab8-a81c-fda026e06183",
+          "suffix": "007",
+          "rarity": "secret"
+        },
+        {
+          "id": "544c024f-b452-4f5a-bdab-14b3c5ad4254",
+          "card": "20b5ad45-b597-44d5-b69f-2164f1aae193",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "1570586d-1355-4f36-9504-ba8d9fcc2e71",
+          "card": "049d4711-28df-4d1c-b0b5-f70de5dc1840",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "ec58bd25-5036-4c69-a76d-e84ae528b76b",
+          "card": "bf47a0bb-5b76-4159-8b80-071f6102f211",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "2aa843b8-2aaf-4625-876d-5900186ce434",
+          "card": "b9cdeced-277e-431b-93da-a2ef39ae638a",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "9a334b65-92c6-4be2-aa73-95e4ef3728d5",
+          "card": "1a47a09e-0963-46d9-99bc-9ae85c339979",
+          "suffix": "033",
+          "rarity": "secret"
+        },
+        {
+          "id": "25e67b58-4796-400d-9e82-66de9098ace7",
+          "card": "c9204cac-f517-41e5-bb6f-603705afc7c5",
+          "suffix": "039",
+          "rarity": "super"
+        },
+        {
+          "id": "9c47ac93-6a27-4df4-809f-77382be8c3e7",
+          "card": "8ceb0418-d2a0-4b47-8fd5-ad46e33a0267",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "d76b26f0-b152-4061-b255-1ae729336fa3",
+          "card": "47c28551-38c5-4601-8590-a2e6bec025cc",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0f/HISU-BoosterPT.png",
+      "cards": [
+        {
+          "id": "438eb013-e7e6-4209-9f5c-9dbec30813db",
+          "card": "5388a366-7281-4599-99a4-855117158c5e",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "c33408d4-02b8-43e3-b2c7-0ab15408034d",
+          "card": "81155139-ee28-4ab8-a81c-fda026e06183",
+          "suffix": "007",
+          "rarity": "secret"
+        },
+        {
+          "id": "544c024f-b452-4f5a-bdab-14b3c5ad4254",
+          "card": "20b5ad45-b597-44d5-b69f-2164f1aae193",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "aaf265c4-36e4-4830-bb8f-b1e5f77217b6",
+          "card": "049d4711-28df-4d1c-b0b5-f70de5dc1840",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "c72b9c5a-3d62-419d-80fc-62c803d330ce",
+          "card": "bf47a0bb-5b76-4159-8b80-071f6102f211",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "bd57829c-4fd2-45ec-94c6-7d7cf9a94ed6",
+          "card": "b9cdeced-277e-431b-93da-a2ef39ae638a",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "9a334b65-92c6-4be2-aa73-95e4ef3728d5",
+          "card": "1a47a09e-0963-46d9-99bc-9ae85c339979",
+          "suffix": "033",
+          "rarity": "secret"
+        },
+        {
+          "id": "3dd594a8-b4e2-4d20-bc11-431d03a93fdd",
+          "card": "c9204cac-f517-41e5-bb6f-603705afc7c5",
+          "suffix": "039",
+          "rarity": "super"
+        },
+        {
+          "id": "adeaf619-af3c-482a-86a2-6007e77dff97",
+          "card": "8ceb0418-d2a0-4b47-8fd5-ad46e33a0267",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "d76b26f0-b152-4061-b255-1ae729336fa3",
+          "card": "47c28551-38c5-4601-8590-a2e6bec025cc",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/10/HISU-BoosterIT.png",
+      "cards": [
+        {
+          "id": "2bf0ab54-df56-46b8-804a-6bc919ed3b41",
+          "card": "5388a366-7281-4599-99a4-855117158c5e",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "c33408d4-02b8-43e3-b2c7-0ab15408034d",
+          "card": "81155139-ee28-4ab8-a81c-fda026e06183",
+          "suffix": "007",
+          "rarity": "secret"
+        },
+        {
+          "id": "544c024f-b452-4f5a-bdab-14b3c5ad4254",
+          "card": "20b5ad45-b597-44d5-b69f-2164f1aae193",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "53ab7e33-6b9a-4caa-b5b8-3b33982cd156",
+          "card": "049d4711-28df-4d1c-b0b5-f70de5dc1840",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "b02dfc2f-43e6-4b4a-a080-73da0c87dd43",
+          "card": "bf47a0bb-5b76-4159-8b80-071f6102f211",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "7017cc47-af68-45f2-8532-a6da4122d67f",
+          "card": "b9cdeced-277e-431b-93da-a2ef39ae638a",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "9a334b65-92c6-4be2-aa73-95e4ef3728d5",
+          "card": "1a47a09e-0963-46d9-99bc-9ae85c339979",
+          "suffix": "033",
+          "rarity": "secret"
+        },
+        {
+          "id": "43ad34f7-ce8e-4d2c-824d-5d9b8ed52539",
+          "card": "c9204cac-f517-41e5-bb6f-603705afc7c5",
+          "suffix": "039",
+          "rarity": "super"
+        },
+        {
+          "id": "9ac14e90-4451-40ff-a20d-3f75bf8ac232",
+          "card": "8ceb0418-d2a0-4b47-8fd5-ad46e33a0267",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "d76b26f0-b152-4061-b255-1ae729336fa3",
+          "card": "47c28551-38c5-4601-8590-a2e6bec025cc",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/53/HISU-BoosterSP.png",
+      "cards": [
+        {
+          "id": "2df1b471-abed-48b1-9874-350bdf81b751",
+          "card": "5388a366-7281-4599-99a4-855117158c5e",
+          "suffix": "001",
+          "rarity": "super"
+        },
+        {
+          "id": "c33408d4-02b8-43e3-b2c7-0ab15408034d",
+          "card": "81155139-ee28-4ab8-a81c-fda026e06183",
+          "suffix": "007",
+          "rarity": "secret"
+        },
+        {
+          "id": "544c024f-b452-4f5a-bdab-14b3c5ad4254",
+          "card": "20b5ad45-b597-44d5-b69f-2164f1aae193",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "982ae5dd-dd39-4f5e-9141-002040a3cf3c",
+          "card": "049d4711-28df-4d1c-b0b5-f70de5dc1840",
+          "suffix": "014",
+          "rarity": "super"
+        },
+        {
+          "id": "dc2a5092-3acf-4c00-8a32-836b0939b133",
+          "card": "bf47a0bb-5b76-4159-8b80-071f6102f211",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "7ae69076-fa34-46c2-a9a8-e6a63284c2b7",
+          "card": "b9cdeced-277e-431b-93da-a2ef39ae638a",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "9a334b65-92c6-4be2-aa73-95e4ef3728d5",
+          "card": "1a47a09e-0963-46d9-99bc-9ae85c339979",
+          "suffix": "033",
+          "rarity": "secret"
+        },
+        {
+          "id": "9c99c9d4-9475-4660-bb1a-f77dbcc2f20a",
+          "card": "c9204cac-f517-41e5-bb6f-603705afc7c5",
+          "suffix": "039",
+          "rarity": "super"
+        },
+        {
+          "id": "c772dab1-2fe5-48ba-8a07-befcdcac0e23",
+          "card": "8ceb0418-d2a0-4b47-8fd5-ad46e33a0267",
+          "suffix": "048",
+          "rarity": "super"
+        },
+        {
+          "id": "d76b26f0-b152-4061-b255-1ae729336fa3",
+          "card": "47c28551-38c5-4601-8590-a2e6bec025cc",
+          "suffix": "055",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Hidden Summoners",
+      "id": 566980
+    }
+  }
+}

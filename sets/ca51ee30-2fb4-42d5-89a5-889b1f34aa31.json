@@ -1,0 +1,987 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "ca51ee30-2fb4-42d5-89a5-889b1f34aa31",
+  "name": {
+    "en": "Lord of the Tachyon Galaxy",
+    "fr": "Le Seigneur de la Galaxie Tachyon",
+    "de": "Lord of the Tachyon Galaxy",
+    "it": "Il Signore della Galassia Tachionica",
+    "pt": "Senhor da Gal\u00e1xia T\u00e1quion",
+    "es": "Se\u00f1or de la Galaxia Taqui\u00f3nica",
+    "ja": "\u30ed\u30fc\u30c9\u30fb\u30aa\u30d6\u30fb\u30b6\u30fb\u30bf\u30ad\u30aa\u30f3\u30ae\u30e3\u30e9\u30af\u30b7\u30fc",
+    "ko": "\ub85c\ub4dc \uc624\ube0c \ub354 \ud0c0\ud0a4\uc628 \uac24\ub7ed\uc2dc",
+    "zh-TW": "\u9280\u6cb3\u5e1d\u738b"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "LTGY-EN",
+      "image": "https://ms.yugipedia.com//3/30/LTGY-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "e57fbd9c-deb1-4d79-8adf-8b1179541cef": "https://ms.yugipedia.com//4/40/MechaPhantomBeastTurtletracer-LTGY-EN-SR-UE.png",
+          "70413151-18c1-4792-bdc0-8b1fc29bddb1": "https://ms.yugipedia.com//5/55/BigWhale-LTGY-EN-R-UE.png",
+          "52f02bec-7bdc-4bfc-b3ab-080306a62eb2": "https://ms.yugipedia.com//8/81/MechaPhantomBeastStealthray-LTGY-EN-C-UE.png",
+          "ef5dc617-09a6-4bdb-8140-5c57f68b4289": "https://ms.yugipedia.com//5/5a/MechaPhantomBeastHamstrat-LTGY-EN-UR-UE.png",
+          "4bbd123b-7423-4757-b3a4-dfaeaa77f241": "https://ms.yugipedia.com//c/c5/MechaPhantomBeastHamstrat-LTGY-EN-UtR-UE.png",
+          "b03f37c0-57db-43ac-bf65-2c30844817cc": "https://ms.yugipedia.com//2/21/BrotherhoodoftheFireFistWolf-LTGY-EN-C-UE.png",
+          "71632292-d133-4f57-bfa6-c73862ed2bc3": "https://ms.yugipedia.com//7/79/AltitudeKnight-LTGY-EN-R-UE.png",
+          "2b01da8c-803c-4c11-86b8-a59ec6be3e01": "https://ms.yugipedia.com//0/0a/JewelsoftheValiant-LTGY-EN-C-UE.png",
+          "b88220e2-7d79-4d92-a7de-9a6ce4cf204a": "https://ms.yugipedia.com//2/2e/AerialRecharge-LTGY-EN-C-UE.png",
+          "29dc4c6a-c9da-46ad-951c-26f9a6f05f68": "https://ms.yugipedia.com//b/b6/Dragoncarnation-LTGY-EN-SP-UE.png"
+        },
+        "1st": {
+          "e57fbd9c-deb1-4d79-8adf-8b1179541cef": "https://ms.yugipedia.com//8/8e/MechaPhantomBeastTurtletracer-LTGY-EN-SR-1E.png",
+          "70413151-18c1-4792-bdc0-8b1fc29bddb1": "https://ms.yugipedia.com//a/a0/BigWhale-LTGY-EN-R-1E.png",
+          "52f02bec-7bdc-4bfc-b3ab-080306a62eb2": "https://ms.yugipedia.com//0/01/MechaPhantomBeastStealthray-LTGY-EN-C-1E.png",
+          "ef5dc617-09a6-4bdb-8140-5c57f68b4289": "https://ms.yugipedia.com//8/81/MechaPhantomBeastHamstrat-LTGY-EN-UR-1E.png",
+          "4bbd123b-7423-4757-b3a4-dfaeaa77f241": "https://ms.yugipedia.com//f/fe/MechaPhantomBeastHamstrat-LTGY-EN-UtR-1E.png",
+          "b03f37c0-57db-43ac-bf65-2c30844817cc": "https://ms.yugipedia.com//6/6c/BrotherhoodoftheFireFistWolf-LTGY-EN-C-1E.png",
+          "71632292-d133-4f57-bfa6-c73862ed2bc3": "https://ms.yugipedia.com//6/62/AltitudeKnight-LTGY-EN-R-1E.png",
+          "2b01da8c-803c-4c11-86b8-a59ec6be3e01": "https://ms.yugipedia.com//b/b8/JewelsoftheValiant-LTGY-EN-C-1E.png",
+          "b88220e2-7d79-4d92-a7de-9a6ce4cf204a": "https://ms.yugipedia.com//f/fd/AerialRecharge-LTGY-EN-C-1E.png",
+          "29dc4c6a-c9da-46ad-951c-26f9a6f05f68": "https://ms.yugipedia.com//4/40/Dragoncarnation-LTGY-EN-SP-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112003
+        ]
+      }
+    },
+    "tc": {
+      "language": "zh-TW",
+      "prefix": "LTGY-TC",
+      "date": "2016-03-05",
+      "image": "https://ms.yugipedia.com//c/c1/LTGY-BoosterTC.png",
+      "cardImages": {
+        "unlimited": {
+          "bab9c534-b2fc-4768-bbbd-8d4738339a6f": "https://ms.yugipedia.com//f/f3/BigWhale-LTGY-TC-R.png",
+          "4a472de1-e39a-4d7a-a5c4-9d20f43e741d": "https://ms.yugipedia.com//6/68/MechaPhantomBeastStealthray-LTGY-TC-C.png",
+          "141d51fc-7e02-495d-9d18-793976bdad51": "https://ms.yugipedia.com//e/ef/MechaPhantomBeastHamstrat-LTGY-TC-C.png",
+          "b03f37c0-57db-43ac-bf65-2c30844817cc": "https://ms.yugipedia.com//8/85/BrotherhoodoftheFireFistWolf-LTGY-TC-C.png",
+          "c3bf9e30-c67a-464f-9b14-c372592c4d6e": "https://ms.yugipedia.com//1/1e/AltitudeKnight-LTGY-TC-R.png",
+          "e17106af-e3b4-419d-ba25-997e6f1e7040": "https://ms.yugipedia.com//0/05/JewelsoftheValiant-LTGY-TC-C.png",
+          "934c50eb-6323-4dee-ab1d-6d02c77b8b3a": "https://ms.yugipedia.com//3/32/AerialRecharge-LTGY-TC-C.png",
+          "0b278b31-868a-4b37-8134-12cc49661219": "https://ms.yugipedia.com//f/fd/Dragoncarnation-LTGY-TC-NR.png",
+          "2e89f449-fd82-43c6-90f4-deae6082bf7a": "https://ms.yugipedia.com//d/d8/MechaPhantomBeastTurtletracer-LTGY-TC-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "LTGY-DE",
+      "image": "https://ms.yugipedia.com//d/dd/LTGY-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {
+          "281e7855-017d-4abb-83d0-39689d222cb8": "https://ms.yugipedia.com//1/12/Dragoncarnation-LTGY-DE-SP-UE.png"
+        },
+        "1st": {
+          "64629df9-40f8-45d3-b472-b95eff6fcb0c": "https://ms.yugipedia.com//f/f8/MechaPhantomBeastTurtletracer-LTGY-DE-SR-1E.png",
+          "281e7855-017d-4abb-83d0-39689d222cb8": "https://ms.yugipedia.com//6/67/Dragoncarnation-LTGY-DE-SP-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21112003
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "LTGY-FR",
+      "image": "https://ms.yugipedia.com//1/18/LTGY-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {
+          "5f9614f7-6b1f-4290-a682-3b447b3308c1": "https://ms.yugipedia.com//3/3e/MechaPhantomBeastTurtletracer-LTGY-FR-SR-UE.png",
+          "74897e48-c93a-4f88-9f14-6823fb982996": "https://ms.yugipedia.com//5/5a/AerialRecharge-LTGY-FR-C-UE.png"
+        },
+        "1st": {
+          "5f9614f7-6b1f-4290-a682-3b447b3308c1": "https://ms.yugipedia.com//3/35/MechaPhantomBeastTurtletracer-LTGY-FR-SR-1E.png",
+          "5d7b828a-0941-46b1-97f4-732ffcb5769a": "https://ms.yugipedia.com//d/d0/JewelsoftheValiant-LTGY-FR-C-1E.png",
+          "398acc71-2333-46a6-af59-6325775ab354": "https://ms.yugipedia.com//d/db/Dragoncarnation-LTGY-FR-SP-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31112003
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "LTGY-PT",
+      "date": "2013-05-25",
+      "image": "https://ms.yugipedia.com//7/74/LTGY-BoosterPT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "c11e01de-db6f-498c-978b-615d99ee4361": "https://ms.yugipedia.com//3/39/MechaPhantomBeastTurtletracer-LTGY-PT-SR-1E.png",
+          "93b93f18-1bcf-4073-9cb4-6087d0ad126f": "https://ms.yugipedia.com//7/75/BigWhale-LTGY-PT-R-1E.png",
+          "e27951da-16b9-4014-bef4-29de5b00189f": "https://ms.yugipedia.com//2/21/MechaPhantomBeastStealthray-LTGY-PT-C-1E.png",
+          "5a660380-6ff1-4ad9-8809-ba1d44b4cad4": "https://ms.yugipedia.com//c/c1/MechaPhantomBeastHamstrat-LTGY-PT-UR-1E.png",
+          "b03f37c0-57db-43ac-bf65-2c30844817cc": "https://ms.yugipedia.com//f/ff/BrotherhoodoftheFireFistWolf-LTGY-PT-C-1E.png",
+          "920e2404-4e3c-46a4-adc0-8d51230ede49": "https://ms.yugipedia.com//c/c6/AltitudeKnight-LTGY-PT-R-1E.png",
+          "a5b4e304-17c4-4043-8b26-c0a165044dd7": "https://ms.yugipedia.com//f/f9/JewelsoftheValiant-LTGY-PT-C-1E.png",
+          "f34049b5-610d-4c4c-b856-58c11579d12b": "https://ms.yugipedia.com//5/53/AerialRecharge-LTGY-PT-C-1E.png",
+          "e9b9862f-3e54-4ab4-8b8e-96b49d29b048": "https://ms.yugipedia.com//8/85/Dragoncarnation-LTGY-PT-SP-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11112003
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "LTGY-JP",
+      "date": "2013-02-16",
+      "image": "https://ms.yugipedia.com//2/27/LTGY-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "bb3ae552-96a9-4c15-b8f3-a73002a4ce30": "https://ms.yugipedia.com//3/3e/BigWhale-LTGY-JP-R.png",
+          "e38fb75f-b58f-4e6d-910a-f0755c64e91a": "https://ms.yugipedia.com//5/50/MechaPhantomBeastStealthray-LTGY-JP-C.png",
+          "31541e6f-e0f9-46a5-aa97-8af33b70ea63": "https://ms.yugipedia.com//0/0a/MechaPhantomBeastHamstrat-LTGY-JP-C.png",
+          "b03f37c0-57db-43ac-bf65-2c30844817cc": "https://ms.yugipedia.com//7/7c/BrotherhoodoftheFireFistWolf-LTGY-JP-C.png",
+          "9fd8e77c-7a83-4ef7-b18d-5308ff364953": "https://ms.yugipedia.com//0/06/AltitudeKnight-LTGY-JP-R.png",
+          "bccc097c-468f-4460-875c-ab0069f087ef": "https://ms.yugipedia.com//9/91/JewelsoftheValiant-LTGY-JP-C.png",
+          "ecf325ed-c4c5-4b2b-bd05-9e1a81c86a1e": "https://ms.yugipedia.com//c/c7/AerialRecharge-LTGY-JP-C.png",
+          "aca8fb80-7a8f-4ae5-93dd-7225c859bda7": "https://ms.yugipedia.com//1/16/Dragoncarnation-LTGY-JP-NR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1115003
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "LTGY-KR",
+      "date": "2013-05-01",
+      "image": "https://ms.yugipedia.com//4/49/LTGY-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "c120352b-f523-4471-b097-9f0e19d63f4d": "https://ms.yugipedia.com//2/2d/BigWhale-LTGY-KR-R-UE.png",
+          "d871fb48-8601-4274-a609-9daae73fc320": "https://ms.yugipedia.com//3/3e/MechaPhantomBeastStealthray-LTGY-KR-C-UE.png",
+          "a4944e4f-10cc-4dce-b546-8d447808f874": "https://ms.yugipedia.com//b/ba/MechaPhantomBeastHamstrat-LTGY-KR-C-UE.png",
+          "b03f37c0-57db-43ac-bf65-2c30844817cc": "https://ms.yugipedia.com//4/4c/BrotherhoodoftheFireFistWolf-LTGY-KR-C-UE.png",
+          "cd438ed7-38bc-4b62-8eec-0582e6ff1819": "https://ms.yugipedia.com//9/9d/AltitudeKnight-LTGY-KR-R-UE.png",
+          "a58123f8-d3df-476b-bcb3-cb2a3a521f81": "https://ms.yugipedia.com//b/b8/JewelsoftheValiant-LTGY-KR-C-UE.png",
+          "fc188e7c-8d92-4a9b-a738-482c42e7ef61": "https://ms.yugipedia.com//1/1c/AerialRecharge-LTGY-KR-C-UE.png",
+          "0e29b509-ed28-4226-97f7-93ab975fe8d1": "https://ms.yugipedia.com//0/03/Dragoncarnation-LTGY-KR-NR-UE.png"
+        },
+        "1st": {
+          "0e29b509-ed28-4226-97f7-93ab975fe8d1": "https://ms.yugipedia.com//9/98/Dragoncarnation-LTGY-KR-NR-1E.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71111001
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "LTGY-SP",
+      "image": "https://ms.yugipedia.com//e/e7/LTGY-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "35e02a0c-3faf-4c4e-8e93-e72bd6899c21": "https://ms.yugipedia.com//f/fa/AltitudeKnight-LTGY-SP-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51111003
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "LTGY-IT",
+      "image": "https://ms.yugipedia.com//b/bc/LTGY-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "462f361b-3c2f-4413-adae-7c2c82834479": "https://ms.yugipedia.com//f/fa/MechaPhantomBeastTurtletracer-LTGY-IT-SR-1E.png",
+          "9f1b2d1d-7e58-45d9-bc32-47b5cb538454": "https://ms.yugipedia.com//0/00/BigWhale-LTGY-IT-R-1E.png",
+          "e2ea5b60-1a88-481d-b68f-20a63c088d95": "https://ms.yugipedia.com//7/7c/AltitudeKnight-LTGY-IT-R-1E.png",
+          "bdf2ff72-b7ba-49b1-82ee-09fa2b523199": "https://ms.yugipedia.com//4/44/JewelsoftheValiant-LTGY-IT-C-1E.png",
+          "860d052d-ef7c-404d-bb1c-be91db6a24c6": "https://ms.yugipedia.com//1/17/AerialRecharge-LTGY-IT-C-1E.png",
+          "ef7faa4a-2688-494a-9a57-f83bed8e3cde": "https://ms.yugipedia.com//3/37/Dragoncarnation-LTGY-IT-SP-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41112003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/30/LTGY-BoosterEN.png",
+      "cards": [
+        {
+          "id": "e57fbd9c-deb1-4d79-8adf-8b1179541cef",
+          "card": "f94a8390-30c5-466e-a661-aebd6ab8682f",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "70413151-18c1-4792-bdc0-8b1fc29bddb1",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "52f02bec-7bdc-4bfc-b3ab-080306a62eb2",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "ef5dc617-09a6-4bdb-8140-5c57f68b4289",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4bbd123b-7423-4757-b3a4-dfaeaa77f241",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "71632292-d133-4f57-bfa6-c73862ed2bc3",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "2b01da8c-803c-4c11-86b8-a59ec6be3e01",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "b88220e2-7d79-4d92-a7de-9a6ce4cf204a",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "29dc4c6a-c9da-46ad-951c-26f9a6f05f68",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "tc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c1/LTGY-BoosterTC.png",
+      "cards": [
+        {
+          "id": "bab9c534-b2fc-4768-bbbd-8d4738339a6f",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "4a472de1-e39a-4d7a-a5c4-9d20f43e741d",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "141d51fc-7e02-495d-9d18-793976bdad51",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "c3bf9e30-c67a-464f-9b14-c372592c4d6e",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "e17106af-e3b4-419d-ba25-997e6f1e7040",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "934c50eb-6323-4dee-ab1d-6d02c77b8b3a",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "0b278b31-868a-4b37-8134-12cc49661219",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "2e89f449-fd82-43c6-90f4-deae6082bf7a",
+          "card": "f94a8390-30c5-466e-a661-aebd6ab8682f",
+          "suffix": "081",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/dd/LTGY-BoosterDE.png",
+      "cards": [
+        {
+          "id": "64629df9-40f8-45d3-b472-b95eff6fcb0c",
+          "card": "f94a8390-30c5-466e-a661-aebd6ab8682f",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "9e1cbe4d-791f-48e0-95a6-ded4786ec225",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "b9f2a947-6159-4b92-be90-16487fd4b5ec",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "00419a97-8256-49c5-999d-d5f2c91311aa",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5cd7a137-10ca-484c-b9fd-de1aa67f3712",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "114cf282-450d-4368-a94e-8d1b5c83f373",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "91a5b030-4ece-4df7-b19f-98165bfd84ac",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "b1f6e7b2-4d2a-4340-9fbb-a453e0fae8ce",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "281e7855-017d-4abb-83d0-39689d222cb8",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/18/LTGY-BoosterFR.png",
+      "cards": [
+        {
+          "id": "5f9614f7-6b1f-4290-a682-3b447b3308c1",
+          "card": "f94a8390-30c5-466e-a661-aebd6ab8682f",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "1633fa72-1299-458c-942d-450d02cb9aee",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "893ad495-bb3d-4ed1-af2e-8dafbf9e61ff",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "522960ce-ba1a-458e-baeb-8802d0f50ddc",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ec77dcde-5924-4dff-9f64-6cd515dd4808",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "e1210339-46c6-4264-91dc-6931c70f5af0",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "5d7b828a-0941-46b1-97f4-732ffcb5769a",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "74897e48-c93a-4f88-9f14-6823fb982996",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "398acc71-2333-46a6-af59-6325775ab354",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/74/LTGY-BoosterPT.png",
+      "cards": [
+        {
+          "id": "c11e01de-db6f-498c-978b-615d99ee4361",
+          "card": "f94a8390-30c5-466e-a661-aebd6ab8682f",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "93b93f18-1bcf-4073-9cb4-6087d0ad126f",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "e27951da-16b9-4014-bef4-29de5b00189f",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "5a660380-6ff1-4ad9-8809-ba1d44b4cad4",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e10859a3-32de-4d0e-82f4-035ea1b67c46",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "920e2404-4e3c-46a4-adc0-8d51230ede49",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "a5b4e304-17c4-4043-8b26-c0a165044dd7",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f34049b5-610d-4c4c-b856-58c11579d12b",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "e9b9862f-3e54-4ab4-8b8e-96b49d29b048",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/27/LTGY-BoosterJP.png",
+      "cards": [
+        {
+          "id": "bb3ae552-96a9-4c15-b8f3-a73002a4ce30",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "e38fb75f-b58f-4e6d-910a-f0755c64e91a",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "31541e6f-e0f9-46a5-aa97-8af33b70ea63",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "9fd8e77c-7a83-4ef7-b18d-5308ff364953",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "bccc097c-468f-4460-875c-ab0069f087ef",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "ecf325ed-c4c5-4b2b-bd05-9e1a81c86a1e",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "aca8fb80-7a8f-4ae5-93dd-7225c859bda7",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/49/LTGY-BoosterKR.png",
+      "cards": [
+        {
+          "id": "c120352b-f523-4471-b097-9f0e19d63f4d",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "d871fb48-8601-4274-a609-9daae73fc320",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "a4944e4f-10cc-4dce-b546-8d447808f874",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "cd438ed7-38bc-4b62-8eec-0582e6ff1819",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "a58123f8-d3df-476b-bcb3-cb2a3a521f81",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "fc188e7c-8d92-4a9b-a738-482c42e7ef61",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "0e29b509-ed28-4226-97f7-93ab975fe8d1",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e7/LTGY-BoosterSP.png",
+      "cards": [
+        {
+          "id": "f0e36b3f-5d37-40f5-8ffe-59f1f7b0e9e9",
+          "card": "f94a8390-30c5-466e-a661-aebd6ab8682f",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "fa6a0f8f-171d-4a69-9eab-e82d5d37853d",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "c77e2774-9895-4db8-9c9d-8b7f8a723b84",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "b31661d2-1224-4e9d-a18d-df74b665efd6",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5a459b9d-6a5c-4fa3-98ef-2883bb58bdc9",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "35e02a0c-3faf-4c4e-8e93-e72bd6899c21",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "685a3db3-9a42-464e-beb3-425900df6474",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "801244f9-597e-4468-9b21-095416136908",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "78440d9a-77ad-4a37-9289-31e7184d5853",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/bc/LTGY-BoosterIT.png",
+      "cards": [
+        {
+          "id": "462f361b-3c2f-4413-adae-7c2c82834479",
+          "card": "f94a8390-30c5-466e-a661-aebd6ab8682f",
+          "suffix": "000",
+          "rarity": "super"
+        },
+        {
+          "id": "9f1b2d1d-7e58-45d9-bc32-47b5cb538454",
+          "card": "1865613b-d451-4141-8e19-2d003bfcad19",
+          "suffix": "008",
+          "rarity": "rare"
+        },
+        {
+          "id": "35e2ceab-66f3-42cc-a2c3-3163c5836064",
+          "card": "4b2f161d-cb7d-4576-bfb9-f85e5ac81988",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "470271cf-95b9-4379-9943-f80158842545",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d15eb88a-864f-4044-a2f4-aa995ac64cf5",
+          "card": "bcacc64e-a9f0-4703-a5d9-7ba00984a8e7",
+          "suffix": "025",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "b03f37c0-57db-43ac-bf65-2c30844817cc",
+          "card": "f67a61dc-a874-4bf2-be85-b7e0fe5c329e",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "e2ea5b60-1a88-481d-b68f-20a63c088d95",
+          "card": "0d241717-8645-41bc-a4c3-73adc8fa6882",
+          "suffix": "036",
+          "rarity": "rare"
+        },
+        {
+          "id": "bdf2ff72-b7ba-49b1-82ee-09fa2b523199",
+          "card": "135e31ef-3c32-45d4-80ba-9597a04bdf42",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "860d052d-ef7c-404d-bb1c-be91db6a24c6",
+          "card": "31d612d3-46f1-43c6-8822-62537090d0e5",
+          "suffix": "073",
+          "rarity": "common"
+        },
+        {
+          "id": "ef7faa4a-2688-494a-9a57-f83bed8e3cde",
+          "card": "b00297ac-0be9-4e71-8b4d-506afc60b218",
+          "suffix": "080",
+          "rarity": "shortprint"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Lord of the Tachyon Galaxy"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Lord of the Tachyon Galaxy",
+      "id": 246781
+    }
+  }
+}

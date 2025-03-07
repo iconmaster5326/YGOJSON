@@ -1,0 +1,548 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b35a3a20-dbdc-4380-bf7f-aaeaf08c12d7",
+  "name": {
+    "en": "Starter Deck Yugi - Reloaded",
+    "fr": "Deck de D\u00e9marrage - Yugi Revient",
+    "de": "Starter Deck - Yugi Reloaded",
+    "it": "Starter Deck Yugi - Il Ritorno",
+    "pt": "Deck Inicial - Yugi Reloaded",
+    "es": "La Baraja de Principiante Yugi - Vuelve"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "YSYR-PT",
+      "date": "2013-12-06",
+      "image": "https://ms.yugipedia.com//1/1d/YSYR-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "51d6632c-83ab-46df-a1d4-4f48d351f892": "https://ms.yugipedia.com//6/69/DarkMagician-YSYR-PT-UtR-1E.png",
+          "051fe031-7f8e-42e6-8d89-2b8d44cac96e": "https://ms.yugipedia.com//4/4c/DarkMagician-YSYR-PT-C-1E.png",
+          "4ac4ad1f-1b4f-41d9-8f0e-9bb6f9c3b3cd": "https://ms.yugipedia.com//2/23/GiantSoldierofStone-YSYR-PT-C-1E.png",
+          "c6d46cc3-4f07-4558-bf2a-8a0c997c9267": "https://ms.yugipedia.com//6/6d/DarkMagicianGirl-YSYR-PT-C-1E.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//0/06/BookofMoon-YSYR-PT-C-1E.png",
+          "0bae9435-f427-444d-8a48-83c2287a4a30": "https://ms.yugipedia.com//2/21/AncientRules-YSYR-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13311001
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "YSYR-IT",
+      "image": "https://ms.yugipedia.com//6/6e/YSYR-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "d5573353-16e2-4c31-88cf-fdf05c86d826": "https://ms.yugipedia.com//d/da/DarkMagician-YSYR-IT-UtR-1E.png",
+          "c7b028dc-84d8-4fa9-b2ea-dcbcc09a584c": "https://ms.yugipedia.com//6/61/DarkMagician-YSYR-IT-C-1E.png",
+          "cf4ce002-811b-47e5-b232-b11a8ea4e3a1": "https://ms.yugipedia.com//5/5a/GiantSoldierofStone-YSYR-IT-C-1E.png",
+          "b47a0717-b9bb-40e2-812a-ed50987e75ec": "https://ms.yugipedia.com//1/1d/DarkMagicianGirl-YSYR-IT-C-1E.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//0/01/BookofMoon-YSYR-IT-C-1E.png",
+          "a64e57fd-8389-47b7-93ff-073d6b63b9f3": "https://ms.yugipedia.com//a/aa/AncientRules-YSYR-IT-C-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "YSYR-DE",
+      "image": "https://ms.yugipedia.com//6/6a/YSYR-DeckDE.png",
+      "cardImages": {
+        "1st": {
+          "dbc48f2d-ef30-4db5-8443-fd0260691001": "https://ms.yugipedia.com//7/7b/DarkMagician-YSYR-DE-UtR-1E.png",
+          "cc8f5c4f-a4b4-4956-9c50-6c7155be1d39": "https://ms.yugipedia.com//5/5d/DarkMagician-YSYR-DE-C-1E.png",
+          "159bfe87-ba79-43e2-8c9a-90b0a4aaf842": "https://ms.yugipedia.com//e/e6/GiantSoldierofStone-YSYR-DE-C-1E.png",
+          "e93e1d83-56f3-4e99-8a0f-63b41c3284aa": "https://ms.yugipedia.com//1/11/DarkMagicianGirl-YSYR-DE-C-1E.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//f/f0/BookofMoon-YSYR-DE-C-1E.png",
+          "72e593e8-3312-433d-b1d6-cb31e9b31a15": "https://ms.yugipedia.com//1/13/AncientRules-YSYR-DE-C-1E.png"
+        },
+        "unlimited": {
+          "dbc48f2d-ef30-4db5-8443-fd0260691001": "https://ms.yugipedia.com//3/39/DarkMagician-YSYR-DE-UtR-UE.png",
+          "cc8f5c4f-a4b4-4956-9c50-6c7155be1d39": "https://ms.yugipedia.com//0/0f/DarkMagician-YSYR-DE-C-UE.png",
+          "159bfe87-ba79-43e2-8c9a-90b0a4aaf842": "https://ms.yugipedia.com//6/61/GiantSoldierofStone-YSYR-DE-C-UE.png",
+          "e93e1d83-56f3-4e99-8a0f-63b41c3284aa": "https://ms.yugipedia.com//1/1f/DarkMagicianGirl-YSYR-DE-C-UE.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//2/21/BookofMoon-YSYR-DE-C-UE.png",
+          "72e593e8-3312-433d-b1d6-cb31e9b31a15": "https://ms.yugipedia.com//a/ab/AncientRules-YSYR-DE-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "YSYR-SP",
+      "image": "https://ms.yugipedia.com//4/46/YSYR-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "2646b95f-b8b8-4220-9d82-9e3a4222b2a2": "https://ms.yugipedia.com//5/52/DarkMagician-YSYR-SP-UtR-1E.png",
+          "5a0b8a24-93c4-4b0e-8b8c-1a52b4f90e81": "https://ms.yugipedia.com//a/ae/DarkMagician-YSYR-SP-C-1E.png",
+          "6b4811cf-99f4-41fa-a29e-ecf5f3be9a2b": "https://ms.yugipedia.com//8/88/GiantSoldierofStone-YSYR-SP-C-1E.png",
+          "14742661-226c-4827-8fb4-6cee88c85947": "https://ms.yugipedia.com//2/21/DarkMagicianGirl-YSYR-SP-C-1E.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//c/c5/BookofMoon-YSYR-SP-C-1E.png",
+          "41c8a98a-e791-45e7-b8ac-436a7d0de50c": "https://ms.yugipedia.com//c/c0/AncientRules-YSYR-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "YSYR-EN",
+      "image": "https://ms.yugipedia.com//0/00/YSYR-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "a2274fb0-44ec-4171-9ac9-1269dcb06975": "https://ms.yugipedia.com//6/6d/DarkMagician-YSYR-EN-UtR-1E.png",
+          "85270fa5-edbd-4c87-a04e-1d89a539059e": "https://ms.yugipedia.com//6/63/DarkMagician-YSYR-EN-C-1E.png",
+          "152f2bf2-fd4f-42a4-ab72-1f8a12141cf5": "https://ms.yugipedia.com//b/ba/GiantSoldierofStone-YSYR-EN-C-1E.png",
+          "ae554883-502e-46b2-a134-beb243455422": "https://ms.yugipedia.com//7/79/DarkMagicianGirl-YSYR-EN-C-1E.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//8/86/BookofMoon-YSYR-EN-C-1E.png",
+          "66d11cdc-2850-4145-989e-51e3aae90f01": "https://ms.yugipedia.com//4/4e/AncientRules-YSYR-EN-C-1E.png"
+        },
+        "unlimited": {
+          "a2274fb0-44ec-4171-9ac9-1269dcb06975": "https://ms.yugipedia.com//4/43/DarkMagician-YSYR-EN-UtR-UE.png",
+          "85270fa5-edbd-4c87-a04e-1d89a539059e": "https://ms.yugipedia.com//1/13/DarkMagician-YSYR-EN-C-UE.png",
+          "152f2bf2-fd4f-42a4-ab72-1f8a12141cf5": "https://ms.yugipedia.com//0/0f/GiantSoldierofStone-YSYR-EN-C-UE.png",
+          "ae554883-502e-46b2-a134-beb243455422": "https://ms.yugipedia.com//0/0e/DarkMagicianGirl-YSYR-EN-C-UE.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//5/5f/BookofMoon-YSYR-EN-C-UE.png",
+          "66d11cdc-2850-4145-989e-51e3aae90f01": "https://ms.yugipedia.com//0/03/AncientRules-YSYR-EN-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13311001
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "YSYR-FR",
+      "image": "https://ms.yugipedia.com//c/ce/YSYR-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "a3ec0663-1523-4081-992e-aaa05564d64d": "https://ms.yugipedia.com//9/99/DarkMagician-YSYR-FR-UtR-1E.png",
+          "e2a451d6-0502-45bf-b540-bf09e1923bae": "https://ms.yugipedia.com//2/29/DarkMagician-YSYR-FR-C-1E.png",
+          "06a13e2f-63b9-4aa1-bb3c-3a47e981e8c8": "https://ms.yugipedia.com//c/c3/GiantSoldierofStone-YSYR-FR-C-1E.png",
+          "a3425ea0-9471-44d3-b02a-a03f6a7c1153": "https://ms.yugipedia.com//b/b3/DarkMagicianGirl-YSYR-FR-C-1E.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//a/a4/BookofMoon-YSYR-FR-C-1E.png",
+          "bc6667cf-11ed-4b05-8278-c8f30000ecf7": "https://ms.yugipedia.com//b/bd/AncientRules-YSYR-FR-C-1E.png"
+        },
+        "unlimited": {
+          "a3ec0663-1523-4081-992e-aaa05564d64d": "https://ms.yugipedia.com//1/16/DarkMagician-YSYR-FR-UtR-UE.png",
+          "e2a451d6-0502-45bf-b540-bf09e1923bae": "https://ms.yugipedia.com//a/a1/DarkMagician-YSYR-FR-C-UE.png",
+          "06a13e2f-63b9-4aa1-bb3c-3a47e981e8c8": "https://ms.yugipedia.com//6/6c/GiantSoldierofStone-YSYR-FR-C-UE.png",
+          "a3425ea0-9471-44d3-b02a-a03f6a7c1153": "https://ms.yugipedia.com//8/89/DarkMagicianGirl-YSYR-FR-C-UE.png",
+          "58933054-abce-4a54-8f00-31b3c1f1c9a6": "https://ms.yugipedia.com//d/d4/BookofMoon-YSYR-FR-C-UE.png",
+          "bc6667cf-11ed-4b05-8278-c8f30000ecf7": "https://ms.yugipedia.com//b/bc/AncientRules-YSYR-FR-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/1d/YSYR-DeckPT.png",
+      "cards": [
+        {
+          "id": "51d6632c-83ab-46df-a1d4-4f48d351f892",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "051fe031-7f8e-42e6-8d89-2b8d44cac96e",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "4ac4ad1f-1b4f-41d9-8f0e-9bb6f9c3b3cd",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "c6d46cc3-4f07-4558-bf2a-8a0c997c9267",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "58933054-abce-4a54-8f00-31b3c1f1c9a6",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "0bae9435-f427-444d-8a48-83c2287a4a30",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/6e/YSYR-DeckIT.png",
+      "cards": [
+        {
+          "id": "d5573353-16e2-4c31-88cf-fdf05c86d826",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "c7b028dc-84d8-4fa9-b2ea-dcbcc09a584c",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "cf4ce002-811b-47e5-b232-b11a8ea4e3a1",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "b47a0717-b9bb-40e2-812a-ed50987e75ec",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "58933054-abce-4a54-8f00-31b3c1f1c9a6",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "a64e57fd-8389-47b7-93ff-073d6b63b9f3",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/6a/YSYR-DeckDE.png",
+      "cards": [
+        {
+          "id": "dbc48f2d-ef30-4db5-8443-fd0260691001",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "cc8f5c4f-a4b4-4956-9c50-6c7155be1d39",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "159bfe87-ba79-43e2-8c9a-90b0a4aaf842",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "e93e1d83-56f3-4e99-8a0f-63b41c3284aa",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "58933054-abce-4a54-8f00-31b3c1f1c9a6",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "72e593e8-3312-433d-b1d6-cb31e9b31a15",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/46/YSYR-DeckSP.png",
+      "cards": [
+        {
+          "id": "2646b95f-b8b8-4220-9d82-9e3a4222b2a2",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "5a0b8a24-93c4-4b0e-8b8c-1a52b4f90e81",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "6b4811cf-99f4-41fa-a29e-ecf5f3be9a2b",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "14742661-226c-4827-8fb4-6cee88c85947",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "58933054-abce-4a54-8f00-31b3c1f1c9a6",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "41c8a98a-e791-45e7-b8ac-436a7d0de50c",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/00/YSYR-DeckEN.png",
+      "cards": [
+        {
+          "id": "a2274fb0-44ec-4171-9ac9-1269dcb06975",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "85270fa5-edbd-4c87-a04e-1d89a539059e",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "152f2bf2-fd4f-42a4-ab72-1f8a12141cf5",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "ae554883-502e-46b2-a134-beb243455422",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "58933054-abce-4a54-8f00-31b3c1f1c9a6",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "66d11cdc-2850-4145-989e-51e3aae90f01",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/ce/YSYR-DeckFR.png",
+      "cards": [
+        {
+          "id": "a3ec0663-1523-4081-992e-aaa05564d64d",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "e2a451d6-0502-45bf-b540-bf09e1923bae",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "06a13e2f-63b9-4aa1-bb3c-3a47e981e8c8",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "a3425ea0-9471-44d3-b02a-a03f6a7c1153",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "58933054-abce-4a54-8f00-31b3c1f1c9a6",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "bc6667cf-11ed-4b05-8278-c8f30000ecf7",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starter Deck: Yugi Reloaded",
+      "id": 315525
+    }
+  }
+}

@@ -1,0 +1,599 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "60a87cb1-62cd-4a7c-b93c-61bdea6c7100",
+  "name": {
+    "en": "Speed Duel: Arena of Lost Souls",
+    "fr": "Speed Duel : L'Ar\u00e8ne des \u00c2mes Perdues",
+    "de": "Speed Duel: Arena of Lost Souls",
+    "it": "Speed Duel: L'Arena delle Anime Perdute",
+    "pt": "Speed Duel: Arena das Almas Perdidas",
+    "es": "Speed Duel: La Arena de las Almas Perdidas"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SBLS-EN",
+      "image": "https://ms.yugipedia.com//e/e4/SBLS-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "831d1e5e-cccf-4bd3-a481-0cfaba1e594e": "https://ms.yugipedia.com//f/fb/PossessedDarkSoul-SBLS-EN-C-1E.png",
+          "8e8a3c89-42a0-4d8c-ae3a-7819aa8d15a0": "https://ms.yugipedia.com//8/8e/SenjuoftheThousandHands-SBLS-EN-SR-1E.png",
+          "36bf9767-acc4-4d10-89fc-427ee1a2bcbb": "https://ms.yugipedia.com//f/f5/SphereKuriboh-SBLS-EN-UR-1E.png",
+          "e4d4dadd-b171-4123-aa69-adfd19c63df1": "https://ms.yugipedia.com//d/dd/ClownZombie-SBLS-EN-C-1E.png",
+          "0837929c-9733-4b88-adf6-42ffe033ce93": "https://ms.yugipedia.com//8/8b/MagicalGhost-SBLS-EN-C-1E.png",
+          "fad292c5-b733-4ba3-8059-b602c38825f1": "https://ms.yugipedia.com//1/17/KingoftheSkullServants-SBLS-EN-SR-1E.png",
+          "a1b02806-a88c-4e24-9712-5dc3d8828bde": "https://ms.yugipedia.com//d/de/GreatMammothofGoldfine-SBLS-EN-C-1E.png",
+          "468fdac8-4b51-4155-8b36-ae0fd4c32b58": "https://ms.yugipedia.com//5/5f/Wasteland-SBLS-EN-C-1E.png",
+          "3e267e8d-e4c8-4125-9604-0984fcd02b76": "https://ms.yugipedia.com//c/ca/BlockAttack-SBLS-EN-C-1E.png",
+          "dbb5ce41-4213-41ff-8b98-f32faa4dd999": "https://ms.yugipedia.com//c/ce/HalfShut-SBLS-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11118003
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SBLS-DE",
+      "image": "https://ms.yugipedia.com//e/e5/SBLS-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SBLS-SP",
+      "image": "https://ms.yugipedia.com//0/04/SBLS-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "1c17cf8a-c009-4d48-aa61-6f1e3d0227c4": "https://ms.yugipedia.com//c/c2/PossessedDarkSoul-SBLS-SP-C-1E.png",
+          "0b082d09-63a9-4122-a9f1-3e858f473240": "https://ms.yugipedia.com//c/cd/SenjuoftheThousandHands-SBLS-SP-SR-1E.png",
+          "626e14eb-d1cc-42fe-a2f5-623a955a915e": "https://ms.yugipedia.com//f/f2/ClownZombie-SBLS-SP-C-1E.png",
+          "e4fbf9bb-fb33-4c4b-b799-8e9a10c60247": "https://ms.yugipedia.com//1/1e/MagicalGhost-SBLS-SP-C-1E.png",
+          "3c08b998-4469-4a29-b97f-b2f03577198f": "https://ms.yugipedia.com//8/8c/KingoftheSkullServants-SBLS-SP-SR-1E.png",
+          "9a257dc3-cc36-4a28-8121-04d3448358b7": "https://ms.yugipedia.com//5/56/GreatMammothofGoldfine-SBLS-SP-C-1E.png",
+          "4c7e8def-0d1c-4042-89df-77f5169ef7d3": "https://ms.yugipedia.com//e/e9/Wasteland-SBLS-SP-C-1E.png",
+          "d6e9e090-23fe-4c33-ae43-bb4521941271": "https://ms.yugipedia.com//6/62/BlockAttack-SBLS-SP-C-1E.png",
+          "38a35e26-a687-4a6c-9722-82e5ab908e87": "https://ms.yugipedia.com//9/9b/HalfShut-SBLS-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SBLS-IT",
+      "image": "https://ms.yugipedia.com//c/c5/SBLS-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SBLS-PT",
+      "date": "2019-03-28",
+      "image": "https://ms.yugipedia.com//b/b2/SBLS-BoosterPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SBLS-FR",
+      "image": "https://ms.yugipedia.com//4/4a/SBLS-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "dcf314d7-4224-4c5e-b6ce-83b9a2019969": "https://ms.yugipedia.com//6/6e/PossessedDarkSoul-SBLS-FR-C-1E.png",
+          "0258c87f-699c-467a-bb89-75e2fabc1a95": "https://ms.yugipedia.com//8/84/SenjuoftheThousandHands-SBLS-FR-SR-1E.png",
+          "36bf9767-acc4-4d10-89fc-427ee1a2bcbb": "https://ms.yugipedia.com//4/4b/SphereKuriboh-SBLS-FR-UR-1E.png",
+          "b29f1f77-bd41-46cd-ade7-c5b0e17703d9": "https://ms.yugipedia.com//e/e0/ClownZombie-SBLS-FR-C-1E.png",
+          "a141069d-ce38-42f4-a996-b97143ba5b3b": "https://ms.yugipedia.com//1/19/MagicalGhost-SBLS-FR-C-1E.png",
+          "73c67dbc-7baf-488d-bcae-a60da98fd1ec": "https://ms.yugipedia.com//4/43/KingoftheSkullServants-SBLS-FR-SR-1E.png",
+          "05f9aef2-5d71-48a7-a435-d730dc3ad76c": "https://ms.yugipedia.com//6/6e/GreatMammothofGoldfine-SBLS-FR-C-1E.png",
+          "6d38aaf9-ba39-4248-b687-0b4e8ed3c144": "https://ms.yugipedia.com//8/88/Wasteland-SBLS-FR-C-1E.png",
+          "68b6c9a6-ef61-4c1f-8273-61ae9ff89a30": "https://ms.yugipedia.com//6/65/BlockAttack-SBLS-FR-C-1E.png",
+          "fa0c45f2-16be-498c-b50c-10c1acecddcc": "https://ms.yugipedia.com//9/9c/HalfShut-SBLS-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e4/SBLS-BoosterEN.png",
+      "cards": [
+        {
+          "id": "831d1e5e-cccf-4bd3-a481-0cfaba1e594e",
+          "card": "4919e4b7-d219-43c7-acb1-dab42e5be6a6",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "8e8a3c89-42a0-4d8c-ae3a-7819aa8d15a0",
+          "card": "30695653-138a-4684-a38b-c0cc31c0078d",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "36bf9767-acc4-4d10-89fc-427ee1a2bcbb",
+          "card": "c0bdfe84-ec58-4cfb-94c3-2523b70d2250",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e4d4dadd-b171-4123-aa69-adfd19c63df1",
+          "card": "9f81ba34-837c-4a62-afd4-ac483fcb795d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "0837929c-9733-4b88-adf6-42ffe033ce93",
+          "card": "a0d3ca8f-35a1-4a3f-9fd6-0e24db0f7f55",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "fad292c5-b733-4ba3-8059-b602c38825f1",
+          "card": "0e4aece0-cb37-4c31-a55c-570bc4605d8c",
+          "suffix": "031",
+          "rarity": "super"
+        },
+        {
+          "id": "a1b02806-a88c-4e24-9712-5dc3d8828bde",
+          "card": "faa6a6c2-1b03-46ac-98fe-ff43a356cd00",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "468fdac8-4b51-4155-8b36-ae0fd4c32b58",
+          "card": "d64d2866-1c4f-4170-a40a-11ae04eefa50",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "3e267e8d-e4c8-4125-9604-0984fcd02b76",
+          "card": "322864d3-485f-4967-aca9-e40002815e28",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "dbb5ce41-4213-41ff-8b98-f32faa4dd999",
+          "card": "af6d77eb-2947-4f5d-9d06-2e9d6a373d2f",
+          "suffix": "043",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e5/SBLS-BoosterDE.png",
+      "cards": [
+        {
+          "id": "4a25e9e4-0d28-48d6-97ce-28f7e657c145",
+          "card": "4919e4b7-d219-43c7-acb1-dab42e5be6a6",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "fd32b30f-beb9-4c87-864d-1103111bea08",
+          "card": "30695653-138a-4684-a38b-c0cc31c0078d",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "36bf9767-acc4-4d10-89fc-427ee1a2bcbb",
+          "card": "c0bdfe84-ec58-4cfb-94c3-2523b70d2250",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "c85d76c1-af7d-4ec4-866d-0669de63b0cb",
+          "card": "9f81ba34-837c-4a62-afd4-ac483fcb795d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "e5d92d39-bd21-49e1-8793-e375ce79395b",
+          "card": "a0d3ca8f-35a1-4a3f-9fd6-0e24db0f7f55",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "0b776020-aa3c-4327-8c16-0e2af5a29f63",
+          "card": "0e4aece0-cb37-4c31-a55c-570bc4605d8c",
+          "suffix": "031",
+          "rarity": "super"
+        },
+        {
+          "id": "bd9c95f4-db76-435d-9118-71ba06889bab",
+          "card": "faa6a6c2-1b03-46ac-98fe-ff43a356cd00",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "a7b3acf8-c2f1-4144-83dd-ccff12c99a37",
+          "card": "d64d2866-1c4f-4170-a40a-11ae04eefa50",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "26cfafe6-ec2f-4b69-9c0b-da49b4ce8d7c",
+          "card": "322864d3-485f-4967-aca9-e40002815e28",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "a218953f-c8fc-4be8-a77f-9d53f950b6b5",
+          "card": "af6d77eb-2947-4f5d-9d06-2e9d6a373d2f",
+          "suffix": "043",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/04/SBLS-BoosterSP.png",
+      "cards": [
+        {
+          "id": "1c17cf8a-c009-4d48-aa61-6f1e3d0227c4",
+          "card": "4919e4b7-d219-43c7-acb1-dab42e5be6a6",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "0b082d09-63a9-4122-a9f1-3e858f473240",
+          "card": "30695653-138a-4684-a38b-c0cc31c0078d",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "36bf9767-acc4-4d10-89fc-427ee1a2bcbb",
+          "card": "c0bdfe84-ec58-4cfb-94c3-2523b70d2250",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "626e14eb-d1cc-42fe-a2f5-623a955a915e",
+          "card": "9f81ba34-837c-4a62-afd4-ac483fcb795d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "e4fbf9bb-fb33-4c4b-b799-8e9a10c60247",
+          "card": "a0d3ca8f-35a1-4a3f-9fd6-0e24db0f7f55",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "3c08b998-4469-4a29-b97f-b2f03577198f",
+          "card": "0e4aece0-cb37-4c31-a55c-570bc4605d8c",
+          "suffix": "031",
+          "rarity": "super"
+        },
+        {
+          "id": "9a257dc3-cc36-4a28-8121-04d3448358b7",
+          "card": "faa6a6c2-1b03-46ac-98fe-ff43a356cd00",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "4c7e8def-0d1c-4042-89df-77f5169ef7d3",
+          "card": "d64d2866-1c4f-4170-a40a-11ae04eefa50",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "d6e9e090-23fe-4c33-ae43-bb4521941271",
+          "card": "322864d3-485f-4967-aca9-e40002815e28",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "38a35e26-a687-4a6c-9722-82e5ab908e87",
+          "card": "af6d77eb-2947-4f5d-9d06-2e9d6a373d2f",
+          "suffix": "043",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c5/SBLS-BoosterIT.png",
+      "cards": [
+        {
+          "id": "87702341-5c7f-4cf8-8c78-fadaf76a0e7c",
+          "card": "4919e4b7-d219-43c7-acb1-dab42e5be6a6",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "45e96511-4ff4-4661-ad42-2a1393ff1af3",
+          "card": "30695653-138a-4684-a38b-c0cc31c0078d",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "36bf9767-acc4-4d10-89fc-427ee1a2bcbb",
+          "card": "c0bdfe84-ec58-4cfb-94c3-2523b70d2250",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "4b72bd79-27fe-4ace-a9c9-42ec2e214549",
+          "card": "9f81ba34-837c-4a62-afd4-ac483fcb795d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "2bdb0e4d-9a90-470f-aa26-3513cc7132a8",
+          "card": "a0d3ca8f-35a1-4a3f-9fd6-0e24db0f7f55",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "c7fe07d3-2fe2-4293-8956-c1a0065933c8",
+          "card": "0e4aece0-cb37-4c31-a55c-570bc4605d8c",
+          "suffix": "031",
+          "rarity": "super"
+        },
+        {
+          "id": "e615caba-9656-4e8b-86d9-1a5278bfbdd7",
+          "card": "faa6a6c2-1b03-46ac-98fe-ff43a356cd00",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "02048892-b5a7-4130-902d-7d4223e69e53",
+          "card": "d64d2866-1c4f-4170-a40a-11ae04eefa50",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "33409d4c-a178-4a2f-8620-4f83290c5efd",
+          "card": "322864d3-485f-4967-aca9-e40002815e28",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "0fa52dd3-e325-4363-9f9c-d81b0029c385",
+          "card": "af6d77eb-2947-4f5d-9d06-2e9d6a373d2f",
+          "suffix": "043",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b2/SBLS-BoosterPT.png",
+      "cards": [
+        {
+          "id": "e92ef3a6-1ce7-4e28-a860-9dc0b223fbaa",
+          "card": "4919e4b7-d219-43c7-acb1-dab42e5be6a6",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "5030bee1-dd21-485b-9450-7c9151bc9c30",
+          "card": "30695653-138a-4684-a38b-c0cc31c0078d",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "36bf9767-acc4-4d10-89fc-427ee1a2bcbb",
+          "card": "c0bdfe84-ec58-4cfb-94c3-2523b70d2250",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "7946a267-6c89-4395-a100-d491ad04987c",
+          "card": "9f81ba34-837c-4a62-afd4-ac483fcb795d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "7106a59b-b472-4bdf-b2e8-6b29370cf1fb",
+          "card": "a0d3ca8f-35a1-4a3f-9fd6-0e24db0f7f55",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "8dab5af6-dbed-4244-8e77-673a7d24ce28",
+          "card": "0e4aece0-cb37-4c31-a55c-570bc4605d8c",
+          "suffix": "031",
+          "rarity": "super"
+        },
+        {
+          "id": "5edd96d4-8ef4-4af7-85cc-cc53148d0449",
+          "card": "faa6a6c2-1b03-46ac-98fe-ff43a356cd00",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "50b93f01-3fe3-4961-b77a-a695fbd58ef9",
+          "card": "d64d2866-1c4f-4170-a40a-11ae04eefa50",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "b57855bc-9a29-4a8c-af77-2c4d70c7fcae",
+          "card": "322864d3-485f-4967-aca9-e40002815e28",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "41a420bd-2cd4-4c08-acf5-80a3c672104a",
+          "card": "af6d77eb-2947-4f5d-9d06-2e9d6a373d2f",
+          "suffix": "043",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/4a/SBLS-BoosterFR.png",
+      "cards": [
+        {
+          "id": "dcf314d7-4224-4c5e-b6ce-83b9a2019969",
+          "card": "4919e4b7-d219-43c7-acb1-dab42e5be6a6",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "0258c87f-699c-467a-bb89-75e2fabc1a95",
+          "card": "30695653-138a-4684-a38b-c0cc31c0078d",
+          "suffix": "017",
+          "rarity": "super"
+        },
+        {
+          "id": "36bf9767-acc4-4d10-89fc-427ee1a2bcbb",
+          "card": "c0bdfe84-ec58-4cfb-94c3-2523b70d2250",
+          "suffix": "018",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b29f1f77-bd41-46cd-ade7-c5b0e17703d9",
+          "card": "9f81ba34-837c-4a62-afd4-ac483fcb795d",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "a141069d-ce38-42f4-a996-b97143ba5b3b",
+          "card": "a0d3ca8f-35a1-4a3f-9fd6-0e24db0f7f55",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "73c67dbc-7baf-488d-bcae-a60da98fd1ec",
+          "card": "0e4aece0-cb37-4c31-a55c-570bc4605d8c",
+          "suffix": "031",
+          "rarity": "super"
+        },
+        {
+          "id": "05f9aef2-5d71-48a7-a435-d730dc3ad76c",
+          "card": "faa6a6c2-1b03-46ac-98fe-ff43a356cd00",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "6d38aaf9-ba39-4248-b687-0b4e8ed3c144",
+          "card": "d64d2866-1c4f-4170-a40a-11ae04eefa50",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "68b6c9a6-ef61-4c1f-8273-61ae9ff89a30",
+          "card": "322864d3-485f-4967-aca9-e40002815e28",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "fa0c45f2-16be-498c-b50c-10c1acecddcc",
+          "card": "af6d77eb-2947-4f5d-9d06-2e9d6a373d2f",
+          "suffix": "043",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Speed Duel: Arena of Lost Souls",
+      "id": 583595
+    }
+  }
+}

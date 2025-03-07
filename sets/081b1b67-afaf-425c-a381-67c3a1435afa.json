@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "081b1b67-afaf-425c-a381-67c3a1435afa",
+  "name": {
+    "en": "Tournament Pack 4",
+    "ko": "\ud1a0\ub108\uba3c\ud2b8 \ud329 4"
+  },
+  "locales": {
+    "na": {
+      "language": "en",
+      "prefix": "TP4-",
+      "date": "2003-10-01",
+      "image": "https://ms.yugipedia.com//b/b7/TP4-BoosterNA.png",
+      "cardImages": {
+        "unlimited": {
+          "714f86ce-5241-4e84-baf0-9f131e18c880": "https://ms.yugipedia.com//6/6b/MorphingJar-TP4-NA-SR-UE.jpg",
+          "dfdbafae-29e7-4494-a624-8ff251de675b": "https://ms.yugipedia.com//e/e1/KarateMan-TP4-NA-C-UE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121202004
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "TP4-KR",
+      "date": "2006-05-14",
+      "image": "https://ms.yugipedia.com//d/d2/TP4-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "6ba23f5b-1559-452e-bfed-133fc2ce256f": "https://ms.yugipedia.com//3/33/MorphingJar-TP4-KR-SR-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "def0a91d-8caa-4c10-b292-7b3a3c7a84b3",
+      "packsPerBox": 20,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/b7/TP4-BoosterNA.png",
+      "cards": [
+        {
+          "id": "714f86ce-5241-4e84-baf0-9f131e18c880",
+          "card": "e983dd2b-4659-4e40-9cb1-af294e470756",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "dfdbafae-29e7-4494-a624-8ff251de675b",
+          "card": "805e8628-8b04-424b-b9f5-e8b0ab594e57",
+          "suffix": "013",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tournament Pack 4"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "def0a91d-8caa-4c10-b292-7b3a3c7a84b3",
+      "packsPerBox": 20,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d2/TP4-BoosterKR.png",
+      "cards": [
+        {
+          "id": "6ba23f5b-1559-452e-bfed-133fc2ce256f",
+          "card": "e983dd2b-4659-4e40-9cb1-af294e470756",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "b5243330-7084-4db2-80cf-0c1ba1cd7681",
+          "card": "805e8628-8b04-424b-b9f5-e8b0ab594e57",
+          "suffix": "013",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tournament Pack 4"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Tournament Pack 4",
+      "id": 613
+    }
+  }
+}

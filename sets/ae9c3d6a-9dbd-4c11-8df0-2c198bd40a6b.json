@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "ae9c3d6a-9dbd-4c11-8df0-2c198bd40a6b",
+  "name": {
+    "en": "Tournament Pack: 3rd Season",
+    "ko": "\ud1a0\ub108\uba3c\ud2b8 \ud329 3"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "TP3-KR",
+      "date": "2006-03-05",
+      "image": "https://ms.yugipedia.com//6/6c/TP3-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "na": {
+      "language": "en",
+      "prefix": "TP3-",
+      "date": "2003-03-29",
+      "image": "https://ms.yugipedia.com//1/17/TP3-BoosterNA.png",
+      "cardImages": {
+        "unlimited": {
+          "d0c69752-ff72-4fba-bed7-b50af68ad94c": "https://ms.yugipedia.com//f/f7/SpiritoftheHarp-TP3-NA-C-UE.jpg",
+          "e19d9974-2b06-4bbe-aa60-cfb3c857a931": "https://ms.yugipedia.com//f/f9/Bladefly-TP3-NA-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121202000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "def0a91d-8caa-4c10-b292-7b3a3c7a84b3",
+      "packsPerBox": 20,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/6c/TP3-BoosterKR.png",
+      "cards": [
+        {
+          "id": "c37c28f3-47a3-499a-9b7b-e82e75bcc113",
+          "card": "f6270573-079c-4b38-b9c8-2782b701c206",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "1c654438-7ce0-4e87-b55b-307c2833a23d",
+          "card": "b34bfc3d-f470-4484-847f-6122035422a4",
+          "suffix": "020",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tournament Pack: 3rd Season"
+      }
+    },
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "def0a91d-8caa-4c10-b292-7b3a3c7a84b3",
+      "packsPerBox": 20,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/17/TP3-BoosterNA.png",
+      "cards": [
+        {
+          "id": "d0c69752-ff72-4fba-bed7-b50af68ad94c",
+          "card": "f6270573-079c-4b38-b9c8-2782b701c206",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "e19d9974-2b06-4bbe-aa60-cfb3c857a931",
+          "card": "b34bfc3d-f470-4484-847f-6122035422a4",
+          "suffix": "020",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Tournament Pack: 3rd Season"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Tournament Pack: 3rd Season",
+      "id": 605
+    }
+  }
+}

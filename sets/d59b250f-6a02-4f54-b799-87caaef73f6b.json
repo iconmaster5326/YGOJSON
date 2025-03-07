@@ -1,0 +1,702 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "d59b250f-6a02-4f54-b799-87caaef73f6b",
+  "name": {
+    "en": "Generation Force",
+    "fr": "La Force des G\u00e9n\u00e9rations",
+    "de": "Generation Force",
+    "it": "Forza Generatrice",
+    "es": "Fuerza Generaci\u00f3n",
+    "ja": "\u30b8\u30a7\u30cd\u30ec\u30fc\u30b7\u30e7\u30f3\u30fb\u30d5\u30a9\u30fc\u30b9",
+    "ko": "\uc81c\ub108\ub808\uc774\uc158 \ud3ec\uc2a4"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "GENF-EN",
+      "image": "https://ms.yugipedia.com//b/ba/GENF-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "a27f82c0-1cc4-4d6c-9f1c-cd051ecd00f1": "https://ms.yugipedia.com//f/f8/AchachaArcher-GENF-EN-C-1E.jpg",
+          "111a03fe-e1d1-4c32-9851-6a5ac6494378": "https://ms.yugipedia.com//b/b6/CrashbugX-GENF-EN-C-1E.jpg",
+          "318d01df-d6a4-4341-abb4-615295116e2e": "https://ms.yugipedia.com//7/73/WindUpSnail-GENF-EN-R-1E.jpg",
+          "50740baa-85ef-4209-8a06-aa673cd3a83e": "https://ms.yugipedia.com//a/ac/Skystarray-GENF-EN-R-1E.jpg",
+          "ed791255-4563-41c7-aba6-e02879e40926": "https://ms.yugipedia.com//2/2e/InfectedMail-GENF-EN-SR-1E.jpg",
+          "245248df-ec62-4e61-8a8a-8bb0a0e83b08": "https://ms.yugipedia.com//c/c2/StarChanger-GENF-EN-R-1E.jpg",
+          "d81daf7e-7879-4063-b811-5d20d26d91cc": "https://ms.yugipedia.com//d/de/ExplosiveUrchin-GENF-EN-C-1E.png",
+          "8c09acef-058c-4ab6-b273-558707c534eb": "https://ms.yugipedia.com//9/94/VisionHEROTrinity-GENF-EN-SR-1E.jpg"
+        },
+        "unlimited": {
+          "a27f82c0-1cc4-4d6c-9f1c-cd051ecd00f1": "https://ms.yugipedia.com//3/3a/AchachaArcher-GENF-EN-C-UE.png",
+          "111a03fe-e1d1-4c32-9851-6a5ac6494378": "https://ms.yugipedia.com//8/84/CrashbugX-GENF-EN-C-UE.png",
+          "318d01df-d6a4-4341-abb4-615295116e2e": "https://ms.yugipedia.com//d/d9/WindUpSnail-GENF-EN-R-UE.png",
+          "50740baa-85ef-4209-8a06-aa673cd3a83e": "https://ms.yugipedia.com//0/0e/Skystarray-GENF-EN-R-UE.png",
+          "ed791255-4563-41c7-aba6-e02879e40926": "https://ms.yugipedia.com//0/02/InfectedMail-GENF-EN-SR-UE.png",
+          "245248df-ec62-4e61-8a8a-8bb0a0e83b08": "https://ms.yugipedia.com//3/34/StarChanger-GENF-EN-R-UE.png",
+          "d81daf7e-7879-4063-b811-5d20d26d91cc": "https://ms.yugipedia.com//8/82/ExplosiveUrchin-GENF-EN-C-UE.png",
+          "8c09acef-058c-4ab6-b273-558707c534eb": "https://ms.yugipedia.com//c/c5/VisionHEROTrinity-GENF-EN-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11110004
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "GENF-KR",
+      "date": "2011-09-26",
+      "image": "https://ms.yugipedia.com//6/6e/GENF-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "31b880db-33fa-40d7-b008-45da47df615f": "https://ms.yugipedia.com//5/55/WindUpSnail-GENF-KR-R-1E.png",
+          "d81daf7e-7879-4063-b811-5d20d26d91cc": "https://ms.yugipedia.com//7/7c/ExplosiveUrchin-GENF-KR-C-1E.png"
+        },
+        "unlimited": {
+          "c18356a2-cce2-4ce1-b727-434626c023bf": "https://ms.yugipedia.com//6/6a/AchachaArcher-GENF-KR-C-UE.png",
+          "38571e9d-24b2-422d-bb93-90b50879bf17": "https://ms.yugipedia.com//c/c8/CrashbugX-GENF-KR-C-UE.png",
+          "e30ceecf-a6d0-4c30-8608-b0bbf13c56db": "https://ms.yugipedia.com//b/b1/Skystarray-GENF-KR-R-UE.png",
+          "0f370db8-b7ce-4f3c-a108-6c6a798f0a5b": "https://ms.yugipedia.com//f/fc/InfectedMail-GENF-KR-SR-UE.png",
+          "245248df-ec62-4e61-8a8a-8bb0a0e83b08": "https://ms.yugipedia.com//a/a8/StarChanger-GENF-KR-R-UE.png",
+          "d81daf7e-7879-4063-b811-5d20d26d91cc": "https://ms.yugipedia.com//3/3d/ExplosiveUrchin-GENF-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71109002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "GENF-SP",
+      "image": "https://ms.yugipedia.com//9/90/GENF-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "a85ade0a-ea20-4d40-939d-a4098dd7f6f3": "https://ms.yugipedia.com//2/26/AchachaArcher-GENF-SP-C-1E.jpg",
+          "09fad240-78d8-4b67-91ae-4497acce17b5": "https://ms.yugipedia.com//3/31/CrashbugX-GENF-SP-C-1E.jpg",
+          "120199d2-95b4-4fb7-b61f-a9878cb2d639": "https://ms.yugipedia.com//5/55/WindUpSnail-GENF-SP-R-1E.png",
+          "400c3210-e405-4106-b67e-50e1ef312f7f": "https://ms.yugipedia.com//8/8e/Skystarray-GENF-SP-R-1E.png",
+          "0d48050b-06ad-4ea8-a102-9a24861b0666": "https://ms.yugipedia.com//a/a5/InfectedMail-GENF-SP-SR-1E.png",
+          "245248df-ec62-4e61-8a8a-8bb0a0e83b08": "https://ms.yugipedia.com//6/69/StarChanger-GENF-SP-R-1E.png",
+          "d81daf7e-7879-4063-b811-5d20d26d91cc": "https://ms.yugipedia.com//1/16/ExplosiveUrchin-GENF-SP-C-1E.png",
+          "e61bb4b2-7814-477d-917b-736c5ac73de1": "https://ms.yugipedia.com//4/4d/VisionHEROTrinity-GENF-SP-SR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51109004
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "GENF-FR",
+      "image": "https://ms.yugipedia.com//7/76/GENF-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "59a885eb-0660-49bc-8675-8e80e69a0709": "https://ms.yugipedia.com//8/8a/AchachaArcher-GENF-FR-C-1E.png",
+          "82dd55a9-e23d-4f9e-91ba-89d39a75e0ba": "https://ms.yugipedia.com//4/4f/WindUpSnail-GENF-FR-R-1E.png",
+          "245248df-ec62-4e61-8a8a-8bb0a0e83b08": "https://ms.yugipedia.com//b/ba/StarChanger-GENF-FR-R-1E.jpg"
+        },
+        "unlimited": {
+          "82dd55a9-e23d-4f9e-91ba-89d39a75e0ba": "https://ms.yugipedia.com//1/14/WindUpSnail-GENF-FR-R-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31110004
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "GENF-JP",
+      "date": "2011-04-16",
+      "image": "https://ms.yugipedia.com//5/5a/GENF-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "f2fa9b14-9aca-4471-ae90-e4c5be97257c": "https://ms.yugipedia.com//6/6c/AchachaArcher-GENF-JP-C.jpg",
+          "55d894de-e477-47ec-9ff7-a557e8cf589d": "https://ms.yugipedia.com//e/e3/CrashbugX-GENF-JP-C.jpg",
+          "b0b6b260-bb15-4786-928d-de6c303b70bf": "https://ms.yugipedia.com//6/6e/WindUpSnail-GENF-JP-R.jpg",
+          "e7dcffd7-c92c-4d99-af7e-82a13e5c0973": "https://ms.yugipedia.com//e/e9/Skystarray-GENF-JP-R.jpg",
+          "eda99cf3-40d6-43f9-b0ee-74d5f2574f4e": "https://ms.yugipedia.com//0/0a/InfectedMail-GENF-JP-SR.jpg",
+          "245248df-ec62-4e61-8a8a-8bb0a0e83b08": "https://ms.yugipedia.com//8/88/StarChanger-GENF-JP-R.jpg",
+          "d81daf7e-7879-4063-b811-5d20d26d91cc": "https://ms.yugipedia.com//2/23/ExplosiveUrchin-GENF-JP-C.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1114000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "GENF-DE",
+      "image": "https://ms.yugipedia.com//e/eb/GENF-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "ccee6078-41cd-453d-92a0-543a768e24ec": "https://ms.yugipedia.com//9/96/AchachaArcher-GENF-DE-C-1E.png",
+          "be8401b7-de59-4a98-9840-9703f5bc522e": "https://ms.yugipedia.com//6/6e/WindUpSnail-GENF-DE-R-1E.png"
+        },
+        "unlimited": {
+          "be8401b7-de59-4a98-9840-9703f5bc522e": "https://ms.yugipedia.com//2/2c/WindUpSnail-GENF-DE-R-UE.png",
+          "3741e037-1d3a-48f1-a6d6-9b1a2f4f50b8": "https://ms.yugipedia.com//f/fe/InfectedMail-GENF-DE-SR-UE.png",
+          "245248df-ec62-4e61-8a8a-8bb0a0e83b08": "https://ms.yugipedia.com//f/fa/StarChanger-GENF-DE-R-UE.png",
+          "cce001f8-56e1-48f2-93c0-f89b505db569": "https://ms.yugipedia.com//6/67/VisionHEROTrinity-GENF-DE-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21110004
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "GENF-IT",
+      "image": "https://ms.yugipedia.com//4/4f/GENF-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "f71f6852-645c-40a8-bbdd-f10336a572ae": "https://ms.yugipedia.com//f/f7/CrashbugX-GENF-IT-C-1E.png",
+          "047a92f0-e668-47a9-8d57-fb5abbfa5a92": "https://ms.yugipedia.com//b/b2/WindUpSnail-GENF-IT-R-1E.png"
+        },
+        "unlimited": {
+          "047a92f0-e668-47a9-8d57-fb5abbfa5a92": "https://ms.yugipedia.com//a/a5/WindUpSnail-GENF-IT-R-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41110004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/ba/GENF-BoosterEN.png",
+      "cards": [
+        {
+          "id": "a27f82c0-1cc4-4d6c-9f1c-cd051ecd00f1",
+          "card": "edda9236-4918-40e4-a717-35f720418cd3",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "111a03fe-e1d1-4c32-9851-6a5ac6494378",
+          "card": "3040f141-9c83-4731-b60e-73da24388855",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "318d01df-d6a4-4341-abb4-615295116e2e",
+          "card": "0bb4755e-955a-47c6-8b24-80bfa21e4244",
+          "suffix": "017",
+          "rarity": "rare"
+        },
+        {
+          "id": "50740baa-85ef-4209-8a06-aa673cd3a83e",
+          "card": "0548c3c2-aca3-491b-97c2-c86e7fd863ef",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "ed791255-4563-41c7-aba6-e02879e40926",
+          "card": "a7b47fd9-3e39-409c-b944-692e63bdf2e7",
+          "suffix": "051",
+          "rarity": "super"
+        },
+        {
+          "id": "245248df-ec62-4e61-8a8a-8bb0a0e83b08",
+          "card": "f6393774-65e1-4114-8c8a-2de30e0ace09",
+          "suffix": "059",
+          "rarity": "rare"
+        },
+        {
+          "id": "d81daf7e-7879-4063-b811-5d20d26d91cc",
+          "card": "dbd0f954-4934-4e3d-87f1-81f9db8ff425",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "8c09acef-058c-4ab6-b273-558707c534eb",
+          "card": "ad7ff455-c334-4595-bfbc-9186f31e164d",
+          "suffix": "091",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Generation Force"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/6e/GENF-BoosterKR.png",
+      "cards": [
+        {
+          "id": "c18356a2-cce2-4ce1-b727-434626c023bf",
+          "card": "edda9236-4918-40e4-a717-35f720418cd3",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "38571e9d-24b2-422d-bb93-90b50879bf17",
+          "card": "3040f141-9c83-4731-b60e-73da24388855",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "31b880db-33fa-40d7-b008-45da47df615f",
+          "card": "0bb4755e-955a-47c6-8b24-80bfa21e4244",
+          "suffix": "017",
+          "rarity": "rare"
+        },
+        {
+          "id": "e30ceecf-a6d0-4c30-8608-b0bbf13c56db",
+          "card": "0548c3c2-aca3-491b-97c2-c86e7fd863ef",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "0f370db8-b7ce-4f3c-a108-6c6a798f0a5b",
+          "card": "a7b47fd9-3e39-409c-b944-692e63bdf2e7",
+          "suffix": "051",
+          "rarity": "super"
+        },
+        {
+          "id": "245248df-ec62-4e61-8a8a-8bb0a0e83b08",
+          "card": "f6393774-65e1-4114-8c8a-2de30e0ace09",
+          "suffix": "059",
+          "rarity": "rare"
+        },
+        {
+          "id": "d81daf7e-7879-4063-b811-5d20d26d91cc",
+          "card": "dbd0f954-4934-4e3d-87f1-81f9db8ff425",
+          "suffix": "065",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Generation Force"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/90/GENF-BoosterSP.png",
+      "cards": [
+        {
+          "id": "a85ade0a-ea20-4d40-939d-a4098dd7f6f3",
+          "card": "edda9236-4918-40e4-a717-35f720418cd3",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "09fad240-78d8-4b67-91ae-4497acce17b5",
+          "card": "3040f141-9c83-4731-b60e-73da24388855",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "120199d2-95b4-4fb7-b61f-a9878cb2d639",
+          "card": "0bb4755e-955a-47c6-8b24-80bfa21e4244",
+          "suffix": "017",
+          "rarity": "rare"
+        },
+        {
+          "id": "400c3210-e405-4106-b67e-50e1ef312f7f",
+          "card": "0548c3c2-aca3-491b-97c2-c86e7fd863ef",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "0d48050b-06ad-4ea8-a102-9a24861b0666",
+          "card": "a7b47fd9-3e39-409c-b944-692e63bdf2e7",
+          "suffix": "051",
+          "rarity": "super"
+        },
+        {
+          "id": "245248df-ec62-4e61-8a8a-8bb0a0e83b08",
+          "card": "f6393774-65e1-4114-8c8a-2de30e0ace09",
+          "suffix": "059",
+          "rarity": "rare"
+        },
+        {
+          "id": "d81daf7e-7879-4063-b811-5d20d26d91cc",
+          "card": "dbd0f954-4934-4e3d-87f1-81f9db8ff425",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "e61bb4b2-7814-477d-917b-736c5ac73de1",
+          "card": "ad7ff455-c334-4595-bfbc-9186f31e164d",
+          "suffix": "091",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Generation Force"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/76/GENF-BoosterFR.png",
+      "cards": [
+        {
+          "id": "59a885eb-0660-49bc-8675-8e80e69a0709",
+          "card": "edda9236-4918-40e4-a717-35f720418cd3",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "99b4f4b5-3a5e-4d09-814d-04c6a918d8d5",
+          "card": "3040f141-9c83-4731-b60e-73da24388855",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "82dd55a9-e23d-4f9e-91ba-89d39a75e0ba",
+          "card": "0bb4755e-955a-47c6-8b24-80bfa21e4244",
+          "suffix": "017",
+          "rarity": "rare"
+        },
+        {
+          "id": "f59a30e0-84d2-45ed-b914-6b41756a65ed",
+          "card": "0548c3c2-aca3-491b-97c2-c86e7fd863ef",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "989be15f-43e1-4bbb-819e-b286910eaa17",
+          "card": "a7b47fd9-3e39-409c-b944-692e63bdf2e7",
+          "suffix": "051",
+          "rarity": "super"
+        },
+        {
+          "id": "245248df-ec62-4e61-8a8a-8bb0a0e83b08",
+          "card": "f6393774-65e1-4114-8c8a-2de30e0ace09",
+          "suffix": "059",
+          "rarity": "rare"
+        },
+        {
+          "id": "d81daf7e-7879-4063-b811-5d20d26d91cc",
+          "card": "dbd0f954-4934-4e3d-87f1-81f9db8ff425",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "dd2dae6a-e35d-47bd-b50e-5a870fcefb9d",
+          "card": "ad7ff455-c334-4595-bfbc-9186f31e164d",
+          "suffix": "091",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Generation Force"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/5a/GENF-BoosterJP.png",
+      "cards": [
+        {
+          "id": "f2fa9b14-9aca-4471-ae90-e4c5be97257c",
+          "card": "edda9236-4918-40e4-a717-35f720418cd3",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "55d894de-e477-47ec-9ff7-a557e8cf589d",
+          "card": "3040f141-9c83-4731-b60e-73da24388855",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "b0b6b260-bb15-4786-928d-de6c303b70bf",
+          "card": "0bb4755e-955a-47c6-8b24-80bfa21e4244",
+          "suffix": "017",
+          "rarity": "rare"
+        },
+        {
+          "id": "e7dcffd7-c92c-4d99-af7e-82a13e5c0973",
+          "card": "0548c3c2-aca3-491b-97c2-c86e7fd863ef",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "eda99cf3-40d6-43f9-b0ee-74d5f2574f4e",
+          "card": "a7b47fd9-3e39-409c-b944-692e63bdf2e7",
+          "suffix": "051",
+          "rarity": "super"
+        },
+        {
+          "id": "245248df-ec62-4e61-8a8a-8bb0a0e83b08",
+          "card": "f6393774-65e1-4114-8c8a-2de30e0ace09",
+          "suffix": "059",
+          "rarity": "rare"
+        },
+        {
+          "id": "d81daf7e-7879-4063-b811-5d20d26d91cc",
+          "card": "dbd0f954-4934-4e3d-87f1-81f9db8ff425",
+          "suffix": "065",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Generation Force"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/eb/GENF-BoosterDE.png",
+      "cards": [
+        {
+          "id": "ccee6078-41cd-453d-92a0-543a768e24ec",
+          "card": "edda9236-4918-40e4-a717-35f720418cd3",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "7a0d90db-f1de-4b24-9ef0-41a7242daee7",
+          "card": "3040f141-9c83-4731-b60e-73da24388855",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "be8401b7-de59-4a98-9840-9703f5bc522e",
+          "card": "0bb4755e-955a-47c6-8b24-80bfa21e4244",
+          "suffix": "017",
+          "rarity": "rare"
+        },
+        {
+          "id": "171574e8-3f0c-4714-b136-63d3509d3c06",
+          "card": "0548c3c2-aca3-491b-97c2-c86e7fd863ef",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "3741e037-1d3a-48f1-a6d6-9b1a2f4f50b8",
+          "card": "a7b47fd9-3e39-409c-b944-692e63bdf2e7",
+          "suffix": "051",
+          "rarity": "super"
+        },
+        {
+          "id": "245248df-ec62-4e61-8a8a-8bb0a0e83b08",
+          "card": "f6393774-65e1-4114-8c8a-2de30e0ace09",
+          "suffix": "059",
+          "rarity": "rare"
+        },
+        {
+          "id": "d81daf7e-7879-4063-b811-5d20d26d91cc",
+          "card": "dbd0f954-4934-4e3d-87f1-81f9db8ff425",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "cce001f8-56e1-48f2-93c0-f89b505db569",
+          "card": "ad7ff455-c334-4595-bfbc-9186f31e164d",
+          "suffix": "091",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Generation Force"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4f/GENF-BoosterIT.png",
+      "cards": [
+        {
+          "id": "b3ec3773-7429-480f-9082-64fb69cfe610",
+          "card": "edda9236-4918-40e4-a717-35f720418cd3",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f71f6852-645c-40a8-bbdd-f10336a572ae",
+          "card": "3040f141-9c83-4731-b60e-73da24388855",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "047a92f0-e668-47a9-8d57-fb5abbfa5a92",
+          "card": "0bb4755e-955a-47c6-8b24-80bfa21e4244",
+          "suffix": "017",
+          "rarity": "rare"
+        },
+        {
+          "id": "5d939423-f568-4299-9996-dbbb398546b8",
+          "card": "0548c3c2-aca3-491b-97c2-c86e7fd863ef",
+          "suffix": "020",
+          "rarity": "rare"
+        },
+        {
+          "id": "fab333dd-553a-47e6-ba1d-21ae38975112",
+          "card": "a7b47fd9-3e39-409c-b944-692e63bdf2e7",
+          "suffix": "051",
+          "rarity": "super"
+        },
+        {
+          "id": "245248df-ec62-4e61-8a8a-8bb0a0e83b08",
+          "card": "f6393774-65e1-4114-8c8a-2de30e0ace09",
+          "suffix": "059",
+          "rarity": "rare"
+        },
+        {
+          "id": "d81daf7e-7879-4063-b811-5d20d26d91cc",
+          "card": "dbd0f954-4934-4e3d-87f1-81f9db8ff425",
+          "suffix": "065",
+          "rarity": "common"
+        },
+        {
+          "id": "4d82cebd-2acf-4d21-a9d2-a934468ba8c7",
+          "card": "ad7ff455-c334-4595-bfbc-9186f31e164d",
+          "suffix": "091",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Generation Force"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Generation Force",
+      "id": 160195
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "d9385b55-ee75-4c98-9e5a-28153f1132e1",
+  "name": {
+    "en": "Master Collection Volume 1",
+    "ja": "\uff2d\uff21\uff33\uff34\uff25\uff32 \uff23\uff2f\uff2c\uff2c\uff25\uff23\uff34\uff29\uff2f\uff2e"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "MC1-EN",
+      "date": "2004-12-01",
+      "image": "https://ms.yugipedia.com//5/5a/MC1-PromoEN.jpg",
+      "cardImages": {
+        "limited": {
+          "3625f4c0-4bc8-4283-aa8c-efac5cc42c66": "https://ms.yugipedia.com//6/67/DarkNecrofear-MC1-EN-ScR-LE.jpg",
+          "35cbacdd-c09b-480f-9622-39bbb7c2f37c": "https://ms.yugipedia.com//a/a0/DarkRulerHaDes-MC1-EN-ScR-LE.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "date": "2005-03-17",
+      "image": "https://ms.yugipedia.com//d/df/MC1-PromoJP.jpg",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          111105001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//5/5a/MC1-PromoEN.jpg",
+      "cards": [
+        {
+          "id": "3625f4c0-4bc8-4283-aa8c-efac5cc42c66",
+          "card": "dc056ce1-f0e1-4f59-a37d-9b3a46d8fc9e",
+          "suffix": "005",
+          "rarity": "secret"
+        },
+        {
+          "id": "35cbacdd-c09b-480f-9622-39bbb7c2f37c",
+          "card": "245e7e46-f6e7-4e16-8f36-41c39d7f6d7b",
+          "suffix": "006",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/df/MC1-PromoJP.jpg",
+      "cards": [],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Master Collection Volume 1",
+      "id": 1056
+    }
+  }
+}

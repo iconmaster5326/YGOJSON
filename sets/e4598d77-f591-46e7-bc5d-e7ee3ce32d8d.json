@@ -1,0 +1,532 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e4598d77-f591-46e7-bc5d-e7ee3ce32d8d",
+  "name": {
+    "en": "HERO Strike Structure Deck",
+    "fr": "L'Assaut des H\u00c9ROS Deck de Structure",
+    "de": "HERO Strike Structure Deck",
+    "it": "Attacco degli EROI Structure Deck",
+    "pt": "Ataque do HER\u00d3I Deck Estrutural",
+    "es": "Golpe del H\u00c9ROE Baraja de Estructura"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SDHS-EN",
+      "image": "https://ms.yugipedia.com//d/dd/SDHS-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "16b4caed-a5de-4ae3-bbc7-d89fa6a5d603": "https://ms.yugipedia.com//5/5e/ElementalHERONeos-SDHS-EN-C-1E.png",
+          "7dc36b8b-f725-4eb5-a455-c20f71bfb836": "https://ms.yugipedia.com//5/52/ElementalHERONecroshade-SDHS-EN-C-1E.png",
+          "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817": "https://ms.yugipedia.com//9/9e/HomunculustheAlchemicBeing-SDHS-EN-C-1E.png",
+          "cee047fd-6d15-4baf-9f27-63ddcb49e8ec": "https://ms.yugipedia.com//2/2f/FormChange-SDHS-EN-C-1E.png",
+          "e741a721-742d-4faa-bf7a-e02c4f53ce2f": "https://ms.yugipedia.com//5/53/TheWarriorReturningAlive-SDHS-EN-C-1E.png",
+          "58a389b5-449b-4f17-89c1-f097319c872f": "https://ms.yugipedia.com//d/df/HeroSignal-SDHS-EN-C-1E.png",
+          "02502f88-8e19-4e3e-afb1-0fee613ac95d": "https://ms.yugipedia.com//3/3b/MaskedHERODivineWind-SDHS-EN-SR-1E.png"
+        },
+        "unlimited": {
+          "16b4caed-a5de-4ae3-bbc7-d89fa6a5d603": "https://ms.yugipedia.com//f/fd/ElementalHERONeos-SDHS-EN-C-UE.png",
+          "7dc36b8b-f725-4eb5-a455-c20f71bfb836": "https://ms.yugipedia.com//5/5e/ElementalHERONecroshade-SDHS-EN-C-UE.png",
+          "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817": "https://ms.yugipedia.com//6/6e/HomunculustheAlchemicBeing-SDHS-EN-C-UE.png",
+          "cee047fd-6d15-4baf-9f27-63ddcb49e8ec": "https://ms.yugipedia.com//f/fe/FormChange-SDHS-EN-C-UE.png",
+          "e741a721-742d-4faa-bf7a-e02c4f53ce2f": "https://ms.yugipedia.com//e/e1/TheWarriorReturningAlive-SDHS-EN-C-UE.png",
+          "58a389b5-449b-4f17-89c1-f097319c872f": "https://ms.yugipedia.com//1/14/HeroSignal-SDHS-EN-C-UE.png",
+          "02502f88-8e19-4e3e-afb1-0fee613ac95d": "https://ms.yugipedia.com//8/86/MaskedHERODivineWind-SDHS-EN-SR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14411000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SDHS-SP",
+      "image": "https://ms.yugipedia.com//d/d3/SDHS-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "5d3ee87a-00cd-4f70-98c1-765a7ddc5225": "https://ms.yugipedia.com//3/37/HeroSignal-SDHS-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          54411000
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SDHS-FR",
+      "image": "https://ms.yugipedia.com//6/6b/SDHS-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "2543a301-e97b-4b16-961b-239b81cd84d7": "https://ms.yugipedia.com//8/8c/ElementalHERONeos-SDHS-FR-C-1E.png",
+          "f95a3beb-fdaf-424b-a8c4-8e9fcfa62739": "https://ms.yugipedia.com//9/90/ElementalHERONecroshade-SDHS-FR-C-1E.png",
+          "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817": "https://ms.yugipedia.com//a/a4/HomunculustheAlchemicBeing-SDHS-FR-C-1E.png",
+          "efe7bdb2-a10c-4c9b-9aec-a3a043cb7a1b": "https://ms.yugipedia.com//7/7b/FormChange-SDHS-FR-C-1E.png",
+          "1e1c51e7-c1a9-471d-be49-c91342dbffe7": "https://ms.yugipedia.com//7/78/TheWarriorReturningAlive-SDHS-FR-C-1E.png",
+          "8e6f773c-7b1f-4dbb-84eb-c350b5a117e1": "https://ms.yugipedia.com//3/3f/HeroSignal-SDHS-FR-C-1E.png",
+          "c28494d5-61d5-454f-86e5-06e298e9ca7f": "https://ms.yugipedia.com//f/f4/MaskedHERODivineWind-SDHS-FR-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          34411000
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SDHS-PT",
+      "date": "2015-01-30",
+      "image": "https://ms.yugipedia.com//1/10/SDHS-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "9dba8e60-d6bd-4784-a319-6e29f920eef0": "https://ms.yugipedia.com//a/a1/ElementalHERONeos-SDHS-PT-C-1E.png",
+          "53c3db51-bc1b-4398-abc0-5d28123903d8": "https://ms.yugipedia.com//4/4f/ElementalHERONecroshade-SDHS-PT-C-1E.png",
+          "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817": "https://ms.yugipedia.com//5/5b/HomunculustheAlchemicBeing-SDHS-PT-C-1E.png",
+          "eb46dc74-b7b5-488a-aeeb-a54d0e2e8bee": "https://ms.yugipedia.com//7/79/FormChange-SDHS-PT-C-1E.png",
+          "60b8445b-c95d-434b-a5c9-d7ecc081e6fe": "https://ms.yugipedia.com//e/ec/TheWarriorReturningAlive-SDHS-PT-C-1E.png",
+          "ef17cc37-c946-4dc8-a0cf-503b7309801d": "https://ms.yugipedia.com//6/6d/HeroSignal-SDHS-PT-C-1E.png",
+          "49be3092-328e-4bc9-8c8c-d024d7fc7077": "https://ms.yugipedia.com//0/07/MaskedHERODivineWind-SDHS-PT-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14411000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SDHS-DE",
+      "image": "https://ms.yugipedia.com//7/73/SDHS-DeckDE.png",
+      "cardImages": {
+        "1st": {
+          "a281b360-7d44-4f36-9458-6713fbb6948e": "https://ms.yugipedia.com//3/3c/ElementalHERONeos-SDHS-DE-C-1E.png",
+          "3c66168f-1e01-408a-9e19-9d6e6d3920b8": "https://ms.yugipedia.com//9/93/ElementalHERONecroshade-SDHS-DE-C-1E.png",
+          "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817": "https://ms.yugipedia.com//7/70/HomunculustheAlchemicBeing-SDHS-DE-C-1E.png",
+          "4151420d-4a01-49c8-a96e-f55db7186d02": "https://ms.yugipedia.com//9/98/FormChange-SDHS-DE-C-1E.png",
+          "9bd894bb-ca7e-4010-9a20-a22b788315e7": "https://ms.yugipedia.com//5/50/TheWarriorReturningAlive-SDHS-DE-C-1E.png",
+          "f8ecf242-09e2-4cf7-86d6-138246d894a1": "https://ms.yugipedia.com//c/cf/HeroSignal-SDHS-DE-C-1E.png",
+          "1a7a08fa-ece0-48ba-ad70-9ee4506b7e46": "https://ms.yugipedia.com//3/39/MaskedHERODivineWind-SDHS-DE-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          24411000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SDHS-IT",
+      "image": "https://ms.yugipedia.com//1/12/SDHS-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "35a70310-9860-4f47-9276-cc277ff959f1": "https://ms.yugipedia.com//3/3e/ElementalHERONeos-SDHS-IT-C-1E.png",
+          "026ae461-6215-4608-a854-59cc92112287": "https://ms.yugipedia.com//2/22/ElementalHERONecroshade-SDHS-IT-C-1E.png",
+          "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817": "https://ms.yugipedia.com//a/af/HomunculustheAlchemicBeing-SDHS-IT-C-1E.png",
+          "b99e1ba0-487c-43d3-ad71-10f8fb44538e": "https://ms.yugipedia.com//6/6d/FormChange-SDHS-IT-C-1E.png",
+          "4739a3df-2582-4c41-9b6a-fa7474c481c8": "https://ms.yugipedia.com//c/c0/TheWarriorReturningAlive-SDHS-IT-C-1E.png",
+          "94dabdea-8488-4cc7-ba98-8204aa1c484c": "https://ms.yugipedia.com//f/f3/HeroSignal-SDHS-IT-C-1E.png",
+          "35f798b1-60e2-4a45-90ee-45350eb47cbb": "https://ms.yugipedia.com//1/13/MaskedHERODivineWind-SDHS-IT-SR-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          44411000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/dd/SDHS-DeckEN.png",
+      "cards": [
+        {
+          "id": "16b4caed-a5de-4ae3-bbc7-d89fa6a5d603",
+          "card": "bda59be9-3aaa-44e9-8aa6-11e06c1bfffa",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "7dc36b8b-f725-4eb5-a455-c20f71bfb836",
+          "card": "520336d3-f107-49e1-a52f-377776e19f36",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817",
+          "card": "25831452-b8e3-4911-a434-9773985f4b05",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "cee047fd-6d15-4baf-9f27-63ddcb49e8ec",
+          "card": "da42c95c-1bbe-45be-a55f-e3459b8bf292",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "e741a721-742d-4faa-bf7a-e02c4f53ce2f",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "58a389b5-449b-4f17-89c1-f097319c872f",
+          "card": "fa3391da-ba5a-4b49-81ba-00a797d75f14",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "02502f88-8e19-4e3e-afb1-0fee613ac95d",
+          "card": "72355e15-cccd-48b3-8631-b62eaac76ee9",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/d3/SDHS-DeckSP.png",
+      "cards": [
+        {
+          "id": "d41d2cc5-6f87-4dfb-86fd-bc8ceff69b7a",
+          "card": "bda59be9-3aaa-44e9-8aa6-11e06c1bfffa",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "d229572d-8d98-4cf1-8bf2-519167e8f033",
+          "card": "520336d3-f107-49e1-a52f-377776e19f36",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817",
+          "card": "25831452-b8e3-4911-a434-9773985f4b05",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "377ca181-3afc-4cde-b101-98d7f48698a1",
+          "card": "da42c95c-1bbe-45be-a55f-e3459b8bf292",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "193fa616-bb1e-4a4a-bab6-c6fcd3bf5119",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "5d3ee87a-00cd-4f70-98c1-765a7ddc5225",
+          "card": "fa3391da-ba5a-4b49-81ba-00a797d75f14",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "8fbc1a08-7046-4dd2-ba5e-e4b90412b5ba",
+          "card": "72355e15-cccd-48b3-8631-b62eaac76ee9",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6b/SDHS-DeckFR.png",
+      "cards": [
+        {
+          "id": "2543a301-e97b-4b16-961b-239b81cd84d7",
+          "card": "bda59be9-3aaa-44e9-8aa6-11e06c1bfffa",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "f95a3beb-fdaf-424b-a8c4-8e9fcfa62739",
+          "card": "520336d3-f107-49e1-a52f-377776e19f36",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817",
+          "card": "25831452-b8e3-4911-a434-9773985f4b05",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "efe7bdb2-a10c-4c9b-9aec-a3a043cb7a1b",
+          "card": "da42c95c-1bbe-45be-a55f-e3459b8bf292",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "1e1c51e7-c1a9-471d-be49-c91342dbffe7",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "8e6f773c-7b1f-4dbb-84eb-c350b5a117e1",
+          "card": "fa3391da-ba5a-4b49-81ba-00a797d75f14",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "c28494d5-61d5-454f-86e5-06e298e9ca7f",
+          "card": "72355e15-cccd-48b3-8631-b62eaac76ee9",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/10/SDHS-DeckPT.png",
+      "cards": [
+        {
+          "id": "9dba8e60-d6bd-4784-a319-6e29f920eef0",
+          "card": "bda59be9-3aaa-44e9-8aa6-11e06c1bfffa",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "53c3db51-bc1b-4398-abc0-5d28123903d8",
+          "card": "520336d3-f107-49e1-a52f-377776e19f36",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817",
+          "card": "25831452-b8e3-4911-a434-9773985f4b05",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "eb46dc74-b7b5-488a-aeeb-a54d0e2e8bee",
+          "card": "da42c95c-1bbe-45be-a55f-e3459b8bf292",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "60b8445b-c95d-434b-a5c9-d7ecc081e6fe",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "ef17cc37-c946-4dc8-a0cf-503b7309801d",
+          "card": "fa3391da-ba5a-4b49-81ba-00a797d75f14",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "49be3092-328e-4bc9-8c8c-d024d7fc7077",
+          "card": "72355e15-cccd-48b3-8631-b62eaac76ee9",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//7/73/SDHS-DeckDE.png",
+      "cards": [
+        {
+          "id": "a281b360-7d44-4f36-9458-6713fbb6948e",
+          "card": "bda59be9-3aaa-44e9-8aa6-11e06c1bfffa",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "3c66168f-1e01-408a-9e19-9d6e6d3920b8",
+          "card": "520336d3-f107-49e1-a52f-377776e19f36",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817",
+          "card": "25831452-b8e3-4911-a434-9773985f4b05",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "4151420d-4a01-49c8-a96e-f55db7186d02",
+          "card": "da42c95c-1bbe-45be-a55f-e3459b8bf292",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "9bd894bb-ca7e-4010-9a20-a22b788315e7",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "f8ecf242-09e2-4cf7-86d6-138246d894a1",
+          "card": "fa3391da-ba5a-4b49-81ba-00a797d75f14",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "1a7a08fa-ece0-48ba-ad70-9ee4506b7e46",
+          "card": "72355e15-cccd-48b3-8631-b62eaac76ee9",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/12/SDHS-DeckIT.png",
+      "cards": [
+        {
+          "id": "35a70310-9860-4f47-9276-cc277ff959f1",
+          "card": "bda59be9-3aaa-44e9-8aa6-11e06c1bfffa",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "026ae461-6215-4608-a854-59cc92112287",
+          "card": "520336d3-f107-49e1-a52f-377776e19f36",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "a4e3dfdf-eb43-41e8-9aa9-27d8f3bfc817",
+          "card": "25831452-b8e3-4911-a434-9773985f4b05",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "b99e1ba0-487c-43d3-ad71-10f8fb44538e",
+          "card": "da42c95c-1bbe-45be-a55f-e3459b8bf292",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "4739a3df-2582-4c41-9b6a-fa7474c481c8",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "94dabdea-8488-4cc7-ba98-8204aa1c484c",
+          "card": "fa3391da-ba5a-4b49-81ba-00a797d75f14",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "35f798b1-60e2-4a45-90ee-45350eb47cbb",
+          "card": "72355e15-cccd-48b3-8631-b62eaac76ee9",
+          "suffix": "043",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "HERO Strike Structure Deck",
+      "id": 324087
+    }
+  }
+}

@@ -1,0 +1,509 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "85a4b289-0b67-4d54-bb72-593082b7927b",
+  "name": {
+    "en": "Structure Deck: Soulburner",
+    "fr": "Deck de Structure : Soulburner",
+    "de": "Structure Deck: Soulburner",
+    "it": "Structure Deck: Soulburner",
+    "pt": "Deck Estrutural: Queima-almas",
+    "es": "Baraja de Estructura: Soulburner",
+    "ja": "\u30b9\u30c8\u30e9\u30af\u30c1\u30e3\u30fc\u30c7\u30c3\u30ad \uff0d\u30bd\u30a6\u30eb\u30d0\u30fc\u30ca\u30fc\uff0d",
+    "ko": "STRUCTURE DECK \uff0d \uc18c\uc6b8\ubc84\ub108",
+    "zh-CN": "\u4e3b\u9898\u5361\u7ec4 \u8f6c\u751f\u708e\u517d"
+  },
+  "locales": {
+    "de": {
+      "language": "de",
+      "prefix": "SDSB-DE",
+      "image": "https://ms.yugipedia.com//8/84/SDSB-DeckDE.png",
+      "cardImages": {
+        "1st": {
+          "f8d2e43e-bf7e-4154-8a76-4f7ce7973c3d": "https://ms.yugipedia.com//6/6a/SalamangreatJackJaguar-SDSB-DE-C-1E.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//1/1f/FormudSkipper-SDSB-DE-C-1E.png",
+          "5902f6b5-7a51-4de0-b925-199b74f96e18": "https://ms.yugipedia.com//0/08/FlameAdministrator-SDSB-DE-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "SDSB-PT",
+      "date": "2019-02-14",
+      "image": "https://ms.yugipedia.com//4/47/SDSB-DeckPT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SD35-KR",
+      "date": "2019-03-20",
+      "image": "https://ms.yugipedia.com//c/c4/SD35-DeckKR.png",
+      "cardImages": {
+        "unlimited": {
+          "5a880737-0abc-4b22-ae29-f97e475405eb": "https://ms.yugipedia.com//b/b7/SalamangreatJackJaguar-SD35-KR-C-UE.png",
+          "f449d0e3-72bf-4edc-9e5d-619e098c6ee7": "https://ms.yugipedia.com//4/42/BrushfireKnight-SD35-KR-C-UE.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//f/f5/FormudSkipper-SD35-KR-C-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          73315001
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SDSB-IT",
+      "image": "https://ms.yugipedia.com//5/50/SDSB-DeckIT.png",
+      "cardImages": {
+        "1st": {
+          "b3a7e6d3-25d9-44d9-815c-b306899d6c98": "https://ms.yugipedia.com//2/2b/SalamangreatJackJaguar-SDSB-IT-C-1E.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//9/91/FormudSkipper-SDSB-IT-C-1E.png",
+          "cbdf868e-90d0-48e8-95e6-d0ef13ae6e64": "https://ms.yugipedia.com//1/19/FlameAdministrator-SDSB-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SDSB-FR",
+      "image": "https://ms.yugipedia.com//c/c4/SDSB-DeckFR.png",
+      "cardImages": {
+        "1st": {
+          "f24fe183-ab02-4e13-8819-ac74eca85481": "https://ms.yugipedia.com//f/f9/SalamangreatJackJaguar-SDSB-FR-C-1E.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//0/0c/FormudSkipper-SDSB-FR-C-1E.png",
+          "481b3c49-a6c0-4069-8654-5f66ab376baf": "https://ms.yugipedia.com//9/90/FlameAdministrator-SDSB-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "sc": {
+      "language": "zh-CN",
+      "prefix": "SD35-SC",
+      "date": "2020-10-17",
+      "image": "https://ms.yugipedia.com//c/c4/SD35-DeckSC.png",
+      "cardImages": {
+        "unlimited": {
+          "36e7d9b6-af82-43ed-81fb-43198b6d239c": "https://ms.yugipedia.com//3/33/SalamangreatJackJaguar-SD35-SC-C.png",
+          "93202632-ba5e-474b-88e7-333fc579f253": "https://ms.yugipedia.com//5/55/BrushfireKnight-SD35-SC-C.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//0/04/FormudSkipper-SD35-SC-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          3000000920000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SD35-JP",
+      "date": "2018-12-08",
+      "image": "https://ms.yugipedia.com//8/8f/SD35-DeckJP.png",
+      "cardImages": {
+        "unlimited": {
+          "fc597202-971f-498b-a0d5-0f1e6f5a9cbb": "https://ms.yugipedia.com//8/80/SalamangreatJackJaguar-SD35-JP-C.png",
+          "34d918bb-23eb-495c-a0ab-a94ef99f9aff": "https://ms.yugipedia.com//d/d7/BrushfireKnight-SD35-JP-C.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//d/d4/FormudSkipper-SD35-JP-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2201056
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SDSB-EN",
+      "image": "https://ms.yugipedia.com//1/1f/SDSB-DeckEN.png",
+      "cardImages": {
+        "1st": {
+          "396f53a8-fb8e-45aa-88f5-32a12833a438": "https://ms.yugipedia.com//6/6f/SalamangreatJackJaguar-SDSB-EN-C-1E.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//a/ac/FormudSkipper-SDSB-EN-C-1E.png",
+          "762c85f5-0c4c-4f52-bf88-d4bd3ead060a": "https://ms.yugipedia.com//e/e6/FlameAdministrator-SDSB-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          14415000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SDSB-SP",
+      "image": "https://ms.yugipedia.com//1/13/SDSB-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "1b0fae74-ac4b-4ad4-9c84-8eceddd4f36f": "https://ms.yugipedia.com//f/f8/SalamangreatJackJaguar-SDSB-SP-C-1E.png",
+          "56d93b52-08a7-4734-a8bc-3b23684e2afd": "https://ms.yugipedia.com//2/2a/FormudSkipper-SDSB-SP-C-1E.png",
+          "8c334017-8284-4964-8c01-58783dea39e0": "https://ms.yugipedia.com//9/9f/FlameAdministrator-SDSB-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/84/SDSB-DeckDE.png",
+      "cards": [
+        {
+          "id": "f8d2e43e-bf7e-4154-8a76-4f7ce7973c3d",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "5902f6b5-7a51-4de0-b925-199b74f96e18",
+          "card": "b5858159-d72b-4d95-8cf0-838dc1b109b0",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/47/SDSB-DeckPT.png",
+      "cards": [
+        {
+          "id": "450ae331-42fb-42c6-bfb9-dd8db7d1a7b0",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "3836bd8f-3378-4e89-b9a2-4ffc89478bb3",
+          "card": "b5858159-d72b-4d95-8cf0-838dc1b109b0",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c4/SD35-DeckKR.png",
+      "cards": [
+        {
+          "id": "5a880737-0abc-4b22-ae29-f97e475405eb",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "f449d0e3-72bf-4edc-9e5d-619e098c6ee7",
+          "card": "bdb7230e-26d7-4c12-adc3-885e310eea24",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/50/SDSB-DeckIT.png",
+      "cards": [
+        {
+          "id": "b3a7e6d3-25d9-44d9-815c-b306899d6c98",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "cbdf868e-90d0-48e8-95e6-d0ef13ae6e64",
+          "card": "b5858159-d72b-4d95-8cf0-838dc1b109b0",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c4/SDSB-DeckFR.png",
+      "cards": [
+        {
+          "id": "f24fe183-ab02-4e13-8819-ac74eca85481",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "481b3c49-a6c0-4069-8654-5f66ab376baf",
+          "card": "b5858159-d72b-4d95-8cf0-838dc1b109b0",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c4/SD35-DeckSC.png",
+      "cards": [
+        {
+          "id": "36e7d9b6-af82-43ed-81fb-43198b6d239c",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "93202632-ba5e-474b-88e7-333fc579f253",
+          "card": "bdb7230e-26d7-4c12-adc3-885e310eea24",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/8f/SD35-DeckJP.png",
+      "cards": [
+        {
+          "id": "fc597202-971f-498b-a0d5-0f1e6f5a9cbb",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "34d918bb-23eb-495c-a0ab-a94ef99f9aff",
+          "card": "bdb7230e-26d7-4c12-adc3-885e310eea24",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/1f/SDSB-DeckEN.png",
+      "cards": [
+        {
+          "id": "396f53a8-fb8e-45aa-88f5-32a12833a438",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "762c85f5-0c4c-4f52-bf88-d4bd3ead060a",
+          "card": "b5858159-d72b-4d95-8cf0-838dc1b109b0",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/13/SDSB-DeckSP.png",
+      "cards": [
+        {
+          "id": "1b0fae74-ac4b-4ad4-9c84-8eceddd4f36f",
+          "card": "7ec7fed0-8e40-450c-8707-90dde8632185",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "56d93b52-08a7-4734-a8bc-3b23684e2afd",
+          "card": "6e627a95-2682-47d3-9c2c-420132dca3db",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "8c334017-8284-4964-8c01-58783dea39e0",
+          "card": "b5858159-d72b-4d95-8cf0-838dc1b109b0",
+          "suffix": "044",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Structure Deck: Soulburner",
+      "id": 571081
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "78ea240c-aa8e-494b-ad5e-84ceef162aeb",
+  "name": {
+    "en": "Yu-Gi-Oh! Worldwide Edition - Stairway to the Destined Duel - Bundles",
+    "fr": "Yu-Gi-Oh! Worldwide Edition - Stairway to the Destined Duel - Jeux",
+    "it": "Yu-Gi-Oh! Worldwide Edition - Stairway to the Destined Duel - Bundle"
+  },
+  "locales": {
+    "na": {
+      "language": "en",
+      "date": "2003-04-15",
+      "image": "https://ms.yugipedia.com//b/bd/SDD-VideoGame-NA.jpg",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1141402001
+        ]
+      }
+    },
+    "eu": {
+      "language": "en",
+      "prefix": "SDD-E",
+      "date": "2003-04-17",
+      "image": "https://ms.yugipedia.com//2/27/SDD-VideoGame-EU.jpg",
+      "cardImages": {
+        "unlimited": {
+          "41b2a507-1cf0-4474-98f7-e8f08c9e01aa": "https://ms.yugipedia.com//a/a8/AcidTrapHole-SDD-EU-PScR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1141402001
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/bd/SDD-VideoGame-NA.jpg",
+      "cards": [],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "eu"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/27/SDD-VideoGame-EU.jpg",
+      "cards": [
+        {
+          "id": "41b2a507-1cf0-4474-98f7-e8f08c9e01aa",
+          "card": "641d1a75-a4c2-4a39-82a9-07091a21aa4c",
+          "suffix": "002",
+          "rarity": "prismaticsecret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Worldwide Edition: Stairway to the Destined Duel promotional cards",
+      "id": 2019
+    }
+  }
+}

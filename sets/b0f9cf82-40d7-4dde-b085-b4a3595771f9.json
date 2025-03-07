@@ -1,0 +1,633 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b0f9cf82-40d7-4dde-b085-b4a3595771f9",
+  "name": {
+    "en": "High-Speed Riders",
+    "fr": "Riders \u00e0 Grande Vitesse",
+    "de": "High-Speed Riders",
+    "it": "Piloti ad Alta-Velocit\u00e0",
+    "pt": "Pilotos de Alta-Velocidade",
+    "es": "Conductores de Alta-Velocidad"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "HSRD-EN",
+      "image": "https://ms.yugipedia.com//6/6c/HSRD-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "ac712783-628b-4d8d-95fc-2d634a89d356": "https://ms.yugipedia.com//9/97/SpeedroidOhajikid-HSRD-EN-R-1E.png",
+          "4aa7fce6-fdff-4616-bbc7-df77d3e80ca6": "https://ms.yugipedia.com//5/56/SynkronResonator-HSRD-EN-C-1E.png",
+          "a00e73b2-3f9d-4948-9f0b-ff46c6f551fc": "https://ms.yugipedia.com//2/21/RedWyvern-HSRD-EN-ScR-1E.png",
+          "e2e46e70-92ea-46b4-b2bc-d129d659e217": "https://ms.yugipedia.com//8/85/ResonatorCall-HSRD-EN-C-1E.png",
+          "3c78f70a-5c1d-4ae6-b3da-04610e33f7ad": "https://ms.yugipedia.com//6/6c/RedCocoon-HSRD-EN-C-1E.png",
+          "b6c73060-b340-415f-80c9-b912a0b93bfe": "https://ms.yugipedia.com//4/46/PSYFramegearGamma-HSRD-EN-UR-1E.png",
+          "944ebafa-c7c3-492f-8a8e-a348e32a23a6": "https://ms.yugipedia.com//3/3a/PSYFramegearDelta-HSRD-EN-R-1E.png",
+          "a7ba4435-a6a7-4e20-9fa8-6fc86396fa6e": "https://ms.yugipedia.com//a/ac/Armoroid-HSRD-EN-C-1E.png",
+          "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7": "https://ms.yugipedia.com//7/7c/CardcarD-HSRD-EN-C-1E.png",
+          "89142c4d-8c5d-4e55-92af-6934d997aa50": "https://ms.yugipedia.com//b/ba/PsychicOverload-HSRD-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11114008
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "HSRD-DE",
+      "image": "https://ms.yugipedia.com//a/ad/HSRD-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21114008
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "HSRD-FR",
+      "image": "https://ms.yugipedia.com//6/63/HSRD-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "5c363b6e-e06a-470b-a4b5-522962b0ca1a": "https://ms.yugipedia.com//d/d7/SynkronResonator-HSRD-FR-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31114008
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "HSRD-PT",
+      "date": "2015-10-02",
+      "image": "https://ms.yugipedia.com//0/0a/HSRD-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "3a8ed0ba-ae10-48fa-87d2-c6eb608f7b32": "https://ms.yugipedia.com//5/56/SpeedroidOhajikid-HSRD-PT-R-1E.png",
+          "740ff533-359f-49ec-a42d-1e8edbe8ff4d": "https://ms.yugipedia.com//c/c6/SynkronResonator-HSRD-PT-C-1E.png",
+          "88de93d8-77e6-4803-bc4b-dc887a26687d": "https://ms.yugipedia.com//9/9b/RedWyvern-HSRD-PT-ScR-1E.png",
+          "a6396662-320b-4429-bf10-c4106b2d265a": "https://ms.yugipedia.com//4/48/ResonatorCall-HSRD-PT-C-1E.png",
+          "5379f3e3-24ff-487f-b4d9-8238b681193a": "https://ms.yugipedia.com//7/7c/RedCocoon-HSRD-PT-C-1E.png",
+          "a6b649f9-3e2e-4c49-b5ff-d35a95b9aead": "https://ms.yugipedia.com//0/0d/PSYFramegearGamma-HSRD-PT-UR-1E.png",
+          "aa2e8f7c-1ab4-48b5-b896-614c9e36e815": "https://ms.yugipedia.com//7/7b/PSYFramegearDelta-HSRD-PT-R-1E.png",
+          "60d3d1d8-9a7c-4aba-b0fb-03a5a242a36d": "https://ms.yugipedia.com//c/c3/Armoroid-HSRD-PT-C-1E.png",
+          "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7": "https://ms.yugipedia.com//b/bb/CardcarD-HSRD-PT-C-1E.png",
+          "a72f431e-0bcb-4768-8b59-a64a4b8150e7": "https://ms.yugipedia.com//9/9e/PsychicOverload-HSRD-PT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11114008
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "HSRD-SP",
+      "image": "https://ms.yugipedia.com//1/10/HSRD-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "11adf062-8d49-44c0-86c7-b9179081356c": "https://ms.yugipedia.com//d/d6/SpeedroidOhajikid-HSRD-SP-R-1E.png",
+          "2b296f07-00a3-4a07-963f-a6a023e4af78": "https://ms.yugipedia.com//7/73/SynkronResonator-HSRD-SP-C-1E.png",
+          "449edb01-55d9-41f0-a0ef-d8cea3f5ffb9": "https://ms.yugipedia.com//9/9a/RedWyvern-HSRD-SP-ScR-1E.png",
+          "a260267c-1d66-4de1-a082-877196f4c1d2": "https://ms.yugipedia.com//d/d6/ResonatorCall-HSRD-SP-C-1E.png",
+          "884888c8-8de2-41b5-b5de-aa328a0aa899": "https://ms.yugipedia.com//6/65/RedCocoon-HSRD-SP-C-1E.png",
+          "bc5b72c4-0002-439f-9a87-a815cf422344": "https://ms.yugipedia.com//a/a7/PSYFramegearGamma-HSRD-SP-UR-1E.png",
+          "54a6fcbc-a237-44c8-b0ea-d801c7a5477a": "https://ms.yugipedia.com//e/ef/PSYFramegearDelta-HSRD-SP-R-1E.png",
+          "c51b9cf8-025b-46fb-8980-529e29331944": "https://ms.yugipedia.com//d/de/Armoroid-HSRD-SP-C-1E.png",
+          "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7": "https://ms.yugipedia.com//8/88/CardcarD-HSRD-SP-C-1E.png",
+          "ad798983-b1cd-42b2-b305-f565a529cc72": "https://ms.yugipedia.com//9/9f/PsychicOverload-HSRD-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51113008
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "HSRD-IT",
+      "image": "https://ms.yugipedia.com//0/0c/HSRD-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "27f28163-9c58-4a69-9f7d-fae96e2a62e3": "https://ms.yugipedia.com//3/3b/SpeedroidOhajikid-HSRD-IT-R-1E.png",
+          "2e8a5b10-f5c6-4295-8af3-7ca338474bc8": "https://ms.yugipedia.com//7/79/SynkronResonator-HSRD-IT-C-1E.png",
+          "eabffc10-ba3f-486b-950c-993ff618bde7": "https://ms.yugipedia.com//9/94/RedWyvern-HSRD-IT-ScR-1E.png",
+          "eb950c87-4d81-4caf-91e2-7758fe2c5346": "https://ms.yugipedia.com//4/47/ResonatorCall-HSRD-IT-C-1E.png",
+          "552c7120-b9b3-4fc0-a7d2-a148aed70ef1": "https://ms.yugipedia.com//d/d9/RedCocoon-HSRD-IT-C-1E.png",
+          "75f9b395-0cdb-442c-b0f4-0ebd8b5d65a9": "https://ms.yugipedia.com//f/f5/PSYFramegearGamma-HSRD-IT-UR-1E.png",
+          "915f3aca-78b6-462a-bf3a-628031ad8752": "https://ms.yugipedia.com//b/be/PSYFramegearDelta-HSRD-IT-R-1E.png",
+          "a3f29a84-902b-4ab7-9c54-4b9d39c95a81": "https://ms.yugipedia.com//d/df/Armoroid-HSRD-IT-C-1E.png",
+          "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7": "https://ms.yugipedia.com//b/b9/CardcarD-HSRD-IT-C-1E.png",
+          "e9723724-4952-44dc-83eb-b6e91160ae9f": "https://ms.yugipedia.com//a/a3/PsychicOverload-HSRD-IT-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41114008
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6c/HSRD-BoosterEN.png",
+      "cards": [
+        {
+          "id": "ac712783-628b-4d8d-95fc-2d634a89d356",
+          "card": "6ec46b21-6f95-42d1-b982-5e0c05fb8375",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "4aa7fce6-fdff-4616-bbc7-df77d3e80ca6",
+          "card": "ad224781-11a5-4e01-b098-57ae3380e324",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "a00e73b2-3f9d-4948-9f0b-ff46c6f551fc",
+          "card": "977aa93b-517d-4f4d-a575-e27eaba0210c",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "e2e46e70-92ea-46b4-b2bc-d129d659e217",
+          "card": "f197c9e4-8d91-4710-b20c-3375eeef7818",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "3c78f70a-5c1d-4ae6-b3da-04610e33f7ad",
+          "card": "32eecd35-a8f9-4d12-b859-63130be03bad",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "b6c73060-b340-415f-80c9-b912a0b93bfe",
+          "card": "cd7fda9a-d00d-4db4-b1d4-64695b8d67a9",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "944ebafa-c7c3-492f-8a8e-a348e32a23a6",
+          "card": "988c768a-a2cd-4d94-91da-91694d3d86c9",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "a7ba4435-a6a7-4e20-9fa8-6fc86396fa6e",
+          "card": "0058b53a-5003-42a0-827f-22e30453daaf",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7",
+          "card": "2debed2e-60ce-4c2b-b7af-9ea8c6b8e614",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "89142c4d-8c5d-4e55-92af-6934d997aa50",
+          "card": "a4193eb3-02d1-428d-8725-aa7e533207e6",
+          "suffix": "060",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/ad/HSRD-BoosterDE.png",
+      "cards": [
+        {
+          "id": "da88e34b-5237-4500-a01e-1c5439ccc662",
+          "card": "6ec46b21-6f95-42d1-b982-5e0c05fb8375",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "79a4ccd6-6f13-426e-9b56-97477d0de8ea",
+          "card": "ad224781-11a5-4e01-b098-57ae3380e324",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "ebd535f6-a6ea-4449-8832-1db3af97f4bf",
+          "card": "977aa93b-517d-4f4d-a575-e27eaba0210c",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "05111633-b84b-4b41-9f2e-db664d4d9b85",
+          "card": "f197c9e4-8d91-4710-b20c-3375eeef7818",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "50d04ae4-5458-4d13-92c2-41820ed80587",
+          "card": "32eecd35-a8f9-4d12-b859-63130be03bad",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "0f95a544-9293-4649-a418-12d13df5962e",
+          "card": "cd7fda9a-d00d-4db4-b1d4-64695b8d67a9",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "069ec311-df7a-49db-aeba-6bfc4a5702bd",
+          "card": "988c768a-a2cd-4d94-91da-91694d3d86c9",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "e59cf23e-313f-4c3c-9089-02841beaa17f",
+          "card": "0058b53a-5003-42a0-827f-22e30453daaf",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7",
+          "card": "2debed2e-60ce-4c2b-b7af-9ea8c6b8e614",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "1e1368c8-3630-4a20-acf1-6e4418f7ac07",
+          "card": "a4193eb3-02d1-428d-8725-aa7e533207e6",
+          "suffix": "060",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/63/HSRD-BoosterFR.png",
+      "cards": [
+        {
+          "id": "1dfac252-19dd-4afa-b61e-b5967d4f1e45",
+          "card": "6ec46b21-6f95-42d1-b982-5e0c05fb8375",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "5c363b6e-e06a-470b-a4b5-522962b0ca1a",
+          "card": "ad224781-11a5-4e01-b098-57ae3380e324",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "2a5bbe92-8e6f-4dd8-a2f1-902ef85540f5",
+          "card": "977aa93b-517d-4f4d-a575-e27eaba0210c",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "daa52674-ea8d-4c99-a0db-19f53af46600",
+          "card": "f197c9e4-8d91-4710-b20c-3375eeef7818",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "4208e044-304e-404f-ad20-d2c82ad89c37",
+          "card": "32eecd35-a8f9-4d12-b859-63130be03bad",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "029a1749-b471-4270-8bfa-e826d8296183",
+          "card": "cd7fda9a-d00d-4db4-b1d4-64695b8d67a9",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "88d16e27-3c51-4e67-ab47-60dbaad84b6a",
+          "card": "988c768a-a2cd-4d94-91da-91694d3d86c9",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "6a45c9de-66bc-4e0f-be8b-2f15eeffd157",
+          "card": "0058b53a-5003-42a0-827f-22e30453daaf",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7",
+          "card": "2debed2e-60ce-4c2b-b7af-9ea8c6b8e614",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "276018b4-a2be-44f7-9a9d-5f4c59a6f356",
+          "card": "a4193eb3-02d1-428d-8725-aa7e533207e6",
+          "suffix": "060",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0a/HSRD-BoosterPT.png",
+      "cards": [
+        {
+          "id": "3a8ed0ba-ae10-48fa-87d2-c6eb608f7b32",
+          "card": "6ec46b21-6f95-42d1-b982-5e0c05fb8375",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "740ff533-359f-49ec-a42d-1e8edbe8ff4d",
+          "card": "ad224781-11a5-4e01-b098-57ae3380e324",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "88de93d8-77e6-4803-bc4b-dc887a26687d",
+          "card": "977aa93b-517d-4f4d-a575-e27eaba0210c",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "a6396662-320b-4429-bf10-c4106b2d265a",
+          "card": "f197c9e4-8d91-4710-b20c-3375eeef7818",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "5379f3e3-24ff-487f-b4d9-8238b681193a",
+          "card": "32eecd35-a8f9-4d12-b859-63130be03bad",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a6b649f9-3e2e-4c49-b5ff-d35a95b9aead",
+          "card": "cd7fda9a-d00d-4db4-b1d4-64695b8d67a9",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aa2e8f7c-1ab4-48b5-b896-614c9e36e815",
+          "card": "988c768a-a2cd-4d94-91da-91694d3d86c9",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "60d3d1d8-9a7c-4aba-b0fb-03a5a242a36d",
+          "card": "0058b53a-5003-42a0-827f-22e30453daaf",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7",
+          "card": "2debed2e-60ce-4c2b-b7af-9ea8c6b8e614",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "a72f431e-0bcb-4768-8b59-a64a4b8150e7",
+          "card": "a4193eb3-02d1-428d-8725-aa7e533207e6",
+          "suffix": "060",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/10/HSRD-BoosterSP.png",
+      "cards": [
+        {
+          "id": "11adf062-8d49-44c0-86c7-b9179081356c",
+          "card": "6ec46b21-6f95-42d1-b982-5e0c05fb8375",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "2b296f07-00a3-4a07-963f-a6a023e4af78",
+          "card": "ad224781-11a5-4e01-b098-57ae3380e324",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "449edb01-55d9-41f0-a0ef-d8cea3f5ffb9",
+          "card": "977aa93b-517d-4f4d-a575-e27eaba0210c",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "a260267c-1d66-4de1-a082-877196f4c1d2",
+          "card": "f197c9e4-8d91-4710-b20c-3375eeef7818",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "884888c8-8de2-41b5-b5de-aa328a0aa899",
+          "card": "32eecd35-a8f9-4d12-b859-63130be03bad",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "bc5b72c4-0002-439f-9a87-a815cf422344",
+          "card": "cd7fda9a-d00d-4db4-b1d4-64695b8d67a9",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "54a6fcbc-a237-44c8-b0ea-d801c7a5477a",
+          "card": "988c768a-a2cd-4d94-91da-91694d3d86c9",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "c51b9cf8-025b-46fb-8980-529e29331944",
+          "card": "0058b53a-5003-42a0-827f-22e30453daaf",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7",
+          "card": "2debed2e-60ce-4c2b-b7af-9ea8c6b8e614",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "ad798983-b1cd-42b2-b305-f565a529cc72",
+          "card": "a4193eb3-02d1-428d-8725-aa7e533207e6",
+          "suffix": "060",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/0c/HSRD-BoosterIT.png",
+      "cards": [
+        {
+          "id": "27f28163-9c58-4a69-9f7d-fae96e2a62e3",
+          "card": "6ec46b21-6f95-42d1-b982-5e0c05fb8375",
+          "suffix": "007",
+          "rarity": "rare"
+        },
+        {
+          "id": "2e8a5b10-f5c6-4295-8af3-7ca338474bc8",
+          "card": "ad224781-11a5-4e01-b098-57ae3380e324",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "eabffc10-ba3f-486b-950c-993ff618bde7",
+          "card": "977aa93b-517d-4f4d-a575-e27eaba0210c",
+          "suffix": "022",
+          "rarity": "secret"
+        },
+        {
+          "id": "eb950c87-4d81-4caf-91e2-7758fe2c5346",
+          "card": "f197c9e4-8d91-4710-b20c-3375eeef7818",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "552c7120-b9b3-4fc0-a7d2-a148aed70ef1",
+          "card": "32eecd35-a8f9-4d12-b859-63130be03bad",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "75f9b395-0cdb-442c-b0f4-0ebd8b5d65a9",
+          "card": "cd7fda9a-d00d-4db4-b1d4-64695b8d67a9",
+          "suffix": "031",
+          "rarity": "ultra"
+        },
+        {
+          "id": "915f3aca-78b6-462a-bf3a-628031ad8752",
+          "card": "988c768a-a2cd-4d94-91da-91694d3d86c9",
+          "suffix": "032",
+          "rarity": "rare"
+        },
+        {
+          "id": "a3f29a84-902b-4ab7-9c54-4b9d39c95a81",
+          "card": "0058b53a-5003-42a0-827f-22e30453daaf",
+          "suffix": "047",
+          "rarity": "common"
+        },
+        {
+          "id": "c61fee79-c6a8-4f4e-a900-ea0b4a832fd7",
+          "card": "2debed2e-60ce-4c2b-b7af-9ea8c6b8e614",
+          "suffix": "051",
+          "rarity": "common"
+        },
+        {
+          "id": "e9723724-4952-44dc-83eb-b6e91160ae9f",
+          "card": "a4193eb3-02d1-428d-8725-aa7e533207e6",
+          "suffix": "060",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "High-Speed Riders",
+      "id": 393860
+    }
+  }
+}

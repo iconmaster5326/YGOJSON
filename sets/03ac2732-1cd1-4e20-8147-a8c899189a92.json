@@ -1,0 +1,924 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "03ac2732-1cd1-4e20-8147-a8c899189a92",
+  "name": {
+    "en": "Duelist League 2010",
+    "fr": "Ligue du Duelliste 2010",
+    "de": "Duelist League 2010",
+    "it": "Duelist League 2010",
+    "es": "Duelist League 2010"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "DL09-EN",
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cardImages": {
+        "unlimited": {
+          "44457b49-225b-4aa9-ac54-e6302e60bdf4": "https://ms.yugipedia.com//f/fc/BlueEyesWhiteDragon-DL09-EN-R-UE-Blue.png",
+          "6a6c7fee-e23c-4b69-9493-9643f8fff8b6": "https://ms.yugipedia.com//d/d2/BlueEyesWhiteDragon-DL09-EN-R-UE-Green.jpg",
+          "9b1af89d-546c-43de-abe6-56f280ed6f81": "https://ms.yugipedia.com//f/f8/Kuriboh-DL09-EN-R-UE-Blue.png",
+          "733bbade-e037-417a-ba58-1a3f481a72e0": "https://ms.yugipedia.com//3/3b/Kuriboh-DL09-EN-R-UE-Green.jpg",
+          "875032f7-79dc-4892-8fb4-cae838856729": "https://ms.yugipedia.com//5/51/MysticTomato-DL09-EN-R-UE-Blue.png",
+          "dc67492e-68b2-4d9b-a875-3ea30ec3274c": "https://ms.yugipedia.com//0/02/MysticTomato-DL09-EN-R-UE-Green.jpg",
+          "f1901a3d-878b-4e8e-8199-56c39f84fbc2": "https://ms.yugipedia.com//3/33/BladeKnight-DL09-EN-R-UE-Blue.png",
+          "206aeaef-69e4-4e9d-8fe1-4021c98f77bf": "https://ms.yugipedia.com//c/cb/BladeKnight-DL09-EN-R-UE-Green.jpg",
+          "417255df-31e5-4524-b7c7-ce795fa06aae": "https://ms.yugipedia.com//a/ae/SwordsofRevealingLight-DL09-EN-R-UE-Blue.png",
+          "fa46e5b4-b0a5-48ca-bf94-ef948359ad64": "https://ms.yugipedia.com//7/79/SwordsofRevealingLight-DL09-EN-R-UE-Green.jpg",
+          "c7545011-d0d2-4138-8703-5ca6384d96ce": "https://ms.yugipedia.com//f/f9/SoulTaker-DL09-EN-R-UE-Blue.png",
+          "5468b897-628e-423f-8680-ca83b2b6b6ff": "https://ms.yugipedia.com//9/9a/SoulTaker-DL09-EN-R-UE-Green.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121208004
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "DL09-SP",
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cardImages": {
+        "unlimited": {
+          "83b35f02-820e-42d6-9e6b-32459e24433f": "https://ms.yugipedia.com//c/c4/BlueEyesWhiteDragon-DL09-SP-R-UE-Blue.png",
+          "aa548621-7d1f-4044-8688-87c457242742": "https://ms.yugipedia.com//7/78/BlueEyesWhiteDragon-DL09-SP-R-UE-Green.png",
+          "a287b885-e775-453f-84c6-7346ca7ee8c0": "https://ms.yugipedia.com//e/e5/Kuriboh-DL09-SP-R-UE-Green.png",
+          "8aa4b055-d5b7-4d62-8d71-9589b0f4a8e4": "https://ms.yugipedia.com//d/d7/MysticTomato-DL09-SP-R-UE-Green.png",
+          "b904e11d-431c-4ff3-8d70-e5472fc6c511": "https://ms.yugipedia.com//b/b6/BladeKnight-DL09-SP-R-UE-Green.png",
+          "9e35eb8e-51b7-4d75-a67d-0c1074ee6064": "https://ms.yugipedia.com//8/8b/SwordsofRevealingLight-DL09-SP-R-UE-Green.png",
+          "10c894d3-7d28-4be7-9668-5e68060198a5": "https://ms.yugipedia.com//1/12/SoulTaker-DL09-SP-R-UE-Blue.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "DL09-FR",
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "DL09-DE",
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cardImages": {
+        "unlimited": {
+          "4ce7a349-9f14-4db3-822b-c7f3fa950f1d": "https://ms.yugipedia.com//a/a7/Kuriboh-DL09-DE-R-UE-Blue.png",
+          "459b86d3-2068-438e-842e-1db3edef7bd8": "https://ms.yugipedia.com//2/28/Kuriboh-DL09-DE-R-UE-Green.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "DL09-IT",
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cards": [
+        {
+          "id": "44457b49-225b-4aa9-ac54-e6302e60bdf4",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "6a6c7fee-e23c-4b69-9493-9643f8fff8b6",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "b61e3b9b-7a69-4d83-8bbb-10de93cd62bf",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "d59f8b95-2a5b-459a-8f93-be9399270a96",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "9b1af89d-546c-43de-abe6-56f280ed6f81",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "733bbade-e037-417a-ba58-1a3f481a72e0",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "6e73cb3a-159a-44e9-9b2b-df0a65b8d5b8",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "9e694dba-3cea-42dc-96ab-0b9b80632cff",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "875032f7-79dc-4892-8fb4-cae838856729",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "dc67492e-68b2-4d9b-a875-3ea30ec3274c",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "81b561cd-021b-416e-ab6b-d6dc4f05f90b",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "0001b58a-8b6d-4549-a5ff-93b034f3f04f",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "f1901a3d-878b-4e8e-8199-56c39f84fbc2",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "206aeaef-69e4-4e9d-8fe1-4021c98f77bf",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "aa8b281b-0ee3-4310-9407-84fc49fedd53",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "253b5307-6f0a-4923-bd0b-4300a256d325",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "417255df-31e5-4524-b7c7-ce795fa06aae",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "fa46e5b4-b0a5-48ca-bf94-ef948359ad64",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "764329f8-e14f-4ade-83f2-591dd59ceef4",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "0b43ea19-6ad9-471b-bda4-ca09dd344ac2",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "c7545011-d0d2-4138-8703-5ca6384d96ce",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "5468b897-628e-423f-8680-ca83b2b6b6ff",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "939f2d64-13c6-43aa-81f9-b5c1ec51e1fd",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "41ad169b-756c-4317-8249-d2921b1a3a62",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-wedgewood"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cards": [
+        {
+          "id": "83b35f02-820e-42d6-9e6b-32459e24433f",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "aa548621-7d1f-4044-8688-87c457242742",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "8fd185e9-c165-44f3-80ac-e9de4b8ace24",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "88b0ea53-6735-483c-b8c0-55ed94ce728c",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "7ff9737b-d757-4949-87ed-c7562af34462",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "a287b885-e775-453f-84c6-7346ca7ee8c0",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "e0619f33-06ab-4231-9845-915760426434",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "d015bbcd-19bf-4ec5-854e-c591da1e7567",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "3f97df3c-f0a1-46fd-9a31-96b11f02b3cf",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "8aa4b055-d5b7-4d62-8d71-9589b0f4a8e4",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "2f75da3b-f311-41ee-b2db-bc770a5bef76",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "e827c8f1-30c1-4926-b9a6-e8dca883b857",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "0518393c-e1d1-4698-9b5a-879248b07736",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "b904e11d-431c-4ff3-8d70-e5472fc6c511",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "84f51de3-7969-4a5b-a0ba-47c269d602d2",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "8ed26072-5ede-4b7a-930e-809f44e74606",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "3e6014c4-978a-4d76-a886-298cae37e0ee",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "9e35eb8e-51b7-4d75-a67d-0c1074ee6064",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "6731722a-205b-4dbd-bf1b-c693ec53c105",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "4cfb39fa-489b-41d2-9183-b4bcda8fa465",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "10c894d3-7d28-4be7-9668-5e68060198a5",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "054414e8-251e-4768-84cb-040f9d3d7e03",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "a8940118-6157-47b1-acd3-40042e7a0b1e",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "7cf193b8-2fc4-43c2-b166-fccd5019df6a",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-wedgewood"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cards": [
+        {
+          "id": "cea9ad97-dd5c-4376-b87b-c52ac9c34e36",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "90980aad-7040-43f5-90ca-728dce7a4fad",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "5c2e386a-677d-4548-962f-e0694ed1b17f",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "2f453492-6350-4748-af95-fbd10b963297",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "2f471a30-e2fd-4454-a5f7-e6ac12e04bd5",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "4485591e-c4c9-4b53-a258-e211819cb3f2",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "a4492e3e-1018-4367-9022-508a1363722e",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "6dc308ff-c7c5-49b3-abe8-ce83969a4ccc",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "47bad2da-9f8a-421f-83df-eb70feef2963",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "0c92c07b-0e35-482b-9161-bdc602d88691",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "3ed63275-e49e-4b0d-a28a-ed1ab1e380dc",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "1cacb352-c7c7-4aca-b7af-e0c7ca387ff7",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "e3a882d8-8360-43cf-baa7-98d93effa6af",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "b69cc851-0daa-4bdf-b7f8-423112f5c7e3",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "6b87f310-830f-4f6e-b78b-866b598f1c66",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "2cc55378-596f-44ce-b035-cfeebffda183",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "e3ee6da9-69e2-46be-a775-f21348be0889",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "0d10bfa9-bd73-4f35-a7db-806f5b4ce38c",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "b4ad2d59-9a50-42bd-a6db-1085a06e3a88",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "b7035275-c01a-4b9f-8dae-b63e8115e9cd",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "67d27443-5fd2-43ee-a050-2f9ccb75a39f",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "dc234849-4a41-4cdf-af7f-2766ac0e943b",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "bd11681f-c1c1-496e-a2fc-d01e6b8db06d",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "fc955f6c-cabd-4201-85fc-2412471bfc4c",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-wedgewood"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cards": [
+        {
+          "id": "1e27e2f1-2b79-4dd4-a338-f7b2db4f3932",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "ed0596c3-ff97-4b6a-baec-6bfe258cc0a6",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "e3b3de1d-6581-4ded-8d89-a3e1bbfb4da2",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "4ae10ce9-6397-4e1c-b9c6-9a06009696f9",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "4ce7a349-9f14-4db3-822b-c7f3fa950f1d",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "459b86d3-2068-438e-842e-1db3edef7bd8",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "49fd7427-f734-477c-af1d-e99701789cfc",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "41d1cdfa-e2b3-484a-b779-0fee2fdfd98a",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "4fc49430-b396-4c1e-98ea-b88a5b7c09bd",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "f9569308-841c-4833-bed5-043a19fa03fb",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "d110d688-c40d-404a-a475-a1e82ff13089",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "4094e403-1f95-45b0-8ab1-1b9e9e5bb1e1",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "5ee87d4b-32ae-4c85-a153-18f3707ee27e",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "3802c1c7-444a-484c-a159-199bf7484abd",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "0d6f7935-0b7f-4008-ab81-1184db76e17c",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "894e9df7-e524-4bea-bec7-cad979cf4207",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "15f27f48-41ad-4cd9-83d3-46e4c28b40aa",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "96cf7a04-f08d-4e87-9cc2-0c7df4e1ffd1",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "815a52cf-71cd-4b10-957c-2cadfee8fce8",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "a5e92853-b4fe-444d-80ff-c692097d8220",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "a7cfc635-4573-457a-988f-d07510fb01e4",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "7117e893-7f52-4134-9fbd-09be64d3aca5",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "fd3e1c7f-dd02-4d16-9035-575d20c17c9a",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "c6740e00-f44e-4bd1-a4e1-9ee595cf7c76",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-wedgewood"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//4/40/DL-PromoEN-Konami.png",
+      "cards": [
+        {
+          "id": "ea1e04af-b863-4e9e-b927-ef61c509947d",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "591166a1-478e-49c8-a879-33439d697836",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "1646f41a-12e1-4b02-89da-fe4fec94c61b",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "1e4dee10-2658-4e44-a62f-1062e2c33676",
+          "card": "e0404755-1ade-4c7c-9a2a-b29b7755d860",
+          "suffix": "001",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "61fcb700-b2d4-4ded-a9b2-bfdbfd1a709a",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "3cb2d46b-1aa9-468b-92d1-43beecd594ca",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "d6154678-22ff-43d1-8aa3-5829ab0d74de",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "835b2f99-2a3c-4c5a-bc98-555026c1f28c",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "003",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "81de0e31-9ee6-43e7-a065-d4596659ba8e",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "194e0b60-b516-4e29-9e8e-f533a46c0812",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "45e7a90f-287a-43c8-8dd0-e861bd2bb6fc",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "d0d3e5d5-8b99-4d21-879f-37090d171c9b",
+          "card": "7e30714f-58c9-41de-b9c8-3fc233599882",
+          "suffix": "006",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "6e75cb5c-01d3-4851-a612-d45a422060e3",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "717be3d2-b9f3-4eaf-adcf-08ab15b7afcb",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "438b905b-fae8-4278-9098-63684f7e04df",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "06704eae-894d-4d91-9034-47a2bfed1353",
+          "card": "1f305341-f893-4e2d-b768-d3ad3404efbc",
+          "suffix": "007",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "bee9758c-04cc-4a92-b3a0-8c7adb107245",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "9f639c03-f73d-4e41-a034-824d75af94ee",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "2b2b2177-ab8b-4b2b-9074-b81fed3b0fa6",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "560994be-ae1a-4053-894a-a249769d92e4",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "013",
+          "rarity": "rare-wedgewood"
+        },
+        {
+          "id": "51891a9c-9681-4f9e-a0be-eddba97d5935",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-blue"
+        },
+        {
+          "id": "0301de56-8278-4254-bcfe-171585041db3",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-green"
+        },
+        {
+          "id": "b1759dee-6aa8-4da0-90ab-cdb39dfe2a45",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-copper"
+        },
+        {
+          "id": "9fa0ebe6-18e4-428a-be28-8e7dc448dc60",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "016",
+          "rarity": "rare-wedgewood"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Duelist League 2010 participation cards",
+      "id": 137379
+    }
+  }
+}

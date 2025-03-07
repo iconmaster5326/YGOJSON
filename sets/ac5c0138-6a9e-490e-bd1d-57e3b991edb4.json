@@ -1,0 +1,868 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "ac5c0138-6a9e-490e-bd1d-57e3b991edb4",
+  "name": {
+    "en": "Battle of Chaos",
+    "fr": "La Bataille du Chaos",
+    "de": "Battle of Chaos",
+    "it": "Battaglia del Chaos",
+    "pt": "Batalha do Caos",
+    "es": "Batalla del Caos",
+    "ja": "\u30d0\u30c8\u30eb\u30fb\u30aa\u30d6\u30fb\u30ab\u30aa\u30b9",
+    "ko": "\ubc30\ud2c0 \uc624\ube0c \uce74\uc624\uc2a4"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "BACH-EN",
+      "image": "https://ms.yugipedia.com//1/12/BACH-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "896e46aa-378f-4222-ad3a-f6e60b20819b": "https://ms.yugipedia.com//5/5c/DDGryphon-BACH-EN-SR-1E.png",
+          "2a6486da-09fd-4608-88dd-7d3ab62a54df": "https://ms.yugipedia.com//0/09/VampireGhost-BACH-EN-UR-1E.png",
+          "e7210a38-a4da-4935-b5f7-54fcc413cf51": "https://ms.yugipedia.com//3/3f/NeiroytheDreamMirrorTraitor-BACH-EN-C-1E.png",
+          "7643058e-2b09-449a-a0c3-6eccc9f88799": "https://ms.yugipedia.com//4/49/MyutantMutant-BACH-EN-C-1E.png",
+          "c6bbffd3-65a4-481c-80ef-4fbaa0ca694c": "https://ms.yugipedia.com//f/ff/DarkDimensionSoldier-BACH-EN-SR-1E.png",
+          "9f9c00c4-bc85-4446-95b3-1d300d95584a": "https://ms.yugipedia.com//5/54/TheZombieVampire-BACH-EN-ScR-1E.png",
+          "b37622b0-ee41-41fe-adf0-f5e68b94cc77": "https://ms.yugipedia.com//5/51/TopShare-BACH-EN-C-1E.png",
+          "46df8504-c216-43ec-bac2-e04f97d06ae5": "https://ms.yugipedia.com//c/c6/SwordsoulStrife-BACH-EN-C-1E.png",
+          "f59d4081-8a1a-4a96-bca3-fd62b7e65d55": "https://ms.yugipedia.com//9/95/DinomorphiaShell-BACH-EN-C-1E.png",
+          "f1d65508-f45b-42d2-af29-62b0d59b5882": "https://ms.yugipedia.com//8/8b/DinomorphiaSonic-BACH-EN-C-1E.png",
+          "436369d0-9659-44e4-823e-594802bcae41": "https://ms.yugipedia.com//4/4b/MonsterRebirth-BACH-EN-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001152000
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "BACH-DE",
+      "image": "https://ms.yugipedia.com//c/c1/BACH-BoosterDE.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "BACH-JP",
+      "date": "2021-10-16",
+      "image": "https://ms.yugipedia.com//9/96/BACH-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "2ad5e466-90a3-495a-9145-d2c1e6c25fdd": "https://ms.yugipedia.com//e/e9/DDGryphon-BACH-JP-R.png",
+          "6a08c0f5-6d64-4b8b-a6f7-67d620b3c8a3": "https://ms.yugipedia.com//7/72/VampireGhost-BACH-JP-C.png",
+          "2039e201-d651-4fb9-916d-e73fef5e519a": "https://ms.yugipedia.com//6/6c/NeiroytheDreamMirrorTraitor-BACH-JP-R.png",
+          "89fb8ef2-c36a-4c41-966c-159044a6df15": "https://ms.yugipedia.com//1/19/MyutantMutant-BACH-JP-R.png",
+          "b78bb6c5-1991-4cd5-9b04-030a9a6be6d1": "https://ms.yugipedia.com//c/c8/DarkDimensionSoldier-BACH-JP-R.png",
+          "0829609c-1ae6-4a69-8c66-d98d46ae9d98": "https://ms.yugipedia.com//0/01/TheZombieVampire-BACH-JP-UR.png",
+          "5f0a283b-f544-44e0-bd8f-f4122b7dc99e": "https://ms.yugipedia.com//8/8a/TheZombieVampire-BACH-JP-UtR.png",
+          "c58bcf60-70b2-470e-a02a-d7cf6e5d3cfd": "https://ms.yugipedia.com//b/b4/TheZombieVampire-BACH-JP-ScR.png",
+          "02056237-a5e5-4fb4-8fe1-2b316c7f5a14": "https://ms.yugipedia.com//e/e4/TheZombieVampire-BACH-JP-PScR.png",
+          "7041b77d-f099-4c67-946e-b10c2efe01f9": "https://ms.yugipedia.com//c/cf/TopShare-BACH-JP-C.png",
+          "b296f867-5eec-4ddb-936c-92432fc08356": "https://ms.yugipedia.com//2/20/SwordsoulStrife-BACH-JP-C.png",
+          "f59d4081-8a1a-4a96-bca3-fd62b7e65d55": "https://ms.yugipedia.com//5/5d/DinomorphiaShell-BACH-JP-C.png",
+          "0503ab99-d2fb-4e04-aa09-36c1df21c71f": "https://ms.yugipedia.com//a/a2/DinomorphiaSonic-BACH-JP-R.png",
+          "2dc79840-d72f-489d-821a-6046fd47da17": "https://ms.yugipedia.com//5/53/MonsterRebirth-BACH-JP-R.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000008602000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "BACH-SP",
+      "image": "https://ms.yugipedia.com//a/a6/BACH-BoosterSP.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "BACH-IT",
+      "image": "https://ms.yugipedia.com//1/19/BACH-BoosterIT.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "BACH-PT",
+      "date": "2022-02-10",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "BACH-FR",
+      "image": "https://ms.yugipedia.com//8/8b/BACH-BoosterFR.png",
+      "cardImages": {
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "BACH-KR",
+      "date": "2022-01-19",
+      "image": "https://ms.yugipedia.com//c/c3/BACH-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010001152000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/12/BACH-BoosterEN.png",
+      "cards": [
+        {
+          "id": "896e46aa-378f-4222-ad3a-f6e60b20819b",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "super"
+        },
+        {
+          "id": "2a6486da-09fd-4608-88dd-7d3ab62a54df",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e7210a38-a4da-4935-b5f7-54fcc413cf51",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "7643058e-2b09-449a-a0c3-6eccc9f88799",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "c6bbffd3-65a4-481c-80ef-4fbaa0ca694c",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "9f9c00c4-bc85-4446-95b3-1d300d95584a",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "b37622b0-ee41-41fe-adf0-f5e68b94cc77",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "46df8504-c216-43ec-bac2-e04f97d06ae5",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "f1d65508-f45b-42d2-af29-62b0d59b5882",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "436369d0-9659-44e4-823e-594802bcae41",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c1/BACH-BoosterDE.png",
+      "cards": [
+        {
+          "id": "58a58ab9-a9fb-4ccb-baf6-d517014a82f3",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "super"
+        },
+        {
+          "id": "ce868d06-35b0-4f7c-85bc-899108f7d388",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "b4700d8c-31ef-4fad-af0c-efd13f13ca51",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "4ad24c35-5056-45bc-b701-3a9e2e8b22af",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "0a720cf5-e8d6-4136-83d9-a1969c9b7148",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "292859b3-fa29-4940-a18c-f8a1c9659d11",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "9c4e1716-9321-4f34-b93d-260101fc937b",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "aedb79a3-36df-4860-b483-3e503011ea07",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "16c6736b-2a8e-4b38-b1bc-7440ed2223ed",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "53c65b77-2a78-4594-a0a2-535935182f04",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/96/BACH-BoosterJP.png",
+      "cards": [
+        {
+          "id": "2ad5e466-90a3-495a-9145-d2c1e6c25fdd",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "6a08c0f5-6d64-4b8b-a6f7-67d620b3c8a3",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "2039e201-d651-4fb9-916d-e73fef5e519a",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "rare"
+        },
+        {
+          "id": "89fb8ef2-c36a-4c41-966c-159044a6df15",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "b78bb6c5-1991-4cd5-9b04-030a9a6be6d1",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "0829609c-1ae6-4a69-8c66-d98d46ae9d98",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "5f0a283b-f544-44e0-bd8f-f4122b7dc99e",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c58bcf60-70b2-470e-a02a-d7cf6e5d3cfd",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "02056237-a5e5-4fb4-8fe1-2b316c7f5a14",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "7041b77d-f099-4c67-946e-b10c2efe01f9",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "b296f867-5eec-4ddb-936c-92432fc08356",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "0503ab99-d2fb-4e04-aa09-36c1df21c71f",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "2dc79840-d72f-489d-821a-6046fd47da17",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//a/a6/BACH-BoosterSP.png",
+      "cards": [
+        {
+          "id": "eb7b735a-61a6-4962-ac08-aa0b1f59b3ab",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "super"
+        },
+        {
+          "id": "014bbc07-b5fb-4aac-859a-f6b213ca22d2",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "42f77e08-5018-44dd-a0d4-c5600464470f",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "fbc4ae80-ba73-4ea8-ab00-f8a8dc0435cf",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "97b65c6e-5dc5-4f23-9548-8d9762763307",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "cff362e5-c1a9-4f9d-a7cb-bd0bb380f03a",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "5383b1d4-6c19-40f0-8629-e5e0b8188958",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "5bafeec7-71fe-48aa-abb6-3a52230fad1b",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "ac16175b-b60e-407d-a5c7-261b0ebe1cda",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7d8b9103-37e0-4090-ad05-ff7a2c42c552",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/19/BACH-BoosterIT.png",
+      "cards": [
+        {
+          "id": "30d93c78-6889-43ba-ab5e-b4fdb6e968ce",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "super"
+        },
+        {
+          "id": "10d43c6d-d160-4b18-ad9f-6b536c867540",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "8a638fac-bf62-4103-9e95-7118a0f3e07d",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "8afbd061-0e3b-4dd3-b0b1-f25cd545b5ef",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "682e6bb9-c3b8-41db-896f-581572ee60fe",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "f85d3001-14e4-453d-a18c-4a13a058e859",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "77c24b5c-ae48-441e-82f3-276e32f12882",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "df1855e1-c750-4c1a-95f5-a74b65de0d4e",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "b1774a06-16ff-4977-8b8b-dba712ae94b3",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "6bd4e122-83e0-4caf-b9a7-0ebce463b717",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "f4d5108a-9dec-4825-9467-9bac82ccc694",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "super"
+        },
+        {
+          "id": "bee1265f-3d44-4866-a35f-09713ac8acd9",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a202d463-1d11-4c8f-bc1b-9bf5ec359f09",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "08e936cd-04fd-4492-a079-4ceee1d4c910",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "a8714811-13e9-419e-b7f2-6d9184430252",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "6efd8be2-7748-4308-b43a-d91119e6018c",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "e79e7c40-8626-45b4-be5e-c009af8a3231",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "f055ef4e-ec11-4311-8b72-9d9352b8b506",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "41b25d42-8989-4238-8e44-31dd435ebec5",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "7f9857ad-dea8-410b-89db-5b80274fa2c9",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//8/8b/BACH-BoosterFR.png",
+      "cards": [
+        {
+          "id": "889fed49-cf22-4d33-b421-7df41c15eeb0",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "super"
+        },
+        {
+          "id": "98d95518-5ca5-437c-bc1d-0b4d51a43978",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "ultra"
+        },
+        {
+          "id": "54b57523-1f5a-42de-85fb-b5265548a0d5",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "b44355f1-ef3f-4f3d-849f-cf4475d3593b",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "54bcd316-8d3e-4cd5-b7c4-d335d0be4e04",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "super"
+        },
+        {
+          "id": "3ec75c34-3f49-43e3-8510-4414b10d19dd",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "692d9103-b0d2-4b77-b0ce-f0596cb1da40",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "4171bcf2-5731-4c48-979c-c174d4e7a090",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "65de1ee5-9a60-4de0-a318-62d9e54cf1e4",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "common"
+        },
+        {
+          "id": "bcec85c5-1a79-454f-bc1b-cd50567602de",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c3/BACH-BoosterKR.png",
+      "cards": [
+        {
+          "id": "41c1f833-f772-46b9-a896-2e9909769c23",
+          "card": "ccd11350-4d25-48c6-8422-2f7271fe2d5a",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "3b191e0c-7edf-405b-b23e-f3ceb032d757",
+          "card": "a7750085-f5ec-4810-9b4d-9df536a9536d",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "04656ead-6b59-49de-82f5-499fc6275338",
+          "card": "2c653b1d-71ef-431c-acd2-f33e397e50b8",
+          "suffix": "018",
+          "rarity": "rare"
+        },
+        {
+          "id": "d2d87f75-74a7-451b-b6e1-944841d0ddf4",
+          "card": "af75ac1d-ac89-4cc1-9535-665b8a0eb524",
+          "suffix": "019",
+          "rarity": "rare"
+        },
+        {
+          "id": "067b6a69-9689-4b92-a829-41c4611733af",
+          "card": "08c5c375-eccf-4b86-905d-7a48c220923d",
+          "suffix": "043",
+          "rarity": "rare"
+        },
+        {
+          "id": "7b945e06-ad40-4cd8-a488-a00d03662702",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "ultra"
+        },
+        {
+          "id": "595470dd-5916-44b2-af5f-f80333ea6834",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "da823919-823a-4387-bbfc-dd89cbac64fe",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "secret"
+        },
+        {
+          "id": "09fd68dd-cfa9-4894-9a30-88cbd5fce5e2",
+          "card": "5f585dbc-a7fc-44ed-bd11-377d16a33cfc",
+          "suffix": "045",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "bbd06eca-5540-4036-bc54-ad869c3ad2a8",
+          "card": "c669593c-4428-4baa-9806-d2c310ded219",
+          "suffix": "064",
+          "rarity": "common"
+        },
+        {
+          "id": "87c3450a-5425-43d6-94b5-a58c74e37ac0",
+          "card": "e899a737-b933-4c6e-8d07-4c7cb57be5e6",
+          "suffix": "067",
+          "rarity": "common"
+        },
+        {
+          "id": "f59d4081-8a1a-4a96-bca3-fd62b7e65d55",
+          "card": "c0785a72-e639-4cd6-9ad2-e6d7d711ea5b",
+          "suffix": "071",
+          "rarity": "common"
+        },
+        {
+          "id": "73e3d741-ec2c-4016-a038-3c4305423c95",
+          "card": "e66acfa3-74fd-4689-8f27-cff0583106cc",
+          "suffix": "072",
+          "rarity": "rare"
+        },
+        {
+          "id": "ef33552a-5743-497c-8b14-14c8c778b227",
+          "card": "c4612ba9-6fbb-45d8-b9e8-d8f78103536b",
+          "suffix": "077",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Battle of Chaos",
+      "id": 720214
+    }
+  }
+}

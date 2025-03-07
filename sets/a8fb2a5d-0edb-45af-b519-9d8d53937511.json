@@ -1,0 +1,950 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a8fb2a5d-0edb-45af-b519-9d8d53937511",
+  "name": {
+    "en": "Return of the Duelist",
+    "fr": "Le Retour du Duelliste",
+    "de": "Return of the Duelist",
+    "it": "Il Ritorno del Duellante",
+    "es": "El Regreso del Duelista",
+    "ja": "\u30ea\u30bf\u30fc\u30f3\u30fb\u30aa\u30d6\u30fb\u30b6\u30fb\u30c7\u30e5\u30a8\u30ea\u30b9\u30c8",
+    "ko": "\ub9ac\ud134 \uc624\ube0c \ub354 \ub4c0\uc5bc\ub9ac\uc2a4\ud2b8",
+    "zh-TW": "\u6c7a\u95d8\u8005\u6b78\u4f86"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "REDU-EN",
+      "image": "https://ms.yugipedia.com//e/e9/REDU-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "426e4c2b-c1eb-45b1-803f-65f6757ae8de": "https://ms.yugipedia.com//8/8b/TrancetheMagicSwordsman-REDU-EN-C-UE.png",
+          "502a5a04-3503-4f3c-ae2f-303e5e63bd00": "https://ms.yugipedia.com//6/66/DamageMage-REDU-EN-C-UE.png",
+          "d145203d-d063-4371-9009-6607b07a4aea": "https://ms.yugipedia.com//c/cd/HeroicChallengerWarHammer-REDU-EN-C-UE.png",
+          "f0fa37a3-422c-4694-bb3d-c1c1c1110125": "https://ms.yugipedia.com//b/b1/UnifloraMysticalBeastoftheForest-REDU-EN-C-UE.png",
+          "1dc60494-2366-4545-bb0f-98059702447a": "https://ms.yugipedia.com//6/6e/SilverSentinel-REDU-EN-UR-UE.png",
+          "d8f512ae-791f-4f14-a1ca-c7c4d8fd6267": "https://ms.yugipedia.com//7/7b/SilverSentinel-REDU-EN-UtR-UE.png",
+          "59bd8b05-568f-4f60-a9b3-c8cd08f719e4": "https://ms.yugipedia.com//a/a7/AtlanteanAttackSquad-REDU-EN-C-UE.png",
+          "926dda7d-0c48-4392-b7da-bb9d8634d6ce": "https://ms.yugipedia.com//9/90/SpellbookofLife-REDU-EN-SR-UE.png",
+          "357c0538-8728-4c37-9371-2b41f19f28b3": "https://ms.yugipedia.com//b/b2/SoulDrain-REDU-EN-R-UE.png",
+          "43afec9f-f38d-4759-bee6-f1f4117f51a2": "https://ms.yugipedia.com//9/9b/Pahunder-REDU-EN-R-UE.png",
+          "f627c2d8-a76a-43cc-8687-784f89a132d8": "https://ms.yugipedia.com//2/2a/Mahunder-REDU-EN-R-UE.png"
+        },
+        "1st": {
+          "426e4c2b-c1eb-45b1-803f-65f6757ae8de": "https://ms.yugipedia.com//b/b3/TrancetheMagicSwordsman-REDU-EN-C-1E.png",
+          "502a5a04-3503-4f3c-ae2f-303e5e63bd00": "https://ms.yugipedia.com//6/69/DamageMage-REDU-EN-C-1E.png",
+          "d145203d-d063-4371-9009-6607b07a4aea": "https://ms.yugipedia.com//6/6b/HeroicChallengerWarHammer-REDU-EN-C-1E.png",
+          "f0fa37a3-422c-4694-bb3d-c1c1c1110125": "https://ms.yugipedia.com//9/99/UnifloraMysticalBeastoftheForest-REDU-EN-C-1E.png",
+          "1dc60494-2366-4545-bb0f-98059702447a": "https://ms.yugipedia.com//7/76/SilverSentinel-REDU-EN-UR-1E.png",
+          "d8f512ae-791f-4f14-a1ca-c7c4d8fd6267": "https://ms.yugipedia.com//6/6f/SilverSentinel-REDU-EN-UtR-1E.png",
+          "59bd8b05-568f-4f60-a9b3-c8cd08f719e4": "https://ms.yugipedia.com//0/04/AtlanteanAttackSquad-REDU-EN-C-1E.png",
+          "926dda7d-0c48-4392-b7da-bb9d8634d6ce": "https://ms.yugipedia.com//9/94/SpellbookofLife-REDU-EN-SR-1E.png",
+          "357c0538-8728-4c37-9371-2b41f19f28b3": "https://ms.yugipedia.com//3/34/SoulDrain-REDU-EN-R-1E.png",
+          "43afec9f-f38d-4759-bee6-f1f4117f51a2": "https://ms.yugipedia.com//7/71/Pahunder-REDU-EN-R-1E.png",
+          "f627c2d8-a76a-43cc-8687-784f89a132d8": "https://ms.yugipedia.com//5/5b/Mahunder-REDU-EN-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11111005
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "REDU-DE",
+      "image": "https://ms.yugipedia.com//4/47/REDU-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "201f0c2b-00c5-4bc0-892e-f15d15ca1e79": "https://ms.yugipedia.com//9/96/TrancetheMagicSwordsman-REDU-DE-C-1E.jpg",
+          "26c466f4-3bf0-4409-af18-68c2211903ee": "https://ms.yugipedia.com//8/88/DamageMage-REDU-DE-C-1E.jpg",
+          "adee20c4-b27b-449a-b386-ed1d099ce146": "https://ms.yugipedia.com//f/fe/HeroicChallengerWarHammer-REDU-DE-C-1E.jpg",
+          "87dbee1e-aba0-4b20-8a27-755f3ca9258c": "https://ms.yugipedia.com//9/99/UnifloraMysticalBeastoftheForest-REDU-DE-C-1E.jpg",
+          "3d0e1732-e3aa-4d95-a6d8-1bb1fbbc820a": "https://ms.yugipedia.com//2/2e/SilverSentinel-REDU-DE-UR-1E.jpg",
+          "3d636d5a-4d56-453b-a065-0e44a6d71443": "https://ms.yugipedia.com//3/30/SilverSentinel-REDU-DE-UtR-1E.jpg",
+          "f1237bd7-a602-4803-954e-8e49a9d3fc1b": "https://ms.yugipedia.com//6/6b/AtlanteanAttackSquad-REDU-DE-C-1E.jpg",
+          "ee2fedb7-1ed4-4101-8d88-f44aeec83bd9": "https://ms.yugipedia.com//f/f5/SpellbookofLife-REDU-DE-SR-1E.jpg",
+          "be76972c-9601-4344-8323-023c742da3c1": "https://ms.yugipedia.com//e/e8/SoulDrain-REDU-DE-R-1E.jpg",
+          "23fdc064-f463-48f5-a914-d085384412d7": "https://ms.yugipedia.com//2/26/Pahunder-REDU-DE-R-1E.jpg",
+          "b7d3159e-e11e-41af-ac4e-41159423d8f6": "https://ms.yugipedia.com//0/08/Mahunder-REDU-DE-R-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21111005
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "REDU-JP",
+      "date": "2012-04-14",
+      "image": "https://ms.yugipedia.com//0/09/REDU-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "c38f2a82-67f5-4824-b714-50c82e540243": "https://ms.yugipedia.com//6/68/TrancetheMagicSwordsman-REDU-JP-R.png",
+          "19622780-9fcb-4478-a659-39d2061cb3f3": "https://ms.yugipedia.com//2/2c/DamageMage-REDU-JP-C.png",
+          "412f054f-bfab-4484-82b5-0e93dbbd2680": "https://ms.yugipedia.com//a/af/HeroicChallengerWarHammer-REDU-JP-C.png",
+          "5d0dd33b-c2be-458c-82b8-55b2c0c44a18": "https://ms.yugipedia.com//c/c2/UnifloraMysticalBeastoftheForest-REDU-JP-C.png",
+          "76e4cbb6-865a-4a44-9d9a-625df29812b5": "https://ms.yugipedia.com//f/f2/SilverSentinel-REDU-JP-C.png",
+          "d50acbb6-e957-4e07-bfd7-ef4eb8971b07": "https://ms.yugipedia.com//3/3f/AtlanteanAttackSquad-REDU-JP-C.png",
+          "f60e8352-3add-4a3d-8968-e6424611757f": "https://ms.yugipedia.com//7/7e/SpellbookofLife-REDU-JP-C.png",
+          "b4bb8182-b771-4d21-b4cd-3e1f521325d4": "https://ms.yugipedia.com//8/80/SoulDrain-REDU-JP-R.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1115000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "REDU-SP",
+      "image": "https://ms.yugipedia.com//2/2b/REDU-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {
+          "28947249-78fe-4524-937a-ae14bdc41dd8": "https://ms.yugipedia.com//8/85/Pahunder-REDU-SP-R-UE.png"
+        },
+        "1st": {
+          "d838b77b-c82f-4c92-8728-7376a76e252e": "https://ms.yugipedia.com//4/46/TrancetheMagicSwordsman-REDU-SP-C-1E.jpg",
+          "6decb78b-9db3-45dd-a9da-9a57cb2ea874": "https://ms.yugipedia.com//d/da/DamageMage-REDU-SP-C-1E.png",
+          "937a1bb6-f731-4d04-9934-0d5d1d83b006": "https://ms.yugipedia.com//1/16/HeroicChallengerWarHammer-REDU-SP-C-1E.jpg",
+          "9d7212cf-3c4b-42c2-84f9-1e8bb8a21be8": "https://ms.yugipedia.com//2/24/UnifloraMysticalBeastoftheForest-REDU-SP-C-1E.png",
+          "940d0217-918e-47f6-b665-36728dee1ef7": "https://ms.yugipedia.com//8/89/SilverSentinel-REDU-SP-UR-1E.jpg",
+          "6d357597-b86d-48fb-9c0d-c92b2b6f1a6a": "https://ms.yugipedia.com//f/f1/AtlanteanAttackSquad-REDU-SP-C-1E.png",
+          "87a1e9b6-4ee2-490b-b4d4-588023140b5b": "https://ms.yugipedia.com//b/b3/SpellbookofLife-REDU-SP-SR-1E.jpg",
+          "82f55f83-c023-44ef-bb4d-581ba651fa0f": "https://ms.yugipedia.com//9/90/SoulDrain-REDU-SP-R-1E.png",
+          "28947249-78fe-4524-937a-ae14bdc41dd8": "https://ms.yugipedia.com//8/8e/Pahunder-REDU-SP-R-1E.jpg",
+          "5a1ac934-19d4-4990-a5d8-f69c5bfa13e3": "https://ms.yugipedia.com//1/17/Mahunder-REDU-SP-R-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51110005
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "REDU-IT",
+      "image": "https://ms.yugipedia.com//2/22/REDU-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {
+          "ab0c16d4-f788-4700-8fc0-f70cc23bfdff": "https://ms.yugipedia.com//8/85/DamageMage-REDU-IT-C-UE.png",
+          "e7803f43-dd4d-44c8-8bb9-ce85f9aa611d": "https://ms.yugipedia.com//a/a5/SilverSentinel-REDU-IT-UtR-UE.jpg"
+        },
+        "1st": {
+          "12a3f90c-f86f-4eb0-8961-795d32f6770b": "https://ms.yugipedia.com//1/15/TrancetheMagicSwordsman-REDU-IT-C-1E.jpg",
+          "ab0c16d4-f788-4700-8fc0-f70cc23bfdff": "https://ms.yugipedia.com//1/13/DamageMage-REDU-IT-C-1E.jpg",
+          "c7b10d28-6a24-4d83-86be-334629a19808": "https://ms.yugipedia.com//b/b2/HeroicChallengerWarHammer-REDU-IT-C-1E.jpg",
+          "cf0b66ed-339b-4614-85d9-25e860498028": "https://ms.yugipedia.com//b/b3/UnifloraMysticalBeastoftheForest-REDU-IT-C-1E.jpg",
+          "84e0d5de-bdb4-46ba-b80b-02c96c63e01f": "https://ms.yugipedia.com//b/bb/SilverSentinel-REDU-IT-UR-1E.jpg",
+          "e7803f43-dd4d-44c8-8bb9-ce85f9aa611d": "https://ms.yugipedia.com//d/d0/SilverSentinel-REDU-IT-UtR-1E.jpg",
+          "a621dc90-0a68-48f1-b582-2c2de56d5b8a": "https://ms.yugipedia.com//f/f9/AtlanteanAttackSquad-REDU-IT-C-1E.jpg",
+          "85ef5386-730b-47e8-af70-246f42b5522a": "https://ms.yugipedia.com//5/53/SpellbookofLife-REDU-IT-SR-1E.jpg",
+          "7576e2a5-f6ea-4acf-b842-3da2c61faae9": "https://ms.yugipedia.com//8/8e/SoulDrain-REDU-IT-R-1E.png",
+          "e19c0199-a4cf-4f0b-bb63-7601e922e121": "https://ms.yugipedia.com//e/e9/Pahunder-REDU-IT-R-1E.jpg",
+          "b949bfc4-7f8a-4558-b73f-ac7797f6aca6": "https://ms.yugipedia.com//c/ca/Mahunder-REDU-IT-R-1E.jpg"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41111005
+        ]
+      }
+    },
+    "tc": {
+      "language": "zh-TW",
+      "prefix": "REDU-TC",
+      "date": "2015-06-06",
+      "image": "https://ms.yugipedia.com//1/17/REDU-BoosterTC.png",
+      "cardImages": {
+        "unlimited": {
+          "5d81653d-00f8-4620-b31d-c64727353467": "https://ms.yugipedia.com//d/df/TrancetheMagicSwordsman-REDU-TC-R.png",
+          "98f52adf-382b-411f-9eb9-d9d8da3ee424": "https://ms.yugipedia.com//0/03/DamageMage-REDU-TC-C.png",
+          "ff6460f9-56fa-4e97-bbc7-70cdb53a3e9e": "https://ms.yugipedia.com//7/75/HeroicChallengerWarHammer-REDU-TC-C.png",
+          "71104711-4bb5-4560-ac66-d9af14e0f3a0": "https://ms.yugipedia.com//9/90/UnifloraMysticalBeastoftheForest-REDU-TC-C.png",
+          "11310df9-bb05-4718-b29f-d541412d23af": "https://ms.yugipedia.com//5/57/SilverSentinel-REDU-TC-C.png",
+          "858d028e-0987-4a7d-9475-76423bcf5c12": "https://ms.yugipedia.com//8/82/AtlanteanAttackSquad-REDU-TC-C.png",
+          "8f84396f-22e0-452e-b175-35d536b420ab": "https://ms.yugipedia.com//2/21/SpellbookofLife-REDU-TC-C.png",
+          "c4724550-cf23-4068-9e1a-105393f5e826": "https://ms.yugipedia.com//6/66/SoulDrain-REDU-TC-R.png",
+          "a5f3c485-3a14-4f61-a3d7-bd6bc4545618": "https://ms.yugipedia.com//9/9e/Pahunder-REDU-TC-C.png",
+          "4a295512-fc4c-40b1-b720-02d831b24952": "https://ms.yugipedia.com//a/a2/Mahunder-REDU-TC-C.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {}
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "REDU-FR",
+      "image": "https://ms.yugipedia.com//0/02/REDU-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {
+          "080e1d86-4ac0-4f47-9334-8eb2f0c4722b": "https://ms.yugipedia.com//c/c4/TrancetheMagicSwordsman-REDU-FR-C-1E.png",
+          "f36c43eb-3d81-4b74-8af1-4bdf38c9e176": "https://ms.yugipedia.com//c/c2/DamageMage-REDU-FR-C-1E.png",
+          "799f3661-152c-44b0-9ce8-c805fad28742": "https://ms.yugipedia.com//c/ca/HeroicChallengerWarHammer-REDU-FR-C-1E.png",
+          "ab452d8c-58db-4686-8e3c-20f4bdcd4191": "https://ms.yugipedia.com//7/7f/UnifloraMysticalBeastoftheForest-REDU-FR-C-1E.png",
+          "4990bb26-5b07-4b6d-8774-7c2557435e23": "https://ms.yugipedia.com//f/fe/SilverSentinel-REDU-FR-UR-1E.png",
+          "ad62c547-27b9-4fe3-a9ef-82d0e2baa00e": "https://ms.yugipedia.com//3/37/SilverSentinel-REDU-FR-UtR-1E.png",
+          "12e3dcee-47dd-4675-931c-037c2efd540c": "https://ms.yugipedia.com//6/69/AtlanteanAttackSquad-REDU-FR-C-1E.png",
+          "4f6561a2-a22b-46ca-9ed4-0822fbea3ada": "https://ms.yugipedia.com//1/14/SpellbookofLife-REDU-FR-SR-1E.png",
+          "2f68ba5e-4f79-4a47-9b9a-11f0d38638de": "https://ms.yugipedia.com//1/14/SoulDrain-REDU-FR-R-1E.png",
+          "22ae8186-0dfd-4af2-aea0-ad5fb5b743a8": "https://ms.yugipedia.com//1/14/Pahunder-REDU-FR-R-1E.png",
+          "7d0d9eb9-e122-4b82-a200-448ec47315d3": "https://ms.yugipedia.com//6/68/Mahunder-REDU-FR-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31111005
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "REDU-KR",
+      "date": "2012-06-25",
+      "image": "https://ms.yugipedia.com//3/3e/REDU-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "fe7c7404-9929-405b-8657-20d5fd90cc75": "https://ms.yugipedia.com//f/f5/TrancetheMagicSwordsman-REDU-KR-R-UE.png",
+          "27fc9df5-4e5a-4e88-b6dc-c9c6eb21ef83": "https://ms.yugipedia.com//a/a7/DamageMage-REDU-KR-C-UE.png",
+          "9596ffb6-ae73-4b6b-9e8b-a65b96807d4c": "https://ms.yugipedia.com//f/fc/HeroicChallengerWarHammer-REDU-KR-C-UE.png",
+          "4efde59a-376f-457a-8d64-a62ce78c21f9": "https://ms.yugipedia.com//7/71/UnifloraMysticalBeastoftheForest-REDU-KR-C-UE.png",
+          "fbd6f3d2-12e0-497b-9829-fff4d8eccae3": "https://ms.yugipedia.com//a/ab/SilverSentinel-REDU-KR-C-UE.png",
+          "f73c6e85-5b3d-401f-b395-4d95be173745": "https://ms.yugipedia.com//4/47/AtlanteanAttackSquad-REDU-KR-C-UE.png",
+          "1cbaaa8f-641d-4462-88c2-b7464e82a097": "https://ms.yugipedia.com//f/f4/SpellbookofLife-REDU-KR-C-UE.png",
+          "fe1f53bc-c3fd-47b1-a3e8-1b54311b38c3": "https://ms.yugipedia.com//5/59/SoulDrain-REDU-KR-R-UE.png"
+        },
+        "1st": {
+          "fe7c7404-9929-405b-8657-20d5fd90cc75": "https://ms.yugipedia.com//e/e9/TrancetheMagicSwordsman-REDU-KR-R-1E.jpg",
+          "27fc9df5-4e5a-4e88-b6dc-c9c6eb21ef83": "https://ms.yugipedia.com//e/eb/DamageMage-REDU-KR-C-1E.jpg",
+          "9596ffb6-ae73-4b6b-9e8b-a65b96807d4c": "https://ms.yugipedia.com//0/08/HeroicChallengerWarHammer-REDU-KR-C-1E.png",
+          "4efde59a-376f-457a-8d64-a62ce78c21f9": "https://ms.yugipedia.com//5/58/UnifloraMysticalBeastoftheForest-REDU-KR-C-1E.jpg",
+          "fbd6f3d2-12e0-497b-9829-fff4d8eccae3": "https://ms.yugipedia.com//c/cd/SilverSentinel-REDU-KR-C-1E.jpg",
+          "f73c6e85-5b3d-401f-b395-4d95be173745": "https://ms.yugipedia.com//3/3a/AtlanteanAttackSquad-REDU-KR-C-1E.jpg",
+          "1cbaaa8f-641d-4462-88c2-b7464e82a097": "https://ms.yugipedia.com//b/b5/SpellbookofLife-REDU-KR-C-1E.jpg",
+          "fe1f53bc-c3fd-47b1-a3e8-1b54311b38c3": "https://ms.yugipedia.com//7/76/SoulDrain-REDU-KR-R-1E.jpg"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71110003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e9/REDU-BoosterEN.png",
+      "cards": [
+        {
+          "id": "426e4c2b-c1eb-45b1-803f-65f6757ae8de",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "502a5a04-3503-4f3c-ae2f-303e5e63bd00",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "d145203d-d063-4371-9009-6607b07a4aea",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "f0fa37a3-422c-4694-bb3d-c1c1c1110125",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "1dc60494-2366-4545-bb0f-98059702447a",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "d8f512ae-791f-4f14-a1ca-c7c4d8fd6267",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "59bd8b05-568f-4f60-a9b3-c8cd08f719e4",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "926dda7d-0c48-4392-b7da-bb9d8634d6ce",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "357c0538-8728-4c37-9371-2b41f19f28b3",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "43afec9f-f38d-4759-bee6-f1f4117f51a2",
+          "card": "70498437-aaed-4e5f-9cc2-cee369310f26",
+          "suffix": "095",
+          "rarity": "rare"
+        },
+        {
+          "id": "f627c2d8-a76a-43cc-8687-784f89a132d8",
+          "card": "4a61138c-0c89-4895-85e6-0b85ad294042",
+          "suffix": "096",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/47/REDU-BoosterDE.png",
+      "cards": [
+        {
+          "id": "201f0c2b-00c5-4bc0-892e-f15d15ca1e79",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "26c466f4-3bf0-4409-af18-68c2211903ee",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "adee20c4-b27b-449a-b386-ed1d099ce146",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "87dbee1e-aba0-4b20-8a27-755f3ca9258c",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "3d0e1732-e3aa-4d95-a6d8-1bb1fbbc820a",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "3d636d5a-4d56-453b-a065-0e44a6d71443",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "f1237bd7-a602-4803-954e-8e49a9d3fc1b",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "ee2fedb7-1ed4-4101-8d88-f44aeec83bd9",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "be76972c-9601-4344-8323-023c742da3c1",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "23fdc064-f463-48f5-a914-d085384412d7",
+          "card": "70498437-aaed-4e5f-9cc2-cee369310f26",
+          "suffix": "095",
+          "rarity": "rare"
+        },
+        {
+          "id": "b7d3159e-e11e-41af-ac4e-41159423d8f6",
+          "card": "4a61138c-0c89-4895-85e6-0b85ad294042",
+          "suffix": "096",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/09/REDU-BoosterJP.png",
+      "cards": [
+        {
+          "id": "c38f2a82-67f5-4824-b714-50c82e540243",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "rare"
+        },
+        {
+          "id": "19622780-9fcb-4478-a659-39d2061cb3f3",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "412f054f-bfab-4484-82b5-0e93dbbd2680",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "5d0dd33b-c2be-458c-82b8-55b2c0c44a18",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "76e4cbb6-865a-4a44-9d9a-625df29812b5",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "d50acbb6-e957-4e07-bfd7-ef4eb8971b07",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "f60e8352-3add-4a3d-8968-e6424611757f",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "b4bb8182-b771-4d21-b4cd-3e1f521325d4",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/2b/REDU-BoosterSP.png",
+      "cards": [
+        {
+          "id": "d838b77b-c82f-4c92-8728-7376a76e252e",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "6decb78b-9db3-45dd-a9da-9a57cb2ea874",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "937a1bb6-f731-4d04-9934-0d5d1d83b006",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "9d7212cf-3c4b-42c2-84f9-1e8bb8a21be8",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "940d0217-918e-47f6-b665-36728dee1ef7",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "549cab2a-3239-46da-9e76-6dd619157d4c",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "6d357597-b86d-48fb-9c0d-c92b2b6f1a6a",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "87a1e9b6-4ee2-490b-b4d4-588023140b5b",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "82f55f83-c023-44ef-bb4d-581ba651fa0f",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "28947249-78fe-4524-937a-ae14bdc41dd8",
+          "card": "70498437-aaed-4e5f-9cc2-cee369310f26",
+          "suffix": "095",
+          "rarity": "rare"
+        },
+        {
+          "id": "5a1ac934-19d4-4990-a5d8-f69c5bfa13e3",
+          "card": "4a61138c-0c89-4895-85e6-0b85ad294042",
+          "suffix": "096",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/22/REDU-BoosterIT.png",
+      "cards": [
+        {
+          "id": "12a3f90c-f86f-4eb0-8961-795d32f6770b",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "ab0c16d4-f788-4700-8fc0-f70cc23bfdff",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "c7b10d28-6a24-4d83-86be-334629a19808",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "cf0b66ed-339b-4614-85d9-25e860498028",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "84e0d5de-bdb4-46ba-b80b-02c96c63e01f",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "e7803f43-dd4d-44c8-8bb9-ce85f9aa611d",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "a621dc90-0a68-48f1-b582-2c2de56d5b8a",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "85ef5386-730b-47e8-af70-246f42b5522a",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "7576e2a5-f6ea-4acf-b842-3da2c61faae9",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "e19c0199-a4cf-4f0b-bb63-7601e922e121",
+          "card": "70498437-aaed-4e5f-9cc2-cee369310f26",
+          "suffix": "095",
+          "rarity": "rare"
+        },
+        {
+          "id": "b949bfc4-7f8a-4558-b73f-ac7797f6aca6",
+          "card": "4a61138c-0c89-4895-85e6-0b85ad294042",
+          "suffix": "096",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "tc"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/17/REDU-BoosterTC.png",
+      "cards": [
+        {
+          "id": "5d81653d-00f8-4620-b31d-c64727353467",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "rare"
+        },
+        {
+          "id": "98f52adf-382b-411f-9eb9-d9d8da3ee424",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "ff6460f9-56fa-4e97-bbc7-70cdb53a3e9e",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "71104711-4bb5-4560-ac66-d9af14e0f3a0",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "11310df9-bb05-4718-b29f-d541412d23af",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "858d028e-0987-4a7d-9475-76423bcf5c12",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "8f84396f-22e0-452e-b175-35d536b420ab",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "c4724550-cf23-4068-9e1a-105393f5e826",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "a5f3c485-3a14-4f61-a3d7-bd6bc4545618",
+          "card": "70498437-aaed-4e5f-9cc2-cee369310f26",
+          "suffix": "093",
+          "rarity": "common"
+        },
+        {
+          "id": "4a295512-fc4c-40b1-b720-02d831b24952",
+          "card": "4a61138c-0c89-4895-85e6-0b85ad294042",
+          "suffix": "094",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/02/REDU-BoosterFR.png",
+      "cards": [
+        {
+          "id": "080e1d86-4ac0-4f47-9334-8eb2f0c4722b",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "f36c43eb-3d81-4b74-8af1-4bdf38c9e176",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "799f3661-152c-44b0-9ce8-c805fad28742",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "ab452d8c-58db-4686-8e3c-20f4bdcd4191",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "4990bb26-5b07-4b6d-8774-7c2557435e23",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ad62c547-27b9-4fe3-a9ef-82d0e2baa00e",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "12e3dcee-47dd-4675-931c-037c2efd540c",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "4f6561a2-a22b-46ca-9ed4-0822fbea3ada",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "super"
+        },
+        {
+          "id": "2f68ba5e-4f79-4a47-9b9a-11f0d38638de",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        },
+        {
+          "id": "22ae8186-0dfd-4af2-aea0-ad5fb5b743a8",
+          "card": "70498437-aaed-4e5f-9cc2-cee369310f26",
+          "suffix": "095",
+          "rarity": "rare"
+        },
+        {
+          "id": "7d0d9eb9-e122-4b82-a200-448ec47315d3",
+          "card": "4a61138c-0c89-4895-85e6-0b85ad294042",
+          "suffix": "096",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "721bec07-fe79-40c8-8bbd-89d5ce8a165f",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//3/3e/REDU-BoosterKR.png",
+      "cards": [
+        {
+          "id": "fe7c7404-9929-405b-8657-20d5fd90cc75",
+          "card": "175e82d5-5832-4d1a-88de-6f009b927aae",
+          "suffix": "001",
+          "rarity": "rare"
+        },
+        {
+          "id": "27fc9df5-4e5a-4e88-b6dc-c9c6eb21ef83",
+          "card": "90ee668b-1f02-4f4f-bdff-54e10daf7ec1",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "9596ffb6-ae73-4b6b-9e8b-a65b96807d4c",
+          "card": "1b15b1c8-e890-4125-a164-86102542c1a4",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "4efde59a-376f-457a-8d64-a62ce78c21f9",
+          "card": "b3384b8a-7bd7-42f8-9924-3fc1919c3930",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "fbd6f3d2-12e0-497b-9829-fff4d8eccae3",
+          "card": "8d1336f1-dd9a-4bde-891a-96b9424f1b6b",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "f73c6e85-5b3d-401f-b395-4d95be173745",
+          "card": "2465a9ad-8916-40b3-9612-3e57a1be3571",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "1cbaaa8f-641d-4462-88c2-b7464e82a097",
+          "card": "e816f61f-e1eb-47c6-9ae4-56857aa76e19",
+          "suffix": "059",
+          "rarity": "common"
+        },
+        {
+          "id": "fe1f53bc-c3fd-47b1-a3e8-1b54311b38c3",
+          "card": "299242aa-21ce-4ad6-8cc9-6aac7cd3730d",
+          "suffix": "078",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Return of the Duelist"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Return of the Duelist",
+      "id": 201523
+    }
+  }
+}

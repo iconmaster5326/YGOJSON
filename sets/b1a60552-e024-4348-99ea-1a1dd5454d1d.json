@@ -1,0 +1,949 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b1a60552-e024-4348-99ea-1a1dd5454d1d",
+  "name": {
+    "en": "Soul of the Duelist",
+    "fr": "L'Ame du Duelliste",
+    "de": "Soul of the Duelist",
+    "it": "Anima del Duellante",
+    "pt": "Alma do Duelista",
+    "es": "Alma del Duelista",
+    "ja": "\u30bd\u30a6\u30eb\u30fb\u30aa\u30d6\u30fb\u30b6\u30fb\u30c7\u30e5\u30a8\u30ea\u30b9\u30c8",
+    "ko": "\ub4c0\uc5bc\ub9ac\uc2a4\ud2b8\uc758 \ud22c\ud63c"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "SOD-PT",
+      "date": "2004-10-01",
+      "image": "https://ms.yugipedia.com//7/7d/SOD-BoosterPT.png",
+      "cardImages": {
+        "1st": {
+          "d2eb0a72-e45a-44e6-bfb9-eab96dd04ac6": "https://ms.yugipedia.com//5/5d/ArmedDragonLV3-SOD-PT-C-1E.png",
+          "230c5ef9-8777-4f7d-a3e9-c8cb502314c7": "https://ms.yugipedia.com//7/79/MaliceDollofDemise-SOD-PT-C-1E.png",
+          "9acefa94-337d-4942-9805-1584ccb0e347": "https://ms.yugipedia.com//6/6c/MasterofOz-SOD-PT-R-1E.png",
+          "0544b7f3-db56-4f29-8d07-0026f729e7ae": "https://ms.yugipedia.com//3/30/Sanwitch-SOD-PT-C-1E.png",
+          "2473f65d-6c9f-464e-ad29-a03302255b2c": "https://ms.yugipedia.com//1/1e/Muko-SOD-PT-SR-1E.png",
+          "9a45c5ca-3b70-4467-87ab-4523ea820e09": "https://ms.yugipedia.com//3/3c/Muko-SOD-PT-UtR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11103003
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "SOD-IT",
+      "image": "https://ms.yugipedia.com//7/7b/SOD-BoosterIT.png",
+      "cardImages": {
+        "1st": {
+          "66562c55-4584-48a2-a52f-db867795a315": "https://ms.yugipedia.com//1/1d/Muko-SOD-IT-SR-1E.png",
+          "d986aff6-4ee7-4404-a35f-4eac334ee056": "https://ms.yugipedia.com//f/fe/Muko-SOD-IT-UtR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          41103002
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "SOD-DE",
+      "image": "https://ms.yugipedia.com//a/ac/SOD-BoosterDE.png",
+      "cardImages": {
+        "1st": {
+          "a1c3096b-9e28-4443-8bef-bd0ff25d93c1": "https://ms.yugipedia.com//c/ca/ArmedDragonLV3-SOD-DE-C-1E.png",
+          "f7bb1eba-9565-41b2-937b-1a34c09a749f": "https://ms.yugipedia.com//0/0e/MaliceDollofDemise-SOD-DE-C-1E.png",
+          "cd4c3953-35c1-4867-87b9-c1983d0e86ba": "https://ms.yugipedia.com//2/24/Sanwitch-SOD-DE-C-1E.jpg",
+          "047d5255-ff4c-4bfd-8f87-9882533e1673": "https://ms.yugipedia.com//1/1f/TwoManCellBattle-SOD-DE-C-1E.png",
+          "0bdc04c1-05bc-4690-9c6f-63cf2558ef14": "https://ms.yugipedia.com//a/aa/Muko-SOD-DE-SR-1E.png"
+        },
+        "unlimited": {
+          "1e9b88ac-2fed-42e0-854a-445917bbd47d": "https://ms.yugipedia.com//d/d8/NinjitsuArtofDecoy-SOD-DE-C-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          21103002
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "SOD-SP",
+      "image": "https://ms.yugipedia.com//3/3c/SOD-BoosterSP.png",
+      "cardImages": {
+        "1st": {
+          "f7bfddf2-26d1-446f-bcc9-335ce986b850": "https://ms.yugipedia.com//0/06/ArmedDragonLV3-SOD-SP-C-1E.jpg",
+          "ed862be3-407f-4561-907a-221811245dab": "https://ms.yugipedia.com//b/ba/MaliceDollofDemise-SOD-SP-C-1E.png",
+          "f1a61e32-ca9b-4625-a998-386aa248105c": "https://ms.yugipedia.com//4/4c/MasterofOz-SOD-SP-R-1E.png",
+          "ba8efcf9-4d2a-45bc-afe6-ba869a049039": "https://ms.yugipedia.com//5/5d/Sanwitch-SOD-SP-C-1E.png",
+          "37e55ba8-d348-46e9-8ec8-3a84e88ea66c": "https://ms.yugipedia.com//6/65/TwoManCellBattle-SOD-SP-C-1E.jpg",
+          "12cc2fa7-5705-4225-8769-c86171e4468b": "https://ms.yugipedia.com//c/c9/NinjitsuArtofDecoy-SOD-SP-C-1E.jpg",
+          "4dc637d7-585d-443b-a0a0-3152dab32cbb": "https://ms.yugipedia.com//c/cc/Muko-SOD-SP-SR-1E.png",
+          "321f02e6-2d31-4388-b603-504fb4c94ea9": "https://ms.yugipedia.com//8/83/Muko-SOD-SP-UtR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          51102002
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "SOD-EN",
+      "date": "2004-10-01",
+      "image": "https://ms.yugipedia.com//5/5d/SOD-BoosterEN.png",
+      "cardImages": {
+        "1st": {
+          "f6c3fe37-dfee-4603-afe0-7105cc6002c0": "https://ms.yugipedia.com//3/31/ArmedDragonLV3-SOD-EN-C-1E.jpg",
+          "f937d46d-0e49-41c2-bf79-7a31082d4f26": "https://ms.yugipedia.com//b/b3/MaliceDollofDemise-SOD-EN-C-1E.jpg",
+          "21d183b5-41d0-4999-9901-1cffe5541f97": "https://ms.yugipedia.com//1/1b/MasterofOz-SOD-EN-R-1E.jpg",
+          "17a8b2b4-2346-4aaa-b46c-8f3984a54e60": "https://ms.yugipedia.com//9/93/MasterofOz-SOD-EN-UtR-1E.png",
+          "0b38e59a-3489-4f7e-bf36-e961ccbcf36a": "https://ms.yugipedia.com//a/ac/Sanwitch-SOD-EN-C-1E.jpg",
+          "76e2b90f-1c53-4795-bae8-d0ff746af2b1": "https://ms.yugipedia.com//3/3e/TwoManCellBattle-SOD-EN-C-1E.jpg",
+          "9fefedc8-dd8c-4a29-b19f-07dfe85d91f4": "https://ms.yugipedia.com//b/b6/NinjitsuArtofDecoy-SOD-EN-C-1E.jpg",
+          "23dacafb-d477-464d-9d08-efee589d3786": "https://ms.yugipedia.com//4/46/Muko-SOD-EN-SR-1E.png",
+          "873c5e87-3da0-4fb2-b5df-45779c9ad4bd": "https://ms.yugipedia.com//2/24/Muko-SOD-EN-UtR-1E.png"
+        },
+        "unlimited": {
+          "f6c3fe37-dfee-4603-afe0-7105cc6002c0": "https://ms.yugipedia.com//5/5e/ArmedDragonLV3-SOD-EN-C-UE.png",
+          "f937d46d-0e49-41c2-bf79-7a31082d4f26": "https://ms.yugipedia.com//f/f8/MaliceDollofDemise-SOD-EN-C-UE.png",
+          "21d183b5-41d0-4999-9901-1cffe5541f97": "https://ms.yugipedia.com//2/25/MasterofOz-SOD-EN-R-UE.jpg",
+          "17a8b2b4-2346-4aaa-b46c-8f3984a54e60": "https://ms.yugipedia.com//0/05/MasterofOz-SOD-EN-UtR-UE.png",
+          "0b38e59a-3489-4f7e-bf36-e961ccbcf36a": "https://ms.yugipedia.com//9/99/Sanwitch-SOD-EN-C-UE.png",
+          "76e2b90f-1c53-4795-bae8-d0ff746af2b1": "https://ms.yugipedia.com//5/50/TwoManCellBattle-SOD-EN-C-UE.jpg",
+          "9fefedc8-dd8c-4a29-b19f-07dfe85d91f4": "https://ms.yugipedia.com//5/50/NinjitsuArtofDecoy-SOD-EN-C-UE.png",
+          "23dacafb-d477-464d-9d08-efee589d3786": "https://ms.yugipedia.com//0/07/Muko-SOD-EN-SR-UE.png",
+          "873c5e87-3da0-4fb2-b5df-45779c9ad4bd": "https://ms.yugipedia.com//4/40/Muko-SOD-EN-UtR-UE.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11103003
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "SOD-FR",
+      "image": "https://ms.yugipedia.com//a/a9/SOD-BoosterFR.png",
+      "cardImages": {
+        "1st": {
+          "bb5769f0-b5ff-414c-8383-4bb794dde07b": "https://ms.yugipedia.com//c/c7/Muko-SOD-FR-SR-1E.png",
+          "2170a28e-96e4-46b8-b243-c1c23ac27555": "https://ms.yugipedia.com//1/1d/Muko-SOD-FR-UtR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          31103002
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SOD-KR",
+      "date": "2005-11-04",
+      "image": "https://ms.yugipedia.com//8/8f/SOD-BoosterKR.png",
+      "cardImages": {
+        "1st": {
+          "125677cb-ef58-409e-a6d0-e55d9fe7ac5e": "https://ms.yugipedia.com//d/d5/Muko-SOD-KR-SR-1E.png"
+        },
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71103003
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "SOD-AE",
+      "date": "2005-04-21",
+      "image": "https://ms.yugipedia.com//c/c2/SOD-BoosterAE.png",
+      "cardImages": {
+        "1st": {
+          "0325f4ec-4a1b-401a-91ed-a742cf6cca28": "https://ms.yugipedia.com//b/b6/ArmedDragonLV3-SOD-AE-C-1E.png",
+          "f8da8512-d651-4e52-9f6a-1f34b3b3c918": "https://ms.yugipedia.com//3/35/MaliceDollofDemise-SOD-AE-C-1E.png",
+          "3b0a6ed6-bbc4-40f5-b327-12648bbec4ac": "https://ms.yugipedia.com//5/5b/MasterofOz-SOD-AE-R-1E.jpg",
+          "65687db8-1b1f-4c51-af60-5c5471812bca": "https://ms.yugipedia.com//0/09/MasterofOz-SOD-AE-UtR-1E.jpg",
+          "94a830e2-dce4-428e-8afd-29b7af1cdd82": "https://ms.yugipedia.com//a/a6/Sanwitch-SOD-AE-C-1E.png",
+          "d798db6b-893f-4e71-b5a1-4be92a5ac23b": "https://ms.yugipedia.com//8/86/TwoManCellBattle-SOD-AE-C-1E.png",
+          "80df38f0-2d1a-43e6-b4b6-809cc24d9192": "https://ms.yugipedia.com//6/6b/NinjitsuArtofDecoy-SOD-AE-C-1E.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000000018000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SOD-JP",
+      "date": "2004-05-27",
+      "image": "https://ms.yugipedia.com//8/8e/SOD-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "84f8a1c9-cd48-4096-8506-5129ff9a35e4": "https://ms.yugipedia.com//b/b5/ArmedDragonLV3-SOD-JP-C.jpg",
+          "4ccaccbf-168a-4568-bbcd-7a11b31f1013": "https://ms.yugipedia.com//4/42/MaliceDollofDemise-SOD-JP-C.jpg",
+          "e102fbff-6a55-4914-a7b8-dd792c40eb7e": "https://ms.yugipedia.com//5/5e/MasterofOz-SOD-JP-R.jpg",
+          "98314b59-d43d-46e9-a934-a40aa999d1d9": "https://ms.yugipedia.com//8/89/Sanwitch-SOD-JP-C.png",
+          "ee63d8d8-6a98-4481-af44-ce2c3ed42e5c": "https://ms.yugipedia.com//f/f7/TwoManCellBattle-SOD-JP-C.jpg",
+          "2ba43954-511c-43e6-a471-9dbb0cb1d7af": "https://ms.yugipedia.com//7/73/NinjitsuArtofDecoy-SOD-JP-C.jpg",
+          "fb34df93-c3ec-4ada-b5f0-aa29bb073d95": "https://ms.yugipedia.com//a/ad/Muko-SOD-JP-SR.png",
+          "0f8e52eb-e3fd-4c58-88e5-95dbf482f847": "https://ms.yugipedia.com//3/36/Muko-SOD-JP-UtR.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1107000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7d/SOD-BoosterPT.png",
+      "cards": [
+        {
+          "id": "d2eb0a72-e45a-44e6-bfb9-eab96dd04ac6",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "230c5ef9-8777-4f7d-a3e9-c8cb502314c7",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "9acefa94-337d-4942-9805-1584ccb0e347",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "740ba4e6-dd6d-41fd-a2b5-66ee22e8960f",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "0544b7f3-db56-4f29-8d07-0026f729e7ae",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "dfb997e5-7a95-4a50-a6ef-04d5c2ce4c38",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "7c1e2d27-08be-4ae4-9726-b477dce04cee",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "2473f65d-6c9f-464e-ad29-a03302255b2c",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "9a45c5ca-3b70-4467-87ab-4523ea820e09",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/7b/SOD-BoosterIT.png",
+      "cards": [
+        {
+          "id": "adc31449-22f5-409d-a15b-8ae55b53af82",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "af6ca80b-1c1e-46c4-8077-8516642ae095",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "fd6c822f-5340-45c0-af77-bbd01d6ef4ca",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "36eab7d7-ee58-4ada-9d69-7c2005acc5cb",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "c7994b1b-e1e3-4d8f-920a-66e82584f14c",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "a15bcb77-ea65-49b1-a772-0bf39233e75a",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "80d3fde3-f0b6-4a02-b0c8-17c9e33d47a3",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "66562c55-4584-48a2-a52f-db867795a315",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "d986aff6-4ee7-4404-a35f-4eac334ee056",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/ac/SOD-BoosterDE.png",
+      "cards": [
+        {
+          "id": "a1c3096b-9e28-4443-8bef-bd0ff25d93c1",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "f7bb1eba-9565-41b2-937b-1a34c09a749f",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "7eb86a58-699d-434e-beb7-2b73787df98a",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "4e6084c3-d91b-447d-ac6c-261dd9894719",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "cd4c3953-35c1-4867-87b9-c1983d0e86ba",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "047d5255-ff4c-4bfd-8f87-9882533e1673",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "1e9b88ac-2fed-42e0-854a-445917bbd47d",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "0bdc04c1-05bc-4690-9c6f-63cf2558ef14",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "659a1a56-e66f-4350-b06e-5fa50bbe8e56",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3c/SOD-BoosterSP.png",
+      "cards": [
+        {
+          "id": "f7bfddf2-26d1-446f-bcc9-335ce986b850",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "ed862be3-407f-4561-907a-221811245dab",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "f1a61e32-ca9b-4625-a998-386aa248105c",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "12e7326c-5b53-445b-a84b-d1688719ef0e",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "ba8efcf9-4d2a-45bc-afe6-ba869a049039",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "37e55ba8-d348-46e9-8ec8-3a84e88ea66c",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "12cc2fa7-5705-4225-8769-c86171e4468b",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "4dc637d7-585d-443b-a0a0-3152dab32cbb",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "321f02e6-2d31-4388-b603-504fb4c94ea9",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//5/5d/SOD-BoosterEN.png",
+      "cards": [
+        {
+          "id": "f6c3fe37-dfee-4603-afe0-7105cc6002c0",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "f937d46d-0e49-41c2-bf79-7a31082d4f26",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "21d183b5-41d0-4999-9901-1cffe5541f97",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "17a8b2b4-2346-4aaa-b46c-8f3984a54e60",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "0b38e59a-3489-4f7e-bf36-e961ccbcf36a",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "76e2b90f-1c53-4795-bae8-d0ff746af2b1",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "9fefedc8-dd8c-4a29-b19f-07dfe85d91f4",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "23dacafb-d477-464d-9d08-efee589d3786",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "873c5e87-3da0-4fb2-b5df-45779c9ad4bd",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/a9/SOD-BoosterFR.png",
+      "cards": [
+        {
+          "id": "dac525c7-9db0-4468-8a80-3496eb824da2",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "45d0d326-f461-4155-95f5-b003c4c43e48",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "6a0726a3-f1df-44d5-b1fb-f832d0297d1d",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "425f6c20-0e84-4a34-aaa1-70bead3308e9",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "8649c407-afcb-4913-987d-210ea41973f1",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "42eb8d0d-39a5-489a-a976-c6d7988a8ab8",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "a02e5c89-d0e2-42e4-80f5-590f99210a53",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "bb5769f0-b5ff-414c-8383-4bb794dde07b",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "2170a28e-96e4-46b8-b243-c1c23ac27555",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st",
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/8f/SOD-BoosterKR.png",
+      "cards": [
+        {
+          "id": "90bda78a-e8a7-4053-be16-8ca06144cdfd",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "cccdd5c4-89d8-484d-96d4-15930f112272",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "4d65aa94-c629-4e80-9d2e-a91a9e8006d7",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "21818af6-f90d-417f-af28-80fec0f40201",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "f0733df1-7cd1-4202-a603-948b7facd709",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "56b4d220-f34a-4ba0-ac4a-387f9336f23d",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "16142f76-438c-4235-a695-e445f3bfb2de",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "125677cb-ef58-409e-a6d0-e55d9fe7ac5e",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "26df302d-8425-478e-a288-15b698582d05",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 24,
+      "hasHobbyRetailDifferences": true,
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/c2/SOD-BoosterAE.png",
+      "cards": [
+        {
+          "id": "0325f4ec-4a1b-401a-91ed-a742cf6cca28",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "f8da8512-d651-4e52-9f6a-1f34b3b3c918",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "3b0a6ed6-bbc4-40f5-b327-12648bbec4ac",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "65687db8-1b1f-4c51-af60-5c5471812bca",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "ultimate"
+        },
+        {
+          "id": "94a830e2-dce4-428e-8afd-29b7af1cdd82",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "d798db6b-893f-4e71-b5a1-4be92a5ac23b",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "80df38f0-2d1a-43e6-b4b6-809cc24d9192",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "a20dc91b-7275-44c3-8387-d4e35df0bff4",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "a2323561-b162-4592-8279-695437412770",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "01942318-2ce5-4154-8623-82665c482259",
+      "packsPerBox": 30,
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/8e/SOD-BoosterJP.png",
+      "cards": [
+        {
+          "id": "84f8a1c9-cd48-4096-8506-5129ff9a35e4",
+          "card": "a2ff6977-77f6-4393-b278-1c56691cafc9",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "4ccaccbf-168a-4568-bbcd-7a11b31f1013",
+          "card": "f90d755c-c24f-4642-a8da-4e429695b0c6",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "e102fbff-6a55-4914-a7b8-dd792c40eb7e",
+          "card": "855f7d82-22b7-41e1-a192-663fe0455649",
+          "suffix": "035",
+          "rarity": "rare"
+        },
+        {
+          "id": "98314b59-d43d-46e9-a934-a40aa999d1d9",
+          "card": "2cdadd5b-e231-47b4-9ebd-1c8b1001c408",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "ee63d8d8-6a98-4481-af44-ce2c3ed42e5c",
+          "card": "dfa12a1a-eae3-4735-91e4-2d803542c74e",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "2ba43954-511c-43e6-a471-9dbb0cb1d7af",
+          "card": "53a1fce0-a51c-4ea7-ba73-3937089c245c",
+          "suffix": "052",
+          "rarity": "common"
+        },
+        {
+          "id": "fb34df93-c3ec-4ada-b5f0-aa29bb073d95",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "super"
+        },
+        {
+          "id": "0f8e52eb-e3fd-4c58-88e5-95dbf482f847",
+          "card": "a4a0e282-c813-4fac-bf05-a800fb53b3e8",
+          "suffix": "057",
+          "rarity": "ultimate"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Soul of the Duelist"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Soul of the Duelist",
+      "id": 148
+    }
+  }
+}

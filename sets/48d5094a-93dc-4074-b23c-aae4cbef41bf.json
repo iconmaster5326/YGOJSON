@@ -1,0 +1,620 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "48d5094a-93dc-4074-b23c-aae4cbef41bf",
+  "name": {
+    "en": "Ignition Assault",
+    "fr": "L'Assaut de l'Ignition",
+    "de": "Ignition Assault",
+    "it": "Assalto Accensione",
+    "pt": "Ataque de Igni\u00e7\u00e3o",
+    "es": "Asalto Ignici\u00f3n",
+    "ja": "\u30a4\u30b0\u30cb\u30c3\u30b7\u30e7\u30f3\u30fb\u30a2\u30b5\u30eb\u30c8",
+    "ko": "\uc774\uadf8\ub2c8\uc158 \uc5b4\uc370\ud2b8"
+  },
+  "locales": {
+    "fr": {
+      "language": "fr",
+      "prefix": "IGAS-FR",
+      "image": "https://ms.yugipedia.com//5/5c/IGAS-BoosterFR.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "de": {
+      "language": "de",
+      "prefix": "IGAS-DE",
+      "image": "https://ms.yugipedia.com//d/d8/IGAS-BoosterDE.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "IGAS-KR",
+      "date": "2020-01-10",
+      "image": "https://ms.yugipedia.com//a/ad/IGAS-BoosterKR.png",
+      "cardImages": {
+        "unlimited": {
+          "929fde59-b902-40e2-bf2e-f9cb2a72c973": "https://ms.yugipedia.com//c/c9/HiyariIgnister-IGAS-KR-C-UE.png",
+          "062533b0-5adc-48f7-bc24-7a07006116f4": "https://ms.yugipedia.com//9/99/AncientWarriorsValiantZhangDe-IGAS-KR-R-UE.png",
+          "6a8f3e91-040f-4ac1-aea3-29bcff04b4c6": "https://ms.yugipedia.com//1/17/UtgardaGeneraiderBossofDelusion-IGAS-KR-R-UE.png",
+          "613a4937-968d-4f3e-911b-362bebe9da91": "https://ms.yugipedia.com//6/61/BattleSurvivor-IGAS-KR-NR-UE.png",
+          "e8326967-8606-42b3-ad68-563c46e019a0": "https://ms.yugipedia.com//a/ad/CupidServe-IGAS-KR-NR-UE.png",
+          "7bdcb056-0f48-4c39-86e5-bdbef91f53ca": "https://ms.yugipedia.com//d/d0/EarthGolemIgnister-IGAS-KR-R-UE.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          71118000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "IGAS-SP",
+      "image": "https://ms.yugipedia.com//1/18/IGAS-BoosterSP.png",
+      "cardImages": {
+        "unlimited": {
+          "cdab73e6-24aa-4db7-83e2-77d6276470f1": "https://ms.yugipedia.com//2/23/HiyariIgnister-IGAS-SP-C-UE.png",
+          "0c103663-9d7b-47dd-ac4a-73833884ab83": "https://ms.yugipedia.com//7/74/AncientWarriorsValiantZhangDe-IGAS-SP-R-UE.png",
+          "7b4e472f-f925-45bb-8428-be84a3106237": "https://ms.yugipedia.com//8/88/UtgardaGeneraiderBossofDelusion-IGAS-SP-SR-UE.png",
+          "f9748e70-cb4a-4c86-ad33-137cb7d51fb3": "https://ms.yugipedia.com//f/fb/BattleSurvivor-IGAS-SP-C-UE.png",
+          "2e72cadd-4a80-473c-b62c-159991b09669": "https://ms.yugipedia.com//d/d9/CupidServe-IGAS-SP-C-UE.png",
+          "ca97340b-879c-4f82-b22f-879a8f431bd5": "https://ms.yugipedia.com//d/d8/EarthGolemIgnister-IGAS-SP-R-UE.png"
+        },
+        "1st": {
+          "2e72cadd-4a80-473c-b62c-159991b09669": "https://ms.yugipedia.com//9/9b/CupidServe-IGAS-SP-C-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "it": {
+      "language": "it",
+      "prefix": "IGAS-IT",
+      "image": "https://ms.yugipedia.com//b/b3/IGAS-BoosterIT.png",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    },
+    "en": {
+      "language": "en",
+      "prefix": "IGAS-EN",
+      "image": "https://ms.yugipedia.com//2/28/IGAS-BoosterEN.png",
+      "cardImages": {
+        "unlimited": {
+          "ad530064-1e6a-49d0-af6f-0832cba0a3eb": "https://ms.yugipedia.com//5/5f/HiyariIgnister-IGAS-EN-C-UE.png",
+          "a1cfd556-aa54-4deb-a9fd-27e9130639bf": "https://ms.yugipedia.com//2/23/AncientWarriorsValiantZhangDe-IGAS-EN-R-UE.png",
+          "e72548a4-9ffa-4dc1-a678-a735cd4676f4": "https://ms.yugipedia.com//c/cc/UtgardaGeneraiderBossofDelusion-IGAS-EN-SR-UE.png",
+          "44aae8f7-b097-4906-b7c9-dd0b3e8b3fb7": "https://ms.yugipedia.com//4/4c/BattleSurvivor-IGAS-EN-C-UE.png",
+          "3ddc7f8b-3b1a-444e-bdea-c204c655925f": "https://ms.yugipedia.com//e/ec/CupidServe-IGAS-EN-C-UE.png",
+          "34cde3f6-dbc3-414b-b40b-3c6245fa04ec": "https://ms.yugipedia.com//d/d1/EarthGolemIgnister-IGAS-EN-R-UE.png"
+        },
+        "1st": {
+          "ad530064-1e6a-49d0-af6f-0832cba0a3eb": "https://ms.yugipedia.com//6/64/HiyariIgnister-IGAS-EN-C-1E.png",
+          "a1cfd556-aa54-4deb-a9fd-27e9130639bf": "https://ms.yugipedia.com//9/90/AncientWarriorsValiantZhangDe-IGAS-EN-R-1E.png",
+          "e72548a4-9ffa-4dc1-a678-a735cd4676f4": "https://ms.yugipedia.com//3/3f/UtgardaGeneraiderBossofDelusion-IGAS-EN-SR-1E.png",
+          "44aae8f7-b097-4906-b7c9-dd0b3e8b3fb7": "https://ms.yugipedia.com//8/8c/BattleSurvivor-IGAS-EN-C-1E.png",
+          "3ddc7f8b-3b1a-444e-bdea-c204c655925f": "https://ms.yugipedia.com//0/05/CupidServe-IGAS-EN-C-1E.png",
+          "34cde3f6-dbc3-414b-b40b-3c6245fa04ec": "https://ms.yugipedia.com//3/33/EarthGolemIgnister-IGAS-EN-R-1E.png"
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          11119001
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "IGAS-JP",
+      "date": "2019-10-12",
+      "image": "https://ms.yugipedia.com//1/1f/IGAS-BoosterJP.png",
+      "cardImages": {
+        "unlimited": {
+          "b502baf6-324f-47ca-a6d7-3fa98c16912b": "https://ms.yugipedia.com//5/54/HiyariIgnister-IGAS-JP-C.png",
+          "b5ce25bf-0846-4a92-a25c-eec66b56aa88": "https://ms.yugipedia.com//e/e0/AncientWarriorsValiantZhangDe-IGAS-JP-R.png",
+          "023d120f-098f-4168-9dd7-a644c20ebdc4": "https://ms.yugipedia.com//8/88/UtgardaGeneraiderBossofDelusion-IGAS-JP-R.png",
+          "6093f4f2-f240-4734-825e-8bc65bbf9475": "https://ms.yugipedia.com//1/1d/BattleSurvivor-IGAS-JP-NR.png",
+          "0e3f9eba-3bd1-49aa-b308-e891d788326d": "https://ms.yugipedia.com//9/9b/CupidServe-IGAS-JP-NR.png",
+          "3a135a2d-3384-4cee-b704-c2d714c8cfba": "https://ms.yugipedia.com//b/be/EarthGolemIgnister-IGAS-JP-R.png"
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1122002
+        ]
+      }
+    },
+    "pt": {
+      "language": "pt",
+      "prefix": "IGAS-PT",
+      "date": "2020-01-30",
+      "cardImages": {
+        "unlimited": {},
+        "1st": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//5/5c/IGAS-BoosterFR.png",
+      "cards": [
+        {
+          "id": "4173eb43-cca2-4054-a975-9eac3af04f58",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "cb2cc1ba-4485-4772-a44a-9c458473387c",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "c2420d59-4f01-40bc-83f5-d26d5bd4fea5",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "375bddfb-8d78-4f71-918b-e19bf153f817",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "8d21dd01-fde3-44ea-96fd-524d285078e4",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "179e836d-e060-47f3-b14d-8fc8ede9ec09",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//d/d8/IGAS-BoosterDE.png",
+      "cards": [
+        {
+          "id": "50ecaa3f-ad54-4899-9b1b-df81ec5b1208",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "827a0a94-4c8c-47cb-bd62-f0a1b5704251",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "59b94912-9859-42d9-96e8-d08a10fe1eae",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "609a6322-fd00-4463-8c90-545bfb7e0f8d",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "17b3fb1d-353f-48e0-be14-ec0a3369b5cc",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "033e2cdb-a078-4b01-912b-8b0d13c69319",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/ad/IGAS-BoosterKR.png",
+      "cards": [
+        {
+          "id": "929fde59-b902-40e2-bf2e-f9cb2a72c973",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "062533b0-5adc-48f7-bc24-7a07006116f4",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "6a8f3e91-040f-4ac1-aea3-29bcff04b4c6",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "rare"
+        },
+        {
+          "id": "613a4937-968d-4f3e-911b-362bebe9da91",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "e8326967-8606-42b3-ad68-563c46e019a0",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "7bdcb056-0f48-4c39-86e5-bdbef91f53ca",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/18/IGAS-BoosterSP.png",
+      "cards": [
+        {
+          "id": "cdab73e6-24aa-4db7-83e2-77d6276470f1",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "0c103663-9d7b-47dd-ac4a-73833884ab83",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "7b4e472f-f925-45bb-8428-be84a3106237",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "f9748e70-cb4a-4c86-ad33-137cb7d51fb3",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "2e72cadd-4a80-473c-b62c-159991b09669",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "ca97340b-879c-4f82-b22f-879a8f431bd5",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//b/b3/IGAS-BoosterIT.png",
+      "cards": [
+        {
+          "id": "102862ea-16ff-4b93-b5ea-e89651b38dbb",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "da316bf0-0fa1-412f-926d-82fab3e648ac",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "1b399994-c027-46e5-bbf3-ab37826e80ef",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "f29af75b-3479-4ffa-b2d7-834794651b9d",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "2bc2be56-2f19-4a59-ba7b-fd9d74b14367",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "ea70cdf5-2ca1-428f-96bb-3c2f9c8d2469",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//2/28/IGAS-BoosterEN.png",
+      "cards": [
+        {
+          "id": "ad530064-1e6a-49d0-af6f-0832cba0a3eb",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "a1cfd556-aa54-4deb-a9fd-27e9130639bf",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "e72548a4-9ffa-4dc1-a678-a735cd4676f4",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "44aae8f7-b097-4906-b7c9-dd0b3e8b3fb7",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "3ddc7f8b-3b1a-444e-bdea-c204c655925f",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "34cde3f6-dbc3-414b-b40b-3c6245fa04ec",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1f/IGAS-BoosterJP.png",
+      "cards": [
+        {
+          "id": "b502baf6-324f-47ca-a6d7-3fa98c16912b",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "b5ce25bf-0846-4a92-a25c-eec66b56aa88",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "023d120f-098f-4168-9dd7-a644c20ebdc4",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "rare"
+        },
+        {
+          "id": "6093f4f2-f240-4734-825e-8bc65bbf9475",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "0e3f9eba-3bd1-49aa-b308-e891d788326d",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "shortprint"
+        },
+        {
+          "id": "3a135a2d-3384-4cee-b704-c2d714c8cfba",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "cards": [
+        {
+          "id": "e2bd4ec1-c952-4b0f-b4dc-c77347786739",
+          "card": "e0d56f87-7ab8-4fd7-b433-4b31709a86ed",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "abd8f0bc-4bc4-46ff-a9c9-4412420ed4fe",
+          "card": "3d544abb-15fe-4881-87dd-d9663161ce9e",
+          "suffix": "013",
+          "rarity": "rare"
+        },
+        {
+          "id": "b59c43ed-db7a-4805-af81-e4a4c84e2a6e",
+          "card": "5b4a13e1-1946-4dfe-a5ac-559e0c20ad2b",
+          "suffix": "022",
+          "rarity": "super"
+        },
+        {
+          "id": "a591716d-6713-4a27-bfb1-4d552f9a9ad6",
+          "card": "40be567a-486a-4d33-a41d-de055ba34c73",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "b6e84816-6bb4-44ca-a604-b2fdd15d73df",
+          "card": "922fea74-eae5-4e8f-9102-18b9273b4988",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "41a0a518-f808-434c-87e3-7e508e5febed",
+          "card": "63df4d92-7ae9-491f-85da-c1b5dcf12752",
+          "suffix": "041",
+          "rarity": "rare"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Ignition Assault",
+      "id": 633813
+    }
+  }
+}
