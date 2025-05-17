@@ -35,7 +35,7 @@ jobs:
           get-data: false
       - name: Run YGOJSON (Pre-Yugipedia)
         run: |
-          ygojson --production --download --yugipedia-gen-partitions 8 --yugipedia-gen-partitions-prefix temp/part --no-manual --individuals '' --no-individuals
+          ygojson --production --download --yugipedia-gen-partitions 8 --yugipedia-gen-partitions-prefix temp/part --no-yamlyugi --no-manual --individuals '' --no-individuals
       - name: Teardown
         uses: ./.github/actions/teardown
         if: always()
