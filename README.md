@@ -136,6 +136,11 @@ Initial release.
 
 # Python API Changelog
 
+## 0.5.1
+
+* Added support for the new red and blue foil secret rares, and improved support for the purple foil ultra rares.
+* Bugfixes for database generation.
+
 ## 0.5.0
 
 * Replaced some common strings with enumeration values. Expanded `Format`, and added `Language` and `Locale`.

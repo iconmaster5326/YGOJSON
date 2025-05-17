@@ -857,6 +857,7 @@ RARITY_STR_TO_ENUM = {
     "sr": CardRarity.SUPER,
     "ur": CardRarity.ULTRA,
     "rar": CardRarity.ULTRA,  # not official, but typos were made in a few galleries (?)
+    "urpurple": CardRarity.ULTRA_PURPLE,  # AFAIK, Yugipedia doesn't actually use this abbreviation; we use this for consistency's sake
     "utr": CardRarity.ULTIMATE,
     "se": CardRarity.SECRET,
     "scr": CardRarity.SECRET,
@@ -980,6 +981,12 @@ _RARITY_FTS_RAW: typing.List[typing.Tuple[typing.List[str], str]] = [
         "UR",
     ),
     (
+        [
+            "urpurple",
+            "Ultra Rare (Special Purple Version)",
+        ],
+        "URPurple",
+    )(
         [
             "utr",
             "ultimate",
@@ -1430,9 +1437,11 @@ FULL_RARITY_STR_TO_ENUM = {
     "rare": CardRarity.RARE,  # r
     "super rare": CardRarity.SUPER,  # sr
     "ultra rare": CardRarity.ULTRA,  # ur
+    "ultra rare (special purple version)": CardRarity.ULTRA_PURPLE,
     "ultimate rare": CardRarity.ULTIMATE,  # utr
     "secret rare": CardRarity.SECRET,  # se / scr
-    "secret rare (special red version)": CardRarity.SECRET,  # TODO: does this need to be its own rarity?
+    "secret rare (special red version)": CardRarity.SECRET_RED,
+    "secret rare (special blue version)": CardRarity.SECRET_BLUE,
     "ultra secret rare": CardRarity.ULTRASECRET,  # uscr
     "prismatic secret rare": CardRarity.PRISMATICSECRET,  # pscr
     "holographic rare": CardRarity.GHOST,  # hr / hgr
