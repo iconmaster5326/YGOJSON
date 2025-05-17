@@ -861,6 +861,7 @@ RARITY_STR_TO_ENUM = {
     "se": CardRarity.SECRET,
     "scr": CardRarity.SECRET,
     "scrred": CardRarity.SECRET_RED,
+    "scrblue": CardRarity.SECRET_BLUE,
     "uscr": CardRarity.ULTRASECRET,
     "pscr": CardRarity.PRISMATICSECRET,
     "hr": CardRarity.GHOST,
@@ -1409,6 +1410,13 @@ _RARITY_FTS_RAW: typing.List[typing.Tuple[typing.List[str], str]] = [
             "Secret Rare (Special Red Version)",
         ],
         "ScRRed",
+    ),
+    (
+        [
+            "scrblue",
+            "Secret Rare (Special Blue Version)",
+        ],
+        "ScRBlue",
     ),
     (["orr", "over rush", "Over Rush Rare"], "ORR"),
 ]

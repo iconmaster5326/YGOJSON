@@ -488,6 +488,8 @@ class CardRarity(enum.Enum):
     """Secret Rare."""
     SECRET_RED = "secret-red"
     """Secret Rare (Special Red Version)."""
+    SECRET_BLUE = "secret-blue"
+    """Secret Rare (Special Blue Version)."""
     ULTRASECRET = "ultrasecret"
     """Ultra Secret Rare."""
     PRISMATICSECRET = "prismaticsecret"
