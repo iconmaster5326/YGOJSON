@@ -986,7 +986,8 @@ _RARITY_FTS_RAW: typing.List[typing.Tuple[typing.List[str], str]] = [
             "Ultra Rare (Special Purple Version)",
         ],
         "URPurple",
-    )(
+    ),
+    (
         [
             "utr",
             "ultimate",
