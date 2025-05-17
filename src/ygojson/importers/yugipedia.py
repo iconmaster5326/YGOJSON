@@ -1691,7 +1691,6 @@ def parse_tcg_ocg_set(
     data: wikitextparser.WikiText,
     raw_data: str,
     settable: wikitextparser.Template,
-    card_ids: typing.List[int],
 ) -> bool:
     title = batcher.idsToNames[pageid]
     set_.yugipedia = ExternalIdPair(title, pageid)
@@ -1716,7 +1715,7 @@ def parse_tcg_ocg_set(
             def __init__(self, callback: typing.Callable[[Card], None]) -> None:
                 @batcher.getPageID(name)
                 def getID(cardid: int, cardname: str):
-                    if cardid not in card_ids:
+                    if cardid not in db.cards_by_yugipedia_id:
 
                         @batcher.getPageID(name + " (card)")
                         def getID(cardid: int, cardname: str):
@@ -2951,7 +2950,6 @@ def import_from_yugipedia(
                                         data,
                                         raw_data,
                                         settable,
-                                        cards,
                                     ):
                                         db.add_set(set_)
                                         if found:
