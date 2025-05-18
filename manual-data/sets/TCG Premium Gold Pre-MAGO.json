@@ -1,0 +1,121 @@
+{
+  "sets": [
+    {
+      "yugipediaName": "Premium Gold"
+    },
+    {
+      "yugipediaName": "Premium Gold: Return of the Bling"
+    },
+    {
+      "yugipediaName": "Premium Gold: Infinite Gold"
+    }
+  ],
+  "$comment": "TODO: differentiate between Spanish and Latin America locales (something Yugipedia does not do fully)",
+  "contents": [
+    {
+      "$comment": "TODO: Latin America goes here",
+      "locales": [
+        "na",
+        "sp"
+      ],
+      "distribution": {
+        "name": "TCG Premium Gold Pre-MAGO (NA)"
+      },
+      "box": {
+        "nPacks": 3
+      },
+      "perSet": [
+        {
+          "ygoprodeck": "Premium Gold"
+        },
+        {
+          "ygoprodeck": "Premium Gold: Return of the Bling"
+        },
+        {
+          "ygoprodeck": "Premium Gold: Infinite Gold"
+        }
+      ]
+    },
+    {
+      "$comment": "TODO: Spain goes here",
+      "locales": [
+        "eu",
+        "oc",
+        "pt"
+      ],
+      "distribution": {
+        "name": "TCG Premium Gold Pre-MAGO (EU 15)"
+      },
+      "box": {
+        "nPacks": 1
+      },
+      "perSet": [
+        {
+          "ygoprodeck": "Premium Gold"
+        },
+        {
+          "ygoprodeck": "Premium Gold: Return of the Bling"
+        },
+        {
+          "ygoprodeck": "Premium Gold: Infinite Gold"
+        }
+      ]
+    },
+    {
+      "locales": [
+        "fr",
+        "de",
+        "it"
+      ],
+      "distribution": {
+        "name": "TCG Premium Gold Pre-MAGO (EU 10)"
+      },
+      "box": {
+        "nPacks": 1
+      },
+      "perSet": [
+        {
+          "ygoprodeck": "Premium Gold"
+        },
+        {
+          "ygoprodeck": "Premium Gold: Return of the Bling"
+        },
+        {
+          "ygoprodeck": "Premium Gold: Infinite Gold"
+        }
+      ]
+    }
+  ],
+  "perSet": [
+    {
+      "boxImages": {
+        "en": "https://ms.yugipedia.com//thumb/e/ea/PGLD-BoosterEN.png/165px-PGLD-BoosterEN.png",
+        "fr": "https://ms.yugipedia.com//thumb/2/26/PGLD-BoosterFR.png/169px-PGLD-BoosterFR.png",
+        "de": "https://ms.yugipedia.com//thumb/d/d7/PGLD-BoosterDE.png/180px-PGLD-BoosterDE.png",
+        "it": "https://ms.yugipedia.com//thumb/0/09/PGLD-BoosterIT.png/180px-PGLD-BoosterIT.png",
+        "pt": "https://ms.yugipedia.com//thumb/2/2d/PGLD-BoosterPT.png/180px-PGLD-BoosterPT.png",
+        "sp": "https://ms.yugipedia.com//thumb/b/b3/PGLD-BoosterSP.png/180px-PGLD-BoosterSP.png"
+      }
+    },
+    {
+      "boxImages": {
+        "en": "https://ms.yugipedia.com//thumb/6/68/PGL2-BoosterEN.png/180px-PGL2-BoosterEN.png",
+        "fr": "https://ms.yugipedia.com//thumb/f/f3/PGL2-BoosterFR.png/180px-PGL2-BoosterFR.png",
+        "de": "https://ms.yugipedia.com//thumb/2/29/PGL2-BoosterDE.png/180px-PGL2-BoosterDE.png",
+        "it": "https://ms.yugipedia.com//thumb/1/11/PGL2-BoosterIT.png/180px-PGL2-BoosterIT.png",
+        "pt": "https://ms.yugipedia.com//thumb/0/02/PGL2-BoosterPT.png/180px-PGL2-BoosterPT.png",
+        "sp": "https://ms.yugipedia.com//thumb/2/21/PGL2-BoosterSP.png/180px-PGL2-BoosterSP.png"
+      }
+    },
+    {
+      "boxImages": {
+        "en": "https://ms.yugipedia.com//thumb/d/d1/PGL3-BoosterEN.png/180px-PGL3-BoosterEN.png",
+        "fr": "https://ms.yugipedia.com//thumb/8/86/PGL3-BoosterFR.png/180px-PGL3-BoosterFR.png",
+        "de": "https://ms.yugipedia.com//thumb/4/48/PGL3-BoosterDE.png/180px-PGL3-BoosterDE.png",
+        "it": "https://ms.yugipedia.com//thumb/2/21/PGL3-BoosterIT.png/180px-PGL3-BoosterIT.png",
+        "pt": "https://ms.yugipedia.com//thumb/c/c0/PGL3-BoosterPT.png/180px-PGL3-BoosterPT.png",
+        "sp": "https://ms.yugipedia.com//thumb/2/29/PGL3-BoosterSP.png/180px-PGL3-BoosterSP.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "b771939c-c667-484c-a591-ee5d744a64f3",
+  "name": "TCG Core Booster Pre-RIRA",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 7,
+      "rarity": [
+        {
+          "chance": 3,
+          "rarities": [
+            "shortprint"
+          ]
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "proportionate": true
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "chance": 12,
+          "rarities": [
+            "secret",
+            "ultimate"
+          ]
+        },
+        {
+          "chance": 6,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "rarities": [
+            "super"
+          ]
+        }
+      ]
+    }
+  ]
+}

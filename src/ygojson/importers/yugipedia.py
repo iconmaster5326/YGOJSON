@@ -1698,6 +1698,8 @@ COLORFUL_RARES = {
     (CardRarity.ULTRA, "Green"): CardRarity.ULTRA_GREEN,
     (CardRarity.ULTRA, "Blue"): CardRarity.ULTRA_BLUE,
     (CardRarity.ULTRA, "Purple"): CardRarity.ULTRA_PURPLE,
+    (CardRarity.SECRET, "Red"): CardRarity.SECRET_RED,
+    (CardRarity.SECRET, "Blue"): CardRarity.SECRET_BLUE,
 }
 
 

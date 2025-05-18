@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "92d00297-4751-40c0-a69d-3bfe5ba29edd",
+  "name": "TCG Premium Gold Pre-MAGO (NA)",
+  "$comment": "TODO: implement the various slots these packs dedicated to reprint-vs-new cards",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 3,
+      "rarity": [
+        {
+          "rarities": [
+            "gold"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 2,
+      "rarity": [
+        {
+          "rarities": [
+            "goldsecret"
+          ]
+        }
+      ]
+    }
+  ]
+}

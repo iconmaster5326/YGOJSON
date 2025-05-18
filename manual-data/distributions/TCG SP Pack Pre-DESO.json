@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "f58286cb-26cd-472a-8fb0-527a14ee2e33",
+  "name": "TCG SP Pack Pre-DESO",
+  "slots": [
+    {
+      "type": "pool",
+      "qty": 7,
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 1,
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "qty": 1,
+      "rarity": [
+        {
+          "chance": 12,
+          "rarities": [
+            "secret"
+          ]
+        },
+        {
+          "chance": 6,
+          "rarities": [
+            "ultra"
+          ]
+        },
+        {
+          "rarities": [
+            "super"
+          ]
+        }
+      ]
+    }
+  ]
+}

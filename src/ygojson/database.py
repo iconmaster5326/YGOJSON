@@ -2606,6 +2606,7 @@ class Database:
             os.listdir(MANUAL_PRODUCTS_DIR), desc="Importing sealed products"
         ):
             if filename.endswith(".json"):
+                # logging.info(f"Reading {filename}...")
                 with open(
                     os.path.join(MANUAL_PRODUCTS_DIR, filename), encoding="utf-8"
                 ) as infile:

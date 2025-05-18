@@ -1,19 +1,19 @@
 {
   "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
-  "id": "cab406a2-54c0-4579-8bce-d8d7ee2e3bd6",
+  "id": "708f530a-95f0-4356-83b6-87ddf7431613",
   "name": "TCG Special Edition Card",
+  "$comment": "TODO: how to differentiate between the 2 sets of 2 cards in each slot?",
   "slots": [
     {
       "type": "pool",
       "rarity": [
         {
           "rarities": [
-            "super",
-            "ultra",
-            "secret"
+            "super"
           ]
         }
-      ]
+      ],
+      "qty": 2
     }
   ]
 }
