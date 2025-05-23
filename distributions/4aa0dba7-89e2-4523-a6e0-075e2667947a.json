@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "4aa0dba7-89e2-4523-a6e0-075e2667947a",
+  "name": "TCG Core Booster Pre-TAEV",
+  "slots": [
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "shortprint"
+          ],
+          "chance": 3
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "qty": 7,
+      "proportionate": true
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "super"
+          ],
+          "chance": 6
+        },
+        {
+          "rarities": [
+            "ultra"
+          ],
+          "chance": 24
+        },
+        {
+          "rarities": [
+            "secret"
+          ],
+          "chance": 31
+        },
+        {
+          "rarities": [
+            "ultimate"
+          ],
+          "chance": 12
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

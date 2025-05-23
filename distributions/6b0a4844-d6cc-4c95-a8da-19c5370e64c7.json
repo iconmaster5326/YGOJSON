@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "6b0a4844-d6cc-4c95-a8da-19c5370e64c7",
+  "name": "TCG Star Pack",
+  "slots": [
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "qty": 2
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "starfoil",
+            "shatterfoil"
+          ]
+        }
+      ]
+    }
+  ]
+}
