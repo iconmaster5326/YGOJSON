@@ -125,6 +125,7 @@ SET_CATS = [
     "Category:OCG sets",
     "Category:Yu-Gi-Oh! Master Duel sets",
     "Category:Yu-Gi-Oh! Duel Links sets",
+    "Category:Preconstructed Decks",  # for specifically the Speed Duel box decks, because for some reason they have no format category in Yugipedia
 ]
 
 BANLIST_CATS = {
