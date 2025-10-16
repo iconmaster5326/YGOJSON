@@ -2194,6 +2194,12 @@ def parse_tcg_ocg_set(
             logging.warn(f"Found set without card lists or galleries: {title}")
 
         all_lcs = {lc for lc in [*lists, *[y for x in galleries.values() for y in x]]}
+        release_dates = {
+            locale: _parse_date(_strip_markup(arg.value.strip()))
+            for arg in settable.arguments
+            if arg.name.strip()[-(len(RELDATE_SUFFIX) - 1) :] == RELDATE_SUFFIX[1:]
+            for locale in arg.name.strip()[: -len(RELDATE_SUFFIX)].split("/")
+        }
         for lc in all_lcs:
             if lc not in FORMATS_IN_NAV:
                 logging.warn(f"Unknown locale in {title}: {lc}")
@@ -2225,12 +2231,9 @@ def parse_tcg_ocg_set(
 
                 date_lc = lc
                 while date_lc is not None:
-                    reldatearg = get_table_entry(
-                        settable,
-                        date_lc + RELDATE_SUFFIX if date_lc else RELDATE_SUFFIX[1:],
-                    )
+                    reldatearg = release_dates.get(date_lc)
                     if reldatearg:
-                        raw_locale.date = _parse_date(_strip_markup(reldatearg.strip()))
+                        raw_locale.date = reldatearg
                         break
                     date_lc = FALLBACK_LOCALES.get(date_lc)
 
