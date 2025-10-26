@@ -289,17 +289,17 @@
         ],
         "properties": {
           "current": {
-            "description": "The current legality of this card. Use this to avoid reading the legality history, or use this when the legality history is unknown/empty.",
-            "enum": [
-              "unlimited",
-              "semilimited",
-              "limited",
-              "forbidden",
-              "limit1",
-              "limit2",
-              "limit3",
-              "unreleased"
-            ]
+            "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/legality.json",
+            "description": "The current legality of this card. Deprecated; use 'currentLegality' instead.",
+            "deprecated": true
+          },
+          "currentLegality": {
+            "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/legality.json",
+            "description": "The current legality of this card. Use this to avoid reading the legality history, or use this when the legality history is unknown/empty."
+          },
+          "currentPoints": {
+            "description": "The current point cost of this card, for formats that use points. Use this to avoid reading the legality history, or use this when the legality history is unknown/empty.",
+            "type": "number"
           },
           "history": {
             "description": "The legality history for this card. Only present if this history is known, but may be empty even if known, in the case of cards whose legality has never changed.",
@@ -313,16 +313,12 @@
               ],
               "properties": {
                 "legality": {
-                  "description": "What the legality was changed to.",
-                  "enum": [
-                    "unlimited",
-                    "semilimited",
-                    "limited",
-                    "forbidden",
-                    "limit1",
-                    "limit2",
-                    "limit3"
-                  ]
+                  "$ref": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/legality.json",
+                  "description": "What the legality was changed to."
+                },
+                "points": {
+                  "description": "What the point cost was changed to, for formats that use points.",
+                  "type": "number"
                 },
                 "date": {
                   "description": "The date of the change.",

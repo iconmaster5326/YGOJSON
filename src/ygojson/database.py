@@ -233,6 +233,9 @@ class Legality(enum.Enum):
     UNRELEASED = "unreleased"
     """It will be in this format when it releases, but it is not yet released."""
 
+    UNKNOWN = "unknown"
+    """Its legality is unclear."""
+
 
 class Format(enum.Enum):
     """A format in which Yugioh :class:`CardPrinting`s are printed into."""
@@ -245,6 +248,7 @@ class Format(enum.Enum):
     SPEED = "speed"  # TCG Speed Duels.
     DUELLINKS = "duellinks"  # Worldwide Duel Links.
     MASTERDUEL = "masterduel"  # Worldwide Master Duel.
+    GENESYS = "genesys"  # TCG Genesys.
 
     @property
     def parent(self) -> typing.Optional["Format"]:
@@ -273,6 +277,7 @@ FORMAT_PARENTS = {
     Format.OCG_KR: Format.OCG,
     Format.OCG_SC: Format.OCG,
     Format.SPEED: Format.TCG,
+    Format.GENESYS: Format.TCG,
 }
 
 
@@ -403,7 +408,7 @@ LOCALE_LANGS = {
 LOCALE_FORMATS = {
     Locale.ASIAN_ENGLISH: [Format.OCG_AE],
     Locale.GERMAN: [Format.TCG, Format.SPEED],
-    Locale.ENGLISH: [Format.TCG, Format.SPEED],
+    Locale.ENGLISH: [Format.TCG, Format.SPEED, Format.GENESYS],
     Locale.SPANISH: [Format.TCG, Format.SPEED],
     Locale.FRENCH: [Format.TCG, Format.SPEED],
     Locale.ITALIAN: [Format.TCG, Format.SPEED],
@@ -648,6 +653,9 @@ class LegalityPeriod:
     legality: Legality
     """The legality of the card."""
 
+    points: typing.Optional[int]
+    """The point value of the card, for formats that use points."""
+
     date: datetime.date
     """The date on which this legalty came into effect."""
 
@@ -655,17 +663,35 @@ class LegalityPeriod:
         self,
         *,
         legality: Legality,
+        points: typing.Optional[int] = None,
         date: datetime.date,
     ):
         self.legality = legality
+        self.points = points
         self.date = date
 
 
 class CardLegality:
     """Current and historical legality information for a :class:`Card`."""
 
-    current: Legality
+    @property
+    def current(self):
+        """Deprecated; use ``legality`` instead."""
+        return self.legality
+
+    @current.setter
+    def current(self, value: Legality):
+        """Deprecated; use ``legality`` instead."""
+        self.legality = value
+
+    legality: Legality
     """What legality is this card currently?
+    This may be present even if the card has no history;
+    prefer this when you need to see the current legality, rather than looking up history.
+    """
+
+    points: typing.Optional[int]
+    """For formats that use points: How many points is this card currently?
     This may be present even if the card has no history;
     prefer this when you need to see the current legality, rather than looking up history.
     """
@@ -676,10 +702,13 @@ class CardLegality:
     def __init__(
         self,
         *,
-        current: Legality,
+        current: typing.Optional[Legality] = None,
+        legality: typing.Optional[Legality] = None,
+        points: typing.Optional[int] = None,
         history: typing.Optional[typing.List[LegalityPeriod]] = None,
     ):
-        self.current = current
+        self.legality = legality or current or Legality.UNLIMITED
+        self.points = points
         self.history = history or []
 
 
@@ -918,12 +947,19 @@ class Card:
             **({"illegal": self.illegal} if self.illegal else {}),
             "legality": {
                 k.value: {
-                    "current": v.current.value,
+                    "current": v.legality.value,
+                    "currentLegality": v.legality.value,
+                    **({"currentPoints": v.points} if v.points is not None else {}),
                     **(
                         {
                             "history": [
                                 {
                                     "legality": x.legality.value,
+                                    **(
+                                        {"points": x.points}
+                                        if x.points is not None
+                                        else {}
+                                    ),
                                     "date": x.date.isoformat(),
                                 }
                                 for x in v.history
@@ -2949,10 +2985,14 @@ class Database:
             illegal=rawcard.get("illegal", False),
             legality={
                 Format(k): CardLegality(
-                    current=Legality(v.get("current") or "unknown"),
+                    legality=Legality(
+                        v.get("currentLegality") or v.get("current") or "unknown"
+                    ),
+                    points=v.get("currentPoints"),
                     history=[
                         LegalityPeriod(
                             legality=Legality(x["legality"]),
+                            points=x.get("points"),
                             date=datetime.date.fromisoformat(x["date"]),
                         )
                         for x in v.get("history", [])

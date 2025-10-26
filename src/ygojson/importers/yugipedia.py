@@ -748,9 +748,11 @@ def parse_card(
                 if title in history_item.cards:
                     legality = history_item.cards[title]
                     if not card_history:
-                        card.legality.setdefault(format, CardLegality(current=legality))
+                        card.legality.setdefault(
+                            format, CardLegality(legality=legality)
+                        )
                         card_history = card.legality[format]
-                    card_history.current = legality
+                    card_history.legality = legality
                     card_history.history.append(
                         LegalityPeriod(legality=legality, date=history_item.date)
                     )

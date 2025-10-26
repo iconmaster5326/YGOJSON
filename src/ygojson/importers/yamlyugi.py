@@ -269,9 +269,9 @@ def _write_card(
             continue
         fmt = Format(k)
         if fmt in card.legality:
-            card.legality[fmt].current = LEGALITIES[v]
+            card.legality[fmt].legality = LEGALITIES[v]
         else:
-            card.legality[fmt] = CardLegality(current=LEGALITIES[v])
+            card.legality[fmt] = CardLegality(legality=LEGALITIES[v])
 
     if "master_duel_rarity" in in_json:
         card.master_duel_rarity = VideoGameRaity(in_json["master_duel_rarity"].lower())

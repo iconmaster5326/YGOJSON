@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/legality.json",
+  "title": "Card Legality",
+  "description": "A legality status of a card.",
+  "enum": [
+    "unlimited",
+    "semilimited",
+    "limited",
+    "forbidden",
+    "limit1",
+    "limit2",
+    "limit3",
+    "unreleased",
+    "unknown"
+  ]
+}
