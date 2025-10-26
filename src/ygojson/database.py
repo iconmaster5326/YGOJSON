@@ -785,9 +785,6 @@ class Card:
     db_id: typing.Optional[int]
     """The offiicial Konami ID for this card."""
 
-    yugiohprices_name: typing.Optional[str]
-    """The YugiohPrices page you can find this card on. Not yet implemented."""
-
     yamlyugi_id: typing.Optional[int]
     """The Yaml Yugi page you can find this card on."""
 
@@ -825,7 +822,6 @@ class Card:
         yugipedia_pages: typing.Optional[typing.List[ExternalIdPair]] = None,
         db_id: typing.Optional[int] = None,
         ygoprodeck: typing.Optional[ExternalIdPair] = None,
-        yugiohprices_name: typing.Optional[str] = None,
         yamlyugi_id: typing.Optional[int] = None,
         series: typing.Optional[typing.List["Series"]] = None,
     ):
@@ -857,7 +853,6 @@ class Card:
         self.yugipedia_pages = yugipedia_pages
         self.db_id = db_id
         self.ygoprodeck = ygoprodeck
-        self.yugiohprices_name = yugiohprices_name
         self.yamlyugi_id = yamlyugi_id
         self.series = series or []
 
@@ -980,11 +975,6 @@ class Card:
                         }
                     }
                     if self.ygoprodeck
-                    else {}
-                ),
-                **(
-                    {"yugiohpricesName": self.yugiohprices_name}
-                    if self.yugiohprices_name
                     else {}
                 ),
                 **({"yamlyugiID": self.yamlyugi_id} if self.yamlyugi_id else {}),
@@ -1515,13 +1505,6 @@ class CardPrinting:
     Empty if not applicable.
     """
 
-    price: typing.Optional[float]
-    """Price information for this printing, if available.
-    All prices are the most recent available as of the creation of this database, and are normalized to USD.
-    No guarantees are made that this price is accurate, or that all sites were considered, or that all languages of this printing were considered.
-    NYI.
-    """
-
     language: typing.Optional[Language]
     """An override for the language this card was printed in.
     This may be different than the locale's language in some very rare cases.
@@ -1550,7 +1533,6 @@ class CardPrinting:
         suffix: typing.Optional[str] = None,
         rarity: typing.Optional[CardRarity] = None,
         only_in_box: typing.Optional[SetBoxType] = None,
-        price: typing.Optional[float] = None,
         language: typing.Optional[Language] = None,
         image: typing.Optional[CardImage] = None,
         replica: bool = False,
@@ -1561,7 +1543,6 @@ class CardPrinting:
         self.suffix = suffix
         self.rarity = rarity
         self.only_in_box = only_in_box
-        self.price = price
         self.language = language
         self.image = image
         self.replica = replica
@@ -1574,7 +1555,6 @@ class CardPrinting:
             **({"suffix": self.suffix} if self.suffix else {}),
             **({"rarity": self.rarity.value} if self.rarity else {}),
             **({"onlyInBox": self.only_in_box.value} if self.only_in_box else {}),
-            **({"price": self.price} if self.price else {}),
             **({"language": self.language.value} if self.language else {}),
             **({"imageID": str(self.image.id)} if self.image else {}),
             **({"replica": True} if self.replica else {}),
@@ -1741,6 +1721,13 @@ class SetLocale:
     card_images: typing.Dict[SetEdition, typing.Dict[CardPrinting, str]]
     """Images of printings of cards in this locale. Keys are edition and printings. Values are URLs to images."""
 
+    card_prices: typing.Dict[SetEdition, typing.Dict[CardPrinting, float]]
+    """Prices of printings in this locale. Keys are edition and printings.
+    Values are prices, normalized to USD.
+    **No guarantees are made to accuracy.**
+    Not yet implemented.
+    """
+
     db_ids: typing.List[int]
     """Any Konami official database IDs for this product in this locale."""
 
@@ -1762,6 +1749,9 @@ class SetLocale:
         card_images: typing.Optional[
             typing.Dict[SetEdition, typing.Dict[CardPrinting, str]]
         ] = None,
+        card_prices: typing.Optional[
+            typing.Dict[SetEdition, typing.Dict[CardPrinting, float]]
+        ] = None,
         db_ids: typing.Optional[typing.List[int]] = None,
         formats: typing.Optional[typing.List[Format]] = None,
         editions: typing.Optional[typing.List[SetEdition]] = None,
@@ -1773,6 +1763,7 @@ class SetLocale:
         self.image = image
         self.box_image = box_image
         self.card_images = card_images or {}
+        self.card_prices = card_prices or {}
         self.db_ids = db_ids or []
         self.formats = formats or []
         self.editions = editions or []
@@ -1787,6 +1778,30 @@ class SetLocale:
             "cardImages": {
                 k.value: {str(kk.id): vv for kk, vv in v.items()}
                 for k, v in self.card_images.items()
+            },
+            "cardInfo": {
+                edition.value: {
+                    str(printing.id): {
+                        **(
+                            {"image": self.card_images[edition][printing]}
+                            if printing in self.card_images.get(edition, {})
+                            else {}
+                        ),
+                        **(
+                            {"price": self.card_prices[edition][printing]}
+                            if printing in self.card_prices.get(edition, {})
+                            else {}
+                        ),
+                    }
+                    for printing in {
+                        *self.card_images.get(edition, {}).keys(),
+                        *self.card_prices.get(edition, {}).keys(),
+                    }
+                }
+                for edition in {
+                    *self.card_images.keys(),
+                    *self.card_prices.keys(),
+                }
             },
             **({"formats": [x.value for x in self.formats]} if self.formats else {}),
             **({"editions": [x.value for x in self.editions]} if self.editions else {}),
@@ -1819,9 +1834,6 @@ class Set:
     yugipedia: typing.Optional[ExternalIdPair]
     """The Yugipedia page of this product, if known."""
 
-    yugiohprices: typing.Optional[str]
-    """The YugiohPrices page of this product, if known. NYI."""
-
     def __init__(
         self,
         *,
@@ -1831,7 +1843,6 @@ class Set:
         locales: typing.Optional[typing.Iterable[SetLocale]] = None,
         contents: typing.Optional[typing.List[SetContents]] = None,
         yugipedia: typing.Optional[ExternalIdPair] = None,
-        yugiohprices: typing.Optional[str] = None,
     ) -> None:
         self.id = id
         self.date = date
@@ -1839,7 +1850,6 @@ class Set:
         self.locales = {locale.key: locale for locale in locales} if locales else {}
         self.contents = contents or []
         self.yugipedia = yugipedia
-        self.yugiohprices = yugiohprices
 
     def _to_json(self) -> typing.Dict[str, typing.Any]:
         return {
@@ -1863,9 +1873,6 @@ class Set:
                     }
                     if self.yugipedia is not None
                     else {}
-                ),
-                **(
-                    {"yugiohpricesName": self.yugiohprices} if self.yugiohprices else {}
                 ),
             },
         }
@@ -2975,7 +2982,6 @@ class Database:
             )
             if "ygoprodeck" in rawcard["externalIDs"]
             else None,
-            yugiohprices_name=rawcard["externalIDs"].get("yugiohpricesName"),
             yamlyugi_id=rawcard["externalIDs"].get("yamlyugiID"),
         )
 
@@ -3026,7 +3032,6 @@ class Database:
             only_in_box=SetBoxType(rawprinting["onlyInBox"])
             if "onlyInBox" in rawprinting
             else None,
-            price=rawprinting.get("price"),
             language=Language.normalize(rawprinting["language"])
             if "language" in rawprinting
             else None,
@@ -3092,7 +3097,25 @@ class Database:
                         for kk, vv in v.items()
                         if uuid.UUID(kk) in printings
                     }
-                    for k, v in v.get("cardImages", {}).items()
+                    for k, v in v.get(
+                        "cardImages",
+                        {
+                            edition: {
+                                printing: info["image"]
+                                for printing, info in infos.items()
+                                if "image" in info
+                            }
+                            for edition, infos in v.get("cardInfo", {}).items()
+                        },
+                    ).items()
+                },
+                card_prices={
+                    SetEdition(edition): {
+                        printings[uuid.UUID(printing)]: info["price"]
+                        for printing, info in infos.items()
+                        if uuid.UUID(printing) in printings and "price" in info
+                    }
+                    for edition, infos in v.get("cardInfo", {}).items()
                 },
                 formats=[Format(x) for x in v.get("formats", [])],
                 editions=[SetEdition(x) for x in v.get("editions", [])],

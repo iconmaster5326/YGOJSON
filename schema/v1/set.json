@@ -75,7 +75,7 @@
             "deprecated": true
           },
           "cardImages": {
-            "description": "A mapping of editions (as per the edition enumeration, or the empty string if no edition) to sets of card images in this locale.",
+            "description": "A mapping of editions (as per the edition enumeration, or the empty string if no edition) to sets of card images in this locale. Deprecated, use 'cardInfo' instead.",
             "type": "object",
             "additionalProperties": {
               "description": "A mapping of printing UUIDs to images of that card's specific printing in this locale.",
@@ -84,6 +84,30 @@
                 "description": "A URL to a full image of this card.",
                 "type": "string",
                 "format": "uri"
+              }
+            },
+            "deprecated": true
+          },
+          "cardInfo": {
+            "description": "A mapping of editions (as per the edition enumeration, or the empty string if no edition) to per-card information in this locale.",
+            "type": "object",
+            "additionalProperties": {
+              "description": "A mapping of printing UUIDs to per-card info in this locale.",
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "description": "Per-card information for this specific locale.",
+                "additionalProperties": {
+                  "image": {
+                    "type": "string",
+                    "description": "The URL to the full card image for this printing.",
+                    "format": "uri"
+                  },
+                  "price": {
+                    "type": "number",
+                    "description": "Price information for this printing, if available. All prices are the most recent available as of the creation of this database, and are normalized to USD. No guarantees are made that this price is accurate, or that all sources were considered, or that the correct locale was considered."
+                  }
+                }
               }
             }
           },
@@ -276,8 +300,9 @@
           }
         },
         "yugiohpricesName": {
-          "description": "The name of this set on YugiohPrices. TCG only.",
-          "type": "string"
+          "description": "The name of this set on YugiohPrices. TCG only. Deprecated; YugiohPrices no longer exists.",
+          "type": "string",
+          "deprecated": true
         }
       }
     }

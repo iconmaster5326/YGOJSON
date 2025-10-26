@@ -35,8 +35,9 @@
       ]
     },
     "price": {
-      "description": "Price information for this printing, if available. All prices are the most recent available as of the creation of this database, and are normalized to USD. No guarantees are made that this price is accurate, or that all sites were considered, or that all languages of this printing were considered.",
-      "type": "number"
+      "description": "Price information for this printing, if available. All prices are the most recent available as of the creation of this database, and are normalized to USD. No guarantees are made that this price is accurate, or that all sites were considered, or that all languages of this printing were considered. Deprecated; use 'price' in 'cardInfo' from the set instead.",
+      "type": "number",
+      "deprecated": true
     },
     "language": {
       "description": "Some cards are written in different languages than thier locale. (for example, Valuable Book 5 has 3 cards written in 3 different languages). If provided, this indicates that this printing is not in the language of its set.",
