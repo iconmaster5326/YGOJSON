@@ -139,6 +139,7 @@ BANLIST_CATS = {
     "masterduel": "Category:Yu-Gi-Oh! Master Duel Forbidden & Limited Lists",
     "duellinks": "Category:Yu-Gi-Oh! Duel Links Forbidden & Limited Lists",
 }
+CAT_BANLIST_GENESYS = "Category:Genesys Point Lists"
 
 DBID_SUFFIX = "_database_id"
 DBNAME_SUFFIX = "_name"
@@ -406,6 +407,7 @@ def parse_card(
     categories: typing.List[int],
     banlists: typing.Dict[str, typing.List["Banlist"]],
     series_members: typing.Dict[str, typing.Set[Card]],
+    genesys_banlist: typing.Dict[datetime.date, typing.Dict[str, float]],
 ) -> bool:
     """
     Parse a card from a wiki page. Returns False if this is not actually a valid card
@@ -756,6 +758,32 @@ def parse_card(
                     card_history.history.append(
                         LegalityPeriod(legality=legality, date=history_item.date)
                     )
+
+        if any(
+            f is Format.TCG
+            and (
+                h.legality is not Legality.UNKNOWN
+                and h.legality is not Legality.UNRELEASED
+            )
+            for f, h in card.legality.items()
+        ):
+            genesys_info = CardLegality(points=0)
+            last_points = 0
+            for date, points in sorted(
+                {
+                    date: info[title]
+                    for date, info in genesys_banlist.items()
+                    if title in info
+                }.items(),
+                key=lambda kv: kv[0],
+            ):
+                if points != last_points:
+                    genesys_info.history.append(
+                        LegalityPeriod(points=points, date=date)
+                    )
+                last_points = points
+            genesys_info.points = last_points
+            card.legality[Format.GENESYS] = genesys_info
 
     for archseries in [
         x.strip()
@@ -2634,6 +2662,7 @@ BANLIST_STR_TO_LEGALITY = {
     "semi_limited": Legality.SEMILIMITED,
     "limited": Legality.LIMITED,
     "forbidden": Legality.FORBIDDEN,
+    "did not exist": Legality.UNRELEASED,
     # speed duel legalities
     "limited_0": Legality.FORBIDDEN,
     "limited_1": Legality.LIMIT1,
@@ -2768,6 +2797,70 @@ def get_banlist_pages(
         return result
 
 
+def get_genesys_banlist(
+    batcher: "YugipediaBatcher",
+) -> typing.Dict[datetime.date, typing.Dict[str, float]]:
+    with tqdm.tqdm(total=1, desc="Fetching Yugipedia pointlists") as progress_bar:
+        result: typing.Dict[datetime.date, typing.Dict[str, float]] = {}
+
+        @batcher.getCategoryMembers(CAT_BANLIST_GENESYS)
+        def onGetGenesysBanlist(banlists: typing.List[int]):
+            for banlist in banlists:
+
+                def do(banlist):
+                    @batcher.getPageContents(banlist)
+                    def onGetBanlist(raw_data: str):
+                        data = wikitextparser.parse(raw_data)
+
+                        tables = [
+                            x
+                            for x in data.templates
+                            if x.name.strip().lower() == "genesys point list"
+                        ]
+                        if len(tables) != 1:
+                            logging.warning(
+                                f"Genesys pointlist has odd number of tables: {batcher.idsToNames[banlist]}"
+                            )
+                            return
+                        table = tables[0]
+
+                        date = _parse_date(get_table_entry(table, "date", "").strip())
+                        if date is None:
+                            logging.warning(
+                                f"Genesys pointlist has odd date: {repr(get_table_entry(table, 'date'))}"
+                            )
+                            return
+                        result[date] = {}
+
+                        for raw_card in (
+                            get_table_entry(table, "cards", "").strip().split("\n")
+                        ):
+                            raw_fields = raw_card.strip().split(";")
+
+                            if len(raw_fields) == 0:
+                                continue
+                            elif len(raw_fields) < 2:
+                                logging.warning(
+                                    f"Genesys pointlist entry has odd number of fields: '{raw_card.strip()}'"
+                                )
+                                continue
+                            elif len(raw_fields) > 3:
+                                logging.warning(
+                                    f"Genesys pointlist entry has odd number of fields: '{raw_card.strip()}'"
+                                )
+
+                            name = raw_fields[0].strip()
+                            points = float(raw_fields[1].strip())
+
+                            result[date][name] = points
+
+                do(banlist)
+
+        batcher.flushPendingOperations()
+        progress_bar.update()
+        return result
+
+
 def import_from_yugipedia(
     db: Database,
     *,
@@ -2831,6 +2924,7 @@ def import_from_yugipedia(
 
         if import_cards:
             banlists = get_banlist_pages(batcher)
+            genesys_banlist = get_genesys_banlist(batcher)
 
             for pageid in tqdm.tqdm(cards, desc="Importing cards from Yugipedia"):
 
@@ -2904,6 +2998,7 @@ def import_from_yugipedia(
                                 categories,
                                 banlists,
                                 series_members,
+                                genesys_banlist,
                             ):
                                 db.add_card(card)
                                 if found:
@@ -3306,7 +3401,9 @@ class YugipediaBatcher:
         if os.path.exists(path):
             with open(path, encoding="utf-8") as file:
                 self.categoryMembersCache = {
-                    int(k): [
+                    k[1:]
+                    if k[0] == "#"
+                    else int(k): [
                         CategoryMember(
                             x["id"], x["name"], CategoryMemberType(x["type"])
                         )
@@ -3384,7 +3481,11 @@ class YugipediaBatcher:
         with open(path, "w", encoding="utf-8") as file:
             json.dump(
                 {
-                    k: [{"id": x.id, "name": x.name, "type": x.type.value} for x in v]
+                    f"#{k}"
+                    if type(k) is str
+                    else k: [
+                        {"id": x.id, "name": x.name, "type": x.type.value} for x in v
+                    ]
                     for k, v in self.categoryMembersCache.items()
                 },
                 file,
@@ -3604,9 +3705,14 @@ class YugipediaBatcher:
         do([p for p in pages if type(p) is int])
         do([p for p in pages if type(p) is str])
 
-    categoryMembersCache: typing.Dict[int, typing.List[CategoryMember]]
+    categoryMembersCache: typing.Dict[
+        typing.Union[str, int], typing.List[CategoryMember]
+    ]
 
-    def _populateCatMembers(self, page: typing.Union[str, int]) -> int:
+    def _populateCatMembers(
+        self, page: typing.Union[str, int]
+    ) -> typing.Optional[typing.Union[int, str]]:
+        pageid = None
         query = {
             "action": "query",
             "list": "categorymembers",
@@ -3649,11 +3755,13 @@ class YugipediaBatcher:
                     self.missingPagesCache.add(
                         str(result.get("title") or result.get("pageid") or "")
                     )
-                    continue
-                pageid = result["pageid"]
-                self.categoryMembersCache[result["pageid"]] = members
-                self.namesToIDs[result["title"]] = result["pageid"]
-                self.idsToNames[result["pageid"]] = result["title"]
+                    if result.get("invalid"):
+                        continue
+                pageid = result.get("pageid", page)
+                self.categoryMembersCache[pageid] = members
+                if "pageid" in result and "title" in result:
+                    self.namesToIDs[result["title"]] = result["pageid"]
+                    self.idsToNames[result["pageid"]] = result["title"]
             for result in results["categorymembers"]:
                 if result.get("missing") or result.get("invalid"):
                     self.missingPagesCache.add(
@@ -3677,23 +3785,20 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
-                if batcher.use_cache and str(page) in batcher.missingPagesCache:
-                    return
-
                 pageid = (
-                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                    page
+                    if type(page) is int
+                    else batcher.namesToIDs.get(str(page), page)
                 )
 
                 if not batcher.use_cache or pageid not in batcher.categoryMembersCache:
-                    pageid = batcher._populateCatMembers(page)
-
-                if pageid is None:
-                    raise Exception(f"ID not found: {page}")
+                    catid = batcher._populateCatMembers(page)
+                    pageid = catid if catid is not None else pageid
 
                 callback(
                     [
                         x.id
-                        for x in batcher.categoryMembersCache[pageid]
+                        for x in batcher.categoryMembersCache.get(pageid, [])
                         if x.type == CategoryMemberType.PAGE
                     ]
                 )
@@ -3712,23 +3817,20 @@ class YugipediaBatcher:
             def __init__(
                 self, callback: typing.Callable[[typing.List[int]], None]
             ) -> None:
-                if batcher.use_cache and str(page) in batcher.missingPagesCache:
-                    return
-
                 pageid = (
-                    page if type(page) is int else batcher.namesToIDs.get(str(page))
+                    page
+                    if type(page) is int
+                    else batcher.namesToIDs.get(str(page), page)
                 )
 
                 if not batcher.use_cache or pageid not in batcher.categoryMembersCache:
-                    pageid = batcher._populateCatMembers(page)
-
-                if pageid is None:
-                    raise Exception(f"ID not found: {page}")
+                    catid = batcher._populateCatMembers(page)
+                    pageid = catid if catid is not None else pageid
 
                 callback(
                     [
                         x.id
-                        for x in batcher.categoryMembersCache[pageid]
+                        for x in batcher.categoryMembersCache.get(pageid, [])
                         if x.type == CategoryMemberType.SUBCAT
                     ]
                 )

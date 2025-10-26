@@ -653,7 +653,7 @@ class LegalityPeriod:
     legality: Legality
     """The legality of the card."""
 
-    points: typing.Optional[int]
+    points: typing.Optional[float]
     """The point value of the card, for formats that use points."""
 
     date: datetime.date
@@ -662,8 +662,8 @@ class LegalityPeriod:
     def __init__(
         self,
         *,
-        legality: Legality,
-        points: typing.Optional[int] = None,
+        legality: Legality = Legality.UNLIMITED,
+        points: typing.Optional[float] = None,
         date: datetime.date,
     ):
         self.legality = legality
@@ -690,7 +690,7 @@ class CardLegality:
     prefer this when you need to see the current legality, rather than looking up history.
     """
 
-    points: typing.Optional[int]
+    points: typing.Optional[float]
     """For formats that use points: How many points is this card currently?
     This may be present even if the card has no history;
     prefer this when you need to see the current legality, rather than looking up history.
@@ -704,7 +704,7 @@ class CardLegality:
         *,
         current: typing.Optional[Legality] = None,
         legality: typing.Optional[Legality] = None,
-        points: typing.Optional[int] = None,
+        points: typing.Optional[float] = None,
         history: typing.Optional[typing.List[LegalityPeriod]] = None,
     ):
         self.legality = legality or current or Legality.UNLIMITED
