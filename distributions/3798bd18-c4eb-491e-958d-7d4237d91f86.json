@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "3798bd18-c4eb-491e-958d-7d4237d91f86",
+  "name": "TCG Millennium Pack: Lite Edition",
+  "slots": [
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "ultra"
+          ],
+          "chance": 7
+        },
+        {
+          "rarities": [
+            "super"
+          ],
+          "chance": 5
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

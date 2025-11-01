@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "eaaa1971-3580-47c8-8010-c23761c5a477",
+  "name": {
+    "en": "Dark Crisis promotional cards",
+    "ko": "\uc554\ud751\uc758 \uc704\ud611 \ud504\ub85c\ubaa8\uc158 \uce74\ub4dc"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "DCR-KRPR",
+      "date": "2011-11-15",
+      "image": "https://ms.yugipedia.com//c/c7/DCR-PromoKR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "9edc9c64-c8be-4c2d-90e5-7b0c87a1fcb3": "https://ms.yugipedia.com//6/6a/SkillDrain-DCR-KR-ScR-UE.png",
+          "c03b15f1-827e-4bca-a292-9906b58ffd06": "https://ms.yugipedia.com//d/d0/MaskedChopper-DCR-KR-ScR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "c03b15f1-827e-4bca-a292-9906b58ffd06": {
+            "image": "https://ms.yugipedia.com//d/d0/MaskedChopper-DCR-KR-ScR-UE.png"
+          },
+          "9edc9c64-c8be-4c2d-90e5-7b0c87a1fcb3": {
+            "image": "https://ms.yugipedia.com//6/6a/SkillDrain-DCR-KR-ScR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010000979000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c7/DCR-PromoKR.jpg",
+      "cards": [
+        {
+          "id": "9edc9c64-c8be-4c2d-90e5-7b0c87a1fcb3",
+          "card": "3707e1c7-e5d9-4bc9-b012-8c2efa8e49d7",
+          "suffix": "1",
+          "rarity": "secret"
+        },
+        {
+          "id": "c03b15f1-827e-4bca-a292-9906b58ffd06",
+          "card": "6f72106a-9bfe-49ba-98b3-5dfb567a515e",
+          "suffix": "2",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Dark Crisis promotional cards",
+      "id": 304573
+    }
+  }
+}

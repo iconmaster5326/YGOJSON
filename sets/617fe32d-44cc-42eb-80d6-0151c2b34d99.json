@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "617fe32d-44cc-42eb-80d6-0151c2b34d99",
+  "name": {
+    "en": "GU collaboration cards",
+    "ja": "\uff27\uff35 \u30b3\u30e9\u30dc\u8a18\u5ff5\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "GUC1-JP",
+      "date": "2023-09-15",
+      "image": "https://ms.yugipedia.com//0/03/GUC1-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "ca3fe531-3808-412e-a5c2-76fb85a94215": "https://ms.yugipedia.com//3/35/BlueEyesToonDragon-GUC1-JP-ScR.png",
+          "4892c47f-6b6a-4d78-b72e-91f8d4c25d69": "https://ms.yugipedia.com//3/35/Kuriboh-GUC1-JP-NPR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "4892c47f-6b6a-4d78-b72e-91f8d4c25d69": {
+            "image": "https://ms.yugipedia.com//3/35/Kuriboh-GUC1-JP-NPR.png"
+          },
+          "ca3fe531-3808-412e-a5c2-76fb85a94215": {
+            "image": "https://ms.yugipedia.com//3/35/BlueEyesToonDragon-GUC1-JP-ScR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000008181000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/03/GUC1-PromoJP.png",
+      "cards": [
+        {
+          "id": "ca3fe531-3808-412e-a5c2-76fb85a94215",
+          "card": "c039e56f-9a89-4f5a-a43f-e4109265978c",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "4892c47f-6b6a-4d78-b72e-91f8d4c25d69",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "002",
+          "rarity": "commonparallel"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "GU collaboration cards",
+      "id": 1012441
+    }
+  }
+}

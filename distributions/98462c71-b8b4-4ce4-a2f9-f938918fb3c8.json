@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "98462c71-b8b4-4ce4-a2f9-f938918fb3c8",
+  "name": "TCG Reprint Booster Pre-DR4",
+  "quotas": {
+    "monster": 6,
+    "spell": 3,
+    "trap": 3
+  },
+  "slots": [
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "qty": 10
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "super"
+          ],
+          "chance": 6
+        },
+        {
+          "rarities": [
+            "ultra"
+          ],
+          "chance": 12
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "7a4c425a-f9d3-4e5d-829f-8d8d27ec2ac7",
+  "name": {
+    "en": "Yu-Gi-Oh! 5D's Volume 6",
+    "ja": "\u904a\u622f\u738b\uff15\uff24\uff07\uff53 \u7b2c\uff16\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YF06-EN",
+      "image": "https://ms.yugipedia.com//1/1a/YF06-PromoEN.png",
+      "cardImages": {
+        "limited": {}
+      },
+      "cardInfo": {
+        "limited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111110004
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YF06-JP",
+      "date": "2013-08-03",
+      "image": "https://ms.yugipedia.com//7/70/YF06-PromoJP.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "cardInfo": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121215005
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1a/YF06-PromoEN.png",
+      "cards": [
+        {
+          "id": "386de0b8-18d4-4f6c-9c09-2ae63384b61e",
+          "card": "2927be29-b19b-4600-a7aa-487aa77e3126",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/70/YF06-PromoJP.png",
+      "cards": [
+        {
+          "id": "386de0b8-18d4-4f6c-9c09-2ae63384b61e",
+          "card": "2927be29-b19b-4600-a7aa-487aa77e3126",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! 5D's Volume 6 promotional card",
+      "id": 272337
+    }
+  }
+}

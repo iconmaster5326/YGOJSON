@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "414a4b7c-2ea2-44c5-8b73-4b9c45a6833b",
+  "name": {
+    "en": "Yu-Gi-Oh! Early Days Collection promotional cards",
+    "ja": "\u904a\u622f\u738b \u30a2\u30fc\u30ea\u30fc\u30c7\u30a4\u30ba\u30b3\u30ec\u30af\u30b7\u30e7\u30f3 \u540c\u68b1\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "EDC1-JP",
+      "date": "2025-02-27",
+      "image": "https://ms.yugipedia.com//8/8d/EDC1-VideoGameJP.png",
+      "cardImages": {
+        "unlimited": {
+          "e97fc170-16ae-4633-b542-6e64f4d8bc2a": "https://ms.yugipedia.com//b/bc/PerfectlyUltimateGreatMoth-EDC1-JP-QCScR.png",
+          "e60d6ddf-5273-4c7a-ae34-54d2b1115d64": "https://ms.yugipedia.com//3/38/Seiyaryu-EDC1-JP-QCScR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "e60d6ddf-5273-4c7a-ae34-54d2b1115d64": {
+            "image": "https://ms.yugipedia.com//3/38/Seiyaryu-EDC1-JP-QCScR.png"
+          },
+          "e97fc170-16ae-4633-b542-6e64f4d8bc2a": {
+            "image": "https://ms.yugipedia.com//b/bc/PerfectlyUltimateGreatMoth-EDC1-JP-QCScR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000008002000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "EDC1-EN",
+      "date": "2025-02-27",
+      "image": "https://ms.yugipedia.com//3/31/EDC1-VideoGameNA.png",
+      "cardImages": {
+        "unlimited": {
+          "b8085b8b-f5cc-48bb-8ae9-5bd35281a8ca": "https://ms.yugipedia.com//archive/6/68/20250524213135%21HarpiesFeatherDuster-EDC1-EN-QCScR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "b8085b8b-f5cc-48bb-8ae9-5bd35281a8ca": {
+            "image": "https://ms.yugipedia.com//archive/6/68/20250524213135%21HarpiesFeatherDuster-EDC1-EN-QCScR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001450000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/8d/EDC1-VideoGameJP.png",
+      "cards": [
+        {
+          "id": "e97fc170-16ae-4633-b542-6e64f4d8bc2a",
+          "card": "09b2d57a-4024-459f-9084-32cceb8a6f06",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        },
+        {
+          "id": "e60d6ddf-5273-4c7a-ae34-54d2b1115d64",
+          "card": "726afb12-a6d5-4d24-b2ed-f830d5e3761b",
+          "suffix": "002",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/31/EDC1-VideoGameNA.png",
+      "cards": [
+        {
+          "id": "b8085b8b-f5cc-48bb-8ae9-5bd35281a8ca",
+          "card": "4567872b-5f20-4aa2-8167-b7ca0c691552",
+          "suffix": "001",
+          "rarity": "25thsecret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Early Days Collection promotional cards",
+      "id": 1088402
+    }
+  }
+}

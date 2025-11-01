@@ -1,0 +1,168 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b8d3ed9d-c0ae-4778-92e6-1f56ef141f69",
+  "name": {
+    "en": "Duel Master's Guide",
+    "ja": "\uff24\uff35\uff25\uff2c  \uff2d\uff21\uff33\uff34\uff25\uff32\uff07\uff33  \uff27\uff35\uff29\uff24\uff25",
+    "ko": "\ub9c8\uc2a4\ud130\uc988 \uac00\uc774\ub4dc"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "DMG-KR",
+      "date": "2004-08-09",
+      "image": "https://ms.yugipedia.com//6/69/DMG-PromoKR.png",
+      "cardImages": {
+        "limited": {
+          "57f3770e-1dd0-4183-95a2-c5594208b7bd": "https://ms.yugipedia.com//8/8b/DarkPaladin-DMG-KR-ScR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "57f3770e-1dd0-4183-95a2-c5594208b7bd": {
+            "image": "https://ms.yugipedia.com//8/8b/DarkPaladin-DMG-KR-ScR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          74498000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "DMG-JP",
+      "date": "2006-03-15",
+      "image": "https://ms.yugipedia.com//e/ee/DMG-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "9f409806-6544-4a5f-bfe7-f423fc1568f1": "https://ms.yugipedia.com//0/02/ElementalHEROBurstinatrix-DMG-JP-C.jpg"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "9f409806-6544-4a5f-bfe7-f423fc1568f1": {
+            "image": "https://ms.yugipedia.com//0/02/ElementalHEROBurstinatrix-DMG-JP-C.jpg"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          111106002
+        ]
+      }
+    },
+    "na": {
+      "language": "en",
+      "prefix": "DMG-",
+      "date": "2003-10-28",
+      "image": "https://ms.yugipedia.com//4/4a/DMG-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "57f3770e-1dd0-4183-95a2-c5594208b7bd": "https://ms.yugipedia.com//a/ac/DarkPaladin-DMG-NA-ScR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "57f3770e-1dd0-4183-95a2-c5594208b7bd": {
+            "image": "https://ms.yugipedia.com//a/ac/DarkPaladin-DMG-NA-ScR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//6/69/DMG-PromoKR.png",
+      "cards": [
+        {
+          "id": "57f3770e-1dd0-4183-95a2-c5594208b7bd",
+          "card": "e2336361-5c2f-494d-a008-0b0cbc155d7a",
+          "suffix": "001",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/ee/DMG-PromoJP.png",
+      "cards": [
+        {
+          "id": "9f409806-6544-4a5f-bfe7-f423fc1568f1",
+          "card": "01a3d239-063a-40a0-9794-4e8d9df39800",
+          "suffix": "001",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//4/4a/DMG-PromoEN.png",
+      "cards": [
+        {
+          "id": "57f3770e-1dd0-4183-95a2-c5594208b7bd",
+          "card": "e2336361-5c2f-494d-a008-0b0cbc155d7a",
+          "suffix": "001",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Duel Master's Guide promotional cards",
+      "id": 477022
+    }
+  }
+}

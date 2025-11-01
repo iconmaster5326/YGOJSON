@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "8caf0792-1e52-4371-a444-08e7e031dc90",
+  "name": {
+    "en": "Yu-Gi-Oh! 5D's Volume 4",
+    "ja": "\u904a\u622f\u738b\uff15\uff24\uff07\uff53 \u7b2c\uff14\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YF04-EN",
+      "image": "https://ms.yugipedia.com//d/d3/YF04-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "46386de6-2b9b-4568-aa84-336d01d5228e": "https://ms.yugipedia.com//4/49/BlackwingGramtheShiningStar-YF04-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "46386de6-2b9b-4568-aa84-336d01d5228e": {
+            "image": "https://ms.yugipedia.com//4/49/BlackwingGramtheShiningStar-YF04-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111109001
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YF04-JP",
+      "date": "2012-06-04",
+      "image": "https://ms.yugipedia.com//b/bc/YF04-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "46386de6-2b9b-4568-aa84-336d01d5228e": "https://ms.yugipedia.com//b/bb/BlackwingGramtheShiningStar-YF04-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "46386de6-2b9b-4568-aa84-336d01d5228e": {
+            "image": "https://ms.yugipedia.com//b/bb/BlackwingGramtheShiningStar-YF04-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121214003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d3/YF04-PromoEN.png",
+      "cards": [
+        {
+          "id": "46386de6-2b9b-4568-aa84-336d01d5228e",
+          "card": "7145bf85-a57b-4985-9098-2706b06b86e7",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//b/bc/YF04-PromoJP.png",
+      "cards": [
+        {
+          "id": "46386de6-2b9b-4568-aa84-336d01d5228e",
+          "card": "7145bf85-a57b-4985-9098-2706b06b86e7",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! 5D's Volume 4 promotional card",
+      "id": 218833
+    }
+  }
+}

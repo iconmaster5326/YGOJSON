@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b700f46a-60b7-42f2-988c-b0085e6e1f61",
+  "name": {
+    "en": "Yu-Gi-Oh! Championship Series 2011"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YCSW-EN",
+      "image": "https://ms.yugipedia.com//e/e7/YCSW-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "bfcde6f3-71b5-4fb9-9bcb-cef80121b8a7": "https://ms.yugipedia.com//c/c6/BloodMefist-YCSW-EN-SR-LE.png",
+          "1862dab0-5a84-4578-859f-6bb4c85e6f01": "https://ms.yugipedia.com//d/d5/BloodMefist-YCSW-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "1862dab0-5a84-4578-859f-6bb4c85e6f01": {
+            "image": "https://ms.yugipedia.com//d/d5/BloodMefist-YCSW-EN-UR-LE.png"
+          },
+          "bfcde6f3-71b5-4fb9-9bcb-cef80121b8a7": {
+            "image": "https://ms.yugipedia.com//c/c6/BloodMefist-YCSW-EN-SR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121210006
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e7/YCSW-PromoEN.png",
+      "cards": [
+        {
+          "id": "bfcde6f3-71b5-4fb9-9bcb-cef80121b8a7",
+          "card": "0fd5bc71-52dd-42d8-a515-2e927aed6903",
+          "suffix": "004",
+          "rarity": "super"
+        },
+        {
+          "id": "1862dab0-5a84-4578-859f-6bb4c85e6f01",
+          "card": "0fd5bc71-52dd-42d8-a515-2e927aed6903",
+          "suffix": "004",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Championship Series 2011 Prize Card",
+      "id": 289591
+    }
+  }
+}
