@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "a7720727-5701-40ad-b92c-1c4bc94071aa",
+  "name": {
+    "en": "Yu-Gi-Oh! R Volume 1 promotional card",
+    "ja": "\u904a\u622f\u738b\uff32 \u7b2c\uff11\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YR01-EN",
+      "date": "2009-06-10",
+      "image": "https://ms.yugipedia.com//8/86/YR01-PromoEN.jpg",
+      "cardImages": {
+        "limited": {
+          "3dcfc865-d208-4094-8d98-68289c19d80c": "https://ms.yugipedia.com//9/97/VanDalgyontheDarkDragonLord-YR01-EN-ScR-LE.jpg"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "3dcfc865-d208-4094-8d98-68289c19d80c": {
+            "image": "https://ms.yugipedia.com//9/97/VanDalgyontheDarkDragonLord-YR01-EN-ScR-LE.jpg"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000577000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YR1-JP",
+      "date": "2005-04-03",
+      "image": "https://ms.yugipedia.com//6/64/YR01-PromoJP.jpg",
+      "cardImages": {
+        "unlimited": {
+          "fc28e5ad-67d0-412a-a9e5-6d320479a4bc": "https://ms.yugipedia.com//0/08/VanDalgyontheDarkDragonLord-YR1-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "fc28e5ad-67d0-412a-a9e5-6d320479a4bc": {
+            "image": "https://ms.yugipedia.com//0/08/VanDalgyontheDarkDragonLord-YR1-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121206009
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//8/86/YR01-PromoEN.jpg",
+      "cards": [
+        {
+          "id": "3dcfc865-d208-4094-8d98-68289c19d80c",
+          "card": "091e2ff3-7dc1-4100-bce3-56c545108cd7",
+          "suffix": "001",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//6/64/YR01-PromoJP.jpg",
+      "cards": [
+        {
+          "id": "fc28e5ad-67d0-412a-a9e5-6d320479a4bc",
+          "card": "091e2ff3-7dc1-4100-bce3-56c545108cd7",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! R Volume 1 promotional card",
+      "id": 254746
+    }
+  }
+}

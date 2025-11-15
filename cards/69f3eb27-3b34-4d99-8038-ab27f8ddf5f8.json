@@ -1,0 +1,180 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/card.json",
+  "id": "69f3eb27-3b34-4d99-8038-ab27f8ddf5f8",
+  "text": {
+    "en": {
+      "name": "Performapal Pendulum Sorcerer",
+      "effect": "If this card is Special Summoned: You can target up to 2 cards you control; destroy them, and if you do, add \"Performapal\" monsters with different names from your Deck to your hand, except \"Performapal Pendulum Sorcerer\", equal to the number of cards destroyed. You can only use this effect of \"Performapal Pendulum Sorcerer\" once per turn.",
+      "pendulumEffect": "If a \"Performapal\" monster(s) is Pendulum Summoned to your field: All \"Performapal\" monsters you currently control gain 1000 ATK until the end of this turn (even if this card leaves the field)."
+    },
+    "fr": {
+      "name": "Sorcier Pendule Potartiste",
+      "effect": "Si cette carte est Invoqu\u00e9e Sp\u00e9cialement : vous pouvez cibler max. 2 cartes que vous contr\u00f4lez ; d\u00e9truisez-les, et si vous le faites, ajoutez un nombre de monstres \"Potartiste\" de noms diff\u00e9rents (\"Sorcier Pendule Potartiste\" exclu) depuis votre Deck \u00e0 votre main, \u00e9gal au nombre de cartes d\u00e9truites. Vous ne pouvez utiliser cet effet de \"Sorcier Pendule Potartiste\" qu'une fois par tour.",
+      "pendulumEffect": "Si un ou plusieurs monstres \"Potartiste\" sont Invoqu\u00e9s par Pendulation sur votre Terrain : jusqu'\u00e0 la fin de ce tour (m\u00eame si cette carte quitte le Terrain), tous les monstres \"Potartiste\" que vous contr\u00f4lez actuellement gagnent 1000 ATK."
+    },
+    "de": {
+      "name": "K\u00fcnstlerkumpel Pendelzauberer",
+      "effect": "Falls diese Karte als Spezialbeschw\u00f6rung beschworen wird: Du kannst bis zu 2 Karten w\u00e4hlen, die du kontrollierst; zerst\u00f6re sie und falls du dies tust, f\u00fcge deiner Hand \u201eK\u00fcnstlerkumpel\u201c-Monster mit unterschiedlichen Namen in H\u00f6he der Anzahl der zerst\u00f6rten Karten von deinem Deck hinzu, au\u00dfer \u201eK\u00fcnstlerkumpel Pendelzauberer\u201c. Du kannst diesen Effekt von \u201eK\u00fcnstlerkumpel Pendelzauberer\u201c nur einmal pro Spielzug verwenden.",
+      "pendulumEffect": "Falls ein oder mehr \u201eK\u00fcnstlerkumpel\u201c-Monster als Pendelbeschw\u00f6rung auf deine Spielfeldseite beschworen werden: Alle \u201eK\u00fcnstlerkumpel\u201c-Monster, die du derzeit kontrollierst, erhalten bis zum Ende dieses Spielzugs 1000 ATK (selbst falls diese Karte das Spielfeld verl\u00e4sst)."
+    },
+    "it": {
+      "name": "Artistamico Stregone Pendulum",
+      "effect": "Se questa carta viene Evocata Specialmente: puoi scegliere come bersaglio fino a 2 carte che controlli; distruggile e, se lo fai, aggiungi mostri \"Artistamico\" con nomi diversi dal tuo Deck alla tua mano, eccetto \"Artistamico Stregone Pendulum\", pari al numero di carte distrutte. Puoi utilizzare questo effetto di \"Artistamico Stregone Pendulum\" una sola volta per turno.",
+      "pendulumEffect": "Se uno o pi\u00f9 mostri \"Artistamico\" vengono Evocati Pendulum sul tuo Terreno: tutti i mostri \"Artistamico\" che controlli attualmente guadagnano 1000 ATK fino alla fine di questo turno (anche se questa carta lascia il Terreno)."
+    },
+    "pt": {
+      "name": "Camarartista Feiticeiro P\u00eandulo",
+      "effect": "Se este card for Invocado por Invoca\u00e7\u00e3o-Especial: voc\u00ea pode escolher at\u00e9 2 cards que voc\u00ea controla; destrua-os e, se isso acontecer, adicione monstros \"Camarartista\" com nomes diferentes do seu Deck \u00e0 sua m\u00e3o, exceto \"Camarartista Feiticeiro P\u00eandulo\", igual ao n\u00famero de cards destru\u00eddos. Voc\u00ea s\u00f3 pode usar este efeito de \"Camarartista Feiticeiro P\u00eandulo\" uma vez por turno.",
+      "pendulumEffect": "Se um ou mais monstros \"Camarartista\" forem Invocados por Invoca\u00e7\u00e3o-P\u00eandulo no seu campo: at\u00e9 o final deste turno, todos os monstros \"Camarartista\" que voc\u00ea controla atualmente ganham 1000 de ATK (mesmo que este card deixe o campo)."
+    },
+    "es": {
+      "name": "Artistamigo Hechicero del P\u00e9ndulo",
+      "effect": "Si esta carta es Invocada de Modo Especial: puedes seleccionar hasta 2 cartas que controles; destr\u00fayelas y, si lo haces, a\u00f1ade a tu mano tantos monstruos \"Artistamigo\" con nombres diferentes en tu Deck (excepto \"Artistamigo Hechicero del P\u00e9ndulo\") como la cantidad de cartas destruidas. S\u00f3lo puedes usar este efecto de \"Artistamigo Hechicero del P\u00e9ndulo\" una vez por turno.",
+      "pendulumEffect": "Si uno o m\u00e1s monstruos \"Artistamigo\" son Invocados por P\u00e9ndulo a tu Campo: todos los monstruos \"Artistamigo\" que controles en este momento ganan 1000 ATK hasta el final de este turno (aun si esta carta deja el Campo)."
+    },
+    "ja": {
+      "name": "\uff25\uff2d\u30da\u30f3\u30c7\u30e5\u30e9\u30e0\u30fb\u30de\u30b8\u30b7\u30e3\u30f3",
+      "effect": "\u3053\u306e\u30ab\u30fc\u30c9\u540d\u306e\u30e2\u30f3\u30b9\u30bf\u30fc\u52b9\u679c\u306f\uff11\u30bf\u30fc\u30f3\u306b\uff11\u5ea6\u3057\u304b\u4f7f\u7528\u3067\u304d\u306a\u3044\u3002\u2460\uff1a\u3053\u306e\u30ab\u30fc\u30c9\u304c\u7279\u6b8a\u53ec\u559a\u3057\u305f\u5834\u5408\u3001\u81ea\u5206\u30d5\u30a3\u30fc\u30eb\u30c9\u306e\u30ab\u30fc\u30c9\u3092\uff12\u679a\u307e\u3067\u5bfe\u8c61\u3068\u3057\u3066\u767a\u52d5\u3067\u304d\u308b\u3002\u305d\u306e\u30ab\u30fc\u30c9\u3092\u7834\u58ca\u3057\u3001\u7834\u58ca\u3057\u305f\u6570\u3060\u3051\u30c7\u30c3\u30ad\u304b\u3089\u300c\uff25\uff2d\u30da\u30f3\u30c7\u30e5\u30e9\u30e0\u30fb\u30de\u30b8\u30b7\u30e3\u30f3\u300d\u4ee5\u5916\u306e\u300c\uff25\uff2d\u300d\u30e2\u30f3\u30b9\u30bf\u30fc\u3092\u624b\u672d\u306b\u52a0\u3048\u308b\uff08\u540c\u540d\u30ab\u30fc\u30c9\u306f\uff11\u679a\u307e\u3067\uff09\u3002",
+      "pendulumEffect": "\u2460\uff1a\u81ea\u5206\u30d5\u30a3\u30fc\u30eb\u30c9\u306b\u300c\uff25\uff2d\u300d\u30e2\u30f3\u30b9\u30bf\u30fc\u304c\uff30\u53ec\u559a\u3055\u308c\u305f\u5834\u5408\u306b\u767a\u52d5\u3059\u308b\u3002\u81ea\u5206\u30d5\u30a3\u30fc\u30eb\u30c9\u306e\u5168\u3066\u306e\u300c\uff25\uff2d\u300d\u30e2\u30f3\u30b9\u30bf\u30fc\u306e\u653b\u6483\u529b\u306f\u30bf\u30fc\u30f3\u7d42\u4e86\u6642\u307e\u3067\uff11\uff10\uff10\uff10\u30a2\u30c3\u30d7\u3059\u308b\u3002"
+    },
+    "ko": {
+      "name": "EM \ud39c\ub4c8\ub7fc \ub9e4\uc9c0\uc158",
+      "effect": "\uc774 \uce74\ub4dc\uba85\uc758 \ubaac\uc2a4\ud130 \ud6a8\uacfc\ub294 1\ud134\uc5d0 1\ubc88\ubc16\uc5d0 \uc0ac\uc6a9\ud560 \uc218 \uc5c6\ub2e4. \u2460: \uc774 \uce74\ub4dc\uac00 \ud2b9\uc218 \uc18c\ud658\uc5d0 \uc131\uacf5\ud588\uc744 \uacbd\uc6b0, \uc790\uc2e0 \ud544\ub4dc\uc758 \uce74\ub4dc\ub97c 2\uc7a5\uae4c\uc9c0 \ub300\uc0c1\uc73c\ub85c \ud558\uace0 \ubc1c\ub3d9\ud560 \uc218 \uc788\ub2e4. \uadf8 \uce74\ub4dc\ub97c \ud30c\uad34\ud558\uace0, \ud30c\uad34\ud55c \uc218\ub9cc\ud07c \ub371\uc5d0\uc11c \"EM(\uc5d4\ud130\uba54\uc774\ud2b8) \ud39c\ub4c8\ub7fc \ub9e4\uc9c0\uc158\" \uc774\uc678\uc758 \"EM(\uc5d4\ud130\uba54\uc774\ud2b8)\" \ubaac\uc2a4\ud130\ub97c \ud328\uc5d0 \ub123\ub294\ub2e4(\uac19\uc740 \uc774\ub984\uc758 \uce74\ub4dc\ub294 1\uc7a5\uae4c\uc9c0).",
+      "pendulumEffect": "\u2460: \uc790\uc2e0 \ud544\ub4dc\uc5d0 \"EM(\uc5d4\ud130\uba54\uc774\ud2b8)\" \ubaac\uc2a4\ud130\uac00 \ud39c\ub4c8\ub7fc \uc18c\ud658\ub418\uc5c8\uc744 \uacbd\uc6b0\uc5d0 \ubc1c\ub3d9\ud55c\ub2e4. \uc790\uc2e0 \ud544\ub4dc\uc758 \"EM(\uc5d4\ud130\uba54\uc774\ud2b8)\" \ubaac\uc2a4\ud130\uc758 \uacf5\uaca9\ub825\uc740 \ud134 \uc885\ub8cc\uc2dc\uae4c\uc9c0 1000 \uc62c\ub9b0\ub2e4."
+    },
+    "zh-CN": {
+      "name": "\u5a31\u4e50\u4f19\u4f34 \u7075\u6446\u9b54\u672f\u58eb",
+      "effect": "\u6b64\u5361\u540d\u7684\u602a\u517d\u6548\u679c\uff11\u56de\u5408\u4ec5\u53ef\u4f7f\u7528\uff11\u6b21\u3002\u2460\uff1a\u6b64\u5361\u7279\u6b8a\u53ec\u5524\u6210\u529f\u7684\u60c5\u51b5\u4e0b\uff0c\u4ee5\u81ea\u5df1\u573a\u4e0a\u7684\u6700\u591a\uff12\u5f20\u5361\u4e3a\u5bf9\u8c61\u53ef\u4ee5\u53d1\u52a8\u3002\u7834\u574f\u8be5\u5361\uff0c\u4f9d\u7834\u574f\u7684\u6570\u91cf\u4ece\u724c\u7ec4\u5c06\u201c\u5a31\u4e50\u4f19\u4f34 \u7075\u6446\u9b54\u672f\u58eb\u201d\u4ee5\u5916\u7684\u201c\u5a31\u4e50\u4f19\u4f34\u201d\u602a\u517d\u52a0\u5165\u624b\u724c\uff08\u540c\u540d\u5361\u6700\u591a\uff11\u5f20\uff09\u3002",
+      "pendulumEffect": "\u2460\uff1a\u201c\u5a31\u4e50\u4f19\u4f34\u201d\u602a\u517d\u88ab\u7075\u6446\u53ec\u5524\u81f3\u81ea\u5df1\u573a\u4e0a\u7684\u60c5\u51b5\u4e0b\u53d1\u52a8\u3002\u81ea\u5df1\u573a\u4e0a\u7684\u201c\u5a31\u4e50\u4f19\u4f34\u201d\u602a\u517d\u7684\u653b\u51fb\u529b\u76f4\u81f3\u56de\u5408\u7ed3\u675f\u65f6\u4e3a\u6b62\u4e0a\u5347\uff11\uff10\uff10\uff10\u3002"
+    }
+  },
+  "cardType": "monster",
+  "attribute": "earth",
+  "monsterCardTypes": [
+    "pendulum"
+  ],
+  "type": "spellcaster",
+  "classifications": [
+    "effect",
+    "pendulum"
+  ],
+  "level": 4,
+  "atk": 1500,
+  "def": 800,
+  "scale": 2,
+  "passwords": [
+    "47075569"
+  ],
+  "images": [
+    {
+      "id": "9607e9b0-5670-46f4-9a8a-c36d1bf13b61",
+      "password": "47075569",
+      "art": "https://images.ygoprodeck.com/images/cards_cropped/47075569.jpg",
+      "card": "https://images.ygoprodeck.com/images/cards/47075569.jpg"
+    }
+  ],
+  "sets": [
+    "7db0c394-f18c-4364-ac02-598a32c1b67e",
+    "7db0c394-f18c-4364-ac02-598a32c1b67e",
+    "7db0c394-f18c-4364-ac02-598a32c1b67e",
+    "7db0c394-f18c-4364-ac02-598a32c1b67e",
+    "7db0c394-f18c-4364-ac02-598a32c1b67e",
+    "7db0c394-f18c-4364-ac02-598a32c1b67e",
+    "3468dec0-e626-42fc-8adc-fa5df7b67ff0",
+    "3468dec0-e626-42fc-8adc-fa5df7b67ff0",
+    "3468dec0-e626-42fc-8adc-fa5df7b67ff0",
+    "3468dec0-e626-42fc-8adc-fa5df7b67ff0",
+    "3468dec0-e626-42fc-8adc-fa5df7b67ff0",
+    "3468dec0-e626-42fc-8adc-fa5df7b67ff0",
+    "8ca2937d-d707-45ce-baa8-2fee93cba4ba",
+    "8ca2937d-d707-45ce-baa8-2fee93cba4ba",
+    "8ca2937d-d707-45ce-baa8-2fee93cba4ba",
+    "e5cc9434-7d97-46f6-9c36-1d6f6e3541da",
+    "e5cc9434-7d97-46f6-9c36-1d6f6e3541da",
+    "e5cc9434-7d97-46f6-9c36-1d6f6e3541da",
+    "e5cc9434-7d97-46f6-9c36-1d6f6e3541da",
+    "e5cc9434-7d97-46f6-9c36-1d6f6e3541da",
+    "e5cc9434-7d97-46f6-9c36-1d6f6e3541da",
+    "0d8144ac-fb67-43af-8129-98420c183398",
+    "0d8144ac-fb67-43af-8129-98420c183398",
+    "0d8144ac-fb67-43af-8129-98420c183398",
+    "0d8144ac-fb67-43af-8129-98420c183398",
+    "0d8144ac-fb67-43af-8129-98420c183398",
+    "0d8144ac-fb67-43af-8129-98420c183398",
+    "75e7c9d9-f080-4cfe-827b-cf746b0521c2",
+    "75e7c9d9-f080-4cfe-827b-cf746b0521c2",
+    "6af322da-ed19-49d1-9ce3-2925aa881cdb",
+    "6af322da-ed19-49d1-9ce3-2925aa881cdb",
+    "13500ddd-9d30-46f6-8e07-03532a7d3d39",
+    "13500ddd-9d30-46f6-8e07-03532a7d3d39",
+    "557b18d6-ecf9-405e-b4b3-1af4931805de",
+    "a091f7b9-7256-4524-8548-189299c19376",
+    "175d2f63-2edc-42a2-93ae-3b58d7612ada",
+    "bee2c71b-0b67-483b-8b7a-874148914347",
+    "59b696ee-a190-4737-ae4a-d11a19c99d46",
+    "22ac067c-b73f-4a49-b47e-37f330d46a06",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098",
+    "d1a3b959-ee7e-4c30-aca5-1df5e0ee4098"
+  ],
+  "legality": {
+    "tcg": {
+      "current": "unlimited",
+      "currentLegality": "unlimited"
+    },
+    "ocg": {
+      "current": "unlimited",
+      "currentLegality": "unlimited",
+      "history": [
+        {
+          "legality": "limited",
+          "date": "2016-04-01"
+        },
+        {
+          "legality": "semilimited",
+          "date": "2017-07-01"
+        },
+        {
+          "legality": "unlimited",
+          "date": "2017-10-01"
+        }
+      ]
+    },
+    "genesys": {
+      "current": "unlimited",
+      "currentLegality": "unlimited",
+      "currentPoints": 0
+    }
+  },
+  "masterDuel": {
+    "rarity": "ur",
+    "craftable": true
+  },
+  "externalIDs": {
+    "yugipedia": [
+      {
+        "name": "Performapal Pendulum Sorcerer",
+        "id": 324347
+      }
+    ],
+    "dbID": 11615,
+    "ygoprodeck": {
+      "id": 47075569,
+      "name": "performapal-pendulum-sorcerer-4016"
+    },
+    "yamlyugiID": 47075569
+  },
+  "series": [
+    "bb1bab7d-4847-418e-a13f-911ce04dea9b",
+    "293728e5-cb10-43e2-86b4-c3970d291546"
+  ]
+}

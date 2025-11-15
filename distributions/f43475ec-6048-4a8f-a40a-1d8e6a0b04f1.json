@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "f43475ec-6048-4a8f-a40a-1d8e6a0b04f1",
+  "name": "TCG Astral/OTS Pack",
+  "slots": [
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "qty": 2
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "ultimate"
+          ],
+          "chance": 20
+        },
+        {
+          "rarities": [
+            "super"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "3d52e140-3229-4156-94ef-4dc9f0cc6c32",
+  "name": {
+    "en": "Yu-Gi-Oh! 3D Bonds Beyond Time Blu-ray promotional card",
+    "ja": "\u904a\u622f\u738b \uff5e\u8d85\u878d\u5408\uff01\u6642\u7a7a\u3092\u8d85\u3048\u305f\u7d46\uff5e"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "MOV2-EN",
+      "image": "https://ms.yugipedia.com//8/80/MOV2-PromoEN-Blueray.png",
+      "cardImages": {
+        "limited": {}
+      },
+      "cardInfo": {
+        "limited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1131307001
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "MOV2-JP",
+      "date": "2011-06-15",
+      "cardImages": {
+        "unlimited": {
+          "594c0158-e7bb-4144-95a9-79ed813c0ed2": "https://ms.yugipedia.com//b/b8/MaleficRedEyesBlackDragon-MOV2-JP-UR.jpg"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "594c0158-e7bb-4144-95a9-79ed813c0ed2": {
+            "image": "https://ms.yugipedia.com//b/b8/MaleficRedEyesBlackDragon-MOV2-JP-UR.jpg"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          141409005
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//8/80/MOV2-PromoEN-Blueray.png",
+      "cards": [
+        {
+          "id": "1dbee372-c0ec-495f-b696-d52840ab2cdf",
+          "card": "4159327a-b5f1-4b07-8a1a-2a93f439ddb0",
+          "suffix": "001",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "594c0158-e7bb-4144-95a9-79ed813c0ed2",
+          "card": "4159327a-b5f1-4b07-8a1a-2a93f439ddb0",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! 3D Bonds Beyond Time Blu-ray promotional card",
+      "id": 383088
+    }
+  }
+}

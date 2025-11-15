@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "9f2f478d-1660-48c3-9e15-aec7cd142810",
+  "name": {
+    "en": "Yu-Gi-Oh! Championship Series 2016"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YCSW-EN",
+      "image": "https://ms.yugipedia.com//e/e7/YCSW-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "0d1187f6-1311-431a-9b45-0763897ad04b": "https://ms.yugipedia.com//9/9c/Number93UtopiaKaiser-YCSW-EN-SR-LE.png",
+          "3ea739f2-9df7-46be-aeab-f73c5162c107": "https://ms.yugipedia.com//9/90/Number93UtopiaKaiser-YCSW-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "0d1187f6-1311-431a-9b45-0763897ad04b": {
+            "image": "https://ms.yugipedia.com//9/9c/Number93UtopiaKaiser-YCSW-EN-SR-LE.png"
+          },
+          "3ea739f2-9df7-46be-aeab-f73c5162c107": {
+            "image": "https://ms.yugipedia.com//9/90/Number93UtopiaKaiser-YCSW-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121215004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e7/YCSW-PromoEN.png",
+      "cards": [
+        {
+          "id": "0d1187f6-1311-431a-9b45-0763897ad04b",
+          "card": "70ec636a-7565-485b-9948-0a1b028f35d1",
+          "suffix": "009",
+          "rarity": "super"
+        },
+        {
+          "id": "3ea739f2-9df7-46be-aeab-f73c5162c107",
+          "card": "70ec636a-7565-485b-9948-0a1b028f35d1",
+          "suffix": "009",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Championship Series 2016 Prize Card",
+      "id": 396117
+    }
+  }
+}

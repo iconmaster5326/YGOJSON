@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "26740fdf-2aa8-42bf-bbfc-22bbd733ce5d",
+  "name": {
+    "en": "Nike collaboration cards",
+    "ja": "\uff2e\uff29\uff2b\uff25 \u30b3\u30e9\u30dc\u8a18\u5ff5\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "NKC1-EN",
+      "date": "2025-09-12",
+      "image": "https://ms.yugipedia.com//2/21/NKC1-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "8eeb4942-81e3-49ee-858a-99e3f26762f0": "https://ms.yugipedia.com//2/29/WINDSOFVICTORY-NKC1-EN-ScR-LE.png",
+          "40d7321f-c1bc-42ae-88ca-09a38d6ee55a": "https://ms.yugipedia.com//f/fa/RedEyesBlackDragon-NKC1-EN-ScR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "40d7321f-c1bc-42ae-88ca-09a38d6ee55a": {
+            "image": "https://ms.yugipedia.com//f/fa/RedEyesBlackDragon-NKC1-EN-ScR-LE.png"
+          },
+          "8eeb4942-81e3-49ee-858a-99e3f26762f0": {
+            "image": "https://ms.yugipedia.com//2/29/WINDSOFVICTORY-NKC1-EN-ScR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000001469000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "NKC1-JP",
+      "date": "2025-09-12",
+      "image": "https://ms.yugipedia.com//7/74/NKC1-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "f67198b4-7ce5-45ed-843c-3dc1be57b416": "https://ms.yugipedia.com//archive/7/73/20250906095559%21TrapofthePoisonousScorpion-NKC1-JP-ScR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "f67198b4-7ce5-45ed-843c-3dc1be57b416": {
+            "image": "https://ms.yugipedia.com//archive/7/73/20250906095559%21TrapofthePoisonousScorpion-NKC1-JP-ScR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1000009319000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//2/21/NKC1-PromoEN.png",
+      "cards": [
+        {
+          "id": "8eeb4942-81e3-49ee-858a-99e3f26762f0",
+          "card": "89be722a-8d98-45e8-92cb-0ee321d701d0",
+          "suffix": "001",
+          "rarity": "secret"
+        },
+        {
+          "id": "40d7321f-c1bc-42ae-88ca-09a38d6ee55a",
+          "card": "bc4ce584-7451-4d5b-8d25-2557632e4be5",
+          "suffix": "002",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/74/NKC1-PromoJP.png",
+      "cards": [
+        {
+          "id": "f67198b4-7ce5-45ed-843c-3dc1be57b416",
+          "card": "d4fa0ab4-d0b1-4637-b4fb-85b4e7960b6f",
+          "suffix": "001",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Nike collaboration cards",
+      "id": 1140996
+    }
+  }
+}

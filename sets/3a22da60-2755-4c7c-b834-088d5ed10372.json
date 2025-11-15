@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "3a22da60-2755-4c7c-b834-088d5ed10372",
+  "name": {
+    "en": "Yu-Gi-Oh! GX Volume 6",
+    "ja": "\u904a\u622f\u738b\uff27\uff38 \u7b2c\uff16\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "YG06-JP",
+      "date": "2009-11-04",
+      "image": "https://ms.yugipedia.com//0/04/YG06-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "29e52368-842c-4634-acef-b6e0dcd48991": "https://ms.yugipedia.com//f/f0/ElementalHEROTheShining-YG06-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "29e52368-842c-4634-acef-b6e0dcd48991": {
+            "image": "https://ms.yugipedia.com//f/f0/ElementalHEROTheShining-YG06-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121211011
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "YG06-EN",
+      "date": "2011-03-01",
+      "image": "https://ms.yugipedia.com//8/87/YG06-PromoEN.png",
+      "cardImages": {
+        "limited": {}
+      },
+      "cardInfo": {
+        "limited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          161601287
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/04/YG06-PromoJP.png",
+      "cards": [
+        {
+          "id": "29e52368-842c-4634-acef-b6e0dcd48991",
+          "card": "3f2cd80f-0648-4b79-9cd0-f041ed377d9e",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//8/87/YG06-PromoEN.png",
+      "cards": [
+        {
+          "id": "29e52368-842c-4634-acef-b6e0dcd48991",
+          "card": "3f2cd80f-0648-4b79-9cd0-f041ed377d9e",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! GX Volume 6 promotional card",
+      "id": 165463
+    }
+  }
+}

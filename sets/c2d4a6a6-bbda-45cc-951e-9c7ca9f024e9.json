@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "c2d4a6a6-bbda-45cc-951e-9c7ca9f024e9",
+  "name": {
+    "en": "Spell Ruler promotional cards",
+    "ko": "\ub9c8\ubc95\uc758 \uc9c0\ubc30\uc790 \ud504\ub85c\ubaa8\uc158 \uce74\ub4dc"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "SRL-KRPR",
+      "date": "2011-05-19",
+      "image": "https://ms.yugipedia.com//9/93/SRL-PromoKR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "9087a397-8938-483b-86d0-4b3843cda51e": "https://ms.yugipedia.com//2/2d/DragonMasterKnight-SRL-KR-ScR-UE.png",
+          "b049ba29-bb1e-41d8-8e59-8ceca6206fe7": "https://ms.yugipedia.com//a/af/MysticalSpaceTyphoon-SRL-KR-ScR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "b049ba29-bb1e-41d8-8e59-8ceca6206fe7": {
+            "image": "https://ms.yugipedia.com//a/af/MysticalSpaceTyphoon-SRL-KR-ScR-UE.png"
+          },
+          "9087a397-8938-483b-86d0-4b3843cda51e": {
+            "image": "https://ms.yugipedia.com//2/2d/DragonMasterKnight-SRL-KR-ScR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010000971000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/93/SRL-PromoKR.jpg",
+      "cards": [
+        {
+          "id": "9087a397-8938-483b-86d0-4b3843cda51e",
+          "card": "455bde78-6e42-4ad6-b3cb-457054e09570",
+          "suffix": "1",
+          "rarity": "secret"
+        },
+        {
+          "id": "b049ba29-bb1e-41d8-8e59-8ceca6206fe7",
+          "card": "d15ea879-903e-481a-9ad1-774823a8518b",
+          "suffix": "2",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Spell Ruler promotional cards",
+      "id": 304540
+    }
+  }
+}

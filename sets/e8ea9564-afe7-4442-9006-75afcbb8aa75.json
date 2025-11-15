@@ -1,0 +1,617 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "e8ea9564-afe7-4442-9006-75afcbb8aa75",
+  "name": {
+    "en": "Speed Start Deck: Link Edition",
+    "ja": "\u30b9\u30d4\u30fc\u30c9\u30b9\u30bf\u30fc\u30c8\u30c7\u30c3\u30ad \uff0d\u30ea\u30f3\u30af\u7de8\uff0d",
+    "ko": "\uc2a4\ud53c\ub4dc \uc2a4\ud0c0\ud130 \ub371 \uff0d \ub9c1\ud06c \ud3b8 \uff0d"
+  },
+  "locales": {
+    "ae": {
+      "language": "ae",
+      "prefix": "SSD1-AE",
+      "date": "2023-10-21",
+      "image": "https://ms.yugipedia.com//a/af/SSD1-DeckAE.png",
+      "cardImages": {
+        "unlimited": {
+          "e9f5b687-babf-4065-ad22-b93a9d5a1f6d": "https://ms.yugipedia.com//8/80/AxeRaider-SSD1-AE-C-UE.png",
+          "63cacd92-4ad4-47e5-9c11-abf4bb0e6ff2": "https://ms.yugipedia.com//b/b4/HaneHane-SSD1-AE-C-UE.png",
+          "996e93b1-f862-4a72-bf52-b89b43dfd7a9": "https://ms.yugipedia.com//a/ab/StopDefense-SSD1-AE-C-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "996e93b1-f862-4a72-bf52-b89b43dfd7a9": {
+            "image": "https://ms.yugipedia.com//a/ab/StopDefense-SSD1-AE-C-UE.png"
+          },
+          "63cacd92-4ad4-47e5-9c11-abf4bb0e6ff2": {
+            "image": "https://ms.yugipedia.com//b/b4/HaneHane-SSD1-AE-C-UE.png"
+          },
+          "e9f5b687-babf-4065-ad22-b93a9d5a1f6d": {
+            "image": "https://ms.yugipedia.com//8/80/AxeRaider-SSD1-AE-C-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          5000001287000
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SSD1-JP",
+      "date": "2018-12-22",
+      "image": "https://ms.yugipedia.com//8/88/SSD1-DeckJP.png",
+      "cardImages": {
+        "unlimited": {
+          "dc307583-8eac-4ddb-829f-50866d00a19c": "https://ms.yugipedia.com//1/11/NobleKnightArtorigus-SSD1-JP-C.png",
+          "e9f5b687-babf-4065-ad22-b93a9d5a1f6d": "https://ms.yugipedia.com//e/e9/AxeRaider-SSD1-JP-C.png",
+          "319e00df-76c4-44b7-9b2f-54d267b74317": "https://ms.yugipedia.com//1/1c/ElementalHEROSparkman-SSD1-JP-C.png",
+          "2418e965-8822-4a75-a8a7-b7edafccddc6": "https://ms.yugipedia.com//9/99/WarriorofZera-SSD1-JP-C.png",
+          "6226d874-ac74-4511-a347-c73d4d8739f1": "https://ms.yugipedia.com//a/a4/ChamberlainoftheSixSamurai-SSD1-JP-C.png",
+          "b169e398-ec9c-4736-8f07-478d13ebb787": "https://ms.yugipedia.com//b/b7/GoblinEliteAttackForce-SSD1-JP-C.png",
+          "d4339149-d76f-4066-b5ad-b7078a0ede18": "https://ms.yugipedia.com//d/d3/MaraudingCaptain-SSD1-JP-C.png",
+          "8473c45f-fed6-49b5-9c35-c6ce9ddee624": "https://ms.yugipedia.com//2/23/HayabusaKnight-SSD1-JP-C.png",
+          "65352157-fa1a-4dd5-8739-1f83b8562c54": "https://ms.yugipedia.com//1/1b/Desertapir-SSD1-JP-C.png",
+          "63cacd92-4ad4-47e5-9c11-abf4bb0e6ff2": "https://ms.yugipedia.com//d/d6/HaneHane-SSD1-JP-C.png",
+          "128d4a8d-9c86-4fc5-84ee-26d4c4c78335": "https://ms.yugipedia.com//7/76/HammerShot-SSD1-JP-C.png",
+          "4addb7f7-1e31-49b3-9f6a-b543b2f1b316": "https://ms.yugipedia.com//c/c5/BlueMedicine-SSD1-JP-C.png",
+          "18c58fbe-4b02-457f-9627-13b1815df1f9": "https://ms.yugipedia.com//4/4a/Spiritualism-SSD1-JP-C.png",
+          "996e93b1-f862-4a72-bf52-b89b43dfd7a9": "https://ms.yugipedia.com//f/f0/StopDefense-SSD1-JP-C.png",
+          "fa92b423-bbe5-445f-ac72-d4e4b43a8dae": "https://ms.yugipedia.com//5/5c/SilentDoom-SSD1-JP-C.png",
+          "d40e0a59-a558-4026-8bf1-99ab26803a83": "https://ms.yugipedia.com//1/14/HornoftheUnicorn-SSD1-JP-C.png",
+          "0a56cc87-0d27-4fcd-a29a-c5d4e8d1cd32": "https://ms.yugipedia.com//3/34/Reinforcements-SSD1-JP-C.png",
+          "1513e9ec-9c49-4ab2-b08c-5e48b95d3163": "https://ms.yugipedia.com//d/d7/DrainingShield-SSD1-JP-C.png",
+          "7eebba63-9c86-4ec0-a72c-e7a788e7ce3d": "https://ms.yugipedia.com//c/cc/JustDesserts-SSD1-JP-C.png",
+          "feefbdeb-491b-4aea-9bc1-709a1e981295": "https://ms.yugipedia.com//a/af/ShadowSpell-SSD1-JP-C.png",
+          "4607e0ab-8523-445e-bc87-310216578185": "https://ms.yugipedia.com//9/99/CodeTalker-SSD1-JP-C.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "d40e0a59-a558-4026-8bf1-99ab26803a83": {
+            "image": "https://ms.yugipedia.com//1/14/HornoftheUnicorn-SSD1-JP-C.png"
+          },
+          "0a56cc87-0d27-4fcd-a29a-c5d4e8d1cd32": {
+            "image": "https://ms.yugipedia.com//3/34/Reinforcements-SSD1-JP-C.png"
+          },
+          "1513e9ec-9c49-4ab2-b08c-5e48b95d3163": {
+            "image": "https://ms.yugipedia.com//d/d7/DrainingShield-SSD1-JP-C.png"
+          },
+          "7eebba63-9c86-4ec0-a72c-e7a788e7ce3d": {
+            "image": "https://ms.yugipedia.com//c/cc/JustDesserts-SSD1-JP-C.png"
+          },
+          "feefbdeb-491b-4aea-9bc1-709a1e981295": {
+            "image": "https://ms.yugipedia.com//a/af/ShadowSpell-SSD1-JP-C.png"
+          },
+          "4607e0ab-8523-445e-bc87-310216578185": {
+            "image": "https://ms.yugipedia.com//9/99/CodeTalker-SSD1-JP-C.png"
+          },
+          "dc307583-8eac-4ddb-829f-50866d00a19c": {
+            "image": "https://ms.yugipedia.com//1/11/NobleKnightArtorigus-SSD1-JP-C.png"
+          },
+          "e9f5b687-babf-4065-ad22-b93a9d5a1f6d": {
+            "image": "https://ms.yugipedia.com//e/e9/AxeRaider-SSD1-JP-C.png"
+          },
+          "319e00df-76c4-44b7-9b2f-54d267b74317": {
+            "image": "https://ms.yugipedia.com//1/1c/ElementalHEROSparkman-SSD1-JP-C.png"
+          },
+          "2418e965-8822-4a75-a8a7-b7edafccddc6": {
+            "image": "https://ms.yugipedia.com//9/99/WarriorofZera-SSD1-JP-C.png"
+          },
+          "6226d874-ac74-4511-a347-c73d4d8739f1": {
+            "image": "https://ms.yugipedia.com//a/a4/ChamberlainoftheSixSamurai-SSD1-JP-C.png"
+          },
+          "b169e398-ec9c-4736-8f07-478d13ebb787": {
+            "image": "https://ms.yugipedia.com//b/b7/GoblinEliteAttackForce-SSD1-JP-C.png"
+          },
+          "d4339149-d76f-4066-b5ad-b7078a0ede18": {
+            "image": "https://ms.yugipedia.com//d/d3/MaraudingCaptain-SSD1-JP-C.png"
+          },
+          "8473c45f-fed6-49b5-9c35-c6ce9ddee624": {
+            "image": "https://ms.yugipedia.com//2/23/HayabusaKnight-SSD1-JP-C.png"
+          },
+          "65352157-fa1a-4dd5-8739-1f83b8562c54": {
+            "image": "https://ms.yugipedia.com//1/1b/Desertapir-SSD1-JP-C.png"
+          },
+          "63cacd92-4ad4-47e5-9c11-abf4bb0e6ff2": {
+            "image": "https://ms.yugipedia.com//d/d6/HaneHane-SSD1-JP-C.png"
+          },
+          "128d4a8d-9c86-4fc5-84ee-26d4c4c78335": {
+            "image": "https://ms.yugipedia.com//7/76/HammerShot-SSD1-JP-C.png"
+          },
+          "4addb7f7-1e31-49b3-9f6a-b543b2f1b316": {
+            "image": "https://ms.yugipedia.com//c/c5/BlueMedicine-SSD1-JP-C.png"
+          },
+          "18c58fbe-4b02-457f-9627-13b1815df1f9": {
+            "image": "https://ms.yugipedia.com//4/4a/Spiritualism-SSD1-JP-C.png"
+          },
+          "996e93b1-f862-4a72-bf52-b89b43dfd7a9": {
+            "image": "https://ms.yugipedia.com//f/f0/StopDefense-SSD1-JP-C.png"
+          },
+          "fa92b423-bbe5-445f-ac72-d4e4b43a8dae": {
+            "image": "https://ms.yugipedia.com//5/5c/SilentDoom-SSD1-JP-C.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          141418011
+        ]
+      }
+    },
+    "kr": {
+      "language": "ko",
+      "prefix": "SSD1-KR",
+      "date": "2019-05-04",
+      "image": "https://ms.yugipedia.com//a/a8/SSD1-DeckKR.png",
+      "cardImages": {
+        "unlimited": {
+          "4607e0ab-8523-445e-bc87-310216578185": "https://ms.yugipedia.com//7/7f/CodeTalker-SSD1-KR-C-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "4607e0ab-8523-445e-bc87-310216578185": {
+            "image": "https://ms.yugipedia.com//7/7f/CodeTalker-SSD1-KR-C-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          7141416002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/af/SSD1-DeckAE.png",
+      "cards": [
+        {
+          "id": "dc307583-8eac-4ddb-829f-50866d00a19c",
+          "card": "4488c4e8-3dfc-4cd9-b5e8-43ad62980925",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "e9f5b687-babf-4065-ad22-b93a9d5a1f6d",
+          "card": "5279aa6e-af78-4b0d-86dc-29b9a0a0089e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "319e00df-76c4-44b7-9b2f-54d267b74317",
+          "card": "971c1b3b-1360-43c5-80c6-1a2c76511a53",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "2418e965-8822-4a75-a8a7-b7edafccddc6",
+          "card": "ca099528-5bca-410b-a44d-220befb2d3df",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "6226d874-ac74-4511-a347-c73d4d8739f1",
+          "card": "82693da4-64bb-4004-85ba-74177e37bf6f",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "b169e398-ec9c-4736-8f07-478d13ebb787",
+          "card": "9615cd6a-5669-4307-a7d2-e4134866cee1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "d4339149-d76f-4066-b5ad-b7078a0ede18",
+          "card": "08dd85a8-5015-44ed-ade2-548b4cbc686a",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "8473c45f-fed6-49b5-9c35-c6ce9ddee624",
+          "card": "28c39720-3492-4c90-a29d-35277f3e35ef",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "65352157-fa1a-4dd5-8739-1f83b8562c54",
+          "card": "796cbe73-cb0d-4561-abc3-889793116607",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "63cacd92-4ad4-47e5-9c11-abf4bb0e6ff2",
+          "card": "7fbc81c5-7d85-439c-9d23-5c3be08d5a6f",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "128d4a8d-9c86-4fc5-84ee-26d4c4c78335",
+          "card": "040f08dc-f50f-41a0-9f8f-389483be8bb1",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "4addb7f7-1e31-49b3-9f6a-b543b2f1b316",
+          "card": "aefa41bc-3776-46c9-87c5-41f5a92529ac",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "18c58fbe-4b02-457f-9627-13b1815df1f9",
+          "card": "02f628c0-c366-46bb-9fc3-b33169823102",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "996e93b1-f862-4a72-bf52-b89b43dfd7a9",
+          "card": "baa316bc-33d1-4d67-aef4-4bdc1fc9e5fa",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "fa92b423-bbe5-445f-ac72-d4e4b43a8dae",
+          "card": "7b147a17-97b6-4d72-8f04-5dc5f186b6f0",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "d40e0a59-a558-4026-8bf1-99ab26803a83",
+          "card": "4240c665-ad31-4a0e-9389-e566a2478e1c",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "0a56cc87-0d27-4fcd-a29a-c5d4e8d1cd32",
+          "card": "81710c69-5147-452a-be6d-440ad96fe5cb",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "1513e9ec-9c49-4ab2-b08c-5e48b95d3163",
+          "card": "49d38190-1f50-4068-8ecb-001b2bac1b21",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "7eebba63-9c86-4ec0-a72c-e7a788e7ce3d",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "feefbdeb-491b-4aea-9bc1-709a1e981295",
+          "card": "f738e308-86f0-43d9-87fc-61c727e8b40a",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "4607e0ab-8523-445e-bc87-310216578185",
+          "card": "68234238-75f3-4a37-82da-62db7defd8c1",
+          "suffix": "021",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/88/SSD1-DeckJP.png",
+      "cards": [
+        {
+          "id": "dc307583-8eac-4ddb-829f-50866d00a19c",
+          "card": "4488c4e8-3dfc-4cd9-b5e8-43ad62980925",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "e9f5b687-babf-4065-ad22-b93a9d5a1f6d",
+          "card": "5279aa6e-af78-4b0d-86dc-29b9a0a0089e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "319e00df-76c4-44b7-9b2f-54d267b74317",
+          "card": "971c1b3b-1360-43c5-80c6-1a2c76511a53",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "2418e965-8822-4a75-a8a7-b7edafccddc6",
+          "card": "ca099528-5bca-410b-a44d-220befb2d3df",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "6226d874-ac74-4511-a347-c73d4d8739f1",
+          "card": "82693da4-64bb-4004-85ba-74177e37bf6f",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "b169e398-ec9c-4736-8f07-478d13ebb787",
+          "card": "9615cd6a-5669-4307-a7d2-e4134866cee1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "d4339149-d76f-4066-b5ad-b7078a0ede18",
+          "card": "08dd85a8-5015-44ed-ade2-548b4cbc686a",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "8473c45f-fed6-49b5-9c35-c6ce9ddee624",
+          "card": "28c39720-3492-4c90-a29d-35277f3e35ef",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "65352157-fa1a-4dd5-8739-1f83b8562c54",
+          "card": "796cbe73-cb0d-4561-abc3-889793116607",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "63cacd92-4ad4-47e5-9c11-abf4bb0e6ff2",
+          "card": "7fbc81c5-7d85-439c-9d23-5c3be08d5a6f",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "128d4a8d-9c86-4fc5-84ee-26d4c4c78335",
+          "card": "040f08dc-f50f-41a0-9f8f-389483be8bb1",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "4addb7f7-1e31-49b3-9f6a-b543b2f1b316",
+          "card": "aefa41bc-3776-46c9-87c5-41f5a92529ac",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "18c58fbe-4b02-457f-9627-13b1815df1f9",
+          "card": "02f628c0-c366-46bb-9fc3-b33169823102",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "996e93b1-f862-4a72-bf52-b89b43dfd7a9",
+          "card": "baa316bc-33d1-4d67-aef4-4bdc1fc9e5fa",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "fa92b423-bbe5-445f-ac72-d4e4b43a8dae",
+          "card": "7b147a17-97b6-4d72-8f04-5dc5f186b6f0",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "d40e0a59-a558-4026-8bf1-99ab26803a83",
+          "card": "4240c665-ad31-4a0e-9389-e566a2478e1c",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "0a56cc87-0d27-4fcd-a29a-c5d4e8d1cd32",
+          "card": "81710c69-5147-452a-be6d-440ad96fe5cb",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "1513e9ec-9c49-4ab2-b08c-5e48b95d3163",
+          "card": "49d38190-1f50-4068-8ecb-001b2bac1b21",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "7eebba63-9c86-4ec0-a72c-e7a788e7ce3d",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "feefbdeb-491b-4aea-9bc1-709a1e981295",
+          "card": "f738e308-86f0-43d9-87fc-61c727e8b40a",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "4607e0ab-8523-445e-bc87-310216578185",
+          "card": "68234238-75f3-4a37-82da-62db7defd8c1",
+          "suffix": "021",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//a/a8/SSD1-DeckKR.png",
+      "cards": [
+        {
+          "id": "dc307583-8eac-4ddb-829f-50866d00a19c",
+          "card": "4488c4e8-3dfc-4cd9-b5e8-43ad62980925",
+          "suffix": "001",
+          "rarity": "common"
+        },
+        {
+          "id": "e9f5b687-babf-4065-ad22-b93a9d5a1f6d",
+          "card": "5279aa6e-af78-4b0d-86dc-29b9a0a0089e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "319e00df-76c4-44b7-9b2f-54d267b74317",
+          "card": "971c1b3b-1360-43c5-80c6-1a2c76511a53",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "2418e965-8822-4a75-a8a7-b7edafccddc6",
+          "card": "ca099528-5bca-410b-a44d-220befb2d3df",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "6226d874-ac74-4511-a347-c73d4d8739f1",
+          "card": "82693da4-64bb-4004-85ba-74177e37bf6f",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "b169e398-ec9c-4736-8f07-478d13ebb787",
+          "card": "9615cd6a-5669-4307-a7d2-e4134866cee1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "d4339149-d76f-4066-b5ad-b7078a0ede18",
+          "card": "08dd85a8-5015-44ed-ade2-548b4cbc686a",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "8473c45f-fed6-49b5-9c35-c6ce9ddee624",
+          "card": "28c39720-3492-4c90-a29d-35277f3e35ef",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "65352157-fa1a-4dd5-8739-1f83b8562c54",
+          "card": "796cbe73-cb0d-4561-abc3-889793116607",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "63cacd92-4ad4-47e5-9c11-abf4bb0e6ff2",
+          "card": "7fbc81c5-7d85-439c-9d23-5c3be08d5a6f",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "128d4a8d-9c86-4fc5-84ee-26d4c4c78335",
+          "card": "040f08dc-f50f-41a0-9f8f-389483be8bb1",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "4addb7f7-1e31-49b3-9f6a-b543b2f1b316",
+          "card": "aefa41bc-3776-46c9-87c5-41f5a92529ac",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "18c58fbe-4b02-457f-9627-13b1815df1f9",
+          "card": "02f628c0-c366-46bb-9fc3-b33169823102",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "996e93b1-f862-4a72-bf52-b89b43dfd7a9",
+          "card": "baa316bc-33d1-4d67-aef4-4bdc1fc9e5fa",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "fa92b423-bbe5-445f-ac72-d4e4b43a8dae",
+          "card": "7b147a17-97b6-4d72-8f04-5dc5f186b6f0",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "d40e0a59-a558-4026-8bf1-99ab26803a83",
+          "card": "4240c665-ad31-4a0e-9389-e566a2478e1c",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "0a56cc87-0d27-4fcd-a29a-c5d4e8d1cd32",
+          "card": "81710c69-5147-452a-be6d-440ad96fe5cb",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "1513e9ec-9c49-4ab2-b08c-5e48b95d3163",
+          "card": "49d38190-1f50-4068-8ecb-001b2bac1b21",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "7eebba63-9c86-4ec0-a72c-e7a788e7ce3d",
+          "card": "ef99d113-5aa4-4781-90de-4a516972179d",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "feefbdeb-491b-4aea-9bc1-709a1e981295",
+          "card": "f738e308-86f0-43d9-87fc-61c727e8b40a",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "4607e0ab-8523-445e-bc87-310216578185",
+          "card": "68234238-75f3-4a37-82da-62db7defd8c1",
+          "suffix": "021",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Speed Start Deck: Link Edition",
+      "id": 584739
+    }
+  }
+}

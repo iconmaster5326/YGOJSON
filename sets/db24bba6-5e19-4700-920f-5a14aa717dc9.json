@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "db24bba6-5e19-4700-920f-5a14aa717dc9",
+  "name": {
+    "en": "Yu-Gi-Oh! ARC-V Volume 5",
+    "ja": "\u904a\u622f\u738b\uff21\uff32\uff23\uff0d\u2164 \u7b2c\uff15\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YA05-EN",
+      "image": "https://ms.yugipedia.com//3/3e/YA05-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "9b5c10f7-4ab6-4a77-abba-795f1c67950d": "https://ms.yugipedia.com//archive/0/0c/20190628143443%21OddEyesPhantasmaDragon-YA05-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "9b5c10f7-4ab6-4a77-abba-795f1c67950d": {
+            "image": "https://ms.yugipedia.com//archive/0/0c/20190628143443%21OddEyesPhantasmaDragon-YA05-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111115001
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YA05-JP",
+      "date": "2018-04-04",
+      "image": "https://ms.yugipedia.com//9/9d/YA05-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "9b5c10f7-4ab6-4a77-abba-795f1c67950d": "https://ms.yugipedia.com//0/0b/OddEyesPhantasmaDragon-YA05-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "9b5c10f7-4ab6-4a77-abba-795f1c67950d": {
+            "image": "https://ms.yugipedia.com//0/0b/OddEyesPhantasmaDragon-YA05-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121220000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3e/YA05-PromoEN.png",
+      "cards": [
+        {
+          "id": "9b5c10f7-4ab6-4a77-abba-795f1c67950d",
+          "card": "01bdd57f-cd02-4400-ac39-4525760fe677",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/9d/YA05-PromoJP.png",
+      "cards": [
+        {
+          "id": "9b5c10f7-4ab6-4a77-abba-795f1c67950d",
+          "card": "01bdd57f-cd02-4400-ac39-4525760fe677",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! ARC-V Volume 5 promotional card",
+      "id": 555317
+    }
+  }
+}

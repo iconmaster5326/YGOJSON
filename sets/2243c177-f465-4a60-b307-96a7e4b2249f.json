@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "2243c177-f465-4a60-b307-96a7e4b2249f",
+  "name": {
+    "en": "Yu-Gi-Oh! GX Volume 3",
+    "ja": "\u904a\u622f\u738b\uff27\uff38 \u7b2c\uff13\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YG03-EN",
+      "date": "2009-06-02",
+      "image": "https://ms.yugipedia.com//c/c2/YG03-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "d43a89d9-8cc3-4418-8b57-4c900287cdb8": "https://ms.yugipedia.com//2/26/WingedKuribohLV9-YG03-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "d43a89d9-8cc3-4418-8b57-4c900287cdb8": {
+            "image": "https://ms.yugipedia.com//2/26/WingedKuribohLV9-YG03-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          161601264
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YG03-JP",
+      "date": "2008-05-02",
+      "image": "https://ms.yugipedia.com//1/19/YG03-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "d43a89d9-8cc3-4418-8b57-4c900287cdb8": "https://ms.yugipedia.com//a/af/WingedKuribohLV9-YG03-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "d43a89d9-8cc3-4418-8b57-4c900287cdb8": {
+            "image": "https://ms.yugipedia.com//a/af/WingedKuribohLV9-YG03-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121210002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c2/YG03-PromoEN.png",
+      "cards": [
+        {
+          "id": "d43a89d9-8cc3-4418-8b57-4c900287cdb8",
+          "card": "4a6c4390-c82f-4088-ad7e-c97476e56820",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//1/19/YG03-PromoJP.png",
+      "cards": [
+        {
+          "id": "d43a89d9-8cc3-4418-8b57-4c900287cdb8",
+          "card": "4a6c4390-c82f-4088-ad7e-c97476e56820",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! GX Volume 3 promotional card",
+      "id": 49017
+    }
+  }
+}

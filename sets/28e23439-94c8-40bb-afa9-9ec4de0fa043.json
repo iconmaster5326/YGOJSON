@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "28e23439-94c8-40bb-afa9-9ec4de0fa043",
+  "name": {
+    "en": "Magician's Force promotional cards",
+    "ko": "\ub9e4\uc9c0\uc158\uc758 \ud798 \ud504\ub85c\ubaa8\uc158 \uce74\ub4dc"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "MFC-KRPR",
+      "date": "2011-10-19",
+      "image": "https://ms.yugipedia.com//d/d5/MFC-PromoKR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "e8d58075-54dc-4dac-a482-3c294b28a060": "https://ms.yugipedia.com//7/7a/MyBodyasaShield-MFC-KR-ScR-UE.png",
+          "c9fc379f-7056-4b05-ba6b-ab7edb77b8b0": "https://ms.yugipedia.com//3/3d/AmazonessChainMaster-MFC-KR-ScR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "e8d58075-54dc-4dac-a482-3c294b28a060": {
+            "image": "https://ms.yugipedia.com//7/7a/MyBodyasaShield-MFC-KR-ScR-UE.png"
+          },
+          "c9fc379f-7056-4b05-ba6b-ab7edb77b8b0": {
+            "image": "https://ms.yugipedia.com//3/3d/AmazonessChainMaster-MFC-KR-ScR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010000994000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d5/MFC-PromoKR.jpg",
+      "cards": [
+        {
+          "id": "e8d58075-54dc-4dac-a482-3c294b28a060",
+          "card": "c299e8bf-eec7-4557-bfa9-66356415f635",
+          "suffix": "1",
+          "rarity": "secret"
+        },
+        {
+          "id": "c9fc379f-7056-4b05-ba6b-ab7edb77b8b0",
+          "card": "e09d1bf3-9eb8-4279-b20b-7a10a103d33e",
+          "suffix": "2",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Magician's Force promotional cards",
+      "id": 304566
+    }
+  }
+}

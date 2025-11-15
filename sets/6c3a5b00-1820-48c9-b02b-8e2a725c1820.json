@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "6c3a5b00-1820-48c9-b02b-8e2a725c1820",
+  "name": {
+    "en": "Structure Deck: Deluxe Edition"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "SD",
+      "image": "https://ms.yugipedia.com//8/88/SD-PromoEN.jpg",
+      "cardImages": {
+        "limited": {
+          "f81f99b1-9bfa-4b2f-afc8-05b69bc694d5": "https://ms.yugipedia.com//3/39/ArmedDragonLV7-SD1-EN-ScR-LE.jpg",
+          "41fea963-4001-487c-bfbb-db9d0c62214b": "https://ms.yugipedia.com//6/68/RopeofLife-SD2-EN-ScR-LE.jpg"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "f81f99b1-9bfa-4b2f-afc8-05b69bc694d5": {
+            "image": "https://ms.yugipedia.com//3/39/ArmedDragonLV7-SD1-EN-ScR-LE.jpg"
+          },
+          "41fea963-4001-487c-bfbb-db9d0c62214b": {
+            "image": "https://ms.yugipedia.com//6/68/RopeofLife-SD2-EN-ScR-LE.jpg"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//8/88/SD-PromoEN.jpg",
+      "cards": [
+        {
+          "id": "f81f99b1-9bfa-4b2f-afc8-05b69bc694d5",
+          "card": "f81de953-21b6-4c68-bfea-aa9e475cd241",
+          "suffix": "1-ENDE1",
+          "rarity": "secret"
+        },
+        {
+          "id": "41fea963-4001-487c-bfbb-db9d0c62214b",
+          "card": "28e99b9d-9ecc-4576-83fd-82cb36a71ac7",
+          "suffix": "2-ENDE1",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Structure Deck: Deluxe Edition",
+      "id": 144118
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "69a91f25-201b-440f-b295-ed9665aa5fb0",
+  "name": {
+    "en": "Yu-Gi-Oh! World Championship 2010 prize cards"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "2010-EN",
+      "date": "2010-08-15",
+      "cardImages": {
+        "unlimited": {
+          "20a8a62e-3567-4461-9215-9438bd2c2af5": "https://ms.yugipedia.com//7/7c/StardustDivinity-2010-EN-UR-UE.png",
+          "a5dfc1f3-5988-4dc2-b110-455a8eccb461": "https://ms.yugipedia.com//0/08/GrizzlytheRedStarBeast-2010-EN-UR-UE.jpg"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "a5dfc1f3-5988-4dc2-b110-455a8eccb461": {
+            "image": "https://ms.yugipedia.com//0/08/GrizzlytheRedStarBeast-2010-EN-UR-UE.jpg"
+          },
+          "20a8a62e-3567-4461-9215-9438bd2c2af5": {
+            "image": "https://ms.yugipedia.com//7/7c/StardustDivinity-2010-EN-UR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121209008
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "2010-AE",
+      "date": "2010-08-15",
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cardImages": {
+        "unlimited": {
+          "d340e0b9-745a-4f39-ae50-3b9de6e67d5a": "https://ms.yugipedia.com//4/49/AggibatheMalevolentShnnSyo-2010-AE-SR-UE-RP.jpg"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "d340e0b9-745a-4f39-ae50-3b9de6e67d5a": {
+            "image": "https://ms.yugipedia.com//4/49/AggibatheMalevolentShnnSyo-2010-AE-SR-UE-RP.jpg"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          131312002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "20a8a62e-3567-4461-9215-9438bd2c2af5",
+          "card": "74fd852f-d0f0-4207-919b-d0bb4d92ef7a",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "a5dfc1f3-5988-4dc2-b110-455a8eccb461",
+          "card": "cc3aea98-392e-4f4e-a895-211da51e260c",
+          "suffix": "002",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cards": [
+        {
+          "id": "d340e0b9-745a-4f39-ae50-3b9de6e67d5a",
+          "card": "9bdaa527-489a-47a6-b3dd-ca254e49fd61",
+          "suffix": "003",
+          "rarity": "super",
+          "replica": true
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! World Championship 2010 prize cards",
+      "id": 332080
+    }
+  }
+}

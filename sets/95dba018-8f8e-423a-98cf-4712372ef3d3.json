@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "95dba018-8f8e-423a-98cf-4712372ef3d3",
+  "name": {
+    "en": "Invasion of Chaos promotional cards",
+    "ko": "\ud63c\ub3c8\uc758 \uc9c0\ubc30 \ud504\ub85c\ubaa8\uc158 \uce74\ub4dc"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "IOC-KRPR",
+      "date": "2011-12-16",
+      "image": "https://ms.yugipedia.com//9/92/IOC-PromoKR.png",
+      "cardImages": {
+        "unlimited": {
+          "0671e050-dd7e-40ae-9ea6-1105234aba45": "https://ms.yugipedia.com//3/3b/MysticalRefpanel-IOC-KR-ScR-UE.png",
+          "b42a6670-1b5d-47e2-b769-d42d77a4f61c": "https://ms.yugipedia.com//a/ad/CompulsoryEvacuationDevice-IOC-KR-ScR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "b42a6670-1b5d-47e2-b769-d42d77a4f61c": {
+            "image": "https://ms.yugipedia.com//a/ad/CompulsoryEvacuationDevice-IOC-KR-ScR-UE.png"
+          },
+          "0671e050-dd7e-40ae-9ea6-1105234aba45": {
+            "image": "https://ms.yugipedia.com//3/3b/MysticalRefpanel-IOC-KR-ScR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010000993000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/92/IOC-PromoKR.png",
+      "cards": [
+        {
+          "id": "0671e050-dd7e-40ae-9ea6-1105234aba45",
+          "card": "c50e43a3-856b-42a1-a358-2a6a089dbc92",
+          "suffix": "1",
+          "rarity": "secret"
+        },
+        {
+          "id": "b42a6670-1b5d-47e2-b769-d42d77a4f61c",
+          "card": "a24c6422-09bb-4aac-9aa2-ba56baa5fa77",
+          "suffix": "2",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Invasion of Chaos promotional cards",
+      "id": 304583
+    }
+  }
+}

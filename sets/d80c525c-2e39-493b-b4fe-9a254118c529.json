@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "d80c525c-2e39-493b-b4fe-9a254118c529",
+  "name": {
+    "en": "Yu-Gi-Oh! 5D's Volume 5",
+    "ja": "\u904a\u622f\u738b\uff15\uff24\uff07\uff53 \u7b2c\uff15\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YF05-EN",
+      "image": "https://ms.yugipedia.com//0/0d/YF05-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "605c426d-e6cd-409f-954c-902907d0cc87": "https://ms.yugipedia.com//0/05/StardustSparkDragon-YF05-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "605c426d-e6cd-409f-954c-902907d0cc87": {
+            "image": "https://ms.yugipedia.com//0/05/StardustSparkDragon-YF05-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111109005
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YF05-JP",
+      "date": "2013-01-04",
+      "image": "https://ms.yugipedia.com//c/c7/YF05-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "605c426d-e6cd-409f-954c-902907d0cc87": "https://ms.yugipedia.com//b/b7/StardustSparkDragon-YF05-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "605c426d-e6cd-409f-954c-902907d0cc87": {
+            "image": "https://ms.yugipedia.com//b/b7/StardustSparkDragon-YF05-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121214014
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//0/0d/YF05-PromoEN.png",
+      "cards": [
+        {
+          "id": "605c426d-e6cd-409f-954c-902907d0cc87",
+          "card": "2531e10f-b4dc-4b07-8d45-51a6024398db",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c7/YF05-PromoJP.png",
+      "cards": [
+        {
+          "id": "605c426d-e6cd-409f-954c-902907d0cc87",
+          "card": "2531e10f-b4dc-4b07-8d45-51a6024398db",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! 5D's Volume 5 promotional card",
+      "id": 249582
+    }
+  }
+}

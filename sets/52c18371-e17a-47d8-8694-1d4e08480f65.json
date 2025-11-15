@@ -1,0 +1,161 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "52c18371-e17a-47d8-8694-1d4e08480f65",
+  "name": {
+    "en": "Yu-Gi-Oh! GX Volume 4",
+    "fr": "Yu-Gi-Oh ! GX, Tome 4",
+    "ja": "\u904a\u622f\u738b\uff27\uff38 \u7b2c\uff14\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YG04-EN",
+      "image": "https://ms.yugipedia.com//c/ca/YG04-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "e48c4dcd-bb6c-43bf-af83-030a31122e8c": "https://ms.yugipedia.com//c/cc/ElementalHEROAbsoluteZero-YG04-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "e48c4dcd-bb6c-43bf-af83-030a31122e8c": {
+            "image": "https://ms.yugipedia.com//c/cc/ElementalHEROAbsoluteZero-YG04-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111106001
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "YG04-FR",
+      "date": "2009-10-02",
+      "image": "https://ms.yugipedia.com//c/c7/YG04-PromoFR.png",
+      "cardImages": {
+        "limited": {}
+      },
+      "cardInfo": {
+        "limited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YG04-JP",
+      "date": "2008-11-04",
+      "image": "https://ms.yugipedia.com//3/35/YG04-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "e48c4dcd-bb6c-43bf-af83-030a31122e8c": "https://ms.yugipedia.com//2/25/ElementalHEROAbsoluteZero-YG04-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "e48c4dcd-bb6c-43bf-af83-030a31122e8c": {
+            "image": "https://ms.yugipedia.com//2/25/ElementalHEROAbsoluteZero-YG04-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121210010
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//c/ca/YG04-PromoEN.png",
+      "cards": [
+        {
+          "id": "e48c4dcd-bb6c-43bf-af83-030a31122e8c",
+          "card": "d277c047-d4da-45de-8c98-ef928a75a837",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//c/c7/YG04-PromoFR.png",
+      "cards": [
+        {
+          "id": "e48c4dcd-bb6c-43bf-af83-030a31122e8c",
+          "card": "d277c047-d4da-45de-8c98-ef928a75a837",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/35/YG04-PromoJP.png",
+      "cards": [
+        {
+          "id": "e48c4dcd-bb6c-43bf-af83-030a31122e8c",
+          "card": "d277c047-d4da-45de-8c98-ef928a75a837",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! GX Volume 4 promotional card",
+      "id": 49036
+    }
+  }
+}

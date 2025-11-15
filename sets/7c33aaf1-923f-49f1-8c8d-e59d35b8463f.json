@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "7c33aaf1-923f-49f1-8c8d-e59d35b8463f",
+  "name": {
+    "en": "Yu-Gi-Oh! World Championship 2009 prize cards"
+  },
+  "locales": {
+    "ae": {
+      "language": "ae",
+      "prefix": "WCPS-AE",
+      "date": "2009-08-09",
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cardImages": {
+        "unlimited": {
+          "5d642dbe-31a1-47cb-b869-7777074cfd76": "https://ms.yugipedia.com//c/cf/TyrtheVanquishingWarlord-WCPS-AE-SR-UE-RP.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "5d642dbe-31a1-47cb-b869-7777074cfd76": {
+            "image": "https://ms.yugipedia.com//c/cf/TyrtheVanquishingWarlord-WCPS-AE-SR-UE-RP.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          131311002
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "WCPS-EN",
+      "date": "2009-08-09",
+      "cardImages": {
+        "unlimited": {
+          "b00191af-4d48-41a2-844c-964656d8a435": "https://ms.yugipedia.com//2/2f/AggibatheMalevolentShnnSyo-WCPS-EN-UR-UE.png",
+          "77b3eb9d-a50a-4411-92f8-1d059aa546f9": "https://ms.yugipedia.com//9/90/SkunatheLeonineRakan-WCPS-EN-UR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "77b3eb9d-a50a-4411-92f8-1d059aa546f9": {
+            "image": "https://ms.yugipedia.com//9/90/SkunatheLeonineRakan-WCPS-EN-UR-UE.png"
+          },
+          "b00191af-4d48-41a2-844c-964656d8a435": {
+            "image": "https://ms.yugipedia.com//2/2f/AggibatheMalevolentShnnSyo-WCPS-EN-UR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121208005
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cards": [
+        {
+          "id": "5d642dbe-31a1-47cb-b869-7777074cfd76",
+          "card": "381fe370-89b2-44a1-88bc-4daa60d43542",
+          "suffix": "903",
+          "rarity": "super",
+          "replica": true
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "b00191af-4d48-41a2-844c-964656d8a435",
+          "card": "9bdaa527-489a-47a6-b3dd-ca254e49fd61",
+          "suffix": "901",
+          "rarity": "ultra"
+        },
+        {
+          "id": "77b3eb9d-a50a-4411-92f8-1d059aa546f9",
+          "card": "e68445d1-dbe9-44bf-8955-83b008f43713",
+          "suffix": "902",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! World Championship 2009 prize cards",
+      "id": 332064
+    }
+  }
+}

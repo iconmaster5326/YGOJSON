@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "534b2f73-b7c5-4f9a-b685-cb7e252b8904",
+  "name": {
+    "en": "Yu-Gi-Oh! GX Volume 9",
+    "ja": "\u904a\u622f\u738b\uff27\uff38 \u7b2c\uff19\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YG09-EN",
+      "date": "2012-08-07",
+      "image": "https://ms.yugipedia.com//1/1d/YG09-PromoEN.png",
+      "cardImages": {
+        "limited": {}
+      },
+      "cardInfo": {
+        "limited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111108007
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YG09-JP",
+      "date": "2011-06-03",
+      "image": "https://ms.yugipedia.com//8/8f/YG09-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "32d74e7c-0c6e-49fd-a318-7d201650509c": "https://ms.yugipedia.com//d/dc/ElementalHEROEscuridao-YG09-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "32d74e7c-0c6e-49fd-a318-7d201650509c": {
+            "image": "https://ms.yugipedia.com//d/dc/ElementalHEROEscuridao-YG09-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121213004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//1/1d/YG09-PromoEN.png",
+      "cards": [
+        {
+          "id": "32d74e7c-0c6e-49fd-a318-7d201650509c",
+          "card": "e1837945-8dc9-4bf0-b537-f85c759c658a",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//8/8f/YG09-PromoJP.png",
+      "cards": [
+        {
+          "id": "32d74e7c-0c6e-49fd-a318-7d201650509c",
+          "card": "e1837945-8dc9-4bf0-b537-f85c759c658a",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! GX Volume 9 promotional card",
+      "id": 163370
+    }
+  }
+}

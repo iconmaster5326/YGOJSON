@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "2846d681-0ada-4183-83c1-0445ecbe7e4a",
+  "name": {
+    "en": "Yu-Gi-Oh! 5D's Volume 2",
+    "ja": "\u904a\u622f\u738b\uff15\uff24\uff07\uff53 \u7b2c\uff12\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YF02-EN",
+      "date": "2012-02-07",
+      "image": "https://ms.yugipedia.com//c/ca/YF02-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "378f1706-8b6e-494e-9bf4-4a2d612d68d9": "https://ms.yugipedia.com//b/b0/CatapultWarrior-YF02-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "378f1706-8b6e-494e-9bf4-4a2d612d68d9": {
+            "image": "https://ms.yugipedia.com//b/b0/CatapultWarrior-YF02-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111108002
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YF02-JP",
+      "date": "2010-12-29",
+      "image": "https://ms.yugipedia.com//2/25/YF02-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "378f1706-8b6e-494e-9bf4-4a2d612d68d9": "https://ms.yugipedia.com//e/ef/CatapultWarrior-YF02-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "378f1706-8b6e-494e-9bf4-4a2d612d68d9": {
+            "image": "https://ms.yugipedia.com//e/ef/CatapultWarrior-YF02-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121212016
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//c/ca/YF02-PromoEN.png",
+      "cards": [
+        {
+          "id": "378f1706-8b6e-494e-9bf4-4a2d612d68d9",
+          "card": "298aa21b-32f2-42a0-b866-8f155d54ea6a",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/25/YF02-PromoJP.png",
+      "cards": [
+        {
+          "id": "378f1706-8b6e-494e-9bf4-4a2d612d68d9",
+          "card": "298aa21b-32f2-42a0-b866-8f155d54ea6a",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! 5D's Volume 2 promotional card",
+      "id": 156658
+    }
+  }
+}

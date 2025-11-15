@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "00b6c9fc-caa3-4803-a5bc-98c416e980dc",
+  "name": {
+    "en": "Yu-Gi-Oh! The Eternal Duelist Soul Bundles"
+  },
+  "locales": {
+    "na": {
+      "language": "en",
+      "prefix": "EDS-",
+      "date": "2002-10-15",
+      "image": "https://ms.yugipedia.com//3/3d/EDS-VideoGame-NA.jpg",
+      "cardImages": {
+        "unlimited": {
+          "3de3e28c-fd2d-49ac-bd54-92599377f26e": "https://ms.yugipedia.com//9/9b/Exchange-EDS-NA-PScR-UE.png",
+          "681d44aa-40f4-4f16-8960-8c2728598e67": "https://ms.yugipedia.com//5/50/GracefulDice-EDS-NA-PScR-UE.png",
+          "755b3950-ba43-40a6-8d3f-18106d0b1c39": "https://ms.yugipedia.com//5/52/SkullDice-EDS-NA-PScR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "755b3950-ba43-40a6-8d3f-18106d0b1c39": {
+            "image": "https://ms.yugipedia.com//5/52/SkullDice-EDS-NA-PScR-UE.png"
+          },
+          "681d44aa-40f4-4f16-8960-8c2728598e67": {
+            "image": "https://ms.yugipedia.com//5/50/GracefulDice-EDS-NA-PScR-UE.png"
+          },
+          "3de3e28c-fd2d-49ac-bd54-92599377f26e": {
+            "image": "https://ms.yugipedia.com//9/9b/Exchange-EDS-NA-PScR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1141401002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "na"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3d/EDS-VideoGame-NA.jpg",
+      "cards": [
+        {
+          "id": "3de3e28c-fd2d-49ac-bd54-92599377f26e",
+          "card": "f3ce6c9d-d001-40b0-af2e-17531efa6892",
+          "suffix": "001",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "681d44aa-40f4-4f16-8960-8c2728598e67",
+          "card": "9420e8b8-8a28-4012-a19b-ac2dc9036bbd",
+          "suffix": "002",
+          "rarity": "prismaticsecret"
+        },
+        {
+          "id": "755b3950-ba43-40a6-8d3f-18106d0b1c39",
+          "card": "987bcbdb-bb75-4b06-86af-94954b242128",
+          "suffix": "003",
+          "rarity": "prismaticsecret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! The Eternal Duelist Soul promotional cards",
+      "id": 2028
+    }
+  }
+}

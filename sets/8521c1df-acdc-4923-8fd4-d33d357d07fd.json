@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "8521c1df-acdc-4923-8fd4-d33d357d07fd",
+  "name": {
+    "en": "Yu-Gi-Oh! Championship Series 2015"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YCSW-EN",
+      "image": "https://ms.yugipedia.com//e/e7/YCSW-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "187ee525-5865-4704-902b-346e110744a0": "https://ms.yugipedia.com//a/a1/MinervatheExaltedLightsworn-YCSW-EN-SR-LE.png",
+          "afb67db6-3e36-43df-88f7-e35b12ee1155": "https://ms.yugipedia.com//f/fa/MinervatheExaltedLightsworn-YCSW-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "afb67db6-3e36-43df-88f7-e35b12ee1155": {
+            "image": "https://ms.yugipedia.com//f/fa/MinervatheExaltedLightsworn-YCSW-EN-UR-LE.png"
+          },
+          "187ee525-5865-4704-902b-346e110744a0": {
+            "image": "https://ms.yugipedia.com//a/a1/MinervatheExaltedLightsworn-YCSW-EN-SR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121214005
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e7/YCSW-PromoEN.png",
+      "cards": [
+        {
+          "id": "187ee525-5865-4704-902b-346e110744a0",
+          "card": "8a41c75d-f21b-4b98-9e8b-dcdcf9c782df",
+          "suffix": "008",
+          "rarity": "super"
+        },
+        {
+          "id": "afb67db6-3e36-43df-88f7-e35b12ee1155",
+          "card": "8a41c75d-f21b-4b98-9e8b-dcdcf9c782df",
+          "suffix": "008",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! Championship Series 2015 Prize Card",
+      "id": 416026
+    }
+  }
+}

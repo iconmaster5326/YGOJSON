@@ -1,0 +1,3725 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "b35a3a20-dbdc-4380-bf7f-aaeaf08c12d7",
+  "name": {
+    "en": "Starter Deck Yugi - Reloaded",
+    "fr": "Deck de D\u00e9marrage - Yugi Revient",
+    "de": "Starter Deck - Yugi Reloaded",
+    "it": "Starter Deck Yugi - Il Ritorno",
+    "pt": "Deck Inicial - Yugi Reloaded",
+    "es": "La Baraja de Principiante Yugi - Vuelve"
+  },
+  "locales": {
+    "pt": {
+      "language": "pt",
+      "prefix": "YSYR-PT",
+      "date": "2013-12-06",
+      "image": "https://ms.yugipedia.com//1/1d/YSYR-DeckPT.png",
+      "cardImages": {
+        "1st": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//6/69/DarkMagician-YSYR-PT-UtR-1E.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//4/4c/DarkMagician-YSYR-PT-C-1E.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//b/b6/MysticalElf-YSYR-PT-C-1E.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//2/23/GiantSoldierofStone-YSYR-PT-C-1E.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//6/60/SummonedSkull-YSYR-PT-C-1E.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//d/db/NeotheMagicSwordsman-YSYR-PT-C-1E.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//3/3a/GeminiElf-YSYR-PT-C-1E.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//f/f9/DarkBlade-YSYR-PT-C-1E.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//9/9e/Kuriboh-YSYR-PT-C-1E.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//7/7b/BusterBlader-YSYR-PT-C-1E.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//3/36/4StarredLadybugofDoom-YSYR-PT-C-1E.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//6/6d/DarkMagicianGirl-YSYR-PT-C-1E.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//6/68/SkilledWhiteMagician-YSYR-PT-C-1E.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//b/bb/SkilledDarkMagician-YSYR-PT-C-1E.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//6/6c/OldVindictiveMagician-YSYR-PT-C-1E.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//c/c2/BreakertheMagicalWarrior-YSYR-PT-C-1E.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//f/f0/DoubleCoston-YSYR-PT-C-1E.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//9/9a/SilentSwordsmanLV3-YSYR-PT-C-1E.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//1/11/SilentSwordsmanLV5-YSYR-PT-C-1E.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//9/97/GreenGadget-YSYR-PT-C-1E.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//7/72/RedGadget-YSYR-PT-C-1E.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//7/78/YellowGadget-YSYR-PT-C-1E.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//7/73/ElectricVirus-YSYR-PT-C-1E.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//e/e5/MagiciansValkyria-YSYR-PT-C-1E.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//6/65/TheTricky-YSYR-PT-C-1E.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//e/e7/DarkHole-YSYR-PT-C-1E.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//6/64/SwordsofRevealingLight-YSYR-PT-C-1E.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//9/98/BlackPendant-YSYR-PT-C-1E.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//0/0a/MysticalSpaceTyphoon-YSYR-PT-C-1E.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//7/73/MagePower-YSYR-PT-C-1E.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//0/06/BookofMoon-YSYR-PT-C-1E.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//3/35/ThousandKnives-YSYR-PT-C-1E.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//3/35/DarkMagicAttack-YSYR-PT-C-1E.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//d/d2/MagicalDimension-YSYR-PT-C-1E.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//2/21/AncientRules-YSYR-PT-C-1E.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//6/67/MagiciansUnite-YSYR-PT-C-1E.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//1/1d/SoulTaker-YSYR-PT-C-1E.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//2/23/ShardofGreed-YSYR-PT-C-1E.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//a/a9/TrapHole-YSYR-PT-C-1E.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//c/c0/Waboku-YSYR-PT-C-1E.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//4/47/MirrorForce-YSYR-PT-C-1E.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//4/45/SpellbindingCircle-YSYR-PT-C-1E.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//f/f1/CalloftheHaunted-YSYR-PT-C-1E.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//8/88/MagicCylinder-YSYR-PT-C-1E.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//3/33/MiracleRestoring-YSYR-PT-C-1E.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//5/58/ZeroGravity-YSYR-PT-C-1E.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//8/8d/RisingEnergy-YSYR-PT-C-1E.png"
+        }
+      },
+      "cardInfo": {
+        "1st": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//e/e7/DarkHole-YSYR-PT-C-1E.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//6/60/SummonedSkull-YSYR-PT-C-1E.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//8/8d/RisingEnergy-YSYR-PT-C-1E.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//6/64/SwordsofRevealingLight-YSYR-PT-C-1E.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//d/db/NeotheMagicSwordsman-YSYR-PT-C-1E.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//9/98/BlackPendant-YSYR-PT-C-1E.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//3/3a/GeminiElf-YSYR-PT-C-1E.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//0/0a/MysticalSpaceTyphoon-YSYR-PT-C-1E.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//f/f9/DarkBlade-YSYR-PT-C-1E.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//7/73/MagePower-YSYR-PT-C-1E.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//9/9e/Kuriboh-YSYR-PT-C-1E.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//0/06/BookofMoon-YSYR-PT-C-1E.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//7/7b/BusterBlader-YSYR-PT-C-1E.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//3/35/ThousandKnives-YSYR-PT-C-1E.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//3/36/4StarredLadybugofDoom-YSYR-PT-C-1E.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//3/35/DarkMagicAttack-YSYR-PT-C-1E.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//6/6d/DarkMagicianGirl-YSYR-PT-C-1E.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//3/33/MiracleRestoring-YSYR-PT-C-1E.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//d/d2/MagicalDimension-YSYR-PT-C-1E.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//6/68/SkilledWhiteMagician-YSYR-PT-C-1E.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//2/21/AncientRules-YSYR-PT-C-1E.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//b/bb/SkilledDarkMagician-YSYR-PT-C-1E.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//6/67/MagiciansUnite-YSYR-PT-C-1E.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//6/6c/OldVindictiveMagician-YSYR-PT-C-1E.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//1/1d/SoulTaker-YSYR-PT-C-1E.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//c/c2/BreakertheMagicalWarrior-YSYR-PT-C-1E.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//2/23/ShardofGreed-YSYR-PT-C-1E.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//f/f0/DoubleCoston-YSYR-PT-C-1E.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//5/58/ZeroGravity-YSYR-PT-C-1E.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//a/a9/TrapHole-YSYR-PT-C-1E.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//9/9a/SilentSwordsmanLV3-YSYR-PT-C-1E.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//c/c0/Waboku-YSYR-PT-C-1E.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//1/11/SilentSwordsmanLV5-YSYR-PT-C-1E.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//4/47/MirrorForce-YSYR-PT-C-1E.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//9/97/GreenGadget-YSYR-PT-C-1E.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//4/45/SpellbindingCircle-YSYR-PT-C-1E.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//7/72/RedGadget-YSYR-PT-C-1E.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//6/69/DarkMagician-YSYR-PT-UtR-1E.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//f/f1/CalloftheHaunted-YSYR-PT-C-1E.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//7/78/YellowGadget-YSYR-PT-C-1E.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//4/4c/DarkMagician-YSYR-PT-C-1E.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//8/88/MagicCylinder-YSYR-PT-C-1E.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//7/73/ElectricVirus-YSYR-PT-C-1E.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//b/b6/MysticalElf-YSYR-PT-C-1E.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//e/e5/MagiciansValkyria-YSYR-PT-C-1E.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//2/23/GiantSoldierofStone-YSYR-PT-C-1E.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//6/65/TheTricky-YSYR-PT-C-1E.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13311001
+        ]
+      }
+    },
+    "fr": {
+      "language": "fr",
+      "prefix": "YSYR-FR",
+      "date": "2013-12-05",
+      "image": "https://ms.yugipedia.com//c/ce/YSYR-DeckFR.png",
+      "cardImages": {
+        "unlimited": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//1/16/DarkMagician-YSYR-FR-UtR-UE.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//a/a1/DarkMagician-YSYR-FR-C-UE.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//5/53/MysticalElf-YSYR-FR-C-UE.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//6/6c/GiantSoldierofStone-YSYR-FR-C-UE.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//d/df/SummonedSkull-YSYR-FR-C-UE.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//3/30/NeotheMagicSwordsman-YSYR-FR-C-UE.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//e/e9/GeminiElf-YSYR-FR-C-UE.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//d/d8/DarkBlade-YSYR-FR-C-UE.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//5/53/Kuriboh-YSYR-FR-C-UE.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//8/8d/BusterBlader-YSYR-FR-C-UE.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//2/2c/4StarredLadybugofDoom-YSYR-FR-C-UE.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//8/89/DarkMagicianGirl-YSYR-FR-C-UE.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//f/f6/SkilledWhiteMagician-YSYR-FR-C-UE.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//2/25/SkilledDarkMagician-YSYR-FR-C-UE.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//5/58/OldVindictiveMagician-YSYR-FR-C-UE.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//5/53/BreakertheMagicalWarrior-YSYR-FR-C-UE.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//c/c0/DoubleCoston-YSYR-FR-C-UE.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//8/80/SilentSwordsmanLV3-YSYR-FR-C-UE.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//5/55/SilentSwordsmanLV5-YSYR-FR-C-UE.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//7/7d/GreenGadget-YSYR-FR-C-UE.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//2/23/RedGadget-YSYR-FR-C-UE.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//e/ea/YellowGadget-YSYR-FR-C-UE.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//1/13/ElectricVirus-YSYR-FR-C-UE.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//3/3d/MagiciansValkyria-YSYR-FR-C-UE.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//5/55/TheTricky-YSYR-FR-C-UE.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//1/12/DarkHole-YSYR-FR-C-UE.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//3/32/SwordsofRevealingLight-YSYR-FR-C-UE.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//3/34/BlackPendant-YSYR-FR-C-UE.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//c/ca/MysticalSpaceTyphoon-YSYR-FR-C-UE.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//5/5f/MagePower-YSYR-FR-C-UE.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//d/d4/BookofMoon-YSYR-FR-C-UE.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//d/d7/ThousandKnives-YSYR-FR-C-UE.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//5/51/DarkMagicAttack-YSYR-FR-C-UE.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//e/e8/MagicalDimension-YSYR-FR-C-UE.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//b/bc/AncientRules-YSYR-FR-C-UE.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//e/ea/MagiciansUnite-YSYR-FR-C-UE.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//5/5d/SoulTaker-YSYR-FR-C-UE.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//8/89/ShardofGreed-YSYR-FR-C-UE.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//1/19/TrapHole-YSYR-FR-C-UE.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//6/64/Waboku-YSYR-FR-C-UE.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//4/49/MirrorForce-YSYR-FR-C-UE.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//4/4a/SpellbindingCircle-YSYR-FR-C-UE.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//e/e1/CalloftheHaunted-YSYR-FR-C-UE.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//8/8b/MagicCylinder-YSYR-FR-C-UE.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//8/8b/MiracleRestoring-YSYR-FR-C-UE.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//8/83/ZeroGravity-YSYR-FR-C-UE.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//4/42/RisingEnergy-YSYR-FR-C-UE.png"
+        },
+        "1st": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//9/99/DarkMagician-YSYR-FR-UtR-1E.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//2/29/DarkMagician-YSYR-FR-C-1E.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//7/7d/MysticalElf-YSYR-FR-C-1E.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//c/c3/GiantSoldierofStone-YSYR-FR-C-1E.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//b/b7/SummonedSkull-YSYR-FR-C-1E.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//b/bd/NeotheMagicSwordsman-YSYR-FR-C-1E.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//5/59/GeminiElf-YSYR-FR-C-1E.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//6/68/DarkBlade-YSYR-FR-C-1E.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//b/b8/Kuriboh-YSYR-FR-C-1E.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//4/42/BusterBlader-YSYR-FR-C-1E.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//d/d9/4StarredLadybugofDoom-YSYR-FR-C-1E.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//b/b3/DarkMagicianGirl-YSYR-FR-C-1E.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//f/fb/SkilledWhiteMagician-YSYR-FR-C-1E.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//f/fc/SkilledDarkMagician-YSYR-FR-C-1E.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//c/c4/OldVindictiveMagician-YSYR-FR-C-1E.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//2/27/BreakertheMagicalWarrior-YSYR-FR-C-1E.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//0/0c/DoubleCoston-YSYR-FR-C-1E.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//8/81/SilentSwordsmanLV3-YSYR-FR-C-1E.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//7/77/SilentSwordsmanLV5-YSYR-FR-C-1E.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//5/53/GreenGadget-YSYR-FR-C-1E.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//c/c4/RedGadget-YSYR-FR-C-1E.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//8/8f/YellowGadget-YSYR-FR-C-1E.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//d/de/ElectricVirus-YSYR-FR-C-1E.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//b/b2/MagiciansValkyria-YSYR-FR-C-1E.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//3/36/TheTricky-YSYR-FR-C-1E.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//c/c4/DarkHole-YSYR-FR-C-1E.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//9/95/SwordsofRevealingLight-YSYR-FR-C-1E.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//0/0e/BlackPendant-YSYR-FR-C-1E.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//0/00/MysticalSpaceTyphoon-YSYR-FR-C-1E.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//d/d6/MagePower-YSYR-FR-C-1E.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//a/a4/BookofMoon-YSYR-FR-C-1E.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//7/70/ThousandKnives-YSYR-FR-C-1E.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//e/e3/DarkMagicAttack-YSYR-FR-C-1E.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//0/0d/MagicalDimension-YSYR-FR-C-1E.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//b/bd/AncientRules-YSYR-FR-C-1E.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//c/c6/MagiciansUnite-YSYR-FR-C-1E.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//e/e9/SoulTaker-YSYR-FR-C-1E.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//b/b2/ShardofGreed-YSYR-FR-C-1E.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//c/c4/TrapHole-YSYR-FR-C-1E.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//8/85/Waboku-YSYR-FR-C-1E.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//9/9f/MirrorForce-YSYR-FR-C-1E.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//8/84/SpellbindingCircle-YSYR-FR-C-1E.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//7/77/CalloftheHaunted-YSYR-FR-C-1E.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//b/b6/MagicCylinder-YSYR-FR-C-1E.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//b/b0/MiracleRestoring-YSYR-FR-C-1E.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//1/15/ZeroGravity-YSYR-FR-C-1E.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//9/97/RisingEnergy-YSYR-FR-C-1E.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//1/12/DarkHole-YSYR-FR-C-UE.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//d/df/SummonedSkull-YSYR-FR-C-UE.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//4/42/RisingEnergy-YSYR-FR-C-UE.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//3/32/SwordsofRevealingLight-YSYR-FR-C-UE.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//3/30/NeotheMagicSwordsman-YSYR-FR-C-UE.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//3/34/BlackPendant-YSYR-FR-C-UE.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//e/e9/GeminiElf-YSYR-FR-C-UE.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//c/ca/MysticalSpaceTyphoon-YSYR-FR-C-UE.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//d/d8/DarkBlade-YSYR-FR-C-UE.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//5/5f/MagePower-YSYR-FR-C-UE.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//5/53/Kuriboh-YSYR-FR-C-UE.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//d/d4/BookofMoon-YSYR-FR-C-UE.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//8/8d/BusterBlader-YSYR-FR-C-UE.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//d/d7/ThousandKnives-YSYR-FR-C-UE.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//2/2c/4StarredLadybugofDoom-YSYR-FR-C-UE.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//5/51/DarkMagicAttack-YSYR-FR-C-UE.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//8/89/DarkMagicianGirl-YSYR-FR-C-UE.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//8/8b/MiracleRestoring-YSYR-FR-C-UE.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//e/e8/MagicalDimension-YSYR-FR-C-UE.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//f/f6/SkilledWhiteMagician-YSYR-FR-C-UE.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//b/bc/AncientRules-YSYR-FR-C-UE.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//2/25/SkilledDarkMagician-YSYR-FR-C-UE.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//e/ea/MagiciansUnite-YSYR-FR-C-UE.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//5/58/OldVindictiveMagician-YSYR-FR-C-UE.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//5/5d/SoulTaker-YSYR-FR-C-UE.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//5/53/BreakertheMagicalWarrior-YSYR-FR-C-UE.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//8/89/ShardofGreed-YSYR-FR-C-UE.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//c/c0/DoubleCoston-YSYR-FR-C-UE.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//8/83/ZeroGravity-YSYR-FR-C-UE.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//1/19/TrapHole-YSYR-FR-C-UE.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//8/80/SilentSwordsmanLV3-YSYR-FR-C-UE.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//6/64/Waboku-YSYR-FR-C-UE.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//5/55/SilentSwordsmanLV5-YSYR-FR-C-UE.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//4/49/MirrorForce-YSYR-FR-C-UE.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//7/7d/GreenGadget-YSYR-FR-C-UE.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//4/4a/SpellbindingCircle-YSYR-FR-C-UE.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//2/23/RedGadget-YSYR-FR-C-UE.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//1/16/DarkMagician-YSYR-FR-UtR-UE.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//e/e1/CalloftheHaunted-YSYR-FR-C-UE.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//e/ea/YellowGadget-YSYR-FR-C-UE.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//a/a1/DarkMagician-YSYR-FR-C-UE.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//8/8b/MagicCylinder-YSYR-FR-C-UE.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//1/13/ElectricVirus-YSYR-FR-C-UE.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//5/53/MysticalElf-YSYR-FR-C-UE.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//3/3d/MagiciansValkyria-YSYR-FR-C-UE.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//6/6c/GiantSoldierofStone-YSYR-FR-C-UE.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//5/55/TheTricky-YSYR-FR-C-UE.png"
+          }
+        },
+        "1st": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//c/c4/DarkHole-YSYR-FR-C-1E.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//b/b7/SummonedSkull-YSYR-FR-C-1E.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//9/97/RisingEnergy-YSYR-FR-C-1E.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//9/95/SwordsofRevealingLight-YSYR-FR-C-1E.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//b/bd/NeotheMagicSwordsman-YSYR-FR-C-1E.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//0/0e/BlackPendant-YSYR-FR-C-1E.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//5/59/GeminiElf-YSYR-FR-C-1E.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//0/00/MysticalSpaceTyphoon-YSYR-FR-C-1E.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//6/68/DarkBlade-YSYR-FR-C-1E.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//d/d6/MagePower-YSYR-FR-C-1E.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//b/b8/Kuriboh-YSYR-FR-C-1E.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//a/a4/BookofMoon-YSYR-FR-C-1E.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//4/42/BusterBlader-YSYR-FR-C-1E.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//7/70/ThousandKnives-YSYR-FR-C-1E.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//d/d9/4StarredLadybugofDoom-YSYR-FR-C-1E.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//e/e3/DarkMagicAttack-YSYR-FR-C-1E.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//b/b3/DarkMagicianGirl-YSYR-FR-C-1E.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//b/b0/MiracleRestoring-YSYR-FR-C-1E.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//0/0d/MagicalDimension-YSYR-FR-C-1E.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//f/fb/SkilledWhiteMagician-YSYR-FR-C-1E.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//b/bd/AncientRules-YSYR-FR-C-1E.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//f/fc/SkilledDarkMagician-YSYR-FR-C-1E.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//c/c6/MagiciansUnite-YSYR-FR-C-1E.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//c/c4/OldVindictiveMagician-YSYR-FR-C-1E.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//e/e9/SoulTaker-YSYR-FR-C-1E.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//2/27/BreakertheMagicalWarrior-YSYR-FR-C-1E.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//b/b2/ShardofGreed-YSYR-FR-C-1E.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//0/0c/DoubleCoston-YSYR-FR-C-1E.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//1/15/ZeroGravity-YSYR-FR-C-1E.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//c/c4/TrapHole-YSYR-FR-C-1E.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//8/81/SilentSwordsmanLV3-YSYR-FR-C-1E.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//8/85/Waboku-YSYR-FR-C-1E.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//7/77/SilentSwordsmanLV5-YSYR-FR-C-1E.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//9/9f/MirrorForce-YSYR-FR-C-1E.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//5/53/GreenGadget-YSYR-FR-C-1E.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//8/84/SpellbindingCircle-YSYR-FR-C-1E.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//c/c4/RedGadget-YSYR-FR-C-1E.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//9/99/DarkMagician-YSYR-FR-UtR-1E.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//7/77/CalloftheHaunted-YSYR-FR-C-1E.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//8/8f/YellowGadget-YSYR-FR-C-1E.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//2/29/DarkMagician-YSYR-FR-C-1E.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//b/b6/MagicCylinder-YSYR-FR-C-1E.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//d/de/ElectricVirus-YSYR-FR-C-1E.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//7/7d/MysticalElf-YSYR-FR-C-1E.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//b/b2/MagiciansValkyria-YSYR-FR-C-1E.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//c/c3/GiantSoldierofStone-YSYR-FR-C-1E.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//3/36/TheTricky-YSYR-FR-C-1E.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    },
+    "it": {
+      "language": "it",
+      "prefix": "YSYR-IT",
+      "date": "2013-12-05",
+      "image": "https://ms.yugipedia.com//6/6e/YSYR-DeckIT.png",
+      "cardImages": {
+        "unlimited": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//2/2e/DarkHole-YSYR-IT-C-UE.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//1/1e/MysticalSpaceTyphoon-YSYR-IT-C-UE.png"
+        },
+        "1st": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//d/da/DarkMagician-YSYR-IT-UtR-1E.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//6/61/DarkMagician-YSYR-IT-C-1E.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//d/dc/MysticalElf-YSYR-IT-C-1E.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//5/5a/GiantSoldierofStone-YSYR-IT-C-1E.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//3/3f/SummonedSkull-YSYR-IT-C-1E.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//c/ce/NeotheMagicSwordsman-YSYR-IT-C-1E.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//5/57/GeminiElf-YSYR-IT-C-1E.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//9/91/DarkBlade-YSYR-IT-C-1E.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//9/9a/Kuriboh-YSYR-IT-C-1E.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//9/99/BusterBlader-YSYR-IT-C-1E.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//2/20/4StarredLadybugofDoom-YSYR-IT-C-1E.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//1/1d/DarkMagicianGirl-YSYR-IT-C-1E.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//6/6d/SkilledWhiteMagician-YSYR-IT-C-1E.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//5/5c/SkilledDarkMagician-YSYR-IT-C-1E.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//0/01/OldVindictiveMagician-YSYR-IT-C-1E.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//e/ea/BreakertheMagicalWarrior-YSYR-IT-C-1E.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//e/e6/DoubleCoston-YSYR-IT-C-1E.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//d/d2/SilentSwordsmanLV3-YSYR-IT-C-1E.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//0/08/SilentSwordsmanLV5-YSYR-IT-C-1E.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//9/94/GreenGadget-YSYR-IT-C-1E.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//c/ce/RedGadget-YSYR-IT-C-1E.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//1/12/YellowGadget-YSYR-IT-C-1E.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//1/11/ElectricVirus-YSYR-IT-C-1E.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//f/ff/MagiciansValkyria-YSYR-IT-C-1E.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//3/3f/TheTricky-YSYR-IT-C-1E.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//8/8c/DarkHole-YSYR-IT-C-1E.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//8/8f/SwordsofRevealingLight-YSYR-IT-C-1E.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//a/a2/BlackPendant-YSYR-IT-C-1E.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//7/76/MysticalSpaceTyphoon-YSYR-IT-C-1E.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//1/11/MagePower-YSYR-IT-C-1E.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//0/01/BookofMoon-YSYR-IT-C-1E.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//b/bf/ThousandKnives-YSYR-IT-C-1E.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//6/60/DarkMagicAttack-YSYR-IT-C-1E.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//5/50/MagicalDimension-YSYR-IT-C-1E.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//a/aa/AncientRules-YSYR-IT-C-1E.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//0/0f/MagiciansUnite-YSYR-IT-C-1E.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//e/ee/SoulTaker-YSYR-IT-C-1E.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//e/e7/ShardofGreed-YSYR-IT-C-1E.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//b/b2/TrapHole-YSYR-IT-C-1E.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//4/43/Waboku-YSYR-IT-C-1E.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//2/29/MirrorForce-YSYR-IT-C-1E.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//5/5d/SpellbindingCircle-YSYR-IT-C-1E.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//d/d8/CalloftheHaunted-YSYR-IT-C-1E.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//5/51/MagicCylinder-YSYR-IT-C-1E.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//2/2e/MiracleRestoring-YSYR-IT-C-1E.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//8/8a/ZeroGravity-YSYR-IT-C-1E.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//4/40/RisingEnergy-YSYR-IT-C-1E.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//2/2e/DarkHole-YSYR-IT-C-UE.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//1/1e/MysticalSpaceTyphoon-YSYR-IT-C-UE.png"
+          }
+        },
+        "1st": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//8/8c/DarkHole-YSYR-IT-C-1E.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//3/3f/SummonedSkull-YSYR-IT-C-1E.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//4/40/RisingEnergy-YSYR-IT-C-1E.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//8/8f/SwordsofRevealingLight-YSYR-IT-C-1E.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//c/ce/NeotheMagicSwordsman-YSYR-IT-C-1E.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//a/a2/BlackPendant-YSYR-IT-C-1E.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//5/57/GeminiElf-YSYR-IT-C-1E.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//7/76/MysticalSpaceTyphoon-YSYR-IT-C-1E.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//9/91/DarkBlade-YSYR-IT-C-1E.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//1/11/MagePower-YSYR-IT-C-1E.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//9/9a/Kuriboh-YSYR-IT-C-1E.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//0/01/BookofMoon-YSYR-IT-C-1E.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//9/99/BusterBlader-YSYR-IT-C-1E.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//b/bf/ThousandKnives-YSYR-IT-C-1E.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//2/20/4StarredLadybugofDoom-YSYR-IT-C-1E.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//6/60/DarkMagicAttack-YSYR-IT-C-1E.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//1/1d/DarkMagicianGirl-YSYR-IT-C-1E.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//2/2e/MiracleRestoring-YSYR-IT-C-1E.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//5/50/MagicalDimension-YSYR-IT-C-1E.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//6/6d/SkilledWhiteMagician-YSYR-IT-C-1E.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//a/aa/AncientRules-YSYR-IT-C-1E.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//5/5c/SkilledDarkMagician-YSYR-IT-C-1E.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//0/0f/MagiciansUnite-YSYR-IT-C-1E.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//0/01/OldVindictiveMagician-YSYR-IT-C-1E.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//e/ee/SoulTaker-YSYR-IT-C-1E.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//e/ea/BreakertheMagicalWarrior-YSYR-IT-C-1E.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//e/e7/ShardofGreed-YSYR-IT-C-1E.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//e/e6/DoubleCoston-YSYR-IT-C-1E.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//8/8a/ZeroGravity-YSYR-IT-C-1E.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//b/b2/TrapHole-YSYR-IT-C-1E.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//d/d2/SilentSwordsmanLV3-YSYR-IT-C-1E.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//4/43/Waboku-YSYR-IT-C-1E.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//0/08/SilentSwordsmanLV5-YSYR-IT-C-1E.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//2/29/MirrorForce-YSYR-IT-C-1E.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//9/94/GreenGadget-YSYR-IT-C-1E.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//5/5d/SpellbindingCircle-YSYR-IT-C-1E.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//c/ce/RedGadget-YSYR-IT-C-1E.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//d/da/DarkMagician-YSYR-IT-UtR-1E.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//d/d8/CalloftheHaunted-YSYR-IT-C-1E.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//1/12/YellowGadget-YSYR-IT-C-1E.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//6/61/DarkMagician-YSYR-IT-C-1E.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//5/51/MagicCylinder-YSYR-IT-C-1E.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//1/11/ElectricVirus-YSYR-IT-C-1E.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//d/dc/MysticalElf-YSYR-IT-C-1E.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//f/ff/MagiciansValkyria-YSYR-IT-C-1E.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//5/5a/GiantSoldierofStone-YSYR-IT-C-1E.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//3/3f/TheTricky-YSYR-IT-C-1E.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "YSYR-EN",
+      "image": "https://ms.yugipedia.com//0/00/YSYR-DeckEN.png",
+      "cardImages": {
+        "unlimited": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//4/43/DarkMagician-YSYR-EN-UtR-UE.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//1/13/DarkMagician-YSYR-EN-C-UE.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//f/fe/MysticalElf-YSYR-EN-C-UE.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//0/0f/GiantSoldierofStone-YSYR-EN-C-UE.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//b/b1/SummonedSkull-YSYR-EN-C-UE.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//c/c6/NeotheMagicSwordsman-YSYR-EN-C-UE.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//8/82/GeminiElf-YSYR-EN-C-UE.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//0/04/DarkBlade-YSYR-EN-C-UE.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//b/b4/Kuriboh-YSYR-EN-C-UE.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//1/19/BusterBlader-YSYR-EN-C-UE.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//f/f4/4StarredLadybugofDoom-YSYR-EN-C-UE.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//0/0e/DarkMagicianGirl-YSYR-EN-C-UE.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//6/66/SkilledWhiteMagician-YSYR-EN-C-UE.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//6/6a/SkilledDarkMagician-YSYR-EN-C-UE.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//b/b7/OldVindictiveMagician-YSYR-EN-C-UE.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//e/ef/BreakertheMagicalWarrior-YSYR-EN-C-UE.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//1/1d/DoubleCoston-YSYR-EN-C-UE.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//b/b2/SilentSwordsmanLV3-YSYR-EN-C-UE.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//9/98/SilentSwordsmanLV5-YSYR-EN-C-UE.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//7/7a/GreenGadget-YSYR-EN-C-UE.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//e/ea/RedGadget-YSYR-EN-C-UE.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//7/73/YellowGadget-YSYR-EN-C-UE.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//5/50/ElectricVirus-YSYR-EN-C-UE.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//c/cf/MagiciansValkyria-YSYR-EN-C-UE.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//3/3d/TheTricky-YSYR-EN-C-UE.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//e/e2/DarkHole-YSYR-EN-C-UE.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//6/67/SwordsofRevealingLight-YSYR-EN-C-UE.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//8/80/BlackPendant-YSYR-EN-C-UE.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//5/50/MysticalSpaceTyphoon-YSYR-EN-C-UE.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//c/cf/MagePower-YSYR-EN-C-UE.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//5/5f/BookofMoon-YSYR-EN-C-UE.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//9/95/ThousandKnives-YSYR-EN-C-UE.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//4/4c/DarkMagicAttack-YSYR-EN-C-UE.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//f/fd/MagicalDimension-YSYR-EN-C-UE.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//0/03/AncientRules-YSYR-EN-C-UE.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//b/b2/MagiciansUnite-YSYR-EN-C-UE.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//e/e5/SoulTaker-YSYR-EN-C-UE.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//3/3f/ShardofGreed-YSYR-EN-C-UE.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//7/7c/TrapHole-YSYR-EN-C-UE.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//4/42/Waboku-YSYR-EN-C-UE.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//d/dd/MirrorForce-YSYR-EN-C-UE.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//9/93/SpellbindingCircle-YSYR-EN-C-UE.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//1/17/CalloftheHaunted-YSYR-EN-C-UE.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//6/6b/MagicCylinder-YSYR-EN-C-UE.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//3/38/MiracleRestoring-YSYR-EN-C-UE.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//8/82/ZeroGravity-YSYR-EN-C-UE.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//a/ad/RisingEnergy-YSYR-EN-C-UE.png"
+        },
+        "1st": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//6/6d/DarkMagician-YSYR-EN-UtR-1E.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//6/63/DarkMagician-YSYR-EN-C-1E.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//0/06/MysticalElf-YSYR-EN-C-1E.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//b/ba/GiantSoldierofStone-YSYR-EN-C-1E.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//2/2d/SummonedSkull-YSYR-EN-C-1E.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//9/9a/NeotheMagicSwordsman-YSYR-EN-C-1E.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//4/4c/GeminiElf-YSYR-EN-C-1E.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//1/1f/DarkBlade-YSYR-EN-C-1E.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//f/ff/Kuriboh-YSYR-EN-C-1E.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//7/7e/BusterBlader-YSYR-EN-C-1E.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//a/a1/4StarredLadybugofDoom-YSYR-EN-C-1E.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//7/79/DarkMagicianGirl-YSYR-EN-C-1E.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//b/bf/SkilledWhiteMagician-YSYR-EN-C-1E.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//9/92/SkilledDarkMagician-YSYR-EN-C-1E.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//f/fc/OldVindictiveMagician-YSYR-EN-C-1E.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//2/2c/BreakertheMagicalWarrior-YSYR-EN-C-1E.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//d/d8/DoubleCoston-YSYR-EN-C-1E.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//0/08/SilentSwordsmanLV3-YSYR-EN-C-1E.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//f/f4/SilentSwordsmanLV5-YSYR-EN-C-1E.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//f/f0/GreenGadget-YSYR-EN-C-1E.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//1/1a/RedGadget-YSYR-EN-C-1E.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//1/10/YellowGadget-YSYR-EN-C-1E.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//1/1e/ElectricVirus-YSYR-EN-C-1E.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//d/d1/MagiciansValkyria-YSYR-EN-C-1E.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//b/b1/TheTricky-YSYR-EN-C-1E.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//6/6c/DarkHole-YSYR-EN-C-1E.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//2/2f/SwordsofRevealingLight-YSYR-EN-C-1E.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//e/ec/BlackPendant-YSYR-EN-C-1E.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//d/d6/MysticalSpaceTyphoon-YSYR-EN-C-1E.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//e/ec/MagePower-YSYR-EN-C-1E.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//8/86/BookofMoon-YSYR-EN-C-1E.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//d/d0/ThousandKnives-YSYR-EN-C-1E.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//3/32/DarkMagicAttack-YSYR-EN-C-1E.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//0/05/MagicalDimension-YSYR-EN-C-1E.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//4/4e/AncientRules-YSYR-EN-C-1E.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//3/36/MagiciansUnite-YSYR-EN-C-1E.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//4/43/SoulTaker-YSYR-EN-C-1E.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//4/48/ShardofGreed-YSYR-EN-C-1E.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//8/82/TrapHole-YSYR-EN-C-1E.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//c/c5/Waboku-YSYR-EN-C-1E.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//b/b4/MirrorForce-YSYR-EN-C-1E.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//5/57/SpellbindingCircle-YSYR-EN-C-1E.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//3/32/CalloftheHaunted-YSYR-EN-C-1E.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//d/d9/MagicCylinder-YSYR-EN-C-1E.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//5/5b/MiracleRestoring-YSYR-EN-C-1E.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//e/ef/ZeroGravity-YSYR-EN-C-1E.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//c/c1/RisingEnergy-YSYR-EN-C-1E.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//e/e2/DarkHole-YSYR-EN-C-UE.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//b/b1/SummonedSkull-YSYR-EN-C-UE.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//a/ad/RisingEnergy-YSYR-EN-C-UE.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//6/67/SwordsofRevealingLight-YSYR-EN-C-UE.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//c/c6/NeotheMagicSwordsman-YSYR-EN-C-UE.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//8/80/BlackPendant-YSYR-EN-C-UE.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//8/82/GeminiElf-YSYR-EN-C-UE.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//5/50/MysticalSpaceTyphoon-YSYR-EN-C-UE.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//0/04/DarkBlade-YSYR-EN-C-UE.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//c/cf/MagePower-YSYR-EN-C-UE.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//b/b4/Kuriboh-YSYR-EN-C-UE.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//5/5f/BookofMoon-YSYR-EN-C-UE.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//1/19/BusterBlader-YSYR-EN-C-UE.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//9/95/ThousandKnives-YSYR-EN-C-UE.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//f/f4/4StarredLadybugofDoom-YSYR-EN-C-UE.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//4/4c/DarkMagicAttack-YSYR-EN-C-UE.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//0/0e/DarkMagicianGirl-YSYR-EN-C-UE.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//3/38/MiracleRestoring-YSYR-EN-C-UE.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//f/fd/MagicalDimension-YSYR-EN-C-UE.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//6/66/SkilledWhiteMagician-YSYR-EN-C-UE.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//0/03/AncientRules-YSYR-EN-C-UE.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//6/6a/SkilledDarkMagician-YSYR-EN-C-UE.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//b/b2/MagiciansUnite-YSYR-EN-C-UE.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//b/b7/OldVindictiveMagician-YSYR-EN-C-UE.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//e/e5/SoulTaker-YSYR-EN-C-UE.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//e/ef/BreakertheMagicalWarrior-YSYR-EN-C-UE.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//3/3f/ShardofGreed-YSYR-EN-C-UE.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//1/1d/DoubleCoston-YSYR-EN-C-UE.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//8/82/ZeroGravity-YSYR-EN-C-UE.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//7/7c/TrapHole-YSYR-EN-C-UE.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//b/b2/SilentSwordsmanLV3-YSYR-EN-C-UE.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//4/42/Waboku-YSYR-EN-C-UE.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//9/98/SilentSwordsmanLV5-YSYR-EN-C-UE.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//d/dd/MirrorForce-YSYR-EN-C-UE.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//7/7a/GreenGadget-YSYR-EN-C-UE.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//9/93/SpellbindingCircle-YSYR-EN-C-UE.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//e/ea/RedGadget-YSYR-EN-C-UE.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//4/43/DarkMagician-YSYR-EN-UtR-UE.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//1/17/CalloftheHaunted-YSYR-EN-C-UE.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//7/73/YellowGadget-YSYR-EN-C-UE.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//1/13/DarkMagician-YSYR-EN-C-UE.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//6/6b/MagicCylinder-YSYR-EN-C-UE.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//5/50/ElectricVirus-YSYR-EN-C-UE.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//f/fe/MysticalElf-YSYR-EN-C-UE.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//c/cf/MagiciansValkyria-YSYR-EN-C-UE.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//0/0f/GiantSoldierofStone-YSYR-EN-C-UE.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//3/3d/TheTricky-YSYR-EN-C-UE.png"
+          }
+        },
+        "1st": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//6/6c/DarkHole-YSYR-EN-C-1E.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//2/2d/SummonedSkull-YSYR-EN-C-1E.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//c/c1/RisingEnergy-YSYR-EN-C-1E.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//2/2f/SwordsofRevealingLight-YSYR-EN-C-1E.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//9/9a/NeotheMagicSwordsman-YSYR-EN-C-1E.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//e/ec/BlackPendant-YSYR-EN-C-1E.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//4/4c/GeminiElf-YSYR-EN-C-1E.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//d/d6/MysticalSpaceTyphoon-YSYR-EN-C-1E.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//1/1f/DarkBlade-YSYR-EN-C-1E.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//e/ec/MagePower-YSYR-EN-C-1E.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//f/ff/Kuriboh-YSYR-EN-C-1E.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//8/86/BookofMoon-YSYR-EN-C-1E.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//7/7e/BusterBlader-YSYR-EN-C-1E.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//d/d0/ThousandKnives-YSYR-EN-C-1E.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//a/a1/4StarredLadybugofDoom-YSYR-EN-C-1E.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//3/32/DarkMagicAttack-YSYR-EN-C-1E.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//7/79/DarkMagicianGirl-YSYR-EN-C-1E.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//5/5b/MiracleRestoring-YSYR-EN-C-1E.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//0/05/MagicalDimension-YSYR-EN-C-1E.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//b/bf/SkilledWhiteMagician-YSYR-EN-C-1E.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//4/4e/AncientRules-YSYR-EN-C-1E.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//9/92/SkilledDarkMagician-YSYR-EN-C-1E.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//3/36/MagiciansUnite-YSYR-EN-C-1E.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//f/fc/OldVindictiveMagician-YSYR-EN-C-1E.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//4/43/SoulTaker-YSYR-EN-C-1E.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//2/2c/BreakertheMagicalWarrior-YSYR-EN-C-1E.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//4/48/ShardofGreed-YSYR-EN-C-1E.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//d/d8/DoubleCoston-YSYR-EN-C-1E.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//e/ef/ZeroGravity-YSYR-EN-C-1E.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//8/82/TrapHole-YSYR-EN-C-1E.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//0/08/SilentSwordsmanLV3-YSYR-EN-C-1E.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//c/c5/Waboku-YSYR-EN-C-1E.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//f/f4/SilentSwordsmanLV5-YSYR-EN-C-1E.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//b/b4/MirrorForce-YSYR-EN-C-1E.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//f/f0/GreenGadget-YSYR-EN-C-1E.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//5/57/SpellbindingCircle-YSYR-EN-C-1E.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//1/1a/RedGadget-YSYR-EN-C-1E.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//6/6d/DarkMagician-YSYR-EN-UtR-1E.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//3/32/CalloftheHaunted-YSYR-EN-C-1E.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//1/10/YellowGadget-YSYR-EN-C-1E.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//6/63/DarkMagician-YSYR-EN-C-1E.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//d/d9/MagicCylinder-YSYR-EN-C-1E.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//1/1e/ElectricVirus-YSYR-EN-C-1E.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//0/06/MysticalElf-YSYR-EN-C-1E.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//d/d1/MagiciansValkyria-YSYR-EN-C-1E.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//b/ba/GiantSoldierofStone-YSYR-EN-C-1E.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//b/b1/TheTricky-YSYR-EN-C-1E.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          13311001
+        ]
+      }
+    },
+    "de": {
+      "language": "de",
+      "prefix": "YSYR-DE",
+      "date": "2013-12-05",
+      "image": "https://ms.yugipedia.com//6/6a/YSYR-DeckDE.png",
+      "cardImages": {
+        "unlimited": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//3/39/DarkMagician-YSYR-DE-UtR-UE.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//0/0f/DarkMagician-YSYR-DE-C-UE.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//e/e1/MysticalElf-YSYR-DE-C-UE.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//6/61/GiantSoldierofStone-YSYR-DE-C-UE.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//8/81/SummonedSkull-YSYR-DE-C-UE.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//1/1f/NeotheMagicSwordsman-YSYR-DE-C-UE.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//7/71/GeminiElf-YSYR-DE-C-UE.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//c/c2/DarkBlade-YSYR-DE-C-UE.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//1/1c/Kuriboh-YSYR-DE-C-UE.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//5/5f/BusterBlader-YSYR-DE-C-UE.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//f/fb/4StarredLadybugofDoom-YSYR-DE-C-UE.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//1/1f/DarkMagicianGirl-YSYR-DE-C-UE.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//f/fd/SkilledWhiteMagician-YSYR-DE-C-UE.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//8/85/SkilledDarkMagician-YSYR-DE-C-UE.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//b/b8/OldVindictiveMagician-YSYR-DE-C-UE.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//6/69/BreakertheMagicalWarrior-YSYR-DE-C-UE.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//8/80/DoubleCoston-YSYR-DE-C-UE.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//a/a6/SilentSwordsmanLV3-YSYR-DE-C-UE.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//d/d1/SilentSwordsmanLV5-YSYR-DE-C-UE.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//a/ad/GreenGadget-YSYR-DE-C-UE.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//e/ee/RedGadget-YSYR-DE-C-UE.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//b/b3/YellowGadget-YSYR-DE-C-UE.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//c/c4/ElectricVirus-YSYR-DE-C-UE.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//4/46/MagiciansValkyria-YSYR-DE-C-UE.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//8/80/TheTricky-YSYR-DE-C-UE.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//9/92/DarkHole-YSYR-DE-C-UE.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//1/17/SwordsofRevealingLight-YSYR-DE-C-UE.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//5/58/BlackPendant-YSYR-DE-C-UE.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//c/c5/MysticalSpaceTyphoon-YSYR-DE-C-UE.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//5/5d/MagePower-YSYR-DE-C-UE.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//2/21/BookofMoon-YSYR-DE-C-UE.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//e/e3/ThousandKnives-YSYR-DE-C-UE.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//f/fc/DarkMagicAttack-YSYR-DE-C-UE.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//f/ff/MagicalDimension-YSYR-DE-C-UE.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//a/ab/AncientRules-YSYR-DE-C-UE.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//c/c6/MagiciansUnite-YSYR-DE-C-UE.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//c/c1/SoulTaker-YSYR-DE-C-UE.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//d/d3/ShardofGreed-YSYR-DE-C-UE.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//e/e7/TrapHole-YSYR-DE-C-UE.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//d/d7/Waboku-YSYR-DE-C-UE.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//0/08/MirrorForce-YSYR-DE-C-UE.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//e/ee/SpellbindingCircle-YSYR-DE-C-UE.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//7/7a/CalloftheHaunted-YSYR-DE-C-UE.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//0/0b/MagicCylinder-YSYR-DE-C-UE.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//6/63/MiracleRestoring-YSYR-DE-C-UE.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//c/cf/ZeroGravity-YSYR-DE-C-UE.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//9/98/RisingEnergy-YSYR-DE-C-UE.png"
+        },
+        "1st": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//7/7b/DarkMagician-YSYR-DE-UtR-1E.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//5/5d/DarkMagician-YSYR-DE-C-1E.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//4/40/MysticalElf-YSYR-DE-C-1E.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//e/e6/GiantSoldierofStone-YSYR-DE-C-1E.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//8/8c/SummonedSkull-YSYR-DE-C-1E.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//f/f2/NeotheMagicSwordsman-YSYR-DE-C-1E.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//0/0c/GeminiElf-YSYR-DE-C-1E.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//2/2a/DarkBlade-YSYR-DE-C-1E.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//5/5e/Kuriboh-YSYR-DE-C-1E.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//6/6a/BusterBlader-YSYR-DE-C-1E.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//5/5e/4StarredLadybugofDoom-YSYR-DE-C-1E.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//1/11/DarkMagicianGirl-YSYR-DE-C-1E.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//9/90/SkilledWhiteMagician-YSYR-DE-C-1E.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//d/d4/SkilledDarkMagician-YSYR-DE-C-1E.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//7/77/OldVindictiveMagician-YSYR-DE-C-1E.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//9/93/BreakertheMagicalWarrior-YSYR-DE-C-1E.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//3/38/DoubleCoston-YSYR-DE-C-1E.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//5/59/SilentSwordsmanLV3-YSYR-DE-C-1E.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//7/7a/SilentSwordsmanLV5-YSYR-DE-C-1E.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//f/f6/GreenGadget-YSYR-DE-C-1E.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//e/ef/RedGadget-YSYR-DE-C-1E.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//5/59/YellowGadget-YSYR-DE-C-1E.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//a/a2/ElectricVirus-YSYR-DE-C-1E.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//6/66/MagiciansValkyria-YSYR-DE-C-1E.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//d/d7/TheTricky-YSYR-DE-C-1E.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//f/ff/DarkHole-YSYR-DE-C-1E.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//0/03/SwordsofRevealingLight-YSYR-DE-C-1E.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//3/3d/BlackPendant-YSYR-DE-C-1E.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//d/df/MysticalSpaceTyphoon-YSYR-DE-C-1E.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//8/81/MagePower-YSYR-DE-C-1E.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//f/f0/BookofMoon-YSYR-DE-C-1E.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//d/d8/ThousandKnives-YSYR-DE-C-1E.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//a/af/DarkMagicAttack-YSYR-DE-C-1E.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//d/d1/MagicalDimension-YSYR-DE-C-1E.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//1/13/AncientRules-YSYR-DE-C-1E.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//b/b9/MagiciansUnite-YSYR-DE-C-1E.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//1/1c/SoulTaker-YSYR-DE-C-1E.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//0/08/ShardofGreed-YSYR-DE-C-1E.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//1/11/TrapHole-YSYR-DE-C-1E.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//3/39/Waboku-YSYR-DE-C-1E.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//8/81/MirrorForce-YSYR-DE-C-1E.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//f/f8/SpellbindingCircle-YSYR-DE-C-1E.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//e/eb/CalloftheHaunted-YSYR-DE-C-1E.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//e/ee/MagicCylinder-YSYR-DE-C-1E.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//2/22/MiracleRestoring-YSYR-DE-C-1E.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//d/d5/ZeroGravity-YSYR-DE-C-1E.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//8/8b/RisingEnergy-YSYR-DE-C-1E.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//9/92/DarkHole-YSYR-DE-C-UE.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//8/81/SummonedSkull-YSYR-DE-C-UE.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//9/98/RisingEnergy-YSYR-DE-C-UE.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//1/17/SwordsofRevealingLight-YSYR-DE-C-UE.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//1/1f/NeotheMagicSwordsman-YSYR-DE-C-UE.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//5/58/BlackPendant-YSYR-DE-C-UE.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//7/71/GeminiElf-YSYR-DE-C-UE.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//c/c5/MysticalSpaceTyphoon-YSYR-DE-C-UE.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//c/c2/DarkBlade-YSYR-DE-C-UE.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//5/5d/MagePower-YSYR-DE-C-UE.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//1/1c/Kuriboh-YSYR-DE-C-UE.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//2/21/BookofMoon-YSYR-DE-C-UE.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//5/5f/BusterBlader-YSYR-DE-C-UE.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//e/e3/ThousandKnives-YSYR-DE-C-UE.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//f/fb/4StarredLadybugofDoom-YSYR-DE-C-UE.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//f/fc/DarkMagicAttack-YSYR-DE-C-UE.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//1/1f/DarkMagicianGirl-YSYR-DE-C-UE.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//6/63/MiracleRestoring-YSYR-DE-C-UE.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//f/ff/MagicalDimension-YSYR-DE-C-UE.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//f/fd/SkilledWhiteMagician-YSYR-DE-C-UE.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//a/ab/AncientRules-YSYR-DE-C-UE.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//8/85/SkilledDarkMagician-YSYR-DE-C-UE.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//c/c6/MagiciansUnite-YSYR-DE-C-UE.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//b/b8/OldVindictiveMagician-YSYR-DE-C-UE.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//c/c1/SoulTaker-YSYR-DE-C-UE.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//6/69/BreakertheMagicalWarrior-YSYR-DE-C-UE.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//d/d3/ShardofGreed-YSYR-DE-C-UE.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//8/80/DoubleCoston-YSYR-DE-C-UE.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//c/cf/ZeroGravity-YSYR-DE-C-UE.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//e/e7/TrapHole-YSYR-DE-C-UE.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//a/a6/SilentSwordsmanLV3-YSYR-DE-C-UE.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//d/d7/Waboku-YSYR-DE-C-UE.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//d/d1/SilentSwordsmanLV5-YSYR-DE-C-UE.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//0/08/MirrorForce-YSYR-DE-C-UE.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//a/ad/GreenGadget-YSYR-DE-C-UE.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//e/ee/SpellbindingCircle-YSYR-DE-C-UE.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//e/ee/RedGadget-YSYR-DE-C-UE.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//3/39/DarkMagician-YSYR-DE-UtR-UE.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//7/7a/CalloftheHaunted-YSYR-DE-C-UE.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//b/b3/YellowGadget-YSYR-DE-C-UE.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//0/0f/DarkMagician-YSYR-DE-C-UE.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//0/0b/MagicCylinder-YSYR-DE-C-UE.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//c/c4/ElectricVirus-YSYR-DE-C-UE.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//e/e1/MysticalElf-YSYR-DE-C-UE.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//4/46/MagiciansValkyria-YSYR-DE-C-UE.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//6/61/GiantSoldierofStone-YSYR-DE-C-UE.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//8/80/TheTricky-YSYR-DE-C-UE.png"
+          }
+        },
+        "1st": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//f/ff/DarkHole-YSYR-DE-C-1E.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//8/8c/SummonedSkull-YSYR-DE-C-1E.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//8/8b/RisingEnergy-YSYR-DE-C-1E.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//0/03/SwordsofRevealingLight-YSYR-DE-C-1E.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//f/f2/NeotheMagicSwordsman-YSYR-DE-C-1E.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//3/3d/BlackPendant-YSYR-DE-C-1E.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//0/0c/GeminiElf-YSYR-DE-C-1E.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//d/df/MysticalSpaceTyphoon-YSYR-DE-C-1E.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//2/2a/DarkBlade-YSYR-DE-C-1E.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//8/81/MagePower-YSYR-DE-C-1E.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//5/5e/Kuriboh-YSYR-DE-C-1E.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//f/f0/BookofMoon-YSYR-DE-C-1E.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//6/6a/BusterBlader-YSYR-DE-C-1E.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//d/d8/ThousandKnives-YSYR-DE-C-1E.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//5/5e/4StarredLadybugofDoom-YSYR-DE-C-1E.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//a/af/DarkMagicAttack-YSYR-DE-C-1E.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//1/11/DarkMagicianGirl-YSYR-DE-C-1E.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//2/22/MiracleRestoring-YSYR-DE-C-1E.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//d/d1/MagicalDimension-YSYR-DE-C-1E.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//9/90/SkilledWhiteMagician-YSYR-DE-C-1E.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//1/13/AncientRules-YSYR-DE-C-1E.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//d/d4/SkilledDarkMagician-YSYR-DE-C-1E.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//b/b9/MagiciansUnite-YSYR-DE-C-1E.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//7/77/OldVindictiveMagician-YSYR-DE-C-1E.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//1/1c/SoulTaker-YSYR-DE-C-1E.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//9/93/BreakertheMagicalWarrior-YSYR-DE-C-1E.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//0/08/ShardofGreed-YSYR-DE-C-1E.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//3/38/DoubleCoston-YSYR-DE-C-1E.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//d/d5/ZeroGravity-YSYR-DE-C-1E.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//1/11/TrapHole-YSYR-DE-C-1E.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//5/59/SilentSwordsmanLV3-YSYR-DE-C-1E.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//3/39/Waboku-YSYR-DE-C-1E.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//7/7a/SilentSwordsmanLV5-YSYR-DE-C-1E.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//8/81/MirrorForce-YSYR-DE-C-1E.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//f/f6/GreenGadget-YSYR-DE-C-1E.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//f/f8/SpellbindingCircle-YSYR-DE-C-1E.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//e/ef/RedGadget-YSYR-DE-C-1E.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//7/7b/DarkMagician-YSYR-DE-UtR-1E.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//e/eb/CalloftheHaunted-YSYR-DE-C-1E.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//5/59/YellowGadget-YSYR-DE-C-1E.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//5/5d/DarkMagician-YSYR-DE-C-1E.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//e/ee/MagicCylinder-YSYR-DE-C-1E.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//a/a2/ElectricVirus-YSYR-DE-C-1E.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//4/40/MysticalElf-YSYR-DE-C-1E.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//6/66/MagiciansValkyria-YSYR-DE-C-1E.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//e/e6/GiantSoldierofStone-YSYR-DE-C-1E.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//d/d7/TheTricky-YSYR-DE-C-1E.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    },
+    "sp": {
+      "language": "es",
+      "prefix": "YSYR-SP",
+      "date": "2013-12-05",
+      "image": "https://ms.yugipedia.com//4/46/YSYR-DeckSP.png",
+      "cardImages": {
+        "1st": {
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": "https://ms.yugipedia.com//5/52/DarkMagician-YSYR-SP-UtR-1E.png",
+          "49a49830-e001-4e66-a22f-248067ee24ee": "https://ms.yugipedia.com//a/ae/DarkMagician-YSYR-SP-C-1E.png",
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": "https://ms.yugipedia.com//2/29/MysticalElf-YSYR-SP-C-1E.png",
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": "https://ms.yugipedia.com//8/88/GiantSoldierofStone-YSYR-SP-C-1E.png",
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": "https://ms.yugipedia.com//d/d1/SummonedSkull-YSYR-SP-C-1E.png",
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": "https://ms.yugipedia.com//8/84/NeotheMagicSwordsman-YSYR-SP-C-1E.png",
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": "https://ms.yugipedia.com//3/3c/GeminiElf-YSYR-SP-C-1E.png",
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": "https://ms.yugipedia.com//7/7c/DarkBlade-YSYR-SP-C-1E.png",
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": "https://ms.yugipedia.com//a/a4/Kuriboh-YSYR-SP-C-1E.png",
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": "https://ms.yugipedia.com//1/13/BusterBlader-YSYR-SP-C-1E.png",
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": "https://ms.yugipedia.com//2/22/4StarredLadybugofDoom-YSYR-SP-C-1E.png",
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": "https://ms.yugipedia.com//2/21/DarkMagicianGirl-YSYR-SP-C-1E.png",
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": "https://ms.yugipedia.com//6/66/SkilledWhiteMagician-YSYR-SP-C-1E.png",
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": "https://ms.yugipedia.com//3/33/SkilledDarkMagician-YSYR-SP-C-1E.png",
+          "e6b646a6-0707-4175-a57f-01d03d95e374": "https://ms.yugipedia.com//7/71/OldVindictiveMagician-YSYR-SP-C-1E.png",
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": "https://ms.yugipedia.com//c/c2/BreakertheMagicalWarrior-YSYR-SP-C-1E.png",
+          "54760863-45c4-4495-b4d3-69d6730c3869": "https://ms.yugipedia.com//7/7c/DoubleCoston-YSYR-SP-C-1E.png",
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": "https://ms.yugipedia.com//4/45/SilentSwordsmanLV3-YSYR-SP-C-1E.png",
+          "7da48186-1471-465c-b771-f7a87911ba82": "https://ms.yugipedia.com//1/1b/SilentSwordsmanLV5-YSYR-SP-C-1E.png",
+          "f74ee505-9c15-42ad-8230-1123d848a590": "https://ms.yugipedia.com//1/19/GreenGadget-YSYR-SP-C-1E.png",
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": "https://ms.yugipedia.com//e/e4/RedGadget-YSYR-SP-C-1E.png",
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": "https://ms.yugipedia.com//e/ea/YellowGadget-YSYR-SP-C-1E.png",
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": "https://ms.yugipedia.com//2/2b/ElectricVirus-YSYR-SP-C-1E.png",
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": "https://ms.yugipedia.com//d/d6/MagiciansValkyria-YSYR-SP-C-1E.png",
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": "https://ms.yugipedia.com//d/d7/TheTricky-YSYR-SP-C-1E.png",
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": "https://ms.yugipedia.com//2/2b/DarkHole-YSYR-SP-C-1E.png",
+          "b50136ea-5473-4ce6-9786-329176b6cc39": "https://ms.yugipedia.com//b/b9/SwordsofRevealingLight-YSYR-SP-C-1E.png",
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": "https://ms.yugipedia.com//b/bc/BlackPendant-YSYR-SP-C-1E.png",
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": "https://ms.yugipedia.com//4/40/MysticalSpaceTyphoon-YSYR-SP-C-1E.png",
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": "https://ms.yugipedia.com//5/5a/MagePower-YSYR-SP-C-1E.png",
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": "https://ms.yugipedia.com//c/c5/BookofMoon-YSYR-SP-C-1E.png",
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": "https://ms.yugipedia.com//a/a3/ThousandKnives-YSYR-SP-C-1E.png",
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": "https://ms.yugipedia.com//d/d6/DarkMagicAttack-YSYR-SP-C-1E.png",
+          "99a809b1-693e-4ec3-932e-087684d17a84": "https://ms.yugipedia.com//7/75/MagicalDimension-YSYR-SP-C-1E.png",
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": "https://ms.yugipedia.com//c/c0/AncientRules-YSYR-SP-C-1E.png",
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": "https://ms.yugipedia.com//1/1a/MagiciansUnite-YSYR-SP-C-1E.png",
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": "https://ms.yugipedia.com//0/05/SoulTaker-YSYR-SP-C-1E.png",
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": "https://ms.yugipedia.com//7/78/ShardofGreed-YSYR-SP-C-1E.png",
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": "https://ms.yugipedia.com//f/fa/TrapHole-YSYR-SP-C-1E.png",
+          "9b27e77c-2485-4b17-b934-39867607901d": "https://ms.yugipedia.com//5/52/Waboku-YSYR-SP-C-1E.png",
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": "https://ms.yugipedia.com//c/cc/MirrorForce-YSYR-SP-C-1E.png",
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": "https://ms.yugipedia.com//5/5f/SpellbindingCircle-YSYR-SP-C-1E.png",
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": "https://ms.yugipedia.com//e/e3/CalloftheHaunted-YSYR-SP-C-1E.png",
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": "https://ms.yugipedia.com//a/a1/MagicCylinder-YSYR-SP-C-1E.png",
+          "65539723-de69-40f5-b2fa-df7fec886346": "https://ms.yugipedia.com//9/9b/MiracleRestoring-YSYR-SP-C-1E.png",
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": "https://ms.yugipedia.com//7/7f/ZeroGravity-YSYR-SP-C-1E.png",
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": "https://ms.yugipedia.com//0/07/RisingEnergy-YSYR-SP-C-1E.png"
+        }
+      },
+      "cardInfo": {
+        "1st": {
+          "6599ee90-f3f8-49ea-ae70-cd82e1e24269": {
+            "image": "https://ms.yugipedia.com//2/2b/DarkHole-YSYR-SP-C-1E.png"
+          },
+          "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9": {
+            "image": "https://ms.yugipedia.com//d/d1/SummonedSkull-YSYR-SP-C-1E.png"
+          },
+          "c0ea129a-71ac-497c-bd92-04ef1c72a435": {
+            "image": "https://ms.yugipedia.com//0/07/RisingEnergy-YSYR-SP-C-1E.png"
+          },
+          "b50136ea-5473-4ce6-9786-329176b6cc39": {
+            "image": "https://ms.yugipedia.com//b/b9/SwordsofRevealingLight-YSYR-SP-C-1E.png"
+          },
+          "7f313f4c-5df9-4af3-89b3-e2bd88b49f22": {
+            "image": "https://ms.yugipedia.com//8/84/NeotheMagicSwordsman-YSYR-SP-C-1E.png"
+          },
+          "a39883b1-c4c7-4cb1-8547-97ea93990b40": {
+            "image": "https://ms.yugipedia.com//b/bc/BlackPendant-YSYR-SP-C-1E.png"
+          },
+          "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2": {
+            "image": "https://ms.yugipedia.com//3/3c/GeminiElf-YSYR-SP-C-1E.png"
+          },
+          "ac9cba3c-0981-4986-83c3-bc8daa238134": {
+            "image": "https://ms.yugipedia.com//4/40/MysticalSpaceTyphoon-YSYR-SP-C-1E.png"
+          },
+          "1e55ef29-adbe-4dd0-a225-8311c6a36e6b": {
+            "image": "https://ms.yugipedia.com//7/7c/DarkBlade-YSYR-SP-C-1E.png"
+          },
+          "6ed7906d-7653-46ca-9387-d1217ec1db68": {
+            "image": "https://ms.yugipedia.com//5/5a/MagePower-YSYR-SP-C-1E.png"
+          },
+          "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad": {
+            "image": "https://ms.yugipedia.com//a/a4/Kuriboh-YSYR-SP-C-1E.png"
+          },
+          "edd6a727-bc2d-4af9-a272-41b0ce2fe305": {
+            "image": "https://ms.yugipedia.com//c/c5/BookofMoon-YSYR-SP-C-1E.png"
+          },
+          "cfb8dc6b-3716-4cc4-84c1-8c12833bc532": {
+            "image": "https://ms.yugipedia.com//1/13/BusterBlader-YSYR-SP-C-1E.png"
+          },
+          "44e55a6a-752f-446d-8705-b1752e4b7d6a": {
+            "image": "https://ms.yugipedia.com//a/a3/ThousandKnives-YSYR-SP-C-1E.png"
+          },
+          "c02da792-6927-4e43-bdfc-0babb12dbf62": {
+            "image": "https://ms.yugipedia.com//2/22/4StarredLadybugofDoom-YSYR-SP-C-1E.png"
+          },
+          "27b3a2f2-2eb6-4e27-a23b-e8704634325b": {
+            "image": "https://ms.yugipedia.com//d/d6/DarkMagicAttack-YSYR-SP-C-1E.png"
+          },
+          "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e": {
+            "image": "https://ms.yugipedia.com//2/21/DarkMagicianGirl-YSYR-SP-C-1E.png"
+          },
+          "65539723-de69-40f5-b2fa-df7fec886346": {
+            "image": "https://ms.yugipedia.com//9/9b/MiracleRestoring-YSYR-SP-C-1E.png"
+          },
+          "99a809b1-693e-4ec3-932e-087684d17a84": {
+            "image": "https://ms.yugipedia.com//7/75/MagicalDimension-YSYR-SP-C-1E.png"
+          },
+          "3ffb4278-f869-4e8e-b295-f87cf6f14b9d": {
+            "image": "https://ms.yugipedia.com//6/66/SkilledWhiteMagician-YSYR-SP-C-1E.png"
+          },
+          "a50304f9-af03-4e72-a955-e31f80e75ebc": {
+            "image": "https://ms.yugipedia.com//c/c0/AncientRules-YSYR-SP-C-1E.png"
+          },
+          "9d333115-37f1-4e53-8c03-945f53b5f79c": {
+            "image": "https://ms.yugipedia.com//3/33/SkilledDarkMagician-YSYR-SP-C-1E.png"
+          },
+          "97e36463-8f20-4a1b-82e5-0c15b0b861cf": {
+            "image": "https://ms.yugipedia.com//1/1a/MagiciansUnite-YSYR-SP-C-1E.png"
+          },
+          "e6b646a6-0707-4175-a57f-01d03d95e374": {
+            "image": "https://ms.yugipedia.com//7/71/OldVindictiveMagician-YSYR-SP-C-1E.png"
+          },
+          "727f473a-1ba5-4c25-bbb1-1440916f2b57": {
+            "image": "https://ms.yugipedia.com//0/05/SoulTaker-YSYR-SP-C-1E.png"
+          },
+          "e3c65b67-1499-4981-b691-0c59ff8de65b": {
+            "image": "https://ms.yugipedia.com//c/c2/BreakertheMagicalWarrior-YSYR-SP-C-1E.png"
+          },
+          "9ef208fa-0c6d-460e-b416-cda55cabd422": {
+            "image": "https://ms.yugipedia.com//7/78/ShardofGreed-YSYR-SP-C-1E.png"
+          },
+          "54760863-45c4-4495-b4d3-69d6730c3869": {
+            "image": "https://ms.yugipedia.com//7/7c/DoubleCoston-YSYR-SP-C-1E.png"
+          },
+          "8870cc39-9206-477e-9e13-4e438d4cc3c4": {
+            "image": "https://ms.yugipedia.com//7/7f/ZeroGravity-YSYR-SP-C-1E.png"
+          },
+          "b9520453-915a-4293-89d1-a5b39b95e4a6": {
+            "image": "https://ms.yugipedia.com//f/fa/TrapHole-YSYR-SP-C-1E.png"
+          },
+          "bd10ccca-2031-41ef-bf4c-eae2c9e8885d": {
+            "image": "https://ms.yugipedia.com//4/45/SilentSwordsmanLV3-YSYR-SP-C-1E.png"
+          },
+          "9b27e77c-2485-4b17-b934-39867607901d": {
+            "image": "https://ms.yugipedia.com//5/52/Waboku-YSYR-SP-C-1E.png"
+          },
+          "7da48186-1471-465c-b771-f7a87911ba82": {
+            "image": "https://ms.yugipedia.com//1/1b/SilentSwordsmanLV5-YSYR-SP-C-1E.png"
+          },
+          "e7bf66c6-b504-4b24-a30b-bc22306c82dc": {
+            "image": "https://ms.yugipedia.com//c/cc/MirrorForce-YSYR-SP-C-1E.png"
+          },
+          "f74ee505-9c15-42ad-8230-1123d848a590": {
+            "image": "https://ms.yugipedia.com//1/19/GreenGadget-YSYR-SP-C-1E.png"
+          },
+          "6df67076-5a8a-4948-a279-8c233a3f3f33": {
+            "image": "https://ms.yugipedia.com//5/5f/SpellbindingCircle-YSYR-SP-C-1E.png"
+          },
+          "d8626342-d433-4c7c-938e-d3d5cb3ca66c": {
+            "image": "https://ms.yugipedia.com//e/e4/RedGadget-YSYR-SP-C-1E.png"
+          },
+          "d5a00f4f-c71e-4d08-8fa5-05df4342cfed": {
+            "image": "https://ms.yugipedia.com//5/52/DarkMagician-YSYR-SP-UtR-1E.png"
+          },
+          "dff550ff-8f0e-4450-a454-2a4cbad3f1cf": {
+            "image": "https://ms.yugipedia.com//e/e3/CalloftheHaunted-YSYR-SP-C-1E.png"
+          },
+          "ff64a629-e615-425a-90aa-d3b5d2d96400": {
+            "image": "https://ms.yugipedia.com//e/ea/YellowGadget-YSYR-SP-C-1E.png"
+          },
+          "49a49830-e001-4e66-a22f-248067ee24ee": {
+            "image": "https://ms.yugipedia.com//a/ae/DarkMagician-YSYR-SP-C-1E.png"
+          },
+          "2181d7dd-9615-4b0d-adde-d1643ad00d32": {
+            "image": "https://ms.yugipedia.com//a/a1/MagicCylinder-YSYR-SP-C-1E.png"
+          },
+          "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4": {
+            "image": "https://ms.yugipedia.com//2/2b/ElectricVirus-YSYR-SP-C-1E.png"
+          },
+          "41c033df-bcb1-4108-8477-5c9672fca7ea": {
+            "image": "https://ms.yugipedia.com//2/29/MysticalElf-YSYR-SP-C-1E.png"
+          },
+          "a351d355-7e9c-47dd-9c2a-451bc60d40ea": {
+            "image": "https://ms.yugipedia.com//d/d6/MagiciansValkyria-YSYR-SP-C-1E.png"
+          },
+          "b7aca5e8-0250-444e-b60d-f872759c9df2": {
+            "image": "https://ms.yugipedia.com//8/88/GiantSoldierofStone-YSYR-SP-C-1E.png"
+          },
+          "f0e37f82-02e4-4919-af45-a08581c9af5b": {
+            "image": "https://ms.yugipedia.com//d/d7/TheTricky-YSYR-SP-C-1E.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2000000451000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "pt"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//1/1d/YSYR-DeckPT.png",
+      "cards": [
+        {
+          "id": "d5a00f4f-c71e-4d08-8fa5-05df4342cfed",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "49a49830-e001-4e66-a22f-248067ee24ee",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "41c033df-bcb1-4108-8477-5c9672fca7ea",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b7aca5e8-0250-444e-b60d-f872759c9df2",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "7f313f4c-5df9-4af3-89b3-e2bd88b49f22",
+          "card": "f394d2a1-e71e-4d59-acb5-44add2e12249",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2",
+          "card": "d497f3b4-d921-4bfc-bfae-fa9026a083c1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e55ef29-adbe-4dd0-a225-8311c6a36e6b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "cfb8dc6b-3716-4cc4-84c1-8c12833bc532",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "c02da792-6927-4e43-bdfc-0babb12dbf62",
+          "card": "8dd1ac1f-3c0b-43d0-89d5-45a3a1af0665",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3ffb4278-f869-4e8e-b295-f87cf6f14b9d",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "012",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "9d333115-37f1-4e53-8c03-945f53b5f79c",
+          "card": "80c1dbe5-5f9c-4ba1-aac5-98e5215295be",
+          "suffix": "013",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "e6b646a6-0707-4175-a57f-01d03d95e374",
+          "card": "788a339e-b925-41ce-b2f2-dbd3b3e2cbcd",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "e3c65b67-1499-4981-b691-0c59ff8de65b",
+          "card": "ef9de57c-cc45-4a66-938c-e0f831baae09",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "54760863-45c4-4495-b4d3-69d6730c3869",
+          "card": "cc1ae3cf-70a8-455d-ab78-a9c9f4b6f806",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "bd10ccca-2031-41ef-bf4c-eae2c9e8885d",
+          "card": "d93fe7df-a3b6-4bbd-abc0-1ae51a863fe9",
+          "suffix": "017",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "7da48186-1471-465c-b771-f7a87911ba82",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "f74ee505-9c15-42ad-8230-1123d848a590",
+          "card": "5d2da887-b5db-4c31-9b94-0ef39ccc3ed5",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "d8626342-d433-4c7c-938e-d3d5cb3ca66c",
+          "card": "6cd1f3c6-32af-490c-a27a-4f2a5ecce542",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "ff64a629-e615-425a-90aa-d3b5d2d96400",
+          "card": "3b9fc1ca-3137-4f79-b687-e2b4af712146",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4",
+          "card": "78db8937-37b5-4566-ac4b-0ba4f7c1f45e",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "a351d355-7e9c-47dd-9c2a-451bc60d40ea",
+          "card": "9d336875-633d-48cc-8f72-d203e9eee989",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f0e37f82-02e4-4919-af45-a08581c9af5b",
+          "card": "ecf75ef9-6a9e-45f6-acd4-11cef0d779dc",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "6599ee90-f3f8-49ea-ae70-cd82e1e24269",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b50136ea-5473-4ce6-9786-329176b6cc39",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a39883b1-c4c7-4cb1-8547-97ea93990b40",
+          "card": "74bf3b6a-ccdd-4612-b0c1-981b59db1671",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ac9cba3c-0981-4986-83c3-bc8daa238134",
+          "card": "d15ea879-903e-481a-9ad1-774823a8518b",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "6ed7906d-7653-46ca-9387-d1217ec1db68",
+          "card": "f18e3d9c-6979-440a-bc70-d5c8f8ddaf2a",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "edd6a727-bc2d-4af9-a272-41b0ce2fe305",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "44e55a6a-752f-446d-8705-b1752e4b7d6a",
+          "card": "33c53c07-b01a-4da7-95f5-ea12573bee4e",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "27b3a2f2-2eb6-4e27-a23b-e8704634325b",
+          "card": "519ce219-15c3-49e2-a6ca-51bd6a227595",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "99a809b1-693e-4ec3-932e-087684d17a84",
+          "card": "c42c5bee-43c3-4d29-bf0a-64d5ec5c4eed",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "a50304f9-af03-4e72-a955-e31f80e75ebc",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "97e36463-8f20-4a1b-82e5-0c15b0b861cf",
+          "card": "cc584485-f5fa-4029-8b47-4ab9954da11d",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "727f473a-1ba5-4c25-bbb1-1440916f2b57",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "9ef208fa-0c6d-460e-b416-cda55cabd422",
+          "card": "89d326f1-3798-4915-a3f0-b206fdabaebd",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "b9520453-915a-4293-89d1-a5b39b95e4a6",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "9b27e77c-2485-4b17-b934-39867607901d",
+          "card": "e40eabef-8f64-49b3-a827-e0959f1d8fb2",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "e7bf66c6-b504-4b24-a30b-bc22306c82dc",
+          "card": "0bfcc499-7a45-452e-ad36-d2e2026ad580",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "6df67076-5a8a-4948-a279-8c233a3f3f33",
+          "card": "5f3abdc4-cae4-403a-83ea-5d626acb81f1",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "dff550ff-8f0e-4450-a454-2a4cbad3f1cf",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "2181d7dd-9615-4b0d-adde-d1643ad00d32",
+          "card": "97b90b58-0d63-491b-b7e8-6448d6eb1ee9",
+          "suffix": "043",
+          "rarity": "common"
+        },
+        {
+          "id": "65539723-de69-40f5-b2fa-df7fec886346",
+          "card": "b66f8936-8268-4cc9-91b8-a6e9919dbe61",
+          "suffix": "044",
+          "rarity": "common"
+        },
+        {
+          "id": "8870cc39-9206-477e-9e13-4e438d4cc3c4",
+          "card": "6d7a7be5-a2e5-4cfa-b3ab-e62baf36f22f",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ea129a-71ac-497c-bd92-04ef1c72a435",
+          "card": "169e9c0c-1ff2-4661-a6db-2bfcc0ab573f",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "fr"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//c/ce/YSYR-DeckFR.png",
+      "cards": [
+        {
+          "id": "d5a00f4f-c71e-4d08-8fa5-05df4342cfed",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "49a49830-e001-4e66-a22f-248067ee24ee",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "41c033df-bcb1-4108-8477-5c9672fca7ea",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b7aca5e8-0250-444e-b60d-f872759c9df2",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "7f313f4c-5df9-4af3-89b3-e2bd88b49f22",
+          "card": "f394d2a1-e71e-4d59-acb5-44add2e12249",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2",
+          "card": "d497f3b4-d921-4bfc-bfae-fa9026a083c1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e55ef29-adbe-4dd0-a225-8311c6a36e6b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "cfb8dc6b-3716-4cc4-84c1-8c12833bc532",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "c02da792-6927-4e43-bdfc-0babb12dbf62",
+          "card": "8dd1ac1f-3c0b-43d0-89d5-45a3a1af0665",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3ffb4278-f869-4e8e-b295-f87cf6f14b9d",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "012",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "9d333115-37f1-4e53-8c03-945f53b5f79c",
+          "card": "80c1dbe5-5f9c-4ba1-aac5-98e5215295be",
+          "suffix": "013",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "e6b646a6-0707-4175-a57f-01d03d95e374",
+          "card": "788a339e-b925-41ce-b2f2-dbd3b3e2cbcd",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "e3c65b67-1499-4981-b691-0c59ff8de65b",
+          "card": "ef9de57c-cc45-4a66-938c-e0f831baae09",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "54760863-45c4-4495-b4d3-69d6730c3869",
+          "card": "cc1ae3cf-70a8-455d-ab78-a9c9f4b6f806",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "bd10ccca-2031-41ef-bf4c-eae2c9e8885d",
+          "card": "d93fe7df-a3b6-4bbd-abc0-1ae51a863fe9",
+          "suffix": "017",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "7da48186-1471-465c-b771-f7a87911ba82",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "f74ee505-9c15-42ad-8230-1123d848a590",
+          "card": "5d2da887-b5db-4c31-9b94-0ef39ccc3ed5",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "d8626342-d433-4c7c-938e-d3d5cb3ca66c",
+          "card": "6cd1f3c6-32af-490c-a27a-4f2a5ecce542",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "ff64a629-e615-425a-90aa-d3b5d2d96400",
+          "card": "3b9fc1ca-3137-4f79-b687-e2b4af712146",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4",
+          "card": "78db8937-37b5-4566-ac4b-0ba4f7c1f45e",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "a351d355-7e9c-47dd-9c2a-451bc60d40ea",
+          "card": "9d336875-633d-48cc-8f72-d203e9eee989",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f0e37f82-02e4-4919-af45-a08581c9af5b",
+          "card": "ecf75ef9-6a9e-45f6-acd4-11cef0d779dc",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "6599ee90-f3f8-49ea-ae70-cd82e1e24269",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b50136ea-5473-4ce6-9786-329176b6cc39",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a39883b1-c4c7-4cb1-8547-97ea93990b40",
+          "card": "74bf3b6a-ccdd-4612-b0c1-981b59db1671",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ac9cba3c-0981-4986-83c3-bc8daa238134",
+          "card": "d15ea879-903e-481a-9ad1-774823a8518b",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "6ed7906d-7653-46ca-9387-d1217ec1db68",
+          "card": "f18e3d9c-6979-440a-bc70-d5c8f8ddaf2a",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "edd6a727-bc2d-4af9-a272-41b0ce2fe305",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "44e55a6a-752f-446d-8705-b1752e4b7d6a",
+          "card": "33c53c07-b01a-4da7-95f5-ea12573bee4e",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "27b3a2f2-2eb6-4e27-a23b-e8704634325b",
+          "card": "519ce219-15c3-49e2-a6ca-51bd6a227595",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "99a809b1-693e-4ec3-932e-087684d17a84",
+          "card": "c42c5bee-43c3-4d29-bf0a-64d5ec5c4eed",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "a50304f9-af03-4e72-a955-e31f80e75ebc",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "97e36463-8f20-4a1b-82e5-0c15b0b861cf",
+          "card": "cc584485-f5fa-4029-8b47-4ab9954da11d",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "727f473a-1ba5-4c25-bbb1-1440916f2b57",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "9ef208fa-0c6d-460e-b416-cda55cabd422",
+          "card": "89d326f1-3798-4915-a3f0-b206fdabaebd",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "b9520453-915a-4293-89d1-a5b39b95e4a6",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "9b27e77c-2485-4b17-b934-39867607901d",
+          "card": "e40eabef-8f64-49b3-a827-e0959f1d8fb2",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "e7bf66c6-b504-4b24-a30b-bc22306c82dc",
+          "card": "0bfcc499-7a45-452e-ad36-d2e2026ad580",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "6df67076-5a8a-4948-a279-8c233a3f3f33",
+          "card": "5f3abdc4-cae4-403a-83ea-5d626acb81f1",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "dff550ff-8f0e-4450-a454-2a4cbad3f1cf",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "2181d7dd-9615-4b0d-adde-d1643ad00d32",
+          "card": "97b90b58-0d63-491b-b7e8-6448d6eb1ee9",
+          "suffix": "043",
+          "rarity": "common"
+        },
+        {
+          "id": "65539723-de69-40f5-b2fa-df7fec886346",
+          "card": "b66f8936-8268-4cc9-91b8-a6e9919dbe61",
+          "suffix": "044",
+          "rarity": "common"
+        },
+        {
+          "id": "8870cc39-9206-477e-9e13-4e438d4cc3c4",
+          "card": "6d7a7be5-a2e5-4cfa-b3ab-e62baf36f22f",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ea129a-71ac-497c-bd92-04ef1c72a435",
+          "card": "169e9c0c-1ff2-4661-a6db-2bfcc0ab573f",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "it"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6e/YSYR-DeckIT.png",
+      "cards": [
+        {
+          "id": "d5a00f4f-c71e-4d08-8fa5-05df4342cfed",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "49a49830-e001-4e66-a22f-248067ee24ee",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "41c033df-bcb1-4108-8477-5c9672fca7ea",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b7aca5e8-0250-444e-b60d-f872759c9df2",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "7f313f4c-5df9-4af3-89b3-e2bd88b49f22",
+          "card": "f394d2a1-e71e-4d59-acb5-44add2e12249",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2",
+          "card": "d497f3b4-d921-4bfc-bfae-fa9026a083c1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e55ef29-adbe-4dd0-a225-8311c6a36e6b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "cfb8dc6b-3716-4cc4-84c1-8c12833bc532",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "c02da792-6927-4e43-bdfc-0babb12dbf62",
+          "card": "8dd1ac1f-3c0b-43d0-89d5-45a3a1af0665",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3ffb4278-f869-4e8e-b295-f87cf6f14b9d",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "012",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "9d333115-37f1-4e53-8c03-945f53b5f79c",
+          "card": "80c1dbe5-5f9c-4ba1-aac5-98e5215295be",
+          "suffix": "013",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "e6b646a6-0707-4175-a57f-01d03d95e374",
+          "card": "788a339e-b925-41ce-b2f2-dbd3b3e2cbcd",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "e3c65b67-1499-4981-b691-0c59ff8de65b",
+          "card": "ef9de57c-cc45-4a66-938c-e0f831baae09",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "54760863-45c4-4495-b4d3-69d6730c3869",
+          "card": "cc1ae3cf-70a8-455d-ab78-a9c9f4b6f806",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "bd10ccca-2031-41ef-bf4c-eae2c9e8885d",
+          "card": "d93fe7df-a3b6-4bbd-abc0-1ae51a863fe9",
+          "suffix": "017",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "7da48186-1471-465c-b771-f7a87911ba82",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "f74ee505-9c15-42ad-8230-1123d848a590",
+          "card": "5d2da887-b5db-4c31-9b94-0ef39ccc3ed5",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "d8626342-d433-4c7c-938e-d3d5cb3ca66c",
+          "card": "6cd1f3c6-32af-490c-a27a-4f2a5ecce542",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "ff64a629-e615-425a-90aa-d3b5d2d96400",
+          "card": "3b9fc1ca-3137-4f79-b687-e2b4af712146",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4",
+          "card": "78db8937-37b5-4566-ac4b-0ba4f7c1f45e",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "a351d355-7e9c-47dd-9c2a-451bc60d40ea",
+          "card": "9d336875-633d-48cc-8f72-d203e9eee989",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f0e37f82-02e4-4919-af45-a08581c9af5b",
+          "card": "ecf75ef9-6a9e-45f6-acd4-11cef0d779dc",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "6599ee90-f3f8-49ea-ae70-cd82e1e24269",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b50136ea-5473-4ce6-9786-329176b6cc39",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a39883b1-c4c7-4cb1-8547-97ea93990b40",
+          "card": "74bf3b6a-ccdd-4612-b0c1-981b59db1671",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ac9cba3c-0981-4986-83c3-bc8daa238134",
+          "card": "d15ea879-903e-481a-9ad1-774823a8518b",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "6ed7906d-7653-46ca-9387-d1217ec1db68",
+          "card": "f18e3d9c-6979-440a-bc70-d5c8f8ddaf2a",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "edd6a727-bc2d-4af9-a272-41b0ce2fe305",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "44e55a6a-752f-446d-8705-b1752e4b7d6a",
+          "card": "33c53c07-b01a-4da7-95f5-ea12573bee4e",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "27b3a2f2-2eb6-4e27-a23b-e8704634325b",
+          "card": "519ce219-15c3-49e2-a6ca-51bd6a227595",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "99a809b1-693e-4ec3-932e-087684d17a84",
+          "card": "c42c5bee-43c3-4d29-bf0a-64d5ec5c4eed",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "a50304f9-af03-4e72-a955-e31f80e75ebc",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "97e36463-8f20-4a1b-82e5-0c15b0b861cf",
+          "card": "cc584485-f5fa-4029-8b47-4ab9954da11d",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "727f473a-1ba5-4c25-bbb1-1440916f2b57",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "9ef208fa-0c6d-460e-b416-cda55cabd422",
+          "card": "89d326f1-3798-4915-a3f0-b206fdabaebd",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "b9520453-915a-4293-89d1-a5b39b95e4a6",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "9b27e77c-2485-4b17-b934-39867607901d",
+          "card": "e40eabef-8f64-49b3-a827-e0959f1d8fb2",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "e7bf66c6-b504-4b24-a30b-bc22306c82dc",
+          "card": "0bfcc499-7a45-452e-ad36-d2e2026ad580",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "6df67076-5a8a-4948-a279-8c233a3f3f33",
+          "card": "5f3abdc4-cae4-403a-83ea-5d626acb81f1",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "dff550ff-8f0e-4450-a454-2a4cbad3f1cf",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "2181d7dd-9615-4b0d-adde-d1643ad00d32",
+          "card": "97b90b58-0d63-491b-b7e8-6448d6eb1ee9",
+          "suffix": "043",
+          "rarity": "common"
+        },
+        {
+          "id": "65539723-de69-40f5-b2fa-df7fec886346",
+          "card": "b66f8936-8268-4cc9-91b8-a6e9919dbe61",
+          "suffix": "044",
+          "rarity": "common"
+        },
+        {
+          "id": "8870cc39-9206-477e-9e13-4e438d4cc3c4",
+          "card": "6d7a7be5-a2e5-4cfa-b3ab-e62baf36f22f",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ea129a-71ac-497c-bd92-04ef1c72a435",
+          "card": "169e9c0c-1ff2-4661-a6db-2bfcc0ab573f",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//0/00/YSYR-DeckEN.png",
+      "cards": [
+        {
+          "id": "d5a00f4f-c71e-4d08-8fa5-05df4342cfed",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "49a49830-e001-4e66-a22f-248067ee24ee",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "41c033df-bcb1-4108-8477-5c9672fca7ea",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b7aca5e8-0250-444e-b60d-f872759c9df2",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "7f313f4c-5df9-4af3-89b3-e2bd88b49f22",
+          "card": "f394d2a1-e71e-4d59-acb5-44add2e12249",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2",
+          "card": "d497f3b4-d921-4bfc-bfae-fa9026a083c1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e55ef29-adbe-4dd0-a225-8311c6a36e6b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "cfb8dc6b-3716-4cc4-84c1-8c12833bc532",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "c02da792-6927-4e43-bdfc-0babb12dbf62",
+          "card": "8dd1ac1f-3c0b-43d0-89d5-45a3a1af0665",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3ffb4278-f869-4e8e-b295-f87cf6f14b9d",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "012",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "9d333115-37f1-4e53-8c03-945f53b5f79c",
+          "card": "80c1dbe5-5f9c-4ba1-aac5-98e5215295be",
+          "suffix": "013",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "e6b646a6-0707-4175-a57f-01d03d95e374",
+          "card": "788a339e-b925-41ce-b2f2-dbd3b3e2cbcd",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "e3c65b67-1499-4981-b691-0c59ff8de65b",
+          "card": "ef9de57c-cc45-4a66-938c-e0f831baae09",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "54760863-45c4-4495-b4d3-69d6730c3869",
+          "card": "cc1ae3cf-70a8-455d-ab78-a9c9f4b6f806",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "bd10ccca-2031-41ef-bf4c-eae2c9e8885d",
+          "card": "d93fe7df-a3b6-4bbd-abc0-1ae51a863fe9",
+          "suffix": "017",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "7da48186-1471-465c-b771-f7a87911ba82",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "f74ee505-9c15-42ad-8230-1123d848a590",
+          "card": "5d2da887-b5db-4c31-9b94-0ef39ccc3ed5",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "d8626342-d433-4c7c-938e-d3d5cb3ca66c",
+          "card": "6cd1f3c6-32af-490c-a27a-4f2a5ecce542",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "ff64a629-e615-425a-90aa-d3b5d2d96400",
+          "card": "3b9fc1ca-3137-4f79-b687-e2b4af712146",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4",
+          "card": "78db8937-37b5-4566-ac4b-0ba4f7c1f45e",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "a351d355-7e9c-47dd-9c2a-451bc60d40ea",
+          "card": "9d336875-633d-48cc-8f72-d203e9eee989",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f0e37f82-02e4-4919-af45-a08581c9af5b",
+          "card": "ecf75ef9-6a9e-45f6-acd4-11cef0d779dc",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "6599ee90-f3f8-49ea-ae70-cd82e1e24269",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b50136ea-5473-4ce6-9786-329176b6cc39",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a39883b1-c4c7-4cb1-8547-97ea93990b40",
+          "card": "74bf3b6a-ccdd-4612-b0c1-981b59db1671",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ac9cba3c-0981-4986-83c3-bc8daa238134",
+          "card": "d15ea879-903e-481a-9ad1-774823a8518b",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "6ed7906d-7653-46ca-9387-d1217ec1db68",
+          "card": "f18e3d9c-6979-440a-bc70-d5c8f8ddaf2a",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "edd6a727-bc2d-4af9-a272-41b0ce2fe305",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "44e55a6a-752f-446d-8705-b1752e4b7d6a",
+          "card": "33c53c07-b01a-4da7-95f5-ea12573bee4e",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "27b3a2f2-2eb6-4e27-a23b-e8704634325b",
+          "card": "519ce219-15c3-49e2-a6ca-51bd6a227595",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "99a809b1-693e-4ec3-932e-087684d17a84",
+          "card": "c42c5bee-43c3-4d29-bf0a-64d5ec5c4eed",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "a50304f9-af03-4e72-a955-e31f80e75ebc",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "97e36463-8f20-4a1b-82e5-0c15b0b861cf",
+          "card": "cc584485-f5fa-4029-8b47-4ab9954da11d",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "727f473a-1ba5-4c25-bbb1-1440916f2b57",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "9ef208fa-0c6d-460e-b416-cda55cabd422",
+          "card": "89d326f1-3798-4915-a3f0-b206fdabaebd",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "b9520453-915a-4293-89d1-a5b39b95e4a6",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "9b27e77c-2485-4b17-b934-39867607901d",
+          "card": "e40eabef-8f64-49b3-a827-e0959f1d8fb2",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "e7bf66c6-b504-4b24-a30b-bc22306c82dc",
+          "card": "0bfcc499-7a45-452e-ad36-d2e2026ad580",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "6df67076-5a8a-4948-a279-8c233a3f3f33",
+          "card": "5f3abdc4-cae4-403a-83ea-5d626acb81f1",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "dff550ff-8f0e-4450-a454-2a4cbad3f1cf",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "2181d7dd-9615-4b0d-adde-d1643ad00d32",
+          "card": "97b90b58-0d63-491b-b7e8-6448d6eb1ee9",
+          "suffix": "043",
+          "rarity": "common"
+        },
+        {
+          "id": "65539723-de69-40f5-b2fa-df7fec886346",
+          "card": "b66f8936-8268-4cc9-91b8-a6e9919dbe61",
+          "suffix": "044",
+          "rarity": "common"
+        },
+        {
+          "id": "8870cc39-9206-477e-9e13-4e438d4cc3c4",
+          "card": "6d7a7be5-a2e5-4cfa-b3ab-e62baf36f22f",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ea129a-71ac-497c-bd92-04ef1c72a435",
+          "card": "169e9c0c-1ff2-4661-a6db-2bfcc0ab573f",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "de"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited",
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//6/6a/YSYR-DeckDE.png",
+      "cards": [
+        {
+          "id": "d5a00f4f-c71e-4d08-8fa5-05df4342cfed",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "49a49830-e001-4e66-a22f-248067ee24ee",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "41c033df-bcb1-4108-8477-5c9672fca7ea",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b7aca5e8-0250-444e-b60d-f872759c9df2",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "7f313f4c-5df9-4af3-89b3-e2bd88b49f22",
+          "card": "f394d2a1-e71e-4d59-acb5-44add2e12249",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2",
+          "card": "d497f3b4-d921-4bfc-bfae-fa9026a083c1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e55ef29-adbe-4dd0-a225-8311c6a36e6b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "cfb8dc6b-3716-4cc4-84c1-8c12833bc532",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "c02da792-6927-4e43-bdfc-0babb12dbf62",
+          "card": "8dd1ac1f-3c0b-43d0-89d5-45a3a1af0665",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3ffb4278-f869-4e8e-b295-f87cf6f14b9d",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "012",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "9d333115-37f1-4e53-8c03-945f53b5f79c",
+          "card": "80c1dbe5-5f9c-4ba1-aac5-98e5215295be",
+          "suffix": "013",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "e6b646a6-0707-4175-a57f-01d03d95e374",
+          "card": "788a339e-b925-41ce-b2f2-dbd3b3e2cbcd",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "e3c65b67-1499-4981-b691-0c59ff8de65b",
+          "card": "ef9de57c-cc45-4a66-938c-e0f831baae09",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "54760863-45c4-4495-b4d3-69d6730c3869",
+          "card": "cc1ae3cf-70a8-455d-ab78-a9c9f4b6f806",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "bd10ccca-2031-41ef-bf4c-eae2c9e8885d",
+          "card": "d93fe7df-a3b6-4bbd-abc0-1ae51a863fe9",
+          "suffix": "017",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "7da48186-1471-465c-b771-f7a87911ba82",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "f74ee505-9c15-42ad-8230-1123d848a590",
+          "card": "5d2da887-b5db-4c31-9b94-0ef39ccc3ed5",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "d8626342-d433-4c7c-938e-d3d5cb3ca66c",
+          "card": "6cd1f3c6-32af-490c-a27a-4f2a5ecce542",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "ff64a629-e615-425a-90aa-d3b5d2d96400",
+          "card": "3b9fc1ca-3137-4f79-b687-e2b4af712146",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4",
+          "card": "78db8937-37b5-4566-ac4b-0ba4f7c1f45e",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "a351d355-7e9c-47dd-9c2a-451bc60d40ea",
+          "card": "9d336875-633d-48cc-8f72-d203e9eee989",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f0e37f82-02e4-4919-af45-a08581c9af5b",
+          "card": "ecf75ef9-6a9e-45f6-acd4-11cef0d779dc",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "6599ee90-f3f8-49ea-ae70-cd82e1e24269",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b50136ea-5473-4ce6-9786-329176b6cc39",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a39883b1-c4c7-4cb1-8547-97ea93990b40",
+          "card": "74bf3b6a-ccdd-4612-b0c1-981b59db1671",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ac9cba3c-0981-4986-83c3-bc8daa238134",
+          "card": "d15ea879-903e-481a-9ad1-774823a8518b",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "6ed7906d-7653-46ca-9387-d1217ec1db68",
+          "card": "f18e3d9c-6979-440a-bc70-d5c8f8ddaf2a",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "edd6a727-bc2d-4af9-a272-41b0ce2fe305",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "44e55a6a-752f-446d-8705-b1752e4b7d6a",
+          "card": "33c53c07-b01a-4da7-95f5-ea12573bee4e",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "27b3a2f2-2eb6-4e27-a23b-e8704634325b",
+          "card": "519ce219-15c3-49e2-a6ca-51bd6a227595",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "99a809b1-693e-4ec3-932e-087684d17a84",
+          "card": "c42c5bee-43c3-4d29-bf0a-64d5ec5c4eed",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "a50304f9-af03-4e72-a955-e31f80e75ebc",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "97e36463-8f20-4a1b-82e5-0c15b0b861cf",
+          "card": "cc584485-f5fa-4029-8b47-4ab9954da11d",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "727f473a-1ba5-4c25-bbb1-1440916f2b57",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "9ef208fa-0c6d-460e-b416-cda55cabd422",
+          "card": "89d326f1-3798-4915-a3f0-b206fdabaebd",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "b9520453-915a-4293-89d1-a5b39b95e4a6",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "9b27e77c-2485-4b17-b934-39867607901d",
+          "card": "e40eabef-8f64-49b3-a827-e0959f1d8fb2",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "e7bf66c6-b504-4b24-a30b-bc22306c82dc",
+          "card": "0bfcc499-7a45-452e-ad36-d2e2026ad580",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "6df67076-5a8a-4948-a279-8c233a3f3f33",
+          "card": "5f3abdc4-cae4-403a-83ea-5d626acb81f1",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "dff550ff-8f0e-4450-a454-2a4cbad3f1cf",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "2181d7dd-9615-4b0d-adde-d1643ad00d32",
+          "card": "97b90b58-0d63-491b-b7e8-6448d6eb1ee9",
+          "suffix": "043",
+          "rarity": "common"
+        },
+        {
+          "id": "65539723-de69-40f5-b2fa-df7fec886346",
+          "card": "b66f8936-8268-4cc9-91b8-a6e9919dbe61",
+          "suffix": "044",
+          "rarity": "common"
+        },
+        {
+          "id": "8870cc39-9206-477e-9e13-4e438d4cc3c4",
+          "card": "6d7a7be5-a2e5-4cfa-b3ab-e62baf36f22f",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ea129a-71ac-497c-bd92-04ef1c72a435",
+          "card": "169e9c0c-1ff2-4661-a6db-2bfcc0ab573f",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    },
+    {
+      "locales": [
+        "sp"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//4/46/YSYR-DeckSP.png",
+      "cards": [
+        {
+          "id": "d5a00f4f-c71e-4d08-8fa5-05df4342cfed",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "ultimate",
+          "qty": 2
+        },
+        {
+          "id": "49a49830-e001-4e66-a22f-248067ee24ee",
+          "card": "c0285d04-cadd-402d-a865-799a182d7510",
+          "suffix": "001",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "41c033df-bcb1-4108-8477-5c9672fca7ea",
+          "card": "e8b3499e-9370-43a1-aa44-a9d4eaed4e8e",
+          "suffix": "002",
+          "rarity": "common"
+        },
+        {
+          "id": "b7aca5e8-0250-444e-b60d-f872759c9df2",
+          "card": "26005535-d60f-4b75-9329-e5bcd1ba43b8",
+          "suffix": "003",
+          "rarity": "common"
+        },
+        {
+          "id": "f3de4d38-7686-4ba0-8187-fc9c1f93d8b9",
+          "card": "a0265517-063f-4ffa-8b4e-31acd1512992",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "7f313f4c-5df9-4af3-89b3-e2bd88b49f22",
+          "card": "f394d2a1-e71e-4d59-acb5-44add2e12249",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "f764fc74-742f-4e64-b8dc-eb5d93d1d5a2",
+          "card": "d497f3b4-d921-4bfc-bfae-fa9026a083c1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "1e55ef29-adbe-4dd0-a225-8311c6a36e6b",
+          "card": "7e7d5c86-0155-4f8c-9089-6c9fe51e1b25",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "1ca9c7d2-d93c-4cd5-86dc-9a5c52bf05ad",
+          "card": "3313ba06-0fbd-49cd-bc18-62c8d8890c86",
+          "suffix": "008",
+          "rarity": "common"
+        },
+        {
+          "id": "cfb8dc6b-3716-4cc4-84c1-8c12833bc532",
+          "card": "6e09fe41-b80c-41a3-a0cb-1f858b7bcd3d",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "c02da792-6927-4e43-bdfc-0babb12dbf62",
+          "card": "8dd1ac1f-3c0b-43d0-89d5-45a3a1af0665",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "c4afbc0b-71e1-4055-a4d4-675c4e27fc4e",
+          "card": "6cb08e9f-e85c-464b-b3ec-71fe7790ceb7",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "3ffb4278-f869-4e8e-b295-f87cf6f14b9d",
+          "card": "781a92c4-8491-4389-94f5-d843e78adcf6",
+          "suffix": "012",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "9d333115-37f1-4e53-8c03-945f53b5f79c",
+          "card": "80c1dbe5-5f9c-4ba1-aac5-98e5215295be",
+          "suffix": "013",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "e6b646a6-0707-4175-a57f-01d03d95e374",
+          "card": "788a339e-b925-41ce-b2f2-dbd3b3e2cbcd",
+          "suffix": "014",
+          "rarity": "common"
+        },
+        {
+          "id": "e3c65b67-1499-4981-b691-0c59ff8de65b",
+          "card": "ef9de57c-cc45-4a66-938c-e0f831baae09",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "54760863-45c4-4495-b4d3-69d6730c3869",
+          "card": "cc1ae3cf-70a8-455d-ab78-a9c9f4b6f806",
+          "suffix": "016",
+          "rarity": "common"
+        },
+        {
+          "id": "bd10ccca-2031-41ef-bf4c-eae2c9e8885d",
+          "card": "d93fe7df-a3b6-4bbd-abc0-1ae51a863fe9",
+          "suffix": "017",
+          "rarity": "common",
+          "qty": 2
+        },
+        {
+          "id": "7da48186-1471-465c-b771-f7a87911ba82",
+          "card": "b8cb7021-bf6c-4c73-b0c6-7d78197ab52b",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "f74ee505-9c15-42ad-8230-1123d848a590",
+          "card": "5d2da887-b5db-4c31-9b94-0ef39ccc3ed5",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "d8626342-d433-4c7c-938e-d3d5cb3ca66c",
+          "card": "6cd1f3c6-32af-490c-a27a-4f2a5ecce542",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "ff64a629-e615-425a-90aa-d3b5d2d96400",
+          "card": "3b9fc1ca-3137-4f79-b687-e2b4af712146",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "9fa6cc4c-1572-4a8f-a985-b3bc5d3e55b4",
+          "card": "78db8937-37b5-4566-ac4b-0ba4f7c1f45e",
+          "suffix": "022",
+          "rarity": "common"
+        },
+        {
+          "id": "a351d355-7e9c-47dd-9c2a-451bc60d40ea",
+          "card": "9d336875-633d-48cc-8f72-d203e9eee989",
+          "suffix": "023",
+          "rarity": "common"
+        },
+        {
+          "id": "f0e37f82-02e4-4919-af45-a08581c9af5b",
+          "card": "ecf75ef9-6a9e-45f6-acd4-11cef0d779dc",
+          "suffix": "024",
+          "rarity": "common"
+        },
+        {
+          "id": "6599ee90-f3f8-49ea-ae70-cd82e1e24269",
+          "card": "0bae3885-838e-4d5d-88ac-108218510d12",
+          "suffix": "025",
+          "rarity": "common"
+        },
+        {
+          "id": "b50136ea-5473-4ce6-9786-329176b6cc39",
+          "card": "e1a7a928-8fa0-4ab1-bade-66c0258a0d0c",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "a39883b1-c4c7-4cb1-8547-97ea93990b40",
+          "card": "74bf3b6a-ccdd-4612-b0c1-981b59db1671",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "ac9cba3c-0981-4986-83c3-bc8daa238134",
+          "card": "d15ea879-903e-481a-9ad1-774823a8518b",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "6ed7906d-7653-46ca-9387-d1217ec1db68",
+          "card": "f18e3d9c-6979-440a-bc70-d5c8f8ddaf2a",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "edd6a727-bc2d-4af9-a272-41b0ce2fe305",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "44e55a6a-752f-446d-8705-b1752e4b7d6a",
+          "card": "33c53c07-b01a-4da7-95f5-ea12573bee4e",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "27b3a2f2-2eb6-4e27-a23b-e8704634325b",
+          "card": "519ce219-15c3-49e2-a6ca-51bd6a227595",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "99a809b1-693e-4ec3-932e-087684d17a84",
+          "card": "c42c5bee-43c3-4d29-bf0a-64d5ec5c4eed",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "a50304f9-af03-4e72-a955-e31f80e75ebc",
+          "card": "ad389ff8-b20e-4938-a973-be02f70c932b",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "97e36463-8f20-4a1b-82e5-0c15b0b861cf",
+          "card": "cc584485-f5fa-4029-8b47-4ab9954da11d",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "727f473a-1ba5-4c25-bbb1-1440916f2b57",
+          "card": "1f0cf2a8-f7cc-486f-a15a-332ced80911d",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "9ef208fa-0c6d-460e-b416-cda55cabd422",
+          "card": "89d326f1-3798-4915-a3f0-b206fdabaebd",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "b9520453-915a-4293-89d1-a5b39b95e4a6",
+          "card": "37bca14b-fe1a-4018-ae53-bf9a58e7d02c",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "9b27e77c-2485-4b17-b934-39867607901d",
+          "card": "e40eabef-8f64-49b3-a827-e0959f1d8fb2",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "e7bf66c6-b504-4b24-a30b-bc22306c82dc",
+          "card": "0bfcc499-7a45-452e-ad36-d2e2026ad580",
+          "suffix": "040",
+          "rarity": "common"
+        },
+        {
+          "id": "6df67076-5a8a-4948-a279-8c233a3f3f33",
+          "card": "5f3abdc4-cae4-403a-83ea-5d626acb81f1",
+          "suffix": "041",
+          "rarity": "common"
+        },
+        {
+          "id": "dff550ff-8f0e-4450-a454-2a4cbad3f1cf",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "042",
+          "rarity": "common"
+        },
+        {
+          "id": "2181d7dd-9615-4b0d-adde-d1643ad00d32",
+          "card": "97b90b58-0d63-491b-b7e8-6448d6eb1ee9",
+          "suffix": "043",
+          "rarity": "common"
+        },
+        {
+          "id": "65539723-de69-40f5-b2fa-df7fec886346",
+          "card": "b66f8936-8268-4cc9-91b8-a6e9919dbe61",
+          "suffix": "044",
+          "rarity": "common"
+        },
+        {
+          "id": "8870cc39-9206-477e-9e13-4e438d4cc3c4",
+          "card": "6d7a7be5-a2e5-4cfa-b3ab-e62baf36f22f",
+          "suffix": "045",
+          "rarity": "common"
+        },
+        {
+          "id": "c0ea129a-71ac-497c-bd92-04ef1c72a435",
+          "card": "169e9c0c-1ff2-4661-a6db-2bfcc0ab573f",
+          "suffix": "046",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {
+        "ygoprodeck": "Starter Deck: Yugi Reloaded"
+      }
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starter Deck: Yugi Reloaded",
+      "id": 315525
+    }
+  }
+}

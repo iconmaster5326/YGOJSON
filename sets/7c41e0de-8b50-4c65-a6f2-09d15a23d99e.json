@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "7c41e0de-8b50-4c65-a6f2-09d15a23d99e",
+  "name": {
+    "en": "Yu-Gi-Oh! 5D's Volume 9",
+    "ja": "\u904a\u622f\u738b\uff15\uff24\uff07\uff53 \u7b2c\uff19\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YF09-EN",
+      "image": "https://ms.yugipedia.com//0/05/YF09-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "cbf2a75f-9926-4464-8e67-c1c48229c31b": "https://ms.yugipedia.com//archive/6/61/20180506124916%21StardustChronicleSparkDragon-YF09-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "cbf2a75f-9926-4464-8e67-c1c48229c31b": {
+            "image": "https://ms.yugipedia.com//archive/6/61/20180506124916%21StardustChronicleSparkDragon-YF09-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111112003
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YF09-JP",
+      "date": "2015-06-04",
+      "image": "https://ms.yugipedia.com//e/ec/YF09-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "cbf2a75f-9926-4464-8e67-c1c48229c31b": "https://ms.yugipedia.com//e/e1/StardustChronicleSparkDragon-YF09-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "cbf2a75f-9926-4464-8e67-c1c48229c31b": {
+            "image": "https://ms.yugipedia.com//e/e1/StardustChronicleSparkDragon-YF09-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121217003
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//0/05/YF09-PromoEN.png",
+      "cards": [
+        {
+          "id": "cbf2a75f-9926-4464-8e67-c1c48229c31b",
+          "card": "19b092ae-6575-49e0-bb08-9d1933e0bc4f",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//e/ec/YF09-PromoJP.png",
+      "cards": [
+        {
+          "id": "cbf2a75f-9926-4464-8e67-c1c48229c31b",
+          "card": "19b092ae-6575-49e0-bb08-9d1933e0bc4f",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! 5D's Volume 9 promotional card",
+      "id": 352378
+    }
+  }
+}

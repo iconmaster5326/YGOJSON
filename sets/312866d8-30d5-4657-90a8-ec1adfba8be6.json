@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "312866d8-30d5-4657-90a8-ec1adfba8be6",
+  "name": {
+    "en": "Yu-Gi-Oh! World Championship 2011 prize cards"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "2011-EN",
+      "date": "2011-08-14",
+      "cardImages": {
+        "unlimited": {
+          "2d6146ce-f878-4390-a7f5-19539e88cae5": "https://ms.yugipedia.com//6/6a/KingLandiatheGoldfang-2011-EN-UR-UE.jpg",
+          "ea6d3e63-baab-4df9-b551-6760d16f2945": "https://ms.yugipedia.com//e/e1/QueenNereiatheSilvercrown-2011-EN-UR-UE.jpg"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "ea6d3e63-baab-4df9-b551-6760d16f2945": {
+            "image": "https://ms.yugipedia.com//e/e1/QueenNereiatheSilvercrown-2011-EN-UR-UE.jpg"
+          },
+          "2d6146ce-f878-4390-a7f5-19539e88cae5": {
+            "image": "https://ms.yugipedia.com//6/6a/KingLandiatheGoldfang-2011-EN-UR-UE.jpg"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121210008
+        ]
+      }
+    },
+    "ae": {
+      "language": "ae",
+      "prefix": "2011-AE",
+      "date": "2011-08-14",
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cardImages": {
+        "unlimited": {
+          "10ad8175-048e-4986-8314-4152a800ff9b": "https://ms.yugipedia.com//8/83/StardustDivinity-2011-AE-SR-UE-RP.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "10ad8175-048e-4986-8314-4152a800ff9b": {
+            "image": "https://ms.yugipedia.com//8/83/StardustDivinity-2011-AE-SR-UE-RP.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          131313002
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "2d6146ce-f878-4390-a7f5-19539e88cae5",
+          "card": "41b5d7c3-d54c-41ee-93b8-dfc04d20ead3",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "ea6d3e63-baab-4df9-b551-6760d16f2945",
+          "card": "5f3ef411-5815-4c4b-8943-d1de9dac9268",
+          "suffix": "002",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cards": [
+        {
+          "id": "10ad8175-048e-4986-8314-4152a800ff9b",
+          "card": "74fd852f-d0f0-4207-919b-d0bb4d92ef7a",
+          "suffix": "003",
+          "rarity": "super",
+          "replica": true
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! World Championship 2011 prize cards",
+      "id": 332101
+    }
+  }
+}

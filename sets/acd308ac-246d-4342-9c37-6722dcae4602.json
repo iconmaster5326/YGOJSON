@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "acd308ac-246d-4342-9c37-6722dcae4602",
+  "name": {
+    "en": "Starter Deck 2006: Special Edition",
+    "ja": "\uff33\uff34\uff21\uff32\uff34\uff25\uff32\u3000\uff24\uff25\uff23\uff2b\u3000\uff33\uff30\uff25\uff23\uff29\uff21\uff2c\u3000\uff33\uff25\uff34"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YSD-ENS",
+      "image": "https://ms.yugipedia.com//d/d3/YSD-PromoEN.png",
+      "cardImages": {
+        "limited": {}
+      },
+      "cardInfo": {
+        "limited": {}
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {}
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YSD-JPS",
+      "date": "2006-03-23",
+      "image": "https://ms.yugipedia.com//f/fe/YSD-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "ea3e561f-6859-492f-9c53-a6b888db8a3f": "https://ms.yugipedia.com//5/58/ElementalHEROSparkman-YSD-JP-C-Alt.jpg"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "ea3e561f-6859-492f-9c53-a6b888db8a3f": {
+            "image": "https://ms.yugipedia.com//5/58/ElementalHEROSparkman-YSD-JP-C-Alt.jpg"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          111106004
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//d/d3/YSD-PromoEN.png",
+      "cards": [
+        {
+          "id": "d0d93bd4-793a-497a-ba0a-1321c5b4c0b6",
+          "card": "971c1b3b-1360-43c5-80c6-1a2c76511a53",
+          "suffix": "01",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//f/fe/YSD-PromoJP.png",
+      "cards": [
+        {
+          "id": "ea3e561f-6859-492f-9c53-a6b888db8a3f",
+          "card": "971c1b3b-1360-43c5-80c6-1a2c76511a53",
+          "suffix": "01",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Starter Deck 2006: Special Edition",
+      "id": 505989
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "2dc970a5-7fae-4e85-a8b1-94693bd61493",
+  "name": {
+    "en": "Yu-Gi-Oh! World Championship 2008 prize cards"
+  },
+  "locales": {
+    "ae": {
+      "language": "ae",
+      "prefix": "WCPS-AE",
+      "date": "2008-08-10",
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "cardInfo": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          131310002
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "WCPS-EN",
+      "date": "2008-08-10",
+      "cardImages": {
+        "unlimited": {
+          "ccc93812-3b11-45f8-972f-d501382209a7": "https://ms.yugipedia.com//1/1a/TyrtheVanquishingWarlord-WCPS-EN-UR-UE.png",
+          "633a949b-6e32-4560-9cd9-45bd4f646648": "https://ms.yugipedia.com//0/09/LoreleitheSymphonicArsenal-WCPS-EN-UR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "ccc93812-3b11-45f8-972f-d501382209a7": {
+            "image": "https://ms.yugipedia.com//1/1a/TyrtheVanquishingWarlord-WCPS-EN-UR-UE.png"
+          },
+          "633a949b-6e32-4560-9cd9-45bd4f646648": {
+            "image": "https://ms.yugipedia.com//0/09/LoreleitheSymphonicArsenal-WCPS-EN-UR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121207008
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "ae"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//2/20/Asian.png",
+      "cards": [
+        {
+          "id": "526a8403-d5f3-400c-b237-9963f1de6259",
+          "card": "1c1f6109-0a61-430d-b22d-d63eae5c8fc1",
+          "suffix": "803",
+          "rarity": "super"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "ccc93812-3b11-45f8-972f-d501382209a7",
+          "card": "381fe370-89b2-44a1-88bc-4daa60d43542",
+          "suffix": "801",
+          "rarity": "ultra"
+        },
+        {
+          "id": "633a949b-6e32-4560-9cd9-45bd4f646648",
+          "card": "3802264f-60ea-463e-bea5-f5bb5e21cef2",
+          "suffix": "802",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! World Championship 2008 prize cards",
+      "id": 332050
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "5822c8d1-c8c7-46f5-a48b-74c9f5da8250",
+  "name": {
+    "en": "Yu-Gi-Oh! GX Volume 8",
+    "ja": "\u904a\u622f\u738b\uff27\uff38 \u7b2c\uff18\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "en": {
+      "language": "en",
+      "prefix": "YG08-EN",
+      "date": "2012-01-03",
+      "image": "https://ms.yugipedia.com//e/e7/YG08-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "f76d4203-e31a-46ae-b052-b78201c9bc1e": "https://ms.yugipedia.com//a/ad/BarbaroidtheUltimateBattleMachine-YG08-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "f76d4203-e31a-46ae-b052-b78201c9bc1e": {
+            "image": "https://ms.yugipedia.com//a/ad/BarbaroidtheUltimateBattleMachine-YG08-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          161601301
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "YG08-JP",
+      "date": "2010-10-04",
+      "image": "https://ms.yugipedia.com//9/97/YG08-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "f76d4203-e31a-46ae-b052-b78201c9bc1e": "https://ms.yugipedia.com//0/08/BarbaroidtheUltimateBattleMachine-YG08-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "f76d4203-e31a-46ae-b052-b78201c9bc1e": {
+            "image": "https://ms.yugipedia.com//0/08/BarbaroidtheUltimateBattleMachine-YG08-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121212011
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//e/e7/YG08-PromoEN.png",
+      "cards": [
+        {
+          "id": "f76d4203-e31a-46ae-b052-b78201c9bc1e",
+          "card": "4dcc5205-4c8a-4884-b2bf-7c5f1b435a6c",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//9/97/YG08-PromoJP.png",
+      "cards": [
+        {
+          "id": "f76d4203-e31a-46ae-b052-b78201c9bc1e",
+          "card": "4dcc5205-4c8a-4884-b2bf-7c5f1b435a6c",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! GX Volume 8 promotional card",
+      "id": 163364
+    }
+  }
+}

@@ -1,0 +1,823 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "3208d288-e3e4-49b0-a7f4-45383be5cf73",
+  "name": {
+    "en": "Structure Deck R: Revival of the Great Divine Dragon",
+    "ja": "\u30b9\u30c8\u30e9\u30af\u30c1\u30e3\u30fc\u30c7\u30c3\u30ad\uff32 \uff0d\u5de8\u795e\u7adc\u5fa9\u6d3b\uff0d",
+    "ko": "\u3000\uff32\u3000-\u3000\uac70\uc2e0\ub8e1\ubd80\ud65c\u3000-"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "SR02-KR",
+      "date": "2016-12-08",
+      "image": "https://ms.yugipedia.com//e/e4/SR02-DeckKR.png",
+      "cardImages": {
+        "1st": {
+          "9730bc56-a778-4a60-b080-332d77ef9c05": "https://ms.yugipedia.com//3/36/DragonLordToken-SR02-KR-C-1E.png",
+          "63fff4d9-e616-46e2-ad9f-e05805b14663": "https://ms.yugipedia.com//7/7d/ArkbraveDragon-SR02-KR-UR-1E.png",
+          "aca4896b-f1df-46cc-8304-4b2e57a38b50": "https://ms.yugipedia.com//5/5d/DivineDragonLordFelgrand-SR02-KR-UR-1E.png",
+          "60dff3b5-8116-4fef-9733-4d75792b8623": "https://ms.yugipedia.com//e/ec/PaladinofFelgrand-SR02-KR-SR-1E.png",
+          "756ccc7c-a720-427f-9039-3c9e235349f9": "https://ms.yugipedia.com//4/4b/GuardianofFelgrand-SR02-KR-SR-1E.png",
+          "ca23e894-b4db-4006-9a81-81d98d868763": "https://ms.yugipedia.com//4/47/WhiteNightDragon-SR02-KR-C-1E.png",
+          "9c006228-2537-4619-8eda-b692d3cb617a": "https://ms.yugipedia.com//3/32/GalaxyDragon-SR02-KR-NPR-1E.png",
+          "494dd495-dc2c-48a7-be58-a534340899d8": "https://ms.yugipedia.com//6/66/BlackDragonCollapserpent-SR02-KR-C-1E.png",
+          "207d4c56-0590-4ec1-b2c5-46c4ef656afa": "https://ms.yugipedia.com//f/f8/EhrenLightswornMonk-SR02-KR-C-1E.png",
+          "d1d77b81-6c1b-4b4c-8526-cf2fa2e93c64": "https://ms.yugipedia.com//9/97/RaidenHandoftheLightsworn-SR02-KR-NPR-1E.png",
+          "e099e422-3c80-4fb8-9bae-39d305bf0636": "https://ms.yugipedia.com//e/ee/RuinsoftheDivineDragonLords-SR02-KR-SR-1E.png",
+          "ac754a33-99da-48e3-a7cf-996910dc6b92": "https://ms.yugipedia.com//1/1e/ReturnoftheDragonLords-SR02-KR-NPR-1E.png",
+          "7fbae4a2-d41d-47d6-8d13-4362d0141fbd": "https://ms.yugipedia.com//e/ee/BreakthroughSkill-SR02-KR-C-1E.png"
+        }
+      },
+      "cardInfo": {
+        "1st": {
+          "207d4c56-0590-4ec1-b2c5-46c4ef656afa": {
+            "image": "https://ms.yugipedia.com//f/f8/EhrenLightswornMonk-SR02-KR-C-1E.png"
+          },
+          "aca4896b-f1df-46cc-8304-4b2e57a38b50": {
+            "image": "https://ms.yugipedia.com//5/5d/DivineDragonLordFelgrand-SR02-KR-UR-1E.png"
+          },
+          "d1d77b81-6c1b-4b4c-8526-cf2fa2e93c64": {
+            "image": "https://ms.yugipedia.com//9/97/RaidenHandoftheLightsworn-SR02-KR-NPR-1E.png"
+          },
+          "60dff3b5-8116-4fef-9733-4d75792b8623": {
+            "image": "https://ms.yugipedia.com//e/ec/PaladinofFelgrand-SR02-KR-SR-1E.png"
+          },
+          "ca23e894-b4db-4006-9a81-81d98d868763": {
+            "image": "https://ms.yugipedia.com//4/47/WhiteNightDragon-SR02-KR-C-1E.png"
+          },
+          "e099e422-3c80-4fb8-9bae-39d305bf0636": {
+            "image": "https://ms.yugipedia.com//e/ee/RuinsoftheDivineDragonLords-SR02-KR-SR-1E.png"
+          },
+          "7fbae4a2-d41d-47d6-8d13-4362d0141fbd": {
+            "image": "https://ms.yugipedia.com//e/ee/BreakthroughSkill-SR02-KR-C-1E.png"
+          },
+          "494dd495-dc2c-48a7-be58-a534340899d8": {
+            "image": "https://ms.yugipedia.com//6/66/BlackDragonCollapserpent-SR02-KR-C-1E.png"
+          },
+          "756ccc7c-a720-427f-9039-3c9e235349f9": {
+            "image": "https://ms.yugipedia.com//4/4b/GuardianofFelgrand-SR02-KR-SR-1E.png"
+          },
+          "ac754a33-99da-48e3-a7cf-996910dc6b92": {
+            "image": "https://ms.yugipedia.com//1/1e/ReturnoftheDragonLords-SR02-KR-NPR-1E.png"
+          },
+          "9c006228-2537-4619-8eda-b692d3cb617a": {
+            "image": "https://ms.yugipedia.com//3/32/GalaxyDragon-SR02-KR-NPR-1E.png"
+          },
+          "9730bc56-a778-4a60-b080-332d77ef9c05": {
+            "image": "https://ms.yugipedia.com//3/36/DragonLordToken-SR02-KR-C-1E.png"
+          },
+          "63fff4d9-e616-46e2-ad9f-e05805b14663": {
+            "image": "https://ms.yugipedia.com//7/7d/ArkbraveDragon-SR02-KR-UR-1E.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          73312004
+        ]
+      }
+    },
+    "jp": {
+      "language": "ja",
+      "prefix": "SR02-JP",
+      "date": "2016-02-06",
+      "image": "https://ms.yugipedia.com//3/3d/SR02-DeckJP.png",
+      "cardImages": {
+        "unlimited": {
+          "9730bc56-a778-4a60-b080-332d77ef9c05": "https://ms.yugipedia.com//d/d0/DragonLordToken-SR02-JP-C.png",
+          "63fff4d9-e616-46e2-ad9f-e05805b14663": "https://ms.yugipedia.com//a/af/ArkbraveDragon-SR02-JP-UR.png",
+          "aca4896b-f1df-46cc-8304-4b2e57a38b50": "https://ms.yugipedia.com//4/43/DivineDragonLordFelgrand-SR02-JP-UR.png",
+          "60dff3b5-8116-4fef-9733-4d75792b8623": "https://ms.yugipedia.com//8/80/PaladinofFelgrand-SR02-JP-SR.png",
+          "756ccc7c-a720-427f-9039-3c9e235349f9": "https://ms.yugipedia.com//d/da/GuardianofFelgrand-SR02-JP-SR.png",
+          "4e240c37-2f0f-460e-b02d-8550b6407428": "https://ms.yugipedia.com//d/d6/FelgrandDragon-SR02-JP-C.png",
+          "1fe908c4-a06e-4b2b-86fd-69cf4b6ee930": "https://ms.yugipedia.com//3/3f/DarkblazeDragon-SR02-JP-C.png",
+          "156dff20-b61f-47ed-aeb4-2612edf1fb62": "https://ms.yugipedia.com//4/4c/HeraldofCreation-SR02-JP-C.png",
+          "af4aa624-6a8b-4c40-ae92-b0d2aea68ed3": "https://ms.yugipedia.com//e/e9/DecoyDragon-SR02-JP-C.png",
+          "b49f8f92-68ad-4b48-b6e6-427531c67d04": "https://ms.yugipedia.com//9/9d/RedEyesDarknessMetalDragon-SR02-JP-NPR.png",
+          "48a7a72d-4de0-4cc9-b7cc-5649b605200b": "https://ms.yugipedia.com//5/5e/RedEyesWyvern-SR02-JP-C.png",
+          "ca23e894-b4db-4006-9a81-81d98d868763": "https://ms.yugipedia.com//e/e2/WhiteNightDragon-SR02-JP-C.png",
+          "b71c6673-114e-4def-a943-5b713bcbfb80": "https://ms.yugipedia.com//b/ba/DarkstormDragon-SR02-JP-C.png",
+          "e28e655a-4de4-40f1-8be2-7ed879d85944": "https://ms.yugipedia.com//a/a8/ArmedProtectorDragon-SR02-JP-C.png",
+          "7aada3d1-c4d6-4923-be5e-f931d75c3fec": "https://ms.yugipedia.com//9/9b/PhotonWyvern-SR02-JP-C.png",
+          "9c006228-2537-4619-8eda-b692d3cb617a": "https://ms.yugipedia.com//e/ed/GalaxyDragon-SR02-JP-NPR.png",
+          "29c162c9-cda5-46b1-b9ee-5800598c4598": "https://ms.yugipedia.com//7/7a/EvilswarmZahak-SR02-JP-C.png",
+          "99d0ee8d-4e06-4b3f-a920-d6bf96fd524e": "https://ms.yugipedia.com//d/da/EclipseWyvern-SR02-JP-NPR.png",
+          "5aa2dcc9-c787-4c89-823f-34890113bb3d": "https://ms.yugipedia.com//9/99/WhiteDragonWyverburster-SR02-JP-C.png",
+          "494dd495-dc2c-48a7-be58-a534340899d8": "https://ms.yugipedia.com//e/ef/BlackDragonCollapserpent-SR02-JP-C.png",
+          "c55c0a2d-86d8-43f2-b190-ba5f2d2c2792": "https://ms.yugipedia.com//4/4b/KidmodoDragon-SR02-JP-C.png",
+          "783e75a4-82bd-494f-b0e1-92a62655f0c6": "https://ms.yugipedia.com//8/87/JainLightswornPaladin-SR02-JP-C.png",
+          "207d4c56-0590-4ec1-b2c5-46c4ef656afa": "https://ms.yugipedia.com//3/37/EhrenLightswornMonk-SR02-JP-C.png",
+          "d1d77b81-6c1b-4b4c-8526-cf2fa2e93c64": "https://ms.yugipedia.com//e/e3/RaidenHandoftheLightsworn-SR02-JP-NPR.png",
+          "e099e422-3c80-4fb8-9bae-39d305bf0636": "https://ms.yugipedia.com//9/9b/RuinsoftheDivineDragonLords-SR02-JP-SR.png",
+          "ac754a33-99da-48e3-a7cf-996910dc6b92": "https://ms.yugipedia.com//e/e2/ReturnoftheDragonLords-SR02-JP-NPR.png",
+          "eecca92f-612a-479a-b0ba-192337eeb686": "https://ms.yugipedia.com//a/ad/DragonRavine-SR02-JP-NPR.png",
+          "7e3e3c00-834b-4d6e-836a-544845ca4117": "https://ms.yugipedia.com//7/7f/AWingbeatofGiantDragon-SR02-JP-C.png",
+          "32c6ba0e-0713-427a-a371-ffbdd228f898": "https://ms.yugipedia.com//4/4c/SuperRejuvenation-SR02-JP-C.png",
+          "adc947ca-97b9-4010-b55a-1c81467d8eba": "https://ms.yugipedia.com//0/09/TradeIn-SR02-JP-C.png",
+          "93ce1233-524f-462d-af19-95b3a5ff5de1": "https://ms.yugipedia.com//4/4d/FoolishBurial-SR02-JP-C.png",
+          "6c51e6e2-a7c6-40a4-96e7-c549a19bc011": "https://ms.yugipedia.com//0/03/CardDestruction-SR02-JP-C.png",
+          "7da83edc-ecf2-426e-96b6-e5a2fd36a56f": "https://ms.yugipedia.com//7/7a/HandDestruction-SR02-JP-C.png",
+          "ad104879-398d-4e8a-889f-3eef377ebf8a": "https://ms.yugipedia.com//0/01/ReinforcementoftheArmy-SR02-JP-C.png",
+          "9396de5e-62f0-45dd-867c-1253f0cf4d6f": "https://ms.yugipedia.com//7/73/TheWarriorReturningAlive-SR02-JP-C.png",
+          "f2669b28-1ae7-49fb-a981-3b6b95c0e6cb": "https://ms.yugipedia.com//3/38/ChargeoftheLightBrigade-SR02-JP-C.png",
+          "cb160a5c-ff5c-47df-a0b3-0280424ce484": "https://ms.yugipedia.com//9/9e/Terraforming-SR02-JP-C.png",
+          "c7b65fba-cfff-46fd-8c02-dd60151c583e": "https://ms.yugipedia.com//9/9f/DragonsRebirth-SR02-JP-C.png",
+          "2f5c08d9-254b-4313-8c60-7b4f771fc573": "https://ms.yugipedia.com//4/4b/BurstBreath-SR02-JP-C.png",
+          "dc5acbc8-ed64-4e25-93d0-fe9f6f1a1764": "https://ms.yugipedia.com//9/9f/NeedlebugNest-SR02-JP-C.png",
+          "7fbae4a2-d41d-47d6-8d13-4362d0141fbd": "https://ms.yugipedia.com//7/7f/BreakthroughSkill-SR02-JP-C.png",
+          "ff2de1cc-e5a5-4bbc-afd9-f071ec2ec87e": "https://ms.yugipedia.com//7/74/CalloftheHaunted-SR02-JP-C.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "32c6ba0e-0713-427a-a371-ffbdd228f898": {
+            "image": "https://ms.yugipedia.com//4/4c/SuperRejuvenation-SR02-JP-C.png"
+          },
+          "156dff20-b61f-47ed-aeb4-2612edf1fb62": {
+            "image": "https://ms.yugipedia.com//4/4c/HeraldofCreation-SR02-JP-C.png"
+          },
+          "adc947ca-97b9-4010-b55a-1c81467d8eba": {
+            "image": "https://ms.yugipedia.com//0/09/TradeIn-SR02-JP-C.png"
+          },
+          "af4aa624-6a8b-4c40-ae92-b0d2aea68ed3": {
+            "image": "https://ms.yugipedia.com//e/e9/DecoyDragon-SR02-JP-C.png"
+          },
+          "93ce1233-524f-462d-af19-95b3a5ff5de1": {
+            "image": "https://ms.yugipedia.com//4/4d/FoolishBurial-SR02-JP-C.png"
+          },
+          "b49f8f92-68ad-4b48-b6e6-427531c67d04": {
+            "image": "https://ms.yugipedia.com//9/9d/RedEyesDarknessMetalDragon-SR02-JP-NPR.png"
+          },
+          "6c51e6e2-a7c6-40a4-96e7-c549a19bc011": {
+            "image": "https://ms.yugipedia.com//0/03/CardDestruction-SR02-JP-C.png"
+          },
+          "48a7a72d-4de0-4cc9-b7cc-5649b605200b": {
+            "image": "https://ms.yugipedia.com//5/5e/RedEyesWyvern-SR02-JP-C.png"
+          },
+          "7da83edc-ecf2-426e-96b6-e5a2fd36a56f": {
+            "image": "https://ms.yugipedia.com//7/7a/HandDestruction-SR02-JP-C.png"
+          },
+          "ca23e894-b4db-4006-9a81-81d98d868763": {
+            "image": "https://ms.yugipedia.com//e/e2/WhiteNightDragon-SR02-JP-C.png"
+          },
+          "ad104879-398d-4e8a-889f-3eef377ebf8a": {
+            "image": "https://ms.yugipedia.com//0/01/ReinforcementoftheArmy-SR02-JP-C.png"
+          },
+          "b71c6673-114e-4def-a943-5b713bcbfb80": {
+            "image": "https://ms.yugipedia.com//b/ba/DarkstormDragon-SR02-JP-C.png"
+          },
+          "9396de5e-62f0-45dd-867c-1253f0cf4d6f": {
+            "image": "https://ms.yugipedia.com//7/73/TheWarriorReturningAlive-SR02-JP-C.png"
+          },
+          "e28e655a-4de4-40f1-8be2-7ed879d85944": {
+            "image": "https://ms.yugipedia.com//a/a8/ArmedProtectorDragon-SR02-JP-C.png"
+          },
+          "f2669b28-1ae7-49fb-a981-3b6b95c0e6cb": {
+            "image": "https://ms.yugipedia.com//3/38/ChargeoftheLightBrigade-SR02-JP-C.png"
+          },
+          "7aada3d1-c4d6-4923-be5e-f931d75c3fec": {
+            "image": "https://ms.yugipedia.com//9/9b/PhotonWyvern-SR02-JP-C.png"
+          },
+          "cb160a5c-ff5c-47df-a0b3-0280424ce484": {
+            "image": "https://ms.yugipedia.com//9/9e/Terraforming-SR02-JP-C.png"
+          },
+          "9c006228-2537-4619-8eda-b692d3cb617a": {
+            "image": "https://ms.yugipedia.com//e/ed/GalaxyDragon-SR02-JP-NPR.png"
+          },
+          "c7b65fba-cfff-46fd-8c02-dd60151c583e": {
+            "image": "https://ms.yugipedia.com//9/9f/DragonsRebirth-SR02-JP-C.png"
+          },
+          "29c162c9-cda5-46b1-b9ee-5800598c4598": {
+            "image": "https://ms.yugipedia.com//7/7a/EvilswarmZahak-SR02-JP-C.png"
+          },
+          "2f5c08d9-254b-4313-8c60-7b4f771fc573": {
+            "image": "https://ms.yugipedia.com//4/4b/BurstBreath-SR02-JP-C.png"
+          },
+          "99d0ee8d-4e06-4b3f-a920-d6bf96fd524e": {
+            "image": "https://ms.yugipedia.com//d/da/EclipseWyvern-SR02-JP-NPR.png"
+          },
+          "dc5acbc8-ed64-4e25-93d0-fe9f6f1a1764": {
+            "image": "https://ms.yugipedia.com//9/9f/NeedlebugNest-SR02-JP-C.png"
+          },
+          "5aa2dcc9-c787-4c89-823f-34890113bb3d": {
+            "image": "https://ms.yugipedia.com//9/99/WhiteDragonWyverburster-SR02-JP-C.png"
+          },
+          "7fbae4a2-d41d-47d6-8d13-4362d0141fbd": {
+            "image": "https://ms.yugipedia.com//7/7f/BreakthroughSkill-SR02-JP-C.png"
+          },
+          "494dd495-dc2c-48a7-be58-a534340899d8": {
+            "image": "https://ms.yugipedia.com//e/ef/BlackDragonCollapserpent-SR02-JP-C.png"
+          },
+          "ff2de1cc-e5a5-4bbc-afd9-f071ec2ec87e": {
+            "image": "https://ms.yugipedia.com//7/74/CalloftheHaunted-SR02-JP-C.png"
+          },
+          "c55c0a2d-86d8-43f2-b190-ba5f2d2c2792": {
+            "image": "https://ms.yugipedia.com//4/4b/KidmodoDragon-SR02-JP-C.png"
+          },
+          "9730bc56-a778-4a60-b080-332d77ef9c05": {
+            "image": "https://ms.yugipedia.com//d/d0/DragonLordToken-SR02-JP-C.png"
+          },
+          "783e75a4-82bd-494f-b0e1-92a62655f0c6": {
+            "image": "https://ms.yugipedia.com//8/87/JainLightswornPaladin-SR02-JP-C.png"
+          },
+          "63fff4d9-e616-46e2-ad9f-e05805b14663": {
+            "image": "https://ms.yugipedia.com//a/af/ArkbraveDragon-SR02-JP-UR.png"
+          },
+          "207d4c56-0590-4ec1-b2c5-46c4ef656afa": {
+            "image": "https://ms.yugipedia.com//3/37/EhrenLightswornMonk-SR02-JP-C.png"
+          },
+          "aca4896b-f1df-46cc-8304-4b2e57a38b50": {
+            "image": "https://ms.yugipedia.com//4/43/DivineDragonLordFelgrand-SR02-JP-UR.png"
+          },
+          "d1d77b81-6c1b-4b4c-8526-cf2fa2e93c64": {
+            "image": "https://ms.yugipedia.com//e/e3/RaidenHandoftheLightsworn-SR02-JP-NPR.png"
+          },
+          "60dff3b5-8116-4fef-9733-4d75792b8623": {
+            "image": "https://ms.yugipedia.com//8/80/PaladinofFelgrand-SR02-JP-SR.png"
+          },
+          "e099e422-3c80-4fb8-9bae-39d305bf0636": {
+            "image": "https://ms.yugipedia.com//9/9b/RuinsoftheDivineDragonLords-SR02-JP-SR.png"
+          },
+          "756ccc7c-a720-427f-9039-3c9e235349f9": {
+            "image": "https://ms.yugipedia.com//d/da/GuardianofFelgrand-SR02-JP-SR.png"
+          },
+          "ac754a33-99da-48e3-a7cf-996910dc6b92": {
+            "image": "https://ms.yugipedia.com//e/e2/ReturnoftheDragonLords-SR02-JP-NPR.png"
+          },
+          "4e240c37-2f0f-460e-b02d-8550b6407428": {
+            "image": "https://ms.yugipedia.com//d/d6/FelgrandDragon-SR02-JP-C.png"
+          },
+          "eecca92f-612a-479a-b0ba-192337eeb686": {
+            "image": "https://ms.yugipedia.com//a/ad/DragonRavine-SR02-JP-NPR.png"
+          },
+          "1fe908c4-a06e-4b2b-86fd-69cf4b6ee930": {
+            "image": "https://ms.yugipedia.com//3/3f/DarkblazeDragon-SR02-JP-C.png"
+          },
+          "7e3e3c00-834b-4d6e-836a-544845ca4117": {
+            "image": "https://ms.yugipedia.com//7/7f/AWingbeatofGiantDragon-SR02-JP-C.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          2201043
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "1st"
+      ],
+      "image": "https://ms.yugipedia.com//e/e4/SR02-DeckKR.png",
+      "cards": [
+        {
+          "id": "9730bc56-a778-4a60-b080-332d77ef9c05",
+          "card": "2803e575-2206-413d-aa2c-bb769cf808db",
+          "suffix": "TKN",
+          "rarity": "common"
+        },
+        {
+          "id": "63fff4d9-e616-46e2-ad9f-e05805b14663",
+          "card": "34f3f912-0f15-47bb-b58a-2a2a1cbfe5de",
+          "suffix": "000",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aca4896b-f1df-46cc-8304-4b2e57a38b50",
+          "card": "1c20b728-0b8b-44fa-978c-384ff70297df",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "60dff3b5-8116-4fef-9733-4d75792b8623",
+          "card": "b2a7cad4-174d-488a-9f39-aceeb5297eae",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "756ccc7c-a720-427f-9039-3c9e235349f9",
+          "card": "3db65f4b-db19-4d45-91f5-54d580f82265",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "4e240c37-2f0f-460e-b02d-8550b6407428",
+          "card": "381d5e30-63ae-4e72-a18e-b5ee6c837cc5",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "1fe908c4-a06e-4b2b-86fd-69cf4b6ee930",
+          "card": "e4c29e6b-526d-452c-80f6-6d37efc5c8d3",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "156dff20-b61f-47ed-aeb4-2612edf1fb62",
+          "card": "9cbda603-cdc2-4d97-bcd8-175ac3911dd1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "af4aa624-6a8b-4c40-ae92-b0d2aea68ed3",
+          "card": "8a7a3c1e-e083-492d-aedd-683a3180d99d",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "b49f8f92-68ad-4b48-b6e6-427531c67d04",
+          "card": "d89c9acc-0513-4d05-9d4c-3f59a29aed88",
+          "suffix": "008",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "48a7a72d-4de0-4cc9-b7cc-5649b605200b",
+          "card": "9b7cb0fd-64e5-4dc8-8c01-b6ddfe6d0df1",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "ca23e894-b4db-4006-9a81-81d98d868763",
+          "card": "74452c68-8cb2-4988-8866-a08b0ff10304",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "b71c6673-114e-4def-a943-5b713bcbfb80",
+          "card": "d42dcb8e-5d90-4299-b813-4679f94e9abc",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "e28e655a-4de4-40f1-8be2-7ed879d85944",
+          "card": "381b0d18-dad8-4057-ac74-d73c77e06207",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "7aada3d1-c4d6-4923-be5e-f931d75c3fec",
+          "card": "37479b2a-5cd3-4151-84f4-0a9f423a58f6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "9c006228-2537-4619-8eda-b692d3cb617a",
+          "card": "bbcc6fa7-29d4-4db3-8d93-d6eacaa2af0d",
+          "suffix": "014",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "29c162c9-cda5-46b1-b9ee-5800598c4598",
+          "card": "df102a6c-4299-4f36-b7dc-827bbf024576",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "99d0ee8d-4e06-4b3f-a920-d6bf96fd524e",
+          "card": "fe847499-6892-414f-8936-0617c482b2b4",
+          "suffix": "016",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "5aa2dcc9-c787-4c89-823f-34890113bb3d",
+          "card": "2d9eb91a-fdf9-40c3-8e55-f77ccd1b696e",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "494dd495-dc2c-48a7-be58-a534340899d8",
+          "card": "df889801-559e-4f8a-a1fc-c2a77549d5af",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "c55c0a2d-86d8-43f2-b190-ba5f2d2c2792",
+          "card": "d4c46f37-99ba-4ef2-9ccb-4e868c8c9c20",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "783e75a4-82bd-494f-b0e1-92a62655f0c6",
+          "card": "dd07e77d-87c2-434f-9b38-85c8baa41eed",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "207d4c56-0590-4ec1-b2c5-46c4ef656afa",
+          "card": "1afd41c2-9507-4df7-8051-4f4f0cc5d19a",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "d1d77b81-6c1b-4b4c-8526-cf2fa2e93c64",
+          "card": "ed2fac70-fbef-4860-9ae0-7bdf8b18195e",
+          "suffix": "022",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "e099e422-3c80-4fb8-9bae-39d305bf0636",
+          "card": "1cd55458-04f0-4dce-9470-0ffcd0640bc8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "ac754a33-99da-48e3-a7cf-996910dc6b92",
+          "card": "5498cc83-7c19-4d79-91ba-732d32e008b1",
+          "suffix": "024",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "eecca92f-612a-479a-b0ba-192337eeb686",
+          "card": "65ee5270-2a60-4d85-90df-a028616b5734",
+          "suffix": "025",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "7e3e3c00-834b-4d6e-836a-544845ca4117",
+          "card": "92be67b6-096f-4475-9929-fc77dde1799d",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "32c6ba0e-0713-427a-a371-ffbdd228f898",
+          "card": "ed66af0b-178e-45ba-88b7-20cd0112fb36",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "adc947ca-97b9-4010-b55a-1c81467d8eba",
+          "card": "50a15888-c9c1-452f-b4c0-f4d01f6e431a",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "93ce1233-524f-462d-af19-95b3a5ff5de1",
+          "card": "f2fdc396-fb8d-4899-80a1-1d7907648ab4",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "6c51e6e2-a7c6-40a4-96e7-c549a19bc011",
+          "card": "2dc53daa-65da-448b-905d-1dbf7f0b2d8e",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "7da83edc-ecf2-426e-96b6-e5a2fd36a56f",
+          "card": "36805009-bae0-4ee5-a9fb-3aabd4baabae",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "ad104879-398d-4e8a-889f-3eef377ebf8a",
+          "card": "ecd8b7a4-cd01-435e-8e45-7ab05be5892e",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "9396de5e-62f0-45dd-867c-1253f0cf4d6f",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "f2669b28-1ae7-49fb-a981-3b6b95c0e6cb",
+          "card": "b3483033-fc12-42ec-86b5-9743379b3445",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "cb160a5c-ff5c-47df-a0b3-0280424ce484",
+          "card": "3d521119-db81-4605-86fe-33cfce4b3aa8",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "c7b65fba-cfff-46fd-8c02-dd60151c583e",
+          "card": "7a64ca0d-34d7-4b7e-a2e6-5c8c9f98b38a",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "2f5c08d9-254b-4313-8c60-7b4f771fc573",
+          "card": "748f2bb6-d81e-4774-881c-eb176f5f8a2e",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "dc5acbc8-ed64-4e25-93d0-fe9f6f1a1764",
+          "card": "528077b7-9159-40e5-8c99-2bb5604fd939",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "7fbae4a2-d41d-47d6-8d13-4362d0141fbd",
+          "card": "d14a1901-97ed-4d7d-9ce7-7fc178da2fb6",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "ff2de1cc-e5a5-4bbc-afd9-f071ec2ec87e",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "040",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//3/3d/SR02-DeckJP.png",
+      "cards": [
+        {
+          "id": "9730bc56-a778-4a60-b080-332d77ef9c05",
+          "card": "2803e575-2206-413d-aa2c-bb769cf808db",
+          "suffix": "TKN",
+          "rarity": "common"
+        },
+        {
+          "id": "63fff4d9-e616-46e2-ad9f-e05805b14663",
+          "card": "34f3f912-0f15-47bb-b58a-2a2a1cbfe5de",
+          "suffix": "000",
+          "rarity": "ultra"
+        },
+        {
+          "id": "aca4896b-f1df-46cc-8304-4b2e57a38b50",
+          "card": "1c20b728-0b8b-44fa-978c-384ff70297df",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "60dff3b5-8116-4fef-9733-4d75792b8623",
+          "card": "b2a7cad4-174d-488a-9f39-aceeb5297eae",
+          "suffix": "002",
+          "rarity": "super"
+        },
+        {
+          "id": "756ccc7c-a720-427f-9039-3c9e235349f9",
+          "card": "3db65f4b-db19-4d45-91f5-54d580f82265",
+          "suffix": "003",
+          "rarity": "super"
+        },
+        {
+          "id": "4e240c37-2f0f-460e-b02d-8550b6407428",
+          "card": "381d5e30-63ae-4e72-a18e-b5ee6c837cc5",
+          "suffix": "004",
+          "rarity": "common"
+        },
+        {
+          "id": "1fe908c4-a06e-4b2b-86fd-69cf4b6ee930",
+          "card": "e4c29e6b-526d-452c-80f6-6d37efc5c8d3",
+          "suffix": "005",
+          "rarity": "common"
+        },
+        {
+          "id": "156dff20-b61f-47ed-aeb4-2612edf1fb62",
+          "card": "9cbda603-cdc2-4d97-bcd8-175ac3911dd1",
+          "suffix": "006",
+          "rarity": "common"
+        },
+        {
+          "id": "af4aa624-6a8b-4c40-ae92-b0d2aea68ed3",
+          "card": "8a7a3c1e-e083-492d-aedd-683a3180d99d",
+          "suffix": "007",
+          "rarity": "common"
+        },
+        {
+          "id": "b49f8f92-68ad-4b48-b6e6-427531c67d04",
+          "card": "d89c9acc-0513-4d05-9d4c-3f59a29aed88",
+          "suffix": "008",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "48a7a72d-4de0-4cc9-b7cc-5649b605200b",
+          "card": "9b7cb0fd-64e5-4dc8-8c01-b6ddfe6d0df1",
+          "suffix": "009",
+          "rarity": "common"
+        },
+        {
+          "id": "ca23e894-b4db-4006-9a81-81d98d868763",
+          "card": "74452c68-8cb2-4988-8866-a08b0ff10304",
+          "suffix": "010",
+          "rarity": "common"
+        },
+        {
+          "id": "b71c6673-114e-4def-a943-5b713bcbfb80",
+          "card": "d42dcb8e-5d90-4299-b813-4679f94e9abc",
+          "suffix": "011",
+          "rarity": "common"
+        },
+        {
+          "id": "e28e655a-4de4-40f1-8be2-7ed879d85944",
+          "card": "381b0d18-dad8-4057-ac74-d73c77e06207",
+          "suffix": "012",
+          "rarity": "common"
+        },
+        {
+          "id": "7aada3d1-c4d6-4923-be5e-f931d75c3fec",
+          "card": "37479b2a-5cd3-4151-84f4-0a9f423a58f6",
+          "suffix": "013",
+          "rarity": "common"
+        },
+        {
+          "id": "9c006228-2537-4619-8eda-b692d3cb617a",
+          "card": "bbcc6fa7-29d4-4db3-8d93-d6eacaa2af0d",
+          "suffix": "014",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "29c162c9-cda5-46b1-b9ee-5800598c4598",
+          "card": "df102a6c-4299-4f36-b7dc-827bbf024576",
+          "suffix": "015",
+          "rarity": "common"
+        },
+        {
+          "id": "99d0ee8d-4e06-4b3f-a920-d6bf96fd524e",
+          "card": "fe847499-6892-414f-8936-0617c482b2b4",
+          "suffix": "016",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "5aa2dcc9-c787-4c89-823f-34890113bb3d",
+          "card": "2d9eb91a-fdf9-40c3-8e55-f77ccd1b696e",
+          "suffix": "017",
+          "rarity": "common"
+        },
+        {
+          "id": "494dd495-dc2c-48a7-be58-a534340899d8",
+          "card": "df889801-559e-4f8a-a1fc-c2a77549d5af",
+          "suffix": "018",
+          "rarity": "common"
+        },
+        {
+          "id": "c55c0a2d-86d8-43f2-b190-ba5f2d2c2792",
+          "card": "d4c46f37-99ba-4ef2-9ccb-4e868c8c9c20",
+          "suffix": "019",
+          "rarity": "common"
+        },
+        {
+          "id": "783e75a4-82bd-494f-b0e1-92a62655f0c6",
+          "card": "dd07e77d-87c2-434f-9b38-85c8baa41eed",
+          "suffix": "020",
+          "rarity": "common"
+        },
+        {
+          "id": "207d4c56-0590-4ec1-b2c5-46c4ef656afa",
+          "card": "1afd41c2-9507-4df7-8051-4f4f0cc5d19a",
+          "suffix": "021",
+          "rarity": "common"
+        },
+        {
+          "id": "d1d77b81-6c1b-4b4c-8526-cf2fa2e93c64",
+          "card": "ed2fac70-fbef-4860-9ae0-7bdf8b18195e",
+          "suffix": "022",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "e099e422-3c80-4fb8-9bae-39d305bf0636",
+          "card": "1cd55458-04f0-4dce-9470-0ffcd0640bc8",
+          "suffix": "023",
+          "rarity": "super"
+        },
+        {
+          "id": "ac754a33-99da-48e3-a7cf-996910dc6b92",
+          "card": "5498cc83-7c19-4d79-91ba-732d32e008b1",
+          "suffix": "024",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "eecca92f-612a-479a-b0ba-192337eeb686",
+          "card": "65ee5270-2a60-4d85-90df-a028616b5734",
+          "suffix": "025",
+          "rarity": "commonparallel"
+        },
+        {
+          "id": "7e3e3c00-834b-4d6e-836a-544845ca4117",
+          "card": "92be67b6-096f-4475-9929-fc77dde1799d",
+          "suffix": "026",
+          "rarity": "common"
+        },
+        {
+          "id": "32c6ba0e-0713-427a-a371-ffbdd228f898",
+          "card": "ed66af0b-178e-45ba-88b7-20cd0112fb36",
+          "suffix": "027",
+          "rarity": "common"
+        },
+        {
+          "id": "adc947ca-97b9-4010-b55a-1c81467d8eba",
+          "card": "50a15888-c9c1-452f-b4c0-f4d01f6e431a",
+          "suffix": "028",
+          "rarity": "common"
+        },
+        {
+          "id": "93ce1233-524f-462d-af19-95b3a5ff5de1",
+          "card": "f2fdc396-fb8d-4899-80a1-1d7907648ab4",
+          "suffix": "029",
+          "rarity": "common"
+        },
+        {
+          "id": "6c51e6e2-a7c6-40a4-96e7-c549a19bc011",
+          "card": "2dc53daa-65da-448b-905d-1dbf7f0b2d8e",
+          "suffix": "030",
+          "rarity": "common"
+        },
+        {
+          "id": "7da83edc-ecf2-426e-96b6-e5a2fd36a56f",
+          "card": "36805009-bae0-4ee5-a9fb-3aabd4baabae",
+          "suffix": "031",
+          "rarity": "common"
+        },
+        {
+          "id": "ad104879-398d-4e8a-889f-3eef377ebf8a",
+          "card": "ecd8b7a4-cd01-435e-8e45-7ab05be5892e",
+          "suffix": "032",
+          "rarity": "common"
+        },
+        {
+          "id": "9396de5e-62f0-45dd-867c-1253f0cf4d6f",
+          "card": "9a9a8ccb-34b2-4120-bfc7-ce9da844b676",
+          "suffix": "033",
+          "rarity": "common"
+        },
+        {
+          "id": "f2669b28-1ae7-49fb-a981-3b6b95c0e6cb",
+          "card": "b3483033-fc12-42ec-86b5-9743379b3445",
+          "suffix": "034",
+          "rarity": "common"
+        },
+        {
+          "id": "cb160a5c-ff5c-47df-a0b3-0280424ce484",
+          "card": "3d521119-db81-4605-86fe-33cfce4b3aa8",
+          "suffix": "035",
+          "rarity": "common"
+        },
+        {
+          "id": "c7b65fba-cfff-46fd-8c02-dd60151c583e",
+          "card": "7a64ca0d-34d7-4b7e-a2e6-5c8c9f98b38a",
+          "suffix": "036",
+          "rarity": "common"
+        },
+        {
+          "id": "2f5c08d9-254b-4313-8c60-7b4f771fc573",
+          "card": "748f2bb6-d81e-4774-881c-eb176f5f8a2e",
+          "suffix": "037",
+          "rarity": "common"
+        },
+        {
+          "id": "dc5acbc8-ed64-4e25-93d0-fe9f6f1a1764",
+          "card": "528077b7-9159-40e5-8c99-2bb5604fd939",
+          "suffix": "038",
+          "rarity": "common"
+        },
+        {
+          "id": "7fbae4a2-d41d-47d6-8d13-4362d0141fbd",
+          "card": "d14a1901-97ed-4d7d-9ce7-7fc178da2fb6",
+          "suffix": "039",
+          "rarity": "common"
+        },
+        {
+          "id": "ff2de1cc-e5a5-4bbc-afd9-f071ec2ec87e",
+          "card": "07240dec-046f-4b64-a5ab-9fe3508dda64",
+          "suffix": "040",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Structure Deck R: Revival of the Great Divine Dragon",
+      "id": 424783
+    }
+  }
+}
