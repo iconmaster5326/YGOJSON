@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "6aec3761-1c04-4262-8bfa-cd83052457ec",
+  "name": {
+    "en": "Pharaonic Guardian promotional cards",
+    "ko": "\uc655\uac00\uc758 \uc218\ud638\uc790 \ud504\ub85c\ubaa8\uc158 \uce74\ub4dc"
+  },
+  "locales": {
+    "kr": {
+      "language": "ko",
+      "prefix": "PGD-KRPR",
+      "date": "2011-09-20",
+      "image": "https://ms.yugipedia.com//7/71/PDG-PromoKR.jpg",
+      "cardImages": {
+        "unlimited": {
+          "7d97983d-98c0-43c8-80c2-3bdaacb79c5d": "https://ms.yugipedia.com//e/e6/EmbodimentofApophis-PGD-KR-ScR-UE.png",
+          "5b142f74-77c5-47a7-aa39-fcf88d7dfee5": "https://ms.yugipedia.com//f/f5/BookofMoon-PGD-KR-ScR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "5b142f74-77c5-47a7-aa39-fcf88d7dfee5": {
+            "image": "https://ms.yugipedia.com//f/f5/BookofMoon-PGD-KR-ScR-UE.png"
+          },
+          "7d97983d-98c0-43c8-80c2-3bdaacb79c5d": {
+            "image": "https://ms.yugipedia.com//e/e6/EmbodimentofApophis-PGD-KR-ScR-UE.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1010000977000
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "kr"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//7/71/PDG-PromoKR.jpg",
+      "cards": [
+        {
+          "id": "7d97983d-98c0-43c8-80c2-3bdaacb79c5d",
+          "card": "873193f6-359b-40b6-b1ef-38a59036ad3a",
+          "suffix": "1",
+          "rarity": "secret"
+        },
+        {
+          "id": "5b142f74-77c5-47a7-aa39-fcf88d7dfee5",
+          "card": "fdf3e4be-d5ae-4d10-bd2d-63275f3bb45b",
+          "suffix": "2",
+          "rarity": "secret"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Pharaonic Guardian promotional cards",
+      "id": 304562
+    }
+  }
+}

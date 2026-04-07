@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "ed4a1b61-0fc3-4b77-9924-3b6fa038d32a",
+  "name": {
+    "en": "Yu-Gi-Oh! 5D's Volume 3",
+    "ja": "\u904a\u622f\u738b\uff15\uff24\uff07\uff53 \u7b2c\uff13\u5dfb \u4ed8\u9332\u30ab\u30fc\u30c9"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "YF03-JP",
+      "date": "2011-09-03",
+      "image": "https://ms.yugipedia.com//0/0a/YF03-PromoJP.png",
+      "cardImages": {
+        "unlimited": {
+          "de6e55e6-b068-4525-9363-78bf1083b7cd": "https://ms.yugipedia.com//c/ca/InfernityGeneral-YF03-JP-UR.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "de6e55e6-b068-4525-9363-78bf1083b7cd": {
+            "image": "https://ms.yugipedia.com//c/ca/InfernityGeneral-YF03-JP-UR.png"
+          }
+        }
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          121213009
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "YF03-EN",
+      "image": "https://ms.yugipedia.com//5/53/YF03-PromoEN.png",
+      "cardImages": {
+        "limited": {
+          "de6e55e6-b068-4525-9363-78bf1083b7cd": "https://ms.yugipedia.com//2/26/InfernityGeneral-YF03-EN-UR-LE.png"
+        }
+      },
+      "cardInfo": {
+        "limited": {
+          "de6e55e6-b068-4525-9363-78bf1083b7cd": {
+            "image": "https://ms.yugipedia.com//2/26/InfernityGeneral-YF03-EN-UR-LE.png"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "limited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1111108009
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "image": "https://ms.yugipedia.com//0/0a/YF03-PromoJP.png",
+      "cards": [
+        {
+          "id": "de6e55e6-b068-4525-9363-78bf1083b7cd",
+          "card": "9c451a29-ce8e-4744-9d2b-90c14786b65d",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "limited"
+      ],
+      "image": "https://ms.yugipedia.com//5/53/YF03-PromoEN.png",
+      "cards": [
+        {
+          "id": "de6e55e6-b068-4525-9363-78bf1083b7cd",
+          "card": "9c451a29-ce8e-4744-9d2b-90c14786b65d",
+          "suffix": "001",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! 5D's Volume 3 promotional card",
+      "id": 188564
+    }
+  }
+}

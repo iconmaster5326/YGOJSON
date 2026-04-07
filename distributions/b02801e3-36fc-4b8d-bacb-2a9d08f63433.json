@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/distribution.json",
+  "id": "b02801e3-36fc-4b8d-bacb-2a9d08f63433",
+  "name": "TCG Retro Pack",
+  "slots": [
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ],
+      "qty": 7
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "rare"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pool",
+      "rarity": [
+        {
+          "rarities": [
+            "super"
+          ],
+          "chance": 5
+        },
+        {
+          "rarities": [
+            "ultra"
+          ],
+          "chance": 12
+        },
+        {
+          "rarities": [
+            "secret"
+          ],
+          "chance": 31
+        },
+        {
+          "rarities": [
+            "common"
+          ]
+        }
+      ]
+    }
+  ]
+}

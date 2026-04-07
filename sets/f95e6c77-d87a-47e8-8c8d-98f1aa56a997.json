@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/iconmaster5326/YGOJSON/main/schema/v1/set.json",
+  "id": "f95e6c77-d87a-47e8-8c8d-98f1aa56a997",
+  "name": {
+    "en": "Yu-Gi-Oh! World Championship 2012 prize cards"
+  },
+  "locales": {
+    "jp": {
+      "language": "ja",
+      "prefix": "2012-JP",
+      "date": "2012-08-11",
+      "cardImages": {
+        "unlimited": {}
+      },
+      "cardInfo": {
+        "unlimited": {}
+      },
+      "formats": [
+        "ocg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          131314002
+        ]
+      }
+    },
+    "en": {
+      "language": "en",
+      "prefix": "2012-EN",
+      "date": "2012-08-11",
+      "cardImages": {
+        "unlimited": {
+          "62ab2b3a-9ed2-4bc9-aea6-9a519b28fa59": "https://ms.yugipedia.com//9/98/LegendaryDragonofWhite-2012-EN-UR-UE.jpg",
+          "0e68c30e-d31d-402d-b928-7a01e1c5ff92": "https://ms.yugipedia.com//3/3c/LegendaryMagicianofDark-2012-EN-UR-UE.png"
+        }
+      },
+      "cardInfo": {
+        "unlimited": {
+          "0e68c30e-d31d-402d-b928-7a01e1c5ff92": {
+            "image": "https://ms.yugipedia.com//3/3c/LegendaryMagicianofDark-2012-EN-UR-UE.png"
+          },
+          "62ab2b3a-9ed2-4bc9-aea6-9a519b28fa59": {
+            "image": "https://ms.yugipedia.com//9/98/LegendaryDragonofWhite-2012-EN-UR-UE.jpg"
+          }
+        }
+      },
+      "formats": [
+        "tcg"
+      ],
+      "editions": [
+        "unlimited"
+      ],
+      "externalIDs": {
+        "dbIDs": [
+          1121211006
+        ]
+      }
+    }
+  },
+  "contents": [
+    {
+      "locales": [
+        "jp"
+      ],
+      "formats": [
+        "ocg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "3887d563-cb11-4d8c-8731-9f2393f7fdd0",
+          "card": "0616ad66-1b02-4d5f-8f63-11672f8e0a13",
+          "suffix": "004",
+          "rarity": "common"
+        }
+      ],
+      "externalIDs": {}
+    },
+    {
+      "locales": [
+        "en"
+      ],
+      "formats": [
+        "tcg"
+      ],
+      "distrobution": "preconstructed",
+      "editions": [
+        "unlimited"
+      ],
+      "cards": [
+        {
+          "id": "62ab2b3a-9ed2-4bc9-aea6-9a519b28fa59",
+          "card": "351b81e1-6f94-4294-b97b-2eed8588090f",
+          "suffix": "001",
+          "rarity": "ultra"
+        },
+        {
+          "id": "0e68c30e-d31d-402d-b928-7a01e1c5ff92",
+          "card": "192c2da9-7a09-4971-9374-5d9b433b359c",
+          "suffix": "002",
+          "rarity": "ultra"
+        }
+      ],
+      "externalIDs": {}
+    }
+  ],
+  "externalIDs": {
+    "yugipedia": {
+      "name": "Yu-Gi-Oh! World Championship 2012 prize cards",
+      "id": 332113
+    }
+  }
+}
