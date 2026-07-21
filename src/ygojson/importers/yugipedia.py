@@ -1774,6 +1774,12 @@ def parse_tcg_ocg_set(
     packimages: typing.Dict[str, str] = {}
 
     def get_card(name: str):
+        # MediaWiki escapes "=" and "|" inside template arguments, so a card
+        # name containing either arrives from a set list or gallery row still
+        # wrapped in the escape ("Sky Striker Ace {{=}} Zero"). Expand them,
+        # or the page lookup fails and the row is silently dropped.
+        name = name.replace("{{=}}", "=").replace("{{!}}", "|")
+
         class GetCardDecorator:
             def __init__(self, callback: typing.Callable[[Card], None]) -> None:
                 @batcher.getPageID(name)
