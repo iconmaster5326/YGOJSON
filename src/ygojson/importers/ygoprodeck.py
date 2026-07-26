@@ -171,13 +171,19 @@ def _write_card(in_json: typing.Dict[str, typing.Any], card: Card) -> Card:
         typeline = in_json["type"].split(" ")
 
         card.attribute = (
-            Attribute(in_json["attribute"].lower()) if "attribute" in in_json else None
+            Attribute(in_json["attribute"].lower())
+            if in_json.get("attribute")
+            else None
         )
         card.monster_card_types = []
         for i, v in MONSTER_CARD_TYPES.items():
             if i in typeline:
                 card.monster_card_types.append(v)
-        card.type = Race(in_json["race"].lower().replace("-", "").replace(" ", ""))
+        card.type = (
+            Race(in_json["race"].lower().replace("-", "").replace(" ", ""))
+            if in_json.get("race")
+            else None
+        )
         card.classifications = []
         for i, v in CLASSIFICATIONS.items():
             if i in typeline:

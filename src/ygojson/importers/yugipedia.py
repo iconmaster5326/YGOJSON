@@ -1676,6 +1676,11 @@ class ImageLocator(typing.NamedTuple):
 class PrintingLocator(typing.NamedTuple):
     card: Card
     rarity: CardRarity
+    # The card code, so that the same card at the same rarity may appear at
+    # several codes in one set (common in Legendary Decks style products).
+    # This is the full code in RawLocale.cards, and the code suffix when
+    # locating CardPrintings.
+    code: typing.Optional[str] = None
 
 
 class RawPrinting:
@@ -1697,7 +1702,7 @@ class RawPrinting:
         self.noabbr = noabbr
 
     def locator(self) -> PrintingLocator:
-        return PrintingLocator(self.card, self.rarity)
+        return PrintingLocator(self.card, self.rarity, self.code)
 
 
 class RawLocale:
@@ -1769,6 +1774,12 @@ def parse_tcg_ocg_set(
     packimages: typing.Dict[str, str] = {}
 
     def get_card(name: str):
+        # MediaWiki escapes "=" and "|" inside template arguments, so a card
+        # name containing either arrives from a set list or gallery row still
+        # wrapped in the escape ("Sky Striker Ace {{=}} Zero"). Expand them,
+        # or the page lookup fails and the row is silently dropped.
+        name = name.replace("{{=}}", "=").replace("{{!}}", "|")
+
         class GetCardDecorator:
             def __init__(self, callback: typing.Callable[[Card], None]) -> None:
                 @batcher.getPageID(name)
@@ -1837,7 +1848,14 @@ def parse_tcg_ocg_set(
                         rcs.append(raw_rc)
 
                     for rc in rcs:
-                        raw_locale.cards[rc.locator()] = rc
+                        rcl = rc.locator()
+                        if rcl in raw_locale.cards:
+                            # the same card at the same code and rarity listed
+                            # twice (e.g. an alternate-artwork row); merge the
+                            # quantities instead of dropping a row
+                            raw_locale.cards[rcl].qty += rc.qty
+                        else:
+                            raw_locale.cards[rcl] = rc
 
             for setlist in setlists:
                 raw_default_rarity = get_table_entry(setlist, "rarities", "C").strip()
@@ -1988,12 +2006,24 @@ def parse_tcg_ocg_set(
                     r"<gallery[^\n]*\n(.*?)\n</gallery>", raw_gallery_data, re.DOTALL
                 )
 
-                def add_card_image(name: str, rarity: CardRarity, alt: str, image: str):
+                def add_card_image(
+                    name: str,
+                    rarity: CardRarity,
+                    alt: str,
+                    image: str,
+                    code: typing.Optional[str] = None,
+                ):
                     @batcher.getImageURL(f"File:{image}")
                     def onGetImage(url: str):
                         def onGetCard(card: Card, card_rarity: CardRarity = rarity):
-                            pl = PrintingLocator(card, card_rarity)
-                            if pl not in raw_locale.cards:
+                            rcs = [
+                                rc
+                                for rc in raw_locale.cards.values()
+                                if rc.card == card and rc.rarity == card_rarity
+                            ]
+                            if code and any(rc.code == code for rc in rcs):
+                                rcs = [rc for rc in rcs if rc.code == code]
+                            if not rcs:
                                 if (
                                     rarity == card_rarity
                                     and card_rarity in FALLBACK_RARITIES
@@ -2003,11 +2033,11 @@ def parse_tcg_ocg_set(
                                     not alt
                                 ):  # some special cards, like oversized cards, should be ignored
                                     logging.warn(
-                                        f"Printing in gallery {galleryname} not found in locale: {name} / {rarity.value} -- Available in {[pl.rarity.value for pl in raw_locale.cards if pl.card == card]}"
+                                        f"Printing in gallery {galleryname} not found in locale: {name} / {rarity.value} -- Available in {[rc.rarity.value for rc in raw_locale.cards.values() if rc.card == card]}"
                                     )
                             else:
-                                rc = raw_locale.cards[pl]
-                                rc.image[ImageLocator(edition, alt)] = url
+                                for rc in rcs:
+                                    rc.image[ImageLocator(edition, alt)] = url
 
                         @get_card(name)
                         def do(card: Card):
@@ -2136,7 +2166,7 @@ def parse_tcg_ocg_set(
                                     else:
                                         image += ".png"
 
-                                add_card_image(name, rarity, alt, image)
+                                add_card_image(name, rarity, alt, image, code)
 
                 for subgallery in subgallery_htmls:
                     lines = [x.strip() for x in subgallery.split("\n") if x.strip()]
@@ -2165,7 +2195,9 @@ def parse_tcg_ocg_set(
                                 )
                                 continue
                             name = namelink.target.strip()
-                            add_card_image(name, rarity, "", image)
+                            add_card_image(
+                                name, rarity, "", image, codelink.target.strip()
+                            )
 
                 if not gallery_templates and not subgallery_htmls:
                     logging.warn(f"No gallery tables found in {galleryname}!")
@@ -2298,7 +2330,7 @@ def parse_tcg_ocg_set(
     batcher.flushPendingOperations()
 
     old_printing_ids = {
-        PrintingLocator(p.card, p.rarity or CardRarity.COMMON): p.id
+        PrintingLocator(p.card, p.rarity or CardRarity.COMMON, p.suffix): p.id
         for c in set_.contents
         for p in c.cards
     }
@@ -2328,6 +2360,14 @@ def parse_tcg_ocg_set(
         if prefixfixer:
             prefix = prefixfixer.group(0)
 
+        def suffix_locator(rc: RawPrinting) -> PrintingLocator:
+            # locale-independent locator: the code suffix (e.g. "Y20") is the
+            # same across locales, whereas the full code contains the
+            # locale-specific prefix
+            return PrintingLocator(
+                rc.card, rc.rarity, None if rc.noabbr else rc.code[len(prefix) :]
+            )
+
         locale = SetLocale(
             key=Locale.normalize(raw_locale.key),
             language=LOCALES.get(raw_locale.key, raw_locale.key),
@@ -2342,7 +2382,7 @@ def parse_tcg_ocg_set(
         )
         set_.locales[locale.key] = locale
 
-        ptc_key = tuple(raw_locale.cards)
+        ptc_key = tuple(suffix_locator(rc) for rc in raw_locale.cards.values())
         if ptc_key in raw_printings_to_content:
             content = raw_printings_to_content[ptc_key]
             content.locales.append(locale)
@@ -2360,7 +2400,7 @@ def parse_tcg_ocg_set(
             )
             raw_printings_to_printings[content] = {}
             for rc in raw_locale.cards.values():
-                rcl = rc.locator()
+                rcl = suffix_locator(rc)
                 if rcl in raw_printings_to_printings[content]:
                     logging.warn(
                         f"Found mutliple printings with the same code and rarity in the same locale in {title}: {rcl.card.text[Language.ENGLISH].name} / {rcl.rarity.value}"
@@ -2372,7 +2412,7 @@ def parse_tcg_ocg_set(
                     else uuid.uuid4(),
                     card=rc.card,
                     rarity=rc.rarity,
-                    suffix=None if rc.noabbr else rc.code[len(prefix) :],
+                    suffix=rcl.code,
                     replica=any(il.altinfo.lower() == "rp" for il in rc.image),
                     qty=rc.qty,
                 )
@@ -2392,7 +2432,7 @@ def parse_tcg_ocg_set(
                 if ils:
                     il = ils[0]
                     locale.card_images[edition][
-                        raw_printings_to_printings[content][rc.locator()]
+                        raw_printings_to_printings[content][suffix_locator(rc)]
                     ] = rc.image[il]
 
     return True
